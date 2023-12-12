@@ -1,0 +1,1 @@
+---\ntitle: Glossary\npermalink: /glossary/overview/\nlayout: glossary\ntoc: false\n---\n\nWelcome to the injixo-specific glossary, where you will find frequently used terms and their meanings.\n
