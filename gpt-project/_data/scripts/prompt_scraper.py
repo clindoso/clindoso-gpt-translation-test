@@ -6,9 +6,6 @@ from sklearn.model_selection import train_test_split
 # The script takes one argument, --lang, which selects the target language.
 # Use this script to convert training data from articles into prompts OpenAI API
 
-# Define base directory
-base_dir = '/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_data'
-
 # Create argument parser
 argparser = argparse.ArgumentParser(description="Script to process directories")
 
@@ -17,6 +14,15 @@ argparser.add_argument("--lang")
 
 # Define base directory
 base_dir = "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/_en/"
+
+# Get absoulte path of base_dir
+abs_base_dir = os.path.abspath(base_dir)
+
+# Split absolute path components
+abs_base_dir_components = abs_base_dir.split(os.sep) 
+
+# Assign parent folder of base directory as output directory
+output_dir = os.path.join(*abs_base_dir_components[:-1])
 
 # Parse arguments
 args = argparser.parse_args()
@@ -28,7 +34,7 @@ def read_file(file_path):
         return file.read()
 
 # Iterate through files in _en and _es directories and write each entry to a JSONL file
-scraped_data = os.path.join(os.path.dirname(base_dir), 'scraped_data.jsonl')
+scraped_data = os.path.join(output_dir, 'scraped_data.jsonl')
 
 with open(scraped_data, 'w', encoding='utf-8') as scraped_data_file:
     for root, dirs, files in os.walk(base_dir):
@@ -64,14 +70,14 @@ with open(scraped_data, 'r', encoding='utf-8') as scraped_data_file:
 train_data, validation_data = train_test_split(data, test_size=0.2, random_state=42)
 
 # Write train data to a new file
-train_file = os.path.join(base_dir, 'train_data.jsonl')
+train_file = os.path.join(output_dir, 'train_data.jsonl')
 with open(train_file, 'w', encoding='utf-8') as train_file:
     for entry in train_data:
         json.dump(entry, train_file, ensure_ascii=False)
         train_file.write('\n')
 
 # Write validation data to a new file
-validation_file = os.path.join(base_dir, 'validation_data.jsonl')
+validation_file = os.path.join(output_dir, 'validation_data.jsonl')
 with open(validation_file, 'w', encoding='utf-8') as validation_file:
     for entry in validation_data:
         json.dump(entry, validation_file, ensure_ascii=False)
