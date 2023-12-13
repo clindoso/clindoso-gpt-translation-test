@@ -15,14 +15,8 @@ argparser.add_argument("--lang")
 # Define base directory
 base_dir = "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/_en/"
 
-# Get absoulte path of base_dir
-abs_base_dir = os.path.abspath(base_dir)
-
-# Split absolute path components
-abs_base_dir_components = abs_base_dir.split(os.sep) 
-
 # Assign parent folder of base directory as output directory
-output_dir = os.path.join(*abs_base_dir_components[:-1])
+output_dir = os.path.dirname(base_dir)
 
 # Parse arguments
 args = argparser.parse_args()
