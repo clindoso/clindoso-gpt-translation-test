@@ -1,6 +1,7 @@
 import os
 import json
 import argparse
+import pandas
 
 # The script takes two arguments, --en_dir and --es_dir, which are the respective directories containing the articles.
 # Use this script to convert training data from articles into prompts OpenAI API
@@ -12,8 +13,10 @@ base_dir = '/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_data'
 argparser = argparse.ArgumentParser(description="Script to process directories")
 
 # Define arguments
-argparser.add_argument("--en_dir", default='/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_en/training', help="English directory path")
-argparser.add_argument("--es_dir", default='/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_es/training', help="Spanish directory path")
+argparser.add_argument("--lang", default="/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/_de", help="German directory path")
+
+# Define base directory
+base_dir = "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/_en/"
 
 # Parse arguments
 args = argparser.parse_args()
@@ -24,18 +27,21 @@ def read_file(file_path):
         return file.read()
 
 # Iterate through files in _en and _es directories and write each entry to a JSONL file
-scraped_data_file_path = os.path.join(base_dir, 'md_training_data.jsonl')
+scraped_data = os.path.join(base_dir, 'scraped_data.jsonl')
 
-with open(scraped_data_file_path, 'w', encoding='utf-8') as scraped_data_file:
-    for en_file in os.listdir(args.en_dir):
-        if en_file.endswith('.md'):  # Check if the file is a Markdown file
-            en_file_path = os.path.join(args.en_dir, en_file)
-            es_file_path = os.path.join(args.es_dir, en_file)
+with open(scraped_data, 'w', encoding='utf-8') as scraped_data_file:
+    for root, dirs, files in os.walk(base_dir):
+        for file in files:
+            if file.endswith('.md'):  # Check if the file is a Markdown file
+                file_path_en = os.path.join(root, file)
+                file_path_es = file_path_en.replace("_en", "_es")
 
-            # Check if the same file exists in _es directory
-            if os.path.exists(es_file_path):
-                en_content = read_file(en_file_path).replace('\n', '\\n')
-                es_content = read_file(es_file_path).replace('\n', '\\n')
+                en_content = read_file(file_path_en).replace('\n', '\\n')
+                es_content = ''  # Initialize es_content
+
+                # Check if the same file exists in _es directory
+                if os.path.exists(file_path_es):
+                    es_content = read_file(file_path_es).replace('\n', '\\n')
 
                 # Create a JSON object with the contents
                 json_entry = {
