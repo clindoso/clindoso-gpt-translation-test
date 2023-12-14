@@ -73,8 +73,7 @@ md_translated_content = translated_content.replace("\\n", "\n")
 
 output_file = "translated_output.md"
 output_path = os.path.join(os.path.dirname(source_directory), output_file)
-print(source_directory)
-print(output_path)
+
 # Write the translated content to the output file
 with open(output_path, 'w', encoding='utf-8') as output_path:
     output_path.write(md_translated_content)
