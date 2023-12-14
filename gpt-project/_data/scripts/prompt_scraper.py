@@ -18,8 +18,25 @@ base_dir = "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/_en/"
 # Assign parent folder of base directory as output directory
 output_dir = os.path.dirname(base_dir)
 
+
 # Parse arguments
 args = argparser.parse_args()
+
+# Define language name
+if args.lang == "de":
+    language = "German"
+elif args.lang == "es":
+    language = "Spanish"
+elif args.lang == "fr":
+    language = "French"
+elif args.lang == "it":
+    language = "Italian"
+elif args.lang == "nl":
+    language = "Dutch"
+else:
+    print("This is not a valid language")
+
+# Add underscore to language abbreviation to use it in file paths
 args.lang = "_" + args.lang
 
 # Function to read and return the content of a file
@@ -46,7 +63,7 @@ with open(scraped_data, 'w', encoding='utf-8') as scraped_data_file:
                     # Create a JSON object with the contents
                     json_entry = {
                         "messages": [
-                            {"role": "system", "content": "Given a Markdown file in English with Kramdown tags, translate it into Spanish keeping the style, tone, formatting, and terminology consistent. Provide the translation in a Markdown file."},
+                            {"role": "system", "content": f"Given a Markdown file in English with Kramdown tags, translate it into {language} keeping the style, tone, formatting, and terminology consistent. Provide the translation in a Markdown file."},
                             {"role": "user", "content": en_content},
                             {"role": "assistant", "content": es_content}
                         ]
