@@ -77,8 +77,6 @@ output_directory = os.path.join(source_directory, f"{language}_translation_outpu
 if not os.path.exists(output_directory):
     os.makedirs(output_directory)
 output_file_path = os.path.join(output_directory, output_file)
-print(output_directory)
-print(output_file_path)
 
 # Write the translated content to the output file
 with open(output_file_path, 'w', encoding='utf-8') as output_file_handle:
