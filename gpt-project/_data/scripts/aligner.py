@@ -9,21 +9,26 @@ def read_and_split_file(file_path):
     except Exception as e:
         return f"Error reading {file_path}: {e}"
 
+output_directory = "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/tm/"
+output_filename = "en-de.csv"
+
 # Export to CSV
-def write_to_csv(file1_lines, file2_lines, base_directory_en, output_filename):
-    os.makedirs(base_directory_en, exist_ok=True)
-    output_filepath = os.path.join(base_directory_en, output_filename)
+def write_to_csv(file1_lines, file2_lines, source_filename, output_filename, output_directory):
+    os.makedirs(output_directory, exist_ok=True)
+    output_filepath = os.path.join(output_directory, output_filename)
     
-    with open(output_filepath, 'w', newline='', encoding='utf-8') as csvfile:
+    with open(output_filepath, 'a', newline='', encoding='utf-8') as csvfile:
         writer = csv.writer(csvfile)
-        writer.writerow(['EN', 'DE', 'File'])
+
+        if csvfile.tell() == 0:
+            writer.writerow(['EN', 'DE', 'File'])
 
         if len(file1_lines) == len(file2_lines):
             for line1, line2 in zip(file1_lines, file2_lines):
-                writer.writerow([line1, line2, output_filename])
-                print(output_filepath)
+                writer.writerow([line1, line2, source_filename])
         else:
             print("Files do not have the same amount of lines.")
+            print(os.path.abspath(source_filename))
 
 # Extract file contents
 def extract_file_contents(directory):
@@ -34,6 +39,6 @@ def extract_file_contents(directory):
             if os.path.exists(file_path_es):
                 file_content_en = read_and_split_file(file_path_en)
                 file_content_es = read_and_split_file(file_path_es)
-                write_to_csv(file_content_en, file_content_es, root, file)
+                write_to_csv(file_content_en, file_content_es, file, output_filename, output_directory)
 
 extract_file_contents("/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/_en/")
