@@ -59,7 +59,7 @@ To create shift sequences, go to _Plan > Configuration > Shift sequences_{:.brea
   **Abbreviation**: Enter the name or a shorten version of it (max. 25 characters).<br>
   **Employee row(s)**: Enter the number of rows for the shift sequence (max. 53).<br>Each row will be assigned a number. Double-click on a row to rename it. You will need the row number or name to assign it to a person later.<br>
   **Duration**: Enter a value between 1 and 371 days. The duration must be a multiple of seven.
-6. Click _Ok_{:.doc-button}.
+3. Click _Ok_{:.doc-button}.
 
 >Note
 >
