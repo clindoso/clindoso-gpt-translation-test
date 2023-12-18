@@ -71,15 +71,21 @@ elapsed_time = round(((time.time() - start_time) / 60), 2)
 translated_content = response.choices[0].message.content
 md_translated_content = translated_content.replace("\\n", "\n")
 
+# Define output file name and path
 output_file = "translated_output.md"
-output_path = os.path.join(source_directory, output_file)
+output_directory = os.path.join(source_directory, f"{language}_translation_output/")
+if not os.path.exists(output_directory):
+    os.makedirs(output_directory)
+output_file_path = os.path.join(output_directory, output_file)
+print(output_directory)
+print(output_file_path)
 
 # Write the translated content to the output file
-with open(output_path, 'w', encoding='utf-8') as output_path:
-    output_path.write(md_translated_content)
+with open(output_file_path, 'w', encoding='utf-8') as output_file_handle:
+    output_file_handle.write(md_translated_content)
 
 # Print elapsed time
 print(f"Script time: {elapsed_time} minutes")
 
 # Print output file path
-print(f"Translation written to {output_path}")
+print(f"Translation written to {output_file_path}")
