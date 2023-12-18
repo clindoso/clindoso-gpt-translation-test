@@ -39,8 +39,19 @@ if args.lang in language_models:
     language = language_models[args.lang]["language"]
     gpt_model = language_models[args.lang].get("model", "")
 else:
-    print("This is not a valid language")
+    print("""
+          You typed an invalid language abbreviation. Use the following:
+          "de" for German
+          "es" for Spanish
+          "fr" for French
+          "it" for Italian
+          "nl" for Dutch
+    """)
 
+# Conditional for source path
+
+if not os.path.exists(args.source):
+    print("This is not a valid source text file.")
 
 # Extract source file path
 source_directory = os.path.dirname(args.source)
