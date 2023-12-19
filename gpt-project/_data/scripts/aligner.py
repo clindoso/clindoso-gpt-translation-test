@@ -18,19 +18,47 @@ args = argparser.parse_args()
 def read_and_split_file(file_path):
     try:
         with open(file_path, 'r', encoding='utf-8') as file:
-            return [line.strip() for line in file 
-                    if line.strip() and not (line.strip().startswith('<!--') and line.strip().endswith('-->'))]
+            lines = file.readlines()
+
+        # Flag to check if we are inside the frontmatter
+        in_frontmatter = False
+        result = []
+
+        for line in lines:
+            stripped_line = line.strip()
+
+            # Check if the line is the start or end of the frontmatter
+            if stripped_line == '---':
+                in_frontmatter = not in_frontmatter
+                continue
+
+            # Exclude lines within the frontmatter or lines that are HTML comments
+            if not in_frontmatter and not (stripped_line.startswith('<!--') and stripped_line.endswith('-->')):
+                result.append(stripped_line)
+
+        # Remove empty strings from the result list before returning
+        return [line for line in result if line]
+
     except Exception as e:
         raise Exception(f"Error reading {file_path}: {e}")
 
 output_directory = "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/tm/"
 output_filename = "en-" + args.lang + ".csv"
 
+# List for possibly not aligned articles
+not_aligned_articles = []
+aligned_qtt = 0
+not_aligned_qtt = 0
+
 # Export to CSV
 def write_to_csv(file1_lines, file2_lines, source_filename, output_filename, output_directory):
+    global not_aligned_articles
+    global aligned_qtt
+    global not_aligned_qtt
+
     os.makedirs(output_directory, exist_ok=True)
     output_filepath = os.path.join(output_directory, output_filename)
-    
+
     with open(output_filepath, 'a', newline='', encoding='utf-8') as csvfile:
         writer = csv.writer(csvfile)
 
@@ -38,11 +66,13 @@ def write_to_csv(file1_lines, file2_lines, source_filename, output_filename, out
             writer.writerow(['en', args.lang, 'file'])
 
         if len(file1_lines) == len(file2_lines):
+            aligned_qtt += 1
             for line1, line2 in zip(file1_lines, file2_lines):
                 writer.writerow([line1, line2, source_filename])
         else:
-            print("Files do not have the same amount of lines.")
-            print(os.path.abspath(source_filename))
+            not_aligned_qtt += 1
+            not_aligned_articles.append(source_filename)
+        
 
 # Extract file contents
 def extract_file_contents(directory):
@@ -56,3 +86,9 @@ def extract_file_contents(directory):
                 write_to_csv(file_content_en, file_content_tl, file, output_filename, output_directory)
 
 extract_file_contents("/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/_en/")
+
+print(f"Aligned articles: {aligned_qtt}")
+print(f"Not aligned articles: {not_aligned_qtt}")
+print("The following articles might not be aligned:")
+for article in not_aligned_articles:
+    print(article)
