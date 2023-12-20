@@ -1,6 +1,7 @@
 import os
 import csv
 import argparse
+import re
 
 # Use this script to create a CSV file as a TM with English as source language
 # This script takes one argument, --lang, the target language of the TM
@@ -59,6 +60,56 @@ def clear_csv_content(file_path):
 
 # Delete existing TM
 clear_csv_content(output_filepath)
+
+def sentence_splitter(file1_lines, file2_lines):
+    """
+    Split strings in two lists of lines into sentences by '. ', ignoring specified patterns.
+
+    Args:
+    file1_lines (list of str): Lines from the first file.
+    file2_lines (list of str): Lines from the second file.
+
+    Returns:
+    tuple of list of list of str: Two lists containing the split sentences from each file.
+    """
+    # Patterns to ignore, with their placeholders
+    patterns = {
+        "z.&nbsp;B.": "{PLACEHOLDER_ZB}",
+        "d.&nbsp;h.": "{PLACEHOLDER_DH}",
+        "i.e.": "{PLACEHOLDER_IE}",
+        "e.g.": "{PLACEHOLDER_EG}",
+        "u.U.": "{PLACEHOLDER_UU}",
+        "u.a.": "{PLACEHOLDER_UA}",
+        "p.&nbsp;ej.": "{PLACEHOLDER_PEJ}"
+    }
+
+    etc_pattern = re.compile(r'etc\.\s[a-z()]')
+
+    def split_line(line):
+        # Replace 'etc. ' followed by a capital letter with a placeholder
+        line = etc_pattern.sub("{PLACEHOLDER_ETC}", line)
+
+        # Replace other patterns
+        for pattern, placeholder in patterns.items():
+            line = line.replace(pattern, placeholder)
+
+        # Split sentences by period
+        sentences = line.split('. ')
+
+        # Restore 'etc. '
+        line = etc_pattern.sub("etc. ", line)
+
+        # Restore other patterns
+        for i, sentence in enumerate(sentences):
+            for pattern, placeholder in patterns.items():
+                sentences[i] = sentence.replace(placeholder, pattern)
+        return sentences
+    
+    # Split files
+    split_file1 = [split_line(line) for line in file1_lines]
+    split_file2 = [split_line(line) for line in file2_lines]
+    
+    return split_file1, split_file2
 
 # List for possibly not aligned articles
 not_aligned_articles = []
