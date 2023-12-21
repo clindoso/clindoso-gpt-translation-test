@@ -52,20 +52,20 @@ with open(scraped_data, 'w', encoding='utf-8') as scraped_data_file:
         for file in files:
             if file.endswith('.md'):  # Check if the file is a Markdown file
                 file_path_en = os.path.join(root, file)
-                file_path_es = file_path_en.replace("_en", args.lang)
+                file_path_tl = file_path_en.replace("_en", args.lang)
 
                 en_content = read_file(file_path_en).replace('\n', '\\n')
 
                 # Check if the same file exists in _es directory
-                if os.path.exists(file_path_es):
-                    es_content = read_file(file_path_es).replace('\n', '\\n')
+                if os.path.exists(file_path_tl):
+                    tl_content = read_file(file_path_tl).replace('\n', '\\n')
 
                     # Create a JSON object with the contents
                     json_entry = {
                         "messages": [
                             {"role": "system", "content": f"Given a Markdown file in English with Kramdown tags, translate it into {language} keeping the style, tone, formatting, and terminology consistent. Provide the translation in a Markdown file."},
                             {"role": "user", "content": en_content},
-                            {"role": "assistant", "content": es_content}
+                            {"role": "assistant", "content": tl_content}
                         ]
                     }
 

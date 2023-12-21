@@ -126,20 +126,20 @@ def sentence_splitter(file1_lines, file2_lines):
             "p.&nbsp;ej.": "{PLACEHOLDER_PEJ}"
         }
 
-        # Define new lists
+        # Define new lists for processed lines
         processed_file1_lines = []
         processed_file2_lines = []
         
         for i in range(len(file1_lines)):
             # Replace patterns in file1_lines
             line1 = file1_lines[i]
-            line1 = etc_pattern.sub("{PLACEHOLDER_ETC}", line1)
+            line1 = line1.replace(etc_pattern, "{PLACEHOLDER_ETC}")
             for pattern, placeholder in patterns.items():
                 line1 = line1.replace(pattern, placeholder)
 
             # Replace patterns in file2_lines
             line2 = file2_lines[i]
-            line2 = etc_pattern.sub("{PLACEHOLDER_ETC}", line2)
+            line2 = line2.replace(etc_pattern, "{PLACEHOLDER_ETC}")
             for pattern, placeholder in patterns.items():
                 line2 = line2.replace(pattern, placeholder)
 
