@@ -83,7 +83,7 @@ translated_content = response.choices[0].message.content
 md_translated_content = translated_content.replace("\\n", "\n")
 
 # Define output file name and path
-output_file = "translated_output.md"
+output_file = args.source.split('/')[-1]
 output_directory = os.path.join(source_directory, f"{language}_translation_output/")
 if not os.path.exists(output_directory):
     os.makedirs(output_directory)
