@@ -162,12 +162,12 @@ def sentence_splitter(file1_lines, file2_lines):
                 temp_file1_lines = line1.split('. ')
                 temp_file2_lines = line2.split('. ')
 
-                for i in range(len(temp_file1_lines)):    
-                    if ends_with_regex(temp_file1_lines[i]):
-                        temp_file1_lines += '.'
-                for i in range(len(temp_file2_lines)):
-                    if ends_with_regex(temp_file2_lines[i]):
-                        temp_file2_lines[i] += '.'
+                # for i in range(len(temp_file1_lines)):    
+                #     if ends_with_regex(temp_file1_lines[i]):
+                #         temp_file1_lines += '.'
+                # for i in range(len(temp_file2_lines)):
+                #     if ends_with_regex(temp_file2_lines[i]):
+                #         temp_file2_lines[i] += '.'
             
             for i in range(len(temp_file1_lines)):
                 processed_file1_lines.append(temp_file1_lines[i])
@@ -243,6 +243,6 @@ extract_file_contents(source_directory)
 
 print(f"Aligned articles: {aligned_qtt}")
 print(f"Not aligned articles: {not_aligned_qtt}")
-print("The following articles might not be aligned:")
+print("The following articles might not be up to date:")
 for article in not_aligned_articles:
     print(article)
