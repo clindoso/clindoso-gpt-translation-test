@@ -99,6 +99,7 @@ def restore_patterns(patterns, etc_placeholder, etc_string, line):
     for pattern, placeholder in patterns.items():
         line = line.replace(placeholder, pattern)
     line = re.sub(etc_placeholder, etc_string, line)
+    return line
 
 # Define sentence splitter
 
@@ -168,7 +169,6 @@ def sentence_splitter(file1_lines, file2_lines):
         # Restore placeholders to original patterns
         restored_file1_lines = [restore_patterns(patterns, etc_placeholder, etc_string, line) for line in processed_file1_lines]
         restored_file2_lines = [restore_patterns(patterns, etc_placeholder, etc_string, line) for line in processed_file2_lines]
-
         return restored_file1_lines, restored_file2_lines
 
     
@@ -182,7 +182,7 @@ not_aligned_articles = []
 aligned_qtt = 0
 not_aligned_qtt = 0
 
-# Export to CSV
+# Function to export to CSV
 def write_to_csv(file1_lines, file2_lines, source_filename, output_filepath):
     global not_aligned_articles
     global aligned_qtt
