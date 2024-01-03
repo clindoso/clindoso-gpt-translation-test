@@ -115,7 +115,7 @@ def sentence_splitter(file1_lines, file2_lines):
     etc_pattern = re.compile(r'etc\.\s[a-z()]')
 
     def split_line(file1_lines, file2_lines):
-        etc_pattern = re.compile(r'etc\.\s[a-z()]')
+        etc_pattern = re.compile(r'etc\.(?=\s[a-z()])')
         patterns = {
             "z.&nbsp;B.": "{PLACEHOLDER_ZB}",
             "d.&nbsp;h.": "{PLACEHOLDER_DH}",
@@ -131,13 +131,13 @@ def sentence_splitter(file1_lines, file2_lines):
         processed_file2_lines = []
         
         for i in range(len(file1_lines)):
-            # Replace patterns in file1_lines
+            # Replace etc pattern in file1_lines
             line1 = file1_lines[i]
             line1 = etc_pattern.sub("{PLACEHOLDER_ETC}", line1)
             for pattern, placeholder in patterns.items():
                 line1 = line1.replace(pattern, placeholder)
 
-            # Replace patterns in file2_lines
+            # Replace etc pattern in file2_lines
             line2 = file2_lines[i]
             line2 = etc_pattern.sub("{PLACEHOLDER_ETC}", line2)
             for pattern, placeholder in patterns.items():
