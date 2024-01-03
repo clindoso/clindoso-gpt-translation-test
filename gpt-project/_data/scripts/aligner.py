@@ -61,11 +61,7 @@ def clear_csv_content(file_path):
 # Delete existing TM
 clear_csv_content(output_filepath)
 
-# Function to check if end of sentence is a letter
-def ends_with_regex(string):
-    # The '$' symbol in regex represents the end of the string
-    return re.search('\w$', string) is not None
-
+# Function to equalize paragraphs
 def equalize_list_lengths(list1, list2):
     # Find the length of the longest string in each list
     max_length1 = max(len(s) for s in list1)
@@ -89,33 +85,41 @@ def equalize_list_lengths(list1, list2):
 
     return list1, list2
 
+# Function to replace patterns
+def replace_patterns(etc_pattern, etc_placeholder, patterns, line):
+    # Replace specifed patterns in line
+    line = etc_pattern.sub(etc_placeholder, line)
+    for pattern, placeholder in patterns.items():
+        line = line.replace(pattern, placeholder)
+    return line
+
+# Function to restore patterns
+def restore_patterns(patterns, etc_placeholder, etc_string, line):
+    # Restore original patterns
+    for pattern, placeholder in patterns.items():
+        line = line.replace(placeholder, pattern)
+    line = re.sub(etc_placeholder, etc_string, line)
+
 # Define sentence splitter
+
 def sentence_splitter(file1_lines, file2_lines):
-    """
-    Split strings in two lists of lines into sentences by '. ', ignoring specified patterns.
-
-    Args:
-    file1_lines (list of str): Lines from the first file.
-    file2_lines (list of str): Lines from the second file.
-
-    Returns:
-    tuple of list of list of str: Two lists containing the split sentences from each file.
-    """
     # Patterns to ignore, with their placeholders
-    patterns = {
-        "z.&nbsp;B.": "{PLACEHOLDER_ZB}",
-        "d.&nbsp;h.": "{PLACEHOLDER_DH}",
-        "i.e.": "{PLACEHOLDER_IE}",
-        "e.g.": "{PLACEHOLDER_EG}",
-        "u.U.": "{PLACEHOLDER_UU}",
-        "u.a.": "{PLACEHOLDER_UA}",
-        "p.&nbsp;ej.": "{PLACEHOLDER_PEJ}"
-    }
+    # patterns = {
+    #     "z.&nbsp;B.": "{PLACEHOLDER_ZB}",
+    #     "d.&nbsp;h.": "{PLACEHOLDER_DH}",
+    #     "i.e.": "{PLACEHOLDER_IE}",
+    #     "e.g.": "{PLACEHOLDER_EG}",
+    #     "u.U.": "{PLACEHOLDER_UU}",
+    #     "u.a.": "{PLACEHOLDER_UA}",
+    #     "p.&nbsp;ej.": "{PLACEHOLDER_PEJ}"
+    # }
 
-    etc_pattern = re.compile(r'etc\.\s[a-z()]')
+    # etc_pattern = re.compile(r'etc\.\s[a-z()]')
 
     def split_line(file1_lines, file2_lines):
         etc_pattern = re.compile(r'etc\.(?=\s[a-z()])')
+        etc_placeholder = "{PLACEHOLDER_ETC}"
+        etc_string = "etc."
         patterns = {
             "z.&nbsp;B.": "{PLACEHOLDER_ZB}",
             "d.&nbsp;h.": "{PLACEHOLDER_DH}",
@@ -130,37 +134,28 @@ def sentence_splitter(file1_lines, file2_lines):
         processed_file1_lines = []
         processed_file2_lines = []
         
-        for i in range(len(file1_lines)):
-            # Replace etc pattern in file1_lines
-            line1 = file1_lines[i]
-            line1 = etc_pattern.sub("{PLACEHOLDER_ETC}", line1)
-            for pattern, placeholder in patterns.items():
-                line1 = line1.replace(pattern, placeholder)
+        for line1, line2 in zip(file1_lines, file2_lines):
+            line1_processed = replace_patterns(etc_pattern, etc_placeholder, patterns, line1)
+            line2_processed = replace_patterns(etc_pattern, etc_placeholder, patterns, line2)
 
-            # Replace etc pattern in file2_lines
-            line2 = file2_lines[i]
-            line2 = etc_pattern.sub("{PLACEHOLDER_ETC}", line2)
-            for pattern, placeholder in patterns.items():
-                line2 = line2.replace(pattern, placeholder)
-
-            print(f"Original Line {i} in File1: {file1_lines[i]}")
-            print(f"Original Line {i} in File2: {file2_lines[i]}")
+            processed_file1_lines.append(line1_processed)
+            processed_file2_lines.append(line2_processed)
 
             # Split and equalize if necessary
-            if line1.count('. ') != line2.count('. '):
-                temp_file1_lines = line1.split('. ')
-                temp_file2_lines = line2.split('. ')
+            # if line1.count('. ') != line2.count('. '):
+            #     temp_file1_lines = line1.split('. ')
+            #     temp_file2_lines = line2.split('. ')
 
-                for i in range(len(temp_file1_lines)):
-                    temp_file1_lines[i] += '.'
-                for i in range(len(temp_file2_lines)):
-                    temp_file2_lines[i] += '.'
+            #     for i in range(len(temp_file1_lines)):
+            #         temp_file1_lines[i] += '.'
+            #     for i in range(len(temp_file2_lines)):
+            #         temp_file2_lines[i] += '.'
 
-                temp_file1_lines, temp_file2_lines = equalize_list_lengths(temp_file1_lines, temp_file2_lines)
+            #     temp_file1_lines, temp_file2_lines = equalize_list_lengths(temp_file1_lines, temp_file2_lines)
 
-            else:
-                temp_file1_lines = line1.split('. ')
-                temp_file2_lines = line2.split('. ')
+            # else:
+            #     temp_file1_lines = line1.split('. ')
+            #     temp_file2_lines = line2.split('. ')
 
                 # for i in range(len(temp_file1_lines)):    
                 #     if ends_with_regex(temp_file1_lines[i]):
@@ -169,30 +164,12 @@ def sentence_splitter(file1_lines, file2_lines):
                 #     if ends_with_regex(temp_file2_lines[i]):
                 #         temp_file2_lines[i] += '.'
             
-            for i in range(len(temp_file1_lines)):
-                processed_file1_lines.append(temp_file1_lines[i])
-            for i in range(len(temp_file2_lines)):
-                processed_file2_lines.append(temp_file2_lines[i])
-            
-        print(len(processed_file1_lines) == len(processed_file2_lines))
-        for i in range(len(processed_file1_lines)):
-            print(f"Processed Line {i} in File1: {processed_file1_lines[i]}")
-        for i in range(len(processed_file2_lines)):
-            print(f"Processed Line {i} in File2: {processed_file2_lines[i]}")
 
         # Restore placeholders to original patterns
-        for i in range(len(processed_file1_lines)):
-            line1 = processed_file1_lines[i]
-            for placeholder, pattern in patterns.items():
-                line1 = line1.replace(placeholder, pattern)
-            processed_file1_lines[i] = line1
-        for i in range(len(processed_file2_lines)):
-            line2 = processed_file2_lines[i]
-            for placeholder, pattern in patterns.items():
-                line2 = line2.replace(placeholder, pattern)
-            processed_file2_lines[i] = line2
+        restored_file1_lines = [restore_patterns(patterns, etc_placeholder, etc_string, line) for line in processed_file1_lines]
+        restored_file2_lines = [restore_patterns(patterns, etc_placeholder, etc_string, line) for line in processed_file2_lines]
 
-        return processed_file1_lines, processed_file2_lines
+        return restored_file1_lines, restored_file2_lines
 
     
     # Split files
