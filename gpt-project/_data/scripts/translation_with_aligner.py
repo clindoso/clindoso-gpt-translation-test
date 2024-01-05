@@ -68,8 +68,8 @@ def translate_segment(segment, language, gpt_model):
     response = client.chat.completions.create(
       model=gpt_model,
       messages=[
-        {"role": "system", "content": f"Given a Markdown file in English with Kramdown tags, translate it into {language} keeping the style, tone, formatting, and terminology consistent. Provide the translation in a Markdown file."},
-        {"role": "user", "content": segment}
+        {"role": "system", "content": "You are a translation assistant."},
+        {"role": "user", "content": f"Translate the text below from English into {language} keeping the style, tone, formatting, and terminology consistent. Provide only the translation. {segment}"}
       ]
     )
 
@@ -79,13 +79,15 @@ def translate_segment(segment, language, gpt_model):
 
 # Text input
 
-text = read_file(args.source)
+source_text = read_file(args.source)
 
 # Split text into lines
-lines = text.splitlines()
+split_source_text = source_text.splitlines()
 
 # Initialize an empty list to store translated lines
 translated_lines = []
+# Initialize an empty dictionary to store GPT translations for repetitions
+translated_dict = {}
 
 # Read the TM and extract the 'en' column and the translation
 tm_dict = {}
@@ -95,20 +97,36 @@ with open(tm_path, 'r', encoding='utf-8') as tm:
         if args.lang in row:
             tm_dict[row['en']] = row[args.lang]
         else:
-            print(f"Column '{args,lang}' does not exist in the TM.")
+            print(f"Column '{args.lang}' does not exist in the TM.")
 
 # Iterate over each line and translate
-for line in lines:
-    if line in tm_dict:
-        # Use TM suggestion
-        translated_lines.append(tm_dict[line])
-    else:
-        translated_line = translate_segment(line, language, gpt_model)
-        translated_lines.append(translated_line)
 
-# Join the translated lines into a single string
+for line in split_source_text:
+    # Use TM suggestion
+    if line in tm_dict:
+        translated_lines.append((line, tm_dict[line]))
+        print(line)
+        print(tm_dict[line])
+    
+    # Use existing translation if line was previously translated by GPT
+    if line in translated_dict:
+        translated_lines.append((line, translated_dict[line]))
+        print(line)
+        print(translated_dict[line])
+    
+    # Use existing translation if line is not in TM or was not previously translated by GPT
+    else:
+        print(line)
+        translated_line = translate_segment(line, language, "gpt-3.5-turbo")
+        print(translated_line)
+        translated_dict[line] = translated_line
+        translated_lines.append((line, translated_line))
+
+
 # You can change this part if you need the output in a different format (like a list)
-translated_text = "\n".join(translated_lines)
+translated_text = [target_lines for _, target_lines in translated_lines]
+# Join the translated lines into a single string
+joint_translated_text = "\n".join(translated_text)
 
 # Now `translated_text` contains the whole translated content
 
@@ -124,7 +142,7 @@ output_file_path = os.path.join(output_directory, output_file)
 
 # Write the translated content to the output file
 with open(output_file_path, 'w', encoding='utf-8') as output_file_handle:
-    output_file_handle.write(translated_text)
+    output_file_handle.write(joint_translated_text)
 
 # Print elapsed time
 print(f"Script time: {elapsed_time} minutes")
