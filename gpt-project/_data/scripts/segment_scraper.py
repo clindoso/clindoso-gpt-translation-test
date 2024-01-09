@@ -48,6 +48,17 @@ with open(tm_path, 'r', encoding='utf-8') as tm:
     for row in reader:
         segments.append((row['en'], row[args.lang]))
 
+# Create scraped segments file
 scraped_segments = os.path.join(output_dir, 'scraped_segments.jsonl')
 
-
+# Write tuple content in the JSONL file.
+with open(scraped_segments, 'w', encoding='utf-8') as scraped_segments_file:
+    for segment_pair in segments:
+        json_entry = {
+            "messages": [
+                {"role": "system", "content": "You are a translation assistant."},
+                {"role": "user", "content": f"The following English text between triple back quotes is in Markdown format with Kramdown tags, translate it {language} using plain language and keeping style, tone, formatting, and terminology: ```{segment_pair[0]}```"},
+                {"role": "assistant", "content": segment_pair[1]}
+            ]
+        }
+        json.dump(json_entry, scraped_segments_file, ensure_ascii=False)
