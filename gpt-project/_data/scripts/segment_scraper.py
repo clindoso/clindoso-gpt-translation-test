@@ -1,5 +1,6 @@
 import os
 import json
+import csv
 import argparse
 from sklearn.model_selection import train_test_split
 
@@ -23,17 +24,28 @@ args = argparser.parse_args()
 
 # Define language name and language-specific fine-tuned model
 languages_dict = {
-    "de": {"language": "German"},
-    "es": {"language": "Spanish"},
-    "fr": {"language": "French"},
-    "it": {"language": "Italian"},
-    "nl": {"language": "Dutch"}
+    "de": {"language": "German", "tm_path": "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/tm/en-de.csv"},
+    "es": {"language": "Spanish", "tm_path": "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/tm/en-es.csv"},
+    "fr": {"language": "French", "tm_path": "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/tm/en-fr.csv"},
+    "it": {"language": "Italian", "tm_path": "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/tm/en-it.csv"},
+    "nl": {"language": "Dutch", "tm_path": "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/tm/en-nl.csv"}
 }
 
 # Conditional for language-specific arguments
 
 if args.lang in languages_dict:
     language = languages_dict[args.lang]["language"]
+    tm_path = languages_dict[args.lang]["tm_path"]
 else:
     print(f"This script does not support {args.lang}. Enter one of the following language abbreviations: de, es, fr, it, nl.")
 
+# Create empty segment list to compile segments from TM
+segments = []
+
+# Extract segments from TM to segment list
+with open(tm_path, 'r', encoding='utf-8') as tm:
+    reader = csv.DictReader(tm)
+    for row in reader:
+        segments.append((row['en'], row[args.lang]))
+
+print(output_dir)
