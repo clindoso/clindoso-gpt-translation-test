@@ -3,6 +3,7 @@ from openai import OpenAI
 import argparse
 import time
 import csv
+import Levenshtein as lev
 
 # Use this script to translate whole articles from English into German, Spanish, French, Italian, or Dutch with ChatGPT.
 # The script takes two arguments, --lang and--source, respectively the target language and the source file to be translated.
@@ -104,9 +105,36 @@ with open(tm_path, 'r', encoding='utf-8') as tm:
 for line in split_source_text:
     # Use TM suggestion
     if line in tm_dict:
+        tm_dict[line] += "<!-- TM 100 -->"
         translated_lines.append((line, tm_dict[line]))
-        print(line)
+    else:
+    # Initialize variables to find the line with the smallest Levenshtein distance
+        min_distance = None
+        closest_line = None
+        for key in tm_dict:
+            if len(line) == 0:
+                print(line)
+                distance = 100
+            else:
+                # Calculate the Levenshtein distance and normalize it using the length of 'line'
+                distance = lev.distance(line, key) / (len(line))
+                # Update min_distance and closest_line if this is the smallest distance so far
+                if min_distance is None or distance < min_distance:
+                    min_distance = distance
+                    closest_line = key
+
+        # If the smallest distance is below the threshold (0.4 in this case)
+        if min_distance is not None and min_distance < 0.4:
+            # Use the translation of the line with the smallest distance
+            tm_dict[closest_line] += f"<!-- TM {distance*100} -->"
+            translated_lines.append((line, tm_dict[closest_line]))
+            # Print the line and its closest match's translation
+
+    print(line)
+    if line in tm_dict:
         print(tm_dict[line])
+    
+
     
     # Use existing translation if line was previously translated by GPT
     if line in translated_dict:
