@@ -2,14 +2,14 @@ import Levenshtein
 import argparse
 
 # Use this script to calculate the Levenshtein between two articles
-# The script takes two arguments, --gpt_tr and --fn_tr,
+# The script takes two arguments, --t1 and --t2,
 
 # Create argument parser
 argparser = argparse.ArgumentParser(description="Script to calculate the Levenshtein between two articles")
 
 # Define arguments
-argparser.add_argument("--gpt_tr", help="Translation from ChatGPT")
-argparser.add_argument("--fn_tr", help="Final file")
+argparser.add_argument("--t1", help="Translation from ChatGPT")
+argparser.add_argument("--t2", help="Final file")
 
 # Parse arguments
 args = argparser.parse_args()
@@ -20,8 +20,8 @@ def read_file(file_path):
         return file.read()
 
 # Extract content from file
-content_raw = read_file(args.gpt_tr)
-content_final = read_file(args.fn_tr)
+content_raw = read_file(args.t1)
+content_final = read_file(args.t2)
 
 # Calculate the Levenshtein distance
 distance = Levenshtein.distance(content_raw, content_final)
