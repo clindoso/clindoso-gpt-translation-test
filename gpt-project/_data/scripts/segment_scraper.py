@@ -62,3 +62,26 @@ with open(scraped_segments, 'w', encoding='utf-8') as scraped_segments_file:
             ]
         }
         json.dump(json_entry, scraped_segments_file, ensure_ascii=False)
+        scraped_segments_file.write('\n')
+
+
+# Split scraped segments into training and validation sets
+with open (scraped_segments, 'r', encoding='utf-8') as scraped_segments_file:
+    data = [json.loads(line) for line in scraped_segments_file]
+
+# Splitting into train and validation sets (80:20 ratio)
+train_data, validation_data = train_test_split(data, test_size=0.2, random_state=42)
+
+# Write train data to a new file
+train_file = os.path.join(output_dir, 'train_data.jsonl')
+with open(train_file, 'w', encoding='utf-8') as train_file:
+    for entry in train_data:
+        json.dump(entry, train_file, ensure_ascii=False)
+        train_file.write('\n')
+
+# Write validation data to a new file
+validation_file = os.path.join(output_dir, 'validation_data.jsonl')
+with open(validation_file, 'w', encoding='utf-8') as validation_file:
+    for entry in validation_data:
+        json.dump(entry, validation_file, ensure_ascii=False)
+        validation_file.write('\n')

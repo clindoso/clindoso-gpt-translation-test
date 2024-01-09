@@ -77,7 +77,7 @@ with open(scraped_data, 'w', encoding='utf-8') as scraped_data_file:
 with open(scraped_data, 'r', encoding='utf-8') as scraped_data_file:
     data = [json.loads(line) for line in scraped_data_file]
 
-# Splitting into train and validation sets (80:20 ratio)
+# Split into train and validation sets (80:20 ratio)
 train_data, validation_data = train_test_split(data, test_size=0.2, random_state=42)
 
 # Write train data to a new file
