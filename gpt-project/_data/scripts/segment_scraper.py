@@ -14,7 +14,7 @@ argparser = argparse.ArgumentParser(description="Script to process directories")
 argparser.add_argument("--lang")
 
 # Define base directory
-base_dir = "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/_en/"
+base_dir = "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/_en"
 
 # Assign parent folder of base directory as output directory
 output_dir = os.path.dirname(base_dir)
@@ -48,4 +48,6 @@ with open(tm_path, 'r', encoding='utf-8') as tm:
     for row in reader:
         segments.append((row['en'], row[args.lang]))
 
-print(output_dir)
+scraped_segments = os.path.join(output_dir, 'scraped_segments.jsonl')
+
+

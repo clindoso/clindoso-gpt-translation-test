@@ -13,7 +13,7 @@ argparser = argparse.ArgumentParser(description="Script to process directories")
 argparser.add_argument("--lang")
 
 # Define base directory
-base_dir = "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/_en/"
+base_dir = "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/_en"
 
 # Assign parent folder of base directory as output directory
 output_dir = os.path.dirname(base_dir)
@@ -45,7 +45,7 @@ def read_file(file_path):
         return file.read()
 
 # Iterate through files in _en and _es directories and write each entry to a JSONL file
-scraped_data = os.path.join(output_dir, 'scraped_data.jsonl')
+scraped_data = (output_dir, 'scraped_data.jsonl')
 
 with open(scraped_data, 'w', encoding='utf-8') as scraped_data_file:
     for root, dirs, files in os.walk(base_dir):
