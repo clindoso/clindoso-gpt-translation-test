@@ -50,7 +50,6 @@ else:
           "it" for Italian
           "nl" for Dutch
     """)
-    break
 
 # Conditional for source path
 
@@ -89,7 +88,7 @@ split_source_text = source_text.splitlines()
 # Initialize an empty list to store translated lines
 translated_lines = []
 # Initialize an empty dictionary to store GPT translations for repetitions
-translated_dict = {}
+gpt_translated_dict = {}
 
 # Read the TM and extract the 'en' column and the translation
 tm_dict = {}
@@ -122,8 +121,8 @@ for line in split_source_text:
         translated_lines.append((line, tm_dict[line] + "<!-- TM 100 -->"))
 
     # Check for existing ChatGPT translation
-    elif line in translated_dict:
-        translated_lines.append((line, translated_dict[line]))
+    elif line in gpt_translated_dict:
+        translated_lines.append((line, gpt_translated_dict[line]))
     else:
         # Find closest line in TM
         lower_threshold = 0.05
@@ -131,8 +130,13 @@ for line in split_source_text:
         closest_line, min_distance = None, float('inf')
         line_length = len(line)
 
-        # Calculate Levenshtein distance and normalize it
+        # Iterate through the TM segments
         for tm_line, tm_line_length in tm_lines_lengths.items():
+            # If the length difference is too large, skip calculation
+            if abs(line_length - tm_line_length) / max(line_length, tm_line_length) > upper_threshold:
+                continue
+
+            # Calculate Levenshtein distance and normalize it
             distance = lev.distance(line, tm_line)
             normalized_distance = distance / max(line_length, tm_line_length)
 
@@ -155,16 +159,16 @@ for line in split_source_text:
         print(tm_dict[line])
     
     # Use existing translation if line was previously translated by GPT
-    elif line in translated_dict:
+    elif line in gpt_translated_dict:
         print(line)
-        print(translated_dict[line])
+        print(gpt_translated_dict[line])
     
     # Use existing translation if line is not in TM or was not previously translated by GPT
     else:
         print(line)
         translated_line = translate_segment(line, language, "gpt-3.5-turbo")
         print(translated_line)
-        translated_dict[line] = translated_line
+        gpt_translated_dict[line] = translated_line
         translated_lines.append((line, translated_line))
 
 
