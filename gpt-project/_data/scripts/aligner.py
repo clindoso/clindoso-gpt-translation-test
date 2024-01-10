@@ -28,6 +28,7 @@ def read_and_split_file(file_path):
         in_frontmatter = False
         result = []
 
+        # Iterate over the article lines
         for line in lines:
             stripped_line = line.strip()
 

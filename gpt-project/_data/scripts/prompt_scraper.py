@@ -22,22 +22,24 @@ output_dir = os.path.dirname(base_dir)
 # Parse arguments
 args = argparser.parse_args()
 
-# Define language name
-if args.lang == "de":
-    language = "German"
-elif args.lang == "es":
-    language = "Spanish"
-elif args.lang == "fr":
-    language = "French"
-elif args.lang == "it":
-    language = "Italian"
-elif args.lang == "nl":
-    language = "Dutch"
+# Define language name and language-specific fine-tuned model
+languages_dict = {
+    "de": {"language": "German"},
+    "es": {"language": "Spanish"},
+    "fr": {"language": "French"},
+    "it": {"language": "Italian"},
+    "nl": {"language": "Dutch"}
+}
+
+# Conditional for language-specific arguments
+
+if args.lang in languages_dict:
+    language = languages_dict[args.lang]["language"]
 else:
-    print("This is not a valid language")
+    print(f"This script does not support {args.lang}. Enter one of the following language abbreviations: de, es, fr, it, nl.")
 
 # Add underscore to language abbreviation to use it in file paths
-args.lang = "_" + args.lang
+lang_abbr = "_" + args.lang
 
 # Function to read and return the content of a file
 def read_file(file_path):
@@ -45,14 +47,14 @@ def read_file(file_path):
         return file.read()
 
 # Iterate through files in _en and _es directories and write each entry to a JSONL file
-scraped_data = (output_dir, 'scraped_data.jsonl')
+scraped_data = os.path.join(output_dir, 'scraped_data.jsonl')
 
 with open(scraped_data, 'w', encoding='utf-8') as scraped_data_file:
     for root, dirs, files in os.walk(base_dir):
         for file in files:
             if file.endswith('.md'):  # Check if the file is a Markdown file
                 file_path_en = os.path.join(root, file)
-                file_path_tl = file_path_en.replace("_en", args.lang)
+                file_path_tl = file_path_en.replace("_en", lang_abbr)
 
                 en_content = read_file(file_path_en).replace('\n', '\\n')
 
@@ -93,3 +95,6 @@ with open(validation_file, 'w', encoding='utf-8') as validation_file:
     for entry in validation_data:
         json.dump(entry, validation_file, ensure_ascii=False)
         validation_file.write('\n')
+
+print(f"Training data file was created under {train_file}")
+print(f"Validation data file was created under {validation_file}")

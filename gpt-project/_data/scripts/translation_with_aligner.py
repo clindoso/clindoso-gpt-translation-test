@@ -32,7 +32,7 @@ language_models = {
     "es": {"language": "Spanish", "model": "ft:gpt-3.5-turbo-1106:personal::8SkFElMK", "tm_path": "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/tm/en-es.csv"},
     # "fr": {"language": "French", "model": "", "tm": "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/tm/en-fr.csv"},
     # "it": {"language": "Italian", "model": "", "tm": "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/tm/en-it.csv"},
-    "nl": {"language": "Dutch", "model": "ft:gpt-3.5-turbo-1106:personal::8VcQ6Dhp", "tm_path": "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/tm/en-nl.csv"}
+    "nl": {"language": "Dutch", "model": "ft:gpt-3.5-turbo-1106:personal::8SkFElMK", "tm_path": "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/tm/en-nl.csv"}
 }
 
 # Conditional for language-specific arguments
@@ -50,6 +50,7 @@ else:
           "it" for Italian
           "nl" for Dutch
     """)
+    break
 
 # Conditional for source path
 
@@ -69,8 +70,8 @@ def translate_segment(segment, language, gpt_model):
     response = client.chat.completions.create(
       model=gpt_model,
       messages=[
-        {"role": "system", "content": "You are a translation assistant."},
-        {"role": "user", "content": f"Translate the text below from English into {language} keeping the style, tone, formatting, and terminology consistent. Provide only the translation. {segment}"}
+        {"role": "system", "content": f"Given a sentence in Markdown format in English, translate it into {language} keeping the style, tone, formatting, and terminology consistent."},
+        {"role": "user", "content": segment}
       ]
     )
 
@@ -100,45 +101,61 @@ with open(tm_path, 'r', encoding='utf-8') as tm:
         else:
             print(f"Column '{args.lang}' does not exist in the TM.")
 
-# Iterate over each line and translate
+# Flag to check if we are inside the frontmatter
+in_frontmatter = False
+tm_lines_lengths = {tm_line:len(tm_line) for tm_line in tm_dict}
 
+# Loop through each line of the source text
 for line in split_source_text:
-    # Use TM suggestion
+
+    # Check if line is the start or end of the frontmatter
+    if line == '---':
+        in_frontmatter = not in_frontmatter
+    
+    # Reproduce frontmatter in the translation
+    if in_frontmatter:
+        translated_lines.append((line, line))
+        continue
+        
+    # Check for existing translation in TM
     if line in tm_dict:
-        tm_dict[line] += "<!-- TM 100 -->"
-        translated_lines.append((line, tm_dict[line]))
+        translated_lines.append((line, tm_dict[line] + "<!-- TM 100 -->"))
+
+    # Check for existing ChatGPT translation
+    elif line in translated_dict:
+        translated_lines.append((line, translated_dict[line]))
     else:
-    # Initialize variables to find the line with the smallest Levenshtein distance
-        min_distance = None
-        closest_line = None
-        for key in tm_dict:
-            if len(line) == 0:
-                print(line)
-                distance = 100
-            else:
-                # Calculate the Levenshtein distance and normalize it using the length of 'line'
-                distance = lev.distance(line, key) / (len(line))
-                # Update min_distance and closest_line if this is the smallest distance so far
-                if min_distance is None or distance < min_distance:
-                    min_distance = distance
-                    closest_line = key
+        # Find closest line in TM
+        lower_threshold = 0.05
+        upper_threshold = 0.4
+        closest_line, min_distance = None, float('inf')
+        line_length = len(line)
+
+        # Calculate Levenshtein distance and normalize it
+        for tm_line, tm_line_length in tm_lines_lengths.items():
+            distance = lev.distance(line, tm_line)
+            normalized_distance = distance / max(line_length, tm_line_length)
+
+            # Update closest match if a closer one is found
+            if normalized_distance < min_distance:
+                closest_line, min_distance = tm_line, normalized_distance
+            
+            # Early exit if a sufficiently closed match is found
+            if normalized_distance < lower_threshold:
+                break
 
         # If the smallest distance is below the threshold (0.4 in this case)
-        if min_distance is not None and min_distance < 0.4:
-            # Use the translation of the line with the smallest distance
-            tm_dict[closest_line] += f"<!-- TM {distance*100} -->"
-            translated_lines.append((line, tm_dict[closest_line]))
-            # Print the line and its closest match's translation
+        if min_distance < upper_threshold:
+            fuzzy_match_score = (1 - min_distance)
+            translated_lines.append((line, tm_dict[closest_line] + f"<!-- TM {fuzzy_match_score*100:.0f} -->"))
+            
 
     print(line)
     if line in tm_dict:
         print(tm_dict[line])
     
-
-    
     # Use existing translation if line was previously translated by GPT
-    if line in translated_dict:
-        translated_lines.append((line, translated_dict[line]))
+    elif line in translated_dict:
         print(line)
         print(translated_dict[line])
     
