@@ -49,7 +49,7 @@ with open(tm_path, 'r', encoding='utf-8') as tm:
         segments.append((row['en'], row[args.lang]))
 
 # Create scraped segments file
-scraped_segments = os.path.join(output_dir, 'scraped_segments.jsonl')
+scraped_segments = os.path.join(output_dir, f'en-{args.lang}_scraped_segments.jsonl')
 
 # Write tuple content in the JSONL file.
 with open(scraped_segments, 'w', encoding='utf-8') as scraped_segments_file:
@@ -73,14 +73,14 @@ with open (scraped_segments, 'r', encoding='utf-8') as scraped_segments_file:
 train_data, validation_data = train_test_split(data, test_size=0.2, random_state=42)
 
 # Write train data to a new file
-train_file = os.path.join(output_dir, 'train_data.jsonl')
+train_file = os.path.join(output_dir, f'en-{args.lang}_train_data.jsonl')
 with open(train_file, 'w', encoding='utf-8') as train_file:
     for entry in train_data:
         json.dump(entry, train_file, ensure_ascii=False)
         train_file.write('\n')
 
 # Write validation data to a new file
-validation_file = os.path.join(output_dir, 'validation_data.jsonl')
+validation_file = os.path.join(output_dir, f'en-{args.lang}_validation_data.jsonl')
 with open(validation_file, 'w', encoding='utf-8') as validation_file:
     for entry in validation_data:
         json.dump(entry, validation_file, ensure_ascii=False)
