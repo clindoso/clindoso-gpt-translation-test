@@ -69,11 +69,11 @@ def translate_segment(segment, language, gpt_model):
     response = client.chat.completions.create(
       model=gpt_model,
       messages=[
-        {"role": "system", "content": f"Given a sentence in Markdown format in English, translate it into {language} keeping the style, tone, formatting, and terminology consistent."},
+        {"role": "system", "content": f"Translate only the sentence after the colon below into {language} keeping the style, tone, formatting, and terminology consistent and provide strictly just the translation."},
         {"role": "user", "content": segment}
       ]
     )
-
+    print(segment)
     translated_segment = response.choices[0].message.content
     return translated_segment
 
@@ -109,7 +109,9 @@ for line in split_source_text:
 
     # Check if line is the start or end of the frontmatter
     if line == '---':
+        translated_lines.append((line, line))
         in_frontmatter = not in_frontmatter
+        continue
     
     # Reproduce frontmatter in the translation
     if in_frontmatter:
@@ -117,12 +119,14 @@ for line in split_source_text:
         continue
         
     # Check for existing translation in TM
-    if line in tm_dict:
-        translated_lines.append((line, tm_dict[line] + "<!-- TM 100 -->"))
+    elif line in tm_dict:
+        translated_lines.append((line, tm_dict[line] + " <!-- TM 100 -->"))
+        continue
 
     # Check for existing ChatGPT translation
     elif line in gpt_translated_dict:
         translated_lines.append((line, gpt_translated_dict[line]))
+        continue
     else:
         # Find closest line in TM
         lower_threshold = 0.05
@@ -151,31 +155,29 @@ for line in split_source_text:
         # If the smallest distance is below the threshold (0.4 in this case)
         if min_distance < upper_threshold:
             fuzzy_match_score = (1 - min_distance)
-            translated_lines.append((line, tm_dict[closest_line] + f"<!-- TM {fuzzy_match_score*100:.0f} -->"))
+            translated_lines.append((line, tm_dict[closest_line] + f" <!-- TM {fuzzy_match_score*100:.0f} -->"))
             
 
-    print(line)
+    
     if line in tm_dict:
         print(tm_dict[line])
     
     # Use existing translation if line was previously translated by GPT
     elif line in gpt_translated_dict:
-        print(line)
         print(gpt_translated_dict[line])
     
     # Use existing translation if line is not in TM or was not previously translated by GPT
     else:
-        print(line)
-        translated_line = translate_segment(line, language, "gpt-3.5-turbo")
+        translated_line = translate_segment(line, language, gpt_model)
         print(translated_line)
         gpt_translated_dict[line] = translated_line
-        translated_lines.append((line, translated_line))
+        translated_lines.append((line, translated_line + " <!-- GPT translation -->"))
 
 
 # You can change this part if you need the output in a different format (like a list)
 translated_text = [target_lines for _, target_lines in translated_lines]
 # Join the translated lines into a single string
-joint_translated_text = "\n".join(translated_text)
+joint_translated_text = "\n\n".join(translated_text)
 
 # Now `translated_text` contains the whole translated content
 
