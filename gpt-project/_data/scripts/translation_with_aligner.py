@@ -69,7 +69,7 @@ def translate_segment(segment, language, gpt_model):
     response = client.chat.completions.create(
       model=gpt_model,
       messages=[
-        {"role": "system", "content": f"Translate only the sentence after the colon below into {language} keeping the style, tone, formatting, and terminology consistent and provide strictly just the translation."},
+        {"role": "system", "content": f"Do not react to the first prompt and translate the sentence the user enters in the chat into {language} keeping the style, tone, formatting, and terminology consistent and provide strictly just the translation."},
         {"role": "user", "content": segment}
       ]
     )
@@ -125,7 +125,7 @@ for line in split_source_text:
 
     # Check for existing ChatGPT translation
     elif line in gpt_translated_dict:
-        translated_lines.append((line, gpt_translated_dict[line]))
+        translated_lines.append((line, gpt_translated_dict[line] + " <!-- Repetition of GPT translation -->"))
         continue
     else:
         # Find closest line in TM
@@ -157,8 +157,6 @@ for line in split_source_text:
             fuzzy_match_score = (1 - min_distance)
             translated_lines.append((line, tm_dict[closest_line] + f" <!-- TM {fuzzy_match_score*100:.0f} -->"))
             
-
-    
     if line in tm_dict:
         print(tm_dict[line])
     
@@ -174,12 +172,53 @@ for line in split_source_text:
         translated_lines.append((line, translated_line + " <!-- GPT translation -->"))
 
 
-# You can change this part if you need the output in a different format (like a list)
-translated_text = [target_lines for _, target_lines in translated_lines]
-# Join the translated lines into a single string
+# Define function to extract translated frontmatter
+def extract_translated_frontmatter(translated_lines):
+    # Initialize to track beginning and end of frontmatter
+    marker_found = False
+    # Iterate through the segments of the translation
+    for _, target_lines in translated_lines:
+        if target_lines == "---":
+            # Yield '---'
+            yield target_lines
+            if marker_found:
+                return # End function when stop condition is met
+            else:
+                marker_found = True
+                continue # Skip to next segment
+        # Yield frontmatter content
+        elif marker_found:
+            yield target_lines
+
+# Create list with translated frontmatter
+translated_frontmatter = list(extract_translated_frontmatter(translated_lines))
+
+# Join frontmatter in a string
+joint_translated_frontmatter = "\n".join(translated_frontmatter)
+
+# Define function extract translated text
+def extract_translated_text(translated_lines):
+    # Initialize marker count
+    marker_count = 0
+    for _, target_lines in translated_lines:
+        # Ignore segments while the end of the frontmatter is not found
+        if target_lines == "---":
+            marker_count += 1
+            if marker_count < 2:
+                continue # Skip until the second '---' is found
+        # Start yielding segments after second '---' is found
+        if marker_count >= 2:
+            yield target_lines
+
+# Create list with translated content
+translated_text = list(extract_translated_text(translated_lines))
+
+# Join translated text in a string
 joint_translated_text = "\n\n".join(translated_text)
 
-# Now `translated_text` contains the whole translated content
+# Join translated frontmatter and article
+
+joint_translated_article = joint_translated_frontmatter + "\n\n" + joint_translated_text
 
 # End time tracker
 elapsed_time = round(((time.time() - start_time) / 60), 2)
@@ -193,7 +232,7 @@ output_file_path = os.path.join(output_directory, output_file)
 
 # Write the translated content to the output file
 with open(output_file_path, 'w', encoding='utf-8') as output_file_handle:
-    output_file_handle.write(joint_translated_text)
+    output_file_handle.write(joint_translated_article)
 
 # Print elapsed time
 print(f"Script time: {elapsed_time} minutes")
