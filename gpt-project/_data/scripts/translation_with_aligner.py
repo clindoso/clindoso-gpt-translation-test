@@ -102,61 +102,61 @@ with open(tm_path, 'r', encoding='utf-8') as tm:
 
 # Flag to check if we are inside the frontmatter
 in_frontmatter = False
-tm_lines_lengths = {tm_line:len(tm_line) for tm_line in tm_dict}
+tm_segments_lengths = {tm_segment:len(tm_segment) for tm_segment in tm_dict}
 
-# Loop through each line of the source text
-for line in split_source_text:
+# Loop through each segment of the source text
+for segment in split_source_text:
 
-    # Check if line is the start or end of the frontmatter
-    if line == '---':
-        translated_segments.append((line, line))
+    # Check if segment is the start or end of the frontmatter
+    if segment == '---':
+        translated_segments.append((segment, segment))
         in_frontmatter = not in_frontmatter
         continue
     
     # Reproduce frontmatter in the translation
     if in_frontmatter:
-        translated_segments.append((line, line))
+        translated_segments.append((segment, segment))
         continue
 
-    # Ignore commented out lines
-    elif line.startswith("<!--"):
-        translated_segments.append((line, line))
+    # Ignore commented out segments
+    elif segment.startswith("<!--"):
+        translated_segments.append((segment, segment))
         continue
         
     # Check for existing translation in TM
-    elif line in tm_dict:
-        translated_segments.append((line, tm_dict[line] + " <!-- TM 100 -->"))
+    elif segment in tm_dict:
+        translated_segments.append((segment, tm_dict[segment] + " <!-- TM 100 -->"))
         continue
 
     # Check for existing ChatGPT translation
-    elif line in gpt_translated_dict:
-        translated_segments.append((line, gpt_translated_dict[line] + " <!-- Repetition of GPT translation -->"))
+    elif segment in gpt_translated_dict:
+        translated_segments.append((segment, gpt_translated_dict[segment] + " <!-- Repetition of GPT translation -->"))
         continue
     
-    elif line == '':
-        translated_segments.append((line, line))
+    elif segment == '':
+        translated_segments.append((segment, segment))
         continue
 
     else:
-        # Find closest line in TM
+        # Find closest segment in TM
         lower_threshold = 0.05
         upper_threshold = 0.4
-        closest_line, min_distance = None, float('inf')
-        line_length = len(line)
+        closest_segment, min_distance = None, float('inf')
+        segment_length = len(segment)
 
         # Iterate through the TM segments
-        for tm_line, tm_line_length in tm_lines_lengths.items():
+        for tm_segment, tm_segment_length in tm_segments_lengths.items():
             # If the length difference is too large, skip calculation
-            if abs(line_length - tm_line_length) / max(line_length, tm_line_length) > upper_threshold:
+            if abs(segment_length - tm_segment_length) / max(segment_length, tm_segment_length) > upper_threshold:
                 continue
 
             # Calculate Levenshtein distance and normalize it
-            distance = lev.distance(line, tm_line)
-            normalized_distance = distance / max(line_length, tm_line_length)
+            distance = lev.distance(segment, tm_segment)
+            normalized_distance = distance / max(segment_length, tm_segment_length)
 
             # Update closest match if a closer one is found
             if normalized_distance < min_distance:
-                closest_line, min_distance = tm_line, normalized_distance
+                closest_segment, min_distance = tm_segment, normalized_distance
             
             # Early exit if a sufficiently closed match is found
             if normalized_distance < lower_threshold:
@@ -165,22 +165,20 @@ for line in split_source_text:
         # If the smallest distance is below the threshold (0.4 in this case), use content of TM
         if min_distance < upper_threshold:
             fuzzy_match_score = (1 - min_distance)
-            translated_segments.append((line, tm_dict[closest_line] + f" <!-- TM {fuzzy_match_score*100:.0f} -->"))
+            translated_segments.append((segment, tm_dict[closest_segment] + f" <!-- TM {fuzzy_match_score*100:.0f} -->"))
         # If the smallest distance is above the threshold (0.4), translate via ChatGPT
         else:
-            translated_line = translate_segment(line, language, gpt_model)
-            print(translated_line + " this is the translated_line")
-            gpt_translated_dict[line] = translated_line
-            translated_segments.append((line, translated_line + " <!-- GPT translation -->"))
+            translated_segment = translate_segment(segment, language, gpt_model)
+            print(translated_segment + " this is the translated_segment")
+            gpt_translated_dict[segment] = translated_segment
+            translated_segments.append((segment, translated_segment + " <!-- GPT translation -->"))
                 
-    if line in tm_dict:
-        print(tm_dict[line] + " this is the tm_dict")
+    if segment in tm_dict:
+        print(tm_dict[segment] + " this is the tm_dict")
     
-    # Use existing translation if line was previously translated by GPT
-    elif line in gpt_translated_dict:
-        print(gpt_translated_dict[line] + " this is the gpt_translated_dict")
-    
-    # Use existing translation if line is not in TM or was not previously translated by GPT
+    # Use existing translation if segment was previously translated by GPT
+    elif segment in gpt_translated_dict:
+        print(gpt_translated_dict[segment] + " this is the gpt_translated_dict")
 
 
 # Define function to extract translated frontmatter
@@ -188,10 +186,10 @@ def extract_translated_frontmatter(translated_segments):
     # Initialize to track beginning and end of frontmatter
     marker_found = False
     # Iterate through the segments of the translation
-    for _, target_lines in translated_segments:
-        if target_lines == "---":
+    for _, target_segments in translated_segments:
+        if target_segments == "---":
             # Yield '---'
-            yield target_lines
+            yield target_segments
             if marker_found:
                 return # End function when stop condition is met
             else:
@@ -199,7 +197,7 @@ def extract_translated_frontmatter(translated_segments):
                 continue # Skip to next segment
         # Yield frontmatter content
         elif marker_found:
-            yield target_lines
+            yield target_segments
 
 # Create list with translated frontmatter
 translated_frontmatter = list(extract_translated_frontmatter(translated_segments))
@@ -211,17 +209,17 @@ joint_translated_frontmatter = "\n".join(translated_frontmatter)
 def extract_translated_text(translated_segments):
     # Initialize marker count
     marker_count = 0
-    for _, target_lines in translated_segments:
+    for _, target_segments in translated_segments:
         # Ignore segments while the end of the frontmatter is not found
-        if target_lines == "---":
+        if target_segments == "---":
             marker_count += 1
             if marker_count < 2:
                 continue # Skip until the second '---' is found
         # Start yielding segments after second '---' is found
-        if target_lines == "---" and marker_count >= 2:
+        if target_segments == "---" and marker_count >= 2:
             continue
         elif marker_count >= 2:
-            yield target_lines
+            yield target_segments
 
 # Create list with translated content
 translated_text = list(extract_translated_text(translated_segments))
