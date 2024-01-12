@@ -35,7 +35,7 @@ language_models = {
     "nl": {"language": "Dutch", "model": "ft:gpt-3.5-turbo-1106:personal::8SkFElMK", "tm_path": "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/tm/en-nl.csv"}
 }
 
-# Conditional for language-specific arguments
+# Check if language is supported
 
 if args.lang in language_models:
     language = language_models[args.lang]["language"]
@@ -51,7 +51,7 @@ else:
           "nl" for Dutch
     """)
 
-# Conditional for source path
+# Check if source path exists
 
 if not os.path.exists(args.source):
     print("This is not a valid source text file.")
@@ -73,7 +73,7 @@ def translate_segment(segment, language, gpt_model):
         {"role": "user", "content": segment}
       ]
     )
-    print(segment)
+    print(segment + "this is the segment")
     translated_segment = response.choices[0].message.content
     return translated_segment
 
@@ -109,7 +109,7 @@ for line in split_source_text:
 
     # Check if line is the start or end of the frontmatter
     if line == '---':
-        translated_lines.append((line, line))
+        translated_lines.append((line, line + " this is the frontmatter"))
         in_frontmatter = not in_frontmatter
         continue
     
@@ -127,6 +127,11 @@ for line in split_source_text:
     elif line in gpt_translated_dict:
         translated_lines.append((line, gpt_translated_dict[line] + " <!-- Repetition of GPT translation -->"))
         continue
+    
+    elif line == '':
+        translated_lines.append((line, line))
+        continue
+
     else:
         # Find closest line in TM
         lower_threshold = 0.05
@@ -152,24 +157,25 @@ for line in split_source_text:
             if normalized_distance < lower_threshold:
                 break
 
-        # If the smallest distance is below the threshold (0.4 in this case)
+        # If the smallest distance is below the threshold (0.4 in this case), use content of TM
         if min_distance < upper_threshold:
             fuzzy_match_score = (1 - min_distance)
             translated_lines.append((line, tm_dict[closest_line] + f" <!-- TM {fuzzy_match_score*100:.0f} -->"))
-            
+        # If the smallest distance is above the threshold (0.4), translate via ChatGPT
+        else:
+            translated_line = translate_segment(line, language, gpt_model)
+            print(translated_line + " this is the translated_line")
+            gpt_translated_dict[line] = translated_line
+            translated_lines.append((line, translated_line + " <!-- GPT translation -->"))
+                
     if line in tm_dict:
-        print(tm_dict[line])
+        print(tm_dict[line] + " this is the tm_dict")
     
     # Use existing translation if line was previously translated by GPT
     elif line in gpt_translated_dict:
-        print(gpt_translated_dict[line])
+        print(gpt_translated_dict[line] + " this is the gpt_translated_dict")
     
     # Use existing translation if line is not in TM or was not previously translated by GPT
-    else:
-        translated_line = translate_segment(line, language, gpt_model)
-        print(translated_line)
-        gpt_translated_dict[line] = translated_line
-        translated_lines.append((line, translated_line + " <!-- GPT translation -->"))
 
 
 # Define function to extract translated frontmatter
@@ -214,7 +220,7 @@ def extract_translated_text(translated_lines):
 translated_text = list(extract_translated_text(translated_lines))
 
 # Join translated text in a string
-joint_translated_text = "\n\n".join(translated_text)
+joint_translated_text = "\n".join(translated_text)
 
 # Join translated frontmatter and article
 
