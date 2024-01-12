@@ -231,7 +231,7 @@ joint_translated_text = "\n".join(translated_text)
 
 # Join translated frontmatter and article
 
-joint_translated_article = joint_translated_frontmatter + "\n\n" + joint_translated_text
+joint_translated_article = joint_translated_frontmatter + "\n" + joint_translated_text
 
 # End time tracker
 elapsed_time = round(((time.time() - start_time) / 60), 2)
