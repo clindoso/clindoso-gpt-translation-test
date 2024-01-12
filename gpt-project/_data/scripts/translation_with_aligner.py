@@ -82,11 +82,11 @@ def translate_segment(segment, language, gpt_model):
 
 source_text = read_file(args.source)
 
-# Split text into lines
+# Split text into segmetns
 split_source_text = source_text.splitlines()
 
-# Initialize an empty list to store translated lines
-translated_lines = []
+# Initialize an empty list to store translated segments
+translated_segments = []
 # Initialize an empty dictionary to store GPT translations for repetitions
 gpt_translated_dict = {}
 
@@ -109,32 +109,32 @@ for line in split_source_text:
 
     # Check if line is the start or end of the frontmatter
     if line == '---':
-        translated_lines.append((line, line))
+        translated_segments.append((line, line))
         in_frontmatter = not in_frontmatter
         continue
     
     # Reproduce frontmatter in the translation
     if in_frontmatter:
-        translated_lines.append((line, line))
+        translated_segments.append((line, line))
         continue
 
     # Ignore commented out lines
     elif line.startswith("<!--"):
-        translated_lines.append((line, line))
+        translated_segments.append((line, line))
         continue
         
     # Check for existing translation in TM
     elif line in tm_dict:
-        translated_lines.append((line, tm_dict[line] + " <!-- TM 100 -->"))
+        translated_segments.append((line, tm_dict[line] + " <!-- TM 100 -->"))
         continue
 
     # Check for existing ChatGPT translation
     elif line in gpt_translated_dict:
-        translated_lines.append((line, gpt_translated_dict[line] + " <!-- Repetition of GPT translation -->"))
+        translated_segments.append((line, gpt_translated_dict[line] + " <!-- Repetition of GPT translation -->"))
         continue
     
     elif line == '':
-        translated_lines.append((line, line))
+        translated_segments.append((line, line))
         continue
 
     else:
@@ -165,13 +165,13 @@ for line in split_source_text:
         # If the smallest distance is below the threshold (0.4 in this case), use content of TM
         if min_distance < upper_threshold:
             fuzzy_match_score = (1 - min_distance)
-            translated_lines.append((line, tm_dict[closest_line] + f" <!-- TM {fuzzy_match_score*100:.0f} -->"))
+            translated_segments.append((line, tm_dict[closest_line] + f" <!-- TM {fuzzy_match_score*100:.0f} -->"))
         # If the smallest distance is above the threshold (0.4), translate via ChatGPT
         else:
             translated_line = translate_segment(line, language, gpt_model)
             print(translated_line + " this is the translated_line")
             gpt_translated_dict[line] = translated_line
-            translated_lines.append((line, translated_line + " <!-- GPT translation -->"))
+            translated_segments.append((line, translated_line + " <!-- GPT translation -->"))
                 
     if line in tm_dict:
         print(tm_dict[line] + " this is the tm_dict")
@@ -184,11 +184,11 @@ for line in split_source_text:
 
 
 # Define function to extract translated frontmatter
-def extract_translated_frontmatter(translated_lines):
+def extract_translated_frontmatter(translated_segments):
     # Initialize to track beginning and end of frontmatter
     marker_found = False
     # Iterate through the segments of the translation
-    for _, target_lines in translated_lines:
+    for _, target_lines in translated_segments:
         if target_lines == "---":
             # Yield '---'
             yield target_lines
@@ -202,16 +202,16 @@ def extract_translated_frontmatter(translated_lines):
             yield target_lines
 
 # Create list with translated frontmatter
-translated_frontmatter = list(extract_translated_frontmatter(translated_lines))
+translated_frontmatter = list(extract_translated_frontmatter(translated_segments))
 
 # Join frontmatter in a string
 joint_translated_frontmatter = "\n".join(translated_frontmatter)
 
 # Define function extract translated text
-def extract_translated_text(translated_lines):
+def extract_translated_text(translated_segments):
     # Initialize marker count
     marker_count = 0
-    for _, target_lines in translated_lines:
+    for _, target_lines in translated_segments:
         # Ignore segments while the end of the frontmatter is not found
         if target_lines == "---":
             marker_count += 1
@@ -224,7 +224,7 @@ def extract_translated_text(translated_lines):
             yield target_lines
 
 # Create list with translated content
-translated_text = list(extract_translated_text(translated_lines))
+translated_text = list(extract_translated_text(translated_segments))
 
 # Join translated text in a string
 joint_translated_text = "\n".join(translated_text)
