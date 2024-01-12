@@ -54,7 +54,7 @@ else:
 # Check if source path exists
 
 if not os.path.exists(args.source):
-    print(" this is not a valid source text file.")
+    print(" This is not a valid source text file.")
 
 # Extract source file path
 source_directory = os.path.dirname(args.source)
@@ -115,11 +115,11 @@ for line in split_source_text:
     
     # Reproduce frontmatter in the translation
     if in_frontmatter:
-        translated_lines.append((line, line + " this is the frontmatter."))
+        translated_lines.append((line, line))
         continue
 
     # Ignore commented out lines
-    if line.startswith("<!--"):
+    elif line.startswith("<!--"):
         translated_lines.append((line, line))
         continue
         
@@ -218,7 +218,9 @@ def extract_translated_text(translated_lines):
             if marker_count < 2:
                 continue # Skip until the second '---' is found
         # Start yielding segments after second '---' is found
-        if marker_count >= 2:
+        if target_lines == "---" and marker_count >= 2:
+            continue
+        elif marker_count >= 2:
             yield target_lines
 
 # Create list with translated content
