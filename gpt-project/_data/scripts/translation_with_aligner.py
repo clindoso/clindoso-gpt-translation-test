@@ -54,7 +54,7 @@ else:
 # Check if source path exists
 
 if not os.path.exists(args.source):
-    print("This is not a valid source text file.")
+    print(" this is not a valid source text file.")
 
 # Extract source file path
 source_directory = os.path.dirname(args.source)
@@ -69,11 +69,11 @@ def translate_segment(segment, language, gpt_model):
     response = client.chat.completions.create(
       model=gpt_model,
       messages=[
-        {"role": "system", "content": f"Do not react to the first prompt and translate the sentence the user enters in the chat into {language} keeping the style, tone, formatting, and terminology consistent and provide strictly just the translation."},
+        {"role": "system", "content": f"Given a sentence in Markdown format, translate the sentence to {language} keeping the style, tone, formatting, and terminology consistent and provide strictly just the translation."},
         {"role": "user", "content": segment}
       ]
     )
-    print(segment + "this is the segment")
+    print(segment + " this is the segment")
     translated_segment = response.choices[0].message.content
     return translated_segment
 
@@ -109,12 +109,17 @@ for line in split_source_text:
 
     # Check if line is the start or end of the frontmatter
     if line == '---':
-        translated_lines.append((line, line + " this is the frontmatter"))
+        translated_lines.append((line, line))
         in_frontmatter = not in_frontmatter
         continue
     
     # Reproduce frontmatter in the translation
     if in_frontmatter:
+        translated_lines.append((line, line + " this is the frontmatter."))
+        continue
+
+    # Ignore commented out lines
+    if line.startswith("<!--"):
         translated_lines.append((line, line))
         continue
         
