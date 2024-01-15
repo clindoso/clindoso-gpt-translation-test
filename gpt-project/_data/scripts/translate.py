@@ -117,5 +117,36 @@ def translate_article(client, language_code, source_file):
             translated_segments.append((segment, tm_dict[segment] + " <!-- TM 100 -->"))
             continue
         
+        # Check for for existing GPT translation
         elif segment in gpt_translation_dict:
             translated_segments.append((segment, gpt_translation_dict[segment] + " <!-- Repetition of GPT translation"))
+            continue
+        
+        # Reproduce empty lines to keep article formatting
+        elif segment == '':
+            translated_segments.append((segment, segment))
+            continue
+        
+        # Check for fuzzy matches
+        else:
+            # Define upper and lower normalized edit distance
+            lower_threshold = 0.05
+            upper_threshold = 0.4
+            # Initialize closest segment match and max normalized edit distance
+            closest_segment, normalized_min_distance = None, 1
+            # Calculate source segment length
+            segment_length = len(segment)
+
+            # Iterate over TM segment lenghts
+            for tm_segment, tm_segment_length in tm_segments_lengths.items():
+                # Avoid calculation if length difference is over the upper threshold
+                if abs(segment_length - tm_segment_length) / max(segment_length, tm_segment_length) > upper_threshold
+                continue
+
+                # Calculate Levenshtein distance and normalize it
+            distance = lev.distance(segment, tm_segment)
+            normalized_distance = distance / max(segment_length, tm_segment_length)
+
+            # Update closes match if a closer one is found
+
+                
