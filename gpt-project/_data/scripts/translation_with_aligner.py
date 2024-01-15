@@ -10,7 +10,7 @@ import Levenshtein as lev
 
 # Set the OpenAI API key from the environment variable
 client = OpenAI(
-    api_key = os.environ.get("OPEN_API_KEY")
+    api_key = os.environ.get("OPENAI_API_KEY")
 )
 
 # Start time tracker
@@ -87,18 +87,16 @@ split_source_text = source_text.splitlines()
 
 # Initialize an empty list to store translated segments
 translated_segments = []
+
 # Initialize an empty dictionary to store GPT translations for repetitions
-gpt_translated_dict = {}
+gpt_translation_dict = {}
 
 # Read the TM and extract the 'en' column and the translation
 tm_dict = {}
 with open(tm_path, 'r', encoding='utf-8') as tm:
     reader = csv.DictReader(tm)
     for row in reader:
-        if args.lang in row:
-            tm_dict[row['en']] = row[args.lang]
-        else:
-            print(f"Column '{args.lang}' does not exist in the TM.")
+        tm_dict[row['en']] = row[args.lang]
 
 # Flag to check if we are inside the frontmatter
 in_frontmatter = False
@@ -129,8 +127,8 @@ for segment in split_source_text:
         continue
 
     # Check for existing ChatGPT translation
-    elif segment in gpt_translated_dict:
-        translated_segments.append((segment, gpt_translated_dict[segment] + " <!-- Repetition of GPT translation -->"))
+    elif segment in gpt_translation_dict:
+        translated_segments.append((segment, gpt_translation_dict[segment] + " <!-- Repetition of GPT translation -->"))
         continue
     
     elif segment == '':
@@ -170,15 +168,15 @@ for segment in split_source_text:
         else:
             translated_segment = translate_segment(segment, language, gpt_model)
             print(translated_segment + " this is the translated_segment")
-            gpt_translated_dict[segment] = translated_segment
+            gpt_translation_dict[segment] = translated_segment
             translated_segments.append((segment, translated_segment + " <!-- GPT translation -->"))
                 
     if segment in tm_dict:
         print(tm_dict[segment] + " this is the tm_dict")
     
     # Use existing translation if segment was previously translated by GPT
-    elif segment in gpt_translated_dict:
-        print(gpt_translated_dict[segment] + " this is the gpt_translated_dict")
+    elif segment in gpt_translation_dict:
+        print(gpt_translation_dict[segment] + " this is the gpt_translation_dict")
 
 
 # Define function to extract translated frontmatter
