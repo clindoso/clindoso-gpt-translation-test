@@ -186,3 +186,24 @@ def translate_article(client, language_code, source_file):
     
     # Return list of tuples with source and target segments
     return translated_segments
+
+def extract_translated_frontmatter(translated_segments):
+    # Flag to track beginning and end of frontmatter
+    marker_found = False
+    # Iterate over the segments of the translation
+    for _, target_segment in translated_segments:
+        # If the segment is the frontmatter delimiter
+        if target_segment == "---":
+            # Reproduces delimiter '---'
+            yield target_segment
+            # Check if the flag is true when checking the delimiter
+            if marker_found:
+                return # End function when stop condition is met
+            else:
+                marker_found = True
+                continue # Skip to next segment
+        # Reproduce frontmatter content
+        elif marker_found:
+            yield target_segment
+    
+
