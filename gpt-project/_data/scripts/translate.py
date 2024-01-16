@@ -25,6 +25,25 @@ def parse_arguments():
     args = parser.parse_args()
     return args.lang, args.source
 
+def translate_segment(client, segment, language, gpt_model):
+    # Translates a segment using ChatGPT
+    # Parameters:
+    #   client: OpenAI client object
+    #   segment: Segment to be translated
+    #   language_code: Target language code
+    #   gpt_model: ChatGPT model
+    # Returns the translated segment
+    response = client.chat.completions.create(
+    model=gpt_model,
+    messages=[
+        {"role": "system", "content": f"Given a sentence in Markdown format, translate the sentence to {language} keeping the style, tone, formatting, and terminology consistent and provide strictly just the translation."},
+        {"role": "user", "content": segment}
+      ]
+    )
+    print(segment + " This is the segment")
+    translated_segment = response.choices[0].message.content
+    return translated_segment
+
 def translate_article(client, language_code, source_file):
     # Translate the content of the source file using the specified language model.
     # Parameters:
@@ -161,7 +180,9 @@ def translate_article(client, language_code, source_file):
                 translated_segments.append((segment, tm_dict[closest_segment] + f" <!-- TM {fuzzy_match_score} -->"))
             # If the smallest distance is above the lower threshold, translate using ChatGPT
             else:
-                translated_segment = translate_segment(segment, language, gpt_model)
+                translated_segment = translate_segment(client, segment, language, gpt_model)
                 gpt_translation_dict[segment] = translated_segment
                 translated_segments.append((segment, translated_segment + " <!-- GPT translation -->"))
+    
+    # Return list of tuples with source and target segments
     return translated_segments
