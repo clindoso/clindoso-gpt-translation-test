@@ -141,12 +141,27 @@ def translate_article(client, language_code, source_file):
             for tm_segment, tm_segment_length in tm_segments_lengths.items():
                 # Avoid calculation if length difference is over the upper threshold
                 if abs(segment_length - tm_segment_length) / max(segment_length, tm_segment_length) > upper_threshold
-                continue
+                    continue
 
                 # Calculate Levenshtein distance and normalize it
-            distance = lev.distance(segment, tm_segment)
-            normalized_distance = distance / max(segment_length, tm_segment_length)
+                distance = lev.distance(segment, tm_segment)
+                normalized_distance = distance / max(segment_length, tm_segment_length)
 
-            # Update closes match if a closer one is found
+                # Update closes match if a closer one is found
+                if normalized_distance < normalized_min_distance:
+                    closest_segment, normalized_min_distance = tm_segment, normalized_distance
 
-                
+                # Early exit if a sufficiently close match is found
+                if normalized_distance < lower_threshold:
+                    break
+
+            # If the smallest distance is below the threshold, use content of TM
+            if normalized_min_distance < upper_threshold:
+                fuzzy_match_score = (1 - normalized_min_distance)
+                translated_segments.append((segment, tm_dict[closest_segment] + f" <!-- TM {fuzzy_match_score} -->"))
+            # If the smallest distance is above the lower threshold, translate using ChatGPT
+            else:
+                translated_segment = translate_segment(segment, language, gpt_model)
+                gpt_translation_dict[segment] = translated_segment
+                translated_segments.append((segment, translated_segment + " <!-- GPT translation -->"))
+    return translated_segments
