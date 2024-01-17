@@ -50,27 +50,6 @@ def read_and_parse_source(source):
 
     return split_source_text
 
-def translate_segment(client, segment, language, gpt_model):
-    """
-    Translates a segment using ChatGPT
-    Parameters:
-      client: OpenAI client object
-      segment: Segment to be translated
-      lang: Target language code
-      gpt_model: ChatGPT model
-    Returns the translated segment
-    """
-    response = client.chat.completions.create(
-    model=gpt_model,
-    messages=[
-        {"role": "system", "content": f"Given a sentence in Markdown format, translate the sentence to {language} keeping the style, tone, formatting, and terminology consistent and provide strictly just the translation."},
-        {"role": "user", "content": segment}
-      ]
-    )
-    print(segment + " This is the segment")
-    translated_segment = response.choices[0].message.content
-    return translated_segment
-
 def initialize_language_model(lang):
     """
     Initializes language model.
@@ -102,6 +81,47 @@ def initialize_language_model(lang):
 
     return language_models[lang]
 
+def initialize_translation_memory(lang, tm_path):
+    """
+    Initializes the translation memory of the target language
+    Parameters:
+        lang: Target language code
+        tm_path: Translation memory path
+    Returns dictionary with the TM
+    """
+    # Initialize tm dictionary to use TM content in the translation
+    tm_dict = {}
+    # Read the TM and extract the 'en' and target language column
+    with open(tm_path, 'r', encoding='utf-8') as tm:
+        reader = csv.DictReader(tm)
+        for row in reader:
+            tm_dict[row['en']] = row[lang]
+    
+    return tm_dict
+
+
+def translate_segment(client, segment, language, gpt_model):
+    """
+    Translates a segment using ChatGPT
+    Parameters:
+      client: OpenAI client object
+      segment: Segment to be translated
+      lang: Target language code
+      gpt_model: ChatGPT model
+    Returns the translated segment
+    """
+    response = client.chat.completions.create(
+    model=gpt_model,
+    messages=[
+        {"role": "system", "content": f"Given a sentence in Markdown format, translate the sentence to {language} keeping the style, tone, formatting, and terminology consistent and provide strictly just the translation."},
+        {"role": "user", "content": segment}
+      ]
+    )
+    
+    translated_segment = response.choices[0].message.content
+
+    return translated_segment
+
 def translate_article(client, lang, split_source_text):
     """
     Translate the content of the source file using the specified language model.
@@ -112,29 +132,29 @@ def translate_article(client, lang, split_source_text):
     Returns the translated text.
     """
 
-    # Define language models
-    language_models = {
-        # "de": {"language": "German", "model": , "tm": "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/tm/en-de.csv"},
-        "es": {"language": "Spanish", "model": "ft:gpt-3.5-turbo-1106:personal::8SkFElMK", "tm": "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/tm/en-fr.csv"},
-        # "fr": {"language": "French", "model": "", "tm": "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/tm/en-fr.csv"},
-        # "it": {"language": "Italian", "model": "", "tm": "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/tm/en-it.csv"},
-        "nl": {"language": "Dutch", "model": "ft:gpt-3.5-turbo-1106:personal::8f4GFKBA", "tm_path": "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/tm/en-nl.csv"}
-    }
+    # # Define language models
+    # language_models = {
+    #     # "de": {"language": "German", "model": , "tm": "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/tm/en-de.csv"},
+    #     "es": {"language": "Spanish", "model": "ft:gpt-3.5-turbo-1106:personal::8SkFElMK", "tm": "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/tm/en-fr.csv"},
+    #     # "fr": {"language": "French", "model": "", "tm": "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/tm/en-fr.csv"},
+    #     # "it": {"language": "Italian", "model": "", "tm": "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/tm/en-it.csv"},
+    #     "nl": {"language": "Dutch", "model": "ft:gpt-3.5-turbo-1106:personal::8f4GFKBA", "tm_path": "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/tm/en-nl.csv"}
+    # }
 
-    # Initialize language model
-    if lang in language_models:
-        language = language_models[lang]["language"]
-        gpt_model = language_models[lang]["model"]
-        tm_path = language_models[lang]["tm_path"]
-    else:
-        print("""
-              You entered an invalid language code. Use one of the following:
-              "de" for German
-              "es" for Spanish
-              "fr" for French
-              "it" for Italian
-              "nl" for Dutch
-        """)
+    # # Initialize language model
+    # if lang in language_models:
+    #     language = language_models[lang]["language"]
+    #     gpt_model = language_models[lang]["model"]
+    #     tm_path = language_models[lang]["tm_path"]
+    # else:
+    #     print("""
+    #           You entered an invalid language code. Use one of the following:
+    #           "de" for German
+    #           "es" for Spanish
+    #           "fr" for French
+    #           "it" for Italian
+    #           "nl" for Dutch
+    #     """)
 
     # Initialize empty list to store translated segments from the article
     translated_segments = []
@@ -142,14 +162,14 @@ def translate_article(client, lang, split_source_text):
     # Initialize empty dictionary to store GPT translations for repetitions
     gpt_translation_dict = {}
 
-    # Initialize tm dictionary to use TM content in the translation
-    tm_dict = {}
+    # # Initialize tm dictionary to use TM content in the translation
+    # tm_dict = {}
 
-    # Read the TM and extract the 'en' and target language column
-    with open(tm_path, 'r', encoding='utf-8') as tm:
-        reader = csv.DictReader(tm)
-        for row in reader:
-            tm_dict[row['en']] = row[lang]
+    # # Read the TM and extract the 'en' and target language column
+    # with open(tm_path, 'r', encoding='utf-8') as tm:
+    #     reader = csv.DictReader(tm)
+    #     for row in reader:
+    #         tm_dict[row['en']] = row[lang]
 
     # Flag to check frontmatter
     in_frontmatter = False
