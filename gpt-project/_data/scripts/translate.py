@@ -205,5 +205,32 @@ def extract_translated_frontmatter(translated_segments):
         # Reproduce frontmatter content
         elif marker_found:
             yield target_segment
+
+def extract_translated_text(translated_segments):
+    # Initialize marker count
+    marker_count = 0
+    for _, target_segments in translated_segments:
+        # Check for frontmatter delimiter
+        if target_segments == "---":
+            marker_count += 1
+            # Skip segments until the second frontmatter delimiter is found
+            if marker_count < 2:
+                continue
+            # Start yielding segments after second
     
 
+
+
+
+
+
+
+# Create list with translated content
+translated_text = list(extract_translated_text(translated_segments))
+
+# Join translated text in a string
+joint_translated_text = "\n".join(translated_text)
+
+# Join translated frontmatter and article
+
+joint_translated_article = joint_translated_frontmatter + "\n" + joint_translated_text
