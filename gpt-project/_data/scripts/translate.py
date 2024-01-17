@@ -44,12 +44,12 @@ def translate_segment(client, segment, language, gpt_model):
     translated_segment = response.choices[0].message.content
     return translated_segment
 
-def translate_article(client, language_code, source_file):
+def translate_article(client, language_code, source):
     # Translate the content of the source file using the specified language model.
     # Parameters:
     #   client: OpenAI client object
     #   language_code: Target language code
-    #   source_file: Path to the source file
+    #   source: Path to the source file
     # Returns the translated text.
 
     # Define language models
@@ -77,14 +77,14 @@ def translate_article(client, language_code, source_file):
         """)
     
     # Check if source path exists
-    if not os.path.exists(source_file):
+    if not os.path.exists(source):
         print("Source file not found. Check the source file path entered.")
     
     # Extract source file directory
-    source_directory = os.path.dirname(source_file)
+    source_directory = os.path.dirname(source)
 
     # Read source file
-    with open(source_file, 'r') as file:
+    with open(source, 'r') as file:
         source_text = file.read()
     
     # Split text into segmetns
@@ -222,8 +222,6 @@ def extract_translated_text(translated_segments):
         if marker_count == 2:
             yield target_segments
     
-
-
 def main():
     # Start time tracker
     start_time = time.time()
@@ -232,10 +230,10 @@ def main():
     client = initialize_open_ai_client()
 
     # Parse command-line arguments
-    language, source_file = parse_arguments()
+    language, source = parse_arguments()
 
     # Perform the translation
-    translated_segments = translate_article(client, language, source_file)
+    translated_segments = translate_article(client, language, source)
 
     # Create list with translated frontmatter
     translated_frontmatter = list(extract_translated_frontmatter(translated_segments))
@@ -251,6 +249,13 @@ def main():
 
     # Join translated matter and article
     translated_article = joint_translated_frontmatter + "\n" + joint_translated_text
+
+    # Define output filename
+    output_filename = args.source.split('/')[-1]
+    output_directory = os.path.join(source_directory, f"{language}_translation_output/")
+    if not os.path.exists(output_directory):
+        os.makedirs(output_directory)
+    output_filepath = os.path.join(output_directory, output_filename)
 
     # Output the result and time taken
     elapsed_time = time.time() - start_time
