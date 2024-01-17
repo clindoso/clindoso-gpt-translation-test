@@ -6,7 +6,7 @@ import Levenshtein as lev
 from openai import OpenAI
 
 # Use this script to translate whole articles from English into German, Spanish, French, Italian, or Dutch with ChatGPT.
-# The script takes two arguments, --lang and--source, respectively the target language and the source file to be translated.
+# The script takes two arguments, --language and--source, respectively the target language and the source file to be translated.
 
 def initialize_open_ai_client():
     # Initialize OpenAI client using API key
@@ -20,10 +20,10 @@ def parse_arguments():
     # Parse command-line arguments for language and source file.
     # Returns a tuple of (language, source file path).
     parser = argparse.ArgumentParser(description="Script to translate texts using TM and ChatGPT")
-    parser.add_argument("--lang", required=True, help="Target language for translation")
+    parser.add_argument("--language", required=True, help="Target language for translation")
     parser.add_argument("--source", required=True, help="Source file for translation")
     args = parser.parse_args()
-    return args.lang, args.source
+    return args.language, args.source
 
 def translate_segment(client, segment, language, gpt_model):
     # Translates a segment using ChatGPT
@@ -221,7 +221,33 @@ def extract_translated_text(translated_segments):
         # Start yielding segments after second
         if marker_count == 2:
             yield target_segments
+
+def write_translated_file(language, source, translated_article):
+    # Save translated article with the same name of the source file in a subdirectory of the source file
+    # Parameters:
+    #   language: Language for translation
+    #   source: Source file path
+    #   translated_article: Article in target language
+
+    # Extract source directory
+    source_directory = os.path.dirname(source)
     
+    # Define translation file name
+    output_filename = source.split('/')[-1]
+    
+    # Define translation directory
+    output_directory = os.path.join(source_directory, f"{language}_translation_output/")
+    if not os.path.exists(output_directory):
+        os.makedirs(output_directory)
+    
+    # Define translation file path
+    output_filepath = os.path.join(output_directory, output_filename)
+
+    # Write the translated article to the output file
+    with open(output_filepath, 'w', encoding='utf-8') as output_file:
+        output_file.write(translated_article)
+
+
 def main():
     # Start time tracker
     start_time = time.time()
@@ -250,13 +276,9 @@ def main():
     # Join translated matter and article
     translated_article = joint_translated_frontmatter + "\n" + joint_translated_text
 
-    # Define output filename
-    output_filename = args.source.split('/')[-1]
-    output_directory = os.path.join(source_directory, f"{language}_translation_output/")
-    if not os.path.exists(output_directory):
-        os.makedirs(output_directory)
-    output_filepath = os.path.join(output_directory, output_filename)
-
+    # Save file in repository
+    write_translated_file(language, source, translated_article)
+    
     # Output the result and time taken
     elapsed_time = time.time() - start_time
     print(f"Time taken: {elapsed_time} seconds")
