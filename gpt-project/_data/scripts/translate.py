@@ -43,12 +43,12 @@ def read_and_parse_source(source):
 
     # Read source file
     with open(source, 'r') as file:
-        source_text = file.read()
+        file_content = file.read()
     
     # Split text into segmetns
-    split_source_text = source_text.splitlines()
+    source_text = file_content.splitlines()
 
-    return split_source_text
+    return source_text
 
 def initialize_language_model(lang):
     """
@@ -122,7 +122,22 @@ def translate_with_gpt(client, segment, language, gpt_model):
 
     return translated_segment
 
-def translate_article(client, language, split_source_text, tm_dict, gpt_model):
+def handle_frontmatter(segment, in_frontmatter):
+    """
+    Handles the frontmatter segment of the text.
+
+    Parameters:
+        segment (str): The current text segment.
+        in_frontmatter (bool): Flag indicating if we are currently processing frontmatter.
+
+    Returns:
+        tuple: A tuple containing the processed segment and the updated frontmatter flag.
+    """
+    if segment == '---':
+        return (segment, segment), not in_frontmatter
+    return None, in_frontmatter
+
+def translate_article(client, language, source_text, tm_dict, gpt_model):
     """
     Translate the content of the source file using the specified language model.
     Parameters:
@@ -145,7 +160,7 @@ def translate_article(client, language, split_source_text, tm_dict, gpt_model):
     tm_segments_lengths = {tm_segment:len(tm_segment) for tm_segment in tm_dict}
 
     # Iterate over each segment of the source text
-    for segment in split_source_text:
+    for segment in source_text:
 
         # Check if segment is the start or end of the frontmatter
         if segment == '---':
@@ -330,10 +345,10 @@ def main():
     tm_dict = initialize_translation_memory(lang, tm_path)
     
     # Read and parse source file
-    split_source_text = read_and_parse_source(source)
+    source_text = read_and_parse_source(source)
 
     # Perform the translation
-    translated_segments = translate_article(client, language, split_source_text, tm_dict, gpt_model)
+    translated_segments = translate_article(client, language, source_text, tm_dict, gpt_model)
 
     # Create list with translated frontmatter
     translated_frontmatter = extract_translated_frontmatter(translated_segments)
