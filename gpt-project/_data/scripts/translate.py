@@ -151,6 +151,20 @@ def handle_commented_out_segment(segment):
         return (segment, segment)
     return None
 
+def handle_empty_line(segment):
+    """
+    Handles empty line segments for maintaining formatting.
+
+    Parameters:
+        segment (str): The current text segment.
+
+    Returns:
+        tuple or None: Processed segment if it's an empty line, else None.
+    """
+    if segment == '':
+        return (segment, segment)
+    return None
+
 def translate_article(client, language, source_text, tm_dict, gpt_model):
     """
     Translate the content of the source file using the specified language model.
