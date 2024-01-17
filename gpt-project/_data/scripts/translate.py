@@ -99,32 +99,6 @@ def initialize_translation_memory(lang, tm_path):
     
     return tm_dict
 
-
-def translate_with_gpt(client, segment, language, gpt_model):
-    """
-    Translates the segment using GPT.
-
-    Parameters:
-        client (OpenAI client object): The OpenAI client for API requests.
-        segment (str): The current text segment.
-        language (str): Target language code.
-        gpt_model (str): The GPT model to use for translation.
-
-    Returns:
-        str: The translated segment.
-    """
-    response = client.chat.completions.create(
-    model=gpt_model,
-    messages=[
-        {"role": "system", "content": f"Given a sentence in Markdown format, translate the sentence to {language} keeping the style, tone, formatting, and terminology consistent and provide strictly just the translation."},
-        {"role": "user", "content": segment}
-      ]
-    )
-    
-    translated_segment = response.choices[0].message.content
-
-    return translated_segment
-
 def handle_frontmatter(segment, in_frontmatter):
     """
     Handles the frontmatter segment of the text.
@@ -241,6 +215,31 @@ def handle_fuzzy_matches(segment, tm_dict, tm_segments_lengths, lower_threshold,
             return (segment, tm_dict[closest_segment] + f" <!-- TM {fuzzy_match_score*100:.0f} -->")
         
     return None
+
+def translate_with_gpt(client, segment, language, gpt_model):
+    """
+    Translates the segment using GPT.
+
+    Parameters:
+        client (OpenAI client object): The OpenAI client for API requests.
+        segment (str): The current text segment.
+        language (str): Target language code.
+        gpt_model (str): The GPT model to use for translation.
+
+    Returns:
+        str: The translated segment.
+    """
+    response = client.chat.completions.create(
+    model=gpt_model,
+    messages=[
+        {"role": "system", "content": f"Given a sentence in Markdown format, translate the sentence to {language} keeping the style, tone, formatting, and terminology consistent and provide strictly just the translation."},
+        {"role": "user", "content": segment}
+      ]
+    )
+    
+    translated_segment = response.choices[0].message.content
+
+    return translated_segment
 
 def translate_article(client, language, source_text, tm_dict, gpt_model):
     """
