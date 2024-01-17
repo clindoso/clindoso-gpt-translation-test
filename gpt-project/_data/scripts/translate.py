@@ -180,6 +180,21 @@ def check_translation_memory(segment, tm_dict):
         return (segment, tm_dict[segment] + " <!-- TM 100 -->")
     return None
 
+def check_gpt_translations(segment, gpt_translation_dict):
+    """
+    Checks for existing translations of the segment in GPT translation dictionary.
+
+    Parameters:
+        segment (str): The current text segment.
+        gpt_translation_dict (dict): Dictionary containing GPT translations.
+
+    Returns:
+        tuple or None: The GPT translation if available, else None.
+    """
+    if segment in gpt_translation_dict:
+        return (segment, gpt_translation_dict[segment] + " <!-- Repetition of GPT translation")
+    return None
+
 def translate_article(client, language, source_text, tm_dict, gpt_model):
     """
     Translate the content of the source file using the specified language model.
