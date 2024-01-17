@@ -191,12 +191,14 @@ def extract_translated_frontmatter(translated_segments):
     # Copy target frontmatter
     # Flag to track beginning and end of frontmatter
     marker_found = False
+    # Initialize list to store extracted segments
+    extracted_segments = []
     # Iterate over the segments of the translation
     for _, target_segment in translated_segments:
         # If the segment is the frontmatter delimiter
         if target_segment == "---":
             # Reproduces delimiter '---'
-            yield target_segment
+            extracted_segments.append(target_segment)
             # Check if the flag is true when checking the delimiter
             if marker_found:
                 return # End function when stop condition is met
@@ -205,22 +207,35 @@ def extract_translated_frontmatter(translated_segments):
                 continue # Skip to next segment
         # Reproduce frontmatter content
         elif marker_found:
-            yield target_segment
+            extracted_segments.append(target_segment)
+    
+    # Join frontmatter in one string
+    joint_translated_frontmatter = "\n".join(extracted_segments)
+
+    return joint_translated_frontmatter
 
 def extract_translated_text(translated_segments):
     # Copy target text
     # Initialize marker count
     marker_count = 0
-    for _, target_segments in translated_segments:
+    # Initialize list to store extracted segments
+    extracted_segments = []
+    for _, target_segment in translated_segments:
         # Check for frontmatter delimiter
-        if target_segments == "---":
+        if target_segment == "---":
             marker_count += 1
             # Skip segments until the second frontmatter delimiter is found
             if marker_count < 2:
                 continue
-        # Start yielding segments after second
-        if marker_count == 2:
-            yield target_segments
+
+        # Append segments after second '---'
+        if marker_count >= 2:
+            extracted_segments.append(target_segment)
+    
+    # Join text list in one string 
+    joint_translated_text = "\n".join(extracted_segments)
+
+    return joint_translated_text
 
 def write_translated_file(language, source, translated_article):
     # Save translated article with the same name of the source file in a subdirectory of the source file
@@ -262,23 +277,17 @@ def main():
     translated_segments = translate_article(client, language, source)
 
     # Create list with translated frontmatter
-    translated_frontmatter = list(extract_translated_frontmatter(translated_segments))
-
-    # Join frontmatter list in one string 
-    joint_translated_frontmatter = "\n".join(translated_frontmatter)
+    translated_frontmatter = extract_translated_frontmatter(translated_segments)
 
     # Create list with translated text
-    translated_text = list(extract_translated_text(translated_segments))
-
-    # Join list text list in one string
-    joint_translated_text = "\n".join(translated_text)
+    translated_text = extract_translated_text(translated_segments)
 
     # Join translated matter and article
-    translated_article = joint_translated_frontmatter + "\n" + joint_translated_text
+    translated_article = translated_frontmatter + "\n" + translated_text
 
     # Save file in repository
     write_translated_file(language, source, translated_article)
-    
+
     # Output the result and time taken
     elapsed_time = time.time() - start_time
     print(f"Time taken: {elapsed_time} seconds")
