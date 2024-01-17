@@ -6,7 +6,7 @@ import Levenshtein as lev
 from openai import OpenAI
 
 # Use this script to translate whole articles from English into German, Spanish, French, Italian, or Dutch with ChatGPT.
-# The script takes two arguments, --language and--source, respectively the target language and the source file to be translated.
+# The script takes two arguments, --lang and--source, respectively the target language and the source file to be translated.
 
 def initialize_open_ai_client():
     # Initialize OpenAI client using API key
@@ -22,10 +22,10 @@ def parse_arguments():
     Returns a tuple of (language, source file path).
     """
     parser = argparse.ArgumentParser(description="Script to translate texts using TM and ChatGPT")
-    parser.add_argument("--language", required=True, help="Target language for translation")
+    parser.add_argument("--lang", required=True, help="Target language for translation")
     parser.add_argument("--source", required=True, help="Source file for translation")
     args = parser.parse_args()
-    return args.language, args.source
+    return args.lang, args.source
 
 def read_and_parse_source(source):
     """
@@ -56,7 +56,7 @@ def translate_segment(client, segment, language, gpt_model):
     Parameters:
       client: OpenAI client object
       segment: Segment to be translated
-      language_code: Target language code
+      lang: Target language code
       gpt_model: ChatGPT model
     Returns the translated segment
     """
@@ -71,12 +71,43 @@ def translate_segment(client, segment, language, gpt_model):
     translated_segment = response.choices[0].message.content
     return translated_segment
 
-def translate_article(client, language_code, split_source_text):
+def initialize_language_model(lang):
+    """
+    Initializes language model.
+    Returns language name, gpt_model, tm_path
+    """
+    # Define language model dictionary
+    language_models = {
+        # "de": {"language": "German", "gpt-model": , "tm": "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/tm/en-de.csv"},
+        "es": {"language": "Spanish", "gpt-model": "ft:gpt-3.5-turbo-1106:personal::8SkFElMK", "tm": "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/tm/en-fr.csv"},
+        # "fr": {"language": "French", "gpt-model": "", "tm": "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/tm/en-fr.csv"},
+        # "it": {"language": "Italian", "gpt-model": "", "tm": "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/tm/en-it.csv"},
+        "nl": {"language": "Dutch", "gpt-model": "ft:gpt-3.5-turbo-1106:personal::8f4GFKBA", "tm_path": "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/tm/en-nl.csv"}
+    }
+
+    # Initialize language model
+    if lang in language_models:
+        language = language_models[lang]["language"]
+        gpt_model = language_models[lang]["gpt-model"]
+        tm_path = language_models[lang]["tm_path"]
+    else:
+        print("""
+              You entered an invalid language code. Use one of the following:
+              "de" for German
+              "es" for Spanish
+              "fr" for French
+              "it" for Italian
+              "nl" for Dutch
+        """)
+
+    return language_models[lang]
+
+def translate_article(client, lang, split_source_text):
     """
     Translate the content of the source file using the specified language model.
     Parameters:
       client: OpenAI client object
-      language_code: Target language code
+      lang: Target language code
       source: Path to the source file
     Returns the translated text.
     """
@@ -91,10 +122,10 @@ def translate_article(client, language_code, split_source_text):
     }
 
     # Initialize language model
-    if language_code in language_models:
-        language = language_models[language_code]["language"]
-        gpt_model = language_models[language_code]["model"]
-        tm_path = language_models[language_code]["tm_path"]
+    if lang in language_models:
+        language = language_models[lang]["language"]
+        gpt_model = language_models[lang]["model"]
+        tm_path = language_models[lang]["tm_path"]
     else:
         print("""
               You entered an invalid language code. Use one of the following:
@@ -118,7 +149,7 @@ def translate_article(client, language_code, split_source_text):
     with open(tm_path, 'r', encoding='utf-8') as tm:
         reader = csv.DictReader(tm)
         for row in reader:
-            tm_dict[row['en']] = row[language_code]
+            tm_dict[row['en']] = row[lang]
 
     # Flag to check frontmatter
     in_frontmatter = False
@@ -300,6 +331,8 @@ def main():
 
     # Initialize OpenAI client
     client = initialize_open_ai_client()
+
+    #
 
     # Parse command-line arguments
     language, source = parse_arguments()
