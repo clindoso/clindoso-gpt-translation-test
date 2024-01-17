@@ -102,13 +102,16 @@ def initialize_translation_memory(lang, tm_path):
 
 def translate_with_gpt(client, segment, language, gpt_model):
     """
-    Translates a segment using ChatGPT
+    Translates the segment using GPT.
+
     Parameters:
-      client: OpenAI client object
-      segment: Segment to be translated
-      lang: Target language code
-      gpt_model: ChatGPT model
-    Returns the translated segment
+        client (OpenAI client object): The OpenAI client for API requests.
+        segment (str): The current text segment.
+        language (str): Target language code.
+        gpt_model (str): The GPT model to use for translation.
+
+    Returns:
+        str: The translated segment.
     """
     response = client.chat.completions.create(
     model=gpt_model,
@@ -195,13 +198,60 @@ def check_gpt_translations(segment, gpt_translation_dict):
         return (segment, gpt_translation_dict[segment] + " <!-- Repetition of GPT translation")
     return None
 
+def handle_fuzzy_matches(segment, tm_dict, tm_segments_lengths, lower_threshold, upper_threshold):
+    """
+    Handles fuzzy matches for the segment using Levenshtein distance.
+
+    Parameters:
+        segment (str): The current text segment.
+        tm_dict (dict): The translation memory dictionary.
+        tm_segments_lengths (dict): Dictionary of lengths of TM segments.
+        lower_threshold (float): The lower threshold for normalized edit distance.
+        upper_threshold (float): The upper threshold for normalized edit distance.
+
+    Returns:
+        tuple or None: The best fuzzy match from TM if found, else None.
+    """
+    # Initialize closest segment match and max normalized edit distance
+    closest_segment, normalized_min_distance = None, 1
+    # Calculate source segment length
+    segment_length = len(segment)
+
+    # Iterate over TM segment lenghts
+    for tm_segment, tm_segment_length in tm_segments_lengths.items():
+    # Avoid calculation if length difference is over the upper threshold
+        if abs(segment_length - tm_segment_length) / max(segment_length, tm_segment_length) > upper_threshold:
+            continue
+
+        # Calculate Levenshtein distance and normalize it
+        distance = lev.distance(segment, tm_segment)
+        normalized_distance = distance / max(segment_length, tm_segment_length)
+
+        # Update closes match if a closer one is found
+        if normalized_distance < normalized_min_distance:
+            closest_segment, normalized_min_distance = tm_segment, normalized_distance
+
+        # Early exit if a sufficiently close match is found
+        if normalized_distance < lower_threshold:
+            break
+
+        # If the smallest distance is below the threshold, use content of TM
+        if normalized_min_distance < upper_threshold:
+            fuzzy_match_score = (1 - normalized_min_distance)
+            return (segment, tm_dict[closest_segment] + f" <!-- TM {fuzzy_match_score*100:.0f} -->")
+        
+    return None
+
 def translate_article(client, language, source_text, tm_dict, gpt_model):
     """
     Translate the content of the source file using the specified language model.
     Parameters:
       client: OpenAI client object
-      lang: Target language code
-      source: Path to the source file
+      language (str): Target language code
+      source (str): Path to the source file
+      tm_dict (dict): Translation memory
+      gpt_model: Fine-tuned ChatGPT model
+
     Returns the translated text.
     """
 
