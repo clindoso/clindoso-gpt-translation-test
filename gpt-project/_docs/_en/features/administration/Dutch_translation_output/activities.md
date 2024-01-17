@@ -17,80 +17,80 @@ related_articles:
     filepath: features/administration/work-with-skills.md
 ---
 
-Voor het aanmaken, bewerken en verwijderen van activiteiten ga je naar _Plan > Configuratie > Activiteiten_{:.breadcrumbs}. <!-- GPT translation -->
+Ga naar _Plan > Configuratie > Activiteiten_{:.breadcrumbs} om activiteiten aan te maken, te bewerken en te verwijderen. <!-- GPT translation -->
 
-Activiteiten omvatten alle taken die in uw bedrijf worden ingepland en gerapporteerd, zoals telefonie, pauze, vrije tijd, of vergaderingen. U kunt zoveel activiteiten aanmaken als u wilt. De hoeveelheid activiteiten die u kunt aanmaken is uitsluitend afhankelijk van hoe gedetailleerd u de rapportage wilt hebben en hoeveel verschillende taken u wilt kunnen onderscheiden. <!-- GPT translation -->
+Activiteiten staan voor alle taken die in je bedrijf worden ingepland en gerapporteerd, zoals telefonie, pauzes, verlof en vergaderingen. Je kunt zoveel activiteiten aanmaken als je wilt. Het aantal activiteiten is alleen afhankelijk van het aantal taken dat je wilt onderscheiden en het gewenste detailniveau. <!-- GPT translation -->
 
-Activiteiten zijn een essentieel onderdeel van de planning en de roostering binnen injixo. Ze zijn gekoppeld aan andere configuratie-items, bijvoorbeeld aan {% link_new planningsgroepen | features/administration/create-and-manage-planning-units.md | #activiteiten-toevoegen %}, {% link_new dagentypes | features/administration/daymodels/daymodel-basics.md %}. Activiteiten spelen ook een rol in de roosters die je maakt in het {% link_new planbord | features/scheduling/shiftcenter/add-and-delete-items.md %} of in {% link_new Roosters | features/scheduling/schedules/schedules-edit.md %}. <!-- GPT translation -->
+Activiteiten zijn een essentieel onderdeel van het plannings- en scheduling-proces in injixo. Ze zijn gekoppeld aan andere configuratie-items, zoals {% link_new eenheidentypen | features/administration/create-and-manage-planning-units.md | #activiteiten-aanmaken-en-bewerken %}, {% link_new dagmodellen | features/administration/daymodels/daymodel-basics.md %}. Ze maken ook deel uit van de door het {% link_new Dienstrooster-Center | features/scheduling/shiftcenter/add-and-delete-items.md %} of in {% link_new Dienstroosters | features/scheduling/schedules/schedules-edit.md %}. <!-- GPT translation -->
 
-injixo bevat twee vooraf geconfigureerde (niet-verwijderbare) activiteiten: <!-- GPT translation -->
+injixo bevat twee vooraf geconfigureerde (niet te verwijderen) activiteiten: <!-- GPT translation -->
 
-- Vertaling: Deze activiteit fungeert als placeholder-activiteit in dagmodellen. Tijdens het plannen vervangt injixo deze activiteit door een andere activiteit die geconfigureerd is als Inplanbaar. <!-- GPT translation -->
-- Vakantie: geef met dit type aan welke betaalde vakantie  werknemers volgens hun vakantieaanspraken opnemen. Geef onbetaald verlof aan met de activiteit Onbetaald verlof. <!-- GPT translation -->
+- Huidig moment: Deze activiteit wordt in dagmodellen als placeholdertool gebruikt. Tijdens het planningsproces vervangt injixo deze activiteit door andere activiteiten die als Planbaar zijn geconfigureerd. <!-- GPT translation -->
+- Vakantie: Deze activiteit wordt gebruikt om betaalde vakantie in te plannen op basis van het verlofrecht van een medewerker. Voer onbetaalde verlofaanvragen als een afzonderlijke activiteit in. <!-- GPT translation -->
 
 ## Een medewerker aanmaken <!-- TM 62 -->
 
 2. Klik op _Nieuwe activiteit toevoegen_{:.doc-button}. <!-- TM 83 -->
 2. Voeg de algemene informatie toe voor je workload: <!-- TM 84 -->
-   - **Naam**: Unieke naam om jouw activiteit te beschrijven. De afkorting wordt automatisch gegenereerd. <!-- GPT translation -->
-   - **Type**: De activiteitstypen bepalen de functie van activiteiten in de planning en hoe deze activiteiten in overige modules en rapportages worden afgebeeld. Meer informatie over de verschillende {% link_new activiteitstypen | features/administration/activity-types-and-properties.md | #activiteitstypen %}. <!-- GPT translation -->
+   - **Naam**: Unieke naam ter aanduiding van je activiteit. De afkorting wordt automatisch gegenereerd. <!-- GPT translation -->
+   - **Type**: Het activiteitentype bepaalt hoe injixo activiteiten bij het plannen gebruikt en hoe ze in andere modules en rapporten worden weergegeven. Lees meer over de verschillende {% link_new activiteitentypes | features/administration/activity-types-and-properties.md | #activiteitentypes %}. <!-- GPT translation -->
 | Kleur |  De kleur wordt in de planning en op de pagina met configuratiegegevens weergegeven.<br>De kleur kan je helpen om de lengte, het dagmodeltype of opgenomen activiteiten sneller te herkennen. | <!-- TM 61 -->
 | Sneltoets | Optionele sneltoets die je helpt om het dagmodel sneller in het Dienstrooster-Center in te voeren. Lees meer over {% link_new sneltoetsen | best-practices/tips-on-shift-center-usage.md %}. | <!-- TM 70 -->
-   - **Officiële naam en afkorting**: Alternatieve naam die kan worden gebruikt voor interne rapportages en integraties. injixo Me toont altijd de naam die is ingevoerd onder **Naam**. <!-- GPT translation -->
-3. Vink een of meer selectievakjes aan om verschillende {% link_new eigenschappen van een activiteit | features/administration/activity-types-and-properties.md | #activiteitseigenschappen %} in te stellen. <!-- GPT translation -->
-Als je Plannable gebruikt kun je de {% link_new belang-waarde | best-practices/importance-for-activities.md %} bewerken. <!-- GPT translation -->
-Als je een vervangbare activiteit controleert, kun je de {% link_new prioriteitswaarde | best-practices/priority-for-activities.md %} bewerken. <!-- GPT translation -->
-4. (Optioneel) {% link_new Vakken toewijzen | features/administration/work-with-skills.md | #assign-skills-to-activities %} aan de activiteit. <!-- GPT translation -->
+   - **Officiële naam en afkorting**: Alternatieve naam die voor interne rapportagedoeleinden en integraties kan worden gebruikt. In injixo Me wordt altijd de naam weergegeven die onder **Naam** is ingevoerd. <!-- GPT translation -->
+3. Vink een of meerdere selectievakjes aan om verschillende {% link_new activiteiteneigenschappen | features/administration/activity-types-and-properties.md | #activiteiteneigenschappen %} in te stellen. <!-- GPT translation -->
+Als je Plannable raadpleegt, kun je de {% link_new kwalificatiewaarde | best-practices/importance-for-activities.md %} bewerken. <!-- GPT translation -->
+Als je Vervangbaar selecteert, kun je de {% link_new prioriteitswaarde | best-practices/priority-for-activities.md %} bewerken. <!-- GPT translation -->
+4. (Optioneel) {% link_new Wijs kwalificaties toe | features/administration/work-with-skills.md | #kwalificaties-aan-activiteiten-toewijzen %} aan de activiteit. <!-- GPT translation -->
 2. Klik op _Nieuwe activiteit toevoegen_{:.doc-button}. <!-- TM 81 -->
 
-Bekijk hier meer informatie over de {% link_new activity types en properties | features/administration/activity-types-and-properties.md %}. <!-- GPT translation -->
+Lees meer over {% link_new activiteitentypen en eigenschappen | features/administration/activity-types-and-properties.md %}. <!-- GPT translation -->
 
 ## Activiteitentype <!-- TM 65 -->
 
-Om het ID van een activiteit te zien, voer je de volgende stappen uit: <!-- GPT translation -->
-- Klik op een activiteit in de lijst **Activities**. Het adres in je browservenster toont het ID van de geselecteerde activiteit (bijv. https://www.injixo.com/plan/configuration/activities/1234). <!-- GPT translation -->
-- Gebruik de injixo API. Leer hoe je [activiteiten beheert via de injixo API](https://api.injixo.com/resources/activities/). <!-- GPT translation -->
+Je kunt de ID van een activiteit als volgt bekijken: <!-- GPT translation -->
+- Klik op een activiteit in de lijst met **activiteiten**. In de URL-balk van je browser wordt het ID van de geselecteerde activiteit weergegeven (bijv. https://www.injixo.com/plan/configuration/activities/1234). <!-- GPT translation -->
+- Maak gebruik van de injixo API. Lees hoe je [activiteiten beheert via de injixo API](https://api.injixo.com/resources/activities/). <!-- GPT translation -->
 
-## Multiactiviteiten en subactiviteiten <!-- GPT translation -->
+## Multiactiviteiten en deelactiviteiten  <!-- GPT translation -->
 
 
-Multiactiviteiten stellen je in staat om roostersamenstellingen voor medewerkers met verschillende vaardigheden te maken wanneer een van die vaardigheden nodig is. Je kunt een activiteit in een multiactiviteit veranderen door het {% link_new aan andere activiteiten arbeidsplannen te koppelen | features/administration/activity-types-and-properties.md | #subactiviteiten %}. Deze activiteiten worden dan de subactiviteiten van de multiactiviteit.  In de lijst met activiteiten zijn multiactiviteiten herkenbaar aan het <em class="multiactivity-icon"></em> pictogram. <!-- GPT translation -->
+Multiactiviteiten zorgen ervoor dat je medewerkers met diverse kwalificaties in kunt plannen wanneer een van hun kwalificaties nodig is. Je kunt een activiteit omzetten in een multiactiviteit door {% link_new andere activiteiten toe te wijzen | features/administration/activity-types-and-properties.md | #subactiviteiten %}. De toegewezen activiteiten worden de deelactiviteiten van de multiactiviteit.  In de activiteitenlijst worden multiactiviteiten aangeduid met een pictogram <em class="multiactivity-icon"></em>. <!-- GPT translation -->
 
-Als een activiteit een subactiviteit is, kun je wanneer je erop klikt de paragraaf **Multibestanden** zien, waarin alle multibestanden worden weergegeven waaraan de subactiviteit is gekoppeld. <!-- GPT translation -->
+Als een activiteit een subactiviteit is, zie je bij selecteren de sectie **Multiactiviteiten**. Deze sectie geeft alle multiactiviteiten weer waaraan de activiteit is toegewezen. <!-- GPT translation -->
 
-Als een activiteit zelf geen subactiviteit is, kun je, wanneer je erop klikt, de sectie **Subactiviteiten** zien. Hier kun je andere activiteiten selecteren om subactiviteiten van de activiteit die je bewerkt te worden. De activiteit zelf wordt dan een multiactiviteit. <!-- GPT translation -->
-Je kunt alleen subactiviteiten aan een activiteit toewijzen nadat je de activiteit hebt aangemaakt. <!-- GPT translation -->
+Als een activiteit geen subactiviteit is, dan vind je in de sectie **Subactiviteiten** een verwijzing naar andere activiteiten die je als de nieuwe hoofdactiviteit kunt selecteren. De betreffende activiteit wordt dan de multiactiviteit. <!-- GPT translation -->
+Je kunt pas deelactiviteiten aan een activiteit toewijzen nadat de activiteit is aangemaakt. <!-- GPT translation -->
 
 ## Externe systemen <!-- GPT translation -->
 
-<!-- will be made obsolete by the new activity mapping page. Will require a separate article -->
+<!-- wordt overbodig door de nieuwe pagina Activiteiten toewijzen. Vereist een afzonderlijk artikel --> <!-- GPT translation -->
 
-Je kunt activiteiten uit externe systemen koppelen aan een activiteit in injixo. <!-- GPT translation -->
-1. Selecteer een activiteit uit de lijst, scroll naar de sectie **Externe systemen**, en klik op _'Bewerken in SPM'_{:.doc-button}. <!-- GPT translation -->
+Je kunt activiteiten uit andere systemen aan een activiteit in injixo toewijzen. <!-- GPT translation -->
+1. Selecteer een activiteit uit de lijst, scrol naar de sectie **Externe systemen** en klik op _Bewerken in WFM_{:.doc-button}. <!-- GPT translation -->
 4. Ga naar de sectie **Externe Systemen**. <!-- TM 79 -->
 4. Klik op het {% icon item-add %}. <!-- TM 97 -->
-4. Selecteer een **extern systeem**, een **naam uit het externe systeem** en een **classificatie** uit de vervolgkeuzemenu's. <!-- GPT translation -->
+4. Selecteer in de vervolgkeuzemenu's een **externe system** en een **naam uit het externe systeem** en een **classificatie**. <!-- GPT translation -->
 5. Klik op _OK_{:.doc-button}. <!-- TM 100 -->
 
-Je kan een activiteit uit een extern systeem alleen toewijzen aan een activiteit in injixo als deze leeg is en nog niet toegewezen is. <!-- GPT translation -->
+> Je kunt een activiteit alleen vanuit een extern systeem naar een enkele activiteit in injixo overdragen. <!-- GPT translation -->
 
 ## Een activiteit dupliceren <!-- GPT translation -->
 
-Om een nieuwe activiteit met dezelfde algemene eigenschappen als een bestaande activiteit te maken, dien je de volgende stappen te volgen: <!-- GPT translation -->
+Volg deze stappen om een nieuwe activiteit met dezelfde algemene eigenschappen als een bestaande activiteit aan te maken: <!-- GPT translation -->
 
-1. In de lijst met **Activiteiten** selecteer je een activiteit. <!-- GPT translation -->
-2. Klik op **Activiteit repliceren** onder de activiteitsnaam. <!-- GPT translation -->
-Er wordt een nieuw venster **Activiteit maken** geopend met voorgevinkte selectievakjes. Toegekende vaardigheden en subactiviteiten worden niet gedupliceerd. <!-- GPT translation -->
-3. Voer een **Naam** in voor de nieuwe activiteit. <!-- GPT translation -->
+2. Selecteer een activiteit in de lijst met **Activiteiten**. <!-- GPT translation -->
+2. Klik op **Activiteit dupliceren** onder de naam van de activiteit. <!-- GPT translation -->
+Het venster **Nieuwe activiteit aanmaken** wordt geopend met vooraf aangevinkte selectievakjes. Toegewezen kwalificaties en deelactiviteiten worden niet gedupliceerd. <!-- GPT translation -->
+Voer een **naam** in voor de nieuwe activiteit. <!-- GPT translation -->
 4. (Optioneel) Wijzig de kleur en andere eigenschappen. <!-- GPT translation -->
 2. Klik op _Nieuwe activiteit toevoegen_{:.doc-button}. <!-- TM 81 -->
 
-## Activiteit bewerken of verwijderen <!-- GPT translation -->
+## Een activiteit bewerken of verwijderen <!-- GPT translation -->
 
-1. In de lijst met **Activiteiten** selecteer je een activiteit. <!-- Repetition of GPT translation -->
-- Om de activiteit aan te passen, pas je de informatie aan die je wilt wijzigen en klik je op _Wijzigingen opslaan_{:.doc-button}. <!-- GPT translation -->
-- Om de activiteit te verwijderen, klik je rechtsonder op _Activiteit verwijderen_{:.doc-button}. <!-- GPT translation -->
+2. Selecteer een activiteit in de lijst met **Activiteiten**. <!-- Repetition of GPT translation
+  - Bewerken: Bewerk de informatie die je wilt wijzigen en klik op _Wijzigingen opslaan_{:.doc-button}. <!-- GPT translation -->
+- Klik op _Activiteit verwijderen_{:.doc-button} rechtsonder om de activiteit te verwijderen. <!-- GPT translation -->
 
-Als de verwijderde activiteit is toegewezen aan andere configuratie-items, zoals planningsgroepen of dagmodellen, wordt de naam cursief weergegeven in de betreffende items. Een verwijderde activiteit verliest de toewijzing aan andere items, maar blijft zichtbaar in de configuratiegegevens. Het kan zijn dat je bestaande dagmodellen opnieuw moet maken waarin de verwijderde activiteit is meegenomen. <!-- GPT translation -->
+Als de verwijderde activiteit aan andere configuratie-items, zoals eenheids- of dagmodellen, was toegewezen, dan wordt de naam van de activiteit in deze items met een _' aangegeven. Een verwijderde activiteit wordt weliswaar niet langer aan andere items toegewezen, maar blijft zichtbaar in de configuratiedata. Het is mogelijk dat je bestaande dagmodellen opnieuw moet aanmaken die de verwijderde activiteit bevatten. <!-- GPT translation -->
 
-In Shift Center worden verwijderde activiteiten {% link_new omlijst door een stippellijn | features/scheduling/shiftcenter/shift-center-overview.md | #hoe-worden-items-getoond %}. In Schedules worden verwijderde activiteiten weergegeven in grijs, zonder naam. De originele tijdinformatie blijft zichtbaar, behalve in de dagweergave. <!-- GPT translation -->
+In Shift-Center worden verwijderde activiteiten {% link_new weergegeven met een gestippelde rand | features/scheduling/shiftcenter/shift-center-overview.md | #hoe-worden-items-weergegeven %}. In Schedules worden verwijderde activiteiten in een lichtere tekstkleur zonder naam weergegeven. De oorspronkelijke tijdsinformatie blijft zichtbaar, behalve in de dagweergave. <!-- GPT translation -->

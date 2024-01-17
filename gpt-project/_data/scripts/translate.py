@@ -57,10 +57,10 @@ def initialize_language_model(lang):
     """
     # Define language model dictionary
     language_models = {
-        # "de": {"language": "German", "gpt-model": , "tm": "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/tm/en-de.csv"},
-        "es": {"language": "Spanish", "gpt-model": "ft:gpt-3.5-turbo-1106:personal::8SkFElMK", "tm": "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/tm/en-fr.csv"},
-        # "fr": {"language": "French", "gpt-model": "", "tm": "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/tm/en-fr.csv"},
-        # "it": {"language": "Italian", "gpt-model": "", "tm": "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/tm/en-it.csv"},
+        # "de": {"language": "German", "gpt-model": , "tm_path": "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/tm/en-de.csv"},
+        "es": {"language": "Spanish", "gpt-model": "ft:gpt-3.5-turbo-1106:personal::8SkFElMK", "tm_path": "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/tm/en-fr.csv"},
+        # "fr": {"language": "French", "gpt-model": "", "tm_path": "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/tm/en-fr.csv"},
+        # "it": {"language": "Italian", "gpt-model": "", "tm_path": "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/tm/en-it.csv"},
         "nl": {"language": "Dutch", "gpt-model": "ft:gpt-3.5-turbo-1106:personal::8f4GFKBA", "tm_path": "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/tm/en-nl.csv"}
     }
 
@@ -79,7 +79,7 @@ def initialize_language_model(lang):
               "nl" for Dutch
         """)
 
-    return language_models[lang]
+    return language, gpt_model, tm_path
 
 def initialize_translation_memory(lang, tm_path):
     """
@@ -132,44 +132,11 @@ def translate_article(client, language, split_source_text, tm_dict, gpt_model):
     Returns the translated text.
     """
 
-    # # Define language models
-    # language_models = {
-    #     # "de": {"language": "German", "model": , "tm": "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/tm/en-de.csv"},
-    #     "es": {"language": "Spanish", "model": "ft:gpt-3.5-turbo-1106:personal::8SkFElMK", "tm": "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/tm/en-fr.csv"},
-    #     # "fr": {"language": "French", "model": "", "tm": "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/tm/en-fr.csv"},
-    #     # "it": {"language": "Italian", "model": "", "tm": "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/tm/en-it.csv"},
-    #     "nl": {"language": "Dutch", "model": "ft:gpt-3.5-turbo-1106:personal::8f4GFKBA", "tm_path": "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/tm/en-nl.csv"}
-    # }
-
-    # # Initialize language model
-    # if lang in language_models:
-    #     language = language_models[lang]["language"]
-    #     gpt_model = language_models[lang]["model"]
-    #     tm_path = language_models[lang]["tm_path"]
-    # else:
-    #     print("""
-    #           You entered an invalid language code. Use one of the following:
-    #           "de" for German
-    #           "es" for Spanish
-    #           "fr" for French
-    #           "it" for Italian
-    #           "nl" for Dutch
-    #     """)
-
     # Initialize empty list to store translated segments from the article
     translated_segments = []
 
     # Initialize empty dictionary to store GPT translations for repetitions
     gpt_translation_dict = {}
-
-    # # Initialize tm dictionary to use TM content in the translation
-    # tm_dict = {}
-
-    # # Read the TM and extract the 'en' and target language column
-    # with open(tm_path, 'r', encoding='utf-8') as tm:
-    #     reader = csv.DictReader(tm)
-    #     for row in reader:
-    #         tm_dict[row['en']] = row[lang]
 
     # Flag to check frontmatter
     in_frontmatter = False
@@ -343,6 +310,7 @@ def write_translated_file(language, source, translated_article):
     # Write the translated article to the output file
     with open(output_filepath, 'w', encoding='utf-8') as output_file:
         output_file.write(translated_article)
+        print(f"Translation was written to {output_filepath}")
 
 
 def main():
