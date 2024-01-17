@@ -100,7 +100,7 @@ def translate_article(client, language_code, source):
     tm_dict = {}
 
     # Read the TM and extract the 'en' and target language column
-    with open(tm_path, 'read', encoding='utf-8') as tm:
+    with open(tm_path, 'r', encoding='utf-8') as tm:
         reader = csv.DictReader(tm)
         for row in reader:
             tm_dict[row['en']] = row[language_code]
@@ -159,7 +159,7 @@ def translate_article(client, language_code, source):
             # Iterate over TM segment lenghts
             for tm_segment, tm_segment_length in tm_segments_lengths.items():
                 # Avoid calculation if length difference is over the upper threshold
-                if abs(segment_length - tm_segment_length) / max(segment_length, tm_segment_length) > upper_threshold
+                if abs(segment_length - tm_segment_length) / max(segment_length, tm_segment_length) > upper_threshold:
                     continue
 
                 # Calculate Levenshtein distance and normalize it
@@ -202,12 +202,16 @@ def extract_translated_frontmatter(translated_segments):
             # Check if the flag is true when checking the delimiter
             if marker_found:
                 return # End function when stop condition is met
+            # Skip to next segment
             else:
                 marker_found = True
-                continue # Skip to next segment
+                continue
         # Reproduce frontmatter content
         elif marker_found:
             extracted_segments.append(target_segment)
+        # Break out of loop if the end of the list is reached
+        if target_segment == translated_segments[-1][1]:
+            break
     
     # Join frontmatter in one string
     joint_translated_frontmatter = "\n".join(extracted_segments)
