@@ -147,7 +147,7 @@ def translate_article(client, language_code, split_source_text):
             continue
 
         # Check for existing translation in TM
-        if segment in tm_dict():
+        if segment in tm_dict:
             translated_segments.append((segment, tm_dict[segment] + " <!-- TM 100 -->"))
             continue
         
@@ -192,7 +192,7 @@ def translate_article(client, language_code, split_source_text):
             # If the smallest distance is below the threshold, use content of TM
             if normalized_min_distance < upper_threshold:
                 fuzzy_match_score = (1 - normalized_min_distance)
-                translated_segments.append((segment, tm_dict[closest_segment] + f" <!-- TM {fuzzy_match_score} -->"))
+                translated_segments.append((segment, tm_dict[closest_segment] + f" <!-- TM {fuzzy_match_score*100:.0f} -->"))
             # If the smallest distance is above the lower threshold, translate using ChatGPT
             else:
                 translated_segment = translate_segment(client, segment, language, gpt_model)
@@ -213,13 +213,14 @@ def extract_translated_frontmatter(translated_segments):
     extracted_segments = []
     # Iterate over the segments of the translation
     for _, target_segment in translated_segments:
-        # If the segment is the frontmatter delimiter
+        # Check if the segment is the frontmatter delimiter
         if target_segment == "---":
             # Reproduces delimiter '---'
             extracted_segments.append(target_segment)
             # Check if the flag is true when checking the delimiter
             if marker_found:
-                return # End function when stop condition is met
+                joint_translated_frontmatter = "\n".join(extracted_segments)
+                return joint_translated_frontmatter # End function when stop condition is met
             # Skip to next segment
             else:
                 marker_found = True
@@ -253,8 +254,11 @@ def extract_translated_text(translated_segments):
             if marker_count < 2:
                 continue
 
+        # Avoid reproducing frontmatter delimiter twice
+        if target_segment == "---" and marker_count == 2:
+            continue
         # Append segments after second '---'
-        if marker_count >= 2:
+        elif marker_count == 2:
             extracted_segments.append(target_segment)
     
     # Join text list in one string 
@@ -319,10 +323,8 @@ def main():
     write_translated_file(language, source, translated_article)
 
     # Output the result and time taken
-    elapsed_time = time.time() - start_time
+    elapsed_time = round((time.time() - start_time), 2)
     print(f"Time taken: {elapsed_time} seconds")
-
-
 
 if __name__ == "__main__":
     main()
