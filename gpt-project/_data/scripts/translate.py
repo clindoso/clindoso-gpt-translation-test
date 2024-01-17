@@ -137,6 +137,20 @@ def handle_frontmatter(segment, in_frontmatter):
         return (segment, segment), not in_frontmatter
     return None, in_frontmatter
 
+def handle_commented_out_segment(segment):
+    """
+    Handles segments that are commented out.
+
+    Parameters:
+        segment (str): The current text segment.
+
+    Returns:
+        tuple or None: Processed segment if it's a comment, else None.
+    """
+    if segment.startswith("<!--"):
+        return (segment, segment)
+    return None
+
 def translate_article(client, language, source_text, tm_dict, gpt_model):
     """
     Translate the content of the source file using the specified language model.
