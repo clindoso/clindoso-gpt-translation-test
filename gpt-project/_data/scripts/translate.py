@@ -100,7 +100,7 @@ def initialize_translation_memory(lang, tm_path):
     return tm_dict
 
 
-def translate_segment(client, segment, language, gpt_model):
+def translate_with_gpt(client, segment, language, gpt_model):
     """
     Translates a segment using ChatGPT
     Parameters:
@@ -122,7 +122,7 @@ def translate_segment(client, segment, language, gpt_model):
 
     return translated_segment
 
-def translate_article(client, lang, split_source_text):
+def translate_article(client, language, split_source_text, tm_dict, gpt_model):
     """
     Translate the content of the source file using the specified language model.
     Parameters:
@@ -246,7 +246,7 @@ def translate_article(client, lang, split_source_text):
                 translated_segments.append((segment, tm_dict[closest_segment] + f" <!-- TM {fuzzy_match_score*100:.0f} -->"))
             # If the smallest distance is above the lower threshold, translate using ChatGPT
             else:
-                translated_segment = translate_segment(client, segment, language, gpt_model)
+                translated_segment = translate_with_gpt(client, segment, language, gpt_model)
                 gpt_translation_dict[segment] = translated_segment
                 translated_segments.append((segment, translated_segment + " <!-- GPT translation -->"))
     
@@ -352,16 +352,20 @@ def main():
     # Initialize OpenAI client
     client = initialize_open_ai_client()
 
-    #
-
     # Parse command-line arguments
-    language, source = parse_arguments()
+    lang, source = parse_arguments()
 
+    # Initialize language models
+    language, gpt_model, tm_path = initialize_language_model(lang)
+    
+    # Initialize translation memory dictionary
+    tm_dict = initialize_translation_memory(lang, tm_path)
+    
     # Read and parse source file
     split_source_text = read_and_parse_source(source)
 
     # Perform the translation
-    translated_segments = translate_article(client, language, split_source_text)
+    translated_segments = translate_article(client, language, split_source_text, tm_dict, gpt_model)
 
     # Create list with translated frontmatter
     translated_frontmatter = extract_translated_frontmatter(translated_segments)
