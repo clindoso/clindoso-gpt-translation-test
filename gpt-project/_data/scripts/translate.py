@@ -165,6 +165,21 @@ def handle_empty_line(segment):
         return (segment, segment)
     return None
 
+def check_translation_memory(segment, tm_dict):
+    """
+    Checks if the segment has a translation in the translation memory (TM).
+
+    Parameters:
+        segment (str): The current text segment.
+        tm_dict (dict): The translation memory dictionary.
+
+    Returns:
+        tuple or None: The TM translation if available, else None.
+    """
+    if segment in tm_dict:
+        return (segment, tm_dict[segment] + " <!-- TM 100 -->")
+    return None
+
 def translate_article(client, language, source_text, tm_dict, gpt_model):
     """
     Translate the content of the source file using the specified language model.
