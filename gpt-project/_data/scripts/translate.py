@@ -188,6 +188,7 @@ def translate_article(client, language_code, source_file):
     return translated_segments
 
 def extract_translated_frontmatter(translated_segments):
+    # Copy target frontmatter
     # Flag to track beginning and end of frontmatter
     marker_found = False
     # Iterate over the segments of the translation
@@ -207,6 +208,7 @@ def extract_translated_frontmatter(translated_segments):
             yield target_segment
 
 def extract_translated_text(translated_segments):
+    # Copy target text
     # Initialize marker count
     marker_count = 0
     for _, target_segments in translated_segments:
@@ -216,21 +218,45 @@ def extract_translated_text(translated_segments):
             # Skip segments until the second frontmatter delimiter is found
             if marker_count < 2:
                 continue
-            # Start yielding segments after second
+        # Start yielding segments after second
+        if marker_count == 2:
+            yield target_segments
     
 
 
+def main():
+    # Start time tracker
+    start_time = time.time()
+
+    # Initialize OpenAI client
+    client = initialize_open_ai_client()
+
+    # Parse command-line arguments
+    language, source_file = parse_arguments()
+
+    # Perform the translation
+    translated_segments = translate_article(client, language, source_file)
+
+    # Create list with translated frontmatter
+    translated_frontmatter = list(extract_translated_frontmatter(translated_segments))
+
+    # Join frontmatter list in one string 
+    joint_translated_frontmatter = "\n".join(translated_frontmatter)
+
+    # Create list with translated text
+    translated_text = list(extract_translated_text(translated_segments))
+
+    # Join list text list in one string
+    joint_translated_text = "\n".join(translated_text)
+
+    # Join translated matter and article
+    translated_article = joint_translated_frontmatter + "\n" + joint_translated_text
+
+    # Output the result and time taken
+    elapsed_time = time.time() - start_time
+    print(f"Time taken: {elapsed_time} seconds")
 
 
 
-
-
-# Create list with translated content
-translated_text = list(extract_translated_text(translated_segments))
-
-# Join translated text in a string
-joint_translated_text = "\n".join(translated_text)
-
-# Join translated frontmatter and article
-
-joint_translated_article = joint_translated_frontmatter + "\n" + joint_translated_text
+if __name__ == "__main__":
+    main()
