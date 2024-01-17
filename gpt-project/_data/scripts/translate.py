@@ -51,13 +51,15 @@ def read_and_parse_source(source):
     return split_source_text
 
 def translate_segment(client, segment, language, gpt_model):
-    # Translates a segment using ChatGPT
-    # Parameters:
-    #   client: OpenAI client object
-    #   segment: Segment to be translated
-    #   language_code: Target language code
-    #   gpt_model: ChatGPT model
-    # Returns the translated segment
+    """
+    Translates a segment using ChatGPT
+    Parameters:
+      client: OpenAI client object
+      segment: Segment to be translated
+      language_code: Target language code
+      gpt_model: ChatGPT model
+    Returns the translated segment
+    """
     response = client.chat.completions.create(
     model=gpt_model,
     messages=[
@@ -70,12 +72,14 @@ def translate_segment(client, segment, language, gpt_model):
     return translated_segment
 
 def translate_article(client, language_code, split_source_text):
-    # Translate the content of the source file using the specified language model.
-    # Parameters:
-    #   client: OpenAI client object
-    #   language_code: Target language code
-    #   source: Path to the source file
-    # Returns the translated text.
+    """
+    Translate the content of the source file using the specified language model.
+    Parameters:
+      client: OpenAI client object
+      language_code: Target language code
+      source: Path to the source file
+    Returns the translated text.
+    """
 
     # Define language models
     language_models = {
@@ -199,7 +203,10 @@ def translate_article(client, language_code, split_source_text):
     return translated_segments
 
 def extract_translated_frontmatter(translated_segments):
-    # Copy target frontmatter
+    """
+    Extracts the target frontmatter the translated segments list
+    Returns frontmatter in one string
+    """
     # Flag to track beginning and end of frontmatter
     marker_found = False
     # Initialize list to store extracted segments
@@ -230,7 +237,10 @@ def extract_translated_frontmatter(translated_segments):
     return joint_translated_frontmatter
 
 def extract_translated_text(translated_segments):
-    # Copy target text
+    """
+    Extracts the target text the translated segments list
+    Returns text in one string
+    """
     # Initialize marker count
     marker_count = 0
     # Initialize list to store extracted segments
@@ -253,11 +263,13 @@ def extract_translated_text(translated_segments):
     return joint_translated_text
 
 def write_translated_file(language, source, translated_article):
-    # Save translated article with the same name of the source file in a subdirectory of the source file
-    # Parameters:
-    #   language: Language for translation
-    #   source: Source file path
-    #   translated_article: Article in target language
+    """
+    Saves translated article with the same name of the source file in a subdirectory of the source file
+    Parameters:
+      language: Language for translation
+      source: Source file path
+      translated_article: Article in target language
+    """
 
     # Extract source directory
     source_directory = os.path.dirname(source)
@@ -288,8 +300,11 @@ def main():
     # Parse command-line arguments
     language, source = parse_arguments()
 
+    # Read and parse source file
+    split_source_text = read_and_parse_source(source)
+
     # Perform the translation
-    translated_segments = translate_article(client, language, source)
+    translated_segments = translate_article(client, language, split_source_text)
 
     # Create list with translated frontmatter
     translated_frontmatter = extract_translated_frontmatter(translated_segments)
