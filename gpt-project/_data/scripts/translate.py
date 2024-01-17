@@ -160,7 +160,7 @@ def translate_article(client, language, split_source_text, tm_dict, gpt_model):
             continue
 
         # Keep commented out segment in English
-        elif segment.startswith(">!--"):
+        elif segment.startswith("<!--"):
             translated_segments.append((segment, segment))
             continue
 
