@@ -17,13 +17,38 @@ def initialize_open_ai_client():
     return OpenAI(api_key=api_key)
 
 def parse_arguments():
-    # Parse command-line arguments for language and source file.
-    # Returns a tuple of (language, source file path).
+    """
+    Parse command-line arguments for language and source file.
+    Returns a tuple of (language, source file path).
+    """
     parser = argparse.ArgumentParser(description="Script to translate texts using TM and ChatGPT")
     parser.add_argument("--language", required=True, help="Target language for translation")
     parser.add_argument("--source", required=True, help="Source file for translation")
     args = parser.parse_args()
     return args.language, args.source
+
+def read_and_parse_source(source):
+    """
+    Reads and parses the source file.
+    
+    Parameters:
+        source_path (str): Path to the source file.
+    
+    Returns:
+        list: A list of lines from the source file, or None if file not found.
+    """
+    # Check if source path exists
+    if not os.path.exists(source):
+        print("Source file not found. Check the source file path entered.")
+
+    # Read source file
+    with open(source, 'r') as file:
+        source_text = file.read()
+    
+    # Split text into segmetns
+    split_source_text = source_text.splitlines()
+
+    return split_source_text
 
 def translate_segment(client, segment, language, gpt_model):
     # Translates a segment using ChatGPT
@@ -44,7 +69,7 @@ def translate_segment(client, segment, language, gpt_model):
     translated_segment = response.choices[0].message.content
     return translated_segment
 
-def translate_article(client, language_code, source):
+def translate_article(client, language_code, split_source_text):
     # Translate the content of the source file using the specified language model.
     # Parameters:
     #   client: OpenAI client object
@@ -75,20 +100,6 @@ def translate_article(client, language_code, source):
               "it" for Italian
               "nl" for Dutch
         """)
-    
-    # Check if source path exists
-    if not os.path.exists(source):
-        print("Source file not found. Check the source file path entered.")
-    
-    # Extract source file directory
-    source_directory = os.path.dirname(source)
-
-    # Read source file
-    with open(source, 'r') as file:
-        source_text = file.read()
-    
-    # Split text into segmetns
-    split_source_text = source_text.splitlines()
 
     # Initialize empty list to store translated segments from the article
     translated_segments = []
