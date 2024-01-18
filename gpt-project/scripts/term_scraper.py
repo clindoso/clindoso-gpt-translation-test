@@ -17,7 +17,6 @@ def process_file(file_path, lang, source_lang='en'):
     target_term = data.get(lang, {}).get("name", "")
     if target_term:
         term_tuple = (source_term, target_term)
-        term_tuple.append(term_tuple)
     return term_tuple
 
 def extract_terms(termbase_directory, lang):
@@ -25,7 +24,8 @@ def extract_terms(termbase_directory, lang):
     for filename in os.listdir(termbase_directory):
         if filename.endswith('.yml'):
             file_path = os.path.join(termbase_directory, filename)
-            entries = process_file(file_path, lang)
-            term_tuples.append(entries)
+            term_tuple = process_file(file_path, lang)
+            if term_tuple:
+                term_tuples.append(term_tuple)
     
     return term_tuples

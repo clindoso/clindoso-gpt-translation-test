@@ -62,6 +62,9 @@ scraped_data = os.path.join(output_dir, f'en-{args.lang}_scraped_data.jsonl')
 # Write segment tuple content in the JSONL file.
 with open(scraped_data, 'w', encoding='utf-8') as scraped_data_file:
     for term_pair in terms:
+        print(term_pair)
+        print(term_pair[0])
+        print(term_pair[1])
         json_entry = {
             "messages": [
                 {"role": "system", "content": f"Given a term in English, translate it into {language}. Provide only the term translation."},
@@ -103,5 +106,5 @@ with open(validation_file, 'w', encoding='utf-8') as validation_file:
     for entry in validation_data:
         json.dump(entry, validation_file, ensure_ascii=False)
         validation_file.write('\n')
-
-print(f"The data was written to {os.dirname(scraped_data_file)}")
+scraped_data_directory = os.path.dirname(scraped_data)
+print(f"The data was written to {scraped_data_directory}")
