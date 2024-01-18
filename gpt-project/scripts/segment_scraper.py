@@ -2,6 +2,7 @@ import os
 import json
 import csv
 import argparse
+from term_scraper import extract_terms
 from sklearn.model_selection import train_test_split
 
 # The script takes one argument, --lang, which selects the target language.
@@ -15,6 +16,9 @@ argparser.add_argument("--lang")
 
 # Define base directory
 base_dir = "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/_en"
+
+# Define termbase directory
+termbase_directory = "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_data/terminology"
 
 # Assign parent folder of base directory as output directory
 output_dir = os.path.dirname(base_dir)
@@ -37,9 +41,13 @@ if args.lang in languages_dict:
     language = languages_dict[args.lang]["language"]
     tm_path = languages_dict[args.lang]["tm_path"]
 else:
-    print(f"This script does not support {args.lang}. Enter one of the following language abbreviations: de, es, fr, it, nl.")
+    raise ValueError(f"This script does not support {args.lang}. Enter one of the following language abbreviations: de, es, fr, it, nl.")
 
-# Create empty segment list to compile segments from TM
+# Extract terms from the TB
+
+terms = extract_terms(termbase_directory, args.lang)
+
+# Create empty segment list to collect segments from TM
 segments = []
 
 # Extract segments from TM to segment list
