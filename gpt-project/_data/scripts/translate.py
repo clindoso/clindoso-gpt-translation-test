@@ -99,49 +99,6 @@ def initialize_translation_memory(lang, tm_path):
     
     return tm_dict
 
-def handle_frontmatter(segment, in_frontmatter):
-    """
-    Handles the frontmatter segment of the text.
-
-    Parameters:
-        segment (str): The current text segment.
-        in_frontmatter (bool): Flag indicating if we are currently processing frontmatter.
-
-    Returns:
-        tuple: A tuple containing the processed segment and the updated frontmatter flag.
-    """
-    if segment == '---':
-        return (segment, segment), not in_frontmatter
-    return None, in_frontmatter
-
-def handle_commented_out_segment(segment):
-    """
-    Handles segments that are commented out.
-
-    Parameters:
-        segment (str): The current text segment.
-
-    Returns:
-        tuple or None: Processed segment if it's a comment, else None.
-    """
-    if segment.startswith("<!--"):
-        return (segment, segment)
-    return None
-
-def handle_empty_line(segment):
-    """
-    Handles empty line segments for maintaining formatting.
-
-    Parameters:
-        segment (str): The current text segment.
-
-    Returns:
-        tuple or None: Processed segment if it's an empty line, else None.
-    """
-    if segment == '':
-        return (segment, segment)
-    return None
-
 def check_translation_memory(segment, tm_dict):
     """
     Checks if the segment has a translation in the translation memory (TM).
@@ -186,8 +143,8 @@ def handle_fuzzy_matches(segment, tm_dict, tm_segments_lengths, lower_threshold,
     Returns:
         tuple or None: The best fuzzy match from TM if found, else None.
     """
-    # Initialize closest segment match and max normalized edit distance
-    closest_segment, normalized_min_distance = None, 1
+    # Initialize closest segment match and min normalized edit distance
+    closest_segment, normalized_min_edit_distance = None, 1
     # Calculate source segment length
     segment_length = len(segment)
 
@@ -197,23 +154,24 @@ def handle_fuzzy_matches(segment, tm_dict, tm_segments_lengths, lower_threshold,
         if abs(segment_length - tm_segment_length) / max(segment_length, tm_segment_length) > upper_threshold:
             continue
 
-        # Calculate Levenshtein distance and normalize it
-        distance = lev.distance(segment, tm_segment)
-        normalized_distance = distance / max(segment_length, tm_segment_length)
+        # Calculate Levenshtein edit distance and normalize it
+        edit_distance = lev.distance(segment, tm_segment)
+        normalized_edit_distance = edit_distance / max(segment_length, tm_segment_length)
 
         # Update closes match if a closer one is found
-        if normalized_distance < normalized_min_distance:
-            closest_segment, normalized_min_distance = tm_segment, normalized_distance
+        if normalized_edit_distance < normalized_min_edit_distance:
+            closest_segment, normalized_min_edit_distance = tm_segment, normalized_edit_distance
 
         # Early exit if a sufficiently close match is found
-        if normalized_distance < lower_threshold:
+        if normalized_edit_distance < lower_threshold:
             break
 
-        # If the smallest distance is below the threshold, use content of TM
-        if normalized_min_distance < upper_threshold:
-            fuzzy_match_score = (1 - normalized_min_distance)
+        # If the smallest edit distance is below the threshold, use content of TM
+        if normalized_min_edit_distance < upper_threshold:
+            fuzzy_match_score = (1 - normalized_min_edit_distance)
             return (segment, tm_dict[closest_segment] + f" <!-- TM {fuzzy_match_score*100:.0f} -->")
-        
+    
+    # If there is no segment with an edit below the upper threshold, return None
     return None
 
 def translate_with_gpt(client, segment, language, gpt_model):
@@ -243,15 +201,17 @@ def translate_with_gpt(client, segment, language, gpt_model):
 
 def translate_article(client, language, source_text, tm_dict, gpt_model):
     """
-    Translate the content of the source file using the specified language model.
-    Parameters:
-      client: OpenAI client object
-      language (str): Target language code
-      source (str): Path to the source file
-      tm_dict (dict): Translation memory
-      gpt_model: Fine-tuned ChatGPT model
+    Translates the content of the source file using the specified language model.
 
-    Returns the translated text.
+    Parameters:
+        client (OpenAI client object): The OpenAI client for API requests.
+        language (str): Target language code.
+        source_text (list): List of text segments from the source file.
+        tm_dict (dict): The translation memory dictionary.
+        gpt_model (str): The GPT model to use for translation.
+
+    Returns:
+        list: List of tuples with source and translated segments.
     """
 
     # Initialize empty list to store translated segments from the article
@@ -263,7 +223,7 @@ def translate_article(client, language, source_text, tm_dict, gpt_model):
     # Flag to check frontmatter
     in_frontmatter = False
 
-    # Pre-calculate lenghts of TM segments
+    # Pre-calculate lengths of TM segments
     tm_segments_lengths = {tm_segment:len(tm_segment) for tm_segment in tm_dict}
 
     # Iterate over each segment of the source text
@@ -281,64 +241,47 @@ def translate_article(client, language, source_text, tm_dict, gpt_model):
             translated_segments.append((segment, segment))
             continue
 
-        # Keep commented out segment in English
-        elif segment.startswith("<!--"):
+        # Check commented out segment in English
+        if segment.startswith("<!--"):
+            # Reproduce untranslated commented out segment
+            translated_segments.append((segment, segment))
+            continue
+
+        # Check for empty lines
+        if segment == '':
+            # Reproduce empty lines
             translated_segments.append((segment, segment))
             continue
 
         # Check for existing translation in TM
         if segment in tm_dict:
+            # Reproduce existing translation
             translated_segments.append((segment, tm_dict[segment] + " <!-- TM 100 -->"))
             continue
         
-        # Check for for existing GPT translation
+        # Check for existing GPT translation
         elif segment in gpt_translation_dict:
+            # Reproduce existing GPT translation
             translated_segments.append((segment, gpt_translation_dict[segment] + " <!-- Repetition of GPT translation"))
             continue
         
-        # Reproduce empty lines to keep article formatting
-        elif segment == '':
-            translated_segments.append((segment, segment))
-            continue
-        
-        # Check for fuzzy matches
+        # Handle untranslated segments
         else:
             # Define upper and lower normalized edit distance
             lower_threshold = 0.05
             upper_threshold = 0.4
-            # Initialize closest segment match and max normalized edit distance
-            closest_segment, normalized_min_distance = None, 1
-            # Calculate source segment length
-            segment_length = len(segment)
 
-            # Iterate over TM segment lenghts
-            for tm_segment, tm_segment_length in tm_segments_lengths.items():
-                # Avoid calculation if length difference is over the upper threshold
-                if abs(segment_length - tm_segment_length) / max(segment_length, tm_segment_length) > upper_threshold:
-                    continue
-
-                # Calculate Levenshtein distance and normalize it
-                distance = lev.distance(segment, tm_segment)
-                normalized_distance = distance / max(segment_length, tm_segment_length)
-
-                # Update closes match if a closer one is found
-                if normalized_distance < normalized_min_distance:
-                    closest_segment, normalized_min_distance = tm_segment, normalized_distance
-
-                # Early exit if a sufficiently close match is found
-                if normalized_distance < lower_threshold:
-                    break
-
-            # If the smallest distance is below the threshold, use content of TM
-            if normalized_min_distance < upper_threshold:
-                fuzzy_match_score = (1 - normalized_min_distance)
-                translated_segments.append((segment, tm_dict[closest_segment] + f" <!-- TM {fuzzy_match_score*100:.0f} -->"))
-            # If the smallest distance is above the lower threshold, translate using ChatGPT
+            # Call fuzzy match function
+            fuzzy_match = handle_fuzzy_matches(segment, tm_dict, tm_segments_lengths, lower_threshold, upper_threshold)
+            
+            # Check if fuzzy match exists
+            if fuzzy_match:
+                translated_segments.append(fuzzy_match)
             else:
                 translated_segment = translate_with_gpt(client, segment, language, gpt_model)
                 gpt_translation_dict[segment] = translated_segment
                 translated_segments.append((segment, translated_segment + " <!-- GPT translation -->"))
-    
+            
     # Return list of tuples with source and target segments
     return translated_segments
 
