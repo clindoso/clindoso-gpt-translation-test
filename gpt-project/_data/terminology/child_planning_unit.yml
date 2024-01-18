@@ -1,0 +1,58 @@
+---
+domains: &domains [Product]
+internal: &internal False
+en:
+  name: child planning unit
+  definition: A planning unit subordinate to a parent planning unit. For example, a parent planning unit can represent the whole organization while the child planning unit represents groups of people within the organization, e.g. people who work in different time zones.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: untergeordnete Planungseinheit
+  definition: Eine Planungseinheit, die einer übergeordneten Planungseinheit zugeordnet ist. Zum Beispiel kann eine übergeordnete Planungseinheit für das gesamte Unternehmen stehen, wohingegen eine untergeordnete Planungseinheit eine Gruppe von Mitarbeitern innerhalb des Unternehmens darstellt, z.&nbsp;B. Mitarbeiter in unterschiedlichen Zeitzonen.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: unité opérationnelle de niveau inférieur
+  definition: Unité opérationnelle appartenant à une unité opérationnelle de niveau supérieur. Par exemple, une unité opérationnelle de niveau supérieur peut représenter l'ensemble de l'organisation, tandis que l'unité opérationnelle de niveau inférieur représente des groupes d'employés dans l'organisation, par exemple les employés travaillant sur des fuseaux horaires différents.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms:
+  - unité opérationnelle inférieure
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: unità di pianificazione inferiore
+  definition: Unità di pianificazione che appartiene a un'unità di pianificazione superiore. Un'unità di pianificazione superiore può rappresentare l'organizzazione per intero, mentre le unità di pianificazione inferiori rappresentano gruppi di dipendenti all'interno dell'organizzazione come, per esempio, i dipendenti che lavorano in fusi orari diversi.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: ondergeschikte eenheid
+  definition: Een eenheid die onder een bovenliggende eenheid is toegewezen. Zo kan een superieure eenheid voor een heel bedrijf staan, terwijl ondergeschikte eenheden voor groepen medewerkers binnen het bedrijf staan, bijvoorbeeld medewerkers die in verschillende tijdzones werken.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: unidad de planificación secundaria
+  definition: Una unidad de planificación subordinada a una unidad de planificación primaria. Una unidad de planificación primaria puede representar una organización completa, mientras que las unidades de planificación secundarias representan grupos dentro de la organización, p.&nbsp;ej. personas que trabajan en distintas zonas horarias.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

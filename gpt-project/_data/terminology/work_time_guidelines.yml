@@ -1,0 +1,57 @@
+---
+domains: &domains [Product]
+internal: &internal False
+en:
+  name: work time guidelines
+  definition: Work time guidelines comprise minimum, target, and maximum working time, and can be configured on a daily, weekly, monthly, and annual basis. They are the basis for creating contracts in injixo. 
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Arbeitszeitvorgaben
+  definition: Zeitliche Bedingungen zum Anlegen von Verträgen in injixo. Arbeitszeitvorgaben umfassen Mindest-, Soll- und Höchstarbeitszeit und können auf täglicher, wöchentlicher, monatlicher und jährlicher Basis festgelegt werden.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

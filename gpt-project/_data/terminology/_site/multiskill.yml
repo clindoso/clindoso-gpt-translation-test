@@ -1,0 +1,57 @@
+---
+domains: &domains [Product]
+microcopy: &microcopy False
+en:
+  name: multiskill
+  definition: A skill describes a person's ability to speak a certain language or to perform a certain activity. A multiskilled person can speak several languages or handle both calls and emails.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Multiskill
+  definition: Eine Qualifikation beschreibt die Fähigkeit einer Person, eine bestimmte Sprache zu sprechen oder eine bestimmte Tätigkeit auszuführen. Eine Multiskill-Person kann mehrere Sprachen sprechen oder kann sowohl Anrufe als auch E-Mails bearbeiten.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: compétences multiples
+  definition: Une compétence représente la capacité d’un employé à parler une certaine langue ou à travailler sur une certaine activité. Un employé possédant des compétences multiples peut parler plusieurs langues ou traiter à la fois les appels et les e-mails.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: qualifiche multiple
+  definition: Una qualifica descrive la capacità di un dipendente di parlare una certa lingua o di svolgere una certa attività. Una persona con qualifiche multiple, per esempio, parla più lingue, oppure è in grado di gestire sia le chiamate che le email.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: multiskill
+  definition: Een kwalificatie geeft aan of de persoon een bepaalde taal machtig is of over kwalificaties beschikt om een bepaalde activiteit uit te voeren. Een persoon met meerdere kwalificaties spreekt meerdere talen of handelt zowel gesprekken als e-mails af.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: cualificaciones múltiples
+  definition: Una cualificación describe la habilidad de un empleado para hablar un idioma o llevar a cabo una actividad en concreto. Un empleado con cualificaciones múltiples habla distintos idiomas o puede gestionar tanto llamadas como correos electrónicos.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

@@ -1,0 +1,59 @@
+---
+domains: &domains [Product]
+internal: &internal False
+en:
+  name: interval
+  definition: The time window into which historical data is aggregated (typically 15, 30, or 60 minutes).
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms:
+  - planning unit interval
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Intervall
+  definition: Das Zeitfenster, in das Daten aggregiert werden (in der Regel 15, 30 oder 60 Minuten).
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms:
+  - Intervall der Planungseinheit
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: intervalle
+  definition: Laps de temps sur lequel les données historiques sont agrégées (généralement 15, 30 ou 60 minutes).
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: intervallo
+  definition: Finestra di tempo all'interno della quale vengono aggregati i dati storici (generalmente 15, 30, o 60 minuti).
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: interval
+  definition: Het tijdsvenster waarin historische gegevens worden samengevoegd (gewoonlijk 15, 30 of 60 minuten).
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

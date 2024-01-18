@@ -1,0 +1,59 @@
+---
+domains: &domains [WFM]
+internal: &internal False
+en:
+  name: abandonment rate
+  definition: The percentage of calls that callers end before being connected to employees.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: ABR
+de:
+  name: Abbrecher-Quote
+  definition: Prozentsatz der Anrufe, die Anrufer abbrechen, bevor sie mit einem Mitarbeiter verbunden werden.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: 
+    - Abbruchrate
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: taux d’abandon
+  definition: Pourcentage d’appels terminés par les appelants avant d’avoir pu être mis en relation avec un employé.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: tasso di abbandono
+  definition: La percentuale di chiamate interrotte dai chiamanti prima di essere messi in collegamento con un dipendente.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: afbrekingspercentage
+  definition: Het percentage van oproepen die door de beller worden afgebroken voordat ze met een medewerker worden verbonden.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms:
+  - percentage afgebroken oproepen
+  forbidden_synonyms: []
+  abbreviation: ABR
+es:
+  name: tasa de abandono
+  definition: El porcentaje de llamadas que el cliente abandona antes de contactar con un agente.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

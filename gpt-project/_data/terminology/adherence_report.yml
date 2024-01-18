@@ -1,0 +1,58 @@
+---
+domains: &domains [Product]
+internal: &internal True
+en:
+  name: adherence report
+  definition: A report providing an overview of people's adherence and conformance data, useful to calculate performance bonuses. The adherence report can be created and downloaded in injixo.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Report Planeinhaltung (Aktivität)
+  definition: Ein Report, den Planer in WFM erstellen können. Der Report Planeinhaltung liefert eine tägliche Übersicht, die die geplanten und tatsächlichen Anfangs- und Endzeiten der Aktivitäten jedes Mitarbeiters (Typ Anwesenheit, Pause und Meeting) auflistet.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: Report sulla conformità alla pianificazione (attività)
+  definition: Panoramica giornaliera che mostra l'ora di inizio e l'ora di fine pianificate per le attività di ogni dipendente (attività del tipo Presenza, Pausa e Meeting).
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: adherence-rapport
+  definition: Een dagoverzicht met de begin- en eindtijden van de activiteiten van elke medewerker (type aanwezigheid, pauze en meeting) ten opzichte van de geplande tijden.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: informe de adherencia
+  definition: Resumen diario que muestra a qué horas los empleados comienzan y finalizan sus actividades 
+    (del tipo presencia, pausa y reunión) y lo compara con el horario planificado.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

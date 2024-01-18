@@ -1,0 +1,57 @@
+---
+domains: &domains [Product]
+internal: &internal False
+en:
+  name: tenant
+  definition: An injixo system (e.g. Essential, Advanced) that InVision provides to a customer.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Tenant
+  definition: Eine Instanz von injixo, die InVision einem Kunden in verschiedenen Produktplänen zur Verfügung stellt, z.B. injixo Essential oder Advanced WFM.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: tenant
+  definition: Système fourni par injixo à un client (par exemple, Essential, Advanced).
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: tenant
+  definition: Een injixo-systeem (zoals Essential, Advanced) dat door InVision aan een klant wordt verstrekt.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

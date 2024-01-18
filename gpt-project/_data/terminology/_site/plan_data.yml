@@ -1,0 +1,57 @@
+---
+domains: &domains [Product]
+microcopy: &microcopy False
+en:
+  name: Plan data
+  definition: Internal representation of a scheduled activity for an employee in a specific time frame. Only used in the API docs context.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Plan data
+  definition: Interne Repräsentation einer geplanten Aktivität eines Mitarbeiters in einem bestimmten Zeitraum. Wird nur im Kontext von API-Dokumentation benutzt.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

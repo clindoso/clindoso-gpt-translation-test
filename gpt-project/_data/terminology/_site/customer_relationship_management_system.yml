@@ -1,0 +1,57 @@
+---
+domains: &domains []
+microcopy: &microcopy False
+en:
+  name: customer relationship management system
+  definition: A software that streamlines a company’s interactions with its customers and prospects by providing up-to-date, comprehensive, and relevant customer information to customer-facing employees.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: CRM
+de:
+  name: Customer-Relationship-Management-System
+  definition: Eine Software, die bestehende Kundenbeziehungen und den Kontakt mit potenziellen Kunden eines Unternehmens optimiert, indem sie Mitarbeitern in direktem Kontakt mit Kunden wichtige Informationen über die Kunden und den Kontaktverlauf bereitstellt.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: CRM
+fr:
+  name: système de gestion des relations clients
+  definition: Un système de gestion des relations clients est une solution informatique permettant de simplifier les interactions d’une entreprise avec ses clients en regroupant des informations sur ses clients et ses prospects à jour, complètes et pertinentes pour les employés qui interagissent avec les clients.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: CRM
+it:
+  name: sistema CRM
+  definition: Un programma per la gestione delle interazioni con i clienti sia presenti che potenziali, che fornisce al personale a contatto con la clientela informazioni aggiornate, complete e rilevanti sui clienti.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: Customer Relationship Management-systeem
+  definition: Een softwareprogramma dat de communicatie van een bedrijf met klanten en leads optimaliseert door medewerkers met direct klantcontact actuele, uitgebreide en relevante informatie over de klant te geven.  
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

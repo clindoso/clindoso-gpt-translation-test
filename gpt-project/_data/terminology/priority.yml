@@ -1,0 +1,57 @@
+---
+domains: &domains [Product]
+internal: &internal False
+en:
+  name: priority
+  definition: A value for an activity that determines how activities can be replaced in a schedule. An activity with higher priority cannot be replaced by an activity with lower priority. The highest priority value is 1 and the lowest is 100.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Priorität
+  definition: Ein Wert für eine Aktivität, der festlegt, wie Aktivitäten im Schichtplan ersetzt werden können. Eine Aktivität mit einer höheren Priorität kann nicht durch eine Aktivität mit einer niedrigeren Priorität ersetzt werden. Der höchstmögliche Wert für die Priorität ist 1 und der niedrigste ist 100.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: priorité
+  definition: "Valeur appliquée à une activité pour déterminer le remplacement des activités dans un planning. Une activité dont la priorité est élevée ne peut être remplacée par une activité dont la priorité est plus faible. La priorité la plus élevée est 1 et la plus faible est 100."
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: priorità
+  definition: Valore di un'attività che determina come questa può essere sostituita all'interno di una pianificazione. Le attività non possono essere sostituite da attività che hanno una priorità inferiore. La priorità più alta è 1 e la più bassa è 100.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: prioriteit
+  definition: Een waarde voor een activiteit die aangeeft hoe activiteiten in een planning kunnen worden vervangen. Een activiteit met een hogere prioriteit kan niet worden vervangen door een activiteit met een lagere prioriteit. De hoogste prioriteitswaarde is 1 en de laagste is 100.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: prioridad
+  definition: Un valor de las actividades que determina cómo estas pueden ser reemplazadas en la planificación. Una actividad con mayor prioridad no puede ser reemplezada por una actividad con menor prioridad. La prioridad más alta es 1 y la más baja es 100.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

@@ -1,0 +1,57 @@
+---
+domains: &domains [WFM]
+microcopy: &microcopy False
+en:
+  name: talk time
+  definition: The amount of time an employee and a customer are in a conversation during a call or another contact.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Gesprächszeit
+  definition: Die Zeit, die ein Mitarbeiter und ein Kunde in einem Anruf verbringen. 
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: durée de conversation
+  definition: Durée pendant laquelle un employé est en conversation avec un client durant un appel ou via un autre moyen de communication.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: tempo di conversazione
+  definition: Lasso di tempo durante il quale un dipendente e un cliente sono impegnati in una conversazione durante una chiamata o un'interazione di altro tipo.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: gesprekstijd
+  definition: De tijd die een klant en een medewerker tijdens een oproep of ander contact met elkaar in gesprek zijn.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

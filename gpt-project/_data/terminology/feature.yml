@@ -1,0 +1,57 @@
+---
+domains: &domains [Product]
+internal: &internal True
+en:
+  name: feature
+  definition: Features are the building blocks of our products and platforms. Each feature represents a defined functionality or capability (e.g. performance, security, or scalability characteristics), and has a defined customer or business value.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Feature
+  definition: Features sind die Bausteine unserer Produkte und Plattformen. Jedes Feature steht für eine bestimmte Funktionalität oder Eigenschaft (z.&nbsp;B. Performance, Sicherheit, Skalierbarkeit) und hat einen festgelegten Wert für Kunden oder Unternehmen.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: fonctionnalité
+  definition: Les fonctionnalités sont les composantes de nos produits et solutions. Chaque fonctionnalité représente une fonction ou une capacité définie (par example, performances, sécurité ou caractéristiques de scalabilité) et a une valeur commerciale ou client définie.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: funzionalità
+  definition: Le funzionalità sono gli elementi costitutivi dei nostri prodotti e delle nostre soluzioni. Ogni funzionalità rappresenta una funzione o una capacità (per esempio, prestazioni, sicurezza o scalabilità) e ha un preciso valore per il cliente o per l'azienda. 
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: feature
+  definition: Features zijn de bouwstenen van onze producten en oplossingen. Elke feature staat voor een bepaalde functionaliteit of capaciteit (bijvoorbeeld prestaties, veiligheid of schaalbaarheidseigenschappen) en biedt toegevoegde waarde voor klanten of bedrijven.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: funcionalidad
+  definition: Las funcionalidades son los elementos constitutivos de nuestros productos y soluciones. Cada funcionalidad representa una función o capacidad (como prestaciones, seguridad o escalabilidad) y ofrece un valor definido para los clientes o la empresa.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

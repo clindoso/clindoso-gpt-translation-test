@@ -1,0 +1,62 @@
+---
+domains: &domains [WFM]
+internal: &internal True
+en:
+  name: attrition
+  definition: The total number of staff who leave a company over a certain time period.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms:
+  - attrition rate
+  forbidden_synonyms:
+  - employee turnover
+  - turnover
+  - turnover rate
+  abbreviation:
+de:
+  name: Mitarbeiterverlust
+  definition: Austritt von Mitarbeitern aus einer Organisation in einem bestimmten Zeitraum.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms:
+  - Mitarbeiterfluktuation
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: verloop
+  definition: Het aantal medewerkers dat een bedrijf gedurende een bepaalde periode verlaat.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

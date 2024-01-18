@@ -1,0 +1,57 @@
+---
+domains: &domains [Product]
+internal: &internal False
+en:
+  name: optimized scheduling
+  definition: A scheduling method using the injixo Create optimized schedule functionality that optimizes shift times, activities, and breaks within a schedule.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: optimierte Planung
+  definition: Eine Planungsmethode, die mit der injixo-Funktionalität Optimierten Plan erstellen durchgeführt wird, die Aktivitäten und Pausen optimiert.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: planification optimisée
+  definition: Méthode de planification utilisant la fonctionnalité Optimiser le planning, qui permet d'optimiser les horaires, les activités ou les pauses dans le planning.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: pianificazione ottimizzata
+  definition: Metodo di pianificazione che usa la funzionalità Crea una pianificazione ottimizzata per ottimizzare gli orari dei turni, le attività e le pause in una pianificazione.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: geoptimaliseerde planning
+  definition: Een planningsmethode die de injixo-functionaliteit Geoptimaliseerde planning maken gebruikt om werktijden, activiteiten en pauzes in een planning te optimaliseren. 
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: planificación optimizada
+  definition: Un método de planificación que usa la funcionalidad de injixo Crear planificación optimizada para optimizar los horarios, las actividades y las pausas de una planificación.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

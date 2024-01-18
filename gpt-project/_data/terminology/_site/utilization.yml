@@ -1,0 +1,57 @@
+---
+domains: &domains [WFM]
+microcopy: &microcopy False
+en:
+  name: utilization
+  definition: Percentage of an employee's total work time that is spent on their main tasks, such as handling contacts and after-call work, as well as other productive activities, such as trainings.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Utilization
+  definition: Prozentanteil der Gesamtarbeitszeit von Mitarbeitern, den sie sowohl für ihre Hauptaufgaben, z.&nbsp;B. Kontaktbearbeitung und -nachbearbeitung, als auch für andere produktive Aufgaben, z.&nbsp;B. für Schulungen, brauchen. 
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

@@ -1,0 +1,61 @@
+---
+domains: &domains [Marketing, WFM]
+microcopy: &microcopy False
+en:
+  name: customer experience
+  definition: The sum of all interactions that customers have with an organization and their satisfaction with it. Contact centers influence customer experience through a high first-contact resolution rate, short waiting times, and high quality in dealing with customers.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: 
+    - customer journey
+  abbreviation: CX
+de:
+  name: Customer Experience
+  definition: Die Summe aller Interaktionen von Kunden mit einem Unternehmen und ihre Zufriedenheit damit. Contact Center beeinflussen Customer Experience durch eine hohe Erstlösungsquote, möglichst kurze Wartezeiten und hohe Qualität im Umgang mit Kunden.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: 
+    - Kundenerfahrung
+    - Kundenerlebnis
+    - Customer Journey
+  abbreviation: CX
+fr:
+  name: expérience client
+  definition: Ensemble de toutes les interactions des clients avec une entreprise et leur satisfaction à son égard. Les centres de contact influencent l’expérience client par un taux élevé de résolution au premier contact, des temps d’attente courts et des interactions client de qualité.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: CX
+it:
+  name: customer experience (f)
+  definition: Il complesso delle interazioni che i clienti hanno con un'azienda, e la loro soddisfazione al riguardo. I contact center possono influire sulla customer experience tramite un'alta percentuale di risoluzione al primo contatto, tempi di attesa brevi, e un'ottima qualità delle interazioni con i clienti.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: CX
+nl:
+  name: customer experience
+  definition: Alle interacties samen die klanten met een organisatie hebben en hun tevredenheid hierover. Contactcenters beïnvloeden de customer experience door een hoog percentage gesprekken waarin vragen van klanten direct worden beantwoord (FCR), korte wachttijden en een hoogwaardige klantenservice.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

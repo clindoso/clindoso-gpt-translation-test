@@ -1,0 +1,58 @@
+---
+domains: &domains [Product]
+microcopy: &microcopy False
+en:
+  name: Real-Time Adherence
+  definition: An injixo feature for comparing employees' scheduled activities with their actual activities. injixo displays adherence data in real time.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: RTA
+  redirect_anchor_text: real-time-adherence-rta
+de:
+  name: Echtzeit Adherence
+  definition: Ein injixo-Feature, das die geplanten und tatsächlich ausgeführten Aktivitäten der Mitarbeiter vergleicht. injixo zeigt Daten zur Planeinhaltung in Echtzeit an.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: RTA
+  redirect_anchor_text: real-time-adherence-rta
+fr:
+  name: Adhérence Temps Réel
+  definition: Fonctionnalité d’injixo permettant de comparer les activités planifiées des employés avec leurs activités réelles. injixo affiche les données d’adhérence en temps réel. 
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: Realtime Adherence
+  definition: Een injixo-feature om de geplande activiteiten van een medewerker te vergelijken met de activiteiten die ze uitvoeren. injixo geeft roosteropvolgingsgegevens in realtime weer.
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

@@ -1,0 +1,57 @@
+---
+domains: &domains [WFM]
+internal: &internal True
+en:
+  name: planning cycle
+  definition: "The timetable for creating and publishing employee schedules. A planning cycle consists of two components:<br>- Planning horizon: How far in advance schedules are created.<br>- Planning period: For how many weeks schedules are created."
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Planungszyklus
+  definition: "Der Zeitplan für die Erstellung und Veröffentlichen der Mitarbeiterplanung. Ein Planungszyklus besteht aus zwei Elementen:<br>- Planungshorizont: Wie weit im Voraus Planungen erstellt werden.<br>- Planperiode: Für wie viele Wochen Planungen erstellt werden."
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: planningscyclus
+  definition: "Het tijdframe voor het maken en publiceren van de planningen van medewerkers. Een planningscyclus bestaat uit twee onderdelen:<br>- Planningshorizon: hoe ver van tevoren planningen worden gemaakt.<br>- Planningsperiode: Voor hoeveel weken planningen worden gemaakt."
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

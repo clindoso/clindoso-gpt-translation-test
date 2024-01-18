@@ -1,0 +1,57 @@
+---
+domains: &domains [WFM]
+internal: &internal False
+en:
+  name: back-office volume
+  definition: The number of incoming activities for the current day that can be set aside and dealt with at a later time, such as emails and support tickets, including backlog.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Back-Office-Volumen
+  definition: Die Anzahl eingehender Aktivitäten, die nicht sofort bearbeitet werden müssen, z.&nbsp;B. E-Mails und Support-Tickets. 
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: volume di back office
+  definition: Il numero di attività in entrata che possono essere accantonate e gestite in un secondo momento, come, per esempio, email e ticket di supporto.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: backoffice-volume
+  definition: Het aantal binnenkomende activiteiten, die niet direct hoeven te worden beantwoord, zoals e-mails en supporttickets.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

@@ -1,0 +1,57 @@
+---
+domains: &domains [Product]
+internal: &internal False
+en:
+  name: forecast version
+  definition: A snapshot of a forecast at a specific point in time. Use this snapshot for staff requirements calculations or later forecast accuracy evaluation.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Forecast-Version
+  definition: Die Momentaufnahme eines Forecasts zu einem bestimmten Zeitpunkt. Diese Momentaufnahme kann zu Bedarfsberechnungen oder zur Bewertung der Forecastgenauigkeit dienen.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: version de la prévision
+  definition: Instantané d’une prévision à un moment précis. Cet instantané est utilisé pour calculer le besoin en personnel ou évaluer la fiabilité de la prévision.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: forecastversie
+  definition: Een momentopname van een forecast op een bepaald moment. Deze momentopname kan worden gebruikt voor behoefteberekeningen of voor de beoordeling van de forecastnauwkeurigheid.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

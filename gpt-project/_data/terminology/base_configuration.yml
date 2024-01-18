@@ -1,0 +1,57 @@
+---
+domains: &domains [Product]
+internal: &internal False
+en:
+  name: base configuration
+  definition: Minimum required data to create an initial schedule. This can vary from customer to customer.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Grundkonfiguration
+  definition: Erforderliche Daten für die Erstellung einer ersten Planung. Diese sind je nach Kunde unterschiedlich.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: configuration minimale
+  definition: "Données minimales requises pour créer un premier planning. Elles peuvent varier d’un client à l’autre."
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: configurazione di base
+  definition: I dati minimi necessari a creare una pianificazione iniziale. Possono variare a seconda del cliente. 
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: basisconfiguratie
+  definition: De minimaal benodigde gegevens om een eerste planning te maken. Deze kunnen van klant tot klant verschillen.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

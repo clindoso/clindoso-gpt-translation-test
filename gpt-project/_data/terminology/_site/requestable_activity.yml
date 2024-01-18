@@ -1,0 +1,58 @@
+---
+domains: &domains [Product]
+microcopy: &microcopy False
+en:
+  name: requestable activity
+  definition: A requestable activity is an activity that people can request in injixo Me. This activity property is used for the activity types Absence, Vacation, and Illness.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: wünschbare Aktivität
+  definition: Eine wünschbare Aktivität is eine Aktivität, die Mitarbeiter sich in injixo Me wünschen können. Diese Eigenschaft wird für die Aktivitätstypen Abwesenheit, Urlaub und Krankheit verwendet.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: activité à demande autorisée
+  definition: Activité pouvant être demandée par les employés dans injixo Me. Cette propriété est utilisée pour les activités de type Absence, Congé et Maladie.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: attività richiedibile
+  definition: Attività che i dipendenti possono richiedere in injixo Me. Questa proprietà è usata per le attività del tipo Assenza, Vacanza, e Malattia.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: aanvraagbare activiteit
+  definition: Een activiteit die door een medewerker in injixo Me kan worden aangevraagd. Deze activiteiteigenschap wordt voor de activiteitentypen afwezigheid, vakantie en ziekteverlof gebruikt.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: actividad solicitable
+  definition: Actividades que los empleados pueden solicitar en injixo Me. Esta propiedad se usa para actividades de tipo Ausencia, Vacaciones o Enfermedad.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+

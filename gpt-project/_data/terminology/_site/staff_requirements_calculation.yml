@@ -1,0 +1,58 @@
+---
+domains: &domains [Product]
+microcopy: &microcopy False
+en:
+  name: staff requirements calculation
+  definition: The process of determining the number of employees needed to handle a forecasted workload.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: 
+    - staffing calculation [Marketing, WFM]
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Berechnung des Mitarbeiterbedarfs
+  definition: Der Prozess zur Ermittlung der erforderlichen Anzahl Mitarbeiter zur Bewältigung des prognostizierten Arbeitsaufkommens.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: berekening van de personeelsbehoefte
+  definition: Het proces waarbij het aantal medewerkers wordt berekend dat nodig is voor een bepaalde workload.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

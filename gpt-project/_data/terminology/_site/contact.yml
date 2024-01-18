@@ -1,0 +1,57 @@
+---
+domains: &domains [WFM]
+microcopy: &microcopy False
+en:
+  name: contact
+  definition: Customer interactions through a communication channel, such as telephone, email, or chat.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Kontakt
+  definition: Kundeninteraktion über einen Kommunikationskanal, wie Telefon, E-Mail oder Chat.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: contact
+  definition: Interactions client via un canal de communication, par exemple par téléphone, e-mail ou chat.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: contatto
+  definition: Interazione con i clienti tramite un canale di comunicazione, per esempio via telefono, email o chat.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: contact
+  definition: Interactie met klanten via een communicatiekanaal, zoals telefoon, e-mail of chat.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

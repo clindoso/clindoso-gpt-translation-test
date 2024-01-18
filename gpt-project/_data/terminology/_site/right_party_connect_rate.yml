@@ -1,0 +1,57 @@
+---
+domains: &domains [WFM]
+microcopy: &microcopy False
+en:
+  name: right party connect rate
+  definition: Percentage of outbound call attempts within a campaign that are successful, for example, where the target person was reached.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Right-Party-Kontakt-Rate
+  definition: Prozentsatz erfolgreicher Kontaktversuche in einer Telefon-Kampagne, z.&nbsp;B. bei denen die gewünschte Zielperson erreicht wurde. 
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: taux de contacts aboutis
+  definition: Pourcentage de tentatives réussies d’appels sortants dans une campagne, par exemple lorsque le bon interlocuteur a pu être contacté.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: tasso di connessioni riuscite
+  definition: La percentuale di tentativi di chiamate in uscita nell'ambito di una campagna che vanno a buon fine; per esempio, quando la persona è stata raggiunta.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: Percentage succesvolle contacten
+  definition: Percentage succesvolle uitgaande oproepen in het kader van een campagne, bijvoorbeeld waarbij de gecontacteerde persoon kon worden bereikt.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

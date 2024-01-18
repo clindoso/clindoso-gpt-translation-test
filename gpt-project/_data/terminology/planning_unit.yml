@@ -1,0 +1,62 @@
+---
+domains: &domains [WFM]
+internal: &internal False
+en:
+  name: planning unit
+  definition: Business section that groups employees together for scheduling purposes. It contains the business hours, time zone, activities, and day models that can be assigned to employees.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Planungseinheit
+  definition: Ein Unternehmensbereich, der Mitarbeiter zu Planungszwecken zusammenfasst. Er enthält die Geschäftszeiten, Zeitzonen, Aktivitäten und Tagesmodelle, die den Mitarbeitern zugewiesen werden können.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: unité opérationnelle
+  definition: Section d’une organisation qui regroupe les employés à des fins de planification. 
+    Elle contient les horaires d’ouverture, le fuseau horaire, les activités et les modèles horaires 
+    pouvant être affectés aux employés.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: unità di pianificazione
+  definition: Sezione di un'azienda che raggruppa i dipendenti ai fini della pianificazione.
+    Include gli orari di lavoro, il fuso orario, le attività e i modelli di orario che possono 
+    essere assegnati ai dipendenti.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: planningseenheid
+  definition: Een bedrijfssectie waarin medewerkers voor planningsdoeleinden worden gegroepeerd.
+    Het bevat werktijden, tijdzone, activiteiten en dagmodellen die aan medewerkers kunnen worden toegewezen.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

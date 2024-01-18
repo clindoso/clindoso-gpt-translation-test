@@ -1,0 +1,57 @@
+---
+domains: &domains [WFM]
+microcopy: &microcopy False
+en:
+  name: schedule
+  definition: A sequence of shifts for one or more people displaying planned tasks and time off.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Schichtplan
+  definition: Eine Abfolge von Schichten für einen oder mehrere Personen, in der geplante Aufgaben und Abwesenheiten angezeigt werden.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: planning
+  definition: Série de journées d'une ou plusieurs personnes, qui inclut les tâches planifiées et les absences.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: pianificazione
+  definition: Sequenza di turni per una o più persone, che include i compiti programmati e le assenze.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: planning
+  definition: Een reeks diensten voor een of meerdere personen, waarin geplande taken en afwezigheden worden weergegeven.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: planificación
+  definition: Serie de turnos para uno o varios empleados que incluye las actividades y ausencias planificadas.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

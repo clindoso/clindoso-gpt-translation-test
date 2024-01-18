@@ -1,0 +1,57 @@
+---
+domains: &domains []
+microcopy: &microcopy False
+en:
+  name: full-day activity
+  definition: An activity that is set up for one complete day. Used to block a whole day and limit scheduling flexibility, e.g. for sick days.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: ganztägige Aktivität
+  definition: Eine Aktivität, die für einen ganzen Tag geplant ist. Damit wird ein ganzer Tag blockiert, um die Flexibilität bei der Planung einzuschränken, z.&nbsp;B. für Krankheitstage.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: activité à journée entière
+  definition: Activité planifiée pour une journée entière. Elle permet de bloquer une journée entière et de limiter la flexibilité de la planification, par exemple pour les congés maladie.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: activiteit over de hele dag
+  definition: Een activiteit die gedurende een hele dag is gepland. Hiermee wordt een hele dag geblokkeerd, om de flexibiliteit bij het plannen te beperken, bijv.&nbsp;bij ziekteverlof.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

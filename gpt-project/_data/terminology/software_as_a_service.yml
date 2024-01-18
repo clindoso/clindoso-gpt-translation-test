@@ -1,0 +1,57 @@
+---
+domains: &domains []
+internal: &internal False
+en:
+  name: software as a service
+  definition: A model for licensing and deploying a software. The software is licensed on a subscription basis and centrally hosted.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: SaaS
+de:
+  name: Software as a Service
+  definition: Ein Modell für Softwarelizenzierung und -bereitstellung. Die Software wird auf Abonnementbasis lizenziert und zentral gehostet.  
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: SaaS
+fr:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: software as a service
+  definition: Een model voor het licentiëren en implementeren van software. De software wordt in licentie gegeven op abonnementsbasis en centraal gehost.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: SaaS
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

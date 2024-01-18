@@ -1,0 +1,57 @@
+---
+domains: &domains [WFM]
+microcopy: &microcopy False
+en:
+  name: capacity
+  definition: The ability of a contact center to manage a workload volume regarding staff requirements, and employee qualification and availability.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Kapazität
+  definition: Die Fähigkeit eines Contact Centers, ein Workload-Volumen zu bearbeiten, in Bezug auf Mitarbeiterbedarf, -qualifikation und -verfügbarkeit.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: capacité
+  definition: Mesure dans laquelle un centre de contacts est capable de gérer une charge de travail en matière de besoins en personnel, de niveau de qualification des employés et de leurs disponibilités.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: capacità
+  definition: La facoltà di un contact center di gestire un volume di workload in termini di fabbisogno di personale e di competenze e disponibilità dei dipendenti.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: capaciteit
+  definition: Het vermogen van een contactcenter om een workload te verwerken te beheren met betrekking tot de personeelsbehoefte en de kwalificaties en beschikbaarheid van het personeel.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

@@ -1,0 +1,57 @@
+---
+domains: &domains []
+microcopy: &microcopy False
+en:
+  name: intraweek forecast
+  definition: Prediction of metrics such as offered calls and AHT at day-of-week level.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Wochenforecast
+  definition: Forecast von Kennzahlen, wie eingehenden Anrufen und durchschnittlicher Bearbeitungszeit, verteilt auf die Wochentage.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: weekforecast
+  definition: Voorspelling van metrics zoals ingaande oproepen en de gemiddelde afhandeltijd, verdeeld over de dagen van de week.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

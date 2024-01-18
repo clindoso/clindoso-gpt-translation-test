@@ -1,0 +1,59 @@
+---
+domains: &domains [WFM]
+microcopy: &microcopy False
+en:
+  name: after-call work
+  definition: An employee's time spent on work that is directly related to a customer contact that has just finished, e.g. entering customer details into the CRM system, sending emails, or placing orders.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms:
+    - wrap-up time
+    - post-processing time
+  forbidden_synonyms: []
+  abbreviation: ACW
+de:
+  name: Nachbearbeitungszeit
+  definition: Die Zeit, die für die Nachbearbeitung eines Kundenkontakts beansprucht wird, z.&nbsp;B. Kundenangaben ins CRM-System einpflegen, E-Mails versenden oder Aufträge erteilen.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: traitement post-appel
+  definition: Temps de travail directement lié à un contact client antérieur, par exemple pour la saisie des coordonnées client dans le système CRM, l’envoi d’e-mails ou le placement de commandes.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: ACW
+it:
+  name: elaborazione post-chiamata
+  definition: Il tempo che i dipendenti impiegano in operazioni successive al contatto con un cliente, per esempio l'inserimento dei suoi dati nel sistema CRM, l'invio di email o la conferma di ordini.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: ACW
+nl:
+  name: nawerk
+  definition: De tijd die een agent nodig heeft om een gesprek administratief af te handelen nadat de verbinding met de klant is verbroken.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: trabajo tras llamada
+  definition: "Tiempo de trabajo con relación directa con una comunicación con clientes que acaba de terminar, p.&nbsp;ej.: introducir datos del cliente en el sistema CRM, enviar correos electrónicos o realizar un pedido."
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: ACW

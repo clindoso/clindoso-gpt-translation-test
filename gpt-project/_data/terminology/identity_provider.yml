@@ -1,0 +1,61 @@
+---
+domains: &domains []
+internal: &internal False
+en:
+  name: identity provider
+  definition: A central system for identifying and authenticating users through which they can log in to different applications.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms:
+  - IDP
+  acronym: IdP
+de:
+  name: Identity Provider
+  definition: Ein zentrales Zugangssystem zur Identifizierung bzw. Authentifizierung der Benutzer, durch das sich Benutzer bei unterschiedlichen Anwendungen anmelden können.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms:
+  - IDP
+  acronym: IdP
+fr:
+  name: "Fournisseur d'identité"
+  definition: Système central permettant l’identification et l’authentification des utilisateurs et par lequel ils peuvent se connecter à différentes applications.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms:
+  - IDP
+  acronym: IdP
+it:
+  name: identity provider
+  definition: Sistema centralizzato per l'identificazione e l'autenticazione degli utenti attraverso il quale è possibile accedere a diverse applicazioni.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms:
+  - provider di identità
+  forbidden_synonyms: []
+  acronym: IdP
+nl:
+  name: identiteitsprovider
+  definition: Een centraal systeem voor het identificeren en authenticeren van gebruikers, dat ervoor zorgt dat gebruikers zich bij verschillende toepassingen kunnen aanmelden.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  acronym: IdP
+es:
+  name: proveedor de identidad
+  definition: "Un sistema central para la identificación y autenticación de usuarios con el que pueden iniciar sesión en distintas aplicaciones."
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  acronym: IdP

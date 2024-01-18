@@ -1,0 +1,57 @@
+---
+domains: &domains [WFM]
+microcopy: &microcopy False
+en:
+  name: Analytics
+  definition: The fifth step of the WFM cycle. Analytics comprise understanding, predicting and improving a business by turning data into actionable insights.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Analyse
+  definition: Der fünfte Schritt des WFM-Kreislaufs. Analyse beinhaltet die datenbasierte Gewinnung von Erkenntnissen zur aktuellen und zukünftigen Performance des Unternehmens sowie die daraus abzuleitenden Verbesserungsmöglichkeiten.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: Analyse
+  definition: De vijfde stap in de WFM-cyclus. Analyse omvat het begrijpen, voorspellen en verbeteren van een bedrijf door data om te zetten in omzetbare inzichten.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

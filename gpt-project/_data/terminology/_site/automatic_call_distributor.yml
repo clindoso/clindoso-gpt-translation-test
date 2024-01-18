@@ -1,0 +1,65 @@
+---
+domains: &domains []
+microcopy: &microcopy False
+en:
+  name: automatic call distributor
+  definition: A software system that routes different types of inbound customer contacts to available agents using predetermined rules.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms:
+  - automated call distributor
+  - automatic contact distributor
+  - automatic call distribution
+  - automatic contact distribution
+  abbreviation: ACD
+  redirect_anchor_text: automatic-call-distribution-acd
+de:
+  name: Automatic Call Distribution
+  definition: Die ACD. Eine Software, die verschiedene Arten von eingehenden Kundenkontakten anhand festgelegter Regeln an verfügbare Agenten weiterleitet.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: ACD
+  redirect_anchor_text: automatic-call-distribution-acd
+fr:
+  name: automate
+  definition: Système informatique permettant d’acheminer différents types de contacts clients entrants vers les agents disponibles à l’aide de règles prédéfinies.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms:
+    - système de téléphonie
+    - distributeur automatique d’appels
+  forbidden_synonyms: []
+  abbreviation: ACD
+it:
+  name: 
+  definition: 
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: automatic call distributor
+  definition: Een softwaresysteem dat verschillende soorten binnenkomende klantcontacten aan de hand van vastgelegde regels toewijst aan beschikbare agenten.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: ACD
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

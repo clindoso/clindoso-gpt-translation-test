@@ -1,0 +1,69 @@
+---
+domains: &domains [Product]
+internal: &internal False
+en:
+  name: injixo
+  definition: Our solution for workforce management.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms:
+  - application (use in technical contexts)
+  - solution (use more generally when talking about injixo's benefits and USPs)
+  forbidden_synonyms:
+  - program
+  - platform
+  - tool
+  - system
+  abbreviation:
+de:
+  name: injixo
+  definition: Unsere Workforce-Management-Lösung.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms:
+  - Anwendung (in technischen Zusammenhängen)
+  - Lösung (wenn es um die Vorteile von injixo geht)
+  forbidden_synonyms:
+  - Programm
+  - Plattform
+  - Tool
+  - System
+  abbreviation:
+fr:
+  name: injixo
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: injixo
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: injixo
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: injixo
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

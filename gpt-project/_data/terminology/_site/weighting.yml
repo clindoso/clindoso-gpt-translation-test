@@ -1,0 +1,57 @@
+---
+domains: &domains [Product]
+microcopy: &microcopy False
+en:
+  name: weighting
+  definition: When an activity has several skills, you can use weighting to indicate the importance of each skill. The weighting value further refines the suitability value. To determine a person's suitability, injixo multiplies the skill level for each skill by the weighting value and then calculates the average. 
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Gewichtung
+  definition: Wenn eine Aktivität mehrere Qualifikationen umfasst, kann die Qualifikation gewichtet werden. Der Gewichtungswert verfeinert den Eignungsgrad weiter. Um die Eignung einer Person zu ermitteln, multipliziert injixo die Qualifikationsstufe jeder Qualifikation mit dem Gewichtungswert und berechnet dann den Durchschnitt.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: coefficient de pondération
+  definition: Lorsque plusieurs compétences sont nécessaires pour une même activité, vous pouvez utiliser le coefficient de pondération pour indiquer l'importance de chaque compétence. Le coefficient de pondération permet de préciser la valeur de l'aptitude. Pour déterminer l'aptitude d'un employé, injixo multiplie le niveau de compétence pour chaque compétence par le coefficient de pondération, puis en calcule la moyenne.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: ponderazione
+  definition: Per un'attività che richiede diverse qualifiche, usa la ponderazione per specificare l'importanza di ogni qualifica. Il coefficiente di ponderazione permette di affinare il valore di idoneità. Per determinare l'idoneità di una persona, injixo moltiplica il livello di qualifica di ogni qualifica per il coefficiente di ponderazione, e poi calcola la media.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: weging
+  definition: Als een activiteit verschillende kwalificaties heeft, kun je een bepaald gewicht toekennen om de belangrijkheid van elke kwalificatie aan te geven. De weging verfijnd de geschiktheidswaarde. Om de geschiktheid van een persoon te bepalen vermenigvuldigt injixo het kwalificatieniveau voor elke kwalificatie met het gewicht, waarna het gemiddelde wordt berekend.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: ponderación
+  definition: Cuando una actividad requiere múltiples cualificaciones, puedes usar la ponderación para indicar la importancia de cada cualificación. El valor de ponderación contribuye a refinar el valor de idoneidad. Para determinar la idoneidad de un empleado, injixo multiplica el nivel de cualificación del empleado para cada cualificación por el valor de ponderación y calcula la media.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

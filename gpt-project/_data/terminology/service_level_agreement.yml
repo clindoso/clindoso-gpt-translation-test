@@ -1,0 +1,58 @@
+domains: &domains []
+internal: &internal False
+en:
+  name: service level agreement
+  definition: Terms agreed by the service provider and the client to define the expected service level.
+  example: Every contract between outsourcer and client includes a service level agreement (SLA), which lays out the required grade of service, how this is measured, and the penalties for failing to achieve the target.
+  domain_ref: *domains
+  internal_ref: *internal 
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: SLA
+de:
+  name: Service-Level-Agreement
+  definition: Dokument mit Regeln und Zielen, die definiert werden, um das erwartete Service-Level zu erreichen.
+  example: Jeder Vertrag zwischen dem Callcenter-Dienstleister und Kunden beinhaltet ein Service Level Agreement (SLA), das den erforderlichen Servicegrad, dessen Bemessung und die Strafen bei Nichterreichung des Ziels festlegt.
+  domain_ref: *domains
+  internal_ref: *internal 
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: SLA
+fr:
+  name: accord de niveau de service
+  definition: Conditions prévues entre le prestataire de services et le client pour déterminer le niveau de service attendu.
+  example: Chaque contrat entre un prestataire de service et un client inclut un accord de niveau de service (SLA), qui définit le niveau de service, la manière dont il est mesuré et les pénalités appliquées en cas de manquement.
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: 
+    - service-level agreement
+  forbidden_synonyms: []
+  abbreviation: SLA
+it:
+  name: accordo sul livello di servizio
+  definition: Termini dell'accordo tra il fornitore di servizi e il cliente che definiscono il livello di servizio previsto.
+  example: Ogni contratto tra un fornitore esterno e un cliente comprende un accordo sul livello di servizio (SLA), che definisce il grado di servizio richiesto, come viene misurato, e quali penali si applicano se l'obiettivo non viene raggiunto. 
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms:
+    - service level agreement
+  forbidden_synonyms: []
+  abbreviation: SLA
+nl:
+  name: service level agreement
+  definition: Elk contract tussen outsourcer en klant bevat een service level agreement (SLA), waarin het vereiste service level wordt vermeld, hoe deze wordt gemeten en de straffen die van toepassing zijn wanneer het doel niet wordt behaald.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: acuerdo de nivel de servicio
+  definition: Condicionas acordadas entre el proveedor de servicios y el cliente para determinar el nivel de servicio esperado.
+  example: Cada contrato entre el proveedor de servicios y el cliente incluye un acuerdo de nivel de servicios (SLA), que establece el nivel de servicios requerido, cómo se mide, y las penalizaciones en caso de incumplimiento. 
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: SLA

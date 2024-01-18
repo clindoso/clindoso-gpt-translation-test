@@ -1,0 +1,58 @@
+---
+domains: &domains [WFM]
+microcopy: &microcopy False
+en:
+  name: Scheduling
+  definition: The third step of the WFM cycle. Scheduling comprises balancing staff requirements with the business demands to create the best possible schedules.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Schichtplanerstellung
+  definition: Der dritte Schritt des WFM-Kreislaufs. Schichtplanerstellung beinhaltet die Vereinbarung der Mitarbeiterbedürfnisse und Unternehmensanforderungen zur Erstellung der bestmöglichen Schichtpläne.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: planning
+  definition: De derde stap van de WFM-cyclus. In de planningsstap worden de personeelsbehoefte en de bedrijfsbehoefte afgestemd om de best mogelijke planningen te maken.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+

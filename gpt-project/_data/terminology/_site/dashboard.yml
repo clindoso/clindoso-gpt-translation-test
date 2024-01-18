@@ -1,0 +1,58 @@
+---
+domains: &domains [Product]
+microcopy: &microcopy False
+en:
+  name: Dashboards
+  definition: An injixo feature for creating charts (consisting of time series in
+    graphs) to visualize and compare data.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Dashboards
+  definition: Ein injixo-Feature zur Erstellung von Diagrammen (bestehend aus Zeitreihen in Graphen) zur Visualisierung und zum Vergleich von Daten.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: Dashboards
+  definition: Fonctionnalité d’injixo permettant la création de graphiques (composés de séries temporelles) afin de visualiser et de comparer des données.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: Dashboard
+  definition: Een injixo-feature voor het maken van diagrammen (bestaande uit tijdreeksen in grafieken) om gegevens te visualiseren en te vergelijken.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

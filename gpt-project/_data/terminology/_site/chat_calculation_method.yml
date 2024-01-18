@@ -1,0 +1,59 @@
+---
+domains: &domains [WFM]
+microcopy: &microcopy False
+en:
+  name: chat calculation method
+  definition: A staffing calculation method for chat interactions.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+  redirect_anchor_text: chat-script
+de:
+  name: Chat-Berechnungsmethode
+  definition: Eine Methode zur Berechnung des Mitarbeiterbedarfs für Chat-Interaktionen.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+  redirect_anchor_text: chat-skript
+fr:
+  name: Calcul des besoins - Chat
+  definition: Méthode de calcul des besoins en personnel pour les contacts via chat.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: metodo di calcolo - chat
+  definition: Metodo di calcolo del fabbisogno di personale per i contatti via chat.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: chatberekeningsmethode
+  definition: Een methode om de personeelsbehoefte voor chatinteracties te berekenen.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

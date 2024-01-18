@@ -1,0 +1,57 @@
+---
+domains: &domains [Product]
+internal: &internal False
+en:
+  name: Capacity
+  definition: An injixo feature that gives insights about future hiring and training needs.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Capacity
+  definition: Ein injixo-Feature, das Einblicke in den zukünftigen Einstellungs- und Schulungsbedarf gibt.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: Capacity
+  definition: Fonctionnalité d’injixo permettant d’afficher vos besoins futurs en matière de recrutement et de formation.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: Capacity
+  definition: Componente injixo che fornisce dati utili sulle necessità future in termini di assunzioni e formazione.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: Capacity
+  definition: Een injixo-feature dat inzicht biedt in de toekomstige recruterings- en trainingsbehoeften.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

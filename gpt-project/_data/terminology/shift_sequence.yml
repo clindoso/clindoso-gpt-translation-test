@@ -1,0 +1,57 @@
+---
+domains: &domains [WFM]
+internal: &internal False
+en:
+  name: shift sequence
+  definition: A sequence of day models or activities with a repeating weekly pattern.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Schichtfolge
+  definition: Eine Abfolge von sich wiederholenden Tagesmodellen oder Aktivitäten für einzelne oder mehrere Personen.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: "rotation d’horaires"
+  definition: "Série de modèles horaires ou d’activités suivant un modèle hebdomadaire récurrent."
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: rotazione
+  definition: Insieme di modelli di orario o di attività che si ripete con cadenza settimanale.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: dienstenserie
+  definition:  Een reeks dagmodellen of activiteiten voor een of meerdere personen dat zich steeds herhaalt.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: secuencia de turnos
+  definition: Una secuencia de modelos de horario o actividades que se repiten semanalmente.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

@@ -1,0 +1,57 @@
+---
+domains: &domains [Product]
+internal: &internal False
+en:
+  name: Intraday Adherence
+  definition: An Intraday feature for comparing employees' scheduled activities with their actual activities. injixo displays historical adherence data for the present day until the current moment or for any day in the past six months. 
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Intraday Adherence
+  definition: Ein injixo-Feature, das die geplanten und tatsächlich ausgeführten Aktivitäten der Mitarbeiter vergleicht. injixo zeigt historische Daten zur Planeinhaltung für den bisherigen aktuellen Tag bzw. jeden anderen Tag der vergangenen sechs Monate an.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: Adhérence Intrajournalière
+  definition: Fonctionnalité du module Intraday permettant de suivre l’adhérence passée. injixo affiche les données historiques d’adhérence pour la journée en cours ou pour toute journée des six derniers mois.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: Intraday Adherence
+  definition: Een injixo-feature dat de geplande en werkelijk uitgevoerde activiteiten van een medewerker vergelijkt. injixo geeft historische adherence-gegevens weer voor de huidige dag of een andere dag uit de afgelopen zes maanden.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

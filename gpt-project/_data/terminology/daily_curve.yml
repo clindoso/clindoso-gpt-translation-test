@@ -1,0 +1,58 @@
+---
+domains: &domains []
+internal: &internal False
+en:
+  name: daily curve
+  definition: Graphic representation of how a parameter, such as contact volume or AHT, varies over a day. Contact centers that operate during normal business hours typically observe a daily curve with peak times in the morning and afternoon, known as an M-curve.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Tageskurve
+  definition: Graphische Darstellung der Schwankung eines Parameters, z.&nbsp;B. des Kontakvolumens oder der AHT, an einem Tag. Contact Center mit üblichen Betriebszeiten stellen in der Regel eine Tageskurve mit Hauptbelastungszeiten am Morgen und am Nachmittag fest, auch bekannt als M-Kurve.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: courbe journalière
+  definition: Distribution d’une valeur, par exemple le volume de contacts sur une journée. Les centres de contacts qui opèrent pendant les heures normales de bureau observent généralement une courbe quotidienne avec des pics le matin et l’après-midi, appelée courbe en M (M-curve).
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms:
+  - courbe en dos de chameau
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: curva giornaliera
+  definition: Rappresentazione grafica della variazione giornaliera di un parametro, per esempio il volume di contatto o il tempo medio di gestione. I contact center che operano durante il tradizionale orario di ufficio di solito registrano una curva giornaliera che presenta picchi al mattino e al pomeriggio, chiamata curva a M.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: dagcurve
+  definition: Grafische weergave van de fluctuatie van een parameter, zoals het contactvolume of de AHT, gedurende een dag. Contactcenters die tijdens gangbare kantooruren werken, hebben gewoonlijk een dagcurve met piektijden in de ochtend en middag, ook wel een M-curve genoemd.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

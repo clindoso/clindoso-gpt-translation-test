@@ -1,0 +1,57 @@
+---
+domains: &domains [WFM]
+internal: &internal False
+en:
+  name: forecast accuracy
+  definition: An indicator of how closely the volume of incoming contacts or the AHT actually matches the forecast.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Forecastgenauigkeit
+  definition: Eine Kennzahl, die zeigt, wie gut das Volumen eingehender Kontakte oder die AHT dem Forecast tatsächlich entspricht.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: fiabilité de la prévision
+  definition: Indicateur permettant de mesurer la corrélation entre le volume de contacts entrants et le TMT. 
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: forecastnauwkeurigheid
+  definition: Een indicator die aangeeft hoe goed de hoeveelheid binnenkomende contacten of de AHT overeenkomt met de forecast.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

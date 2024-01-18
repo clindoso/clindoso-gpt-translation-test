@@ -1,0 +1,58 @@
+---
+domains: &domains [WFM]
+internal: &internal False
+en:
+  name: full-time equivalent
+  definition: A unit to compare the staffing arrangement to one full-time employee. For example, if full time is defined as 40 hours per week, two employees each working 20 hours equals one full-time equivalent.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: FTE
+de:
+  name: Vollzeitäquivalent
+  definition: Eine Kennzahl zum Vergleich der vorhandenen Arbeitskräfte mit einem Vollzeitmitarbeiter. Beträgt die volle Arbeitszeit z.&nbspB. 40 Stunden pro Woche, entsprechen zwei Mitarbeiter, die 20 Stunden pro Woche tätig sind, einem Vollzeitäquivalent.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms:
+  - Full-Time Equivalent
+  forbidden_synonyms: []
+  abbreviation: FTE
+fr:
+  name: équivalent temps plein
+  definition: Unité de mesure permettant de comparer les effectifs à un employé à temps plein. Par exemple, si un temps plein correspond à 40&nbsp;heures par semaine, deux employés travaillant 20&nbsp;heures par semaine représentent un équivalent temps plein.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: ETP
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: fulltime-equivalent
+  definition: Een eenheid om de aanwezige medewerkers te vergelijken met een fulltime medewerker. Bij een voltijdse werkweek van bijvoorbeeld 40 uur per week, zijn twee medewerkers die allebei 20 uur per week werken gelijk aan het fulltime-equivalent.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

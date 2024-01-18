@@ -1,0 +1,59 @@
+---
+domains: &domains [Product]
+microcopy: &microcopy False
+en:
+  name: second-level navigation item
+  definition: injixo's second-level functions, e.g. Schedules, Time Off, Meetings.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms:
+  - Module
+  abbreviation:
+de:
+  name: zweite Navigationsebene
+  definition: Unterfunktionen von injixo, z.&nbsp;B. Schedules, Time Off, Meetings, die auf der zweiten Navigationsebene zu finden sind.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms:
+  - Modul
+  abbreviation:
+fr:
+  name: éléments de navigation de deuxième niveau
+  definition: Fonctions de la barre de navigation inférieure d'injixo. Par exemple, Schedules, Congés/Absences, Meetings.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: elemento della navigazione secondaria 
+  definition: Funzione di injixo di secondo livello, come, per esempio, Schedules, Ferie/Assenze, Meetings.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: item op het tweede navigatieniveau
+  definition: Functies op het tweede navigatieniveau in injixo, zoals Schedules, Vakantie/Afwezigheid, Vergaderingen.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: elemento de navegación secundaria
+  definition: Las funcionalidades de segundo nivel de injixo, p.&nbsp;ej. Planificación, Vacaciones/Ausencias, Reuniones.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

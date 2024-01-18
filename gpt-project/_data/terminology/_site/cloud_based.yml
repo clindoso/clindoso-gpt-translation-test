@@ -1,0 +1,58 @@
+---
+domains: &domains []
+microcopy: &microcopy False
+en:
+  name: cloud-based
+  definition: Describes a technology stored, managed, and processed on a network of remote servers (e.g. on the internet).
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: cloudbasiert
+  definition: Beschreibt eine Techonologie, die auf einem Remote-Server-Netzwerk (z.&nbsp;B. im Internet) gelagert, verwaltet und verarbeitet wird.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: Cloud
+  definition: Pratique consistant à stocker, gérer et traiter des données via un réseau de serveurs à distance (par exemple sur internet).
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: cloud
+  definition: Descrive una tecnologia che è archiviata, gestita, e processata su una rete di server in remoto (per esempio su internet).
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms:
+    - su cloud
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: cloudgebaseerd
+  definition: Beschrijft een technologie die op een remote-server-netwerk (bijv. internet) wordt opgeslagen, beheerd en verwerkt.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

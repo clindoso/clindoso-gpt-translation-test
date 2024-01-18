@@ -1,0 +1,62 @@
+---
+domains: &domains [WFM, Product]
+internal: &internal False
+en:
+  name: fixed shift
+  definition: A day model type for a shift with whose start and end times cannot be changed. Only the activities and breaks within the shift are flexible.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms:
+  - fixed day model
+  forbidden_synonyms: 
+    - rostering
+  abbreviation:
+de:
+  name: zeitlich fixierte Schicht
+  definition: Ein Tagesmodelltyp für eine Schicht, deren Start- und Endzeit nicht geändert werden können. Nur die Aktivitäten und Pausen der Schicht sind flexibel.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms:
+  - fixes Tagesmodell
+  forbidden_synonyms:
+  - feste Schicht
+  - fixe Schicht
+  abbreviation:
+fr:
+  name: horaire fixe
+  definition: Type de modèle horaire dont l’heure de début et de fin sont fixes. Seules les activités et les pauses sont flexibles.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: turno fisso
+  definition: Tipo di modello di orario con ora di inizio e ora di fine ricorrenti. Soltanto le pause e le attività durante il turno sono flessibili. 
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: vaste dienst
+  definition: Een dagmodeltype voor een dienst met een vaste begin- en eindtijd. Alleen de activiteiten en pauzes tijdens de dienst zijn flexibel.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

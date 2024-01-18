@@ -1,0 +1,59 @@
+---
+domains: &domains [Product]
+microcopy: &microcopy False
+en:
+  name: activity
+  definition: A scheduled task, break, meeting or time off in people’s schedules in injixo.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+  redirect_anchor_text: activities
+de:
+  name: Aktivität
+  definition: Geplante Aufgaben, Pausen, Meetings oder Abwesenheiten in Schichtplänen in injixo.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+  redirect_anchor_text: aktivitäten
+fr:
+  name: activité
+  definition: Tâche, pause, réunion ou absence planifiée dans le planning des employés dans injixo.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: attività
+  definition: Compiti, riunioni, pause o assenze inserite nelle pianificazioni dei dipendenti in injixo.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: activiteit
+  definition: Een ingeplande taak, pauze, vergadering of verlof in de planning van een medewerker.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: actividad
+  definition: Tareas, pausas, reuniones o ausencias incluidas en la planificación en injixo.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

@@ -1,0 +1,61 @@
+---
+domains: &domains [Product]
+internal: &internal True
+en:
+  name: log out
+  definition: To perform the actions that allow you to end a session in a computer system, application or online account.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms:
+  - sign out
+  abbreviation:
+de: 
+  name: abmelden
+  definition: Schritte, mit denen man eine Sitzung an einem Computersystem, einer Anwendung oder einem Online-Konto beendet.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms:
+  - ausloggen
+  abbreviation:
+fr:
+  name: se déconnecter
+  definition: Exécuter les actions permettant de terminer une session sur un système informatique, une application ou un compte en ligne.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: fare il logout
+  definition: Compiere le azioni necessarie a terminare una sessione su un computer, un'applicazione o un account online.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms:
+  - disconnettersi
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: afmelden
+  definition: De acties uitvoeren om te stoppen met het gebruik van een computersysteem, applicatie of online account.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms:
+  - uitloggen
+  abbreviation:
+es:
+  name: "cerrar sesión"
+  definition: "Completar las acciones necesarias para terminar la sesión en un sistema informático, una aplicación o una cuenta en línea."
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

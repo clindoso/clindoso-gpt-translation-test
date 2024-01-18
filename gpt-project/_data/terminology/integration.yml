@@ -1,0 +1,60 @@
+---
+domains: &domains []
+internal: &internal False
+en:
+  name: integration
+  definition: The connection to an external system (a CRM or an ACD) through which injixo
+    receives data.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Integration
+  definition: Die Verbindung zu einem externen System (z.B. einer ACD), über die
+    injixo Daten erhält.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: intégration
+  definition: Connexion à un système externe (un ACD ou un CRM) par laquelle injixo reçoit des données.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: integrazione
+  definition: La connessione a un sistema esterno (per esempio un CRM) tramite 
+    la quale injixo riceve dei dati.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: integratie
+  definition: De verbinding met een extern systeem (bijvoorbeeld een ACD) waarvan injixo gegevens ontvangt.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: integración
+  definition: La conexión a un sistema externo (por ejemplo un CRM o ACD) a través de la cual injixo recibe datos.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

@@ -1,0 +1,58 @@
+---
+domains: &domains [Product]
+microcopy: &microcopy False
+en:
+  name: Adherence Score
+  definition: The average percentage of adherence within a set period of time.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms:
+  - Intraday Adherence Score
+  abbreviation:
+de:
+  name: Adherence Score
+  definition: Der prozentuale Durchschnittswert der Planeinhaltung innerhalb eines ausgewählten Zeitraums.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: roosteropvolgingsscore
+  definition: Het gemiddelde opvolgingspercentage over een ingestelde periode.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

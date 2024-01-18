@@ -1,0 +1,60 @@
+domains: &domains [Product]
+microcopy: &microcopy False
+en:
+  name: Academy
+  definition: Academy is a self-service learning platform used to provide new injixo users with onboarding courses and microlearning training materials.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms:
+  - injixo Academy
+  - academy
+  abbreviation:
+de:
+  name: Academy
+  definition: Academy ist eine Plattform zum Selbstlernen, in der neuen injixo-Benutzern Einstiegskurse und Trainingsmaterialien in Mikrolerneinheiten zur Verfügung stehen.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms:
+  - injixo Academy
+  - injixo-Academy
+  abbreviation:
+fr:
+  name: 
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: Academy
+  definition: Academy is een zelfstudie-trainingsplatform met onboardingcursussen en ander trainingsmateriaal voor nieuwe injixo-gebruikers.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

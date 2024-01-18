@@ -1,0 +1,58 @@
+---
+domains: &domains [WFM]
+internal: &internal False
+en:
+  name: Intraday Management
+  definition: The fourth step of the WFM cycle. Intraday Management comprises adapting a schedule to unforeseen events in real time to secure short-term business goals.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Tagessteuerung
+  definition: Der vierte Schritt des WFM-Kreislaufs. Tagessteuerung beinhaltet die Anpassung von Schichtplänen in Echtzeit an unerwartete Ereignisse, um kurzfristige Unternehmensziele zu erreichen.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: Intraday Management
+  definition: De vierde stap in de WFM-cyclus. Intraday Management omvat de realtime aanpassing van roosters aan onvoorziene gebeurtenissen om bedrijfsdoelen op de korte termijn te bereiken.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+

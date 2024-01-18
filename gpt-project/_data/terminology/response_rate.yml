@@ -1,0 +1,58 @@
+---
+domains: &domains [WFM]
+internal: &internal True
+en:
+  name: response rate
+  definition: The percentage of all contacts that are either connected to an employee or where the problem is solved on a self-service basis, for example, using IVR.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Antwortrate
+  definition: Prozentsatz aller Kontakte, die entweder mit einem Mitarbeiter verbunden werden oder deren Anliegen durch eine Selbstbedienungsmöglichkeit, z.&nbsp;B. IVR, vom Kunden behoben wird.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms:
+  - Antwortquote
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: taux de réponse
+  definition: Pourcentage de contacts mis en relation avec un employé ou dont la demande a pu être traitée automatiquement, par exemple par l’intermédiaire d’un SVI.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: tasso di risposta
+  definition: La percentuale di contatti che sono trasmessi a un dipendente o per i quali il problema viene risolto su base self-service, per esempio tramite un IVR.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: antwoordpercentage
+  definition: Het percentage van alle contacten die met een medewerker worden verbonden, of waarbij het probleem door middel van zelfservice wordt opgeslost, bijvoorbeeld via IVR.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

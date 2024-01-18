@@ -1,0 +1,57 @@
+---
+domains: &domains [Marketing]
+microcopy: &microcopy False
+en:
+  name: pattern of contacts
+  definition: The typical distribution of contacts over a certain period of time, e.g. call frequency over a month.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Kontaktmuster
+  definition: Übliche Kontaktverteilung über einen bestimmten Zeitraum, z.&nbsp;B. Anrufhäufigkeit in einem Monat.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: contactpatroon
+  definition: De typische verdeling van contacten over een bepaalde periode, zoals oproepfrequentie over een maand.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

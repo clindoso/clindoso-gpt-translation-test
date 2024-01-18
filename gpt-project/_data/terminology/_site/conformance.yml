@@ -1,0 +1,58 @@
+---
+domains: &domains [WFM]
+microcopy: &microcopy False
+en:
+  name: conformance
+  definition: The degree to which employees' actual working hours comply with their scheduled working hours. For example, an employee who is scheduled to work for 8 hours but works for 7.5 hours is 93.75% in conformance.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms:
+  - schedule conformance
+  - work time adherence
+de:
+  name: Planeinhaltung
+  definition:  Das Maß, in dem Mitarbeiter ihre geplante Arbeitszeit einhalten. Beispielsweise beträgt die Planeinhaltung eines Mitarbeiters 93.75%, wenn ein Mitarbeiter für 8 Stunden geplant wurde, aber nur 7,5 Stunden gearbeitet hat.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: roosternaleving
+  definition: De mate waarin het werkelijke aantal gewerkte uren van medewerkers overeenkomt met de werktijden in hun roosters. Zo is de roosternaleving van een medewerker die voor 8 uur is ingepland, maar in werkelijkheid 7,5 uur werkt, 93,75 %.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

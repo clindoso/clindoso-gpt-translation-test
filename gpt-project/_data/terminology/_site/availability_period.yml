@@ -1,0 +1,57 @@
+---
+domains: &domains []
+microcopy: &microcopy False
+en:
+  name: availability period
+  definition: A day model type to add availabilities to your schedule or shift sequences.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Verfügbarkeitsrahmen
+  definition: Ein Tagesmodelltyp, mit dem Du Verfügbarkeiten im Schichtplan oder in Schichtfolgen hinzufügen kannst.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: période de disponibilité
+  definition: Type de modèle journalier permettant d’ajouter des disponibilités à votre planning ou à vos rotations d’horaires.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: periodo di disponibilità
+  definition: Modello di orario che permette di aggiungere disponibilità alle pianificazioni o alle rotazioni.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: beschikbaarheidsperiode
+  definition: Een dagmodeltype waarmee je je beschikbaarheid kunt toevoegen in het rooster of in de dienstenserie.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

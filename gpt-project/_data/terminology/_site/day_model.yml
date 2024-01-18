@@ -1,0 +1,57 @@
+---
+domains: &domains [WFM]
+microcopy: &microcopy False
+en:
+  name: day model
+  definition: A shift template that defines the time frame when a person works and how many hours they work per day. A day model contains activities that represent the working day for people, for example, presences and breaks.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Tagesmodell
+  definition: Eine Schichtvorlage. Sie legt den Zeitrahmen und die Stundenanzahl fest, die ein Teammitglied arbeitet. Das Tagesmodell enthält alle Aktivitäten eines Arbeitstags, z.&nbsp;B. Anwesenheiten und Pausen.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: modèle horaire
+  definition: Modèle de journée permettant de définir la période et les heures de travail d’un employé dans une journée. Un Modèle horaire contient toutes les activités qui composent une journée de travail, par exemple les périodes de présence et les pauses.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: modello di orario
+  definition: Schema di turni che definisce la finestra temporale e il totale delle ore lavorative di un dipendente in un giorno. Un modello di orario comprende le attività che compongono la giornata lavorativa, come, per esempio, le presenze e le pause.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: dagmodel
+  definition: Een dienstensjabloon dat aangeeft wanneer en hoeveel uur per dag een medewerker werkt. Een dagmodel bevat alle activiteiten binnen een werkdag, bijvoorbeeld aanwezigheid en pauzes.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: modelo de horario
+  definition: Una plantilla de turnos que define el período y las horas laborales diarias de un empleado. Un modelo de horario comprende actividades que componen una jornada laboral, como presencias y pausas.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

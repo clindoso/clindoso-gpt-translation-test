@@ -1,0 +1,60 @@
+---
+domains: &domains [Product]
+microcopy: &microcopy False
+en:
+  name: intraday management
+  definition: Measures to monitor the schedule adherence and to react to schedule deviations within the course of a day.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms:
+    - real-time management (Marketing)
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Tagessteuerung
+  definition: Tagesaktuelle Kontrolle der Planeinhaltung und ggf. nachträgliche Anpassungen, als Reaktion auf Planabweichungen.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms:
+    - Intraday Management (Marketing)
+    - Real-Time-Management (Marketing)
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: gestion intrajournalière
+  definition: La gestion intrajournalière consiste à surveiller l’adhérence au planning et à réagir aux déviations au cours d’une journée.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: Intraday Management
+  definition: Maatregelen om de roosteropvolging gedurende de dag te monitoren op afwijkingen te reageren.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: [realtime-management]
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: gestión intradiaria
+  definition: Medidas para controlar la adherencia a la planificación y para reaccionar a desviaciones en el curso de una jornada.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

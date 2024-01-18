@@ -1,0 +1,57 @@
+---
+domains: &domains [Product]
+internal: &internal False
+en:
+  name: forecasting
+  definition: Generating, refining, and calculating future workload, AHT or staff requirements using historical data in injixo Forecast.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Forecasting
+  definition: Erstellung und Optimierung eines Forecasts sowie die Berechnung des zukünftigen Workloads, der durchschnittlichen Bearbeitungszeit oder des Mitarbeiterbedarfs mithilfe historischer Daten in injixo Forecast.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: forecasting
+  definition:  Het maken en aanpassen van een forecast en het berekenen van de toekomstige workload, de AHT en de personeelsbehoefte op basis van historische gegevens uit injixo.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

@@ -1,0 +1,58 @@
+---
+domains: &domains [WFM]
+microcopy: &microcopy False
+en:
+  name: adherence
+  definition: The degree to which employees follow their published schedules. This typically includes start and finish times of breaks and the activities performed. In injixo, adherence can be monitored using the Intraday Adherence and Real-Time Adherence features.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms:
+    - schedule adherence
+de:
+  name: Planeinhaltung
+  definition: Das Maß, in dem sich Mitarbeiter an die Schichtpläne halten. Dies beinhaltet in der Regel Start- und Endzeiten von Pausen und ausgeführten Aktivitäten. In injixo kann die Planeinhaltung mit den Features Intraday Adherence und Echtzeit Adherence kontrolliert werden.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+  redirect_anchor_text: adherence
+fr:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: roosteropvolging
+  definition: De mate waarin medewerkers zich aan hun gepubliceerde roosters houden. Het gaat om begin- en eindtijden van pauzes en de uitgevoerde activiteiten. In injixo kan de roosteropvolging worden bekeken in de features Intraday Adherence en Real-time Adherence.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: adherencia
+  definition: Medida en que las personas cumplen la planificación publicada. Por norma general, esto incluye las horas de inicio y final de descansos y las tareas llevadas a cabo. Se puede medir en injixo con las funcionalidades Adherencia en tiempo real y Adherencia intradiaria.
+  example: 
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

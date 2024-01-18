@@ -1,0 +1,57 @@
+---
+domains: &domains []
+microcopy: &microcopy False
+en:
+  name: computer telephony integration
+  definition: Technology to connect phones with computer software. A CTI allows the employees to access the customers' information, control telephone functions, and provide data to WFM systems through their computers.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: CTI
+de:
+  name: Computer Telephony Integration
+  definition: Technologie, um Telefone mit Computer-Software zu verbinden. Mit einer CTI können Mitarbeiter über ihre Computer auf Informationen der Kunden zugreifen, Telefonfunktionen betätigen und Daten in WFM-Systeme einpflegen.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: CTI
+fr:
+  name: couplage téléphonie-informatique
+  definition: Technologie permettant de connecter des téléphones à des logiciels. Le CTI permet aux employés d’accéder aux informations clients, de contrôler les fonctions téléphoniques et de transférer des données aux systèmes WFM via leurs ordinateurs.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: CTI
+it:
+  name: computer telephony integration
+  definition: Tecnologia che permette di collegare dei telefoni a un software. Un sistema CTI permette ai dipendenti di avere accesso alle informazioni dei clienti, controllare le funzioni del telefono e inviare dati ai sistemi WFM tramite il computer. 
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: computer telephony integration
+  definition: Technologie om telefoons met computersoftware te verbinden. Met een CTI hebben medewerkers via hun computer toegang tot klantinformatie en kunnen zij telefoonfuncties gebruiken en via hun computer gegevens overdragen naar WFM-systemen. 
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: CTI
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

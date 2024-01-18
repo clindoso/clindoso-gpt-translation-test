@@ -1,0 +1,59 @@
+---
+domains: &domains [WFM]
+internal: &internal False
+en:
+  name: linear calculation method
+  definition: A staffing calculation method for activities that takes people's productivity into account.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+  redirect_anchor_text: linear-script
+de:
+  name: lineare Berechnungsmethode
+  definition: Eine Bedarfsberechnungsmethode für Back-Office-Aktivitäten, z.&nbsp;B. E-Mails.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+  redirect_anchor_text: linear-skript
+fr:
+  name: productivité
+  definition: "Méthode de calcul permettant de définir le besoin en personnel pour des activités en prenant en compte la productivité des employés."
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: lineaire berekeningsmethode
+  definition: Een berekeningsmethode om de personeelsbehoefte voor backoffice-activiteiten te berekenen, bijvoorbeeld e-mails.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

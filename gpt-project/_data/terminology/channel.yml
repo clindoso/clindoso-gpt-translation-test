@@ -1,0 +1,59 @@
+---
+domains: &domains []
+internal: &internal False
+en:
+  name: channel
+  definition: A way for customers to contact a company, e.g. via email.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: 
+    - contact channel
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Kanal
+  definition: Eine Möglichkeit für Kunden, ein Unternehmen zu kontaktieren, z.&nbsp;B. per E-Mail.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: canal
+  definition: Moyen utilisé par les clients pour contacter une entreprise, par exemple par téléphone, e-mail ou chat.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms:
+  - média
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: canale
+  definition: Modo utilizzato dai clienti per contattare un'azienda, per esempio le email.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: kanaal
+  definition: Een manier waarop klanten contact kunnen opnemen met een bedrijf, bijvoorbeeld per e-mail.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

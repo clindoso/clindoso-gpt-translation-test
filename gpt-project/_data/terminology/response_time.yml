@@ -1,0 +1,57 @@
+---
+domains: &domains [WFM]
+internal: &internal True
+en:
+  name: response time
+  definition: The period of time until a customer receives an answer to their request made through an asynchronous channel, for example, email.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Antwortzeit
+  definition: Die Zeitspanne, bis Kunden eine Antwort auf ihre Anfragen über einen Backoffice-Kanal erhalten, z.&nbsp;B. per E-Mail.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: temps de réponse
+  definition: Délai dans lequel un client reçoit une réponse à une demande adressée via un canal asynchrone, par exemple par e-mail.  
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: tempo di risposta
+  definition: Lasso di tempo che intercorre tra una richiesta inviata da un cliente attraverso un canale asincrono, come, per esempio, un'email, e la risposta.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: antwoordtijd
+  definition: De tijdsperiode waarna klanten een antwoord op hun vraag ontvangen via een backoffice-kanaal, bijv&nbsp;per e-mail.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: tiempo de respuesta
+  definition: Período de tiempo que transcurre hasta que un cliente recibe una respuesta a una consulta enviada por un canal asíncrono, p.&nbsp;ej. por correo electrónico.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

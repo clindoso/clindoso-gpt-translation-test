@@ -1,0 +1,57 @@
+---
+domains: &domains [Product]
+microcopy: &microcopy False
+en:
+  name: default role
+  definition: "Predefined user roles in injixo. injixo's default roles are:<br>-Standard Agent<br>-Standard Planner<br>-Standard Supervisor (basic)<br>-Standard Supervisor (advanced)<br>- Standard Trainer<br>- Standard Finance."
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Standard-Benutzerrolle
+  definition: "Eine vordefinierte Benutzerrolle in injixo. Die Standard-Benutzerrollen sind:<br>-Standard-Agent<br>- Standard-Planer<br>- Standard-Supervisor (eingeschränkt)<br>- Standard-Supervisor (erweitert)<br>- Standard-Trainer<br>- Standard-Buchhaltung."
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: rôle standard
+  definition: "Rôle prédéfini dans injixo. Les rôles standard sont&nbsp;:<br>- Agent,<br>- Planificateur,<br>- Superviseur (basique),<br>- Superviseur (avancé),<br>- Formateur,<br>- Finance"
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: standaardrol
+  definition: "Voorgedefinieerde gebruikersrollen in injixo. De standaard gebruikersrollen zijn:<br>- Agent,<br>- Planner,<br>- Supervisor (basis),<br>- Supervisor (geavanceerd),<br>- Trainer,<br>- Financiën."
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

@@ -1,0 +1,59 @@
+---
+domains: &domains [Product]
+microcopy: &microcopy False
+en:
+  name: multiactivity
+  definition: A single activity with one or more subactivities to schedule people more flexibly. The person needs to have at least one of the necessary skills to process the subactivities (e.g. English, French and Spanish language skills).
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms:
+  - multi-activity
+  abbreviation:
+de:
+  name: Multiaktivität
+  definition: Eine einzelne Aktivität mit einer oder mehreren Teilaktivitäten, um Personen flexibler zu planen. Der Mitarbeiter muss mindestens eine der erforderlichen Qualifikationen haben, um die Teilaktivitäten zu bearbeiten (z.&nbsp;B. Englisch-, Französisch- und Spanisch-Sprachkenntnisse).
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms:
+  - Multi-Aktivität
+  abbreviation:
+fr:
+  name: multi-activité
+  definition: Activité contenant une ou plusieurs sous-activités permettant de planifier les ressources de manière plus flexible. L’employé doit posséder au moins l’une des compétences nécessaires pour traiter les sous-activités (par exemple, connaissance de l’anglais, du français et de l’espagnol).
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: multiattività
+  definition: Attività che include una o più subattività, e permette di pianificare con più flessibilità i dipendenti. Il dipendente deve avere almeno una delle qualifiche necessarie per svolgere le subattività (per es. conoscenza della lingua inglese, francese o spagnola).
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: multiactiviteit
+  definition: Een afzonderlijke activiteit met een of meer deelactiviteiten om personen flexibeler in te plannen. De persoon moet over minimaal een van de benodigde kwalificaties beschikken om de subactiviteiten uit te voeren (bijv. vaardigheden in de Engelse, Franse en Spaanse taal).
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: multiactividad
+  definition: Una actividad que incluye una o varias subactividades para planificar a los empleados de forma más flexible. El empleado debe tener al menos una de las cualificaciones necesarias para trabajar en las subactividades (p.&nbsp;ej. conocimientos de inglés, francés o español).
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

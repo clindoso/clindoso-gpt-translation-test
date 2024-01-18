@@ -1,0 +1,60 @@
+---
+domains: &domains [Product]
+internal: &internal False
+en:
+  name: person-hour
+  definition: The average amount of work that a person can do in one hour. It is used to estimate how long jobs take, or how many people are needed to do a job in a particular time.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms:
+  - man-hour
+  - staff-hour
+  abbreviation:
+de:
+  name: Personenstunde
+  definition: Durchschnittliche Menge Arbeit, die eine Person in einer Stunde erledigen kann. Wird zur Schätzung der Zeit verwendet, die eine bestimmte Tätigkeit in Anspruch nimmt, bzw. dazu, wie viele Personen gebraucht werden, um eine Tätigkeit in einer bestimmten Zeit auszuführen.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: heure-personne
+  definition: Quantité moyenne de travail que peut accomplir une personne pendant une heure. Cette unité est généralement utilisée pour estimer la durée d'un projet ou le nombre de personnes nécessaires à la réalisation de ce projet.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: ora di lavoro
+  definition: La quantità media di lavoro che una persona può portare a termine in un'ora. Si usa per stimare la durata di un compito o il numero di persone necessarie per svolgere un compito in un lasso di tempo stabilito.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: arbeidsuur
+  definition: De gemiddelde hoeveelheid werk die een medewerker binnen een uur kan doen. Het wordt gebruikt om in te schatten hoeveel tijd voor bepaalde taken nodig is of hoeveel medewerkers er nodig zijn om een taak binnen een bepaalde periode uit te voeren.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: hora persona
+  definition: La cantidad media de trabajo que una persona puede llevar a cabo en una hora. Se usa para estimar el tiempo necesario para realizar una tarea, o cuántas personas harán falta para realizar una tarea en un período de tiempo concreto.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms:
+  - hora hombre
+  abbreviation:

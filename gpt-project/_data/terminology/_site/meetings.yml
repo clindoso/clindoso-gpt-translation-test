@@ -1,0 +1,57 @@
+---
+domains: &domains [Product]
+microcopy: &microcopy False
+en:
+  name: Meetings
+  definition: An injixo feature for setting up and scheduling 1:1 meetings, group meetings, and self-learning sessions guaranteeing the best coverage possible.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Meetings
+  definition: Ein injixo-Feature, mit dem Du 1:1-Meetings, Gruppentermine und Self-Learning-Sessions planen kannst, wobei die bestmögliche Deckung gewährleistet wird.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: Meetings
+  definition: Fonctionnalité d’injixo permettant de configurer et de planifier des réunions 1:1, des réunions de groupe et des sessions d’autoformation en maintenant la meilleure couverture possible.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: Meetings
+  definition: Componente injixo che permette di configurare e pianificare riunioni 1:1, riunioni di gruppo e sessioni di auto-apprendimento garantendo la migliore copertura possibile.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: Vergaderingen
+  definition: Een injixo-feature voor het instellen en plannen van 1:1-vergaderingen, groepsvergaderingen en zelfstudiesessies, waarbij de best mogelijke dekking wordt gegarandeerd.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: Reuniones
+  definition: Funcionalidad de injixo para planificar reuniones 1 a 1, reuniones de grupo y sesiones de autoaprendizaje y al mismo tiempo mantener la mejor cobertura posible.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

@@ -1,0 +1,57 @@
+---
+domains: &domains [Product]
+microcopy: &microcopy False
+en:
+  name: Generate shifts
+  definition: An injixo functionality within the Plan module that creates shifts for each day of the scheduling period based on staff requirements and considering prescheduled shifts.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Schichten erzeugen
+  definition: Eine injixo-Funktionalität innerhalb des Plan-Moduls, die Schichten für jeden Tag der Planperiode unter Berücksichtigung des Mitarbeiterbedarfs und der vorgeplanten Schichten erzeugt.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: Générer les missions
+  definition: Fonctionnalité du module Plan d’injixo permettant de créer des missions pour chaque journée de la période de planification selon le besoin en personnel et en prenant en compte les missions déjà planifiées.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: Diensten genereren
+  definition: Een injixo-functionaliteit in de Plan-module die voor elkedag van de planningsperiode diensten genereert op basis van de personeelsbehoefte en daarbij rekening houdt met vooraf ingeplande diensten.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

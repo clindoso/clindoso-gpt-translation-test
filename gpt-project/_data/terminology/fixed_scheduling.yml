@@ -1,0 +1,51 @@
+---
+domains: &domains [Product]
+en:
+  name: fixed scheduling
+  definition: A scheduling method that uses shift sequences to create a schedule.
+  example:
+  domain_ref: *domains
+  allowed_synonyms: []
+  forbidden_synonyms: 
+    - rostering
+  abbreviation:
+de:
+  name: Fixe Schichtplanung
+  definition: Eine Planungsmethode, die Schichtfolgen verwendet, um einen Schichtplan zu erstellen.
+  example:
+  domain_ref: *domains
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: planification fixe
+  definition: Méthode de planification consistant à utiliser des rotations d’horaires pour créer un planning.
+  example:
+  domain_ref: *domains
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: vaste planning
+  definition: Een planningsmethode waarbij dienstenseries worden gebruikt om een planning te maken.
+  example:
+  domain_ref: *domains
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

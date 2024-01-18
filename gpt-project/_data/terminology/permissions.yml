@@ -1,0 +1,61 @@
+---
+domains: &domains [Product]
+internal: &internal False
+en: 
+  name: permissions
+  definition: Permissions allow users to view or configure elements and features in injixo. In injixo, there are default permissions for all role categories.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms:
+  - Access rights
+  abbreviation:
+de:
+  name: Berechtigung
+  definition: Je nach Berechtigung können Benutzer Elemente und Features in injixo sehen bzw. konfigurieren. In injxo gibt es Standardberechtigungen für alle Rollenkategorien.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms:
+  - Zugriffsrechte
+  abbreviation:
+fr:
+  name: permisssions
+  definition: "Les permissions permettent aux utilisateurs de voir ou de configurer les éléments et les fonctionnalités d'injixo. injixo créé des permissions par défaut pour toutes les catégories de rôles."
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: autorizzazioni
+  definition: Le autorizzazioni permettono agli utenti di vedere o configurare elementi e funzionalità in injixo. In injixo tutte le categorie di ruoli hanno delle autorizzazioni prestabilite.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms:
+  - diritti di accesso
+  abbreviation:
+nl:
+  name: rechten
+  definition: Rechten geven gebruikers de mogelijkheid om elementen en features in injixo te bekijken of configureren. In injixo zijn er standaardrechten voor alle rolcategorieën.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: permisos
+  definition: Los permisos determinan qué elementos o funcionalidades de injixo puede ver o configurar cada usuario. injixo incluye permisos predeterminados para cada categoría de rol. 
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms:
+  - permisos de acceso
+  abbreviation:

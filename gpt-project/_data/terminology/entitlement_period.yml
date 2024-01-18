@@ -1,0 +1,57 @@
+---
+domains: &domains [Product]
+internal: &internal True
+en:
+  name: entitlement period
+  definition: A period within which planners can define time-off periods for people to take the time off they are entitled to. Entitlement periods are defined for a specific time-off type.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Anspruchszeitraum
+  definition: Ein Zeitraum, innerhalb dessen Planer Abwesenheitsperioden festlegen können, damit Mitarbeiter die ihnen zustehenden Abwesenheiten nehmen können. Anspruchszeiträume werden für einen bestimmten Abwesenheitstypen festgelegt.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: période de référence
+  definition: "Période sur laquelle les planificateurs peuvent définir des périodes de congés permettant aux employés d'utiliser leurs droits aux congés. Les périodes de référence sont définies pour un type d'absence spécifique."
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: periodo di fruizione dei permessi
+  definition: Periodo all'interno del quale i pianificatori possono definire i periodi di permesso che i dipendenti useranno per prendere i permessi. I periodi di fruizione dei permessi sono specifici per ogni tipo di permesso.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: aanspraakperiode
+  definition: Een periode waarin planners afwezigheidsperioden kunnen instellen waarbinnen medewerkers de vakantiedagen kunnen inplannen, waarop zij recht hebben. Aanspraakperiodes worden gedefinieerd voor een specifiek afwezigheidstype.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: periodo de permisos
+  definition: Periodo en el que los planificadores pueden definir periodos de disfrute para que los empleados disfruten los permisos que les corresponden. Los periodos de permisos se definen para un tipo de permiso específico.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

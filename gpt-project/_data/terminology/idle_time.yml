@@ -1,0 +1,58 @@
+---
+domains: &domains [WFM]
+internal: &internal True
+en:
+  name: idle time
+  definition: The time during which employees have no work to do.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: 
+    - available time (Marketing)
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Leerlaufzeit
+  definition: Die Zeit, in der ein Mitarbeiter keine Aufgabe hat.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: période d’inactivité
+  definition: Période pendant laquelle les employés n’ont pas de tâches à effectuer.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: tempo di inattività
+  definition: Tempo durante il quale un dipendente non è impegnato in nessun compito.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: leeglooptijd
+  definition: De tijd waarin een werknemer inzetbaar is, maar geen werk te doen heeft.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

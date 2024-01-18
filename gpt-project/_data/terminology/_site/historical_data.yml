@@ -1,0 +1,74 @@
+---
+domains: &domains []
+microcopy: &microcopy False
+en:
+  name: historical data
+  definition:
+    Data from the past such as the number of offered calls per interval
+    and AHT per interval. These data are the input for the forecasting process and
+    typically come from the contact routing platform (e.g. ACD). In a modern contact
+    center, historical data for emails, web chats, and other channels are needed as
+    well as call data.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: historische Daten
+  definition:
+    Informationen über das bisherige Arbeitsaufkommen in Form von eingegangenen
+    und bearbeiteten Volumen (z.B. Anrufe, Chats, Tickets) und der durchschnittlichen
+    Bearbeitungszeit.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: données historiques
+  definition:
+    Données antérieures, telles que le nombre d’appels offerts par intervalle
+    et le DMR par intervalle. Dans un centre de contacts moderne, les données historiques des e-mails, des chats en ligne,
+    et d’autres canaux sont également utilisées.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: dati storici
+  definition:
+    Dati su eventi passati, per esempio il numero di chiamate in entrata per
+    intervallo, o l’AHT per intervallo. Questi dati forniscono l’input per il processo
+    di previsione e solitamente sono forniti dal sistema di instradamento dei contatti
+    (per es. dall’ACD). In un contact center moderno, ai dati storici sulle chiamate si
+    aggiungono i dati che riguardano email, chat web e altri canali.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: historische gegevens
+  definition: Gegevens uit het verleden zoals het aantal binnenkomende gesprekken per interval en de AHT per interval. Deze gegevens vormen de input voor het forecastingproces en
+    zijn gewoonlijk afkomstig van het contactrouteringsplatform (bijvoorbeeld ACD). In een modern contactcenter zijn historische gegevens van e-mails, chats en andere kanalen nodig.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

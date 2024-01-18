@@ -1,0 +1,57 @@
+---
+domains: &domains [Product]
+microcopy: &microcopy False
+en:
+  name: Shareable Content Object Reference Model
+  definition: A set of technical standards for e-learning software products. SCORM standards are designed to make sure e-learning content can effectively work with all administrative platforms such as an LMS/LCMS. The standards require that an LMS and e-learning content must both be SCORM compliant for them to interact properly.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: SCORM
+de:
+  name: Shareable Content Object Reference Model
+  definition: Eine Reihe von technischen Standards für E-Learning-Softwareprodukte. Die SCORM-Standards sollen sicherstellen, dass E-Learning-Inhalte effektiv mit allen Verwaltungsplattformen wie einem LMS/LCMS zusammenarbeiten können. Die Standards setzen voraus, dass sowohl das LMS als auch die E-Learning-Inhalte SCORM-konform sein müssen, damit sie richtig zusammenarbeiten können.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: SCORM
+fr:
+  name: Shareable Content Object Reference Model
+  definition: Ensemble de normes techniques pour les systèmes informatiques de formation. Les normes SCORM sont conçues pour s’assurer que le contenu de formation en ligne est compatible avec toutes les plateformes administratives, comme les LMS/LCMS. Ces normes exigent que le LMS et le contenu de formation en ligne soient tous deux conformes aux normes SCORM pour qu’ils puissent interagir correctement.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: SCORM
+it:
+  name: Shareable Content Object Reference Model
+  definition: Un insieme di standard tecnici per i software di e-learning. Gli standard SCORM sono progettati per garantire che i contenuti di e-learning siano compatibili con tutte le piattaforme amministrative, come quelle del tipo LMS/LCMS. Sia la piattaforma LMS che i contenuti e-learning devono essere conformi allo SCORM per poter interagire correttamente.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: SCORM
+nl:
+  name: Sharable Content Object Reference Model
+  definition: Een reeks technische standaarden voor e-learning-software. SCORM-standaarden zijn ontwikkeld om ervoor te zorgen dat e-learning-content effectief met alle beheersplatformen (zoals LMS/LCMS) kan samenwerken. De standaarden vereisen dat zowel het LMS als de e-larning-content SCORM-conform is, om een goede samenwerking mogelijk te garanderen.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: SCORM
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

@@ -1,0 +1,58 @@
+---
+domains: &domains [WFM]
+internal: &internal False
+en:
+  name: workforce management cycle 
+  definition: "A recurring process that portraits the steps of workforce management. The WFM cycle includes five steps:<br>- Forecasting<br>- Planning<br>- Scheduling<br>- Intraday Management<br>- Analytics"
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: WFM cycle
+de:
+  name: Workforce-Management-Kreislauf
+  definition: "Ein wiederkehrender Prozess, der die Schritte des Workforce-Managements abbildet. Der WFM-Kreislauf beinhaltet die folgenden fünf Schritte:<br>- Forecasterstellung<br>- Planung<br>- Schichtplanerstellung<br>- Tagessteuerung<br>- Analyse"
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: WFM-Kreislauf
+fr:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+

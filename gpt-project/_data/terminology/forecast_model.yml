@@ -1,0 +1,57 @@
+---
+domains: &domains [Product]
+internal: &internal False
+en:
+  name: Forecast model
+  definition: Predefined settings to forecast workloads based on historical data. injixo distinguishes between Basic Forecast and Smart Forecast.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Forecast-Modell
+  definition: Vordefinierte Einstellung zur Erstellung von Workloads für Forecasts auf Grundlage historischer Daten. injixo unterscheidet zwischen Basic Forecast und Smart Forecast.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: Modèle de prévision
+  definition: Paramètres prédéfinis pour la création de Workloads sur la base des données historiques. injixo différencie les modèles de prévision Smart et Basic.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: forecastmodel
+  definition: Voorgedefinieerde instellingen om workloads te voorspellen op basis van historische gegevens. injixo maakt onderscheid tussen Basic Forecast en Smart Forecast.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

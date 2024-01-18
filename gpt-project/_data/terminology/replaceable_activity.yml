@@ -1,0 +1,57 @@
+---
+domains: &domains [Product]
+internal: &internal False
+en:
+  name: replaceable activity
+  definition: An activity that can be replaced by a plannable activity during schedule optimization, e.g. when using the Create optimized schedule and Job optimization functionalities.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  acronym:
+de:
+  name: ersetzbare Aktivität
+  definition: Eine Aktivität, die durch eine planbare Aktivität während einer Planoptimierung ersetzt werden können, z.&nbsp;B. bei der Verwendung der Funktionlitäten Optimierten Plan erstellen und Joboptimierung.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  acronym:
+fr:
+  name: activité remplaçable
+  definition: Activité pouvant être remplacée par une activité planifiable automatiquement pendant l'optimisation du planning, par exemple lors de l'utilisation des fonctionnalités Optimiser les activités et Optimiser le planning.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  acronym:
+it:
+  name: attività sostituibile
+  definition: Attività che può essere sostituita con un'attività pianificabile durante l'ottimizzazione della pianificazione, per esempio durante l'utilizzo delle funzionalità Crea una pianificazione ottimizzata e Ottimizzazione delle mansioni. 
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  acronym:
+nl:
+  name: vervangbare activiteit
+  definition: Een activitiet die tijdens joboptimalisatie door een planbare activiteit kan worden vervangen, bijvoorbeeld bij het gebruik van de functionaliteiten Geoptimaliseerde planning maken en Joboptimalisatie.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  acronym:
+es:
+  name: actividad sustituible
+  definition: Actividades que pueden ser sustituidas por actividades planificables durante la optimización de la planificación, p.&nbsp;ej. cuando se usan las funcionalidades Crear planificación optimizada u Optimización de tareas.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  acronym:

@@ -1,0 +1,57 @@
+---
+domains: &domains [WFM]
+microcopy: &microcopy False
+en: 
+  name: non-demand-driven activity
+  definition: An activity that is not directly related to customer demand, e.g. back-office activities and training.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  acronym:
+de:
+  name: bedarfsunabhängige Aktivität
+  definition: Eine Aktivität, die nicht im direkten Zusammenhang mit Kundenbedarf steht, z.&nbsp;B. Back-Office-Aktivitäten und Schulungen.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  acronym:
+fr:
+  name: activité non liée à la demande
+  definition: Activité n’étant pas en relation directe avec la demande client, par exemple les activités de back-office ou les formations.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  acronym:
+it:
+  name: attività non basata sulla domanda
+  definition: Un'attività che non è direttamente collegata alla domanda del cliente, per esempio le attività di back office e la formazione.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  acronym:
+nl:
+  name: niet-behoeftegestuurde activiteit
+  definition: Een activiteit die niet direct afhankelijk is van de behoefte van de klant, zoals backoffice-activiteiten en trainingen. 
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  acronym:
+es:
+  name: actividad no derivada de la demanda
+  definition: Actividad que no está directamente relacionada con la demanda por parte del cliente, p.&nbsp;ej. formaciones y actividades de back-office.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  acronym:

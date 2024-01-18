@@ -1,0 +1,67 @@
+---
+# Process: https://playbooks.ivx.com/docs/product/terminology/
+# Domains: Product, WFM, Marketing
+# Microcopy: Use _&microcopy False_ if the term is supposed to be visible in the glossary and for customers. Use _&microcopy True_ if it's a microcopy term used internally
+
+domains: &domains [Product]
+microcopy: &microcopy True
+en:
+  name: AutoScheduler
+  definition: An injixo Enterprise WFM on-premise functionality to create optimized schedules, which the Advanced and Enterprise WFM plans still use internally in the Create optimized schedule functionality.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms:
+  - auto-scheduler
+  - Autoscheduler
+  - autoscheduler
+  abbreviation:
+de:
+  name:
+  definition: Eine Funktionalität zur Erstellung von optimierten Schichtplänen in injixo Enterprise WFM on-premise, die die WFM-Pläne Advanced und Enterprise WFM noch intern in der Funktionalität Optimierten Plan erstellen verwenden.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms:
+  - auto-scheduler
+  - Autoscheduler
+  - autoscheduler
+  abbreviation:
+fr:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: AutoScheduler
+  definition: Funzionalità di injixo Enterprise WFM on-premise per la creazione di pianificazioni ottimizzate. I piani Advanced e Enterprise WFM la utilizzano ancora all'interno della funzionalità Creare una pianificazione ottimizzata.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

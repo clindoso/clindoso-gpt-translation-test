@@ -1,0 +1,65 @@
+---
+domains: &domains [Product]
+internal: &internal False
+en:
+  name: event
+  definition: "An event is used to mark days that differ from other days in one of the following ways:<br>- because of a longer average handle time (AHT)<br>- because of the amount or distribution of contact volume.<br>injixo differentiates between planned and unplanned events. Examples for planned events are holidays and campaigns. Examples for unplanned events are severe weather and technical issues."
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+  redirect_anchor_text: event-forecast
+de:
+  name: Ereignis
+  definition: "Ein Ereignis wird verwendet, um Tage zu markieren, die wie folgt von anderen Tagen abweichen:<br>- wegen einer höheren durchschnittliche Bearbeitungszeit<br>- aufgrund der Höhe oder Verteilung des Kontaktvolumens.<br>injixo unterscheidet zwischen geplanten Ereignissen (wie Feiertagen und Werbekampagnen) und ungeplanten Ereignissen (wie Unwetter und technischen Störungen)."
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+  redirect_anchor_text: ereignis-forecast
+fr:
+  name: événement
+  definition: "Un événement est utilisé pour identifier les journées atypiques de l’une des façons suivantes&nbsp;:<br>
+  - en raison d’un temps moyen de traitement (TMT) inhabituel,<br>
+  - en raison d'un volume ou d'une distribution des contacts inhabituels.<br>
+ On différencie les événements prévus (exemple&nbsp;: les jours fériés) et imprévus (exemple&nbsp;: un problème technique)."
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: gebeurtenis
+  definition: "Een gebeurtenis wordt gebruikt om dagen te markeren die om de volgende redenen van andere dagen afwijken:<br>
+  - vanwege een hogere gemiddelde afhandeltijd<br>
+  - vanwege de omvang of verdeling van het contactvolume<br>
+  We maken onderscheid tussen geplande gebeurtenissen (zoals feestdagen en reclamecampagnes) en ongeplande gebeurtenissen (zoals onweer en technische storingen)."
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

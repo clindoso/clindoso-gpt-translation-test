@@ -1,0 +1,57 @@
+---
+domains: &domains [Product]
+internal: &internal False
+en:
+  name: skill
+  definition: A person's ability to perform a certain activity. Skills and their corresponding skill level define whether an activity can be assigned to a person.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Qualifikation
+  definition: Die Fähigkeit einer Person, eine bestimmte Aktivität auszuführen. Einer Person kann eine Aktivität zugewiesen werden kann, wenn die Person über die erforderliche Qualifikation und Qualifikationsstufe für die jeweilige Aktivität verfügt.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: compétence
+  definition: La capacité d'un employé à mener à bien une certaine activité. Les compétences et les niveaux de compétences associés définissent si une activité peut être assignée à un employé.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: Qualifica
+  definition: La capacità di un dipendente di svolgere una certa attività. Le qualifiche e i corrispondenti livelli di qualifica determinano se un'attività può essere assegnata a un dipendente oppure no.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: kwalificatie
+  definition: De bekwaamheid van een persoon om een bepaalde activiteit uit te voeren. Kwalificaties met bijbehorende kwalificatieniveau bepalen of een activiteit aan een persoon kan worden toegewezen.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: cualificación
+  definition: La habilidad de un empleado para trabajar en una actividad concreta. Las cualificaciones y sus niveles de cualificación correspondientes definen si una actividad puede ser asignada a un empleado.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

@@ -1,0 +1,58 @@
+---
+domains: &domains []
+internal: &internal True
+en:
+  name: net promoter score
+  definition: A market research metric that rates the likelihood that a customer will recommend a company, product, or service to another person.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: NPS
+de:
+  name: Net Promoter Score
+  definition: Eine Kennzahl in der Marktforschung, mit der gemessen wird, ob Kunden einen Dienstleister, ein Produkt oder eine Dienstleistung weiterempfehlen würden.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: 
+    - Promotorenüberhang
+  forbidden_synonyms: []
+  abbreviation: NPS
+fr:
+  name: Net Promoter Score
+  definition: Indicateur généralement utilisé dans les études de marché. Il vise à évaluer la probabilité d’un client de recommander une entreprise, un service ou un produit à d’autres personnes.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: NPS
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: net promoter score
+  definition: Een marktonderzoek-metric, waarmee de waarschijnlijkheid dat een klant een bedrijf, product of service bij een ander aanbeveelt wordt gemeten.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

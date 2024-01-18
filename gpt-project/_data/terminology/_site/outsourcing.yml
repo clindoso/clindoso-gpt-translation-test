@@ -1,0 +1,59 @@
+---
+domains: &domains [WFM]
+microcopy: &microcopy False
+en:
+  name: outsourcing
+  definition: The process of subcontracting business processes to a third party, usually to reduce costs.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Outsourcing
+  definition: Die Ausgliederung von unternehmerischen Prozessen in ein anderes Unternehmen, in der Regel um Kosten zu senken.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms:
+  - Auslagerung
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: externalisation
+  definition: Procédé consistant à sous-traiter certains processus à une tierce partie, généralement en vue de réduire les coûts.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: esternalizzazione
+  definition: La pratica di appaltare processi aziendali a una parte terza, solitamente con lo scopo di ridurre i costi.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms:
+  - outsourcing
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: uitbesteding
+  definition: De procedure waarbij bedrijfsactiviteiten aan een ander bedrijf worden uitbesteed, in de regel om kosten te besparen.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

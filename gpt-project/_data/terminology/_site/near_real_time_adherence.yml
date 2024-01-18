@@ -1,0 +1,59 @@
+---
+domains: &domains [Product]
+microcopy: &microcopy False
+en:
+  name: near real-time adherence
+  definition: A regular data import from a database to injixo in periods of 10 to 120 seconds. The imported data includes information about contact volume, average handling time, and agent status.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: near RTA
+  redirect_anchor_text: real-time-adherence-rta-near-rta
+de:
+  name: Near-Real-Time-Adherence
+  definition: Ein regelmäßiger Datenimport von einer Datenbank zu injixo in Zeitabständen von 10 bis 120 Sekunden. Die importierten Daten beinhalten Informationen zu Kontaktvolumen, durchschnittlicher Bearbeitungszeit und Agentenstatus.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: Near RTA
+  redirect_anchor_text: real-time-adherence-rta-near-rta
+fr:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: near real-time adherence
+  definition: Een regelmatige gegevensimport van een database naar injixo in intervallen van 10 tot 120 seconden. De geïmporteerde gegevens bevatten informatie over het contactvolume, de gemiddelde afhandeltijd en de agentstatus.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

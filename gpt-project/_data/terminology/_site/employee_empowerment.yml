@@ -1,0 +1,57 @@
+---
+domains: &domains [WFM]
+microcopy: &microcopy False
+en:
+  name: employee empowerment
+  definition: The process of providing employees with the tools and knowledge, and delegating authority that enable them to deliver excellent customer service, without the need to escalate through a management hierarchy.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Mitarbeiterbestärkung
+  definition: Mit Mitarbeiterbestärkung sind all jene Tools gemeint, die Mitarbeitern zur Verfügung gestellt werden, damit sie hochqualitativen Kundenservice leisten können, ohne Vorgesetzte in einzelne Sachverhalte einbeziehen zu müssen. Dazu gehört auch die Wissensvermittlung und die Delegation von Verantwortung.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: autonomisation des employés
+  definition: L’autonomisation des employés consiste à leur fournir les outils, les connaissances et le niveau de responsabilisation leur permettant de fournir le meilleur service client possible, sans avoir à faire remonter le contact à un niveau supérieur.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

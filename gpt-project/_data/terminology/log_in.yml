@@ -1,0 +1,61 @@
+---
+domains: &domains [Product]
+internal: &internal True
+en:
+  name: log in
+  definition: To perform the actions that allow you to start a session on a computer system, application or online account.
+  example: Log in to injixo.
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms:
+  - sign in
+  - log on
+  abbreviation:
+de:
+  name: anmelden
+  definition: Schritte ausführen, die zur Nutzung eines Computersystems, einer Anwendung oder eines Online-Kontos notwendig sind.
+  example: Melde dich bei injixo an.
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms:
+  - einloggen
+  abbreviation:
+fr:
+  name: se connecter
+  definition: Exécuter les actions permettant d’ouvrir une session sur un système informatique, une application ou un compte en ligne.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: fare il login
+  definition: Compiere le azioni necessarie ad avviare una sessione su un computer, un'applicazione o un account online.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms:
+  - accedere
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: aanmelden
+  definition: De aanmeldgegevens invoeren, zodat je toegang krijgt tot een computersysteem, applicatie of online account.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: "iniciar sesión"
+  definition: "Completar las acciones necesarias para empezar una sesión en un sistema informático, una aplicación o una cuenta en línea."
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

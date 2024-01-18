@@ -1,0 +1,57 @@
+---
+domains: &domains [Product]
+internal: &internal False
+en:
+  name: Create optimized schedule
+  definition: An injixo functionality that optimizes an already existing schedule or creates a new optimized schedule with respect to coverage by assigning shift times, activities, and breaks.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Optimierten Plan erstellen
+  definition: Eine injixo-Funktionalität, die eine Schichtplanung durch Zuordnung von Schichtzeiten, Aktivitäten und Pausen erstellt oder optimiert.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: Optimiser le planning
+  definition: Fonctionnalité d’injixo permettant d’optimiser un planning existant ou de créer un nouveau planning optimisé en termes de couverture, en assignant des horaires, des activités et des pauses.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: Crea una pianificazione ottimizzata
+  definition: Funzionalità injixo che ottimizza una pianificazione già esistente o crea una nuova pianificazione ottimizzata riguardo alla copertura inserendo gli orari dei turni, le attività e le pause.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: geoptimaliseerde planning maken
+  definition: Een injixo-functionaliteit die een reeds bestaande planning optimaliseert of een nieuwe geoptimaliseerde planning maakt met het oog op de dekking door diensttijden, activiteite en pauzes toe te wijzen.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: Crear planificación optimizada
+  definition: Funcionalidad de injixo que asigna horarios de turnos, actividades y pausas para optimizar una planificación existente o crear una nueva planificación optimizada en términos de cobertura.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

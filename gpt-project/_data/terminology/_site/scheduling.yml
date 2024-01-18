@@ -1,0 +1,57 @@
+---
+domains: &domains [WFM]
+microcopy: &microcopy False
+en:
+  name: scheduling
+  definition: The process of creating schedules for employees with the goal of assigning enough employees to meet the staff requirement.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Schichtplanung
+  definition: Die Ausarbeitung von Schichtplänen mit dem Ziel, genügend Mitarbeiter einzusetzen, um dem Mitarbeiterbedarf gerecht zu werden. 
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: planification
+  definition: "Création de plannings pour les employés dans le but de répondre aux besoins d’effectifs."
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: plannen
+  definition: Het proces waarbij planningen worden aangemaakt voor je teamleden, met als doel voldoende mensen toe te wijzen om aan de personeelsbehoefte te voldoen.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: planificación
+  definition: El proceso de crear turnos con el objetivo de planificar suficientes empleados para cubrir los requisitos de personal.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

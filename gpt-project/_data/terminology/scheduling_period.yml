@@ -1,0 +1,57 @@
+---
+domains: &domains [WFM]
+internal: &internal False
+en:
+  name: scheduling period
+  definition: A time period of a few days, weeks, or months. In injixo, you can use them in the Plan module to allow employees to see their schedules, exchange shifts with each other, or use shift bidding.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Planperiode
+  definition: Eine Zeitspanne von einigen Tagen, Wochen oder Monaten. In injixo kannst Du Planperioden nutzen, um Mitarbeitern zu ermöglichen, Schichtpläne einzusehen, Schichten untereinander zu tauschen oder das Schichtwunsch-Verfahren zu nutzen.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: planningsperiode
+  definition: Een periode van een paar dagen, weken of maanden. In injixo kun je planningsperiodes gebruiken om je teamleden inzicht te geven in hun planningen, waarna ze diensten kunnen ruilen en zich voor diensten kunnen inschrijven.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: período de planificación
+  definition: Período de varios días, semanas o meses que puedes usar en el módulo Plan. Los empleados puedan consultar sus planificaciones, intercambiar turnos o usar el Centro de planificación para cada período.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

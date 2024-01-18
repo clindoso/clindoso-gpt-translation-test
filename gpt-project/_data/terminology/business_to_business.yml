@@ -1,0 +1,57 @@
+---
+domains: &domains []
+internal: &internal False
+en:
+  name: business to business
+  definition: Business transactions between two or more organizations.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: B2B
+de:
+  name: Business-to-Business
+  definition: Geschäftsbeziehungen zwischen zwei oder mehr Unternehmen.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: B2B
+fr:
+  name: business to business
+  definition: Relation commerciale entre deux entreprises ou plus.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: B2B
+it:
+  name: business to business 
+  definition: Transazioni commerciali tra due o più imprese. 
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: B2B
+nl:
+  name: business-to-business
+  definition: Zakelijke relaties tussen twee of meer bedrijven. 
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: B2B
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

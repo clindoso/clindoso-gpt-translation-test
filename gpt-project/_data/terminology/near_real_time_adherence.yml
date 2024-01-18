@@ -1,0 +1,59 @@
+---
+domains: &domains [Product]
+internal: &internal False
+en:
+  name: near real-time adherence
+  definition: A regular agent status data import from an external system to injixo in periods of 10 to 120 seconds.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: near RTA
+  redirect_anchor_text: real-time-adherence-rta-near-rta
+de:
+  name: Near-Real-Time-Adherence
+  definition: Ein regelmäßiger Datenimport von einer Datenbank zu injixo in Zeitabständen von 10 bis 120 Sekunden. Die importierten Daten beinhalten Informationen zu Kontaktvolumen, durchschnittlicher Bearbeitungszeit und Agentenstatus.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: Near RTA
+  redirect_anchor_text: real-time-adherence-rta-near-rta
+fr:
+  name: Adhérence quasi-temps réel
+  definition: Import de statuts agent provenant d’un système externe avec une granularité allant de 10 à 120 secondes.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: near real-time adherence
+  definition: Een regelmatige gegevensimport van een database naar injixo in intervallen van 10 tot 120 seconden. De geïmporteerde gegevens bevatten informatie over het contactvolume, de gemiddelde afhandeltijd en de agentstatus.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

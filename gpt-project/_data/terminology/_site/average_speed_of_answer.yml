@@ -1,0 +1,60 @@
+---
+domains: &domains [WFM]
+microcopy: &microcopy False
+en:
+  name: average speed of answer
+  definition: How long customers wait on average until they are connected to an employee.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms:
+    - average waiting time
+  forbidden_synonyms: []
+  abbreviation: ASA
+de:
+  name: durchschnittliche Antwortzeit
+  definition: Wie lange Kunden im Durchschnitt warten, bis sie mit einem Mitarbeiter verbunden werden.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms:
+    - durchschnittliche Wartezeit
+  forbidden_synonyms: []
+  abbreviation: ASA
+fr:
+  name: délai moyen de réponse
+  definition: "Temps d’attente moyen d’un client avant d’être mis en relation avec un employé."
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: DMR
+it:
+  name: tempo medio di risposta
+  definition: Tempo di attesa medio di un cliente prima di essere messo in comunicazione con un dipendente.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: gemiddelde antwoordtijd
+  definition: De gemiddelde tijd die klanten wachten voordat ze met een medewerker worden verbonden.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms:
+  - gemiddelde wachttijd
+  forbidden_synonyms: []
+  abbreviation: ASA
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

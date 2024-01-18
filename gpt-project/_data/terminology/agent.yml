@@ -1,0 +1,59 @@
+---
+domains: &domains [WFM]
+internal: &internal False
+en:
+  name: agent
+  definition: A term used in some contact centers to describe the person handling contacts. ACD systems process data associated with people, such as agent status.
+  example: To import agent status data, you have to add an integration. The integration must support agent status data imports.
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Agent
+  definition: Eine Bezeichnung, die in manchen Contact Centern für die Person verwendet wird, die Kundenkontakte bearbeitet. ACD-Systeme verarbeiten Daten dieser Personen, wie zum Beispiel Agentenstatus-Daten.
+  example: Um Agentenstatus-Daten zu importieren, musst du eine Integration hinzufügen. Die Integration muss Agentenstatus-Datenimporte unterstützen.
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: agent
+  definition: Employé d’un centre de contacts responsable de la communication directe avec les clients. Les agents répondent aux appels, participent aux discussions en ligne et répondent aux e-mails ou aux publications des clients sur les réseaux sociaux.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: agente
+  definition: Dipendente di un contact center che è responsabile del contatto diretto con i clienti. Gli agenti rispondono alle telefonate, partecipano alle conversazioni in chat e rispondono alle email o ai post dei clienti sulle piattaforme social.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: agent
+  definition: Een medewerker in een contact center die verantwoordelijk is voor het directe contact met klanten. Agenten beantwoorden oproepen en webchats en beantwoorden e-mails en posts van klanten op social media.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: agente
+  definition: Empleado de un centro de contacto que se encarga de la comunicación directa con los clientes. 
+    Los agentes responden llamadas, participan en chats en línea y responden correos electrónicos o mensajes de clientes en las redes sociales.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms:
+  - empleado
+  forbidden_synonyms: []
+  abbreviation:

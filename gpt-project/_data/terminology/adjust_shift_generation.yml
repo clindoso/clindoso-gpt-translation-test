@@ -1,0 +1,57 @@
+---
+domains: &domains [Product]
+internal: &internal False
+en:
+  name: Adjust shift generation
+  definition: An injixo functionality within the Plan module to define the minimum and maximum number of day models that can be assigned to each day when using the injixo functionality Shift generation.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Schichterzeugung anpassen
+  definition: Eine injixo-Funktionalität innerhalb des Plan-Moduls zur Festlegung der Mindest- und Höchstzahl von Tagesmodellen, die jedem Tag bei der Nutzung der injixo-Funktionalität Schichten erzeugen zugeordnet wird.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: Ajuster le besoin en missions
+  definition: Fonctionnalité du module Plan d’injixo permettant de définir le nombre minimum et maximum de modèles horaires pouvant être assignés à chaque journée lorsque la fonctionnalité Création des missions est utilisée.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: dienstengeneratie aanpassen
+  definition: Een injixo-functionaliteit in de Plan-module om het minimale en maximale aantal dagmodellen aan te geven dat bij het gebruik van de injixo-functionaliteit Shift generation aan elke dag kunnen worden toegewezen.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

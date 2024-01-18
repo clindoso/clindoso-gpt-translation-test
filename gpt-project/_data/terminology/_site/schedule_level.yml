@@ -1,0 +1,58 @@
+---
+domains: &domains [Product]
+microcopy: &microcopy False
+en:
+  name: level
+  definition: In Schedules and Shift Center, a tool used by planners to filter and compare different scheduling information. Examples of levels are Availability and Time-off request, allowing planners to compare their people's availabilities or time-off requests.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Ebene
+  definition: Ein Werkzeug, das von Planern in Schedules und im Schicht Center verwendet wird, um verschiedene Planungsinformationen zu filtern und zu vergleichen. Beispiele für Ebenen sind Verfügbarkeiten und Abwesenheitsanträge, damit Planer die Verfügbarkeiten und Abwesenheitsanträge ihrer Mitarbeiter miteinander vergleichen können.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: catégorie
+  definition: Version du planning. Par exemple, la catégorie Planning affiche votre planning dans sa version actuelle. La catégorie État actuel, elle, est généralement utilisée pour afficher la version originale du planning.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: niveau
+  definition: Een versie van het rooster. Zo wordt je rooster op het niveau Planning weergegeven zoals het nu is.
+    Het niveau Werkelijk wordt gebruikt om de oorspronkelijke versie van het rooster weer te geven.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

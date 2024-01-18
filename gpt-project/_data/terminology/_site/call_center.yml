@@ -1,0 +1,60 @@
+---
+domains: &domains [Marketing]
+microcopy: &microcopy False
+en:
+  name: call center
+  definition: An organization or part of an organization in which a group of employees, commonly known as agents, handle phone calls from and to customers.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Call-Center
+  definition: Eine Organisation oder Teil einer Organisation, in der eine Gruppe von Mitarbeitern, auch Agenten genannt, Kundenanrufe annehmen oder tätigen.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms:
+    - Call Center
+    - Callcenter
+  abbreviation:
+fr:
+  name: centre d’appel
+  definition: Organisation ou partie d’une organisation dans laquelle un groupe d’employés (également appelés agents) reçoivent ou passent des appels clients.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: 
+    - centre d’appels
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: call center
+  definition: Organizzazione, o parte di un'organizzazione, in cui un gruppo di dipendenti, di solito chiamati agenti, gestisce chiamate in entrata e in uscita. 
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: callcenter
+  definition: Een organisatie of deel van een organisatie, waarin een groep medewerkers, ook wel agents genoemd, oproepen van klanten aannemen en/of telefonisch contact opnemen met klanten.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

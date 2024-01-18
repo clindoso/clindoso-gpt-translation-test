@@ -1,0 +1,57 @@
+---
+domains: &domains [Product]
+microcopy: &microcopy False
+en:
+  name: Beta tag
+  definition: A graphical indicator for a feature that is still under development and may contain incomplete functionalities. The Beta tag is displayed in the navigation and different menus.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Beta-Label
+  definition: Ein temporärer Indikator für eine Funktion oder ein Modul, das sich noch in der Entwicklung befindet und möglicherweise unvollständige Funktionalität enthält. Das grüne Beta-Symbol wird in der Navigation oder neben den Einträgen in verschiedenen Menüs angezeigt.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: label Beta
+  definition: Indicateur temporaire signalant que la fonctionnalité ou le module concerné est en cours de développement ou incomplet. Le label Beta vert apparaîtra dans le menu de navigation principal ou à côté du nom des différents menus.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: tag Beta
+  definition: Elemento grafico temporaneo che identifica le funzionalità in fase di sviluppo e che potrebbero essere incomplete. Il tag Beta, di colore verde, è visibile nella navigazione e nei vari menu accanto al nome della funzionalità.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: beta-label
+  definition: Een tijdelijke indicator die aangeeft dat een functie of module nog in ontwikkeling is en mogelijk nog niet volledig operationeel is. Het groene beta-label wordt weergegeven in de navigatie of naast de opties in de verschillende menu's.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: marca de Beta
+  definition: Indicador gráfico para funcionalidades en desarrollo que pueden no estar completas. La marca verde de Beta se muestra en la navegación y en distintos menús junto al nombre de la funcionalidad.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

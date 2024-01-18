@@ -1,0 +1,56 @@
+domains: &domains [WFM]
+internal: &internal False
+en:
+  name: entitlement
+  definition: The number of days or hours of paid vacation that a person can take in a time-off period.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Anspruch
+  definition: Anzahl der bezahlten Urlaubstage oder -Stunden, die eine Person innerhalb der Abwesenheitsperiode nehmen kann.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: droits aux congés
+  definition: "Nombre de jours ou d'heures de congés payés que peut prendre un employé pendant une période de congés."
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: ferie spettanti
+  definition: Il numero di giorni oppure ore di ferie retribuite che un dipendente può prendere durante un periodo di permesso.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: vakantierechten
+  definition: Het aantal betaalde vakantiedagen of -uren dat een persoon kan opnemen binnen een verlofperiode.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: permiso acumulado
+  definition: El número de días u horas que un empleado puede disfrutar como permiso remunerado dentro de un periodo de permisos.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

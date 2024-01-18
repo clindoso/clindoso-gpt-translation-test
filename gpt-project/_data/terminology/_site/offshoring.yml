@@ -1,0 +1,58 @@
+---
+domains: &domains [WFM]
+microcopy: &microcopy False
+en:
+  name: offshoring
+  definition: The process of relocating business processes to another country, usually with the intent to save costs.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Offshoring
+  definition: Die Verlagerung von unternehmerischen Prozessen ins Ausland, in der Regel um Kosten zu senken.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms:
+  - Auslandsverlagerung
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: délocalisation
+  definition: Transfert par une entreprise de certaines activités dans une autre région du monde, généralement dans le but d’obtenir un avantage compétitif.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: delokalisatie
+  definition: Het proces waarbij bedrijfsprocessen naar het buitenland worden verplaatst, meestal met het doel kosten te besparen.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

@@ -1,0 +1,57 @@
+---
+domains: &domains [WFM]
+microcopy: &microcopy False
+en:
+  name: quotas
+  definition: Values that define the number of allowed absences within a planning unit.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Quoten
+  definition: Werte, die die Anzahl der zulässigen Abwesenheiten innerhalb einer Planungseinheit bestimmen.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: quotas
+  definition: Valeurs définissant les absences autorisées dans une unité opérationnelle.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: quote
+  definition: Valori che definiscono il numero di assenze consentite in una unità di pianificazione.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: quota's 
+  definition: Waarden die het aantal toegestane afwezigheden binnen een eenheid aangeven.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: cuotas
+  definition: Valores que definen el número de ausencias permitidas en una unidad de planificación.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

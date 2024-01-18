@@ -1,0 +1,60 @@
+---
+domains: &domains [Product]
+internal: &internal True
+en:
+  name: logout
+  definition: The CTA button users click to log out of a computer system, application or online account.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms:
+  - sign-out
+  acronym:
+de:
+  name: Abmeldung
+  definition: Der CTA-Button, auf den Nutzer klicken, um sich von einem Computersystem, einer Anwendung oder einem Online-Konto abzumelden.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms:
+  - Logout
+  acronym:
+fr:
+  name: déconnexion
+  definition: "Bouton d'appel à l'action (CTA) sur lequel l'utilisateur doit cliquer pour se déconnecter d'un système informatique, d'une application ou d'un compte en ligne."
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  acronym:
+it:
+  name: logout
+  definition: Il tasto su cui l'utente clicca per disconnettersi da un computer, un'applicazione o un account online.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  acronym:
+nl:
+  name: afmelden
+  definition: De CTA-knop waar gebruikers op klikken om zich af te melden bij een computersysteem, applicatie of online account.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms:
+  - logout
+  acronym:
+es:
+  name: "cerrar sesión"
+  definition: "Botón (CTA o llamada a la acción) en el que los usuarios hacen clic para terminar su sesión en un sistema informático, aplicación o cuenta en línea."
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  acronym:

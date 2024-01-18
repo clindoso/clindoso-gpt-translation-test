@@ -1,0 +1,57 @@
+---
+domains: &domains []
+microcopy: &microcopy False
+en:
+  name: average calculation
+  definition: "Determination of the mean or central value in a data set. There are two types of average calculation:<br/>- Simple average: Each value has equal importance. The data set is divided by a number of values.<br/>- Weighted average: Each value has a corresponding weight factor to include their different degrees of importance."
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Durchschnittsberechnung
+  definition: "Ermittlung des Mittelwerts in einem Datensatz. Es gibt zwei Arten der Mittelwertberechnung:<br/>- Arithmetischer Mittelwert: Jeder Wert hat das gleiche Gewicht. Der Datensatz wird durch die Anzahl der Werte geteilt.<br/>- Gewichteter Mittelwert: Jeder Wert hat einen Gewichtungsfaktor, um die jeweilige Bedeutung zu berücksichtigen."
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: calcul de la moyenne
+  definition: "Détermination de la moyenne ou de la valeur centrale dans un ensemble de données. Il existe deux types de calcul de la moyenne&nbsp;:<br/> - Moyenne simple&nbsp;: chaque valeur a la même importance. L’ensemble des données est divisé par un nombre de valeurs.<br/>- Moyenne pondérée&nbsp;: toutes les valeurs sont multipliées par un facteur de pondération correspondant afin d’inclure leurs différents degrés d’importance."
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: berekening van het gemiddelde
+  definition: "Het bepalen van het gemiddelde of een centrale waarde in een gegevensreeks. Er kunnen twee soorten gemiddelden worden berekend:<br/>- Eenvoudig gemiddelde: Alle waarden zijn even belangrijk. De gegevensreeks wordt gedeeld door het aantal waarden.<br/>- Gewogen gemiddelde: Alle waarden hebben een bepaalde wegingsfactor om aan te geven hoe belangrijk ze zijn."
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

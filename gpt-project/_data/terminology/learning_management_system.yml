@@ -1,0 +1,58 @@
+---
+domains: &domains [Product]
+internal: &internal True
+en:
+  name: learning management system
+  definition: A software application for the administration, documentation, tracking, reporting, automation and delivery of educational courses, training programs, or learning and development programs.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: LMS
+de:
+  name: Learning Management System
+  definition: Eine Software-Anwendung für die Verwaltung, Dokumentation und Nachverfolgung von, Berichterstattung über, Automatisierung und Bereitstellung von Fortbildungskursen, Trainings oder Weiterentwicklungsprogrammen.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: LMS
+fr:
+  name: Learning Management System
+  definition: Système informatique conçu pour l’administration, la documentation, le suivi, la création de rapports, l’automatisation et de diffusion de cours, de programmes de formation ou de programmes d’apprentissage et de développement.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: LMS
+it:
+  name: sistema di gestione dell'apprendimento
+  definition: Applicazione software per l'amministrazione, la documentazione, il monitoraggio, la creazione di report, l'automazione e l'erogazione di corsi, training e programmi di apprendimento e sviluppo.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms:
+  - Learning Management System
+  forbidden_synonyms: []
+  abbreviation: LMS
+nl:
+  name: Learning Management System
+  definition: Een softwaretoepassing voor de toelevering, opvolging, rapportering en administratie van educatieve cursussen, trainingsprogramma's of complete trainingen.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: LMS
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

@@ -1,0 +1,57 @@
+---
+domains: &domains []
+internal: &internal False
+en:
+  name: on-premise
+  definition: Software that is installed and runs within the person's or organization's local IT infrastructure.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: On-premise
+  definition: Software, die auf den Computern der Person oder Organisation installiert wird und läuft.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: on-premise
+  definition: Logiciel directement installé sur le système informatique local d’une personne ou d’une organisation.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: on-premise
+  definition: Software die op de computers van een persoon of organisatie is geïnstalleerd en daarop draait.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

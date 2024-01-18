@@ -1,0 +1,57 @@
+---
+domains: &domains [Product]
+microcopy: &microcopy False
+en:
+  name: plannable activity
+  definition: Plannable activities are scheduled when using injixo's Create optimized schedule or Job optimization functionalities. Plannable activities can replace replaceable activities during optimization.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  acronym:
+de:
+  name: planbare Aktivität
+  definition: Planbare Aktivitäten werden bei der Verwendung der Funktionalitäten Optimierten Plan erstellen und Joboptimierung in injixo geplant. Planbare Aktivitäten können ersetzbare Aktivitäten während der Optimierung ersetzen.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  acronym:
+fr:
+  name: activité planifiable automatiquement
+  definition: Les activités planifiables automatiquement sont planifiées lors de l'utilisation des fonctionnalités Optimiser le planning ou Optimiser les activités. Les activités planifiables automatiquement peuvent remplacer les activités remplaçables pendant l'optimisation.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  acronym:
+it:
+  name: attività pianificabile
+  definition: Le attività pianificabili sono pianificate durante l'utilizzo delle funzionalità di injixo Crea una pianificazione ottimizzata e Ottimizzazione delle mansioni. Le attività pianificabili possono sostituire le attività sostituibili durante l'ottimizzazione.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  acronym:
+nl:
+  name: planbare activiteit
+  definition: Planbare activiteiten worden ingepland bij het gebruik van de injixo-functionaliteiten Geoptimaliseerde planning maken of Joboptimalisatie. Planbare activiteiten kunnen vervangbare activiteiten vervangen tijdens de optimalisatie.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  acronym:
+es:
+  name: actividad planificable
+  definition: Las actividades planificables se planifican con las funcionalidades de injixo Crear planificación optimizada u Optimización de tareas. Las actividades planificables pueden sustituir actividades reemplazables durante la optimización.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  acronym:

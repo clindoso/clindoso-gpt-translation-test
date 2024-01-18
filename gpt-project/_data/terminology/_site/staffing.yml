@@ -1,0 +1,57 @@
+---
+domains: &domains [Product]
+microcopy: &microcopy False
+en:
+  name: staffing
+  definition: The number of people working on an activity at a given time.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Besetzung
+  definition: Die Anzahl von Mitarbeitern, die zu einem bestimmten Zeitpunkt an einer Aktivität arbeiten.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: occupation
+  definition: "Nombre d'employés travaillant sur une activité à un moment donné."
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: occupazione
+  definition: Il numero di dipendenti che lavorano su un’attività in un determinato momento.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: bezetting
+  definition: Het aantal medewerkers dat op een bepaald moment aan een bepaalde activiteit werkt.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: ocupación
+  definition: "Número de empleados trabajando en una actividad en un momento dado."
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

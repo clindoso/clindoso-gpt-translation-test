@@ -1,0 +1,57 @@
+---
+domains: &domains [Product]
+microcopy: &microcopy False
+en:
+  name: day status
+  definition: An activity property for full-day activities. Activities configured as day status are not considered in coverage calculations. They are used for informational purposes only, e.g. to indicate that a person is working from home on a specific day.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  acronym:
+de:
+  name: Tagesstatus
+  definition: Eine Aktivitätseigenschaft für ganztägige Aktivitäten. Aktivitäten, die als Tagesstatus konfiguriert sind, werden bei der Berechnung der Deckung nicht berücksichtigt. Sie sind rein informativ, z.&nbsp;B. als Hinweis darauf, dass sich ein Mitarbeiter an einem bestimmten Tag im Homeoffice befindet.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  acronym:
+fr:
+  name: statut journalier
+  definition: Propriété pour les activités à journée entière. Les activités configurées avec statut journalier ne sont pas prises en compte dans le calcul de la couverture. Elles sont utilisées à des fins d'information uniquement, par exemple pour indiquer qu'une personne est en télétravail sur un jour en particulier.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  acronym:
+it:
+  name: stato giornaliero
+  definition: Una proprietà delle attività di un giorno intero. Le attività configurate come stato giornaliero non sono tenute in conto nel calcolo della copertura. Sono usate solo a fini informativi, per esempio per segnalare che un dipendente lavora da remoto in un determinato giorno.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  acronym:
+nl:
+  name: dagstatus
+  definition: Een activiteiteigenschap van een activiteit die over een hele dag wordt ingepland. Activiteiten met een dagstatus tellen niet mee bij de berekening van de dekking. Ze worden alleen gebruikt voor informatiedoeleinden, bijvoorbeeld om aan te geven dat iemand op een bepaalde dag vanuit huis werkt.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  acronym:
+es:
+  name: modo de día completo
+  definition: Una propiedad de las actividades de jornada completa. Las actividades configuradas con estado de día completo no se toman en cuenta al calcular la cobertura. Se usan solo para propósitos informativos, p.&nbsp;ej. para indicar que alguien teletrabaja un día en concreto.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  acronym:

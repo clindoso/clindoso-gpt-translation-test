@@ -1,0 +1,63 @@
+---
+domains: &domains []
+internal: &internal True
+en:
+  name: backtesting
+  definition: Backtesting refers to an evaluating method of a predictive model, e.g. an algorithm. In this evaluation method, the model is first trained using older historical data, and the model's output is then compared with newer historical data.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms:
+  - cross-validation
+  - hindcasting
+  abbreviation:
+de:
+  name: Backtesting
+  definition: Backtesting bezeichnet eine Evaluierungsmethode eines Vorhersagemodells, z.&nbsp;B. eines Algorithmus. In dieser Evaluierungsmethode wird das Modell erst mit älteren historischen Daten trainiert und das Modellergebnis wird dann gegen neuere historische Daten abgeglichen.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms:
+  - Rückvergleich
+  forbidden_synonyms:
+  - Kreuzvalidierung
+  - Hindcasting
+  - Cross-Validation
+  abbreviation:
+fr:
+  name: backtesting
+  definition: Le backtesting est une méthode d’évaluation d’une modélisation, par exemple d’un algorithme. Elle consiste à entraîner un modèle à l’aide de données historiques anciennes, puis à comparer les résultats à des données historiques plus récentes.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: backtesting
+  definition: Il backtesting è un metodo di valutazione di modelli predittivi, per esempio di algoritmi. In questo metodo, il modello viene allenato utilizzando dati storici meno recenti, e il risultato viene poi comparato con dati storici più recenti.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: backtesten
+  definition: evaluatiemethode van een prognosemodel, bijv&nbsp;een algoritme. In deze evaluatiemethode wordt het model eerst getraind met oudere historische gegevens. Daarna wordt de output van het model met nieuwe historische gegevens vergeleken.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

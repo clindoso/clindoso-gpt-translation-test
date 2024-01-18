@@ -1,0 +1,63 @@
+---
+domains: &domains [WFM]
+microcopy: &microcopy False
+en:
+  name: turnover rate
+  definition: The total number of staff who leave or enter a company over a certain time period.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms:
+    - turnover
+    - employee turnover
+    - staff turnover
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Fluktuationsrate
+  definition: Eintritt bzw. Austritt von Mitarbeitern in eine oder aus einer Organisation.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms:
+    - Fluktuation
+    - Mitarbeiterfluktuation
+    - Personalfluktuation
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: turnover
+  definition: "Le nombre total d’employés qui quittent ou rejoignent une organisation sur une période donnée."
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

@@ -1,0 +1,57 @@
+---
+domains: &domains [Product]
+microcopy: &microcopy False
+en:
+  name: target work account
+  definition: An employee-specific account that contains the respective amount of target working time within a planning period. This account can be used in TimeManager to calculate, modify, and view the target working time for a selected planning period.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Richtzeitkonto
+  definition: Ein mitarbeiterspezifisches Konto, das die entsprechende Sollarbeitszeit innerhalb einer Planperiode beinhaltet. Dieses Konto kann in TimeManager zur Berechnung, Änderung und Ansicht der Sollarbeitszeit ausgewählter Planperioden verwendet werden.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: richttijdaccount
+  definition: Een medewerkerspecifieke account waarin de geplande werktijd binnen een planningsperiode is opgenomen. Deze account kan in TimeManager worden gebruikt om de geplande werktijd in geselecteerde planningsperioden te berekenen, wijzigen en bekijken.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

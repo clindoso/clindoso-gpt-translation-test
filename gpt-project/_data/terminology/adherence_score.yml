@@ -1,0 +1,58 @@
+---
+domains: &domains [Product]
+internal: &internal False
+en:
+  name: Adherence Score
+  definition: The average percentage of adherence within a set period of time.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms:
+  - Intraday Adherence Score
+  abbreviation:
+de:
+  name: Adherence Score
+  definition: Der prozentuale Durchschnittswert der Planeinhaltung innerhalb eines ausgewählten Zeitraums.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: Score d'adhérence
+  definition: Pourcentage moyen d'adhérence sur une période donnée.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: adherence-score
+  definition: Het gemiddelde adherence-percentage gemeten over een bepaalde periode.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

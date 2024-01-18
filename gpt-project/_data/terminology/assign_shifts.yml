@@ -1,0 +1,57 @@
+---
+domains: &domains [Product]
+internal: &internal False
+en:
+  name: Assign shifts
+  definition: An injixo functionality used in shift bidding that assigns one of the shifts that is not requested or assigned during the lottery to employees who do not have an assigned shift yet.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Schichten zuteilen
+  definition: Eine injixo-Funktionalität, die im Schichtwunsch-Verfahren benutzt wird, um den Mitarbeitern, die noch keine Schicht bekommen haben, eine der Schichten zuzuweisen, die in der Verlosung nicht gewünscht oder nicht zugewiesen wurden.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: Attribuer les missions
+  definition: Fonctionnalité du module Plan d’injixo permettant d’attribuer aux employés sans missions l’une des missions non demandées ou non assignées pendant le tirage au sort.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: Diensten toewijzen
+  definition: Een injixo-functionaliteit in de Plan-module, die diensten die bij de loting zijn overgebleven, toewijst aan medewerkers die nog geen dienst hebben gekregen.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

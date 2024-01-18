@@ -1,0 +1,58 @@
+---
+domains: &domains []
+microcopy: &microcopy False
+en:
+  name: in-house
+  definition: Department or function that is integrated into an organization as opposed to an outsourced structure, e.g. in-house contact center or in-house employee.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: inhouse
+  definition: Abteilung oder Funktion, die in ein Unternehmen integriert ist, im Gegensatz zu einer ausgelagerten Struktur, z.&nbsp;B. ein internes Contact Center oder ein interner Mitarbeiter.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: interne
+  definition: "Service ou fonction intégré à une organisation, contrairement à une structure externalisée. Par exemple&nbsp;: un centre de contacts interne ou un employé interne."
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: interno
+  definition: Di reparto o funzione integrati all'interno di un'organizzazione, in opposizione a strutture esternalizzate, per esempio un contact center interno o un dipendente interno.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms:
+    - in-house
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: intern
+  definition: Een afdeling of functie die in een organisatie is geïntegreerd, in tegenstelling tot een externe structuur, bijv.&nbsp;een intern contactcenter of een interne medewerker.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

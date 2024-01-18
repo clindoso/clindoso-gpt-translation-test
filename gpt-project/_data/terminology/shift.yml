@@ -1,0 +1,57 @@
+---
+domains: &domains [Product, WFM]
+internal: &internal False
+en:
+  name: shift
+  definition: A working pattern for a single day, consisting of a start time and a end time, including activities and sometimes also breaks. Shifts can be created from day models.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Schicht
+  definition: Ein einzelner Arbeitstag mit einer festen Startzeit und Endzeit, z.&nbsp;B. Spätschicht. Eine Schicht enthält Aktivitäten und manchmal Pausen. Schichten können auf Grundlage von Tagesmodellen angelegt werden.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: journée
+  definition: Modèle de répartition des activités et parfois des pauses, comprenant une heure de début et une heure de fin. Les journées peuvent être créées à l'aide de modèles horaires.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: turno
+  definition: Schema di lavoro giornaliero con un'ora di inizio e un'ora di fine che include le attività e in alcuni casi le pause. I turni possono essere creati a partire dai modelli di orario.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: dienst
+  definition: Een afzonderlijke werkdag met een vaste begin- en eindtijd, zoals een avonddienst. Een dienst bestaat uit activiteiten en soms pauzes. Diensten kunnen op basis van dagmodellen worden aangemaakt.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: turno
+  definition: Un modelo laboral para un día. Comprende hora de inicio y finalización, actividades y, en ocasiones, también descansos. Los turnos se pueden crear a partir de modelos de horario.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

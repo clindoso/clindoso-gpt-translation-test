@@ -1,0 +1,57 @@
+---
+domains: &domains []
+internal: &internal False
+en:
+  name: conformance report
+  definition: An overview per day that lists each employee’s planned and actual number of working hours.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Report Planeinhaltung (Arbeitszeit)
+  definition: Eine Übersicht pro Tag, die die geplanten und tatsächlichen Arbeitsstunden für jeden Mitarbeiter auflistet.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: adherence-rapport (werktijd)
+  definition: Een overzicht op dagbasis met het aantal ingeplande en werkelijk gewerkte aantal gewerkte uren.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

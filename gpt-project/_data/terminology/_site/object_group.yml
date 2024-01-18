@@ -1,0 +1,57 @@
+---
+domains: &domains [Product]
+microcopy: &microcopy False
+en:
+  name: object group
+  definition: Multiple objects grouped using the Object Access feature that can be assigned to users to grant access to the same objects, e.g. activity 1, dashboard 1, and contract 1.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Objektgruppe
+  definition: Objekte, die mit dem Objektrechte-Feature gruppiert werden. Die Verwendung von Objektgruppen ermöglicht Benutzern Zugriff auf die gleichen Objekte, z.&nbsp;B. Aktivität 1, Dashboard 1 und Vertrag 1.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: objectgroep
+  definition: Meerdere objecten die met de feature Objecttoegangsrechten zijn gegroepeerd, en aan gebruikers kunnen worden toegewezen, zodat ze toegang hebben tot de betreffende objecten, zoals activiteit 1, dashboard 1 en contract 1.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

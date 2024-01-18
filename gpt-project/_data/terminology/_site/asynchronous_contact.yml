@@ -1,0 +1,60 @@
+---
+domains: &domains []
+microcopy: &microcopy False
+en:
+  name: asynchronous contact
+  definition: Contact that customers don't expect to be answered immediately but do expect to be answered within a defined period of time. Examples include emails and correspondence.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms:
+    - non-abandoning contact
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Asynchroner Kontakt
+  definition: Kontakte, bei denen die Kunden keine sofortige Antwort erwarten, sondern innerhalb eines bestimmten Zeitraums. 
+    Beispiele hierfür sind Emails oder Briefe.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: contact asynchrone
+  definition: Contact qui ne nécessite pas une réponse immédiate mais qui sera traité dans une période ultérieure donnée. Par exemple&nbsp; e-mails.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms:
+  - flux froid
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: contatto asincrono
+  definition: Contatto che non richiede una risposta immediata, ma che sarà gestito entro un dato lasso di tempo. Sono contatti asincroni, per esempio, le email e le lettere.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: asynchroon contact
+  definition: Contactvorm waarbij klanten niet direct een antwoord verwachten, maar binnen een bepaalde tijd. Denk hierbij aan e-mails of brieven. Zie ook antwoordtijd. 
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: contacto asíncrono
+  definition: Contacto que no requiere una respuesta inmediata pero sí debe ser gestionado en un plazo concreto, p.&nbsp;ej. correos electrónicos o cartas. Véase también tiempo de respuesta.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

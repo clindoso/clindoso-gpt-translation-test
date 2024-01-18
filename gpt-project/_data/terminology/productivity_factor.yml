@@ -1,0 +1,57 @@
+---
+domains: &domains [WFM]
+internal: &internal True
+en:
+  name: productivity factor
+  definition: The percentage of employees' contracted time that is productive time.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Produktivitätsfaktor
+  definition: Prozentanteil der Gesamtarbeitszeit der Mitarbeiter, der als produktive Zeit gilt.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: facteur de productivité
+  definition: Pourcentage du temps de travail des employés consacré à des activités productives.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: fattore di produttività
+  definition: Percentuale delle ore lavorative dei dipendenti che vengono considerate tempo produttivo.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: productiviteitsfactor
+  definition: Het percentage van de totale werktijd van de werknemer die als productieve tijd geldt.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

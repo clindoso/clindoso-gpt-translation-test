@@ -1,0 +1,57 @@
+---
+domains: &domains [Product]
+internal: &internal True
+en:
+  name: product
+  definition: A product is a software solution designed to address the needs of businesses. Our products are composed of a set of features.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Produkt
+  definition: Ein Produkt ist eine Software-Lösung, um Anforderungen und Bedürfnisse von Unternehmen zu erfüllen. Unsere Produkte setzen sich aus Features zusammen.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: produit
+  definition: Un produit est une solution logicielle conçue pour répondre aux besoins des entreprises. Nos produits sont composés d’un ensemble de fonctionnalités.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: prodotto
+  definition: Un prodotto è una soluzione software che risponde alle necessità delle aziende. I nostri prodotti sono composti da una serie di funzionalità.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: product
+  definition: Een product is een software-oplossing die is ontworpen om aan de behoeften van een bedrijven te voldoen. Onze producten bestaan uit een reeks features.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: producto
+  definition: Un producto es una solución de software diseñada para responder a las necesidades de las empresas. Nuestros productos comprenden una serie de funcionalidades.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

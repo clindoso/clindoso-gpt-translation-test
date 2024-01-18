@@ -1,0 +1,57 @@
+---
+domains: &domains [Product]
+microcopy: &microcopy False
+en:
+  name: job optimization
+  definition: An injixo functionality that automatically optimizes the schedule by adjusting and replacing activities of currently scheduled shifts to improve coverage.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Joboptimierung
+  definition: Ein injixo-Funktionalität, die den Schichtplan automatisch optimiert, indem sie Aktivitäten aktuell geplanter Schichten zur Verbesserung der Deckung anpasst und ersetzt.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: Optimiser les activités
+  definition: Fonctionnalité d’injixo permettant d’optimiser automatiquement le planning en ajustant et en remplaçant des activités des journées actuellement planifiées pour améliorer la couverture.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: Ottimizzazione delle mansioni
+  definition: Funzionalità injixo che ottimizza automaticamente la pianificazione modificando e sostituendo le attività dei turni attualmente pianificati per migliorare la copertura. 
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: Joboptimalisatie
+  definition: Een injixo-functionaliteit die de planning automatisch optimaliseert door activiteiten van ingeplande diensten aan te passen of te vervangen voor een betere dekking.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: optimización de tareas
+  definition: Funcionalidad de injixo que optimiza automáticamente la planificación ajustando y reemplazando actividades de la planificación actual para mejorar la cobertura.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

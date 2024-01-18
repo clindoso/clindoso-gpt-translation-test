@@ -1,0 +1,58 @@
+---
+domains: &domains [WFM]
+internal: &internal False
+en:
+  name: shrinkage
+  definition: The percentage of paid time during which employees are not available to handle contacts.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Shrinkage
+  definition: Der Prozentsatz der bezahlten Zeit, in der Mitarbeiter unerwartet abwesend sind, z.&nbsp;B. wegen Krankheit.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal 
+  allowed_synonyms:
+  - Schwund
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: shrinkage
+  definition: Pourcentage de temps rémunéré durant lequel les employés ne sont pas disponibles pour traiter les contacts.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: shrinkage
+  definition: Het percentage van de betaalde tijd dat medewerkers niet beschikbaar zijn om contacten af te handelen.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

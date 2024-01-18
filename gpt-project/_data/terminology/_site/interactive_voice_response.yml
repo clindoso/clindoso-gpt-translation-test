@@ -1,0 +1,59 @@
+---
+domains: &domains [WFM]
+microcopy: &microcopy False
+en:
+  name: Interactive Voice Response
+  definition: A contact center technology that provides self-service options for customers which sometimes removes the need to speak to an agent.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: IVR
+de:
+  name: Interactive Voice Response
+  definition: Eine Contact Center-Technologie, die Kunden Selbstbedienungsmöglichkeiten anbietet. Dadurch ist es nicht notwendig, mit einem Mitarbeiter zu reden.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms:
+  - Sprachdialogsystem
+  forbidden_synonyms: []
+  abbreviation: IVR
+fr:
+  name: serveur vocal interactif
+  definition: Système informatique utilisé dans les centres de contacts et qui offre des options de libre-service aux clients et supprime parfois le besoin de parler à un agent.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: SVI
+it:
+  name: risposta vocale interattiva
+  definition: Tecnologia per contact center che offre ai chiamanti opzioni self-service, eliminando in certi casi la necessità di parlare con un agente.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms:
+  - sistema IVR
+  forbidden_synonyms: []
+  abbreviation: IVR
+nl:
+  name: Interactive Voice Response
+  definition: Contactcentertechnologie die klanten zelfservicemogelijkheden biedt, waardoor een gesprek met een agent soms niet langer nodig is.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: IVR
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

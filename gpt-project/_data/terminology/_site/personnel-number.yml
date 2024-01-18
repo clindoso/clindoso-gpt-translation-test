@@ -1,0 +1,57 @@
+---
+domains: &domains [Product]
+microcopy: &microcopy False
+en:
+  name: personnel number
+  definition: A customizable identifier for one person that can be used to integrate with external tools. It is mandatory and has to be unique.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Personalnummer
+  definition: Eine anpassbare Kennung für eine Person, die zur Integration mit externen Tools verwendet werden kann. Sie ist obligatorisch und muss eindeutig sein. 
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: matricule
+  definition: Identifiant d’une personne, pouvant être personnalisé et utilisé pour l’intégration avec un système externe. Cet identifiant est obligatoire et doit être unique.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: numero di matricola
+  definition: Codice identificativo di una persona, che può essere personalizzato e utilizzato nelle integrazioni con sistemi esterni. È obbligatorio e deve essere unico.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: personeelsnummer
+  definition: Een aanpasbare ID voor een persoon, dat voor integraties met externe tools kan worden gebruikt. Het is verplicht en moet uniek zijn. 
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: identificador personal
+  definition: Código alfanumérico personalizable que identifica a una persona y puede ser integrado en programas externos. Es un campo obligatorio y tiene que ser único.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

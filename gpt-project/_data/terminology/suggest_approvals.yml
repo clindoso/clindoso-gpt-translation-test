@@ -1,0 +1,57 @@
+---
+domains: &domains [Product]
+internal: &internal False
+en:
+  name: Suggest approvals
+  definition: The Suggest approvals functionality suggests time-off requests to be approved based on the number of employees, staff requirements as well as planned absences, and configured target quota for the planning unit.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Genehmigungen vorschlagen
+  definition: Die Funktionalität Genehmigungen vorschlagen zeigt zu genehmigende Anträge, die auf der Anzahl der Mitarbeiter, dem Mitarbeiterbedarf sowie geplanten Abwesenheiten und der Zielquote der Planungseinheit basiert.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: Suggérer une décision
+  definition: "La fonctionnalité Suggérer une décision permet de suggérer la validation des demandes d’absence selon le nombre d’employés, le besoin en personnel, les absences planifiées et le quota cible pour l’unité opérationnelle."
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition: 
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: goedkeuringen voorstellen
+  definition: De functionaliteit Goedkeuringen voorstellen geeft aanvragen weer die op goedkeuring wachten, op basis van het aantal medewerkers, de personeelsbehoefte, geplande afwezigheid en het doelquotum van de planningseenheid.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

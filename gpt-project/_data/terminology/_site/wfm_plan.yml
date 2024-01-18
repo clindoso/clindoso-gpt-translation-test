@@ -1,0 +1,61 @@
+---
+domains: &domains [Product]
+microcopy: &microcopy False
+en:
+  name: WFM plan
+  definition: "The three plans in the injixo subscription model:<br>- Essential WFM<br>- Advanced WFM<br>- Enterprise WFM"
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms:
+  - plan
+  - product pricing (Marketing)
+  - product flavors (Marketing)
+  - price plan (Marketing)
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: WFM-Plan
+  definition: "Die drei Pläne im injixo Abo-Modell:<br>- Essential WFM<br>- Advanced WFM<br>- Enterprise WFM"
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: offre WFM
+  definition: "Les trois offres d’abonnement à injixo disponibles&nbsp;:<br>- Essential WFM<br>- Advanced WFM<br>- Enterprise WFM"
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: piano WFM
+  definition: "Ognuno dei tre piani di abbonamento a injixo:<br>- Essential WFM<br>- Advanced WFM<br>- Enterprise WFM"
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: WFM-plan
+  definition: "De drie plannen in het injixo-abonnementsmodel:<br>- Essential WFM<br>- Advanced WFM<br>- Enterprise WFM"
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: plan WFM
+  definition: "Los tres planes en el modelo de suscripción de injixo:<br>- Essential WFM<br>- Advanced WFM<br>- Enterprise WFM"
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

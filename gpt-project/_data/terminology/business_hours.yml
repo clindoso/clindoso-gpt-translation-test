@@ -1,0 +1,59 @@
+---
+domains: &domains [WFM, Product]
+internal: &internal False
+en:
+  name: business hours
+  definition: The hours that a contact center is open to do business. In injixo, business hours can be adjusted for planning units and used in Forecast.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms:
+  - opening hours
+  abbreviation:
+de:
+  name: Öffnungszeit
+  definition: Zeit, in der ein Büro geöffnet ist.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms:
+  - Geschäftszeit
+  abbreviation:
+fr:
+  name: horaires d’ouverture
+  definition: Les heures pendant lesquelles un centre de contacts est ouvert.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: orario di apertura
+  definition: Il lasso di tempo durante il quale un ufficio è aperto al pubblico.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: kantooruren
+  definition: De openingstijden van een kantoor.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

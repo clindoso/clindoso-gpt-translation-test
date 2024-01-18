@@ -1,0 +1,57 @@
+---
+domains: &domains [Product]
+internal: &internal False
+en:
+  name: selection
+  definition: A group to which planners can assign people for filtering purposes. For example, a selection can include all people with part-time contracts.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Auswahl
+  definition: Eine Gruppe, der Planer Mitarbeiter zuordnen können, um diese zu filtern. Eine Auswahl kann z.&nbsp;B. alle Mitarbeiter mit Teilzeitverträgen enthalten.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: Groupe
+  definition: "Sélection à laquelle les planificateurs peuvent assigner des employés pour créer des filtres. Par exemple, un groupe peut inclure tous les employés sous contrat à temps partiel." 
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: gruppo di selezione
+  definition: Gruppo al quale i pianificatori possono assegnare i dipendenti per creare dei filtri. Un gruppo di selezione può includere, per esempio, tutti i dipendenti con un contratto part-time.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: groep
+  definition: Planners kunnen medewerkers groeperen voor filterdoeleinden. Zo kan een groep bestaan uit alle medewerkers met een deeltijdcontract.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: grupo
+  definition: Una selección que los planificadores pueden crear para filtrar más fácilmente a los trabajadores. Por ejemplo, un grupo podría incluir a todos los trabajadores con contratos a tiempo parcial.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

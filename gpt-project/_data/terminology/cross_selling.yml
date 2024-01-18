@@ -1,0 +1,59 @@
+---
+domains: &domains [Marketing]
+internal: &internal True
+en:
+  name: cross-selling
+  definition: Selling a complementary product to an existing customer, thus adding customer value and increasing revenue.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Querverkauf
+  definition: Der Verkauf eines Zusatzprodukts an einen bestehenden Kunden, durch den Kundennutzen und Umsatz steigen.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms:
+  - Kreuzverkauf
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: cross selling
+  definition: Vente d’un produit supplémentaire à un client existant, augmentant ainsi la valeur client et les revenus.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: crossselling
+  definition: De verkoop van een aanvullend product aan een bestaande klant, waardoor de klantwaarde toeneemt en de inkomsten stijgen.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms:
+  - kruisverkoop
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

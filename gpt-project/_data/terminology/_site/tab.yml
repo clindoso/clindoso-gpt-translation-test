@@ -1,0 +1,59 @@
+---
+domains: &domains []
+microcopy: &microcopy False
+en:
+  name: tab
+  definition: A graphical element of a browser or user interface for accessing contents or websites in separate interfaces. Clicking a tab allows switching between contents in the same program window quickly.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Tab
+  definition: Ein Steuerelement eines Browsers oder grafischer Benutzeroberflächen für gegliederten Zugriff auf Seiteninhalte oder Webseiten. Ein Klick auf einen Tab ermöglicht einen schnellen Wechsel zwischen Inhalten im gleichen Programmfenster.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms:
+  - Reiter
+  - Registerkarte
+  abbreviation:
+fr:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: tabblad
+  definition: Een grafisch element in een browser of gebruikersinterface voor toegang tot inhoud of websites in afzonderlijke interfaces. Door op een tabblad te klikken kan snel tussen inhoud in hetzelfde programmavenster worden gewisseld.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: pestaña
+  definition: Elemento gráfico en una interfaz informática o navegador que permite cambiar de contenido dentro de una misma ventana.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

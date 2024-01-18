@@ -1,0 +1,59 @@
+---
+domains: &domains [Product]
+microcopy: &microcopy False
+en:
+  name: shift swap
+  definition: An option in injixo Me that allows employees to exchange shifts.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms:
+    - shift exchange
+  abbreviation:
+  redirect_anchor_text: shift-swap-sometimes-shift-exchange
+de:
+  name: Schichttausch
+  definition: Eine Option in injixo Me, die es Mitarbeitern ermöglicht, Schichten zu tauschen.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: Bourse d’échange
+  definition: Option d’injixo Me permettant aux employés d’échanger des journées.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: diensten ruilen
+  definition: Een optie in injixo Me waarmee medewerkers diensten met elkaar kunnen ruilen.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

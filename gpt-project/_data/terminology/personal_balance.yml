@@ -1,0 +1,57 @@
+---
+domains: &domains [WFM]
+internal: &internal False
+en:
+  name: personal balance
+  definition: The remaining number of days of paid time off in a year that a person can take.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Restanspruch
+  definition: Restliche Anzahl der bezahlten Abwesenheitstage, die eine Person im Jahr nehmen kann.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: solde par employé
+  definition: Nombre de jours de congés payés restants qu’un employé peut encore prendre dans une année.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: verlofsaldo
+  definition: Het resterende aantal betaalde vakantiedagen in een jaar, die een medewerker kan opnemen.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: saldo personal
+  definition: Número restante de días que una persona puede tomar como permiso retribuido en un año.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

@@ -1,0 +1,57 @@
+---
+domains: &domains [WFM]
+internal: &internal False
+en:
+  name: planning
+  definition: Calculating staff requirements to determine the number of employees needed to handle a forecasted workload at the desired service level.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Planung
+  definition: Berechnung des Mitarbeiterbedarfs, um die benötigte Mitarbeiteranzahl zur Bearbeitung eines berechneten Workloads auf dem gewünschten Service-Level festzulegen.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: planification
+  definition: Calcul du besoin en personnel pour déterminer le nombre d’employés nécessaires pour traiter la charge de travail prévue, au niveau de service souhaité.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: planning
+  definition: Berekening van de personeelsbehoefte om het aantal medewerkers te bepalen dat nodig is om een voorspelde workload op het gewenste serviceniveau te verwerken.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

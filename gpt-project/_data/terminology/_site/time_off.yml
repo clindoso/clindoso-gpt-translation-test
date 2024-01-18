@@ -1,0 +1,59 @@
+---
+domains: &domains [Product]
+microcopy: &microcopy False
+en:
+  name: Time Off
+  definition: An injixo feature for vacation and absence management. It includes all Absence, Vacation, and Illness activities that are configured as Requestable in Me.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms:
+  - Time-Off
+  abbreviation:
+de:
+  name: Abwesenheiten
+  definition: Ein injixo-Feature für die Urlaubs- und Abwesenheitsverwaltung. Dies umfasst alle Abwesenheits-, Urlaubs- und Krankheitsaktivitäten, die als Wünschbar in Me konfiguriert sind.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+  redirect_anchor_text: urlaub-abwesenheiten
+fr:
+  name: Congés/Absences
+  definition: "Fonctionnalité d’injixo dédiée à la gestion des absences. Elle inclut toutes les activités de type absence, congé et maladie dont le paramètre Autoriser les demandes dans Me a été activé."
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: Ferie/Assenze
+  definition: Funzionalità di injixo per la gestione delle ferie e delle assenze. Include tutte le attività del tipo Assenza, Ferie e Malattia per le quali è stato attivato il parametro Richiedibile in Me.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: Vakantie/Afwezigheid
+  definition: Een injixo-feature voor verlof- en afwezgheidsbeheer. Hieronder vallen alle afwezigheids-, verlof-, en ziekteactiviteiten die zijn geconfigureerd als <i>Aanvraagbaar in Me</i>.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: Vacaciones/Ausencias
+  definition: Funcionalidad de injixo para la gestión de vacaciones y ausencias. Engloba todas las actividades de tipo Ausencia, Vacaciones y Enfermedad con la configuración Se puede solicitar en Me.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

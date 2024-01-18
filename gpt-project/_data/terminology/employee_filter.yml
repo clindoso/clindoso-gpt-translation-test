@@ -1,0 +1,57 @@
+---
+domains: &domains [Product]
+internal: &internal False
+en:
+  name: employee filter
+  definition: A filter based on configuration elements, e.g. contracts and skills, or a combination of these elements, for filtering people.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Mitarbeiterfilter
+  definition: Ein Filter, mit dem Mitarbeiter nach einzelnen oder kombinierten Konfigurationselementen, z.&nbsp;B. Verträgen und Qualifikationen, gefiltert werden können.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: filtre avancé
+  definition: Filtre dynamique basé sur certains éléments de configuration, par exemple les contrats et les compétences, ou une combinaison de ces éléments pour afficher les employés correspondant à ces critères de recherche.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: filtro personalizzato
+  definition: Un filtro basato sugli elementi della configurazione, per esempio i contratti e le qualifiche, o su una combinazione di tali elementi, usato per filtrare i dipendenti.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: medewerkerfilter
+  definition: Een filter waarmee medewerkers op basis van configuratie-elementen, zoals contracten en kwalificaties, of een combinatie van deze elementen, kunnen worden gefilterd.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: filtro de empleados
+  definition: Un filtro que se basa en elementos de configuración como contratos o cualificaciones, o en una combinación de estos elementos, para filtrar a los empleados.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

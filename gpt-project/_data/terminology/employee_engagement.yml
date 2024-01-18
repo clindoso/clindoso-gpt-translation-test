@@ -1,0 +1,57 @@
+---
+domains: &domains [WFM]
+internal: &internal False
+en:
+  name: employee engagement
+  definition: The process of involving employees in the operation of an organization, e.g. in the WFM process.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Mitarbeitereinbindung
+  definition: Die Einbindung von Mitarbeitern in operationelle Prozesse eines Unternehmens, z.&nbsp;B. in den WFM-Prozess.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: implication des employés
+  definition: L’implication des employés consiste à les faire participer au fonctionnement d’une organisation, par exemple au processus de WFM.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: medewerkerbetrokkenheid
+  definition: De betrokkenheid van medewerkers bij operationele processen van een bedrijf, bijv&nbsp;het WFM-proces.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

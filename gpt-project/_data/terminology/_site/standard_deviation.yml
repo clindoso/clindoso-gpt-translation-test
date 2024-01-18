@@ -1,0 +1,58 @@
+---
+domains: &domains [WFM]
+microcopy: &microcopy False
+en:
+  name: standard deviation
+  definition: A measure of the value dispersion in a data set. The larger the standard deviation, the more spread out are the values around the average. Among other things, the standard deviation is used to evaluate forecast accuracy and by planners wishing to test their own forecasts.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Standardabweichung
+  definition: Ein Maß für die Streubreite der Werte in einer Datensammlung. Je höher die Standardabweichung, umso gestreuter sind die Werte um den Durchschnittswert. Unter anderem findet die Standardabweichung bei der Bewertung der Forecastgenauigkeit und beim Testen von Prognosen durch Planer Anwendung.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: écart-type
+  definition: Mesure de la dispersion des valeurs dans un ensemble de données. Plus l’écart-type est important, plus les valeurs sont dispersées autour de la moyenne. L’écart-type est notamment utilisé pour évaluer la précision des prévisions. Les planificateurs l’utilisent également pour vérifier leurs propres prévisions.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms:
+  - écart type
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: deviazione standard
+  definition: Misura della dispersione dei valori in un insieme di dati. Maggiore la deviazione standard, più i valori sono dispersi attorno alla media. La deviazione standard è utilizzata, per esempio, per determinare l'accuratezza delle previsioni. I pianificatori la utilizzano per testare le loro previsioni.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: standaardafwijking
+  definition: Een maat voor de spreiding van waarden in een dataset. Hoe hoger de standaardafwijking, hoe groter de spreiding van de waarden rond de gemiddelde waarde. De standaardafwijking wordt onder meer gebruikt bij de beoordeling van de nauwkeurigheid van forecasts en bij het toetsen van prognoses door planners.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

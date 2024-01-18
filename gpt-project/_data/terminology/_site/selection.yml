@@ -1,0 +1,57 @@
+---
+domains: &domains [Product]
+microcopy: &microcopy False
+en:
+  name: selection
+  definition: A group to which planners can assign people for filtering purposes. For example, a selection can include all people with part-time contracts.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Auswahl
+  definition: Eine Gruppe, der Planer Mitarbeiter zuordnen kann, um diese zu filtern. Eine Auswahl kann z.&nbsp;B. alle Mitarbeiter mit Teilzeitverträge enthalten.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: Groupe
+  definition: Élément de configuration facultatif permettant de regrouper les employés, par exemple par équipe ou par contrat.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: groep
+  definition: Een groep is een optioneel configuratie-item om medewerkers te groeperen, bijvoorbeeld op basis van team of contract.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

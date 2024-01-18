@@ -1,0 +1,57 @@
+---
+domains: &domains []
+microcopy: &microcopy False
+en:
+  name: business to consumer
+  definition: Business transacted from organizations to private individuals.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: B2C
+de:
+  name: Business-to-Consumer
+  definition: Geschäftsbeziehungen zwischen Unternehmen und Privatpersonen.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: B2C
+fr:
+  name: business to consumer
+  definition: Relation commerciale entre une entreprise et des particuliers.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: B2C
+it:
+  name: business to consumer
+  definition: Transazioni commerciali tra imprese e soggetti privati.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: B2C
+nl:
+  name: business-to-consumer
+  definition: Zakelijke relaties tussen een bedrijf en een particuliere klant.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: B2C
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

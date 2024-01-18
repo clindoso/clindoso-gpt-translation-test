@@ -1,0 +1,57 @@
+---
+domains: &domains [Product]
+microcopy: &microcopy False
+en:
+  name: child planning unit
+  definition: A planning unit subordinate to a parent planning unit. For example, a parent planning unit can represent the whole organization while the child planning unit represents groups of people within the organization, e.g. people who work in different time zones.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: untergeordnete Planungseinheit
+  definition: Eine Planungseinheit, die einer übergeordneten Planungseinheit zugeordnet ist. Übergeordnete Planungseinheiten können das gesamte Unternehmen darstellen, wohingegen die untergeordnete Planungseinheit eine Untergruppe innerhalb des Unternehmens darstellt, z.&nbsp;B. Mitarbeiter in unterschiedlichen Zeitzonen.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: 
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

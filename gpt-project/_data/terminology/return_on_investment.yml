@@ -1,0 +1,57 @@
+---
+domains: &domains []
+internal: &internal True
+en:
+  name: return on investment
+  definition: Return on investment is the ratio between the net income of an investment and its costs. 
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: ROI
+de:
+  name: Return on Investment
+  definition: Return on Investment ist das Verhältnis zwischen der Rendite einer Investition und ihren Kosten. 
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: ROI
+fr:
+  name: retour sur investissement
+  definition: Rapport entre le bénéfice net obtenu et le coût de l’investissement.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: return on investment
+  definition: De verhouding tussen de netto-inkomsten en de kosten van een investering.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: ROI
+es:
+  name: retorno de la inversión
+  definition: Métrica para determinar la rentabilidad de una inversión. Expresa la relación entre capital invertido y beneficio obtenido.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

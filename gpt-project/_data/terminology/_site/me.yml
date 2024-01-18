@@ -1,0 +1,57 @@
+---
+domains: &domains [Product]
+microcopy: &microcopy False
+en:
+  name: Me
+  definition: An injixo module to involve employees in the scheduling process. Employees can request shifts or time off and swap shifts with colleagues.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Me
+  definition: Ein injixo-Modul zur Einbeziehung der Mitarbeiter in den Planungsprozess. Mitarbeiter können Schichten oder Abwesenheiten beantragen und Schichten mit Kollegen tauschen.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: Me
+  definition: Module d’injixo permettant d’impliquer les employés dans le processus de planification. Les employés peuvent demander des missions ou des absences et échanger des missions avec leurs collègues.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: Me
+  definition: Een injixo-module voor medewerkerbetrokkenheid bij het planningsproces. Medewerkers kunnen diensten of verlof aanvragen en diensten ruilen met collega's.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

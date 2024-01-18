@@ -1,0 +1,57 @@
+---
+domains: &domains [WFM, Product]
+internal: &internal True
+en:
+  name: normalized call volume
+  definition: Call volume data remaining from the historical data after exceptional events have been removed.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: normalisiertes Anrufvolumen
+  definition: Restdaten des Anrufvolumens, nachdem außerordentliche Ereignisse aus den historischen Daten entfernt wurden.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: genormaliseerd aantal oproepen
+  definition: Het aantal oproepen uit de historische gegevens dat overblijft na aftrek van uitzonderlijke gebeurtenissen.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

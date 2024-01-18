@@ -1,0 +1,58 @@
+---
+domains: &domains [Product]
+internal: &internal False
+en:
+  name: constraint
+  definition: "A constraint limits scheduling. We distinguish four types of constraints:<br>- stable: such as contractual restrictions<br>- variable: such as time off<br>- organizational: such as staff requirements<br>- employee: such as skills"
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms:
+    - scheduling constraint
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Einschränkung
+  definition: "Einschränkungen sind Bedingungen, welche die Planerstellung einschränken. Wir unterscheiden vier Einschränkungstypen:<br>- feste: wie vertragliche Einschränkungen<br>- variable: wie Abwesenheiten<br>- unternehmensbezogene: wie Mitarbeiterbedarf<br>- mitarbeiterbezogene: wie Qualifikationen"
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: contrainte
+  definition: "Une contrainte est une limitation des possibilités d’optimisation. On distingue quatre types de contraintes&nbsp;:<br>- stable&nbsp;: les restrictions contractuelles... <br>- variable&nbsp;: les congés... <br>- organisationnelle&nbsp;: le besoin en personnel... <br>- employé&nbsp;: les compétences..."
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: beperking
+  definition: "Beperkingen zijn omstandigheden waarmee rekening moet worden gehouden bij het maken van een rooster. We onderscheiden vier soorten beperkingen:<br>- vaste: zoals contractuele beperkingen<br>- variabele: zoals verlof<br>- organisatorische: zoals personeelsbehoeften<br>- medewerkergerelateerde: zoals kwalificaties."
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

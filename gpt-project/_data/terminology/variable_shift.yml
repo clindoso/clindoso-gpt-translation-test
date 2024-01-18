@@ -1,0 +1,57 @@
+---
+domains: &domains [Product]
+internal: &internal False
+en:
+  name: variable shift
+  definition: A day model type with a flexible starting time. The user only defines the time range within which injixo places the shift and the shift’s duration. injixo decides which start time to use for the shift based on the staff requirements.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Variable Schicht
+  definition: Ein Tagesmodelltyp für eine Schicht mit flexiblen Anfangszeiten. Der Benutzer bestimmt nur den Zeitraum, innerhalb dessen injixo die Schicht plant, und die Schichtdauer. injixo bestimmt die Anfangszeit der Schicht basierend auf dem Mitarbeiterbedarf.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: Mission à horaires variables
+  definition: "Modèle horaire dont l’heure de début est variable. L’utilisateur définit uniquement le cadre temporel et la durée brute de la mission. injixo décide de l’heure de début de la mission en fonction des besoins en personnel."
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: turno variabile
+  definition: Tipo di modello di orario con ora di inizio flessibile. L'utente stabilisce solo la durata del turno e la finestra temporale all'interno della quale injixo deve pianificarlo. injixo decide l'ora di inizio del turno sulla base del fabbisogno di personale.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: variabele dienst
+  definition:  Een dagmodelsjabloon met flexibele begintijden. De gebruiker geeft alleen de tijdspanne aan, waarin injixo de dienst inplant en de tijdsduur hiervan inplant. injixo bepaalt de begintijd op basis van de personeelsbehoefte. 
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: turno variable
+  definition: Un modelo de horario con hora de inicio flexible. El usuario define solamente la duración del turno y la ventana temporal en la que planificar el turno. injixo determina la hora de inicio del turno de acuerdo con los requisitos de personal.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

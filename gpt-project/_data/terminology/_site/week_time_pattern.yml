@@ -1,0 +1,57 @@
+---
+domains: &domains [WFM]
+microcopy: &microcopy False
+en:
+  name: week time pattern
+  definition: A template of one or more day models to be used for scheduling an entire week. The user can define exceptions within week time patterns for which they can use other day models.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Wochenmodell
+  definition: Eine Vorlage mit einem oder mehreren Tagesmodellen zur Planung einer vollständigen Woche. Benutzer können Ausnahmen innerhalb der Wochenmodelle festlegen, für die sie andere Tagesmodelle verwenden können. 
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: modèle hebdomadaire
+  definition: Modèle horaire ou ensemble de modèles horaires à planifier sur une semaine entière. L'utilisateur peut définir des exceptions pour lesquelles il pourra utiliser d'autres modèles horaires.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: modello settimanale
+  definition: Schema con uno o più modelli di orario da utilizzare durante la pianificazione di una settimana. L'utente può definire, all'interno dei modelli settimanali, delle eccezioni per le quali verranno usati altri modelli di orario.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: weekmodel
+  definition: Een sjabloon met een of meerdere dagmodellen voor het inplannen van een volledige week. Gebruikers kunnen uitzonderingen instellen in weekmodellen waarvoor zij andere dagmodellen willen gebruiken.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: modelo semanal
+  definition: Plantilla con uno o varios modelos de horario para planificar una semana completa. El usuario puede definir excepciones dentro de los modelos semanales para las que se pueden usar otros modelos de horario.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

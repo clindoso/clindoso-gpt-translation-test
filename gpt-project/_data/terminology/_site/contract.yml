@@ -1,0 +1,62 @@
+---
+domains: &domains []
+microcopy: &microcopy False
+en:
+  name: contract
+  definition: Information about working times, company rules, and scheduling rules
+    in injixo that are important for scheduling individual employees.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Vertrag
+  definition: Informationen über Arbeitszeiten, betriebliche Regelungen und Planungsregeln
+    in injixo, die für die Planung der einzelnen Mitarbeiter wichtig sind.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: contrat
+  definition: Informations sur les horaires, les règles de l'entreprise et les règles de planification 
+    importantes pour la planification individuelle des employés dans injixo.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: contratto
+  definition: Informazioni su orari di lavoro, regolamenti aziendali e regole di pianificazione in injixo,
+   importanti per la pianificazione dei singoli dipendenti.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: contract
+  definition: Informatie over werktijden, bedrijfsvoorschriften en planningsregels
+    in injixo, die belangrijk zijn voor de planning van afzonderlijke medewerkers.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

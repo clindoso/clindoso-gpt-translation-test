@@ -1,0 +1,57 @@
+---
+domains: &domains [WFM]
+microcopy: &microcopy False
+en:
+  name: pooling
+  definition: The more skills (e.g. languages or channels) employees have, the more tasks they can process. As a result, fewer employees are required to handle the workload. This effect is known as pooling.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Pooling
+  definition: Je mehr Qualifikationen (z.&nbsp;B. Sprachen oder Kanäle) Mitarbeiter haben, umso mehr Aufgaben können sie bearbeiten. Damit werden weniger Mitarbeiter zur Bearbeitung des Workloads benötigt. Dieser Effekt wird als Pooling bezeichnet.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: pooling
+  definition: Plus les compétences des employés sont nombreuses (par exemple, les langues parlées ou l’utilisation de différents canaux), plus ils peuvent traiter de tâches. Par conséquent, moins d’employés sont nécessaires pour traiter la charge de travail. Ce phénomène est appelé pooling.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: pooling
+  definition: Medewerkers met meer skills (denk aan talen of kanalen) dan single-skilled-medewerkers. Hoe meer multiskilling, des te minder medewerkers er nodig zijn om de workload te dekken. Dit effect wordt ook wel pooling genoemd.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

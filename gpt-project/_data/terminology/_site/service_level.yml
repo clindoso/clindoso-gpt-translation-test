@@ -1,0 +1,58 @@
+---
+domains: &domains []
+microcopy: &microcopy False
+en:
+  name: service level
+  definition: A measure of the percentage of contacts that should be answered within a given time. A service level of 80/20 means that the goal is to answer 80% of calls within 20 seconds.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: SL
+de:
+  name: Service-Level
+  definition: Der prozentuale Anteil der Anrufe, die nach einer bestimmten Zeit beantwortet werden sollen. Ein Service-Level von 80/20 bedeutet 80% der Anrufe innerhalb von 20 Sekunden.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: 
+    - Service Level
+  abbreviation: SL
+fr:
+  name: niveau de service
+  definition: Mesure du pourcentage de contacts à traiter sur une période donnée. Un niveau de service de 80/20 signifie que 80&nbsp;% des appels doivent être traités en 20&nbsp;secondes.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: livello di servizio
+  definition: Misura della percentuale di contatti a cui si deve rispondere entro un dato periodo di tempo. Un livello di servizio di 80/20 indica che l'obiettivo è rispondere all'80% delle chiamate entro 20 secondi. 
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: service level
+  definition: Het percentage contacten dat binnen een bepaalde tijd moet worden beantwoord. Een service level van 80/20 geeft aan dat het doel is om 80% van de oproepen binnen 20 seconden te beantwoorden.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: nivel de servicio
+  definition: Medida del porcentaje de contactos que deben ser atendidos en un tiempo concreto. Un nivel de servicio de 80/20 significa que el objetivo es atender el 80% de las llamadas en 20 segundos.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

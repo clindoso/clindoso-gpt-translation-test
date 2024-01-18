@@ -1,0 +1,57 @@
+---
+domains: &domains [Product]
+microcopy: &microcopy False
+en:
+  name: optimize breaks
+  definition: An injixo functionality that rearranges break times in the schedule to improve coverage.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Pausen optimieren
+  definition: Eine injixo-Funktionalität, die Pausenzeiten innerhalb des Schichtplans neu anordnet, um die Deckung zu verbessern.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: Optimiser les pauses
+  definition: Fonction d’injixo permettant de réorganiser les heures de pauses dans le planning, afin d’améliorer la couverture.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: Ottimizzare le pause
+  definition: Funzione injixo che riorganizza le pause nella pianificazione in modo da migliorare la copertura.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: pauzes optimaliseren
+  definition: Een injixo-functionaliteit die pauzetijden in het rooster aanpast om de dekking te verbeteren.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

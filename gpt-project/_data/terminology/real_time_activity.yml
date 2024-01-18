@@ -1,0 +1,59 @@
+domains: &domains [WFM]
+internal: &internal True
+en:
+  name: real-time activity
+  definition: Activities that have to be dealt with when they come up, e.g. incoming calls.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms:
+  - synchronous activity
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Echtzeitaktivität
+  definition: Aktivitäten, die bearbeitet werden müssen, wenn sie stattfinden, z.&nbsp;B. eingehende Anrufe.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms:
+  - synchrone Aktivität
+  forbidden_synonyms: []
+  abbreviation:
+  
+fr:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: realtime-activiteit
+  definition: Een activiteit die direct moet worden uitgevoerd, zoals het beantwoorden van een binnenkomende oproep.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

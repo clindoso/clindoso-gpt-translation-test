@@ -1,0 +1,57 @@
+---
+domains: &domains []
+microcopy: &microcopy False
+en:
+  name: full coverage scheduling
+  definition: A planning approach that aims to avoid understaffing even if this means overstaffing during quiet intervals, e.g. for emergency services or for services for high-net-worth clients.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Planung mit voller Deckung
+  definition: Eine Planungsstrategie zur Vermeidung von Unterdeckung auch wenn dies eine Überdeckung in ruhigen Zeiten bedeutet, z.&nbspB. bei Notdiensten oder bei Dienstleistungen für vermögende Kunden.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: Planification couverture complète
+  definition: Stratégie de planification visant à éviter une couverture insuffisante. Celle-ci peut impliquer une situation de sureffectif sur les périodes calmes, par exemple pour les services d’urgence ou les services aux clients fortunés.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: Planning met volledige dekking
+  definition: Een planningsstrategie om een te lage dekking te voorkomen, ook al gaat dit gepaard met een te hoge dekkingsgraad tijdens rustige perioden, bijvoorbeeld bij nooddiensten of bij dienstverlening voor vermogende klanten.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

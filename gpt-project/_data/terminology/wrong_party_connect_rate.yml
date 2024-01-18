@@ -1,0 +1,57 @@
+---
+domains: &domains [WFM]
+internal: &internal False
+en:
+  name: wrong party connect rate
+  definition: Percentage of unsuccessful contact attempts in an outbound campaign, for example, due to wrong contact person, voicemail, or busy signal.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Wrong-Party-Kontakt-Rate
+  definition: Prozentsatz erfolgloser Kontaktversuche in einer Telefon-Kampagne, z.&nbsp;B. weil ein falscher Ansprechpartner antwortet, der Anruf auf die Mailbox geht oder wegen eines Besetztzeichens.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: taux de contacts non aboutis
+  definition: "Pourcentage de tentatives de contact ayant échoué lors d’une campagne d’appels sortants, par exemple en raison d’une mise en relation avec le mauvais interlocuteur, une messagerie vocale ou d’une ligne occupée."
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: tasso di connessioni fallite
+  definition: La percentuale di tentativi di contatto falliti durante una campagna in uscita, a causa, per esempio, di contatti con le persone sbagliate, della segreteria telefonica, o perché il telefono era occupato.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

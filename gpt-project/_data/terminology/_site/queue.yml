@@ -1,0 +1,57 @@
+---
+domains: &domains [WFM]
+microcopy: &microcopy False
+en:
+  name: queue
+  definition: The different channels customers use to get in touch with the contact center (e.g. call, email, chat) are grouped into queues.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Queue
+  definition: Die unterschiedlichen Kanäle (z.&nbsp;B. Anruf, E-Mail, Chat), die Kunden nutzen, um mit einem Contact Center in Kontakt zu treten, werden in Queues gruppiert.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: queue
+  definition: De verschillende kanalen die klanten gebruiken om contact op te nemen met een contactenter (bijv.&nbsp;telefonie, e-mail, chat) zijn onderverdeeld in queues.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es: 
+  name: cola
+  definition: Los distintos canales usados por clientes para ponerse en contacto con el centro de contacto (p.&nbsp;ej. llamadas, correos electrónicos, chats) se agrupan en colas.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

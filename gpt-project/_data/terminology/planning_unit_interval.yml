@@ -1,0 +1,57 @@
+---
+domains: &domains [Product]
+internal: &internal False
+en:
+  name: planning unit interval
+  definition: The planning unit interval defines the level of detail (in minutes) in which data is displayed for that planning unit, e.g. coverage and staff requirements displayed in the heat map in Schedules.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Intervall der Planungseinheit
+  definition: Das Intervall der Planungseinheit bestimmt den Detailgrad (in Minuten), in dem Daten für die jeweilige Planungseinheit angezeigt werden, z.&nbsp;B. Deckung und Mitarbeiterbedarf im Kennzahlenfenster in Schedules.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: "intervalle de l’unité opérationnelle"
+  definition: "L'intervalle de l'unité opérationnelle définit le niveau d’affichage (en minutes) des données pour cette unité opérationnelle dans le panneau des activités dans Schedules, par exemple la couverture et le besoin en personnel."
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: intervallo di tempo dell'unità di pianificazione
+  definition: L'intervallo di tempo dell'unità di pianificazione definisce il livello di dettaglio (in minuti) con il quale i dati dell'unità di pianificazione vengono mostrati, per esempio i dati sulla copertura e il fabbisogno di personale nelle schede sulle attività in Schedules.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: eenheidsinterval
+  definition: De eenheidsinterval geeft het detailniveau (in minuten) aan, waarin gegevens voor de betreffende eenheid worden weergegeven, bijvoorbeeld bij de weergave van de dekking en de personeelsbehoefte in de heatmap in Schedules.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: intervalo de unidad de planificación
+  definition: El intervalo de unidad de planificación define el nivel de detalle (en minutos) con el que se muestra la información de esa unidad de planificación, p.&nbsp;ej. la cobertura y los requisitos de personal mostrados en el mapa de calor en Planificar.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

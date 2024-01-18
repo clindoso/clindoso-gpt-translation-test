@@ -1,0 +1,58 @@
+---
+domains: &domains [WFM]
+internal: &internal True
+en:
+  name: quality management
+  definition: The process of evaluating employee interactions to increase compliance and identify employees who need training or coaching.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: 
+    - quality
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Qualitätsmanagement
+  definition: Prozess zur Evaluation von Mitarbeiterkontakten mit dem Ziel, die Arbeitsweise zu verbessern und festzulegen, ob Mitarbeiter Training oder zusätzliche Unterstützung brauchen.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: kwaliteitsmanagement
+  definition: Het proces van het evalueren van medewerkerinteracties om de naleving te verhogen en te kijken welke medewerkers training of coaching nodig hebben.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

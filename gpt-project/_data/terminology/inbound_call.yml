@@ -1,0 +1,57 @@
+---
+domains: &domains [WFM]
+internal: &internal False
+en:
+  name: inbound call
+  definition: Calls that reach the contact center, e.g. from customers.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name:
+  definition: eingehender Anruf
+  example: Anrufe, die das Contact Center erreichen z.&nbspB. von Kunden.
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: appels entrants
+  definition: Appels téléphoniques reçus par le centre de contacts, par exemple des clients.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: chiamata in entrata
+  definition: Chiamata telefonica che raggiunge il contact center e proviene, per esempio, da un cliente.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name:
+  definition: binnenkomende gesprekken
+  example: oproepen die bij het contactcenter binnenkomen, bijvoorbeeld van klanten.
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: llamada entrante
+  definition: Llamada telefónica que se recibe en el centro de contactos, por ejemplo de un cliente.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

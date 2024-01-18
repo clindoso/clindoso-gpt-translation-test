@@ -1,0 +1,69 @@
+---
+domains: &domains [WFM]
+microcopy: &microcopy False
+en:
+  name: staff calculation method
+  definition: A mathematical method to determine staff requirements, such as Erlang-C, Chat, and Linear.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms:
+  - calculation method
+  forbidden_synonyms:
+  - script
+  abbreviation:
+  redirect_anchor_text: script
+de:
+  name: Bedarfsberechnungsmethode
+  definition: Eine mathematische Methode zur Berechnung des Mitarbeiterbedarfs wie z.&nbsp;B. Erlang-C, Chat oder Linear.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms:
+  - Berechnungsmethode
+  forbidden_synonyms:
+  - Skript
+  abbreviation:
+  redirect_anchor_text: skript
+fr:
+  name: méthode de calcul du besoin en personnel
+  definition: Méthode mathématique de calcul du besoin en personnel telle que Erlang-C, Chat, et Linear.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms:
+  - méthode de calcul
+  forbidden_synonyms: 
+    - script
+  abbreviation:
+it:
+  name: metodo di calcolo del fabbisogno di personale
+  definition: Metodo matematico per determinare il fabbisogno di personale, come, per esempio, Erlang-C, Chat, e Linear.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms:
+  - metodo di calcolo
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: berekeningsmethode voor de personeelsbehoefte
+  definition: Een wiskundige berekeningsmethode voor het bepalen van de personeelsbehoefte, zoals Erlang-C, Chat of Linear.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms:
+  - berekeningsmethode
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: método de cálculo de personal
+  definition: Un método matemático para calcular requisitos de personal, p.&nbsp;ej. Erlang-C, Chat o Linear.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms:
+  - método de cálculo
+  forbidden_synonyms:
+  - script
+  abbreviation:

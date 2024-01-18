@@ -1,0 +1,58 @@
+---
+domains: &domains [WFM, Product]
+microcopy: &microcopy False
+en:
+  name: fixed shift
+  definition: A shift template with a recurring start and end time. Only the shift activities and break times are flexible.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: 
+    - rostering
+  abbreviation:
+de:
+  name: fixe Schicht
+  definition: Ein Tagesmodelltyp für eine Schicht mit einer festen Anfangs- und Endzeit. Nur die Aktivitäten und Pausen der Schicht sind flexibel.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: horaire fixe
+  definition: Type de modèle horaire dont l’heure de début et de fin sont récurrentes. Seules les activités et les pauses sont flexibles.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: turno fisso
+  definition: Tipo di modello di orario con ora di inizio e ora di fine ricorrenti. Soltanto le pause e le attività durante il turno sono flessibili. 
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: vaste dienst
+  definition: Een dagmodeltype voor een dienst met een vaste begin- en eindtijd. Alleen de activiteiten en pauzes tijdens de dienst zijn flexibel.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

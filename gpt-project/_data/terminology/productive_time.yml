@@ -1,0 +1,57 @@
+---
+domains: &domains [WFM]
+internal: &internal False
+en:
+  name: productive time
+  definition: Time during which employees go about their main job, i.e. handling customer contacts.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: produktive Zeit
+  definition: Die Zeit, in der Mitarbeiter sich mit ihren Hauptaufgaben beschäftigen, z.&nbsp;B. Kundenkontakten.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: période de productivité
+  definition: Période pendant laquelle les employés gèrent les tâches liées à leur fonction principale, par exemple les contacts clients.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: tempo produttivo
+  definition: Il tempo impiegato dai dipendenti nello svolgimento dei loro compiti principali, come, per esempio, la gestione dei contatti con i clienti.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: productieve tijd
+  definition: Tijd die een medewerker gedurende een werkdag aan hun hoofdtaak besteedt, bijvoorbeeld het afhandelen van klantcontacten.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

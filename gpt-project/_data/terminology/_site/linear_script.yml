@@ -1,0 +1,59 @@
+---
+domains: &domains [WFM]
+microcopy: &microcopy False
+en:
+  name: linear calculation method
+  definition: A staffing calculation method for sequential workload, e.g. emails.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+  redirect_anchor_text: linear-script
+de:
+  name: lineare Berechnungsmethode
+  definition: Eine Bedarfsberechnungsmethode für Back-Office-Aktivitäten, z.&nbsp;B. E-Mails.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+  redirect_anchor_text: linear-skript
+fr:
+  name: besoin linéaire
+  definition: Méthode de calcul du besoin en personnel pour les activités de back-office, par exemple le traitement des e-mails.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: lineaire berekeningsmethode
+  definition: Een berekeningsmethode om de personeelsbehoefte voor backoffice-activiteiten te berekenen, bijv.&nbsp;e-mails.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

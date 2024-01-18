@@ -1,0 +1,57 @@
+---
+domains: &domains []
+internal: &internal False
+en:
+  name: call
+  definition: An individual telephone conversation (through a conventional telephone set, ISDN, or VoIP).
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Anruf
+  definition: Ein einzelnes Telefongespräch (mit einem herkömmlichen Telefongerät oder über VoIP oder ISDN).
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: appel
+  definition: Conversation téléphonique individuelle (via un poste téléphonique classique, un RNIS ou VoIP).
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: chiamata
+  definition: Conversazione telefonica individuale (tramite un telefono tradizionale, un telefono ISDN o un sistema VoIP).
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: gesprek
+  definition: Een afzonderlijk telefoongesprek (via een normale telefoon of via ISDN of VoIP).
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: llamada
+  definition: Conversación telefónica individual (vía teléfono convencional, ISDN o VoIP).
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

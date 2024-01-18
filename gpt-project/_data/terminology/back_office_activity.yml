@@ -1,0 +1,61 @@
+---
+domains: &domains [WFM]
+internal: &internal False
+en:
+  name: back-office activity
+  definition: Incoming activities that can be set aside and dealt with at a later time, e.g. emails and support tickets.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms:
+  - non-abandoning work
+  forbidden_synonyms:
+  - backoffice activity
+  abbreviation:
+  redirect_anchor_text: storable
+de:
+  name: Back-Office-Aktivität
+  definition: Eingehende Aktivitäten, die vorübergehend beiseite gelegt und später bearbeitet werden können, z.&nbsp;B. E-Mails und Support-Tickets. 
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+  redirect_anchor_text: lagerfähige-aktivitäten
+fr:
+  name: activité de back-office
+  definition: Activité entrante pouvant être traitée selon un délai défini par le centre de contacts, par exemple les e-mails et les demandes de support.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: attività di back office
+  definition: Attività in entrata che possono essere accantonate e svolte in un secondo momento, come, per esempio, le email o i ticket di supporto.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: backoffice-activiteit
+  definition: Een binnenkomende activiteit die niet dringend is en op een later moment kan worden beantwoord, zoals een e-mail of een supportticket. 
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

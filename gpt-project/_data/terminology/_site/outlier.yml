@@ -1,0 +1,57 @@
+---
+domains: &domains [WFM]
+microcopy: &microcopy False
+en:
+  name: outlier
+  definition: Deviation from the expected range of values. Outliers in call volume, for example, are intervals in which an unusually high or low number of calls is received.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Ausreißer
+  definition: Abweichungen von den erwarteten Messwertstreuungen. Ausreißer im Anrufvolumen sind z.&nbsp;B. Intervalle, in denen unerwartet viele oder wenige Anrufe eingehen.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: uitschieter
+  definition: Afwijking ten opzichte van een reeks verwachte waarden. Uitschieters in het aantal oproepen zijn bijvoorbeeld intervallen tijdens welke een opmerkelijk laag aantal oproepen is ontvangen.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

@@ -1,0 +1,57 @@
+---
+domains: &domains [Product]
+internal: &internal False
+en:
+  name: optimized coverage
+  definition: The coverage calculated by the Optimize breaks functionality.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: optimierte Deckung
+  definition: Die Deckung, die durch die Funktionalität Pausen optimieren berechnet wird.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: couverture optimisée
+  definition: "Couverture calculée par la fonctionnalité Optimiser les pauses."
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: copertura ottimizzata
+  definition: La copertura calcolata dalla funzionalità Ottimizzare le pause.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: geoptimaliseerde dekking
+  definition: De dekking die door de functionaliteit Pauzes optimaliseren is berekend.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: cobertura optimizada
+  definition: "La cobertura calculada con la funcionalidad Optimización de pausas."
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

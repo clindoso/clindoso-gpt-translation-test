@@ -1,0 +1,57 @@
+---
+domains: &domains [Product]
+microcopy: &microcopy False
+en:
+  name: work time pattern model
+  definition: "A template made up of week time patterns that defines how day models are assigned to people. injixo supports four types of work time patterns model:<br>- Flexible selection<br>- Fixed rotation<br>- Variable rotation<br>- Combined rotation (A/B)"
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Planungsmodell
+  definition: "Eine Vorlage mit Wochenmodellen, in der festgelegt ist, wie Tagesmodelle den Mitarbeitern zugewiesen werden. injixo unterstützt vier Arten von Planungsmodell: <br>- flexible Auswahl<br>- starre Rotation<br>- variable Rotation<br>- Komib-Rotation (A/B)"
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: modèle de planification
+  definition: "Modèle constitué de modèles hebdomadaires pour définir l’attribution de modèles horaires aux employés. injixo prend en charge quatre types de modèles de planification&nbsp;:<br> - sélection flexible,<br> - roulement fixe,<br> - roulement variable,<br> - roulement combiné (A/B)."
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: Modello di pianificazione
+  definition: "Schema formato da modelli settimanali che definisce l'assegnazione dei modelli di orario ai dipendenti. injixo prevede quattro modelli di pianificazione:<br>- Flessibile<br>- Alternanza fissa<br>- Alternanza flessibile<br>- Alternanza mista (A/B)"
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: planningsmodel
+  definition: "Een sjabloon met weekmodellen die aangeven hoe dagmodellen aan perosnen worden toegewezen. injixo ondersteunt vier soorten planningsmodellen:<br>- Flexibele selectie<br>- Vaste rotatie<br> -Variabele rotatie<br>- Gecombineerde rotatie (A/B)" 
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: modelo de planificación
+  definition: "Plantilla compuesta de modelos semanales qué definen cómo se asignan los modelos de horario a los empleados. injixo ofrece cuatro tipos de modelos de planificación: <br> - selección flexible,<br> - rotación fija,<br> - rotación variable,<br> - rotación combinada (A/B)."
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

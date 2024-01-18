@@ -1,0 +1,57 @@
+---
+domains: &domains [Product]
+internal: &internal False
+en:
+  name: skill level
+  definition: An injixo setting used to rate a person's competency in a certain skill. The user can choose a value between 0 and 100%, 0 meaning no competency, 100% meaning full competency.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Qualifikationsstufe
+  definition: Eine injixo-Einstellung, um die Kompetenz einer Person in einer bestimmten Qualifikation zu bewerten. Der Benutzer kann einen Wert zwischen 0 und 100% wählen, wobei 0 für keine Eignung und 100% für volle Eignung steht. Standardmäßig nutzt injixo 100%.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: niveau de compétence
+  definition: Paramètre d'injixo utilisé pour évaluer la compétence d'un employé pour une certaine tâche. L'utilisateur peut choisir une valeur comprise entre 0 (absence de compétence) et 100&nbsp;% (compétence totale).
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: livello di qualifica
+  definition: Impostazione di injixo usata per valutare la competenza di un dipendente in una data qualifica. È possibile assegnare un valore compreso tra lo 0% (nessuna competenza) e il 100% (competenza piena).
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: kwalificatieniveau
+  definition: Een injixo-instelling waarmee de competentie van een persoon in een bepaalde kwalificatie wordt beoordeeld. De gebruiker kan een waarde tussen 0 en 100% kiezen, waarbij 0 staat voor geen bekwaamheid en 100 voor volledige bekwaamheid.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: nivel de cualificación
+  definition: Configuración en injixo para valorar la competencia de un empleado en una cualificación concreta. Se pueden asignar valores entre 0 (ninguna competencia) y 100% (competencia plena). 
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

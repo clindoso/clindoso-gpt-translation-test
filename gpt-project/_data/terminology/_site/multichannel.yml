@@ -1,0 +1,61 @@
+---
+domains: &domains [WFM]
+microcopy: &microcopy False
+en:
+  name: multichannel
+  definition: A multichannel contact center handles customer communication via multiple
+    different channels such as telephone, email, and webchat.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: 
+  - omnichannel
+  abbreviation:
+de:
+  name: Multikanal
+  definition: Ein Contact Center mit Multikanal-Kundenservice bearbeitet Kundenkontakte über verschiedene Kanäle, z.&nbsp;B. Telefon, E-Mail und Chat.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms:
+  - Omnikanal
+  abbreviation:
+fr:
+  name: multicanal
+  definition: Un centre de contacts multicanal traite ses communications client sur plusieurs canaux, par exemple par téléphone, e-mail et Chat.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: 
+  - omnicanal
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: multikanaal
+  definition: Een multikanaals contactcenter verwerkt klantcommunicatie via verschillende kanalen, zoals telefonie, e-mail, chat.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

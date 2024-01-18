@@ -1,0 +1,56 @@
+---
+domains: &domains [Product]
+internal: &internal False
+en:
+  name: suitability
+  definition: Suitability indicates how qualified a person is to carry out a certain activity, which injixo will consider during scheduling. If an activity requires only one skill, the suitability value equals the person’s skill level. If an activity requires more than one skill, the suitability value is calculated based on a weighting of the person's skills.
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Eignung
+  definition: Die Eignung gibt an, wie qualifiziert ein Mitarbeiter ist, eine bestimmte Aktivität auszuführen, was injixo während der Schichtplanung berücksichtigt. Wenn für eine Aktivität nur eine Qualifikation nötig ist, entspricht der Eignungsgrad der Qualifikationsstufe des Mitarbeiters. Wenn für eine Aktivität mehr als eine Qualifikation nötig ist, berechnet sich der Eignungsgrad aus der Gewichtung der Qualifikationen des Mitarbeiters.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: aptitude
+  definition: L'aptitude indique la mesure dans laquelle un employé est qualifié pour effectuer une certaine activité, qu'injixo prendra en compte pendant la planification. Si une activité ne nécessite qu'une seule compétence, la valeur de l'aptitude est égale au niveau de compétence de l'employé. Si une activité nécessite plus d'une compétence, la valeur d'aptitude est calculée sur la base du coefficient de pondération des compétences de l'employé. 
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: idoneità
+  definition: L'idoneità indica la competenza di un dipendente nello svolgimento di una certa attività. injixo tiene in considerazione l'idoneità durante la pianificazione. Se un'attività richiede solo una qualifica, il valore di idoneità di un dipendente corrisponde al suo livello di qualifica. Se un'attività richiede più di una qualifica, il valore di idoneità di un dipendente viene calcolato con la ponderazione delle sue qualifiche.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: geschiktheid
+  definition: De geschiktheid geeft aan in welke mate een medewerker gekwalificeerd is om een bepaalde activiteit uit te voeren. Hier houdt injixo tijdens het plannen rekening mee. Als voor een activiteit slechts één kwalificatie vereist is, dan is de geschiktheidswaarde gelijk aan het kwalificatieniveau van de medewerker. Als voor een activiteit meerdere kwalificaties vereist zijn, dan wordt de geschiktheidswaarde berekend op basis van een weging van de kwalificaties van de medewerker.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: idoneidad
+  definition: La idoneidad indica cómo de competente es un empleado para trabajar en una actividad. injixo toma en consideración la idoneidad para generar planificaciones. Si la actividad solo requiere una cualificación, el valor de idoneidad es igual al nivel que tiene el empleado en esa cualificación. Si la actividad requiere más de una cualificación, el valor de idoneidad se calcula ponderando las cualificaciones del empleado.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

@@ -1,0 +1,57 @@
+---
+domains: &domains []
+microcopy: &microcopy False
+en:
+  name: Cloud Link
+  definition: A software program that is part of the setup for on-premise and CSV integrations, enabling injixo to regularly import data.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Cloud Link
+  definition: Eine Software, die für die Einrichtung von On-Premise und CSV-Integrationen benötigt wird, und den regelmäßigen Datenimport ermöglicht.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: Cloud Link
+  definition: Logiciel utilisé dans le cadre de la configuration des intégrations locale et CSV et permettant à injixo d’importer régulièrement des données.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: Cloud Link
+  definition: Software necessario per la configurazione delle integrazioni on-premise e CSV che permette a injixo di importare dati con cadenza regolare.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: Cloud Link
+  definition: Software die nodig is voor de configuratie van on-premise- en CSV-integraties, zodat injixo regelmatig gegevens kan importeren.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

@@ -1,0 +1,58 @@
+---
+domains: &domains [WFM]
+internal: &internal False
+en:
+  name: Planning
+  definition: The second step of the WFM cycle. Planning comprises deciding on recruitment, budget, and training strategies ahead of time to grow a business in the long run.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Planung
+  definition: Der zweite Schritt des WFM-Kreislaufs. Planung beinhaltet die Entwicklung einer vorausschauenden Strategie zu Mitarbeitergewinnung, Finanzplanung und Trainings, um das Unternehmen langfristig voranzutreiben.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: planning
+  definition: De tweede stap van de WFM-cyclus. Planning omvat het nemen van beslissingen op het gebied van werving, budget en trainingsstrategieën met het oog op de toekomst, om het bedrijf op de lange termijn te laten groeien.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+

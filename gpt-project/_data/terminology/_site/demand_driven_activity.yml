@@ -1,0 +1,58 @@
+---
+domains: &domains [WFM]
+microcopy: &microcopy False
+en:
+  name: demand-driven activity
+  definition: An activity that is scheduled based on customer demand and for which there is a forecast, e.g. calls and emails.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  acronym:
+de:
+  name: bedarfsorientierte Aktivität
+  definition: Eine Aktivität, die auf Basis des Kundenbedarfs geplant wird und für die ein Forecast vorhanden ist, z.&nbsp;B. Anruf oder E-Mail.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  acronym:
+fr:
+  name: activité liée à la demande
+  definition: Activité planifiée en relation directe avec la demande client et pour laquelle une prévision a été générée, par exemple les appels ou les e-mails.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  acronym:
+it:
+  name: attività basata sulla domanda
+  definition: Un'attività che viene pianificata sulla base della domanda del cliente e per la quale è stata generata una previsione, per esempio le chiamate o le email.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  acronym:
+nl:
+  name: behoeftegestuurde activiteit
+  definition: Een activiteit die wordt ingepland wanneer er vraag naar is bij de klant en waarvoor een forecast bestaat, bijvoorbeeld telefonie en e-mails.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  acronym:
+es:
+  name: actividad derivada de la demanda
+  definition: Actividad que se planifica como consecuencia de la demanda por parte del cliente y para la que existe una previsión, p.&nbsp;ej. llamadas y correos electrónicos.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms:
+  - actividad de back-office
+  acronym:

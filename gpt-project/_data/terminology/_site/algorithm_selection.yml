@@ -1,0 +1,60 @@
+---
+domains: &domains [Product]
+microcopy: &microcopy False
+en:
+  name: algorithm selection
+  definition: A process run by injixo Forecast to determine which algorithm is best-suited to create forecasts based on historical data.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms:
+  - cross-validation
+  abbreviation:
+de:
+  name: Algorithmenauswahl
+  definition: Ein Verfahren, das injixo Forecast durchführt, um auf Grundlage der vorliegenden historischen Daten den am besten geeigneten Algorithmus für die Forecasterstellung festzustellen.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms:
+  - Kreuzvalidierung
+  - Cross-Validation
+  abbreviation:
+fr:
+  name: sélection des algorithmes
+  definition: Processus d’injixo Forecast permettant de déterminer le meilleur algorithme pour la création de prévisions basée sur des données historiques.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: algoritmeselectie
+  definition: Een proces dat injixo Forecast uitvoert om te bepalen welk algoritme met meest geschikt is om forecasts te maken op basis van historische gegevens.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

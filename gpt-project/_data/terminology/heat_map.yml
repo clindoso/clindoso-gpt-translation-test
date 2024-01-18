@@ -1,0 +1,57 @@
+---
+domains: &domains [Product]
+internal: &internal False
+en:
+  name: heat map
+  definition: An injixo functionality that displays coverage, staffing, and requirements and identifies overstaffing and understaffing.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Kennzahlenfenster
+  definition: Eine Funktion in injixo, die die Deckung, Besetzung und den Mitarbeiterbedarf anzeigt, um so z.&nbspB. Über- und Unterdeckung im Schichtplan zu identifizieren.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: Panneau des activités
+  definition: Fonction d’injixo permettant d’afficher la couverture, le taux d’occupation et le besoin en personnel, et d’identifier les situations de sureffectif ou de sous-effectif.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: heatmap
+  definition: Een injixo-functionaliteit die de dekking, bezetting en vereisten weergeeft om zo een eventuele onder- en overbezetting te identificeren.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

@@ -1,0 +1,58 @@
+---
+domains: &domains [WFM]
+internal: &internal False
+en:
+  name: average talk time
+  definition: The average amount of time a call between an employee and a customer last.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: ATT
+de:
+  name: durchschnittliche Gesprächszeit
+  definition: Die durchschnittliche Zeit eines Anrufs zwischen einem Mitarbeiter und einem Kunden.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms:
+    - durchschnittliche Gesprächsdauer
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: durée moyenne de conversation
+  definition: Durée moyenne d’un appel entre un employé et un client.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: DMC
+it:
+  name: tempo medio di conversazione
+  definition: La durata media di una chiamata tra un dipendente e un cliente.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: gemiddelde gespreksduur
+  definition: De gemiddelde tijdsduur van een gesprek tussen een medewerker en een klant.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

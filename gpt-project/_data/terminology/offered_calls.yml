@@ -1,0 +1,57 @@
+---
+domains: &domains [WFM]
+internal: &internal False
+en:
+  name: offered calls
+  definition: Calls that arrived in the contact center but were not necessarily answered. Offered calls include answered calls and abandoned calls. Offered calls are the preferred input for forecasting, since the goal is to schedule sufficient staff to answer offered calls within the service level target.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: ontvangen oproepen
+  definition: Oproepen die door het contact center zijn ontvangen, maar niet per se zijn beantwoord. Ontvangen oproepen bestaan uit beantwoorde oproepen en afgebroken oproepen. Ontvangen oproepen worden bij voorkeur gebruikt als input voor het maken van forecasts, omdat het doel is om voldoende personeel in te plannen om het aantal ontvangen oproepen binnen het beoogde servicelevel te beantwoorden.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: llamadas ofrecidas
+  definition: Llamadas que llegan al centro de contacto pero que no han sido necesariamente respondidas. Las llamadas ofrecidas incluyen las llamadas respondidas y abandonadas. Las llamadas ofrecidas son el valor preferido para generar previsiones, puesto que el objetivo es planificar suficiente personal para que las llamadas ofrecidas sean contestadas respetando el nivel de servicio definido.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

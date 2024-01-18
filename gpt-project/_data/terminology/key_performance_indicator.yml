@@ -1,0 +1,61 @@
+---
+domains: &domains []
+internal: &internal True
+en:
+  name: key performance indicator
+  definition: Statistics about business operation which indicate whether critical goals are being met. Typical KPIs in a contact center include:<br>- Service level<br>- Abandonment rate<br>- Average speed of answer
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: KPI
+de:
+  name: Key-Performance-Indicator
+  definition: Statistische Kennzahlen über eine Geschäftstätigkeit, die darauf hinweisen, ob wichtige Unternehmensziele erreicht werden. Übliche KPIs in einem Contact Center sind u.a.<br>- Service-Level<br>- Abbruchrate<br>- Durchschnittliche Antwortgeschwindigkeit
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms:
+  - Leistungskennzahl
+  forbidden_synonyms: []
+  abbreviation: KPI
+fr:
+  name: KPI
+  definition: Statistiques sur les activités opérationnelles permettant de mesurer si les objectifs principaux sont atteints. Dans un centre de contacts, les KPI incluent notamment le <br>- Niveau de service<br>- Taux d’abandon<br>- Délai moyen de réponse
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: 
+    - indicateur clé de performance
+    - Key Performance Indicator
+    - ICP
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: KPI
+  definition: Statistieken over een bedrijfsactiviteit, die laten zien of belangrijke doelstellingen worden behaald. Voorbeelden van typische KPI's in een contactcenter zijn o.a.<br>- Servicelevel<br>- Afbrekingspercentage<br>- Gemiddelde afhandeltijd
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

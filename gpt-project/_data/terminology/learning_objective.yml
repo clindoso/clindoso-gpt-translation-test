@@ -1,0 +1,57 @@
+---
+domains: &domains [Product]
+internal: &internal False
+en:
+  name: learning objective
+  definition: A concise sentence that describes what trainees should know or be able to do upon completion of a module. Each learning objective contains a Bloom’s Taxonomy action verb and is written in accordance with the SMART criteria.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Modul-Lernziel
+  definition: Ein prägnanter Satz, der beschreibt, was die Lernenden nach Abschluss eines Moduls wissen oder können sollten. Jedes Lernziel enthält ein Aktionsverb der Bloom'schen Taxonomie und wird nach SMART-Kriterien formuliert.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: Objectifs du module
+  definition: Description concise des connaissances ou compétences que l’apprenant doit avoir acquis à la fin d’un module. Chaque objectif du module contient un verbe d’action de la taxonomie de Bloom et est rédigé conformément aux critères SMART.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: obiettivo del modulo
+  definition: Descrizione concisa di quello che il discente dovrebbe conoscere o saper fare al termine di un modulo. Gli obiettivi dei moduli comprendono sempre un verbo della tassonomia di Bloom e sono scritti seguendo i criteri SMART.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: module-leerdoel
+  definition: Een korte zin die beschrijft wat cursisten na afronding van een module moeten weten of kunnen. Elk module-leerdoel bevat een actiewerkwoord uit de Taxonomie van Bloom en is geformuleerd volgens de SMART-criteria.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

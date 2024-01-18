@@ -1,0 +1,57 @@
+---
+domains: &domains [Product]
+microcopy: &microcopy False
+en:
+  name: Forecast
+  definition: An injixo module that calculates future workload and respective staff requirements. The calculation is based on historical data of incoming customer contact volume and average handle time.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Forecast
+  definition: Ein injixo-Modul, welches das zukünftige Arbeitspensum und den entsprechenden Mitarbeiterbedarf berechnet. Die Berechnungsgrundlage sind historische Daten über eingehende Kundenkontakte und deren durchschnittliche Bearbeitungszeit.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: Forecast
+  definition: Module d’injixo permettant de calculer la charge de travail future et les besoins en personnel correspondants. Le calcul est basé sur les données historiques du volume de contacts clients entrants et du temps moyen de traitement.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: Forecast
+  definition: Modulo injixo che permette di calcolare il workload e il fabbisogno di personale futuro. Il calcolo è basato sui dati storici del volume dei contatti in entrata e sul tempo medio di gestione.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: Forecast
+  definition: Een injixo-module die de toekomstige workload en de personeelsbehoefte berekent. De berekening is gebaseerd op historische gegevens van het binnenkomende klantcontactvolume en de gemiddelde afhandeltijd.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

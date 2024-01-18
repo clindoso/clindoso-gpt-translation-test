@@ -1,0 +1,57 @@
+---
+domains: &domains []
+internal: &internal False
+en:
+  name: part-time employee
+  definition: An employee whose working hours are less than full time. The definition of full time varies by region and company. For example, in the United States a full-time employee typically works 40 hours per week.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Teilzeitmitarbeiter
+  definition: Mitarbeiter, die weniger als Vollzeit tätig sind. Die volle Arbeitszeit hängt vom Region und Unternehmen ab. In Deutschland ist die volle Arbeitszeit üblicherweise 40 Stunden pro Woche.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: employé temps partiel
+  definition: Employé dont le nombre d’heures de travail est inférieur à celui d’un employé à temps plein. La définition de temps plein varie selon la région et l’entreprise. Par exemple, en France, un employé à temps plein travaille généralement 35&nbsp;heures par semaine.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: dipendente part-time
+  definition: Un dipendente, per es. un agente, le cui ore lavorative sono inferiori a quelle previste da un contratto a tempo pieno (o full-time). La definizione di tempo pieno può variare a seconda del paese e dell’azienda. In Italia, per esempio, un dipendente a tempo pieno lavora solitamente 40 ore a settimana.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: 
+    - dipendente a tempo parziale
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: deeltijdmedewerker
+  definition: Een medewerker die in deeltijd werkt. Het aantal uren van een voltijdbaan verschilt per regio en bedrijf. In Nederland bedraagt een voltijdbaan gewoonlijk 36 tot 40 uur.
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

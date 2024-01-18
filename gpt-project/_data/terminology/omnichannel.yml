@@ -1,0 +1,59 @@
+---
+domains: &domains [WFM]
+internal: &internal True
+en:
+  name: omnichannel
+  definition: An omnichannel contact center handles customer communication via multiple different channels, e.g. telephone, email, and webchat, that are integrated with one another.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms:
+  - multichannel
+  abbreviation:
+de:
+  name: Omnichannel
+  definition: Ein Omnichannel-Contact Center bearbeitet Kundenkontakte über verschiedene Kanäle, z.&nbsp;B. Telefon, E-Mail und Chat, die miteinander integriert sind.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms:
+  - Multikanal
+  abbreviation:
+fr:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: omnichannel
+  definition: Een omnichannel-contactcenter verwerkt klantcommunicatie via verschillende kanalen, bijvoorbeeld via telefoon, e-mail en chat, die met elkaar zijn geïntegreerd.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

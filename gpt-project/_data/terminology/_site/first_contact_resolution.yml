@@ -1,0 +1,60 @@
+---
+domains: &domains [WFM]
+microcopy: &microcopy False
+en:
+  name: first-contact resolution
+  definition: First-contact resolution describes the goal of resolving the issues that drive customers to contact the organization at first contact, without the need for further interaction. It can also be used as a metric.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms:
+  - first-call resolution
+  forbidden_synonyms: []
+  abbreviation: FCR
+de:
+  name: Erstlösungsrate
+  definition: Erstlösungsrate beschreibt die Rate, bei der das Ziel, eine Kundenanfrage im ersten Kontakt ohne Nachfrage oder Weiterfolgung erfolgreich zu bearbeiten, erreicht wird.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: résolution au premier contact
+  definition: Capacité d’un centre de contacts à répondre à la demande d’un client dès la première interaction. La résolution au premier contact est également utilisée comme indicateur. 
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: 
+    - RPC
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: eerste contact-oplossing
+  definition: Het percentage van de gesprekken waarin de beller direct een antwoord krijgt op zijn vraag.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: 
+    - first contact-resolution
+  forbidden_synonyms: []
+  abbreviation: FCR
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

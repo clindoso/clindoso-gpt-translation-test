@@ -1,0 +1,56 @@
+domains: &domains [WFM]
+microcopy: &microcopy False
+en:
+  name: vacation entitlement
+  definition: The number of days of paid vacation that a person can take in a time-off period.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Urlaubsanspruch
+  definition: Anzahl der bezahlten Urlaubstage, die eine Person innerhalb der Abwesenheitsperiode nehmen kann.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: droits aux congés
+  definition: Nombre de jours de congés payés annuels auxquels a droit un employé pendant une période de congés.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: ferie spettanti
+  definition: Il numero di giorni di ferie retribuite che un dipendente può prendere durante un periodo di permesso.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: vakantierechten
+  definition: Het aantal betaalde vakantiedagen dat een persoon kan opnemen binnen een afwezigheidsperiode.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: derecho de vacaciones
+  definition: El número de días de vacaciones remuneradas que un empleado puede disfrutar dentro de un periodo de permisos.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

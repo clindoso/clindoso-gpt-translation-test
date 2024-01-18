@@ -1,0 +1,57 @@
+---
+domains: &domains [WFM]
+internal: &internal True
+en:
+  name: rota
+  definition: A repeating pattern of shifts, typically used to rotate working hours so that each employee is asked to work an equal number of popular and unpopular shifts.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Wechseldienstplan
+  definition: Eine wiederkehrende Schichtfolge, in der den Mitarbeitern eine gleiche Anzahl an beliebten und unbeliebten Schichten abwechselnd zugeordnet wird.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: roulement
+  definition: Modèle d’horaires récurrent, visant généralement à établir une rotation afin de répartir équitablement les employés sur des horaires populaires et impopulaires.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: roulerende planning
+  definition: Een dienstenpatroon dat zich herhaalt en meestal wordt gebruikt om werkuren te rouleren, zodat alle teamleden een gelijk aantal populaire en minder populaire diensten draaien.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

@@ -1,0 +1,57 @@
+---
+domains: &domains [WFM]
+microcopy: &microcopy False
+en:
+  name: outbound call
+  definition: A call initiated by an employee to a customer. It is usually directed at potential customers and is primarily used for sales, lead generation, telemarketing, or fundraising.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: ausgehender Anruf
+  definition: Ein Anruf, der von einem Mitarbeiter bei einem Kunden ausgelöst wird. Er richtet sich in der Regel an potenzielle Kunden und dient vor allem dem Verkauf, der Lead-Generierung, dem Telemarketing und dem Fundraising.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: appel sortant
+  definition:
+  example: Appel initié par un employé vers un client. Il est généralement dirigé vers des clients potentiels et généralement utilisé pour la vente, la génération de leads, le télémarketing ou la collecte de fonds.
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: uitgaande oproep
+  definition: Een oproep van een medewerker naar een klant. Gewoonlijk worden uitgaande oproepen gebruikt om potentiële klanten te benaderen; ze worden meestal gebruikt voor verkoopdoeleinden, het werven van nieuwe klanten, telemarketing en fundraising.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

@@ -1,0 +1,57 @@
+---
+domains: &domains [Product]
+internal: &internal False
+en:
+  name: importance
+  definition: A percentage value for an activity that planners can define to influence schedule optimization to better meet staff requirements. Activities with higher importance values are prioritized during schedule optimization.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Stellenwert
+  definition: Ein Prozentsatz für eine Aktivität, den Planer festlegen können, um die Schichtplanoptimierung im Sinne der Deckung des Mitarbeiterbedarfs zu beeinflussen. Bei der Schichtplanoptimierung werden Aktivitäten mit einem höheren Stellenwert bevorzugt.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: ordre d'importance
+  definition: "Pourcentage défini par le planificateur pour une activité. Cette valeur influence l’optimisation du planning afin de mieux répondre au besoin en personnel. Une activité dont l’ordre d’importance est élevé sera priorisée pendant l’optimisation du planning."
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: importanza
+  definition: Valore in percentuale che i pianificatori possono definire per un'attività. Questo valore influisce sull'ottimizzazione della pianificazione per fronteggiare al meglio il bisogno di personale. Alle attività con un'importanza maggiore viene data priorità durante l'ottimizzazione della pianificazione. 
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: rang
+  definition: Een percentage dat planners aan een activiteit kunnen toekennen om de planningsoptimalisatie te beïnvloeden zodat beter aan de personeelsbehoefte wordt voldaan. Activiteiten met een hogere rang worden bij de planningsoptimalisatie geprioriseerd.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: importancia
+  definition: Valor porcentual de una actividad que los planificadores pueden definir para influenciar el proceso de optimización de la planficación y así cumplir mejor los requisitos de personal. La funcionalidad Crear planificación optimizada prioritiza las actividades con los valores de importancia más altos.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

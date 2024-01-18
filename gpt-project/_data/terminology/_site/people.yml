@@ -1,0 +1,57 @@
+---
+domains: &domains [Product]
+microcopy: &microcopy True
+en:
+  name: People
+  definition: Product in injixo used to create a person and manage people (employees). 
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Mitarbeiter
+  definition: Ein Produkt in injixo, welches zum Anlegen eines neuen Mitarbeiters und zu Mitarbeiterverwaltung verwendet wird.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: "Employés"
+  definition: "Produit d'injixo utilisé pour créer et gérer les employés."
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: Dipendenti
+  definition: Prodotto injixo che serve a creare e gestire gli account dei dipendenti.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: Medewerkers
+  definition: Een product in injixo, dat wordt gebruikt om nieuwe medewerkers aan te maken en te beheren.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms:
+  abbreviation:
+es:
+  name: Empleados
+  definition: Producto en injixo que se usa para crear y gestionar las cuentas de los empleados.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms:
+  abbreviation:

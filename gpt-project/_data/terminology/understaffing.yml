@@ -1,0 +1,59 @@
+---
+domains: &domains [WFM]
+internal: &internal False
+en:
+  name: understaffing
+  definition: Understaffing occurs when not enough people are scheduled to cover the current staff requirements.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: 
+    - under-staffing
+  abbreviation:
+de:
+  name: Unterdeckung
+  definition: Es kommt zu Unterdeckung, wenn nicht genug Personen für die Deckung des vorliegenden Mitarbeiterbedarfs geplant sind.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: 
+    - Unterbesetzung
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: sous-effectif
+  definition: Situation dans laquelle les ressources planifiées ne sont pas suffisantes pour couvrir le besoin en personnel actuel.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: carenza di personale
+  definition: La carenza di personale si verifica quando non è stato pianificato un numero di dipendenti sufficiente a coprire il fabbisogno di personale.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: onderbezetting
+  definition: Er is sprake van onderbezetting als er niet genoeg personen zijn ingepland om de huidige personeelsbehoefte te dekken.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: falta de personal
+  definition: La falta de personal ocurre cuando no hay suficientes empleados planificados para cubrir los requisitos de personal actuales.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

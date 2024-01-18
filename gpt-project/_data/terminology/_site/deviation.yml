@@ -1,0 +1,56 @@
+---
+domains: &domains [Product]
+microcopy: &microcopy False
+en:
+  name: deviation
+  definition: The absolute value of the difference between the coverage and the perfect coverage calculated by the Optimize breaks functionality.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Abweichung
+  definition: Der absolute Wert der Differenz zwischen der Deckung und der perfekten Deckung, die durch die Funktionalität Pausen optimieren berechnet wird.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: déviation
+  definition: "Valeur absolue de la différence entre la couverture et la couverture parfaite calculée par la fonctionnalité Optimiser les pauses."
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: deviazione
+  definition: Il valore assoluto della differenza tra la copertura e la copertura perfetta. La copertura perfetta viene calcolata dalla funzionalità Ottimizzare le pause.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: afwijking
+  definition: De absolute waarde van het verschil tussen de dekking en de perfecte dekking dat is berekend door de functionaliteit Pauzes optimaliseren.
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: deviación
+  definition: "Porcentaje que representa la discrepancia entre el número de empleados planificados y los requisitos de personal previstos."
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

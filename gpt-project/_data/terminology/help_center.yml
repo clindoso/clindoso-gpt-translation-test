@@ -1,0 +1,65 @@
+---
+domains: &domains [Product]
+internal: &internal False
+en:
+  name: Help Center
+  definition: A collection of articles explaining how to set up and use injixo.
+  example: Learn more in Help Center.
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms:
+    - help center
+    - the Help Center
+    - (the) injixo Help Center
+    - our Help Center
+  abbreviation:
+de:
+  name: Help Center
+  definition: Eine Sammlung von Artikeln, die erklärt, wie du injixo einrichtest und nutzt.
+  example: Erfahre mehr im Help Center.
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms:
+    - help center
+    - (das) injixo Help Center
+    - unser Help Center
+  abbreviation:
+fr:
+  name: Help Center
+  definition: Ensemble d’articles visant à expliquer la configuration et l’utilisation d’injixo.
+  example: Consultez le Help Center pour plus d’informations.
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms:
+  - help center
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: Help Center
+  definition: Een verzameling artikelen waarin wordt uitgelegd hoe je injixo instelt en gebruikt. 
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

@@ -1,0 +1,59 @@
+---
+domains: &domains [WFM]
+microcopy: &microcopy False
+en:
+  name: schedule efficiency
+  definition: The degree to which the number of employees meet the staff requirements, typically over the planning period.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: 
+    - schedule fit
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Planungseffizienz
+  definition: Das Maß, in dem die Anzahl der Mitarbeiter dem Mitarbeiterbedarf gerecht wird, in der Regel im Laufe der Planperiode.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms:
+  - Arbeitslast-Fit
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: efficacité du planning
+  definition: "Mesure dans laquelle le nombre d’employés répond aux besoins d’effectifs, généralement sur la période couverte par un planning."
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: efficienza della pianificazione
+  definition: La misura in cui il numero di dipendenti corrisponde al fabbisogno di personale, di solito in rapporto a un periodo di pianificazione.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: planningsefficiëntie
+  definition: De mate waarin het aantal teamleden overeenkomt met de personeelsbehoefte, meestal gemeten over de planningsperiode.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

@@ -1,0 +1,57 @@
+---
+domains: &domains [WFM]
+internal: &internal True
+en:
+  name: hold time
+  definition: The amount of time that a caller is put on hold during a call.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Haltezeit
+  definition: Die Zeit, die ein Anrufer in der Wartestellung während eines Anrufs wartet.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: durée de mise en attente
+  definition: Durée pendant laquelle un contact est mis en attente lors d’un appel.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: wachttijd
+  definition: De tijdsduur die de klant tijdens een gesprek in de wacht doorbrengt.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

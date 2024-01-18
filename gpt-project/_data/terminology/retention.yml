@@ -1,0 +1,57 @@
+---
+domains: &domains [WFM]
+internal: &internal True
+en:
+  name: retention
+  definition: The ability of a business to keep its customers (for example after requesting termination of their contracts).
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Kundenrückgewinnung
+  definition: Maßnahmen, die auf die Rückgewinnung von Kunden abzielen (z. B. nachdem Kunden ihren Vertrag kündigen wollen).
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: rétention
+  definition: "Capacité d’une entreprise à conserver ses clients (par exemple après une demande de résiliation de contrat)."
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: fidelizzazione
+  definition: La capacità di un'azienda di trattenere i propri clienti (per esempio, dopo una richiesta di scioglimento del contratto).
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: retentie
+  definition: Alle maatregelen die worden genomen om klanten te behouden (bijvoorbeeld na een aanvraag om hun contract te laten beëindigen).
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

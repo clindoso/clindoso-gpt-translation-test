@@ -1,0 +1,58 @@
+---
+domains: &domains [Product]
+microcopy: &microcopy False
+en:
+  name: Training Needs Analysis
+  definition: The process of identifying the gap in a learner or group’s skills or understanding on a particular subject.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: TNA
+de:
+  name: Trainingsbedarfsanalyse
+  definition: Der Prozess, bei dem Lücken in den Fähigkeiten oder dem Verständnis eines Lernenden oder einer Gruppe in einem bestimmten Bereich identifiziert werden.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: Analyse des besoins de formation
+  definition: Processus visant à identifier les besoins de compétences ou de compréhension d’un apprenant ou d’un groupe sur un sujet particulier.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: Analisi dei fabbisogni formativi
+  definition: Processo di identificazione delle lacune nelle competenze o nella conoscenza che un singolo discente o un gruppo hanno in una materia specifica.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms:
+  - Analisi dei bisogni formativi
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: Training Needs Analysis
+  definition: Het proces waarbij een gebrek aan vaardigheden of kennis van een cursist of groep wordt geïdentificeerd met betrekking tot een specifiek onderwerp.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: TNA
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

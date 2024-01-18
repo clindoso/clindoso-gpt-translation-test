@@ -1,0 +1,59 @@
+domains: &domains []
+internal: &internal False
+en:
+  name: application programming interface
+  definition: An application programming interface provides interfaces for computer programs to communicate with each other.
+  example: Import data with injixo API
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: API
+de:
+  name: Application Programming Interface
+  definition: Eine Application Programming Interface stellt Schnittstellen zur Verfügung, über die Computerprogramme miteinander kommunizieren können.
+  example: Daten über injixo API importieren
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms:
+  - Programmierschnittstelle
+  - Anwendungsschnittstelle
+  forbidden_synonyms: []
+  abbreviation: API
+fr:
+  name: interface de programmation
+  definition: Une interface de programmation permet à différentes interfaces de communiquer entre elles.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms:
+  - interface de programmation
+  forbidden_synonyms: []
+  abbreviation: API
+it:
+  name: interfaccia di programmazione 
+  definition: Codice di programmazione che permette il trasferimento di dati tra software, per esempio permettendo a un sistema di business intelligence di connettersi a injixo e di estrarne dei dati.
+  example: Importare dei dati con l'API injixo
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: API
+nl:
+  name: programmeerinterface
+  definition: Een application programming interface biedt interfaces waarmee computerprogramma's met elkaar kunnen communiceren.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: API
+es:
+  name: interfaz de programación de aplicaciones
+  definition: Código de programación que permite transferir datos entre programas. Por ejemplo, un sistema de business intelligence puede conectarse a injixo y extraer datos.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: API

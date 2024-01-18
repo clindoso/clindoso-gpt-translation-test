@@ -1,0 +1,56 @@
+domains: &domains [Product]
+microcopy: &microcopy False
+en:
+  name: training material
+  definition: A training material is a subset of an Academy course. It can be a video or a slide deck, for example. Multiple training material items can be added to one course in Academy.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Trainingsmaterial
+  definition: Ein Trainingsmaterial ist Teil eines Kurses in Academy und kann z. B. ein Video oder eine Folienpräsentation sein. Ein Kurs kann mehrere Trainingsmaterialien enthalten.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: 
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: trainingsmateriaal
+  definition: Trainingsmateriaal is een deel van een Academy-cursus. Dit kan bijvoorbeeld een video of een presentatie met slides zijn. Verschillende trainingsmaterialen kunnen in Academy aan een cursus worden toegevoegd.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

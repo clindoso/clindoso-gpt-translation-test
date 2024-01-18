@@ -1,0 +1,57 @@
+---
+domains: &domains [Product]
+internal: &internal False
+en:
+  name: day model interval
+  definition: Determines when a shift can start within the time frame of the day model. For example, a day model interval of 30&nbsp;minutes allows shifts to start every half hour.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Intervall des Tagesmodells
+  definition: Legt fest, wann eine Schicht innerhalb des Zeitrahmens eines Tagesmodells beginnen kann. Bei einem Intervall eines Tagesmodells von 30&nbsp;Minuten können Schichten beispielsweise jede halbe Stunden beginnen.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: intervalle du modèle horaire
+  definition: Détermine l'heure de début théorique possible d'une journée dans le cadre temporel défini pour un modèle horaire. Par exemple, si l'intervalle du modèle horaire est de 30&nbsp;minutes, la journée peut commencer toutes les 30&nbsp;minutes.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: intervallo del modello di orario
+  definition: Determina il possibile inizio dei turni all'interno del modello di orario. Per esempio, se l'intervallo del modello di orario è di 30&nbsp;minuti, i turni possono cominciare ogni mezz'ora.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: dagmodelinterval
+  definition: Bepaalt het moment waarop een dienst kan beginnen binnen het tijdframe van het dagmodel. Bij een dagmodelinterval van 30&nbsp;minuten kunnen bijvoorbeeld elk half uur diensten beginnen.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: intervalo de modelo de horario
+  definition: Determina cuándo puede comenzar un turno dentro del período del modelo de horario. Por ejemplo, un intervalo de modelo de horario de 30 minutos permite que los turnos empiecen cada media hora.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

@@ -1,0 +1,57 @@
+---
+domains: &domains []
+microcopy: &microcopy False
+en:
+  name: CSV Schema
+  definition: The CSV schema describes the CSV file formatting and column mapping so that a CSV integration can find the relevant data.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: CSV-Schema
+  definition: Das CSV-Schema beschreibt die Formatierung und das Mapping der Spalten der CSV-Datei. Damit kann eine CSV-Integration die relevanten Daten finden.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: schéma CSV
+  definition: Un schéma CSV décrit le formatage et le mappage des colonnes permettant à une intégration CSV de retrouver les données nécessaires.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: CSV-schema
+  definition: Het CSV-schema beschrijft de formattering en mapping van de kolommen van het CSV-bestand. Hiermee kan een CSV-integratie de relevante gegevens vinden.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

@@ -1,0 +1,60 @@
+---
+domains: &domains [WFM]
+microcopy: &microcopy False
+en:
+  name: overstaffing
+  definition: Overstaffing occurs when more people are working than needed to cover current staff requirements.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: 
+    - over-staffing
+  abbreviation:
+de:
+  name: Überdeckung
+  definition: Es kommt zu Überdeckung, wenn zu viele Personen für die Deckung des aktuellen Mitarbeiterbedarfs geplant sind.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: 
+    - Überbesetzung
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: sureffectif
+  definition: Situation dans laquelle le nombre d’employés est plus élevé que nécessaire pour couvrir le besoin en personnel.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: eccedenza di personale
+  definition: L'eccedenza di personale si verifica quando il numero di dipendenti pianificati è maggiore rispetto al fabbisogno di personale.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: 
+    - overstaffing
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: overbezetting
+  definition: Er is sprake van overbezetting als er teveel personen zijn ingepland om de actuele medewerkerbehoefte te dekken.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: sobrecobertura
+  definition: La sobrecobertura ocurre cuando hay más empleados trabajando de los necesarios para cubrir los requisitos de personal actuales.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

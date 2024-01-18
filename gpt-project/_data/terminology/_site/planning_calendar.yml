@@ -1,0 +1,58 @@
+
+---
+domains: &domains [Product]
+microcopy: &microcopy False
+en:
+  name: planning calendar
+  definition: A calendar in injixo where planners can use day types to mark days with opening hours or staff requirements that deviate from the standard. Planning calendars are used for scheduling purposes.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Planungskalender
+  definition: Ein Kalender in injixo, in dem Planer Tage mit abweichenden Öffnungszeiten und Mitarbeiterbedarf, z.&nbsp;B. Feiertage und Marketingkampagnen, festlegen können. Die in Planungskalendern enthaltenen abweichenden Öffnungszeiten und Mitarbeiterbedarf werden während der Schichtplanung mit einberechnet.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: 
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

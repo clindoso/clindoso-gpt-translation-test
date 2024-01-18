@@ -1,0 +1,59 @@
+---
+domains: &domains [Product]
+internal: &internal False
+en:
+  name: agent status
+  definition: A code indicating an agent's current activity, for example, on call, after-call work, break, ready, etc.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Agentenstatus
+  definition: Ein Code für den Status eines Agenten, der die aktuelle Aktivität kennzeichnet, z.&nbsp;B. Verfügbar, Besetzt, Nachbearbeitung, Pause, etc.
+  example: Dein System sammelt Daten über die Aktivitäten deiner Mitarbeiter. Es erfasst auch, wann sie von einer Aktivität zur nächsten wechseln. Diese Informationen werden Agentenstatus-Daten genannt.
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: statut agent
+  definition: Code numérique ou alphanumérique indiquant l’activité actuelle d’un agent. Par exemple, en appel, traitement post-appel, en pause, disponible, etc. 
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: stato dell'agente
+  definition: Codice numerico o alfanumerico che identifica l'attività in cui un agente è impegnato al momento, per esempio chiamata, elaborazione post-chiamata, pausa o disponibile.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms:
+  - stato agente
+  forbidden_synonyms:
+  - status agenti
+  abbreviation:
+nl:
+  name: agentstatus
+  definition: Een code die de huidige activiteit van een agent aangeeft, bijvoorbeeld in gesprek, nawerk, pauze, gereed, etc. 
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: estado del agente
+  definition: Código numérico o alfanumérico que identifica la actividad que un agente desempeña en cada momento, como llamada, pausa, disponible, etc.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

@@ -1,0 +1,56 @@
+---
+domains: &domains [Product]
+internal: &internal False
+en:
+  name: learning goals
+  definition: Desired behavioral changes for the trainee that we envision should be achieved to solve the training need.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Lernziele
+  definition: Gewünschte Verhaltensänderungen des Lernenden, die erreicht werden sollen, um den Weiterbildungsbedarf zu decken.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: Objectifs pédagogiques
+  definition: Comportement observable attendu de l’apprenant pour atteindre les objectifs de formation.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: obiettivi di apprendimento
+  definition: Cambiamenti comportamentali che ci si aspetta da parte del discente per risolvere il bisogno formativo.
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: leerdoelen
+  definition: Beoogde gedragsveranderingen van de cursist, die bereikt moeten worden om aan het de opleidingsbehoefte te voldoen.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

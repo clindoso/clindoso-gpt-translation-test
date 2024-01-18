@@ -1,0 +1,58 @@
+---
+domains: &domains [Product]
+internal: &internal False
+en:
+  name: time-off period
+  definition: A time-off period defines the period in which people can request vacation and other absences.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms:
+  - time off period
+  abbreviation:
+de:
+  name: Abwesenheitsperiode
+  definition: Die Abwesenheitsperiode ist der Zeitraum, in dem Mitarbeiter Urlaub und andere Abwesenheiten beantragen können.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: période de congés
+  definition: Période pendant laquelle les employés peuvent demander des congés ou des absences.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: periodo di permesso
+  definition: Periodo durante il quale i dipendenti possono richiedere ferie e permessi di altri tipi.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: verlofperiode
+  definition: Een afwezigheidsperiode is een periode waarin medewerkers vakantie en andere afwezigheid kunnen aanvragen. 
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: periodo de disfrute
+  definition: Periodo para el que los empleados pueden solicitar vacaciones y otros permisos.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

@@ -1,0 +1,59 @@
+---
+domains: &domains [Product]
+microcopy: &microcopy False
+en:
+  name: parent planning unit
+  definition: A planning unit superordinate to other planning units. For example, a parent planning unit can represent an entire organization while other subordinate planning units represent groups within the organization, e.g. people who work in different time zones.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms:
+  - virtual planning unit
+  abbreviation:
+de:
+  name: übergeordnete PLanungseinheit
+  definition: Eine Planungseinheit, die andere Planungseinheiten umfasst. Eine übergeordnete Planungseinheit kann ein ganzes Unternehmen darstellen, wenn andere Planungseinheiten Gruppen innerhalb des Unternehmens, z.&nbsp;B. Geschäftstätigkeiten in anderen Zeitzonen, darstellen.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms:
+  - virtuelle Planungseinheit
+  abbreviation:
+fr:
+  name: 
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

@@ -1,0 +1,61 @@
+---
+domains: &domains [WFM, Product]
+internal: &internal False
+en:
+  name: contact center
+  definition: An organization or part of an organization in which a group of employees, commonly known as agents, handle communications with customers through different channels, such as phone calls, web chats, emails, and social media.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal 
+  allowed_synonyms: 
+    - call center (Marketing only)
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Contact Center
+  definition: Eine Organisation oder Teil einer Organisation, in der eine Gruppe von Mitarbeitern, auch Agenten genannt, Kontakt zu Kunden über unterschiedliche Kommunikationskanäle, wie Anrufe, Webchat, E-Mails und Soziale Netzwerke, abarbeiten.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal 
+  allowed_synonyms: 
+    - Call Center (Marketing only)
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: centre de contacts
+  definition: Organisation ou partie d’une organisation au sein laquelle un groupe d’employés, communément appelés agents, gère les communications avec les clients via différents canaux, tels que les appels téléphoniques, le chat en ligne, les e-mails et les réseaux sociaux.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: 
+    - centre d’appel (marketing uniquement)
+    - centre de contact
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: contact center
+  definition: "Organizzazione, o parte di un'organizzazione, in cui un gruppo di dipendenti, di solito chiamati agenti, gestisce le comunicazioni con i clienti tramite canali diversi, come telefonate, chat, email, e social media."
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: contactcenter
+  definition: Een organisatie of deel van een organisatie waarin een groep medewerkers, ook wel agents genoemd, via verschillende kanalen met klanten communiceren, zoals telefoon, webchats, e-mails en social media.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

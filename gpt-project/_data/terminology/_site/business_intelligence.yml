@@ -1,0 +1,58 @@
+---
+domains: &domains []
+microcopy: &microcopy False
+en:
+  name: business intelligence
+  definition: Business intelligence combines business analytics and data processing technology to help organizations make more data-driven decisions in its specific fields. Examples of data relevant to business intelligence in WFM include marketing campaigns, price increases, and weather events.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: BI
+de:
+  name: Business Intelligence
+  definition: Business Intelligence umfasst die Geschäftsanalyse und Datenverarbeitungstechnologie, die Unternehmen verwenden, um datengesteuerte Entscheidungen in ihren Geschäftsbereichen zu treffen. Beispiele von relevanten Daten für Business Intelligence im Bereich WFM sind Marketingkampagnen, Preisänderungen und Wetterereignisse.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: 
+   - Geschäftsanalytik
+  forbidden_synonyms: []
+  abbreviation: BI
+fr:
+  name: business intelligence
+  definition: La business intelligence combine l’analyse des activités économiques et les technologies de traitement des données pour aider les entreprises à prendre plus de décisions basées sur les données. Dans un contexte de WFM, il peut s’agir de campagnes marketing, d’augmentations des prix ou la prise en compte d’événements climatiques.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: business intelligence
+  definition: La business intelligence combina l'analisi delle attività aziendali e le tecnologie di trattamento dei dati per aiutare le imprese a prendere decisioni basate sui dati. Nel contesto del WFM, per esempio, sono rilevanti ai fini della business intelligence i dati relativi a campagne di marketing, aumenti di prezzo ed eventi meteorologici.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: business intelligence
+  definition: Business intelligence combineert bedrijfsanalyse en gegevensverwerkingstechnologie om bedrijven te helpen bij het nemen van datagestuurde beslissingen. Voorbeelden van gegevens in WFM die relevant zijn voor business intelligence zijn marketingcampagnes, prijsstijgingen en weersomstandigheden.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

@@ -1,0 +1,59 @@
+---
+domains: &domains [injixo]
+microcopy: &microcopy True
+en:
+  name: create
+  definition: 
+  example: Create a skill, Create activity
+  microcopy_ref: *microcopy
+  domain_ref: *domains
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: erstellen
+  definition: 
+  example: Qualifikation erstellen, Aktivität erstellen, Person <s>erstellen</s> anlegen
+  microcopy_ref: *microcopy
+  domain_ref: *domains
+  allowed_synonyms:
+  - anlegen (nur in Kollokation mit Person, z.&nbsp;B. Person anlegen)
+  forbidden_synonyms:
+  - hinzufügen
+  abbreviation:
+fr:
+  name: créer
+  definition:
+  example: créer une compétence, créer une activité
+  microcopy_ref: *microcopy
+  domain_ref: *domains
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: 
+  definition: 
+  example:
+  microcopy_ref: *microcopy
+  domain_ref: *domains
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: aanmaken
+  definition:
+  example: kwalificaties aanmaken, activiteiten aanmaken, personen aanmaken.
+  microcopy_ref: *microcopy
+  domain_ref: *domains
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: 
+  definition: 
+  example:
+  microcopy_ref: *microcopy
+  domain_ref: *domains
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

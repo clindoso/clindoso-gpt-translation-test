@@ -1,0 +1,60 @@
+---
+domains: &domains [WFM]
+microcopy: &microcopy False
+en:
+  name: average handle time
+  definition: The average amount of time an agent takes to complete a single customer contact (e.g. a call or an email) during a specified interval.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms:
+  - average handling time
+  abbreviation: AHT
+  redirect_anchor_text: average-handle-time-aht
+de:
+  name: durchschnittliche Bearbeitungszeit
+  definition: Die durchschnittliche Zeit, die ein Agent für die Bearbeitung eines einzelnen Kundenkontakts (z.B. Anruf oder E-Mail) innerhalb eines bestimmten Intervalls benötigt.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: AHT
+  redirect_anchor_text: durchschnittliche-bearbeitungszeit-aht
+fr:
+  name: temps moyen de traitement
+  definition: Temps moyen requis par un employé pour traiter un contact client (par exemple, un appel ou un e-mail) sur un intervalle donné.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: TMT
+it:
+  name: tempo medio di gestione
+  definition: Il tempo medio impiegato da un dipendente nel trattamento di un contatto con un cliente (per esempio, una chiamata o un'email) in un dato intervallo.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: AHT
+nl:
+  name: gemiddelde afhandeltijd
+  definition: De gemiddelde tijd die een medewerker nodig heeft om een enkel klantcontact (bijvoorbeeld een oproep of een e-mail) binnen een bepaalde interval af te handelen.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: AHT
+es:
+  name: tiempo medio de operación
+  definition: El tiempo medio que los agentes invierten en las interacciones con clientes en un contact center.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: TMO

@@ -1,0 +1,58 @@
+---
+domains: &domains [Product]
+microcopy: &microcopy False
+en:
+  name: adherence report
+  definition: An overview per day that lists the scheduled and actual start and end times of each employee’s activities (type Presence, Break and Meeting).
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Report Planeinhaltung (Aktivität)
+  definition: Eine Übersicht pro Tag, die die geplanten und tatsächlichen Anfangs- und Endzeiten der Aktivitäten jedes Mitarbeiters (Typ Anwesenheit, Pause und Meeting) auflistet.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: Report sulla conformità alla pianificazione (attività)
+  definition: Panoramica giornaliera che mostra l'ora di inizio e l'ora di fine pianificate per le attività di ogni dipendente (attività del tipo Presenza, Pausa e Meeting).
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: rapport roosteropvolging
+  definition: Een dagoverzicht met de begin- en eindtijden van de activiteiten van elke medewerker (type aanwezigheid, pauze en meeting) ten opzichte van de geplande tijden.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: informe de adherencia
+  definition: Resumen diario que muestra a qué horas los empleados comienzan y finalizan sus actividades 
+    (del tipo presencia, pausa y reunión) y lo compara con el horario planificado.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

@@ -1,0 +1,58 @@
+---
+domains: &domains [WFM]
+microcopy: &microcopy False
+en:
+  name: employee
+  definition: An agent that injixo schedules for specific activities. Employees’ configuration data in injixo include contractual details such as working hours.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Mitarbeiter
+  definition: Ein Agent, der von injixo für bestimmte Aktivitäten geplant wird. Die Konfigurationsdaten der Mitarbeiter in injixo enthalten vertragliche Details wie Arbeitszeiten.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: employé
+  definition: Agent planifié pour certaines activités dans injixo. Les données de configuration des employés incluent les détails de leur contrat, par exemple les heures de travail.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition: Agente per il quale injixo pianifica attività specifiche. I dati di configurazione 
+    dei dipendenti in injixo includono dettagli contrattuali come l'orario di lavoro.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: medewerker
+  definition: Een agent die door injixo voor bepaalde activiteiten wordt ingepland. De configuratiegegevens van medewerkers in injixo bevatten contractuele gegevens zoals werktijden.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

@@ -1,0 +1,58 @@
+---
+domains: &domains []
+internal: &internal False
+en:
+  name: capacity planning
+  definition: The estimation of staff requirements beyond the planning cycle to derive hiring and training plans.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Kapazitätsplanung
+  definition: Die Berechnung des Personalbedarfs über den Planungszyklus hinaus, um Einstellungs- und Weiterbildungspläne abzuleiten.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: dimensionnement
+  definition: Estimation du besoin en personnel au delà du cycle de planification et visant à établir des plans de recrutement ou de formation.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: pianificazione della capacità
+  definition: Il calcolo del fabbisogno di personale al di là del ciclo di pianificazione per programmare assunzioni e formazione.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms:
+    - capacity planning
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: capaciteitsplanning
+  definition: De berekening van de personeelsbehoefte voor een periode langer dan de planningscyclus met als doel hieruit wervings- en trainingsplannen af te leiden.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: planificación de capacidad
+  definition: La estimación de los requisitos de personal más allá del ciclo de planificación para establecer estrategias de reclutamiento y formación.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

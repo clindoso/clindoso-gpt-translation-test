@@ -1,0 +1,58 @@
+---
+domains: &domains [Product]
+internal: &internal False
+en:
+  name: out of adherence
+  definition: "Employees are out of adherence when:<br>- they are not present even though they were scheduled<br>- they carry out an activity that does not correspond to the schedule<br>- they are present even though they are not scheduled."
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: in Planabweichung
+  definition: "Mitarbeiter sind in Planabweichung, wenn:<br>- sie nicht anwesend sind, obwohl sie geplant sind<br>- sie eine Aktivität ausführen, die nicht dem Schichtplan entspricht<br>- sie anwesend sind, obwohl sie nicht geplant sind."
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms:
+  - nicht plankonform (Academy)
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: dépassement
+  definition: "Les employés sont en dépassement&nbsp;:<br>- lorsqu’ils sont absents alors qu’ils sont planifiés,<br>- lorsqu’ils travaillent à une activité qui ne correspond pas à leur planning,<br>- lorsqu’ils sont présents alors qu’ils ne sont pas planifiés."
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: niet-roosterconform
+  definition: "Medewerkers zijn niet-roosterconform  als:<br>- zij niet aanwezig zijn, hoewel ze zijn ingepland<br>- zij een andere activiteit uitvoeren dan de activiteit waarvoor ze zijn ingepland<br>- zij aanwezig zijn terwijl zij niet zijn ingepland."
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

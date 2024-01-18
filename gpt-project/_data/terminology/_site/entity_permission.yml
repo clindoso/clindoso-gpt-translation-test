@@ -1,0 +1,57 @@
+---
+domains: &domains [Product]
+microcopy: &microcopy False
+en:
+  name: entity permission
+  definition: Access rights to read, edit, delete, and create entities, e.g. activities. Entity permissions can be assigned at a user or role level.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Entitätsberechtigung
+  definition: Entitätsberechtigungen bestimmen die Zugriffsrechte, um Entitäten zu lesen, zu bearbeiten und anzulegen. Entitätsberechtigungen können auf Benutzer- und Benutzerrollenebene zugeordnet werden.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: entiteitsmachtiging
+  definition: entiteitsmachtigingen bepalen de toegangsrechten om entiteiten te lezen, bewerken, verwijderen en aan te maken. Entiteitsmachtigingen kunnen op gebruikers- en rolniveau worden toegewezen. 
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

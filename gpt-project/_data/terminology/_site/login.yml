@@ -1,0 +1,59 @@
+---
+domains: &domains [Product]
+microcopy: &microcopy True
+en:
+  name: login
+  definition: The CTA button label users click when they log in.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  acronym:
+de:
+  name: Anmeldung
+  definition: Der CTA-Button, den Nutzer klicken, wenn sie sich anmelden wollen.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms:
+  - Login
+  acronym:
+fr:
+  name: Connexion
+  definition: "Bouton d'appel à l'action (CTA) sur lequel doit cliquer l'utilisateur pour se connecter."
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  acronym:
+it:
+  name: Login
+  definition: Testo del pulsante su cui l'utente deve cliccare per accedere.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  acronym:
+nl:
+  name: aanmelden
+  definition: De CTA-knop waar de gebruiker op klikt op zich aan te melden.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms:
+  - login
+  acronym:
+es:
+  name: "iniciar sesión"
+  definition: "Botón (CTA o llamada a la acción) en el que los usuarios hacen clic para empezar su sesión en un sistema informático, aplicación o cuenta en línea."
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  acronym:

@@ -1,0 +1,57 @@
+---
+domains: &domains [WFM]
+internal: &internal False
+en:
+  name: outbound contact
+  definition: Contacts such as phone calls which are initiated by the contact center.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: ausgehender Kontakt
+  definition: Kontakte, z.&nbsp;B. Anrufe, die durch Mitarbeiter eines Contact Center ausgelöst werden.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name:
+  definition: contacts sortants
+  example: Contacts (par exemple les appels) émis par le centre de contacts.
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: contatto in uscita
+  definition: Contatto che parte dal contact center, per esempio una telefonata a un cliente.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: uitgaand contact
+  definition: Contactopnames zoals telefoongesprekken die door het contactcenter worden geïnitieerd.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

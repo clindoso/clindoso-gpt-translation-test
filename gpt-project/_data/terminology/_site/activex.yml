@@ -1,0 +1,59 @@
+---
+domains: &domains []
+microcopy: &microcopy False
+en:
+  name: ActiveX
+  definition: A deprecated technology that's only supported by Internet Explorer
+    for Windows.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: ActiveX
+  definition: Eine veraltete Technologie, die nur vom Internet Explorer für Windows
+    unterstützt wird.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: ActiveX
+  definition: Technologie obsolète uniquement supportée par Internet Explorer sur Windows.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: ActiveX
+  definition: Tecnologia obsoleta supportata soltanto da Internet Explorer per Windows.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: ActiveX
+  definition: Een verouderde technologie die alleen wordt ondersteund door Internet Explorer voor Windows.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

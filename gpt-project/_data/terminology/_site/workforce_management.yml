@@ -1,0 +1,57 @@
+---
+domains: &domains [WFM]
+microcopy: &microcopy False
+en:
+  name: workforce management
+  definition: Integrated processes that an organization uses to optimize employee planning, including forecasting workload, calculating staff requirements, and creating and managing staff schedules.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: WFM
+de:
+  name: Workforce Management
+  definition: Integrierte Prozesse, die in einem Unternehmen durchgeführt werden, um den Mitarbeitereinsatz zu optimieren, z.&nbsp;B. Forecasting des Workloads, Berechnung des Mitarbeiterbedarfs und Erstellung und Management der Mitarbeitereinsatzplanung.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: WFM
+fr:
+  name: Workforce management
+  definition: Processus intégrés utilisés par une organisation pour optimiser la planification des employés, notamment la prévision des Workloads, le calcul des besoins en personnel, la création et la gestion des plannings.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: workforce management
+  definition: Procesos integrados que una organización usa para optimizar la planificación de personal. Incluye la previsión de las cargas de trabajo, el cáculo de los requisitos de personal, y la creación y gestión de la planificación del personal.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

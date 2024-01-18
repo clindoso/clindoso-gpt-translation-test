@@ -1,0 +1,60 @@
+---
+domains: &domains []
+internal: &internal False
+en:
+  name: two-factor authentication
+  definition: A second layer of login security that demands an additional verification.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: 2FA
+  redirect_anchor_text: two-factor-authentication-2fa
+de:
+  name: Zwei-Faktor-Authentifizierung
+  definition: Eine zweite Ebene der Anmeldesicherheit, die eine zusätzliche Überprüfung
+    erfordert.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation: 2FA
+  redirect_anchor_text: zwei-faktor-authentifizierung-2fa
+fr:
+  name: authentification à 2 facteurs
+  definition: "Méthode d’authentification qui ajoute un niveau de sécurité supplémentaire en demandant une deuxième vérification d’identité."
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

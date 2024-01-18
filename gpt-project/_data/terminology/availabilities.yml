@@ -1,0 +1,57 @@
+---
+domains: &domains []
+internal: &internal False
+en:
+  name: availabilities
+  definition: A configuration element in the employee configuration menu in WFM that defines at which times an employee can be scheduled.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Verfügbarkeiten
+  definition: Eine Konfigurationselement in der Mitarbeiter-Konfiguration, die festlegt, wann ein Mitarbeiter geplant werden kann.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: Disponibilités 
+  definition: Paramètre du menu de configuration des employés permettant de définir les heures auxquelles un employé peut être planifié ou non.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: disponibilità
+  definition: Parametro del menu di configurazione dei dipendenti che stabilisce per quali orari un dipendente può essere pianificato o no.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: Beschikbaarheid
+  definition: Een instelling in het menu Medewerkerconfiguratie die aangeeft wanneer een medewerker wel of niet kan worden ingepland.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

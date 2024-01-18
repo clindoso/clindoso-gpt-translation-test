@@ -1,0 +1,58 @@
+---
+domains: &domains [Product]
+internal: &internal False
+en:
+  name: in adherence
+  definition: "Employees are in adherence when:<br>- they are present as scheduled and<br>- they carry out an activity as scheduled."
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: plankonform
+  definition: "Mitarbeiter sind plankonform, wenn:<br>- sie wie geplant anwesend sind und<br>- sie eine Aktivität wie geplant ausführen."
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms:
+  - in Planeinhaltung
+  abbreviation:
+fr:
+  name: en adhérence
+  definition: "Les employés sont dits «&nbsp;en adhérence&nbsp;»&nbsp;:<br>- lorsqu’ils sont présents conformément à leur planning et<br>- lorsqu’ils travaillent sur une activité conforme à leur planning."
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: planningsconform
+  definition: "Medewerkers werken planningsconform als ze:<br>- zoals gepland aanwezig zijn en <br>- ze zoals gepland een activiteit uitvoeren."
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

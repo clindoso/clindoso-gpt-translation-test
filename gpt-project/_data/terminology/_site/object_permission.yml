@@ -1,0 +1,57 @@
+---
+domains: &domains [Product]
+microcopy: &microcopy False
+en:
+  name: object permission
+  definition: Access rights (read, edit, delete) on object level. A user or user role can see/change single objects, e.g. activity 1.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Objektberechtigung
+  definition: Zugriffsrechte auf Objektebene (Lesen, Bearbeiten, Löschen). Ein Benutzer oder eine Benutzerrolle kann einzelne Objekte sehen oder ändern, z.&nbsp;B. Aktivität 1.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: objecttoegangsrechten
+  definition: Toegangsrechten (lezen, bewerken, verwijderen) op objectniveau. Een gebruiker of gebruikersrol afzonderlijke objecten bekijken/wijzigen, zoals activiteit 1.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

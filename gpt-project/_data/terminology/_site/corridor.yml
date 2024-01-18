@@ -1,0 +1,58 @@
+---
+domains: &domains []
+microcopy: &microcopy False
+en:
+  name: corridor
+  definition: "A time frame in an employee's shift during which you can schedule activities, e.g. breaks."
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Korridor
+  definition: Ein Zeitrahmen innerhalb der Schicht eines Mitarbeiters, in dem Du
+    z.&nbsp;B. Pausen oder Aktivitäten planen kannst.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: corridor
+  definition: Période de temps dans la mission d’un employé pendant laquelle des activités peuvent être planifiées, par exemple les pauses.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: corridor
+  definition: Een tijdvak in het rooster van een medewerker, waarin je activiteiten zoals pauzes of activiteiten kunt plannen.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

@@ -1,0 +1,58 @@
+---
+domains: &domains [Product]
+microcopy: &microcopy False
+en:
+  name: time-off request
+  definition: A request for time off under the categories Absence, Vacation, or Illness. Employees can submit time-off requests in injixo Me.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms:
+  - time off request
+  abbreviation:
+de:
+  name: Abwesenheitsantrag
+  definition: Antrag auf Abwesenheit unter den Kategorien Abwesenheit, Urlaub oder Krankheit. Mitarbeiter können Abwesenheitsanträge in injixo Me einreichen.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: demande d'absence
+  definition: Demande d'absence des catégories Absence, Congés ou Maladie. Les employés peuvent faire leurs demandes d'absence dans injixo Me.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: richiesta di permesso
+  definition: Richiesta di un permesso del tipo Assenza, Vacanza, o Malattia. I dipendenti possono presentare le richieste di permesso in injixo Me.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: verlofaanvraag
+  definition: Een aanvraag voor verlof binnen de categorieën Afwezigheid, Vakantie of Ziekte. Medewerkers kunnen verlofaanvragen indienen in injixo Me.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: solicitud de permiso
+  definition: Una solicitud de permiso de ausencia, vacaciones, enfermedad, etc. Los empleados pueden crear solicitudes de permiso en injixo Me.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

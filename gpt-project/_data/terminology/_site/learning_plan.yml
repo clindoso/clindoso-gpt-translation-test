@@ -1,0 +1,57 @@
+domains: &domains [Product]
+microcopy: &microcopy False
+en:
+  name: learning plan
+  definition: Highest-level item in Academy, derived from a learning need. Made up of one or several courses.
+
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Lernplan
+  definition: Oberste Ebene in Academy. Leitet sich aus einem Lernbedarf ab. Besteht aus einem oder mehreren Kursen.  
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: 
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: leerplan
+  definition: Topnavigatie-item in Academy dat is afgeleid van een leerbehoefte. Bestaat uit een of meerdere cursussen.
+
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

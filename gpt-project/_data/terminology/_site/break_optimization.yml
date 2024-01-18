@@ -1,0 +1,56 @@
+domains: &domains [WFM]
+microcopy: &microcopy False
+en:
+  name: break optimization
+  definition: A function in WFM tools to rearrange break times and provide improved coverage in the schedule.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Pausenoptimierung
+  definition: Eine Funktion in WFM-Tools, um Pausenzeiten neu zu ordnen und eine bessere Deckung im Schichtplan zu erreichen.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: optimisation des pauses
+  definition: Fonction des outils de WFM permettant d’organiser les temps de pause et d’assurer une meilleure couverture dans le planning.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: ottimizzazione delle pause
+  definition: Funzione presente tra gli strumenti WFM che riorganizza le pause e garantisce una migliore copertura nella pianificazione.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: pauze-optimalisatie
+  definition: Een functie in WFM-tools om pauzetijden opnieuw te ordenen voor een betere dekking in het rooster.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

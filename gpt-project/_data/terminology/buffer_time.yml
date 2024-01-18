@@ -1,0 +1,57 @@
+---
+domains: &domains [Product]
+internal: &internal False
+en:
+  name: buffer time
+  definition: The amount of time after which an employee's status changes to out-of-adherence (in the Real-Time Adherence feature).
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Toleranzzeit
+  definition: Die Dauer, nach der ein Mitarbeiterstatus in In-Planabweichung wechselt (im Echtzeit-Adherence-Feature).
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: seuil de tolérance
+  definition: "Période de temps après laquelle le statut d’un employé passe «&nbsp;En dépassement&nbsp;» (dans la fonctionnalité Adhérence Temps Réel)."
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: periodo di tolleranza
+  definition: Lasso di tempo oltre il quale lo status di un dipendente diventa fuori aderenza (all'interno del componente Aderenza in Tempo Reale).
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: buffertijd
+  definition: De tijd waarna de status van een medewerker verandert in &nbsp;afwijking van planning&nbsp; (in de Real-Time Adherence-feature).
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

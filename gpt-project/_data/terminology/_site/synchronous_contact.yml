@@ -1,0 +1,59 @@
+---
+domains: &domains [WFM]
+microcopy: &microcopy False
+en:
+  name: synchronous contact
+  definition: Real-time contact between a customer and an employee, e.g. calls or webchats, as opposed to emails which can be answered at a later time.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms:
+  - abandoning contact
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Echtzeitkontakt
+  definition:  Echtzeitkontakt zwischen einem Kunden und einem Mitarbeiter, z.&nbsp;B. Anrufe oder Chats, im Gegensatz zu E-Mails, die später beantwortet werden können.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: 
+    - synchroner Kontakt
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: realtimecontact
+  definition: Direct contact tussen een klant en een medewerker, zoals een telefoongesprek of chats, in tegenstelling tot e-mails, die op een later moment beantwoord kunnen worden.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

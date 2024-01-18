@@ -1,0 +1,56 @@
+domains: &domains [Product]
+microcopy: &microcopy False
+en: 
+  name: lookback period
+  definition: 
+  example: injixo will automatically import updated historical data from your selected lookback period every 15 minutes.
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de: 
+  name: Rückblickperiode
+  definition:  
+  example: injixo importiert automatisch alle 15 Minuten aktualisierte historische Daten aus deiner gewählten Rückblickperiode.
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: Période rétrospective
+  definition:
+  example: injixo importe automatiquement les données historiques mises à jour toutes les 15 minutes à partir de la période rétrospective sélectionnée.
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: Periodo di retrospettiva
+  definition:
+  example: injixo importa automaticamente ogni 15 minuti i dati storici aggiornati del periodo di retrospettiva scelto.
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl: 
+  name: terugkijkperiode
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es: 
+  name: Período de retrospectiva
+  definition:
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

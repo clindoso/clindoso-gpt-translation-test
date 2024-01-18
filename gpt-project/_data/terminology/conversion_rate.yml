@@ -1,0 +1,59 @@
+---
+domains: &domains [Marketing]
+internal: &internal True
+en:
+  name: conversion rate
+  definition: Percentage of contacts that result in a sale.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Conversion Rate
+  definition: Prozentsatz der Kontakte, die im Laufe der Customer Journey zu Käufern werden.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms:
+  - Konversionsrate
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: taux de conversion
+  definition: Pourcentage de contacts qui aboutissent à une transaction.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: tasso di conversione
+  definition: La percentuale di contatti che si conclude con una vendita. 
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms:
+  - conversion rate
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: conversieratio
+  definition: Het percentage contacten dat resulteert in een aankoop.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

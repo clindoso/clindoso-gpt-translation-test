@@ -1,0 +1,59 @@
+---
+domains: &domains [Product]
+internal: &internal True
+en:
+  name: top-level navigation item
+  definition: A top-level navigation item is one of injixo's main functions, e.g. Forecast, Plan, Intraday, Analyze, Me.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms:
+  - Module
+  abbreviation:
+de:
+  name: Navigationselement auf erster Ebene
+  definition: Ein Navigationselement auf erster Ebene referenziert eine der Hauptfunktionen von injixo, z.&nbsp;B. Forecast, Plan, Intraday, Analyze, Me.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms:
+  - Modul
+  abbreviation:
+fr:
+  name: modules
+  definition: Les modules sont les fonctions du menu de navigation principal d’injixo, par exemple Forecast, Plan, Intraday, Analyze, Me.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: eerste navigatieniveau
+  definition: Een eerste navigatieniveau is een van de hoofdfuncties in injixo, bijvoorbeeld Forecast, Plan, Intraday, Analyze, Me.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

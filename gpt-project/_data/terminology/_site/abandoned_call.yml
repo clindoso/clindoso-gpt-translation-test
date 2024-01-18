@@ -1,0 +1,57 @@
+---
+domains: &domains [WFM]
+microcopy: &microcopy False
+en:
+  name: abandoned call
+  definition: Calls that are ended before being connected to an employee.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: abgebrochener Anruf
+  definition: Anruf, der beendet wird, bevor er zu einem Mitarbeiter durchgestellt wird.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: abandon d’appel
+  definition: Appel terminé avant que la mise en relation n’ait pu avoir lieu.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: chiamata abbandonata
+  definition: Chiamata terminata prima di essere trasferita a un dipendente.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: afgebroken oproep
+  definition: oproep die wordt afgebroken voordat de beller met een medewerker wordt verbonden.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: llamada abandonada
+  definition: Llamada finalizada antes de ser atendida por un agente.
+  example:
+  domain_ref: *domains
+  microcopy_ref: *microcopy
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

@@ -1,0 +1,60 @@
+---
+domains: &domains []
+internal: &internal False
+en:
+  name: e-learning
+  definition: Learning processes supported by digital media and/or tools.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms:
+    - elearning
+    - E-Learning
+  abbreviation:
+de:
+  name: E-Learning
+  definition: Durch digitale Medien und/oder Tools unterstützte Lernprozesse.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms:
+    - e-Learning
+  abbreviation:
+fr:
+  name: e-learning
+  definition: "Mode d’apprentissage basé sur l’utilisation de ressources et d’outils numériques."
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: e-learning
+  definition: Leerprocessen die worden ondersteund door digitale media en/of tools.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name:
+  definition:
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:

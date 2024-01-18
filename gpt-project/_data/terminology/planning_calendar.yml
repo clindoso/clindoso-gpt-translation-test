@@ -1,0 +1,58 @@
+
+---
+domains: &domains [Product]
+internal: &internal False
+en:
+  name: planning calendar
+  definition: A calendar in injixo where planners can use day types to mark days with opening hours or staff requirements that deviate from the standard. Planning calendars are used for scheduling purposes.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+de:
+  name: Planungskalender
+  definition: Ein Kalender in injixo, in dem Planer mittels Tagestypen Tage mit abweichenden Öffnungszeiten oder Mitarbeiterbedarf festlegen können. Planungskalender werden zur Schichtplanung verwendet.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+fr:
+  name: calendrier de planification
+  definition: Calendrier dans lequel les planificateurs peuvent utiliser des types de jours pour marquer les journées dont les horaires d'ouverture ou le besoin en personnel s'écartent des valeurs habituelles. Les calendriers de planification sont utilisés à des fins de planification.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+it:
+  name: calendario pianificativo
+  definition: Calendario in injixo all'interno del quale i pianificatori possono usare i tipi di giorno per contrassegnare i giorni con orari di apertura e fabbisogno di personale diversi dai valori tipici. I calendari pianificativi sono usati per la pianificazione. 
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+nl:
+  name: planningskalender
+  definition: Een kalender in injixo die planners kunnen gebruiken om dagen met afwijkende openingstijden of personeelsbehoeften te markeren. Planningskalenders worden gebruikt voor planningsdoeleinden. 
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
+es:
+  name: calendario de planificación
+  definition: Calendario en injixo en el que los planificadores pueden usar tipos de días para marcar días con horarios de apertura o requisitos de personal que se desvían del estándar. Estos calendarios se usan durante la planificación.
+  example:
+  domain_ref: *domains
+  internal_ref: *internal
+  allowed_synonyms: []
+  forbidden_synonyms: []
+  abbreviation:
