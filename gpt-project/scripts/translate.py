@@ -40,6 +40,7 @@ def read_and_parse_source(source):
     # Check if source path exists
     if not os.path.exists(source):
         print("Source file not found. Check the source file path entered.")
+        return None
 
     # Read source file
     with open(source, 'r') as file:
@@ -70,7 +71,7 @@ def initialize_language_model(lang):
         gpt_model = language_models[lang]["gpt-model"]
         tm_path = language_models[lang]["tm_path"]
     else:
-        print("""
+        raise ValueError("""
               You entered an invalid language code. Use one of the following:
               "de" for German
               "es" for Spanish
