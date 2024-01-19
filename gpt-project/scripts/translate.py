@@ -191,7 +191,7 @@ def translate_with_gpt(client, segment, language, gpt_model):
     response = client.chat.completions.create(
     model=gpt_model,
     messages=[
-        {"role": "system", "content": f"Given a sentence in Markdown format, translate the sentence to {language} keeping the style, tone, formatting, and terminology consistent and provide strictly just the translation."},
+        {"role": "system", "content": f"Given a sentence in Markdown format, translate the sentence to {language} keeping the style, tone, formatting, and terminology consistent and provide strictly just the translation in plain language."},
         {"role": "user", "content": segment}
       ]
     )

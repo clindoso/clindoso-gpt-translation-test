@@ -56,29 +56,18 @@ with open(tm_path, 'r', encoding='utf-8') as tm:
     for row in reader:
         segments.append((row['en'], row[args.lang]))
 
-# Create scraped segments file
-scraped_data = os.path.join(output_dir, f'en-{args.lang}_scraped_data.jsonl')
+# Define scraped data, train data and validation data file paths
+scraped_data_file_path = os.path.join(output_dir, f'en-{args.lang}_scraped_data.jsonl')
+train_data_file_path = os.path.join(output_dir, f'en-{args.lang}_train_data.jsonl')
+validation_data_file_path = os.path.join(output_dir, f'en-{args.lang}_validation_data.jsonl')
 
-# Write segment tuple content in the JSONL file.
-with open(scraped_data, 'w', encoding='utf-8') as scraped_data_file:
-    for term_pair in terms:
-        print(term_pair)
-        print(term_pair[0])
-        print(term_pair[1])
-        json_entry = {
-            "messages": [
-                {"role": "system", "content": f"Given a term in English, translate it into {language}. Provide only the term translation."},
-                {"role": "user", "content": term_pair[0]},
-                {"role": "assistant", "content": term_pair[1]}
-            ]
-        }
-        json.dump(json_entry, scraped_data_file, ensure_ascii=False)
-        scraped_data_file.write('\n')
+# Write segment tuple content into scraped data file
+with open(scraped_data_file_path, 'w', encoding='utf-8') as scraped_data_file:
     for segment_pair in segments:
         json_entry = {
             "messages": [
-                {"role": "system", "content": "You are a translation assistant."},
-                {"role": "user", "content": f"The following English text between triple back quotes is in Markdown format with Kramdown tags, translate it {language} using plain language and keeping style, tone, formatting, and terminology: ```{segment_pair[0]}```"},
+                {"role": "system", "content": f"Given a sentence in Markdown format, translate the sentence to {language} keeping the style, tone, formatting, and terminology consistent and provide just the translation in plain language."},
+                {"role": "user", "content": segment_pair[0]},
                 {"role": "assistant", "content": segment_pair[1]}
             ]
         }
@@ -87,24 +76,33 @@ with open(scraped_data, 'w', encoding='utf-8') as scraped_data_file:
 
 
 # Split scraped segments into training and validation sets
-with open (scraped_data, 'r', encoding='utf-8') as scraped_data_file:
+with open (scraped_data_file_path, 'r', encoding='utf-8') as scraped_data_file:
     data = [json.loads(line) for line in scraped_data_file]
 
 # Splitting into train and validation sets (80:20 ratio)
 train_data, validation_data = train_test_split(data, test_size=0.2, random_state=42)
 
-# Write train data to a new file
-train_file = os.path.join(output_dir, f'en-{args.lang}_train_data.jsonl')
-with open(train_file, 'w', encoding='utf-8') as train_file:
-    for entry in train_data:
-        json.dump(entry, train_file, ensure_ascii=False)
-        train_file.write('\n')
+# Write segment and term train data to train data file
+with open(train_data_file_path, 'w', encoding='utf-8') as train_data_file:
+    for term_pair in terms:
+        json_entry = {
+            "messages": [
+                {"role": "system", "content": f"Given a term in English, translate it into {language}. Provide only the term translation."},
+                {"role": "user", "content": term_pair[0]},
+                {"role": "assistant", "content": term_pair[1]}
+            ]
+        }
+        json.dump(json_entry, train_data_file, ensure_ascii=False)
+        train_data_file.write('\n')
 
-# Write validation data to a new file
-validation_file = os.path.join(output_dir, f'en-{args.lang}_validation_data.jsonl')
-with open(validation_file, 'w', encoding='utf-8') as validation_file:
+    for entry in train_data:
+        json.dump(entry, train_data_file, ensure_ascii=False)
+        train_data_file.write('\n')
+
+# Write segment validation data to validation data file
+with open(validation_data_file_path, 'w', encoding='utf-8') as validation_data_file:
     for entry in validation_data:
-        json.dump(entry, validation_file, ensure_ascii=False)
-        validation_file.write('\n')
-scraped_data_directory = os.path.dirname(scraped_data)
+        json.dump(entry, validation_data_file, ensure_ascii=False)
+        validation_data_file.write('\n')
+scraped_data_directory = os.path.dirname(scraped_data_file_path)
 print(f"The data was written to {scraped_data_directory}")

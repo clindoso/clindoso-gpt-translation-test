@@ -7,7 +7,7 @@ import yaml
 def process_file(file_path, lang, source_lang='en'):
     """
     Process a single YAML file and extract the terms in English and in a target language.
-    Returns a list of terms in English and target language as tuples.
+    Returns the term in English and target language as a tuple.
     """
     with open(file_path, 'r') as file:
         data = yaml.safe_load(file)
@@ -20,6 +20,10 @@ def process_file(file_path, lang, source_lang='en'):
     return term_tuple
 
 def extract_terms(termbase_directory, lang):
+    """
+    Process a YAML files from a directory and extract the terms in English and in a target language.
+    Returns a list of terms in English and target language as tuples.
+    """
     term_tuples = []
     for filename in os.listdir(termbase_directory):
         if filename.endswith('.yml'):
