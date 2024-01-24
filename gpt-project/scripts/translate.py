@@ -9,8 +9,10 @@ from openai import OpenAI
 # The script takes two arguments, --lang and--source, respectively the target language and the source file to be translated.
 
 def initialize_open_ai_client():
-    # Initialize OpenAI client using API key
-    # Returns the client object if the key is found, otherwise raises error
+    """
+    Initialize OpenAI client using API key
+    Returns the client object if the key is found, otherwise raises error
+    """
     api_key = os.environ.get("OPENAI_API_KEY")
     if not api_key:
         raise EnvironmentError("OPENAI_API_KEY environment variable not found.")
