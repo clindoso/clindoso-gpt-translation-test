@@ -41,7 +41,7 @@ if args.lang in languages_dict:
     language = languages_dict[args.lang]["language"]
     tm_path = languages_dict[args.lang]["tm_path"]
 else:
-    raise ValueError(f"This script does not support {args.lang}. Enter one of the following language abbreviations: de, es, fr, it, nl.")
+    raise ValueError(f"This script does not support {args.lang}. Enter one of the supported languages are de (German), es (Spanish), fr (French), it (Italian), nl (Dutch).")
 
 # Extract terms from the TB
 
@@ -56,34 +56,16 @@ with open(tm_path, 'r', encoding='utf-8') as tm:
     for row in reader:
         segments.append((row['en'], row[args.lang]))
 
-# Define scraped data, train data and validation data file paths
-scraped_data_file_path = os.path.join(output_dir, f'en-{args.lang}_scraped_data.jsonl')
+# Split into train and validation sets (80:20 ratio)
+train_data, validation_data = train_test_split(segments, test_size=0.2, random_state=42)
+
+# Define train data and validation data file paths
 train_data_file_path = os.path.join(output_dir, f'en-{args.lang}_train_data.jsonl')
 validation_data_file_path = os.path.join(output_dir, f'en-{args.lang}_validation_data.jsonl')
 
-# Write segment tuple content into scraped data file
-with open(scraped_data_file_path, 'w', encoding='utf-8') as scraped_data_file:
-    for segment_pair in segments:
-        json_entry = {
-            "messages": [
-                {"role": "system", "content": f"Given a sentence in Markdown format, translate the sentence to {language} keeping the style, tone, formatting, and terminology consistent and provide just the translation in plain language."},
-                {"role": "user", "content": segment_pair[0]},
-                {"role": "assistant", "content": segment_pair[1]}
-            ]
-        }
-        json.dump(json_entry, scraped_data_file, ensure_ascii=False)
-        scraped_data_file.write('\n')
-
-
-# Split scraped segments into training and validation sets
-with open (scraped_data_file_path, 'r', encoding='utf-8') as scraped_data_file:
-    data = [json.loads(line) for line in scraped_data_file]
-
-# Splitting into train and validation sets (80:20 ratio)
-train_data, validation_data = train_test_split(data, test_size=0.2, random_state=42)
-
-# Write segment and term train data to train data file
+# Create train data file
 with open(train_data_file_path, 'w', encoding='utf-8') as train_data_file:
+    # Write terms into train data file
     for term_pair in terms:
         json_entry = {
             "messages": [
@@ -94,15 +76,31 @@ with open(train_data_file_path, 'w', encoding='utf-8') as train_data_file:
         }
         json.dump(json_entry, train_data_file, ensure_ascii=False)
         train_data_file.write('\n')
-
-    for entry in train_data:
-        json.dump(entry, train_data_file, ensure_ascii=False)
+    # Write train segment tuple content into train data file
+    for segment_pair in train_data:
+        json_entry = {
+            "messages": [
+                {"role": "system", "content": f"Given a sentence in Markdown format, translate the sentence to {language} keeping the style, tone, formatting, and terminology consistent and provide just the translation in plain language."},
+                {"role": "user", "content": segment_pair[0]},
+                {"role": "assistant", "content": segment_pair[1]}
+            ]
+        }
+        json.dump(json_entry, train_data_file, ensure_ascii=False)
         train_data_file.write('\n')
 
-# Write segment validation data to validation data file
+# Create validation data file
 with open(validation_data_file_path, 'w', encoding='utf-8') as validation_data_file:
-    for entry in validation_data:
-        json.dump(entry, validation_data_file, ensure_ascii=False)
-        validation_data_file.write('\n')
-scraped_data_directory = os.path.dirname(scraped_data_file_path)
-print(f"The data was written to {scraped_data_directory}")
+    # Write validation segment tuple content into validation data file
+    for segment_pair in validation_data:
+        json_entry = {
+            "messages": [
+                {"role": "system", "content": f"Given a sentence in Markdown format, translate the sentence to {language} keeping the style, tone, formatting, and terminology consistent and provide just the translation in plain language."},
+                {"role": "user", "content": segment_pair[0]},
+                {"role": "assistant", "content": segment_pair[1]}
+            ]
+        }
+        json.dump(json_entry, validation_data_file, ensure_ascii=False)
+
+data_directory = os.path.dirname(train_data_file_path)
+
+print(f"The data was written to {data_directory}")
