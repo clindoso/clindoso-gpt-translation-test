@@ -1,0 +1,28 @@
+<h2 id="overview">Overview</h2>
+<p><code class="language-plaintext highlighter-rouge">prompt_scraper.py</code> is designed to process articles and convert them into prompts suitable for OpenAI’s language models. It supports specifying a target language for the prompts.</p>
+
+<h2 id="requirements">Requirements</h2>
+<ul>
+  <li>Python 3.x</li>
+  <li><code class="language-plaintext highlighter-rouge">sklearn</code> library</li>
+  <li>Access to a directory with article data</li>
+</ul>
+
+<h2 id="usage">Usage</h2>
+<p>Run the script with the optional <code class="language-plaintext highlighter-rouge">--lang</code> argument to set the target language:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python prompt_scraper.py --lang [LANGUAGE_CODE]
+</code></pre></div></div>
+<p>If no language is specified, a default may be used.</p>
+
+<h2 id="functionality">Functionality</h2>
+<ul>
+  <li><strong>Argument Parsing</strong>: Allows the user to specify the target language for the prompts.</li>
+  <li><strong>Article Reading</strong>: Reads articles from a predefined base directory.</li>
+  <li><strong>Prompt Conversion</strong>: Converts the articles into a format suitable as prompts for OpenAI’s API.</li>
+  <li><strong>Data Splitting</strong>: Splits the data into training and testing sets.</li>
+</ul>
+
+<h2 id="example">Example</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python prompt_scraper.py --lang en
+</code></pre></div></div>
+<p>This command processes articles into English prompts for OpenAI’s models.</p>

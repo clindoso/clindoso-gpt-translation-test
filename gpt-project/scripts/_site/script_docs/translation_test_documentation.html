@@ -1,0 +1,27 @@
+<h2 id="overview">Overview</h2>
+<p><code class="language-plaintext highlighter-rouge">translation_test.py</code> is a script for translating entire articles from English to a specified target language using OpenAI’s ChatGPT.</p>
+
+<h2 id="requirements">Requirements</h2>
+<ul>
+  <li>Python 3.x</li>
+  <li><code class="language-plaintext highlighter-rouge">openai</code> Python package</li>
+  <li>An OpenAI API key set as an environment variable</li>
+</ul>
+
+<h2 id="usage">Usage</h2>
+<p>The script requires two command-line arguments: <code class="language-plaintext highlighter-rouge">--lang</code> for the target language and <code class="language-plaintext highlighter-rouge">--source</code> for the source file path.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python translation_test.py --lang [TARGET_LANGUAGE] --source [FILE_PATH]
+</code></pre></div></div>
+
+<h2 id="functionality">Functionality</h2>
+<ul>
+  <li><strong>OpenAI API Integration</strong>: Uses the OpenAI API for translation tasks.</li>
+  <li><strong>Argument Parsing</strong>: Parses <code class="language-plaintext highlighter-rouge">--lang</code> and <code class="language-plaintext highlighter-rouge">--source</code> arguments for language selection and source file specification.</li>
+  <li><strong>Translation</strong>: Translates the content of the specified file from English to the target language.</li>
+  <li><strong>Time Tracking</strong>: Measures the duration of the translation process.</li>
+</ul>
+
+<h2 id="example">Example</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python translation_test.py --lang de --source ./example.txt
+</code></pre></div></div>
+<p>This command translates the content of <code class="language-plaintext highlighter-rouge">example.txt</code> from English to German.</p>
