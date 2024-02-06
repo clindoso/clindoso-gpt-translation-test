@@ -1,0 +1,26 @@
+<h2 id="overview">Overview</h2>
+<p><code class="language-plaintext highlighter-rouge">aligner.py</code> is a Python script used for creating Translation Memory (TM) files in CSV format. The script aligns English source text with its translations in a specified target language.</p>
+
+<h2 id="requirements">Requirements</h2>
+<ul>
+  <li>Python 3.x</li>
+  <li>Access to a directory containing English text files</li>
+</ul>
+
+<h2 id="usage">Usage</h2>
+<p>To use <code class="language-plaintext highlighter-rouge">aligner.py</code>, run it from the command line with the required argument:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python aligner.py --lang [TARGET_LANGUAGE]
+</code></pre></div></div>
+<p>Replace <code class="language-plaintext highlighter-rouge">[TARGET_LANGUAGE]</code> with the desired target language code (e.g., ‘es’ for Spanish).</p>
+
+<h2 id="functionality">Functionality</h2>
+<ul>
+  <li><strong>Argument Parsing</strong>: Parses the command-line argument <code class="language-plaintext highlighter-rouge">--lang</code> to determine the target language.</li>
+  <li><strong>File Processing</strong>: Reads English text files from a specified source directory.</li>
+  <li><strong>CSV Creation</strong>: Generates a CSV file where each row contains a snippet of English text and its corresponding translation in the target language.</li>
+</ul>
+
+<h2 id="example">Example</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python aligner.py --lang fr
+</code></pre></div></div>
+<p>This command will process English text files and create a French translation memory in CSV format.</p>
