@@ -121,7 +121,7 @@ def pattern_replacer(file1_lines, file2_lines):
     return replaced_lines1, replaced_lines2
 
     
-def split_line(file1_lines, file2_lines):
+def split_lines(file1_lines, file2_lines):
     period_pattern = r'(\.\s)'
 
     # Define new lists for processed lines
@@ -138,41 +138,84 @@ def split_line(file1_lines, file2_lines):
                 split_file2_lines.append(line2)
             # Process lines with different amount of sentences
             else:
-                # Split segments
-                split_segment1 = line1.split(period_pattern)
-                split_segment2 = line2.split(period_pattern)
+                # Use re.split() to split the line and retain delimiters
+                split_segment1 = re.split(period_pattern, line1)
+                split_segment2 = re.split(period_pattern, line2)
+                
+                # After splitting, delimiters will be included in the list as separate items
+                # Here, we recombine sentences with their trailing delimiter
+                recombined_segment1 = [split_segment1[i] + (split_segment1[i+1] if i+1 < len(split_segment1) else '') for i in range(0, len(split_segment1), 2)]
+                recombined_segment2 = [split_segment2[i] + (split_segment2[i+1] if i+1 < len(split_segment2) else '') for i in range(0, len(split_segment2), 2)]    
                 
                 # Calculate segment lengths
-                lengths1 = [len(sentence) for sentence in split_segment1]
-                lengths2 = [len(sentence) for sentence in split_segment2]
+                lengths1 = [len(sentence) for sentence in recombined_segment1]
+                lengths2 = [len(sentence) for sentence in recombined_segment2]
                 
                 # Normalize lenghts
                 normalized_lengths1 = [length/sum(lengths1) for length in lengths1]
                 normalized_lengths2 = [length/sum(lengths2) for length in lengths2]
                 
+                max_sentences_in_paragraph = max([len(normalized_lengths1), len(normalized_lengths2)])
                 # Compare normalized lenghts
-                for i in range(max([len(normalized_lengths1), len(normalized_lengths2)])):
-                    if normalized_lengths1[i] and normalized_lengths2[i]:
-                        if normalized_lengths1[i]/normalized_lengths2[i] < 0.8:
-                            split_file1_lines.append(split_segment1[i] + split_segment1[i + 1])
-                            split_file2_lines.append(split_segment2[i])
-                            for y in range((i+1, max([len(normalized_lengths1), len(normalized_lengths2)]))):
-                                split_file1_lines[y] = split_file1_lines[y+1]
-                        elif 1.2 > normalized_lengths1[i]/normalized_lengths2[i] > 0.8:
-                            split_file1_lines.append(split_segment1[i])
-                            split_file2_lines.append(split_segment2[i])
+                for i in range(max_sentences_in_paragraph):
+                    # Check if 'i' is within both lists' bounds
+                    if i < len(normalized_lengths1) and i < len(normalized_lengths2):
+                        ratio = normalized_lengths1[i] / normalized_lengths2[i] if normalized_lengths2[i] != 0 else float('inf')
+                        # Handling the case when the ratio is less than 0.8
+                        if ratio < 0.8:
+                            if i < len(recombined_segment1) - 1:  # Ensure i+1 is within bounds for recombined_segment1
+                                split_file1_lines.append(recombined_segment1[i] + recombined_segment1[i + 1])
+                            else:
+                                split_file1_lines.append(recombined_segment1[i])
+                            split_file2_lines.append(recombined_segment2[i])
+                        # Handling cases when the ratio is between 0.8 and 1.2
+                        elif 0.8 <= ratio <= 1.2:
+                            split_file1_lines.append(recombined_segment1[i])
+                            split_file2_lines.append(recombined_segment2[i])
+                        # Handling the case when the ratio is not within the specified ranges
                         else:
-                            split_file1_lines.append(split_segment1[i])
-                            split_file2_lines.append(split_segment2[i] + split_segment2[i + 1])
-                            for y in range((i+1, max([len(normalized_lengths1), len(normalized_lengths2)]))):
-                                split_file2_lines[y] = split_file2_lines[y+1]
+                            split_file1_lines.append(recombined_segment1[i])
+                            if i < len(recombined_segment2) - 1:  # Ensure i+1 is within bounds for recombined_segment2
+                                split_file2_lines.append(recombined_segment2[i] + recombined_segment2[i + 1])
+                            else:
+                                split_file2_lines.append(recombined_segment2[i])
 
         else:
             split_file1_lines.append(line1)
             split_file2_lines.append(line2)
+
+    return split_file1_lines, split_file2_lines
         
 def pattern_restorer(file1_lines, file2_lines):
-    pass
+    # Patterns to restore, with their placeholders
+    patterns = {
+        'z.&nbsp;B.': "{PLACEHOLDER_ZB}",
+        'd.&nbsp;h.': "{PLACEHOLDER_DH}",
+        'i.e.': "{PLACEHOLDER_IE}",
+        'e.g.': "{PLACEHOLDER_EG}",
+        'u.U.': "{PLACEHOLDER_UU}",
+        'u.a.': "{PLACEHOLDER_UA}",
+        'p.&nbsp;ej.': "{PLACEHOLDER_PEJ}",
+        'etc. ': "{PLACEHOLDER_ETC}"
+    }
+
+    restored_file1_lines = []
+    restored_file2_lines = []
+
+    for line in file1_lines:
+        restored_line = line
+        for pattern, placeholder in patterns:
+            restored_line = line.replace(placeholder, pattern)
+        restored_file1_lines.append(restored_line)
+    
+    for line in file2_lines:
+        restored_line = line
+        for pattern, placeholder in patterns:
+            restored_line = line.replace(placeholder, pattern)
+        restored_file2_lines.append(restored_line)
+    
+    return restored_file1_lines, restored_file2_lines
+
 # List for possibly not aligned articles
 not_aligned_articles = []
 aligned_qtt = 0
