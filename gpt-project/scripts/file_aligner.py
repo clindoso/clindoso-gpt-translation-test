@@ -21,11 +21,10 @@ split_file_path = [seg for seg in args.file.split('/') if seg]
 file_name = split_file_path[-1]
 
 # Read and return file content in a list
-def read_and_split_file(file_path):
+def read_and_split_file(source_file_path):
     try:
-        with open(file_path, 'r', encoding='utf-8') as file:
+        with open(source_file_path, 'r', encoding='utf-8') as file:
             lines = file.readlines()
-
         # Flag to check if we are inside the frontmatter
         in_frontmatter = False
         result = []
@@ -64,72 +63,58 @@ def clear_csv_content(file_path):
     with open(file_path, 'w') as file:
         pass
 
-# Delete existing TM
-clear_csv_content(output_filepath)
+# Patterns to ignore, with their placeholders
+patterns_to_replace = {
+    re.compile(r'z\.&nbsp;B\.'): "{PLACEHOLDER_ZB}",
+    re.compile(r'd\.&nbsp;h\.'): "{PLACEHOLDER_DH}",
+    re.compile(r'i\.e\.'): "{PLACEHOLDER_IE}",
+    re.compile(r'e\.g\.'): "{PLACEHOLDER_EG}",
+    re.compile(r'u\.U\.'): "{PLACEHOLDER_UU}",
+    re.compile(r'u\.a\.'): "{PLACEHOLDER_UA}",
+    re.compile(r'p\.&nbsp;ej\.'): "{PLACEHOLDER_PEJ}",
+    re.compile(r'etc.\s?$'): "{PLACEHOLDER_ETC}"
+}
 
-# Function to replace patterns
-def replace_patterns(etc_pattern, etc_placeholder, patterns, line):
-    # Replace specifed patterns in line
-    line = etc_pattern.sub(etc_placeholder, line)
-    for pattern, placeholder in patterns.items():
-        line = line.replace(pattern, placeholder)
-    return line
+patterns_to_restore = {
+    "{PLACEHOLDER_ZB}": 'z.&nbsp;B.',
+    "{PLACEHOLDER_DH}": 'd.&nbsp;h.',
+    "{PLACEHOLDER_IE}": 'i.e.',
+    "{PLACEHOLDER_EG}": 'e.g.',
+    "{PLACEHOLDER_UU}": 'u.U.',
+    "{PLACEHOLDER_UA}": 'u.a.',
+    "{PLACEHOLDER_PEJ}": 'p.&nbsp;ej.',
+    "{PLACEHOLDER_ETC}": 'etc. '
+}
 
-# Function to restore patterns
-def restore_patterns(patterns, etc_placeholder, etc_string, line):
-    # Restore original patterns
-    for pattern, placeholder in patterns.items():
-        line = line.replace(placeholder, pattern)
-    line = re.sub(etc_placeholder, etc_string, line)
-    return line
-
-# Define sentence splitter
-
-def pattern_replacer(file1_lines, file2_lines):
-    # Patterns to ignore, with their placeholders
-    pattern_zb = re.compile(r'z\.&nbsp;B\.')
-    pattern_dh = re.compile(r'd\.&nbsp;h\.')
-    pattern_ie = re.compile(r'i\.e\.')
-    pattern_eg = re.compile(r'e\.g\.')
-    pattern_uu = re.compile(r'u\.U\.')
-    pattern_ua = re.compile(r'u\.a\.')
-    pattern_pej = re.compile(r'p\.&nbsp;ej\.')
-    pattern_etc = re.compile(r'etc.\s?$')
-    patterns = {
-        pattern_zb: "{PLACEHOLDER_ZB}",
-        pattern_dh: "{PLACEHOLDER_DH}",
-        pattern_ie: "{PLACEHOLDER_IE}",
-        pattern_eg: "{PLACEHOLDER_EG}",
-        pattern_uu: "{PLACEHOLDER_UU}",
-        pattern_ua: "{PLACEHOLDER_UA}",
-        pattern_pej: "{PLACEHOLDER_PEJ}",
-        pattern_etc: "{PLACEHOLDER_ETC}"
-    }
+# Define pattern replacer
+def pattern_replacer(file1_lines, file2_lines, patterns_to_replace):
 
     # Initiate segment lists for list with replaced patterns
     replaced_lines1 = []
     replaced_lines2 = []
+
     # Iterate over lines in target and source languages
     for line1, line2 in zip(file1_lines, file2_lines):
         # Iterate over patterns in the segment
-        for pattern, placeholder in patterns:
-            replaced_line1 = line1.replace(pattern, placeholder)
-            replaced_line2 = line2.replace(pattern, placeholder)
+        for pattern, placeholder in patterns_to_replace.items():
+            replaced_line1 = pattern.sub(placeholder, line1)
+            replaced_line2 = pattern.sub(placeholder, line2)
+            line1 = replaced_line1
+            line2 = replaced_line2
         replaced_lines1.append(replaced_line1)
         replaced_lines2.append(replaced_line2)
 
     return replaced_lines1, replaced_lines2
 
     
-def split_lines(file1_lines, file2_lines):
-    period_pattern = r'(\.\s)'
+def line_splitter(file1_lines, file2_lines):
+    period_pattern = r'\.\s'
 
     # Define new lists for processed lines
     split_file1_lines = []
     split_file2_lines = []
         
     for line1, line2 in zip(file1_lines, file2_lines):
-
         # Split and equalize if necessary
         if line1.count('. ') != line2.count('. '):
             # Ignore cases in which one language has only one sentence
@@ -141,35 +126,50 @@ def split_lines(file1_lines, file2_lines):
                 # Use re.split() to split the line and retain delimiters
                 split_segment1 = re.split(period_pattern, line1)
                 split_segment2 = re.split(period_pattern, line2)
+
+                # Exclude the last empty string if any, caused by a period at the end
+                if split_segment1[-1] == '':
+                    split_segment1 = split_segment1[:-1]
+                if split_segment2[-1] == '':
+                    split_segment2 = split_segment2[:-1]
                 
                 # After splitting, delimiters will be included in the list as separate items
                 # Here, we recombine sentences with their trailing delimiter
-                recombined_segment1 = [split_segment1[i] + (split_segment1[i+1] if i+1 < len(split_segment1) else '') for i in range(0, len(split_segment1), 2)]
-                recombined_segment2 = [split_segment2[i] + (split_segment2[i+1] if i+1 < len(split_segment2) else '') for i in range(0, len(split_segment2), 2)]    
-                
+                # Re-combine the split segments with their delimiters
+                recombined_segment1 = [split_segment1[i] + '.' for i in range(len(split_segment1))]
+                recombined_segment2 = [split_segment2[i] + '.' for i in range(len(split_segment2))]
+
                 # Calculate segment lengths
                 lengths1 = [len(sentence) for sentence in recombined_segment1]
                 lengths2 = [len(sentence) for sentence in recombined_segment2]
-                
+                # Calculate total lengths
+                total_lengths1 = sum(lengths1)
+                total_lengths2 = sum(lengths2)
                 # Normalize lenghts
-                normalized_lengths1 = [length/sum(lengths1) for length in lengths1]
-                normalized_lengths2 = [length/sum(lengths2) for length in lengths2]
+                normalized_lengths1 = [length/total_lengths1 for length in lengths1]
+                normalized_lengths2 = [length/total_lengths2 for length in lengths2]
+                # Calculate normalized length ratios
+                ratios = [normalized_lengths1[i] / normalized_lengths2[i] if normalized_lengths2[i] != 0 else float('inf') for i in range(min(len(normalized_lengths1), len(normalized_lengths2)))]
                 
-                max_sentences_in_paragraph = max([len(normalized_lengths1), len(normalized_lengths2)])
                 # Compare normalized lenghts
-                for i in range(max_sentences_in_paragraph):
+                i = 0
+                while i < len(split_segment1) and i < len(split_segment2):
                     # Check if 'i' is within both lists' bounds
                     if i < len(normalized_lengths1) and i < len(normalized_lengths2):
-                        ratio = normalized_lengths1[i] / normalized_lengths2[i] if normalized_lengths2[i] != 0 else float('inf')
                         # Handling the case when the ratio is less than 0.8
-                        if ratio < 0.8:
+                        if ratios[i] < 0.8:
                             if i < len(recombined_segment1) - 1:  # Ensure i+1 is within bounds for recombined_segment1
                                 split_file1_lines.append(recombined_segment1[i] + recombined_segment1[i + 1])
+                                recombined_segment1 = recombined_segment1[:i + 1] + recombined_segment1[i + 2:]
+                                # Recalculate normalized lengths
+                                lengths1 = [len(sentence) for sentence in recombined_segment1]
+                                normalized_lengths1 = [length/total_lengths1 for length in lengths1]
+                                ratios = [normalized_lengths1[i] / normalized_lengths2[i] if normalized_lengths2[i] != 0 else float('inf') for i in range(min(len(normalized_lengths1), len(normalized_lengths2)))]
                             else:
                                 split_file1_lines.append(recombined_segment1[i])
                             split_file2_lines.append(recombined_segment2[i])
                         # Handling cases when the ratio is between 0.8 and 1.2
-                        elif 0.8 <= ratio <= 1.2:
+                        elif 0.8 <= ratios[i] <= 1.2:
                             split_file1_lines.append(recombined_segment1[i])
                             split_file2_lines.append(recombined_segment2[i])
                         # Handling the case when the ratio is not within the specified ranges
@@ -177,8 +177,12 @@ def split_lines(file1_lines, file2_lines):
                             split_file1_lines.append(recombined_segment1[i])
                             if i < len(recombined_segment2) - 1:  # Ensure i+1 is within bounds for recombined_segment2
                                 split_file2_lines.append(recombined_segment2[i] + recombined_segment2[i + 1])
+                                recombined_segment2 = recombined_segment2[:i + 1] + recombined_segment2[i + 2:]
+                                ratios = [normalized_lengths1[i] / normalized_lengths2[i] if normalized_lengths2[i] != 0 else float('inf') for i in range(min(len(normalized_lengths1), len(normalized_lengths2)))]
                             else:
                                 split_file2_lines.append(recombined_segment2[i])
+                    
+                    i += 1 # Move to the next pair of sentences
 
         else:
             split_file1_lines.append(line1)
@@ -186,79 +190,71 @@ def split_lines(file1_lines, file2_lines):
 
     return split_file1_lines, split_file2_lines
         
-def pattern_restorer(file1_lines, file2_lines):
-    # Patterns to restore, with their placeholders
-    patterns = {
-        'z.&nbsp;B.': "{PLACEHOLDER_ZB}",
-        'd.&nbsp;h.': "{PLACEHOLDER_DH}",
-        'i.e.': "{PLACEHOLDER_IE}",
-        'e.g.': "{PLACEHOLDER_EG}",
-        'u.U.': "{PLACEHOLDER_UU}",
-        'u.a.': "{PLACEHOLDER_UA}",
-        'p.&nbsp;ej.': "{PLACEHOLDER_PEJ}",
-        'etc. ': "{PLACEHOLDER_ETC}"
-    }
+def pattern_restorer(file1_lines, file2_lines, patterns_to_restore):
 
     restored_file1_lines = []
     restored_file2_lines = []
 
-    for line in file1_lines:
-        restored_line = line
-        for pattern, placeholder in patterns:
-            restored_line = line.replace(placeholder, pattern)
-        restored_file1_lines.append(restored_line)
-    
-    for line in file2_lines:
-        restored_line = line
-        for pattern, placeholder in patterns:
-            restored_line = line.replace(placeholder, pattern)
-        restored_file2_lines.append(restored_line)
+    for line1, line2 in zip(file1_lines, file2_lines):
+        for placeholder, pattern in patterns_to_restore.items():
+            line1 = line1.replace(placeholder, pattern)
+            line2 = line2.replace(placeholder, pattern)
+        restored_file1_lines.append(line1)
+        restored_file2_lines.append(line2)
     
     return restored_file1_lines, restored_file2_lines
 
-# List for possibly not aligned articles
-not_aligned_articles = []
-aligned_qtt = 0
-not_aligned_qtt = 0
 
 # Function to export to CSV
 def write_to_csv(file1_lines, file2_lines, source_filename, output_filepath):
-    global not_aligned_articles
-    global aligned_qtt
-    global not_aligned_qtt
+    """
+    Writes lines from two files to a CSV, including the source filename for each line.
+
+    Args:
+        file1_lines (list of str): Lines from the first file to be written to the CSV.
+        file2_lines (list of str): Lines from the second file to be written to the CSV.
+        source_filename (str): The name of the source file.
+        output_filepath (str): The path to the CSV file where the data is to be written.
+
+    The function assumes that the two files should have the same number of lines and
+    that a series of processing steps (pattern replacing, line splitting, and pattern
+    restoring) should be performed before writing the data to the CSV. If the number
+    of lines in both files does not match, it prints an error message.
+    """
 
     with open(output_filepath, 'a', newline='', encoding='utf-8') as csvfile:
         writer = csv.writer(csvfile)
 
+        # Write header row if the CSV file is empty
         if csvfile.tell() == 0:
             writer.writerow(['en', args.lang, 'file'])
 
         if len(file1_lines) == len(file2_lines):
-            file1_lines, file2_lines = sentence_splitter(file1_lines, file2_lines)
-            aligned_qtt += 1
+            # Process lines before writing
+            file1_lines, file2_lines = pattern_replacer(file1_lines, file2_lines, patterns_to_replace)
+            file1_lines, file2_lines = line_splitter(file1_lines, file2_lines)
+            file1_lines, file2_lines = pattern_restorer(file1_lines, file2_lines, patterns_to_restore)
             for line1, line2 in zip(file1_lines, file2_lines):
                 writer.writerow([line1, line2, source_filename])
         else:
-            not_aligned_qtt += 1
-            not_aligned_articles.append(source_filename)
+            print("The source and target files do not have the same amount of code lines. Check if they are up-to-date.")
         
 
+# Define extract file contents
+def extract_file_contents(file_path_source, output_filepath, file_name, lang, file_extension=".md"):
+    if file_path_source.endswith(file_extension):
+        file_path_target = file_path_source.replace("_en", "_" + lang)
+        print(file_path_target)
+        if os.path.exists(file_path_target):
+            source_file_content = read_and_split_file(file_path_source)
+            target_file_content = read_and_split_file(file_path_target)
+            write_to_csv(source_file_content, target_file_content, file_name, output_filepath)
+        else:
+            print(f"File does not exist in the {lang}.")
+
+# Delete existing TM
+clear_csv_content(output_filepath)
 # Extract file contents
-def extract_file_contents(directory, file_extension=".md"):
-    for root, dirs, files in os.walk(directory):
-        for file in files:
-            if file.endswith(file_extension):
-                file_path_source = os.path.join(root, file)
-                file_path_target = file_path_source.replace("_en", "_" + args.lang)
-                if os.path.exists(file_path_target):
-                    file_content_en = read_and_split_file(file_path_source)
-                    file_content_tl = read_and_split_file(file_path_target)
-                    write_to_csv(file_content_en, file_content_tl, file, output_filepath)
+extract_file_contents(args.file, output_filepath, file_name, args.lang)
 
-extract_file_contents(source_directory)
-
-print(f"Aligned articles: {aligned_qtt}")
-print(f"Not aligned articles: {not_aligned_qtt}")
-print("The following articles might not be up to date:")
-for article in not_aligned_articles:
-    print(article)
+print(f"Aligned article is : {output_filepath}")
