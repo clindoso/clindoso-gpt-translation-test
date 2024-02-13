@@ -113,17 +113,20 @@ def line_splitter(file1_lines, file2_lines):
     # Define new lists for processed lines
     split_file1_lines = []
     split_file2_lines = []
-        
+    
+    # Iterate over the segment pair
     for line1, line2 in zip(file1_lines, file2_lines):
-        # Split and equalize if necessary
-        if line1.count('. ') != line2.count('. '):
+        # Check if segments have the same amount of periods
+        if line1.count('.') != line2.count('.'):
+            # If they have a different amount of periods
             # Ignore cases in which one language has only one sentence
-            if line1.count('. ') == 1 or line2.count('. ') == 1:
+            if line1.count('.') == 1 or line2.count('.') == 1:
                 split_file1_lines.append(line1)
                 split_file2_lines.append(line2)
+                
             # Process lines with different amount of sentences
             else:
-                # Use re.split() to split the line and retain delimiters
+                # Use re.split() to split the line
                 split_segment1 = re.split(period_pattern, line1)
                 split_segment2 = re.split(period_pattern, line2)
 
@@ -136,8 +139,8 @@ def line_splitter(file1_lines, file2_lines):
                 # After splitting, delimiters will be included in the list as separate items
                 # Here, we recombine sentences with their trailing delimiter
                 # Re-combine the split segments with their delimiters
-                recombined_segment1 = [split_segment1[i] + '.' for i in range(len(split_segment1))]
-                recombined_segment2 = [split_segment2[i] + '.' for i in range(len(split_segment2))]
+                recombined_segment1 = [split_segment1[i] + '.' if not split_segment1[i].endswith('.') else split_segment1[i] for i in range(len(split_segment1))]
+                recombined_segment2 = [split_segment2[i] + '.' if not split_segment2[i].endswith('.') else split_segment2[i] for i in range(len(split_segment2))]
 
                 # Calculate segment lengths
                 lengths1 = [len(sentence) for sentence in recombined_segment1]
@@ -183,10 +186,41 @@ def line_splitter(file1_lines, file2_lines):
                                 split_file2_lines.append(recombined_segment2[i])
                     
                     i += 1 # Move to the next pair of sentences
-
+        
+        # If they have the same amount of periods
         else:
-            split_file1_lines.append(line1)
-            split_file2_lines.append(line2)
+            # Check if they have more than one period
+            if line1.count('.') > 1 or line2.count('.') > 1:
+                print(f"Non-split: {line1}\n", f"Non-split: {line2}\n")
+                # Split segments by period
+                split_segment1 = re.split(period_pattern, line1)
+                split_segment2 = re.split(period_pattern, line2)
+                print(f"Split: {split_segment1}\n", f"Split: {split_segment2}\n")
+
+                # Exclude the last empty string if any, caused by a period at the end
+                if split_segment1[-1] == '':
+                    split_segment1 = split_segment1[:-1]
+                if split_segment2[-1] == '':
+                    split_segment2 = split_segment2[:-1]
+                
+                # After splitting, delimiters will be included in the list as separate items
+                # Here, we recombine sentences with their trailing delimiter
+                # Re-combine the split segments with their delimiters
+                recombined_segment1 = [split_segment1[i] + '.' if not split_segment1[i].endswith('.') else split_segment1[i] for i in range(len(split_segment1))]
+                recombined_segment2 = [split_segment2[i] + '.' if not split_segment2[i].endswith('.') else split_segment2[i] for i in range(len(split_segment2))]
+
+                print(f"Recombined: {recombined_segment1}\n", f"Recombined: {recombined_segment2}\n")
+
+                # Append recombined segments separately
+                j = 0
+                while j < len(recombined_segment1) and j < len(recombined_segment2):
+                    split_file1_lines.append(recombined_segment1[j])
+                    split_file2_lines.append(recombined_segment2[j])
+                    j += 1
+
+            else:
+                split_file1_lines.append(line1)
+                split_file2_lines.append(line2)
 
     return split_file1_lines, split_file2_lines
         
