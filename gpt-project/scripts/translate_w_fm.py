@@ -197,7 +197,7 @@ def translate_with_gpt(client, segment, language, gpt_model):
 
     return translated_segment
 
-def process_frontmatter(frontmatter_segments, language_code):
+def process_frontmatter(frontmatter_segments, lang):
     """
     Processes the frontmatter of a document, translating 'title' and 'description'
     fields while leaving their labels and other metadata unchanged.
@@ -214,12 +214,12 @@ def process_frontmatter(frontmatter_segments, language_code):
         if line.startswith('title: '):
             # Extract the title text and translate it
             title_text = line[len('title: '):]
-            translated_title = translate_text(title_text, language_code)
+            translated_title = translate_text(title_text, lang)
             processed_line = 'title: ' + translated_title
         elif line.startswith('description: '):
             # Extract the description text and translate it
             description_text = line[len('description: '):]
-            translated_description = translate_text(description_text, language_code)
+            translated_description = translate_text(description_text, lang)
             processed_line = 'description: ' + translated_description
         else:
             # No translation needed; reproduce the line unchanged
@@ -227,7 +227,7 @@ def process_frontmatter(frontmatter_segments, language_code):
         processed_frontmatter.append(processed_line)
     return processed_frontmatter
 
-def translate_article(client, language, source_text, tm_dict, gpt_model):
+def translate_article(client, language, source_text, tm_dict, gpt_model, lang):
     """
     Translates the content of the source file using the specified language model.
 
@@ -241,6 +241,8 @@ def translate_article(client, language, source_text, tm_dict, gpt_model):
     Returns:
         list: List of tuples with source and translated segments.
     """
+    # Initialize empty list to store frontmatter segments
+    front_matter_segments = []
 
     # Initialize empty list to store translated segments from the article
     translated_segments = []
@@ -259,15 +261,17 @@ def translate_article(client, language, source_text, tm_dict, gpt_model):
 
         # Check if segment is the start or end of the frontmatter
         if segment == '---':
-            translated_segments.append((segment, segment))
+            front_matter_segments.append((segment, segment))
             # Change flag after finding start or end of the frontmatter
             in_frontmatter = not in_frontmatter
             continue
 
-        # Reproduce frontmatter in the target file - THIS PART NEEDS TO BE CHANGED FOR FRONTMATTER TRANSLATION
+        # Reproduce frontmatter in the target file
         elif in_frontmatter:
-            translated_segments.append((segment, segment))
+            front_matter_segments.append((segment, segment))
             continue
+        
+        translated_frontmatter = process_frontmatter(front_matter_segments, lang)
 
         # Check commented out segment in English
         if segment.startswith("<!--"):
@@ -306,6 +310,9 @@ def translate_article(client, language, source_text, tm_dict, gpt_model):
                 gpt_translation_dict[segment] = translated_segment
                 translated_segments.append((segment, translated_segment + " <!-- GPT translation -->"))
             
+    # Prepends translated frontmatter segments to translated segments
+    translated_segments = translated_frontmatter + translated_segments
+
     # Return list of tuples with source and target segments
     return translated_segments
 
@@ -422,7 +429,7 @@ def main():
     source_text = load_source_file_segments(source)
 
     # Perform the translation
-    translated_segments = translate_article(client, language, source_text, tm_dict, gpt_model)
+    translated_segments = translate_article(client, language, source_text, tm_dict, gpt_model, lang)
 
     # Create list with translated frontmatter
     translated_frontmatter = extract_translated_frontmatter(translated_segments)
