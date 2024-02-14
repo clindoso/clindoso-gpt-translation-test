@@ -48,7 +48,7 @@ def load_source_file_segments(source):
     with open(source, 'r') as file:
         file_content = file.read()
     
-    # Split text into segmetns
+    # Split text into segments
     source_text = file_content.splitlines()
 
     return source_text
@@ -122,7 +122,8 @@ def check_gpt_translations(segment, gpt_translation_dict):
         tuple or None: The GPT translation if available, else None.
     """
     if segment in gpt_translation_dict:
-        return (segment, gpt_translation_dict[segment] + " <!-- Repetition of GPT translation")
+        print(f"Repetition: " + segment + " - " + gpt_translation_dict[segment])
+        return (segment, gpt_translation_dict[segment] + f" <!-- Repetition of GPT translation {segment}")
     return None
 
 def handle_fuzzy_matches(segment, tm_dict, tm_segments_lengths):
@@ -197,35 +198,76 @@ def translate_with_gpt(client, segment, language, gpt_model):
 
     return translated_segment
 
-def process_frontmatter(frontmatter_segments, lang):
+def translate_segment(segment, tm_dict, gpt_translation_dict, language, gpt_model, client):
     """
-    Processes the frontmatter of a document, translating 'title' and 'description'
+    Translate a single text segment using a translation memory (TM)
+    and generative translation
+
+    Parameters:
+    - segment: Text segment to be transalted.
+    - tm_dict: Dictionary containing existing translations in TM.
+    - gpt_translation_dict: Dictionary containing target language segments translated by GPT.
+    - language: Target language for translation.
+    - gpt_model: GPT model to be used for translation.
+    - client: Client object to interact with OpenAI API.
+
+    Returns:
+    - A tuple containing the original segment and its translation.
+    """
+    # Pre-calculate TM segments lengths for fuzzy match calculation
+    tm_segments_lengths = {tm_segment:len(tm_segment) for tm_segment in tm_dict}
+
+    # Check for existing translation in TM
+    if segment in tm_dict:
+        return (segment, tm_dict[segment] + " <!-- TM 100 -->")
+    
+    # Check for existing GPT translation
+    elif segment in gpt_translation_dict:
+        print("############\n" + segment)
+        return (segment, gpt_translation_dict[segment] + " <!-- Repetition of GPT translation")
+    
+    # Handle untranslated segments
+    else:
+        fuzzy_match = handle_fuzzy_matches(segment, tm_dict, tm_segments_lengths)
+        if fuzzy_match:
+            return fuzzy_match
+        else:
+            translated_segment = translate_with_gpt(client, segment, language, gpt_model)
+            gpt_translation_dict[segment] = translated_segment
+            print("GPT Translation:\n" + gpt_translation_dict[segment] + "\n")
+            return (segment, translated_segment + " <!-- GPT translation -->")
+
+
+def process_front_matter(front_matter_segments, tm_dict, gpt_translation_dict, language, gpt_model, client):
+    """
+    Processes the front matter of a document, translating 'title' and 'description'
     fields while leaving their labels and other metadata unchanged.
 
     Parameters:
-    - frontmatter_segments (list of str): The frontmatter of the document as a list of strings.
+    - front matter_segments (list of str): The front matter of the document as a list of strings.
     - language_code (str): The target language code for translation.
 
     Returns:
-    - list of str: The processed frontmatter segments.
+    - list of str: The processed front matter segments.
     """
-    processed_frontmatter = []
-    for line in frontmatter_segments:
-        if line.startswith('title: '):
+    processed_front_matter = []
+    for line in front_matter_segments:
+        if line[0].startswith('title: '):
             # Extract the title text and translate it
-            title_text = line[len('title: '):]
-            translated_title = translate_text(title_text, lang)
-            processed_line = 'title: ' + translated_title
-        elif line.startswith('description: '):
+            title_text = line[0][len('title: '):]
+            translated_title = translate_segment(title_text, tm_dict, gpt_translation_dict,language, gpt_model, client)
+            processed_segment_pair = (line[0], 'title: ' + translated_title[1])
+        elif line[0].startswith('description: '):
             # Extract the description text and translate it
-            description_text = line[len('description: '):]
-            translated_description = translate_text(description_text, lang)
-            processed_line = 'description: ' + translated_description
+            description_text = line[0][len('description: '):]
+            translated_description = translate_segment(description_text, tm_dict, gpt_translation_dict,language, gpt_model, client)
+            processed_segment_pair = (line[0], 'description: ' + translated_description[1])
         else:
             # No translation needed; reproduce the line unchanged
-            processed_line = line
-        processed_frontmatter.append(processed_line)
-    return processed_frontmatter
+            processed_segment_pair = line
+        processed_front_matter.append(processed_segment_pair)
+
+    return processed_front_matter
 
 def translate_article(client, language, source_text, tm_dict, gpt_model, lang):
     """
@@ -241,7 +283,7 @@ def translate_article(client, language, source_text, tm_dict, gpt_model, lang):
     Returns:
         list: List of tuples with source and translated segments.
     """
-    # Initialize empty list to store frontmatter segments
+    # Initialize empty list to store front matter segments
     front_matter_segments = []
 
     # Initialize empty list to store translated segments from the article
@@ -250,29 +292,29 @@ def translate_article(client, language, source_text, tm_dict, gpt_model, lang):
     # Initialize empty dictionary to store GPT translations for repetitions
     gpt_translation_dict = {}
 
-    # Flag to check frontmatter
-    in_frontmatter = False
-
-    # Pre-calculate lengths of TM segments
-    tm_segments_lengths = {tm_segment:len(tm_segment) for tm_segment in tm_dict}
+    # Flag to check front matter
+    in_front_matter = False
+    front_matter_processed = False
 
     # Iterate over each segment of the source text
     for segment in source_text:
 
-        # Check if segment is the start or end of the frontmatter
+        # Check if segment is the start or end of the front matter
         if segment == '---':
             front_matter_segments.append((segment, segment))
-            # Change flag after finding start or end of the frontmatter
-            in_frontmatter = not in_frontmatter
+            # Change flag after finding start or end of the front matter
+            in_front_matter = not in_front_matter
             continue
 
-        # Reproduce frontmatter in the target file
-        elif in_frontmatter:
+        # Reproduce front matter in the target file
+        elif in_front_matter:
             front_matter_segments.append((segment, segment))
             continue
         
-        translated_frontmatter = process_frontmatter(front_matter_segments, lang)
-
+        if not in_front_matter and not front_matter_processed:
+            translated_front_matter = process_front_matter(front_matter_segments, tm_dict, gpt_translation_dict, language, gpt_model, client)
+            front_matter_processed = True
+            
         # Check commented out segment in English
         if segment.startswith("<!--"):
             # Reproduce untranslated commented out segment
@@ -280,76 +322,58 @@ def translate_article(client, language, source_text, tm_dict, gpt_model, lang):
             continue
 
         # Check for empty segments
-        if segment == '':
+        elif segment == '':
             # Reproduce empty segments
             translated_segments.append((segment, segment))
             continue
 
-        # Check for existing translation in TM
-        if segment in tm_dict:
-            # Reproduce existing translation
-            translated_segments.append((segment, tm_dict[segment] + " <!-- TM 100 -->"))
-            continue
-        
-        # Check for existing GPT translation
-        elif segment in gpt_translation_dict:
-            # Reproduce existing GPT translation
-            translated_segments.append((segment, gpt_translation_dict[segment] + " <!-- Repetition of GPT translation"))
-            continue
-        
-        # Handle untranslated segments
+        # Translate segment using TM, fuzzy matching, or GPT
         else:
-            # Call fuzzy match function
-            fuzzy_match = handle_fuzzy_matches(segment, tm_dict, tm_segments_lengths)
-            
-            # Check if fuzzy match exists
-            if fuzzy_match:
-                translated_segments.append(fuzzy_match)
-            else:
-                translated_segment = translate_with_gpt(client, segment, language, gpt_model)
-                gpt_translation_dict[segment] = translated_segment
-                translated_segments.append((segment, translated_segment + " <!-- GPT translation -->"))
-            
-    # Prepends translated frontmatter segments to translated segments
-    translated_segments = translated_frontmatter + translated_segments
+            translated_segment = translate_segment(segment, tm_dict, gpt_translation_dict, language, gpt_model, client)
+            translated_segments.append(translated_segment)
+            continue
+        
+    # Prepends translated front matter segments to translated segments
+    translated_segments = translated_front_matter + translated_segments
 
     # Return list of tuples with source and target segments
+    print(translated_segments)
     return translated_segments
 
-def extract_translated_frontmatter(translated_segments):
+def extract_translated_front_matter(translated_segments):
     """
-    Extracts the target frontmatter the translated segments list
-    Returns frontmatter in one string
+    Extracts the target front matter the translated segments list
+    Returns front matter in one string
     """
-    # Flag to track beginning and end of frontmatter
+    # Flag to track beginning and end of front matter
     marker_found = False
     # Initialize list to store extracted segments
     extracted_segments = []
     # Iterate over the segments of the translation
     for _, target_segment in translated_segments:
-        # Check if the segment is the frontmatter delimiter
+        # Check if the segment is the front matter delimiter
         if target_segment == "---":
             # Reproduces delimiter '---'
             extracted_segments.append(target_segment)
             # Check if the flag is true when checking the delimiter
             if marker_found:
-                joint_translated_frontmatter = "\n".join(extracted_segments)
-                return joint_translated_frontmatter # End function when stop condition is met
+                joint_translated_front_matter = "\n".join(extracted_segments)
+                return joint_translated_front_matter # End function when stop condition is met
             # Skip to next segment
             else:
                 marker_found = True
                 continue
-        # Reproduce frontmatter content
+        # Reproduce front matter content
         elif marker_found:
             extracted_segments.append(target_segment)
         # Break out of loop if the end of the list is reached
         if target_segment == translated_segments[-1][1]:
             break
     
-    # Join frontmatter in one string
-    joint_translated_frontmatter = "\n".join(extracted_segments)
+    # Join front matter in one string
+    joint_translated_front_matter = "\n".join(extracted_segments)
 
-    return joint_translated_frontmatter
+    return joint_translated_front_matter
 
 def extract_translated_text(translated_segments):
     """
@@ -361,19 +385,19 @@ def extract_translated_text(translated_segments):
     # Initialize list to store extracted segments
     extracted_segments = []
     for _, target_segment in translated_segments:
-        # Check for frontmatter delimiter
-        if target_segment == "---":
-            marker_count += 1
-            # Skip segments until the second frontmatter delimiter is found
-            if marker_count < 2:
-                continue
+        # # Check for front matter delimiter
+        # if target_segment == "---":
+        #     marker_count += 1
+        #     # Skip segments until the second front matter delimiter is found
+        #     if marker_count < 2:
+        #         continue
 
-        # Avoid reproducing frontmatter delimiter twice
-        if target_segment == "---" and marker_count == 2:
-            continue
-        # Append segments after second '---'
-        elif marker_count == 2:
-            extracted_segments.append(target_segment)
+        # # Avoid reproducing front matter delimiter twice
+        # if target_segment == "---" and marker_count == 2:
+        #     continue
+        # # Append segments after second '---'
+        # elif marker_count == 2:
+        extracted_segments.append(target_segment)
     
     # Join text list in one string 
     joint_translated_text = "\n".join(extracted_segments)
@@ -431,17 +455,17 @@ def main():
     # Perform the translation
     translated_segments = translate_article(client, language, source_text, tm_dict, gpt_model, lang)
 
-    # Create list with translated frontmatter
-    translated_frontmatter = extract_translated_frontmatter(translated_segments)
+    # Create list with translated front matter
+    # translated_front_matter = extract_translated_front_matter(translated_segments)
 
     # Create list with translated text
     translated_text = extract_translated_text(translated_segments)
 
     # Join translated matter and article
-    translated_article = translated_frontmatter + "\n" + translated_text
+    # translated_article = translated_front_matter + "\n" + translated_text
 
     # Save file in repository
-    write_translated_file(language, source, translated_article)
+    write_translated_file(language, source, translated_text)
 
     # Output the result and time taken
     elapsed_time = round((time.time() - start_time), 2)
