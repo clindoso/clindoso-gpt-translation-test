@@ -123,7 +123,7 @@ def check_gpt_translations(segment, gpt_translation_dict):
     """
     if segment in gpt_translation_dict:
         print(f"Repetition: " + segment + " - " + gpt_translation_dict[segment])
-        return (segment, gpt_translation_dict[segment] + f" <!-- Repetition of GPT translation {segment}")
+        return (segment, gpt_translation_dict[segment] + " <!-- Repetition of GPT translation")
     return None
 
 def handle_fuzzy_matches(segment, tm_dict, tm_segments_lengths):
@@ -218,13 +218,14 @@ def translate_segment(segment, tm_dict, gpt_translation_dict, language, gpt_mode
     tm_segments_lengths = {tm_segment:len(tm_segment) for tm_segment in tm_dict}
 
     # Check for existing translation in TM
-    if segment in tm_dict:
-        return (segment, tm_dict[segment] + " <!-- TM 100 -->")
+    tm_translation = check_translation_memory(segment, tm_dict)
+    if tm_translation:
+        return tm_translation
     
     # Check for existing GPT translation
-    elif segment in gpt_translation_dict:
-        print("############\n" + segment)
-        return (segment, gpt_translation_dict[segment] + " <!-- Repetition of GPT translation")
+    gpt_translation = check_gpt_translations(segment, gpt_translation_dict)
+    if gpt_translation:
+        return gpt_translation
     
     # Handle untranslated segments
     else:
@@ -234,7 +235,6 @@ def translate_segment(segment, tm_dict, gpt_translation_dict, language, gpt_mode
         else:
             translated_segment = translate_with_gpt(client, segment, language, gpt_model)
             gpt_translation_dict[segment] = translated_segment
-            print("GPT Translation:\n" + gpt_translation_dict[segment] + "\n")
             return (segment, translated_segment + " <!-- GPT translation -->")
 
 
@@ -340,41 +340,6 @@ def translate_article(client, language, source_text, tm_dict, gpt_model, lang):
     print(translated_segments)
     return translated_segments
 
-def extract_translated_front_matter(translated_segments):
-    """
-    Extracts the target front matter the translated segments list
-    Returns front matter in one string
-    """
-    # Flag to track beginning and end of front matter
-    marker_found = False
-    # Initialize list to store extracted segments
-    extracted_segments = []
-    # Iterate over the segments of the translation
-    for _, target_segment in translated_segments:
-        # Check if the segment is the front matter delimiter
-        if target_segment == "---":
-            # Reproduces delimiter '---'
-            extracted_segments.append(target_segment)
-            # Check if the flag is true when checking the delimiter
-            if marker_found:
-                joint_translated_front_matter = "\n".join(extracted_segments)
-                return joint_translated_front_matter # End function when stop condition is met
-            # Skip to next segment
-            else:
-                marker_found = True
-                continue
-        # Reproduce front matter content
-        elif marker_found:
-            extracted_segments.append(target_segment)
-        # Break out of loop if the end of the list is reached
-        if target_segment == translated_segments[-1][1]:
-            break
-    
-    # Join front matter in one string
-    joint_translated_front_matter = "\n".join(extracted_segments)
-
-    return joint_translated_front_matter
-
 def extract_translated_text(translated_segments):
     """
     Extracts the target text the translated segments list
@@ -384,19 +349,9 @@ def extract_translated_text(translated_segments):
     marker_count = 0
     # Initialize list to store extracted segments
     extracted_segments = []
+    # Iterate over segments
     for _, target_segment in translated_segments:
-        # # Check for front matter delimiter
-        # if target_segment == "---":
-        #     marker_count += 1
-        #     # Skip segments until the second front matter delimiter is found
-        #     if marker_count < 2:
-        #         continue
-
-        # # Avoid reproducing front matter delimiter twice
-        # if target_segment == "---" and marker_count == 2:
-        #     continue
-        # # Append segments after second '---'
-        # elif marker_count == 2:
+        # Extract segments from tuples
         extracted_segments.append(target_segment)
     
     # Join text list in one string 
@@ -455,14 +410,8 @@ def main():
     # Perform the translation
     translated_segments = translate_article(client, language, source_text, tm_dict, gpt_model, lang)
 
-    # Create list with translated front matter
-    # translated_front_matter = extract_translated_front_matter(translated_segments)
-
     # Create list with translated text
     translated_text = extract_translated_text(translated_segments)
-
-    # Join translated matter and article
-    # translated_article = translated_front_matter + "\n" + translated_text
 
     # Save file in repository
     write_translated_file(language, source, translated_text)
