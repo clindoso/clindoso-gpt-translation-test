@@ -139,7 +139,7 @@ def write_to_csv(file1_segments, file2_segments, lang, source_filename, tm_filep
                 writer.writerow([line1, line2, source_filename])
         else:
             not_aligned = 1
-            not_aligned_article = [source_filename]
+            not_aligned_article.append(source_filename)
         
     return not_aligned_article, aligned, not_aligned
         
