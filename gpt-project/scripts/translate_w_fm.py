@@ -122,7 +122,6 @@ def check_gpt_translations(segment, gpt_translation_dict):
         tuple or None: The GPT translation if available, else None.
     """
     if segment in gpt_translation_dict:
-        print(f"Repetition: " + segment + " - " + gpt_translation_dict[segment])
         return (segment, gpt_translation_dict[segment] + " <!-- Repetition of GPT translation")
     return None
 
