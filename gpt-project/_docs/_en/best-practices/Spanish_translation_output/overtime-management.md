@@ -1,11 +1,10 @@
 ---
-title: Gestión del tiempo extra <!-- GPT translation -->
+title: Gestión de horas extraordinarias <!-- GPT translation -->
 product_label:
   - advanced
   - enterprise
   - classic
-description: Aprenda cómo configurar actividades para planificar horas extraordinarias y documentarlo de manera transparente.
- <!-- GPT translation -->
+description: Aprende a configurar de la mejor manera las actividades para planificar horas extras y documentarlas de forma transparente. <!-- GPT translation -->
 toc: true
 related_articles:
   - overwrite_title: Add title for untranslated source
@@ -16,8 +15,8 @@ related_articles:
     filepath: best-practices/importance-for-activities.md
 ---
 
-A veces, es necesario trabajar horas extras para mantener niveles de servicio razonables. Las razones para hacer horas extras pueden ser una carga de trabajo inesperadamente alta, o una falta de personal causada por un elevado número de ausencias debido a enfermedad o vacaciones. <!-- GPT translation -->
-En muchos casos, los contratos de tus empleados estipulan que las horas extraordinarias se pagan a un tipo superior, o que cualquier cantidad de horas extraordinarias trabajadas se debe convertir en días adicionales de vacaciones. También es importante respetar otras limitaciones contractuales, como los períodos mínimos de descanso entre turnos cuando los empleados trabajan horas extraordinarias. Si prestas servicios, también es posible que estés obligado a informar a los clientes sobre cualquier labor adicional programada. <!-- GPT translation -->
+A veces, necesitamos hacer horas extra para mantener niveles de servicio razonables. Las razones para hacer horas extra incluyen una carga de trabajo inesperadamente alta, o tener menos personal por altos índices de ausencia por enfermedad o vacaciones. <!-- GPT translation -->
+En muchos casos, los contratos de tus colaboradores establecen que las horas extras se paguen a una tarifa más alta, o que cualquier cantidad de horas extraordinarias trabajadas se conceda como tiempo de vacaciones adicional. También es importante respetar otras limitaciones contractuales, como el tiempo de descanso entre turnos cuando tus colaboradores trabajan horas extras. Si proporcionas servicios, es posible que estés obligado a informar a tus clientes de cualquier trabajo adicional planificado. <!-- GPT translation -->
 
 En este artículo, puedes encontrar consejos sobre cómo configurar actividades y multiactividades para poder planificar fácilmente horas extraordinarias y mostrarlas correctamente en tu mapa de calor de la cobertura y en tus informes. <!-- TM 100 -->
 
@@ -28,13 +27,11 @@ Las horas extraordinarias deben planificarse manualmente en el Centro de planifi
 El ejemplo a continuación utiliza una actividad nueva llamada Llamadas. Sigue estos pasos para todas las actividades que quieras poder planificar como horas extraordinarias, es decir, para Llamadas o Correos electrónicos, pero no para Enfermedad o Vacaciones. <!-- TM 100 -->
 
 - {% link_new Crear actividades | features/administration/activities.md %} <!-- TM 66 -->
-Duplica la actividad **Calls** y denomina la nueva actividad **Calls overtime**. No es necesario añadir habilidades a esta actividad. <!-- GPT translation -->
-- **Marcar la casilla** Especificar manejo en optimización horaria. <!-- GPT translation -->
-- Asegúrate de que la casilla **Disponible para mi** no esté marcada. <!-- GPT translation -->
-3. En **Llamadas extra**, añade **Llamadas** como subactividad. <!-- GPT translation -->
-**Las llamadas por tiempo extra** son ahora una multiactividad.
-
-Translate words and phrases in the same style and tone. <!-- GPT translation -->
+2. Duplica la actividad **Llamadas** y pon el nombre **Llamadas extra**. No es necesario añadir habilidades a esta actividad. <!-- GPT translation -->
+  - Marca la casilla **Trato especial en la planificación optimizada**. <!-- TM 100 -->
+  - Asegúrate de que la casilla **Se puede solicitar en Me**  no está marcada. <!-- TM 100 -->
+3. En **Llamadas extra a horas** agrega **Llamadas** como subactividad.   <!-- GPT translation -->
+  **Llamadas - horas extraordinarias** es ahora una multiactividad. <!-- TM 100 -->
 4. Añade ambas actividades a la unidad de planificación correspondiente. No añades la actividad de horas extraordinarias a ningún modelo de horario. <!-- TM 100 -->
 
 Con esta configuración, la actividad "Llamadas - horas extraordinarias" solo se puede planificar manualmente y no puede ser reemplazada durante la planificación optimizada. Tus empleados no podrán solicitar esta actividad en injixo Me. <!-- TM 100 -->
@@ -58,7 +55,7 @@ Para añadir actividades de horas extraordinarias en _Plan > Planificar_{:.bread
 
 1. Haz clic dos veces en una celda en la planificación para abrir el editor. <!-- TM 100 -->
 5. Haz clic en _Crear carga de trabajo_{:.doc-button}. <!-- TM 61 -->
-Se añade una nueva fila con la actividad a la derecha. <!-- GPT translation -->
+  Se añade una nueva fila a la derecha con la actividad. <!-- TM 100 -->
 3. En la nueva fila, selecciona **Llamadas - horas extraordinarias** en el menú desplegable. <!-- TM 100 -->
 4. Introduce una hora de inicio y finalización para la actividad. <!-- TM 100 -->
 5. Haz clic en _Guardar_{:.doc-button}. <!-- TM 100 -->
