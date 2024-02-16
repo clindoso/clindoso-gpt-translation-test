@@ -1,226 +1,193 @@
+import config
 import os
 import csv
 import argparse
-import re
 
 # Use this script to create a CSV file as a TM with English as source language
 # This script takes one argument, --lang, the target language of the TM
 
-# Define source directory
-source_directory = "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/_en/"
+def parse_arguments():
+    """
+    Parse command-line arguments for TM target language.
+    Returns the string for language.
+    """
+    parser = argparse.ArgumentParser(description="Script to create a translation memory in EN and a selected target language.")
+    parser.add_argument("--lang", required=True, help="TM target language")
+    args = parser.parse_args()
+    return args.lang
 
-# Create argument parser
-argparser = argparse.ArgumentParser()
 
-# Define argument
-argparser.add_argument("--lang", required=True, help="Specify the target language for the translation memory")
-
-# Parse arguments
-args = argparser.parse_args()
-
-# Read and return file content in a list
 def read_and_split_file(file_path):
+    """
+    Reads and parses file by code line.
+    
+    Parameters:
+        file_path (str): Path to source file.
+        
+    Returns:
+        list: A list of segments from the source file.
+    """
     try:
         with open(file_path, 'r', encoding='utf-8') as file:
-            lines = file.readlines()
+            segments = file.readlines()
 
         # Flag to check if we are inside the frontmatter
         in_frontmatter = False
-        result = []
+        segmented_source = []
 
-        # Iterate over the article lines
-        for line in lines:
-            stripped_line = line.strip()
+        # Iterate over the article segments
+        for segment in segments:
+            stripped_segment = segment.rstrip()
 
-            # Check if the line is the start or end of the frontmatter
-            if stripped_line == '---':
+            # Check if the segment is the start or end of the frontmatter
+            if stripped_segment == '---':
                 in_frontmatter = not in_frontmatter
                 continue
 
-            # Exclude lines within the frontmatter or lines that are HTML comments
-            if not in_frontmatter and not (stripped_line.startswith('<!--') and stripped_line.endswith('-->')):
-                result.append(stripped_line)
+            # Exclude segments within the frontmatter or segments that are HTML comments
+            if not in_frontmatter and not (stripped_segment.startswith('<!--') and stripped_segment.endswith('-->')):
+                segmented_source.append(stripped_segment)
 
-        # Remove empty strings from the result list before returning
-        return [line for line in result if line]
+        # Remove empty strings from the segmented_source list before returning
+        return [segment for segment in segmented_source if segment]
 
     except Exception as e:
         raise Exception(f"Error reading {file_path}: {e}")
 
-# Define output directory and file name
-output_directory = "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/tm/"
-output_filename = "en-" + args.lang + ".csv"
+def initialize_language_model(lang):
+    """
+    Initializes language model.
+    Returns tm_path
+    """
+    # Define language model dictionary
+    language_models = config.LANGUAGE_MODELS
+    # Initialize language model
+    if lang in language_models:
+        tm_path = language_models[lang]["tm_path"]
+    else:
+        raise ValueError("""
+              You entered an invalid language code. Use one of the following:
+              "de" for German
+              "es" for Spanish
+              "fr" for French
+              "it" for Italian
+              "nl" for Dutch
+        """)
 
-# Check if output directory exists
-os.makedirs(output_directory, exist_ok=True)
-output_filepath = os.path.join(output_directory, output_filename)
+    return tm_path
 
-def clear_csv_content(file_path):
-    with open(file_path, 'w') as file:
-        pass
+def initialize_tm_file(tm_path, lang):
+    """
+    Initializes a translation memory (TM) file by clearing its content, or creating it if it doesn't exist.
+    The function determines the TM directory based on the provided TM path and ensures the directory exists.
 
-# Delete existing TM
-clear_csv_content(output_filepath)
+    Parameters:
+        tm_path (str): The base path for TM files, used to determine the directory.
+        lang (str): The target language code, used to create the specific TM file name.
 
-# Function to equalize paragraphs
-def equalize_list_lengths(list1, list2):
-    # Find the length of the longest string in each list
-    max_length1 = max(len(s) for s in list1)
-    max_length2 = max(len(s) for s in list2)
+    The function constructs the TM file name using 'en-' as a prefix followed by the language code and '.csv' extension.
+    It then checks if the TM directory exists, creates it if necessary, and clears the content of the TM file.
+    """
+    # Defint tm_directory
+    tm_directory = os.path.dirname(tm_path)
+    # Define tm file name
+    tm_filename = "en-" + lang + ".csv"
 
-    def combine_strings(lst, target_length):
-        combined, temp = [], ''
-        for s in lst:
-            if len(temp) + len(s) <= target_length:
-                temp += s + ' '
-            else:
-                combined.append(temp.strip())
-                temp = s + ' '
-        if temp:
-            combined.append(temp.strip())
-        return combined
+    # Check if output directory exists
+    os.makedirs(tm_directory, exist_ok=True)
+    tm_filepath = os.path.join(tm_directory, tm_filename)
 
-    # Combine strings in each list
-    list1 = combine_strings(list1, max_length2)
-    list2 = combine_strings(list2, max_length1)
+    def clear_csv_content(file_path):
+        with open(file_path, 'w') as file:
+            pass
 
-    return list1, list2
+    # Delete existing TM
+    clear_csv_content(tm_filepath)
 
-# Function to replace patterns
-def replace_patterns(etc_pattern, etc_placeholder, patterns, line):
-    # Replace specifed patterns in line
-    line = etc_pattern.sub(etc_placeholder, line)
-    for pattern, placeholder in patterns.items():
-        line = line.replace(pattern, placeholder)
-    return line
-
-# Function to restore patterns
-def restore_patterns(patterns, etc_placeholder, etc_string, line):
-    # Restore original patterns
-    for pattern, placeholder in patterns.items():
-        line = line.replace(placeholder, pattern)
-    line = re.sub(etc_placeholder, etc_string, line)
-    return line
-
-# Define sentence splitter
-
-def sentence_splitter(file1_lines, file2_lines):
-    # Patterns to ignore, with their placeholders
-    # patterns = {
-    #     "z.&nbsp;B.": "{PLACEHOLDER_ZB}",
-    #     "d.&nbsp;h.": "{PLACEHOLDER_DH}",
-    #     "i.e.": "{PLACEHOLDER_IE}",
-    #     "e.g.": "{PLACEHOLDER_EG}",
-    #     "u.U.": "{PLACEHOLDER_UU}",
-    #     "u.a.": "{PLACEHOLDER_UA}",
-    #     "p.&nbsp;ej.": "{PLACEHOLDER_PEJ}"
-    # }
-
-    # etc_pattern = re.compile(r'etc\.\s[a-z()]')
-
-    def split_line(file1_lines, file2_lines):
-        etc_pattern = re.compile(r'etc\.(?=\s[a-z()])')
-        etc_placeholder = "{PLACEHOLDER_ETC}"
-        etc_string = "etc."
-        patterns = {
-            "z.&nbsp;B.": "{PLACEHOLDER_ZB}",
-            "d.&nbsp;h.": "{PLACEHOLDER_DH}",
-            "i.e.": "{PLACEHOLDER_IE}",
-            "e.g.": "{PLACEHOLDER_EG}",
-            "u.U.": "{PLACEHOLDER_UU}",
-            "u.a.": "{PLACEHOLDER_UA}",
-            "p.&nbsp;ej.": "{PLACEHOLDER_PEJ}"
-        }
-
-        # Define new lists for processed lines
-        processed_file1_lines = []
-        processed_file2_lines = []
-        
-        for line1, line2 in zip(file1_lines, file2_lines):
-            line1_processed = replace_patterns(etc_pattern, etc_placeholder, patterns, line1)
-            line2_processed = replace_patterns(etc_pattern, etc_placeholder, patterns, line2)
-
-            processed_file1_lines.append(line1_processed)
-            processed_file2_lines.append(line2_processed)
-
-            # Split and equalize if necessary
-            # if line1.count('. ') != line2.count('. '):
-            #     temp_file1_lines = line1.split('. ')
-            #     temp_file2_lines = line2.split('. ')
-
-            #     for i in range(len(temp_file1_lines)):
-            #         temp_file1_lines[i] += '.'
-            #     for i in range(len(temp_file2_lines)):
-            #         temp_file2_lines[i] += '.'
-
-            #     temp_file1_lines, temp_file2_lines = equalize_list_lengths(temp_file1_lines, temp_file2_lines)
-
-            # else:
-            #     temp_file1_lines = line1.split('. ')
-            #     temp_file2_lines = line2.split('. ')
-
-                # for i in range(len(temp_file1_lines)):    
-                #     if ends_with_regex(temp_file1_lines[i]):
-                #         temp_file1_lines += '.'
-                # for i in range(len(temp_file2_lines)):
-                #     if ends_with_regex(temp_file2_lines[i]):
-                #         temp_file2_lines[i] += '.'
-            
-
-        # Restore placeholders to original patterns
-        restored_file1_lines = [restore_patterns(patterns, etc_placeholder, etc_string, line) for line in processed_file1_lines]
-        restored_file2_lines = [restore_patterns(patterns, etc_placeholder, etc_string, line) for line in processed_file2_lines]
-        return restored_file1_lines, restored_file2_lines
-
-    
-    # Split files
-    split_file1, split_file2 = split_line(file1_lines, file2_lines)
-    
-    return split_file1, split_file2
-
-# List for possibly not aligned articles
-not_aligned_articles = []
-aligned_qtt = 0
-not_aligned_qtt = 0
+    return tm_filepath
 
 # Function to export to CSV
-def write_to_csv(file1_lines, file2_lines, source_filename, output_filepath):
-    global not_aligned_articles
-    global aligned_qtt
-    global not_aligned_qtt
+def write_to_csv(file1_segments, file2_segments, lang, source_filename, tm_filepath):
+    """
+    Appends aligned or marks unaligned text pairs to/from two files into a CSV file.
 
-    with open(output_filepath, 'a', newline='', encoding='utf-8') as csvfile:
+    Parameters:
+        file1_segments (list of str): Segments from the first file.
+        file2_segments (list of str): Segments from the second file.
+        lang (str): Target language code.
+        source_filename (str): Name of the source file.
+        tm_filepath (str): Path to the translation memory CSV file.
+
+    Returns:
+        tuple: A tuple containing a list of not aligned articles, count of aligned articles, and count of not aligned articles.
+    """
+    aligned = 0
+    not_aligned = 0
+    not_aligned_article = []
+
+    with open(tm_filepath, 'a', newline='', encoding='utf-8') as csvfile:
         writer = csv.writer(csvfile)
 
         if csvfile.tell() == 0:
-            writer.writerow(['en', args.lang, 'file'])
+            writer.writerow(['en', lang, 'article'])
 
-        if len(file1_lines) == len(file2_lines):
-            file1_lines, file2_lines = sentence_splitter(file1_lines, file2_lines)
-            aligned_qtt += 1
-            for line1, line2 in zip(file1_lines, file2_lines):
+        if len(file1_segments) == len(file2_segments):
+            aligned = 1
+            for line1, line2 in zip(file1_segments, file2_segments):
                 writer.writerow([line1, line2, source_filename])
         else:
-            not_aligned_qtt += 1
-            not_aligned_articles.append(source_filename)
+            not_aligned = 1
+            not_aligned_article.append(source_filename)
+        
+    return not_aligned_article, aligned, not_aligned
         
 
 # Extract file contents
-def extract_file_contents(directory, file_extension=".md"):
-    for root, dirs, files in os.walk(directory):
+def extract_file_contents(docs_directory, lang, tm_filepath, file_extension=".md"):
+    not_aligned_articles = []  # Initialize list for not aligned articles
+    aligned_qtt = 0  # Initialize counter for aligned articles
+    not_aligned_qtt = 0  # Initialize counter for not aligned articles
+    for root, _, files in os.walk(docs_directory):
         for file in files:
             if file.endswith(file_extension):
                 file_path_source = os.path.join(root, file)
-                file_path_target = file_path_source.replace("_en", "_" + args.lang)
+                file_path_target = file_path_source.replace("_en", "_" + lang)
                 if os.path.exists(file_path_target):
-                    file_content_en = read_and_split_file(file_path_source)
-                    file_content_tl = read_and_split_file(file_path_target)
-                    write_to_csv(file_content_en, file_content_tl, file, output_filepath)
+                    source_file_content = read_and_split_file(file_path_source)
+                    target_file_content = read_and_split_file(file_path_target)
+                    _not_aligned_articles, _aligned_qtt, _not_aligned_qtt = write_to_csv(source_file_content, target_file_content, lang, file, tm_filepath)
 
-extract_file_contents(source_directory)
+                    # Update the results with data from the current file pair
+                    not_aligned_articles.extend(_not_aligned_articles)
+                    aligned_qtt += _aligned_qtt
+                    not_aligned_qtt += _not_aligned_qtt
 
-print(f"Aligned articles: {aligned_qtt}")
-print(f"Not aligned articles: {not_aligned_qtt}")
-print("The following articles might not be up to date:")
-for article in not_aligned_articles:
-    print(article)
+    return not_aligned_articles, aligned_qtt, not_aligned_qtt
+
+
+def main():
+    # Initialize docs directory
+    if not config.docs_directory:
+        raise EnvironmentError("Source documents directory not defined in the config file.")
+    else: docs_directory = config.docs_directory
+
+    # Initializes target lang
+    lang = parse_arguments()
+
+    # Initialize language models
+    tm_path = initialize_language_model(lang)
+
+    # Initialize TM file
+    tm_filepath = initialize_tm_file(tm_path, lang)
+
+    # Extract segments from articles
+    not_aligned_articles, aligned_qtt, not_aligned_qtt = extract_file_contents(docs_directory, lang, tm_filepath)
+
+    print(f"Aligned articles: {aligned_qtt}")
+    print(f"Not aligned articles: {not_aligned_qtt}")
+    print("The following articles might not be up to date:")
+    for article in not_aligned_articles:
+        print(article)
+
+if __name__ == "__main__":
+    main()

@@ -1,3 +1,4 @@
+import config
 import os
 import json
 import argparse
@@ -13,7 +14,7 @@ argparser = argparse.ArgumentParser(description="Script to process directories")
 argparser.add_argument("--lang")
 
 # Define base directory
-base_dir = "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/_en"
+config.docs_directory = "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/_en"
 
 # Assign parent folder of base directory as output directory
 output_dir = os.path.dirname(base_dir)

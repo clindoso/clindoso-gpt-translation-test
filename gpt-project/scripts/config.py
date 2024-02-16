@@ -18,3 +18,6 @@ UPPER_THRESHOLD = 0.4
 
 # EN docs directory
 docs_directory = "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/_en/"
+
+# Termbase directory
+termbase_directory = "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_data/terminology"
