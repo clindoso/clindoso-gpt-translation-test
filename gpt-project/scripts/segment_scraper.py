@@ -3,7 +3,7 @@ import os
 import json
 import csv
 import argparse
-from term_scraper import extract_terms
+from term_scraper import extract_terms_from_directory
 from sklearn.model_selection import train_test_split
 
 def parse_arguments():
@@ -67,7 +67,7 @@ def main():
     lang = parse_arguments()
     language, tm_path = initialize_language_model(lang)
 
-    terms = extract_terms(termbase_directory, lang)
+    terms = extract_terms_from_directory(termbase_directory, lang)
     segments = read_segments_from_tm(tm_path, lang)
 
     # Combine terms and segments for training data

@@ -2,7 +2,7 @@ import os
 import json
 import csv
 import argparse
-from term_scraper import extract_terms
+from term_scraper import extract_terms_from_directory
 from sklearn.model_selection import train_test_split
 
 # The script takes one argument, --lang, which selects the target language.
@@ -45,7 +45,7 @@ else:
 
 # Extract terms from the TB
 
-terms = extract_terms(termbase_directory, args.lang)
+terms = extract_terms_from_directory(termbase_directory, args.lang)
 
 # Create empty segment list to collect segments from TM
 segments = []

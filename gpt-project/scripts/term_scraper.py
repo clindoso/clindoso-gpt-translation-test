@@ -4,31 +4,34 @@ import yaml
 # This funtion will be used within the segment scraper script to include the termbase in the training data set.
 
 # Function to read and return the content of a file
-def process_file(file_path, lang, source_lang='en'):
+def extract_term_from_file(file_path, lang, source_lang='en'):
     """
-    Process a single YAML file and extract the terms in English and in a target language.
-    Returns the term in English and target language as a tuple.
+    Extract terms from a YAML file for specified languages.
+    Returns a tuple of terms in the default and target languages if available.
     """
-    with open(file_path, 'r') as file:
-        data = yaml.safe_load(file)
+    try:
+        with open(file_path, 'r') as file:
+            data = yaml.safe_load(file)
 
-    term_tuple = []
-    source_term = data[source_lang]["name"]
-    target_term = data.get(lang, {}).get("name", "")
-    if target_term:
-        term_tuple = (source_term, target_term)
-    return term_tuple
+        source_term = data[source_lang]["name"]
+        target_term = data.get(lang, {}).get("name", "")
+        term_tuple = (source_term, target_term) if target_term else None
+        return term_tuple
+    
+    except Exception as e:
+        print(f"{file_path} not found.")
+        return None
 
-def extract_terms(termbase_directory, lang):
+def extract_terms_from_directory(termbase_directory, lang):
     """
-    Process a YAML files from a directory and extract the terms in English and in a target language.
-    Returns a list of terms in English and target language as tuples.
+    Extract terms from all YAML files in the specified directory.
+    Returns a list of tuples with terms in the default and target languages.
     """
     term_tuples = []
-    for filename in os.listdir(termbase_directory):
-        if filename.endswith('.yml'):
-            file_path = os.path.join(termbase_directory, filename)
-            term_tuple = process_file(file_path, lang)
+    for file_name in os.listdir(termbase_directory):
+        if file_name.endswith('.yml'):
+            file_path = os.path.join(termbase_directory, file_name)
+            term_tuple = extract_term_from_file(file_path, lang)
             if term_tuple:
                 term_tuples.append(term_tuple)
     
