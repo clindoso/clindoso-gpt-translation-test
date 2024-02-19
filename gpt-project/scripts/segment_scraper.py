@@ -77,7 +77,14 @@ def main():
     combined_data = terms + segments
     train_data, validation_data = train_test_split(combined_data, test_size=0.2, random_state=42)
 
-    output_dir = os.path.dirname(docs_directory)
+    # Assign output_dir
+    output_dir = os.path.dirname(os.path.dirname(tm_path))
+
+    # Append /data to the output_dir path
+    output_dir = os.path.join(output_dir, 'gpt-data')
+
+    # Now, create the directory including the /data subdirectory
+    os.makedirs(output_dir, exist_ok=True)
     train_file_path = os.path.join(output_dir, f'{lang}_train_data.jsonl')
     validation_file_path = os.path.join(output_dir, f'{lang}_validation_data.jsonl')
 

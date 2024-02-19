@@ -172,7 +172,7 @@ def handle_fuzzy_matches(segment, tm_dict, tm_segments_lengths):
     # If there is no segment with an edit below the upper threshold, return None
     return None
 
-def translate_with_gpt(client, segment, language, gpt_model):
+def translate_with_gpt(client, segment, previous_segment, language, gpt_model):
     """
     Translates the segment using GPT.
 
@@ -185,15 +185,28 @@ def translate_with_gpt(client, segment, language, gpt_model):
     Returns:
         str: The translated segment.
     """
-    response = client.chat.completions.create(
-    model=gpt_model,
-    messages=[
-        {"role": "system", "content": f"Given a sentence in Markdown format, translate the sentence to {language} keeping the style, tone, formatting, and terminology consistent and provide strictly just the translation in plain language."},
-        {"role": "user", "content": segment}
-      ]
-    )
+
+    if previous_segment:
+
+        response = client.chat.completions.create(
+        model=gpt_model,
+        messages=[
+            {"role": "system", "content": f"Given a sentence in Markdown format, translate the sentence to {language} keeping the style, tone, formatting, and terminology consistent and provide strictly just the translation in plain language. For context, consider that the sentence preceding the one you will translate is: '{previous_segment}'"},
+            {"role": "user", "content": segment}
+          ]
+        )
+    
+    else:
+        response = client.chat.completions.create(
+        model=gpt_model,
+        messages=[
+            {"role": "system", "content": f"Given a sentence in Markdown format, translate the sentence to {language} keeping the style, tone, formatting, and terminology consistent and provide strictly just the translation in plain language."},
+            {"role": "user", "content": segment}
+          ]
+        )
     
     translated_segment = response.choices[0].message.content
+    print(translated_segment)
 
     return translated_segment
 
@@ -214,6 +227,7 @@ def translate_segment(segment, tm_dict, gpt_translation_dict, language, gpt_mode
     - A tuple containing the original segment and its translation.
     """
     # Pre-calculate TM segments lengths for fuzzy match calculation
+    previous_segment = ''
     tm_segments_lengths = {tm_segment:len(tm_segment) for tm_segment in tm_dict}
 
     # Check for existing translation in TM
@@ -232,7 +246,7 @@ def translate_segment(segment, tm_dict, gpt_translation_dict, language, gpt_mode
         if fuzzy_match:
             return fuzzy_match
         else:
-            translated_segment = translate_with_gpt(client, segment, language, gpt_model)
+            translated_segment = translate_with_gpt(client, segment, previous_segment, language, gpt_model)
             gpt_translation_dict[segment] = translated_segment
             return (segment, translated_segment + " <!-- GPT translation -->")
 
@@ -328,8 +342,9 @@ def translate_article(client, language, source_text, tm_dict, gpt_model, lang):
 
         # Translate segment using TM, fuzzy matching, or GPT
         else:
-            translated_segment = translate_segment(segment, tm_dict, gpt_translation_dict, language, gpt_model, client)
-            translated_segments.append(translated_segment)
+            segment, translated_segment = translate_segment(segment, tm_dict, gpt_translation_dict, language, gpt_model, client)
+            previous_segment = segment
+            translated_segments.append((segment, translated_segment))
             continue
         
     # Prepends translated front matter segments to translated segments
@@ -344,8 +359,6 @@ def extract_translated_text(translated_segments):
     Extracts the target text the translated segments list
     Returns text in one string
     """
-    # Initialize marker count
-    marker_count = 0
     # Initialize list to store extracted segments
     extracted_segments = []
     # Iterate over segments
