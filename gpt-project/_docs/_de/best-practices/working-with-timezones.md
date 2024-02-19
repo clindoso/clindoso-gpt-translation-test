@@ -82,11 +82,3 @@ Das Modul injixo Forecast unter *Forecast*{:.breadcrumbs} zeigt Daten in der fü
 {{ 8 | image: "Workload mit Zeitzone in Auswahlliste", '100%' }}
 
 Wenn Du Queues mit unterschiedlichen Zeitzonen in einem Workload kombinierst, passt injixo Forecast die Daten an die im Workload ausgewählte Zeitzone an.
-
-### Bedarfsberechnungsfenster
-
-Wenn Du den Mitarbeiterbedarf für einen Workload berechnest, kannst Du die Berechnungsmethode *Andere* auswählen, um spezielle Bedarfsberechnungsskripte zu nutzen. Folge den Anweisungen im Artikel {% link_new Mitarbeiterbedarf berechnen | features/forecast/injixo-forecast/staff-requirement.md | #die-berechnungsmethode-andere-einrichten %}, um das jeweilige Skript-Fenster zu öffnen. Dort werden Dir die Zeitzonen der Queue und der Planungseinheit angezeigt.
-
-Der Mitarbeiterbedarf wird in der Zeitzone der Planungseinheit berechnet. Die Berechnung berücksichtigt den Zeitversatz zwischen Queue und Planungseinheit.
-
-{{ 10 | image: "Fenster zur Berechnung des Mitarbeiterbedarfs", '65%' }}

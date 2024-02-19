@@ -19,7 +19,8 @@ Um den aktuellen 2FA-Status anderer Benutzer einzusehen, gehe wie folgt vor:
 2. In der **2FA**-Spalte auf der rechten Seite zeigt ein Schild-Icon den 2FA-Status für jeden Benutzer an. Bewege den Mauszeiger darüber, um weitere Informationen anzuzeigen.
   - Rotes Icon {% icon 2FA-red | icon-only %}: 2FA ist nicht aktiv.
   - Oranges Icon mit Ausrufezeichen {% icon 2FA-orange | icon-only %}: 2FA wurde für den Benutzer erzwungen. Der Benutzer muss 2FA bei der nächsten Anmeldung aktivieren.
-  - Grünes Icon mit Häkchen {% icon 2FA-green | icon-only %}: 2FA ist aktiv.
+  - Oranges Icon mit Häkchen {% icon 2FA-activated | icon-only %}: 2FA ist aktiv. Der Benutzer hat 2FA selbst aktiviert.
+  - Grünes Icon mit Häkchen {% icon 2FA-green | icon-only %}: 2FA ist aktiv. 2FA wurde für den Benutzer erzwungen.
 
 ## 2FA-Aktivierung für andere Benutzer erzwingen
 Du kannst erzwingen, dass andere Benutzer 2FA aktivieren. Dies hat folgende Konsequenzen:

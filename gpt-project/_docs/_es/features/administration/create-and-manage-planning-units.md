@@ -13,8 +13,6 @@ related_articles:
     filepath: best-practices/how-to-use-virtual-planning-units.md
   - overwrite_title: Add title for untranslated source
     filepath: features/administration/activities.md
-  - overwrite_title: Add title for untranslated source
-    filepath: features/administration/planning-calendar.md
 ---
 
 Las unidades de planificación agrupan empleados y datos de configuración que se usan durante la planificación. Las ubicaciones de tu organización no tienen por qué corresponder con tus unidades de planificación. Por ejemplo, si tienes empleados que trabajan en dos ubicaciones diferentes, puedes {% link_new asignarlos | features/administration/employee-overview.md | #configurar-los-ajustes-de-empleado %} a una única unidad de planificación. Recomendamos usar solo una unidad de planificación, excepto en los siguientes casos:

@@ -30,7 +30,7 @@ Schränke die verfügbaren Tagesmodelle für die Optimierung über persönliche 
 
 Ordne Deinen Mitarbeitern persönliche Tagesmodelle zu. Nimm die notwendigen Änderungen unter *Administration > Scheduling > Mitarbeiter*{:.breadcrumbs} in der Bearbeitungskategorie *Tagesmodelle* vor. Mitarbeiter, die nur kurze Pausen machen, erhalten Tagesmodelle mit kurzen Pausen; die anderen Mitarbeiter Tagesmodelle mit langen Pausen.
 
-Vorteilhaft ist, dass die Tagesmodelle des jeweiligen Mitarbeiters systemweit gelten, d.h. auch bei manueller Planung oder in der Infothek. Nachteilig ist, dass der Prozess der Zuweisung unter Umständen aufwändig ist, denn die Massenbearbeitung unterstützt diese leider nicht.
+Vorteilhaft ist, dass die Tagesmodelle des jeweiligen Mitarbeiters systemweit gelten, d.&nbsp;h. auch bei manueller Planung oder in der Infothek. Nachteilig ist, dass der Prozess der Zuweisung unter Umständen aufwändig ist, denn die Massenbearbeitung unterstützt diese leider nicht.
 
 Hinweise zur Planungsregel *2661*{:.id-label} *Tagesmodellzuordnung zum Mitarbeiter*:
 

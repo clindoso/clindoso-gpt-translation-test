@@ -17,6 +17,8 @@ Heb je nog weinig ervaring met integraties? Maak je dan eerst vertrouwd met de {
 
 ## Een Freshdesk-integratie toevoegen
 
+Om in injixo een nieuwe Freshdesk-integratie toe te voegen, heb je een Freshdesk Pro- of Enterprise-account nodig.
+
 1. Ga naar _Account > Integraties_{:.breadcrumbs}.
 2. Als je al een integratie hebt, klik dan op _Voeg integratie toe_{:.doc-button}.
 3. Klik in de **Freshworks**-tegel op _Kies een model_{:.doc-button}.
@@ -28,7 +30,7 @@ Heb je nog weinig ervaring met integraties? Maak je dan eerst vertrouwd met de {
 2. Voer in de sectie **Toegangsgegevens** je volledige Freshdesk-domeinnaam met subdomein in, bijvoorbeeld: example.freshdesk.com.
 3. Ga naar Freshdesk en kopieer een geldige API-key van een gebruiker met de rol Account Administrator.
 4. Ga terug naar injixo en plak de API-key in het veld **API-key**.
-5. Klik op _Integratie opslaan_{:.doc-button}. 
+5. Klik op _Integratie opslaan_{:.doc-button}.
 
 ## De injixo-app installeren
 
@@ -76,4 +78,10 @@ Bij een nieuw ticket wordt een ticketqueue aangemaakt. Bij een antwoord op een q
 
 ### Verwijderde tickets en spamtickets
 
-De groepnaam en de bronnaam kunnen niet worden vastgesteld als een ticket dat al is verwijderd of als spam is gemarkeerd, wordt gewijzigd. De bronqueues die deze tickets tellen, krijgen het label Unknown group/source Tickets of Unknown group/source Replies. Meestal zijn deze queues niet relevant voor het plannen van de workload van je teamleden.
+De groepnaam en de bronnaam kunnen niet worden vastgesteld als een ticket dat al is verwijderd of als spam is gemarkeerd, wordt gewijzigd. De bronqueues die deze tickets tellen, krijgen het label Unknown group/source Tickets of Unknown group/source Replies. Meestal zijn deze queues niet relevant voor het plannen van de workload van je medewerkers.
+
+## Veelgestelde vragen
+
+| Vraag                                                                                                                                                                       | Antwoord                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| injixo laat ineens geen nieuwe Freshdesk-gegevens meer zien, maar op de pagina in **Account > Integraties** is de status van mijn Freshdesk-integratie nog steeds Operationeel. Wat kan ik doen? | De injixo-app haalt gegevens op uit Freshdesk en stuurt gebeurtenissen naar injixo. Communicatiefouten tussen de injixo-app en injixo kunnen ertoe leiden dat gegevens uit Freshdesk niet meer worden weergegeven. De Freshdesk Contact Center-integratie kan zulke communicatiefouten niet herkennen.<br><br>Controleer of de injixo API-key die je bij de configuratie van injixo in je Freshdesk-account hebt ingevoerd nog geldig is. Als de API-key ongeldig is, vervang je de API-key op de app-installatiepagina in injixo. Als de API-key nog steeds geldig is, neem dan contact op met het supportteam van injixo. |

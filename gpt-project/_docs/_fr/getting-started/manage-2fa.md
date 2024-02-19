@@ -19,8 +19,8 @@ Pour voir le statut de la 2FA des autres utilisateurs, suivez ces étapes&nbsp;:
 2. Dans la colonne **2FA** à droite, une icône en forme de bouclier indique le statut de la 2FA pour chaque utilisateur. Faites passer votre curseur dessus pour voir plus d’informations.
   - Icône rouge {% icon 2FA-red | icon-only %}&nbsp;: la 2FA n'est pas active.
   - Icône orange avec point d'exclamation {% icon 2FA-orange | icon-only %}&nbsp;: la 2FA a été rendue obligatoire pour l’utilisateur. L'utilisateur doit activer la 2FA lors de sa prochaine connexion.
-  - Icône verte avec coche {% icon 2FA-green | icon-only %}&nbsp;: la 2FA est active.
-
+  - Icône orange avec coche {% icon 2FA-orange | icon-only %}&nbsp;: la 2FA est active. L'utilisateur a activé la 2FA lui-même.
+  - Icône verte avec coche {% icon 2FA-green | icon-only %}&nbsp;: la 2FA est active. La 2FA a été rendue obligatoire.
 ## Rendre obligatoire l’activation de la 2FA pour les autres utilisateurs  
 Vous pouvez demander aux autres utilisateurs d'activer la 2FA. L'activation de la 2FA pour les autres utilisateurs entraîne les conséquences suivantes&nbsp;:
 

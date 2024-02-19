@@ -24,12 +24,12 @@ Les scripts disponibles sont les suivants :
 
 - {% link_new Besoin constant | features/forecast/requirement-scripts/requirement-constant.md %}: Pour tout type d'activité sur laquelle vous ne disposez pas de données historiques mais pour laquelle vous souhaitez définir le nombre d'employés nécessaires par intervalle.
 - {% link_new Besoin Productivité | features/forecast/requirement-scripts/requirement-linear.md %}: Pour tous les canaux asynchrones tels que les e-mails, courrier, tickets à traiter en mode séquentiel. Ce script peut également être utilisé pour calculer le besoin liée à une activité d'appels entrants pour laquelle vous n'avez d'objectif de Qualité de Service.
-- {% link_new Backoffice - Productivité | features/forecast/requirement-scripts/requirement-backoffice-linear.md %}: Pour tous les canaux asynchrones tels que les e-mails, courrier, tickets à traiter dans un délai prédéfini.
+- Backoffice - Productivité : Pour tous les canaux asynchrones tels que les e-mails, courrier, tickets à traiter dans un délai prédéfini.
 - {% link_new Chat - Webchat | features/forecast/requirement-scripts/requirement-chat.md %}: Script basé sur la méthode Erlang C prenant en compte le nombre de sessions de chat simultanées par employé.
 - {% link_new Appels - Mono Activité | features/forecast/requirement-scripts/requirement-erlangc.md %}: Script basé sur la méthode Erlang C permettant de calculer le besoin en fonction d'un objectif de Qualité de Service.
 - {% link_new Appels - Multi Activités | features/forecast/requirement-scripts/requirement-multiactivity.md %}: Script basé sur les méthodes Erlang C, Productivité et Chat permettant de calculer le besoin en personnel pour planifier des activités à des agents disposant de plusieurs compétences.
-- {% link_new Appels - Temps moyen de réponse | features/forecast/requirement-scripts/requirement-asa.md %}: Script basé sur la méthode Erlang C permettant de calculer le besoin en fonction d'un objectif de temps de décroché.
-- {% link_new Appels - Taux d'abandon | features/forecast/requirement-scripts/requirement-abandoned-calls.md %}: Script basé sur la méthode Erlang C permettant de calculer le besoin en fonction d'un objectif de taux d'abandon ou d'appels répondus (80% d'appels répondus équivaut à 20% d'appels abandonnés).
+- Appels - Temps moyen de réponse : Script basé sur la méthode Erlang C permettant de calculer le besoin en fonction d'un objectif de temps de décroché.
+- Appels - Taux d'abandon : Script basé sur la méthode Erlang C permettant de calculer le besoin en fonction d'un objectif de taux d'abandon ou d'appels répondus (80% d'appels répondus équivaut à 20% d'appels abandonnés).
 - {% link_new Appels sortants | features/forecast/requirement-scripts/requirement-outbound.md %}: Script de prise en compte des campagnes d'appels sortants.
 
 Vous hésitez encore sur le script à utiliser ? Le tableau ci-dessous vous aidera à prendre une décision :

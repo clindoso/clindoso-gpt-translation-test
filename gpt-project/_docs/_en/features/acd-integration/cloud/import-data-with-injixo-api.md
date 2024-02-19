@@ -143,5 +143,5 @@ The following examples show how to send data to the API using a REST client, suc
 
 After you have sent a successful API request, you need to wait before you can see data in injixo. You can work with the imported data as follows:
 
-- Contact events requests: In Forecast, the New Workload and Edit workload pages will display the imported queues when data has been processed.
-- Agent status data requests: The first request with new agent IDs will not result in actual agent status data in Shift Center. To see data, {% link_new map at least one external identifier | features/acd-integration/cloud/import-agent-status-data.md | #map-external-user-identifiers-to-people-in-injixo %} (sent as agentIdentifier) to a person. You need to send another request to display the data.
+- Contact events requests: In **Forecast**, the **New workload** and **Edit workload** pages will display the imported queues when data has been processed.
+- Agent status data requests: The first request with new agent IDs will not result in actual agent status data in Shift Center. To see data, {% link_new map at least one external identifier | features/acd-integration/cloud/import-agent-status-data.md | #map-external-identifiers-to-people-in-injixo %} (sent as agentIdentifier) to a person. You need to send another request to display the data.

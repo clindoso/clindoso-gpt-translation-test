@@ -81,6 +81,10 @@ If your schedule has been published, you can download it as a PDF or as an ICS f
    - **Calendar file (ICS)**: Download your schedule and import it into your calendar application.
 5. Click _Download_{:.doc-button}.
 
+> Note
+>
+> In the block view report, shifts that end past midnight are displayed entirely in the row of the day on which the shift starts. The time displayed on the **End** column refers to the day on which the shift ends.
+
 ## See your team's schedule: Team calendar
 
 In _Me > Team Calendar_{:.breadcrumbs}, you can see the schedules of all employees in your planning unit and selection. The team calendar includes activities such as presence, breaks, and vacations. The team calendar can display day status activities, e.g. to visualize that people work in home office.

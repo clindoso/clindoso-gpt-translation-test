@@ -5,149 +5,172 @@ product_label:
 description: Learn about the different *cmd* parameters which are needed to generate reports automatically using the JobManager.
 ---
 
-As described in the {% link_new report examples | features/reporting/jobmanager/jobmanager-examples.md | #sending-reports-by-email %} a parameter _cmd_ is required to create reports automatically via the JobManager. Below is a complete list of report names that must be defined as _cmd_ parameter for the corresponding report.
+To create the reports available in the user interface with JobManager, you must configure the **cmd** parameter.
 
-Some reports accept one or two additional parameters _showconsel_ (Show Contracts And Selections), _hidefda_ (Hide Full Day Activities) and _showbreaks_ (Show Breaks) in addition to the name. These are used to show or hide certain things in a report with the same _cmd_ parameter. Not all reports support additional parameters, so we have included them in the second column.
+Example: `cmd=shiftplan`
 
-## Weekly schedules
+Some reports allow you to change the report output by adding additional text:
 
-| Report                                                         | CMD Parameter                           |
-| -------------------------------------------------------------- | --------------------------------------- | -------------------------- |
-| Weekly Schedule I                                              | cmd=shiftplan                           |
-| Weekly Schedule I with Filter                                  |                                         | cmd=shiftplan showconsel=1 |
-| Weekly Schedule I (without Full-Day Activities)                | cmd=shiftplansel hidefda=1              |
-| Weekly Schedule II (without Full-Day Activities)               | cmd=shiftplansel showbreaks=1 hidefda=1 |
-| Weekly Schedule II (without Breaks)                            | cmd=shiftplansel                        |
-| Weekly Schedule (without Breaks) (without Full-Day Activities) | cmd=shiftplansel hidefda=1              |
-| Weekly Schedule III                                            | cmd=weeklyworkplan                      |
-| Weekly Schedule III (without Full-Day Activities)              | cmd=weeklyworkplan hidefda=1            |
+- showconsel=1 (Show Contracts And Selections)
+- hidefda=1 (Hide Full Day Activities)
+- showbreaks=1 (Show Breaks)
 
-## Daily schedules
+Example: `cmd=shiftplan showconsel=1`
 
-| Report                                                      | CMD Parameter                   |
+The tables below display all the required value for reports that are available under _WFM > Monitoring > Reports_{:.breadcrumbs}.
+
+## Weekly schedule reports
+
+<style>
+table {
+  width: 100%;
+}
+
+table th:first-of-type {
+    width: 50%;
+}
+table th:nth-of-type(2) {
+    width: 50%;
+}
+</style>
+
+| Report name                                                    | Value for the **cmd** parameter     |
+| -------------------------------------------------------------- | ----------------------------------- |
+| Weekly Schedule I                                              | shiftplan                           |
+| Weekly Schedule I with Filter                                  | shiftplan showconsel=1              |
+| Weekly Schedule I (without Full-Day Activities)                | shiftplansel hidefda=1              |
+| Weekly Schedule II (without Full-Day Activities)               | shiftplansel showbreaks=1 hidefda=1 |
+| Weekly Schedule II (without Breaks)                            | shiftplansel                        |
+| Weekly Schedule (without Breaks) (without Full-Day Activities) | shiftplansel hidefda=1              |
+| Weekly Schedule III                                            | weeklyworkplan                      |
+| Weekly Schedule III (without Full-Day Activities)              | weeklyworkplan hidefda=1            |
+
+## Daily schedule reports
+
+| Report name                                                 | Value for the **cmd** parameter |
 | ----------------------------------------------------------- | ------------------------------- |
-| Daily Schedule I                                            | cmd=staffworkpubar              |
-| Daily Schedule I with Breaks                                | cmd=staffworkpubarbreaks        |
-| Daily Schedule I (without absences, illnesses and vacation) | cmd=staffworkpubarabsences      |
-| Daily Schedule II                                           | cmd=staffworktimebar            |
-| Daily Schedule II with Breaks                               | cmd=staffworktimebarbreaks      |
-| Daily Schedule II with Shift Summary                        | cmd=staffworktimebartotal       |
-| Daily Schedule II with Shift Summary and Breaks             | cmd=staffworktimebartotalbreaks |
-| Daily Schedule III                                          | cmd=staffworkactbar             |
-| Daily Schedule III with Breaks                              | cmd=staffworkactbarbreaks       |
-| Daily Schedule IV                                           | cmd=staffworkpubarsel           |
-| Daily Schedule V                                            | cmd=staffworktimebarsel         |
-| Daily Schedule VI                                           | cmd=staffworkactbarsel          |
+| Daily Schedule I                                            | staffworkpubar                  |
+| Daily Schedule I with Breaks                                | staffworkpubarbreaks            |
+| Daily Schedule I (without absences, illnesses and vacation) | staffworkpubarabsences          |
+| Daily Schedule II                                           | staffworktimebar                |
+| Daily Schedule II with Breaks                               | staffworktimebarbreaks          |
+| Daily Schedule II with Shift Summary                        | staffworktimebartotal           |
+| Daily Schedule II with Shift Summary and Breaks             | staffworktimebartotalbreaks     |
+| Daily Schedule III                                          | staffworkactbar                 |
+| Daily Schedule III with Breaks                              | staffworkactbarbreaks           |
+| Daily Schedule IV                                           | staffworkpubarsel               |
+| Daily Schedule V                                            | staffworktimebarsel             |
+| Daily Schedule VI                                           | staffworkactbarsel              |
 
 ## Vacation and absence schedule
 
-| Report                                                   | CMD Parameter          |
-| -------------------------------------------------------- | ---------------------- |
-| Absence Schedule                                         | cmd=absence            |
-| General Absence Schedule                                 | cmd=realabsence        |
-| Absence Schedule with Day Status and Full-Day Activities |  cmd=orgabscalendar    |
-| Vacation Schedule I                                      | cmd=holiday            |
-| Vacation Schedule I with Full-Time-Equivalent            | cmd=vacation_fte       |
-| Vacation Schedule II                                     | cmd=vacationwithunpaid |
+| Report name                                              | Value for the **cmd** parameter |
+| -------------------------------------------------------- | ------------------------------- |
+| Absence Schedule                                         | absence                         |
+| General Absence Schedule                                 | realabsence                     |
+| Absence Schedule with Day Status and Full-Day Activities | orgabscalendar                  |
+| Vacation Schedule I                                      | holiday                         |
+| Vacation Schedule I with Full-Time-Equivalent            | vacation_fte                    |
+| Vacation Schedule II                                     | vacationwithunpaid              |
 
 ## Absence, illness- and vacation statistics
 
-| Report                                        | CMD Parameter   |
-| --------------------------------------------- | --------------- |
-| Absence Statistics                            | cmd=absence_c   |
-| Absence Statistics with Total Amount Column   | cmd=absence_t   |
-| Absence Statistics with Full-Time-Equivalent  | cmd=absence_fte |
-| Vacation Statistics                           | cmd=holiday_c   |
-| Vacation Statistics with Total Amount Column  | cmd=holiday_t   |
-| Vacation Statistics with Full-Time-Equivalent | cmd=holiday_fte |
-| Illness Statistics                            | cmd=illness_c   |
-| Illness Statistics with Total Amount Column   | cmd=illness_t   |
-| Illness Statistics with Full-Time-Equivalent  | cmd=illness_fte |
+| Report name                                   | Value for the **cmd** parameter |
+| --------------------------------------------- | ------------------------------- |
+| Absence Statistics                            | absence_c                       |
+| Absence Statistics with Total Amount Column   | absence_t                       |
+| Absence Statistics with Full-Time-Equivalent  | absence_fte                     |
+| Vacation Statistics                           | holiday_c                       |
+| Vacation Statistics with Total Amount Column  | holiday_t                       |
+| Vacation Statistics with Full-Time-Equivalent | holiday_fte                     |
+| Illness Statistics                            | illness_c                       |
+| Illness Statistics with Total Amount Column   | illness_t                       |
+| Illness Statistics with Full-Time-Equivalent  | illness_fte                     |
 
 ## Work time reports
 
-| Report                              | CMD Parameter      |
-| ----------------------------------- | ------------------ |
-| Time Worked Times per Planning Unit | cmd=diff_pu        |
-| Activities in Hours                 | cmd=activ_st       |
-| Activities in Percent               | cmd=activ_per      |
-| Activity Statistics                 | cmd=activity_stat  |
-| Net Working Times                   | cmd=realized_hours |
-| Activity Analysis                   | cmd=state_train    |
+| Report name                         | Value for the **cmd** parameter |
+| ----------------------------------- | ------------------------------- |
+| Time Worked Times per Planning Unit | diff_pu                         |
+| Activities in Hours                 | activ_st                        |
+| Activities in Percent               | activ_per                       |
+| Activity Statistics                 | activity_stat                   |
+| Net Working Times                   | realized_hours                  |
+| Activity Analysis                   | state_train                     |
 
 ## Break schedules
 
-| Report             | CMD Parameter  |
-| ------------------ | -------------- |
-| Break Schedule I   | cmd=pause      |
-| Break Schedule II  | cmd=pausetwo   |
-| Break Schedule III | cmd=pausethree |
+| Report name        | Value for the **cmd** parameter |
+| ------------------ | ------------------------------- |
+| Break Schedule I   | pause                           |
+| Break Schedule II  | pausetwo                        |
+| Break Schedule III | pausethree                      |
 
 ## Other reports
 
-| Report                                         | CMD Parameter          |
-| ---------------------------------------------- | ---------------------- |
-| Difference in Working Times Between Levels     | cmd=worktimes          |
-| Time Accounts Report                           | cmd=timeacount         |
-| Shifts with Requirement                        | cmd=genshifts          |
-| Days With Night, Weekend und Holiday Schedules |
-| Capacities According To Contract Type          | cmd=capacity           |
-| Training Models                                | cmd=train_camp_summary |
-| Minimum Staffing                               | cmd=minimalcoverage    |
-| Scheduling Rules Configuration                 | cmd=schedulingrules    |
-| Vacation Overview                              | cmd=vacationoverview   |
-| Shift Overview                                 | cmd=monthlyshiftplan   |
-| Yearly Working Time Analysis                   | cmd=work_time_analysis |
-| Conformance Report                             | cmd=conformance        |
-| Adherence Report                               | cmd=adherence          |
+| Report name                                    | Value for the **cmd** parameter |
+| ---------------------------------------------- | ------------------------------- |
+| Difference in Working Times Between Levels     | worktimes                       |
+| Time Accounts Report                           | timeacount                      |
+| Shifts with Requirement                        | genshifts                       |
+| Days With Night, Weekend und Holiday Schedules | shifttype                       |
+| Capacities According To Contract Type          | capacity                        |
+| Training Models                                | train_camp_summary              |
+| Minimum Staffing                               | minimalcoverage                 |
+| Scheduling Rules Configuration                 | schedulingrules                 |
+| Vacation Overview                              | vacationoverview                |
+| Shift Overview                                 | monthlyshiftplan                |
+| Yearly Working Time Analysis                   | work_time_analysis              |
+| Conformance Report                             | conformance                     |
+| Adherence Report                               | adherence                       |
 
 ## Exchange reports
 
-| Report              | CMD Parameter          |
-| ------------------- | ---------------------- |
-| Exchanges I         | cmd=shiftexchdetails   |
-| Exchanges II        | cmd=shiftexchnodetails |
-| Exchange Statistics | cmd=shiftexchstats     |
+| Report name         | Value for the **cmd** parameter |
+| ------------------- | ------------------------------- |
+| Exchanges I         | shiftexchdetails                |
+| Exchanges II        | shiftexchnodetails              |
+| Exchange Statistics | shiftexchstats                  |
 
 ## Employee work schedules
 
-| Report                                              | CMD Parameter              |
-| --------------------------------------------------- | -------------------------- |
-| Employee Work Schedule I (List)                     | cmd=staffwork showbreaks=1 |
-| Employee Work Schedule I (List) (without Breaks)    | cmd=staffwork              |
-| Employee Work Schedule II (List)                    | cmd=staffworkabsill        |
-| Employee Work Schedule III (Graph)                  | cmd=staffworkbar           |
-| Employee Work Schedule IV (6 Week)                  | cmd=staffsixweeksnobreaks  |
-| Employee Work Schedule IV (6 Week) (Activities)     | cmd=staffsixweeks          |
-| Employee Work Schedule IV (6 Week) (without Breaks) | cmd=staffsixweekstwo       |
+| Report name                                         | Value for the **cmd** parameter |
+| --------------------------------------------------- | ------------------------------- |
+| Employee Work Schedule I (List)                     | staffwork showbreaks=1          |
+| Employee Work Schedule I (List) (without Breaks)    | staffwork                       |
+| Employee Work Schedule II (List)                    | staffworkabsill                 |
+| Employee Work Schedule III (Graph)                  | staffworkbar                    |
+| Employee Work Schedule IV (6 Week)                  | staffsixweeksnobreaks           |
+| Employee Work Schedule IV (6 Week) (Activities)     | staffsixweeks                   |
+| Employee Work Schedule IV (6 Week) (without Breaks) | staffsixweekstwo                |
 
 ## Other employee reports
 
-| Report                                             | CMD Parameter          |
-| -------------------------------------------------- | ---------------------- |
-| Employee Request Schedule I (List)                 | cmd=staff_wish         |
-| Working Times per Employee I                       | cmd=diff_st            |
-| Working Times per Employee II                      | cmd=diff_st_two        |
-| Montly Employees' Journal                          | cmd=journal            |
-| Organisational Chart                               | cmd=organ              |
-| Weekend Working Hours I                            | cmd=weekendwork        |
-| Weekend Working Hours II                           | cmd=weekendwork2       |
-| Weekend Working Hours III (Lottery and Assignment) | cmd=weekendwork3       |
-| Anniversaries                                      | cmd=jubilee            |
-| Vacation Slip                                      | cmd=hd_list            |
-| Employees per Contract Type                        | cmd=read               |
-| Fluctuation I                                      | cmd=fluct              |
-| Fluctuation II                                     | cmd=detailfluctuation  |
-| Yearly Overview                                    | cmd=absencejob_cal     |
-| Compensation Days for Weekend Work                 | cmd=comp_week_work     |
-| Employee Shift Sequences                           | cmd=staffshiftseq      |
-| Timetable                                          | cmd=monthly_work_sched |
-| Workplace                                          | cmd=assignedworkplaces |
-| Holiday Work (Lottery And Assignment)              | cmd=laaholidaywork     |
-| Minimum Occupance By Sites                         | cmd=deskminstaffing    |
-| Work Place Occupancy                               | cmd=deskalloc          |
-| Validity Of Master Data                            | cmd=masterdatavalidity |
-| Coach/Trainee - Scheduling Difference              | cmd=coach_trainee      |
-| Master Data Overview                               | cmd=employeemasterdata |
-| Group Authorization                                | cmd=group_auth         |
-| Modifying Master Data                              | cmd=audit              |
+| Report name                                        | Value for the **cmd** parameter |
+| -------------------------------------------------- | ------------------------------- |
+| Employee Request Schedule I (List)                 | staff_wish                      |
+| Working Times per Employee I                       | diff_st                         |
+| Working Times per Employee II                      | diff_st_two                     |
+| Montly Employees' Journal                          | journal                         |
+| Organisational Chart                               | organ                           |
+| Weekend Working Hours I                            | weekendwork                     |
+| Weekend Working Hours II                           | weekendwork2                    |
+| Weekend Working Hours III (Lottery and Assignment) | weekendwork3                    |
+| Anniversaries                                      | jubilee                         |
+| Vacation Slip                                      | hd_list                         |
+| Employees per Contract Type                        | read                            |
+| Fluctuation I                                      | fluct                           |
+| Fluctuation II                                     | detailfluctuation               |
+| Yearly Overview                                    | absencejob_cal                  |
+| Compensation Days for Weekend Work                 | comp_week_work                  |
+| Employee Shift Sequences                           | staffshiftseq                   |
+| Timetable                                          | monthly_work_sched              |
+| Workplace                                          | assignedworkplaces              |
+| Holiday Work (Lottery And Assignment)              | laaholidaywork                  |
+| Minimum Occupance By Sites                         | deskminstaffing                 |
+| Work Place Occupancy                               | deskalloc                       |
+| Validity Of Master Data                            | masterdatavalidity              |
+| Coach/Trainee - Scheduling Difference              | coach_trainee                   |
+| Master Data Overview                               | employeemasterdata              |
+| Group Authorization                                | group_auth                      |
+| Modifying Master Data                              | audit                           |

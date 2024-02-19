@@ -7,7 +7,7 @@ toc: false
 description: Comment fonctionne le module Capacity
 related_articles:
   - overwrite_title: Add title for untranslated source
-    filepath: features/scheduling/capacity/capacity-insert-shift-sequences.md
+    filepath: features/scheduling/schedules/schedules-insert-shift-sequences.md
 ---
 
 _Plan > Capacity_{:.breadcrumbs} donne un aperçu de vos futurs besoins en matière de recrutement et de formation. C'est ici que vous avez la possibilité de réaliser votre planification à long terme.

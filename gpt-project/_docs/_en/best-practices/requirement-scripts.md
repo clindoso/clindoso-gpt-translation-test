@@ -1,39 +1,46 @@
 ---
-title: Choose the correct requirements script
+title: Choose the right method to calculate your staff requirements
 product_label:
   - essential
   - advanced
   - enterprise
   - classic
 description: Learn which staff calculation method suits your needs best.
-toc: false
+toc: true
 ---
 
-injixo offers a variety of methods to calculate staff requirements.
-While your Contact Center's service level agreement (SLA) may have a service goal of handling 80% of all calls within 20 seconds, Erlang-C may not be the optimal script to determine staff requirements.
-There are a number of factors to consider when deciding on which script best suits your Contact Center's particular requirements. <br>
-This best practices article provides an interactive decision tree exercise and reference table to help you determine which script is best suited for your organization.
+injixo offers calculation methods and requirements scripts to calculate staff requirements. 
 
-## Decision guidance
+## Calculation methods
 
-The following diagram will help you to decide which requirement script is the right one for you:
+- Erlang-C: Calculation method for inbound contacts based on the target volume and service level.
+- Chat: Calculation method based on Erlang-C with an additional parameter to set a number of consecutive chat sessions.
+- Linear: Calculation method for contacts that do not need to be handled in real time (e.g. letters, emails, tickets, or orders). The calculation result is based on the forecasted volume and, optionally, on AHT.
 
-{{ 1 | image: 'Workflow', '60%' }}
+Learn how to {% link_new configure the calculation methods | features/forecast/injixo-forecast/staff-requirement.md %}.
 
-## Requirements scripts overview
+## Requirement scripts
 
-For a full picture of all available staff calculation methods, here is an overview:
+- {% link_new Constant requirement | features/forecast/requirement-scripts/requirement-constant.md %}: For activities for which you have no forecast, but for which you know the number of people needed for each time range. You can enter your own staff requirements values. You can define values for multiple timespans and activities.
+- {% link_new Multiactivity | features/forecast/requirement-scripts/requirement-multiactivity.md %}: To schedule multiskilled people and combine different channels (e.g. several hotlines, or a combination of chats and calls).
+- {% link_new Outbound | features/forecast/requirement-scripts/requirement-outbound.md %}: For campaigns with outbound calls. You can set parameters that define the campaign duration, redial rate, right party contact rate, etc.
+- Backoffice linear: For indirect communication, like letters or emails, that need to be handled within a predefined time frame. To use this script, talk to your consultant.
+- Average speed of answer (ASA): Script based on Erlang-C that focuses on the average waiting time. To use this script, talk to your consultant.
+- Abandoned call rate: Script based on Erlang-C that lets you define your service goal as the maximum abandoned call rate. You can also use it if your goal is based on PCA (Percentage of Calls Answered). To use this script, talk to your consultant.
 
-- {% link_new Constant requirement script | features/forecast/requirement-scripts/requirement-constant.md %}: For any type of activity where you don't have a forecast, but you know exactly how many people you need at which time. You can enter your own staff requirements numbers. You can even set multiple Timespans and Activities to plan for.
-- {% link_new Linear requirement script | features/forecast/requirement-scripts/requirement-linear.md %}: For non-direct communication such as letters, emails or orders, based on the assumption that this volume is processed sequentially. The calculation result is based on the forecasted volume and optionally AHT.
-- {% link_new Backoffice Linear requirement script | features/forecast/requirement-scripts/requirement-backoffice-linear.md %}: For non-direct communication (letters, emails, etc.) that you would like to handle in a pre-defined time frame. Choose between processing messages within x hours or processing all messages that came in by e.g. 8 am by the end of business day.
-- {% link_new Chat requirement script | features/forecast/requirement-scripts/requirement-chat.md %}: Erlang-C based calculation method with an additional parameter to specify a number of consecutive chat sessions.
-- {% link_new Erlang-C (Single Activity) requirement script | features/forecast/requirement-scripts/requirement-erlangc.md %}: Standard staff staff calculation method for inbound based on the volume and the service level you would like to achieve.
-- {% link_new Multiactivity requirement script | features/forecast/requirement-scripts/requirement-multiactivity.md %}: For scheduling multiskill agents and the combination of different channels (e.g several hotlines but also combinations of chats and calls).
-- {% link_new Average Speed of Answer Requirement (ASA) script | features/forecast/requirement-scripts/requirement-asa.md %}: Variation of Erlang-C that focuses on the average wait time before your agents answer incoming calls.
-- {% link_new Abandoned Call Rate requirement script | features/forecast/requirement-scripts/requirement-abandoned-calls.md %}: Define your service goal as the maximum abandoned call rate, based on Erlang-C. Also useable if your goal is based on PCA (Percentage of Calls Answered), simply reverse the PCA target. For example, if your PCA is 80%, add an abandonment rate target of 20%.
-- {% link_new Outbound requirement script | features/forecast/requirement-scripts/requirement-outbound.md %}: For campaigns with outbound calls. The script includes parameters to specify campaign duration, redial rate, right party contact rate, etc.
+## Data types and relevant staff requirements calculation methods
 
-Still not sure which Script to use? Take a look at the table and Flowchart below to help you decide!
+The following table displays which calculation methods and requirement scripts are suitable for which data type when calculating staff requirements:
 
-{{ 2 | image: 'Overview for requirement scripts' }}
+| Data type or parameter  | Erlang-C (method) | Chat (method)  | Linear (method) | Constant requirement (script) | Multiactivity (script) | Outbound (script) |
+| ----------------------- |-------------------| -------- |--------  | -------- |   ------- | ------- |
+| Data that can be stored (e.g. emails, tickets, orders)   | No        | No | No  | No |  Yes | Yes |
+| Calls                   | Yes       | No | No  | No |  Yes | No |
+| Chat                   | No       | Yes | No  | Yes |  Yes | No |
+| Inbound contacts                   | Yes       | Yes | Yes  | Yes |  Yes | No |
+| Outbound contacts                   | No       | No | No  | No |  No | Yes |
+| One line only                       | Yes     | Yes | Yes  | Yes |  No | Yes |
+| Several lines                | No       | No | No  | No |  Yes | No |
+| Historical data               | Yes     | Yes | Yes  | No |  Yes | Yes |
+| Type of service goal               | Yes   | Yes | No  | No |  Yes | Yes |
+| Service level   (e.g. 80/20)          | Yes     | Yes | No  | No |  Yes | Yes |

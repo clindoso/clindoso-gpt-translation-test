@@ -28,7 +28,7 @@ Vous pouvez associer une ou plusieurs activités externes à une activité d’i
 
 Après avoir sélectionné une **unité opérationnelle** et un **groupe** (facultatif), la page affichera les données. Vous pouvez voir un aperçu général ou des détails sur le statut individuel d’un employé dans le système externe et dans injixo.
 
-Conseil&nbsp;: limitez les droits sur certaines unités opérationnelles ou certains groupes en configurant les {% link_new rôles utilisateur | getting-started/configure-user-roles.md | #-définir-les-droits-sur-wfm %}.
+Conseil&nbsp;: limitez les droits sur certaines unités opérationnelles ou certains groupes en configurant les {% link_new rôles utilisateur | getting-started/configure-user-roles.md | #définir-les-autorisations-sur-les-fonctionnalités-wfm %}.
 
 ### Statut
 

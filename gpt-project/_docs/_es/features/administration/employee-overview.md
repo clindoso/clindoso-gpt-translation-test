@@ -24,7 +24,7 @@ injixo ofrece tres lugares donde puedes crear y editar empleados, dependiendo de
 | Dónde                                           | Qué puedes hacer              |
 | ----------------------------------------------- | ------------------------ |
 | _Plan > Configuración > Empleados_{:.breadcrumbs}   | {% link_new Configurar un empleado para la planificación | features/administration/employee-overview.md | #panorámica-de-los-ajustes-de-empleado %}. Los empleados que no estén asignados a ninguna unidad de planificación no aparecerán en la lista.      |
-| _Account > Usuarios_{:.breadcrumbs}                                 | Gestiona los permisos de acceso de los usuarios mediante {% link_new roles de usuario | getting-started/configure-user-roles.md | #crear-nuevos-roles-de-usuario %}, {% link_new desbloquear usuarios bloqueados | getting-started/manage-user-accounts.md | #desbloquear-usuarios %}, {% link_new establecer contraseñas nuevas para los usuarios | getting-started/manage-user-accounts.md | #establecer-una-contraseña-nueva-para-un-usuario %}, y {% link_new comprobar qué usuarios se incluyen en la facturación | getting-started/how-does-billing-work.md | #consultar-los-usuarios-facturados-y-no-facturados %} y cuáles no. También puedes {% link_new eliminar usuarios | getting-started/manage-user-accounts.md | #eliminar-una-cuenta-de-usuario %} para que sean excluidos de la facturación. |
+| _Account > Usuarios_{:.breadcrumbs}                                 | Gestiona los permisos de acceso de los usuarios mediante {% link_new roles de usuario | getting-started/configure-user-roles.md | #crear-un-nuevo-rol-de-usuario %}, {% link_new desbloquear usuarios bloqueados | getting-started/manage-user-accounts.md | #desbloquear-usuarios %}, {% link_new establecer contraseñas nuevas para los usuarios | getting-started/manage-user-accounts.md | #establecer-una-contraseña-nueva-para-un-usuario %}, y {% link_new comprobar qué usuarios se incluyen en la facturación | getting-started/how-does-billing-work.md | #consultar-los-usuarios-facturados-y-no-facturados %} y cuáles no. También puedes {% link_new eliminar usuarios | getting-started/manage-user-accounts.md | #eliminar-una-cuenta-de-usuario %} para que sean excluidos de la facturación. |
 | **People**                                                           | {% link_new Crear y gestionar | features/people/manage-people.md %} cuentas de empleados y gestionar la información de contacto y dirección. |
 
 En _Plan > Configuración > Empleados_{:.breadcrumbs}, los usuarios sin acceso de administrador solo pueden ver a los empleados asignados a las unidades de planificación para las que tienen permisos. Los empleados que no están asignados a ninguna unidad de planificación no aparecen en la lista, incluso si seleccionas Todas/Todos en los menús desplegables de unidad de planificación y selección. Los usuarios con acceso de administrador pueden ver todos los empleados.
@@ -59,7 +59,7 @@ Prerrequisito: Has configurado {% link_new todos los elementos requeridos para l
 1. Haz clic en un empleado de la lista.<br>
 Puedes usar los enlaces rápidos en azul en la parte superior derecha para navegar rápidamente a una sección.
 2. Haz clic en el {% icon item-add %} en una sección para añadir un nuevo ajuste. Para editar un ajuste ya existente, haz clic en el {% icon item-edit %}.<br>Aprende más sobre las [opciones individuales de configuración](#panorámica-de-los-ajustes-de-empleado).
-3. (Opcional) En algunas secciones, puedes configurar las fechas {% link_new «Válido desde» y «Válido hasta»| features/administration/set-a-validity-period.md %}, que limitan el período de validez de un ajuste.
+3. (Opcional) En algunas secciones, puedes configurar las fechas {% link_new Válido desde y Válido hasta | features/administration/set-a-validity-period.md %}, que limitan el período de validez de un ajuste.
 4. Para guardar tus cambios, haz clic en _Aceptar_{:.doc-button}.
 
 ## Panorámica de los ajustes de empleado
@@ -89,12 +89,11 @@ Los siguientes ajustes no son obligatorios, pero también pueden usarse para la 
 
 - {% link_new Modelos de horario | features/administration/daymodels/daymodel-creation.md %}: por defecto, injixo usa todos los modelos de horario asignados a la unidad de planificación para crear horarios para tus empleados. Si asignas modelos de horario personales a un empleado, la planificación optimizada solo usará estos modelos de horario específicos para el empleado. Si quieres que injixo solo planifique empleados que hayan sido asignados a modelos de horario personales, puedes activar la regla de planificación 2661.
 
-- {% link_new Rotaciones de turnos | features/administration/shift-sequences.md %}: las rotaciones de turnos contienen modelos de horarios o actividades con un patrón semanal repetitivo. Si quieres usar rotaciones de turnos para crear horarios para tus empleados, primero debes crear y [asignar rotaciones de turnos a un empleado](#asignar-una-rotación-de-turnos). También puedes asignar varias rotaciones de turnos a un empleado, p.&nbsp;ej., si quieres usar una rotación de turnos para los fines de semana y otra para los días laborables. 
+- {% link_new Rotaciones de turnos | features/administration/shift-sequences.md %}: las rotaciones de turnos contienen modelos de horarios o actividades con un patrón semanal repetitivo. Si quieres usar rotaciones de turnos para crear horarios para tus empleados, primero debes crear y [asignar rotaciones de turnos a un empleado](#asignar-una-rotación-de-turnos). También puedes asignar varias rotaciones de turnos a un empleado, p.&nbsp;ej. si quieres usar una rotación de turnos para los fines de semana y otra para los días laborables. 
 
 - {% link_new Grupos | features/administration/selections.md %}: los grupos funcionan como una especie de filtro para mostrar una selección de empleados en una vista general o para realizar una acción simultáneamente para un grupo específico de empleados. Puedes crear uno o varios grupos desde el menú desplegable Grupos. Ejemplos de grupos son empleados que siempre tienen el mismo horario, tienen el mismo contrato, trabajan en rotaciones de turnos, comparten coche para ir al trabajo, o que son planificados primero porque trabajan a jornada completa.
 
-- {% link_new Modelos de planificación | features/administration/work-time-pattern-models.md %}: usa los modelos de planificación para limitar la planificación automática a un subconjunto de los modelos de horario disponibles. Solo puedes asignar un modelo de planificación por empleado. Elige una {% link_new fecha de referencia | features/administration/reference-date.md %} para marcar la fecha de inicio del modelo de planificación.
-
+- {% link_new Modelos de planificación | features/administration/work-time-pattern-models.md %}: usa los modelos de planificación para limitar la planificación automática a un subconjunto de los modelos de horario disponibles. Solo puedes asignar varios modelos de planificación a un mismo empleado si sus periodos de validez no coinciden. Define una fecha de referencia para marcar cuándo se usa por primera vez el modelo de planificación.
 
 - Sistemas externos: asigna a tus empleados {% link_new identificadores de usuarios externos | features/acd-integration/cloud/import-agent-status-data.md | #asignar-identificadores-de-usuarios-externos-a-los-empleados-en-injixo %}, que son necesarios para importar estados de los agentes de tu distribuidor de llamadas.
 
@@ -133,9 +132,9 @@ Para asignar una rotación de turnos, sigue los pasos a continuación:
 2. Selecciona una rotación de turnos
 3. Desde el menú desplegable de la fila de empleados, selecciona la fila de la {% link_new rotación de turnos | features/administration/shift-sequences.md %} que corresponda al empleado.
 4. Especifica el orden.<br>Este ajuste solo es relevante si necesitas asignar más de una rotación de turnos a un empleado. Las rotaciones de turnos con valores más bajos se insertan primero y pueden ser sobrescritas por las siguientes.
-5. Establece una {% link_new fecha de referencia | features/administration/reference-date.md %} que marque el primer día de la rotación de turnos.
+5. Establece una fecha de referencia que marque el primer día de la rotación de turnos.
 6. Haz clic en _Aceptar_{:.doc-button}.  
-   Ahora puedes {% link_new añadir rotaciones de turnos | features/scheduling/capacity/capacity-insert-shift-sequences.md %} a la planificación.
+   Ahora puedes {% link_new insertar rotaciones de turnos | features/scheduling/schedules/schedules-insert-shift-sequences.md %} en la planificación.
 
 ## Transferir empleados
 

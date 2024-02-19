@@ -6,6 +6,9 @@ product_label:
   - advanced
   - enterprise
   - classic
+redirect_from:
+  - it/injixo-me-agent-view/
+redirect_reason: Updated filename on 03 July 2023
 ---
 
 injixo Me è il portale dei dipendenti di injixo. Vai su injixo Me per:
@@ -29,7 +32,7 @@ injixo Me è compatibile con le ultime due versioni dei seguenti browser:
 Puoi accedere a injixo Me da computer, {% link_new smartphone o tablet | features/injixo-me/use-injixo-me/injixo-me-on-your-smartphone.md %}.
 Dopo aver fatto il login nel tuo account injixo Me, vedrai fino a sei funzionalità: [Pannello di controllo](#avere-una-panoramica-generale-pannello-di-controllo), [Agenda personale](#consultare-la-tua-pianificazione-agenda-personale), [Calendario del team](#consultare-la-pianificazione-del-tuo-team-calendario-del-team), [Permessi](#gestire-le-richieste-di-permesso-permessi), [Disponibilità](#impostare-le-tue-disponibilità-disponibilità) e [Rilevazione presenze](#timbrare-e-registrare-le-attività-rilevazione-presenze).
 
-Se non vedi una di queste funzionalità, potrebbe non esssere disponibile per te. Contatta il tuo supervisore o pianificatore.
+Se non vedi una di queste funzionalità, potrebbe non essere disponibile per te. Contatta il tuo supervisore o pianificatore.
 
 ## Avere una panoramica generale: Pannello di controllo
 
@@ -76,7 +79,11 @@ Se la tua pianificazione è stata pubblicata, puoi scaricarla come file PDF o IC
    - **Elenco (PDF)**: scarica un elenco delle tue attività pianificate.
    - **Blocchi (PDF)**: scarica una panoramica delle tue attività pianificate organizzate lungo una cronologia. Ogni attività viene mostrata con lo stesso colore visibile nella tua pianificazione in injixo Me.
    - **File calendario (ICS)**: scarica la tua pianificazione e importala nella tua app di calendario.
-5. Clicca su _Scarica_{:.doc-button}.
+5. Clicca su _Scarica_{:.doc-button}. 
+
+> Nota
+>
+> Nel report in formato blocchi, i turni che finiscono dopo mezzanotte sono riportati interamente nella riga del giorno in cui il turno inizia. L’orario mostrato nella colonna **Fine** si riferisce al giorno in cui il turno finisce.
 
 ## Consultare la pianificazione del tuo team: Calendario del team
 
@@ -91,7 +98,7 @@ In _Me > Permessi_{:.breadcrumbs} puoi vedere il saldo dei permessi e richiedere
 1. Vai su _Me > Permessi_{:.breadcrumbs}.
 2. Dal menu a tendina in alto a sinistra seleziona un’attività.
 
-I tre riquadri sotto il menu a tendina mostrano i permessi richiesti, in sospeso e autorizzate.
+I tre riquadri sotto il menu a tendina mostrano i permessi richiesti, rimanenti e autorizzati.
 Utilizza il menu a tendina sottostante per filtrare le tue richieste di permesso in base allo stato di approvazione.
 
 Colori diversi identificano lo stato delle tue richieste nell’elenco delle richieste e nel calendario:
@@ -130,7 +137,7 @@ In _Me > Disponibilità_{:.breadcrumbs} puoi impostare fino a 14 disponibilità.
 ### Impostare una disponibilità
 
 1. Vai su _Me > Disponibilità_{:.breadcrumbs}.
-2. Clicca su _Imposta disponibilità_{:.doc-button} o seleziona un giorno nel calendario.
+2. Clicca su _Imposta disponibilità_{:.doc-button} o seleziona un giorno nel calendario.  
    Si aprirà una finestra.
 3. Imposta l’interruttore **Disponibile**:
    - su **Sì** per inserire i periodi durante i quali sei disponibile.

@@ -1,71 +1,71 @@
 ---
 title: Freshchat-Integration hinzufügen
-description: Verbinde Dein Freshchat CRM mit injixo und nutze die importierten Daten in injixo Forecast.
+description: Erfahre, wie du dein Freshchat-CRM mit injixo verbinden kannst, um Daten zu importieren.
 product_label:
-  - essential
   - advanced
   - enterprise
-  - classic
 related_articles:
   - overwrite_title: Add title for untranslated source
     filepath: features/acd-integration/cloud/how-integrations-work.md
   - overwrite_title: Add title for untranslated source
     filepath: features/acd-integration/cloud/add-cloud-integration.md
 redirect_from:
-  - /de/add-freshdesk-messaging-integration/
+  - de/add-freshdesk-messaging-integration/
 redirect_reason: Updated filename on 15 September 2023
 ---
 
-In diesem Artikel lernst Du, wie:
-- Du eine Freshchat-Integration hinzufügst.
-- Du die erforderliche injixo App erhältst und installierst.
-- injixo Freshchat-Daten anzeigt.
-
-Die Freshchat-Integration liefert Kontaktvolumina für Chats.
-
 Neu bei Integrationen? Lerne zuerst {% link_new die Grundlagen | features/acd-integration/cloud/how-integrations-work.md %}.
 
-## Eine Freshchat-Integration hinzufügen
+## Freshchat-Integration hinzufügen
 
-Um eine neue Freshchat-Integration in injixo hinzuzufügen, folge dem Prozess wie in {% link_new Cloud-Integration hinzufügen | features/acd-integration/cloud/add-cloud-integration.md %} beschrieben:
+Um eine neue Freshchat-Integration in injixo hinzuzufügen, benötigst du einen Pro- oder einen Enterprise-Account bei Freshchat.
 
-1. Gib einen **eindeutigen Namen** für die neue Integration ein, der noch nicht verwendet wurde.
-2. Fülle das Formular mit den erforderlichen Freshchat-spezifischen Informationen aus:
-    1. Gib Deinen vollständigen Freshchat-Domainnamen einschließlich der Subdomain ein, z. B. *example.freshchat.com*.
-    2. Kopiere einen gültigen API-Key von Freshchat:
-      1. Melde Dich bei Freshchat mit einem Benutzer mit der Rolle _Account Administrator_ an.
-      2. Gehe zum Admin-Modul. Du findest die [API Tokens](https://support.freshchat.com/en/support/solutions/articles/50000000011-api-tokens) im Abschnitt *Configure* in Freshchat.
-      3. Kopiere den **API-Key** auf der Seite.
-      4. Gehe zurück zu injixo und füge den API-Key in das Feld _API-Schlüssel_ ein.
-3. Speichere Deine Konfiguration.
+1. Gehe zu _Account > Integrationen_{:.breadcrumbs}.
+2. Wenn es bereits eine Integration gibt, klicke auf _Integration hinzufügen_{:.doc-button}.
+3. Klicke in der **Freshworks**-Kachel auf _Modell wählen_{:.doc-button}.
+4. Klicke im Abschnitt **Freshchat** auf _Integration hinzufügen_{:.doc-button}.
 
-## Die injixo App installieren
+## Freshchat-Integration einrichten
 
-Die Freshchat-Integration benötigt eine Client-Anwendung. Nachdem Du Deine Konfiguration gespeichert hast, kannst Du auf den Abschnitt _injixo App installieren_ zugreifen.
+1. Gib einen eindeutigen Namen für die neue Integration ein, der die Datenquelle kennzeichnet.
+2. Gib im Abschnitt **Zugangsdaten** deinen vollständigen Freshchat-Domainnamen einschließlich der Subdomain ein, z.&nbsp;B. example.freshchat.com.
+3. Gehe zu Freshchat und kopiere einen gültigen API-Schlüssel eines Benutzers mit der Rolle Account Administrator.
+4. Gehe zurück zu injixo und füge den API-Key in das Feld **API-Schlüssel** ein.
+5. Klicke auf _Integration speichern_{:.doc-button}.
 
-Erzeuge und kopiere dort den **injixo API-Schlüssel**.  
+### injixo-App installieren
 
-Um die *injixo* App in Deinem Freshdesk-Konto einzurichten, folge den Anweisungen auf dem Bildschirm. Weitere Informationen findest Du auf dem [Freshworks marketplace](https://www.freshworks.com/apps/freshdesk/injixo_connect).
+Die Freshchat-Integration benötigt eine Client-Anwendung. Nachdem du deine Konfiguration gespeichert hast, kannst du auf den Abschnitt **Installiere injixo-App** am Ende der Seite zugreifen.
+
+Generiere und kopiere dort den **injixo API-Key**.
+
+Um die injixo-App in deinem Freshchat-Account einzurichten, folge den Anweisungen auf dem Bildschirm. Weitere Informationen findest du auf dem [Freshworks Marketplace](https://www.freshworks.com/apps/injixo_connect).
 
 ## Freshchat-Daten in injixo
 
 ### Kontakte
 
-In Freshchat enthält ein Chat in der Regel mehrere Unterhaltungen, die zwischen Deinen Mitarbeitern und Deinen Kunden stattfinden. In injixo zählt jeder gelöste Chat als ein Kontakt, unabhängig von der Anzahl der Unterhaltungen.
+In Freshchat enthält ein Chat in der Regel mehrere Unterhaltungen, die zwischen deinen Mitarbeitern und deinen Kunden stattfinden. In injixo zählt jeder gelöste Chat als ein Kontakt, unabhängig von der Anzahl der Unterhaltungen.
 
 Beispiel: Ein Kunde erstellt einen Chat auf der Website. Der Mitarbeiter antwortet daraufhin, löst das Problem aber erst einen Tag später, da er weitere Informationen benötigt. Dies würde in injixo als ein Kontakt gezählt werden.
 
 ### Namenskonvention für Quell-Queues
 
-Die Quell-Queues, die injixo aus Deinen Chats erstellt, folgen dieser Konvention:
+Die Quell-Queues, die injixo aus deinen Chats erstellt, folgen dieser Konvention:
 
-"_Gruppenname_"
+"Gruppenname"
 
 Beispiele:
 
-- Kundenbetreuung
+- Kundensupport
 - Undefined_Queue
 
-#### Gelöschte Chats und Spam-Chats
+### Gelöschte Chats und Spam-Chats
 
-Ein Chat kann gelöscht oder als Spam markiert werden, wenn er aktualisiert wird. In diesem Fall kann die Integration den Gruppenamen nicht ermitteln. Die Quell-Queues, die solche Chats zählen, sind mit _Undefined_Queue_ gekennzeichnet. Normalerweise sind diese Queues für die Planung der Arbeitsaufkommen Deiner Agenten irrelevant.
+Ein Chat kann gelöscht oder als Spam markiert werden, wenn er aktualisiert wird. In diesem Fall kann die Integration den Gruppenamen nicht ermitteln. Die Quell-Queues, die solche Chats zählen, sind mit Undefined_Queue gekennzeichnet. Normalerweise spielen diese Queues bei der Schichtplanerstellung für deine Mitarbeiter keine Rolle.
+
+## Häufig gestellte Fragen
+
+| Frage                                                                                                                                                                       | Antwort                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| injixo zeigt plötzlich keine neuen Freshchat-Daten mehr an. Unter **Account > Integrationen** wird aber immer noch der Status Operational für meine Freshchat-Integration angezeigt. Was kann ich tun? | Die injixo-App erhält Freshchat-Daten und sendet Ereignisse an injixo. Bei einem Kommunikationsfehler zwischen der injixo-App und injixo können Freshchat-Daten eventuell nicht mehr angezeigt werden. Die Freshchat-Integration kann solche Kommunikationsfehler nicht erkennen.<br><br>Überprüfe, ob der injixo API-Schlüssel, den du beim Einrichten deiner injixo-App in deinem Freshchat-Account eingegeben hast, noch gültig ist. Wenn der API-Schlüssel ungültig ist, aktualisiere den injixo API-Schlüssel auf der Installationsseite der injixo-App. Wenn der API-Schlüssel noch gültig ist, wende dich an den injixo-Support. |

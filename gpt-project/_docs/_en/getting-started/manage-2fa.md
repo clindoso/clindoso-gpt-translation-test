@@ -19,7 +19,8 @@ To see other users' current 2FA status, proceed as follows:
 2. In the **2FA** column on the right, a shield icon indicates the 2FA status for each user. Hover over it to see more information.
   - Red icon {% icon 2FA-red | icon-only %}: 2FA is not active.
   - Orange icon with exclamation mark {% icon 2FA-orange | icon-only %}: 2FA was enforced for the user. The user has to activate 2FA upon next login.
-  - Green icon with checkmark {% icon 2FA-green | icon-only %}: 2FA is active.
+  - Orange icon with checkmark {% icon 2FA-activated | icon-only %}: 2FA is active. The user activated 2FA themselves.
+  - Green icon with checkmark {% icon 2FA-green | icon-only %}: 2FA is active. The use of 2FA was enforced.
 
 ## Enforce 2FA activation for other users
 You can make other users activate 2FA. Enforcing 2FA for other users has the following consequences:

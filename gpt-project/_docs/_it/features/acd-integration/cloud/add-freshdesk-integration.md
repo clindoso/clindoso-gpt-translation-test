@@ -17,6 +17,8 @@ Un'integrazione Freshdesk è un'integrazione cloud che importa i volumi di conta
 
 ## Aggiungere un’integrazione Freshdesk
 
+Per aggiungere una nuova integrazione Freshdesk in injixo, devi avere un account Freshdesk del tipo Pro o Enterprise.
+
 1. Vai su _Account > Integrazioni_{:.breadcrumbs}.
 2. Se ci sono già altre integrazioni, clicca su _Aggiungi integrazione_{:.doc-button}.
 3. Nel riquadro **Freshworks**, clicca su _Seleziona modello_{:.doc-button}.
@@ -27,8 +29,8 @@ Un'integrazione Freshdesk è un'integrazione cloud che importa i volumi di conta
 1. Inserisci un nome unico per l’integrazione che identifichi l’origine dei dati.
 2. Nella sezione **Credenziali**, inserisci il nome completo del tuo dominio Freshdesk, incluso il sottodominio, per esempio: esempio.freshdesk.com.
 3. Vai su Freshdesk e copia una chiave API valida di un utente con il ruolo di Account Administrator.
-4. Torna su injixo e incolla la chiave API nel campo **API key**.
-5. Clicca su _Salva integrazione_{:.doc-button}. 
+4. Torna su injixo e incolla la chiave API nel campo **Chiave API**.
+5. Clicca su _Salva integrazione_{:.doc-button}.
 
 ## Installare l’app injixo
 
@@ -77,3 +79,9 @@ Un nuovo ticket creerà una nuova coda. La risposta a un ticket creerà una coda
 ### Ticket eliminati e ticket spam
 
 Quando un ticket che è già stato eliminato o contrassegnato come spam viene modificato, non è possibile determinare il nome del gruppo e il nome dell’origine. La coda di origine che conta questi ticket sarà etichettata come Unknown group/source Tickets o Unknown group/source Replies. Generalmente, queste code sono irrilevanti ai fini della pianificazione del workload dei dipendenti.
+
+## Domande frequenti
+
+| Domanda                                                                                                                                                                       | Risposta                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| injixo smette improvvisamente di mostrare nuovi dati di Freshchat ma in **Account > Integrazioni** l’integrazione Freshdesk ha ancora lo stato Operativo. Che cosa posso fare? | L'app injixo ottiene dati da Freshdesk e invia eventi a injixo. In caso di errori di comunicazione tra l'app injixo e injixo, i dati di Freshdesk potrebbero non essere più visualizzati. L'integrazione Freshdesk non è in grado di rilevare eventuali errori di comunicazione.<br><br>Verifica che la chiave API di injixo che hai inserito durante la configurazione dell'app injixo nel tuo account Freshdesk sia ancora valida. Se la chiave API non è più valida, aggiorna la chiave API di injixo nella pagina di installazione dell'app injixo. Se la chiave API è ancora valida, contatta l’assistenza di injixo. |

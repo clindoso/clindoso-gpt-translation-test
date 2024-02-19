@@ -18,7 +18,7 @@ related_articles:
   - overwrite_title: Add title for untranslated source
     filepath: features/administration/employee-overview.md
   - overwrite_title: Add title for untranslated source
-    filepath: features/scheduling/capacity/capacity-insert-shift-sequences.md
+    filepath: features/scheduling/schedules/schedules-insert-shift-sequences.md
 ---
 
 A shift sequence is a weekly pattern of day models or activities. With shift sequences, you can quickly insert these repeating patterns into your schedule, and let injixo optimize the rest of the schedule.
@@ -27,10 +27,10 @@ Shift sequences can save you many hours of work, since you do not have to schedu
 
 There are four use cases for shift sequences:
 
-1. Specify days when certain shifts must be scheduled
-2. Schedule recurring activities
-3. Specify days when people do not work
-4. Specify when shifts can be scheduled based on people's availabilities
+- Use case 1: Specify days when certain shifts must be scheduled
+- Use case 2: Schedule recurring activities
+- Use case 3: Specify days when people do not work
+- Use case 4: Specify when shifts can be scheduled based on people's availabilities
 
 Shift sequences consist of one or more rows. Each row is an individual pattern that can be inserted into the schedule.<br>
 Each row contains cells that represent the days of the week. In the cells, you insert the day models or activities that you want to plan using the shift sequence.<br>
@@ -39,7 +39,9 @@ Each row represents a weekly pattern for your schedule, which is why the number 
 ## Prerequisites
 
 To create shift sequences, you first need to create {% link_new activities | features/administration/activities.md %} or {% link_new day models | features/administration/daymodels/daymodel-creation.md %}.<br>
-After you have created shift sequences, you must {% link_new assign them to your people | features/administration/employee-overview.md | #assign-a-shift-sequence %} before you can insert them in your schedule.
+After you have created shift sequences, you must {% link_new assign them to your people | features/administration/employee-overview.md | #assign-a-shift-sequence %} before you can insert them in your schedule.<br>
+When you assign a shift sequence to a person, you must set a reference date. The reference date is the first day when the shift sequence will be planned. Starting on that date, the shift sequence repeats without interruption for as long as it is valid.<br>
+Because you configure shift sequences as weekly patterns, set the reference date to a Monday, or to the weekday when your working week starts.
 
 >Note
 >
@@ -56,10 +58,10 @@ To create shift sequences, go to _Plan > Configuration > Shift sequences_{:.brea
 1. Click the New icon {% icon item-add | icon-only %} in the upper left.
 2. Configure the settings of the shift sequence:<br>
   **Name**: Enter a unique name (max. 50 characters).<br>
-  **Abbreviation**: Enter the name or a shorten version of it (max. 25 characters).<br>
+  **Abbreviation**: Enter the name or a shorter version of it (max. 25 characters).<br>
   **Employee row(s)**: Enter the number of rows for the shift sequence (max. 53).<br>Each row will be assigned a number. Double-click on a row to rename it. You will need the row number or name to assign it to a person later.<br>
-  **Duration**: Enter a value between 1 and 371 days. The duration must be a multiple of seven.
-3. Click _Ok_{:.doc-button}.
+  **Duration**: Enter a value between 7 and 371 days. The duration must be a multiple of seven.
+6. Click _Ok_{:.doc-button}.
 
 >Note
 >
@@ -120,9 +122,9 @@ To delete all elements from a shift sequence, follow these steps:
 
 1. In the **Shift sequences** tile, select a shift sequence from the drop-down menu.
 2. Click _Apply_{:.doc-button}.
-3. In the **Options** tile, check the **Delete all** checkbox, and click _Apply_{:.doc-button}.
-
-The elements are deleted automatically.
+3. In the **Options** tile, select **Delete** from the drop-down menu.
+4. Check the **Delete all** checkbox, and click _Apply_{:.doc-button}.<br>
+  The elements are deleted automatically.
 
 ## Delete a shift sequence
 
@@ -198,11 +200,11 @@ You can generate a report in PDF format that includes all data of a shift sequen
 1. In the **Shift sequences** tile on the left, select the shift sequence for which you want to generate a report.
 2. Click _Apply_{:.doc-button}.
 3. Click _Report_{:.doc-button} on top of the table.
-4. In the dialog, you can check the checkbox to send the report to the email adress used for your injixo account.
+4. In the dialog, you can check the checkbox to send the report to the email address used for your injixo account.
 
 The report shows the start and end times of the activities or day models included in the shift sequence as well as their net duration in hours. The report is structured in weeks.
 Additionally, the report shows the following totals and averages of the net duration:
 
-- Row Total: Net duration of all activities or day models in the shift sequence
-- Sum column: Total of the net duration of the activities or day models per week
-- Row Average: Average value for all values in the column Total
+- Sum row: Net duration of all activities or day models in the shift sequence.
+- Sum column: Total added net duration of the activities or day models per week.
+- Average row: Average value for all values in the Total row.

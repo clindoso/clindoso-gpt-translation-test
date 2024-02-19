@@ -35,7 +35,7 @@ Adesso puoi {% link_new aggiungere delle attività | features/administration/day
 
 > Nota
 > 
-> Se utilizzi un {% link_new numero limitato di modelli di orario nella tua unità di pianificazione | features/administration/create-and-manage-planning-units.md | #limit-day-models %}, potrebbe essere necessario assegnare nuovi modelli di orario alla tua unità di pianificazione. Se utilizzi dei modelli di pianificazione, aggiorna i modelli settimanali.
+> Se utilizzi un {% link_new numero limitato di modelli di orario nella tua unità di pianificazione | features/administration/create-and-manage-planning-units.md | #limitare-i-modelli-di-orario %}, potrebbe essere necessario assegnare nuovi modelli di orario alla tua unità di pianificazione. Se utilizzi dei modelli di pianificazione, aggiorna i modelli settimanali.
 
 ### Turno fisso
    

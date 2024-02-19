@@ -16,7 +16,7 @@ related_articles:
 
 I tipi di giorno definiscono i giorni con un orario di apertura standard e quelli con un orario di apertura diverso.
 
-Aggiungi i tipi di giorno alla tua {% link_new unità di pianificazione | features/administration/create-and-manage-planning-units.md | #add-business-hours %} per impostare l’orario di apertura per i giorni della settimana standard e per i giorni speciali, per esempio se le tua organizzazione è aperta nei giorni festivi. injixo prenderà in considerazione gli orari di apertura definiti per quei giorni durante l’ottimizzazione delle pianificazioni.
+Aggiungi i tipi di giorno alla tua {% link_new unità di pianificazione | features/administration/create-and-manage-planning-units.md | #aggiungere-gli-orari-di-apertura %} per impostare l’orario di apertura per i giorni della settimana standard e per i giorni speciali, per esempio se le tua organizzazione è aperta nei giorni festivi. injixo prenderà in considerazione gli orari di apertura definiti per quei giorni durante l’ottimizzazione delle pianificazioni.
 
 In _Plan > Configurazione > Tipi di giorno_{:.breadcrumbs} puoi compiere le seguenti azioni:
 
@@ -44,7 +44,7 @@ Hai due opzioni per creare i tipi di giorno per le festività nazionali:
 
 - Creare tipi di giorno con modalità festività e {% link_new aggiungerli al calendario pianificativo | features/administration/planning-calendar.md | #add-custom-day-types-to-the-planning-calendar %}.
 
-- Aggiungere un {% link_new modello di calendario | features/administration/planning-calendar.md |#add-the-national-holidays-of-your-region %} al tuo calendario pianificativo. Quest’azione creerà automaticamente dei tipi di giorno con modalità festività attiva per i giorni festivi inclusi nel modello di calendario.
+- Aggiungere un {% link_new modello di calendario | features/administration/planning-calendar.md |#add-the-public-holidays-of-your-region %} al tuo calendario pianificativo. Quest’azione creerà automaticamente dei tipi di giorno con modalità festività attiva per i giorni festivi inclusi nel modello di calendario.
 
 La modalità festività comporterà una riduzione delle ore di lavoro dei dipendenti. Se decidi di pianificare un giorno festivo come un normale giorno lavorativo, puoi sempre disattivare la modalità festività, {% link_new modificando il tipo di giorno | features/administration/day-types.md | #modificare-un-tipo-di-giorno %}.
 
@@ -70,5 +70,5 @@ La modalità festività comporterà una riduzione delle ore di lavoro dei dipend
 ## I tipi di giorno nella pianificazione
 
 injixo tiene in considerazione i tipi di giorno durante la pianificazione.
-- Se durante una festività la tua unità di pianificazione è aperta, dovrai solamente {% link_new aggiungere un orario di apertura all’unità di pianificazione | features/administration/create-and-manage-planning-units.md | #add-business-hours %}.  
+- Se durante una festività la tua unità di pianificazione è aperta, dovrai solamente {% link_new aggiungere gli orari di apertura all’unità di pianificazione | features/administration/create-and-manage-planning-units.md | #aggiungere-gli-orari-di-apertura %}.  
 - Se durante una festività la tua unità di pianificazione è chiusa, o se è aperta con un orario diverso, vai all’articolo {% link_new Pianificare i giorni festivi | best-practices/scheduling-public-holidays.md %}.

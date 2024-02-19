@@ -7,7 +7,7 @@ toc: false
 description: Lerne, was die Kapazitätsplanung ist und wie Du den Mitarbeiterbedarf, die Vertragskapazität und die resultierende Deckung für eine Planungseinheit anzeigst.
 related_articles:
   - overwrite_title: Add title for untranslated source
-    filepath: features/scheduling/capacity/capacity-insert-shift-sequences.md
+    filepath: features/scheduling/schedules/schedules-insert-shift-sequences.md
 ---
 
 *Plan > Kapazitätsplanung*{:.breadcrumbs} gibt Dir Einblicke in Deinen zukünftigen Einstellungs- und Schulungsbedarf. Bald führst Du hier Deine langfristige Planung durch.

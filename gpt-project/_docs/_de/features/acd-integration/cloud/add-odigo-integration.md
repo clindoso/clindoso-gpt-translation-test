@@ -23,11 +23,12 @@ Neu bei Integrationen? Lerne zuerst {% link_new die Grundlagen | features/acd-in
 2. Wenn es bereits eine Integration gibt, klicke auf _Integration hinzufügen_{:.doc-button}.
 3. Klicke in der **Odigo**-Kachel auf _Integration hinzufügen_{:.doc-button}.
 4. Gib einen eindeutigen Namen für die neue Integration ein, der die Datenquelle kennzeichnet.
-5. (Optional) Konfiguriere den Import von Agentenstatus Pause mit Details:
+5. Fülle im Abschnitt **Anmeldedaten** und **Kontaktdaten** alle Pflichtfelder aus. 
+6. (Optional) Konfiguriere den Import von Agentenstatus Pause mit Details:
 - Aktiviere die Checkbox **Agentenstatus Pause mit Details importieren**.<br>Beim Importieren von Pausenstatus fügt injixo Informationen über den Pausentyp hinzu.<br>Hinweis: Wenn du diese Checkbox aktivierst, musst du auch die {% link_new Zuordnung der Aktivitäten | features/acd-integration/cloud/import-agent-status-data.md | #aktivitäten-aus-externen-systemen-den-aktivitäten-in-injixo-zuordnen %} aktualisieren.
 - Gib deine Odigo-URL mit der Tenant-ID ein.
 - Gib den Benutzernamen und das Passwort für den Webservice ein.
-6. Klicke auf _Integration speichern_{:.doc-button}.
+7. Klicke auf _Integration speichern_{:.doc-button}.
 
 ## Odigo-Integration einrichten
 

@@ -8,25 +8,25 @@ description: Scopri come configurare e utilizzare l’SSO in injixo.
 
 L’autenticazione unica, single-sign on o SSO, è un sistema di autenticazione che permette agli utenti di accedere a diverse applicazioni e siti web utilizzando un solo set di credenziali. Viene stabilito un rapporto di fiducia tra un servizio centrale di gestione delle identità (provider di identità,<i> </i>o IdP), e un’applicazione (provider di servizi, o SP), che in questo caso è injixo.
 
-L'IdP è un prodotto di terze parti, come per esempio OneLogin, Microsoft Azure AD, Okta o Google. Utilizzando l’SSO, la tua organizzazione può beneficiare di politiche di sicurezza allineate, come l'autenticazione a due fattori e la rotazione delle password. Gli utenti si autenticano presso l'IdP, che reindirizza a injixo.
+Il provider di identità è un prodotto di terze parti, come per esempio OneLogin, Microsoft Azure AD, Okta o Google. Utilizzando l’SSO, la tua organizzazione può beneficiare di politiche di sicurezza allineate, come l'autenticazione a due fattori e la rotazione delle password. Gli utenti si autenticano presso il provider di identità, che reindirizza a injixo.
 
 La configurazione dell'IdP è stata testata con i provider di identità sopra elencati. Se non riesci a integrare il tuo IdP, contattaci.
 
 ## Requisiti
 
-I requisiti qui di seguito devono essere soddisfatti per poter integrare injixo nell'IdP:
+I requisiti qui di seguito devono essere soddisfatti per poter integrare injixo nell’IdP:
 
 - supporto al protocollo SAML 2.0;
 - accesso via web all’URL di metadati di federazione;
 - l’indirizzo email registrato in injixo e il tuo IdP devono essere collegati a una casella di posta.
 
-> Per incrementare la sicurezza, consigliamo caldamente di attivare le asserzioni crittografate/la crittografia token.
+> Per una maggiore sicurezza, attiva le asserzioni crittografate/la crittografia token.
 
 ## Attivare l’SSO per il tuo account
 
 Soltanto gli utenti con accesso amministratore possono attivare l’SSO.
 
-1. Registra injixo come nuova applicazione SAML o SSO nel tuo IdP.  
+1. Registra injixo come nuova applicazione SAML o SSO nel tuo provider di identità.  
    Puoi scaricare [questo logo injixo](/assets/img/common/injixo-logo.png) e aggiungerlo alla pagina delle applicazioni web.
 
 2. In injixo, vai su _Account > Sicurezza_{:.breadcrumbs} e configura l’SSO in **Single Sign-On**.
@@ -43,16 +43,18 @@ Soltanto gli utenti con accesso amministratore possono attivare l’SSO.
    - L’IdP non fornisce l’URL con i metadati di federazione: scarica il file XML con i metadati di federazione. Per esempio, scopri come configurare un’[applicazione SAML personalizzata con Google](https://support.google.com/a/answer/6087519?hl=it&sjid=3388768136264341184-EU).
 
 6. Clicca su _Salvare configurazione_{:.doc-button}.  
-   Il sistema SSO è adesso attivo, ma gli utenti possono ancora fare il login con username e password.
-
-> Per garantire un livello di sicurezza più elevato, puoi [imporre l’SSO a tutti gli utenti](#imporre-lsso-a-tutti-gli-utenti).
-
+   > L’SSO è stato attivato.  
+   >  
+   > Gli utenti possono ancora fare il login con il nome utente e la password. Per disattivare di nuovo l’SSO, clicca su _Disattiva_{:.doc-button}.  
+   > Per una maggiore sicurezza, [imponi l’SSO a tutti gli utenti](#imporre-lsso-a-tutti-gli-utenti) dopo aver testato la configurazione come illustrato nel passaggio successivo.
+   
 ## Testare la configurazione del sistema SSO
 
 Clicca su _Testa la configurazione_{:.doc-button} per testare il login tramite IdP. L'IdP genera una risposta SAML che viene inviata a injixo. Verrai reindirizzato alla pagina di login del tuo IdP, dove inserirai le credenziali dell'IdP. Se la configurazione dell'IdP è corretta e il procedimento di autenticazione va a buon fine, accederai a injixo.
 
 {{ 4 | image: 'Test della configurazione SSO completato correttamente per l’utente attuale', '80%' }}
 
+### Il test non è andato a buon fine? Configura la risposta SAML
 <!-- A valid SubjectConfirmation was not found on this Response in our internal server logs -->
 
 La risposta SAML dall'IdP contiene l'asserzione dell'utente autenticato con attributi e informazioni del profilo. Se il procedimento non va a buon fine, e compare un messaggio di errore, controlla la configurazione dell’applicazione, la configurazione dell’utente, e gli attributi Recipient, InResponseTo, NotBefore, and NotOnOrAfter impostati nell’IdP. 
@@ -99,7 +101,7 @@ Soltanto gli utenti con accesso amministratore potranno modificare gli indirizzi
 
 ## Fare il login utilizzando l’SSO
 
-Dopo che l’SSO è stato attivato, gli utenti possono accedere da [https://www.injixo.com/login/sso](https://www.injixo.com/login/sso). Dovranno inserire il loro indirizzo email e verranno rediretti alla schermata di login dell’IdP. Se gli utenti hanno già fatto il login, saranno rediretti automaticamente su injixo. Altrimenti, dovranno inserire la password dell’IdP.
+Dopo che l’SSO è stato attivato, gli utenti possono accedere da [https://www.injixo.com/login/sso](https://www.injixo.com/login/sso). Dovranno inserire il loro indirizzo email e verranno rediretti alla schermata di login del provider di identità. Se gli utenti hanno già fatto il login, saranno rediretti automaticamente su injixo. Altrimenti, dovranno inserire la password dell’IdP.
 
 ## Revocare l’accesso a injixo
 
@@ -107,4 +109,10 @@ Per revocare l’accesso di un utente a injixo tramite SSO, devi eliminare l’a
 
 ## Disattivare l’SSO
 
-Per disattivare l’SSO e permettere di nuovo il login con username e password, gli utenti con accesso amministratore devono disattivare l’SSO. Questa azione eliminerà il collegamento con l’IdP e tutti i dettagli di configurazione inseriti. Dopo che l’SSO è stato disattivato, tutti gli utenti attivi riceveranno un’email che li invita a impostare una nuova password per injixo. In seguito, sarà di nuovo possibile fare il login con username e password su [https://www.injixo.com/login](https://www.injixo.com/login).
+Per disattivare l’SSO e permettere di nuovo il login con username e password, gli utenti con accesso amministratore devono disattivare l’SSO. Questa azione eliminerà il collegamento con l’IdP e tutti i dettagli di configurazione inseriti. Dopo che l’SSO è stato disattivato, tutti gli utenti attivi ricevono un’email che li invita a impostare una nuova password per injixo. In seguito, sarà di nuovo possibile fare il login con username e password su [https://www.injixo.com/login](https://www.injixo.com/login).
+
+## Utilizzare l’SSO su diversi tenant
+
+Se la tua organizzazione ha diversi tenant injixo, e vuoi che alcuni o tutti i tuoi utenti possano accedere a più di un tenant, la configurazione standard dell’SSO non funzionerà. Contatta il tuo consulente per configurare l’SSO per il tuo caso specifico.
+
+<!-- SSO for multiple tenants can be activated by the feature flag multi_tenant_sso, see also https://github.com/ivx/internal-support-documentation/tree/main/Cortex-->

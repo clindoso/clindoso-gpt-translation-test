@@ -24,7 +24,7 @@ injixo provides three places where you can create and edit an employee, dependin
 | Place                                           | Description              |
 | ----------------------------------------------- | ------------------------ |
 | _Plan > Configuration > Employees_{:.breadcrumbs}   | {% link_new Configure an employee for scheduling | features/administration/employee-overview.md | #overview-of-employee-settings %}. Employees without assigned planning units will not appear on the list.      |
-| _Account > Users_{:.breadcrumbs}                                 | Manage user access rights via {% link_new user roles | getting-started/configure-user-roles.md | #create-new-user-roles %}, {% link_new unlock locked users | getting-started/manage-user-accounts.md | #unlock-users %}, {% link_new set a new password for users | getting-started/manage-user-accounts.md | #set-a-new-user-password %}, and {% link_new check which users are billed | getting-started/how-does-billing-work.md | #view-billed-and-unbilled-users %} and which are not. You can also {% link_new delete users | getting-started/manage-user-accounts.md | #delete-a-user-account %} so that you are no longer billed for them. |
+| _Account > Users_{:.breadcrumbs}                                 | Manage user access rights via {% link_new user roles | getting-started/configure-user-roles.md | #create-a-new-user-role %}, {% link_new unlock locked users | getting-started/manage-user-accounts.md | #unlock-users %}, {% link_new set a new password for users | getting-started/manage-user-accounts.md | #set-a-new-user-password %}, and {% link_new check which users are billed | getting-started/how-does-billing-work.md | #view-billed-and-unbilled-users %} and which are not. You can also {% link_new delete users | getting-started/manage-user-accounts.md | #delete-a-user-account %} so that you are no longer billed for them. |
 | **People**                                                           | {% link_new Create and manage | features/people/manage-people.md %} a person's account and manage contact and address information. |
 
 In _Plan > Configuration > Employees_{:.breadcrumbs}, users without admin access can only see employees assigned to the planning units they have permissions for. Employees who are not assigned to a planning unit do not appear in the list, even if All is selected in the planning unit and selection drop-down menus. Users with admin access can see all employees.
@@ -94,10 +94,10 @@ The following settings are not mandatory but can also be used for scheduling. To
 
 - {% link_new Selections | features/administration/selections.md %}: Selections serve as a type of filter that you can use to display a filtered group of employees in an overview or to perform an action simultaneously for a specific group of employees. You can create one or several selections from the Selections drop-down menu. Examples of selections could be a group of employees who are always scheduled in the same way, have the same contract, work in shift sequences, carpool to work, or who are scheduled first due to their full-time status.
 
-- {% link_new Work time pattern models | features/administration/work-time-pattern-models.md %}: Use work time pattern models to limit the automatic scheduling to a subset of all available day models. You can only assign one work time pattern model per employee. Choose a {% link_new reference date | features/administration/reference-date.md %} to mark the start date for the work time pattern model.
+- {% link_new Work time pattern models | features/administration/work-time-pattern-models.md %}: Use work time pattern models to limit the automatic scheduling to a subset of all available day models. You can assign several work time pattern models to one employee, but only if their validity periods do not overlap. Set a reference date to define the start date for the work time pattern model.
 
 
-- External systems: Assign {% link_new external user identifiers | features/acd-integration/cloud/import-agent-status-data.md | #map-external-user-identifiers-to-people-in-injixo %} which are needed for the agent status import from your ACD.
+- External systems: Assign {% link_new external user identifiers | features/acd-integration/cloud/import-agent-status-data.md | #map-external-identifiers-to-people-in-injixo %} which are needed for the agent status import from your ACD.
 
 ### Other settings
 
@@ -134,9 +134,9 @@ To assign a shift sequence, follow the steps below:
 2. Select a shift sequence.
 3. From the employee row drop-down menu, select the row of the {% link_new shift sequence | features/administration/shift-sequences.md %} that applies to the employee.
 4. Specify the sequence.<br>This setting is only relevant if you need to assign more than one shift sequence to an employee. Shift sequences with lower values are inserted first and can be overwritten by subsequent ones.
-5. Set a {% link_new Reference Date | features/administration/reference-date.md %} that marks the start day for the shift sequence.
+5. Set a reference date that defines the start day of the shift sequence.
 6. Click _OK_{:.doc-button}.
-You can now {% link_new add shift sequences | features/scheduling/capacity/capacity-insert-shift-sequences.md %} to the schedule.
+You can now {% link_new insert shift sequences | features/scheduling/schedules/schedules-insert-shift-sequences.md %} into the schedule.
 
 ## Delegate employees
 

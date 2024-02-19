@@ -10,7 +10,7 @@ redirect_reason: renamed file in March 2021
 ---
 
 In diesem Artikel lernst Du, wie Du:
-- Elemente im Schichtplan, d.h. Aktivitäten und Tagesmodelle, kopierst und einfügst.
+- Elemente im Schichtplan, d.&nbsp;h. Aktivitäten und Tagesmodelle, kopierst und einfügst.
 - Elemente verschiebst, erweiterst und verkürzt.
 - Aktionen rückgängig machst.
 - Tagesmodelle in Aktivitäten umwandelst.

@@ -40,7 +40,7 @@ Das Schichtwunsch-Verfahren erlaubt es Deinen Mitarbeitern sich am Planungsproze
 Nachfolgend siehst Du eine Übersicht zum Prozess des Schichtwunsch-Verfahrens. Dieser Artikel bezieht sich auf die Schritte 4 bis 10. Klicke auf die Links für ausführliche Informationen zu den anderen Schritten.
 
 1. Erstelle {% link_new Mitarbeiterbedarf | features/scheduling/employee-requirement.md %} mit dem *Forecast*-Modul.
-2. (Optional) Wenn Du Schichtfolgen verwendest, füge diese ein. Erfahre mehr über {% link_new Schichtfolgen einfügen | features/scheduling/capacity/capacity-insert-shift-sequences.md %}.
+2. (Optional) Wenn Du Schichtfolgen verwendest, füge diese ein. Erfahre mehr über {% link_new Schichtfolgen einfügen | features/scheduling/schedules/schedules-insert-shift-sequences.md %}.
 3. Erstelle im Modul *Schedules* eine {% link_new Planperiode | features/scheduling/schedules/scheduling-periods/what-are-scheduling-periods.md | #neue-planperiode-anlegen %} mit dem Status *Unveröffentlicht*.
 4. Gib für jedes Tagesmodell [Mindest- und Maximalwerte](#lege-fest-welche-schichten-erzeugt-werden) in der Schichtbedarfstabelle ein.
 5. [Erzeuge die Schichten](#schichten-erzeugen).

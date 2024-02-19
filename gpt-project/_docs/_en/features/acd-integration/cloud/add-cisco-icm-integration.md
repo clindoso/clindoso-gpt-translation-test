@@ -52,11 +52,12 @@ injixo will start importing RTA data, but the data will only be visible after yo
    >
    > The external user identifiers are the Unified CCE Skill Target IDs.
 
-Learn more about {% link_new mapping external user identifiers | features/acd-integration/cloud/import-agent-status-data.md | #map-external-user-identifiers-to-people-in-injixo %} to people.
+Learn more about {% link_new mapping external user identifiers | features/acd-integration/cloud/import-agent-status-data.md | #map-external-identifiers-to-people-in-injixo %} to people.
 
-## Map agent statuses to injixo activities
+## Map external statuses to injixo activities
 
-1. Go to _WFM > Administration > Scheduling > Activities_{:.breadcrumbs}.
-2. Assign Cisco ICM activities to injixo activities.
+1. Go to _Intraday > Configuration_{:.breadcrumbs}.
+2. Map external statuses from Cisco ICM to injixo activities.
 
-Learn more about {% link_new mapping external activities | features/acd-integration/cloud/import-agent-status-data.md | #remap-external-system-activities %} to injixo activities.
+Learn more about {% link_new mapping external statuses | features/intraday/map-external-status.md | #map-external-statuses-to-activities %} to injixo activities.
+

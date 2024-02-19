@@ -9,7 +9,7 @@ related_articles:
     filepath: features/acd-integration/cloud/how-integrations-work.md
   - overwrite_title: Add title for untranslated source
     filepath: features/acd-integration/cloud/add-cloud-integration.md
-  - overwrite_title: Agentstatusgegevens toevoegen
+  - overwrite_title: Add title for untranslated source
     filepath: features/acd-integration/cloud/import-agent-status-data.md
 ---
 
@@ -23,12 +23,12 @@ Heb je nog weinig ervaring met integraties? Maak je dan eerst vertrouwd met de {
 2. Als je al een integratie hebt, klik dan op _Voeg integratie toe_{:.doc-button}.
 3. Klik in de **Odigo**-tegel op _Voeg integratie toe_{:.doc-button}.
 4. Geef de nieuwe integratie een unieke naam die naar de gegevensbron verwijst.
-5. (Optioneel) Configureer de import van agentstatussen Pauze met details:
-- Vink het selectievakje **
-Agentstatus Pauze met details importeren**.<br>Bij het importeren van pauzestatussen registreert injixo ook het type van de genomen pauzes.<br>Opmerking: Als je dit selectievakje aanvinkt, dan moet je ook de {% link_new toegewezen activiteiten | features/acd-integration/cloud/import-agent-status-data.md | #activiteiten-van-het-externe-systeem-toewijzen %} bijwerken.
+5. Vul in de secties **Aanmeldgegevens** en **Contactgegevens** alle verplichte velden in.
+6. (Optioneel) Configureer de import van agentstatussen Pauze met details:
+- Vink het selectievakje **Agentstatus Pauze met details importeren** aan.<br>Bij het importeren van pauzestatussen registreert injixo ook het type van de genomen pauzes.<br>Opmerking: Als je dit selectievakje aanvinkt, dan moet je ook de {% link_new toegewezen activiteiten | features/acd-integration/cloud/import-agent-status-data.md | #activiteiten-van-het-externe-systeem-toewijzen %} bijwerken.
 - Voer je Odigo-URL in, inclusief tenant-ID.
 - Voer de gebruikersnaam en het wachtwoord in voor de webservice in.
-6. Klik op _Integratie opslaan_{:.doc-button}.
+7. Klik op _Integratie opslaan_{:.doc-button}.
 
 ## Je Odigo-integratie configureren
 

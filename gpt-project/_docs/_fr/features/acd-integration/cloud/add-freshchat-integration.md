@@ -18,7 +18,7 @@ Vous débutez avec les intégrations&nbsp;? Commencez avec les {% link_new conce
 
 ## Ajouter une intégration Freshchat
 
-Pour ajouter une nouvelle intégration Freshchat dans injixo, vous devez avoir un compte Freshchat Pro ou Enterprise. Suivez la procédure décrite dans {% link_new Ajouter une intégration Cloud | features/acd-integration/cloud/add-cloud-integration.md %}&nbsp;:
+Pour ajouter une nouvelle intégration Freshchat dans injixo, vous devez avoir un compte Freshchat Pro ou Enterprise.
 
 1. Accédez à _Account > Intégrations_{:.breadcrumbs}.
 2. Si une intégration est déjà présente, cliquez sur _Ajouter une intégration_{:.doc-button}.
@@ -39,7 +39,7 @@ L’intégration Freshchat nécessite une application client. Une fois que vous 
 
 Générez et copiez la **clé API injixo** ici.
 
-Pour paramétrer l’application injixo dans votre compte Freshdesk, suivez les instructions à l’écran. Pour en savoir plus, reportez-vous à [Freshworks marketplace](https://www.freshworks.com/apps/freshdesk/injixo_connect).
+Pour paramétrer l’application injixo dans votre compte Freshchat, suivez les instructions à l’écran. Pour en savoir plus, reportez-vous à [Freshworks marketplace](https://www.freshworks.com/apps/injixo_connect).
 
 ## Données Freshchat dans injixo
 

@@ -1,88 +1,116 @@
 ---
-title: Importer les données de prévision
-redirect_from:
-  - /fr/import-donnees-prevision/
-redirect_reason: Updated filename on 21 April 2022
+title: Importer des prévisions
+description: Importez une prévision d’une source externe dans injixo Forecast.
+product_label:
+  - advanced
+  - enterprise
+  - classic
 related_articles:
   - overwrite_title: Add title for untranslated source
     filepath: features/forecast/injixo-forecast/manage-workloads.md
 ---
 
-Forecast vous permet d'importer vos prévisions vers un Workload depuis un fichier CSV.
+Si vous souhaitez utiliser des données historiques générées par une source externe, telle qu'une application externe ou provenant de vos clients, vous pouvez importer des prévisions externes dans injixo Forecast.
 
-## Comment importer les données ?
+Vous débutez avec injixo Forecast&nbsp;? Commencez avec les {% link_new concepts fondamentaux | features/forecast/injixo-forecast/what-is-the-injixo-forecast.md %}.
 
-Les étapes suivantes permettent de charger vos données de prévision :
+## Préparer l’importation
 
-1. Sélectionnez le Workload concerné
-2. Cliquez sur _![Context Menu in injixo Forecast](/assets/img/common/forecast/context-menu.svg)_{:.doc-button-icon} et sélectionnez **Importer les données de prévision**
-3. Sélectionnez votre fichier CSV
-4. Confirmez en cliquant sur _Valider l'import_{:.doc-button}
+### Prérequis
 
-## Format du fichier CSV
+Pour importer une prévision, vous avez besoin au minimum&nbsp;:
 
-Le format du fichier CSV est unique et ne peut être modifié. Il doit respecter les contraintes suivantes :
+- d’une {% link_new intégration | features/acd-integration/cloud/how-integrations-work.md %} permettant d’importer des données,
+- d'un workload contenant une file d’{% link_new attente | features/forecast/injixo-forecast/manage-workloads.md | #files-dattente-et-canaux %}.
+ 
+### Créez une requête
 
-- L'intervalle de prévision peut être 15, 30 ou 60 minutes. Cet intervalle doit être identique à celui de la ou des files d'attente affectées au Workload.
-- Il faut une ligne d'en-tête et 3 colonnes comportant respectivement la période, les volumes et le TMT. La période doit obligatoirement être au format `YYYY-MM-DD HH:MM`.
-- Une ligne par intervalle est nécessaire et ce même s'il n'y a aucune valeur sur un intervalle.
-- Le séparateur peut être la virgule (`,`) ou le point virgule (`;`).
-- Les données importées peuvent être des nombres entiers ou décimaux à condition d'utiliser le point (par exemple 10.8 ou 354.23).
-- Les données importées doivent être sur le même fuseau horaire que le Workload (et donc le même que celui de la ou des files d'attente).
+Pour créer une file d’attente, vous devez importer des données de contact historiques à l’aide d’une intégration. Les files d’attente sont créées automatiquement par des intégration.
 
-## Exemple de fichier CSV
+Si vous n’avez pas d’intégration permettant d’importer des données historiques en continu, créez une file d’attente en important un fichier CSV simple&nbsp;:
 
-Le format du fichier CSV doit correspondre au modèle suivant :
+1. {% link_new Créez une intégration par fichier CSV | features/acd-integration/cloud/add-csv-integration.md | #configurer-une-nouvelle-intégration-par-fichier-csv %}.
+   - Ignorez l’installation de Cloud Link.
+   - Dans la section **Configuration du schéma CSV**, sélectionnez **Données de contact**.
+2. Créez un fichier CSV de données de contact contenat au moins une ligne pour un seul intervalle, par exemple&nbsp;:
+   ```
+   Queue;Date;Time;IncomingCalls;AnsweredCalls;AHT
+ForecastImportQueue;22/02/2022;02:02;2;2;2
+   ```
+3. {% link_new Importez le fichier CSV manuellement | features/acd-integration/cloud/add-csv-integration.md | #import-manuel-de-fichiers %}.  
+   La file d’attente est créée après l’import.
+   Utilisez cette file d’attente pour importer des prévisions dans tous vos workloads.
+
+### Assigner la file d’attente à un workload
+
+Lorsque vous créez un workload, vous devez assigner une file d’attente à ce workload.  Cela fait partie du processus de création des workloads et il s’agit d’un prérequis pour [importer une prévision](#importer-une-prévision). En savoir plus sur la {% link_new création de workloads | features/forecast/injixo-forecast/manage-workloads.md | #créer-un-workload %}.
+
+Vous pouvez importer une prévision dans un workload existant, ou ajouter une file d’attente à un nouveau workload.
+
+### Données d’import requises
+
+Vos données d’import doivent répondre aux exigences suivantes&nbsp;:
+
+| Exigence                          | Détails                                                                                                                            |
+| ------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------- |
+| Format de date et heure                     | YYYY-MM-DD HH:MM                                                                                                                   |
+| Données de volume                          | Nombres entiers (nombres intègres)                                                                                                           |
+| Données de TMT                             | Nombres entiers (nombres intègres) ou valeurs décimales (avec un point décimal)                                                                  |
+| Format de la ligne d’en-tête                   | `Timestamp;Offered;AHT` ou avec texte personnalisé (par exemple, `Timestamp;Offered_customtext;AHT_customtext`)                                 |
+| Caractères de séparation                 | Point-virgule ou virgule (détecté automatiquement)                                                                                                 |
+| Taille de fichier maximale                    | 20 Mo<br>Limitez les fichiers à 20&nbsp;000 lignes (recommandé).                                                                         |
+| Fuseau horaire                            | Doit correspondre au fuseau horaire de la file d’attente                                                                                             |
+| Durée de l’intervalle                      | Doit correspondre à l’intervalle des files d’attente (15, 30 ou 60 minutes)                                                               |
+
+
+Vous pouvez également {% link_new télécharger une prévision (ou une version de la prévision) | features/forecast/injixo-forecast/download-forecast.md %} au format CSV et l’utiliser comme modèle pour votre propre fichier d’import. La prévision ne lit que les colonnes `Timestamp`, `Offered` et `AHT`. Les autres colonnes, comme `Offered_operational` et `AHT_operational` dans l’exemple ci-dessous, sont ignorées.
 
 ```
-Timestamp;Offered;AHT
+Timestamp;Offered_auto;AHT_auto;Offered_operational;AHT_operational
+2020-05-17 16:30;40;180;50;170
+```
+
+### Gérer les données manquantes
+
+Il peut y avoir des intervalles sans données dans vos fichiers d’import. Le volume ou le graphique du TMT obtenu affichera les valeurs importées comme zéro (0). Les lignes ou valeurs vides ne seront pas importées.
+
+Si aucune donnée n’est disponible pour un ou plusieurs intervalles, vous pouvez modifier votre fichier CSV de la façon suivante&nbsp;:
+
+- Laissez le volume et le TMT vides&nbsp;:
+
+  ```
+  Timestamp;Offered;AHT
 2020-05-17 15:00;30;210
-2020-05-17 15:15;34;234
-2020-05-17 15:30;31;231
-2020-05-17 15:45;44;221
-2020-05-17 16:00;42;200
-2020-05-17 16:15;54;300
-2020-05-17 16:30;40;180
-2020-05-17 16:45;41;181
-2020-05-17 17:00;40;180
-2020-05-17 17:15;29;241
-2020-05-17 17:30;31;205
-2020-05-17 17:45;33;233
-2020-05-17 18:00;40;180
-2020-05-17 18:15;29;190
-2020-05-17 18:30;25;198
-2020-05-17 18:45;12;180
-2020-05-17 19:00;;
-2020-05-17 19:15;;
-2020-05-17 19:30;;
-2020-05-17 19:45;;
-...
-```
+2020-05-17 15:15;;
+2020-05-17 15:30;40;180
+  ```
 
-Il n'est pas nécessaire d'importer tous les intervalles d'une journée, un intervalle peut ne pas contenir de données (par exemple en dehors des heures d'ouverture de la file d'attente, comme après 19h dans l'exemple ci-dessus).
+- Importez des colonnes de zéros&nbsp;:
 
-Il est possible de soit :
-- Laisser l'intervalle sans données de volume.
-- Ne pas mettre de ligne correspondant à ces intervalles.
+  ```
+  Timestamp;Offered;AHT
+2020-05-17 15:00;30;210
+2020-05-17 15:15;0;0
+2020-05-17 15:30;40;180
+  ```
 
-Ces intervalles resteront vides et ne seront pas remplacés par des 0 lors de l'import.
+- Omettez la ligne entière&nbsp;:
 
-Il est possible d'utiliser les données téléchargées depuis une Version (*Auto-Forecast*, *Opérationnel* ou *Stratégique*) pour ensuite les importer. Le format du fichier CSV peut alors suivre le modèle suivant :
+  ```
+  Timestamp;Offered;AHT
+2020-05-17 15:00;30;210
+2020-05-17 15:30;40;180
+  ```
 
-```
-Timestamp;Offered_auto;AHT_auto
-2020-05-17 16:30;40;180
-...
-```
+## Importer une prévision
 
-```
-Timestamp;Offered_operational;AHT_operational
-2020-05-17 16:30;40;180
-...
-```
-
-> Remarque
->
-> 1. La taille maximale du fichier doit être de 20Mo.
-> 2. Nous recommandons de limiter l'import à un fichier CSV de 20K lignes.
-> 3. L'import des données historiques n'est actuellement pas possible.
+1. Accédez à _Forecast_{:.menu-item}.
+2. À partir du menu déroulant en haut de la page, sélectionnez le **workload** dans lequel vous souhaitez importer la prévision externe.
+3. En haut à droite de la section **Volume et TMT**, cliquez sur l’icône Menu contextuel{% icon ellipsis_v | icon-only %}.
+4. Sélectionnez **Importer la prévision**.
+5. Cliquez sur _Sélectionner un fichier_{:.doc-button} et sélectionnez le fichier CSV que vous souhaitez importer.
+6. Cliquez sur _Importer_{:.doc-button}.
+   La page se mettra à jour et indiquera si l’import a réussi.
+7. Cliquez sur _Fermer_{:.doc-button}.<br>
+Rechargez la page pour voir le nouveau graphique pour la période d’import. Il est affiché sous la forme d’une ligne violette par-dessus la prévision dans la section **Volume et TMT**.
+   Pour cacher la prévision importée sur le graphique, cliquez sur l’icône Afficher/masquer {% icon eye | icon-only %} dans la légende à côté d’**Import**.

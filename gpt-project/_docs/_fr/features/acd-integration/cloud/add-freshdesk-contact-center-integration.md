@@ -40,7 +40,7 @@ Après avoir sauvegardé votre configuration, vous pouvez accéder à la section
 ## Installer l’application injixo
 
 1. Dans la section **Installer l’application injixo**, générez et copiez la **clé API injixo**.
-2. Installez l’application injixo requise dans votre compte Freshdesk dans [Freshworks marketplace](https://www.freshworks.com/apps/freshcaller/injixo_1/).
+2. Installez l’application injixo requise dans votre compte Freshdesk Contact Center dans [Freshworks marketplace](https://www.freshworks.com/apps/injixo_1).
 3. Sur la page d’installation de l’application injixo, collez la clé API copiée.
 4. Pour importer des données en temps réel, cochez la case **Export real-time agent status data** dans la page d’installation de l’application injixo de Freshworks marketplace.
 

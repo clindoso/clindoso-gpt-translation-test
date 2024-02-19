@@ -53,7 +53,7 @@ You can define an SQL query to read data from a database. Database integrations 
    - **Agent status** for agent status data  
     By default, data is imported every 15 minutes but you can control the import behavior with two additional checkboxes:
         - **Import data in real time**: Data is imported every 10 seconds. Available in injixo Advanced and Enterprise WFM only.
-        - **Data reconciliation**: Controls which time period of agent status data is imported every 15 minutes. Defaults to data from the last 24 hours (recommended).  
+        - **Data reconciliation**: Controls which time period of agent status data is imported every 15 minutes. Defaults to data from the last 24 hours.  
 
 2. Select the **Database time zone** from the drop-down menu.
 3. Enter the **SQL query** that will be used to import data from your database. Learn more about the [SQL Query](#sql-query).

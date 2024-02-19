@@ -63,7 +63,7 @@ Dopo che avrai aggiornato le sezioni dei dipendenti, l’importazione successiva
 
 Le attività esterne sono le attività che il sistema esterno registra quando i dipendenti fanno il login e il logout, o quando passano da un’attività a un’altra, per esempio, dalle email alle chiamate.
 
-È possibile riassociare le attività esterne ad attività già esistenti. Se invece decidi di {% link_new creare nuove attività | features/administration/activities.md | #creare-unattività %}, aggiungile alla tua {% link_new unità di pianificazione | features/administration/create-and-manage-planning-units.md | #add-activities %} per visualizzarle correttamente in seguito.
+È possibile riassociare le attività esterne ad attività già esistenti. Se invece decidi di {% link_new creare nuove attività | features/administration/activities.md | #creare-unattività %}, aggiungile alla tua {% link_new unità di pianificazione | features/administration/create-and-manage-planning-units.md | #aggiungere-le-attività %} per visualizzarle correttamente in seguito.
 
 Per impostazione predefinita, le integrazioni registrano le attività nell’attività Presente (ID 1) e lo stato dell’agente sarà Presente per tutte le attività. injixo può mostrare le stesse attività del tuo sistema esterno. Per far questo, devi riassociare le attività esterne ad altre attività in injixo seguendo la procedura qui di seguito.
 

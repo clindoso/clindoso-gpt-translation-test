@@ -20,7 +20,7 @@ Unter People kannst du die wichtigsten Daten für die Mitarbeiter in deinem Unte
 ## Neuen Mitarbeiter anlegen
 
 1. Gehe zu _People_{:.breadcrumbs}.
-2. Klicke auf _\+ Neuer Mitarbeiter{:.doc-button}.
+2. Klicke auf _\+ Neuer Mitarbeiter_{:.doc-button}.
 3. Fülle die Allgemeinen Informationen (Pflichtfelder) aus:
    - **Vorname** und **Nachname**, und optional **Zweiter Vorname** 
    - **Personalnummer**: Eindeutige Kennung für den Mitarbeiter in deinem Unternehmen.

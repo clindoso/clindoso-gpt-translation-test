@@ -1,14 +1,18 @@
 ---
 title: Create queues
 product_label:
-  - on-premise
+  - essential
+  - advanced
+  - enterprise
+  - classic
 description: Learn how to use queues to import data for all of your contact channels.
 ---
 
-In this article, you will learn:
+Data about your customer interactions is recorded by your ACD. This contact data is imported into injixo by {% link_new integrations | features/acd-integration/cloud/how-integrations-work.md %} to create forecasts. Xlink does not create queues automatically, other injixo integrations do. Queues are always associated with a channel and can be selectively added to workloads in Forecast.
 
-- what queues are used for.
-- how to configure them.
+When you click **Use Forecast** in a workload that contains queues from a non-Xlink integration, a queue will automatically be created in _WFM > Administration > Forecasting > Queues_{:.breadcrumbs} for specific {% link_new staff requirements calculation | features/forecast/injixo-forecast/staff-requirement.md %} methods. This queue will have the name of the workload with a leading asterisk, e.g. \*yourWorkloadName. Forecast data will be available in the Auto-Forecast version. 
+
+## Create queues
 
 <div markdown="1" class="hint-box-default hint-box-red">
 
@@ -18,43 +22,31 @@ If you are currently using Xlink in your injixo Cloud WFM plan, please update it
 
 </div>
 
-Queues represent all channels that customers can contact you on.
-
-Xlink imports call statistics directly into a combination of queue, value type and version. Xlink requires a mapping between ACD and injixo. For the Xlink mapping, we recommend to map ACD queues 1:1 to injixo queues. In that way, you can easily combine queues in injixo Forecast.
-
-## Creating Queues
-
-The manual creation of queues is needed if you use Xlink to import data.
-
-Go to _WFM > Administration > Forecasting > Queues_{:.breadcrumbs} and follow these steps to create a queue:
+Xlink does not create queues during imports. To create queues for the Xlink mapping, go to _WFM > Administration > Forecasting > Queues_{:.breadcrumbs} and proceed as follows:
 
 1. Click the {% icon item-add %} in the action bar.
-2. Enter a **Name** and an **Abbreviation**, for example, **Inbound** and **IB**.
-3. Set it to **Active**.
-4. Choose the **Interval** length of your queue. This should be the same as in your ACD.
-5. Select the **Time Zone** of your queue.
-6. Confirm with _OK_{:.doc-button}.
-7. Enter the **Event Types**.
-8. Choose the **Value Types** that should be available for your queue.
+2. Enter a **Name** and an **Abbreviation**.
+3. Check the **Active** checkbox. If not checked, Xlink will not import data into this queue.
+4. Select an **Interval**. The interval length should be the same as in your ACD.
+5. (Optional) Enter a **Description**, e.g. to identify what the queue is used for.
+6. (Optional) Select a **Parent Queue**. This can be used to visualize a hierarchy in the list of queues.
+7. Select a **Time Zone**.
+8. Click _OK_{:.doc-button}.
+   Now, you can add event types and value types to the queue.
 
-### Configure General Fields
+Tip: Map single ACD queues to injixo queues to be able to combine volumes later by selecting the queues in workloads.
 
-In the section _General_, you have different fields to configure your queue:
+### Add event types
 
-| Field             | Description                                                                                            |
-| ----------------- | ------------------------------------------------------------------------------------------------------ |
-| Type              | Type of the queue. Select **Standard Queue**.                                                          |
-| Name/Abbreviation | These fields are used to identify your queue.                                                          |
-| Active            | You can set your queue to active. Otherwise, no data will be imported.                                 |
-| Interval          | The interval depends on the interval of your ACD or external system.                                   |
-| Description       | You can add a description to your queue so that so you can easily identify what the queue is used for. |
-| Parent Queue      | To visualize a hierarchy in your queues, you can set a parent queue.                                   |
-| Time Zone         | Define the time zone in which your data is set.                                                        |
+Opening hours set here do not affect injixo Forecast. Event types are only applicable for the old ForecastPro module in the injixo Enterprise on-premise WFM plan where event types set opening hours for queues.
 
-### Define Event Types
+Select an event type from the list and add a start time and end time. If you add 00:00 to both fields, the queue is open 24 hours.
 
-Event types are the opening hours of your queue. We recommend adding every weekday and defining **Start Time** and **End Time** as 00:00 to cover the whole day. Opening hours are relevant for your forecast in _ForecastPro_{:.menu-item}, they do not affect _injixo Forecast_{:.menu-item}.
+### Add value types
 
-### Add Value Types
+In Xlink, you need to create and assign value types to a queue. Other integrations add pre-defined value types for offered and answered volumes and AHT if you click **Use Forecast** in a workload. Such value types are based on the channel of the queue, for example, you will see Calls Offered, Calls Answered, Calls Average Handling Time for call workloads.
 
-The value types represent the numbers which are imported from your external system, such as contact volumes for different channels. Use them to create forecasts or only to display them in other features. For forecasting purposes, only offered and answered volumes as well as AHT values are required. Before you can assign values types in injixo Enterprise on-premise you need to create them in _Adminstration > Forecasting > Value Types_{:.breadcrumbs}. Value types are pre-defined in injixo Cloud versions. Assign the right value types depending on the channel of your workload e.g. for calls _Calls Offered_, _Calls Answered_, _Calls Average Handling Time_.
+You can still add additional value types manually. Add missing value types if you cannot transfer staff requirements due to an error message.
+
+
+Depending on your WFM plan, you can also display queues in {% link_new Dashboards | features/monitoring/dashboards/dashboards-overview.md %}.

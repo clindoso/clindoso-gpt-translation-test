@@ -19,7 +19,7 @@ Wenn die Tagesmodelle in deiner Planungseinheit nicht alle Arbeitsverträge abde
 
 Tagesmodelle enthalten die Anwesenheits-, Abwesenheits- und Pausenaktivitäten einer Schicht. Deshalb musst du {% link_new relevante Aktivitäten zu Tagesmodellen hinzufügen | features/administration/daymodels/daymodel-creation.md %}.
 
-Tagesmodelle werden zu {% link_new Schichtfolgen | features/administration/shift-sequences.md %} hinzugefügt und können in {% link_new Wochenmodellen | features/administration/work-time-pattern-models.md | #wochenmodelle %} gruppiert werden.
+Tagesmodelle werden zu {% link_new Schichtfolgen | features/administration/shift-sequences.md %} hinzugefügt und können in {% link_new Wochenmodellen | features/administration/work-time-pattern-models.md | #wochenmodelle-erstellen %} gruppiert werden.
 
 
 ## Tagesmodelltypen
@@ -43,11 +43,11 @@ Es gibt drei verschiedene Typen von Tagesmodellen.
 Es gibt nicht den einen allgemeingültigen Anwendungsfall pro Tagesmodell, aber in der folgenden Liste findest du Richtlinien zur Orientierung:
 
 - Zeitlich fixierte Schicht: Verwende fixe Tagesmodelle, um Mitarbeiter mit festen Arbeitszeiten zu planen. Ihre Schichten beginnen und enden immer zu einer festen Zeit und können im Schichtplan nicht verschoben werden.
-Du kannst fixe Tagesmodelle in Planungsmodellen verwenden, um {% link_new optimierte Schichtpläne | features/scheduling/scheduling-optimization.md %} zu erstellen, mit denen du wöchentlich wiederkehrende Muster in {% link_new Schichtfolgen | features/scheduling/capacity/capacity-insert-shift-sequences.md %} definierst oder wenn du mit dem {% link_new Schichtwunsch-Verfahren | features/scheduling/schedules/schedules-shift-bidding.md %} arbeitest.
+Du kannst fixe Tagesmodelle in Planungsmodellen verwenden, um {% link_new optimierte Schichtpläne | features/scheduling/scheduling-optimization.md %} zu erstellen, mit denen du wöchentlich wiederkehrende Muster in {% link_new Schichtfolgen | features/scheduling/schedules/schedules-insert-shift-sequences.md %} definierst oder wenn du mit dem {% link_new Schichtwunsch-Verfahren | features/scheduling/schedules/schedules-shift-bidding.md %} arbeitest.
 - Variable Schicht:  Verwende variable Tagesmodelle, um Mitarbeiter mit flexiblen Arbeitszeiten zu planen. injixo kann mit nur einem Tagesmodell dieses Typs einen Mitarbeiter für verschiedene Schichten planen. Dieses Tagesmodell wird typischerweise verwendet, um {% link_new optimierte Schichtpläne | features/scheduling/scheduling-optimization.md %} zu erstellen oder wenn du mit dem {% link_new Schichtwunsch-Verfahren | features/scheduling/schedules/schedules-shift-bidding.md %} arbeitest.
 - Verfügbarkeitsrahmen: Wenn die Geschäftszeiten deiner Planungseinheit länger sind als die Dauer eines üblichen Arbeitstages, kannst du für injixo die Planungsoptionen einschränken. Wenn du die Verfügbarkeit für mehrere Mitarbeiter auf einmal einschränken möchtest, verwende Tagesmodelle vom Typ Verfügbarkeitsrahmen und füge diese zu Schichtfolgen hinzu. Alternativ kannst du in den Mitarbeitereinstellungen {% link_new Verfügbarkeiten für einzelne Mitarbeiter konfigurieren | features/administration/availabilities.md %}. Beide werden bei der Schichtplanoptimierung berücksichtigt, wenn die Planungsregel&nbsp;2611 aktiviert ist.
 
-Als Alternative zu Verfügbarkeiten kannst du auch {% link_new Schichtfolgen | features/administration/shift-sequences.md %} Wochenmodelle in {% link_new Planungsmodellen | features/administration/work-time-pattern-models.md | #wochenmodelle %} verwenden. Du kannst auch beides verwenden, zum Beispiel, wenn du Früh- und Spätschichten rotieren möchtest.
+Als Alternative zu Verfügbarkeiten kannst du auch {% link_new Schichtfolgen | features/administration/shift-sequences.md %} Wochenmodelle in {% link_new Planungsmodellen | features/administration/work-time-pattern-models.md | #wochenmodelle-erstellen %} verwenden. Du kannst auch beides verwenden, zum Beispiel, wenn du Früh- und Spätschichten rotieren möchtest.
 
 Wir empfehlen, eine limitierte Anzahl an variablen Tagesmodellen zu erstellen (in Kombination mit den {% link_new Verfügbarkeiten deiner Mitarbeiter | features/administration/availabilities.md | #mitarbeiter-verfügbarkeiten-erstellen %}) anstatt eine große Anzahl fixer Tagesmodelle zu erstellen.
 

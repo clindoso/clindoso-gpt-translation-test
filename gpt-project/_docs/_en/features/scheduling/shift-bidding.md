@@ -61,7 +61,7 @@ All relevant menu items are in _WFM > Scheduling > SchedulePro_{:.breadcrumbs}.
 Remark on the shift requirement:
 
 - If the shift requirements is created incorrectly, or not at all, some employees may be not scheduled. With no restrictions, injixo could e.g. only generate part-time shifts as these are best suited to cover the requirement curve.
-- To limit the generation of shifts to the opening hours of the planning unit, make sure that there is no employee requirement outside the business hours. Enter zeros for days when the planning unit is closed (e.g. holidays).
+- To limit the generation of shifts to the opening hours of the planning unit, make sure that there is no employee requirement outside the business hours. Enter zeros for days when the planning unit is closed (e.g. public holidays).
 - The more flexible your employees' contracts are, the more time-consuming it is to enter shift requirements. Therefore, our recommendation - possibly at the expense of your scheduling flexibility - is to use only a limited number of day models for full-time and part-time employees. The optimal would be a mix of short and long flexible shifts to achieve the contractually agreed working time.
 - To ensure the maximum possible flexibility in the schedule, use Present as {% link_new base activity of your day models | features/administration/daymodels/daymodel-creation.md | #add-a-presence-or-absence-activity %}.
 

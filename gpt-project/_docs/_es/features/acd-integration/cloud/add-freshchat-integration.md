@@ -18,7 +18,7 @@ redirect_reason: Updated filename on 15 September 2023
 
 ## Añadir una integración de Freshchat
 
-Para añadir una integración de Freshchat en injixo, necesitas una cuenta de Freshchat Pro o Enterprise. Sigue el proceso descrito en {% link_new Añadir una integración cloud | features/acd-integration/cloud/add-cloud-integration.md %}:
+Para añadir una integración de Freshchat en injixo, necesitas una cuenta de Freshchat Pro o Enterprise.
 
 1. Ve a _Account > Integraciones_{:.breadcrumbs}.
 2. Si ya existe una integración, haz clic en _Añadir integración_{:.doc-button}.
@@ -31,7 +31,7 @@ Para añadir una integración de Freshchat en injixo, necesitas una cuenta de Fr
 2. En la sección **Credenciales**, introduce el nombre completo de tu dominio de Freshchat, incluido el subdominio, p.&nbsp;ej., ejemplo.freshchat.com.
 3. Ve a Freshchat y copia una clave de API válida de un usuario con el rol Account Administrator.
 4. Vuelve a injixo y copia la clave de la API en el campo **Clave de la API**.
-5. Haz clic en _Guardar integración_{:.doc-button}. 
+5. Haz clic en _Guardar integración_{:.doc-button}.
 
 ### Instalar la aplicación injixo
 
@@ -39,7 +39,7 @@ La integración de Freshchat requiere una aplicación de cliente. Después de ha
 
 Genera y copia la **clave de la API de injixo**.
 
-Para configurar la aplicación de injixo en tu cuenta de Freshdesk, sigue las instrucciones en la pantalla. Para más información, consulta [Freshworks marketplace](https://www.freshworks.com/apps/freshdesk/injixo_connect).
+Para configurar la aplicación de injixo en tu cuenta de Freshchat, sigue las instrucciones en la pantalla. Para más información, consulta [Freshworks marketplace](https://www.freshworks.com/apps/injixo_connect).
 
 ## Datos de Freshchat en injixo
 
@@ -66,3 +66,8 @@ Examples:
 
 Un chat puede ser eliminado o marcado como spam cuando es actualizado. En este caso, la integración no puede determinar el nombre del grupo. Las colas de origen que cuentan estos chats se llaman Undefined_Queue. Por lo general, estas colas no son relevantes para planificar la carga de trabajo de tus empleados.
 
+## Preguntas frecuentes
+
+| Pregunta                                                                                                                                                                       | Respuesta                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| De repente, injixo deja de mostrar datos nuevos de Freshchat, pero en la página **Account > Integraciones** mi integración de Freshchat tiene el estado Operativo. ¿Qué puedo hacer? | La aplicación de injixo obtiene datos de Freshchat y envía eventos a injixo. En caso de errores de comunicación entre la aplicación injixo e injixo, es posible que no se muestren los datos de Freshchat. La integración de Freshchat no puede detectar estos errores de comunicación.<br><br>Verifica que la clave de la API de injixo que introdujiste al configurar la aplicación de injixo en tu cuenta de Freshchat siga siendo válida. Si la clave de la API ya no es válida, actualiza la clave de la API de injixo en la página de instalación de la aplicación injixo. Si la clave de API sigue siendo válida, ponte en contacto con la asistencia técnica de injixo. |

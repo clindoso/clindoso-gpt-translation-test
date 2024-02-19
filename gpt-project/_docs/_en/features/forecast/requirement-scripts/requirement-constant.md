@@ -11,23 +11,21 @@ product_label:
 
 The script Other - Constant Requirement stores fixed values for staff requirements based on your input. Create new or overwrite existing staff requirements for your activities for a time period.
 
-Use the script before you create a schedule if:
+Use the script before you create a schedule if any of the following applies:
 
-- some activities require a fixed number of people, e.g. two team members to process emails every afternoon.
-- you don't have any historical data to calculate staff requirements using a different calculation method.
+- Some activities require a fixed number of people, e.g. two team members to process emails every afternoon.
+- You do not have any historical data to calculate staff requirements with a different calculation method.
 
 ## Prerequisites
 
 To access Forecast, you need to {% link_new create a workload | features/forecast/injixo-forecast/manage-workloads.md | #create-workloads %} which requires a queue. injixo creates queues when you {% link_new add an integration | features/acd-integration/cloud/how-integrations-work.md %} and import data.
 
-If you do not have historical data but still want to create constant staff requirements using the script, you can also {% link_new import one sample data point | features/forecast/injixo-forecast/import-forecast.md | #create-at-least-one-queue-in-your-injixo-instance %}.
+If you do not have any historical data but want to create constant staff requirements using the script, you can also {% link_new import one sample data point | features/forecast/injixo-forecast/import-forecast.md | #create-a-queue %}.
 
 ## Select the script
 
-1. Go to _Forecast_{:.menu-item}.
-2. On the right, click **Calculations for Multi-Activity, Constant Requirement and Outbound**.
-3. Click _Select a requirement script_{:.doc-button}.
-4. Select **Other - Constant Requirement** from the drop-down menu.
+1. Go to _Forecast > Requirement scripts_{:.breadcrumbs}.
+2. In the **Other - Constant Requirement** tile, click _Open_{:.doc-button}.  
    A new window opens and displays the iWFM Requirement Script (constant).
 
 Note: In injixo Enterprise on-premise, go to _WFM > Forecast > ForecastPro > Forecast_{:.breadcrumbs} or _WFM > Administration > Forecasting > Scripts_{:.breadcrumbs}. The script name may vary because you can enter a custom name when creating the script.

@@ -8,27 +8,24 @@ product_label:
 description: Download forecasts as CSV files from injixo Forecast. Learn how these files are formatted.
 ---
 
-In this article, you will learn:
+In _Forecast > Workloads_{:.breadcrumbs}, you can download your forecast data as a CSV file.
 
-- how you can export forecasts and versions of a workload to a CSV file.
-- how the export is formatted.
+Values can be exported for up to one year. The time zone and interval correspond with those of the workload. You can download the Forecast version data by itself or together with the Operational and/or Strategic versions.
 
-Values can be exported for up to one year. The time zone and interval correspond with the workload. You can download the Auto-Forecast data by itself or with the Operational and/or Strategic Versions.
+## Download a forecast
 
-## How to download forecasts
-
-1. Open a **Workload**.
-2. Select the download range using the **time navigation**.
-3. Click the context menu _![Context Menu in injixo Forecast](/assets/img/common/forecast/context-menu.svg)_{:.doc-button-icon} (to the right of the _Use Forecast_ button).
-4. Select **Download as CSV**.
-5. Check the time frame again and **select the desired forecasts**. Choose from the Auto-Forecast, the Operational version, and the Strategic version. The forecast and versions will be saved in a single file.
-6. Confirm your selection with _Start Download_{:.doc-button}.
+1. In _Forecast > Workloads_{:.breadcrumbs}, select a workload.
+2. Select the time frame using the date picker.
+3. From the three-dots menu _![Context Menu in injixo Forecast](/assets/img/common/forecast/context-menu.svg)_{:.doc-button-icon} at the top right, select **Download as CSV**.
+4. Select the forecast data that you want to download.  
+5. Click _Download as CSV_{:.doc-button}.<br>
+   The downloaded forecast versions will be saved in one file.
 
 ## CSV file example
 
-The file contains the workload name and the channel. A download for the call workload _Orders_ would result in a file named `Orders-Calls.csv`. The column headers show the forecast version. The file contains time stamps (formatted as YYYY-MM-DD) and the values per value type for each forecast, but does not include information about holidays or events added to the workload, or any historical data.
+The file contains the workload name and the channel. A download for the call workload Orders would result in a file named `Orders-Calls.csv`. The column headers show the forecast version. The file contains timestamps (formatted as YYYY-MM-DD) and the values per value type for each forecast, but does not include information about public holidays or events added to the workload, or any historical data.
 
-If you select the Auto-Forecast and the Operational version, the file will look like this:
+If you select the Forecast and the Operational version, the file will look like the following example:
 
 ```
 Timestamp;Offered_auto;AHT_auto;Offered_operational;AHT_operational
@@ -40,6 +37,6 @@ Timestamp;Offered_auto;AHT_auto;Offered_operational;AHT_operational
 ...
 ```
 
-> The download option is available for _Smart_ workloads in _Live_ mode only.
+> The download option is available for Smart workloads in Live mode only.
 >
-> Switch the workload plan to _Live_ in order to access the download option, see {% link_new Managing Workloads | features/forecast/injixo-forecast/manage-workloads.md %} for details about _Live/Test_ plans.
+> Switch the workload to Live mode to access the download option. See {% link_new Create workloads | features/forecast/injixo-forecast/manage-workloads.md %} for details about Live mode and Test mode.

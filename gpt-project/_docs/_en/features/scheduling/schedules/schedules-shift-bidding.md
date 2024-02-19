@@ -25,7 +25,7 @@ Shift bidding allows people to take part in the scheduling process by bidding on
 
 ## Shift bidding process
 
-Before you start the shift bidding process, you need to {% link_new calculate staff requirements | features/forecast/injixo-forecast/staff-requirement.md %} and optionally {% link_new insert shift sequences | features/scheduling/capacity/capacity-insert-shift-sequences.md %}.
+Before you start the shift bidding process, you need to {% link_new calculate staff requirements | features/forecast/injixo-forecast/staff-requirement.md %} and optionally {% link_new insert shift sequences | features/scheduling/schedules/schedules-insert-shift-sequences.md %}.
 
 1. In Schedules, create a {% link_new Scheduling period | features/scheduling/schedules/scheduling-periods/what-are-scheduling-periods.md | #create-scheduling-periods %} with the status Unpublished.
 2. Enter [minimum and maximum values](#specify-your-shift-mix) for each day model in the shift requirement table.

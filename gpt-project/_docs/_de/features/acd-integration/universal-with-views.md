@@ -9,7 +9,7 @@ injixo bietet mit dem Xlink die Möglichkeit, Daten aus Deiner ACD-Datenbank ode
 Der einfachste Weg Daten, unabhängig der Datenstruktur in der Quelldatenbank, für den Import bereitzustellen sind Views.
 Möglich sind ein oder mehrere Views, die einerseits eine eindeutige ID und den Namen der Queue, andererseits Information zu den dazugehörigen Anruf-Daten enthalten müssen, so dass eine Zuordnung von Anruf zu Queue hergestellt werden kann.
 
-Der Xlink kann sowohl Rohdaten importieren, d.h. es existiert ein Datensatz pro Anruf, als auch auf 15 oder 30 Minuten aggregierte Daten.
+Der Xlink kann sowohl Rohdaten importieren, d.&nbsp;h. es existiert ein Datensatz pro Anruf, als auch auf 15 oder 30 Minuten aggregierte Daten.
 
 In den folgenden Beispielen gehen wir von zwei getrennten Views aus.
 

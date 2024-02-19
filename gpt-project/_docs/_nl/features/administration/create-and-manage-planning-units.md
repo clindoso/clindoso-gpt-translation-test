@@ -13,8 +13,6 @@ related_articles:
     filepath: best-practices/how-to-use-virtual-planning-units.md
   - overwrite_title: Add title for untranslated source
     filepath: features/administration/activities.md
-  - overwrite_title: Add title for untranslated source
-    filepath: features/administration/planning-calendar.md
 redirect_from:
   - /nl/planning-unit-configuration/
 redirect_reason: Updated filename on 21 August 2023
@@ -39,7 +37,7 @@ Als je met meerdere eenheden werkt, dan kun je een medewerker uit een eenheid ti
    - **Naam**: Unieke naam voor de eenheid (max. 50 tekens).
    - **Afkorting**: Afkorting voor de naam (max. 25 tekens).
    - **Kleur**: Optionele kleur voor de eenheid. Je ziet de kleur in Schedules.
-   - **Interval**: Beïnvloedt hoe gedetailleerd gegevens in Schedules worden weergegeven, bijv. dekking en personeelsbehoefte. Het interval van de eenheid mag niet langer zijn dan het interval van de import van je contact- en agentstatusgegevens. In het vervolgkeuzemenu worden intervallen van de eenheid in minuten weergegeven. Wij raden aan om **15 minuten** te gebruiken. Het interval kan niet meer worden gewijzigd nadat het is opgeslagen. Lees meer over {% link_new het importeren van gegevens via integraties | features/acd-integration/cloud/how-integrations-work.md %}.
+   - **Interval**: Beïnvloedt hoe gedetailleerd gegevens in Schedules worden weergegeven, bijvoorbeeld dekking en personeelsbehoefte. Het interval van de eenheid mag niet langer zijn dan het interval van de import van je contact- en agentstatusgegevens. In het vervolgkeuzemenu worden intervallen van de eenheid in minuten weergegeven. Wij raden aan om **15 minuten** te gebruiken. Het interval kan niet meer worden gewijzigd nadat het is opgeslagen. Lees meer over {% link_new het importeren van gegevens via integraties | features/acd-integration/cloud/how-integrations-work.md %}.
    - **Superieure eenheid**: Optionele eenheid die de eenheid bevat die je nu aanmaakt. Lees meer over {% link_new superieure eenheden | best-practices/how-to-use-virtual-planning-units.md %}.
    - **Tijdzones**: Tijdzone van de eenheid. De tijdzone kan niet meer worden gewijzigd nadat de eenheid is opgeslagen. Lees meer over het {% link_new werken met tijdzones | best-practices/working-with-timezones.md %}.
 

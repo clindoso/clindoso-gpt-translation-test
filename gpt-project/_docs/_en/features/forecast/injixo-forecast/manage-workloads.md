@@ -12,14 +12,12 @@ related_articles:
   - overwrite_title: Add title for untranslated source
     filepath: features/forecast/injixo-forecast/what-is-the-injixo-forecast.md
   - overwrite_title: Add title for untranslated source
-    filepath: features/forecast/injixo-forecast/work-with-workloads.md
-  - overwrite_title: Add title for untranslated source
     filepath: features/forecast/injixo-forecast/forecast-activate-business-hours.md
 ---
 
 To create, edit or delete workloads, go to _Forecast_{:.breadcrumbs}.
 
-Workloads map the input channels of your external system, which records the details of your customer interactions. Based on imported contact data stored in queues, injixo Forecast will calculate a forecast for the workload. Configurable events, holidays, or opening hours influence the forecast result. You can also {% link_new import your forecast | features/forecast/injixo-forecast/import-forecast.md %} into workloads.
+Workloads map the input channels of your external system, which records the details of your customer interactions. Based on imported contact data stored in queues, injixo Forecast will calculate a forecast for the workload. Configurable events, public holidays, or opening hours influence the forecast result. You can also {% link_new import your forecast | features/forecast/injixo-forecast/import-forecast.md %} into workloads.
 
 In workloads, you configure the staff requirements calculation. Staff requirements are needed for scheduling.
 
@@ -52,7 +50,7 @@ injixo Forecast groups queues by channel. You can only add queues with the same 
 
 ## Create workloads
 
-We recommend creating one workload for each activity you want to schedule using staff requirements. Multiactivities require one workload for the multiactivity, and one workload for each subactivity.
+Create one workload for each activity you want to schedule using staff requirements. Multiactivities require one workload for the multiactivity, and one workload for each subactivity.
 
 1. Click _New workload_{:.doc-button} on top of the list.
 2. Enter the general information for your workload:
@@ -64,7 +62,7 @@ We recommend creating one workload for each activity you want to schedule using 
      > - To save staff requirements for a planning unit, the time zone of the workload must match the time zone of the planning unit.
      > - If you select a different time zone for your workload than the time zone of the integration used to import data, the imported data will be displayed as shifted in time in the workload. For example, if a CSV integration is set to UTC&nbsp;time and your workload is set to CEST&nbsp;time (UTC&nbsp;+2&nbsp;hours), the imported data marked at 08:00 will be displayed at 10:00 in the workload.
 
-   - (Optional) **Holiday region**: Includes national holidays that may affect your forecast.
+   - (Optional) **Holiday region**: Includes public holidays that may affect your forecast.
    - (Optional) **Planning unit** and **Activity**: Required to {% link_new activate business hours | features/forecast/injixo-forecast/forecast-activate-business-hours.md %} in the **Business hours** section.
 
 3. (injixo Classic only) Select an option from the **Pricing model** section:
@@ -103,8 +101,8 @@ You only need an integration and historical data import if you want injixo to cr
 2. Click _Create Workload_{:.doc-button} in the upper right corner of the forecast page.
 3. In the *Basic configuration* section, enter a **Name** for your new workload.
 4. Select the **Time zone** to display data. Note: The set time zone must match the planning unit to save staff requirements.
-5. (Optional) Select the **Holiday region** to acknowledge all national holidays that affect your forecast for the year.
-6. Select the **Planning unit** and the **Activity**. Note: You must select an option to calculate staff requirements.
+5. (Optional) Select the **Holiday region** to acknowledge all public holidays that affect your forecast for the year.
+6. Select the **Planning unit** and the **Activity**. This is required to calculate staff requirements.
     {{ 4 | image: 'Import Workload basic configuration section' }}
 7. Click the tab **Forecast import**.
 8. Select your **Interval length** and the **Channel** for the data import. Both must correspond with your import file.
@@ -114,13 +112,51 @@ You only need an integration and historical data import if you want injixo to cr
 ## Edit workloads
 
 1. Select a workload from the workloads list or type the workload's name in the search field.
-2. To change the workload details, click the {% icon pencil %}.  
-   You can add or remove queues without reimporting data. Listed queues are grayed out if their interval or channel does not match that of already assigned queues.
+2. To change the workload details, click the {% icon pencil %}.<br>  
+   In the **Assign queues** section, you can add or remove queues. If a queue’s interval or channel does not match that of the selected queues, all non-matching queues will be grayed out. If you remove a queue, the imported data is not deleted and the queue can still be added to other workloads.
 3. Click _Save workload_{:.doc-button}.  
    The new configuration may update the forecast.
 
 ## Delete workloads
 
 1. Click the {% icon trash %} next to the workload in the list.
-2. In the confirmation window, click _Delete Workload_{:.doc-button}.  
+2. In the confirmation window, click _Delete workload_{:.doc-button}.  
     injixo stores the associated historical data. To reuse the data, add the queue or queues to another workload.
+
+## Navigate workloads
+
+The workload details page includes the following three sections:
+
+- The volume section
+- **AHT**
+- **Staff requirements**
+
+Each section includes a graph and edit functionalities.
+
+By default, the graphs display data from the current week.
+- To choose a different time range, use the date picker.
+- Use _<_{:.doc-button} and _>_{:.doc-button} to navigate to the past and to the future of the selected time range.
+
+### The volume section
+
+The graph in the volume section displays contact volume for historical data, imported forecasts, and generated forecasts.
+Hover over the graph to see detailed information about volume, AHT, staff requirements, manual adjustments, and added events.<br>
+Learn how to {% link_new adjust the volume | features/forecast/injixo-forecast/manual-adjustments.md | #adjust-the-volume%}.
+
+### AHT
+
+The AHT section is hidden by default. To display it, click the {% icon eye_slash %}.
+The AHT graph is only available for workloads with queues that contain AHT data.<br>
+Learn how to {% link_new adjust the AHT | features/forecast/injixo-forecast/manual-adjustments.md | #adjust-the-aht%}.
+
+### Staff requirements
+
+The graph in the staff requirements section displays the calculated staff requirements.
+Under the graph you can see the configured staff requirements parameters and the total person-hours. Hover over the graph to see detailed information about AHT, volume, staff requirements, any manual adjustments and added events.<br>
+Learn how to use {% link_new staff requirements for scheduling | features/forecast/injixo-forecast/staff-requirement.md | #use-staff-requirements-for-scheduling %}.
+
+## Frequently asked questions
+
+| Question                                                                                                                                                                       | Answer                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Why are the graphs on a workload page empty? | injixo generates a forecast for 365 days after the last data import. If the graphs on a workload page do not display data for a specific time range in the future, check if your integration is still importing data in _Account > Integrations_{:.breadcrumbs}. Also, check if the right queues are assigned to the workload in the workload configuration.

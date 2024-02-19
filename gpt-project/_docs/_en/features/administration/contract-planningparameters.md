@@ -91,9 +91,9 @@ Enter a value for the rest period after holiday work. The rest period is always 
 
 For Scheduling Rules _2646_{:.id-label} and _2647_{:.id-label} the system checks public holidays in the planning unit that are assigned to the employee with the highest priority and for which the 'Public holiday mode' checkbox is checked in the menu option _Day types_{:.menu-item}.
 
-If the rule is activated, an employee must be granted the rest period specified in the contract after each holiday on which he/she executes a shift or activity for which the checkbox "Respect rest period" has been activated in the `Administration` menu item _Activities_{:.menu-item}. Full-day activities are **not** checked by this rule and may violate the rest period.
+If the rule is activated, an employee must be granted the rest period specified in the contract after each public holiday on which they execute a shift or activity for which the checkbox "Respect rest period" has been activated in the `Administration` menu item _Activities_{:.menu-item}. Full-day activities are **not** checked by this rule and may violate the rest period.
 
-## Weekends and holidays
+## Weekends and public holidays
 
 **2620 Minimum Number of Weekends off per Month**  
 If this rule is activated, an employee must be assigned as many free weekends as specified in the Contract.

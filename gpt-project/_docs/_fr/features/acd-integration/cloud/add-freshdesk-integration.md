@@ -17,6 +17,8 @@ Vous débutez avec les intégrations&nbsp;? Commencez avec les {% link_new conce
 
 ## Ajouter une intégration Freshdesk
 
+Pour ajouter une nouvelle intégration Freshdesk dans injixo, vous devez avoir un compte Freshdesk Pro ou Enterprise.
+
 1. Accédez à _Account > Intégrations_{:.breadcrumbs}.
 2. Si une intégration est déjà présente, cliquez sur _Ajouter une intégration_{:.doc-button}.
 3. Dans la section **Freshworks**, cliquez sur _Sélectionner le modèle_{:.doc-button}.

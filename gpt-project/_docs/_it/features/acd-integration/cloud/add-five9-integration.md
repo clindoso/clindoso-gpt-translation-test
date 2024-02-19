@@ -23,9 +23,9 @@ Se raggruppi le code in base alla campagna, l’integrazione legge il report sta
 
 Se raggruppi le code in base alla qualifica, l’integrazione richiede a Five9 un report personalizzato sulle chiamate che includa le qualifiche. Per importare i dati dalle code raggruppate in base alle qualifiche, segui i passaggi seguenti in Five9:
 
- 1. Crea una nuova cartella condivisa per i report.
+ 1. Crea una nuova cartella condivisa per i report, con il nome ‘Shared Reports (injixo)’.
  2. Personalizza il report sulle chiamate includendo la colonna ‘SKILL’.
- 3. Salva il report personalizzato con il nome ‘Call Log with Skills’ nella cartella condivisa.
+ 3. Salva il report personalizzato con il nome ‘Call Log with Skills’ nella nuova cartella condivisa.
 
 Per avere informazioni più dettagliate sulle modalità di personalizzazione dei report, consulta l’Help Center di Five9.
 
@@ -35,7 +35,7 @@ Per avere informazioni più dettagliate sulle modalità di personalizzazione dei
 2. Se ci sono già altre integrazioni, clicca su _Aggiungi integrazione_{:.doc-button}.
 3. Nel riquadro di **Five9** clicca su _Aggiungi integrazione_{:.doc-button}.
 4. Inserisci un nome unico per la nuova integrazione che identifichi l’origine dei dati.
-5. Inserisci il nome utente e la password di una persona che ha l’accesso amministratore nell’account Five9.
+5. Inserisci il nome utente e la password di un utente Five9 con i ruoli ADMIN e REPORTING.
 6. Nella sezione **Configurazione**, seleziona la regione dell’account e il metodo di raggruppamento.
 7. Clicca su _Salva integrazione_{:.doc-button}.
 
@@ -43,7 +43,7 @@ L’integrazione adesso importa dati in injixo. La prima importazione può richi
 
 ## Che cosa succede in caso di stati degli agenti paralleli?
 
-I rapporti Five9 a volte contengono più stati per un unico agente alla stessa ora, come, per esempio:
+I rapporti Five9 a volte contengono più stati per un unico agente nello stesso periodo, come, per esempio:
 
 | Stato   | Ora di inizio | Ora di fine |
 | ------- | ---------- | -------- |

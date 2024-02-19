@@ -19,7 +19,8 @@ Para ver el estado actual de la 2FA de otros usuarios, sigue estos pasos:
 2. En la columna **2FA** a la derecha, un icono de escudo indica el estado de la 2FA de cada usuario. Mueve el cursor sobre el icono para ver más información.
   - Icono rojo {% icon 2FA-red | icon-only %}: la 2FA no está activa.
   - Icono naranja con signo de exclamación {% icon 2FA-orange | icon-only %}: un administrador ha hecho la 2FA obligatoria para el usuario. El usuario tendrá que activar la 2FA cuando inicie sesión la próxima vez.
-  - Icono verde con marca de verificación {% icon 2FA-green | icon-only %}: la 2FA está activa.
+  - Icono naranja con marca de verificación {% icon 2FA-activated | icon-only %}: la 2FA está activa. El usuario la activó por decisión propia.
+  - Icono verde con marca de verificación {% icon 2FA-green | icon-only %}: la 2FA está activa. La 2FA es obligatoria.
 
 ## Hacer la 2FA obligatoria para otros usuarios
 Puedes obligar a otros usuarios a activar la 2FA. Hacer la 2FA obligatoria para otros usuarios tiene las siguientes consecuencias:

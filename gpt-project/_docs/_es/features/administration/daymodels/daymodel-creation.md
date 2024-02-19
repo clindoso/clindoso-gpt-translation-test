@@ -87,7 +87,7 @@ Para hacer un modelo de horario existente aún más específico, puedes añadirl
 
 Para poder añadir actividades primero tienes que [crear el modelo de horario](#crear-modelos-de-horario).
 
-La planificación optimizada puede reemplazar actividades de tipo presencia que estén configuradas como reemplazables. Si no quieres planificar actividades especiales para tus empleados, la actividad base será la única actividad de tipo presencia en tu modelo de horario. Ten en cuenta que configurar actividades en modelos de horario limitará la flexibilidad de las funcionalidades de optimización (p.&nbsp;ej., optimización completa, actividades adicionales, reuniones). Para mantener la optimización lo más flexible posible y evitar errores de planificación, recomendamos que solo incluyas actividades de tipo presencia en los modelos de horario si es estrictamente necesario.
+La planificación optimizada puede reemplazar actividades de tipo presencia que estén configuradas como sustituibles. Si no quieres planificar actividades especiales para tus empleados, la actividad base será la única actividad de tipo presencia en tu modelo de horario. Ten en cuenta que configurar actividades en modelos de horario limitará la flexibilidad de las funcionalidades de optimización (p.&nbsp;ej., optimización completa, actividades adicionales, reuniones). Para mantener la optimización lo más flexible posible y evitar errores de planificación, recomendamos que solo incluyas actividades de tipo presencia en los modelos de horario si es estrictamente necesario.
 
 > Atención
 > 

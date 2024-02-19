@@ -6,7 +6,7 @@ Hier stellen wir Dir einige Dinge zu Mitarbeitern vor, die sehr nützlich für d
 
 ## Betriebszugehörigkeit
 
-Der AutoScheduler plant generell nur aktive Mitarbeiter, d.h. Mitarbeiter mit einer gültigen Betriebszugehörigkeit, einem gültigen Vertrag und gesetztem Häkchen für die Schichtzuteilung.
+Der AutoScheduler plant generell nur aktive Mitarbeiter, d.&nbsp;h. Mitarbeiter mit einer gültigen Betriebszugehörigkeit, einem gültigen Vertrag und gesetztem Häkchen für die Schichtzuteilung.
 
 Einem Mitarbeiter können mehrere Zeiträume für die *Betriebszugehörigkeit* zugewiesen werden, so dass bspw. auch studentische Aushilfen oder saisonale Arbeitskräfte disponiert werden können.
 
@@ -53,7 +53,7 @@ Wenn es Qualifikationsstufen niedriger 100% gibt, konfiguriere die Einstellung *
 
 Der AutoScheduler plant Mitarbeiter nur in der Planungseinheit, die dem Mitarbeiter mit höchster Priorität zugeordnet ist, unabhängig vom Status der Planungsregel *2607*{:.id-label} *Mitarbeiterzuordnung zu den Planungseinheiten*.
 
-Bei Arbeitszeitberechnungen werden die Feiertage und Öffnungszeiten der primären, d.h., der Planungseinheit mit der höchsten Priorität zugrunde gelegt. Dies gilt auch bei der Arbeit mit virtuellen Planungseinheiten. Virtuellen Planungseinheiten dürfen Mitarbeitern in den Stammdaten nicht zugeordnet werden.
+Bei Arbeitszeitberechnungen werden die Feiertage und Öffnungszeiten der primären, d.&nbsp;h., der Planungseinheit mit der höchsten Priorität zugrunde gelegt. Dies gilt auch bei der Arbeit mit virtuellen Planungseinheiten. Virtuellen Planungseinheiten dürfen Mitarbeitern in den Stammdaten nicht zugeordnet werden.
 
 {{ 6 | image: 'Planungseinheiten', '75%' }}
 

@@ -54,7 +54,7 @@ Die eingefügten Tage werden automatisch als Feiertage konfiguriert, indem der _
 
 An Tagen, an denen Deine Planungseinheit geschlossen ist, die Mitarbeiter aber kein Urlaubsgeld erhalten, solltest Du Tagestypen mit Feiertagsmodus aus dem Kalender löschen. Andernfalls wird injixo die Sollarbeitszeit für diese Woche reduzieren und die Mitarbeiter werden für weniger Stunden als normal geplant.
 
-### Eigene Tagestypen zum Planungskalender hinzufügen
+### Benutzerdefinierte Tagestypen zum Planungskalender hinzufügen
 
 Erstelle zuerst die {% link_new Tagestypen | features/administration/day-types.md %}, die Du hinzufügen möchtest.
 

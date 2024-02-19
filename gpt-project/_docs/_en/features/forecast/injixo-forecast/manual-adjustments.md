@@ -1,5 +1,5 @@
 ---
-title: Manually adjust the forecast
+title: Adjust the forecast
 product_label:
   - advanced
   - enterprise
@@ -12,85 +12,86 @@ related_articles:
     filepath: features/forecast/injixo-forecast/events-and-holidays.md
 ---
 
-In this article, you will learn:
+Edit a generated forecast to remove irregularities from the contact volume or the average handle time (AHT).
 
-- when to manually adjust a generated forecast.
-- how to adjust volume or average handling time (AHT) values.
-- the differences between volume and AHT adjustments.
-- how to delete or change manual adjustments.
-- how to transfer updated staff requirements for scheduling.
+Adjust the forecast if any of the following conditions apply:
 
-New to injixo Forecast? Learn {% link_new the basics | features/forecast/injixo-forecast/what-is-the-injixo-forecast.md %} first.
-
-## When to manually adjust a generated forecast?
-
-Modify a generated forecast to remove anomalies from the volume or AHT values.
-
-Manually adjust the forecast calculation result if you:
-
-- need to create a reliable forecast, but have insufficient or incorrect historical data.
-- have volume or AHT values that deviate from current trends, e.g. structural changes in your business, and you don't expect them to change back.
-- have unusually high or low volumes in a specific period, driven by one-off events such as a marketing campaign. Remove these anomalies or add an _Outage_ {% link_new event | features/forecast/injixo-forecast/events-and-holidays.md %} to exclude the period from the forecast calculation.
+- You do not have enough historical data, or your data is not correct.
+- Your contact volume or AHT values deviate from current trends and you do not expect them to change back. Such deviations could be due, for example, to structural changes in your business.
+- Your contact volumes are unusually high or low during a specific period, for example during a marketing campaign. Remove these irregularities, or {% link_new add an outage | features/forecast/injixo-forecast/events-and-holidays.md  |#add-an-event-or-an-outage-to-a-workload %} to exclude the period from the forecast calculation.
 
 New forecast calculations do not overwrite manually adjusted values.
 
-## Adjust volume or AHT
+## Adjust the volume
 
-1. Go to _Forecast_{:.menu-item}.
-2. Select a **workload**.
-3. Select a **day**, **week**, or **month**.
-4. Click _![Context Menu in injixo Forecast](/assets/img/common/forecast/context-menu.svg)_{:.doc-button-icon} in the _Volume and AHT_ section.
-5. Click **Adjust Volume**. To adjust the AHT, click **Adjust AHT**.
-6. Below the graph, the **Manual adjustments** panel appears.
+1. In _Forecast > Workloads_{:.breadcrumbs}, select a workload.
+2. Select a time frame from the date picker.<br>The time frame you select determines the adjustment options.
+3. In the volume section, click _Adjust volume_{:.doc-button}.
+4. In the window, configure your adjustment:
+  - **Date range**: Available if you selected a time frame of several days in step 2.
+  - **Start time** and **End time**: Available if you selected a time frame of one day in step 2.
+  - **alter (%)**: To adjust the current value (volume) by a percentage.
+  - **overwrite**: To replace the current value (volume) with a new value (positive whole number).
+  - **Value**: The value (volume) can be a positive or a negative number.
+Learn [how volume and AHT values are adjusted](#how-do-time-frames-affect-volume-and-aht-adjustments).
+5. Click _Apply adjustment_{:.doc-button}.<br>
+   Changes are highlighted in the volume graph. Hover over the graph to see a tooltip with more details about your contact volume, AHT, staff requirements, and events.
 
-   {{ 1 | image: 'Manual adjustment dialog' }}
+## Adjust the AHT
 
-7. Adjust the **Date range** by clicking on the first and last date in the calendar. Select a **start time** and **end time** to update single intervals when using daily view.
-8. Enter the **Volume** amount or **AHT** to increase or decrease the forecast. Place a minus sign preceding the value (e.g. -50) to decrease. Learn [how volume and AHT values are adjusted in detail](#differences-between-volume-and-aht-adjustments) below.
-   - Choose **alter (%)** to adjust the original value by a percentage.
-   - Choose **overwrite** to set the original value and the amount (positive whole number) for the **Date range**.
-9. Select a **Reason for Editing** from the drop-down menu.
-10. Click _Save_{:.doc-button} to apply the changes, or click _Cancel_{:.doc-button} to discard. Changes are instantly highlighted on the volume or AHT graph and visible in daily, weekly, monthly, and yearly views.
+1. In _Forecast > Workloads_{:.breadcrumbs}, select a workload.
+2. Select a time frame from the date picker.
+3. Next to **AHT**, click the {% icon eye_slash %}.
+4. Click _Adjust AHT_{:.doc-button}.
+5. In the window, configure your adjustment:
+  - **Date range**: Available if you selected a time frame of several days in step 2.
+  - **Start time** and **End time**: Available if you selected a time frame of one day in step 2.
+  - **alter (%)**: To adjust the current value (AHT) by a percentage.
+  - **overwrite**: To replace the current value (AHT) with a new value (positive whole number).
+  - **Value**: The value (AHT) can be a positive or a negative number.<br> Learn [how volume and AHT values are adjusted](#how-do-time-frames-affect-volume-and-aht-adjustments).
+6. Click _Apply adjustment_{:.doc-button}.<br>
+  Changes are highlighted in the AHT graph. Hover over the graph to see a tooltip with more details about your contact volume, AHT, staff requirements, and events.
+ 
+Repeat this procedure to readjust values if there is a significant difference between the generated forecast and your manual adjustment. The fields do not show the values previously entered but remain blank. Another percentage increase or decrease for a period updates the value modified before, not the original value.
 
-{{ 2 | image: 'Manual adjustments in injixo Forecast' }}
+## How do time frames affect volume and AHT adjustments?
 
-## Differences between volume and AHT adjustments
+Adjustments have a different impact based on the time frame you selected in the date picker:
 
-| Value  |      View      | Description                                                                                                                                                                                                                                                                   |
-| :----: | :------------: | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Volume |     Daily      | A percentage value decreases or increases the existing values for the selected intervals. An absolute value overwrites the selected intervals with the defined value for each interval.                                                                                       |
-| Volume | Weekly/Monthly | A percentage value and an absolute value increase or decrease the total volume. The value distributes proportionally over the selected period, preserving the interval trends and distribution patterns.                                                                      |
-|  AHT   |     Daily      | A percentage value decreases or increases the existing values for the selected intervals. An absolute value overwrites the selected intervals with the defined value for each interval.                                                                                       |
-|  AHT   | Weekly/Monthly | A percentage value and an absolute value increase or decrease the total weighted average displayed. AHT values are distributed over the selected period, preserving the interval trends and distribution patterns. This may cause higher or lower values on one or more days. |
+| Value  |      Time frame              |  Impact of the adjustment   
+| ----------- | ---------------------------- | ------------------------------------------------------------------------------------------------------ | 
+| Volume |     Single day      | A percentage value decreases or increases the existing values for all intervals within **Start time** and **End time**.<br> An absolute value overwrites the existing values for all intervals within **Start time** and **End time**.                                               |
+| Volume | Several days | Both a percentage value and an absolute value increase or decrease the total volume. The value distributes proportionally over the selected period, preserving the interval trends and distribution patterns.                                                                      |
+|  AHT   |     Single day     | A percentage value decreases or increases the existing values for the intervals included within **Start time** and **End time**.<br> An absolute value overwrites the existing values for each interval included within **Start time** and **End time**.                                                                                       |
+|  AHT   | Several days | A percentage value and an absolute value increase or decrease the total weighted average displayed. AHT values are distributed over the selected period, preserving the interval's trends and distribution patterns. This may cause higher or lower values on one or more days. |
 
-> Zero AHT values
+> Missing AHT values
 >
-> If a day shows no AHT values, you cannot adjust the AHT in the weekly or monthly view.  
-> In the daily view, you can adjust the AHT by overwriting intervals with absolute values.  
-> To see the changed AHT in the weekly or monthly view, enter a contact volume greater than zero.
+> If a day shows no AHT values, you can only adjust the AHT for a single day and not for a longer time range.
+>  To adjust the AHT for a single day, use absolute values.  
+> If you enter a contact volume greater than zero, you will see the changed AHT in a view with several days.
 
-## Change manual adjustments
+## Delete adjustments
 
-Readjust values if there is a significant difference between the generated forecast and your manual adjustment. Use the same steps described in [Adjust Volume or AHT](#adjust-volume-or-aht).
+You can delete adjustments that are no longer relevant.
 
-Note: The fields do not show the values previously entered but remain blank. Another percentage increase/decrease for a period does not update the original value, but rather the value modified prior.
+1. In _Forecast > Workloads_{:.breadcrumbs}, select a workload.
+2. Select a time frame from the date picker.
+3. Select the adjustments you want to delete:
+  - In the volume section, click _Adjust volume_{:.doc-button}.
+  - In the **AHT** section, click _Adjust AHT_{:.doc-button}.
+4. Select a **Date range**.
+5. Click _Clear all adjustments_{:.doc-button} to remove all adjustments from the time frame.<br>
+  injixo displays the original forecast values for the selected time frame.
 
-## Delete manual adjustments
+## Use staff requirements for scheduling
 
-Delete previous or obsolete adjustments.
+Manual adjustments will automatically recalculate the staff requirements.
 
-1. Go to _Forecast_{:.menu-item}.
-2. Select a **workload**.
-3. Select a **day**, **week**, or **month**.
-4. Click _![Context Menu in injixo Forecast](/assets/img/common/forecast/context-menu.svg)_{:.doc-button-icon} in the _Volume and AHT_ section.
-5. Select **Adjust Volume** or **Adjust AHT** in the displayed context menu.
-6. Select a **day** or **interval(s)** from the drop-down menu.
-7. Click _Clear selected Adjustments_{:.doc-button} to delete the displayed adjustment. Select _Clear all Adjustments_{:.doc-button} to remove all adjustments on the displayed day.
+If you configured the staff requirements calculation on the workload page, you can use the new values for scheduling by clicking _Save staff requirements_{:.doc-button}.<br>
+To use the adjusted values for the Multiactivity, Outbound, or Constant requirement script, proceed as follows:
 
-   {{ 4 | image: 'Dialog to clear adjustments' }}
-
-## Transfer updated staff requirements for scheduling
-
-For automatic calculation methods, manual adjustments will automatically recalculate the staff requirements. To use the updated staff requirements for scheduling, click _Use Requirements_{:.doc-button}.
-
-To transfer the adjusted values for other calculation methods, click _Use Forecast_{:.doc-button}, next select your {% link_new staff requirement script | features/forecast/injixo-forecast/staff-requirement.md %}, configure the parameters, and click _OK_{:.doc-button} to run it. This will update your staff requirements using the adjusted values.
+1. From the three-dots menu _![Context Menu in injixo Forecast](/assets/img/common/forecast/context-menu.svg)_{:.doc-button-icon} at the top right, select **Use forecast**.
+2. In the window, click _Use forecast_{:.doc-button}.
+3. In _Forecast > Requirement Scripts_{:.breadcrumbs}, select a script.
+4. Configure and run the script.<br>Learn how to configure the {% link_new Multiactivity script | features/forecast/requirement-scripts/requirement-multiactivity.md %}, the {% link_new Outbound script | features/forecast/requirement-scripts/requirement-outbound.md %}, and the {% link_new Constant requirement script | features/forecast/requirement-scripts/requirement-constant.md %}.

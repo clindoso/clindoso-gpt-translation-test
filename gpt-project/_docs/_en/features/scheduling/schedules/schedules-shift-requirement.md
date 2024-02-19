@@ -38,7 +38,7 @@ The shift requirement table shows fixed and variable day models. The day models 
 
 {{ 1 | image: 'Shift requirement table', '100%' }}
 
-In order to display special events like holidays in additional columns next to the standard weekdays, add further {% link_new day types | features/administration/day-types.md %} to the planning unit.
+In order to display special events like public holidays in additional columns next to the standard weekdays, add further {% link_new day types | features/administration/day-types.md %} to the planning unit.
 
 > Shift requirements for deleted day types or day models
 >

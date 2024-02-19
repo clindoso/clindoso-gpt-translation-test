@@ -108,10 +108,10 @@ Additional monthly reports can provide information regarding the number of activ
    As above, standardized to a full-time employee.
 
 - **Vacation Statistics**
-  Sum of all holidays per employee in hours and days for all activities of type _Vacation_.
+  Sum of all vacation days per employee in hours and days for all activities of type _Vacation_.
 
 - **Vacation Statistics with Total Amount Column**  
-   Sum of all holidays per employee in hours and days, both overall and per vacation.
+   Sum of all vacation days per employee in hours and days, both overall and per vacation.
 - **Vacation Statistics with Full-Time Equivalent**  
    As above, standardized to a full-time employee.
 
@@ -143,7 +143,7 @@ Some more reports offering different information depending on the use cases:
    Selection-based overview containing scheduled working hours of the employees in relation to their target working hours according to their contract.
 
 - **Vacation Overview**  
-   Paid and unpaid activities of type _Vacation_, including the ones on weekends and holidays.<!-- , for a maximum of four vacation planning periods.  --><!-- test and reintroduce with time-off periods -->Sorted by activity names.
+   Paid and unpaid activities of type _Vacation_, including the ones on weekends and public holidays.<!-- , for a maximum of four vacation planning periods.  --><!-- test and reintroduce with time-off periods -->Sorted by activity names.
 
 - **Shift Overview**  
    Selection-based report. Overview of personnel deployment sorted by personnel number. Monthly overview about assigned shifts and all assigned paid and unpaid activities. injixo evaluates and indicates whether the shifts are early, middle, late or night shifts, using activities and shift containing an activity of type _Present_. The report shows number of individual shift types and total number of shifts per day at the end.

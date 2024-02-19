@@ -38,26 +38,21 @@ Um eine CSV-Integration in injixo hinzuzufügen, gehe wie folgt vor:
 
 1. Gehe zu _Account > Integrationen_{:.breadcrumbs}.
 2. Wenn es bereits eine Integration gibt, klicke auf _Integration hinzufügen_{:.doc-button}.
-3. Klicke im Abschnitt **Universal Interfaces** auf _Modell auswählen_{:.doc-button}.
+3. Klicke in der Kachel **Universal Interfaces** auf _Modell auswählen_{:.doc-button}.
 4. Klicke im Abschnitt **CSV** auf _Integration hinzufügen_{:.doc-button}.
 
 ## Neue CSV-Integration konfigurieren
 
-1. Gib im Abschnitt **Allgemeine Informationen** einen eindeutigen **Namen** für die Integration ein, der die Datenquelle benennt.
+1. Gib einen eindeutigen Namen für die Integration ein, der die Datenquelle kennzeichnet.
 2. Installiere im Abschnitt **injixo Cloud Link** {% link_new injixo Cloud Link | features/acd-integration/cloud/install-cloud-link.md | #injixo-cloud-link-installieren %} und stelle die Verbindung her. Wenn du die Daten lieber [manuell hochladen](#manueller-datenimport) möchtest, kannst du diesen Schritt überspringen.
 3. Wähle im Abschnitt **CSV-Schema-Konfiguration** den **Datentyp für Import**:
-
    - **Kontaktdaten**: Die hochgeladenen Daten enthalten alle eingehenden und angenommenen Volumen, die dein externes System aufgezeichnet hat. Dazu gehören Anrufe, Chats, Social Media, Tickets, E-Mails oder Dokumente.
-   - **Agentenstatus**: Die hochgeladenen Daten enthalten alle Aktivitäten von Agenten, die dein externes System aufgezeichnet hat. Dazu gehören Anmeldung, Abmeldung, Rufbereitschaft, Nachbearbeitungszeit, Pause, etc.
-
+   - **Agentenstatus**: Die hochgeladenen Daten enthalten alle Aktivitäten von Agenten, die dein externes System aufgezeichnet hat. Dazu gehören Anmeldung, Abmeldung, Anruf bearbeiten, Nachbearbeitungszeit, Pause, etc.
 4. Klicke auf _Erstelle ein neues CSV-Schema_{:.doc-button}.
-5. Konfiguriere die CSV-Schema-Einstellungen.
-   Dazu gehören:
-
-- Einrichtung und Vorverarbeitungsoptionen
-- Spaltenzuordnung (standardmäßig über [Dropdown-Menüs](#spalten-zuordnen); alternativ über [SQL-Abfrage](#spalten-zuordnen-sql-abfrage))  
-   Erfahre mehr darüber, wie ein [CSV-Schema](#csv-schema-erstellen) mit den aufgezählten Konfigurationsoptionen erstellt wird.
-
+5. Konfiguriere die CSV-Schema-Einstellungen. Dazu gehören:
+   - Einrichtung und Vorverarbeitungsoptionen
+   - Spaltenzuordnung (standardmäßig über [Dropdown-Menüs](#spalten-zuordnen); alternativ über [SQL-Abfrage](#spalten-zuordnen-sql-abfrage))  
+      Erfahre mehr darüber, wie ein [CSV-Schema](#csv-schema-erstellen) mit den aufgezählten Konfigurationsoptionen erstellt wird.
 6. Klicke auf _Speichern_{:.doc-button}, um die Integration zu erstellen.
 
 Nachdem du die Integration gespeichert hast, kannst du den [manuellen Datenimport](#manueller-datenimport) verwenden oder den [automatischen Datenimport](#automatischer-datenimport) einrichten.
@@ -71,28 +66,24 @@ Bevor du ein CSV-Schema erstellen kannst, musst du eine [CSV-Integration hinzuf�
 
 ### Einrichtung und Vorverarbeitungsoptionen
 
-1. Lade im Abschnitt **Einrichtung** eine Beispiel-Datei hoch, die dein externes System erzeugt hat. Dadurch kannst du sehen, wie injixo mit den Dateien deines Systems beim Import umgeht.
+1. Lade im Abschnitt **Einrichtung** eine Beispiel-CSV-Datei hoch, die dein externes System erzeugt hat. Dadurch kannst du sehen, wie injixo mit den Dateien deines Systems beim Import umgeht.
 2. Konfiguriere die folgenden Parameter: Je nach Importdatentyp können sich die Parameter unterscheiden:<br><br>
 
-   | Parameter                                                                         | Beschreibung                                                                                                                                                                                                                                                                                                                                                                 |
-   | --------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-   | **Spaltentrennzeichen der CSV-Datei**                                             | Trennzeichen, das in der hochgeladenen CSV-Datei verwendet wird, z.&nbsp;B. Semikolon.                                                                                                                                                                                                                                                                                       |
-   | **Zeitzone**                                                                      | Zeitzone, in der dein externes System die Daten aufzeichnet, z.&nbsp;B. Amerika/Chicago (UTC-05:00).                                                                                                                                                                                                                                                                         |
-   | **Datenlayout**<br>(Nur für Kontaktdaten)                                         | Das Datenlayout hängt davon ab, wie du deine CSV-Datei erstellt hast:<br>**Kontaktbasiert**: Für Datensätze mit Kontaktdaten, die eine Zeile für jeden einzelnen Kontakt enthalten.<br>**Intervallbasiert**: Für aggregierte Daten, die eine Zeile mit allen Kontaktinformationen pro Intervall enthalten. Wähle zusätzlich eine Intervalllänge von 15, 30, oder 60 Minuten. |
-   | **Fehlende Werte in vorhandenen Intervallen behandeln**<br>(Nur für Kontaktdaten) | Lege fest, wie fehlende Werte in der Ziel-Queue verarbeitet werden und wie Daten in Forecast und Dashboards angezeigt werden:<br>**Mit Null auffüllen**: Fehlende Werte werden mit einer Null ersetzt.<br>**Leer lassen**: Fehlende Werte werden mit folgendem Text ersetzt: no data.<br>injixo überschreibt bestehende Daten während des Imports.                           |
-
-   > Wähle das Intervall, das dem Intervall deiner ACD entspricht
-   >
-   > Wenn du ein 30-Minuten-Intervall wählst, während deine ACD Daten in 15-Minuten-Intervallen vorhält, überspringt injixo Intervalle beim Import. Dann werden nur für jedes zweite Intervall Daten importiert. <!-- what happens the other way around? -->
+   | Parameter                                                     | Beschreibung                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+   | ------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+   | **Spaltentrennzeichen der CSV-Datei**                              | Trennzeichen, das in der hochgeladenen CSV-Datei verwendet wird, z.&nbsp;B. Semikolon.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+   | **Zeitzone**                                                 | Zeitzone, in der dein externes System die Daten aufzeichnet, z.&nbsp;B. Amerika/Chicago (UTC-05:00).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+   | **Datenlayout**<br>(Nur für Kontaktdaten)                     | Das Datenlayout hängt davon ab, wie du deine CSV-Datei erstellt hast:<br>**Kontaktbasiert**: Für Datensätze mit Kontaktdaten, die eine Zeile für jeden einzelnen Kontakt enthalten. Da importierte kontaktbasierte Daten in 15-Minuten-Intervallen aggregiert werden, muss das Intervall der Planungseinheit ebenfalls 15&nbsp;Minuten sein. Neue Datenimporte überschreiben die Daten, die zuvor für das Intervall importiert wurden. Wenn deine Datei einen Zeitstempel mehrfach enthält, werden die Daten für das Intervall aufgerechnet.<br><br>**Intervallbasiert**: Für aggregierte Daten, die eine Zeile mit allen Kontaktinformationen pro Intervall enthalten. Wähle zusätzlich die korrekte Intervalllänge aus, die mit der deiner CSV-Datei übereinstimmt. Wenn du ein Intervall auswählst, das größer ist als die Intervalle der hochgeladenen Dateien, siehst du eine Fehlermeldung. Im umgekehrten Fall, d.&nbsp;h., wenn du ein 15-Minuten-Intervall auswählst für eine Datei mit größeren Intervallen (z.&nbsp;B. 30&nbsp;Minuten), wird jedes fehlende (hier: jedes zweite) Intervall mit 0 bzw. mit dem Text no data aufgefüllt. Dies hängt davon ab, welche Option du bei **Fehlende Werte in vorhandenen Intervallen behandeln** gewählt hast. |
+   | **Fehlende Werte in vorhandenen Intervallen behandeln**<br>(Nur für Kontaktdaten) | Lege fest, wie fehlende Werte in der Ziel-Queue an anderen Stellen in injixo angezeigt werden sollen:<br>**Mit Null auffüllen**: Fehlende Werte werden mit einer Null ersetzt.<br>**Leer lassen**: Fehlende Werte werden mit folgendem Text ersetzt: no data.<br>**Leer lassen** eignet sich für die meisten Szenarien. injixo überschreibt bestehende Daten während des Imports.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 
 3. (Optional) Lege im Abschnitt **Vorverarbeitungsoptionen** eine oder mehrere Optionen fest, die für dein CSV-Dateiformat gelten:<br><br>
 
-   | Vorverarbeitungsoption                | Beschreibung                                                                                                                                                                                                                                                         |
-   | ------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-   | **Spaltenkopfzeile hinzufügen**       | Bei Dateien ohne Kopfzeile beschriftet injixo die Spalten mit A, B, C, usw. auf der [Spaltenzuordnungsseite](#spalten-zuordnen).                                                                                                                                     |
-   | **Leere Zeilen überspringen**         | injixo ignoriert Zeilen, die nur Trennzeichen enthalten.                                                                                                                                                                                                             |
-   | **Überspringe die erste(n) Zeile(n)** | injixo entfernt zusätzliche Zeilen am Anfang der Datei. Gib die Anzahl der Zeilen ein, die ignoriert werden sollen.                                                                                                                                                  |
-   | **Überspringe die Zeile(n) mit**      | injixo ignoriert Zeilen mit bestimmten Zeichen. Gib eine Zeichenfolge ein (Groß- und Kleinschreibung beachten). injixo ignoriert Zeilen mit dieser Zeichenfolge. Du kannst mehrere Zeichenfolgen hinzufügen, indem du auf _String hinzufügen_{:.doc-button} klickst. |
+   | Vorverarbeitungsoption       | Beschreibung                                                                                                                                                                                             |
+   | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+   | **Spaltenkopfzeile hinzufügen**         | Bei Dateien ohne Kopfzeile beschriftet injixo die Spalten mit A, B, C, usw. auf der [Spaltenzuordnungsseite](#spalten-zuordnen).                                                                        |
+   | **Leere Zeilen überspringen**        | injixo ignoriert Zeilen, die nur Trennzeichen enthalten.                                                                                                                                                  |
+   | **Überspringe die erste(n) Zeile(n)**        | injixo entfernt zusätzliche Zeilen am Anfang der Datei. Gib die Anzahl der Zeilen ein, die ignoriert werden sollen.                                                                                               |
+   | **Überspringe die Zeile(n) mit** | injixo ignoriert Zeilen mit bestimmten Zeichen. Gib eine Zeichenfolge ein (Groß- und Kleinschreibung beachten). injixo ignoriert Zeilen mit dieser Zeichenfolge. Du kannst mehrere Zeichenfolgen hinzufügen, indem du auf _String hinzufügen_{:.doc-button} klickst. |
 
 4. Um mit der Spaltenzuordnung fortzufahren, klicke auf _Zur Spaltenzuordnung_{:.doc-button}.
 
@@ -114,32 +105,34 @@ Die Spaltenzuordnungsseite zeigt eine Vorschau der hochgeladenen CSV-Datei.
 
 Wenn du **Kontaktdaten** als Importdatentyp ausgewählt hast, zeigt die Spaltenzuordnungsseite in der Standardansicht folgende Elemente:
 
-| Feld            | Beschreibung                                                                                                                                                                                                                                                                                                             | Erforderlich für intervallbasierte Daten | Erforderlich für kontaktbasierte Daten |
-| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :--------------------------------------: | :------------------------------------: |
-| **Queue-Name**  | Name der Queue, aus der die Daten stammen                                                                                                                                                                                                                                                                                |                    Ja                    |                   Ja                   |
-| **Date**        | Datumswerte und verwendetes Format<br>Standardmäßig kannst du aus dem Dropdown-Menü das Datumsformat auswählen, das deinem CSV-Format entspricht. Um ein [benutzerdefiniertes Datumsformat](#benutzerdefiniertes-datumsformat) zu konfigurieren, klicke auf das {% icon gear %} und gib dein Format in das Textfeld ein. |                    Ja                    |                   Ja                   |
-| **Time**        | Zeitwerte und verwendetes Format                                                                                                                                                                                                                                                                                         |                    Ja                    |                   Ja                   |
-| **Zeitstempel** | Zeitstempelwerte mit einem [benutzerdefinierten Zeitstempelformat](#benutzerdefiniertes-zeitstempelformat-mit-datum-und-uhrzeit)<br>Die Spalte erscheint, wenn du **Datum und Uhrzeit in einer Spalte** aktivierst.                                                                                                      |                    Ja                    |                   Ja                   |
-| **Offered**     | Eingehende Kontakte (pro Intervall für intervallbasierte Daten)<br>Unterstützt ganze Zahlen und Dezimalzahlen mit Punkt (z.&nbsp;B. 15.0).                                                                                                                                                                               |                    Ja                    |                   Ja                   |
-| **Angenommene** | Beantwortete Kontakte (pro Intervall für intervallbasierte Daten)<br>Erlaubt ganze Zahlen und Dezimalzahlen mit Punkt (z.&nbsp;B. 1.0).<br>Für kontaktbasierte Daten kann der Wert für bearbeitete Kontakte nur 0 oder 1 (oder Dezimalzahlen) sein.                                                                      |                    Ja                    |                   Ja                   |
-| **AHT**         | Durchschnittliche Bearbeitungszeit pro Intervall<br> Unterstützte Formate sind Sekunden (ganze Zahlen) oder hh:mm:ss (z.&nbsp;B. 00:05:00).<br>Wenn keine AHT-Spalte vorhanden ist, wähle **Keine Spalte**.<br>Dieses Feld wird nur für intervallbasierte Daten angezeigt.                                               |                   Nein                   |                  Nein                  |
-| **Dauer**       | Dauer für den Eintrag<br>Dieses Feld wird nur für kontaktbasierte Daten angezeigt.                                                                                                                                                                                                                                       |                   Nein                   |                   Ja                   |
-| **Kanal**       | Fester Kanalname (erstes Dropdown-Menü) oder auswählbare Spalte, die den Kanalnamen enthält (zweites Dropdown-Menü)<br>Erlaubte Werte: calls, emails, chats, documents, cases, social_media                                                                                                                              |                    Ja                    |                   Ja                   |
+| Feld          | Beschreibung                                                                                                                                                                                                                                          | Erforderlich für intervallbasierte Daten | Erforderlich für kontaktbasierte Daten |
+| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------: | :-----------------------------: |
+| **Queue-Name** | Name der Queue, aus der die Daten stammen                                                                                                                                                                                                        |               Ja                |               Ja               |
+| **Date**       | Datumswerte und verwendetes Format<br>Standardmäßig kannst du aus dem Dropdown-Menü das Datumsformat auswählen, das deinem CSV-Format entspricht. Um ein [benutzerdefiniertes Datumsformat](#benutzerdefiniertes-datumsformat) zu konfigurieren, klicke auf das {% icon gear %} und gib dein Format in das Textfeld ein. |               Ja                |               Ja               |
+| **Time**       | Zeitwerte und verwendetes Format                                                                                                                                                                                                                          |               Ja                |               Ja               |
+| **Zeitstempel**  | Zeitstempelwerte mit einem [benutzerdefinierten Zeitstempelformat](#benutzerdefiniertes-zeitstempelformat-mit-datum-und-uhrzeit)<br>Die Spalte erscheint, wenn du **Datum und Uhrzeit in einer Spalte** aktivierst.                                                                              |               Ja                |               Ja               |
+| **Offered**    | Eingehende Kontakte (pro Intervall für intervallbasierte Daten)<br>Erlaubt ganze Zahlen oder Dezimalzahlen mit Punkt.                                                                                                                                            |               Ja                |               Ja               |
+| **Angenommene**    | Beantwortete Kontakte (pro Intervall für intervallbasierte Daten)<br>Erlaubt ganze Zahlen und Dezimalzahlen mit Punkt.<br>Für kontaktbasierte Daten kann der Wert für bearbeitete Kontakte nur 0 oder 1 (oder Dezimalzahlen) sein.                                              |               Ja                |               Ja               |
+| **AHT**        | Durchschnittliche Bearbeitungszeit pro Intervall<br> Unterstützte Formate sind Sekunden (ganze Zahl) oder hh:mm:ss (z.&nbsp;B. 00:05:00).<br>Wenn keine AHT-Spalte vorhanden ist, wähle **Keine Spalte**.<br>Das Feld wird nur für intervallbasierte Daten angezeigt.                           |                Nein                |               Nein                |
+| **Dauer**   | Aufgezeichnete Dauer in Sekunden (ganze Zahl).<br>Das Feld wird nur für kontaktbasierte Daten angezeigt.                                                                                                                                             |                Nein                |               Ja               |
+| **Kanal**    | Fester Kanalname (erstes Dropdown-Menü) oder auswählbare Spalte, die den Kanalnamen enthält (zweites Dropdown-Menü)<br>Erlaubte Werte: calls, emails, chats, documents, cases, social_media                                                           |               Ja                |               Ja               |
+
+Hinweis: Der Import von AHT für intervallbasierte Daten ist zwar technisch nicht notwendig, aber er ist entscheidend für die genaue Berechnung des Mitarbeiterbedarfs und für das Forecasting.
 
 #### Agentenstatus Dropdown-Menüs
 
 Wenn du **Agentenstatus** als Importdatentyp ausgewählt hast, zeigt die Spaltenzuordnungsseite in der Standardansicht folgende Elemente:
 
-| Feld                  | Beschreibung                                                                                                                                                                                                                                                                                                                                       | Erforderlich |
-| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
-| **Agentenkennung**    | Eindeutiger Bezeichner für den Agenten, z. B. ID oder Name                                                                                                                                                                                                                                                                                         | Ja           |
-| **Aktivitätskennung** | Aktivität, an der der Agent gerade arbeitet                                                                                                                                                                                                                                                                                                        | Ja           |
-| **Startdatum**        | Datum, an dem der Agent die Aktivität begonnen hat<br>Standardmäßig kannst du aus dem Dropdown-Menü das Datumsformat auswählen, das dem Format deiner CSV-Datei entspricht. Um ein [benutzerdefiniertes Datumsformat](#benutzerdefiniertes-datumsformat) zu konfigurieren, klicke auf das {% icon gear %} und gib dein Format in das Textfeld ein. | Ja           |
-| **Startzeit**         | Zeitpunkt, zu dem der Agent die Aktivität begonnen hat                                                                                                                                                                                                                                                                                             | Ja           |
-| **Startzeitstempel**  | [Benutzerdefiniertes Zeitstempelformat](#benutzerdefiniertes-zeitstempelformat-mit-datum-und-uhrzeit) mit Datum und Uhrzeit, zu der der Agent die Aktivität begonnen hat<br>Die Spalte erscheint, wenn du **Datum und Uhrzeit in einer Spalte** aktivierst.                                                                                        | Ja           |
-| **Enddatum**          | Datum, an dem der Agent die Aktivität beendet hat<br>Wähle aus dem Dropdown-Menü das Datumsformat aus, das deinem Format entspricht. Um ein [benutzerdefiniertes Datumsformat](#benutzerdefiniertes-datumsformat) zu konfigurieren, klicke auf das {% icon gear %} und gib dein benutzerdefiniertes Format in das Textfeld ein.                    | Nein         |
-| **Endzeit**           | Zeitpunkt, zu dem der Agent die Aktivität beendet hat                                                                                                                                                                                                                                                                                              | Nein         |
-| **Endzeitstempel**    | [Benutzerdefiniertes Zeitstempelformat](#benutzerdefiniertes-zeitstempelformat-mit-datum-und-uhrzeit) mit Datum und Uhrzeit, zu der der Agent die Aktivität beendet hat<br>Die Spalte erscheint, wenn du **Datum und Uhrzeit in einer Spalte** aktivierst.                                                                                         | Nein         |
+| Feld                   | Beschreibung                                                                                                                                                                                                                                                                          | Erforderlich |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------- |
+| **Agentenkennung**    | Eindeutiger Bezeichner für den Agenten, z. B. ID oder Name                                                                                                                                                                                                                                     | Ja      |
+| **Aktivitätskennung** | Aktivität, an der der Agent gerade arbeitet                                                                                                                                                                                                                                                     | Ja      |
+| **Startdatum**          | Datum, an dem der Agent die Aktivität begonnen hat<br>Standardmäßig kannst du aus dem Dropdown-Menü das Datumsformat auswählen, das dem Format deiner CSV-Datei entspricht. Um ein [benutzerdefiniertes Datumsformat](#benutzerdefiniertes-datumsformat) zu konfigurieren, klicke auf das {% icon gear %} und gib dein Format in das Textfeld ein.   | Ja      |
+| **Startzeit**          | Zeitpunkt, zu dem der Agent die Aktivität begonnen hat                                                                                                                                                                                                                                         | Ja      |
+| **Startzeitstempel**     | [Benutzerdefiniertes Zeitstempelformat](#benutzerdefiniertes-zeitstempelformat-mit-datum-und-uhrzeit) mit Datum und Uhrzeit, zu der der Agent die Aktivität begonnen hat<br>Die Spalte erscheint, wenn du **Datum und Uhrzeit in einer Spalte** aktivierst.                                                                 | Ja      |
+| **Enddatum**            | Datum, an dem der Agent die Aktivität beendet hat<br>Wähle aus dem Dropdown-Menü das Datumsformat aus, das deinem Format entspricht. Um ein [benutzerdefiniertes Datumsformat](#benutzerdefiniertes-datumsformat) zu konfigurieren, klicke auf das {% icon gear %} und gib dein benutzerdefiniertes Format in das Textfeld ein. | Nein       |
+| **Endzeit**            | Zeitpunkt, zu dem der Agent die Aktivität beendet hat                                                                                                                                                                                                                                         | Nein       |
+| **Endzeitstempel**       | [Benutzerdefiniertes Zeitstempelformat](#benutzerdefiniertes-zeitstempelformat-mit-datum-und-uhrzeit) mit Datum und Uhrzeit, zu der der Agent die Aktivität beendet hat<br>Die Spalte erscheint, wenn du **Datum und Uhrzeit in einer Spalte** aktivierst.                                                                 | Nein       |
 
 #### Benutzerdefiniertes Datumsformat
 
@@ -151,13 +144,13 @@ Lege ein benutzerdefiniertes Datumsformat fest, das mit dem Datum in deinen CSV-
 
 Alle anderen Zeichen werden als Trennzeichen interpretiert.
 
-Examples:
+Beispiele:
 
 | Date     | Benutzerdefiniertes Datumsformat |
-| -------- | -------------------------------- |
-| 13/1,22  | D/M,YY                           |
-| 010122   | DDMMYY                           |
-| 13012022 | DDMMYYYY                         |
+| -------- | ------------------ |
+| 13/1,22  | D/M,YY             |
+| 010122   | DDMMYY             |
+| 13012022 | DDMMYYYY           |
 
 #### Benutzerdefiniertes Zeitstempelformat mit Datum und Uhrzeit
 
@@ -168,12 +161,12 @@ Zusätzlich zum [benutzerdefinierten Datumsformat](#benutzerdefiniertes-datumsfo
 - für Minuten: **m** (einstellige Ziffern 1-9) oder **mm** (mit führenden Nullen)
 - (optional) für Sekunden: **s** (einstellige Ziffern 1-9) oder **ss** (mit führenden Nullen)
 
-Examples:
+Beispiele:
 
-| Datum und Uhrzeit | Zeitstempelformat |
-| ----------------- | ----------------- |
-| 13/1,22 9:15:8    | D/M,YY h:m:s      |
-| 010122 09-15      | DDMMYY hh:mm      |
+| Datum und Uhrzeit  | Zeitstempelformat |
+| -------------- | ---------------- |
+| 13/1,22 9:15:8 | D/M,YY h:m:s     |
+| 010122 09-15   | DDMMYY hh:mm     |
 
 ### Spalten zuordnen (SQL-Abfrage)
 
@@ -211,21 +204,21 @@ Wenn du sowohl intervallbasierte als auch kontaktbasierte Kontaktdaten hochladen
 
 In der folgenden Tabelle erhältst du einen Überblick über die Spalten, die in der SQL-Abfrage erforderlich sind:
 
-> Je nach [WFM-Plan](https://www.injixo.com/de/pricing/) kann es sein, dass dir nicht alle Kanäle der injixo-Quell-Queue zur Verfügung stehen.
+> Je nach [WFM-Plan](https://www.injixo.com/de/pricing/) kann es sein, dass dir nicht alle Kanäle für die injixo Quell-Queue zur Verfügung stehen.
 
-| Spaltenname | Datentyp | Erforderlich | Erläuterung                                                                                                                                                                                                        |
-| ----------- | -------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| queue       | String   | Ja           | Bezeichnung für die Queue                                                                                                                                                                                          |
-| timestamp   | Datetime | Ja           | Start des Intervalls im Format YYYY-MM-DD hh:mm:ss                                                                                                                                                                 |
-| offered     | Integer  | Ja           | Anzahl Kontakte (z.&nbsp;B. Anrufe oder E-Mails) im Intervall                                                                                                                                                      |
-| answered    | Integer  | Ja           | intervallbasiert: Anzahl der Kontakte, die im Intervall bearbeitet wurden<br>kontaktbasiert: Der Wert 1 bedeutet, dass der Kontakt bearbeitet wurde. Der Wert 0 bedeutet, dass der Kontakt nicht bearbeitet wurde. |
-| aht         | Float    | Nein         | Durchschnittliche Bearbeitungszeit für alle Kontakte im Intervall                                                                                                                                                  |
-| duration    | Integer  | Ja           | Gesamtbearbeitungszeit eines einzelnen Kontakts                                                                                                                                                                    |
-| channel     | String   | Ja           | Bezeichnung für den Kanal der injixo Quell-Queue<br>Gültige Werte: calls, chats, emails, social_media, documents, cases                                                                                            |
+| Spaltenname | Datentyp | Erforderlich | Erläuterung                                                                                                                                                                                                  |
+| ----------- | --------- | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| queue       | String    | Ja      | Bezeichnung für die Queue                                                                                                                                                                                 |
+| timestamp   | Datetime  | Ja      | Start des Intervalls im Format YYYY-MM-DD hh:mm:ss                                                                                                                                                  |
+| offered     | Integer   | Ja      | Anzahl Kontakte (z.&nbsp;B. Anrufe oder E-Mails) im Intervall                                                                                                                                                 |
+| answered    | Integer   | Ja      | Intervallbasiert: Anzahl der Kontakte, die im Intervall bearbeitet wurden.<br>Kontaktbasiert: Der Wert 1 bedeutet, dass der Kontakt bearbeitet wurde. Der Wert 0 bedeutet, dass der Kontakt nicht bearbeitet wurde. |
+| aht         | Float     | Nein       | Durchschnittliche Bearbeitungszeit für alle Kontakte im Intervall                                                                                                                                                   |
+| duration    | Integer   | Ja      | Gesamtbearbeitungszeit eines einzelnen Kontakts                                                                                                                                                                  |
+| channel     | String    | Ja      | Bezeichnung für den Kanal der injixo Quell-Queue<br>Gültige Werte: calls, chats, emails, social_media, documents, cases                                                                            |
 
-#### Beispielabfragen
+#### Einfache Beispielabfragen
 
-Beispiel für intervallbasierte Kontaktdaten:
+Intervallbasierte Kontaktdaten:
 
 ```sql
 SELECT
@@ -235,7 +228,7 @@ SELECT
 FROM uploaded_file
 ```
 
-Beispiel für kontaktbasierte Kontaktdaten:
+Kontaktbasierte Kontaktdaten:
 
 ```sql
 SELECT
@@ -245,18 +238,129 @@ SELECT
 FROM uploaded_file
 ```
 
-Komplexeres Beispiel für intervallbasierte Kontaktdaten:
+Die folgenden erweiterten Beispiele zeigen, wie du mit mathematischen Operationen und SQLite-Funktionen arbeiten kannst.
 
-```sql
+#### Erweiterte Beispielabfrage 1
+
+- Teile HandleTime durch HandledCalls, um die durchschnittliche Bearbeitungszeit (AHT) zu erhalten.
+- Kombiniere Date und Time mit SUBSTR, um das Zeitstempelformat YYYY-MM-DD HH:MM:SS zu erhalten.
+
+|   Queue    |    Date    | Time  | Received | HandledCalls | Aband | HandleTime | HoldTime |
+| :--------: | :--------: | :---: | :------: | :----------: | :---: | :--------: | :------: |
+| test queue | 06/03/2023 | 07:30 |    5     |      5       |   -   |   1324.6   |    -     |
+| test queue | 06/03/2023 | 08:00 |    2     |      2       |   -   |    1548    |    -     |
+
+```
 SELECT
-   Name as queue,
-   strftime('%Y-%m-%d %H:%M:%S', Start) as timestamp
-   Offered as offered,
-   (Offered - Abandoned) as handled,
-   AverageHandlingTime as aht,
+  Queue as queue,
+  SUBSTR(Date, 7, 4) || '-'|| SUBSTR(Date, 1, 2) || '-' || SUBSTR(Date, 4,2) || ' ' || Time || ':00' as timestamp,
+  Received as offered,
+  HandledCalls as handled,
+  HandleTime/HandledCalls as aht,
+  'chats' as channel
+FROM uploaded_file
+```
+
+#### Erweiterte Beispielabfrage 2
+
+- Verwende `date('now')` von SQLite, um das aktuelle Datum abzurufen und es mit der Zeit aus der Datei zu kombinieren.
+- Entferne Dezimalstellen und wandle sie in Ganzzahlen um.
+- Kombiniere Date und Time mit SUBSTR, um das Zeitstempelformat YYYY-MM-DD HH:MM:SS zu erhalten.
+
+In diesem Beispiel enthalten die Spaltenüberschriften Leerzeichen.
+
+| Queue Name | Hour in hh:mm | Offered Calls | Handled Calls | Average Handling Time |
+| :--------: | :-----------: | :-----------: | :-----------: | :-------------------: |
+| demo queue |     07:00     |      3.4      |      2.9      |       00:05:30        |
+| demo queue |     08:30     |      5.7      |      5.2      |       00:10:15        |
+
+Du kannst die Kopfzeile mit den Vorverarbeitungsoptionen der Integration ersetzen:
+
+- Überspringe die ersten 1 Zeile(n): Entfernt die ursprüngliche Kopfzeile
+- Spaltenkopfzeile hinzufügen: Fügt Spaltenkopfzeilen mit Buchstaben hinzu
+
+```
+ SELECT
+   A as queue,
+   DATE('now')||' '|| "B"||':00' as timestamp,
+   FLOOR(C) as offered,
+   FLOOR (D) as handled,
+   (CAST(substr(E, 1, 1) AS INTEGER) * 3600) +
+   (CAST(substr(E, 3, 2) AS INTEGER) * 60) +
+   CAST(substr(E, 6, 2) AS INTEGER) as aht,
    'calls' as channel
 FROM uploaded_file
 ```
+
+Wenn du die Kopfzeile nicht ersetzt, setze die tatsächlichen Spaltennamen in doppelte Anführungszeichen:
+
+```
+ SELECT
+   "Queue Name" as queue,
+   DATE('now')||' '|| "Hour in hh:mm"||':00' as timestamp,
+   FLOOR("Offered Calls") as offered,
+   FLOOR ("Handled Calls") as handled,
+   (CAST(substr("Average Handling Time", 1, 1) AS INTEGER) * 3600) +
+   (CAST(substr("Average Handling Time", 3, 2) AS INTEGER) * 60) +
+   CAST(substr("Average Handling Time", 6, 2) AS INTEGER) as aht,
+   'calls' as channel
+FROM uploaded_file
+```
+
+#### Erweiterte Beispielabfrage 3
+
+- Berechne die angenommenen Anrufe, indem du AbandonedCalls von OfferedCalls abziehst.
+- Wandle den speziell formatierten String Start in das erforderliche Zeitstempelformat YYYY-MM-DD HH:MM:SS um.
+
+|  Name  |       Start       | OfferedCalls | AbandonedCalls | AverageHandlingTime |
+| :----: | :---------------: | :----------: | :------------: | :-----------------: |
+| queue1 | 20230613 15:30:00 |      10      |       2        |         300         |
+| queue2 | 20230613 15:35:00 |      15      |       3        |         450         |
+| queue3 | 20230613 15:40:00 |      12      |       2        |         350         |
+
+<!-- notes for database integrations -->
+<!-- In this example, the date time format in the Start column is not supported by built-in SQLite `datetime()` and `strftime()` functions. You need to change the string first. -->
+<!-- changed the example from datetime(substr(Start, 1, 4) || '-' || to substr(Start, 1, 4) || '-' || -->
+<!-- `datetime` is not required here, but in database integrations it would be needed due to the reqiured datetime datatype in the table around line 210 -->
+
+```
+SELECT
+  Name as queue,
+    substr(Start, 1, 4) || '-' ||
+    substr(Start, 5, 2) || '-' ||
+    substr(Start, 7, 2) || ' ' ||
+    substr(Start, 10, 8) as timestamp,
+  Offered as offered,
+  (Offered - Abandoned) as handled,
+  AverageHandlingTime as aht,
+  'calls' as channel
+FROM uploaded_file
+```
+
+#### Erweiterte Beispielabfrage 4
+
+In kontaktbasierten Datensätzen gibt es oft keine Spalte mit der Anzahl der eingehenden und bearbeiteten Anrufe. Stattdessen siehst du Boolesche Werte für den Kontakttyp:
+
+|      Queue       |   DateTimeISO8601   | Offered | Answered | Duration |
+| :--------------: | :-----------------: | :-----: | :------: | :------: |
+| My Inbound Queue | 2023-01-01T22:59:00 |  true   |   true   |   100    |
+| My Inbound Queue | 2023-01-01T23:59:00 |  true   |  false   |   100    |
+
+- Verwende ein CASE Statement für kontaktbasierte Daten mit Booleschen Werten für eingehende und bearbeitete Anrufe.
+- Wandle ein Datum, das nach ISO8601 formatiert ist, in das erforderliche Format YYYY-MM-DD HH:MM:SS um.
+
+```
+SELECT
+   "Queue" as queue,
+   substr("DateTimeISO8601", 1, 10) || ' ' || substr("DateTimeISO8601", 12, 8) as timestamp,
+   (CASE WHEN "Offered" = 'true' THEN 1 ELSE 0 END) as offered,
+   (CASE WHEN "Answered" = 'true' THEN 1 ELSE 0 END) as handled,
+   "Duration" as duration,
+   'calls' as channel
+FROM uploaded_file
+```
+
+Diese Abfrage funktioniert auch für echte ISO8601-Zeitstempel, wie Daten in UTC (2023-01-01T22:59:00Z) oder Zeitstempeln mit der Verschiebung deiner Zeitzone (2023-01-01T22:59:00+02:00).
 
 <!-- do not change the heading, used in the integrations UI -->
 
@@ -302,17 +406,17 @@ table {
 
 Spaltenzuordnung:
 
-| Spalte       | Zugeordnete Spalte/Werte |
-| ------------ | ------------------------ |
-| Queue-Name   | Queue                    |
-| Date         | Date                     |
-| Datumsformat | dd/mm/yyyy               |
-| Time         | Time                     |
-| Zeitformat   | hh:mm                    |
-| Offered      | IncomingCalls            |
-| Angenommene  | AnsweredCalls            |
-| AHT          | AHT                      |
-| AHT-Format   | Sekunden                 |
+| Spalte      | Zugeordnete Spalte/Werte |
+| ----------- | ------------------- |
+| Queue-Name  | Queue               |
+| Datum        | Date                |
+| Datumsformat | dd/mm/yyyy          |
+| Zeit        | Time                |
+| Zeitformat | hh:mm               |
+| Eingehende     | IncomingCalls       |
+| Angenommene     | AnsweredCalls       |
+| AHT         | AHT                 |
+| AHT-Format  | Seconds             |
 
 Dieses Beispiel enthält keine Spalte Kanal. Wähle in der Konfiguration des CSV-Schemas die Option **Kanal**. Um den Kanal für z.&nbsp;B. Anrufe festzulegen, wähle **Anrufe** aus dem Dropdown-Menü.
 
@@ -332,16 +436,16 @@ My Inbound Queue;25/05/2020;08:07;1;0;0
 
 Spaltenzuordnung:
 
-| Spalte       | Zugeordnete Spalte/Werte |
-| ------------ | ------------------------ |
-| Queue-Name   | Queue                    |
-| Date         | Date                     |
-| Datumsformat | dd/mm/yyyy               |
-| Time         | Time                     |
-| Zeitformat   | hh:mm                    |
-| Offered      | Offered                  |
-| Angenommene  | Answered                 |
-| Dauer        | Dauer                    |
+| Spalte      | Zugeordnete Spalte/Werte |
+| ----------- | ------------------- |
+| Queue-Name  | Queue               |
+| Datum        | Date                |
+| Datumsformat | dd/mm/yyyy          |
+| Zeit        | Time                |
+| Zeitformat | hh:mm               |
+| Eingehende     | Offered             |
+| Angenommene     | Answered            |
+| Dauer    | Duration            |
 
 Dieses Beispiel enthält keine Spalte Kanal. Wähle in der Konfiguration des CSV-Schemas die Option **Kanal**. Um den Kanal festzulegen, z.&nbsp;B. für Anrufe, wähle **Anrufe** aus dem Dropdown-Menü.
 
@@ -361,14 +465,14 @@ StartDate;StartTime;AgentID;AgentActivityID
 
 Spaltenzuordnung:
 
-| Spalte            | Zugeordnete Spalte/Werte |
-| ----------------- | ------------------------ |
-| Agentenkennung    | AgentID                  |
-| Aktivitätskennung | AgentActivityID          |
-| Startdatum        | StartDate                |
-| Datumsformat      | yyyy-mm-dd               |
-| Startzeit         | StartTime                |
-| Zeitformat        | hh:mm:ss                 |
+| Spalte              | Zugeordnete Spalte/Werte |
+| ------------------- | ------------------- |
+| Agentenkennung    | AgentID             |
+| Aktivitätskennung | AgentActivityID     |
+| Startdatum          | StartDate           |
+| Datumsformat         | yyyy-mm-dd          |
+| Startzeit          | StartTime           |
+| Zeitformat         | hh:mm:ss            |
 
 ## CSV-Dateien importieren
 
@@ -380,20 +484,15 @@ Folgende Dateikodierungen werden unterstützt:
 - ISO-8859-9
 - Windows-1252
 
-Wir empfehlen die Verwendung von UTF-8, um generische Fehlermeldungen zu vermeiden.
+Nutze UTF-8, um generische Fehlermeldungen zu vermeiden.
 
 ### Automatischer Datenimport
 
-Um mit injixo Cloud Link automatisch neue Daten in injixo hochzuladen, [konfiguriere zuerst deine CSV-Integration](#neue-csv-integration-konfigurieren). Jedes Mal, wenn eine neue CSV-Datei im injixo Cloud-Link-Installationsverzeichnis gespeichert wird, startet ein neuer Upload. Du kannst Dateien entweder manuell oder per Skript speichern.
+[Konfiguriere eine CSV-Integration](#neue-csv-integration-konfigurieren) und verbinde injixo Cloud Link. injixo Cloud Link lädt dann neue Daten in injixo hoch. Automatisch beginnt jedes Mal ein neuer Upload, wenn du eine neue CSV-Datei im injixo Cloud-Link-Installationsverzeichnis speicherst. Du kannst das Standardinstallationsverzeichnis (C:\\Program Files\\injixo Cloud Link) während der Installation ändern.
 
-Das Standardinstallationsverzeichnis ist C:\\Program Files\\injixo Cloud Link. Du kannst dies während der Cloud-Installation ändern. Du kannst außerdem einen separaten {% link_new Import-Ordner | features/acd-integration/cloud/install-cloud-link.md | #ordner-für-import-konfigurieren %} für Datei-Uploads konfigurieren.
+Alternativ kannst du einen separaten {% link_new Importordner | features/acd-integration/cloud/install-cloud-link.md | #importordner-konfigurieren %} für Datei-Uploads konfigurieren. Speichere die neuen Dateien stattdessen im Importordner.
 
-Du kannst das Installationsverzeichnis für injixo Cloud Link auf zwei verschiedene Arten konfigurieren:
-
-- Speichere neue CSV-Dateien (manuell oder per Skript) im Installationsverzeichnis. Das Standardverzeichnis ist C:\\Program Files\\injixo Cloud Link.
-- Wenn du einen {% link_new Import-Ordner | features/acd-integration/cloud/install-cloud-link.md | #ordner-für-import-konfigurieren %} für injixo Cloud Link konfiguriert hast, speichere die Dateien stattdessen dort.
-
-Nachdem die Verarbeitung abgeschlossen ist, kannst du in injixo Forecast die {% link_new Queues zu einem Workload hinzufügen | features/forecast/injixo-forecast/manage-workloads.md %}.
+Wenn die Daten hochgeladen wurden, kannst du in Forecast {% link_new einem Workload neue Queues hinzufügen | features/forecast/injixo-forecast/manage-workloads.md %} bzw. siehst du die aktualisierten Daten in deinen bestehenden Workloads. Wenn keine Daten hochgeladen wurden, nutze den im folgenden beschriebenen manuellen Datenimport, um festzustellen, ob dein Dateiformat gültig ist.
 
 ### Manueller Datenimport
 
@@ -412,8 +511,8 @@ Wenn die Daten verarbeitet wurden, kannst du in injixo Forecast die {% link_new 
 
 ## Häufig gestellte Fragen
 
-| Frage                                                              | Antwort                                                                                                                                                                                                                                                                                                                                   |
-| ------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Kann ich die gleiche Datei zweimal importieren?                    | Ja, wenn du Daten manuell importierst. Nein, wenn du Cloud Link benutzt. Um doppelte Dateien zu erkennen, berechnet injixo während des Imports Prüfsummen. Importierte Dateien mit der gleichen Prüfsumme werden nicht erneut importiert. Wenn die Datei den gleichen Namen, aber einen anderen Inhalt hat, wird sie trotzdem importiert. |
-| Löscht injixo automatisch importierte CSV-Dateien nach dem Import? | Nein. Importierte Dateien bleiben im injixo Cloud Link Client-Verzeichnis. Du kannst sie manuell löschen oder selbst eine wiederkehrende Aufgabe einrichten.                                                                                                                                                                              |
-| Kann ich eine CSV-Datei importieren, die zukünftige Daten enthält? | Ja, aber wir empfehlen, den Import von Dateien zu vermeiden, die zukünftige Daten enthalten. injixo überspringt zukünftige Daten nicht, sondern speichert sie als historische Daten. Du kannst trotzdem einen Forecast berechnen, aber die Diagramme für Historie und Forecast überschneiden sich.                                        |
+| Frage                                                                  | Antwort                                                                                                                                                                                                                                                                                   |
+| ------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Kann ich die gleiche Datei zweimal importieren?                                         | Ja, wenn du Daten manuell importierst. Nein, wenn du Cloud Link benutzt. Um doppelte Dateien zu erkennen, berechnet injixo während des Imports Prüfsummen. Importierte Dateien mit der gleichen Prüfsumme werden nicht erneut importiert. Wenn die Datei den gleichen Namen, aber einen anderen Inhalt hat, wird sie trotzdem importiert. |
+| Löscht injixo automatisch importierte CSV-Dateien nach dem Import? | Nein. Importierte Dateien bleiben im injixo Cloud Link Client-Verzeichnis. Du kannst sie manuell löschen oder selbst eine wiederkehrende Aufgabe einrichten.                                                                                                                                              |
+| Kann ich eine CSV-Datei importieren, die zukünftige Daten enthält?                        | Ja, das ist möglich. Beachte aber, dass injixo zukünftige Daten nicht überspringt, sondern sie als historische Daten speichert. Du kannst trotzdem einen Forecast berechnen, aber die Diagramme für Historie und Forecast überschneiden sich.                                               |

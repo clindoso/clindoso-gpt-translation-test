@@ -62,4 +62,4 @@ Warte kurz und führe den Schritt zur Registrierung mit “register.exe ixculcmm
 
 **Du hast den CSV-Import eingerichtet und beim Versuch die Daten zu importieren (manuell oder automatisch), werden die Daten nicht eingelesen. Die Konfiguration für die CSV-Datei stimmt nicht.**
 
-Prüfe die Gruppennamen in der `isps_ul.ini`. Die Bezeichnungen müssen **identisch** zu den Angaben in Deiner CSV-Datei sein, d.h. case-sensitive. Das Mapping muss nach Änderung der Konfiguration angepasst und der Xlink-Dienst neugestartet werden.
+Prüfe die Gruppennamen in der `isps_ul.ini`. Die Bezeichnungen müssen **identisch** zu den Angaben in Deiner CSV-Datei sein, d.&nbsp;h. case-sensitive. Das Mapping muss nach Änderung der Konfiguration angepasst und der Xlink-Dienst neugestartet werden.

@@ -39,7 +39,7 @@ In the filter bar, you can:
 
 ### Scheduling actions
 
-- {% link_new Insert Shift sequences | features/scheduling/capacity/capacity-insert-shift-sequences.md %}: insert fixed, repetitive sequences of shifts, activities, or availabilities into your schedule
+- {% link_new Insert Shift sequences | features/scheduling/schedules/schedules-insert-shift-sequences.md %}: insert fixed, repetitive sequences of shifts, activities, or availabilities into your schedule
 - {% link_new Job optimization | features/scheduling/schedules/schedules-job-optimization.md %}: replace activities to improve coverage
 - {% link_new Optimize breaks | features/scheduling/schedules/break-optimization.md %}: reshuffle the break positions in your schedule to improve coverage
 - {% link_new Empty levels | features/scheduling/schedules/schedules-empty-levels.md %}: delete the contents of a level

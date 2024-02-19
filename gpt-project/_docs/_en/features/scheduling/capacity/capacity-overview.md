@@ -7,7 +7,7 @@ toc: false
 description: Learn what the Capacity feature is and how to display the staff requirements, contracted capacity, and resulting coverage per calendar week for a planning unit.
 related_articles:
   - overwrite_title: Add title for untranslated source
-    filepath: features/scheduling/capacity/capacity-insert-shift-sequences.md
+    filepath: features/scheduling/schedules/schedules-insert-shift-sequences.md
 ---
 
 _Plan > Capacity_{:.breadcrumbs} gives you insights into your future hiring and training needs. Soon, you'll do your long-term planning here.

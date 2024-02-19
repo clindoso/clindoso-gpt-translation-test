@@ -5,12 +5,6 @@ redirect_from:
 redirect_reason: Updated filename on 21 April 2022
 related_articles:
   - overwrite_title: Add title for untranslated source
-    filepath: features/forecast/requirement-scripts/requirement-backoffice-linear.md
-  - overwrite_title: Add title for untranslated source
-    filepath: features/forecast/requirement-scripts/requirement-asa.md
-  - overwrite_title: Add title for untranslated source
-    filepath: features/forecast/requirement-scripts/requirement-abandoned-calls.md
-  - overwrite_title: Add title for untranslated source
     filepath: features/forecast/requirement-scripts/requirement-multiactivity.md
   - overwrite_title: Add title for untranslated source
     filepath: features/forecast/requirement-scripts/requirement-outbound.md

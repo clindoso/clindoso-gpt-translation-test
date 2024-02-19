@@ -13,71 +13,103 @@ related_articles:
     filepath: features/acd-integration/cloud/import-agent-status-data.md
 ---
 
-In diesem Artikel lernst du:
-
-- wofür injixo Cloud Link verwendet wird.
-- wie du den Dienst installierst.
-
 Neu bei Integrationen? Lerne zuerst {% link_new die Grundlagen | features/acd-integration/cloud/how-integrations-work.md %}.
 
 ## Was ist injixo Cloud Link?
 
-injixo Cloud Link ist eine Client-Software und Teil des Setups von On-Premise- und CSV-Integrationen.
-
-Über einen Dienst importiert injixo Cloud Link in regelmäßigen Abständen Daten zu injixo.
+injixo Cloud Link ist eine Client-Software und Teil des Setups von On-premise- und CSV-Integrationen. injixo Cloud Link importiert in regelmäßigen Abständen Daten in injixo. Du kannst injixo Cloud Link auch installieren, wenn du deine CSV-Integrationen konfigurierst, damit sie regelmäßig neue CSV-Dateien aus einem Ordner importieren.
 
 Das Client-Installationsverzeichnis enthält:
 
-- eine ausführbare Datei _injixo-cloud-link_.
-- eine oder mehrere Logdateien _injixo-cloud-link.*.log_.
-- eine Konfigurationsdatei _injixo-cloud-link.toml_.
-- einen Ordner _licenses_ mit den Lizenzen der genutzten Open-Source-Bibliotheken.
+- die ausführbare Datei injixo-cloud-link.
+- eine oder mehrere Logdateien injixo-cloud-link.*.log.
+- die Konfigurationsdatei injixo-cloud-link.toml.
+- einen Ordner licenses mit den Lizenzen der genutzten Open-Source-Bibliotheken.
 
 ## Voraussetzungen
 
-- Der Client verwendet SSL-Verschlüsselung (TCP über Port 443). Stelle sicher, dass dieser Port für ausgehenden Datenverkehr geöffnet ist.
-- Bei On-Premise-Integrationen muss injixo Cloud Link Zugriff auf das lokale System haben, von dem du Daten importieren möchtest, z.&nbsp;B. deine ACD, dein CRM, etc. Möglicherweise musst du dafür einen Datenbanktreiber installieren.
+- injixo Cloud Link läuft auf Windows 10 und höher sowie auf Windows Server 2016 und höher.
+- Linux: Das unixODBC-Paket muss installiert sein.
+- Firewall/Proxy: Port&nbsp;443 muss für ausgehenden Datenverkehr geöffnet sein. injixo Cloud Link verwendet TLS-Verschlüsselung mit TCP über Port&nbsp;443.
+
+Hinweis: On-premise-Integrationen greifen auf ein lokales System zu, um Daten abzurufen, z.&nbsp;B. eine ACD oder ein CRM. Je nach Datenbanktyp musst du einen Datenbanktreiber installieren.
 
 ## injixo Cloud Link installieren
 
-1. Füge eine {% link_new On-Premise-Integration | features/acd-integration/cloud/add-on-premise-integration.md %} oder eine {% link_new CSV-Integration | features/acd-integration/cloud/add-csv-integration.md %} hinzu.
-2. Gib im Abschnitt **Allgemeine Informationen** einen **Namen** für die Integration ein.
-3. Lade im Abschnitt **injixo Cloud Link** das Client-Installationsprogramm/-archiv für Windows oder Linux herunter.
-
-   {{ 3 | image: 'Eingabefeld für den Integrationsnamen und Download-Links', '60%' }}
-
-Um die Version und Anleitungen für eine Installation auf MacOS zu erhalten, wende dich an dein Customer-Success-Team.
-
-Fahre mit der Installation je nach Betriebssystem fort.
+Wenn du eine {% link_new On-premise-Integration | features/acd-integration/cloud/add-on-premise-integration.md %}, eine {% link_new CSV-Integration | features/acd-integration/cloud/add-csv-integration.md %} oder eine {% link_new Datenbank-Integration | features/acd-integration/cloud/add-database-integration.md %} hinzufügst, findest du im Abschnitt **injixo Cloud Link** Links, um das Client-Installationsprogramm (für Windows) bzw. das Archiv (für Linux) herunterzuladen.
 
 ### Windows-Installation
 
-injixo Cloud Link läuft auf Windows 8 und höher sowie auf Windows Server 2012 und höher. Um eine 32-Bit-Version zu erhalten, wende dich an dein Customer-Success-Team. Das Installationsprogramm erstellt den Windows-Dienst injixo Cloud Link.
+Installiere den ersten Dienst mit dem Windows-Installationsprogramm:
+
+1. Klicke auf **Herunterladen für Windows 64-bit** und führe das Installationsprogramm aus.
+2. Klicke auf **Weiter**.
+3. (Optional) Ändere das Installationsverzeichnis.
+4. Klicke auf **Weiter** und anschließend auf **Installieren**.  
+   Ein Konsolenfenster zeigt eine PIN an, die 5&nbsp;Minuten lang gültig ist.  
+   Um [Cloud Link mit deiner Integration zu verbinden](#cloud-link-mit-deiner-integration-verbinden), folge den Anweisungen im Konsolenfenster.
+5. Klicke im Installationsprogramm auf **Fertigstellen**.  
+   Das Installationsprogramm erstellt den Windows-Dienst **injixo Cloud Link**.
+
+### <a name="install-multiple-cloud-link-services-windows">Mehrere Windows-Dienste installieren
+
+Du kannst bis zu acht weitere Dienste für separate Integrationen installieren. Um zu vermeiden, dass frühere Instanzen überschrieben werden, installiere sie in separaten Verzeichnissen.
+
+Um einen zweiten Cloud-Link-Dienst unter Windows zu installieren, füge eine neue Integration hinzu und gehe wie folgt vor:
 
 1. Klicke auf **Herunterladen für Windows 64-bit**.
-2. Führe das Installationsprogramm aus. Ein Konsolenfenster zeigt eine PIN an.
+2. Öffne eine Windows-Eingabeaufforderung (cmd).
+3. Führe für die zweite Instanz folgenden Befehl aus:
 
-Folge den Anweisungen im Konsolenfenster, um [Cloud Link mit deiner Integration zu verbinden](#cloud-link-mit-deiner-integration-verbinden).
+   ```
+   msiexec /i injixo-cloud-link.msi MSINEWINSTANCE=1 TRANSFORMS=":instance.1"
+   ```
+
+   > Vergib eine höhere ID für die Instanz im Parameter TRANSFORMS, wenn du weitere Instanzen installieren möchtest.
+   >
+   > Beispielsweise ist für die dritte Instanz die ID `":instance.2"` erforderlich, für die vierte Instanz die ID `":instance.3"` und so weiter.
+
+  
+4. Folge den Anweisungen im Installationsvorgang.  
+   Das Installationsprogramm schlägt ein neues Standardinstallationsverzeichnis vor, das die Instanz enthält, z.&nbsp;B. (Instance 1).  
+   Tipp: Um zu identifizieren, zu welcher Integration die Installation gehört, kannst du Details zur ACD und zum Importtyp zum Standardinstallationsverzeichnis hinzufügen, z.&nbsp;B. (ACD - Agenten-Import).  
+   Du siehst das neue Verzeichnis und einen neuen Windows-Dienst mit dem Namen injixo Cloud Link (Instanz {id}).
 
 ### Linux-Installation
 
-> Vergewissere dich, dass das unixODBC-Paket installiert ist.
+Installiere den ersten Dienst wie im folgenden Beispiel beschrieben:
 
 1. Klicke auf **Herunterladen für Linux 64-bit**.
-2. Extrahiere das Client-Archiv in deinem gewünschten Installationsordner.
-3. Öffne ein Terminal.
-4. Installiere den injixo Cloud Link-Dienst mit dem Befehl:  
+2. Öffne ein Terminal.
+3. Installiere den injixo Cloud Link-Dienst:  
    `sudo ./injixo-cloud-link service install`
-5. Starte den installierten Dienst mit dem Befehl:  
+4. Starte den installierten Dienst:  
    `sudo ./injixo-cloud-link service start`
-6. Zeige eine PIN an mit dem Befehl:  
-   `sudo ./injixo-cloud-link pin`
+5. Zeige eine PIN an:  
+   `sudo ./injixo-cloud-link pin`  
+   Ein Konsolenfenster zeigt eine PIN an, die 5&nbsp;Minuten lang gültig ist.  
+   Um [Cloud Link mit deiner Integration zu verbinden](#cloud-link-mit-deiner-integration-verbinden), folge den Anweisungen im Konsolenfenster.
 
-Folge den Anweisungen im Konsolenfenster, um [Cloud Link mit deiner Integration zu verbinden](#cloud-link-mit-deiner-integration-verbinden).
+### <a name="install-multiple-cloud-link-services-linux">Mehrere Linux-Dienste installieren
+
+Du kannst mehrere Dienste installieren, die separate Integrationen bedienen. Um zu vermeiden, dass frühere Dienste überschrieben werden, installiere sie in separaten Verzeichnissen.
+
+Um weitere Dienste unter Linux zu installieren, füge eine neue Integration hinzu und gehe wie folgt vor:
+
+1. Erstelle ein neues Verzeichnis und kopiere die Dateien aus dem ursprünglichen Installationsverzeichnis.
+2. Öffne die Datei injixo-cloud-link.toml.
+3. Passe den Wert für **name** im Abschnitt **[app]** an und verwende eine neue ID:
+
+   ```
+   [app]
+name = "com.injixo.cloud-link.instance.1"
+   ```
+
+4. Installiere den Dienst und starte ihn im neuen Verzeichnis wie oben beschrieben neu.
 
 ## Cloud Link mit deiner Integration verbinden
 
-Während der Cloud Link-Installation wird eine PIN angezeigt:
+Die Cloud-Link-Installation zeigt die folgende Nachricht an, einschließlich einer PIN:
 
 ```
 ** Before you are able to run the client,
@@ -88,134 +120,64 @@ Während der Cloud Link-Installation wird eine PIN angezeigt:
 **  4) Enter your pin: 424242 (expires in 5 minutes)
 ```
 
-1. Gehe zurück zur Ansicht **Neue Integration hinzufügen**.
-2. Gib im Abschnitt **injixo Cloud Link** deine PIN in das sechsstellige Eingabefeld ein.
-   {{ 1 | image: 'Eingabefeld für die PIN', '60%' }}
-
+1. Gehe in deinem Browser zurück zur Ansicht **Neue Integration hinzufügen**.
+2. Gib im Abschnitt **injixo Cloud Link** deine PIN in das sechsstellige Eingabefeld **PIN, die während der Installation angezeigt wird** ein.
 3. Klicke auf _Verbinden_{:.doc-button}.
-4. Fahre mit der Konfiguration deiner {% link_new On-Premise-Integration | features/acd-integration/cloud/add-on-premise-integration.md %} bzw. {% link_new CSV-Integration | features/acd-integration/cloud/add-csv-integration.md %} fort.
-
-## Mehrere Instanzen von injixo Cloud Link installieren
-
-Du kannst mehrere injixo Cloud Link-Dienste auf einem Computer installieren und ausführen. Jeder Dienst bedient eine separate Integration. Die Dienste können unabhängig gestartet und gestoppt werden.
-
-### Windows-Dienste
-
-Du kannst bis zu neun Instanzen auf Windows installieren.
-
-1. Installiere den ersten Dienst, indem du das Installationsprogramm herunterlädst und startest. Folge den Anweisungen auf dem Bildschirm.
-2. Um einen weiteren Dienst zu installieren, starte mit folgendem Befehl ein weiteres Installationsprogramm über die Windows-Eingabeaufforderung (_cmd_):
-
-   ```
-   msiexec /i injixo-cloud-link.msi MSINEWINSTANCE=1 TRANSFORMS=":instance.1"
-   ```
-
-   Jede Installation muss ihren eigenen gültigen Wert für den Parameter TRANSFORMS verwenden:
-
-   - `":instance.1"`
-   - `":instance.2"`
-   - etc.
-
-   > Installiere jeden Dienst in einem eigenen Verzeichnis. Sonst wird der zuvor installierte Dienst überschrieben.
-
-3. Folge den Anweisungen auf dem Bildschirm, um den neuen Dienst zu installieren.
-
-Das Installationsprogramm erstellt den Windows-Dienst _injixo Cloud Link (Instance {id})_.
-
-### Linux-Dienste
-
-Installiere jeden Dienst in einem eigenen Verzeichnis. Cloud Link benötigt einen eindeutigen App-Namen, um eine interne Referenz im Betriebssystem zu erstellen. Wenn du das Client-Archiv im neuen Verzeichnis extrahiert hast, ändere den App-Namen in der Date _injixo-cloud-link.toml_:
-
-1. Gib einen eindeutigen Namen für deinen neuen Dienst ein:
-
-   ```
-   [app]
-   name = "com.injixo.cloud-link.instance.1"
-   ```
-
-2. Fahre mit dem [Installationsprozess](#linux-installation) fort.
+   Cloud Link verbindet sich mit injixo. Fahre mit der Konfiguration deiner {% link_new On-premise-Integration | features/acd-integration/cloud/add-on-premise-integration.md %} bzw. deiner {% link_new CSV-Integration | features/acd-integration/cloud/add-csv-integration.md %} fort.
 
 ## Über einen Proxy-Server verbinden
 
-Um eine Verbindung über einen Proxy-Server herzustellen, konfiguriere in deinem Betriebssystem eine Umgebungsvariable **HTTPS_PROXY** (oder **https_proxy**).
+Um eine Verbindung über einen Proxy-Server herzustellen, füge den Proxy-Hostnamen oder die IP-Adresse der Umgebungsvariable https_proxy hinzu:
 
-Füge die Umgebungsvariable im Abschnitt **Systemvariablen** hinzu. Du kannst nur eine Benutzervariable verwenden, wenn du injixo Cloud Link mit einem anderen Benutzer als dem lokalen Systemkonto konfigurieren möchtest.
+- Windows: Füge die Umgebungsvariable zum Abschnitt **Systemvariablen** hinzu. Wenn Dienste nicht mit dem LocalSystem-Konto ausgeführt werden, konfiguriere eine Benutzervariable.
+- Linux: Setze die Umgebungsvariable in /etc/environment oder in /etc/profile.d
 
-Der Wert der neuen Umgebungsvariable ist der Hostname oder die IP-Adresse des Proxys im URL-Format. Nutzt der Proxy einen anderen Port als 80, füge die Portnummer hinzu. Erwartet der Proxy eine Authentifizierung, füge Benutzer und Kennwort hinzu.
+Beispiel: `https_proxy=http://your.proxy.example`
 
-Beispiel (optionale Angaben in Klammern):
+Falls nötig, kannst du zur Authentifizierung die Portnummer (falls abweichend von Port&nbsp;80) und die Anmeldedaten des Benutzers hinzufügen:
 
-_https_proxy=http[s]://[username:password]@your.proxy.example[:8080]_
+Beispiel: `https_proxy=http://username:password@your.proxy.example:8080`
 
-Gib folgende URLs im Proxy für automatische Aktualisierungen, PIN-Generierung und Datei-Uploads frei:
+## Ziel-IP-Adressen für injixo teilen <!-- rethink the name -->
 
-- _injixo-*.s3-eu-west-1.amazonaws.com_
-- *www.injixo.com*
+Damit injixo Cloud Link sich mit den injixo-Cloud-Servern verbinden kann, teile die folgenden URLs:
 
-Hinweis: Eine einzelne IP-Adresse ist nicht möglich. Deployment- und Update-Prozesse ändern regelmäßig die IP-Adresse. Erwäge bei Bedarf eine injixo Cloud Link-Installation in der DMZ. Schlägt die Verbindung zur injixo Cloud fehl, erscheinen [Windows-Socket-Fehlermeldungen](https://docs.microsoft.com/en-us/windows/win32/winsock/windows-sockets-error-codes-2) in der Logdatei.
+- injixo-*.s3-eu-west-1.amazonaws.com
+- www.injixo.com
+
+Du kannst keine einzelnen IP-Adressen teilen. Deployment- und Update-Prozesse ändern regelmäßig die Server-IP-Adressen. Die Installation von injixo Cloud Link in der DMZ kann nützlich sein. Schlägt die Verbindung zum Server fehl, siehst du [Windows-Socket-Fehlermeldungen](https://docs.microsoft.com/en-us/windows/win32/winsock/windows-sockets-error-codes-2) in der Logdatei.
 
 ## Logging
 
-### Rotation der Logdateien
-
-injixo Cloud Link rotiert die Logdateien täglich und nach einem Neustart. Rotierte Logdateien enthalten das Rotationsdatum im Dateinamen, z.&nbsp;B. _injixo-cloud-link.2022-03-10.1.log_.
-Die aktuellen Logs befinden sich in _injixo-cloud-link.log_.
-
-injixo Cloud Link löscht keine Logdateien.
+injixo Cloud Link rotiert die Logdateien täglich und nach einem Neustart, allerdings ohne Logdateien zu löschen. Die aktuellen Logs befinden sich in injixo-cloud-link.log. Rotierte Logdateien enthalten das Rotationsdatum im Dateinamen. Um Logdateien zu löschen, musst du eine regelmäßige Löschung aufsetzen oder sie in regelmäßigen Abständen manuell löschen.
 
 ### Erweitertes Logging aktivieren
 
-injixo Cloud Link verfügt über einen erweiterten Logging-Modus für Datenbank-Integrationen. Wenn der erweiterte Modus aktiviert ist, zeigt die Logdatei für jede Anfrage die Gesamtzahl der zurückgegebenen Zeilen und die ersten zehn Zeilen der Daten an.
+injixo Cloud Link unterstützt einen Verbose-Logging-Modus für Datenbank-Integrationen. Wenn das erweiterte Logging aktiviert ist, zeigt die Logdatei für jede Anfrage die Gesamtzahl der zurückgegebenen Zeilen und die ersten zehn Zeilen der Daten an.
 
 Du kannst das erweiterte Logging wie folgt aktivieren:
 
 1. Stoppe injixo Cloud Link.
-   1. Öffne den Task Manager.
-   2. Wechsle auf den Dienste-Tab und wähle **injixo Cloud Link**.
-   3. Stoppe den **injixo Cloud Link-Dienst**, z.&nbsp;B. über das Kontextmenü.
-2. Gehe in das Installationsverzeichnis.
-3. Öffne die Datei _injixo-cloud-link.toml_. Wenn die Datei nicht vorhanden ist, erstelle sie im Installationsverzeichnis.
-4. Setze **verbose = true** im Abschnitt **[app]** oder kopiere das folgende Beispiel.
+2. Öffne im Installationsverzeichnis die Datei injixo-cloud-link.toml.
+3. Setze im Abschnitt **[app]** den Wert für **verbose** auf true:
 
    ```
    [app]
-   verbose = true
+verbose = true
    ```
 
-5. Speichere die Datei.
-6. Starte injixo Cloud Link neu.
+4. Speichere die Datei und starte injixo Cloud Link neu.
 
-## Ordner für Import konfigurieren
+## Importordner konfigurieren
 
-Bei CSV-Integrationen unterstützt injixo Cloud Link die Konfiguration eines Import-Ordners. injixo Cloud Link lädt standardmäßig Dateien aus dem Installationsordner hoch.
-
-Konfiguriere den Import-Ordner wie folgt:
+injixo Cloud Link lädt standardmäßig Dateien aus dem Installationsordner hoch. Für CSV-Integrationen kannst du wie folgt einen benutzerdefinierten Importordner konfigurieren:
 
 1. Stoppe injixo Cloud Link.
-   1. Öffne den Task Manager.
-   2. Wechsle auf den Dienste-Tab und wähle **injixo Cloud Link**.
-   3. Stoppe den **injixo Cloud Link-Dienst**, z.&nbsp;B. über das Kontextmenü.
-2. Gehe in das Installationsverzeichnis.
-3. Öffne die Datei _injixo-cloud-link.toml_. Wenn die Datei nicht vorhanden ist, erstelle sie im Installationsverzeichnis.
-4. Konfiguriere im Abschnitt **[app]** **importDirectory = <dein_import_ordner>**, z.&nbsp;B.:
-
-   ```
-   [app]
-   importDirectory = "c:/dein_import_ordner"
-   ```
-
-   Du kannst auch einen relativen Pfad verwenden:
-
-   ```
-   [app]
-   importDirectory = "../dein_import_ordner"
-   ```
-
-5. Speichere die Datei.
-6. Starte injixo Cloud Link neu.
-
-> Verwende einen einzelnen Schrägstrich (`/`) als Pfad-Separator auf allen Systemen.
-> Falls Windows einen Backslash verlangt, umgehe dies mit einem weiteren Backslash `\\` z.&nbsp;B. `importDirectory = "c:\\dein_import_ordner"`.
+2. Öffne im Installationsverzeichnis die Datei injixo-cloud-link.toml.
+3. Setze im Abschnitt **[app]** den Wert für **importDirectory** auf deinen Importordner.
+   - Verwende relative oder absolute Pfade.
+   - Backslashes kannst du mit einem zweiten Backslash maskieren.
+4. Speichere die Datei und starte injixo Cloud Link neu.
 
 ## Häufig gestellte Fragen
 
@@ -228,10 +190,9 @@ table th:nth-of-type(2) {
 }
 </style>
 
-| Frage                                                                        | Antwort                                                                                                                                                                                                                                                                                                                                                                                                       |
-| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Wie bekomme ich eine neue PIN, wenn die alte abgelaufen ist?                              | Starte injixo Cloud Link neu. Gib die neue PIN aus der Logdatei in das sechsstellige Eingabefeld auf der Konfigurationsseite im Abschnitt _injixo Cloud Link_ ein.                                                                                                                                                                                                                                                    |
-| Wie kann ich injixo Cloud Link auf meinem System löschen?                                      | 1\. Führe entweder das injixo Cloud Link-Installationsprogramm erneut aus oder gehe zu _Programme > Programme und Funktionen_{:.breadcrumbs} in Windows.<br>2\. Klicke mit der rechten Maustaste auf den Eintrag **injixo Cloud Link** in der Liste und wähle **Deinstallieren** oder **Deinstallieren/Ändern**.<br>3\. Folge den Anweisungen auf dem Bildschirm.<br><br>Um weitere Instanzen zu deinstallieren, gehe zu _Programme > Programme und Features_{:.breadcrumbs} in Windows und folge den Schritten 2 und 3. |
-| Wie kann ich injixo Cloud Link auf einem neuen Server nutzen?                                | 1\. Klicke auf das _![Bleistift-Symbol](/assets/img/common/pen-solid.svg)_{:.doc-button-icon} rechts neben deiner Integration, um sie zu bearbeiten.<br>2\. Klicke auf **Neue Installation von injixo Cloud Link**.<br>3\. Lade injixo Cloud Link bei Bedarf erneut herunter und installiere die Software auf dem neuen Server.                                                                                                                                                                        |
-| Wie wechsle ich die Integration für eine bestehende injixo Cloud Link-Installation? | 1\. Gehe in das Installationsverzeichnis und kopiere die PIN aus der Logdatei.<br>2\. Lösche die bestehende Integration und erstelle eine **neue Integration**.<br>3\. Verbinde deinen laufenden injixo Cloud Link mit der neuen Integration, indem du bei der Konfiguration der Integration die PIN aus der Logdatei eingibst.                                                                                                    |
-| Was passiert, wenn sich ein Queue-Name in einer CSV-Datei oder in deiner ACD ändert?              | Zwei Dinge können passieren, abhängig von der Integration. 1\. Wenn die Integration die ID der Queue kennt, wird der Name automatisch aktualisiert. 2\. Wenn die Integration nur den Namen kennt, wird eine neue Queue mit dem neuen Queue-Namen erstellt. In diesem Fall musst du die neue Queue zu deinem Workload in injixo Forecast hinzufügen. So stellst du sicher, dass die Daten, die dein Forecast braucht, auch in Zukunft zur Verfügung stehen.    |
+| Frage                                                                        | Antwort                                                                                                                                                                                                                                                                                                                                                                                                           |
+| ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Wie bekomme ich eine neue PIN, wenn die alte abgelaufen ist?                              | Starte injixo Cloud Link neu. Gib die neue PIN aus der Logdatei in das sechsstellige Eingabefeld auf der Konfigurationsseite im Abschnitt **injixo Cloud Link** ein.                                                                                                                                                                                                                                                      |
+| Wie kann ich injixo Cloud Link von meinem System löschen?                               | 1\. Führe entweder das injixo Cloud Link-Installationsprogramm erneut aus oder gehe zu _Programme > Programme und Funktionen_{:.breadcrumbs} in Windows.<br>2\. Klicke mit der rechten Maustaste auf den Eintrag **injixo Cloud Link** in der Liste und wähle **Deinstallieren** oder **Deinstallieren/Ändern**.<br>3\. Folge den Anweisungen auf dem Bildschirm.<br><br>Um weitere Instanzen zu deinstallieren, gehe zu _Programme > Programme und Features_{:.breadcrumbs} in Windows und folge den Schritten 2 und 3. |
+| Wie kann ich injixo Cloud Link auf einem neuen Server nutzen?                                | 1\. Klicke rechts neben deiner Integration auf das {% icon pencil %}, um sie zu bearbeiten.<br>2\. Klicke auf **Neue Installation von injixo Cloud Link**.<br>3\. Lade injixo Cloud Link bei Bedarf erneut herunter und installiere die Software auf dem neuen Server.                                                                                                                                                                          |
+| Wie wechsle ich die Integration für eine bestehende injixo Cloud Link-Installation? | 1\. Gehe in das Installationsverzeichnis und kopiere die PIN aus der Logdatei.<br>2\. Lösche die bestehende Integration und erstelle eine neue Integration.<br>3\. Verbinde den laufenden injixo Cloud Link-Client mit der neuen Integration. Gib dazu während des Installationsvorgangs der Integration die PIN ein.                                                                                                               |

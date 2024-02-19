@@ -93,7 +93,7 @@ The table below gives an overview of the optional configuration items you can co
     </tr>
     <tr>
       <td>{% link_new Planning calendars and day types | features/administration/planning-calendar.md %}</td>
-      <td>Planning calendars contain days with deviating business hours and staffing needs (e.g., marketing campaign days or national holidays). These special days are configured using day types. This helps ensure they are automatically considered during scheduling without any additional manual effort.<br> Planning calendars are assigned to planning units.</td>
+      <td>Planning calendars contain days with deviating business hours and staffing needs (e.g., marketing campaign days or public holidays). These special days are configured using day types. This helps ensure they are automatically considered during scheduling without any additional manual effort.<br> Planning calendars are assigned to planning units.</td>
     </tr>
   </tbody>
 </table>

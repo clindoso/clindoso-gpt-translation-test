@@ -18,20 +18,20 @@ Heb je nog weinig ervaring met integraties? Maak je dan eerst vertrouwd met de {
 
 ## Een Freshchat-integratie toevoegen
 
-Om in injixo een nieuwe Freshchat-integratie toe te voegen, heb je een Pro of Enterprise Freshchat-account nodig. Volg de procedure die in het artikel {% link_new Een cloudintegratie toevoegen | features/acd-integration/cloud/add-cloud-integration.md %} wordt beschreven.
+Om in injixo een nieuwe Freshchat-integratie toe te voegen, heb je een Freshchat Pro- of Enterprise-account nodig.
 
 1. Ga naar _Account > Integraties_{:.breadcrumbs}.
 2. Als je al een integratie hebt, klik dan op _Voeg integratie toe_{:.doc-button}.
 3. Klik in de **Freshworks**-tegel op _Kies een model_{:.doc-button}.
 4. Klik in de sectie **Freshchat** op _Voeg integratie toe_{:.doc-button}.
 
-## Je Freshchat-integratie configureren 
+## Je Freshchat-integratie configureren
 
 1. Geef de nieuwe integratie een unieke naam die naar de gegevensbron verwijst.
 2. Voer in de sectie **Toegangsgegevens** je volledige Freshchat-domeinnaam met subdomein in, bijvoorbeeld: example.freshchat.com.
 3. Ga naar Freshchat en kopieer een geldige API-key van een gebruiker met de rol Account Administrator.
 4. Ga terug naar injixo en plak de API-key in het veld **API-key**.
-5. Klik op _Integratie opslaan_{:.doc-button}. 
+5. Klik op _Integratie opslaan_{:.doc-button}.
 
 ### De injixo-app installeren
 
@@ -39,7 +39,7 @@ Voor de Freshchat-integratie is een clienttoepassing nodig. Ga nadat je de confi
 
 Genereer en kopieer hier de **injixo API-key**.
 
-Volg de instructies op het scherm om de injixo-app in je Freshdesk-account te configureren. Ga voor meer informatie naar de [Freshworks marketplace](https://www.freshworks.com/apps/freshdesk/injixo_connect).
+Volg de instructies op het scherm om de injixo-app in je Freshchat-account te configureren. Ga voor meer informatie naar de [Freshworks marketplace](https://www.freshworks.com/apps/injixo_connect).
 
 ## Freshchat-gegevens in injixo
 
@@ -64,3 +64,8 @@ Voorbeelden:
 
 Een chat kan worden verwijderd of als spam worden gemarkeerd wanneer deze is bijgewerkt. In dit geval kan de integratie geen groepnaam bepalen. De bronqueues die deze chats tellen, krijgen het label Undefined_Queue. Meestal zijn deze queues niet relevant voor het plannen van de workload van je medewerkers.
 
+## Veelgestelde vragen
+
+| Vraag                                                                                                                                                                       | Antwoord                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| injixo laat ineens geen nieuwe Freshchat-gegevens meer zien, maar op de pagina in **Account > Integraties**  is de status van mijn Freshchat-integratie nog steeds Operationeel. Wat kan ik doen? | De injixo-app haalt gegevens op uit Freshchat en stuurt gebeurtenissen naar injixo. Communicatiefouten tussen de injixo-app en injixo kunnen ertoe leiden dat gegevens uit Freshchat niet meer worden weergegeven. De Freshchat-integratie kan zulke communicatiefouten niet herkennen.<br><br>Controleer of de injixo API-key die je bij de configuratie van injixo in je Freshchat-account hebt ingevoerd nog geldig is. Als de API-key ongeldig is, vervang je de API-key op de app-installatiepagina in injixo. Als de API-key nog steeds geldig is, neem dan contact op met het supportteam van injixo. |

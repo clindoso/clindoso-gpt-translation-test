@@ -4,7 +4,7 @@ toc: false
 product_label:
   - advanced
   - enterprise
-description: Calculate how many employees you need per interval to meet your scheduling goals. Learn how to edit or delete these calculated values.
+description: Learn how to edit or delete the staff requirements values calculated by injixo.
 archive_ref: 20210819-en-employee-requirement
 related_articles:
   - overwrite_title: Add title for untranslated source
@@ -19,45 +19,80 @@ related_articles:
     filepath: features/scheduling/schedules/schedules-optimized-schedules.md
 ---
 
-Staff requirements define how many people you need for an activity at a specific time. Staff requirements are needed to build or optimize schedules with the Create optimized schedules, Job optimization, or Optimize breaks functionalities.
+Staff requirements define how many people you need for an activity at a specific time. You need staff requirements to create schedules with the **Create optimized schedule** functionality, or to optimize them with **Job optimization** or **Optimize breaks**.
 
-You generate staff requirements as the last step of the forecasting process. In injixo Forecast, you can use the automatically generated requirement or run a specific staff calculation method. Before you create a schedule, check if your staff requirements have been generated correctly.
+Generating staff requirements is the last step of the forecasting process. In injixo Forecast, you can use the automatically generated requirements, or run a specific staff requirements calculation method. Before you create a schedule, make sure that staff requirements have been generated for all relevant activities.
 
 ## View and edit staff requirements
 
-The easiest way to view and analyze staff requirements for the activities assigned to your planning unit is to use the {% link_new activity panel in Schedules | features/scheduling/schedules/schedules-activity-coverage.md %} or the {% link_new parameter window in Shift Center | features/scheduling/shiftcenter/analyze-coverage-staffing-requirement.md %}. In {% link_new Dashboards | features/monitoring/dashboards/dashboards-examples.md %}, you can create charts with values for different days, activities, and planning units.
+In injixo, you can view staff requirements in the following four places:
 
-In Shift Center, you can also view and edit values for single days in a separate window.
+- _Forecast_{:.menu-item}
+- _Analyze > Dashboard_{:.breadcrumbs}
+- _Plan > Schedules_{:.breadcrumbs}
+- _Plan > Shift Center_{:.breadcrumbs} 
 
-### View staff requirements
+The following table includes details about the options available in each place:
+
+<style>
+table {
+   margin-left: 0px;
+}
+</style>
+
+| Where  | View | Edit | Delete |
+| ------ |--------| -------- |-------- |
+| _Forecast_{:.menu-item} | Yes | Yes | Yes |
+| _Analyze > Dashboard_{:.breadcrumbs} | Yes | No | No |
+| _Plan > Schedules_{:.breadcrumbs} | Yes | No | No |
+| _Plan > Shift Center_{:.breadcrumbs} | Yes | Yes | No |
+
+### Edit staff requirements in Shift Center
 
 1. Go to _Plan > Shift Center_{:.breadcrumbs}.
-2. In the parameter window at the bottom, click the **Activities** or **Activity Overview** tab.  
-   If you see the message No Data, select at least level Schedule or Actual.
-3. Click the {% icon plus %} to open a planning unit.
-4. Right-click any cell.
-5. In the context menu, click **Edit Employee requirement**.  
-   A table displays all activities and staff requirement values for the selected day.  
-   The values are displayed in the local time of the planning unit.  
-   Multiactivities appear in bold.  
-   Deleted activities that are still assigned to the planning unit appear in italics and cannot be edited.
+2. At the bottom of the panel, select the **Activities - Requirement** or the **Activity Overview** tab.<br>
+   > No Data message in a cell
+   >
+   > If a cell in the lower table shows the message No Data, select **Schedule** or **Actual** from the **Levels** drop-down menu at the top right.
 
-### Edit staff requirements
+3. To expand a planning unit, click the {% icon plus %} on the left side of each table.
+4. Right-click any cell in the lower table and select **Edit Employee Requirement**.
+5. In the **Edit Employee Requirement** window, click a cell and enter the new value.<br>
+  You cannot edit cells highlighted in blue because they represent deleted activities that are still assigned to the planning unit.<br>
+  
+6. (Optional) To edit several cells at once, copy a row of values from a spreadsheet. Click a cell and drag the mouse to the right. Press Ctrl+V to paste the values.<br>
+7.  Click _OK_{:.doc-button}.
 
-1. Follow the steps above to [view staff requirements](#view-staff-requirements).
-2. In the **Edit Employee Requirement** window, you can edit values for as follows:
-   - To change a single value, click a cell and enter a new value.
-   - To copy and paste data, you need to copy the row with all values from a spreadsheet first. In the table, click the first cell in which you want to insert data and drag the mouse to the right. Release the mouse and insert the copied values by pressing **CTRL+V**.
-3. To save your changes, click _OK_{:.doc-button}.
+### Edit staff requirements in Forecast
+
+To manually edit staff requirements, you can run the constant requirement script in _Forecast_{:.breadcrumbs}. The following procedure explains how to configure the script for this specific use case. For more information on the individual configuration options, see the article {% link_new Constant requirement | features/forecast/requirement-scripts/requirement-constant.md %}.
+
+1. Go to _Forecast > Requirement Scripts_{:.breadcrumbs}.
+2. In the **Other - Constant Requirement** tile, click _Open_{:.doc-button}.<br>
+3. In the script configuration window, configure the following settings:
+   - In the **Date** section:
+     - **Start Date**
+     - **Number of Days**: Enter for how many consecutive days after the start date the changed staff requirements apply.
+     - **Consider Each Day of the Week**: Select **No**.
+     - **Add to Existing Requirement**: Leave the checkbox unchecked.
+     - **Number Of Days With Timespans**: To edit the staff requirements for all days in a date range, select 1.
+     - **Timespans Per Day**: Select the number of time periods per day for which you want to edit staff requirements (e.g. 1 if you want to edit the staff requirements for the whole day, but 3 if you want to set different staff requirements for the morning, afternoon, and evening).
+     - **Number of Activities**: Select the number of activities for which you want to edit the staff requirements.
+   - In the **Data** section:
+     - **Planning unit** and **Activity**: Select the relevant data for each activity whose staff requirements you want to edit.
+     - **Agents**: Enter the number that you want to use as staff requirements.
+     - **Start** and **End**: Define the time range or ranges for which you want to edit the staff requirements.
+4. Click _OK_{:.doc-button}.
 
 ## Delete staff requirements
 
-To delete staff requirements values for one or more activities in a planning unit, you can run the {% link_new constant requirement script | features/forecast/requirement-scripts/requirement-constant.md %} in _Forecast_{:.breadcrumbs}:
+There is no option to delete staff requirements in injixo. You can edit staff requirements to be 0, which has the same effect as deleting them.
 
-- Ensure that the **Add to Existing Requirement** checkbox is not checked.
-- To delete staff requirements for each day in the date range, select 1 from the **Number Of Days With Timestamps** drop-down menu. Enter the value 0 in the **Agents** and **Day 1** fields.
-- To define the time period within the day, enter a time in the **Start** and **End** fields.
+ You have two options to set the staff requirements to 0:
+ - Follow the steps to [edit staff requirements in Shift Center](#edit-staff-requirements-in-shift-center) and enter or copy 0 in the relevant cells.
+ 
+ - Follow the steps to [edit staff requirements in Forecast](#edit-staff-requirements-in-forecast) and enter 0 in the **Agents** field.
 
-Example with checkboxes and values with value 0 for the entire day (from midnight to midnight):
+The following image shows the configuration of the constant requirement script to delete staff requirements in Forecast for an entire calendar day (here: Day 1):
 
 {{ 3 | image: 'Constant requirements script example with one activity from 00:00 to 00:00 and 0 requirements', '80%' }}

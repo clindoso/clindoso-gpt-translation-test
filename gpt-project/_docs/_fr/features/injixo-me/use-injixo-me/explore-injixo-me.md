@@ -81,6 +81,11 @@ Si votre planning a été publié, vous pouvez le télécharger au format PDF ou
    - **Calendrier (ICS)**&nbsp;: Téléchargez votre planning et importez-le dans votre application de calendrier.
 5. Cliquez sur _Télécharger_{:.doc-button}.
 
+
+> Remarque
+>
+> Dans la vue en blocs, les journées se terminant après minuit sont affichées directement sur la ligne du jour de début de la journée. L’heure affichée dans la colonne **Fin** est celle du jour de fin de la journée.
+
 ## Voir le planning de votre équipe&nbsp;: Calendrier de l’équipe
 
 Dans _Me > Calendrier de l’équipe_{:.breadcrumbs}, vous pouvez voir le planning de tous les employés de votre unité opérationnelle et de votre groupe. Le calendrier de l’équipe comprend des activités telles que Présence, Pause et Congés. Le calendrier de l’équipe peut afficher les activités à statut journalier, par exemple pour visualiser les employés en télétravail.

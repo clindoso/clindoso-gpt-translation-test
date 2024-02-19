@@ -29,23 +29,25 @@ Use the functionality:
 ## Copy or back up a schedule
 
 1. Click _Scheduling actions_{:.doc-button} and select **Copy level content**.
-2. Configure the following parameters: 
+2. Configure the following parameters:
 
-   | **Parameter**  | **Description** |
-   |---------------------|---------------------|
-   | Planning unit | The planning unit for which you want to run the copy job. |
-   | Source level | The level from which you want to copy the data. |
-   | Target level | The level to which you want to copy the data. |
-   | Date range | The date range for which you want to copy the data. <br> This field is pre-filled with the period that is currently selected in Schedules. |
-   | Target start date | (Optional) The date at which the copied time period should be inserted. <br> Use it, for example, to copy the data of an old schedule to a future time period on the same level. |
-   | Empty source level content after copying | (Optional) Check this checkbox to delete the existing content from the source level. |
-  > Warning
-  >
-  > Empty source level content after copying: Before you activate this option, make sure you have selected the correct source level.  
-  > Deleted data cannot be restored for a time frame. You can restore deleted data {% link_new restore deleted data | features/scheduling/schedules/schedules-history.md %} for single days and employees only. 
+   | **Parameter**                            | **Description**                                                                                                                                                                  |
+   | ---------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+   | Planning unit                            | The planning unit for which you want to run the copy job.                                                                                                                        |
+   | Source level                             | The level from which you want to copy the data. An empty source level will delete the data in the target level. |
+   | Target level                             | The level to which you want to copy the data.                                                                                                                                    |
+   | Date range                               | The date range for which you want to copy the data. <br> This field is pre-filled with the period that is currently selected in Schedules.                                       |
+   | Target start date                        | (Optional) The date at which the copied time period should be inserted. <br> Use it, for example, to copy the data of an old schedule to a future time period on the same level. |
+   | Empty source level content after copying | (Optional) Check this checkbox to delete the existing content from the source level.                                                                                             |
+
+   > Warning
+   >
+   > Make sure you always select the correct source level. injixo will overwrite data in the following cases: 
+   > - If the source level is empty, injixo will delete data in the target level.
+   > - If the source level is wrong, and you selected the **Empty source level content after copying** option, injixo will delete data in the source level.
+   >
+   > Deleted data cannot be restored for a time frame. You can only {% link_new restore data | features/scheduling/schedules/schedules-history.md %} for single days and employees from the history in Schedules and Shift Center.
+
 3. (Optional) Click the **JobProcessor** link to open the Job Processor page in a new tab and track the progress of the copy job.
-4. Click _Copy level content_{:.doc-button}.
-   injixo will redirect you to Schedules. After some time, a notification will show whether the copy job could be completed.
- 
-To return to Schedules without running the job, click the {% icon back %} in the upper left or _Cancel_{:.doc-button}.
-
+4. Click _Copy level content_{:.doc-button}.<br>
+   injixo will redirect to Schedules. You will see a notification whether the copy job could be completed or not.

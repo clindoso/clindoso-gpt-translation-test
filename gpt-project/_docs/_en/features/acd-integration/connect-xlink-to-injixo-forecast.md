@@ -37,7 +37,7 @@ To configure the data import, {% link_new install Xlink | features/acd-integrati
 ### 2. Create injixo destination queues
 
 1. Go to _WFM > Administration > Forecasting > Queues_{:.breadcrumbs}.
-2. Create a new {% link_new destination queue | features/forecast/forecastpro/administration/queues.md | #creating-queues %} for each external queue.
+2. Create a new {% link_new destination queue | features/forecast/forecastpro/administration/queues.md | #create-queues %} for each external queue.
 3. Click the {% icon item-add %} to add value types to your destination queue. There are multiple value types for each channel (e.g. calls, emails, social media). Value types are required to create a forecast.
 4. Select the **value types** for the channel. For the channel _calls_, add at least:
    - _Calls Average Handling Time_

@@ -18,12 +18,12 @@ In this article, you will learn:
 
 - what planning calendars are and how they work.
 - how to create, edit, copy and delete them.
-- how to add national holidays and day types.
+- how to add public holidays and day types.
 - how to use a planning calendar for scheduling.
 
 ## What is a planning calendar?
 
-With a planning calendar, you can mark days with different opening hours and staffing needs (e.g. marketing campaign days or national holidays) to ensure they are automatically considered during scheduling.
+With a planning calendar, you can mark days with different opening hours and staffing needs (e.g. marketing campaign days or public holidays) to ensure they are automatically considered during scheduling.
 
 The days are marked using {% link_new day types | features/administration/day-types.md %}. If you enter a day type in the planning calendar, it overwrites the opening hours of the normal weekday (Mon-Sun) for that day.
 
@@ -38,19 +38,19 @@ It might make sense to create different planning calendars for different plannin
 3. Click _![save as button](/assets/img/common/saveas.gif)_{:.doc-button-icon} in the action bar to save the empty calendar.
 4. Enter a **Name** for the calendar and click _Ok_{:.doc-button}.
 
-Now you can automatically add the national holidays of your region and single day types.
+Now you can automatically add the public holidays of your region and single day types.
 
-### Add the national holidays of your region
+### Add the public holidays of your region
 
 1. Go to in _WFM > Administration > Scheduling > Planning Calendar_{:.breadcrumbs}
-2. Select the **Year** for which you want to add national holidays.
+2. Select the **Year** for which you want to add public holidays.
 3. Select your country and region from the drop-down menu below **Calendar Template**.
-4. Click _Apply_{:.doc-button} to insert all holidays from the template. Repeat steps 1 to 3 if you want to add the holidays of another region or if you want to add the same holidays to another year. Note that if you insert the holidays of another template, some days that already contained holidays can be overwritten with the new data.
+4. Click _Apply_{:.doc-button} to insert all public holidays from the template. Repeat steps 1 to 3 if you want to add the public holidays of another region or if you want to add the same public holidays to another year. Note that if you insert the public holidays of another template, some days that already contained public holidays can be overwritten with the new data.
 5. Click _![save button](/assets/img/common/save.gif)_{:.doc-button-icon} in the action bar to save the calendar.
 
 When you insert a calendar template, injixo automatically creates the {% link_new day types | features/administration/day-types.md %} for all special days included in the template if they do not exist yet.
 
-The inserted days are automatically configured as holidays by activating the _Holiday Mode_ in the settings of the day type. If you want to treat a certain holiday as a normal workday in the working time calculation, deactivate the holiday mode manually at _WFM > Administration > Scheduling > Day Types_{:.breadcrumbs}.
+The inserted days are automatically configured as public holidays by activating the _Holiday Mode_ in the settings of the day type. If you want to treat a certain public holiday as a normal workday in the working time calculation, deactivate the public holiday mode manually at _WFM > Administration > Scheduling > Day Types_{:.breadcrumbs}.
 
 On days where your planning unit is closed but employees do not receive holiday pay, you should delete day types with holiday mode from the calendar. Otherwise, injixo will reduce the target working time for this week and employees will be scheduled for fewer hours than normal.
 
@@ -76,7 +76,7 @@ Remove day types from the planning calendar using one of these options:
 ## Modify or copy an existing planning calendar
 
 1. Use the **Calendar** drop-down menu in the action bar to select a calendar of your choice. To copy a planning calendar before editing, click _![save as button](/assets/img/common/saveas.gif)_{:.doc-button-icon} in the action bar.
-2. Add or remove day types, or insert a calendar template with national holidays as described above. You can also rename the calendar by clicking _![edit button](/assets/img/common/item-edit.gif)_{:.doc-button-icon} in the action bar.
+2. Add or remove day types, or insert a calendar template with public holidays as described above. You can also rename the calendar by clicking _![edit button](/assets/img/common/item-edit.gif)_{:.doc-button-icon} in the action bar.
 3. Click _![save button](/assets/img/common/save.gif)_{:.doc-button-icon} to save the calendar.
 
 ## Use a planning calendar for planning

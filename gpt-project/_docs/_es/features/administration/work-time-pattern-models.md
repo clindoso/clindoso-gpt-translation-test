@@ -11,12 +11,12 @@ product_label:
   - classic
 description: Usa modelos de planificación durante la optimización de tu planificación para asegurarte de que tus empleados no reciben turnos aleatorios.
 related_articles:
-  - overwrite_title: Fecha de referencia
-    filepath: features/administration/reference-date.md
   - overwrite_title: Planificación optimizada
     filepath: features/scheduling/scheduling-optimization.md
   - overwrite_title: Configurar empleados
     filepath: features/administration/employee-overview.md
+  - overwrite_title: Add title for untranslated source
+    filepath: features/administration/create-contracts.md
   - overwrite_title: Add title for untranslated source
     filepath: features/administration/daymodels/daymodel-creation.md
   - overwrite_title: Planificar turnos partidos
@@ -105,7 +105,7 @@ Ahora puedes añadir modelos semanales a tu modelo de planificación.
 
 ### Posición
 
-La posición de los modelos semanales dentro de los modelos de planificación es relevante cuando se usan modelos de planificación de [tipo B o D](#tipos-de-modelos-de-planificación). injixo asignará los patrones de tiempo semanales en el orden configurado aquí.
+La posición de los modelos semanales dentro de los modelos de planificación es relevante cuando se usan modelos de planificación de [tipo B o D](#tipos-de-modelos-de-planificación). injixo asignará los modelos semanales en el orden configurado aquí.
 
 Usa el {% icon down-arrow-blue %} y el {% icon up-arrow-blue %} para definir la posición de los modelos semanales.
 
@@ -114,11 +114,14 @@ Usa el {% icon down-arrow-blue %} y el {% icon up-arrow-blue %} para definir la 
 | Tipo | Nombre               | Uso de los modelos semanales                                                      | Asignación del modelo de horario | Hora de inicio del turno              | Efecto             |
 | ---- | ------------------ | -------------------------------------------------------------------------- | -------------------- | ----------------------------- | --------------------------------- |
 | A    | Selección flexible | injixo puede seleccionar cualquier modelo de horario de cualquiera de los modelos semanales incluidos para cada día de cada semana. | injixo puede usar cualquier modelo de horario de cualquier modelo semanal. | Flexible    | Dependiendo del horario de apertura de tu organización, el tipo A puede resultar en una distribución de turnos que a tus empleados les parezca aleatoria o estresante. Por ejemplo, un empleado podría trabajar el turno de mañana el lunes, de noche del martes, y de tarde el miércoles, etc. |
-| B    | Alternancia fija     | injixo planifica los modelos semanales en el orden definido por sus posiciones. | Para cada semana, injixo elegirá el modelo de horario que mejor cubra los requisitos de personal. | Fijo    | Cuando asignas este tipo de modelo de planificación a tus empleados, debes establecer una {% link_new fecha de referencia | features/administration/reference-date.md %}. La fecha de referencia define cuándo se usa por primera vez el modelo de planificación.<br> A cada empleado se le asigna un mismo modelo de horario toda la semana, p.&nbsp;ej., empezando a las 9&nbsp;a.&nbsp;m. de lunes a viernes. El único modo de incumplir la regla es definir días extraordinarios. Esta es la asignación de turnos más consistente de los cuatro tipos. |
+| B    | Alternancia fija     | injixo planifica los modelos semanales en el orden definido por sus posiciones. | Para cada semana, injixo elegirá el modelo de horario que mejor cubra los requisitos de personal. | Fijo    | Cuando asignas este tipo de modelo de planificación a tus empleados, debes establecer una fecha de referencia. La fecha de referencia define cuándo se usa por primera vez el modelo de planificación.<br> A cada empleado se le asigna un mismo modelo de horario toda la semana, p.&nbsp;ej., empezando a las 9&nbsp;a.&nbsp;m. de lunes a viernes. Define [días extraordinarios](#días-extraordinarios) si quieres planificar otro modelo de horario. Esta es la asignación de turnos más consistente de los cuatro tipos. |
 | C    | Alternancia variable  | injixo no respeta la posición definida para los modelos semanales. | injixo elige un modelo de horario para toda la semana. | Fijo    | A los empleados se les puede asignar cualquier modelo semanal para cumplir mejor los requisito de personal. Dado que los turnos comienzan al mismo tiempo, tus empleados tienen un horario de trabajo consistente durante toda la semana. |
 | D    | Alternancia combinada (A/B) | injixo respeta la posición definida para los modelos semanales. | injixo elige un modelo de horario para toda la semana.| Flexible (dentro de un rango de tiempo)    |  Dependiendo de los requisitos de personal, injixo puede planificar a empleados con turno temprano para comenzar a trabajar entre las 8&nbsp;a.&nbsp;m. y las 10&nbsp;a.&nbsp;m. Con el tipo D, injixo tiene más flexibilidad al planificar para cumplir mejor los requisitos de personal, a la vez que asigna horarios bastante consistentes a tus empleados. |
 
 
+El siguiente gráfico muestra cómo los distintos tipos de modelos de planificación influencian tu planificación. Este ejemplo incluye un modelo de planificación con cuatro modelos semanales y tres modelos de horario en cada modelo semanal.
+
+{{ 2 | image: 'Ejemplo de planificación con los distintos tipos de modelos de planificación' }}
 
 ## Días extraordinarios
 
@@ -141,9 +144,9 @@ A la hora de elegir un modelo de horario para la semana, injixo no puede usar lo
 3. Haz clic en el icono Insertar {% icon item-add | icon-only %} en la sección **Modelos de planificación**.<br>
    Se abre un panel de configuración a la derecha.
 4. Configura los campos:<br>
-  **Válido desde/Válido hasta**: Establece un {% link_new periodo de validez| features/administration/set-a-validity-period.md %}.<br>
+  **Válido desde/Válido hasta**: establece un {% link_new periodo de validez| features/administration/set-a-validity-period.md %}.<br>
   **Modelo de planificación**<br>
-  **Fecha de referencia**: establece una {% link_new fecha de referencia | features/administration/reference-date.md %} en la que se comienza a utilizar el modelo de planificación.
+  **Fecha de referencia**: establece una fecha de referencia en la que se comienza a usar el modelo de planificación.
 5. Haz clic en _Aceptar_{:.doc-button}.
 
 Usa la funcionalidad {% link_new actualización masiva | features/administration/mass-update.md %} para asignar un modelo de planificación a varios empleados a la vez.

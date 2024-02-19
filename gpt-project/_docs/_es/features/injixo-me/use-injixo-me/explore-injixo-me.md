@@ -11,7 +11,7 @@ product_label:
 injixo Me es el portal del empleado de injixo. Ve a injixo Me para:
 
 - Ver tu planificación
-- {% link_new Intercambiar turnos con tus compañeros | features/injixo-me/use-injixo-me/swap-shifts-with-your-colleagues.md | #swap-shifts %}
+- {% link_new Intercambiar turnos con tus compañeros | features/injixo-me/use-injixo-me/swap-shifts-with-your-colleagues.md | #intercambiar-turnos %}
 - {% link_new Pujar por turnos | features/injixo-me/use-injixo-me/bid-on-shifts.md %}
 - Solicitar permisos
 - Establecer tus disponibilidades
@@ -36,14 +36,14 @@ Si no encuentras algunas funcionalidades, puede ser que no tengas acceso a ellas
 En _Me > Cuadro de mandos_{:.breadcrumbs} puedes ver una panorámica de tu planificación:
 
 - AHORA, SIGUIENTE y DESPUÉS: tu actividad actual y las dos siguientes actividades en tu planificación.
-- Agenda de 7 días: tu planificación para los próximos siete días. Aquí puedes {% link_new intercambiar turnos con tus compañeros | features/injixo-me/use-injixo-me/swap-shifts-with-your-colleagues.md | #swap-shifts %}.
-- Avisos: contraofertas para intercambios de turnos y períodos abiertos para la puja de turnos.
+- Agenda de 7 días: tu planificación para los próximos siete días. Aquí puedes {% link_new intercambiar turnos con tus compañeros | features/injixo-me/use-injixo-me/swap-shifts-with-your-colleagues.md | #intercambiar-turnos %}.
+- Avisos: contraofertas para intercambios de turnos y períodos abiertos para la oferta de turnos.
 - Próximos eventos: vacaciones, reuniones y ausencias programadas.
 
 ## Ver tu planificación: Agenda personal
 
 En _Me > Agenda personal_{:.breadcrumbs} puedes ver tu planificación en una vista diaria, semanal o mensual.
-También puedes {% link_new intercambiar turnos | features/injixo-me/use-injixo-me/swap-shifts-with-your-colleagues.md | #swap-shifts %}.
+También puedes {% link_new intercambiar turnos | features/injixo-me/use-injixo-me/swap-shifts-with-your-colleagues.md | #intercambiar-turnos %}.
 
 - Para cambiar el periodo de tiempo mostrado, haz clic en _Día_{:.doc-button}, _Semana_{:.doc-button} o _Mes_{:.doc-button}.
 - Para saltar al periodo de tiempo anterior o siguiente, haz clic en _<_{:.doc-button} o _>_{:.doc-button}.
@@ -77,6 +77,10 @@ Puedes descargar tu planificación como archivo PDF o como archivo ICS.
    - **Bloques (PDF)**: descarga un resume de tus actividades planificadas en una línea temporal. Cada actividad tiene el mismo color que ves en tu planificación en Me.
    - **Archivo de calendario (ICS)**: descarga tu planificación e impórtala en tu aplicación de calendario.
 5. Haz clic en _Descarga_{:.doc-button}.
+
+> Atención
+> 
+> En la vista de bloques, los turnos que terminan de madrugada se incluyen completos en la fila del día en que empieza el turno. La hora mostrada en la columna **Fin** se refiere al día en que termina el turno.
 
 ## Ver la planificación de tu equipo: Calendario de equipo
 

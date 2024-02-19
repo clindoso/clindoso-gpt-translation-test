@@ -15,7 +15,7 @@ related_articles:
   - overwrite_title: Add title for untranslated source
     filepath: features/administration/employee-overview.md
   - overwrite_title: Dienstenseries toevoegen
-    filepath: features/scheduling/capacity/capacity-insert-shift-sequences.md
+    filepath: features/scheduling/schedules/schedules-insert-shift-sequences.md
 ---
 
 
@@ -25,10 +25,10 @@ Dienstenseries besparen je uren werk, want je hoeft patronen die zich steeds her
 
 Er zijn vier usecases voor het gebruik van dienstenseries:
 
-1. Je wilt dagen aangeven waarop bepaalde diensten moeten worden ingepland.
-2. Je wilt activiteiten inplannen die vaker worden herhaald
-3. Je wilt aangeven op welke dagen medewerkers niet werken
-4. Je wilt aangeven wanneer diensten kunnen worden ingepland op basis van de beschikbaarheid van medewerkers
+- Usecase 1: Je wilt dagen aangeven waarop bepaalde diensten moeten worden ingepland
+- Usecase 2: Je wilt activiteiten inplannen die vaker worden herhaald
+- Usecase 3: Je wilt aangeven op welke dagen medewerkers niet werken
+- Usecase 4: Je wilt aangeven wanneer diensten kunnen worden ingepland op basis van de beschikbaarheid van medewerkers
 
 Dienstenseries bestaan uit een of meerdere regels. Elke regel bevat een afzonderlijk patroon dat aan de planning kan worden toegevoegd.<br>
 Elke regel bevat cellen die de dagen van de week aangeven. In deze cellen voer je de dagmodellen of activiteiten in die je met de dienstenserie wilt inplannen.<br>
@@ -56,7 +56,7 @@ Om dienstenseries aan te maken, ga je naar _Plan > Configuratie > Dienstenseries
   **Naam**: Voer een unieke naam in (max. 50 tekens).<br>
   **Afkorting**: Voer de naam in of een kortere versie hiervan (max. 25 tekens).<br>
   **Medewerkersregel(s)**: Voer het aantal regels in voor de dienstenserie (max. 53).<br>Aan elke rij wordt een nummer toegewezen. Dubbelklik op een rij om deze een andere naam te geven. Je hebt het rijnummer of de naam nodig om deze alter aan een medewerker toe te wijzen.<br>
-  **Lengte**: Voer een waarde in tussen 1 en 371 dagen. De lengte moet deelbaar zijn door zeven.
+  **Lengte**: Voer een waarde in tussen 7 en 371 dagen. De lengte moet deelbaar zijn door zeven.
 6. Klik op _OK_{:.doc-button}.
 
 >Opmerking

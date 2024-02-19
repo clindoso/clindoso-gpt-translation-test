@@ -15,7 +15,7 @@ Schichtfolgen sind feste, sich wiederholende Abfolgen von Schichten, Aktivitäte
 
 > In diesem Artikel geht es um *WFM > Scheduling > SchedulePro*{:.breadcrumbs}.  
 >  
-> Wenn Du injixo Essential WFM, Advanced WFM oder Enterprise WFM verwendest, nutze stattdessen die Funktion {% link_new Schichtfolgen einfügen | features/scheduling/capacity/capacity-insert-shift-sequences.md %} unter *Plan > Kapazitätsplanung*{:.breadcrumbs}.  
+> Wenn Du injixo Essential WFM, Advanced WFM oder Enterprise WFM verwendest, nutze stattdessen die Funktion {% link_new Schichtfolgen einfügen | features/scheduling/schedules/schedules-insert-shift-sequences.md %} unter *Plan > Schedules*{:.breadcrumbs}.  
 
 ## Parameter festlegen
 
@@ -40,7 +40,7 @@ Ganztägige Aktivitäten löschen | Bestehende ganztägige Aktivitäten der Mita
   Verfügbarkeitsrahmen löschen | Bestehende Verfügbarkeitsrahmen der Mitarbeiter werden durch die ausgewählte Schichtfolge überschrieben.
 Alle Aktivitäten und Schichten löschen | Bestehende Aktivitäten und alle Schichten der Mitarbeiter auf der Zielebene werden gelöscht und durch die ausgewählte Schichtfolge ersetzt; Verfügbarkeitsrahmen bleiben dabei erhalten.
 
-Die Optionen werden nur beim Einfügen der ersten Schichtfolge eines Mitarbeiters berücksichtigt, d.h. bei einer aktivierten Option wird der Planinhalt nur beim Einfügen der ersten Schichtfolge gelöscht.
+Die Optionen werden nur beim Einfügen der ersten Schichtfolge eines Mitarbeiters berücksichtigt, d.&nbsp;h. bei einer aktivierten Option wird der Planinhalt nur beim Einfügen der ersten Schichtfolge gelöscht.
 
 Vorhandene ganztägige Aktivitäten werden grundsätzlich durch ganztägige Aktivitäten aus einer Schichtfolge ersetzt, wenn die existierenden Einträge nicht vom Typ `Abwesenheit`, `Krankheit`, `Urlaub` oder `Meeting` sind. Um ein Überschreiben von ganztägigen Aktivitäten (z.B. Urlaub) durch untertägige Aktivitäten oder Schichten aus einer Schichtfolge zu verhindern, aktiviere die Planungsregel *2645*{:.id-label} *Überschreiben von ganztägigen Aktivitäten durch Schichten oder Aktivitäten*.
 

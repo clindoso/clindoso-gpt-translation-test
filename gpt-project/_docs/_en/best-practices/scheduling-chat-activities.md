@@ -31,7 +31,7 @@ To forecast the chat volume, proceed as follows:
 1. {% link_new Create a new workload | features/forecast/injixo-forecast/manage-workloads.md | #create-workloads %}.
 2. In the **Assign queues** section of the **New Workload** configuration page, select one or more chat queues. The first drop-down menu allows you to filter by queue type.
 
-Tip: To consider periods with unusually high or low chat volumes, you can {% link_new add events and holidays | features/forecast/injixo-forecast/events-and-holidays.md %} to your workload.
+Tip: To consider periods with unusually high or low chat volumes, you can {% link_new add events and public holidays | features/forecast/injixo-forecast/events-and-holidays.md %} to your workload.
 
 ### Workaround for no chat history or unreliable data
 
@@ -76,16 +76,19 @@ There are two different ways to calculate staff requirements for chat activities
 
 To configure the calculation method and calculate staff requirements, proceed as follows:
 
-1.  Go to **Forecast** and select a workload to open the details view.
-2.  On the details view, select a period for which a forecast exists (daily, weekly, monthly view).
-3.  Scroll down to the **Staff Requirements** section and click _Edit Calculation Method_{:.doc-button}.
-4.  In the **Staff Requirements** configuration window, select **Chat** from the **Calculation Method** drop-down menu and complete the form.
-    Learn more about the calculation method for chat and required parameters in the article {% link_new Calculate staff requirements | features/forecast/injixo-forecast/staff-requirement.md | #configure-integrated-calculation-methods %}.
-5.  Click _Save Configuration_{:.doc-button}.
+1. In _Forecast > Workloads_{:.breadcrumbs}, select a workload.
+2. Select a period for which a forecast exists.
+3.  Scroll down to the **Staff Requirements** section and click _Edit staff requirements_{:.doc-button}.
+4.  In the **Staff requirements** configuration window, select **Chat** from the **Calculation method** drop-down menu and complete the form.
+    Learn more about the calculation method for chat and required parameters in the article {% link_new Calculate staff requirements | features/forecast/injixo-forecast/staff-requirement.md | #configure-the-calculation-methods %}.
+5.  Click _Save_{:.doc-button}.
 
-The **Forecast** page now displays calculated staff requirements for chat activities.
+The workload details page page now displays calculated staff requirements for chat activities.
 
-To use them for scheduling, select a future time period and click _Use Requirements_{:.doc-button} in the **Staff Requirements** section.
+To use them for scheduling, proceed as follows:
+1. Select a time period in the future.
+2. In the **Staff requirements** section, click _Save staff requirements_{:.doc-button}.
+3. In the **Save staff requirements** window, click _Save_{:.doc-button}.
 
 ### Calculate for blended scheduling
 
@@ -93,13 +96,16 @@ To transfer staff requirements from a forecast, proceed as follows:
 
 1. Go to **Forecast**. Select the workloads for each subactivity of the multiactivity.
 2. In each workload, select the same calculation period in the future.
-3. Click _Use Forecast_{:.doc-button}.
+3. From the three-dots menu _![Context Menu in injixo Forecast](/assets/img/common/forecast/context-menu.svg)_{:.doc-button-icon} at the top right, select **Use forecast**.
+4. In the window that opens, select your forecast version.
+5. Click _Use forecast_{:.doc-button}.
 
 To calculate staff requirements, proceed as follows:
 
-1. On the details view of the **Forecast** page, click **Calculations for Multiactivity, Constant Requirement and Outbound** in the upper right.
-2. Select the **Anrufe - Multi-Activity** script <!-- not the exact name here because name says calls --> from the **Select a requirement script** drop-down menu. A new configuration window or tab with the script parameters opens.
-3. In the script configuration window, complete the form. In the **Planning Unit Parameters** section of the form, select the multiactivity that includes your chat activities.
+1. Go to _Forecast > Requirement Scripts_{:.breadcrumbs}.
+2. In the **Calls - Multi-Activity** tile, click _Open_{:.doc-button}.  
+   A configuration window with the script parameters opens.
+3. In the script configuration window, complete the form. In the **Planning Unit Parameters** section, select the multiactivity that includes your chat activities.
 4. In the **Assigned activities** section, configure the following parameters for each chat activity:
 
    - Under **Queue Parameters**:

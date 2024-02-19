@@ -81,22 +81,30 @@ Si le client n’est pas installé, les symboles IE dans le menu de navigation d
 
 Pour accéder aux page web d’injixo, autorisez le trafic Web vers et depuis *.injixo.com via le port 443.
 
-Si vous utilisez des fonctionnalités avec des composants ActiveX, ajoutez une autre exception au pare-feu. Ces applications utilisent le port 45054 pour le trafic sortant (port 80 pour les environnements injixo avant 2019) et nécessite un accès direct à Internet par TCP (Transmission Control Protocol). Les serveurs proxy configurés dans le navigateur ne sont pas pris en charge.
+Si vous utilisez des fonctionnalités avec des composants ActiveX ou des applications SDK personnalisées, ajoutez une autre exception au pare-feu. Ces applications utilisent le port 45054 pour le trafic sortant (port 80 pour les environnements injixo avant 2019) et nécessite un accès direct à Internet par TCP (Transmission Control Protocol). Les serveurs proxy configurés dans le navigateur ne sont pas pris en charge.
 
-Pour obtenir l’adresse de l’exception du pare-feu, cliquez sur _WFM_{:.menu-item} et utilisez le nom de votre environnement injixo visible dans la barre d’adresse du navigateur, par exemple wfm-123abc.injixo.com&nbsp;:
+Pour obtenir l’adresse de l’exception du pare-feu, cliquez sur _WFM_{:.menu-item} et utilisez le nom de votre environnement injixo visible dans la barre d’adresse du navigateur, par exemple wfm-123abc.injixo.com.
 
 Pour en savoir plus sur les exceptions de pare-feu dans Windows, consultez la [documentation Microsoft](https://support.microsoft.com/fr-fr/windows/ajouter-une-exclusion-%C3%A0-s%C3%A9curit%C3%A9-windows-811816c0-4dfd-af4a-47e4-c301afe13b26#:~:text=Go%20to%20Start%20%3E%20Settings%20%3E%20Update,%2C%20file%20types%2C%20or%20process).
 
 ### URL de partage pour WebSockets
 
-Pour envoyer des mises à jour en temps réel aux utilisateurs, par exemple dans le {% link_new Centre de planification | features/scheduling/shiftcenter/shift-center-overview.md %} ou pour l’adhérence en temps réel, les fonctionnalités utilisent le protocole WebSocket (basé sur TCP) sur le port 443\. injixo ouvre une page Web qui établit une connexion WebSocket. Ajoutez les URL suivantes à la liste d’URL autorisées&nbsp;:
+injixo utilise des WebSockets pour envoyer des mises à jour en temps réel aux utilisateurs dans le Centre de planification, Schedules et Adhérence Temps Réel. 
+
+Le protocole WebSocket sécurisé basé sur TCP permet une transmission plus rapide que HTTP via le port 443. Le navigateur passe d'une connexion HTTP standard à une connexion WebSocket. En cas de succès, les outils de développement du navigateur afficheront le code statut HTTP 101 (Switching Protocols) correspondant lorsque vous chargez la page.
+
+Pour fonctionner à vitesse maximale, le Centre de planification nécessite des WebSockets. Si les WebSockets ne sont pas disponibles, le polling AJAX sera utilisé. Les autres pages ne fournissent pas de mécanisme de secours et affichent des messages d’erreur ou essaient de se reconnecter si la connexion WebSocket ne peut être établie. 
+
+Pour permettre les connexions WebSocket, ajoutez les URL suivantes à la liste d’autorisations de votre pare-feu&nbsp;:
 
 - https://shiftcenter.injixo.com
 - wss://shiftcenter.injixo.com
 - https://www.injixo.com
 - wss://ws.injixo.com
 
-Pour les offres injixo Advanced et injixo Enterprise WFM, le Centre de planification utilise WebSockets pour fonctionner à vitesse maximale. La technologie intégrée propose un mécanisme de secours plus lent si les WebSockets ne sont pas disponibles. Les autres fonctionnalités d’injixo ne proposent aucun mécanisme de secours.
+### WebSockets et serveurs proxy
+
+Les WebSockets reposent sur une connexion TCP persistante. Contrairement aux requêtes HTTP habituelles, une connexion WebSocket reste ouverte une fois établie. Assurez-vous que votre serveur proxy ne termine pas ces connexions TCP. Les serveurs proxy courants, comme Nginx ou Apache, disposent de modules ou directives spécifiques permettant de supporter les connexions WebSocket. 
 
 ## Bande passante réseau requise
 
@@ -113,7 +121,8 @@ Installez {% link_new injixo Cloud Link | features/acd-integration/cloud/install
 
 Les requêtes de données n’interfèrent pas avec les fonctions principales des outils de communication, telles que la téléphonie ou les plateformes e-mail.
 
-Les demandes d’informations en temps réel sur le statut agent peuvent utiliser des flux de socket directs. Ces flux transmettent uniquement les changements d’activité des agents (y compris la date et l’heure, un identifiant agent et un code de statut) et sont d’environ 1&nbsp;Ko chacun.
+Les demandes d’informations en temps réel sur l’état de l’agent peuvent utiliser des flux de socket directs. Ces flux transmettent uniquement les changements d’activité des agents (y compris la date et l’heure, un identifiant agent et un code de statut) et sont d’environ 1&nbsp;Ko chacun.
+
 
 ## Dispositions relatives aux data centers et à la sécurité
 

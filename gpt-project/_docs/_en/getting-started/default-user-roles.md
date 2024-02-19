@@ -11,23 +11,21 @@ redirect_from:
   - /user-roles-in-detail/
 redirect_reason: Updated filename on 05 December 2022
 ---
+
 ## Default user roles
 
 In each role category, injixo provides one default user role with pre-defined access rights. In injixo Advanced and Enterprise WFM, you can customize the default user roles and/or {% link_new add your own user roles | getting-started/configure-user-roles.md %}. Note: The Other role category does not have a default user role.
 
-| **Role category**                | **Default access rights**                                                                                                                                                                      |
-| ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
-| Agent                 | Access to injixo Me, i.e., view shifts, request time off, bid on shifts, swap shifts.                                                                           |
-| Planner               | Full access to all functionalities relevant to forecasting, scheduling, intraday management, and configuration data.                                                                    |
-| Supervisor (basic)    | Read-only access to the Schedule level in {% link_new Schedules | features/scheduling/schedules/schedules-overview.md %} and {% link_new Shift Center | features/scheduling/shiftcenter/shift-center-overview.md %}. Access to {% link_new Exchange overview | features/scheduling/view-approve-shift-swap-requests.md %} and {% link_new Time Off | features/scheduling/time-off/vacation-absences-management.md %} to manage shift swaps and time-off requests. |
-| Supervisor (advanced) | All functionalities of Supervisor (basic), full access to Shift Center and Schedules, permission to change schedules in intraday management, and read-only access to configuration data. |
-| Trainer               | Access to Academy to facilitate training on injixo Me.                                                                                                                            |
-| Finance               | Access to user and billing information, as well as invoices for injixo services.                                                                                                  |
+| **Role category**     | **Default access rights**                                                                                                                                                                    |
+| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| Agent                 | Access to injixo Me, i.e., view shifts, request time off, bid on shifts, swap shifts.                                                                                                        |
+| Planner               | Full access to all functionalities relevant to forecasting, scheduling, intraday management, and configuration data.                                                                         |
+| Supervisor (basic)    | Read-only access to the Schedule level in {% link_new Schedules                                                                                                                              | features/scheduling/schedules/schedules-overview.md %} and {% link_new Shift Center | features/scheduling/shiftcenter/shift-center-overview.md %}. Access to {% link_new Exchange overview | features/scheduling/view-approve-shift-swap-requests.md %} and {% link_new Time Off | features/scheduling/time-off/vacation-absences-management.md %} to manage shift swaps and time-off requests. No access to configuration data. |
+| Supervisor (advanced) | All functionalities of Supervisor (basic), full access to Shift Center and Schedules, permission to change schedules in intraday management, and full access to specific configuration data. |
+| Trainer               | Access to Academy to facilitate training on injixo Me.                                                                                                                                       |
+| Finance               | Access to user and billing information, as well as invoices for injixo services.                                                                                                             |
 
-
-To grant Admin access to a user, {% link_new edit a user | getting-started/manage-user-accounts.md %}, and check the **Grant admin access** checkbox. This will overwrite all other roles and grant full access.
-
-Note: The tables in this article list components and features for relevant default user roles. The green checkmark icon <i class="fa fa-check" style="color:#1cb396"></i> indicates full (read and write) access. Because your WFM plan also determines your access rights, you may not have access to every item listed.
+Note: The tables in this article list components and features for relevant default user roles. The green checkmark icon <i class="fa fa-check" style="color:#1cb396"></i> indicates full (read and write) access. Because your WFM plan also determines available functionality, you may not have access to every item listed.
 
 ## Access to components and features
 
@@ -110,7 +108,7 @@ Note: In injixo Advanced and Enterprise WFM, **Monitoring** and **Administration
 |                                      |          Admin          |         Planner         |  Supervisor (advanced)  |   Supervisor (basic)    |
 | ------------------------------------ | :---------------------: | :---------------------: | :---------------------: | :---------------------: |
 | **Scheduling**                       |                         |                         |                         |                         |
-| **SchedulePro**                        |                         |                         |                         |                         |
+| **SchedulePro**                      |                         |                         |                         |                         |
 | Shift Center                         | <i class="fa fa-check"> | <i class="fa fa-check"> | <i class="fa fa-check"> |        Read only        |
 | Optimization                         | <i class="fa fa-check"> | <i class="fa fa-check"> |                         |                         |
 | Planning Periods                     | <i class="fa fa-check"> | <i class="fa fa-check"> |        Read only        |                         |
@@ -118,7 +116,7 @@ Note: In injixo Advanced and Enterprise WFM, **Monitoring** and **Administration
 | Insert Shift Sequences               | <i class="fa fa-check"> | <i class="fa fa-check"> |                         |                         |
 | Shift Requirement                    | <i class="fa fa-check"> | <i class="fa fa-check"> |                         |                         |
 | Exchange Overview                    | <i class="fa fa-check"> | <i class="fa fa-check"> |        Read only        |        Read only        |
-| **TimeManager**                        |                         |                         |                         |                         |
+| **TimeManager**                      |                         |                         |                         |                         |
 | Target Work Accounts                 | <i class="fa fa-check"> | <i class="fa fa-check"> |                         |                         |
 | Vacation Entitlement                 | <i class="fa fa-check"> | <i class="fa fa-check"> | <i class="fa fa-check"> |        Read only        |
 | ------------------------------------ | ----------------------- | ----------------------- | ----------------------- | ----------------------- |
@@ -126,7 +124,8 @@ Note: In injixo Advanced and Enterprise WFM, **Monitoring** and **Administration
 | Reports                              | <i class="fa fa-check"> | <i class="fa fa-check"> | <i class="fa fa-check"> | <i class="fa fa-check"> |
 | ------------------------------------ | ----------------------- | ----------------------- | ----------------------- | ----------------------- |
 | **Administration**                   |                         |                         |                         |                         |
-| **Scheduling**                         |                         |                         |                         |                         |
+| **Scheduling**                       |                         |                         |                         |                         |
+| Skills                               | <i class="fa fa-check"> | <i class="fa fa-check"> |        Read only        |                         |
 | Activities                           | <i class="fa fa-check"> | <i class="fa fa-check"> | <i class="fa fa-check"> |                         |
 | Day Models                           | <i class="fa fa-check"> | <i class="fa fa-check"> | <i class="fa fa-check"> |                         |
 | Week Time Patterns                   | <i class="fa fa-check"> | <i class="fa fa-check"> |        Read only        |                         |
@@ -154,6 +153,5 @@ Note: In injixo Advanced and Enterprise WFM, **Monitoring** and **Administration
 ## Access to injixo Me
 
 Users with the Agent role can click _Me_{:.menu-item} in the main navigation to see their calendar, request time off and swap shifts. Only **My Calendar** is accessible by default.
-
 
 Users with Admin access can click _Me_{:.menu-item}, and {% link_new configure injixo Me | features/injixo-me/set-up-injixo-me/configure-injixo-me.md %} to allow users with the Agent role to access additional features.

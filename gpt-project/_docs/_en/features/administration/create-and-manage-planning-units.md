@@ -13,8 +13,6 @@ related_articles:
     filepath: best-practices/how-to-use-virtual-planning-units.md
   - overwrite_title: Add title for untranslated source
     filepath: features/administration/activities.md
-  - overwrite_title: Add title for untranslated source
-    filepath: features/administration/planning-calendar.md
 redirect_from:
   - /planning-unit-configuration/
 redirect_reason: Updated filename on 21 August 2023

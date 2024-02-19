@@ -11,8 +11,6 @@ description: Crea i workload per rappresentare il volume di contatto storico e p
 related_articles:
   - overwrite_title: Add title for untranslated source
     filepath: features/forecast/injixo-forecast/what-is-the-injixo-forecast.md
-  - overwrite_title: Lavorare con i workload
-    filepath: features/forecast/injixo-forecast/work-with-workloads.md
   - overwrite_title: Attivare gli orari di apertura
     filepath: features/forecast/injixo-forecast/forecast-activate-business-hours.md
 ---
@@ -103,7 +101,7 @@ You only need an integration and historical data import if you want injixo to cr
 2. Click _Create Workload_{:.doc-button} in the upper right corner of the forecast page.
 3. In the *Basic configuration* section, enter a **Name** for your new workload.
 4. Select the **Time zone** to display data. Note: The set time zone must match the planning unit to save staff requirements.
-5. (Optional) Select the **Holiday region** to acknowledge all national holidays that affect your forecast for the year.
+5. (Optional) Select the **Holiday region** to acknowledge all public holidays that affect your forecast for the year.
 6. Select the **Planning unit** and the **Activity**. Note: You must select an option to calculate staff requirements.
     {{ 4 | image: 'Import Workload basic configuration section' }}
 7. Click the tab **Forecast import**.

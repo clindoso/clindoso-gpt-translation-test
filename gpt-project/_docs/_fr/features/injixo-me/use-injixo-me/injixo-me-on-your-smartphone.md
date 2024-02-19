@@ -1,27 +1,43 @@
 ---
-title: injixo Me sur smartphone
+title: Utiliser injixo Me sur smartphone
+toc: true
+product_label:
+  - essential
+  - advanced
+  - enterprise
+  - classic
+description: Paramétrez votre smartphone pour accéder rapidement à injixo Me.
 redirect_from:
-  - /fr/me-sur-smartphone/
-redirect_reason: Updated filename on 03 July 2023
+  - /fr/injixo-me-on-your-smartphone/
+  - /fr/me-sur-smartphone
+redirect_reason: Updated filename on 03 January 2023
 ---
 
-injixo Me est accessible depuis n'importe quel appareil via un navigateur internet. Il est possible de créer une icône de raccourci sur l'écran d'accueil de votre smartphone.
+Vous pouvez enregistrer injixo Me comme favori sur les appareils mobiles.
 
-## Sur Android
-### Sur Google Chrome
-1. Ouvrir Google Chrome
-2. Aller à l'URL [https://www.injixo.com/login](https://www.injixo.com/login) et se connecter
-3. Dans le menu contextuel de Chrome, sélectionner *Ajouter à l'écran d'accueil*
+## Android&nbsp;: Google Chrome
 
-### Sur Firefox
-1. Ouvrir Firefox
-2. Aller à l'URL [https://www.injixo.com/login](https://www.injixo.com/login) et se connecter
-3. Faire un appui long sur la barre d'adresse
-4. Sélectionner *Ajouter à l'écran d'accueil*
+1. Ouvrez Google Chrome.
+2. Connectez-vous à injixo.com/login avec vos identifiants injixo.
+3. Appuyez sur le bouton menu dans Chrome.  
+   Il ressemble généralement à trois points verticaux, mais certains appareils Android ont un bouton menu physique.
+4. Appuyez sur _Ajouter à l’écran d’accueil_{:.doc-button}.
 
-## Sur iOS
-1. Ouvrir Safari (la manipulation ne fonctionne pas sur les autres navigateurs)
-2. Aller à l'URL [https://www.injixo.com/login](https://www.injixo.com/login) et se connecter
-3. Sélectionner *Partager en bas de l'écran* puis *Sur l'écran d'accueil*
-4. Donner un nom au lien
-5. Cliquer sur *Ajouter*
+## Android&nbsp;: Firefox
+
+1. Ouvrez Firefox.
+2. Connectez-vous à injixo.com/login avec vos identifiants injixo.
+3. Appuyez sur le bouton menu dans Firefox.  
+   Il ressemble généralement à trois points verticaux, mais certains appareils Android ont un bouton menu physique.
+4. Appuyez sur _Ajouter à l’écran d’accueil_{:.doc-button}.
+
+## Apple&nbsp;: Safari
+
+1. Ouvez Safari.
+2. Connectez-vous à injixo.com/login avec vos identifiants injixo.
+3. Appuyez sur le bouton de partage au bas de l’écran.
+4. Faites défiler jusqu’à l’option _Ajouter à l’écran d’accueil_{:.doc-button}.
+5. (Facultatif) Modifiez le nom du lien. Utilisez injixo Me (ou un nom descriptif similaire).
+6. Cliquez sur le bouton _Ajouter_{:.doc-button}.
+
+Remarque&nbsp;: cette option ne fonctionnera pas avec d’autres navigateurs mobiles sur iOS.

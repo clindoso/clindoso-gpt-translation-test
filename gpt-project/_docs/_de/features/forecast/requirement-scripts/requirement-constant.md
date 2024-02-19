@@ -23,7 +23,7 @@ Der Einsatz des Skripts ist sinnvoll, wenn
 
 2. Wähle für jede Aktivität einzeln eine **Planungseinheit** und eine **Aktivität**.
 
-3. Gib den Bedarf für einen oder mehrere Zeitabschnitte des Tages in die entsprechenden Felder ein. Möglich sind Eingaben mit einer maximalen Dauer von 24 Stunden, d.h. von *00:00* bis *00:00*. Die Werte für die ausgefüllten Zeitabschnitte werden nur geschrieben, wenn die entsprechenden Checkboxen angehakt sind.
+3. Gib den Bedarf für einen oder mehrere Zeitabschnitte des Tages in die entsprechenden Felder ein. Möglich sind Eingaben mit einer maximalen Dauer von 24 Stunden, d.&nbsp;h. von *00:00* bis *00:00*. Die Werte für die ausgefüllten Zeitabschnitte werden nur geschrieben, wenn die entsprechenden Checkboxen angehakt sind.
 
 4. Klicke *Ok*{:.doc-button}, um die Daten zu schreiben.
 

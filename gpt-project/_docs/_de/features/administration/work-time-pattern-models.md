@@ -1,15 +1,16 @@
 ---
-title: Planungsmodelle
+title: Planungsmodelle erstellen
 redirect_from:
-  - /de/work-time-pattern-models/
+  - de/wtpm_creating/
+  - de/week_time_patterns/
+  - de/wtpm_overview.md/
+  - de/understanding_wtpms/
 product_label:
   - advanced
   - enterprise
   - classic
-description: Nutze Planungsmodelle, um Startzeit-Korridore und wöchentliche Rotationen für vollständig optimierte Schichtpläne zu erstellen.
+description: Verwende Planungsmodelle in deiner Schichtplanoptimierung, um sicherzustellen, dass deinen Mitarbeitern keine willkürlichen Schichten zugeteilt werden.
 related_articles:
-  - overwrite_title: Add title for untranslated source
-    filepath: features/administration/reference-date.md
   - overwrite_title: Add title for untranslated source
     filepath: features/scheduling/scheduling-optimization.md
   - overwrite_title: Add title for untranslated source
@@ -22,171 +23,159 @@ related_articles:
     filepath: best-practices/scheduling-split-shifts.md
 ---
 
-Benötigst Du Hilfe bei der Erstellung vollständig optimierter Schichtpläne mit wöchentlichen Rotationen oder einer gerechteren Verteilung von Spät- und Nachtschichten oder freien Tagen?
+Ein Planungsmodell besteht aus [Wochenmodellen](#wochenmodelle-erstellen) und legt fest, wie deinen Mitarbeitern {% link_new Tagesmodelle | features/administration/daymodels/daymodel-basics.md %} zugewiesen werden.
 
-Ohne Einschränkungen steht es der volloptimierten Planung (AutoScheduler) frei, jedes Tagesmodell zuzuweisen, das der Planungseinheit zugeordnet ist und dem Vertrag des Mitarbeiters entspricht. Planungsmodelle stellen sicher, dass die Mitarbeiter nicht einfach zufällige Schichten erhalten.
+Die folgende Grafik zeigt, wie Tagesmodelle und Wochenmodelle in einem Planungsmodell zusammenspielen.
 
-Planungsmodelle sind so aufgebaut, dass sie aus einem oder mehreren Wochenmodellen bestehen. Wochenmodelle wiederum enthalten mindestens ein Tagesmodell.
+{{ 1 | image: 'Aufbau eines Planungsmodells' }}
 
-## Wochenmodelle
+Mit Planungsmodellen kannst du wiederkehrende Schichtmuster anlegen und Einschränkungen für die Funktionalität **Optimierten Plan erstellen** festlegen.<br>
+Planungsmodelle bieten folgende Vorteile:
 
-Wochenmodelle gruppieren Schichten nach Startzeit, Schichtdauer, Aktivitäten oder was immer Du Dir vorstellen kannst. Typische Beispiele sind:
+- Sie legen fest, welche Tagesmodelle verwendet werden können, um einen Mitarbeiter zu planen.
+- Mitarbeiter erhalten keine willkürlichen Schichtkombinationen.
+- Sie legen Startzeiten für Schichten fest.
+- Sie legen eine Reihenfolge fest, in der Tagesmodelle zugewiesen werden.
 
- - Früh-, Mittel-, Spät- und Nachtschichten. Für Fairness durch wechselnde Nachtschichten oder andere unbeliebte Schichten.
- - Schichten gruppiert nach Schichtdauer. Um wechselnd mehr oder weniger Stunden in einer Woche zu planen.
- - Schichten mit unterschiedlichen Aktivitäten. Um verschiedene Aktivitäten wechselweise zu planen oder besser zu verteilen.
+Als Alternative zu Planungsmodellen kannst du Schichtfolgen verwenden oder {% link_new Verfügbarkeiten | features/administration/availabilities.md %} für deine Mitarbeiter konfigurieren.
 
-Wochenmodelle werden den Planungsmodellen zugeordnet.
+## Voraussetzungen
 
-### Erstellen eines Wochenmodells
+Um Planungsmodelle verwenden zu können, stelle sicher, dass folgendes zutrifft:
+- Du hast {% link_new Tagesmodelle | features/administration/daymodels/daymodel-creation.md %} und [Wochenmodelle](#wochenmodelle-erstellen) erstellt und den Wochenmodellen Tagesmodelle zugewiesen.
+- Planungsmodelle bestehen immer aus einem oder mehreren Wochenmodellen.
+- Wochenmodelle enthalten immer mindestens ein {% link_new Tagesmodell | features/administration/daymodels/daymodel-basics.md %}.
+- Du hast deinen Mitarbeitern Planungsmodelle zugewiesen.
 
-{{ 4 | image: 'Dialog zum Erstellen eines Wochenmodells', '50%' }}
+## Wochenmodelle erstellen
 
-Erstelle Wochenmodelle in *WFM > Administration > Scheduling > Wochenmodelle*{:.breadcrumbs}.
+Ein Wochenmodell ist eine Gruppe von Tagesmodellen. Du kannst Tagesmodelle nach beliebigen Kriterien gruppieren, z.&nbsp;B. Schichtlänge, geplante Aktivitäten, Startzeit usw.<br>
 
-1. Klicke auf das grüne *+*{:.doc-button} in der Aktionsleiste.
-2. Vergib einen **Namen**.
-3. Vergib eine **Kurzbezeichnung**.
-4. Wähle eine **Farbe**.
-5. Gib die **Maximale Anzahl von [Ausnahmetagen](#ausnahmetage) pro Woche** ein, falls erforderlich.
-6. Klicke *OK*{:.doc-button}.
+Du kannst Wochenmodelle nur innerhalb von Planungsmodellen verwenden. Für eine Arbeitswoche plant injixo Mitarbeiter entsprechend der im Wochenmodell enthaltenen Tagesmodelle. So kannst du dafür sorgen, dass deine Mitarbeiter gerechtere und möglichst gleichbleibende Arbeitszeiten haben.
 
-Füge anschließend ein oder mehrere Tagesmodelle hinzu.
+Um ein Wochenmodell zu erstellen, gehe wie folgt vor:
 
-### Hinzufügen von Tagesmodellen zu einem Wochenmodell
+1. Gehe zu _Plan > Konfiguration > Wochenmodelle_{:.breadcrumbs}.
+2. Klicke oben links auf das Neu-Icon {% icon item-add | icon-only %}.
+    Ein Konfigurationsfenster öffnet sich auf der rechten Seite.
+3. Konfiguriere das Wochenmodell:<br>
+  **Name**: Gib einen eindeutigen Namen ein (max. 50 Zeichen).<br>
+  **Kurzbezeichnung**: Gib den Namen oder eine Kurzversion davon ein (max. 25 Zeichen).<br>
+  **Farbe**: Die Farbe kann dir dabei helfen, das Wochenmodell in einer Liste zu identifizieren.<br>
+  **Maximale Anzahl von Ausnahmetagen pro Woche**: [Ausnahmetage](#ausnahmetage) erlauben injixo, von den Vorgaben des Wochenmodells abzuweichen, um den Mitarbeiterbedarf besser decken zu können.
+4. Klicke auf _OK_{:.doc-button}.
 
-1. Klicke auf das grüne *+*{:.doc-button} in der Kategorie Tagesmodelle des Wochenmodells.
-2. Wähle ein oder mehrere **Tagesmodelle** aus der Liste.
-3. Klicke *OK*{:.doc-button}.
+Du kannst deinem Wochenmodell jetzt Tagesmodelle hinzufügen.
 
-Wochenmodelle erlauben die Verwendung von {% link_new zeitlich fixierten | features/administration/daymodels/daymodel-creation.md | #zeitlich-fixierte-schicht %} und {% link_new variablen | features/administration/daymodels/daymodel-creation.md | #variable-schicht %} Tagesmodellen. Verwende aber, wann immer möglich, variable Tagesmodelle. Dadurch wird der Aufwand für die Verwaltung Deiner Tagesmodelle minimiert.
+### Tagesmodelle zu einem Wochenmodell hinzufügen
 
-> Tipps  
-> - Die volloptimierte Planung (AutoScheduler) plant nur Tagesmodelle, die der Planungseinheit zugeordnet sind. Wenn Du die Tagesmodelle der Planungseinheit eingeschränkt hast, werden u.U. nicht alle Mitarbeiter mit dem Planungsmodell geplant.
-> - Die volloptimierte Planung (AutoScheduler) ersetzt innerhalb von Tagesmodellen ersetzbare durch planbare Aktivitäten. Hinterlege, wenn möglich, nicht jede Aktivität einzeln in Deinen Tagesmodellen, sondern verwende die Systemaktivität *Anwesend* (ID 1) als Basisaktivität.
+1. Gehe im Konfigurationsfenster des Wochenmodells zum Abschnitt **Tagesmodelle** und klicke auf das Hinzufügen-Icon {% icon item-add | icon-only %}.
+2. Wähle ein oder mehrere Tagesmodelle aus der Liste.
+3. Klicke auf _OK_{:.doc-button}.
 
-## Planungsmodelle
+Du kannst einem Wochenmodell sowohl {% link_new fixe als auch variable Tagesmodelle | features/administration/daymodels/daymodel-basics.md | #tagesmodelltypen %} hinzufügen. Wenn du variable Tagesmodelle verwendest, kann die Funktionalität **Optimierten Plan erstellen** die optimale Startzeit von Schichten innerhalb der Vorgaben des Tagesmodells festlegen.
 
-Jedes Planungsmodell ist eine Sammlung von einem oder mehreren Wochenmodellen. Über das Planungsmodell definierst Du außerdem Regeln für die Abfolge der Wochenmodelle und für die Startzeit der Schichten.
+> Hinweis
+>
+> injixo kann nur die Tagesmodelle planen, die der Planungseinheit zugewiesen sind, der der Mitarbeiter zugewiesen ist. Wenn du die {% link_new Zuweisung der Tagesmodelle zu deiner Planungseinheit eingeschränkt | features/administration/create-and-manage-planning-units.md | #tagesmodelle-verwalten %} hast, kann es sein, dass Tagesmodelle, die du aufgrund deines Planungsmodells erwartest, nicht verwendet werden.
+>
+> injixo kann ersetzbare Aktivitäten innerhalb einer Schicht mit planbaren Aktivitäten ersetzen. Damit dies funktioniert, verwende variable Tagesmodelle für jede laut Vertrag vorgegebene Schichtdauer und verwende die Systemaktivität Anwesend (ID: 1) als {% link_new Basisaktivität | features/administration/daymodels/daymodel-basics.md | #basisaktivität-und-schichtdauer %}. Lege nicht für jede einzelne Aktivität ein Tagesmodell an.
 
-<!-- correct setting text -->
-Nutze *48402*{:.id-label} *Berücksichtigung von Mitarbeitern mit Planungsmodellen*, um nur Mitarbeiter mit einem zugewiesenen Planungsmodell zu planen. Standardmäßig plant die volloptimierte Planung (AutoScheduler) Mitarbeiter unabhängig von der Zuordnung eines Planungsmodells. Ist die Einstellung aktiv, müssen alle Mitarbeiter ein Planungsmodell haben.
+## Planungsmodelle erstellen
 
-### Erstellen von Planungsmodellen
+1. Gehe zu _Plan > Konfiguration > Planungsmodelle_{:.breadcrumbs}.
+2. Klicke oben links auf das Neu-Icon {% icon item-add | icon-only %}.
+3. Konfiguriere das Planungsmodell:<br>
+  **Name**: Gib einen eindeutigen Namen ein (max. 50 Zeichen).<br>
+  **Kurzbezeichnung**: Gib den Namen oder eine Kurzversion davon ein (max. 25 Zeichen).<br>
+  **Farbe**: Die Farbe kann dir dabei helfen, das Planungsmodell in einer Liste zu identifizieren.<br>
+  **Typ**: Der [Typ](#planungsmodelltypen) legt fest, wie injixo das Planungsmodell verwendet.<br>
+  **Wochenmodell für Ausnahmetage**: Wähle das Wochenmodell, das für [Ausnahmetage](#ausnahmetage) geplant werden soll.
+4. Klicke auf _OK_{:.doc-button}.
 
-{{ 5 | image: 'Anlegen eines Planungsmodells', '50%' }}
+Du kannst deinem Planungsmodell jetzt Wochenmodelle hinzufügen.
 
-Erstelle Planungsmodelle in *WFM > Administration > Scheduling > Planungsmodelle*{:.breadcrumbs}:
+### Wochenmodelle zu einem Planungsmodell hinzufügen
 
-1. Klicke auf das grüne *+*{:.doc-button} in der Aktionsleiste.
-2. Vergib einen **Namen**.
-3. Vergib eine **Kurzbezeichnung**.
-4. Wähle eine **Farbe**.
-5. Definiere einen [Typ](#vier-verschiedene-typen).
-6. Wähle das **Wochenmodell** für [Ausnahmetage](#ausnahmetage), falls notwendig.
-7. Klicke *OK*{:.doc-button}.
+1. Klicke im Konfigurationsdialog des Planungsmodells im Abschnitt **Wochenmodelle** auf das Hinzufügen-Icon {% icon item-add | icon-only %}.
+2. Wähle ein Wochenmodell aus der Liste aus.
+3. Setze eine Position.<br>
+  Wenn du mehrere Wochenmodelle hinzufügst, klicke auf das {% icon down-arrow-blue %} und das {% icon up-arrow-blue %}, um die Position zu ändern.
+4. Klicke auf _OK_{:.doc-button}.
 
-Füge anschließend ein oder mehrere Wochenmodelle hinzu.
+### Position
 
-### Hinzufügen eines Wochenmodells zu einem Planungsmodell
+Die Position der Wochenmodelle in Planungsmodellen spielt eine Rolle, wenn du Planungsmodelle vom [Typ&nbsp;B oder&nbsp;D](#planungsmodelltypen) verwendest. injixo weist die Wochenmodelle in der hier konfigurierten Reihenfolge zu.
 
-<!-- screenshot? -->
+Verwende das {% icon down-arrow-blue %} und das {% icon up-arrow-blue %}, um die Position der Wochenmodelle festzulegen.
 
-1. Klicke auf *+*{:.doc-button} in der Unterkategorie Wochenmodelle innerhalb des Planungsmodells.
-2. Wähle ein **Wochenmodell**.
-3. Setze eine **Position**.
-4. Klicke *OK*{:.doc-button}.
+## Planungsmodelltypen
 
-#### Position
+| Typ | Name               | Verwendung des Wochenmodells                                                      | Zuweisung von Tagesmodellen | Startzeit der Schicht              | Auswirkung             |
+| ---- | ------------------ | -------------------------------------------------------------------------- | -------------------- | ----------------------------- | --------------------------------- |
+| A    | Flexible Auswahl | injixo kann jedes Tagesmodell aus jedem enthaltenen Wochenmodell für jeden Tag in jeder Woche auswählen. | injixo kann jedes Tagesmodell aus jedem Wochenmodell verwenden. | Flexibel    | Je nach den Öffnungszeiten deines Unternehmens kann Typ&nbsp;A zu einer Schichtverteilung führen, die deine Mitarbeiter als willkürlich oder stressig empfinden. Es kann beispielsweise vorkommen, dass ein Mitarbeiter die Frühschicht am Montag, die Nachtschicht am Dienstag und die Abendschicht am Mittwoch zugeteilt bekommt. |
+| B    | Starre Rotation     | injixo plant die Reihenfolge der Wochenmodelle entsprechend ihren Positionen. | injixo wählt für jede Woche das Tagesmodell aus, mit dem der Mitarbeiterbedarf am besten gedeckt wird. | Fix    | Jedem Mitarbeiter wird für die gesamte Woche das gleiche Tagesmodell zugewiesen, z.&nbsp;B. Start um 9&nbsp;Uhr von Montag bis Freitag. Lege [Ausnahmetage](#ausnahmetage) fest, wenn du ein anderes Tagesmodell verwenden möchtest. Starre Rotation sorgt von allen vier Typen für die konstanteste Schichtzuteilung. |
+| C    | Variable Rotation  | injixo hält sich nicht an die festgelegte Position der Wochenmodelle. | injixo wählt ein Tagesmodell für die gesamte Woche aus. | Fix    | Mitarbeiter können jedes Wochenmodell zugewiesen bekommen, um den Mitarbeiterbedarf bestmöglich zu decken. Da die Schichten immer zur selben Zeit beginnen, haben die Mitarbeiter im Lauf der Woche gleichbleibende Arbeitszeiten. |
+| D    | Kombi-Rotation (A/B) | injixo hält sich an die für die Wochenmodelle festgelegte Position. | injixo wählt ein Tagesmodell für die gesamte Woche aus.| Flexibel (innerhalb eines Zeitrahmens)    |  Je nach Mitarbeiterbedarf kann injixo Mitarbeiter für Frühschichten planen, die zwischen 8&nbsp;Uhr und 10&nbsp;Uhr beginnen. Mit Typ&nbsp;D kann injixo flexibler planen, um den Mitarbeiterbedarf zu decken. Gleichzeitig erhalten deine Mitarbeiter relativ konsistente Schichtpläne. |
 
-Ändere die Reihenfolge der Wochenmodelle mithilfe der blauen Pfeile ↑ ↓. Das Verschieben nach oben und unten spielt eine wichtige Rolle für die Planungsmodelle Typ B (starre Rotation) und D (Kombi-Rotation). Diese beiden Typen befolgen strikt die Reihenfolge der Wochenmodelle bei der Auswahl von Tagesmodellen.
+Die folgende Grafik stellt dar, wie sich die verschiedenen Planungsmodelltypen auf deinen Schichtplan auswirken. Dieses Beispiel zeigt ein Planungsmodell mit vier Wochenmodellen und drei Tagesmodellen je Wochenmodell.
 
-### Vier verschiedene Typen
-
-Typ     | Name                            | Beschreibung
-------- | ------------------------------- | --------------------------------------------------------------------------------------------
-A       | Flexible Auswahl                | Typ A erlaubt jedes Tagesmodell aus allen zugewiesenen Wochenmodellen für jeden Tag in jeder Woche. Ein Mitarbeiter kann am Montag früh, am Dienstag nachts und am Mittwoch spät arbeiten, usw. <sup>1</sup>
-B       | Starre Rotation                  | Typ B verwendet die Abfolge der Wochenmodelle. <sup>2</sup> Ein Mitarbeiter erhält das gleiche Tagesmodell für die gesamte Woche, z. B. ab 9 Uhr von Montag bis Freitag. Die Regel kann nur durch die Definition von Ausnahmetagen gebrochen werden.
-C        | Variable Rotation              | Typ C ignoriert die Abfolge der Wochenmodelle. <sup>2</sup> Schichten müssen während einer Woche die gleiche Startzeit haben. Die Rotation startet neu, wenn jedes Wochenmodell verwendet wurde.
-D        | Kombi-Rotation (A/B) | Typ D verwendet die Abfolge der Wochenmodelle. <sup>2</sup> und kombiniert Typ A und B. Die Schichten können während der Woche unterschiedliche Startzeiten haben.
-
-<sup>1</sup> Füge Einschränkungen bei Verfügbarkeiten oder Verträgen hinzu, damit der Schichtplan für die Mitarbeiter angemessen bleibt.  
-<sup>2</sup> Abfolge der Wochenmodelle: Verwendung des ersten Wochenmodells für Woche 1, des zweiten für Woche 2, usw. Woche 1 wird durch das {% link_new Referenzdatum | features/administration/reference-date.md %} definiert, das Du bei der Zuordnung des Planungsmodells zum Mitarbeiter festlegst.
-
-Dein Planungsmodell kann ein oder mehrere Wochenmodelle enthalten. Wähle Typ A oder D für flexible Startzeiten und Typ B oder C für feste Startzeiten.
-
-Das Planungsmodell im folgenden Beispiel enthält vier Wochenmodelle mit jeweils drei Tagesmodellen, die durch unterschiedliche Farben gekennzeichnet sind.
-
-{{ 1 | image: 'Beispiel für unterschiedliche Typen' }}
+{{ 2 | image: 'Beispiel-Schichtplan mit den verschiedenen Planungsmodelltypen' }}
 
 ## Ausnahmetage
 
-Ausnahmetage erlauben es, die Regeln zu brechen, die der [Typ des Planungsmodells](#vier-verschiedene-typen) definiert.
+Ausnahmetage erlauben injixo, von den Vorgaben des verwendeten [Planungsmodelltypen](#planungsmodelltypen) abzuweichen. Zum Beispiel könntest du Ausnahmetage verwenden, um eine Nachtschicht in einer Woche zu planen, in der der Mitarbeiter normalerweise in der Morgenschicht arbeitet.<br>
 
-Ein Anwendungsbeispiel könnte ein Muster mit zwei Spät- oder einer Nachtschicht pro Woche sein.
+Ausnahmetage priorisieren den Mitarbeiterbedarf und sorgen für eine bessere Deckung. Allerdings führen sie zu weniger konsistenten Schichtplänen für deine Mitarbeiter.
 
-Mit Ausnahmetagen arbeiten:
+Um Ausnahmetage zu planen, gehe wie folgt vor:
 
-1. Erstelle ein separates Wochenmodell. Es enthält die als Ausnahmen zu verwendenden Tagesmodelle.
-2. Definiere in einem oder mehreren der anderen Wochenmodellen die Anzahl der zulässigen Ausnahmen pro Woche.
-3. Wähle das Wochenmodell mit den Ausnahmen in einem Planungsmodell aus.
+1. [Erstelle ein separates Wochenmodell](#wochenmodelle-erstellen) und füge ihm die Tagesmodelle hinzu, die du als Ausnahmen verwenden möchtest.
+2. Lege im Konfigurationsdialog des Wochenmodells, das du für die Standardschicht verwenden möchtest, die Anzahl der Ausnahmetage pro Woche fest.
+3. Wähle im Konfigurationsdialog des Planungsmodells das Wochenmodell aus, das du für die Ausnahmetage verwenden möchtest.
 
-Die volloptimierte Planung (AutoScheduler) plant nur eine Woche unter Verwendung der verfügbaren Tagesmodelle, ohne diejenigen für die Ausnahmetage. Stelle sicher, dass die normalen Tagesmodelle in die Arbeitswoche passen, die {% link_new im Vertrag definiert ist | features/administration/create-contracts.md %}. Wenn die Konfiguration mit dem Vertrag zusammenpasst, darf die Optimierung ein gewöhnliches Tagesmodell gegen eines für Ausnahmetage austauschen, wenn dies eine bessere Deckung bedeutet.
+injixo kann dann bei der Auswahl von Tagesmodellen für die Woche keine Tagesmodelle verwenden, die für Ausnahmetage verwendet werden. Stelle sicher, dass alle für die Planung nötigen Stammdaten (d.&nbsp;h. alle verwendeten Tagesmodelle und alle Planungsmodelle) mit den im Vertrag des Mitarbeiters festgehaltenen {% link_new Arbeitszeitvorgaben | features/administration/create-contracts.md | #arbeitszeitvorgaben %} übereinstimmen. Wenn das für die Woche verwendete Tagesmodell mit dem Vertrag übereinstimmt, kann injixo das ursprüngliche Tagesmodell mit einem ersetzen, das für Ausnahmetage bestimmt wurde, um den Mitarbeiterbedarf besser zu decken.
 
-### Einem Mitarbeiter ein Planungsmodell zuweisen
+## Mitarbeitern Planungsmodelle zuweisen
 
-{{ 2 | image: 'Mitarbeiter ein Planungsmodell zuweisen', '50%' }}
+1. Gehe zu _Plan > Konfiguration > Mitarbeiter_{:.breadcrumbs}.
+2. Wähle einen Mitarbeiter aus der Liste.
+3. Klicke im Abschnitt **Planungsmodelle** auf das Hinzufügen-Icon {% icon item-add | icon-only %}.<br>
+   Ein Konfigurationsfenster öffnet sich auf der rechten Seite.
+4. Konfiguriere die Einstellungen:<br>
+  **Gültig vom/Gültig bis**: Lege einen {% link_new Gültigkeitszeitraum | features/administration/set-a-validity-period.md %} fest.<br>
+  **Planungsmodell**<br>
+  **Referenzdatum**: Setze ein Referenzdatum, um das Startdatum für das Planungsmodell festzulegen.
+5. Klicke auf _OK_{:.doc-button}.
 
-Weise Mitarbeitern ein Planungsmodell in *WFM > Administration > Scheduling > Mitarbeiter*{:.breadcrumbs} zu.
+Verwende die Funktionalität {% link_new Massenbearbeitung | features/administration/mass-update.md %}, um ein Planungsmodell mehreren Mitarbeitern gleichzeitig zuzuweisen.
 
-1. Wähle einen **Mitarbeiter**.
-2. Klicke *+*{:.doc-button} in der Unterkategorie Planungsmodelle.
-3. Wähle ein **Planungsmodell**.
-4. Setze ein {% link_new Referenzdatum | features/administration/reference-date.md %}. Wähle hierbei immer den ersten Tag der Woche.
-5. Klicke *Ok*{:.doc-button}.
-
-Verwende die Massenbearbeitung, um ein Planungsmodell mehreren Mitarbeitern gleichzeitig zuzuweisen. Verwende nicht den gleichen Montag als Referenzdatum für alle Mitarbeiter, falls Du eine fixe Rotation (Typ B) verwendest.
- <!-- only B or also C ? -->  
-
-## Zusammenfassung: Drei Schritte, um Rotationen zu definieren
-
-1. **Erstelle ein Wochenmodell**.
-   - Füge Tagesmodelle hinzu (vorher separat erstellt).
-   - Definiere die Anzahl von [Ausnahmetagen](#ausnahmetage).
-2. **Erstelle ein Planungsmodell**.
-   - Wähle einen [Typ](#vier-verschiedene-typen).
-   - Wähle bei Bedarf ein Wochenmodell für Ausnahmetage aus.
-   - Füge ein oder mehrere Wochenmodelle hinzu.
-   - Passe die Position der Wochenmodelle an (falls notwendig).
-3. **Füge das Planungsmodell einem Mitarbeiter hinzu**.
-   - Setze ein Referenzdatum.
+> Vorsicht bei der Verwendung der Massenbearbeitung, wenn du Planungsmodelle vom Typ B zuweist
+>
+> Wenn du die Funktionalität Massenbearbeitung verwendest und für alle dasselbe Referenzdatum setzt, werden alle Mitarbeiter mit demselben Wochenmodell zur selben Zeit geplant.
+>
+> Wähle stattdessen kleinere Gruppen für die Massenbearbeitung aus und setze für sie aufeinanderfolgende Montage als Referenzdatum. Auf diese Weise beginnt jede Gruppe ihre Rotation in einer anderen Woche.
 
 ## Beispiele
 
-Hier sind einige Beispiele für die Verwendung von Planungsmodellen. Planungsmodelle sind ziemlich mächtig und es sind viele Konfigurationen möglich, daher ist eine gute Planung vorab entscheidend.  
-Verträge und Tagesmodelle sowie die Zuordnungen von Tagesmodellen zu Planungseinheiten müssen korrekt sein, ebenso wie die Konfiguration des Planungsmodells und der Wochenmodelle selbst.
+### Beispiel A: Starre Rotation mit Früh- und Spätschichten
 
-### Fixe Rotation mit Früh-, Mittel- und Spätschichten
+Konfiguriere ein Planungsmodell vom Typ&nbsp;B (starre Rotation) und weise diesem drei verschiedene Wochenmodelle zu. Denke daran, die Position für die Wochenmodelle festzulegen.
 
-Nutze ein Planungsmodell vom Typ B (starre Rotation) und weise diesem drei verschiedene Wochenmodelle zu:
+- Wochenmodell&nbsp;1 (Position&nbsp;1) enthält Tagesmodelle für Morgenschichten (Schichtbeginn zwischen 7&nbsp;Uhr und 9&nbsp;Uhr).
+- Wochenmodell&nbsp;2 (Position&nbsp;2) enthält Tagesmodelle für Abendschichten (Schichtende um 23&nbsp;Uhr).
+- Wochenmodell&nbsp;3 (Position&nbsp;3) enthält Tagesmodelle für Nachmittagsschichten (Schichtbeginn zwischen 11&nbsp;Uhr und Mittag).
 
-* Wochenmodell 1 (Position 1) enthält Frühschichten.
-* Wochenmodell 2 (Position 2) enthält Mittelschichten.
-* Wochenmodell 3 (Position 3) enthält Spätschichten.
+Mit diesem Planungsmodell rotieren die Mitarbeiter konsistent zwischen einer Woche mit Morgenschichten, einer mit Abendschichten und einer mit Nachmittagsschichten. 
 
-Die Position gibt die Reihenfolge des Wochenmodells im Planungsmodell an.
+Dies setzt ein gewisses Maß an Flexibilität voraus, aber die Mitarbeiter erhalten dafür im Wochenverlauf gleichbleibende Arbeitszeiten.
 
-Ordne dieses Planungsmodell Deinen Mitarbeitern zu, indem Du ein {% link_new Referenzdatum | features/administration/reference-date.md %} festlegst.
+### Beispiel B: Ausnahmetage für Nachtschichten
 
-### Ausnahmetage für Nachtschichten
+Konfiguriere ein Planungsmodell mit drei verschiedenen Wochenmodellen. Konfiguriere maximal zwei Ausnahmetage pro Woche.
 
-<!-- type suggestions missing, maybe it doesn't matter -->
+- Wochenmodell&nbsp;1 enthält Tagesmodelle für Morgenschichten.
+- Wochenmodell&nbsp;2 enthält Tagesmodelle für Abendschichten.
+- Wochenmodell&nbsp;3 enthält Tagesmodelle für Nachtschichten (wähle dieses im Dropdown-Menü **Wochenmodell für Ausnahmetage** aus).
 
-Ein Planungsmodell hat drei verschiedene Wochenmodelle mit
-
-* Tagesmodellen für Frühschichten
-* Tagesmodellen für Spätschichten
-* Tagesmodellen für Nachtschichten (dies ist das Wochenmodell für Ausnahmetage)
-
-Du möchtest, dass jeder Mitarbeiter zwischen der Frühschicht in der ersten Woche und der Spätschicht in der folgenden Woche wechselt.  
-Wenn Du für jede Woche maximal 2 Ausnahmetage festlegst und ein Mitarbeiterbedarf für Nachtschichten besteht, kann jeder Mitarbeiter, der dieses Planungsmodell hat, eine Nachtschicht für maximal zwei Tage (Nächte) pro Woche erhalten.
+Mit diesem Planungsmodell wechseln die Mitarbeiter zwischen Morgenschichten in der ersten Woche und Abendschichten in der zweiten Woche. Da du zwei Ausnahmetage festgelegt hast, kann es auch vorkommen, dass den Mitarbeitern bis zu zwei Nachtschichten pro Woche zugewiesen werden, wenn dies die beste Option ist, um den Mitarbeiterbedarf zu decken.

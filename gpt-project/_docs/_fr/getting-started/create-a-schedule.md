@@ -61,7 +61,7 @@ Dans _Plan > Congés/Absences_{:.breadcrumbs}, approuvez ou rejetez les {% link_
 
 Dans {% link_new Schedules | features/scheduling/schedules/schedules-overview.md %}, le {% link_new Centre de planification | features/scheduling/shiftcenter/shift-center-overview.md %} ou {% link_new Dashboards | features/monitoring/dashboards/dashboards-overview.md %}, vérifiez si le {% link_new besoin en personnel | features/forecast/injixo-forecast/staff-requirement.md %} est correctement configuré pour vos activités.
 
-1. Insérez des {% link_new rotations d’horaires | features/scheduling/capacity/capacity-insert-shift-sequences.md %} pour vos employés.
+1. Insérez des {% link_new rotations d’horaires | features/scheduling/schedules/schedules-insert-shift-sequences.md %} pour vos employés.
 2. Configurez et utilisez d’autres {% link_new méthodes de planification | features/scheduling/scheduling-methods.md %} pour compléter le planning.
 3. {% link_new Optimisez les activités | features/scheduling/schedules/schedules-job-optimization.md %}. Vous pouvez passer cette étape si vous {% link_new créez un planning optimisé | features/scheduling/schedules/schedules-job-optimization.md %}.
 

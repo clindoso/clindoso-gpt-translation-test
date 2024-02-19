@@ -38,7 +38,7 @@ Die Skriptoberfläche ist in mehrere Abschnitte unterteilt.
 
 4. Definiere einige Backoffice-spezifische Parameter. Wähle eine Option und füge Werte in das dazugehörige Feld ein:   
   * **Jobs innerhalb von x Stunden bearbeiten** bestimmt den Zeitrahmen, in dem Dokumente bearbeitet werden müssen, z.B. Dokumente, die innerhalb von 8 Stunden bearbeitet werden müssen.
-  * **Jobs vor x um y bearbeiten**. Verwende diese Option, um die Anzahl der Dokumente zu verarbeiten, die bis zum Zeitpunkt X in der Warteschlange vor dem Zeitpunkt Y eingegangen sind. Beispiel: 230 Dokumente sind über Nacht eingetroffen. Alle Dokumente, die vor 8 Uhr morgens eingegangen sind, müssen bis zum Geschäftsschluss, d.h. bis 17 Uhr desselben Tages, verarbeitet werden.
+  * **Jobs vor x um y bearbeiten**. Verwende diese Option, um die Anzahl der Dokumente zu verarbeiten, die bis zum Zeitpunkt X in der Warteschlange vor dem Zeitpunkt Y eingegangen sind. Beispiel: 230 Dokumente sind über Nacht eingetroffen. Alle Dokumente, die vor 8 Uhr morgens eingegangen sind, müssen bis zum Geschäftsschluss, d.&nbsp;h. bis 17 Uhr desselben Tages, verarbeitet werden.
 5. Setze **Nur unter den Öffnungszeiten verteilen**, um die berechneten Werte innerhalb der Queue-Öffnungszeiten zu verteilen. Entferne das Häkchen, um 24 Stunden zu nutzen.
 
 ### Datum

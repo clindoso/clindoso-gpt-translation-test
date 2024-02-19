@@ -20,7 +20,7 @@ Falls Du in Deinem injixo Cloud WFM-Plan noch Xlink verwendest, aktualisiere Dei
 
 </div>
 
-Der Import erfolgt immer für den gesamten Tag, d.h. bei einem historischen Import für einen größeren Zeitraum werden immer mehrere aufeinander folgende Importvorgänge für die jeweiligen Einzeltage ausgeführt.  
+Der Import erfolgt immer für den gesamten Tag, d.&nbsp;h. bei einem historischen Import für einen größeren Zeitraum werden immer mehrere aufeinander folgende Importvorgänge für die jeweiligen Einzeltage ausgeführt.  
 Der gewählte Import-Modus gilt für alle externen Systeme. Es ist nicht möglich unterschiedliche Modi nur für bestimmte Schnittstellen zu konfigurieren.
 
 ## Automatischer Import

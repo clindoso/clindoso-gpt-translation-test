@@ -18,19 +18,19 @@ Nur Benutzer mit Admin-Zugriff können die IP-Filterung aktivieren.
 
 > Hinweis
 > 
-> Wenn du die IP-Filterung aktivierst, werden alle aktiven Benutzer abgemeldet. Je nachdem, mit welchem Produktbereich Benutzer arbeiten, variiert die Zeit bis zur Abmeldung:
+> Wenn du die IP-Filterung aktivierst, werden alle aktiven Benutzer abgemeldet. Je nachdem, in welchem Produktbereich Benutzer arbeiten, erfolgt die Abmeldung zu unterschiedlichen Zeitpunkten:
 > - Sofortige Abmeldung
 > - Abmeldung, wenn Daten das nächste Mal geladen oder gespeichert werden
 > - Zeitgesteuerte Abmeldung (nur, wenn du über _Plan > Schicht Center_{:.breadcrumbs} auf Schicht Center zugreifst)
->  
-> Um weiterhin mit injixo arbeiten zu können, müssen Benutzer sich erneut anmelden.
+> 
+> Um weiterhin mit injixo arbeiten zu können, müssen die Benutzer sich erneut anmelden.
 
 1. Gehe zu _Account > Sicherheit_{:.breadcrumbs} und scrolle zum Abschnitt **IP-Filterung**.
 2. Gib in den **IP-Adressbereich**-Feldern die IP-Adressbereiche im [CIDR-Format](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing#:~:text=CIDR%20notation%20specifies%20an%20IP,bits) ein. Du kannst bis zu drei IP-Adressbereiche hinzufügen.
 3. Klicke auf _IP-Filterung aktivieren_{:.doc-button}.
 
-Die IP-Filterung betrifft nur Interaktionen mit der Benutzeroberfläche. Wenn du über URL auf das optional verfügbare Schicht Center zugreifst, ist die IP-Filterung nicht aktiv.
-
+Die IP-Filterung betrifft nur Interaktionen auf der Benutzeroberfläche. Wenn du über eine Direkt-URL auf das optional verfügbare Schicht Center zugreifst, ist die IP-Filterung nicht aktiv.
+ 
 ## IP-Adressbereiche bearbeiten
 
 > Hinweis

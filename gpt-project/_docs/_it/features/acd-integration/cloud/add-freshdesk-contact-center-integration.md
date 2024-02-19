@@ -17,9 +17,9 @@ Un'integrazione Freshdesk Contact Center è un'integrazione cloud che importa la
 
 È la prima volta che ti occupi di integrazioni? Meglio cominciare dalle {% link_new basi | features/acd-integration/cloud/how-integrations-work.md %}.
 
-## Aggiungere un’integrazione Freshdesk Contact Center 
+## Aggiungere un’integrazione Freshdesk Contact Center
 
-Per aggiungere una nuova integrazione di Freshdesk Contact Center in injixo, devi avere un account Freshdesk Contact Center del tipo Pro o Enterprise.
+Per aggiungere una nuova integrazione Freshdesk Contact Center in injixo, devi avere un account Freshdesk Contact Center del tipo Pro o Enterprise.
 
 1. Vai su _Account > Integrazioni_{:.breadcrumbs}.
 2. Se ci sono già altre integrazioni, clicca su _Aggiungi integrazione_{:.doc-button}.
@@ -31,7 +31,7 @@ Per aggiungere una nuova integrazione di Freshdesk Contact Center in injixo, dev
 1. Inserisci un nome unico per l’integrazione che identifichi l’origine dei dati.
 2. Nella sezione **Credenziali**, inserisci il nome completo del tuo dominio Freshdesk Contact Center, incluso il sottodominio, per esempio: esempio.freshcaller.com.
 3. Vai su Freshdesk Contact Center e copia una chiave API valida di un utente con il ruolo di Account Administrator.
-4. Torna su injixo e incolla la chiave API nel campo **API key**.
+4. Torna su injixo e incolla la chiave API nel campo **Chiave API**.
 5. Seleziona la [strategia di raggruppamento per le code importate](#nomi-delle-code-in-base-alla-strategia-di-raggruppamento).
 6. Clicca su _Salva integrazione_{:.doc-button}. 
 
@@ -40,7 +40,7 @@ Dopo aver salvato la configurazione, è possibile accedere alla sezione **Instal
 ## Installare l’app injixo
 
 1. Nella sezione **Installare l’app injixo**, genera e copia la **chiave API di injixo**.
-2. Imposta l’app injixo necessaria nel tuo account Freshdesk nel [Freshworks marketplace](https://www.freshworks.com/apps/freshcaller/injixo_1/).
+2. Imposta l’app injixo necessaria nel tuo account Freshdesk Contact Center nel [Freshworks marketplace](https://www.freshworks.com/apps/injixo_1).
 3. Nella pagina di installazione dell’app injixo, incolla la chiave API che hai copiato.
 4. Per importare dati in tempo reale, spunta la casella **Export real-time agent status data** nella pagina di installazione dell’app injixo del Freshworks marketplace.
 
@@ -55,3 +55,9 @@ Durante l’importazione dei dati, la strategia di raggruppamento influisce sul 
 | Instradamento (team/agente) | Nome dell’agente (se il nome del team non è assegnato) | Agente 1           |
 
 Per le chiamate che non hanno nessun gruppo in Freshdesk Contact Center, il nome della coda è Undefined_Queue.
+
+## Domande frequenti
+
+| Domanda                                                                                                                                                                       | Risposta                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| injixo smette improvvisamente di mostrare nuovi dati di Freshdesk Contact Center ma in **Account > Integrazioni** l’integrazione Freshdesk Contact Center ha ancora lo stato Operativo. Che cosa posso fare? | L'app injixo ottiene dati da Freshdesk Contact Center e invia eventi a injixo. In caso di errori di comunicazione tra l'app injixo e injixo, i dati di Freshdesk Contact Center potrebbero non essere più visualizzati. L'integrazione Freshdesk Contact Center non è in grado di rilevare eventuali errori di comunicazione.<br><br>Verifica che la chiave API di injixo che hai inserito durante la configurazione dell'app injixo nel tuo account Freshdesk Contact Center sia ancora valida. Se la chiave API non è più valida, aggiorna la chiave API di injixo nella pagina di installazione dell'app injixo. Se la chiave API è ancora valida, contatta l’assistenza di injixo. |

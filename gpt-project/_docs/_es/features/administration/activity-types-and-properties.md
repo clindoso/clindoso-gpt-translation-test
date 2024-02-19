@@ -71,11 +71,11 @@ Ejemplo de uso:
 
 - Añade una actividad de back-office sin requisitos de personal y con una duración de una hora a tu modelo de horario. La funcionalidad Planificación optimizada planificará la actividad con una duración de exactamente una hora. Si la actividad está configurada en el modelo de horario como elemento de pasillo, la actividad será movida  dentro del pasillo al intervalo de tiempo donde tenga el menor impacto en la cobertura de otras actividades.
 
-Opción 2: La actividad no es parte de un modelo de horario. En este caso, la funcionalidad Planificación optimizada no puede planificar la actividad automáticamente, y tampoco puede usarla para reemplazar otras actividades reemplazables. La actividad solo puede ser planificada manualmente.
+Opción 2: La actividad no es parte de un modelo de horario. En este caso, la funcionalidad Planificación optimizada no puede planificar la actividad automáticamente, y tampoco puede usarla para reemplazar otras actividades sustituibles. La actividad solo puede ser planificada manualmente.
 
 Ejemplo de uso:
 
-- Crea una actividad de horas extra que no esté incluida en ningún modelo de horario. La funcionalidad Planificación optimizada no planificará la actividad y no la usará para reemplazar actividades reemplazables. Añade la actividad a la planificación manualmente cuando sea necesario. En este escenario, siempre tienes control completo sobre cuándo la actividad es planificada, durante cuánto tiempo, y a quién se le asigna.
+- Crea una actividad de horas extra que no esté incluida en ningún modelo de horario. La funcionalidad Planificación optimizada no planificará la actividad y no la usará para reemplazar actividades sustituibles. Añade la actividad a la planificación manualmente cuando sea necesario. En este escenario, siempre tienes control completo sobre cuándo la actividad es planificada, durante cuánto tiempo, y a quién se le asigna.
 
 > Atención
 >

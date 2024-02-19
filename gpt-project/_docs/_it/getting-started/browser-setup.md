@@ -14,9 +14,7 @@ redirect_from:
 redirect_reason: Updated filename on 27 July 2023
 ---
 
-Leggendo questo articolo imparerai a configurare il browser per injixo.
-
-Per lavorare con i componenti basati su ActiveX in WFM, utilizza {% link_new Microsoft Edge in modalità Internet Explorer (IE) | support/faq/configure-edge-internet-explorer-mode.md %}. Trovi l’elenco dei browser compatibili nell’articolo sui {% link_new requisiti di sistema | getting-started/system-requirements.md | #requisiti-del-browser %}.
+Per lavorare con i componenti basati su ActiveX in WFM, utilizza {% link_new Microsoft Edge in modalità Internet Explorer (IE) | support/faq/configure-edge-internet-explorer-mode.md %}requisiti-del-browser. Trovi l’elenco dei browser compatibili nell’articolo sui {% link_new requisiti di sistema | getting-started/system-requirements.md | #requisiti-del-browser %}.
 
 Se non hai le autorizzazioni necessarie per modificare le impostazioni del browser o installare un nuovo software, contatta il reparto informatico della tua azienda.
 
@@ -33,11 +31,11 @@ Nelle impostazioni del browser, aggiungi all’elenco dei siti affidabili tutte 
 5. Clicca su **Aggiungi**.
 6. Clicca su **Chiudi**.
 
-{{ 1 | image: 'impostazioni-di-protezione', '40%', 'jpg' }}
+{{ 1 | image: 'impostazioni-di-sicurezza', '45%', 'jpg' }}
 
 Regola il livello di sicurezza per i siti affidabili:
 
-1. Clicca sul menu avvio di Windows, digita Opzioni Internet, e premi Invio.
+1. Nel menu avvio di Windows, digita Opzioni Internet, e premi Invio.
 2. Nella scheda **Protezione**, seleziona l’area **Siti attendibili**.
 3. Deseleziona la casella **Abilita modalità protetta**.  
    Nota: questa casella non è più disponibile a partire da Windows 11.
@@ -73,7 +71,7 @@ Se utilizzi le impostazioni del browser descritte in precedenza, il client viene
 
 1. Vai su _WFM_{:.menu-item}.
 2. Aspetta che il download sia terminato e che l’installazione del client cominci.
-3. Il browser mostra il messaggio _Questa pagina web vuole eseguire il seguente add-on 'injixo Enterprise' di 'InVision AG'_. Se il messaggio non viene visualizzato, contatta il reparto informatico della tua azienda.
+3. Il browser mostra il messaggio: Questa pagina web vuole eseguire il seguente add-on 'injixo Enterprise' di 'InVision AG'.<br>Se il messaggio non viene visualizzato, contatta il reparto informatico della tua azienda.
 4. Clicca su _Installa_{:.doc-button} per installare gli add-on necessari.
 5. Clicca su _Installa_{:.doc-button} per installare il client.
 
@@ -83,7 +81,7 @@ Se l’installazione si è conclusa senza errori, potrai accedere ai componenti 
 
 Installa il client manualmente se utilizzi injixo WFM Enterprise on-premise o se l’installazione automatica non funziona.
 
-Nota: se utilizzi un sistema di distribuzione del software, lancia il programma di installazione per l’utente che effettuerà l’accesso al computer in seguito, utilizzando, per esempio, _msiexec.exe_ di Microsoft con l’opzione _runas /user_.
+Nota: se utilizzi un sistema di distribuzione del software, lancia il programma di installazione per l’utente che effettuerà l’accesso al computer in seguito, utilizzando, per esempio, msiexec.exe di Microsoft con l’opzione runas /user.
 
 1. Scarica la [versione più recente del client injixo](https://downloads.injixo.com/en#client-components).
 2. Per lanciare il programma di installazione MSI, clicca su _Esegui_{:.doc-button}.

@@ -30,7 +30,7 @@ If you are on the Essential WFM plan, you will not be able to send email invitat
 
 1. Go to _Me > My Calendar_{:.breadcrumbs} or to _Me > Dashboard_{:.breadcrumbs}.
 2. In **My Calendar**, click _Day_{:.doc-button} to switch to the daily view.
-3. In the section **7 Day Agenda**, click the offer icon _![Offer Button](/assets/img/common/injixo-me/offer.png)_{:.doc-button-icon} next to the shift you want to offer. The offer icon is visible only for available shifts.  
+3. In the section **7 Day Agenda**, click the offer icon _![Offer Button](/assets/img/common/injixo-me/offer.png)_{:.doc-button-icon} next to the shift you want to offer. The offer icon is visible if {% link_new shift swaps | features/scheduling/schedules/scheduling-periods/schedules-enable-employees-to-swap-shifts.md %} are allowed for this period and shift.
    A dialog window opens.
 4. Click _Swap_{:.doc-button}.  
    A drop-down menu opens where you can select one or multiple days that you would like to swap your shift on.  

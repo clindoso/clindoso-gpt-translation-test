@@ -12,8 +12,6 @@ product_label:
 description: Use work time pattern models in your schedule optimization to ensure that employees are not simply given random shifts.
 related_articles:
   - overwrite_title: Add title for untranslated source
-    filepath: features/administration/reference-date.md
-  - overwrite_title: Add title for untranslated source
     filepath: features/scheduling/scheduling-optimization.md
   - overwrite_title: Add title for untranslated source
     filepath: features/administration/employee-overview.md
@@ -116,11 +114,14 @@ Use the {% icon down-arrow-blue %} and the {% icon up-arrow-blue %} to define th
 | Type | Name               | Week time pattern use                                                      | Day model assignment | Shift start time              | Effect             |
 | ---- | ------------------ | -------------------------------------------------------------------------- | -------------------- | ----------------------------- | --------------------------------- |
 | A    | Flexible Selection | injixo can select any day model from any of the week time patterns included for every day of every week. | injixo can use any day model from any of the week time patterns. | Flexible    | Depending on your organization’s opening hours, type A can result in a shift distribution that seems random or stressful to your people. For example, a person could have to work early on Monday, at night on Tuesday, and late on Wednesday, etc. |
-| B    | Fixed Rotation     | injixo plans the week time patterns in the order defined by their positions. | For each week, injixo will choose the day model that best covers the staff requirements. | Fixed    | When you assign this type of work time pattern model to people, you must set a {% link_new reference date | features/administration/reference-date.md %}. The reference date defines when the work time pattern model is first used.<br> Each person is assigned the same day model for the entire week, e.g. starting at 9&nbsp;AM from Monday to Friday. This rule can only be broken by defining exception days. This is the most consistent shift assignment of all four types. |
+| B    | Fixed Rotation     | injixo plans the week time patterns in the order defined by their positions. | For each week, injixo will choose the day model that best covers the staff requirements. | Fixed    | Each person is assigned the same day model for the entire week, e.g. starting at 9&nbsp;AM from Monday to Friday. Define [exception days](#exception-days) if you want to plan a different day model. Fixed Rotation is the most consistent shift assignment of all four types. |
 | C    | Variable Rotation  | injixo does not respect the defined position of week time patterns. | injixo chooses one day model for the whole week. | Fixed    | People can be assigned any week time pattern to best meet staff requirements. Since the shifts start at the same time, people have consistent working hours throughout the week. |
 | D    | Combined Rotation (A/B) | injixo respects the position defined for the week time patterns. | injixo chooses one day model for the whole week.| Flexible (within a time frame)    |  Based on staff requirements, injixo can schedule people with early shifts to start working between 8&nbsp;AM and 10&nbsp;AM. With type D, injixo can schedule more flexibly to best meet staff requirements, while at the same time assigning fairly consistent schedules to your people. |
 
 
+The following graph shows how the different types of work time pattern models influence your schedule. This example includes a work time pattern model with four week time patterns (WTP in the graph), and three day models in each week time pattern.
+
+{{ 2 | image: 'Sample schedule with the different work time pattern model types' }}
 
 ## Exception days
 
@@ -145,7 +146,7 @@ When choosing a day model for the week, injixo cannot use the day models defined
 4. Configure the settings:<br>
   **Valid from/Valid to**: Set a {% link_new validity period | features/administration/set-a-validity-period.md %}.<br>
   **Work time pattern model**<br>
-  **Reference date**: Set a {% link_new reference date | features/administration/reference-date.md %} when the work time pattern model starts to be used.
+  **Reference date**: Set a reference date that defines the start day of the work time pattern model.
 5. Click _OK_{:.doc-button}.
 
 Use the {% link_new mass update | features/administration/mass-update.md %} functionality to assign a work time pattern model to several people at once.

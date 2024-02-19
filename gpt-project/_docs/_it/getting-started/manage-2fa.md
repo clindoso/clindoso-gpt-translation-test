@@ -19,7 +19,8 @@ Per visualizzare lo stato attuale della 2FA degli altri utenti, procedi come di 
 2. Nella colonna **2FA** a destra, un'icona a forma di scudo indica lo stato della 2FA per ogni utente. Passa il mouse sopra l’icona per ottenere altre informazioni.
   - Icona rossa {% icon 2FA-red | icon-only %}: la 2FA non è attiva.
   - Icona arancione con il punto esclamativo {% icon 2FA-orange | icon-only %}: la 2FA è stata imposta a quest’utente. L'utente dovrà attivare la 2FA la prossima volta che farà il login.
-  - Icona verde con il segno di spunta {% icon 2FA-green | icon-only %}: la 2FA è attiva.
+  - Icona arancione con il segno di spunta {% icon 2FA-activated | icon-only %}: la 2FA è attiva. È stata attivata dall'utente.
+  - Icona verde con il segno di spunta {% icon 2FA-green | icon-only %}: la 2FA è attiva. L’utilizzo della 2FA è stato imposto.
 
 ## Imporre la 2FA ad altri utenti
 Puoi imporre l’attivazione della 2FA ad altri utenti. Imporre la 2FA agli altri utenti ha le seguenti conseguenze:

@@ -4,50 +4,85 @@ product_label:
   - advanced
   - enterprise
   - classic
-description: Combinez les différentes méthodes de planification pour répondre aux besoins de votre organisation.
+description: Combinez les différentes méthodes de planification pour répondre à vos besoins organisationnels.
+related_articles:
+  - overwrite_title: Add title for untranslated source
+    filepath: features/scheduling/scheduling-methods.md
+  - overwrite_title: Add title for untranslated source
+    filepath: features/administration/shift-sequences.md
+  - overwrite_title: Add title for untranslated source
+    filepath: features/administration/availabilities.md
+  - overwrite_title: Add title for untranslated source
+    filepath: features/administration/work-time-pattern-models.md
 ---
 
-Vous pouvez combiner toutes les {% link_new méthodes de planification | features/scheduling/scheduling-methods.md %} de différentes façons pour équilibrer les besoins des conseillers et les contraintes de votre organisation.
+Vous pouvez combiner toutes les méthodes de planning de nombreuses façons pour créer des plannings permettant d’obtenir un équilibre entre les besoins de vos employés et ceux de votre organisation.
 
-Les exemples suivants illustrent plusieurs combinaisons possibles entre les méthodes de planification. Vous pouvez les utiliser telles qu’elles sont présentées ici ou vous en inspirer pour créer vos propres combinaisons.
+Les exemples suivants illustrent certains scénarios courants de combinaison des méthodes de planification. Vous pouvez également utiliser d’autres combinaisons de méthodes de planification pour répondre au mieux aux besoins de votre organisation.
 
-## Planification fixe et roulements/horaires totalement flexibles
+## Scénario 1&nbsp;: employés avec horaires flexibles et employés avec heures ou jours de travail spécifiques  
 
-Si vous souhaitez une majorité de plannings flexibles, vous pouvez assigner des modèles de planification aux conseillers avec un cycle flexible. Si le planning de certains conseillers contient des restrictions strictes ou si vous souhaitez récompenser les meilleurs conseillers ou les plus expérimentés, vous pouvez définir des rotations d’horaires pour ceux-ci.
+Pour ce scénario, vous pouvez combiner la planification fixe avec des roulements flexibles ou des horaires totalement flexibles.
 
-Lors de la planification, commencez par insérer vos rotations d’horaires, puis lancez une optimisation du planning. Vos roulements ou vos horaires flexibles seront optimisés selon la couverture prévue par vos rotations d’horaires.
+Pour planifier vos employés à l’aide de cette combinaison, vous devez d’abord paramétrer les données de configuration indiquées dans le tableau suivant et les assigner aux employés concernés&nbsp;:
 
-Si certains conseillers doivent travailler certains jours de la semaine, vous pouvez également créer une rotation d’horaires qui définit ces jours. Les jours restants doivent rester vides. Vous devez ensuite assigner un modèle de planification au conseiller concerné.
 
-Lorsque vous insérez la rotation et lancez une optimisation complète, les jours vides seront remplis par les horaires ou les roulements flexibles conformément aux règles des contrats pour créer un planning complet.
+| Employés avec horaires flexibles            | Employés travaillant sur des créneaux ou des jours spécifiques                                                                                                                |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Assignez aux employés le modèle de planification que vous souhaitez utiliser. | Créez des rotations d’horaires qui définissant les horaires ou les jours sur lesquels ils doivent travailler et laissez le reste de la semaine vide. <br>Assignez aux employés la rotation d’horaires et les modèles de planification pertinents.                                     |
 
-## Roulements flexibles et horaires totalement flexibles
+Pour planifier vos employés, suivez ces étapes&nbsp;:
 
-Si vous souhaitez que certains conseillers travaillent selon un planning en roulement, et d’autres de manière plus flexibles sur certains jours de la semaine, assignez le modèle de planification B ou D aux conseillers en roulement et le modèle de planification A à tous les autres.
-Les conseillers en roulement suivront le roulement défini, tandis que l’optimisation planifiera les employés flexibles de manière à répondre à vos autres besoins.
+1. Insérez vos rotations d’horaires.
+2. Utilisez la fonctionnalité **Optimiser le planning**.<br>injixo planifiera vos rotations et horaires totalement flexibles pour compléter la couverture fournie par les rotations d’horaires.
 
-## Roulements flexibles et disponibilités
 
-Si un conseiller travaille sur un planning en roulement, mais que ses disponibilités sont restreintes sur certaines heures (par exemple, il ne peut pas travailler après 17h00 le mercredi), définissez la restriction et assignez-lui un modèle de planification.
+## Scénario 2&nbsp;: employés en roulement et employés avec horaires fixes
 
-Sur les semaines pendant lesquelles le conseiller travaille le matin, ses disponibilités permettront de le planifier les mercredis. Cependant, sur les semaines pendant lesquelles il travaille le soir, ses disponibilités l’empêcheront d’être planifié les mercredis. Le moteur d’optimisation lui attribuera des horaires sur les autres jours de la semaine.
+Pour ce scénario, vous pouvez combiner la planification fixe avec des roulements flexibles ou des horaires totalement flexibles.
 
-## Planification fixe et disponibilités
+Pour planifier vos employés à l’aide de cette combinaison, vous devez d’abord assigner les données de configuration aux employés concernés, comme indiqué dans le tableau ci-dessous&nbsp;:
 
-Vous pouvez ajouter des modèles horaires de type Période de disponibilité dans les rotations d’horaires pour influencer la planification sur certains jours. Vous trouverez ci-dessous deux exemples possibles.
+| Employés avec roulements flexibles           | Employés avec horaires totalement flexibles                                                                                                                |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Assignez-leur des modèles de planification de type B ou D. | Assignez-leur des modèles de planification de type A.                                   |
 
-**Journées de travail un week-end sur deux**&nbsp;:
 
-1. Créez un modèle horaire de type Cadre de disponibilité avec un cadre temporel de 0h00 à 0h01 comme bloqueur.
-2. Ajoutez le modèle horaire dans une rotation d’horaires un week-end sur deux (laissez les autres jours vides).
-3. Assignez la rotation d’horaires aux conseillers et insérez la rotation avant de lancer l’optimisation.
+Utilisez la fonctionnalité **Optimiser le planning**.<br>Les employés avec rotations flexibles se verront assigner la rotation définie par leurs modèles de planification et ceux avec des horaires totalement flexibles seront assignés au reste du planning.
 
-injixo ne planifie le conseiller qu’un week-end sur deux et optimise les autres jours.
+## Scénario 3&nbsp;: employés avec rotations et disponibilité limitée
 
-**Travail de nuit une semaine sur deux**&nbsp;:
+Ce scénario concerne les employés qui travaillent en rotation mais qui se sont pas disponibles sur certains créneaux. Par exemple, ne pouvant pas travailler après 17h le mercredi.
 
-1. Créez un modèle horaire de type Cadre de disponibilité avec un cadre temporel de 12h00 à 0h00 comme bloqueur.
-2. Ajoutez le modèle horaire pour chaque jour de la semaine dans une rotation d’horaires (laissez les autres jours vides).
-3. Assignez la rotation d’horaires aux conseillers et insérez-la avant de lancer l’optimisation.
+Pour ce scénario, vous pouvez combiner les disponibilités et les rotations flexibles. 
 
-injixo planifiera les horaires de nuit pour le conseiller sur les semaines où celui-ci est disponible (conformément au modèle de planification). Pour les autres semaines, injixo planifie d’autres horaires.
+1. Configurez les {% link_new disponibilités | features/administration/availabilities.md %} qui définissent quand vos employés ne peuvent pas travailler. Dans le cas présent, ils sont disponibles le mercredi seulement jusqu’à 17h.
+2. Assignez-leur les modèles de planification concernés.
+
+Pour les semaines sur lesquelles les employés travaillent le matin, ils seront planifiés le mercredi.<br>Pour les semaines sur lesquelles les employés travaillent le soir, ils ne seront pas planifiés le mercredi et seront planifiés les autres jours de la semaine.
+
+## Scénario 4&nbsp;: employés avec horaires fixes et contraintes de disponibilité ponctuelles 
+
+Ce scénario concerne les employés qui travaillent en horaires fixes, mais ayant une disponibilité plus restreinte sur certains jours, par exemple en travaillant la nuit pendant le week-end, mais uniquement un week-end sur deux.
+
+Pour ce scénario, vous pouvez ajouter des {% link_new modèles horaires de type Période de disponibilité | features/administration/daymodels/daymodel-basics.md | #types-de-modèles-horaires %} aux {% link_new rotations d’horaires | features/administration/shift-sequences.md %} pour influencer les résultats de planification sur certains jours.<br>Vous trouverez ci-dessous deux exemples possibles.
+
+Pour planifier les employés un week-end sur deux, suivez ces étapes&nbsp;:
+
+1. Créez un modèle horaire de type Période de disponibilité avec un cadre temporel de minuit (0:00) à 0:01, qui servira de bloqueur.
+2. Ajoutez le modèle horaire à un week-end dans une rotation d’horaires de 14 jours et laissez les autres jours vides.
+3. Assignez la rotation d’horaires aux employés concernés.
+4. Insérez la rotation d’horaires dans votre planning.
+5. Utilisez la fonctionnalité **Optimiser le planning**.
+
+injixo ne planifie aucune journée un week-end sur deux, et optimise les jours restants.
+
+Pour planifier les employés de nuit une semaine sur deux, suivez ces étapes&nbsp;:
+
+1. Créez un modèle horaire de type Période de disponibilité avec un cadre temporel de minuit (0:00) à midi (12:00).
+2. Ajoutez le modèle horaire à chaque jour de la semaine dans une rotation d’horaires de 14 jours et laissez tous les autres jours vides.
+3. Assignez la rotation d’horaires aux employés concernés.
+4. Insérez la rotation d’horaires dans votre planning.
+5. Utilisez la fonctionnalité **Optimiser le planning**.
+
+injixo planifie les nuits pour le semaines pendant lesquelles les employés sont disponibles, en suivant le modèle de planification assigné à chaque employé. Pour les autres semaines, injixo peut planifier n’importe quelle journée conforme au modèle de planification.

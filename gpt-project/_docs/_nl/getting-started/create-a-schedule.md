@@ -61,7 +61,7 @@ In _Plan > Verlof/Afwezigheid_{:.breadcrumbs} kun je alle {% link_new ingediende
 
 Controleer in {% link_new Schedules | features/scheduling/schedules/schedules-overview.md %}, {% link_new Dienstrooster-Center | features/scheduling/shiftcenter/shift-center-overview.md %} of {% link_new Dashboards | features/monitoring/dashboards/dashboards-overview.md %}, of de {% link_new personeelsbehoefte | features/forecast/injixo-forecast/staff-requirement.md | #berekende-personeelsbehoefte-bekijken %} goed is ingesteld voor je activiteiten.
 
-1. Voer {% link_new dienstenseries | features/scheduling/capacity/capacity-insert-shift-sequences.md %} in voor je medewerkers.
+1. Voer {% link_new dienstenseries | features/scheduling/schedules/schedules-insert-shift-sequences.md %} in voor je medewerkers.
 2. Configureer en pas {% link_new planningsmethoden | features/scheduling/scheduling-methods.md %} toe om je planning af te ronden.
 3. Voer de {% link_new joboptimalisatie | features/scheduling/schedules/schedules-job-optimization.md %} uit. Je kunt deze stap overslaan als je een {% link_new geoptimaliseerde planning maakt | features/scheduling/schedules/schedules-job-optimization.md %}.
 

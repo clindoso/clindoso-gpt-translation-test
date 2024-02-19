@@ -8,13 +8,13 @@ description: Lees hoe je SSO configureert en gebruikt in injixo.
 
 SSO is een authenticatieproces waarmee gebruikers zich met slechts één paar aanmeldgegevens bij meerdere toepassingen kunnen aanmelden. Er wordt een vertrouwensrelatie tot stand gebracht tussen een centrale identiteitsbeheerservice (identiteitsprovider = IdP) en een toepassing (service provider = SP), in dit geval injixo.
 
-De identiteitsprovider is een product van een externe aanbieder, zoals OneLogin, Microsoft Azure AD, Okta of Google. Door SSO te gebruiken, profiteert je organisatie van een uniform beveiligingsbeleid, zoals twee-factor-authenticatie en wachtwoordrotatie. Gebruikers authenticeren zich bij de identiteitsprovider, die ze vervolgens naar injixo leidt.
+De IdP is een product van een externe aanbieder, zoals OneLogin, Microsoft Azure AD, Okta of Google. Door SSO te gebruiken, profiteert je organisatie van een uniform beveiligingsbeleid, zoals twee-factor-authenticatie en wachtwoordrotatie. Gebruikers authenticeren zich bij de IdP, die ze vervolgens naar injixo leidt.
 
 De IdP-configuratie is getest met de bovenstaande identiteitsproviders. Als je je specifieke IdP niet kunt integreren, neem dan contact met ons op.
 
 ## Vereisten
 
-Om injixo met de door jou gekozen identiteitsprovider te integreren, moet aan de volgende vereisten zijn voldaan: 
+Om injixo met de door jou gekozen IdP te integreren, moet aan de volgende vereisten zijn voldaan:
 
 - Ondersteuning van SAML 2.0-protocol
 - Toegang tot federatiemetadata via internet 
@@ -24,7 +24,7 @@ Om injixo met de door jou gekozen identiteitsprovider te integreren, moet aan de
 
 ## SSO inschakelen voor je account
 
-Alleen gebruikers met adminrechten kunnen SSO inschakelen.
+Alleen gebruikers met admintoegang kunnen SSO inschakelen.
 
 1. Registreer injixo als een nieuwe SAML- of SSO-toepassing in je IdP.  
    Je kunt [dit injixo-logo](/assets/img/common/injixo-logo.png) downloaden en aan de pagina van de webtoepassing toevoegen.
@@ -43,16 +43,18 @@ Alleen gebruikers met adminrechten kunnen SSO inschakelen.
    - IdP biedt geen federatiemetadata-URL:  In dit geval dien je het metagegevens-XML-bestand van de federatie zelf te downloaden en te hosten. Leer bijvoorbeeld hoe je je eigen aangepaste [SAML-toepassing configureert met Google](https://support.google.com/a/answer/6087519?hl=nl).
 
 6. Klik op _Configuratie opslaan_{:.doc-button}.  
-   SSO is nu actief, maar alle gebruikers kunnen zich nog steeds met hun gebruikersnaam en wachtwoord aanmelden.
-
-> Voor een nog hoger beveiligingsniveau kun je [SSO voor alle gebruikers verplicht stellen](#het-gebruik-van-sso-voor-alle-gebruikers-verplicht-stellen).
-
+   > SSO is nu actief  
+   >  
+   > Gebruikers kunnen zich nog steeds aanmelden met hun gebruikersnaam en wachtwoord. Klik op _Uitschakelen_{:.doc-button} om SSO opnieuw in te schakelen.  
+   > nog hoger beveiligingsniveau, kun je [SSO voor alle gebruikers verplicht stellen](#het-gebruik-van-sso-voor-alle-gebruikers-verplicht-stellen) nadat je de configuratie bij de volgende stap hebt getest.
+   
 ## De SSO-configuratie testen
 
 Klik op _Configuratie testen_{:.doc-button} om het aanmelden via de IdP te testen. De IdP genereert een SAML-reactie die naar injixo wordt gestuurd. Je wordt teruggeleid naar de aanmeldpagina van je IdP, waar je de IdP-aanmeldgegevens invoert. Als de IdP-configuratie correct is en het authenticatieproces succesvol is, word je ingelogd bij injixo.
 
 {{ 4 | image: 'Geslaagde test van de SSO- configuratie voor de huidige gebruiker', '80%' }}
 
+### Test niet geslaagd? Configureer de SAML-reactie.
 <!-- A valid SubjectConfirmation was not found on this Response in our internal server logs -->
 
 De SAML-reactie van de IdP bevat de bevestiging van de geauthenticeerde gebruiker met attributen en profielinformatie. Als de test niet is geslaagd en je een foutmelding ziet, controleer dan de configuratie van de toepassing, de configuratie van de gebruiker en de attributen Recipient, InResponseTo, NotBefore en NotOnOrAfter die in de IdP zijn ingesteld. 
@@ -99,7 +101,7 @@ Alleen gebruikers met beheerdersrechten kunnen e-mailadressen in injixo wijzigen
 
 ## Aanmelden met SSO
 
-Zodra SSO is geconfigureerd, kunnen je gebruikers zich aanmelden via [https://www.injixo.com/login/sso](https://www.injixo.com/login/sso). Ze voeren hun e-mailadres in en komen vervolgens op de aanmeldpagina van de identiteitsprovider terecht. Als gebruikers al zijn aangemeld, dan worden ze automatisch teruggeleid naar injixo. Als ze nog niet zijn aangemeld, dan dienen zij hun IdP-wachtwoord in te voeren.
+Zodra SSO is geconfigureerd, kunnen je gebruikers zich aanmelden via [https://www.injixo.com/login/sso](https://www.injixo.com/login/sso). Ze voeren hun e-mailadres in en komen vervolgens op de aanmeldpagina van de IdP terecht. Als gebruikers al zijn aangemeld, dan worden ze automatisch teruggeleid naar injixo. Als ze nog niet zijn aangemeld, dan dienen zij hun IdP-wachtwoord in te voeren.
 
 ## Toegang tot injixo intrekken
 
@@ -107,4 +109,10 @@ Om de injixo-toegangsrechten van een gebruiker via SSO in te trekken, dien je de
 
 ## SSO uitschakelen
 
-Om SSO uit te schakelen en aanmelden met gebruikersnaam en wachtwoord weer toe te staan, kan een gebruiker met adminrechten SSO uitschakelen. De IdP-verbinding en alle ingevoerde configuratiegegevens worden dan verwijderd. Nadat SSO is uitgeschakeld, ontvangen alle actieve gebruikers een e-mail om een nieuw wachtwoord voor injixo in te stellen. Daarna kunnen zij zich weer met hun gebruikersnaam en wachtwoord aanmelden op [https://www.injixo.com/login](https://www.injixo.com/login).
+Om SSO uit te schakelen en aanmelden met gebruikersnaam en wachtwoord weer toe te staan, kan een gebruiker met adminrechten SSO uitschakelen. De IdP-verbinding en alle ingevoerde configuratiegegevens worden dan verwijderd. Nadat SSO is uitgeschakeld, ontvangen alle actieve gebruikers een e-mail om een nieuw wachtwoord voor injixo in te stellen. Daarna kunnen zij zich weer met hun gebruikersnaam en wachtwoord aanmelden bij [https://www.injixo.com/login](https://www.injixo.com/login).
+
+## SSO op meerdere tenants gebruiken
+
+Als je organisatie meerdere tenants heeft, en je (een aantal van) je gebruikers toegang wilt geven tot meer dan een tenant, dan werkt de standaard SSO-configuratie niet. Neem contact op met je consultant om een configuratie in te stellen voor deze specifieke usecase.
+
+<!-- SSO for multiple tenants can be activated by the feature flag multi_tenant_sso, see also https://github.com/ivx/internal-support-documentation/tree/main/Cortex-->

@@ -8,7 +8,6 @@ product_label:
 description: Créer et configurer les employés à inclure dans la planification.
 redirect_from:
   - /fr/employes/
-redirect_reason: Updated filename on 21 April 2022
 related_articles:
   - overwrite_title: Add title for untranslated source
     filepath: features/scheduling/shiftcenter/shift-center-overview.md
@@ -27,14 +26,14 @@ Dans injixo, vous pouvez créer et modifier un employé de trois façons différ
 | Fonctionnalité                                           | Description              |
 | ----------------------------------------------- | ------------------------ |
 | _Plan > Configuration > Employés_{:.breadcrumbs}   | {% link_new Configurez un employé pour la planification | features/administration/employee-overview.md | #aperçu-des-paramètres-employés %}. Les employés qui ne sont assignés à aucune unité opérationnelle n’apparaîtront pas dans la liste.      |
-| _Account > Utilisateurs_{:.breadcrumbs}                                 | Gérez les droits utilisateur en ajoutant des {% link_new rôles utilisateur | getting-started/configure-user-roles.md | #créer-un-nouveau-rôle-utilisateur %}, {% link_new débloquez les utilisateurs verrouillés | getting-started/manage-user-accounts.md | #débloquer-les-utilisateurs %}, {% link_new définissez un nouveau mot de passe pour les utilisateurs | getting-started/manage-user-accounts.md | #définir-un-nouveau-mot-de-passe-utilisateur %}, et {% link_new vérifiez les utilisateurs facturés | getting-started/how-does-billing-work.md | #voir-les-utilisateurs-facturés-et-non-facturés %} et non facturés. Vous pouvez également {% link_new supprimer des utilisateurs | getting-started/manage-user-accounts.md | #supprimer-un-compte-utilisateur %} pour éviter leur facturation. |
+| _Account > Utilisateurs_{:.breadcrumbs}                                 | Gérez les droits utilisateur en ajoutant des {% link_new rôles utilisateur | getting-started/configure-user-roles.md | #créer-un-nouveau-rôle-utilisateur %}, {% link_new débloquez les utilisateurs verrouillés | getting-started/manage-user-accounts.md | #débloquer-les-utilisateurs %}, {% link_new définissez un nouveau mot de passe pour les utilisateurs | getting-started/manage-user-accounts.md | #définir-un-nouveau-mot-de-passe-utilisateur %} et {% link_new vérifiez les utilisateurs facturés | getting-started/how-does-billing-work.md | #voir-les-utilisateurs-facturés-et-non-facturés %} et non facturés. Vous pouvez également {% link_new supprimer des utilisateurs | getting-started/manage-user-accounts.md | #supprimer-un-compte-utilisateur %} pour éviter leur facturation. |
 | **People**                                                           | {% link_new Créez et gérez | features/people/manage-people.md %} le compte d’un employé et gérez les informations de contact et les adresses. |
 
-Dans  _Plan > Configuration > Employés_{:.breadcrumbs}, les utilisateurs sans accès administrateur ne peuvent voir que les employés assignés aux unités opérationnelles sur lesquelles ils ont des droits. Les employés non assignés à une unité opérationnelle n’apparaissent pas dans la liste, même si Tous est sélectionné dans l’unité opérationnelle et les menus de sélection. Seuls les utilisateurs disposant d’un accès administrateur peuvent voir tous les employés.
+Dans _Plan > Configuration > Employés_{:.breadcrumbs}, les utilisateurs sans accès administrateur ne peuvent voir que les employés assignés aux unités opérationnelles sur lesquelles ils ont des droits. Les employés non assignés à une unité opérationnelle n’apparaissent pas dans la liste, même si Tous est sélectionné dans l’unité opérationnelle et les menus de sélection. Seuls les utilisateurs disposant d’un accès administrateur peuvent voir tous les employés.
 
-Les employés et les utilisateurs sont synchronisés, il vous suffit donc de créer un employé une seule fois dans un seul module et vous ne serez facturé qu’une seule fois.
+Les employés et les utilisateurs sont synchronisés, il vous suffit donc de ne créer un employé qu’une seule fois et vous ne serez facturé qu’une seule fois.
 
-> Pour chaque employé ou utilisateur créé à partir de l’une de ces fonctionnalités, votre organisation sera {% link_new facturée | getting-started/how-does-billing-work.md %} jusqu'à leur {% link_new désactivation ou suppression | features/administration/deactivate-employees.md %}.
+> Pour chaque employé ou utilisateur créé à partir de l’une de ces fonctionnalités, votre organisation sera {% link_new facturée | getting-started/how-does-billing-work.md %} jusqu’à leur {% link_new désactivation ou leur suppression | features/administration/deactivate-employees.md %}.
 
 ## Créer un employé
 
@@ -60,10 +59,11 @@ Après avoir créé un employé avec les paramètres de base obligatoires, vous 
 Prérequis&nbsp;: {% link_new avoir configuré tous les éléments requis pour la planification | getting-started/set-up-base-configuration.md | #éléments-de-configuration-requis %}.
 
 1. Cliquez sur un employé dans la liste.<br>
-Vous pouvez utiliser les liens rapides en bleu en haut à droite pour accéder rapidement à une section.
-3. Cliquez sur l’{% icon item-add %} dans une section pour ajouter un nouveau paramètre. Pour modifier un paramètre existant, cliquez sur l’{% icon item-edit %}.<br>Pour en savoir plus, lisez la section sur les [options des paramètres individuels](#aperçu-des-paramètres-employés).
-4. (Facultatif) Dans certaines sections, vous pouvez configurer des {% link_new dates de validité | features/administration/set-a-validity-period.md %} pour limiter la période de validité d’un paramètre.
-5. Pour enregistrer vos modifications, cliquez sur _OK_{:.doc-button}.
+Vous pouvez utiliser les liens rapides bleus en haut à droite pour accéder rapidement à une section.
+2. Cliquez sur l’{% icon item-add %} dans une section pour ajouter un nouveau paramètre. Pour modifier un paramètre existant, cliquez sur l’{% icon item-edit %}.<br>Pour en savoir plus, lisez la section sur les [options des paramètres individuels](#aperçu-des-paramètres-employés).
+3. (Facultatif) Dans certaines sections, vous pouvez configurer des {% link_new dates de validité | features/administration/set-a-validity-period.md %} pour limiter la période de validité d’un paramètre.
+4. Pour enregistrer vos modifications, cliquez sur _OK_{:.doc-button}.
+
 
 ## Aperçu des paramètres employés
 
@@ -88,7 +88,7 @@ La liste suivante indique les éléments de configuration obligatoires à assign
 
 Les paramètres suivants ne sont pas obligatoires mais peuvent également être utilisés pour la planification. Pour en savoir plus à propos de chaque élément de configuration, suivez les liens.
 
-- {% link_new Disponibilité | features/administration/availabilities.md %}&nbsp;: définissez quels jours et sur quels horaires un employé est disponible pour la planification. Si vous souhaitez toujours exclure un employé de la planification certains jours de la semaine, définissez la disponibilité pour le {% link_new type de jour | features/administration/day-types.md %} sur une minute. Pour limiter la disponibilité de plusieurs employés à la fois, utilisez des modèles horaires de type {% link_new Cadre de disponibilité | features/administration/daymodels/daymodel-creation.md | #cadre-de-disponibilité %} dans les rotations d’horaires. Si un employé est disponible sans limitations, vous n’avez pas besoin d’ajouter de disponibilités.
+- {% link_new Disponibilité | features/administration/availabilities.md %}&nbsp;: définissez les jours et les heures auxquels un employé est disponible pour être planifié. Si vous souhaitez toujours exclure un employé de la planification certains jours de la semaine, définissez la disponibilité pour le {% link_new type de jour | features/administration/day-types.md %} concerné sur une minute. Pour limiter la disponibilité de plusieurs employés à la fois, utilisez des modèles horaires de type {% link_new Cadre de disponibilité | features/administration/daymodels/daymodel-creation.md | #cadre-de-disponibilité %} dans les rotations d’horaires. Si un employé est disponible sans limitations, vous n’avez pas besoin d’ajouter de disponibilités.
 
 - {% link_new Modèles horaires | features/administration/daymodels/daymodel-creation.md %}&nbsp;: par défaut, injixo utilise tous les modèles horaires attribués à l’unité opérationnelle pour créer des plannings pour vos employés. Si vous attribuez des modèles horaires personnels à un employé, l’optimisation du planning n’utilisera que ces modèles horaires spécifiques pour l’employé. Si vous ne souhaitez planifier que les employés qui ont été assignés à des modèles horaires personnels, vous pouvez activer la règle de planification _2661_{:.id-label} _Respecter les attributions de modèles horaires aux employés_.
 
@@ -96,16 +96,16 @@ Les paramètres suivants ne sont pas obligatoires mais peuvent également être 
 
 - {% link_new Groupes | features/administration/selections.md %}&nbsp;: les groupes servent de filtre, que vous pouvez utiliser pour afficher un groupe d'employés filtré dans une vue d’ensemble ou pour effectuer une action simultanément pour un groupe spécifique d’employés. Vous pouvez créer un ou plusieurs groupes à partir du menu déroulant Groupes. Par exemple, les groupes peuvent être un ensemble d'employés toujours planifiés de la même manière, ont le même contrat, travaillent en rotations d’horaires, font du covoiturage pour se rendre au travail ou planifiés en premier en raison de leur statut à temps plein.
 
-- {% link_new Modèles de planification | features/administration/work-time-pattern-models.md %}&nbsp;: utilisez les modèles de planification pour limiter la planification automatique à un sous-ensemble de modèles horaires disponibles. Vous ne pouvez assigner qu'un seul modèle de planification par employé. Sélectionnez une {% link_new date de référence | features/administration/reference-date.md %} pour marquer la date de début du modèle de planification.
+- {% link_new Modèles de planification | features/administration/work-time-pattern-models.md %}&nbsp;: utilisez les modèles de planification pour limiter la planification automatique à un sous-ensemble de tous les modèles horaires disponibles. Vous pouvez assigner plusieurs modèles de planification à un employé, à condition que leurs périodes de validité ne se superposent pas. Définissez une date de référence pour définir la date de début du modèle de planification.
 
 
-- Systèmes externes&nbsp;: assignez des {% link_new identifiants utilisateurs externes | features/acd-integration/cloud/import-agent-status-data.md | #mapper-les-identifiants-utilisateur-externes-aux-employés-dans-injixo %}, nécessaires pour l'importation des statuts agent à partir de votre ACD.
+- Systèmes externes&nbsp;: assignez des {% link_new identifiants utilisateur externes | features/acd-integration/cloud/import-agent-status-data.md | #mapper-les-identifiants-utilisateur-externes-aux-employés-dans-injixo %} qui sont nécessaires pour l'importation du statut agent à partir de votre ACD.
 
 ### Autres paramètres
 
 La section suivante présente un aperçu des autres paramètres dans la configuration de l'employé. La plupart d'entre eux ne sont pas pertinents pour la planification. Pour plus d’informations sur ces paramètres, vous pouvez également faire passer votre curseur sur chacun d’eux dans l’interface utilisateur pour afficher les détails du paramètre.
 
-- Périodes d’emploi&nbsp;: lorsque vous [créez un employé et sa configuration de base](#créer-un-employé), la date d’entrée est définie automatiquement. Ici, vous pouvez modifier la date d’entrée et définir une date de départ, si nécessaire.
+- Périodes d’emploi&nbsp;: lorsque vous [créez un employé et sa configuration de base](#créer-un-employé), la date d’entrée est automatiquement définie. Ici, vous pouvez modifier la date d’entrée et définir une date de départ, si nécessaire.
 
 - Données personnelles&nbsp;: saisissez les données personnelles de votre employé, par exemple l’adresse, le numéro de téléphone et le pays.
 
@@ -122,8 +122,6 @@ Certains paramètres de la section Autres informations sont pertinents pour la p
 |Position dans le planning  | Oui | Définit l'ordre de tri pour la fonctionnalité {% link_new Tri par position dans le planning | features/scheduling/shiftcenter/sort-and-filter-items.md | #sort-the-items-of-a-level %} dans le Centre de planification. La valeur par défaut est 0 et le Centre de planification triera par ordre croissant.  |
 |Attribution de missions | Oui | La case est cochée par défaut. Elle est obligatoire si vous souhaitez planifier automatiquement les employés. Si vous ne souhaitez pas planifier automatiquement les employés, décochez la case. Vous pouvez toujours attribuer les missions et insérer des séquences de postes manuellement pour cet employé.  |
 
-- Systèmes externes&nbsp;: assignez des {% link_new identifiants utilisateurs externes | features/acd-integration/cloud/import-agent-status-data.md | #mapper-les-identifiants-utilisateur-externes-aux-employés-dans-injixo %} pour l'importation du statut agent à partir depuis votre ACD.
-
 ## Utiliser la mise à jour en masse
 
 Dans injixo Advanced et Enterprise WFM, vous pouvez utiliser la fonctionnalité de {% link_new mise à jour en masse | features/administration/mass-update.md %} pour modifier plusieurs employés en une seule fois.
@@ -138,9 +136,9 @@ Pour assigner une rotation d’horaires, suivez les étapes ci-dessous&nbsp;:
 2. Sélectionnez une rotation d’horaires.
 3. Dans le menu déroulant de la ligne des employés, sélectionnez la ligne de la {% link_new rotation d’horaires | features/administration/shift-sequences.md %} qui s’applique à l’employé.
 4. Précisez la rotation.<br>Ce paramètre n’est pertinent que si vous avez besoin d’attribuer plus d’une rotation d’horaires à un employé. Les rotations d’horaires de valeur inférieure sont insérées en premier et peuvent être remplacées par les suivantes.
-5. Définissez une {% link_new Date de référence | features/administration/reference-date.md %} qui marque le premier jour de la rotation d’horaires.
+5. Définissez une date de référence qui définit le premier jour de la rotation d’horaires.
 6. Cliquez sur _OK_{:.doc-button}.
-Vous pouvez maintenant {% link_new ajouter des rotations d’horaires | features/scheduling/capacity/capacity-insert-shift-sequences.md %} au planning.
+Vous pouvez maintenant {% link_new insérer des rotations d’horaires | features/scheduling/schedules/schedules-insert-shift-sequences.md %} au planning.
 
 ## Muter temporairement des employés
 

@@ -17,6 +17,8 @@ New to integrations? Learn {% link_new the basics | features/acd-integration/clo
 
 ## Add a Freshdesk integration
 
+To add a new Freshdesk integration in injixo, you need to have a Pro or Enterprise Freshdesk account.
+
 1. Go to _Account > Integrations_{:.breadcrumbs}.
 2. If there already is an integration, click _Add integration_{:.doc-button}.
 3. In the **Freshworks** tile, click _Select model_{:.doc-button}.
@@ -28,7 +30,7 @@ New to integrations? Learn {% link_new the basics | features/acd-integration/clo
 2. In the **Credentials** section, enter your full Freshdesk domain name including the subdomain, e.g. example.freshdesk.com.
 3. Go to Freshdesk and copy a valid API key of a user with the Account Administrator role.
 4. Go back to injixo and paste the API key in the **API key** field.
-5. Click _Save integration_{:.doc-button}. 
+5. Click _Save integration_{:.doc-button}.
 
 ## Install the injixo app
 
@@ -77,3 +79,9 @@ A new ticket will create a ticket queue. A reply to a ticket will create a repli
 ### Deleted tickets and spam tickets
 
 The group name and source name cannot be determined when a ticket is changed that has already been deleted or marked as spam. The source queues that count such tickets will be labeled Unknown group/source Tickets or Unknown group/source Replies. Typically, these queues are irrelevant for scheduling your agents' workload.
+
+## Frequently asked questions
+
+| Question                                                                                                                                                                       | Answer                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Suddenly, injixo stops displaying new Freshdesk data but the page in **Account > Integrations** still shows the status Operational for my Freshdesk integration. What can I do? | The injixo app gets Freshdesk data and sends events to injixo. In the event of communication errors between the injixo app and injixo, Freshdesk data may no longer be displayed. The Freshdesk integration cannot detect such communication errors.<br><br>Check that the injixo API key you entered when setting up the injixo app in your Freshdesk account is still valid. If the API key is invalid, update the injixo API key on the injixo app installation page. If the API key is still valid, contact the injixo Support. |

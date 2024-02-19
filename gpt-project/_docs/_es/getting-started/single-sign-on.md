@@ -10,11 +10,11 @@ El inicio de sesión único (SSO, por sus siglas en inglés) es un mecanismo de 
 
 El proveedor de identidad es un producto de terceros, como OneLogin, Microsoft Azure AD, Okta o Google. El uso de SSO significa que tu organización se beneficiará de políticas de seguridad alineadas, como la autenticación de dos factores y la rotación de contraseñas. Los usuarios se autentican frente al proveedor de identidad que redirige a injixo.
 
-La configuración del IdP ha sido probada con los proveedores de identidad mencionados anteriormente. Si no puedes integrar tu proveedor de identidad específico, contacta con nosotros.
+La configuración del IdP ha sido probada con los IdP mencionados anteriormente. Si no puedes integrar tu IdP específico, contacta con nosotros.
 
 ## Requisitos
 
-Estos son los requisitos para integrar injixo con tu proveedor de identidad:
+Estos son los requisitos para integrar injixo con tu IdP:
 
 - Compatibilidad con el protocolo SAML 2.0.
 - Acceso por internet a la URL de metadatos de federación.
@@ -27,7 +27,7 @@ Estos son los requisitos para integrar injixo con tu proveedor de identidad:
 Solo los usuarios con acceso de administrador pueden activar el SSO.
 
 1. Registra injixo como nueva aplicación SAML o SSO en tu IdP.  
-   Puedes descargar [este logo de injixo](/assets/img/common/injixo-logo.png) y añadirlo a la página de aplicación web.
+   Puedes descargar [este logo de injixo](/assets/img/common/injixo-logo.png) y añadirlo a la página de la aplicación web.
 
 2. En injixo, ve a _Account > Seguridad_{:.breadcrumbs} y configura el SSO en **Inicio de sesión único**.
 
@@ -40,19 +40,22 @@ Solo los usuarios con acceso de administrador pueden activar el SSO.
 5. Dependiendo de si tu IdP genera una URL de metadatos de federación, hay dos opciones para finalizar la configuración:
 
    - El IdP genera URL de metadatos de federación: en el IdP, copia tu URL de metadatos de federación para la aplicación registrada. Pega la URL en el campo **URL de metadatos de federación** en la sección **Proveedor de identidad**.
-   - El IdP no genera URL de metadatos de federación: descarga el archivo XML de metadatos de federación y alójalo localmente. A modo de ejemplo, puedes leer cómo configurar tu propia [aplicación SAML con Google](https://support.google.com/a/answer/6087519?hl=en).
+   - El IdP no genera URL de metadatos de federación: descarga el archivo XML de metadatos de federación y alójalo localmente. A modo de ejemplo, puedes leer cómo configurar tu propia [aplicación SAML con Google](https://support.google.com/a/answer/6087519?hl=es).
 
 6. Haz clic en _Guardar configuración_{:.doc-button}.  
-   El SSO está activado, pero los usuarios todavía pueden iniciar sesión con su nombre de usuario y contraseña.
 
-> Para garantizar un mayor nivel seguridad, puedes [activar el SSO para todos los usuarios](#activar-el-sso-para-todos-los-usuarios).
+   > SSO está activado
+   >  
+   > Los usuarios todavía pueden iniciar sesión con su nombre de usuario y contraseña. Para volver a desactivar el SSO, haz clic en _Desactivar_{:.doc-button}.  
+   > Para un mayor nivel de seguridad, [activa el SSO para todos los usuarios](#activar-el-sso-para-todos-los-usuarios) después de haber comprobado la configuración en el siguiente paso. 
 
 ## Comprobar la configuración de SSO
 
-Haz clic en _Probar configuración_{:.doc-button} para probar el inicio de sesión con el IdP. El IdP genera una respuesta SAML que se envía a injixo. injixo te redirige a la página de inicio de sesión de tu IdP. Introduce los datos de acceso del IdP. Si la configuración del IdP es correcta y el proceso de autenticación tiene éxito, se iniciará tu sesión en injixo.
+Haz clic en _Probar configuración_{:.doc-button} para probar el inicio de sesión mediante el IdP. El IdP genera una respuesta SAML que se envía a injixo. injixo te redirige a la página de inicio de sesión de tu IdP. Introduce los datos de acceso del IdP. Si la configuración del IdP es correcta y el proceso de autenticación tiene éxito, se iniciará tu sesión en injixo.
 
 {{ 4 | image: 'Configuración de SSO comprobada con éxito para el usuario actual', '80%' }}
 
+### ¿La prueba no ha tenido éxito? Configurar la respuesta SAML
 <!-- A valid SubjectConfirmation was not found on this Response in our internal server logs -->
 
 La respuesta SAML del IdP contiene la afirmación del usuario autenticado con atributos e información de perfil. Si el proceso no tiene éxito y ves un mensaje de error, verifica la configuración de la aplicación, la configuración del usuario, y los atributos Recipient, InResponseTo, NotBefore y NotOnOrAfter definidos en el IdP. 
@@ -87,13 +90,13 @@ Una vez el SSO sea obligatorio, ya no es posible:
 - restablecer las contraseñas en injixo (ni por parte de los usuarios ni de los administradores);
 - gestionar el acceso a injixo fuera del IdP.
 
-Activa el SSO para todos los usuarios en la sección **3\. Activar el SSO para todos los usuarios**. El botón _Activar el SSO para todos los usuarios_{:.doc-button} se activa una vez hayas comprobado con éxito tu configuración de SSO.
+Activa el SSO para todos los usuarios en la sección **3. Activar el SSO para todos los usuarios**. El botón _Activar el SSO para todos los usuarios_{:.doc-button} se activa una vez hayas comprobado con éxito tu configuración de SSO.
 
 {{ 5 | image: 'Botón para activar el SSO para todos los usuarios', '80%' }}
 
 ## Modificar la dirección de correo electrónico con el SSO activado
 
-Con el SSO activo, los usuarios no pueden modificar su dirección de correo electrónico autónomamente, porque la dirección de correo de injixo tiene que corresponder con la dirección usada en el IdP.
+Con el SSO activado, los usuarios no pueden modificar su dirección de correo electrónico autónomamente, porque la dirección de correo de injixo tiene que corresponder con la dirección usada en el IdP.
 
 Solo los usuarios con acceso de administrador pueden modificar las direcciones de correo electrónico en injixo.
 
@@ -108,3 +111,9 @@ Para revocar el acceso a injixo con SSO de un usuario, tienes que desasignar al 
 ## Desactivar el SSO
 
 Si quieres desactivar el SSO y volver a autorizar el inicio de sesión con nombre de usuario y contraseña, los usuarios con acceso de administrador pueden desactivar el SSO. Al hacer esto, se eliminará la conexión con el IdP y todos los datos de configuración introducidos. Una vez el SSO haya sido desactivado, todos los usuarios activos recibirán un correo para establecer una nueva contraseña en injixo. Hecho esto, los usuarios pueden volver a iniciar sesión con nombre de usuario y contraseña en [https://www.injixo.com/login](https://www.injixo.com/login).
+
+## Usar SSO en múltiples tenants
+
+Si tu organización tiene varios tenants de injixo, y quieres que al menos algunos usuarios tengan acceso a más de un tenant, la configuración estándar de SSO no funcionará. Contacta con tu consultor para implementar una configuración para este escenario específico.
+
+<!-- SSO for multiple tenants can be activated by the feature flag multi_tenant_sso, see also https://github.com/ivx/internal-support-documentation/tree/main/Cortex-->

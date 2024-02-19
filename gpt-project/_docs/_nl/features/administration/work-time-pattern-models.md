@@ -6,8 +6,6 @@ product_label:
   - classic
 description: Gebruik planningsmodellen bij je planningsoptimalisatie om te voorkomen dat je medewerkers willekeurige diensten toegewezen krijgen.
 related_articles:
-  - overwrite_title: Een referentiedatum instellen
-    filepath: features/administration/reference-date.md
   - overwrite_title: Een geoptimaliseerde planning aanmaken
     filepath: features/scheduling/scheduling-optimization.md
   - overwrite_title: Add title for untranslated source
@@ -111,7 +109,7 @@ Gebruik de pictogrammen Omlaag {% icon down-arrow-blue | icon-only %} en Omhoog 
 | Type | Naam               | Gebruik van weekmodellen                                                      | Toewijzing van dagmodellen | Begintijd van dienst              | Effect             |
 | ---- | ------------------ | -------------------------------------------------------------------------- | -------------------- | ----------------------------- | --------------------------------- |
 | A    | Flexibele Keuze | injixo kan een willekeurig dagmodel selecteren uit de weekmodellen die voor elke dag van elke week zijn opgenomen. | injixo kan elk dagmodel uit elk weekmodel gebruiken. | Flexibel    | Afhankelijk van de kantooruren van je bedrijf kan type A leiden tot een verdeling van diensten die je medewerkers als willekeurig of stressvol kunnen ervaren. Zo kan een medewerker een vroege dienst toegewezen krijgen op maandag, een nachtdienst op dinsdag en een late dienst op woensdag etc. |
-| B    | Starre Rotatie     | injixo plant de weekmodellen in de volgorde in die door hun rang wordt bepaald. | Voor elke week selecteert injixo het dagmodel dat de personeelsbehoefte het beste dekt. | Vast    | Als je dit type planningsmodel aan medewerkers toewijst, dan moet je een {% link_new referentiedatum instellen | features/administration/reference-date.md %}. De referentiedatum bepaalt wanneer het planningsmodel als eerste wordt gebruikt.<br> Elke medewerker krijgt voor de hele week hetzelfde dagmodel toegewezen, bijvoorbeeld: begintijd 9:00 uur van maandag tot vrijdag. Deze regel kan alleen worden overschreven door uitzonderingsdagen in te stellen. Dit is het meest consistente diensttoewijzing van alle vier de typen. |
+| B    | Starre Rotatie     | injixo plant de weekmodellen in de volgorde in die door hun rang wordt bepaald. | Voor elke week selecteert injixo het dagmodel dat de personeelsbehoefte het beste dekt. | Vast    | Als je dit type planningsmodel aan medewerkers toewijst, dan moet je een referentiedatum instellen. De referentiedatum bepaalt wanneer het planningsmodel als eerste wordt gebruikt.<br> Elke medewerker krijgt voor de hele week hetzelfde dagmodel toegewezen, bijvoorbeeld: begintijd 9:00 uur van maandag tot vrijdag. Deze regel kan alleen worden overschreven door uitzonderingsdagen in te stellen. Dit is het meest consistente diensttoewijzing van alle vier de typen. |
 | C    | Variabele Rotatie  | injixo houdt geen rekening met de gedefinieerde rang van weekmodellen. | injixo selecteert een dagmodel voor de hele week. | Vast    | Medewerkers kunnen elk weekpatroon toegewezen krijgen om zo goed mogelijk aan de personeelsbehoefte te voldoen. Aangezien de diensten op hetzelfde tijdstip beginnen, hebben medewerkers de hele week consistente werkuren. |
 | D    | Combi-rotatie (A/B) | injixo houdt rekening met de rang die voor de weekmodellen is vastgelegd. | injixo selecteert een dagmodel voor de hele week.| Flexibel (binnen een tijdsperiode)    |  Op basis van de personeelsbehoefte kan injixo medewerkers inplannen met vroege diensten met een begintijd tussen 8:00 uur en 10:00 uur. Met type D kan injixo flexibeler plannen zodat er zo goed mogelijk aan de personeelsbehoefte wordt voldaan, terwijl er redelijk consistente planningen aan je medewerkers worden toegewezen. |
 
@@ -140,7 +138,7 @@ Bij het selecteren van een dagmodel voor de week kan injixo geen dagmodellen geb
 4. Configureer de instellingen:<br>
   **geldig vanaf/geldig tot en met**: Stel een {% link_new geldigheidsperiode | features/administration/set-a-validity-period.md %} in.<br>
   **Planningsmodel**<br>
-  **Referentiedatum**: Stel een {% link_new referentiedatum | features/administration/reference-date.md %} in op de datum van de eerste dag waarop het planningsmodel wordt gebruikt.
+  **Referentiedatum**: Stel een referentiedatum in op de datum van de eerste dag waarop het planningsmodel wordt gebruikt.
 5. Klik op _OK_{:.doc-button}.
 
 Gebruik de functionaliteit {% link_new massa-update | features/administration/mass-update.md %} om een planningsmodel aan meerdere medewerkers tegelijk toe te wijzen.

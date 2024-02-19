@@ -19,7 +19,7 @@ La integración de Freshdesk Contact Center importa historiales de llamadas y da
 
 ## Añadir una integración de Freshdesk Contact Center
 
-Para añadir una integración de Freshdesk Contact Center en injixo, necesitas una cuenta de Freshdesk Contact Center Pro o Enterprise. Sigue el proceso descrito en {% link_new Añadir una integración cloud | features/acd-integration/cloud/add-cloud-integration.md %}: 
+Para añadir una integración de Freshdesk Contact Center en injixo, necesitas una cuenta de Freshdesk Contact Center Pro o Enterprise.
 
 1. Ve a _Account > Integraciones_{:.breadcrumbs}.
 2. Si ya existe una integración, haz clic en _Añadir integración_{:.doc-button}.
@@ -40,7 +40,7 @@ Cuando hayas guardado tu configuración, podrás acceder a la sección **Instala
 ## Instalar la aplicación injixo
 
 1. En la sección **Instalar la aplicación injixo**, genera y copia la **clave de la API de injixo**.
-2. Configura la aplicación injixo en tu cuenta de Freshdesk en [Freshworks Marketplace](https://www.freshworks.com/apps/freshcaller/injixo_1/).
+2. Configura la aplicación injixo en tu cuenta de Freshdesk Contact Center en [Freshworks Marketplace](https://www.freshworks.com/apps/injixo_1).
 3. En la página de instalación de la aplicación injixo, pega la clave de la API que habías copiado antes.
 4. Para importar datos en tiempo real, marca la casilla **Export real-time agent status data** en la página de instalación de la aplicación injixo en Freshworks Marketplace.
 
@@ -51,7 +51,13 @@ Cuando se importan los datos, el método de agrupamiento determina el nombre de 
 | Método de agrupamiento   | Nombre de la cola                               | Ejemplo           |
 | ------------------- | ---------------------------------------- | ----------------- |
 | Número de teléfono        | Número de teléfono                             | +49123456789      |
-| Enrutamiento(equipo/agente) | Nombre del equipo                                | Equipo de asistencia técnico |
-| Enrutamiento(equipo/agente) | Nombre del agente (si no hay ningún nombre de equipo asignado) | Agente 1           |
+| Enrutamiento (equipo/agente) | Nombre del equipo                                | Equipo de asistencia técnica |
+| Enrutamiento (equipo/agente) | Nombre del agente (si no hay ningún nombre de equipo asignado) | Agente 1           |
 
 Si las llamadas no pertenecen a ningún grupo en Freshdesk Contact Center, el nombre de la cola será Undefined_Queue.
+
+## Preguntas frecuentes
+
+| Pregunta                                                                                                                                                                       | Respuesta                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| De repente, injixo deja de mostrar datos nuevos de Freshdesk Contact Center, pero en la página **Account > Integraciones** mi integración de Freshdesk Contact Center tiene el estado Operativo. ¿Qué puedo hacer? | La aplicación de injixo obtiene datos de Freshdesk Contact Center y envía eventos a injixo. En caso de errores de comunicación entre la aplicación injixo e injixo, es posible que no se muestren los datos de Freshdesk Contact Center. La integración de Freshdesk Contact Center no puede detectar estos errores de comunicación.<br><br>Verifica que la clave de la API de injixo que introdujiste al configurar la aplicación de injixo en tu cuenta de Freshdesk Contact Center siga siendo válida. Si la clave de la API ya no es válida, actualiza la clave de la API de injixo en la página de instalación de la aplicación injixo. Si la clave de API sigue siendo válida, ponte en contacto con la asistencia técnica de injixo. |

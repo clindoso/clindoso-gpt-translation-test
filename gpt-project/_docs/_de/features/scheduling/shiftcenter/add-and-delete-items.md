@@ -152,7 +152,7 @@ Du kannst identische Elemente (Aktivitäten, Multiaktivitäten, ganztägige Akti
 2. Klicke auf den Tab **Mitarbeiter**.
 3. Aktiviere die **Checkboxen** der Mitarbeiter, für die Du das Element hinzufügen möchtest. Wähle *Alle*{:.doc-button} oder *Keine*{:.doc-button}, um alle auszuwählen oder die Auswahl aufzuheben.  
     {{ 11 | image: 'Mitarbeiter auswählen', '75%' }}
-4. Klicke auf den **Tab**, in dem Du Daten eingeben möchtest, d.h. auf *Aktivitäten*, *Multiaktivitäten*, *Tagesmodelle*, *Ganztägige Aktivitäten* oder *Kommentare*.
+4. Klicke auf den **Tab**, in dem Du Daten eingeben möchtest, d.&nbsp;h. auf *Aktivitäten*, *Multiaktivitäten*, *Tagesmodelle*, *Ganztägige Aktivitäten* oder *Kommentare*.
 5. Füge die **Elemente** hinzu, die Du zuweisen möchtest.
 6. Klicke *OK*{:.doc-button}. Die Elemente werden nun dem Schichtplan jedes ausgewählten Mitarbeiters hinzugefügt.
     {{ 12 | image: 'Vorherigen Planungsstand zurücksetzen', '75%' }}

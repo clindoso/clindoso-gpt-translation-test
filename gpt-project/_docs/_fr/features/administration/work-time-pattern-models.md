@@ -11,8 +11,6 @@ product_label:
   - classic
 description: Utilisez les modèles de planification pour l’optimisation de votre planning afin de vous assurer que les employés ne se voient pas simplement attribuer des journées aléatoires.
 related_articles:
-  - overwrite_title: Définir une date de référence
-    filepath: features/administration/reference-date.md
   - overwrite_title: Add title for untranslated source
     filepath: features/scheduling/scheduling-optimization.md
   - overwrite_title: Add title for untranslated source
@@ -27,7 +25,7 @@ related_articles:
 
 Un modèle de planification est composé de [modèles hebdomadaires](#créer-un-modèle-hebdomadaire) et définit la façon dont les {% link_new modèles horaires | features/administration/daymodels/daymodel-basics.md %} sont assignés à vos employés.
 
-L’image ci-dessous illustre la configuration des modèles horaires et des modèles hebdomadaire dans un modèle de planification.
+L’image ci-dessous illustre la configuration des modèles horaires et des modèles hebdomadaires dans un modèle de planification.
 
 {{ 1 | image: 'Structure d’un modèle de planification' }}
 
@@ -110,17 +108,18 @@ Vous pouvez maintenant ajouter des modèles hebdomadaires à votre modèle de pl
 La position des modèles hebdomadaires dans les modèles de planification est pertinente si vous utilisez les modèles de planification de [type B ou D](#types-de-modèles-de-planification). injixo assignera les modèles hebdomadaires dans l’ordre configuré ici.
 
 Utilisez les icônes Vers le bas {% icon down-arrow-blue | icon-only %} et Vers le haut {% icon up-arrow-blue | icon-only %} pour définir la position des modèles hebdomadaires.
-
 ## Types de modèles de planification
 
 | Type | Name               | Utilisation des modèles hebdomadaires                                                      | Assignation de modèles horaires | Heure de début de la journée              | Résultat             |
 | ---- | ------------------ | -------------------------------------------------------------------------- | -------------------- | ----------------------------- | --------------------------------- |
-| A    | Sélection flexible | injixo peut sélectionner n’importe quel modèle horaire de n’importe quel modèle hebdomadaire pour chaque jour de la semaine. | injixo peut utiliser n’importe quel modèle horaire de n’importe quel modèle hebdomadaire. | Flexible     | Selon les horaires d’ouverture de votre centre de contacts, le type&nbsp;A peut donner lieu à une distribution des journées qui peut sembler aléatoire ou stressante pour vos employés. Par exemple, un employé peut travailler la matinée le lundi, la soirée le mardi et l’après-midi le mercredi, etc. |
-| B    | Roulement fixe     | injixo planifie les modèles hebdomadaires dans l’ordre défini par leur position. | Pour chaque semaine, injixo sélectionne le modèle horaire qui couvre le besoin en personnel de manière optimale. | Fixe    | Lorsque vous attribuez ce type de modèle de planification aux employés, vous devez définir une {% link_new date de référence | features/administration/reference-date.md %}. La date de référence définit la première utilisation du modèle de planification.<br> Le même modèle horaire est assigné à chaque employé pour toute la semaine, par exemple en commençant à 9h00 du lundi au vendredi. Cette règle ne peut être enfreinte qu'en définissant des jours dérogatoires. Sur les quatre types, il s’agit de celui d'obtenir les journées les plus cohérentes. |
+| A    | Sélection flexible | injixo peut sélectionner n’importe quel modèle horaire de n’importe quel modèle hebdomadaire pour chaque jour de la semaine. | injixo peut utiliser n’importe quel modèle horaire de n’importe quel modèle hebdomadaire. | Flexible     | Selon les horaires d’ouverture de votre centre de contacts, le type A peut donner lieu à une distribution des journées qui peut sembler aléatoire ou stressante pour vos employés. Par exemple, un employé peut travailler la matinée le lundi, la soirée le mardi et l’après-midi le mercredi, etc. |
+| B    | Roulement fixe     | injixo planifie les modèles hebdomadaires dans l’ordre défini par leur position. | Pour chaque semaine, injixo sélectionne le modèle horaire qui couvre le besoin en personnel de manière optimale. | Fixe    | Le même modèle horaire est assigné à chaque employé pour toute la semaine, par exemple en commençant à 9h00 du lundi au vendredi. Définissez des [jours dérogatoires](#jours-dérogatoires) si vous souhaitez planifier un autre modèle horaire. Le roulement fixe est l’assignation de journées la plus régulière des quatre types. |
 | C    | Roulement variable  | injixo ne prend pas en compte la position définie des modèles hebdomadaires. | injixo sélectionne un modèle horaire pour l’ensemble de la semaine. | Fixe    | Le modèle hebdomadaire qui couvre au mieux le besoin en personnel peut être assigné aux employés. Étant donné que les journées commencent à la même heure, les heures de travail des employés sur la semaine sont cohérentes. |
 | D    | Roulement combiné (A/B) | injixo prend en compte la position définie pour les modèles hebdomadaires. | injixo sélectionne un modèle horaire pour l’ensemble de la semaine.| Flexible (avec cadre temporel)    |  Selon le besoin en personnel, injixo peut planifier des employés sur des journées du matin commençant entre 8h et 10h. Avec le type D, injixo peut les planifier de manière plus flexible pour couvrir le besoin en personnel de manière optimale, tout en assignant des plannings cohérents à vos employés. |
 
+Le graphique suivant illustre la façon dont les différents types de modèles de planification influencent votre planning. Cet exemple inclut un modèle de planification avec quatre modèles hebdomadaires et trois modèles horaires dans chaque modèle hebdomadaire.
 
+{{ 2 | image: 'Exemple de planning avec les différents types de modèles de planification' }}
 
 ## Jours dérogatoires
 
@@ -145,7 +144,7 @@ Lors de la sélection d’un modèle horaire pour la semaine, injixo ne peut pas
 4. Configurez les paramètres&nbsp;:<br>
   **Valide du/Valide jusqu’au**&nbsp;: définissez une {% link_new période de validité | features/administration/set-a-validity-period.md %}.<br>
   **Modèle de planification**<br>
-  **Date de référence**&nbsp;: définissez la {% link_new date de référence | features/administration/reference-date.md %} à laquelle le modèle de planification commence à être utilisé.
+  **Date de référence**&nbsp;: définissez une date de référence qui définit le premier jour du modèle de planification.
 5. Cliquez sur _OK_{:.doc-button}.
 
 Utilisez la fonctionnalité de {% link_new mise à jour en masse | features/administration/mass-update.md %} pour assigner un modèle de planification à plusieurs employés en une fois.

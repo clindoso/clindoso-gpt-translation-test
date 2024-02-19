@@ -26,7 +26,7 @@ La tabla muestra detalles de períodos fuera de adherencia organizados por perso
 
 > Limita el acceso a los datos de empleados concretos a usuarios relevantes
 >
-> Configura los permisos para ciertas unidades de planificación o grupos para {% link_new usuarios o roles de usuario específicos | getting-started/configure-user-roles.md | #establecer-permisos-para-wfm %}.
+> Configura los permisos para ciertas unidades de planificación o grupos para {% link_new usuarios o roles de usuario específicos | getting-started/configure-user-roles.md | #configurar-permisos-para-wfm %}.
 
 ## Valor de adherencia
 

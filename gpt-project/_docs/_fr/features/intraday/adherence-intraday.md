@@ -26,7 +26,7 @@ Le tableau affiche les détails des écarts par employé. Dans l'en-tête du tab
 
 > Limiter la vue pour certains employés à certains utilisateurs
 >
-> Configurez les droits sur certaines unités opérationnelles ou certains groupes par {% link_new utilisateur ou rôle utilisateur | getting-started/configure-user-roles.md | #-définir-les-droits-sur-wfm %}.
+> Configurez les droits sur certaines unités opérationnelles ou certains groupes par {% link_new utilisateur ou rôle utilisateur | getting-started/configure-user-roles.md | #définir-les-autorisations-sur-les-fonctionnalités-wfm %}.
 
 ## Score d’adhérence
 

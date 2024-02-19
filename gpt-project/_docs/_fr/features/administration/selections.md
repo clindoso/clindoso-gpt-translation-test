@@ -6,16 +6,20 @@ product_label:
   - advanced
   - enterprise
   - classic
-redirect_from: fr/selections-overview/
+redirect_from: /fr/selections-overview/
 redirect_reason: renamed file in April 2022
+toc: true
+related_articles:
+  - overwrite_title: Filtrer à l'aide des groupes
+    filepath: best-practices/filter-with-selections.md
 ---
 
-Les groupes sont des critères de regroupement auxquels vous pouvez assigner des employés à des fins de filtrage. Les groupes fonctionnent de manière similaire aux {% link_new filtres avancés | features/administration/employee-filter.md %}.<br>
+Les groupes sont des critères de regroupement auxquels vous pouvez assigner des employés à des fins de filtrage. Les groupes fonctionnent de manière similaire aux {% link_new filtres avancés | features/administration/employee-filter.md %}.  
 
-Différences entre les filtres avancés et les groupes&nbsp;:
+Différences entre le filtre avancé et les groupes&nbsp;:
 
 - Pour les groupes, vous pouvez créer vos propres critères de regroupement.
-- Pour les filtres avancés, les critères de regroupement sont basés sur des éléments de configuration dans injixo, tels que l’unité opérationnelle, les compétences et le contrat.
+- Pour les filtres avancés, les critères de regroupement sont basés sur des éléments de configuration, tels que l’unité opérationnelle, les compétences et le contrat.
 
 De plus, les filtres avancés sont disponibles uniquement dans injixo Classic, Advanced et Enterprise.
 
@@ -32,7 +36,7 @@ Si vous utilisez injixo Essential, vous pouvez utiliser les groupes pour regroup
 ## Créer un groupe
 
 1. Accédez à _Plan > Configuration > Groupes_{:.breadcrumbs}.
-2. Cliquez sur l’{% icon item-add %} en haut à gauche.  
+2. Cliquez sur l’icône Créer {% icon item-add | icon-only %} en haut à gauche.  
     Un panneau de configuration s’ouvre à droite.
 3. Remplissez les champs suivants&nbsp;:
     - **Nom**&nbsp;: nom unique pour le groupe (max. 50 caractères).
@@ -47,12 +51,25 @@ Pour assigner des employés à des groupes, vous devez d’abord {% link_new cr�
 1. Accédez à _Plan > Configuration > Employés_{:.breadcrumbs}.
 2. Cliquez sur l’employé que vous souhaitez assigner à un groupe.  
    Un panneau de configuration s’ouvre à droite.
-3. Dans la section **Groupes**, cliquez sur l’{% icon item-add %}.
-4. Cliquez sur le groupe auquel vous souhaitez assigner l’employé.
-5. (Facultatif) Entrez une plage de dates dans les champs **Valide du** et **Jusqu’au** pour limiter la période de validité du groupe. Laissez les champs **Valide du** et **Jusqu’au** vides pour rendre le groupe toujours valide. En savoir plus sur les {% link_new périodes de validité | features/administration/set-a-validity-period.md %}.
-6. Cliquez sur _OK_{:.doc-button}.
+3. Dans la section **Groupes**, cliquez sur l’icône Créer {% icon item-add | icon-only %}.
+4. Remplissez les champs suivants&nbsp;:  
+   - **Groupe**&nbsp;: cliquez sur le groupe auquel vous souhaitez assigner l’employé.
+   - (Facultatif)**Valide du/Jusqu’au**&nbsp;: plage de dates permettant de limiter la validité du groupe. Si vous laissez ces champs vides, le groupe sera toujours valide. En savoir plus sur les {% link_new périodes de validité | features/administration/set-a-validity-period.md %}.
+5. Cliquez sur _OK_{:.doc-button}.
 
 Pour modifier un groupe auquel un employé est assigné, cliquez sur l’{% icon item-edit %}. Pour supprimer l'affectation au groupe, cliquez sur l’{% icon item-delete %}.
+
+## Gérer les employés d’un groupe
+
+Dans _Plan > Configuration > Employés_{:.breadcrumbs}, vous pouvez voir une vue d’ensemble des employés d’un groupe et accéder à leurs paramètres.
+
+Vous pouvez filtrer les employés d’un groupe à l’aide des menus déroulants suivants&nbsp;:
+
+- **Unité opérationnelle**&nbsp;: sélectionnez toutes les unités opérationnelles.
+- **Groupe**&nbsp;: sélectionnez un **Groupe**.  
+   Si le menu déroulant **Groupe** ne s’affiche pas, cliquez sur l’icône **Activer le filtre standard** en haut de la liste.
+
+injixo affiche tous les employés du groupe. Pour accéder aux paramètres d’un employé, cliquez sur sa ligne dans la liste.
 
 ## Combiner les groupes
 
@@ -60,13 +77,15 @@ Les clients injixo Classic, Advanced et Enterprise peuvent attribuer des groupes
 
 Pour créer une hiérarchie de groupes entre des groupes subordonnés et un groupe supérieur, {% link_new créez d’abord le groupe supérieur et les groupes subordonnés | features/administration/selections.md | #créer-un-groupe %}.
 
-Pour attribuer un groupe à un autre groupe, procédez comme suit&nbsp;:
+Pour attribuer un groupe à un autre groupe, suivez les étapes ci-dessous&nbsp;:
 
-1. Cliquez sur le groupe que vous souhaitez utiliser comme groupe supérieur dans la liste des groupes.  
+1. Accédez à _Plan > Configuration > Groupes_{:.breadcrumbs}.
+2. Cliquez sur le groupe que vous souhaitez utiliser comme groupe supérieur dans la liste des groupes.  
    Un panneau de configuration s’ouvre à droite.
-2. Dans la section **Groupes**, cliquez sur l’{% icon item-add %}.
-3. Cliquez sur le groupe auquel vous souhaitez assigner l’employé.
-4. (Facultatif) Entrez une plage de dates dans les champs **Valide du** et **Jusqu’au** pour attribuer les groupes subordonnés au groupe supérieur pendant une durée limitée. Laissez les champs **Valide du** et **Jusqu’au** vides pour rendre l’affectation toujours valide.
+3. Dans la section **Groupes**, cliquez sur l’{% icon item-add %}.
+4. Remplissez les champs suivants&nbsp;:  
+   - **Groupes**&nbsp;: cliquez sur le groupe auquel vous souhaitez assigner l’employé.
+   - (Facultatif) **Valide du/Valide jusqu’au**&nbsp;: plage de dates permettant de limiter la période pendant laquelle les groupes inférieurs sont assignés au groupe supérieur. Si vous laissez ces champs vides, l’assignation sera toujours valide.
 5. Cliquez sur _OK_{:.doc-button}.
 
 Pour modifier ou supprimer un groupe subordonné, cliquez sur l’{% icon item-edit %} ou l’{% icon item-delete %}.

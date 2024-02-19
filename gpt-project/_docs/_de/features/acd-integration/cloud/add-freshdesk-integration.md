@@ -1,11 +1,9 @@
 ---
 title: Freshdesk-Integration hinzufügen
-description: Lerne, wie Du eine Integration für Dein Freshdesk-CRM hinzufügst.
+description: Erfahre, wie du dein Freshdesk-CRM mit injixo verbinden kannst, um Daten zu importieren.
 product_label:
-  - essential
   - advanced
   - enterprise
-  - classic
 related_articles:
   - overwrite_title: Add title for untranslated source
     filepath: features/acd-integration/cloud/how-integrations-work.md
@@ -13,70 +11,77 @@ related_articles:
     filepath: features/acd-integration/cloud/add-cloud-integration.md
 ---
 
-In diesem Artikel lernst Du, wie:
-- Du eine Freshdesk-Integration hinzufügst.
-- Du die erforderliche injixo App erhältst und installierst.
-- injixo Freshdesk-Daten angezeigt.
-
-Die Freshdesk-Integration liefert Kontaktvolumen für E-Mail, Webformulare, Chat und Social Messaging.
+Eine Freshdesk-Integration ist eine Cloud-Integration, die Kontaktvolumen für E-Mail, Webformulare, Chat und Social Messaging importiert.
 
 Neu bei Integrationen? Lerne zuerst {% link_new die Grundlagen | features/acd-integration/cloud/how-integrations-work.md %}.
 
 ## Eine Freshdesk-Integration hinzufügen
 
-Um eine neue Freshdesk-Integration in injixo hinzuzufügen, folge dem Prozess wie in {% link_new Cloud-Integration hinzufügen | features/acd-integration/cloud/add-cloud-integration.md %} beschrieben:
+Um eine neue Freshdesk-Integration in injixo hinzuzufügen, benötigst du einen Pro- oder einen Enterprise-Account bei Freshdesk.
 
-1. Gib einen **eindeutigen Namen** für die neue Integration ein, der noch nicht verwendet wurde.
-2. Fülle das Formular mit den erforderlichen Freshdesk-spezifischen Informationen aus:
-   1. Gib Deinen vollständigen Freshdesk-Domainnamen einschließlich der Subdomain ein, z. B. *example.freshdesk.com*.
-   2. Kopiere einen gültigen API-Key von Freshdesk:
-      1. Melde Dich bei Freshdesk mit einem Benutzer mit der Rolle _Account Administrator_ an.
-      2. Gehe zu den [_Profileinstellungen_](https://support.freshdesk.com/support/solutions/articles/215517-how-to-find-your-api-key).
-      3. Kopiere den **API-Key** auf der Seite.
-      4. Gehe zurück zu injixo und füge den API-Key in das Feld _API-Schlüssel_ ein.
-3. Speichere Deine Konfiguration.
+1. Gehe zu _Account > Integrationen_{:.breadcrumbs}.
+2. Wenn es bereits eine Integration gibt, klicke auf _Integration hinzufügen_{:.doc-button}.
+3. Klicke in der **Freshworks**-Kachel auf _Modell wählen_{:.doc-button}.
+4. Klicke im Abschnitt **Freshdesk** auf _Integration hinzufügen_{:.doc-button}.
 
-## Die injixo App installieren
+## Freshdesk-Integration einrichten
 
-Die Freshdesk-Integration benötigt eine Client-Anwendung. Nachdem Du Deine Konfiguration gespeichert hast, kannst Du auf den Abschnitt _injixo App installieren_ zugreifen.
+1. Gib einen eindeutigen Namen für die neue Integration ein, der die Datenquelle kennzeichnet.
+2. Gib im Abschnitt **Zugangsdaten** deinen vollständigen Freshdesk-Domainnamen einschließlich der Subdomain ein, z.&nbsp;B. example.freshdesk.com.
+3. Gehe zu Freshdesk und kopiere einen gültigen API-Schlüssel eines Benutzers mit der Rolle Account Administrator.
+4. Gehe zurück zu injixo und füge den API-Schlüssel in das Feld **API-Schlüssel** ein.
+5. Klicke auf _Integration speichern_{:.doc-button}.
 
-Erzeuge und kopiere dort den **injixo API-Schlüssel**.  
+## injixo-App installieren
 
-Um die *injixo* App in Deinem Freshdesk-Konto einzurichten, folge den Anweisungen auf dem Bildschirm. Weitere Informationen findest Du auf dem [Freshworks marketplace](https://www.freshworks.com/apps/freshdesk/injixo_connect).
+Die Freshdesk-Integration benötigt eine Client-Anwendung. Nachdem du deine Konfiguration gespeichert hast, kannst du auf den Abschnitt **Installiere injixo-App** am Ende der Seite zugreifen.
+
+Um den injixo API-Schlüssel zu erzeugen und zu kopieren, klicke auf _Generieren_{:.doc-button}.
+
+Um die injixo-App in deinem Freshdesk-Konto einzurichten, folge den Anweisungen auf dem Bildschirm. Weitere Informationen findest du auf dem [Freshworks Marketplace](https://www.freshworks.com/apps/freshdesk/injixo_connect).
 
 ## Freshdesk-Daten in injixo
 
-injixo importiert alle Ticket-Daten aus Freshdesk. Tickets enthalten in der Regel mehrere Unterhaltungen, die zwischen Deinen Mitarbeitern und Kunden stattfinden.
+injixo importiert alle Ticket-Daten aus Freshdesk. Tickets enthalten in der Regel mehrere Unterhaltungen, die zwischen deinen Mitarbeitern und Kunden stattfinden.<br>
+Hinweis: injixo kann keine Ticket-Dauer aus Freshdesk importieren. Deshalb siehst du in injixo Forecast keinen AHT-Graphen für Workloads mit Freshdesk-Queues.
 
 ### Tickets und Unterhaltungen
 
-In injixo werden alle Unterhaltungen nach dem Freshdesk-Kommunikationskanal (_Source_) gruppiert. Eine Unterhaltung kann ein neues Ticket oder eine Antwort auf ein bestehendes Ticket sein.
+In injixo werden alle Unterhaltungen nach dem Freshdesk-Kommunikationskanal, also der Quelle (Source), gruppiert. Eine Unterhaltung kann ein neues Ticket oder eine Antwort auf ein bestehendes Ticket sein.
 
-In injixo werden die Unterhaltungen in einem Freshdesk-Ticket separat als angebotene Kontakte gezählt.
+In injixo werden die Unterhaltungen in einem Freshdesk-Ticket jeweils als eingehende Kontakte gezählt.
 
-Beispiel: Ein Benutzer erstellt ein Ticket per E-Mail. Der Mitarbeitende antwortet und schließt das Ticket. Zwei Tage später wird das Ticket aufgrund einer weiteren E-Mail erneut geöffnet, was zu einer neuen Unterhaltung führt.
+Beispiel: Ein Benutzer erstellt ein Ticket per E-Mail. Der Mitarbeiter antwortet und schließt das Ticket. Zwei Tage später wird das Ticket aufgrund einer weiteren E-Mail erneut geöffnet, was zu einer neuen Unterhaltung führt.
+
+Die Anzahl der eingehenden Kontakte in injixo ist normalerweise höher als die Anzahl der in Freshdesk gezählten Tickets.
 
 ### Ereignisse aus verschiedenen Kanälen
 
-In einem Freshdesk-Ticket können Antworten in verschiedenen injixo-Queues über den Kanal *Cases* erfasst werden.
+In einem Freshdesk-Ticket können Antworten in verschiedenen injixo-Queues über den Kanal Cases erfasst werden.
 
 Beispiel: Wenn eine E-Mail-Antwort auf ein Ticket eingeht, wird der Kontakt in einer injixo-Queue angezeigt, die der Freshdesk-Gruppe und dem Source-Namen entspricht. Ein Chat zum gleichen Ticket wird in einer separaten Queue gezählt.
 
-### Konvention für die Benennung von Queues
+### Namenskonvention für Quell-Queues
 
-Die Queues, die injixo aus Deinen Tickets erstellt, folgen dieser Konvention:
+injixo erstellt Quell-Queues aus deinen Tickets. Die Namenskonvention dieser Queues hängt davon ab, wie der Datenimport abläuft (initial oder kontinuierlich). Während dieses ersten Imports wird Quell-Queue entsprechend dieser Konvention benannt:
 
-- "*Gruppenname* + *Source-Name* + _Tickets_"
-- "*Gruppenname* + *Source-Name* + _Replies_"
+- "Gruppenname + Quellenname + Tickets"
+- "Gruppenname + Quellenname + Replies"
 
 Beispiele:
 
-- Kundenbetreuung chat Tickets
-- Kundenbetreuung email Replies
+- CustomerService chat Tickets
+- CustomerService email Replies
 - Unknown group/source Tickets
 
-Ein neues Ticket erzeugt eine Tickets-Queue. Eine Antwort auf eine Anfrage erzeugt eine Replies-Queue, in der auch alle anderen Antworten erfasst werden. Um alle Informationen über eine Anfrage zu erhalten, musst Du sowohl die Anfrage als auch die Antwort-Queue durchsuchen.
+Ein neues Ticket erzeugt eine Tickets-Queue. Eine Antwort auf eine Anfrage erzeugt eine Replies-Queue, in der auch alle anderen Antworten erfasst werden. Um alle Informationen zu einer Anfrage zu erhalten, musst du sowohl die Anfrage als auch die Replies-Queue durchsuchen.
 
-#### Gelöschte Tickets und Spam-Tickets
+### Gelöschte Tickets und Spam-Tickets
 
-Der Gruppenname und der Source-Name können nicht bestimmt werden, wenn ein Ticket geändert wird, das bereits gelöscht oder als Spam markiert wurde. Die Quell-Queues, die solche Tickets zählen, werden mit _Unknown group/source Tickets_ oder _Unknown group/source Replies_ gekennzeichnet. Normalerweise sind diese Queues für die Planung der Arbeitsaufkommen Deiner Agenten irrelevant.
+Der Gruppenname und der Quellenname können nicht bestimmt werden, wenn ein Ticket geändert wird, das bereits gelöscht oder als Spam markiert wurde. Die Quell-Queues mit solchen Tickets werden mit Unknown group/source Tickets oder Unknown group/source Replies gekennzeichnet. Normalerweise spielen diese Queues bei der Schichtplanerstellung für deine Agenten keine Rolle.
+
+## Häufig gestellte Fragen
+
+| Frage                                                                                                                                                                       | Antwort                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| injixo zeigt plötzlich keine neuen Freshdesk-Daten mehr an. Unter **Account > Integrationen** wird aber immer noch der Status Operational für meine Freshdesk-Integration angezeigt. Was kann ich tun? | Die injixo-App erhält Freshdesk-Daten und sendet Ereignisse an injixo. Bei einem Kommunikationsfehler zwischen der injixo-App und injixo können Freshdesk-Daten eventuell nicht mehr angezeigt werden. Die Freshdesk-Integration kann solche Kommunikationsfehler nicht erkennen.<br><br>Überprüfe, ob der injixo API-Schlüssel, den du beim Einrichten deiner injixo-App in deinem Freshdesk-Account eingegeben hast, noch gültig ist. Wenn der API-Schlüssel ungültig ist, aktualisiere den injixo API-Schlüssel auf der Installationsseite der injixo-App. Wenn der API-Schlüssel noch gültig ist, wende dich an den injixo-Support. |

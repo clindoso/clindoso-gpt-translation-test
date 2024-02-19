@@ -23,11 +23,14 @@ Vous débutez avec les intégrations&nbsp;? Commencez avec les {% link_new conce
 2. Si une intégration est déjà présente, cliquez sur _Ajouter une intégration_{:.doc-button}.
 3. Dans la section **Odigo**, cliquez sur _Ajouter cette intégration_{:.doc-button}.
 4. Entrez un nom unique permettant d’identifier la source de données.
-5. (Facultatif) Configurez l’importation des statuts agent pause détaillés.
-- Cochez la case **Importer les statuts agent de pause détaillés**.<br>Lors de l’importation des statuts pause, injixo inclura des informations sur le type de pause prise.<br>Remarque&nbsp;: si vous cochez cette case, vous devez également mettre à jour le {% link_new mapping des activités externes | features/acd-integration/cloud/import-agent-status-data.md | #réassigner-les-activités-du-système-externe %}.
+5. Dans les sections **Identifiants** et **Données sur les contacts**, renseignez tous les champs obligatoires.
+6. (Facultatif) Configurez l’importation des statuts agent pause détaillés&nbsp;:
+- Cochez la case **Importer les statuts agent de pause détaillés**.<br>
+  Lors de l’importation des statuts pause, injixo inclura des informations sur le type de pause prise.<br>
+  Remarque&nbsp;: si vous cochez cette case, vous devez également mettre à jour le {% link_new mapping des activités externes | features/acd-integration/cloud/import-agent-status-data.md | #réassigner-les-activités-du-système-externe %}.
 - Saisissez votre URL Odigo comprenant l’identifiant du tenant.
 - Entrez le nom d’utilisateur et le mot de passe pour le service web.
-6. Cliquez sur _Sauvegarder l’intégration_{:.doc-button}.
+7. Cliquez sur _Sauvegarder l’intégration_{:.doc-button}.
 
 ## Configurer votre intégration Odigo
 

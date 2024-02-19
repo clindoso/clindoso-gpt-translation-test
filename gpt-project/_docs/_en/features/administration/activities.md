@@ -1,5 +1,8 @@
 ---
 title: Create activities
+redirect_from:
+  - /creating-activities/
+redirect_reason: redirect included in the Meetings feature UI
 toc: true
 product_label:
   - essential
@@ -53,7 +56,6 @@ To see the ID of an activity, you can:
 
 ## Multiactivities and subactivities 
 
-
 Multiactivities allow you to schedule people with several skills when one of their skills is needed. You can turn an activity into a multiactivity by {% link_new assigning other activities | features/administration/activity-types-and-properties.md | #subactivities %} to it. The activities assigned become its subactivities.  In the list of activities, multiactivities are marked with an <em class="multiactivity-icon"></em> icon.
 
 If an activity is a subactivity, when you click it you can see the section **Multiactivities**, which displays all multiactivities it is assigned to.
@@ -61,18 +63,16 @@ If an activity is a subactivity, when you click it you can see the section **Mul
 If an activity is not a subactivity, when you click it you can see the section **Subactivities**, where you can select other activities to be subactivities of the activity that you are editing. The activity itself would then become a multiactivity.
 You can only assign subactivities to an activity after you have created it.
 
-## External systems
+## Map external statuses
 
-<!-- will be made obsolete by the new activity mapping page. Will require a separate article -->
+You can map external statuses from external systems (e.g. an ACD) to an activity in injixo.
+The following procedure provides an overview of the configuration steps. For a more detailed explanation, go to {% link_new Map external statuses to activities | features/intraday/map-external-status.md %}.
+1. Select an activity from the list, scroll to the section **External statuses**, and click **Map external statuses in Intraday**.  
+   injixo will redirect you to _Intraday > Configuration_{:.breadcrumbs}.
+2. Click the integration with the external system whose external statuses you want to map.
+3. In the **External statuses** section, select all statuses that you want to map to your activity.
+4. Click _Save changes_{:.doc-button}.
 
-You can map activities from external systems to an activity in injixo.
-1. Select an activity from the list, scroll to the **External systems** section, and click _Edit in WFM_{:.doc-button}.
-2. Navigate to the **External systems** section.
-3. Click the {% icon item-add %}.
-4. Select an **external system**, a **name from the external system**, and a **classification** from the drop-down menus.
-5. Click _OK_{:.doc-button}.
-
-> You can assign an activity from an external system only once to a single activity in injixo.
 
 ## Duplicate an activity
 

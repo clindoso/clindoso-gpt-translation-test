@@ -87,9 +87,10 @@ injixo Forecast displays data using the time zone that is set for the workload. 
 
 The values in the volume and AHT graphs in workloads do not default to the time zone set in {% link_new your user profile | getting-started/navigate-injixo.md | #your-user-profile %}. To see values according to your profile's time zone, go to _Analyze > Dashboards_{:.breadcrumbs} and add workload data to a dashboard.
 
-### Requirement calculation window
+### Requirements calculation window
 
-When you calculate the staff requirements for a workload, you can select the calculation method _Other_ to choose special staff calculation methods. Follow the instructions in the {% link_new Calculate staff requirements | features/forecast/injixo-forecast/staff-requirement.md | #additional-calculation-methods %} article to open the respective script window. There, you will see the time zones of the queue and the planning unit.
+When you calculate the staff requirements for a workload, you can choose among several staff requirements calculation methods. Learn more about configuring the
+{% link_new Multiactivity script | features/forecast/requirement-scripts/requirement-multiactivity.md %}, the {% link_new Outbound script | features/forecast/requirement-scripts/requirement-outbound.md %}, and the {% link_new Constant requirement script | features/forecast/requirement-scripts/requirement-constant.md %}.
 
 Staff requirements are calculated in the time zone of the planning unit. The calculation considers the time offset between queue and planning unit timezone.
 

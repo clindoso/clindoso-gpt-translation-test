@@ -83,7 +83,7 @@ When the schedule is saved, replaceable activities such as meetings are overwrit
 The following activities are considered and not overwritten:
 
 - Illnesses
-- Holidays
+- Vacation days
 - Full-day absences
 - Paid intraday activities with a start and end time
 

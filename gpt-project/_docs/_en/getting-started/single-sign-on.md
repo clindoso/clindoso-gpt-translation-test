@@ -43,16 +43,18 @@ Only users with admin access can activate SSO.
    - IdP does not provide federation metadata URL: Download the Federation Metadata XML file and host it yourself. As an example, learn how to set up your own custom [SAML application with Google](https://support.google.com/a/answer/6087519?hl=en).
 
 6. Click _Save configuration_{:.doc-button}.  
-   SSO is now active but all users can still log in with their username and password.
-
-> To ensure an even higher level of security, you can [enforce SSO for all users](#enforce-sso-for-all-users).
-
+   > SSO is now active  
+   >  
+   > Users can still log in with their username and password. To deactivate SSO again, click _Disable_{:.doc-button}.  
+   > For a higher level of security, [enforce SSO for all users](#enforce-sso-for-all-users) after testing the configuration in the next step. 
+   
 ## Test the SSO configuration
 
 Click _Test configuration_{:.doc-button} to test the login through the IdP. The IdP generates a SAML response that is sent to injixo. You are redirected to your IdP's login page, where you enter the IdP credentials. If the IdP configuration is correct and the authentication process is successful, you will be logged in to injixo.
 
 {{ 4 | image: 'Successfully testing the SSO configuration for the current user', '80%' }}
 
+### Test failed? Configure the SAML response
 <!-- A valid SubjectConfirmation was not found on this Response in our internal server logs -->
 
 The SAML response from the IdP contains the authenticated user's assertion with attributes and profile information. If the process was not successful and you see an error message, check the application configuration, the user configuration, and the Recipient, InResponseTo, NotBefore, and NotOnOrAfter attributes set in the IdP. 
@@ -108,3 +110,9 @@ To revoke a user's access to injixo via SSO, you must delete the injixo user ass
 ## Deactivate SSO
 
 To deactivate SSO and allow logins with username and password again, users with admin access can deactivate SSO. This will delete the IdP connection and all entered configuration details. After SSO has been deactivated, all active users receive an email to set a new injixo password. Afterwards, logging in with user name and password via [https://www.injixo.com/login](https://www.injixo.com/login) is possible again.
+
+## Use SSO on multiple tenants
+
+If your organization has multiple injixo tenants, and you want some or all of your users to have access to more than one tenant, the standard SSO configuration will not work. Contact your consultant to set up a configuration for this specific use case.
+
+<!-- SSO for multiple tenants can be activated by the feature flag multi_tenant_sso, see also https://github.com/ivx/internal-support-documentation/tree/main/Cortex-->

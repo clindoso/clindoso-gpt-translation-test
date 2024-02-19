@@ -4,50 +4,85 @@ product_label:
   - advanced
   - enterprise
   - classic
-description: Combine the various scheduling methods to meet the demands of your business.
+description: Combine the different scheduling methods to meet your business demands.
+related_articles:
+  - overwrite_title: Add title for untranslated source
+    filepath: features/scheduling/scheduling-methods.md
+  - overwrite_title: Add title for untranslated source
+    filepath: features/administration/shift-sequences.md
+  - overwrite_title: Add title for untranslated source
+    filepath: features/administration/availabilities.md
+  - overwrite_title: Add title for untranslated source
+    filepath: features/administration/work-time-pattern-models.md
 ---
 
-All available {% link_new single scheduling methods | features/scheduling/scheduling-methods.md %} can be combined in a variety of ways to balance the needs of your agents and your business.
+You can combine all {% link_new scheduling methods | features/scheduling/scheduling-methods.md %} in many ways to create schedules that balance the needs of your people and those of your business.
 
-The following examples illustrate a few of the common ways to combine scheduling methods, which you can use as presented or as inspiration to create your own combinations.
+The following examples show some common use cases for combining scheduling methods. You can also use other scheduling methods combinations to best meet the needs of your organization.
 
-## Fixed scheduling and rotating/fully flexible shifts
+## Use case 1: People with flexible shifts plus people with specific working hours or days  
 
-If you want to have a majority of flexible schedules, you can assign work time pattern models to your flexible employees. If some employees have strict restrictions on their schedule or you want to reward top performers or senior agents, you can define shift sequences for these employees.
+For this use case, you can combine fixed scheduling with either rotating flexible shifts, or fully flexible shifts.
 
-During scheduling, insert your shift sequences first, then run scheduling optimization as normal. Your rotating or flexible shifts will be optimized around the coverage provided by your shift sequences.
+To plan your people using this combination, you first need to configure the configuration data shown in the following table, and assign it to the relevant people:
 
-Alternately, if you have employees who need a certain shift on certain days of the week, you can create a shift sequence defining these days, with the rest of the week blank, and assign the employee a work time pattern model.
 
-When you insert the shift sequence and run a full optimization, the blank days will be filled in by the flexible or rotating shifts, following the rules of the contract to create a complete schedule.
+| People with flexible shifts            | People with specific working hours or days                                                                                                                |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Assign the work time pattern models you want to use to them. | Create specific shift sequences defining the hours or days when they should work, and leave the rest of the week blank.<br>Assign the shift sequence and the relevant work time pattern models to them.                                    |
 
-## Rotating flexible and fully flexible shifts
+To schedule your people, follow these steps:
 
-If you want some employees to follow a rotating schedule, while others are more flexible or will always work a flexible shift during a certain time of day, simply assign type B or D work time pattern models to the employees on rotating schedules, and type A work time pattern models to everyone else.
-The rotating employees will follow their rotations, and the flexible employees will be optimized to fulfill the rest of your requirements.
+1. Insert your shift sequences.
+2. Use the **Create optimized schedule** functionality.<br>injixo will schedule your rotating and fully flexible shifts to complement the coverage provided by the shift sequences.
 
-## Rotating flexible shifts and availability
 
-If an employee works a rotating shift, but has availability restrictions at certain times (for example, they cannot work past 5 PM on a Wednesday), simply define the availability restriction and assign a work time pattern model as normal.
+## Use case 2: People with rotating shifts plus people with flexible shifts
 
-On weeks where the employee works a morning shift, their availability window will allow them to be scheduled on Wednesday. However, on weeks where the employee works an evening shift, the availability window will block them from being scheduled on Wednesdays, and the schedule optimizer will give them schedules on other days of the week.
+For this use case, you can combine rotating flexible shifts and fully flexible shifts.
 
-## Fixed scheduling and availability
+To plan your people using this combination, you first need to assign the configuration data to the relevant people, as shown in the following table:
 
-You can add day models of type _Availability Period_ in shift sequences to influence the scheduling result on particular days. See the two examples below.
+| People with rotating flexible shifts           | People with fully flexible shifts                                                                                                                |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Assign work time pattern models of type B or D to them. | Assign work time pattern models of type A to them.                                   |
 
-**Shifts on every other weekend**:
 
-1. Create a day model of type _Availability Period_ with a time frame of 0 a.m. to 00:01 a.m. as a blocker.
-2. Add the day model in a shift sequence every other weekend (leave all other days blank).
-3. Assign the shift sequence to employees and insert the shift sequence before you create optimized schedules.
+Use the **Create optimized schedule** functionality.<br>People with rotating flexible shifts will be assigned the rotation defined by their work time pattern models, and people with fully flexible shifts will fill up the rest of the schedule.
 
-injixo does not schedule any shifts for the employee every other weekend and optimizes the other days.
+## Use case 3: People with rotating shifts and restricted availability
 
-**Night shifts every other week**:
+This use case refers to people who work rotating shifts but are not available at specific times, e.g. they cannot work past 5 PM on Wednesdays.
 
-1. Create a day model of type _Availability Period_ with a time frame of 12 p.m. to 12 a.m.
-2. Add the day model for each day of a week in a shift sequence (leave all other days blank).
-3. Assign the shift sequence to employees and insert the shift sequence before you create optimized schedules.
+For this use case, you can combine availabilities and rotating flexible shifts. 
 
-injixo schedules the night shift for the employee in the weeks with availability (according to the work time pattern model). For other weeks, injixo schedules any shift.
+1. Configure {% link_new availabilities | features/administration/availabilities.md %} for your people that define when they cannot work. In this case, they are available on Wednesdays only until 5 PM.
+2. Assign to them the relevant work time pattern models.
+
+For weeks when the person works the morning shift, they will be scheduled on Wednesday.<br>For weeks when the person works the evening shift, they will not be scheduled on Wednesday, and they will be planned for other days of the week.
+
+## Use case 4: People with fixed shifts and punctually restricted availability 
+
+This use case refers to people who work fixed shifts but have a more restricted availability on some particular days, e.g. they work night shifts, or during the weekend, but only every other week.
+
+For this use case, you can add {% link_new day models of the type Availability period | features/administration/daymodels/daymodel-basics.md | #types-of-day-models %} to {% link_new shift sequences | features/administration/shift-sequences.md %} to influence the scheduling result on particular days.<br>See the two examples below.
+
+To plan people to work shifts every other weekend, follow these steps:
+
+1. Create a day model of type Availability Period with a time range from midnight (0:00) to 0:01 AM as a blocker.
+2. Add the day model to one weekend in a shift sequence with 14 days, and leave all other days blank.
+3. Assign the shift sequence to the relevant people.
+4. Insert the shift sequence into your schedule.
+5. Use the **Create optimized schedule** functionality.
+
+injixo does not schedule any shifts every other weekend, and optimizes the remaining days.
+
+To plan people to work night shifts every other week, follow these steps:
+
+1. Create a day model of type Availability Period with a time range from midnight (0:00) to noon (12:00).
+2. Add the day model to each day of a week in a shift sequence with 14 days, and leave all other days blank.
+3. Assign the shift sequence to the relevant people.
+4. Insert the shift sequence into your schedule.
+5. Use the **Create optimized schedule** functionality.
+
+injixo schedules the night shift in the weeks when people are available, following the work time pattern model assigned to each person. For other weeks, injixo can schedule any shift that complies with the work time pattern model.

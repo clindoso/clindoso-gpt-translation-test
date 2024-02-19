@@ -21,7 +21,7 @@ Per creare, modificare ed eliminare le attività, vai su _Plan > Configurazione 
 
 Le attività rappresentano i compiti che sono pianificati e inclusi nei report della tua organizzazione, come telefonate, chat, pause, permessi o riunioni. Puoi creare un numero di attività illimitato. Il numero di attività che creerai dipende dalla quantità di compiti che vuoi differenziare e dal livello di dettaglio desiderato.
 
-Le attività sono una parte essenziale della programmazione e della pianificazione in injixo. Sono collegate ad altri elementi della configurazione come, per esempio, le {% link_new unità di pianificazione | features/administration/create-and-manage-planning-units.md | #add-activities %} e i {% link_new modelli di orario | features/administration/daymodels/daymodel-basics.md %}. Sono anche incluse nelle pianificazioni gestite nel {% link_new Centro dei turni | features/scheduling/shiftcenter/add-and-delete-items.md %} e in {% link_new Schedules | features/scheduling/schedules/schedules-edit.md %}.
+Le attività sono una parte essenziale della programmazione e della pianificazione in injixo. Sono collegate ad altri elementi della configurazione come, per esempio, le {% link_new unità di pianificazione | features/administration/create-and-manage-planning-units.md | #aggiungere-le-attività %} e i {% link_new modelli di orario | features/administration/daymodels/daymodel-basics.md %}. Sono anche incluse nelle pianificazioni gestite nel {% link_new Centro dei turni | features/scheduling/shiftcenter/add-and-delete-items.md %} e in {% link_new Schedules | features/scheduling/schedules/schedules-edit.md %}.
 
 injixo include due attività preconfigurate (non eliminabili):
 

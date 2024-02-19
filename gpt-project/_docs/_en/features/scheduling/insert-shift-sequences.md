@@ -10,7 +10,7 @@ Shift sequences are fixed, repetitive sequences of shifts, activities, or availa
 
 > This article is about _WFM > Scheduling > SchedulePro_{:.breadcrumbs}.
 >
-> If you are using injixo Essential WFM, Advanced WFM or Enterprise WFM, use the function {% link_new Insert Shift Sequences | features/scheduling/capacity/capacity-insert-shift-sequences.md %} under _Plan > Capacity_{:.breadcrumbs}.
+> If you are using injixo Essential WFM, Advanced WFM or Enterprise WFM, use the function {% link_new Insert Shift Sequences | features/scheduling/schedules/schedules-insert-shift-sequences.md %} under _Plan > Schedules_{:.breadcrumbs}.
 
 ## Set parameters
 

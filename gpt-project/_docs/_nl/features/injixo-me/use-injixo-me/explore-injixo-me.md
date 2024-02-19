@@ -81,6 +81,10 @@ Als je planning is gepubliceerd, dan kun je deze downloaden als PDF- of ICS-best
    - **Agendabestand (ICS)**: Download je planning en importeer deze in je agenda-app.
 5. Klik op _Downloaden_{:.doc-button}.
 
+> Opmerking
+>
+> In het blokweergaverapport worden diensten die na middernacht eindigen volledig weergegeven in de rij van de dag waarop de dienst begint. De tijd die wordt weergegeven in de kolom **Einde** verwijst naar de dag waarop de dienst eindigt.
+
 ## Je teamkalender bekijken: Teamkalender
 
 In _Me > Teamkalender_{:.breadcrumbs} kun je de planningen van alle medewerkers in je eenheid en groep bekijken. In de teamkalender vind je activiteiten zoals aanwezigheid, pauzes en vakanties. De teamkalender kan dagstatusactiviteiten weergeven, bijvoorbeeld om te visualiseren dat medewerkers thuis werken.

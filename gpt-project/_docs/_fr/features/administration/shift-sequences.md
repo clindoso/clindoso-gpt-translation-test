@@ -18,9 +18,8 @@ related_articles:
   - overwrite_title: Add title for untranslated source
     filepath: features/administration/employee-overview.md
   - overwrite_title: Add title for untranslated source
-    filepath: features/scheduling/capacity/capacity-insert-shift-sequences.md
+    filepath: features/scheduling/schedules/schedules-insert-shift-sequences.md
 ---
-
 
 Une rotation d’horaires est un cycle hebdomadaire de modèles horaires ou d’activités. Avec les rotations d’horaires, vous pouvez rapidement insérer ces cycles dans votre planning. injixo optimisera le reste du planning.
 
@@ -28,10 +27,10 @@ Les rotations d’horaires vous permettent de gagner un temps important, car vou
 
 Voici quatre cas d’utilisation des rotations d’horaires&nbsp;:
 
-1. Spécifier quand certaines journées doivent être planifiées
-2. Planifier des activités récurrentes
-3. Spécifier les jours de repos des employés
-4. Spécifier quand des journées peuvent être planifiées selon les disponibilités des employés
+- Exemple 1&nbsp;: spécifier quand certaines journées doivent être planifiées
+- Exemple 2&nbsp;: planifier des activités récurrentes
+- Exemple 3&nbsp;: spécifier les jours de repos des employés
+- Exemple 4&nbsp;: spécifier quand des journées peuvent être planifiées selon les disponibilités des employés
 
 Les rotations d’horaires sont composées d’une ou plusieurs lignes. Chaque ligne est un cycle distinct qui peut être inséré dans le planning.<br>
 Chaque ligne contient des cellules qui représentent les jours de la semaine. Dans les cellules, insérez les modèles horaires ou les activités que vous souhaitez planifier à l’aide de la rotation d’horaires.<br>
@@ -40,7 +39,9 @@ Chaque ligne représente un cycle hebdomadaire de votre planning, le nombre de c
 ## Prérequis
 
 Pour créer des rotations d’horaires, vous devez d’abord créer des {% link_new activités | features/administration/activities.md %} ou des {% link_new modèles horaires | features/administration/daymodels/daymodel-creation.md %}.<br>
-Après avoir créé des rotations d’horaires, vous devez les {% link_new assigner à vos employés | features/administration/employee-overview.md | #assigner-une-rotation-dhoraires %} avant de pouvoir les insérer dans votre planning.
+Après avoir créé des rotations d’horaires, vous devez les {% link_new assigner à vos employés | features/administration/employee-overview.md | #assigner-une-rotation-dhoraires %} avant de pouvoir les insérer dans votre planning.<br>
+Lorsque vous assignez une rotation d’horaires à un employé, vous devez définir une date de référence. La date de référence est la première journée pour laquelle la rotation d’horaires sera planifiée. À partir de cette date, la rotation d’horaires se répète sans interruption pendant toute la durée de sa validité.<br>
+Étant donné que vous pouvez configurer les rotations d’horaires en tant que cycles hebdomadaires, définissez la date de référence sur un lundi, ou sur le jour à partir duquel commence votre semaine de travail.
 
 >Remarque
 >
@@ -59,7 +60,7 @@ Pour créer une rotation d’horaires, accédez à _Plan > Configuration > Rotat
   **Nom**&nbsp;: saisissez un nom unique (50 caractères maximum).<br>
   **Abréviation**&nbsp;: saisissez le nom ou une version plus courte de celui-ci (25 caractères maximum).<br>
   **Séquence(s)**&nbsp;: saisissez le nombre de lignes pour la rotation d’horaires (53 maximum).<br>Un numéro sera assigné à chaque ligne. Double-cliquez sur une ligne pour la renommer. Vous aurez besoin du numéro ou du nom de la ligne pour l’assigner à un employé par la suite.<br>
-  **Durée**&nbsp;: saisissez une valeur comprise entre 1 et 371 jours. La durée doit être un multiple de 7.
+  **Durée**&nbsp;: saisissez une valeur comprise entre 7 et 371 jours. La durée doit être un multiple de 7.
 6. Cliquez sur _OK_{:.doc-button}.
 
 >Remarque
@@ -121,9 +122,9 @@ Pour supprimer tous les éléments d’une rotation d’horaires, suivez les ét
 
 1. Dans la section **Rotation d’horaires**, sélectionnez une rotation d’horaires depuis le menu déroulant.
 2. Cliquez sur _Appliquer_{:.doc-button}.
-3. Dans la section **Options**, cochez la case **Supprimer tout** et cliquez sur _Appliquer_{:.doc-button}.
-
-Les éléments sont supprimés automatiquement.
+3. Dans la section **Options**, sélectionnez **Suppression** depuis le menu déroulant.
+4. Cochez la case **Supprimer tout** et cliquez sur _Appliquer_{:.doc-button}.<br>
+  Les éléments sont supprimés automatiquement.
 
 ## Supprimer une rotation d’horaires
 
@@ -140,12 +141,12 @@ Vous pouvez utiliser les rotations d’horaires dans différents cas.
 
 Cet exemple s’applique lorsque vous devez planifier des journées du matin et du soir pour différents groupes d’employés. Il peut également s’appliquer si un de vos conseillers ne peut pas commencer sa journée à 11h les lundis, mais peut commencer plus tôt les autres jours de la semaine. 
  
-Pour savoir si cet exemple s’applique à votre situation et découvrir comment configurer les rotations d’horaires conformément, regardez la vidéo Academy suivante (en anglais)&nbsp;:
+Pour savoir si cet exemple s’applique à votre situation et découvrir comment configurer les rotations d’horaires conformément, regardez la vidéo Academy ci-dessous (en anglais)&nbsp;:
 
 <div class="inline-video-container">
   <video class="inline-video-player-v" controls> 
    <source src="../../../assets/video/step-2-determine-how-to-organize-your-results/use-case-1.mp4" type="video/mp4">
-   Votre navigateur ne prend pas en charge la balise vidéo. Vous pouvez <a href="../../../assets/video/step-2-determine-how-to-organize-your-results/use-case-1.mp4">télécharger la vidéo</a> pour la regarder hors ligne.
+   <track src="../../assets/video/step-2-determine-how-to-organize-your-results/subtitles/use-case-1.vtt" kind="subtitles" srclang="en" label="Anglais" default>
    </video>
 </div>
 <br>
@@ -154,11 +155,12 @@ Pour savoir si cet exemple s’applique à votre situation et découvrir comment
 
 Cet exemple s’applique notamment si vous devez planifier des réunions ayant lieu chaque semaine, ou si vous souhaitez planifier un employé pour travailler une heure chaque jour en back-office à une heure spécifique.
 
-Pour savoir si cet exemple s’applique à votre situation et découvrir comment configurer les rotations d’horaires conformément, regardez la vidéo Academy suivante (en anglais)&nbsp;:
+Pour savoir si cet exemple s’applique à votre situation et découvrir comment configurer les rotations d’horaires conformément, regardez la vidéo Academy ci-dessous (en anglais)&nbsp;:
 
 <div class="inline-video-container">
   <video class="inline-video-player-v" controls>
    <source src="../../../assets/video/step-2-determine-how-to-organize-your-results/use-case-2.mp4" type="video/mp4">
+   <track src="../../assets/video/step-2-determine-how-to-organize-your-results/subtitles/use-case-2.vtt" kind="subtitles" srclang="en" label="Anglais" default>
   </video>
 </div>
 <br>
@@ -172,6 +174,7 @@ Pour savoir si cet exemple s’applique à votre situation et découvrir comment
   <div class="inline-video-container">
     <video class="inline-video-player-v" controls> 
      <source src="../../../assets/video/step-2-determine-how-to-organize-your-results/use-case-3.mp4" type="video/mp4">
+     <track src="../../assets/video/step-2-determine-how-to-organize-your-results/subtitles/use-case-3.vtt" kind="subtitles" srclang="en" label="Anglais" default>
     </video>
   </div>
 <br>
@@ -185,6 +188,7 @@ Pour savoir si cet exemple s’applique à votre situation et découvrir comment
 <div class="inline-video-container">
   <video class="inline-video-player-v" controls>
    <source src="../../../assets/video/step-2-determine-how-to-organize-your-results/use-case-4.mp4" type="video/mp4">
+   <track src="../../assets/video/step-2-determine-how-to-organize-your-results/subtitles/use-case-4.vtt" kind="subtitles" srclang="en" label="Anglais" default>
   </video>
 </div>
 <br>

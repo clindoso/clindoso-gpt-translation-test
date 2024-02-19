@@ -18,7 +18,7 @@ redirect_reason: Updated filename on 15 September 2023
 
 ## Aggiungere un'integrazione Freshchat
 
-Per aggiungere una nuova integrazione Freshchat in injixo, devi avere un account Freshchat del tipo Pro o Enterprise. Segui la procedura descritta nell’articolo {% link_new Aggiungere un’integrazione cloud | features/acd-integration/cloud/add-cloud-integration.md %}:
+Per aggiungere una nuova integrazione Freshchat in injixo, devi avere un account Freshchat del tipo Pro o Enterprise.
 
 1. Vai su _Account > Integrazioni_{:.breadcrumbs}.
 2. Se ci sono già altre integrazioni, clicca su _Aggiungi integrazione_{:.doc-button}.
@@ -31,7 +31,7 @@ Per aggiungere una nuova integrazione Freshchat in injixo, devi avere un account
 2. Nella sezione **Credenziali**, inserisci il nome completo del tuo dominio Freshchat, incluso il sottodominio, per esempio: esempio.freshchat.com.
 3. Vai su Freshchat e copia una chiave API valida di un utente con il ruolo di Account Administrator.
 4. Torna su injixo e incolla la chiave API nel campo **Chiave API**.
-5. Clicca su _Salva integrazione_{:.doc-button}. 
+5. Clicca su _Salva integrazione_{:.doc-button}.
 
 ### Installare l’app injixo
 
@@ -39,7 +39,7 @@ L'integrazione Freshchat richiede un'applicazione client. Dopo aver salvato la c
 
 Genera la **chiave API di injixo** e incollala in questa sezione.
 
-Per impostare l’app injixo nel tuo account Freshdesk, segui le istruzioni sullo schermo. Per altre informazioni, consulta il [Freshworks marketplace](https://www.freshworks.com/apps/freshdesk/injixo_connect).
+Per impostare l’app injixo nel tuo account Freshchat, segui le istruzioni sullo schermo. Per altre informazioni, consulta il [Freshworks marketplace](https://www.freshworks.com/apps/injixo_connect).
 
 ## I dati Freshchat in injixo
 
@@ -47,7 +47,7 @@ Per impostare l’app injixo nel tuo account Freshdesk, segui le istruzioni sull
 
 In Freshchat, una chat di solito contiene diverse conversazioni che avvengono tra i tuoi colleghi e i clienti. In injixo, ogni chat risolta viene contata come un contatto, indipendentemente dal numero di conversazioni.
 
-Esempio: un cliente apre una chat sul sito, un collega risponde, ma risolve il problema, e la conversazione, il giorno dopo, perché non aveva tutte le informazioni necessarie. injixo considera queste interazioni come un contatto solo.
+Esempio: un cliente apre una chat sul sito, un collega risponde, ma risolve il problema e la conversazione il giorno dopo, perché non aveva tutte le informazioni necessarie. injixo considera queste interazioni come un contatto solo.
 
 ### Convenzione sul nome delle code di origine
 
@@ -64,3 +64,8 @@ Esempi:
 
 Una chat può essere eliminata o contrassegnata come spam quando viene aggiornata. In questo caso, l’integrazione non può determinare il nome del gruppo. Le code di origine che contano queste chat sono etichettate come Undefined_Queue. Generalmente, queste code sono irrilevanti ai fini della pianificazione del workload dei dipendenti.
 
+## Domande frequenti
+
+| Domanda                                                                                                                                                                       | Risposta                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| injixo smette improvvisamente di mostrare nuovi dati di Freshchat ma in **Account > Integrazioni** l’integrazione Freshchat ha ancora lo stato Operativo. Che cosa posso fare? | L'app injixo ottiene dati da Freshchat e invia eventi a injixo. In caso di errori di comunicazione tra l'app injixo e injixo, i dati di Freshchat potrebbero non essere più visualizzati. L'integrazione Freshchat non è in grado di rilevare eventuali errori di comunicazione.<br><br>Verifica che la chiave API di injixo che hai inserito durante la configurazione dell'app injixo nel tuo account Freshchat sia ancora valida. Se la chiave API non è più valida, aggiorna la chiave API di injixo nella pagina di installazione dell'app injixo. Se la chiave API è ancora valida, contatta l’assistenza di injixo. |

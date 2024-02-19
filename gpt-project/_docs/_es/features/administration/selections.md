@@ -45,12 +45,26 @@ Para asignar empleados a grupos primero debes [crear un grupo](#crear-grupos).
 1. Ve a _Plan > Configuración > Empleados_{:.breadcrumbs}.
 2. Haz clic en el empleado que quieres asignar a un grupo.  
    Se abre un panel de configuración a la derecha.
-3. En la sección **Grupos**, haz clic en el icono Insertar {% icon item-add | icon-only %}.
-4. Haz clic en el grupo al que quieres asignar al empleado.
-5. (Opcional) Introduce un rango de fechas en los campos **Válido desde** y **Válido hasta** para limitar el periodo de validez del grupo. Deja los campos **Válido desde** y **Válido hasta** en blanco si quieres que el grupo esté siempre disponible. Aprende más sobre los {% link_new períodos de validez | features/administration/set-a-validity-period.md %}.
-6. Haz clic en _Aceptar_{:.doc-button}.
+3. En la sección **Grupos**, haz clic en el icono Insertar {% icon item-add %}.
+4. Completa los siguientes campos:  
+   - **Grupo**: Haz clic en el grupo al que quieres asignar al empleado.
+   - (Opcional) **Válido desde/Válido hasta**: rango de fechas para limitar el período de validez del grupo. Si dejas estos campos en blanco, el grupo es siempre válido. Aprende más sobre los {% link_new períodos de validez| features/administration/set-a-validity-period.md %}.
+5. Haz clic en _Aceptar_{:.doc-button}.
+
 
 Para editar un grupo al que el empleado está asignado, haz clic en el icono Editar {% icon item-edit | icon-only %}. Para eliminar la asignación al grupo, haz clic en el icono Eliminar {% icon item-delete | icon-only %}.
+
+## Gestionar empleados en un grupo
+
+En _Plan > Configuración > Empleados_{:.breadcrumbs} puedes ver un resumen de los empleados en un grupo y acceder a su configuración.
+
+Puedes filtrar los empleados en un grupo con los siguientes menús desplegables:
+
+- **Unidad de planificación**: selecciona todas las unidades de planificación con la opción **[Todas]**.
+- **Grupo**: selecciona un grupo.  
+   Si no ves el menú desplegable **Grupo**, haz clic en el icono **Filtro estándar** {% icon selection | icon-only %} en la parte superior.
+
+injixo muestra todos los empleados del grupo. Para acceder a la configuración de un empleado, haz clic en su fila en la lista.
 
 ## Combinar grupos
 
@@ -60,11 +74,13 @@ Para crear una jerarquía de grupos entre grupos secundarios y un grupo principa
 
 Para asignar un grupo a otro grupo, sigue estos pasos:
 
-1. Haz clic en el grupo que quieres usar como grupo principal en la lista de grupos.  
+1. Ve a _Plan > Configuración > Grupos_{:.breadcrumbs}.
+2. Haz clic en el grupo que quieres usar como grupo principal en la lista de grupos.  
    Se abre un panel de configuración a la derecha.
-2. En la sección **Grupos**, haz clic en el icono Insertar {% icon item-add | icon-only %}.
-3. Haz clic en el grupo al que quieres asignar un grupo secundario.
-4. (Opcional) Introduce un rango de fechas en los campos **Válido desde** y **Válido hasta** para asignar los grupos secundarios al grupo principal durante un tiempo limitado. Deja los campos **Válido desde** y **Válido hasta** en blanco si quieres que la asignación esté activa sin límite temporal.
+3. En la sección **Grupos**, haz clic en el icono Insertar {% icon item-add | icon-only %}.
+4. Completa los siguientes campos:  
+   - **Grupos**: Haz clic en el grupo al que quieres asignar un grupo secundario.
+   - (Opcional) **Válido desde/Válido hasta**: Rango de fechas para limitar el período en el que los grupos secundarias están asignados al grupo principal. Si dejas estos campos en blanco, la asignación es siempre válida.
 5. Haz clic en _Aceptar_{:.doc-button}.
 
 Para editar o eliminar un grupo secundario, haz clic en el icono Editar {% icon item-edit | icon-only %} o en el icono Eliminar {% icon item-delete | icon-only %}.

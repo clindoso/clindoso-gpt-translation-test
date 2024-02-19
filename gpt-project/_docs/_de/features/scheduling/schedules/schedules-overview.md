@@ -30,7 +30,7 @@ In der Filterleiste kannst Du:
 
 ### Planungsaktionen
 
-  - {% link_new Schichtfolgen einfügen | features/scheduling/capacity/capacity-insert-shift-sequences.md %}: füge feste, sich wiederholende Abfolgen von Schichten, Aktivitäten oder Verfügbarkeien in Deinen Schichtplan ein
+  - {% link_new Schichtfolgen einfügen | features/scheduling/schedules/schedules-insert-shift-sequences.md %}: füge feste, sich wiederholende Abfolgen von Schichten, Aktivitäten oder Verfügbarkeien in Deinen Schichtplan ein
   - {% link_new Joboptimierung | features/scheduling/schedules/schedules-job-optimization.md %}: ersetze Aktivitäten, um die Deckung zu verbessern
   - {% link_new Pausen optimieren | features/scheduling/schedules/break-optimization.md %}: ordne die Pausenpositionen im Schichtplan neu an, um die Deckung zu verbessern
   - {% link_new Ebenen leeren | features/scheduling/schedules/schedules-empty-levels.md %}: lösche den Inhalt einer Ebene

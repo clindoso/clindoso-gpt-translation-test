@@ -93,7 +93,7 @@ De volgende instellingen zijn niet verplicht, maar kunnen handig zijn bij het pl
 
 - {% link_new Groepen | features/administration/selections.md %}: Groepen dienen als een filter dat je kunt gebruiken om een gefilterde groep medewerkers weer te geven in een overzicht of om een actie uit te voeren voor een specifieke groep medewerkers tegelijkertijd. Je kunt een of meerdere groepen aanmaken met het vervolgkeuzemenu Groepen. Voorbeelden van groepen: een groep medewerkers die altijd op dezelfde manier wordt ingepland, hetzelfde contract heeft, in dienstenseries werkt, naar het werk carpoolt of die op basis van hun voltijds contract als eerste wordt ingepland.
 
-- {% link_new Planningsmodellen | features/administration/work-time-pattern-models.md %}: Gebruik planningsmodellen om de automatische planning te beperken tot een beperkt aantal beschikbare dagmodellen. Je kunt slechts één planningsmodel aan een medewerker toewijzen. Voer een {% link_new referentiedatum | features/administration/reference-date.md %} in als begindatum voor een planningsmodel.
+- {% link_new Planningsmodellen | features/administration/work-time-pattern-models.md %}: Gebruik planningsmodellen om de automatische planning te beperken tot een beperkt aantal beschikbare dagmodellen. Je kunt slechts één planningsmodel aan een medewerker toewijzen. Voer een referentiedatum in als begindatum voor een planningsmodel.
 
 - Externe systemen: Wijs {% link_new medewerkers-ID's van externe systemen toe  | features/acd-integration/cloud/import-agent-status-data.md | #medewerker-ids-van-externe-systemen-aan-medewerkers-toewijzen-in-injixo %}. Deze zijn nodig om agentstatussen uit je ACD te importeren.
 
@@ -132,9 +132,9 @@ Volg deze stappen om een dienstenserie toe te voegen.
 2. Selecteer een dienstenserie.
 3. Selecteer in het vervolgkeuzemenu bij Medewerker de rij van de {% link_new dienstenserie | features/administration/shift-sequences.md %} die van toepassing is op de medewerker.
 4. Specificeer de volgorde.<br>Deze instelling is alleen relevant als je meer dan één dienstenserie aan een medewerker wilt toewijzen. Dienstenseries met lagere waarden worden als eerste ingevoerd en kunnen door volgende dienstenseries worden overschreven.
-5. Stel een {% link_new Referentiedatum | features/administration/reference-date.md %} in voor de dag waarop de dienstenserie begint.
+5. Stel een Referentiedatum in voor de dag waarop de dienstenserie begint.
 6. Klik op _OK_{:.doc-button}.
-Je kunt nu {% link_new dienstenseries toevoegen | features/scheduling/capacity/capacity-insert-shift-sequences.md %} aan de planning.
+Je kunt nu {% link_new dienstenseries toevoegen | features/scheduling/schedules/schedules-insert-shift-sequences.md %} aan de planning.
 
 ## Medewerkers overplaatsen
 

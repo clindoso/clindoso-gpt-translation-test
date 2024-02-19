@@ -23,11 +23,12 @@ New to integrations? Learn {% link_new the basics | features/acd-integration/clo
 2. If there already is an integration, click _Add integration_{:.doc-button}.
 3. In the **Odigo** tile, click _Add integration_{:.doc-button}.
 4. Enter a unique name for the new integration that identifies the data source.
-5. (Optional) Configure the import of detailed break agent statuses:
-- Check the checkbox **Import detailed break agent statuses**.<br>When importing break statuses, injixo will include information about the type of break taken.<br>Note: If you check this checkbox, you also need to update the {% link_new activity mapping | features/acd-integration/cloud/import-agent-status-data.md | #remap-external-system-activities %}.
+5. In the **Credentials** and **Contact data** sections, fill out all mandatory fields.
+6. (Optional) Configure the import of detailed break agent statuses:
+- Check the checkbox **Import detailed break agent statuses**.<br>When importing break statuses, injixo includes information about the type of break taken.<br>Note: If you check this checkbox, you also need to update the {% link_new activity mapping | features/intraday/map-external-status.md | #remap-already-mapped-external-statuses %}.
 - Enter your Odigo URL including the tenant ID.
 - Enter the username and password for the web service.
-6. Click _Save integration_{:.doc-button}.
+7. Click _Save integration_{:.doc-button}.
 
 ## Configure your Odigo integration
 
@@ -46,11 +47,12 @@ injixo will then start importing RTA data, but the data will only be visible aft
 1. Go to _WFM > Administration > Scheduling > Employees_{:.breadcrumbs}.
 2. Assign external user identifiers to your people.
 
-Learn more about {% link_new mapping external user identifiers | features/acd-integration/cloud/import-agent-status-data.md | #map-external-user-identifiers-to-people-in-injixo %} to people.
+Learn more about {% link_new mapping external user identifiers | features/acd-integration/cloud/import-agent-status-data.md | #map-external-identifiers-to-people-in-injixo %} to people.
 
-## Map agent statuses to injixo activities
+## Map external statuses to injixo activities
 
-1. Go to _WFM > Administration > Scheduling > Activities_{:.breadcrumbs}.
-2. Assign Odigo activities to injixo activities.
+1. Go to _Intraday > Configuration_{:.breadcrumbs}.
+2. Map external statuses from Odigo to injixo activities.
 
-Learn more about {% link_new mapping external activities | features/acd-integration/cloud/import-agent-status-data.md | #remap-external-system-activities %} to injixo activities.
+Learn more about {% link_new mapping external statuses | features/intraday/map-external-status.md | #map-external-statuses-to-activities %} to injixo activities.
+

@@ -10,7 +10,7 @@ Mit der Funktion *Ebenen kopieren*{:.menu-item} kannst Planungsstände für ganz
 
 > Hinweis
 >
-> Die Zielebene wird durch den Kopiervorgang vollständig, d.h. auch mit leeren Tagen aus der Quellebene überschrieben. Das Kopieren von Ebenen kann nicht rückgängig gemacht werden.
+> Die Zielebene wird durch den Kopiervorgang vollständig, d.&nbsp;h. auch mit leeren Tagen aus der Quellebene überschrieben. Das Kopieren von Ebenen kann nicht rückgängig gemacht werden.
 
 ## Welchen Nutzen bringt die Funktion Ebenen kopieren?
 

@@ -41,7 +41,7 @@ Sollte ein Planungsmodell für Bernd angelegt werden, können dafür alle Plan
 
 Christina hat einen 4-Tages-Vertrag mit 20 Stunden Wochensoll. Sie kann nur an festen Tagen unterschiedlich lange Schichten leisten, daher wurde in ihrem flexiblen Vertrag die Wochentagsarbeitszeit (Montag bis Donnerstag, 3,0 Std., 4,0 Std., 5,0 Std., 8,0 Std.) Ihr Wochensoll ist die Summe der Wochentagsarbeitszeit und muss vom AutoScheduler stets eingehalten werden.
 
-Christina kann nur in Feiertagswochen an weniger als 4 Tagen pro Woche vom AutoScheduler geplant werden, da das Wochensoll durch Feiertage reduziert wird, d.h. fällt ein Feiertag auf einen Wochentag, stehen von den 20 Stunden nur noch 16 Stunden für die Planung zur Verfügung.
+Christina kann nur in Feiertagswochen an weniger als 4 Tagen pro Woche vom AutoScheduler geplant werden, da das Wochensoll durch Feiertage reduziert wird, d.&nbsp;h. fällt ein Feiertag auf einen Wochentag, stehen von den 20 Stunden nur noch 16 Stunden für die Planung zur Verfügung.
 
 Für Wochen ohne Feiertag gibt es nur eine mögliche Arbeitszeitkombination:
 

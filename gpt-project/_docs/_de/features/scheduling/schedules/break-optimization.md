@@ -77,7 +77,7 @@ Je weiter sich die grüne Linie der 0 annähert, desto stärker hat die Optimier
 
 ### Wie die Graphen berechnet werden
 
-Angenommen, Deine Planungseinheit hat zwei verschiedene Aktivitäten vom Typ *Anwesenheit*, die in einem Intervall von 15 Minuten geforecastet und geplant werden. Das ergibt vier Intervalle pro Stunde. Für diese vier Intervalle zeigt die folgende Tabelle die Deckung beider Aktivitäten, die Abweichung von der perfekten Deckung sowie die Gesamtabweichung, d.h. die Summe der Werte für die Abweichung von der perfekten Deckung:  
+Angenommen, Deine Planungseinheit hat zwei verschiedene Aktivitäten vom Typ *Anwesenheit*, die in einem Intervall von 15 Minuten geforecastet und geplant werden. Das ergibt vier Intervalle pro Stunde. Für diese vier Intervalle zeigt die folgende Tabelle die Deckung beider Aktivitäten, die Abweichung von der perfekten Deckung sowie die Gesamtabweichung, d.&nbsp;h. die Summe der Werte für die Abweichung von der perfekten Deckung:  
 
 | Hotline  |  Deckung | Abweichung von perfekter Deckung |
 | ---------|-----------| -------------------------------- |

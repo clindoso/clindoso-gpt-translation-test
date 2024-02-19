@@ -33,20 +33,20 @@ If your contact center is open on a public holiday, but has different business h
 5. In the **From** and **To** fields, enter the business hours for each day.  
    On public holidays, injixo will only generate staff requirements and schedule people within the business hours. Other days will not be affected.
 
-Note: Scheduling rule _2631_{:.id-label} _Check contractual ban on work scheduled for holidays (both day models and activities)_ checks the holiday mode. If the scheduling rule and the corresponding checkbox in the contract are activated, you cannot assign activities or day models to employees on holidays.
+Note: Scheduling rule _2631_{:.id-label} _Check contractual ban on work scheduled for holidays (both day models and activities)_ checks the holiday mode. If the scheduling rule and the corresponding checkbox in the contract are activated, you cannot assign activities or day models to employees on public holidays.
 
-> Tip: Holidays on weekends
+> Tip: Public holidays on weekends
 >
-> If you use the planning calendar and holiday mode, but your planning unit is basically closed on weekends, remove all holidays that fall on a weekend from the planning calendar. This way, injixo can determine the correct number of working days for the week.
+> If you use the planning calendar and holiday mode, but your planning unit is basically closed on weekends, remove all public holidays that fall on a weekend from the planning calendar. This way, injixo can determine the correct number of working days for the week.
 
 ## Closed: Use paid full-day absence activities
 
 If your planning unit is closed on public holidays, schedule a paid full-day activity of type Absence to block injixo from creating a schedule for such days:
 
-1. Create an activity of type Absence, such as National Holiday.
+1. Create an activity of type Absence, such as Public Holiday.
 2. Check the checkboxes **Paid** and **Allow as Full-Day Activity**.
 3. Assign the activity to your planning unit.
-4. Schedule the National Holiday activity for all employees on national holidays.  
+4. Schedule the Public Holiday activity for all employees on public holidays.  
    Tip: To add the activity, you can use the **Employee** tab in the dialog in Shift Center. Learn more about {% link_new adding multiple items at once | features/scheduling/shiftcenter/add-and-delete-items.md | #add-items-to-multiple-employees-at-once %}.
 
 injixo determines the target working time for the days as follows:
@@ -56,7 +56,7 @@ injixo determines the target working time for the days as follows:
 | Work Time Guidelines                   | injixo calculates the value (Target Work Time per Week / by Number of Working Days) |
 | Working Hours for Each Day of the Week | injixo considers the value entered for the weekday                                  |
 
-Users with the Agent role can see the holidays in their calendars in _Me > My Calendar_{:.breadcrumbs}.
+Users with the Agent role can see the public holidays in their calendars in _Me > My Calendar_{:.breadcrumbs}.
 
 ## Closed: Use the planning calendar
 
@@ -80,12 +80,12 @@ To avoid the need to change contracts on a regular basis, better use the paid fu
 
 Note: If the contractual working time is defined in the **Working hours for each day of the week** section, use a paid full-day absence. Otherwise, optimized scheduling cannot create a schedule for such contracts. On the one hand, optimization must schedule a certain number of working hours on certain days, and on the other hand, there are no opening hours on one of these days.
 
-## Visualize national holidays (Shift Center)
+## Visualize public holidays (Shift Center)
 
-When you work with a planning calendar to schedule holidays, the Shift Center will highlight holidays in the planning unit for which you have added the planning calendar. If you do not use the planning calendar, you can still visualize public holidays in day cells in a separate planning unit, which does not affect your scheduling:
+When you work with a planning calendar to schedule public holidays, the Shift Center will highlight public holidays in the planning unit for which you have added the planning calendar. If you do not use the planning calendar, you can still visualize public holidays in day cells in a separate planning unit, which does not affect your scheduling:
 
 1. Create a separate planning unit and assign a planning calendar. Do not add people or activities.
 2. Add a leading underscore or blank space to the name of the new planning unit, e.g. \_Calendar.  
    Because the Shift Center displays planning units in alphabetical order, the new planning unit shows up in first position.
 
-   {{ 5 | image: 'Planning unit for displaying national holidays', '90%' }}
+   {{ 5 | image: 'Planning unit for displaying public holidays', '90%' }}

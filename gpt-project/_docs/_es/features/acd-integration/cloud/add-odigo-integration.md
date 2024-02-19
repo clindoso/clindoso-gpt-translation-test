@@ -23,11 +23,12 @@ La integración de Odigo importa datos sobre los estados de los agentes y datos 
 2. Si ya existe una integración, haz clic en _Añadir integración_{:.doc-button}.
 3. En el recuadro **Odigo**, haz clic en _Añadir integración_{:.doc-button}.
 4. Introduce un nombre inequívoco para la integración que identifique el origen de los datos.
-5. (Opcional) Configura la importación de detalles de los estados de pausa de los agentes.
-- Marca la casilla **Importar detalles de los estados de pausa de los agentes**.<br>Cuando se importan los estados de pausa, injixo incluirá información sobre el tipo de pausa.<br>Ten en cuenta que si marcas esta casilla, también necesitas actualizar la {% link_new asignación de actividades | features/acd-integration/cloud/import-agent-status-data.md | #reasignar-actividades-externas %}.
+5. En las secciones **Credenciales** y **Datos de contacto** sections, completa todos los campos obligatorios.
+6. (Opcional) Configura la importación de detalles de los estados de pausa de los agentes:
+- Marca la casilla **Importar detalles de los estados de pausa de los agentes**.<br>Cuando se importan los estados de pausa, injixo incluirá información sobre el tipo de pausa.<br>Ten en cuenta que, si marcas esta casilla, también necesitas actualizar la {% link_new asignación de actividades | features/acd-integration/cloud/import-agent-status-data.md | #reasignar-actividades-externas %}.
 - Introduce tu URL de Odigo, incluida tu ID de cliente.
 - Introduce el nombre de usuario y la contraseña para el servicio web.
-6. Haz clic en _Guardar integración_{:.doc-button}.
+7. Haz clic en _Guardar integración_{:.doc-button}.
 
 ## Configurar tu integración de Odigo
 

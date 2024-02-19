@@ -1,51 +1,88 @@
 ---
-title: Kombinieren von Planungsmethoden
+title: Planungsmethoden kombinieren
 product_label:
   - advanced
   - enterprise
   - classic
-description: Kombiniere die verschiedenen Planungsmethoden, um den Anforderungen Deines Unternehmens gerecht zu werden.
+description: Kombiniere die verschiedenen Planungsmethoden, um die Anforderungen deines Unternehmens zu erfüllen.
+related_articles:
+  - overwrite_title: Add title for untranslated source
+    filepath: features/scheduling/scheduling-methods.md
+  - overwrite_title: Add title for untranslated source
+    filepath: features/administration/shift-sequences.md
+  - overwrite_title: Add title for untranslated source
+    filepath: features/administration/availabilities.md
+  - overwrite_title: Add title for untranslated source
+    filepath: features/administration/work-time-pattern-models.md
 ---
 
-Alle verfügbaren {% link_new Planungsmethoden | features/scheduling/scheduling-methods.md %} können auf verschiedene Weise kombiniert werden, um die Bedürfnisse Deiner Agenten und die Ziele Deines Unternehmens zu berücksichtigen.
+Dir stehen viele Möglichkeiten zur Verfügung, die verfügbaren {% link_new Planungsmethoden| features/scheduling/scheduling-methods.md %} miteinander zu kombinieren, um einen Schichtplan zu erstellen, der sowohl die Anforderungen deiner Mitarbeiter als auch die deines Unternehmens berücksichtigt.
 
-Die folgenden Beispiele veranschaulichen einige der üblichen Kombinationsmöglichkeiten von Planungsmethoden, die Du direkt einsetzen oder als Inspiration für Deine eigenen Kombinationen verwenden kannst.
+In den folgenden Beispielen findest du typische Anwendungsfälle dafür, wie du Mitarbeiter mit kombinierten Planungsmethoden planen kannst. Du kannst Planungsmethoden auch auf andere Weise kombinieren, um die Anforderungen deines Unternehmens bestmöglich zu erfüllen.
 
-## Fixe Schichtplanung und rotierende bzw. voll flexible Schichten
+## Anwendungsfall 1: Mitarbeiter mit flexiblen Schichten plus Mitarbeiter mit festgelegten Arbeitszeiten/-tagen  
 
-Wenn Du hauptsächlich mit flexiblen Schichtplänen arbeiten möchtest, kannst Du Deinen flexiblen Mitarbeitern Planungsmodelle zuweisen. Wenn einige Mitarbeiter strikte zeitlichen Einschränkungen für den Schichtplan haben oder Du Top-Performer und leitende Mitarbeiter belohnen möchtest, kannst Du für diese Mitarbeiter Schichtfolgen definieren.
+Bei diesem Anwendungsfall kannst du die fixe Planung mit rotierenden flexiblen Schichten oder vollständig flexiblen Schichten kombinieren.
 
-Bei der Planung fügst Du zuerst Deine Schichtfolgen ein und führst dann eine Optimierung durch. Deine rotierenden oder flexiblen Schichten werden um die bereits hinterlegten Schichtfolgen geplant.
+Um deine Mitarbeiter mit dieser Kombination zu planen, musst du als Erstes die in der folgenden Tabelle angegebenen Stammdaten konfigurieren und sie den entsprechenden Mitarbeitern zuweisen:
 
-Wenn Du Mitarbeiter hast, die nur an bestimmten Wochentagen einen festen Schichtplan benötigen, kannst Du eine Schichtfolge erstellen, in welcher Du diese Tage hinterlegst. Der Rest der Woche bleibt frei und der Mitarbeiter wird durch das zugewiesene Planungsmodell geplant.
 
-Wenn Du die Schichtfolge einfügst und eine vollständige Optimierung durchführst, werden die leeren Tage durch die flexiblen oder rotierenden Schichten aufgefüllt. Dabei werden die Vorgaben aus dem Vertrag eingehalten, um einen gültigen Schichtplan zu erstellen.
+| Mitarbeiter mit flexiblen Schichten            | Mitarbeiter mit festgelegten Arbeitszeiten/-tagen                                                                                                                |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Weise ihnen die Planungsmodelle zu, die du verwenden möchtest. | Erstelle spezifische Schichtfolgen, in denen die Zeiten bzw. Tage festgelegt sind, an denen sie arbeiten sollen und lasse den Rest der Woche leer.<br>Weise ihnen die Schichtfolgen und die entsprechenden Planungsmodelle zu.                                    |
 
-## Rotierende flexible und vollständig flexible Schichten
+Um deine Mitarbeiter zu planen, gehe wie folgt vor:
 
-Wenn Du möchtest, dass einige Mitarbeiter einem rotierenden Schichtplan folgen, während andere flexibler sind oder während einer bestimmten Tageszeit immer eine flexible Schicht erhalten können, weise den Mitarbeitern für rotierende Schichten einfach Planungsmodelle vom Typ B oder D zu und allen anderen Planungsmodelle vom Typ A.
-Die Mitarbeiter mit den Planungsmodellen vom Typ B oder D werden ihren Rotationen folgen und die flexiblen Mitarbeiter werden so optimiert, dass sie den Rest der Bedarfe bestmöglich decken.
+1. Füge deine Schichtfolgen ein.
+2. Nutze die Funktionalität **Optimierten Plan erstellen**.<br>injixo plant deine rotierenden und vollständig flexiblen Schichten und ergänzt damit die Deckung durch die Schichtfolgen.
 
-## Rotierende flexible Schichten und Verfügbarkeit
 
-Wenn ein Mitarbeiter in einer rotierenden Schicht arbeitet, aber an bestimmten Tagen zeitlich eingeschränkt ist (z.B. darf er an einem Mittwoch nicht länger als 17 Uhr arbeiten), hinterlege einfach die entsprechende Verfügbarkeit beim Mitarbeiter und weise ihm ein Planungsmodell zu.
+## Anwendungsfall 2: Mitarbeiter mit rotierenden Schichten plus Mitarbeiter mit flexiblen Schichten
 
-In den Wochen, in denen der Mitarbeiter in der Frühschicht arbeitet, ermöglicht seine Verfügbarkeit die Planung am Mittwoch. In Wochen, in denen der Mitarbeiter in der Spätschicht arbeitet, blockiert die Verfügbarkeit jedoch die Planung am Mittwoch und die Optimierung wird ihm Schichten für andere Wochentage geben.
+Bei diesem Anwendungsfall kannst du rotierende flexible Schichten und vollständig flexible Schichten miteinander kombinieren.
 
-## Fixe Schichtplanung und Verfügbarkeit
+Um deine Mitarbeiter mit dieser Kombination zu planen, musst du als Erstes die in der folgenden Tabelle angegebenen Konfigurationselemente den entsprechenden Mitarbeitern zuweisen:
 
-Du kannst Tagesmodelle vom Typ *Verfügbarkeitsrahmen* in Schichtfolgen hinzufügen, um das Ergebnis der Planung an bestimmten Tagen zu beeinflussen. Unterhalb zwei Beispiele. 
+| Mitarbeiter mit rotierenden flexiblen Schichten           | Mitarbeiter mit vollständig flexiblen Schichten                                                                                                                |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Weise ihnen Planungsmodelle vom Typ B oder D zu. | Weise ihnen Planungsmodelle vom Typ A zu.                                   |
 
-**Schichten an jedem zweiten Wochenende**:  
-1. Erstelle ein Tagesmodell vom Typ *Verfügbarkeitsrahmen* mit einem Zeitrahmen von 0 Uhr bis 00:01 Uhr als Blocker. 
-2. Füge das Tagesmodell in einer Schichtfolge an jeden zweiten Wochenende ein (alle anderen Tage bleiben frei).  
-3. Weise die Schichtfolge Mitarbeitern zu und füge die Schichtfolge ein, bevor Du einen optimierten Plan erstellst.
 
-injixo plant für den Mitarbeiter an jedem zweiten Wochenende keine Schichten und optimiert die anderen Tage.
+Nutze die Funktionalität **Optimierten Plan erstellen**.<br>Mitarbeiter mit rotierenden flexiblen Schichten werden entsprechend ihrer Planungsmodelle in der Rotation geplant. Die Lücken im Schichtplan werden dann mit Mitarbeitern mit vollständig flexiblen Schichten aufgefüllt.
 
-**Nachtschichten in einem zwei-Wochen-Zyklus**:  
-1. Erstelle ein Tagesmodell vom Typ *Verfügbarkeitsrahmen* mit einem Zeitrahmen von 12:00 Uhr bis 00:00 Uhr. 
-2. Füge das Tagesmodell für jeden Tag einer Woche in einer Schichtfolge ein (alle anderen Tage bleiben frei).
-3. Weise die Schichtfolge Mitarbeitern zu und füge die Schichtfolge ein, bevor Du einen optimierten Plan erstellst.
+## Anwendungsfall 3: Mitarbeiter mit rotierenden Schichten und eingeschränkter Verfügbarkeit
 
-injixo plant für den Mitarbeiter in den Wochen mit Verfügbarkeit (gemäß des Planungsmodells) eine Nachtschicht. In den anderen Wochen plant injixo eine beliebige Schicht.
+Dieser Anwendungsfall trifft auf Mitarbeiter zu, die in rotierenden Schichten arbeiten, aber zu bestimmten Zeiten nicht verfügbar sind, z.&nbsp;B. kann ein Mitarbeiter mittwochs nicht nach 17&nbsp;Uhr arbeiten.
+
+Bei diesem Anwendungsfall kannst du Verfügbarkeiten und rotierende flexible Schichten miteinander kombinieren. 
+
+1. Konfiguriere {% link_new Verfügbarkeiten| features/administration/availabilities.md %} für deine Mitarbeiter, um festzulegen, wann sie nicht arbeiten können. In diesem Fall ist ein Mitarbeiter mittwochs nur bis 17&nbsp;Uhr verfügbar.
+2. Weise ihm das entsprechende Planungsmodell zu.
+
+In den Wochen, in denen der Mitarbeiter in der Morgenschicht arbeitet, wird er mittwochs geplant.<br>In den Wochen, in denen der Mitarbeiter die Abendschicht arbeitet, wird er mittwochs nicht geplant. Stattdessen wird er für andere Tage der Woche geplant.
+
+## Anwendungsfall 4: Mitarbeiter mit festen Schichten und zeitlich eingeschränkter Verfügbarkeit 
+
+Dieser Anwendungsfall trifft auf Mitarbeiter zu, die in festen Schichten arbeiten, aber an bestimmten Tagen zeitlich eingeschränkt sind, z.&nbsp;B. wenn sie in Nachtschichten oder am Wochenende arbeiten, dies aber immer nur jede zweite Woche.
+
+Bei diesem Anwendungsfall kannst du {% link_new Tagesmodelle vom Typ Verfügbarkeitsrahmen | features/administration/daymodels/daymodel-basics.md | #tagesmodelltypen %} zu {% link_new Schichtfolgen| features/administration/shift-sequences.md %} hinzufügen, um das Planungsergebnis für bestimmte Tage zu beeinflussen.<br>Sieh dir die beiden folgenden Beispiele an.
+
+Um Mitarbeiter zu planen, die jedes zweite Wochenende arbeiten, gehe wie folgt vor:
+
+1. Erstelle ein Tagesmodell vom Typ Verfügbarkeitsrahmen mit einem Zeitraum von Mitternacht (0:00) bis 0:01 als Blocker.
+2. Füge das Tagesmodell einem Wochenende in einer Schichtfolge mit 14&nbsp;Tagen hinzu und lasse alle anderen Tage leer.
+3. Weise die Schichtfolge den entsprechenden Mitarbeitern zu.
+4. Füge die Schichtfolge in deinen Schichtplan ein.
+5. Nutze die Funktionalität **Optimierten Plan erstellen**.
+
+injixo plant für die entsprechenden Mitarbeiter an jedem zweiten Wochenende keine Schichten und optimiert die übrigen Tage.
+
+Um Mitarbeiter zu planen, die jede zweite Woche in Nachtschichten arbeiten, gehe wie folgt vor:
+
+1. Erstelle ein Tagesmodell vom Typ Verfügbarkeitsrahmen mit einem Zeitraum von Mitternacht (0:00) bis Mittag (12:00) als Blocker.
+2. Füge das Tagesmodell in einer Schichtfolge mit 14&nbsp;Tagen an jedem Wochentag ein und lasse alle anderen Tage leer.
+3. Weise die Schichtfolge den entsprechenden Mitarbeitern zu.
+4. Füge die Schichtfolge in deinen Schichtplan ein.
+5. Nutze die Funktionalität **Optimierten Plan erstellen**.
+
+injixo plant die Nachtschicht in den Wochen, in denen die Mitarbeiter verfügbar sind und hält sich dabei an das Planungsmodell, das jedem Mitarbeiter zugewiesen ist. Für die anderen Wochen kann injixo jede Schicht planen, die mit dem Planungsmodell übereinstimmt.

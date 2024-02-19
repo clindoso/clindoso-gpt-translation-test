@@ -52,7 +52,7 @@ Die für den Prozess benötigten Menüpunkte befinden sich alle in *WFM > Schedu
 
 1. Überprüfe, ob {% link_new Mitarbeiterbedarf | features/scheduling/employee-requirement.md %} vorhanden ist. Dieser ist neben dem Schichtbedarf die Grundlage für die Schichterzeugung.
 
-2. (Optional) Wenn Du Schichtfolgen verwendest, füge diese ein. Erfahre mehr über {% link_new Schichtfolgen einfügen | features/scheduling/capacity/capacity-insert-shift-sequences.md %}.
+2. (Optional) Wenn Du Schichtfolgen verwendest, füge diese ein. Erfahre mehr über {% link_new Schichtfolgen einfügen | features/scheduling/schedules/schedules-insert-shift-sequences.md %}.
 
 3. Du benötigst eine {% link_new Planperiode | features/scheduling/planning-periods/what-are-planning-periods.md %} vom Typ *Standard* mit dem Status *[Gesperrt]*. Die Daten der Planung sind so (noch) nicht für die Mitarbeiter einsehbar. So kannst Du auch im Vorfeld schon die Planperioden für mehrere zukünftige Planungen vorbereiten.
 

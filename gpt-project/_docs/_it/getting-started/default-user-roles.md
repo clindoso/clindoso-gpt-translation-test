@@ -11,19 +11,19 @@ redirect_from:
   - /it/user-roles-in-detail/
 redirect_reason: Updated filename on 05 December 2022
 ---
+
 ## I ruoli utente prestabiliti
 
 Ogni categoria di ruoli in injixo include un ruolo utente prestabilito con diritti di accesso predefiniti. In injixo Advanced ed Enterprise WFM, puoi personalizzare i ruoli utente di default e/o {% link_new aggiungere nuovi ruoli utente | getting-started/configure-user-roles.md %}. Nota: la categoria di ruoli Altro non prevede un ruolo utente prestabilito.
 
-| **Categoria di ruoli**                | **Diritti di accesso predefiniti**                                                                                                                                                                      |
-| ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
-| Agente                 | Accesso a injixo Me: visualizzazione dei turni, richiesta di permessi, offerta turni, scambio turni.                                                                           |
-| Pianificatore               | Accesso completo a tutte le funzioni relative al processo di previsione, alla pianificazione, alla gestione intraday e ai dati di configurazione.                                                                    |
-| Supervisore (base)    | Accesso di sola lettura al livello Piano in {% link_new Schedules | features/scheduling/schedules/schedules-overview.md %} e nel {% link_new Centro dei turni | features/scheduling/shiftcenter/shift-center-overview.md %}. Accesso alla {% link_new panoramica degli scambi | features/scheduling/view-approve-shift-swap-requests.md %} e a {% link_new Ferie/Assenze | features/scheduling/time-off/vacation-absences-management.md %} per gestire gli scambi di turni e le richieste di permesso. |
-| Supervisore (avanzato) | Tutte le funzionalità del ruolo Supervisore (base), accesso completo al Centro dei turni e a Schedules, modifica delle pianificazioni nella gestione intraday e accesso in sola lettura ai dati di configurazione. |
-| Formatore               | Accesso ad Academy per facilitare la formazione in injixo Me.                                                                                                                            |
-| Finanza               | Accesso alle informazioni sugli utenti e sulla fatturazione e alle fatture per i servizi injixo.                                                                                                  |
-
+| **Categoria di ruoli**     | **Diritti di accesso predefiniti**                                                                                                                                                                    |
+| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| Agente                 | Accesso a injixo Me: visualizzazione dei turni, richiesta di permessi, offerta turni, scambio turni.                                                                                                        |
+| Pianificatore               | Accesso completo a tutte le funzioni relative al processo di previsione, alla pianificazione, alla gestione intraday e ai dati di configurazione.                                                                         |
+| Supervisore (base)    | Accesso di sola lettura al livello Piano in {% link_new Schedules                                                                                                                              | features/scheduling/schedules/schedules-overview.md %} e nel {% link_new Centro dei turni | features/scheduling/shiftcenter/shift-center-overview.md %}. Accesso alla {% link_new panoramica degli scambi | features/scheduling/view-approve-shift-swap-requests.md %} e a {% link_new Ferie/Assenze | features/scheduling/time-off/vacation-absences-management.md %} per gestire gli scambi di turni e le richieste di permesso. Nessun tipo di accesso ai dati di configurazione. |
+| Supervisore (avanzato) | Tutte le funzionalità del ruolo Supervisore (base), accesso completo al Centro dei turni e a Schedules, modifica delle pianificazioni nella gestione intraday e accesso completo a dati di configurazione specifici. |
+| Formatore               | Accesso ad Academy per facilitare la formazione in injixo Me.                                                                                                                                       |
+| Finanza               | Accesso alle informazioni sugli utenti e sulla fatturazione e alle fatture per i servizi injixo.                                                                                                             |
 
 Per assegnare a un utente l’accesso come amministratore, {% link_new modifica l’utente | getting-started/manage-user-accounts.md %} e spunta la casella **Concedi l’accesso come amministratore**. Questa azione sovrascriverà tutti gli altri ruoli, e permetterà un accesso completo.
 
@@ -51,7 +51,7 @@ Attenzione: in injixo Classic tutti i componenti relativi alla pianificazione si
 | **Centro dei turni**                        | <i class="fa fa-check"> | <i class="fa fa-check"> | <i class="fa fa-check"> |        Solo lettura        |
 | **Periodi di pianificazione**                  | <i class="fa fa-check"> | <i class="fa fa-check"> |        Solo lettura        |                         |
 | Genera turni                         | <i class="fa fa-check"> | <i class="fa fa-check"> |                         |                         |
-| Avvia la lotteria dei turni <!--change UI con Avvia -->                     | <i class="fa fa-check"> | <i class="fa fa-check"> |                         |                         |
+| Avvia la lotteria dei turni                     | <i class="fa fa-check"> | <i class="fa fa-check"> |                         |                         |
 | Assegna turni                           | <i class="fa fa-check"> | <i class="fa fa-check"> |                         |                         |
 | Regola la generazione dei turni                 | <i class="fa fa-check"> | <i class="fa fa-check"> |                         |                         |
 | **Azioni di pianificazione**                  | <i class="fa fa-check"> | <i class="fa fa-check"> |                         |                         |
@@ -110,7 +110,7 @@ Nota: in injixo Advanced ed Enterprise WFM, sono disponibili **Monitoring** e **
 |                                      |          Amministratore          |         Pianificatore         |  Supervisore (avanzato)  |   Supervisore (base)    |
 | ------------------------------------ | :---------------------: | :---------------------: | :---------------------: | :---------------------: |
 | **Scheduling**                       |                         |                         |                         |                         |
-| **SchedulePro**                        |                         |                         |                         |                         |
+| **SchedulePro**                      |                         |                         |                         |                         |
 | Centro dei turni                         | <i class="fa fa-check"> | <i class="fa fa-check"> | <i class="fa fa-check"> |        Solo lettura        |
 | Ottimizzazione                         | <i class="fa fa-check"> | <i class="fa fa-check"> |                         |                         |
 | Periodi di pianificazione                     | <i class="fa fa-check"> | <i class="fa fa-check"> |        Solo lettura        |                         |
@@ -126,7 +126,8 @@ Nota: in injixo Advanced ed Enterprise WFM, sono disponibili **Monitoring** e **
 | Report                              | <i class="fa fa-check"> | <i class="fa fa-check"> | <i class="fa fa-check"> | <i class="fa fa-check"> |
 | ------------------------------------ | ----------------------- | ----------------------- | ----------------------- | ----------------------- |
 | **Administration**                   |                         |                         |                         |                         |
-| **Scheduling**                         |                         |                         |                         |                         |
+| **Scheduling**                       |                         |                         |                         |                         |
+| Qualifiche                               | <i class="fa fa-check"> | <i class="fa fa-check"> |        Solo lettura        |                         |
 | Attività                           | <i class="fa fa-check"> | <i class="fa fa-check"> | <i class="fa fa-check"> |                         |
 | Modelli di orario                           | <i class="fa fa-check"> | <i class="fa fa-check"> | <i class="fa fa-check"> |                         |
 | Modelli settimanali                   | <i class="fa fa-check"> | <i class="fa fa-check"> |        Solo lettura        |                         |
@@ -153,7 +154,6 @@ Nota: in injixo Advanced ed Enterprise WFM, sono disponibili **Monitoring** e **
 
 ## Accesso a injixo Me
 
-Gli utenti con il ruolo Agente possono cliccare su _Me_{:.menu-item} nella barra di navigazione principale per vedere la loro agenda, richiedere permessi e scambiare turni. Soltanto l'**Agenda personale** è accessibile per impostazione predefinita.
-
+Gli utenti con il ruolo Agente possono cliccare su _Me_{:.menu-item} nella barra di navigazione principale per vedere la loro agenda, richiedere permessi e scambiare turni. Soltanto l’**Agenda personale** è accessibile per impostazione predefinita.
 
 Gli utenti con accesso amministratore possono cliccare su _Me_{:.menu-item} e {% link_new configurare injixo Me| features/injixo-me/set-up-injixo-me/configure-injixo-me.md %} per permettere agli utenti con ruolo Agente di avere accesso ad altri componenti.

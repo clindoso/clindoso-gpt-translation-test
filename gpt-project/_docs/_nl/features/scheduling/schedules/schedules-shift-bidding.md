@@ -25,9 +25,9 @@ Via Inschrijven op diensten kunnen je collega's actief deelnemen aan het plannin
 
 ## Inschrijven op diensten
 
-Voordat je het inschrijven op diensten gaat starten, dien je eerst {% link_new de personeelsbehoefte te berekenen | features/forecast/injixo-forecast/staff-requirement.md %} en eventueel {% link_new dienstenseries in te voegen | features/scheduling/capacity/capacity-insert-shift-sequences.md %}.
+Voordat je het inschrijven op diensten gaat starten, dien je eerst {% link_new de personeelsbehoefte te berekenen | features/forecast/injixo-forecast/staff-requirement.md %} en eventueel {% link_new dienstenseries in te voegen | features/scheduling/schedules/schedules-insert-shift-sequences.md %}.
 
-1. Maak in Schedules een {% link_new roosterperiode | features/scheduling/schedules/scheduling-periods/what-are-scheduling-periods.md | #create-scheduling-periods %} aan met de status Niet gepubliceerd.
+1. Maak in Schedules een {% link_new roosterperiode | features/scheduling/schedules/scheduling-periods/what-are-scheduling-periods.md | #planningsperioden-aanmaken %} aan met de status Niet gepubliceerd.
 2. Voer [minimum- en maximumwaarden](#je-dienstenmix-specificeren) in voor elk dagmodel in de tabel met dienstenbehoeften.
 3. [Maak de diensten aan](#diensten-genereren).
 4. Nodig medewerkers uit om zich [in injixo Me op diensten in te schrijven](#medewerkers-uitnodigen-om-zich-op-diensten-in-te-schrijven).
