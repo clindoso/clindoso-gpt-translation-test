@@ -6,6 +6,9 @@ import argparse
 from term_scraper import extract_terms_from_directory
 from sklearn.model_selection import train_test_split
 
+# The script takes one argument, --lang, which selects the target language.
+# Use this script to segment articles and convert them into training data as OpenAI API prompts
+
 def parse_arguments():
     """
     Parse command-line arguments.
