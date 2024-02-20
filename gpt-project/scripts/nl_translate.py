@@ -1,9 +1,9 @@
 import config
 import os
 import argparse
-import re
 import time
 import csv
+import re
 import Levenshtein as lev
 from openai import OpenAI
 
@@ -229,7 +229,7 @@ def translate_segment(segment, tm_dict, gpt_translation_dict, language, gpt_mode
     """
     # Pre-calculate TM segments lengths for fuzzy match calculation
     previous_segment = ''
-    tm_segments_lengths = {tm_segment:len(tm_segment) for tm_segment in tm_dict}
+    # tm_segments_lengths = {tm_segment:len(tm_segment) for tm_segment in tm_dict}
 
     # Check for existing translation in TM
     tm_translation = check_translation_memory(segment, tm_dict)
@@ -243,13 +243,9 @@ def translate_segment(segment, tm_dict, gpt_translation_dict, language, gpt_mode
     
     # Handle untranslated segments
     else:
-        fuzzy_match = handle_fuzzy_matches(segment, tm_dict, tm_segments_lengths)
-        if fuzzy_match:
-            return fuzzy_match
-        else:
-            translated_segment = translate_with_gpt(client, segment, previous_segment, language, gpt_model)
-            gpt_translation_dict[segment] = translated_segment
-            return (segment, translated_segment + " <!-- GPT translation -->")
+        translated_segment = translate_with_gpt(client, segment, previous_segment, language, gpt_model)
+        gpt_translation_dict[segment] = translated_segment
+        return (segment, translated_segment + " <!-- GPT translation -->")
 
 
 def process_front_matter(front_matter_segments, tm_dict, gpt_translation_dict, language, gpt_model, client):
@@ -334,8 +330,9 @@ def translate_article(client, language, source_text, tm_dict, gpt_model, lang):
             # Reproduce untranslated commented out segment
             translated_segments.append((segment, segment))
             continue
-
+        
         # Check for code quotation
+
         elif re.match(r'^ *```', segment):
                     # Reproduce empty segments
             translated_segments.append((segment, segment))

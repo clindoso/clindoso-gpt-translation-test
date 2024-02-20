@@ -11,6 +11,7 @@ redirect_from:
   - nl/user-roles-in-detail/
 redirect_reason: Updated filename on 05 December 2022
 ---
+
 ## Standaard gebruikersrollen
 
 Voor elke gebruikersrol heeft injixo een standaard gebruikersrol met vooraf gedefinieerde toegangsrechten. In injixo Advanced en Enterprise WFM kun je de standaard gebruikersrollen aanpassen en/of {% link_new je eigen gebruikersrollen toevoegen | getting-started/configure-user-roles.md %}. Opmerking: De rolcategorie Overigen heeft geen standaard gebruikersrol.
@@ -24,14 +25,11 @@ Voor elke gebruikersrol heeft injixo een standaard gebruikersrol met vooraf gede
 | Trainer               | Toegang tot Academy om training over injixo Me mogelijk te maken.                                                                                                                            |
 | Financiën               | Toegang tot informatie over de gebruiker en facturatie, en tot facturen voor injixo-services.                                                                                                  |
 
-
-Om een gebruiker admintoegang te geven, {% link_new kun je de gebruiker bewerken | getting-started/manage-user-accounts.md %} en het selectievakje **Geef admin toegang** aanvinken. Hierdoor worden alle overige rollen overschreven en krijgt de gebruiker volledige toegang.
-
 Opmerking: De tabellen in dit artikel laten een overzicht van componenten en features voor de relevante standaard gebruikersrollen zien. Het groene vinkje <i class="fa fa-check" style="color:#1cb396"></i> geeft aan dat de gebruiker volledige lees- en schrijfrechten heeft. Omdat je WFM-plan ook bepaalt welke rechten je hebt, heb je mogelijk geen toegang tot alle genoemde items.
 
 ## Toegang tot componenten en features
 
-Je vindt de componenten in de hoofdnavigatie en de features met gerelateerde functionaliteiten onder de menu-opties, zie de vetgedrukte tekst hieronder
+Je vindt de componenten in de hoofdnavigatie en de features met gerelateerde functionaliteiten onder de menu-opties, zie de vetgedrukte tekst hieronder.
 
 Opmerking: In injixo Classic zijn alle planningsgerelateerde features te vinden onder _Scheduling > SchedulePro_{:.breadcrumbs}. Ga naar de sectie [Toegang tot features onder WFM](#toegang-tot-componenten-en-features) voor meer injixo Classic-features.
 
@@ -127,6 +125,7 @@ Opmerking: In injixo Advanced en Enterprise WFM zijn **Monitoren** en **Administ
 | ------------------------------------ | ----------------------- | ----------------------- | ----------------------- | ----------------------- |
 | **Administratie**                   |                         |                         |                         |                         |
 | **Planning**                         |                         |                         |                         |                         |
+| Kwalifikaties                           | <i class="fa fa-check"> | <i class="fa fa-check"> | <i class="fa fa-check"> |                         |
 | Activiteiten                           | <i class="fa fa-check"> | <i class="fa fa-check"> | <i class="fa fa-check"> |                         |
 | Dagmodellen                           | <i class="fa fa-check"> | <i class="fa fa-check"> | <i class="fa fa-check"> |                         |
 | Weekmodellen                   | <i class="fa fa-check"> | <i class="fa fa-check"> |        Alleen lezen        |                         |

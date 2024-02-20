@@ -37,7 +37,7 @@ Als je nog geen integratie hebt die continu historische gegevens importeert, maa
    Queue;Date;Time;IncomingCalls;AnsweredCalls;AHT
 ForecastImportQueue;22/02/2022;02:02;2;2;2
    ```
-3. {% link_new Importeer het CSV-bestand handmatig | features/acd-integration/cloud/add-csv-integration.md | #handmatige-bestandsimport %}.  
+3. {% link_new Importeer het CSV-bestand handmatig | features/acd-integration/cloud/add-csv-integration.md | #handmatige-bestandsimport %}.
    De queue wordt naar de import vernoemd.
    Gebruik deze queue om forecasts in al je workloads te importeren.
 
