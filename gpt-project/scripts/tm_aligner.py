@@ -1,5 +1,6 @@
 import config
 import os
+import re
 import csv
 import argparse
 
@@ -33,7 +34,7 @@ def read_and_split_file(file_path):
 
         # Flag to check if we are inside the frontmatter
         in_frontmatter = False
-        segmented_source = []
+        segmented_article = []
 
         # Iterate over the article segments
         for segment in segments:
@@ -44,12 +45,18 @@ def read_and_split_file(file_path):
                 in_frontmatter = not in_frontmatter
                 continue
 
-            # Exclude segments within the frontmatter or segments that are HTML comments
+            # Exclude segments within the frontmatter or comments
+            if in_frontmatter and segment.startswith('title: '):
+                stripped_segment = stripped_segment[len('title: '):]
+                segmented_article.append(stripped_segment)
+            elif in_frontmatter and segment.startswith('description: '):
+                stripped_segment = stripped_segment[len('description: '):]
+                segmented_article.append(stripped_segment)
             if not in_frontmatter and not (stripped_segment.startswith('<!--') and stripped_segment.endswith('-->')):
-                segmented_source.append(stripped_segment)
+                segmented_article.append(stripped_segment)
 
-        # Remove empty strings from the segmented_source list before returning
-        return [segment for segment in segmented_source if segment]
+        # Remove empty strings from the segmented_article list before returning
+        return [segment for segment in segmented_article if segment]
 
     except Exception as e:
         raise Exception(f"Error reading {file_path}: {e}")

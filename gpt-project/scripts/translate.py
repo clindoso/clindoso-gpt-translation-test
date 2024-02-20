@@ -54,7 +54,7 @@ def load_source_file_segments(source):
 
     return source_text
 
-def initialize_language_model(lang):
+def initialize_language_model(lang="nl"):
     """
     Initializes language model.
     Returns language name, gpt_model, tm_path
