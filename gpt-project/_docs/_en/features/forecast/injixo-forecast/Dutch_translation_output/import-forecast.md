@@ -22,7 +22,7 @@ Om een forecast te importeren, heb je in ieder geval het volgende nodig: <!-- TM
 
 - Een {% link_new integratie | features/acd-integration/cloud/how-integrations-work.md %} die gegevens importeert. <!-- TM 100 -->
 - Een workload met een {% link_new queue | features/forecast/injixo-forecast/manage-workloads.md | #queues-en-kanalen %}. <!-- TM 100 -->
-   <!-- GPT translation -->
+  <!-- GPT translation -->
 ### Een queue aanmaken <!-- TM 100 -->
 
 Om een queue aan te maken, moet je via een integratie historische contactgegevens importeren. Queues worden automatisch door integraties gegenereerd. <!-- TM 100 -->
@@ -34,10 +34,10 @@ Als je nog geen integratie hebt die continu historische gegevens importeert, maa
    - Selecteer **Contactgegevens** in de sectie **CSV-schemaconfiguratie**. <!-- TM 100 -->
 2. Maak een CSV-bestand aan voor contactgegegevens met minimaal één regel voor een enkele interval, bijvoorbeeld: <!-- TM 100 -->
    ```
-   Queue;Date;Time;IncomingCalls;AnsweredCalls;AHT <!-- TM 100 -->
-  ForecastImportQueue;22/02/2022;02:02;2;2;2 <!-- TM 100 -->
+   Queue;Date;Time;IncomingCalls;AnsweredCalls;AHT
+   ForecastImportQueue;22/02/2022;02:02;2;2;2
    ```
-3. {% link_new Het CSV-bestand handmatig importeren | features/acd-integration/cloud/add-csv-integration.md | #handmatige-bestandsimport %}. <!-- GPT translation -->
+3. {% link_new Importeer het CSV-bestand handmatig | features/acd-integration/cloud/add-csv-integration.md | #het-csv-bestand-handmatig-importeren %}.   <!-- GPT translation -->
    De queue wordt naar de import vernoemd. <!-- TM 100 -->
    Gebruik deze queue om forecasts in al je workloads te importeren. <!-- TM 100 -->
 
@@ -66,8 +66,8 @@ Je importgegevens moeten aan de volgende criteria voldoen: <!-- TM 100 -->
 Je kunt ook {% link_new een forecast (of een forecastversie) | features/forecast/injixo-forecast/download-forecast.md %} in CSV-formaat downloaden en gebruiken als sjabloon voor je eigen importbestand. De forecast leest alleen de kolommen `Timestamp`, `Offered` en `AHT`. Overige kolommen, zoals `Offered_operational` en `AHT_operational` in het onderstaande voorbeeld, worden genegeerd. <!-- TM 100 -->
 
 ```
-Timestamp;Offered_auto;AHT_auto;Offered_operational;AHT_operational <!-- TM 100 -->
-2020-05-17 16:30;40;180;50;170 <!-- TM 100 -->
+Timestamp;Offered_auto;AHT_auto;Offered_operational;AHT_operational
+2020-05-17 16:30;40;180;50;170
 ```
 
 ### Omgaan met ontbrekende importgegevens <!-- TM 100 -->
@@ -79,25 +79,25 @@ Als er voor een of meerdere intervallen geen gegevens beschikbaar zijn, dan kun 
 - Laat het volume en AHT weg: <!-- TM 100 -->
 
   ```
-  Timestamp;Offered;AHT <!-- TM 100 -->
-2020-05-17 15:00;30;210 <!-- TM 100 -->
-2020-05-17 15:15;; <!-- TM 100 -->
-2020-05-17 15:30;40;180 <!-- TM 100 -->
+  Timestamp;Offered;AHT
+  2020-05-17 15:00;30;210
+  2020-05-17 15:15;;
+  2020-05-17 15:30;40;180
   ```
 
 - Importkolommen gevuld met nullen: <!-- TM 100 -->
 
   ```
-  Timestamp;Offered;AHT <!-- TM 100 -->
-2020-05-17 15:00;30;210 <!-- TM 100 -->
-2020-05-17 15:15;0;0 <!-- TM 100 -->
-2020-05-17 15:30;40;180 <!-- TM 100 -->
+  Timestamp;Offered;AHT
+  2020-05-17 15:00;30;210
+  2020-05-17 15:15;0;0
+  2020-05-17 15:30;40;180
   ```
 
 - Laat de hele rij weg: <!-- TM 100 -->
 
   ```
-  Timestamp;Offered;AHT <!-- TM 100 -->
-2020-05-17 15:00;30;210 <!-- TM 100 -->
-2020-05-17 15:30;40;180 <!-- TM 100 -->
+  Timestamp;Offered;AHT
+  2020-05-17 15:00;30;210
+  2020-05-17 15:30;40;180
   ```

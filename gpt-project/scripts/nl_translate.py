@@ -305,6 +305,7 @@ def translate_article(client, language, source_text, tm_dict, gpt_model, lang):
     # Flag to check front matter
     in_front_matter = False
     front_matter_processed = False
+    in_code_quotation = False
 
     # Iterate over each segment of the source text
     for segment in source_text:
@@ -334,7 +335,12 @@ def translate_article(client, language, source_text, tm_dict, gpt_model, lang):
         # Check for code quotation
 
         elif re.match(r'^ *```', segment):
-                    # Reproduce empty segments
+            # Reproduce quotation segments
+            translated_segments.append((segment, segment))
+            in_code_quotation = not in_code_quotation
+            continue
+
+        elif in_code_quotation:
             translated_segments.append((segment, segment))
             continue
 

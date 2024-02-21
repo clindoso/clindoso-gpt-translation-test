@@ -335,9 +335,15 @@ def translate_article(client, language, source_text, tm_dict, gpt_model, lang):
             translated_segments.append((segment, segment))
             continue
 
-        # Check for code quotation
+        # Handle for code quotation
+
         elif re.match(r'^ *```', segment):
-                    # Reproduce empty segments
+            # Reproduce quotation segments
+            translated_segments.append((segment, segment))
+            in_code_quotation = not in_code_quotation
+            continue
+
+        elif in_code_quotation:
             translated_segments.append((segment, segment))
             continue
 
