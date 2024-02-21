@@ -46,12 +46,12 @@ def read_and_split_file(file_path):
                 continue
 
             # Exclude segments within the frontmatter or comments
-            # if in_frontmatter and segment.startswith('title: '):
-            #     stripped_segment = stripped_segment[len('title: '):]
-            #     segmented_article.append(stripped_segment)
-            # elif in_frontmatter and segment.startswith('description: '):
-            #     stripped_segment = stripped_segment[len('description: '):]
-            #     segmented_article.append(stripped_segment)
+            if in_frontmatter and segment.startswith('title: '):
+                stripped_segment = stripped_segment[len('title: '):]
+                segmented_article.append(stripped_segment)
+            elif in_frontmatter and segment.startswith('description: '):
+                stripped_segment = stripped_segment[len('description: '):]
+                segmented_article.append(stripped_segment)
             if not in_frontmatter and not (stripped_segment.startswith('<!--') and stripped_segment.endswith('-->')):
                 segmented_article.append(stripped_segment)
 

@@ -102,15 +102,3 @@ Als er voor een of meerdere intervallen geen gegevens beschikbaar zijn, dan kun 
 2020-05-17 15:30;40;180
   ```
 
-## Een forecast importeren
-
-1. Ga naar _Forecast_{:.menu-item}.
-2. Selecteer in het vervolgkeuzemenu bovenaan de **Workload** waarin je de externe forecast wilt importeren.
-3. Klik rechtsboven in de sectie **Volume en AHT** op het pictogram met de drie puntjes {% icon ellipsis_v | icon-only %}.
-4. Selecteer **Forecastgegevens importeren**.
-5. Klik op _Bestand kiezen_{:.doc-button} en selecteer het CSV-bestand dat je wilt importeren.
-6. Klik op _Start importeren_{:.doc-button}.
-   De pagina wordt automatisch bijgewerkt en geeft aan of de import geslaagd is of niet.
-7. Klik op _Klaar_{:.doc-button}.<br>
-Vernieuw de pagina om de nieuwe grafiek te bekijken voor de geïmporteerde periode. Deze wordt boven de forecast in de sectie **Volume en AHT** met een paarse lijn weergegeven.
-   Om de geïmporteerde forecast in de grafiek te verbergen, klik je op het pictogram Weergeven/verbergen {% icon eye | icon-only %} in de legenda naast **Importeren**.
