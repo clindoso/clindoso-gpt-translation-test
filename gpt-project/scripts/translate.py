@@ -265,20 +265,18 @@ def process_front_matter(front_matter_segments, tm_dict, gpt_translation_dict, l
     - list of str: The processed front matter segments.
     """
     processed_front_matter = []
-    for line in front_matter_segments:
-        if line[0].startswith('title: '):
-            # Extract the title text and translate it
-            title_text = line[0][len('title: '):]
-            translated_title = translate_segment(title_text, tm_dict, gpt_translation_dict,language, gpt_model, client)
-            processed_segment_pair = (line[0], 'title: ' + translated_title[1])
-        elif line[0].startswith('description: '):
-            # Extract the description text and translate it
-            description_text = line[0][len('description: '):]
-            translated_description = translate_segment(description_text, tm_dict, gpt_translation_dict,language, gpt_model, client)
-            processed_segment_pair = (line[0], 'description: ' + translated_description[1])
-        else:
-            # No translation needed; reproduce the line unchanged
-            processed_segment_pair = line
+    frontmatter_variables = config.front_matter_variables
+    for segment in front_matter_segments:
+        for frontmatter_variable in frontmatter_variables:
+            if segment[0].startswith(frontmatter_variable):
+                # Extract the title text and translate it
+                translatable_text = segment[0][len(frontmatter_variable):]
+                translated_text = translate_segment(translatable_text, tm_dict, gpt_translation_dict,language, gpt_model, client)
+                processed_segment_pair = (segment[0], frontmatter_variable + translated_text[1])
+                break
+            else:
+                # No translation needed; reproduce the segment unchanged
+                processed_segment_pair = segment
         processed_front_matter.append(processed_segment_pair)
 
     return processed_front_matter

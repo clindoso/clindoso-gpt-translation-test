@@ -21,3 +21,6 @@ docs_directory = "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/
 
 # Termbase directory
 termbase_directory = "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_data/terminology"
+
+# Text to be translated in the front matter
+front_matter_variables = ['title: ', 'description: ']
