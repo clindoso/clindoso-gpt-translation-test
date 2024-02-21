@@ -48,7 +48,7 @@ def read_and_split_file(source_file_path):
         return stripped_text
     
     except Exception as e:
-        raise Exception(f"Error reading {file_path}: {e}")
+        raise Exception(f"Error reading {source_file_path}: {e}")
     
 
 # Define output directory and file name
@@ -231,13 +231,38 @@ def pattern_restorer(file1_lines, file2_lines, patterns_to_restore):
 
     for line1, line2 in zip(file1_lines, file2_lines):
         for placeholder, pattern in patterns_to_restore.items():
-            line1 = line1.replace(placeholder, pattern)
-            line2 = line2.replace(placeholder, pattern)
+            line1, line2 = line1.replace(placeholder, pattern), line2.replace(placeholder, pattern)
         restored_file1_lines.append(line1)
         restored_file2_lines.append(line2)
     
     return restored_file1_lines, restored_file2_lines
 
+def strip_leading_non_words(file1_lines, file2_lines):
+    stripped_lines1 = []
+    stripped_lines2 = []
+    leading_non_words = r'^\W+\s'
+
+    for line1, line2 in zip(file1_lines, file2_lines):
+        line1, line2 = re.sub(leading_non_words, '', line1), re.sub(leading_non_words, '', line2)
+        stripped_lines1.append(line1)
+        stripped_lines2.append(line2)
+    return stripped_lines1, stripped_lines2
+
+# def tag_replacer(file1_lines, file2_lines, tag_dict):
+#     tag_patterns = config.tag_patterns
+#     stripped_file1_lines = []
+#     stripped_file1_lines = []
+
+#     for line1, line2 in zip(file1_lines, file2_lines):
+#         i = 1
+#         for tag_pattern in tag_patterns:
+#             if re.match(line1, tag_pattern):
+#                 line1 = line1.replace(tag_pattern, f'{i}')
+#                 i += 1
+#             if re.match(line2, tag_pattern):
+#                 line2 = line2.replace(tag_pattern, f'{i}')
+#                 i += 1
+            
 
 # Function to export to CSV
 def write_to_csv(file1_lines, file2_lines, source_filename, output_filepath):
@@ -268,6 +293,7 @@ def write_to_csv(file1_lines, file2_lines, source_filename, output_filepath):
             file1_lines, file2_lines = pattern_replacer(file1_lines, file2_lines, patterns_to_replace)
             file1_lines, file2_lines = line_splitter(file1_lines, file2_lines)
             file1_lines, file2_lines = pattern_restorer(file1_lines, file2_lines, patterns_to_restore)
+            file1_lines, file2_lines = strip_leading_non_words(file1_lines, file2_lines)
             for line1, line2 in zip(file1_lines, file2_lines):
                 writer.writerow([line1, line2, source_filename])
         else:
@@ -276,12 +302,15 @@ def write_to_csv(file1_lines, file2_lines, source_filename, output_filepath):
 
 # Define extract file contents
 def extract_file_contents(file_path_source, output_filepath, file_name, lang, file_extension=".md"):
+    print(lang)
     if file_path_source.endswith(file_extension):
         file_path_target = file_path_source.replace("_en", "_" + lang)
         print(file_path_target)
         if os.path.exists(file_path_target):
             source_file_content = read_and_split_file(file_path_source)
+            print(file_path_source)
             target_file_content = read_and_split_file(file_path_target)
+            print(file_path_target)
             write_to_csv(source_file_content, target_file_content, file_name, output_filepath)
         else:
             print(f"File does not exist in the {lang}.")
@@ -290,5 +319,5 @@ def extract_file_contents(file_path_source, output_filepath, file_name, lang, fi
 clear_csv_content(output_filepath)
 # Extract file contents
 extract_file_contents(args.file, output_filepath, file_name, args.lang)
-
+print(args.lang)
 print(f"Aligned article is : {output_filepath}")
