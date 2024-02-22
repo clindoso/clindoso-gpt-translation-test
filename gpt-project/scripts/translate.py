@@ -307,10 +307,11 @@ def translate_article(client, language, source_text, tm_dict, gpt_model, lang):
     # Flag to check front matter
     in_front_matter = False
     front_matter_processed = False
+    in_code_quotation = False
 
     # Iterate over each segment of the source text
     for segment in source_text:
-
+        print(segment)
         # Check if segment is the start or end of the front matter
         if segment == '---':
             front_matter_segments.append((segment, segment))
@@ -332,9 +333,8 @@ def translate_article(client, language, source_text, tm_dict, gpt_model, lang):
             # Reproduce untranslated commented out segment
             translated_segments.append((segment, segment))
             continue
-
+        
         # Handle for code quotation
-
         elif re.match(r'^ *```', segment):
             # Reproduce quotation segments
             translated_segments.append((segment, segment))
@@ -349,6 +349,12 @@ def translate_article(client, language, source_text, tm_dict, gpt_model, lang):
         elif segment == '':
             # Reproduce empty segments
             translated_segments.append((segment, segment))
+            continue
+
+        # Check for segments only with spaces
+        elif re.match(r'^ *$', segment[0]):
+            # Append empty segment
+            translated_segment.append((segment, ''))
             continue
 
         # Translate segment using TM, fuzzy matching, or GPT

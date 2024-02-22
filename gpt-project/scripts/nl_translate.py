@@ -306,7 +306,6 @@ def translate_article(client, language, source_text, tm_dict, gpt_model, lang):
 
     # Iterate over each segment of the source text
     for segment in source_text:
-
         # Check if segment is the start or end of the front matter
         if segment == '---':
             front_matter_segments.append((segment, segment))
@@ -345,6 +344,12 @@ def translate_article(client, language, source_text, tm_dict, gpt_model, lang):
         elif segment == '':
             # Reproduce empty segments
             translated_segments.append((segment, segment))
+            continue
+
+        # Check for segments only with spaces
+        elif re.match(r'^ *$', segment):
+            # Append empty segment
+            translated_segments.append((segment, ''))
             continue
 
         # Translate segment using TM, fuzzy matching, or GPT
