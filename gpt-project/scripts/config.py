@@ -1,4 +1,5 @@
 import os
+import re
 
 # Env variables
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
@@ -24,3 +25,11 @@ termbase_directory = "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_d
 
 # Text to be translated in the front matter
 front_matter_variables = ['title: ', 'description: ']
+
+# Tag patterns
+tag_patterns = [
+    r'\*\*',
+    r'\_\_',
+    r'_\b',
+    r'\b_'
+]

@@ -27,7 +27,7 @@ Om een forecast te importeren, heb je in ieder geval het volgende nodig: <!-- TM
 
 Om een queue aan te maken, moet je via een integratie historische contactgegevens importeren. Queues worden automatisch door integraties gegenereerd. <!-- TM 100 -->
 
-Als je nog geen integratie hebt die continu historische gegevens importeert, maak dan een queue aan door een eenovudig CSV-bestand te importeren. <!-- TM 100 -->
+Als je nog geen integratie hebt die continu historische gegevens importeert, maak dan een queue aan door een eenvoudig CSV-bestand te importeren. <!-- TM 100 -->
 
 1. {% link_new Stel een CSV-integratie in | features/acd-integration/cloud/add-csv-integration.md | #een-nieuwe-csv-integratie-configureren %}. <!-- TM 100 -->
    - Sla tijdens de installatie de stap voor het installeren van Cloud Link over. <!-- TM 100 -->

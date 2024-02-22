@@ -101,3 +101,14 @@ If there is no data for one or more intervals, you can edit your CSV file as fol
   2020-05-17 15:00;30;210
   2020-05-17 15:30;40;180
   ```
+
+## Import a forecast
+
+1. In _Forecast > Workloads_{:.breadcrumbs}, select the workload for which you want to import the external forecast.
+2. From the three-dots menu _![Context Menu in injixo Forecast](/assets/img/common/forecast/context-menu.svg)_{:.doc-button-icon} at the top right, select **Import forecast data**.
+3. Click _Choose file_{:.doc-button} and select the CSV file you want to import.
+4. Click _Import data_{:.doc-button}.<br>
+   The window updates and displays whether the import was successful or not.
+5. Click _Done_{:.doc-button}.<br>
+Refresh the page to see the updated graph for the import period. The imported values are displayed as a brown line in the graphs in the sections for volume and AHT.
+   To hide the imported forecast in the graph, click the Show/hide icon {% icon eye | icon-only %} in the legend next to **Import**.

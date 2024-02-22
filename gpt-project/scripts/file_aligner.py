@@ -248,7 +248,7 @@ def strip_leading_non_words(file1_lines, file2_lines):
         stripped_lines2.append(line2)
     return stripped_lines1, stripped_lines2
 
-# def tag_replacer(file1_lines, file2_lines, tag_dict):
+# def tag_replacer(file1_lines, file2_lines, tag_patterns):
 #     tag_patterns = config.tag_patterns
 #     stripped_file1_lines = []
 #     stripped_file1_lines = []
