@@ -77,7 +77,7 @@ Je kunt alleen de personeelsbehoeftek
 Lees meer over {% link_new forecastversies | features/forecast/injixo-forecast/store-forecast-versions.md %} of over hoe je een {% link_new forecast importeert | features/forecast/injixo-forecast/import-forecast.md %}.
 
 1. Selecteer in _Forecast > Workloads_{:.breadcrumbs} een workload.
-2\. Selecteer de periode voor welke je behoefte aan personeel wilt gebruiken.
+2. Selecteer de periode voor welke je behoefte aan personeel wilt gebruiken.
 3. Selecteer in de sectie **Personeelsbehoefte** een forecastversie in het vervolgkeuzemenu aan de linkerzijde.
 4. Klik op _Behoefte personeel opslaan_{:.doc-button}.
 5. Klik in het venster **Behoefte opslaan** op _Opslaan_{:.doc-button}.
