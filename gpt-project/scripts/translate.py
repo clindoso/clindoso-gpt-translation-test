@@ -211,7 +211,7 @@ def translate_with_gpt(client, segment, previous_segment, language, gpt_model):
 
     return translated_segment
 
-def translate_segment(segment, tm_dict, gpt_translation_dict, language, gpt_model, client):
+def translate_segment(segment, tm_dict, gpt_translation_dict, language, gpt_model, client, previous_segment=''):
     """
     Translate a single text segment using a translation memory (TM)
     and generative translation
@@ -228,7 +228,6 @@ def translate_segment(segment, tm_dict, gpt_translation_dict, language, gpt_mode
     - A tuple containing the original segment and its translation.
     """
     # Pre-calculate TM segments lengths for fuzzy match calculation
-    previous_segment = ''
     tm_segments_lengths = {tm_segment:len(tm_segment) for tm_segment in tm_dict}
 
     # Check for existing translation in TM
@@ -308,6 +307,7 @@ def translate_article(client, language, source_text, tm_dict, gpt_model, lang):
     in_front_matter = False
     front_matter_processed = False
     in_code_quotation = False
+    previous_segment=''
 
     # Iterate over each segment of the source text
     for segment in source_text:
@@ -333,8 +333,14 @@ def translate_article(client, language, source_text, tm_dict, gpt_model, lang):
             # Reproduce untranslated commented out segment
             translated_segments.append((segment, segment))
             continue
-        
-        # Handle for code quotation
+
+        # Handle Markdown table formatting
+        elif re.match(r'^\|(\s?)---', segment):
+            # Reproduce table formatting
+            translated_segments.append((segment, segment))
+            continue
+
+        # Handle code quotation
         elif re.match(r'^ *```', segment):
             # Reproduce quotation segments
             translated_segments.append((segment, segment))
@@ -359,9 +365,11 @@ def translate_article(client, language, source_text, tm_dict, gpt_model, lang):
 
         # Translate segment using TM, fuzzy matching, or GPT
         else:
-            segment, translated_segment = translate_segment(segment, tm_dict, gpt_translation_dict, language, gpt_model, client)
-            previous_segment = segment
+            segment, translated_segment = translate_segment(segment, tm_dict, gpt_translation_dict, language, gpt_model, client, previous_segment)
             translated_segments.append((segment, translated_segment))
+            previous_segment = segment
+            print(f'- Source segment:\n{segment}')
+            print(f'- Target segment:\n{translated_segment}')
             continue
         
     # Prepends translated front matter segments to translated segments

@@ -4,6 +4,7 @@ redirect_from:
   - /staff-requirement/
 redirect_reason: used in intercom forecast product tour
 product_label:
+  - essential
   - advanced
   - enterprise
   - classic
@@ -24,6 +25,7 @@ After you have generated a forecast, you can calculate staff requirements. You c
 New to injixo Forecast? Learn {% link_new the basics | features/forecast/injixo-forecast/what-is-the-injixo-forecast.md %} first.
 
 ## Calculation methods and requirement scripts
+
 injixo offers calculation methods and requirement scripts.
 Learn which {% link_new requirement script or calculation method is the best | best-practices/requirement-scripts.md %} for your use case.<br>
 Learn how to configure the [calculation methods](#configure-the-calculation-methods) in the next section.<br>

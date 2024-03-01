@@ -173,7 +173,7 @@ def handle_fuzzy_matches(segment, tm_dict, tm_segments_lengths):
     # If there is no segment with an edit below the upper threshold, return None
     return None
 
-def translate_with_gpt(client, segment, previous_segment, language, gpt_model):
+def translate_with_gpt(client, segment, language, gpt_model, previous_segment=''):
     """
     Translates the segment using GPT.
 
@@ -210,7 +210,7 @@ def translate_with_gpt(client, segment, previous_segment, language, gpt_model):
 
     return translated_segment
 
-def translate_segment(segment, tm_dict, gpt_translation_dict, language, gpt_model, client):
+def translate_segment(segment, tm_dict, gpt_translation_dict, language, gpt_model, client, previous_segment=''):
     """
     Translate a single text segment using a translation memory (TM)
     and generative translation
@@ -226,9 +226,6 @@ def translate_segment(segment, tm_dict, gpt_translation_dict, language, gpt_mode
     Returns:
     - A tuple containing the original segment and its translation.
     """
-    # Pre-calculate TM segments lengths for fuzzy match calculation
-    previous_segment = ''
-    # tm_segments_lengths = {tm_segment:len(tm_segment) for tm_segment in tm_dict}
 
     # Check for existing translation in TM
     tm_translation = check_translation_memory(segment, tm_dict)
@@ -242,7 +239,7 @@ def translate_segment(segment, tm_dict, gpt_translation_dict, language, gpt_mode
     
     # Handle untranslated segments
     else:
-        translated_segment = translate_with_gpt(client, segment, previous_segment, language, gpt_model)
+        translated_segment = translate_with_gpt(client, segment, language, gpt_model, previous_segment)
         gpt_translation_dict[segment] = translated_segment
         return (segment, translated_segment + " <!-- GPT translation -->")
 
@@ -276,7 +273,7 @@ def process_front_matter(front_matter_segments, tm_dict, gpt_translation_dict, l
 
     return processed_front_matter
 
-def translate_article(client, language, source_text, tm_dict, gpt_model, lang):
+def translate_article(client, language, source_text, tm_dict, gpt_model):
     """
     Translates the content of the source file using the specified language model.
 
@@ -303,6 +300,7 @@ def translate_article(client, language, source_text, tm_dict, gpt_model, lang):
     in_front_matter = False
     front_matter_processed = False
     in_code_quotation = False
+    previous_segment = ''
 
     # Iterate over each segment of the source text
     for segment in source_text:
@@ -328,6 +326,12 @@ def translate_article(client, language, source_text, tm_dict, gpt_model, lang):
             translated_segments.append((segment, segment))
             continue
         
+        # Handle Markdown table formatting
+        elif re.match(r'^\|(\s?)---', segment):
+            # Reproduce table formatting
+            translated_segments.append((segment, segment))
+            continue
+
         # Handle for code quotation
 
         elif re.match(r'^ *```', segment):
@@ -352,15 +356,19 @@ def translate_article(client, language, source_text, tm_dict, gpt_model, lang):
             translated_segments.append((segment, ''))
             continue
 
-        # Translate segment using TM, fuzzy matching, or GPT
+        # Translate segment using TM or GPT
         else:
-            segment, translated_segment = translate_segment(segment, tm_dict, gpt_translation_dict, language, gpt_model, client)
-            previous_segment = segment
+            segment, translated_segment = translate_segment(segment, tm_dict, gpt_translation_dict, language, gpt_model, client, previous_segment)
             translated_segments.append((segment, translated_segment))
+            previous_segment = segment
+            print(f'- Source segment:\n{segment}')
+            print(f'- Target segment:\n{translated_segment}\n-------------')
             continue
         
     # Prepends translated front matter segments to translated segments
     translated_segments = translated_front_matter + translated_segments
+    
+    # Store segment to serve as context for next segment
 
     # Return list of tuples with source and target segments
     return translated_segments
@@ -431,7 +439,7 @@ def main():
     source_text = load_source_file_segments(source)
 
     # Perform the translation
-    translated_segments = translate_article(client, language, source_text, tm_dict, gpt_model, lang)
+    translated_segments = translate_article(client, language, source_text, tm_dict, gpt_model)
 
     # Create list with translated text
     translated_text = extract_translated_text(translated_segments)

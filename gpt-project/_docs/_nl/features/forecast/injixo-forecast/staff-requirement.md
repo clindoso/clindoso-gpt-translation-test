@@ -6,6 +6,12 @@ product_label:
   - classic
 description: De personeelsbehoefte berekenen voor oproepen, chats, e-mail en meer.
 related_articles:
+  - overwrite_title: Lineaire behoefte backoffice
+    filepath: features/forecast/requirement-scripts/requirement-backoffice-linear.md
+  - overwrite_title: Gemiddelde antwoordtijd
+    filepath: features/forecast/requirement-scripts/requirement-asa.md
+  - overwrite_title: Afbrekingspercentage
+    filepath: features/forecast/requirement-scripts/requirement-abandoned-calls.md
   - overwrite_title: Oproepenscript voor multiactiviteiten
     filepath: features/forecast/requirement-scripts/requirement-multiactivity.md
   - overwrite_title: Uitgaande oproepen
@@ -27,6 +33,9 @@ Er zijn verschillende berekeningsmethoden beschikbaar in injixo om de personeels
 - {% link_new Erlang-C, Linear en Chat | features/forecast/injixo-forecast/staff-requirement.md | #geïntegreerde-berekeningsmethoden-configureren %}
 - {% link_new Multiactiviteit | features/forecast/requirement-scripts/requirement-multiactivity.md %}
 - {% link_new Outbound | features/forecast/requirement-scripts/requirement-outbound.md %}
+- {% link_new Backoffice | features/forecast/requirement-scripts/requirement-backoffice-linear.md %}
+- {% link_new Afbrekingspercentage | features/forecast/requirement-scripts/requirement-abandoned-calls.md %}
+- {% link_new Gemiddelde antwoordtijd | features/forecast/requirement-scripts/requirement-asa.md %}
 - {% link_new Constante behoefte | features/forecast/requirement-scripts/requirement-constant.md %}
 
 Opmerking: Lees het artikel {% link_new Het correcte behoeftescript selecteren | best-practices/requirement-scripts.md %} om te lezen welke methode het beste bij je usecase past.

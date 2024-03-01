@@ -61,7 +61,7 @@ table {
   You cannot edit cells highlighted in blue because they represent deleted activities that are still assigned to the planning unit.<br>
   
 6. (Optional) To edit several cells at once, copy a row of values from a spreadsheet. Click a cell and drag the mouse to the right. Press Ctrl+V to paste the values.<br>
-7.  Click _OK_{:.doc-button}.
+7. Click _OK_{:.doc-button}.
 
 ### Edit staff requirements in Forecast
 
@@ -88,10 +88,10 @@ To manually edit staff requirements, you can run the constant requirement script
 
 There is no option to delete staff requirements in injixo. You can edit staff requirements to be 0, which has the same effect as deleting them.
 
- You have two options to set the staff requirements to 0:
- - Follow the steps to [edit staff requirements in Shift Center](#edit-staff-requirements-in-shift-center) and enter or copy 0 in the relevant cells.
- 
- - Follow the steps to [edit staff requirements in Forecast](#edit-staff-requirements-in-forecast) and enter 0 in the **Agents** field.
+You have two options to set the staff requirements to 0:
+
+- Follow the steps to [edit staff requirements in Shift Center](#edit-staff-requirements-in-shift-center) and enter or copy 0 in the relevant cells.
+- Follow the steps to [edit staff requirements in Forecast](#edit-staff-requirements-in-forecast) and enter 0 in the **Agents** field.
 
 The following image shows the configuration of the constant requirement script to delete staff requirements in Forecast for an entire calendar day (here: Day 1):
 
