@@ -123,7 +123,7 @@ def check_gpt_translations(segment, gpt_translation_dict):
         tuple or None: The GPT translation if available, else None.
     """
     if segment in gpt_translation_dict:
-        return (segment, gpt_translation_dict[segment] + " <!-- Repetition of GPT translation")
+        return (segment, gpt_translation_dict[segment] + " <!-- Repetition of GPT translation -->")
     return None
 
 def handle_fuzzy_matches(segment, tm_dict, tm_segments_lengths):
@@ -354,6 +354,11 @@ def translate_article(client, language, source_text, tm_dict, gpt_model):
         elif re.match(r'^ *$', segment):
             # Append empty segment
             translated_segments.append((segment, ''))
+            continue
+
+        # Check for leading right angle bracket without further content
+        elif re.match(r'^> ', segment[0]):
+            translated_segments.append((segment, segment))
             continue
 
         # Translate segment using TM or GPT

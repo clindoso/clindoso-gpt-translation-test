@@ -363,6 +363,11 @@ def translate_article(client, language, source_text, tm_dict, gpt_model, lang):
             translated_segment.append((segment, ''))
             continue
 
+        # Check for leading right angle bracket without further content
+        elif re.match(r'^> ', segment[0]):
+            translated_segments.append((segment, segment))
+            continue
+
         # Translate segment using TM, fuzzy matching, or GPT
         else:
             segment, translated_segment = translate_segment(segment, tm_dict, gpt_translation_dict, language, gpt_model, client, previous_segment)
