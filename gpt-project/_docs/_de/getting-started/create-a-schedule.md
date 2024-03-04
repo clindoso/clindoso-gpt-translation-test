@@ -59,7 +59,7 @@ Unter _Plan > Urlaub/Abwesenheiten_{:.breadcrumbs} kannst du {% link_new offene 
 
 ## Den Schichtplan erzeugen
 
-Sieh unter {% link_new Schedules | features/scheduling/schedules/schedules-overview.md %},  im {% link_new Schicht Center | features/scheduling/shiftcenter/shift-center-overview.md %} oder unter {% link_new Dashboards | features/monitoring/dashboards/dashboards-overview.md %} nach, ob der {% link_new Mitarbeiterbedarf | features/forecast/injixo-forecast/staff-requirement.md %}, für deine Aktivitäten korrekt eingetragen ist.
+Sieh unter {% link_new Schedules | features/scheduling/schedules/schedules-overview.md %},  im {% link_new Schicht Center | features/scheduling/shiftcenter/shift-center-overview.md %} oder unter {% link_new Dashboards | features/monitoring/dashboards/dashboards-overview.md %} nach, ob der {% link_new Mitarbeiterbedarf | features/forecast/injixo-forecast/calculate-staff-requirements.md %}, für deine Aktivitäten korrekt eingetragen ist.
 
 1. Füge {% link_new Schichtfolgen | features/scheduling/schedules/schedules-insert-shift-sequences.md %} für deine Mitarbeiter hinzu.
 2. Konfiguriere zusätzliche {% link_new Planungsmethoden | features/scheduling/scheduling-methods.md %} und verwende diese, um den Schichtplan fertigzustellen.

@@ -42,9 +42,9 @@ Puede ser que tu horario de apertura se desvíe del estándar algunos días, p.&
 
 Hay dos opciones para crear tipos de día para festivos nacionales:
 
-- Crear tipos de día con el modo de día festivo y {% link_new añadirlos a tu calendario de planificación | features/administration/planning-calendar.md | #add-custom-day-types-to-the-planning-calendar %}.
+- Crear tipos de día con el modo de día festivo y {% link_new añadirlos a tu calendario de planificación | features/administration/planning-calendar.md | #configure-a-planning-calendar %}.
 
-- Añadir una {% link_new plantilla de calendario | features/administration/planning-calendar.md |#add-the-public-holidays-of-your-region %} a tu calendario de planificación. Esta opción crea automáticamente todos los tipos de día para los festivos nacionales incluidos con el modo de día festivo activado.
+- Añadir una {% link_new plantilla de calendario | features/administration/planning-calendar.md |#configure-a-planning-calendar %} a tu calendario de planificación. Esta opción crea automáticamente todos los tipos de día para los festivos nacionales incluidos con el modo de día festivo activado.
 
 El modo de día festivo reduce las horas laborales de los empleados como corresponde. Si decides planificar el día como un día laboral estándar, siempre puedes [editar el tipo de día](#editar-un-tipo-de-día) y desactivar el modo de día festivo.
 

@@ -13,7 +13,7 @@ related_articles:
 
 Tagesmodelle sind Vorlagen für Schichten. Sie umfassen den Arbeitstag für deine geplanten Mitarbeiter und legen die Start- und Endzeiten von Schichten fest. Außerdem bestimmen sie pro Mitarbeiter die Anzahl der Arbeitsstunden pro Tag und wann die Mitarbeiter arbeiten können. injixo erstellt Schichtpläne auf Grundlage deiner Tagesmodelle.
 
-Wenn du Tagesmodelle erstellst, werden diese standardmäßig automatisch allen Planungseinheiten deines Unternehmens zugewiesen. Um diese Standardeinstellung zu ändern, {% link_new bearbeite die Planungseinheit | features/administration/create-and-manage-planning-units.md | #tagesmodelle-verwalten %}. Während der Schichtplanoptimierung berücksichtigt injixo nur die Tagesmodelle, die der Planungseinheit zugewiesen sind.
+Wenn du Tagesmodelle erstellst, werden diese standardmäßig automatisch allen Planungseinheiten deines Unternehmens zugewiesen. Um diese Standardeinstellung zu ändern, {% link_new bearbeite die Planungseinheit | features/administration/create-and-manage-planning-units.md | #tagesmodelle-einschränken %}. Während der Schichtplanoptimierung berücksichtigt injixo nur die Tagesmodelle, die der Planungseinheit zugewiesen sind.
 
 Wenn die Tagesmodelle in deiner Planungseinheit nicht alle Arbeitsverträge abdecken, kannst du für einzelne Mitarbeiter auch individuelle Tagesmodelle anlegen. Während der Schichtplanoptimierung verwendet injixo nur diese individuellen Tagesmodelle für diese Mitarbeiter.
 
@@ -62,7 +62,7 @@ Die Gesamtdauer einer geplanten Schicht einschließlich Pausen entspricht der Br
 Die Länge eines Tagesmodells muss zu den Arbeitszeiten in deinen {% link_new Verträgen | features/administration/create-contracts.md %} passen.
 Wenn ein Vertrag eine wöchentliche Arbeitszeit von 40&nbsp;Stunden aufgeteilt auf 5&nbsp;Tage vorsieht, benötigst du ein Tagesmodell mit einer Netto-Arbeitszeit von 8&nbsp;Stunden pro Tag. Bei einem Vertrag mit 37,5&nbsp;Stunden pro Woche benötigst du ein Tagesmodell mit 7,5&nbsp;Stunden pro Tag.
 
-Verwende die Aktivität Anwesend als Basisaktivität und vergewissere dich, dass sie als Ersetzbar konfiguriert ist. Dann können die Funktionalitäten Joboptimierung und Optimierten Plan erstellen die Aktivität Anwesend durch andere Aktivitäten ersetzen, solange diese einen {% link_new berechneten Mitarbeiterbedarf | features/forecast/injixo-forecast/staff-requirement.md %} haben und als Planbar konfiguriert sind.
+Verwende die Aktivität Anwesend als Basisaktivität und vergewissere dich, dass sie als Ersetzbar konfiguriert ist. Dann können die Funktionalitäten Joboptimierung und Optimierten Plan erstellen die Aktivität Anwesend durch andere Aktivitäten ersetzen, solange diese einen {% link_new berechneten Mitarbeiterbedarf | features/forecast/injixo-forecast/calculate-staff-requirements.md %} haben und als Planbar konfiguriert sind.
 
 ### Feste Elemente vs. Korridore
 

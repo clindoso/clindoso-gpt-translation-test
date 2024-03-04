@@ -72,7 +72,7 @@ Go to _Administration > Scheduling > Employees_{:.breadcrumbs} and select the em
 ### Contract and day model settings
 
 - Assign all day models to your planning unit by adding **[All]** to the **Day Models** section of the planning unit.
-- Make sure that you have calculated and saved {% link_new staff requirements | features/forecast/injixo-forecast/staff-requirement.md %} for the activity you want to schedule.
+- Make sure that you have calculated and saved {% link_new staff requirements | features/forecast/injixo-forecast/calculate-staff-requirements.md %} for the activity you want to schedule.
 - Check if you have created the right {% link_new day models | features/administration/daymodels/daymodel-creation.md %}. Their length must suit the work time guidelines defined in the {% link_new contract | features/administration/create-contracts.md %}. Day models specify a gross total working time, while contracts only count net working time. To get the correct net working time, you may need to subtract breaks or other unpaid activities from the gross working time.
 - Check other contract parameters.
 

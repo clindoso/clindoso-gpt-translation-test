@@ -11,13 +11,13 @@ Forecast vous permet de sauvegarder la prévision à un instant T, lorsque par e
 
 ## Introduction aux Versions
 
-Plusieurs Versions sont disponibles dans Forecast : *Auto-Forecast*, *Opérationnel* et *Stratégique*.
+Plusieurs Versions sont disponibles dans Forecast : *Forecast*, *Opérationnel* et *Stratégique*.
 
-La Version *Auto-Forecast* est continuellement mise à jour et affiche la prévision la plus récente calculée pour chaque Workload.
+La Version *Forecast* est continuellement mise à jour et affiche la prévision la plus récente calculée pour chaque Workload.
 
-Les 2 autres Versions, *Opérationnel* et *Stratégique*, ont été créées pour vous permettre de sauvegarder la prévision d'*Auto-Forecast* à un instant T pour la période de votre choix. Les données de ces Versions ne seront ni écrasées ni modifiées par le système dans le futur.
+Les 2 autres Versions, *Opérationnel* et *Stratégique*, ont été créées pour vous permettre de sauvegarder la prévision *Forecast* à un instant T pour la période de votre choix. Les données de ces Versions ne seront ni écrasées ni modifiées par le système dans le futur.
 
-Il y a de multiples façons d'utiliser les Versions, par exemple, sauvegarder la prévision annuelle dans la Version *Stratégique* et la prévision utilisée pour le dimensionnement dans la Version *Opérationnel*. Cela vous permet ensuite de comparer ces sauvegardes avec la prévision actualisée de la Version *Auto-Forecast*.
+Il y a de multiples façons d'utiliser les Versions, par exemple, sauvegarder la prévision annuelle dans la Version *Stratégique* et la prévision utilisée pour le dimensionnement dans la Version *Opérationnel*. Cela vous permet ensuite de comparer ces sauvegardes avec la prévision actualisée de la Version *Forecast*.
 
 ## Sauvegarder la prévision dans les Versions
 
@@ -39,13 +39,13 @@ Pour afficher les données sauvegardées dans les Versions *Stratégique* et/ou 
 
 Ces données sont toujours disponibles, peu importe l'affichage sélectionné. Si vous ne souhaitez plus les faire apparaître, cliquez sur l'icône en forme d'œil dans la légende du graphe.
 
-Vous pouvez comparer les données de ces Versions avec celles d'*Auto-Forecast* dans le futur et/ou avec les données historiques dans le passé.
+Vous pouvez comparer les données de ces Versions avec celles de *Forecast* dans le futur et/ou avec les données historiques dans le passé.
 
 {{ 1 | image: "Versions en vue hebdo"}}
 
 ## Utiliser les données des Versions
 
-Vous pouvez utiliser les données sauvegardées dans les Versions plutôt que celles d'*Auto-Forecast* lors de la création de vos plannings.
+Vous pouvez utiliser les données sauvegardées dans les Versions plutôt que celles de *Forecast* lors de la création de vos plannings.
 
 Selon la méthode de dimensionnement choisie pour le Workload, vous pouvez utiliser les données de Version de 2 façons :
 
@@ -55,4 +55,4 @@ Le résultat du dimensionnement est affiché dans la section **Besoin en personn
 
 ### Autres méthodes de dimensionnement
 
-Pour les autres méthodes de dimensionnement cliquez sur _Utiliser Forecast_{:.doc-button} puis indiquez quelle Version doit être utilisée (*Auto-Forecast*, *Opérationnel* ou *Stratégique*).
+Pour les autres méthodes de dimensionnement cliquez sur _Utiliser Forecast_{:.doc-button} puis indiquez quelle Version doit être utilisée (*Forecast*, *Opérationnel* ou *Stratégique*).

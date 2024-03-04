@@ -7,7 +7,7 @@ product_label:
   - advanced
   - enterprise
   - classic
-description: Crea cargas de trabajo para representar los volúmenes de contacto históricos, la previsión, y el TMO. Conoce los diferentes tipos de cargas de trabajo.
+description: Crea cargas de trabajo para representar los volúmenes de contacto y TMO históricos y previstos. Aprende sobre los distintos tipos de cargas de trabajo.
 related_articles:
   - overwrite_title: Add title for untranslated source
     filepath: features/forecast/injixo-forecast/what-is-the-injixo-forecast.md
@@ -33,7 +33,7 @@ injixo crea colas a partir de los datos importados por una integración. El inte
 ## Colas y canales
 
 Los datos de contacto importados por una integración se almacenan en colas. Estas colas siempre están asociadas a un canal. Cuando creas [cargas de trabajo](#crear-cargas-de-trabajo), puedes filtrar las colas por canal para asignarlas a la carga de trabajo. Las integraciones nativas establecen automáticamente el canal de las colas. No todas las integraciones soportan todos los canales.
-Si usas una integración de archivos CSV tendrás que establecer el canal manualmente. Puedes añadir un canal por columna, o seleccionar un canal para todo el archivo cuando {% link_new asignes las columnas | features/acd-integration/cloud/add-csv-integration.md | #asignar-las-columnas %} de un archivo CSV.  
+Si usas una integración de archivos CSV tendrás que establecer el canal manualmente. Puedes añadir un canal por columna o seleccionar un canal para todo el archivo cuando {% link_new configures la asignación de las columnas | features/acd-integration/cloud/add-csv-integration.md | #asignar-las-columnas %} de un archivo CSV.
 
 Las integraciones soportan los siguientes canales:
 
@@ -50,10 +50,11 @@ injixo Forecast agrupa las colas por canal. Solo puedes añadir colas con el mis
 
 ## Crear cargas de trabajo
 
-Recomendamos crear una carga de trabajo para cada actividad que quieras planificar con requisitos de personal. Las multiactividades requieren una carga de trabajo para la multiactividad y una carga de trabajo para cada subactividad.
+Crea una carga de trabajo para cada actividad que quieras planificar con requisitos de personal. Las multiactividades requieren una carga de trabajo para la multiactividad y una carga de trabajo para cada subactividad.
 
-1. Haz clic en _Nueva carga de trabajo_{:.doc-button} arriba de la lista.
+1. En _Forecast > Workloads_{:.breadcrumbs}, haz clic en _Nueva carga de trabajo_{:.doc-button} arriba de la lista.
 2. Introduce la información general de tu carga de trabajo:
+
    - **Nombre**: nombre único para identificar tu carga de trabajo.
    - **Zona horaria**: la {% link_new zona horaria | best-practices/working-with-timezones.md %} de la carga de trabajo no se puede editar más adelante.
 
@@ -111,14 +112,53 @@ You only need an integration and historical data import if you want injixo to cr
 
 ## Editar cargas de trabajo
 
-1. Selecciona una carga de trabajo de la lista, o introduce el nombre de la carga de trabajo en el campo de búsqueda.
-2. Para modificar los detalles de la carga de trabajo, haz clic en el {% icon pencil %}.  
-   Puedes añadir o eliminar colas sin tener que reimportar datos. Las colas listadas se mostrarán en gris si su intervalo o canal no coincide con el de las colas ya asignadas.
+1. 1. En _Forecast > Workloads_{:.breadcrumbs}, selecciona una carga de trabajo de la lista, o introduce el nombre de la carga de trabajo en el campo de búsqueda.
+2. Para modificar los detalles de la carga de trabajo, haz clic en el {% icon pencil %}.<br>
+   En la sección **Asignar colas** puedes añadir o eliminar colas sin tener que reimportar datos. Las colas listadas se mostrarán en gris si su intervalo o canal no coincide con el de las colas ya asignadas.
 3. Haz clic en _Guardar carga de trabajo_{:.doc-button}.  
    Puede ser que la nueva configuración actualice la previsión.
 
 ## Eliminar cargas de trabajo
 
-1. Haz clic en el {% icon trash %} junto a la carga de trabajo en la lista.
+1. En _Forecast > Workloads_{:.breadcrumbs} haz clic en el {% icon trash %} junto a la carga de trabajo en la lista.
 2. En la ventana de confirmación, haz clic en _Eliminar carga de trabajo_{:.doc-button}.  
     injixo almacena los datos históricos asociados. Para reutilizar los datos, añade la cola o colas a otra carga de trabajo.
+
+## Orientarse en las cargas de trabajo
+
+En _Forecast > Workloads_{:.breadcrumbs} selecciona una carga de trabajo para abrir la vista detallada. Esta página incluye las tres secciones siguientes:
+
+- La sección de volumen
+- La sección **TMO**
+- La sección **Requisitos de personal**
+
+Cada sección incluye un gráfico y funciones de edición.
+
+Por defecto, los gráficos muestran los datos de la semana actual.
+
+- Para escoger un rango de fechas distinto, usa el selector de fechas. Haz clic en el número de la semana para seleccionar una semana completa, o haz clic en un día cualquiera y arrastra para seleccionar un periodo más corto o más largo.
+- Usa _<_{:.doc-button} y _>_{:.doc-button} para navegar al pasado y el futuro del periodo seleccionado.
+
+### La sección de volumen
+
+El gráfico en la sección de volumen muestra el volumen de contactos de datos históricos, previsiones importadas y previsiones generadas.
+Mueve el ratón sobre el gráfico para ver información detallada sobre volumen, TMO, requisitos de personal, ajustes manuales y eventos añadidos.<br>
+Aprende cómo {% link_new ajustar el volumen | features/forecast/injixo-forecast/manual-adjustments.md | #adjust-the-volume%}.
+
+### La sección TMO
+
+La sección TMO está escondida por defecto cuando abres o recargas la vista detallada de la carga de trabajo. Para mostrar la sección TMO, haz clic en el {% icon eye_slash %}.
+El gráfico de TMO solo está disponible para cargas de trabajo con colas que incluyen datos de TMO.<br>
+Aprende cómo {% link_new ajustar el TMO | features/forecast/injixo-forecast/manual-adjustments.md | #adjust-the-aht%}.
+
+### La sección Requisitos de personal
+
+El gráfico en la sección Requisitos de personal muestra los requisitos de personal calculados.
+Bajo el gráfico puedes ver los parámetros configurados para los requisitos de personal y el total de horas persona. Mueve el ratón sobre el gráfico para ver información detallada sobre volumen, TMO, requisitos de personal, ajustes manuales y eventos añadidos.<br>
+Aprende a usar {% link_new requisitos de personal para la planificación | features/forecast/injixo-forecast/calculate-staff-requirements.md | #usar-requisitos-de-personal-para-la-planificación %}.
+
+## Preguntas frecuentes
+
+| Pregunta                                     | Respuesta                                                                                                                                                                                                                                                                                                                                                       |
+| -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| ¿Por qué están vacíos los gráficos en la página de una carga de trabajo? | injixo genera una previsión para 365 días tras la última importación de datos. Si el gráfico en la página de la carga de trabajo no muestra datos para un periodo de tiempo específico en el futuro, comprueba si tu integración continúa importando datos en _Account > Integraciones_{:.breadcrumbs}. Comprueba además que las colas correctas estén asignadas a la carga de trabajo en la configuración de la carga de trabajo. |

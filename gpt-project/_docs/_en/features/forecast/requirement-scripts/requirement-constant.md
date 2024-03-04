@@ -66,5 +66,5 @@ If the date range is bigger than 7, injixo will write values depending on the Co
 
 ## Run the script
 
-After you have configured the script, click _OK_{:.doc-button} to start the calculation. A window will display your input parameters and the script execution results. Learn how to {% link_new see the saved staff requirements | features/scheduling/employee-requirement.md | #view-and-edit-staff-requirements %}.
+After you have configured the script, click _OK_{:.doc-button} to start the calculation. A window will display your input parameters and the script execution results. Learn how to {% link_new see the saved staff requirements | features/scheduling/edit-or-delete-staff-requirements.md | #view-and-edit-staff-requirements %}.
 

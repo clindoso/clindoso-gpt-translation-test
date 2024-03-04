@@ -20,16 +20,15 @@ Forecast versions allow you to save forecast values for specific periods. Use fo
 
 ## Save a forecast version
 
-injixo offers three forecast versions:
+injixo offers two forecast versions:
 
-- Forecast: This is the default version. Use it for comparison purposes.
 - Operational: Use it for short-term forecasts to calculate staff requirements.
 - Strategic: Use it for long-term forecasts to plan your organization's capacity.
 
-To save the default Forecast data in a different forecast version, proceed as follows:
+To save the default Forecast data in a forecast version, proceed as follows:
 
 1. In _Forecast > Workloads_{:.breadcrumbs}, select a workload.
-2. Select the time frame for which you want to save the forecast version.
+2. Select the time frame for which you want to save the forecast version. Click on a week number to select the whole week, or click any day and drag to select a period shorter or longer than a week.
 3. From the three-dots menu _![Context Menu in injixo Forecast](/assets/img/common/forecast/context-menu.svg)_{:.doc-button-icon} at the top right, select _Save forecast data_{:.doc-button}.
 4. In the window, select the forecast version into which you want to save the data.
    > Note
@@ -40,4 +39,4 @@ To save the default Forecast data in a different forecast version, proceed as fo
  
 The volume and **AHT** graphs show the forecast version data as colored lines. The Operational version data is diplayed as a purple line. The Strategic version data is displayed as a green line.
 
-Learn how to {% link_new calculate staff requirements | features/forecast/injixo-forecast/staff-requirement.md %} based on a forecast version.
+Learn how to {% link_new calculate staff requirements | features/forecast/injixo-forecast/calculate-staff-requirements.md %} based on a forecast version.

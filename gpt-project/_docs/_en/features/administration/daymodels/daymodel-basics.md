@@ -49,7 +49,7 @@ You can use fixed day models in work time pattern models to {% link_new create o
 
 As an alternative to availabilities, you can use {% link_new shift sequences | features/administration/shift-sequences.md %} or week time patterns in {% link_new work time pattern models | features/administration/work-time-pattern-models.md | #create-week-time-patterns %}. You can also use both to rotate early and late shifts, for example.
 
-We recommend creating a limited set of variable day models (combined with {% link_new availabilities of your people | features/administration/availabilities.md | #create-employee-availabilities %}) instead of creating a large number of fixed day models.
+We recommend creating a limited set of variable day models (combined with {% link_new availabilities of your people | features/administration/availabilities.md %}) instead of creating a large number of fixed day models.
 
 ## Base activity and shift duration
 
@@ -62,7 +62,7 @@ The total time of a scheduled shift including breaks is the gross shift duration
 The length of a day model must comply with the working hours in your {% link_new contracts | features/administration/create-contracts.md %}.
 For example, a contract with 40&nbsp;hours of weekly working time distributed over 5&nbsp;days a week requires a day model with a net working time of 8&nbsp;hours per day. A contract with 37.5&nbsp;hours per week needs one with 7.5&nbsp;hours.
 
-Use the Present activity as base activity and make sure it is configured as Replaceable. Then, the Job optimization and Create optimized schedules functionalities can replace the Present activity with other activities, as long as they have {% link_new calculated staff requirements | features/forecast/injixo-forecast/staff-requirement.md %} and are configured as Plannable.
+Use the Present activity as base activity and make sure it is configured as Replaceable. Then, the Job optimization and Create optimized schedules functionalities can replace the Present activity with other activities, as long as they have {% link_new calculated staff requirements | features/forecast/injixo-forecast/calculate-staff-requirements.md %} and are configured as Plannable.
 
 ### Fixed elements vs. corridors
 

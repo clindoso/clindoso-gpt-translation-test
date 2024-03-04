@@ -4,7 +4,7 @@ product_label:
   - advanced
   - enterprise
   - classic
-toc: false
+toc: true
 description: Découvrez comment activer les heures d’ouverture et leur impact sur les prévisions.
 related_articles:
   - overwrite_title: Add title for untranslated source

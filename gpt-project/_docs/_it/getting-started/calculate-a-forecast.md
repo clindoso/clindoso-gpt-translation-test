@@ -39,7 +39,7 @@ Una {% link_new versione della previsione | features/forecast/injixo-forecast/st
 
 ## 5\. Calcolare il fabbisogno di personale
 
-Per creare pianificazioni ottimizzate o per lanciare l’ottimizzazione delle mansioni, è necessario prima {% link_new calcolare il fabbisogno di personale | features/forecast/injixo-forecast/staff-requirement.md %} per le attività corrispondenti all’interno dei workload.
+Per creare pianificazioni ottimizzate o per lanciare l’ottimizzazione delle mansioni, è necessario prima {% link_new calcolare il fabbisogno di personale | features/forecast/injixo-forecast/calculate-staff-requirements.md %} per le attività corrispondenti all’interno dei workload.
 
 
 ## E adesso?

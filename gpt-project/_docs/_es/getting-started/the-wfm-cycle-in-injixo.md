@@ -21,7 +21,7 @@ El objetivo del workforce management (WFM) es optimizar la asignación de person
 En este artículo encontrarás una descripción general de cómo injixo puede ayudarte en todas las etapas del ciclo de WFM.
 El primer paso es proporcionar a injixo los datos necesarios para generar una previsión fiable. Para ello, necesitas configurar una integración con tus sistemas de distribución automática de llamadas (ACD, por sus siglas en inglés) o de gestión de relaciones con el cliente (CRM, por sus siglas en inglés).
 
-¿Estás empezando en el workforce management? Aprende sobre los conceptos clave y definiciones en nuestro [glosario](https://help.injixo.com/glossary/overview).
+¿Estás empezando en el workforce management? Aprende sobre los conceptos clave y definiciones en nuestro [glosario](/es/glossary/overview/).
 
 ## 1\. Previsión
 
@@ -48,7 +48,7 @@ Cada nueva importación de datos actualiza la previsión generada. También pued
 
 ### Calcular requisitos de personal
 
-Una vez hayas generado una previsión, puedes {% link_new calcular los requisitos de personal | features/forecast/injixo-forecast/staff-requirement.md %}, es decir, la cantidad de personas que deben ser planificadas para cubrir la carga de trabajo esperada. Puedes utilizar varios {% link_new métodos de cálculo | best-practices/requirement-scripts.md %} para determinar tus requisitos de personal. Los métodos de cálculo tienen en cuenta factores como la reducción de productividad (shrinkage), los objetivos de nivel de servicio o de tiempo de respuesta, etc. También puedes escribir requisitos de personal constantes sin una previsión, si fuera necesario.
+Una vez hayas generado una previsión, puedes {% link_new calcular los requisitos de personal | features/forecast/injixo-forecast/calculate-staff-requirements.md %}, es decir, la cantidad de personas que deben ser planificadas para cubrir la carga de trabajo esperada. Puedes utilizar varios {% link_new métodos de cálculo | best-practices/requirement-scripts.md %} para determinar tus requisitos de personal. Los métodos de cálculo tienen en cuenta factores como la reducción de productividad (shrinkage), los objetivos de nivel de servicio o de tiempo de respuesta, etc. También puedes escribir requisitos de personal constantes sin una previsión, si fuera necesario.
 
 Puedes utilizar tus requisitos de personal durante la planificación para crear horarios optimizados para unidades de planificación, actividades y periodos de tiempo específicos.
 

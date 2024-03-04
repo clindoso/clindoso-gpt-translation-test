@@ -1,108 +1,129 @@
 ---
-title: Planungseinheiten anlegen und verwalten
+title: Planungseinheiten erstellen und verwalten
 product_label:
   - essential
   - advanced
   - enterprise
   - classic
-description: Erfahre, wie Du Planungseinheiten erstellst, konfigurierst und löschst.
+description: Erfahre, wie du Planungseinheiten erstellst, konfigurierst und löschst.
 related_articles:
   - overwrite_title: Add title for untranslated source
     filepath: features/administration/planning-calendar.md
   - overwrite_title: Add title for untranslated source
     filepath: best-practices/how-to-use-virtual-planning-units.md
+  - overwrite_title: Add title for untranslated source
+    filepath: features/administration/activities.md
 redirect_from:
   - /de/planning-unit-configuration/
 redirect_reason: Updated filename on 21 August 2023
 ---
 
-In diesem Artikel lernst Du:
+Planungseinheiten gruppieren Mitarbeiter und Stammdaten für Planungszwecke. Deine Unternehmensstandorte müssen nicht zwingend mit deinen Planungseinheiten übereinstimmen. Beispielsweise können Mitarbeiter, die an zwei verschiedenen Standorten arbeiten, einer Planungseinheit {% link_new zugewiesen | features/administration/employee-overview.md | #mitarbeitereinstellungen-konfigurieren %} sein.
 
-- was Planungseinheiten sind.
-- wie Du sie erstellst, bearbeitest und löschst.
-- wie Du Öffnungszeiten, Aktivitäten, Multiaktivitäten und Tagesmodelle zu einer Planungseinheit hinzufügst.
+## Wie viele Planungseinheiten sollte ich verwenden?
+	
+Um deinen Arbeitsaufwand zu verringern, kannst du Mitarbeiter, die innerhalb einer Planungseinheit an verschiedenen Standorten oder in verschiedenen Teams arbeiten, mit {% link_new Auswahlen | features/administration/selections.md %} planen. In folgenden Fällen ist es sinnvoll, mehr als eine Planungseinheit zu verwenden:
+-  Mitarbeiter arbeiten in unterschiedlichen Zeitzonen.
+-  Planer sind nur für bestimmte Gruppen von Mitarbeitern verantwortlich, z.&nbsp;B. für bestimmte Geschäftsbereiche. In injixo Advance und Enterprise WFM können benutzerdefinierte Benutzerrollen {% link_new Zugriff auf Planungseinheiten einschränken | getting-started/configure-user-roles.md | #teamzugriff-verwalten-zugriff-auf-stammdaten-einschränken %}.
+- Es gibt gemeinsamen Mitarbeiterbedarf, z.&nbsp;B. bei Überlauf-Szenarien.
+- Du möchtest Reports erstellen, die die Gesamtzahlen aus mehreren Planungseinheiten enthalten.
+	
+	
+> Tipps für das Arbeiten mit mehreren Planungseinheiten
+>
+> - Um Zahlen über mehrere Planungseinheiten hinweg zu gruppieren, füge allen relevanten Planungseinheiten eine übergeordnete Planungseinheit hinzu.
+> - Du kannst die Zuweisung eines Mitarbeiters von einer Planungseinheit zu einer anderen vorübergehend ändern.<br>Erfahre mehr darüber, wie du {% link_new Mitarbeiter abordnest | features/administration/employee-overview.md | #mitarbeiter-abordnen %}.
+	
+<!-- Typically, you assign one planning unit to a person at a time. Reassign a planning unit using valid from and valid to dates in the employee configuration. In rare cases, you will need to assign more than one planning unit to a person. The person's main planning unit is assigned with priority 1. The person is scheduled in this main planning unit. A person's schedule will be displayed in other planning units with lower priority. You can also manually reschedule people in other planning units if needed. -->
 
-## Was sind Planungseinheiten?
+## Planungseinheiten erstellen
 
-Planungseinheiten fassen Mitarbeiter für die Planung zusammen. Normalerweise gehören alle Mitarbeiter zur gleichen Planungseinheit, es sei denn:
 
-- die Mitarbeiter befinden sich in unterschiedlichen Zeitzonen. Nutze in diesem Fall eine Planungseinheit pro Zeitzone.
-- die Planer oder Supervisor in Deinem Betrieb sind jeweils nur für eine Untergruppe von Mitarbeitern zuständig, z.B. je nach Geschäftsbereich. In diesem Fall sollte für jeden Planer eine separate Planungseinheit zur Verfügung stehen (nur möglich mit injixo Advanced und Enterprise).
+1. Gehe zu _Plan > Konfiguration > Planungseinheiten_{:.breadcrumbs}.
+2. Klicke oben links auf das Neu-Icon {% icon item-add | icon-only %}.  
+   Ein Konfigurationsfenster öffnet sich auf der rechten Seite.
+3. Fülle folgende Felder aus:
 
-## Eine Planungseinheit anlegen
+   - **Name**: Eindeutiger Name für die Planungseinheit (max. 50 Zeichen).
+   - **Kurzbezeichnung**: Kurzbezeichnung für den Namen (max. 25 Zeichen).
+   - **Farbe**: Optionale Farbe für die Planungseinheit. Die Farbe wird in Schedules verwendet.
+   - **Intervall**: Wirkt sich auf den Detailgrad der Daten aus, die in Schedules angezeigt werden, z.&nbsp;B. Deckung und Mitarbeiterbedarf. Das Intervall der Planungseinheit sollte nicht länger sein als das Intervall der Importe deiner Kontakt- und Agentenstatus-Daten. Das Dropdown-Menü zeigt Intervalle der Planungseinheit in Minuten an. Wir empfehlen, die Option **15** Minuten zu verwenden. Das Intervall kann nach dem Speichern nicht mehr geändert werden. Erfahre mehr über {% link_new Datenimport über Integrationen | features/acd-integration/cloud/how-integrations-work.md %}.
+   - **Übergeordnete Planungseinheit**: Optionale Planungseinheit, der die Planungseinheit untergeordnet ist, die du erstellst. Erfahre mehr über {% link_new übergeordnete Planungseinheiten | best-practices/how-to-use-virtual-planning-units.md %}.
+   - **Zeitzone**: Zeitzone der Planungseinheit. Die Zeitzone kann nach dem Speichern der Planungseinheit nicht mehr geändert werden. Erfahre mehr darüber, wie du {% link_new mit Zeitzonen arbeitest | best-practices/working-with-timezones.md %}.
 
-1. Gehe zu _WFM > Administration > Scheduling > Planungseinheiten_{:.breadcrumbs}.
-2. Klicke auf das {% icon item-add %} in der Aktionsleiste. Der folgende Dialog erscheint:
+     > Hinweis
+     >
+     > Die ausgewählte Zeitzone muss mit der Zeitzone deiner Workloads in Forecast übereinstimmen. Andernfalls kannst du keinen Mitarbeiterbedarf für die Schichtplanung übertragen. Eine Integration passt die importierten Daten entsprechend der Zeitzone deiner Workloads an.
 
-   {{ 1 | image: "Planungseinheit", '60%' }}
-
-3. Vergib einen **Namen** (max. 50 Zeichen)
-4. Gib eine **Kurzbezeichnung** (max. 25 Zeichen) ein. Die Kurzbezeichnung wird in einigen Modulen von injixo anstelle des Namens verwendet. Wenn der Name der Planungseinheit kurz ist, verwende ihn einfach auch hier.
-5. Wähle eine **Farbe** (optional). injixo wird die Planungseinheit in dieser Farbe anzeigen.
-6. Wähle ein **Intervall**. Es sollte dem Intervall entsprechen, dass die {% link_new Integration(en) | features/acd-integration/cloud/how-integrations-work.md %} nutzen, die die für die Planungseinheit relevanten Daten importieren. Stelle das Intervall auf 15, 30 oder 60 Minuten ein. Du kannst das Intervall nach dem Speichern nicht mehr ändern.
-7. Wähle eine **Übergeordnete Planungseinheit** (optional), zu der die Planungseinheit gehören soll. Eine übergeordnete Planungseinheit ermöglicht es, mehrere Planungseinheiten in einem Schritt zu planen. Dies kann hilfreich sein, um den Mitarbeiterbedarf über mehrere Planungseinheiten hinweg besser abzudecken. Eine übergeordnete Planungseinheit kann auch verwendet werden, um einen Überlauf abzubilden, d.&nbsp;h. sicherzustellen, dass eine Planungseinheit einen Teil des Kontaktvolumens einer anderen Planungseinheit übernimmt, wenn diese überlastet ist.
-8. Wähle für die Planungseinheit die lokale {% link_new **Zeitzone** | best-practices/working-with-timezones.md %} aus. Diese kann nach dem Speichern nicht mehr geändert werden. Wenn Du Mitarbeiter so planen willst, dass sie über verschiedene Standorte oder Zeitzonen hinweg an einem gemeinsamen Pool von Kontaktvolumen arbeiten, lies den Artikel zur Planung von Mitarbeitern an {% link_new verschiedenen Standorten | best-practices/how-to-use-virtual-planning-units.md %}.
-9. Klicke auf _Ok_{:.doc-button}.
-
-Du hast nun eine Planungseinheit erstellt. Füge als nächstes Informationen in den Abschnitten **Öffnungszeiten**, **Aktivitäten** und **Tagesmodelle** hinzu. Bei Bedarf kannst Du auch einen {% link_new Planungskalender | features/administration/planning-calendar.md %} verknüpfen. Unterhalb erfährst Du mehr über jeden Abschnitt.
+4. Klicke auf _OK_{:.doc-button}.  
+   Du kannst nun Öffnungszeiten und Aktivitäten hinzufügen oder {% link_new Tagesmodelle einschränken | features/administration/create-and-manage-planning-units.md | #tagesmodelle-einschränken %}.
 
 ### Öffnungszeiten hinzufügen
 
-Füge Deiner Planungseinheit immer Öffnungszeiten hinzu. Die Mitarbeiterbedarfsberechnung und die volloptimierte Planung berücksichtigen diese Öffnungszeiten.
+Um einer Planungseinheit Öffnungszeiten hinzuzufügen, erstelle zunächst {% link_new die Planungseinheit  | features/administration/create-and-manage-planning-units.md | #planungseinheiten-erstellen %}.
 
-1. Klicke links in der Liste auf die **Planungseinheit**, die Du gerade erstellt hast.
-2. Scrolle zum Abschnitt _Öffnungszeiten_ und klicke auf das {% icon item-add %}, um Öffnungszeiten für bestimmte Tagestypen hinzuzufügen.
-3. Wähle zunächst den {% link_new **Tagestyp** | features/administration/day-types.md %} aus. Halte während Du klickst _STRG_ oder _Shift_ gedrückt, um mehrere Elemente auf einmal auszuwählen.
-4. Gib die Startzeit in das Feld **Von** ein.
-5. Gib die Endzeit in das Feld **Bis** ein. Gib 00:00 bis 00:00 in die Felder _Von_ und _Bis_ ein, wenn Du 24 Stunden geöffnet hast.
-6. **Gültig von** und **Gültig bis** werden nur verwendet, wenn Du festlegen willst, dass die gerade eingegebenen Öffnungszeiten nur für einen bestimmten Datumsbereich gelten. Wenn sie ohne Einschränkung gelten, lass die Felder einfach leer. Erfahre mehr über {% link_new Gültigkeitszeiträume | features/administration/set-a-validity-period.md %} in injixo.
-7. Klicke auf _Ok_{:.doc-button}.
+Zu Planungszwecken musst du den Tagestypen deiner Planungseinheit Öffnungszeiten hinzufügen. Die Öffnungszeiten schränken die Zeiten ein, für die du pro Tag den {% link_new Mitarbeiterbedarf berechnen | features/forecast/injixo-forecast/calculate-staff-requirements.md %} und {% link_new optimierte Schichtpläne erstellen | features/scheduling/schedules/schedules-optimized-schedules.md %} kannst. <!-- special public holiday day types or part of the linked article? -->
 
-Du hast nun die Öffnungszeiten für den gewählten Tagestyp hinzugefügt. Füge jetzt die Öffnungszeiten für alle weiteren Tagestypen hinzu, die in der Planungseinheit geplant werden sollen.
+1. Klicke im Abschnitt **Öffnungszeiten** des Konfigurationsfensters der Planungseinheit auf das {% icon item-add %}.  
+   Ein Dialogfenster öffnet sich.
+2. Wähle im Abschnitt **Tagestyp** einen oder mehrere {% link_new Tagestypen | features/administration/day-types.md %} aus.
+3. Gib die Start- und Endzeit in den Feldern **von** und **bis** (im 24-Stunden-Format) ein. Wenn deine Planungseinheit 24&nbsp;Stunden geöffnet ist, gib in beiden Feldern 00:00 ein.
+4. (Optional) Gib in den Feldern **Gültig vom** und **Gültig bis** einen Zeitraum an, für den die Öffnungszeiten gelten. Wenn deine Öffnungszeiten immer gelten, lasse diese Felder leer. Erfahre mehr über {% link_new Gültigkeitszeiträume | features/administration/set-a-validity-period.md %}.
+5. Klicke auf _OK_{:.doc-button}.
 
-Um die Öffnungszeiten zu ändern oder zu entfernen, klicke auf _![Bleistift-Symbol](/assets/img/common/item-edit.gif)_{:.doc-button-icon} oder _![rotes Kreuz](/assets/img/common/item-delete.gif)_{:.doc-button-icon}.
-
-{{ 2 | image: "Öffnungszeiten der Planungseinheit", '60%' }}
+Um die Öffnungszeiten zu ändern oder zu entfernen, klicke auf das {% icon item-edit %} bzw. das {% icon item-delete %}.
 
 ### Aktivitäten hinzufügen
 
-Mitarbeiter einer Planungseinheit können nur für Aktivitäten geplant werden, die dieser Planungseinheit zugewiesen sind. Das wird durch die standardmäßig aktivierte {% link_new Planungsregel | features/administration/create-contracts.md %} _2606_{:.id-label} sichergestellt.  
-Die Standardaktivität mit der ID 1, in der Regel _Anwesend_ genannt, ist jeder Planungseinheit automatisch zugeordnet und kann nicht entfernt werden.
+Um einer Planungseinheit Öffnungszeiten hinzuzufügen, erstelle zunächst {% link_new die Planungseinheit | features/administration/create-and-manage-planning-units.md | #planungseinheiten-erstellen %}.
 
-Füge der Planungseinheit alle Aktivitäten hinzu, die Deine Mitarbeiter normalerweise ausführen:
+Bevor du Schichtpläne erstellst, musst du den Planungseinheiten alle relevanten Aktivitäten vom Typ Anwesenheit hinzufügen. Du kannst Mitarbeiter nur für Aktivitäten planen, die du ihrer Planungseinheit hinzugefügt hast. Standardmäßig enthalten alle Planungseinheiten die Aktivität Anwesend, die nicht gelöscht werden kann.
+Damit deine Reports auch Aktivitäten eines anderen Typs enthalten, musst du den relevanten Planungseinheiten die jeweiligen Aktivitäten hinzufügen.
 
-1. Scrolle zum Abschnitt _Aktivitäten_ und klicke auf das {% icon item-add %}.
-2. Wähle mit einem Klick eine {% link_new **Aktivität** | features/administration/activities.md %} aus.
-3. Belasse die Felder **Von** und **Bis** auf 00:00 bis 00:00. Standardmäßig berücksichtigt injixo nur die zuvor eingegebenen Öffnungszeiten der Planungseinheit. Ein Admin Benutzer kann über die Einstellung _48408_{:.id-label} _Berücksichtigung von Öffnungszeiten im AutoScheduler_ ein abweichendes Verhalten definieren.
-4. Normalerweise lässt Du **Gültig von** und **Gültig bis** leer. Es sei denn, Du möchtest, dass eine Aktivität nur während eines bestimmten Datumsbereichs zur Planung zur Verfügung stehen soll.
-5. Klicke auf _Ok_{:.doc-button}.
+Um einer Planungseinheit Aktivitäten hinzuzufügen, gehe wie folgt vor:
 
-Um eine Aktivität zu ändern oder zu entfernen, klicke auf _![Bleistift-Symbol](/assets/img/common/item-edit.gif)_{:.doc-button-icon} oder _![rotes Kreuz](/assets/img/common/item-delete.gif)_{:.doc-button-icon}.
+1. Klicke im Abschnitt **Aktivitäten** des Konfigurationsfensters der Planungseinheit auf das {% icon item-add %}.  
+   Ein Dialogfenster öffnet sich.
+2. Klicke auf die Aktivität, die du hinzufügen möchtest.
+3. Gib mit den Feldern **von** und **bis** eine Zeitspanne an. Die Funktionalität {% link_new Optimierten Plan erstellen | features/scheduling/schedules/schedules-optimized-schedules.md %} kann die Aktivität innerhalb dieser Zeitspanne verwenden. Wenn beide Felder den Wert 00:00 haben, verwendet injixo die Öffnungszeiten der Planungseinheit. Benutzer mit Admin-Zugriff können dieses Standardverhalten in der Einstellung _48408_{:.id-label} _Berücksichtigung von Öffnungszeiten im AutoScheduler_ anpassen.
+4. (Optional) Gib einen Datumsbereich in den Feldern **Gültig vom** und **Gültig bis** an, innerhalb dessen die Aktivität für die Schichtplanung verwendet werden kann.<br>Wenn du die Felder **Gültig vom** und **Gültig bis** leer lässt, ist die Aktivität unbegrenzt für die Schichtplanung verfügbar.
+5. Klicke auf _OK_{:.doc-button}.
 
-{{ 3 | image: "Aktivitäten der Planungseinheit", '60%' }}
+Um eine Aktivität zu bearbeiten oder zu löschen, klicke auf das {% icon item-edit %} bzw. das {% icon item-delete %}.
 
 ### Multiaktivitäten hinzufügen
 
-Um {% link_new Multiskill-Agenten | best-practices/how-to-schedule-multiskill-agents.md %} für mehrere Aktivitäten gleichzeitig zu planen, musst Du der Planungseinheit eine Multiaktivität wie oben beschrieben zuweisen. Gehe am besten wie folgt vor:
+Um eine {% link_new Multiaktivität | features/administration/activity-types-and-properties.md | #teilaktivitäten %} zu einer Planungseinheit hinzuzufügen, musst du ihr zunächst alle relevanten Teilaktivitäten zuweisen. Die Multiaktivität wird in der Übersicht der Aktivitäten fett hervorgehoben. In injixo Essential WFM sind keine Multiaktivitäten verfügbar.
 
-1. Erstelle eine {% link_new Multiaktivität | features/administration/activity-types-and-properties.md | #teilaktivitäten %}. Die Multiaktivität enthält die von den Multiskill-Mitarbeiter ausführbaren Aktivitäten als Teilaktivitäten.
-2. Füge die Teilaktivitäten zur Planungseinheit hinzu.
-3. Füge die Multiaktivität zur Planungseinheit hinzu. In der Aktivitäten-Liste wird sie fett hervorgehoben.
+### Tagesmodelle einschränken
 
-Multiaktivitäten sind nicht in injixo Essential verfügbar.
+Standardmäßig werden deinen Planungseinheiten alle {% link_new Tagesmodelle | features/administration/daymodels/daymodel-creation.md %} zugewiesen. Wenn du für eine Planungseinheit nicht alle Tagesmodelle benötigst, kannst du die Anzahl der Tagesmodelle für diese Planungseinheit einschränken.
 
-### Tagesmodelle verwalten
+Das Einschränken von Tagesmodellen kann die Schichtplanung mit der Funktionalität Optimierten Plan erstellen beschleunigen. Beachte, dass du jedoch nur die der Planungseinheit zugewiesenen Tagesmodelle verwenden kannst, um Schichten zu erzeugen, Reports oder optimierte Schichtpläne zu erstellen. Dies kann zu einem erhöhten Aufwand in der Pflege anderer Konfigurationsdaten führen, z.&nbsp;B. von Wochenmodellen. Das Löschen eines verwendeten Tagesmodells hat keine Auswirkungen auf die Schichtpläne und Schichten, die mit diesem Tagesmodell erzeugt wurden.
 
-Standardmäßig sind alle vorhandenen Tagesmodelle automatisch der Planungseinheit zugewiesen. Normalerweise änderst Du diese Zuordnung nicht. Beachte, dass Du nur diejenigen Tagesmodelle, die der Planungseinheit zugewiesen sind, verwenden kannst, um Schichten anzulegen, Reports zu erstellen oder manuelle oder automatische Planungen durchzuführen.
+> Hinweis
+>
+> Wenn du alle Tagesmodelle einer Planungseinheit löschst, kannst du Aktivitäten nur noch manuell planen oder indem du sie {% link_new in Schichtfolgen einfügst | features/administration/shift-sequences.md %}. Du kannst die Funktionalität **Optimierten Plan erstellen** nicht mehr verwenden.
 
-Um ein Tagesmodell zu ändern oder zu entfernen, scrolle zum Abschnitt _Tagesmodelle_ und klicke auf das {% icon item-edit %} oder das {% icon item-delete %}. Um ein Tagesmodell hinzuzufügen, klicke auf das {% icon item-add %}. Wähle das Tagesmodell aus, das Du hinzufügen möchtest und klicke auf _Ok_{:.doc-button}.
+Um die Anzahl der Tagesmodelle einzuschränken, gehe wie folgt vor:
 
-{{ 4 | image: "Tagesmodelle der Planungseinheit", '60%' }}
+1. Gehe zu _Plan > Konfiguration > Planungseinheiten_{:.breadcrumbs}.
+2. Wähle die Planungseinheit aus, die du bearbeiten möchtest und scrolle im Konfigurationsfenster bis zum Abschnitt **Tagesmodelle**.
+3. Um die Anzahl der Tagesmodelle einzuschränken, musst du die Standardzuweisung der Tagesmodelle entweder ersetzen oder löschen:
+   - Klicke auf das {% icon item-edit %} neben der Option **[Alle]** und wähle ein Tagesmodell aus.
+   - Um die Option **[Alle]** zu löschen, klicke stattdessen auf das {% icon item-delete %}.
+4. Klicke auf das {% icon item-add %}, um deiner Planungseinheit ein oder mehrere Tagesmodelle zuzuweisen. Du kannst dasselbe Tagesmodell nicht zweimal hinzufügen. Um ein hinzugefügtes Tagesmodell zu bearbeiten oder zu löschen, klicke auf das {% icon item-add %} bzw. das {% icon item-edit %}.
+5. Klicke auf _OK_{:.doc-button}.
 
-## Eine Planungseinheit löschen
+## Planungseinheiten löschen
 
-1. Klicke in der Liste auf die **Planungseinheit**, die Du entfernen möchtest.
-2. Scrolle zu den Abschnitten _Aktivitäten_ und _Tagesmodelle_ und entferne alle zugewiesenen Aktivitäten und Tagesmodelle. Dadurch verhinderst Du, dass diese Tagesmodelle und Aktivitäten später einer gelöschten Planungseinheit zugeordnet sind. Klicke auf _![rotes Kreuz](/assets/img/common/item-delete.gif)_{:.doc-button-icon} neben jeder Aktivität und jedem Tagesmodell, um sie zu entfernen.
-3. Stelle sicher, dass die **Planungseinheit**, die Du löschen willst, in der Liste markiert ist.
-4. Klicke in der Aktionsleiste über der Liste der Planungseinheiten auf _![rotes Kreuz](/assets/img/common/item-delete.gif)_{:.doc-button-icon}.
-5. Bestätige das Löschen mit _Ja_{:.doc-button}.
+> Achtung
+>
+> Wenn du eine Planungseinheit löschst, kannst du nicht mehr auf die zugehörigen Schichtpläne zugreifen.
+
+1. Gehe zu _Plan > Konfiguration > Planungseinheiten_{:.breadcrumbs}.
+2. Wähle die Planungseinheit aus, die du löschen möchtest.
+3. Klicke oben links auf das {% icon item-delete %}.
+4. Um zu bestätigen, klicke auf _Ja_{:.doc-button}.
+
+

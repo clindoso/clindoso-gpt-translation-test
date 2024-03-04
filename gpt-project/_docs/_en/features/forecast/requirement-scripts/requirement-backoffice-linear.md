@@ -40,7 +40,7 @@ The _Backoffice (Linear) Requirement_ requirement script calculates the employee
 
 Example: 230 documents came in overnight. The documents must be processed by the end of the business day, i.e. before 5 p.m. on the same day. 13. Check the checkbox **Distribute only among opening hours** to distribute the calculation result to the time period of the contact center's opening hours. Uncheck it to write the values to 24 hours instead. 14. {% include reusables/{{ page.lang }}/scripts/steps/startdate.md %} 15. {% include reusables/{{ page.lang }}/scripts/steps/number-of-days.md %} 16. Click _Ok_{:.doc-button} to start the calculation.
 
-A window will pop up. It will show your input parameters and the script execution results. Check the {% link_new saved employee requirement in the Shift Center | features/scheduling/employee-requirement.md %}.
+A window will pop up. It will show your input parameters and the script execution results. Check the {% link_new saved employee requirement in the Shift Center | features/scheduling/edit-or-delete-staff-requirements.md %}.
 
 {% include reusables/{{ page.lang }}/scripts/on-prem-usage.md %}
 

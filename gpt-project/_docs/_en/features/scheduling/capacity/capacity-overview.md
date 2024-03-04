@@ -20,7 +20,7 @@ Select a **Planning unit**. A table appears that shows the staff requirements, t
 
 The table contains the following rows:
 
-- Staff requirements: The sum of the staff requirements for all activities of the selected planning unit. Make sure to first {% link_new calculate and save | features/forecast/injixo-forecast/staff-requirement.md %} the staff requirements for all activities of the planning unit under Forecast. Otherwise, the staff requirements won't be displayed here.
+- Staff requirements: The sum of the staff requirements for all activities of the selected planning unit. Make sure to first {% link_new calculate and save | features/forecast/injixo-forecast/calculate-staff-requirements.md %} the staff requirements for all activities of the planning unit under Forecast. Otherwise, the staff requirements won't be displayed here.
 - Contracted capacity: The sum of the contractual working time of all employees of the selected planning unit. All employees with an assigned contract are considered. Absences do not influence the numbers. The numbers are based on the target working time per week which is defined for each contract in the section {% link_new Work Time Guidelines | features/administration/create-contracts.md | #work-time-guidelines %}.
 - Potential coverage: The difference between the Contracted capacity and Staff requirements values.
 

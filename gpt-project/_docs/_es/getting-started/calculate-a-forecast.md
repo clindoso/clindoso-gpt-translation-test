@@ -40,7 +40,7 @@ Una {% link_new versión de la previsión | features/forecast/injixo-forecast/st
 
 ## 5. Calcular requisitos de personal
 
-Para crear planificaciones optimizadas o ejecutar la optimización de tareas, primero debes {% link_new calcular los requisitos de personal | features/forecast/injixo-forecast/staff-requirement.md %} para las actividades correspondientes en tus cargas de trabajo.
+Para crear planificaciones optimizadas o ejecutar la optimización de tareas, primero debes {% link_new calcular los requisitos de personal | features/forecast/injixo-forecast/calculate-staff-requirements.md %} para las actividades correspondientes en tus cargas de trabajo.
 
 ## ¿Y ahora?
 

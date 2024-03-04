@@ -29,3 +29,9 @@ Vous débutez avec les intégrations&nbsp;? Commencez avec les {% link_new conce
 3. Dans la section **Configuration**, sélectionnez la région de votre compte.
 4. (Facultatif) Cochez la case **Importer les statuts détaillés des agents on-queue**.<br>Le statut agent on-queue inclut plusieurs statuts&nbsp;; par exemple, en communication, en interaction, inactif, ne répond pas. Lors de l’import des statuts agent, injixo fait la distinction entre les statuts individuels regroupés sous «&nbsp;on-queue&nbsp;».
 5. Cliquez sur _Sauvegarder l’intégration_{:.doc-button}.
+
+## Foire aux questions
+
+| Question                            | Réponse                                                                                                                                           |
+| ----------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| L'intégration importe des données pour les appels abandonnés, le délai moyen de réponse et les appels répondus respectant l’objectif de qualité de service. Pourquoi ces données ne s’affichent-elles pas dans Dashboards&nbsp;? | Vous pouvez afficher ces données dans Dashboards si vous ajoutez exclusivement des files d'attente de votre intégration Genesys Cloud lorsque vous configurez un workload dans Forecast. Vous ne pouvez pas afficher ces données si des files d'attente d'autres intégrations sont incluses.

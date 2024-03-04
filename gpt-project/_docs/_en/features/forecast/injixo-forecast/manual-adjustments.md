@@ -7,7 +7,7 @@ product_label:
 description: Make manual adjustments to your forecasted contact volumes and AHT.
 related_articles:
   - overwrite_title: Add title for untranslated source
-    filepath: features/forecast/injixo-forecast/staff-requirement.md
+    filepath: features/forecast/injixo-forecast/calculate-staff-requirements.md
   - overwrite_title: Add title for untranslated source
     filepath: features/forecast/injixo-forecast/events-and-holidays.md
 ---
@@ -25,7 +25,7 @@ New forecast calculations do not overwrite manually adjusted values.
 ## Adjust the volume
 
 1. In _Forecast > Workloads_{:.breadcrumbs}, select a workload.
-2. Select a time frame from the date picker.<br>The time frame you select determines the adjustment options.
+2. Select a time frame from the date picker. Click on a week number to select the whole week, or click any day and drag to select a period shorter or longer than a week.<br>The time frame you select determines the adjustment options.
 3. In the volume section, click _Adjust volume_{:.doc-button}.
 4. In the window, configure your adjustment:
   - **Date range**: Available if you selected a time frame of several days in step 2.
@@ -40,7 +40,7 @@ Learn [how volume and AHT values are adjusted](#how-do-time-frames-affect-volume
 ## Adjust the AHT
 
 1. In _Forecast > Workloads_{:.breadcrumbs}, select a workload.
-2. Select a time frame from the date picker.
+2. Select a time frame from the date picker. Click on a week number to select the whole week, or click any day and drag to select a period shorter or longer than a week.
 3. Next to **AHT**, click the {% icon eye_slash %}.
 4. Click _Adjust AHT_{:.doc-button}.
 5. In the window, configure your adjustment:
@@ -76,7 +76,7 @@ Adjustments have a different impact based on the time frame you selected in the 
 You can delete adjustments that are no longer relevant.
 
 1. In _Forecast > Workloads_{:.breadcrumbs}, select a workload.
-2. Select a time frame from the date picker.
+2. Select a time frame from the date picker. Click on a week number to select the whole week, or click any day and drag to select a period shorter or longer than a week.
 3. Select the adjustments you want to delete:
   - In the volume section, click _Adjust volume_{:.doc-button}.
   - In the **AHT** section, click _Adjust AHT_{:.doc-button}.

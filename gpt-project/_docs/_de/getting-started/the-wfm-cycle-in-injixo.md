@@ -51,7 +51,7 @@ Mit jedem neuen Datenimport wird der erzeugte Forecast aktualisiert. Du kannst a
 
 ### Mitarbeiterbedarf berechnen
 
-Wenn du deinen Forecast erstellt hast, kannst du {% link_new den Mitarbeiterbedarf berechnen | features/forecast/injixo-forecast/staff-requirement.md %}, d.&nbsp;h. die Anzahl an Mitarbeitern, die geplant werden müssen, um den Bedarf zu decken, der sich aus dem Workload ergibt. Du kannst verschiedene {% link_new Berechnungsmethoden | best-practices/requirement-scripts.md %} verwenden, um deinen Mitarbeiterbedarf zu berechnen. Diese beziehen Faktoren wie angestrebte Service-Level, Antwortzeit, Shrinkage usw. mit ein. Bei Bedarf kannst du auch ein Skript für konstanten Mitarbeiterbedarf ohne einen Forecast verwenden.
+Wenn du deinen Forecast erstellt hast, kannst du {% link_new den Mitarbeiterbedarf berechnen | features/forecast/injixo-forecast/calculate-staff-requirements.md %}, d.&nbsp;h. die Anzahl an Mitarbeitern, die geplant werden müssen, um den Bedarf zu decken, der sich aus dem Workload ergibt. Du kannst verschiedene {% link_new Berechnungsmethoden | best-practices/requirement-scripts.md %} verwenden, um deinen Mitarbeiterbedarf zu berechnen. Diese beziehen Faktoren wie angestrebte Service-Level, Antwortzeit, Shrinkage usw. mit ein. Bei Bedarf kannst du auch ein Skript für konstanten Mitarbeiterbedarf ohne einen Forecast verwenden.
 
 Den Mitarbeiterbedarf kannst du im Planungsprozess nutzen, um optimierte Pläne für bestimmte Zeiträume, Planungseinheiten und Aktivitäten zu erstellen.
 

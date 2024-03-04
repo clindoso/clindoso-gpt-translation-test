@@ -67,7 +67,7 @@ Gehe zu *Administration > Scheduling > Mitarbeiter*{:.breadcrumbs} und wähle de
 ### Einstellungen zu Verträgen und Tagesmodellen
 
 * Weise Deiner Planungseinheit alle Tagesmodelle zu, indem Du *[Alle]* zum Abschnitt *Tagesmodelle* der Planungseinheit hinzufügst.
-* Stelle sicher, dass Du einen {% link_new Mitarbeiterbedarf | features/forecast/injixo-forecast/staff-requirement.md %} für die Aktivität, die Du planen möchtest, berechnet und gespeichert hast, bevor Du die Optimierung startest.
+* Stelle sicher, dass Du einen {% link_new Mitarbeiterbedarf | features/forecast/injixo-forecast/calculate-staff-requirements.md %} für die Aktivität, die Du planen möchtest, berechnet und gespeichert hast, bevor Du die Optimierung startest.
 * Prüfe, ob Du die richtigen {% link_new Tagesmodelle | features/administration/daymodels/daymodel-creation.md %} angelegt hast. Ihre Länge muss zu den Arbeitszeitvorgaben passen, die im {% link_new Vertrag | features/administration/create-contracts.md %} definiert sind. Tagesmodelle geben eine Brutto-Gesamtarbeitszeit an, während Verträge nur die Nettoarbeitszeit zählen. Um die korrekte Nettoarbeitszeit zu erhalten, musst du eventuell Pausen oder andere unbezahlte Tätigkeiten von der Bruttoarbeitszeit abziehen.
 * Überprüfe andere Vertragsparameter.
 

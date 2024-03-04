@@ -4,7 +4,7 @@ product_label:
   - advanced
   - enterprise
   - classic
-toc: false
+toc: true
 description: Verstehe, wie du Öffnungszeiten aktivieren kannst und wie sie sich auf den Forecast auswirken.
 related_articles:
   - overwrite_title: Add title for untranslated source

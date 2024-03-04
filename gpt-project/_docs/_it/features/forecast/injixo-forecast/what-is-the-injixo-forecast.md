@@ -19,7 +19,7 @@ related_articles:
 
 injixo Forecast combina i dati storici con gli algoritmi per generare previsioni di alta qualità. Gli algoritmi riconoscono le tendenze, i pattern e le oscillazioni inclusi nei tuoi dati. injixo Forecast utilizza molti tipi di algoritmi, come ARIMA, Holt-Winters, livellamento esponenziale, regressione, potenziamento del gradiente. 
 
-injixo Forecast seleziona automaticamente l'algoritmo più adatto ai tuoi dati. La previsione viene generata per 365 giorni e può essere visualizzata in modalità giornaliera, settimanale, mensile e annuale.
+injixo Forecast seleziona automaticamente l’algoritmo più adatto ai tuoi dati. injixo genera una previsione per 365 giorni a partire dall’ultima importazione di dati.
 
 injixo Essential WFM utilizza un algoritmo semplice che usa i valori medi dei dati storici per riconoscere una tendenza lineare a lungo termine e dei pattern settimanali.
 

@@ -21,7 +21,7 @@ L’obiettivo del workforce management (WFM) è ottimizzare la gestione del pers
 In questo articolo troverai una panoramica dei modi in cui injixo può accompagnarti lungo tutte le fasi del ciclo WFM.
 Il primo passo è fornire a injixo i dati necessari per generare una previsione affidabile. Per farlo, è necessario configurare un'integrazione con i tuoi sistemi di distribuzione automatica delle chiamate (ACD) o di gestione delle relazioni con i clienti (CRM).
 
-È la prima volta che ti occupi di workforce management? Scopri i concetti chiave e le definizioni nel nostro [glossario](https://help.injixo.com/it/glossary/overview).
+È la prima volta che ti occupi di workforce management? Scopri i concetti chiave e le definizioni nel nostro [glossario](/it/glossary/overview/).
 
 ## 1. Previsione
 
@@ -48,7 +48,7 @@ Ogni nuova importazione di dati aggiorna la previsione generata. Puoi anche {% l
 
 ### Calcolare il fabbisogno di personale
 
-Dopo aver generato una previsione, puoi {% link_new calcolare il fabbisogno di personale | features/forecast/injixo-forecast/staff-requirement.md %}, cioè il numero di dipendenti che devono essere pianificati per far fronte al carico di lavoro previsto. Puoi utilizzare diversi {% link_new metodi di calcolo | best-practices/requirement-scripts.md %} per calcolare il tuo fabbisogno di personale. I metodi di calcolo tengono conto di fattori come il livello di servizio desiderato, il tempo di risposta desiderato, i cali di efficienza (shrinkage), etc. Se è necessario, è possibile anche definire il fabbisogno di personale di personale costante senza previsioni.
+Dopo aver generato una previsione, puoi {% link_new calcolare il fabbisogno di personale | features/forecast/injixo-forecast/calculate-staff-requirements.md %}, cioè il numero di dipendenti che devono essere pianificati per far fronte al carico di lavoro previsto. Puoi utilizzare diversi {% link_new metodi di calcolo | best-practices/requirement-scripts.md %} per calcolare il tuo fabbisogno di personale. I metodi di calcolo tengono conto di fattori come il livello di servizio desiderato, il tempo di risposta desiderato, i cali di efficienza (shrinkage), etc. Se è necessario, è possibile anche definire il fabbisogno di personale di personale costante senza previsioni.
 
 Puoi utilizzare il fabbisogno di personale durante il processo di pianificazione per creare pianificazioni ottimizzate per specifici intervalli di tempo, unità di pianificazione e attività.
 

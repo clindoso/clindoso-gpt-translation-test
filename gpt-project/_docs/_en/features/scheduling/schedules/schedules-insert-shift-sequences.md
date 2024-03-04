@@ -50,13 +50,11 @@ Before you can insert shift sequences into your schedule, you need to do the fol
 1. To select an employee, check the checkbox next to their row. To select all employees, check the checkbox in the header row.
 2. (Optional) From the **Options** drop-down menu at the bottom of the overview table, select how existing schedules should be handled when inserting shift sequences.
 
-   | Option                           | Description                                                                                             |
+   | Option                           | Description                                                                                         |
    | -------------------------------- | --------------------------------------------------------------------------------------------------- |
-   | Delete all activities and shifts | All activities and and shifts are deleted from the target level. Availability periods are retained. |
    | Delete full-day activities       | Full-day activities are deleted. Non full-day activities are retained.                              |
    | Delete availability periods      | Availability periods are deleted.                                                                   |
-
-   <!-- {{ 2 | image: 'Options', '40%' }} -->
+   | Delete all activities and shifts | All activities and and shifts are deleted from the target level. Availability periods are retained. |
 
    > The selected options are only applied while inserting a person's first shift sequence.
 
@@ -69,16 +67,19 @@ Before you can insert shift sequences into your schedule, you need to do the fol
 
 ## Access result reports
 
-In the **History** section, you can see reports for the current and previous Insert shift sequences runs. The **View details** link for each run opens a report that contains a success message or any problems that occurred. The report also displays scheduling rule IDs and the reason why shifts or activities could not be inserted.
+In the **History** section, you can access reports for the current and previous runs of inserting shift sequences. Click the **View details** link to check why shifts or activities could not be inserted. A four-digit ID at the beginning of a row refers to a scheduling rule that blocks the shift sequence from being inserted.
 
-To delete jobs from the **History** section, check the checkboxes next to an entry or use the checkbox at the top to select all and click _Delete entries_{:.doc-button}.
+To delete entries from the **History** section, check the checkboxes next to an entry and click _Delete entries_{:.doc-button}. To select all entries at once, check the checkbox at the top.
 
+## Prevent overwriting of scheduled activities
 
-## Handling of existing schedules
+By default, when you insert full-day activities into the schedule using shift sequences, injixo overwrites other full-day activities in the schedule, e.g. time off. To prevent this, activate scheduling rule _2645_{:.id-label} _Disallow overwriting of full-day activities with shifts or activities_.
 
-A full-day activity from a shift sequence (e.g. Illness) will replace a full-day activity in the schedule (e.g. Vacation) by default.
+To protect partial-day activities of the types Absence, Illness, Vacation, or Meeting from being overwritten, activate scheduling rule _2648_{:.id-label} _Write protection for activities in the Shift Center_.
 
-As a result, shorter activities and day models can overwrite full-day activities and other partial-day activities. To prevent this for full-day activities, activate scheduling rule _2645_{:.id-label} _Disallow overwriting of full-day activities with shifts or activities_. For other partial-day activities of the types Absence, Illness, Vacation, or Meeting, activate scheduling rule _2648_{:.id-label} _Write protection for activities in the Shift Center_.
+> Note  
+>
+> Shift sequences are inserted with the currently logged-in user account. Scheduling rules can be configured differently per user. If you have several accounts, check whether you're logged in with the correct account.
 
 ## Validity periods
 

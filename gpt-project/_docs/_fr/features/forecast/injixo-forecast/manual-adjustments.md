@@ -5,7 +5,7 @@ redirect_from:
 redirect_reason: Updated filename on 21 April 2022
 related_articles:
   - overwrite_title: Add title for untranslated source
-    filepath: features/forecast/injixo-forecast/staff-requirement.md
+    filepath: features/forecast/injixo-forecast/calculate-staff-requirements.md
   - overwrite_title: Add title for untranslated source
     filepath: features/forecast/injixo-forecast/events-and-holidays.md
 ---

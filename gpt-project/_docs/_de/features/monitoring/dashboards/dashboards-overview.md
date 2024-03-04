@@ -1,77 +1,77 @@
 ---
 title: Dashboards verwalten
+permalink: /de/dashboards-overview/
 promote-service: team-leader-training
 product_label:
   - essential
   - advanced
   - enterprise
   - classic
-description: Nutze Dashboards, um Dein Volumen und Deine Deckung zu analysieren.
+description: Verwende Dashboards, um Daten zu deinem Kontaktvolumen und deiner Besetzung zu analysieren.
 related_articles:
-  - filepath: features/monitoring/dashboards/work-with-charts.md
-  - filepath: features/monitoring/dashboards/dashboards-examples.md
+  - overwrite_title: Add title for untranslated source
+    filepath: features/monitoring/dashboards/work-with-charts.md
+  - overwrite_title: Add title for untranslated source
+    filepath: features/monitoring/dashboards/dashboards-examples.md
 ---
 
-In diesem Artikel lernst Du, wie Du Dashboards erstellst, bearbeitest und löschst.
+Unter _Analyze > Dashboards_{:.breadcrumbs} kannst du Dashboards mit bis zu vier Diagrammen erstellen und anzeigen. Jedes Diagramm kann Graphen für mehrere Zeitreihen und Zeiträume darstellen. Wenn du noch kein Dashboard hast, zeigt die Seite den Bearbeitungsmodus an und du kannst [ein Dashboard erstellen](#dashboards-erstellen).
 
-## Was ist das Dashboards-Modul?
+- Um ein vorhandenes Dashboard anzuzeigen, wähle ein Dashboard aus dem Dropdown-Menü aus oder gib einen Suchbegriff in das Feld ein.  
+- Um die Werte für ein bestimmtes Intervall anzuzeigen, bewege den Mauszeiger über einem Graphen im Dashboard.
+- Um zum Vollbildmodus zu wechseln, klicke auf das {% icon maximize %} oben rechts.
 
-Erstelle und speichere Dashboards mit jeweils bis zu vier verschiedene Diagrammen. Jedes Diagramm kann mehrere [Zeitreihen](https://help.injixo.com/de/glossary/overview/#zeitreihe)<!-- full url to glossary as exception --> als Graphen für verschiedene Zeiträume darstellen. Möglich sind Kennzahlen zu:
-- Workloads (Historie, Forecasts und {% link_new Forecast-Versionen | features/forecast/injixo-forecast/store-forecast-versions.md %}).
-- Planungseinheiten (Besetzung, Bedarf und Deckung für geplante Schichten und Aktivitäten sowie {% link_new in injixo Me gewünschte Schichten | features/scheduling/shift-bidding.md %}).
+Du kannst auch zwischen der {% link_new Diagrammansicht und Tabellenansicht | features/monitoring/dashboards/work-with-charts.md | #diagramme-im-überblick %} wechseln, indem du auf das Tabelle-anzeigen-Icon {% icon table-list | icon-only %} bzw. das Diagramm-anzeigen-Icon {% icon chart-view | icon-only %} klickst.
 
 ## Dashboards erstellen
 
-1. Gehe zu *Analyze > Dashboards*{:.breadcrumbs}.
-2. Klicke auf _![Kontextmenü](/assets/img/common/dashboards/context-menu.png)_{:.doc-button-icon}.
-3. Klicke **Erstellen**, um in den Bearbeitungsmodus zu gelangen.
-4. Gib einen **Namen** für das neue Dashboard ein.
-5. Wähle unter *Layout* auf der rechten Seite eines der **vordefinierten Layouts** aus, um die Anzahl der Diagramme festzulegen.
-6. Optional: Gib einen **Namen** für jedes Diagramm in das Feld **Unbenanntes Diagramm** ein, um den Zweck/Inhalt des Diagramms zu beschreiben. Die Namen müssen nicht eindeutig sein.
-7. Lege oben rechts in jedem Diagramm einen fixen **Zeitbereich** für die Anzeige fest oder aktiviere zusätzlich **Rollierender Zeitraum** (optional). In diesem Modus wird das Startdatum jeden Tag um einen Tag verschoben.
+1. Gehe zu _Analyze > Dashboards_{:.breadcrumbs}.
+2. Klicke rechts auf das {% icon ellipsis_v %} und wähle die Option **Erstellen**.
+3. Konfiguriere folgende Felder:
+  - **Name**: Eindeutiger Name für dein Dashboard.
+  - **Layout**: Wähle die Anzahl und das Layout deiner Diagramme aus.
+  - **Unbenanntes Diagramm**: Hier kannst du jedes Diagramm benennen. Die Namen müssen nicht eindeutig sein.
+4. Wähle einen **Datumsbereich** für jedes Diagramm aus.
+5. (Optional) Aktiviere die Option **Rollierender Zeitraum**, um das Startdatum jeden Tag um einen Tag zu verschieben.
+6. Ziehe aus der Baumansicht links Zeitreihen in die Diagramme, um verschiedene Kennzahlen darzustellen:
+   - **Workloads**: Historie, Prognose, Import und {% link_new Forecast-Versionen | features/forecast/injixo-forecast/store-forecast-versions.md %}. 
+   - **Planungseinheiten**: Besetzung, Mitarbeiterbedarf und Deckung für geplante Schichten und Aktivitäten sowie Schichten, auf die in Me Schichtwünsche abgegeben wurden.
+   - **WFM Queues**: Workload-Daten in WFM-Queues, die du gespeichert hast, wenn du auf der Workload-Seite auf _Forecast verwenden_{:.doc-button} geklickt hast. Die Option ist möglicherweise nicht verfügbar, je nach WFM-Plan. 
 
-    {{ 3 | image: 'Auswahl des Zeitbereichs', '40%' }}
+      > Hinweis
+      >
+      > - Das {% icon circle_exclamation %} in der Legende eines Diagramms wird angezeigt, wenn für einen ausgewählten Zeitraum keine Daten vorliegen.
+      > - Unter Workloads siehst du je nach Integration möglicherweise besondere Kennzahlen. Wenn deine Workloads z.&nbsp;B. ausschließlich Queues aus einer [Genesys Cloud-Integration](/add-genesys-cloud-integration/) enthalten, siehst du Informationen zu abgebrochenen Anrufen, durchschnittlicher Antwortzeit und Anrufen, die gemäß Service-Level beantwortet wurden. 
 
-8. Ziehe Zeitreihen links aus der Baumstruktur in jedes Diagramm. Hinweis: Wenn für einen Zeitraum keine Daten für einen Workload verfügbar sind, zeigt die Legende ein Warnsymbol _![Warnung, dass keine Daten vorhanden sind](/assets/img/common/dashboards/no-data.png)_{:.doc-button-icon}.
-9. Klicke *Speichern*{:.doc-button}. Klicke *Bearbeitungsmodus verlassen*{:.doc-button}, um in den Anzeigemodus zurückzukehren.
-
-    <!-- remove left and top menu -->
-    {{ 1 | image: 'Create a Dashboard', '75%', 'gif' }}
+7. Klicke auf _Speichern_{:.doc-button}.<br>Um zum Anzeigemodus zurückzukehren, klicke auf _Bearbeitungsmodus verlassen_{:.doc-button}.
 
 ### Dashboards duplizieren
 
-Für ein neues Dashboard, das einem bestehenden Dashboard ähnelt, kopiere Dein aktuelles Dashboard. Klicke auf _![Kontextmenü](/assets/img/common/dashboards/context-menu.png)_{:.doc-button-icon}, dann klicke *Dashboard duplizieren*{:.doc-button}.
+Um ein neues Dashboard mit denselben allgemeinen Eigenschaften wie ein vorhandenes Dashboard zu erstellen, gehe wie folgt vor:
+1. Gehe zu _Analyze > Dashboards_{:.breadcrumbs}.
+2. Wähle aus dem Dropdown-Menü ein Dashboard aus.
+3. Klicke auf das {% icon ellipsis_v %} und wähle die Option _Dashboard duplizieren_{:.doc-button}.
+4. Falls nötig, bearbeite den Namen und die Konfigurationsdetails.
+5. Klicke auf _Speichern_{:.doc-button}.
 
-## Dashboards anzeigen
+### Dashboards automatisch aktualisieren
 
-1. Gehe zu *Analyze > Dashboards*{:.breadcrumbs}.
-2. Wähle ein **Dashboard** aus dem Dropdown-Menü **Dashboard auswählen** oder tippe, um zu filtern. Wenn Du noch kein Dashboard hast, zeigt der Bildschirm den Bearbeitungsmodus an und Du kannst [ein Dashboard erstellen](#dashboards-erstellen).
-3. Optional: Klicke auf einen **Zeitbereich** in der oberen rechten Ecke jedes Diagramms, um den angezeigten Zeitraum zu ändern.
-
-Tipp: Bewege den Mauszeiger über ein Diagramm, um einen Tooltip mit den Intervallwerten für jedes Diagramm anzuzeigen.
-
-### Automatische Aktualisierung aktivieren
-
-Wenn Du ein Dashboard ausgewählt hast, klicke oben rechts *Autom. Aktualisierung*{:.doc-button}, um das gewählte Dashboard automatisch alle 15 Minuten zu aktualisieren. Am unteren Bildschirmrand siehst Du, wann es zuletzt aktualisiert wurde.
-
-### Vollbildmodus aktivieren
-
-Für eine detailliertere Ansicht wechsele in den Vollbildmodus. Klicke _![Vollbildmodus](/assets/img/common/dashboards/fullscreen.png)_{:.doc-button-icon} in der oberen rechten Ecke.
+Du kannst das ausgewählte Dashboard automatisch aktualisieren. Wähle dazu aus dem Dropdown-Menü rechts ein Intervall aus und klicke auf _{% icon arrows-rotate | icon-only %} Autom. Aktualisierung_{:.doc-button}.<br>Unten links auf der Seite kannst du sehen, wann das Dashboard zuletzt aktualisiert wurde.
 
 ## Dashboards bearbeiten
 
-1. Klicke auf _![Kontextmenü](/assets/img/common/dashboards/context-menu.png)_{:.doc-button-icon} neben dem Namen des aktuell ausgewählten Dashboards.
-2. Klicke auf **Bearbeiten**, um den Bearbeitungsmodus für das Dashboard aufzurufen.
-3. {% link_new Passe Zeitreihen an | features/monitoring/dashboards/work-with-charts.md | #zeitreihen-anpassen %} oder {% link_new lösche | features/monitoring/dashboards/work-with-charts.md | #zeitreihen-löschen %} sie.
-4. Klicke auf *Speichern*{:.doc-button}, dann auf *Bearbeitungsmodus verlassen*{:.doc-button}, um zum Anzeigemodus zurückzukehren.
-
-    {{ 2 | image: 'Bearbeitungsmodus', '75%' }}
+1. Gehe zu _Analyze > Dashboards_{:.breadcrumbs}.
+2. Wähle aus dem Dropdown-Menü ein Dashboard aus.
+3. Klicke rechts auf das {% icon ellipsis_v %} und wähle die Option **Bearbeiten**.
+4. Bearbeite das Dashboard, {% link_new passe Zeitreihen an | features/monitoring/dashboards/work-with-charts.md | #zeitreihen-anpassen %} oder {% link_new lösche | features/monitoring/dashboards/work-with-charts.md | #zeitreihen-löschen %} sie.
+5. Klicke auf _Speichern_{:.doc-button}. Um zum Anzeigemodus zurückzukehren, klicke auf _Bearbeitungsmodus verlassen_{:.doc-button}.
 
 ## Dashboards löschen
 
-1. Klicke auf _![Kontextmenü](/assets/img/common/dashboards/context-menu.png)_{:.doc-button-icon} neben dem Namen des aktuell ausgewählten Dashboards.
-2. Klicke auf **Bearbeiten**, um den Bearbeitungsmodus zu öffnen.
-3. Klicke unten rechts auf **Löschen**.
-4. Bestätige die Meldung *Dieses Dashboard wird gelöscht. Bist Du sicher?*, indem Du auf *Dashboard löschen*{:.doc-button} klickst, um es zu löschen. Klicke auf *Dashboard behalten*{:.doc-button}, um den Löschvorgang abzubrechen.
+1. Gehe zu _Analyze > Dashboards_{:.breadcrumbs}.
+2. Wähle aus dem Dropdown-Menü ein Dashboard aus.
+3. Klicke rechts auf das {% icon ellipsis_v %} und wähle die Option **Bearbeiten**.
+4. Klicke unten rechts auf _Löschen_{:.doc-button}.  
+5. Klicke im Bestätigungsfenster auf _Dashboard löschen_{:.doc-button}.<br> Um den Löschvorgang abzubrechen, klicke auf _Dashboard behalten_{:.doc-button}.
 
-Hinweis: Wenn Du das letzte verbleibende Dashboard löschst, wird der Bearbeitungsmodus angezeigt, bis Du [ein neues Dashboard erstellst](#dashboards-erstellen).
+Wenn du das letzte verbleibende Dashboard löschst, wird der Bearbeitungsmodus angezeigt, bis du [ein neues Dashboard erstellst](#dashboards-erstellen).

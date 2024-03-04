@@ -1,89 +1,104 @@
 ---
-title: Verträge anlegen
+title: Verträge erstellen
 product_label:
   - essential
   - advanced
   - enterprise
   - classic
+description: Erstelle Verträge, um die Arbeitszeiten pro Woche und andere Regeln für deine Mitarbeiter festzulegen.
 redirect_from:
-  - /de/contract-creation/
+  - de/contracts-overview/
+  - de/contract-creation/
 redirect_reason: Updated filename on 08 December 2023
 ---
 
-Verträge enthalten Angaben zu den Arbeitszeiten, zu betrieblichen Regelungen und zu Parametern für Planungsregeln, die für die Planung Deiner Mitarbeiter von Bedeutung sind. In *WFM > Administration > Scheduling > Verträge*{:.breadcrumbs} legst Du die einzelnen Verträge an, die in Deinem Contact Center für injixo relevant sind.
+In _Plan > Konfiguration > Verträge_{:.breadcrumbs} kannst du Verträge für die Mitarbeiter erstellen, die du planen möchtest. Du kannst beliebig viele Verträge erstellen. Mit Verträgen kannst du zeitliche Einschränkungen für die Schichtplanung festlegen:
 
-Gehe wie folgt vor, um einen Vertrag anzulegen:
+- Das Minimum und Maximum an Arbeitstagen pro Woche
+- Das Minimum, Soll und Maximum an Arbeitsstunden pro Tag
+- Das Minimum, Soll und Maximum an Arbeitsstunden pro Woche
+- Das Maximum an Arbeitsstunden pro Monat
 
-1. Klicke auf das grüne *+*{:.doc-button} oben links.
-2. Definiere einen Namen und eine Kurzbezeichnung.
-3. Wähle die Anzahl der *Arbeitstage pro Woche* aus.
-4. Klicke auf *OK*{:.doc-button}, um den Vertrag zu speichern.
+Mit Verträgen bildest du auch Informationen über Arbeitszeitrichtlinien in deinem Unternehmen ab, z.&nbsp;B. die Anzahl der Ruhetage zwischen Schichten. Außerdem kannst du Planungsparameter für die Funktionalität **Optimierten Plan erstellen** festlegen.
 
-Du kannst beliebig viele verschiedene Verträge anlegen. Kleine Gruppen von Mitarbeitern oder sogar einzelne Mitarbeiter können für besondere Arbeitszeitregelungen eigene Verträge erhalten. Generell solltest Du Dir überlegen, welche Arbeitszeitmodelle sinnvoll zusammengeführt werden können und ob abweichende Arbeitszeiten anderweitig abgebildet werden können z.B. über Verfügbarkeiten und Schichtfolgen für einzelne Mitarbeiter.
+## Verträge erstellen
 
-{{ 1 | image: 'Vertrag anlegen' }}
+Um einen neuen Vertrag zu erstellen, gehe zu _Plan > Konfiguration > Verträge_{:.breadcrumbs} und führe folgende Schritte aus:
 
-## Berechnung Arbeitstage
+1. Klicke auf das {% icon item-add %} oben links.
+2. Gib im Abschnitt **Allgemein** die grundlegenden Informationen zu deinem Vertrag ein:<br>
+    - **Name**: Gib einen eindeutigen Namen (max. 50 Zeichen) ein.
+    - **Kurzbezeichnung**: Gib den Namen oder eine Kurzversion davon ein (max. 25 Zeichen).
+    - **Farbe**: Die Farbe kann dir helfen, den Vertrag leichter zu identifizieren.
+3. Wähle aus dem Dropdown-Menü **Arbeitstage pro Woche** die gewünschte Anzahl aus.
+4. Wähle aus dem Dropdown-Menü **Berechnung Arbeitstage** eine Berechnungsmethode aus: <br>
+    - **Standard**: Die vorgegebene Reihenfolge der Tage in der Planungswoche wird eingehalten.<br>
+    - **Flexibel**: Die Arbeitstage werden flexibel innerhalb der Öffnungszeiten der Planungseinheit gewählt.
+5. Gib die [**Arbeitszeitvorgaben**](#arbeitszeitvorgaben) und die [**Wochentagsarbeitszeit**](#wochentagsarbeitszeit) ein.
+6. (Optional) Konfiguriere die [**AutoScheduler-Parameter**](#autoscheduler-parameter) oder die [**Planungsparameter**](#planungsregeln).
+7. Um deinen Vertrag zu speichern, klicke auf _OK_{:.doc-button}.
 
-injixo unterscheidet zwei Modi für die Berechnung der Arbeitstage. In unserem Beispiel gehen wir von einem Vertrag mit 5 Arbeitstagen und einem Wochensoll von 20 Stunden aus, um Dir die Funktionsweise zu erläutern.
+## Arbeitszeitvorgaben
 
-### Standard
+Arbeitszeitvorgaben für das Minimum, Soll und Maximum an Arbeitsstunden spielen eine zentrale Rolle für die Schichtplanung. Arbeitszeitvorgaben werden mit Planungsparametern und AutoScheduler-Parametern kombiniert.
 
-Die Arbeitszeitberechnung folgt den Tagen der Planungswoche, bei 5 Tagen heißt das:  
+### Tag
 
-* Die Sollzeit wird auf die ersten 5 Arbeitstage der Woche verteilt.
-* Die tägliche Sollzeit für Montag bis Freitag beträgt 4 Stunden, 0 Stunden am Wochenende.
+- **Minimum**: Gib die Mindestarbeitsstunden pro Tag ein. Wenn du keinen Wert eingibst, werden die Sollarbeitsstunden als Minimum verwendet. Dieser Parameter wird durch den Planungsparameter _2615_{:.id-label} verifiziert.
+- **Soll**: Gib die Sollarbeitsstunden pro Tag ein. Gib einen Wert zwischen 0 und 24 Stunden ein und beachte die Standardarbeitszeiten.
+- **Maximum**: Gib die Höchstarbeitsstunden pro Tag ein. Wenn du keinen Wert eingibst, werden die Sollarbeitsstunden als Maximum verwendet. Dieser Parameter wird durch den Planungsparameter _2614_{:.id-label} verifiziert.
 
-> Hinweis
+### Woche
+
+- **Minimum**: Gib die Mindestarbeitsstunden pro Woche ein. Du kannst den Beginn der Planungswoche mit der Einstellung _48420_{:.id-label} festlegen. Du kannst die Anzahl der Tage eines Wochenendes mit der Einstellung _48421_{:.id-label} festlegen.
+- **Soll**: Gib die Sollarbeitsstunden pro Woche ein. Dieser Wert ist erforderlich, wenn du im Abschnitt **Wochentagsarbeitszeit** keine Werte eingegeben hast. Du kannst den Beginn der Planungswoche mit der Einstellung _48420_{:.id-label} festlegen.
+- **Maximum**: Gib die Höchstarbeitsstunden pro Woche ein. Dieser Parameter wird durch die Planungsparameter _2618_{:.id-label} und _2629_{:.id-label} verifiziert. 
+
+### Monat
+
+- **Maximum**: Gib die Höchstarbeitsstunden pro Monat ein. Dieser Parameter wird durch den Planungsparameter _2619_{:.id-label} verifiziert.
+
+
+## Wochentagsarbeitszeit
+
+Du kannst für Mitarbeiter die Anzahl an Arbeitsstunden pro Tag im Vertrag festlegen.
+
+Beispiel:
+Ein Mitarbeiter arbeitet 40&nbsp;Stunden pro Woche mit je 8&nbsp;Stunden pro Tag und hat immer mittwochs und sonntags frei. Um sicherzustellen, dass die Arbeitsstunden in der Arbeitswoche korrekt verteilt werden, gib in den Feldern für Montag, Dienstag, Donnerstag, Freitag und Samstag jeweils 8:00 ein und in den Feldern für Mittwoch und Sonntag jeweils 0:00. Wenn dieser Mitarbeiter sich krank meldet oder bezahlten Urlaub nimmt, werden seine Arbeitsstunden weiterhin auf Grundlage der von dir hier festgelegten Werte berechnet.
+
+Bei einem leeren Feld wird standardmäßig diese Formel verwendet: [Wöchentliche Sollstunden/Anzahl der Arbeitstage]. Dies kann zu Fehlberechnungen führen, weil injixo eine gleichmäßige Verteilung der Arbeitsstunden auf alle Arbeitstage annimmt.
+
+## AutoScheduler-Parameter
+
+
+- **Max. Anz. aufeinander folgender Arbeitstage**: Fülle dieses Feld aus, wenn deine Planungseinheit an 7 von 7 Tagen geöffnet ist. Gib die maximale Anzahl aufeinanderfolgender Arbeitstage ein, die die Funktionalität **Optimierten Plan erstellen** beachten muss. Wenn ein Mitarbeiter beispielsweise fünf Tage pro Woche arbeitet, verwende diesen Parameter, um zu verhindern, dass er an zehn aufeinanderfolgenden Tagen arbeiten muss.
+- **Min. Anz. freier Tage pro Woche**: Fülle dieses Feld aus, wenn deine Planungseinheit an den Wochenenden geöffnet ist. Gib die Mindestanzahl aufeinanderfolgender arbeitsfreier Tagen ein, die die Funktionalität **Optimierten Plan erstellen** je Planungswoche beachten muss.
+- **Min. Anz. aufeinander folgender freier Tage pro Woche**: Fülle dieses Feld aus, wenn du sicherstellen möchtest, dass deine Mitarbeiter mindestens einen zusammenhängenden Zeitraum an arbeitsfreien Tagen pro Woche haben. Gib die Mindestanzahl aufeinanderfolgender arbeitsfreier Tage pro Woche ein, die die Funktionalität **Optimierten Plan erstellen** je Planungswoche beachten muss.
+- **Max. Anz. aufeinander folgender freier Tage**: Fülle dieses Feld aus, wenn du die Anzahl aufeinanderfolgender arbeitsfreier Tage für deine Mitarbeiter einschränken möchtest, um eine konsistente Besetzung sicherzustellen und lange Unterbrechungen zu vermeiden. Gib die maximale Anzahl aufeinanderfolgender arbeitsfreier Arbeitstage ein, die die Funktionalität **Optimierten Plan erstellen** beachten muss. Der Wert wird nicht pro Woche geprüft, sondern über mehrere Wochen hinweg.
+- **Min. Ruhezeit (Stunden) zwischen zwei Schichten**: Fülle dieses Feld aus, wenn du laut Arbeitsgesetz Ruhezeiten zwischen Schichten einhalten musst. Gib die Mindestruhezeit ein, die die Funktionalität **Optimierten Plan erstellen** beachten muss.	
+- **Mindestanzahl Arbeitstage pro Woche**: Fülle dieses Feld aus, um eine wöchentliche Mindestbesetzung in deiner Planungseinheit sicherzustellen, damit immer genügend Mitarbeiter das prognostizierte Anrufvolumen bearbeiten können. Gib die Mindestanzahl der Arbeitstage an, die pro Planungswoche geplant werden sollen.
+- **Richtzeitkonto statt Soll pro Woche laut Vertrag**: Aktiviere diese Checkbox, wenn du möchtest, dass die Funktionalität **Optimierten Plan erstellen** die Werte aus den berechneten Richtzeitkonten verwendet. Erfahre mehr über {% link_new Richtzeitkonten | features/scheduling/planning-periods/target-work-accounts.md %}.
+- **Max. ein Arbeitstag am Samstag alle n Wochen**: Fülle dieses Feld aus, wenn du eine gerechte Verteilung von Wochenendarbeit unter Mitarbeitern sicherstellen möchtest und um zu verhindern, dass dieselben Mitarbeiter ständig samstags arbeiten müssen. Gib die maximale Anzahl an Wochen (1-5) an, an denen ein Mitarbeiter samstags arbeiten soll. Zum Beispiel bedeutet ein Wert von 2 jeden zweiten Samstag.
+- **Zuweisen eines Arbeitstages nach einem ganztägigen Urlaub**: Fülle dieses Feld aus, wenn du erzwingen möchtest, dass die Funktionalität **Optimierten Plan erstellen** einen Arbeitstag nach einem ganztägigen Urlaub plant. Wenn der Mitarbeiter mehrere aufeinanderfolgende Tage abwesend ist, wird der Arbeitstag nach dem letzten Abwesenheitstag geplant.
+
+## Planungsregeln
+
+Planungsregeln legen allgemeine und vertragsbezogene Regeln für deinen Planungsprozess fest. In der Vertragskonfiguration heißen Planungsregeln Planungsparameter.
+
+Um die Liste aller verfügbaren Planungsregeln aufzurufen, gehe zu _WFM > Administration > System > Planungsregeln_{:.breadcrumbs}. Um Details zu einer Regel aufzurufen, wähle die entsprechende Regel in der Liste aus. Üblicherweise werden Planungsregeln während deines injixo-Onboardings gemeinsam mit deinem Consultant konfiguriert.
+
+Benutzer mit Admin-Zugriff können jede Regel bearbeiten, Ausnahmen festlegen und benutzerdefinierte Werte auf die Standardeinstellungen zurücksetzen.
+
+> Potenzielles Risiko für Planungsfehler
 >
-> Nicht-ganztägige Aktivitäten werden bei der Nutzung von Arbeitszeitvorgaben an allen Tagen der Planungswoche als Arbeitszeit erfasst. Dementsprechend können auch Schichten an einem Samstag oder Sonntag vergeben werden.
->
-> Wochentagsarbeitszeiten bei der Nutzung der Methode *Standard* führen dazu, dass Arbeitszeiten nur an den Tagen gezählt werden, für welche Werte eingetragen sind.
->
-> Eine bezahlte, ganztägige Abwesenheit wird dann mit der Zeit bewertet, die für den Wochentag eingetragen ist.
+> Änderungen an den Planungsregeln sind komplex und können zu Planungsfehlern führen, wenn sie nicht korrekt durchgeführt werden. Ändere keine Planungsregeln selbst, wenn du unsicher bist, welche Konsequenzen dies hat. Wenn du eine Planungsregel ändern möchtest, wende dich an deinen Consultant.
 
-### Flexibel
+Vertragsbezogene Planungsregeln sorgen dafür, dass die Bedingungen jedes Vertrags bei der Schichtplanung beachtet werden. Wenn beispielsweise ein Vertrag einen bestimmten Ruhezeitraum oder eine Höchstanzahl von Arbeitsstunden pro Tag vorgibt, stellen die Planungsregeln sicher, dass diese Bedingungen erfüllt werden. Gegen diese Regeln zu verstoßen kann Planungskonflikte, Unzufriedenheit unter den Mitarbeitern und potentielle Vertragsverletzungen zur Folge haben.
 
-Die Arbeitszeitberechnung erfolgt zufällig, bei 5 Tagen heißt das:
+### Statusanzeige
 
-* Die Sollzeit wird auf 5 zufällige Wochentage mit Öffnungszeiten verteilt.
-* Die tägliche Sollzeit beträgt für 5 beliebige Tage 4 Stunden und für 2 Tage 0 Stunden.
+Du kannst den Status jeder Planungsregel in der Liste erkennen:
 
-## Tägliche Arbeitszeit
-
-Du kannst in den Verträgen die täglichen Nettoarbeitszeiten entweder als *Arbeitszeitvorgaben* oder als *Wochentagsarbeitszeit* definieren. *Arbeitszeitvorgaben* legen einen Rahmen für die tägliche und wöchentliche Arbeitszeit fest, *Wochentagsarbeitszeiten* eine exakte Dauer pro Tag. Dabei haben *Wochentagsarbeitszeiten* Vorrang und überschreiben im Zweifelsfall die *Arbeitszeitvorgaben*. Auch Richtzeitberechnungen nutzen die definierten Zeiten in der beschriebenen Reihenfolge.
-
-### Arbeitszeitvorgaben
-
-*Arbeitszeitvorgaben* gliedern sich in Werte für Minimum-, Soll- und Maximum für Tag, Woche und Monat. Es werden mindestens Werte in den Feldern für das Minimum und Maximum pro Tag und das Soll pro Woche benötigt. Wenn kein Minimum oder Maximum pro Tag definiert sind, wird der Sollwert genutzt. Spezifiziere Deine Angaben in diesem Fall als Planungsparameter im Vertrag für die Planungsregeln 2614 und 2615.
-
-{{ 2 | image: 'Verträge Arbeitszeitvorgaben', '50%'}}
-
-Im Beispiel verteilt sich eine wöchentliche Sollarbeitszeit von 40 Stunden auf 5 Arbeitstage. Es können genau 8 Stunden auf jeden Arbeitstag entfallen. Genauso sind aber auch kürzere Schichten ab 6 Stunden und längere Schichten bis zu 10 Stunden möglich.
-
-Achte darauf, dass die Tages- und Wochenwerte eine sinnvolle Kombination ergeben. Es ergibt keinen Sinn, bei 5 Arbeitstagen pro Woche ein Tagesminimum von 6 Stunden zu erlauben und die Woche auf 25 Stunden zu beschränken. In diesem Fall müsste Dein Mitarbeiter lt. Tagesminimum mindestens 30 Stunden in der Woche arbeiten.
-
-> Das *Wochensoll*
->
-> - hat Einfluss auf die Ist-Zeit von bezahlten, ganztägigen Aktivitäten. Die Zeit berechnet sich aus Wochensoll durch Anzahl Arbeitstage.
-> - muss "glatt" durch die Anzahl der Arbeitstage teilbar sein, also ohne verbleibende Minuten oder Sekunden.
-> - muss zusammen mit dem Tagessoll für die Richtzeitkonten-Berechnung ausgefüllt sein.
-
-Diese Planungsregeln spielen eine Rolle für die Prüfung von Arbeitszeiten:
-- *2614*{:.id-label} *Maximale Arbeitszeit/Tag gemäß Vertrag (Tagesmodelle und Aktivitäten)*
-- *2615*{:.id-label} *Minimale Arbeitszeit/Tag gemäß Vertrag (Tagesmodelle und Aktivitäten)*
-- *2618*{:.id-label} *Maximale Arbeitszeit/Woche gemäß Vertrag (Tagesmodelle und Aktivitäten)*
-- *2619*{:.id-label} *Maximale Arbeitszeit/Monat gemäß Vertrag (Tagesmodelle und Aktivitäten)*
-- *2629*{:.id-label} *Schwellwert für die Überschreitung der Arbeitszeit in aufeinander folgenden Wochen gemäß Vertrag (Tagesmodelle und Aktivitäten)*
-
-### Wochentagsarbeitszeit
-
-Nutze den Abschnitt Wochentagsarbeitszeit für Verträge mit einer festen Stundenanzahl pro Wochentag für alle oder bestimmte Tage.
-
-{{ 3 | image: 'Verträge Wochentagsarbeitszeit', '40%'}}
-
-Mit einem Nullwert kannst Du festlegen, an welchen Wochentagen nicht gearbeitet wird. Es müssen __alle__ Felder ausgefüllt werden, da der Vertrag sonst ungültig ist und der Mitarbeiter von der Optimierung ausgeschlossen wird.
-
-> Hinweis
->
-> Nutze für Verträge mit eingetragener Wochentagsarbeitszeit zur Berechnung der Arbeitstage immer die Methode *Standard*, *nicht* die Methode *Flexibel*.  
+  - Grau: Die Regel ist deaktiviert und wird bei der Schichtplanung nicht berücksichtigt.
+  - Gelb: Die Regel ist im Soft-Modus. Wenn gegen diese Regel verstoßen wird, wird bei der Schichtplanung eine Warnung angezeigt, der Vorgang wird aber fortgesetzt.
+  - Rot: Die Regel ist vollständig aktiviert. Jede Verletzung des Vertrags führt zu einer Fehlermeldung, die den Regelverstoß beschreibt.

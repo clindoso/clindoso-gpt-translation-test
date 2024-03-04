@@ -8,7 +8,7 @@ related_articles:
   - overwrite_title: Add title for untranslated source
     filepath: features/scheduling/planning-periods/what-are-planning-periods.md
   - overwrite_title: Add title for untranslated source
-    filepath: features/scheduling/employee-requirement.md
+    filepath: features/scheduling/edit-or-delete-staff-requirements.md
   - overwrite_title: Add title for untranslated source
     filepath: features/scheduling/shift-requirement.md
   - overwrite_title: Add title for untranslated source
@@ -21,7 +21,7 @@ Shift bidding allows your employees to actively participate in the scheduling pr
 
 The important facts in brief:
 
-- You create shifts based on the {% link_new employee requirements | features/scheduling/employee-requirement.md %} and the {% link_new shift requirements | features/scheduling/shift-requirement.md %}.
+- You create shifts based on the {% link_new employee requirements | features/scheduling/edit-or-delete-staff-requirements.md %} and the {% link_new shift requirements | features/scheduling/shift-requirement.md %}.
 - Your employees can request the generated shifts via _injixo Me_{:.menu-item}.
 - You can lottery the requested shifts.
 - You can assign the remaining shifts (like those that are unpopular).
@@ -50,7 +50,7 @@ In _WFM > Scheduling > SchedulePro > Planning Periods_{:.breadcrumbs}, when you 
 
 All relevant menu items are in _WFM > Scheduling > SchedulePro_{:.breadcrumbs}.
 
-1. Check if {% link_new employee requirements | features/scheduling/employee-requirement.md %} exist. They are the basis for shift generation (in combination with the shift requirement).
+1. Check if {% link_new employee requirements | features/scheduling/edit-or-delete-staff-requirements.md %} exist. They are the basis for shift generation (in combination with the shift requirement).
 
 2. (Optional) If you use shift sequences for all or some employees, insert them.
 

@@ -118,7 +118,7 @@ You can add a standard availability using the _Availability_ tab as follows:
 
 You can also insert day model availabilities:
 
-1. Click the {% icon plus %} in the _Sorted by Name_ or _Sorted by Time_ sections on the right. An empty list indicates that no day models of the type _Availability Period_ exist or that they are not assigned to your planning unit. Learn how to {% link_new create day model availabilities | features/administration/availabilities.md | #create-day-model-availabilities %}.
+1. Click the {% icon plus %} in the _Sorted by Name_ or _Sorted by Time_ sections on the right. An empty list indicates that no day models of the type _Availability Period_ exist or that they are not assigned to your planning unit. Learn how to {% link_new create day model availabilities | features/administration/availabilities.md %}.
 2. Double-click a multiactivity. You can also select it and click the small black arrow that appears on the right. A new row with the multiactivity appears on the left. If you want to delete it again, select it and click _Delete_{:.doc-button}.
 3. Click the {% icon plus %} on the new line to display the details for the Availability.
 

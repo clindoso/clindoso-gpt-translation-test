@@ -13,67 +13,63 @@ related_articles:
     filepath: features/scheduling/scheduling-optimization.md
 ---
 
-In this article, you will learn:
+The **Optimize breaks** functionality can move breaks within your schedule to optimize the coverage of activities with staff requirements. The start and end times of shifts remain unchanged. The **Optimize breaks** functionality preserves the break corridors configured in day models. This allows you to run further break optimizations on already optimized periods if staff requirements change.
 
-- how the _Optimize breaks_ feature improves your schedule.
-- how to run the break optimization.
-- how to view and analyze the results of the optimization.
+Example: Two employees have a shift on the same day with a scheduled break from noon to 1&nbsp;PM. Their breaks can start every 30&nbsp;minutes between noon and 3&nbsp;PM. To improve the low coverage for activities of type Presence around noon, injixo moves at least one of the breaks to a later time.
 
-## What is the Optimize breaks feature?
+### Prerequisites
 
-The goal of the _Optimize breaks_ feature is to redistribute breaks within your schedule in order to optimize the coverage of activities for which staff requirements exist. Shift start and end times remain unchanged. The _Optimize breaks_ feature converts existing day models into activities in the optimization period but it preserves the break corridors in day models, so that you can perform further break optimizations if necessary.
-
-Example: Two employees have got a shift with a break from 12:00 to 13:00. The break can start every 30 minutes between 12:00 and 15:00. To improve the low coverage for the base activity of the shift between 12:00 and 13:00, injixo will move at least one of the breaks to a later time.
-
-### Limitations
-
-The _Optimize breaks_ feature requires an existing schedule in the _Schedule_ level. It can only place breaks in time periods which contain activities of type _Presence_. Also, it can only optimize moveable breaks in break corridors. It can't optimize fixed breaks. _Optimize breaks_ runs for a maximum of 60 minutes and uses the best solution found during this time.
+For the **Optimize breaks** functionality to work, the following needs to apply:
+- There is a schedule in the Schedule level. 
+- For the time periods to be optimized, there must be activities of type Presence where the breaks can be moved to.
+- There are break corridors in your day models. 
 
 ## Run a break optimization
 
 1. Go to _Plan > Schedules_{:.breadcrumbs}.
 2. Click _Scheduling actions_{:.doc-button} and select **Optimize breaks**.
-3. Select a **Planning unit**. The planning unit is pre-filled if a planning unit has been expanded in the _Schedules_ feature.
-4. Choose a **Selection** (optional) of employees for which you want to perform the break optimization.
-5. Select a **Date range** for the break optimization. You can select today and any future date. The date range is pre-selected by the date range currently selected in _Schedules_. <!-- do NOT explain feature-flag-based *Use Smart Optimization* checkbox-->
-6. Click _Optimize breaks_{:.doc-button} to start the break optimization. You will see a green notification message if it was started successfully. Otherwise, a red notification appears. You can view the progress of a running optimization in _WFM > Administration > System > JobProcessor_{:.breadcrumbs}.
+3. Select a **Planning unit**. The planning unit is pre-filled if a planning unit has been expanded in Schedules.
+4. (Optional) Choose a **Selection** for which you want to perform the break optimization.
+5. Select a **Date range**.<br>The pre-selected date range is the date range currently selected in Schedules. You can select the current or any future date.  <!-- do NOT explain feature-flag-based *Use Smart Optimization* checkbox-->
+6. Click _Optimize breaks_{:.doc-button}. <!-- not handled as JobProcessor job -->
 
-The optimization process can take some time, depending on the number of employees, the number of breaks in the schedule, and the length of the optimization period. While the optimization is running, you can't make any changes in the date range that is being optimized. After the optimization has been finished, injixo saves the optimized schedule automatically. The status in the _Break optimization history_ section below updates automatically after completion.
+The maximum runtime of the optimization process is 60&nbsp;minutes and the functionality will use the best solution found during this time. The actual runtime depends on the number of people, the number of breaks in the schedule, and the length of the period to be optimized. While the optimization is running, you cannot edit the schedule for the affected timeframe. After the optimization is finished, injixo saves the optimized schedule automatically and updates the status in the **Break optimization history** section.
 
 {{ 5 | image: 'Job optimization overview '}}
 
 ## Understand the optimization status
 
-Each completed optimization leads to an entry in the _Break optimization history_ section with some details, such as start time, user, planning unit, selection, and the optimization period. The _Status_ column shows one of the following values:
+Each completed optimization creates an entry in the **Break optimization history** section with details such as start time, user, planning unit, selection, and the optimized period. 
 
-- _Optimized schedule_: The break optimization was successful. The result was saved to the _Schedule_ level.
-- _Partly optimized schedule_: The optimization couldn't optimize some of the breaks. Learn more about [this status](#partly-optimized-schedule) below.
-- _Optimization failed_: The optimization could not be started. Try starting the optimization again. If the notification _Optimization failed. Please try again._ persists, {% link_new create a ticket | support/create-ticket.md %} to get support.
+The following optimization statuses are possible:
+
+- Optimized schedule: The break optimization was successful and the result was saved to the Schedule level.
+- Partly optimized schedule: The optimization could not optimize all breaks.
+- Optimization failed: The optimization could not be started. Try restarting the optimization. If this status persists, create a ticket to contact our support team.
 
 ### Partly optimized schedule
 
 <!-- Do not change this heading: /break-optimizations#partly-optimized-schedule is used within the break optimization UI -->
 
-The status _Partly optimized schedule_ appears when the optimization couldn't optimize some of the breaks. There are three possible reasons for this:
+The status Partly optimized schedule is displayed when an optimization could not optimize all breaks in the selected period. There are three possible reasons:
 
-- Some breaks have been skipped by the optimization, e.g. as they would otherwise overlay meeting activities, which is not allowed. These breaks are still in the place where they have been at the start of the optimization.
-- Some breaks were left out as they are too short (< 5 minutes) or incompatible with the interval used by the planning unit.
-- Some breaks could not be optimized due to certain {% link_new scheduling rule | features/administration/create-contracts.md | #scheduling-rules %} violations. For example, an employee might have been scheduled for an activity without having the required skill(s).
+- Some breaks have been skipped by the optimization, e.g. as they would otherwise overlay meeting activities, which is not allowed. These breaks are still in the position where they were at the start of the optimization.
+- Some breaks were not included in the optimization because they are too short (below 5 minutes) or incompatible with the interval used by the planning unit.
+- Some breaks could not be optimized due to certain {% link_new scheduling rule | features/administration/create-contracts.md | #scheduling-rules %} violations. For example, an employee may have been scheduled for an activity without having the required skill(s).
 
 ## Review the optimization results
 
-To view the details of an optimization, click **View results** in the _Status_ column of the _Break optimization history_ section.
+In the **Break optimization history** section, a table shows previous optimizations. When an optimization's end date matches the current date, the entry is removed from the list.
 
-{{ 2 | image: 'Break optimization history' }}
 
-For the selected optimization, you will see some details and how many breaks have been optimized (only in the case of a {% link_new partly optimized schedule | features/scheduling/schedules/break-optimization.md | #partly-optimized-schedule %}).
+To see the details for an entry, click _View results_{:.doc-button}. The status now shows how many breaks have been optimized. A diagram with two graphs shows the deviation from the coverage before and after the optimization for the optimization period.
+<!-- From this sentence on, we need to change the information about coverage and the graph. "Perfect coverage" is not a term that has any meaning, see: https://ivx.slack.com/archives/C9Y6W10NS/p1691742308844969?thread_ts=1690371315.535319&cid=C9Y6W10NS. The graph label on the y-axis is also very confusing, "coverage - Total deviation from 0. It does not display clearly what is the value in the graph. The deviation is just the absolute value between the real coverage and the optimized coverage. -->
+The diagram illustrates the deviation from the coverage before and after the optimization. It shows two graphs which sum up the coverage data of all scheduled activities over time:
 
-The diagram illustrates the deviation from perfect coverage before and after the optimization. It shows two graphs which sum up the coverage data of all scheduled activities over time:
+- Yellow line: Original schedule (coverage) before optimization
+- Green line: Optimized schedule (resulting coverage) after optimization
 
-- Yellow line: The coverage of the schedule _before_ the optimization
-- Green line: The coverage of the schedule _after_ the optimization
-
-The closer the green graph is to 0, the more the optimization improved the coverage. A value of e.g. 5 for _Total deviation from 0_ means that there is an overstaffing of 5 employees at that time.
+The numbers displayed in the graphs sum up the coverage data of all scheduled activities. The closer the green graph is to 0, the more the optimization improved the coverage. For example, a value of 5 for **Total deviation from 0** indicates an overstaffing of 5 employees at that time.
 
 {{ 3 | image: 'Graph for the break optimization results', '70%' }}
 
@@ -81,7 +77,7 @@ The closer the green graph is to 0, the more the optimization improved the cover
 
 Assume your planning unit has two different activities of type _Presence_, each forecasted and scheduled with a 15-minute interval, resulting in four intervals per hour. For these four intervals, the table below shows the coverage for both activities, the deviation from the perfect coverage, as well as the total deviation which is the sum of the values of the deviation from the perfect coverage. A positive value shows overstaffing, a negative value understaffing.
 
-| Queue            | Coverage            | Deviation from the perfect coverage |
+| Queue            | Coverage            | Deviation from the coverage |
 | ---------------- | ------------------- | ----------------------------------- |
 | Customer Support | [0, -2, -1, 0]      | [0, 2, 1, 0]                        |
 | Financial Issues | [3, 2, 2, 0]        | [3, 2, 2, 0]                        |

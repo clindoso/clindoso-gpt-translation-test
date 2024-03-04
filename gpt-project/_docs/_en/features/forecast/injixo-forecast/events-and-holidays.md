@@ -87,14 +87,14 @@ Add public holidays from one of the available holiday calendars. injixo Forecast
 You can identify events and public holidays in the graphs. Events, outages, and public holidays are displayed with different colors. The same color is always used for the same event type.
 
 1. In _Forecast > Workloads_{:.breadcrumbs}, select a workload.
-2. Select a time period from the date picker.
+2. Select a time period from the date picker. Click on a week number to select the whole week, or click any day and drag to select a period shorter or longer than a week.
 3. Hover over the graphs to see events and public holidays.
   <!-- {{ 3 | image: "Viewing Events", '80%', 'gif' }} -->
 
 ## Delete an event
 
 1. In _Forecast > Workloads_{:.breadcrumbs}, select a workload.
-2. Select a time period from the date picker.
+2. Select a time period from the date picker. Click on a week number to select the whole week, or click any day and drag to select a period shorter or longer than a week.
 3. From the three-dots menu _![Context Menu in injixo Forecast](/assets/img/common/forecast/context-menu.svg)_{:.doc-button-icon} at the top right, select **Manage events**.
 4. Click the {% icon trash %} next to the event you want to delete.
 5. Click _Close_{:.doc-button}.

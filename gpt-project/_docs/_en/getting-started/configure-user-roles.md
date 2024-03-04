@@ -49,7 +49,7 @@ Go to _Account > User roles_{:.breadcrumbs}.
 3. (Optional) Edit the default permissions. In the **Permissions** section, a gray checkmark icon next to a component name indicates that all permissions for this component are granted by default. A gray minus icon indicates that some permissions for this component are not granted by default.
    - Component: To grant permissions for all features in a component, check the checkbox next to the component name.
    - Feature: To grant permissions for single features, click the arrow pointing down next to a component name. Check the checkbox(es) next to the feature(s).
-   - To view all sections, click **Uncollapse all**. To close all sections, click **Collapse all**.
+   - To view all sections, click **Expand all**. To close all sections, click **Collapse all**.
    - To reset any selected permissions to the default user role, click **Reset to default**.
 4. To save the new user role, click _Create user role_{:.doc-button}. To [set WFM permissions](#set-wfm-permissions) for the new user role, click _Create and go to Role Authorization_{:.doc-button}.
 

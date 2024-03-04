@@ -39,7 +39,7 @@ Une {% link_new version de prévision | features/forecast/injixo-forecast/store-
 
 ## 5\. Calculer le besoin en personnel
 
-Pour optimiser le planning ou les activités, vous devez d’abord {% link_new calculer les besoins en personnel | features/forecast/injixo-forecast/staff-requirement.md %} pour les activités correspondantes dans vos workloads.
+Pour optimiser le planning ou les activités, vous devez d’abord {% link_new calculer les besoins en personnel | features/forecast/injixo-forecast/calculate-staff-requirements.md %} pour les activités correspondantes dans vos workloads.
 
 
 ## Et ensuite&nbsp;?

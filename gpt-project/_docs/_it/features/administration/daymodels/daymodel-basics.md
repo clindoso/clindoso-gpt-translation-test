@@ -49,7 +49,7 @@ Puoi utilizzare i modelli di orario fissi nei modelli di pianificazione per {% l
 
 In alternativa alle disponibilità, puoi utilizzare le {% link_new rotazioni | features/administration/shift-sequences.md %} o i modelli settimanali all'interno dei {% link_new modelli di pianificazione | features/administration/work-time-pattern-models.md | #creare-un-modello-settimanale %}. È possibile anche utilizzare entrambe le opzioni, per esempio per far ruotare i turni diurni e notturni.
 
-Consigliamo di creare un numero limitato di modelli di orario variabili (in combinazione con le {% link_new disponibilità dei dipendenti | features/administration/availabilities.md | #create-employee-availabilities %}), piuttosto che creare una grande quantità di modelli di orario fissi.
+Consigliamo di creare un numero limitato di modelli di orario variabili (in combinazione con le {% link_new disponibilità dei dipendenti | features/administration/availabilities.md %}), piuttosto che creare una grande quantità di modelli di orario fissi.
 
 ## Attività di base e durata del turno
 
@@ -62,7 +62,7 @@ La durata totale di un turno pianificato, comprese le pause, è la durata lorda 
 La durata di un modello di orario deve rispettare le ore lavorative stabilite dai {% link_new contratti | features/administration/create-contracts.md %}.
 Per esempio, un contratto di 40 ore settimanali distribuite su 5 giorni richiede un modello di orario con una durata netta di 8 ore al giorno. Un contratto di 37,5 ore settimanali richiede un modello di orario con 7,5 ore giornaliere.
 
-Utilizza l'attività Presente come attività di base, e assicurati che sia configurata come Sostituibile. In questo modo, le funzionalità Ottimizzazione delle mansioni e Crea una pianificazione ottimizzata possono sostituire l'attività Presente con altre attività, purché queste abbiano un {% link_new fabbisogno di personale calcolato | features/forecast/injixo-forecast/staff-requirement.md %} e siano configurate come pianificabili.
+Utilizza l'attività Presente come attività di base, e assicurati che sia configurata come Sostituibile. In questo modo, le funzionalità Ottimizzazione delle mansioni e Crea una pianificazione ottimizzata possono sostituire l'attività Presente con altre attività, purché queste abbiano un {% link_new fabbisogno di personale calcolato | features/forecast/injixo-forecast/calculate-staff-requirements.md %} e siano configurate come pianificabili.
 
 ### Elementi fissi e corridoi
 

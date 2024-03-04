@@ -7,7 +7,7 @@ product_label:
 description: Passe das im Forecast prognostizierte Kontaktvolumen und die AHT manuell an.
 related_articles:
   - overwrite_title: Add title for untranslated source
-    filepath: features/forecast/injixo-forecast/staff-requirement.md
+    filepath: features/forecast/injixo-forecast/calculate-staff-requirements.md
   - overwrite_title: Add title for untranslated source
     filepath: features/forecast/injixo-forecast/events-and-holidays.md
 ---
@@ -93,4 +93,4 @@ Lösche alte oder nicht mehr benötigte Anpassungen.
 
 Bei automatischen Berechnungsmethoden wird bei manuellen Anpassungen der Mitarbeiterbedarf automatisch neu berechnet. Um den geänderten Mitarbeiterbedarf für die Schichtplanung zu verwenden, klicke auf _Mitarbeiterbedarf verwenden_{:.doc-button}.
 
-Um die angepassten Werte für andere Berechnungsmethoden zu übernehmen, klicke auf _Forecast verwenden_{:.doc-button}, wähle anschließend Dein {% link_new Mitarbeiterbedarfsskript | features/forecast/injixo-forecast/staff-requirement.md %}, konfiguriere die Parameter und klicke auf _OK_{:.doc-button}, um es auszuführen. Dadurch wird Dein Mitarbeiterbedarf auf Grundlage der angepassten Werte aktualisiert.
+Um die angepassten Werte für andere Berechnungsmethoden zu übernehmen, klicke auf _Forecast verwenden_{:.doc-button}, wähle anschließend Dein {% link_new Mitarbeiterbedarfsskript | features/forecast/injixo-forecast/calculate-staff-requirements.md %}, konfiguriere die Parameter und klicke auf _OK_{:.doc-button}, um es auszuführen. Dadurch wird Dein Mitarbeiterbedarf auf Grundlage der angepassten Werte aktualisiert.

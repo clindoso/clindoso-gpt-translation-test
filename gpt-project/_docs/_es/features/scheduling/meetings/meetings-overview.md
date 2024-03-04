@@ -50,6 +50,6 @@ Antes de que empieces a usarla, estos son algunos aspectos importantes de la fun
 
 Una vez hayas iniciado el proceso de generar sugerencias para las reuniones, aparece una entrada en la tabla **Sugerencias generadas**. La entrada muestra cuándo se inició el proceso, el tipo de reunión y la unidad de planificación seleccionada. El proceso puede tardar un tiempo en completarse. Una vez completado, puedes:
 
-1. {% link_new comprobar si el proceso se realizó correctamente | features/scheduling/meetings/scheduling-suggestions.md | #check-if-the-process-was-successful %};
+1. {% link_new comprobar si el proceso se realizó correctamente | features/scheduling/meetings/scheduling-suggestions.md | #check-suggestions-generation-results %};
 2. {% link_new revisar las sugerencias de horas para las reuniones | features/scheduling/meetings/scheduling-suggestions.md | #review-and-apply-the-suggestions %}, incluir las sugerencias (todas o solo las seleccionadas) en la planificación;
 3. {% link_new revisar los resultados de la planificación | features/scheduling/meetings/scheduling-suggestions.md | #review-the-scheduling-results %}.

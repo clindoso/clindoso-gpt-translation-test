@@ -60,7 +60,7 @@ Haz clic en tu **nombre de usuario** en la parte superior derecha para abrir tu 
 
 ## Academy
 
-Haz clic en el {% icon graduation_cap %} junto a tu nombre de usuario para {% link_new acceder a Academy | getting-started/learn-injixo-with-academy.md %}, la plataforma de aprendizaje de autoservicio de injixo.
+Haz clic en el {% icon graduation_cap %} junto a tu nombre de usuario para {% link_new acceder a Academy | getting-started/e-learning.md %}, la plataforma de aprendizaje de autoservicio de injixo.
 
 ## Asistencia
 

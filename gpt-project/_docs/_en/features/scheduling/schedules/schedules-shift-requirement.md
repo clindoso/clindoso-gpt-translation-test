@@ -12,7 +12,7 @@ related_articles:
   - overwrite_title: Add title for untranslated source
     filepath: features/administration/day-types.md
   - overwrite_title: Add title for untranslated source
-    filepath: features/scheduling/employee-requirement.md
+    filepath: features/scheduling/edit-or-delete-staff-requirements.md
   - overwrite_title: Add title for untranslated source
     filepath: features/scheduling/schedules/schedules-shift-bidding.md
 ---
@@ -54,7 +54,7 @@ In order to display special events like public holidays in additional columns ne
 
 The individual entries define for each day model and day type how many shifts the shift generation generates as minimum and maximum. The number of employees and their shifts are not considered. injixo only aims for the best possible coverage.
 
-If you do not work with minimum values only, the {% link_new employee requirement | features/scheduling/employee-requirement.md %} is relevant. The number of shifts (up to the entered maximum) will be generated, which are necessary to cover the staff requirements.
+If you do not work with minimum values only, the {% link_new employee requirement | features/scheduling/edit-or-delete-staff-requirements.md %} is relevant. The number of shifts (up to the entered maximum) will be generated, which are necessary to cover the staff requirements.
 
 ## Enter required shifts into the table
 

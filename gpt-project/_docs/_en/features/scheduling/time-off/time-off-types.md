@@ -17,14 +17,17 @@ A time-off type is an absence category. Using time-off types, your organization 
 
 When you create a time-off type in Time Off <span class="beta-icon">Beta</span>, an absence activity with the same name is automatically created in _Plan > Configuration > Activities_{:.breadcrumbs}. It is configured as a requestable full-day activity by default. If the time-off type is paid, the activity will also be configured as paid. This allows injixo to represent the time off in Schedules and Shift Center.
 
-Time-off types include entitlement periods, e.g. the entitlement period for a time-off type Vacation is typically one year, and needs to be re-created every year. To allow people to request time off that was not taken in the previous year, define a longer time frame for the entitlement period, e.g. 18&nbsp;months. Vacation entitlement that has not been taken within the entitlement period will expire after the last day of the entitlement period and can no longer be requested.
+Time-off types can be paid or unpaid, depending on your organization's needs and national legislation. If you configure a time-off type as paid, injixo automatically creates a paid absence activity with the same name that is displayed in Schedules and Shift Center.
+
+### Entitlement periods
+
+Time-off types include entitlement periods, e.g. the entitlement period for a time-off type Vacation is typically one year, and needs to be re-created every year. To allow people to request time off that was not taken in the previous year, define a longer time frame for the entitlement period, e.g. 18&nbsp;months. Entitlement that has not been taken within the entitlement period will expire after the last day of the entitlement period and can no longer be requested.
 
 > Entitlement periods cannot overlap
 > 
 > If you create an entitlement period that is longer than a year, you can only create the next entitlement period after the previous one has ended. For example, if your entitlement period spans from 1 January 2023 to 30 June 2024, the next entitlement period can only start on 1 July 2024. 
 
-
-Time-off types can be paid or unpaid, depending on your organization's needs and national legislation. If you configure a time-off type as paid, injixo automatically creates a paid absence activity with the same name that is displayed in Schedules and Shift Center.
+Your people can request time off across entitlement periods. For example, if your standard entitlement period is the calendar year, a person can request time off from 25&nbsp;December of the first year until 5&nbsp;January of the subsequent year. Depending on the time unit of the time-off type, their entitlement will be reduced by the corresponding amount of days or hours for each year.
 
 ### Replace unpaid activities and fill up non-working hours
 

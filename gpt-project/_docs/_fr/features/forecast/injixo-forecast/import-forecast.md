@@ -1,5 +1,5 @@
 ---
-title: Importer des prévisions
+title: Importer une prévision
 description: Importez une prévision d’une source externe dans injixo Forecast.
 product_label:
   - advanced
@@ -23,7 +23,8 @@ Pour importer une prévision, vous avez besoin au minimum&nbsp;:
 - d’une {% link_new intégration | features/acd-integration/cloud/how-integrations-work.md %} permettant d’importer des données,
 - d'un workload contenant une file d’{% link_new attente | features/forecast/injixo-forecast/manage-workloads.md | #files-dattente-et-canaux %}.
  
-### Créez une requête
+### Créer une file d'attente
+
 
 Pour créer une file d’attente, vous devez importer des données de contact historiques à l’aide d’une intégration. Les files d’attente sont créées automatiquement par des intégration.
 
@@ -32,14 +33,13 @@ Si vous n’avez pas d’intégration permettant d’importer des données histo
 1. {% link_new Créez une intégration par fichier CSV | features/acd-integration/cloud/add-csv-integration.md | #configurer-une-nouvelle-intégration-par-fichier-csv %}.
    - Ignorez l’installation de Cloud Link.
    - Dans la section **Configuration du schéma CSV**, sélectionnez **Données de contact**.
-2. Créez un fichier CSV de données de contact contenat au moins une ligne pour un seul intervalle, par exemple&nbsp;:
+2. Créez un fichier CSV de données de contact contenant au moins une ligne pour un seul intervalle, par exemple&nbsp;:
    ```
    Queue;Date;Time;IncomingCalls;AnsweredCalls;AHT
 ForecastImportQueue;22/02/2022;02:02;2;2;2
    ```
 3. {% link_new Importez le fichier CSV manuellement | features/acd-integration/cloud/add-csv-integration.md | #import-manuel-de-fichiers %}.  
-   La file d’attente est créée après l’import.
-   Utilisez cette file d’attente pour importer des prévisions dans tous vos workloads.
+   La file d’attente est créée après l’import. Utilisez cette file d’attente pour importer des prévisions dans tous vos workloads.
 
 ### Assigner la file d’attente à un workload
 
@@ -47,7 +47,7 @@ Lorsque vous créez un workload, vous devez assigner une file d’attente à ce 
 
 Vous pouvez importer une prévision dans un workload existant, ou ajouter une file d’attente à un nouveau workload.
 
-### Données d’import requises
+### Données d’import nécessaires
 
 Vos données d’import doivent répondre aux exigences suivantes&nbsp;:
 
@@ -87,6 +87,7 @@ Si aucune donnée n’est disponible pour un ou plusieurs intervalles, vous pouv
 
 - Importez des colonnes de zéros&nbsp;:
 
+
   ```
   Timestamp;Offered;AHT
 2020-05-17 15:00;30;210
@@ -104,13 +105,13 @@ Si aucune donnée n’est disponible pour un ou plusieurs intervalles, vous pouv
 
 ## Importer une prévision
 
-1. Accédez à _Forecast_{:.menu-item}.
-2. À partir du menu déroulant en haut de la page, sélectionnez le **workload** dans lequel vous souhaitez importer la prévision externe.
-3. En haut à droite de la section **Volume et TMT**, cliquez sur l’icône Menu contextuel{% icon ellipsis_v | icon-only %}.
-4. Sélectionnez **Importer la prévision**.
-5. Cliquez sur _Sélectionner un fichier_{:.doc-button} et sélectionnez le fichier CSV que vous souhaitez importer.
-6. Cliquez sur _Importer_{:.doc-button}.
+
+1. Dans _Forecast > Workloads_{:.breadcrumbs}, sélectionnez le workload dans lequel vous souhaitez importer la prévision externe.
+2. À partir du menu contextuel {% icon ellipsis_v | icon-only %} en haut à gauche, sélectionnez **Importer les données de prévision**.
+3. Cliquez sur _Sélectionner un fichier_{:.doc-button} et sélectionnez le fichier CSV que vous souhaitez importer.
+4. Cliquez sur _Importer les données_{:.doc-button}.<br>
    La page se mettra à jour et indiquera si l’import a réussi.
-7. Cliquez sur _Fermer_{:.doc-button}.<br>
-Rechargez la page pour voir le nouveau graphique pour la période d’import. Il est affiché sous la forme d’une ligne violette par-dessus la prévision dans la section **Volume et TMT**.
+5. Cliquez sur _Fermer_{:.doc-button}.<br>
+Rechargez la page pour voir le nouveau graphique pour la période d’import. Les valeurs importées sont affichées sous la forme d’une ligne marron dans les graphiques du volume and du TMT.
+
    Pour cacher la prévision importée sur le graphique, cliquez sur l’icône Afficher/masquer {% icon eye | icon-only %} dans la légende à côté d’**Import**.

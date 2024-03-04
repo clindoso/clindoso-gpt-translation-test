@@ -1,7 +1,7 @@
 ---
 title: Création de workloads
 redirect_from:
-  - /fr/gestion-workloads/
+  - /fr/workloads/
 product_label:
   - essential
   - advanced
@@ -17,9 +17,9 @@ related_articles:
 
 Pour créer, modifier ou supprimer des workloads, accédez à _Forecast_{:.breadcrumbs}.
 
-Les workloads permettent de mapper les canaux d’entrée de votre système externe, qui importe les détails des interactions avec vos clients. injixo Forecast calculera une prévision pour le workload en fonction des données de contact importées et stockées dans les files d’attente. Les événements configurables, les jours fériés ou les heures d’ouverture influencent le résultat de la prévision. Vous pouvez également {% link_new importer votre prévision | features/forecast/injixo-forecast/import-forecast.md %} dans des workloads.
+Les workloads permettent de mapper les canaux d’entrée de votre système externe, qui importe les détails des interactions avec les clients. injixo Forecast calculera une prévision pour le workload en fonction des données de contact importées et stockées dans les files d’attente. Les événements configurables, les jours fériés ou les heures d’ouverture influencent le résultat de la prévision. Vous pouvez également {% link_new importer votre prévision | features/forecast/injixo-forecast/import-forecast.md %} dans des workloads.
 
-Les workloads permettent de configurer le calcul du besoin en personnel. Le besoin en personnel est nécessaire à la planification.
+Le calcul du besoin en personnel est configuré dans les workloads. Le besoin en personnel est nécessaire à la planification.
 
 Vous débutez avec injixo Forecast&nbsp;? Commencez avec les {% link_new concepts fondamentaux | features/forecast/injixo-forecast/what-is-the-injixo-forecast.md %}.
 
@@ -33,7 +33,7 @@ injixo crée des files d’attente en utilisant les données importées par une 
 ## Files d’attente et canaux
 
 Les données de contact importées par une intégration sont stockées dans des files d’attente. Ces files d’attente sont toujours associées à un canal. Lorsque vous [créez des workloads](#créer-un-workload), vous pouvez filtrer les files d’attente par canal pour les assigner au workload. Les intégrations spécifiques à un système externe définissent automatiquement le canal pour les files d’attente. Toutes les intégrations ne prennent pas en charge tous les canaux.
-Pour une intégration par fichier CSV, vous devez définir le canal manuellement. Vous pouvez ajouter un canal par colonne ou sélectionner un canal pour l’ensemble du fichier lorsque vous {% link_new mappez les colonnes | features/acd-integration/cloud/add-csv-integration.md | #mapping-des-colonnes %} d'un fichier CSV.  
+Pour une intégration par fichier CSV, vous devez définir le canal manuellement. Vous pouvez ajouter un canal par colonne ou sélectionner un canal pour l’ensemble du fichier lorsque vous {% link_new mappez les colonnes | features/acd-integration/cloud/add-csv-integration.md | #mapping-des-colonnes %} d'un fichier CSV.
 
 Les intégrations prennent en charge les canaux suivants&nbsp;:
 
@@ -50,11 +50,12 @@ injixo Forecast regroupe les files d’attente par canal. Vous pouvez uniquement
 
 ## Créer un workload
 
-Nous vous recommandons de créer un workload pour chaque activité que vous souhaitez planifier à l'aide du besoin en personnel. Les multi-activités nécessitent un workload pour l'activité principale et un workload pour chaque sous-activité.
+Créez un workload pour chaque activité que vous souhaitez planifier à l’aide du besoin en personnel. Les multi-activités nécessitent un workload pour l'activité principale et un workload pour chaque sous-activité.
 
-1. Cliquez sur _Nouveau workload_{:.doc-button} en haut de la liste.
+1. Dans _Forecast > Workloads_{:.breadcrumbs}, cliquez sur _Nouveau workload_{:.doc-button} en haut de la liste.
 2. Saisissez les informations générales pour votre workload&nbsp;:
-   - **Nom**&nbsp;: nom unique pour identifier votre workload.
+
+   - **Nom**&nbsp;: nom unique permettant d'identifier votre workload.
    - **Fuseau horaire**&nbsp;: le fuseau horaire du workload ne peut pas être modifié ultérieurement.
 
      > Remarque
@@ -65,7 +66,7 @@ Nous vous recommandons de créer un workload pour chaque activité que vous souh
    - (Facultatif) **Calendrier des jours fériés**&nbsp;: inclut les jours fériés pouvant affecter votre prévision.
    - (Facultatif) Sélectionnez une **unité opérationnelle** et une **activité**&nbsp;: nécessaire pour {% link_new activer les heures d'ouverture | features/forecast/injixo-forecast/forecast-activate-business-hours.md %} dans la section **Horaires d'ouverture**.
 
-3. (injixo Classic uniquement) Sélectionnez une option dans la section **Modèle de prévision**&nbsp;:
+3. (injixo Classic uniquement) Sélectionnez une option dans la section **Modèle de tarification**&nbsp;:
 
    - **Mode Live** (payant)&nbsp;: facturé par mois. Il n’est pas possible de revenir au mode Test.
    - **Mode Test** (gratuit)&nbsp;: vous pouvez uniquement consulter les prévisions et ne pouvez pas transférer le besoin en personnel pour la planification.
@@ -74,10 +75,11 @@ Nous vous recommandons de créer un workload pour chaque activité que vous souh
 
    Pour limiter les files d’attente affichées&nbsp;:
 
-   - Filtrez les files d’attente par canal (Appels, Chats, etc.).
-   - Utilisez les cases à cocher pour afficher les files d’attente sélectionnées, non sélectionnées ou inactives. Les files d'attente inactives sont celles importées par des intégrations qui ont été supprimées.
-   - Utilisez le champ de recherche au-dessus du tableau. Vous pouvez rechercher par nom de file d’attente, d’intégration ou de workload.
-  Remarque&nbsp;: si l’intervalle ou le canal d’une file d’attente ne correspond pas à ceux des files d’attente sélectionnées, toutes les files d’attente non correspondantes seront grisées.
+   - filtrez les files d’attente par canal (Appels, Chats, etc.),
+   - utilisez les cases à cocher pour afficher les files d’attente sélectionnées, non sélectionnées ou inactives. Les files d'attente inactives sont celles importées par des intégrations qui ont été supprimées,
+   - utilisez le champ de recherche au-dessus du tableau. Vous pouvez rechercher par nom de file d’attente, d’intégration ou de workload.
+
+   Remarque&nbsp;: si l’intervalle ou le canal d’une file d'attente ne correspond pas à celui des files d'attente sélectionnées, toutes les files d'attente non correspondantes seront grisées.
 
 5. Cliquez sur _Créer_{:.doc-button}.
 
@@ -85,9 +87,9 @@ Nous vous recommandons de créer un workload pour chaque activité que vous souh
    Lorsque le calcul est terminé, actualisez la page pour voir la version finale de la prévision.  
    Le nouveau workload est affiché dans la liste des workloads.
 
-Si vous utilisez injixo Essential, vous pouvez créer des workloads Basic. Les workloads Basic nécessitent au moins deux semaines de données historiques. Les workloads Basic ne prennent pas en charge les heures d’ouverture.
+Si vous utilisez injixo Essential, vous pouvez créer des workloads Basic. Les workloads Basic nécessitent au moins deux semaines de données historiques. Les workloads Basic ne prennent pas en charge les horaires d’ouverture.
 
-Si vous utilisez injixo Advanced ou Enterprise WFM, vous pouvez créer des workloads Smart. Les workloads Smart génèrent une prévision basée sur un seul jour de données historiques. Les workloads Smart prennent en charge les heures d’ouverture.
+Si vous utilisez injixo Advanced ou Enterprise WFM, vous pouvez créer des workloads Smart. Les workloads Smart génèrent une prévision basée sur un seul jour de données historiques. Les workloads Smart prennent en charge les horaires d’ouverture.
 
 Si vous utilisez injixo Classic, vous devez également sélectionner le modèle de prévision (Smart ou Basic) pour chaque workload. Pour les workloads Smart, vous pouvez choisir entre le mode Live et le mode Test. Le mode Test est gratuit mais vous permet uniquement de voir la prévision et vous ne pouvez pas transférer le besoin en personnel à des fins de planification. Le mode Live offre toutes les fonctionnalités et est facturé mensuellement. Les workloads Smart en mode Live ne peuvent pas être rétablis en mode Test.
 
@@ -101,23 +103,62 @@ You only need an integration and historical data import if you want injixo to cr
 3. In the *Basic configuration* section, enter a **Name** for your new workload.
 4. Select the **Time zone** to display data. Note: The set time zone must match the planning unit to save staff requirements.
 5. (Optional) Select the **Holiday region** to acknowledge all public holidays that affect your forecast for the year.
-6. Select the **Planning unit** and the **Activity**. Note: You must select an option to calculate staff requirements.
+6. Select the **Planning unit** and the **Activity**. This is required to calculate staff requirements.
     {{ 4 | image: 'Import Workload basic configuration section' }}
 7. Click the tab **Forecast import**.
 8. Select your **Interval length** and the **Channel** for the data import. Both must correspond with your import file.
     {{ 5 | image: 'Import Workload parameters' }}
 9. Click *Create workload*{:.doc-button}. -->
 
-## Modifier des workloads
+## Modifier un workload
 
-1. Sélectionnez un workload dans la liste des workloads ou saisissez le nom du workload dans le champ de recherche.
-2. Pour modifier les détails du workload, cliquez sur l'{% icon pencil %}  
-   Vous pouvez ajouter ou supprimer des files d'attente sans réimporter les données.
-3. Cliquez sur _Sauvegarder_{:.doc-button}.
+1. Dans _Forecast > Workloads_{:.breadcrumbs}, sélectionnez un workload dans la liste des workloads ou saisissez le nom du workload dans le champ de recherche.
+2. Pour modifier les détails du workload, cliquez sur l'{% icon pencil %}.<br>  
+   Dans la section **Assigner des files d'attente**, vous pouvez ajouter ou supprimer des files d'attente. Si l’intervalle ou le canal d’une file d'attente ne correspond pas à celui des files d'attente sélectionnées, toutes les files d'attente non correspondantes seront grisées. Si vous supprimez une file d'attente, les données importées ne sont pas supprimées et la file d'attente peut toujours être ajoutée à d'autres workloads.
+3. Cliquez sur _Sauvegarder_{:.doc-button}.  
    La nouvelle configuration peut mettre à jour la prévision.
 
-## Supprimer des workloads
+## Supprimer un workload
 
-1. Cliquez sur l'{% icon trash %} à côté du workload dans la liste.
-2. Dans la fenêtre de confirmation, cliquez sur _Supprimer le Workload_{:.doc-button}.  
-    injixo conserve les données historiques associées. Pour réutiliser les données, ajoutez la file d’attente ou les files d’attente à un autre workload.
+1. Dans _Forecast > Workloads_{:.breadcrumbs}, cliquez sur l’{% icon trash %} en face du workload que vous souhaitez supprimer.
+2. Dans la fenêtre de confirmation, cliquez sur _Supprimer le workload_{:.doc-button}.  
+   injixo conserve les données historiques associées. Pour réutiliser les données, ajoutez la file d’attente ou les files d’attente à un autre workload.
+
+## Parcourir les workloads
+
+Dans _Forecast > Workloads_{:.breadcrumbs}, sélectionnez un workload pour ouvrir la page des détails du workload. La page comprend les trois sections suivantes&nbsp;:
+
+- La section volume
+- La section **TMT**
+- La section **Besoin en personnel**.
+
+Chaque section comprend un graphique et des fonctionnalités d'édition.
+
+Par défaut, les graphiques affichent les données de la semaine en cours.
+
+- Pour sélectionner une plage horaire différente, utilisez le sélecteur de date. Cliquez sur le numéro d’une semaine pour sélectionner toute la semaine, ou cliquez sur n’importe quel jour et faites glisser pour sélectionner une période plus courte ou plus longue qu'une semaine.
+- Utilisez _<_{:.doc-button} et _>_{:.doc-button} pour naviguer avant et après la plage horaire sélectionnée.
+
+### La section volume
+
+Le graphique dans la section volume affiche le volume de contacts pour les données historiques, les prévisions importées et les prévisions générées.
+Faites passer votre curseur sur le graphique pour afficher des informations détaillées sur le volume, le TMT, le besoin en personnel, les ajustements manuels et les événements ajoutés.<br>
+Découvrez comment {% link_new ajuster le volume | features/forecast/injixo-forecast/manual-adjustments.md | #remplacer-le-volume %}.
+
+### La section TMT
+
+La section TMT est masquée par défaut lorsque vous ouvrez ou rechargez la page des détails du workload. Pour afficher la section TMT, cliquez sur l’icône Afficher/Masquer{% icon eye_slash | icon-only %}.
+Le graphique du TMT est uniquement disponible pour les workloads avec des files d'attente contenant des données de TMT.<br>
+Découvrez comment {% link_new ajuster le TMT | features/forecast/injixo-forecast/manual-adjustments.md | #remplacer-le-volume %}.
+
+### La section Besoin en personnel
+
+Le graphique de la section Besoin en personnel affiche le besoin en personnel calculé.
+Sous le graphique, vous pouvez voir les paramètres configurés pour le besoin en personnel et le total en heures-personnes. Faites passer votre curseur sur le graphique pour afficher des informations détaillées sur le TMT, le besoin en personnel, les ajustements manuels et les événements ajoutés.<br>
+Découvrez comment utiliser le {% link_new besoin en personnel pour la planification | features/forecast/injixo-forecast/calculate-staff-requirements.md | #utiliser-le-besoin-en-personnel-pour-la-planification %}.
+
+## Foire aux questions
+
+| Question                                     | Réponse                                                                                                                                                                                                                                                                                                                                                       |
+| -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Pourquoi les graphiques de la page d’un workload sont-ils vides&nbsp;? | injixo génère une prévision pour 365 jours après le dernier import de données. Si les graphiques de la page d’un workload n’affichent pas de données pour une plage horaire spécifique à venir, vérifiez si votre intégration importe toujours des données dans _Account > Intégrations_{:.breadcrumbs}. Vérifiez également si les bonnes files d'attente sont attribuées au workload dans la configuration du workload. |

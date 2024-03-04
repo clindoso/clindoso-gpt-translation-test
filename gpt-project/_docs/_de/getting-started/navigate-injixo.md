@@ -60,7 +60,7 @@ Klicke oben rechts auf deinen **Benutzernamen**, um dein Benutzerprofil zu öffn
 
 ## Academy
 
-Klicke neben deinem Benutzernamen auf das {% icon graduation_cap %}, um {% link_new Academy | getting-started/learn-injixo-with-academy.md %} aufzurufen, die Self-Service-Lernplattform von injixo.
+Klicke neben deinem Benutzernamen auf das {% icon graduation_cap %}, um {% link_new Academy | getting-started/e-learning.md %} aufzurufen, die Self-Service-Lernplattform von injixo.
 
 ## Support
 

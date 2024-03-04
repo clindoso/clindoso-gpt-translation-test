@@ -10,7 +10,7 @@ related_articles:
   - overwrite_title: Add title for untranslated source
     filepath: features/scheduling/schedules/scheduling-periods/what-are-scheduling-periods.md
   - overwrite_title: Add title for untranslated source
-    filepath: features/scheduling/employee-requirement.md
+    filepath: features/scheduling/edit-or-delete-staff-requirements.md
   - overwrite_title: Add title for untranslated source
     filepath: features/scheduling/schedules/schedules-shift-requirement.md
   - overwrite_title: Add title for untranslated source
@@ -25,7 +25,7 @@ La génération de missions permet aux personnes de votre organisation de partic
 
 ## Le processus de génération de missions
 
-Avant de lancer le processus de génération de missions, vous devez {% link_new calculer le besoin en personnel | features/forecast/injixo-forecast/staff-requirement.md %} et éventuellement {% link_new insérer des rotations d’horaires | features/administration/shift-sequences.md %}.
+Avant de lancer le processus de génération de missions, vous devez {% link_new calculer le besoin en personnel | features/forecast/injixo-forecast/calculate-staff-requirements.md %} et éventuellement {% link_new insérer des rotations d’horaires | features/administration/shift-sequences.md %}.
 
 1. Dans Schedules, créez une {% link_new période de planification | features/scheduling/schedules/scheduling-periods/what-are-scheduling-periods.md | #créer-une-nouvelle-période-de-planification %} avec le statut Non publié.
 2. Entrez les valeurs maximum et minimum pour chaque modèle horaire dans le tableau de besoin en personnel.

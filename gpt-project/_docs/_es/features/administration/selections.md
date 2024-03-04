@@ -79,7 +79,7 @@ Para asignar un grupo a otro grupo, sigue estos pasos:
    Se abre un panel de configuración a la derecha.
 3. En la sección **Grupos**, haz clic en el icono Insertar {% icon item-add | icon-only %}.
 4. Completa los siguientes campos:  
-   - **Grupos**: Haz clic en el grupo al que quieres asignar un grupo secundario.
+   - **Grupos**: Haz clic en el grupo que quieres asignar como grupo secundario.
    - (Opcional) **Válido desde/Válido hasta**: Rango de fechas para limitar el período en el que los grupos secundarias están asignados al grupo principal. Si dejas estos campos en blanco, la asignación es siempre válida.
 5. Haz clic en _Aceptar_{:.doc-button}.
 

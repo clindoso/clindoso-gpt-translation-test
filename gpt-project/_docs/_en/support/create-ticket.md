@@ -26,7 +26,7 @@ Provide a brief description of the issue or question. We appreciate screenshots!
 ## Creating a new ticket
 
 1. If you haven't already done so, do a quick search in the Help Center. We have a lot of great information!
-2. If you still need our help, click **Raise a support ticket** on the [Help Center landing page](https://help.injixo.com/).
+2. If you still need our help, click **Raise a support ticket** on the [Help Center landing page]({{ site.url }}).
 3. Follow the instructions on the screen and fill out all fields. If your issue is urgent, you may indicate that you would like someone to call you and provide your contact information. Once complete, click _Submit_{:.doc-button}.
 
 After submitting the request, you will receive a confirmation email with a ticket ID. You can then send us attachments (screenshots, log files, etc.) and additional information by e-mail in response to the confirmation message.

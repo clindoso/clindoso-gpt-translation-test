@@ -18,7 +18,6 @@ related_articles:
     filepath: features/scheduling/schedules/schedules-insert-shift-sequences.md
 ---
 
-
 Een dienstenserie is een weekpatroon van verschillende dagmodellen of activiteiten. Met dienstenseries kun je deze zich herhalende patronen snel aan je planning toevoegen. Laat de optimalisering van de resterende planning aan injixo over.
 
 Dienstenseries besparen je uren werk, want je hoeft patronen die zich steeds herhalen niet meer handmatig aan je planning toe te voegen.

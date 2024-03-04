@@ -1,8 +1,9 @@
 ---
-title: Vue d’ensemble d’injixo Forecast
+title: Explorer injixo Forcast
 redirect_from:
-  - /fr/forecast-vue-ensemble/
-redirect_reason: Updated filename on 21 April 2022
+  - /fr/forecast_overview/
+  - /fr/general-functionality/
+redirect_reason: redirect for intercom forecast tour, 2nd link, renamed article in june 2021
 product_label:
   - essential
   - advanced
@@ -22,15 +23,15 @@ related_articles:
 
 injixo Forecast combine vos données historiques à l’algorithme le mieux adapté pour générer des prévisions de haute qualité. L’algorithme reconnaît les tendances, les schémas et les fluctuations que contiennent vos données. injixo Forecast utilise de nombreux types d’algorithmes, comme ARIMA, la méthode de Holt-Winters, le lissage exponentiel, la régression ou l’amplification de gradient. 
 
-injixo Forecast sélectionne automatiquement l’algorithme le mieux adapté à vos données. La prévision est générée pour 365 jours et peut être affichée en vue journalière, hebdomadaire, mensuelle ou annuelle.
+injixo Forecast sélectionne automatiquement l'algorithme le mieux adapté à vos données. injixo génère une prévision pour 365 jours à venir après l'importation des données.
 
-injixo Essential WFM utilise un algorithme simple qui utilise de valeurs moyennes simples des données historiques pour reconnaître une tendance linéaire à long terme et des tendances hebdomadaires.
+injixo Essential WFM utilise un algorithme simple qui utilise des valeurs moyennes simples dans les données historiques pour reconnaître une tendance linéaire à long terme et des tendances hebdomadaires.
 
 ## Calculer une prévision
 
 Consultez notre guide de démarrage rapide pour apprendre à {% link_new générer une prévision | getting-started/calculate-a-forecast.md %}. Chaque nouvel import de données met à jour la prévision générée. injixo Essential WFM génère uniquement une nouvelle prévision une fois par semaine.
 
-Remarque&nbsp;: même si la prévision générée affiche uniquement des tendances récurrentes hebdomadaires, il peut s'agir de la prévision optimale. Dans ce cas, l’algorithme capture des tendances à court terme (pour les fluctuation non récurrentes) et considère les tendances à long terme comme non pertinentes. Les fluctuations des données historiques ne sont pas toujours des tendances.
+Remarque&nbsp;: même si la prévision générée affiche uniquement des tendances récurrentes hebdomadaires, elle peut être la prévision optimale. Dans ce cas, l’algorithme capture des tendances à court terme (pour les fluctuation non récurrentes) et considère les tendances à long terme comme non pertinentes. Les fluctuations des données historiques ne sont pas toujours des tendances.
 
 ## Données nécessaires
 
@@ -42,15 +43,15 @@ Le type de workload disponible dépend de votre offre WFM (Classic, Essential, A
 
 ## Gérer les données de faible qualité
 
-Pour générer une prévision, les données historiques doivent être complètes (suffisamment de données, avec le moins d’écart possible) et précises (sans tendances non pertinentes). Par exemple, les {% link_new événements ou congés | features/forecast/injixo-forecast/events-and-holidays.md %} indiqués de manière incorrecte influenceront la qualité de la prévision.
+Pour générer une prévision, les données historiques doivent être complètes (suffisamment de données, avec le moins d’écart possible) et précises (sans tendances non pertinentes). Par exemple, les {% link_new événements ou jours fériés | features/forecast/injixo-forecast/events-and-holidays.md %} indiqués de manière incorrecte influenceront la qualité de la prévision.
 
-Les données historiques peuvent inclure des périodes d’inactivité prolongées, ou manquer de données pour une période particulière. Plus les données manquantes sont proches de la date actuelle, moins la qualité de la prévision est impactée. 
+Les données historiques peuvent inclure des périodes d’inactivité prolongées, ou manquer de données pour une période particulière. Plus les données manquantes sont proches de la date actuelle, moins la qualité de la prévision est influencée. 
 
-Voici quelques conseils pour gérer les données de faible qualité selon la durée de la période concernée&nbsp;:
+Voici quelques conseils pour gérer des données de faible qualité selon la durée de la période avec des données de faible qualité ou manquantes&nbsp;:
 
 | Période avec données de mauvaise qualité     | Conseil                                                                                                                                                         |
 | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- |
-| Quelques jours | Utilisez les {% link_new événements | features/forecast/injixo-forecast/events-and-holidays.md %} pour marquer les jours affectés comme période d’indisponibilité et les exclure du calcul.                                  |
+| Quelques jours | Utilisez les {% link_new événements | features/forecast/injixo-forecast/events-and-holidays.md %} pour marquer les jours affectés comme pannes et les exclure du calcul.                                  |
 | Quelques semaines    | Ajoutez des données supplémentaires sans écarts ou tendances non pertinentes. |
 | Plusieurs semaines ou mois  | Supprimez les données précédant l’absence de données. Importez uniquement les données ultérieures à l’absence de données.                            |
 
@@ -64,5 +65,5 @@ Remarque&nbsp;: si vous ne pouvez pas ajouter de données supplémentaires ou si
 
 injixo Forecast peut générer des prévisions pour les volumes de contact faibles et élevés. Lors de la génération d’une prévision basée sur des volumes de contact faibles, injixo peut ne pas reconnaître les tendances journalières. Dans de rares cas, il est possible qu’aucune prévision ne soit générée pour certains jours. Pour les journées individuelles, ajustez la prévision manuellement. En cas de situation récurrente, vous pouvez&nbsp;:
 
-- Ajouter plusieurs files d’attente au workload (ceci entraînera des volumes plus élevés).
-- Utiliser une autre approche pour générer un besoin en personnel pour la planification, par exemple {% link_new générer un besoin en personnel constant | features/forecast/requirement-scripts/requirement-constant.md %}.
+- ajouter plusieurs files d’attente au workload (ceci entraînera des volumes plus élevés),
+- utiliser une autre approche pour générer un besoin en personnel pour la planification, par exemple {% link_new générer un besoin en personnel constant | features/forecast/requirement-scripts/requirement-constant.md %}.

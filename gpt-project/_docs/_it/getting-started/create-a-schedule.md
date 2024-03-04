@@ -59,7 +59,7 @@ In _Plan > Ferie/Assenze_{:.breadcrumbs}, approva o rifiuta le {% link_new richi
 
 ## Creare una pianificazione
 
-In {% link_new Schedules | features/scheduling/schedules/schedules-overview.md %}, nel {% link_new Centro dei turni | features/scheduling/shiftcenter/shift-center-overview.md %} o in {% link_new Dashboards | features/monitoring/dashboards/dashboards-overview.md %}, verifica che il {% link_new fabbisogno di personale | features/forecast/injixo-forecast/staff-requirement.md %} sia impostato correttamente per le tue attività.
+In {% link_new Schedules | features/scheduling/schedules/schedules-overview.md %}, nel {% link_new Centro dei turni | features/scheduling/shiftcenter/shift-center-overview.md %} o in {% link_new Dashboards | features/monitoring/dashboards/dashboards-overview.md %}, verifica che il {% link_new fabbisogno di personale | features/forecast/injixo-forecast/calculate-staff-requirements.md %} sia impostato correttamente per le tue attività.
 
 1. Inserisci {% link_new rotazioni | features/scheduling/schedules/schedules-insert-shift-sequences.md %} per i tuoi dipendenti.
 2. Configura e applica ulteriori {% link_new metodi di pianificazione | features/scheduling/scheduling-methods.md %} per completare la pianificazione.

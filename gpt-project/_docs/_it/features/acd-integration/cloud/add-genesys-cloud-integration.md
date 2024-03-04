@@ -22,10 +22,16 @@ Un'integrazione Genesys Cloud è un'integrazione cloud che importa la cronologia
 3. Nel riquadro **Genesys**, clicca su _Seleziona modello_{:.doc-button}.
 4. Nella sezione **Genesys Cloud**, clicca su _Aggiungi integrazione_{:.doc-button}.
 
-## Configura l'integrazione Genesys Cloud
+## Configura l’integrazione Genesys Cloud
 
 1. Inserisci un nome unico per la nuova integrazione che identifichi l’origine dei dati.
-Nella sezione **Credenziali API**, copia e incolla l’API key e l’API secret di Genesys Cloud.
+2. Nella sezione **Credenziali API**, copia e incolla l’API key e l’API secret di Genesys Cloud.
 3. Nella sezione **Configurazione**, seleziona la regione del tuo account.
-4. (Facoltativo) Spunta la casella **Importa stati agente On Queue dettagliati**.<br>Lo stato dell'agente «on-queue» include diversi stati, per esempio «communication», «interacting», «idle»,«not responding». Durante l'importazione degli stati degli agenti, injixo differenzierà tra gli stati individuali raggruppati sotto «on-queue».
+4. (Facoltativo) Spunta la casella **Importa stati agente On Queue dettagliati**.<br>Lo stato dell’agente «on-queue» include diversi stati, per esempio «communication», «interacting», «idle», «not responding». Durante l’importazione degli stati degli agenti, injixo differenzierà tra gli stati individuali raggruppati sotto «on-queue».
 5. Clicca su _Salva integrazione_{:.doc-button}.
+
+## Domande frequenti
+
+| Domanda                            | Risposta                                                                                                                                           |
+| ----------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| L’integrazione importi i dati sulle chiamate abbandonate, sul tempo medio di risposta e sulle chiamate processate entro il livello di servizio. Perché non riesco a mostrare questi dati in Dashboards? | Puoi mostrare questi dati in Dashboards se aggiungi esclusivamente code dalla tua integrazione Genesys Cloud quando imposti un workload in Forecast. Non puoi visualizzare questi dati se includi code da altre integrazioni.

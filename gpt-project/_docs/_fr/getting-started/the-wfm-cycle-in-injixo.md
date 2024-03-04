@@ -21,7 +21,7 @@ L’objectif du Workforce management (WFM) est d’optimiser l’affectation des
 Dans cet article, découvrez comment injixo vous accompagne tout au long du cycle du WFM.
 L'étape initiale consiste à fournir à injixo les données nécessaires pour générer une prévision fiable. Pour ce faire, vous devez configurer une intégration avec vos systèmes de téléphonie (ACD) ou de gestion des relations client (CRM).
 
-Vous débutez dans le WFM&nbsp;? Découvrez les concepts et les définitions clés dans notre [glossaire](https://help.injixo.com/fr/glossary/overview/).
+Vous débutez dans le WFM&nbsp;? Découvrez les concepts et les définitions clés dans notre [glossaire](/fr/glossary/overview/).
 
 ## 1. Prévision
 
@@ -48,7 +48,7 @@ Chaque nouvelle importation de données met à jour la prévision générée. Vo
 
 ### Calculer le besoin en personnel
 
-Une fois que vous avez généré une prévision, vous pouvez {% link_new calculer votre besoin en personnel | features/forecast/injixo-forecast/staff-requirement.md %}, c'est-à-dire le nombre d’employés à planifier pour couvrir la charge de travail prévue. Vous pouvez utiliser plusieurs {% link_new méthodes de calcul | best-practices/requirement-scripts.md %} pour déterminer votre besoin en personnel, qui prennent en compte des facteurs tels que le niveau de service et le temps de réponse cibles, le shrinkage, etc. Vous pouvez également créer un besoin en personnel constant sans prévision, si nécessaire.
+Une fois que vous avez généré une prévision, vous pouvez {% link_new calculer votre besoin en personnel | features/forecast/injixo-forecast/calculate-staff-requirements.md %}, c'est-à-dire le nombre d’employés à planifier pour couvrir la charge de travail prévue. Vous pouvez utiliser plusieurs {% link_new méthodes de calcul | best-practices/requirement-scripts.md %} pour déterminer votre besoin en personnel, qui prennent en compte des facteurs tels que le niveau de service et le temps de réponse cibles, le shrinkage, etc. Vous pouvez également créer un besoin en personnel constant sans prévision, si nécessaire.
 
 Vous pouvez utiliser votre besoin en personnel lors du processus de planification pour créer des plannings optimisés pour des périodes, des unités de planification et des activités spécifiques.
 

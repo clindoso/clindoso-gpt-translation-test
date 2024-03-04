@@ -49,7 +49,7 @@ Vous pouvez utiliser des modèles horaires fixes dans les modèles de planificat
 
 Vous pouvez également utiliser des {% link_new rotations d’horaires | features/administration/shift-sequences.md %} ou des modèles hebdomadaires dans les {% link_new modèles de planification | features/administration/modeles-hebdomadaires.md %}. Vous pouvez également utiliser les deux pour alterner les journées du matin et du soir, par exemple.
 
-Nous recommandons de créer un ensemble limité de modèles horaires variables (combinés avec les {% link_new disponibilités de vos employés | features/administration/availabilities.md | #create-employee-availabilities %}) plutôt que de créer un grand nombre de modèles horaires fixes.
+Nous recommandons de créer un ensemble limité de modèles horaires variables (combinés avec les {% link_new disponibilités de vos employés | features/administration/availabilities.md %}) plutôt que de créer un grand nombre de modèles horaires fixes.
 
 ## Activité de base et durée de la journée
 
@@ -62,7 +62,7 @@ Le temps total d’une journée planifiée est la durée brute de la journée, p
 La durée d’un modèle horaire doit être conforme aux heures de travail indiquées dans vos {% link_new contrats | features/administration/create-contracts.md %}.
 Par exemple, un contrat de 35&nbsp;heures par semaine sur 5&nbsp;jours nécessite un modèle horaire dont la durée de travail nette est de 7&nbsp;heures. Un contrat de 37,5&nbsp;heures nécessite une durée de travail nette de 7,5&nbsp;heures.
 
-Utilisez l’activité Présent comme activité de base et assurez-vous qu’elle est configurée comme Remplaçable. Les fonctionnalités Optimiser les activités et Optimiser le planning peuvent ensuite remplacer l’activité Présent par d’autres activités, à condition que {% link_new le besoin en personnel | features/forecast/injixo-forecast/staff-requirement.md %} de ces autres activités soit calculé et qu'elles soient configurées comme Planifiables automatiquement.
+Utilisez l’activité Présent comme activité de base et assurez-vous qu’elle est configurée comme Remplaçable. Les fonctionnalités Optimiser les activités et Optimiser le planning peuvent ensuite remplacer l’activité Présent par d’autres activités, à condition que {% link_new le besoin en personnel | features/forecast/injixo-forecast/calculate-staff-requirements.md %} de ces autres activités soit calculé et qu'elles soient configurées comme Planifiables automatiquement.
 
 ### Éléments fixes et corridors
 

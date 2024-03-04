@@ -12,7 +12,7 @@ related_articles:
   - overwrite_title: Add title for untranslated source
     filepath: features/administration/day-types.md
   - overwrite_title: Add title for untranslated source
-    filepath: features/scheduling/employee-requirement.md
+    filepath: features/scheduling/edit-or-delete-staff-requirements.md
   - overwrite_title: Add title for untranslated source
     filepath: features/scheduling/schedules/schedules-shift-bidding.md
 ---
@@ -53,7 +53,7 @@ Füge der Planungseinheit weitere {% link_new Tagestypen | features/administrati
 
 Die einzelnen Einträge definieren pro Tagesmodell und Tagestyp, wie viele Schichten von der Schichterzeugung minimal bzw. maximal erzeugt werden können. Die Anzahl der Mitarbeiter und deren mögliche Schichten werden nicht berücksichtigt. injixo zielt nur auf die bestmögliche Deckung ab.
 
-Wenn Du nicht nur mit Minimalwerten arbeitest, ist der {% link_new Mitarbeiterbedarf | features/scheduling/employee-requirement.md %} relevant. Es werden (bis zum eingetragenen Maximum) die Anzahl Schichten erzeugt, die zur Deckung des Mitarbeiterbedarfs notwendig sind.
+Wenn Du nicht nur mit Minimalwerten arbeitest, ist der {% link_new Mitarbeiterbedarf | features/scheduling/edit-or-delete-staff-requirements.md %} relevant. Es werden (bis zum eingetragenen Maximum) die Anzahl Schichten erzeugt, die zur Deckung des Mitarbeiterbedarfs notwendig sind.
 
 ## Benötigte Schichten in die Tabelle eintragen
 

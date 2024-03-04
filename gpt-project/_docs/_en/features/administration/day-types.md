@@ -42,9 +42,9 @@ On some days, your business hours might differ from the standard, e.g. when ther
 
 There are two ways to create day types for public holidays:
 
-- Create day types with holiday mode and {% link_new add them to your planning calendar | features/administration/planning-calendar.md | #add-custom-day-types-to-the-planning-calendar %}.
+- Create day types with holiday mode and {% link_new add them to your planning calendar | features/administration/planning-calendar.md | #configure-a-planning-calendar %}.
 
-- Add a {% link_new calendar template | features/administration/planning-calendar.md |#add-the-public-holidays-of-your-region %} to your planning calendar. This will automatically create all included day types for public holidays with activated holiday mode.
+- Add a {% link_new calendar template | features/administration/planning-calendar.md |#configure-a-planning-calendar %} to your planning calendar. This will automatically create all included day types for public holidays with activated holiday mode.
 
 Holiday mode will reduce people's working hours on this day accordingly. If you decide to schedule the day as a normal working day, you can always deactivate the holiday mode by {% link_new editing the day type | features/administration/day-types.md | #edit-a-day-type %}.
 

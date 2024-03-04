@@ -1,37 +1,48 @@
 ---
-title: Quel script de calcul du besoin utiliser ?
-toc: false
+title: Choisir la méthode de calcul du besoin en personnel
+product_label:
+  - essential
+  - advanced
+  - enterprise
+  - classic
+description: Découvrez quelle méthode de calcul du besoin en personnel convient le mieux à vos besoins.
 redirect_from:
   - /fr/script-besoin/
-redirect_reason: Filename changed in April 2022
+toc: true
 ---
 
-injixo permet de dimensionner le nombre d'employés nécessaires aux traitements de vos différentes activités.
-Plusieurs méthodes de calcul du besoin en personnel sont disponibles.
-Selon le canal à prendre en compte et votre indicateur de service, il convient d'utiliser des scripts de calcul différents.
+injixo propose des méthodes de calcul et des scripts pour calculer le besoin en personnel. 
 
-Cet article vous apporte les outils pour déterminer quel script de calcul du besoin est le plus pertinent selon vos spécificités.
+## Méthodes de calcul
 
-## Diagramme de décision
+- Erlang-C&nbsp;: méthode de calcul pour les contacts entrants basée sur l’objectif de volume et de qualité de service.
+- Chat&nbsp;: méthode de calcul basée sur Erlang-C avec un paramètre supplémentaire pour définir un nombre de sessions de chat consécutives.
+- Productivité&nbsp;: méthode de calcul pour les contacts qui n'ont pas besoin d'être traités en temps réel (par exemple, lettres, e-mails, tickets ou commandes). Le résultat du calcul est basé sur le volume prévu et éventuellement sur le TMT.
 
-Le diagramme suivant vous aide à décider quel script de besoin utiliser :
+Apprenez à {% link_new configurer les méthodes de calcul | features/forecast/injixo-forecast/calculate-staff-requirements.md %}.
 
-{{ 1 | image: 'Workflow'}}
+## Scripts de calcul du besoin
 
-## Scripts de calcul du besoin en personnel
+- {% link_new Besoin constant | features/forecast/requirement-scripts/requirement-constant.md %}&nbsp;: pour les activités pour lesquelles vous n'avez pas de prévision, mais pour lesquelles vous connaissez le nombre d’employés nécessaires pour chaque plage horaire. Vous pouvez saisir vos propres valeurs de besoin en personnel. Vous pouvez définir des valeurs pour plusieurs plages horaires et activités.
+- {% link_new Multi-Activités | features/forecast/requirement-scripts/requirement-multiactivity.md %}&nbsp;: pour planifier des employés polyvalents et combiner différents canaux (par exemple plusieurs lignes directes, ou une combinaison de chats et d'appels).
+- {% link_new Appels sortants | features/forecast/requirement-scripts/requirement-outbound.md %}&nbsp;: pour les campagnes avec appels sortants. Vous pouvez définir des paramètres qui définissent la durée de la campagne, le taux de rappel, le taux de contacts aboutis, etc.
+- Backoffice - Productivité&nbsp;: pour les communications indirectes, comme les lettres ou les e-mails, qui doivent être traités dans un délai prédéfini. Pour accéder à ce script, contactez votre consultant.
+- Temps moyen de décroché (ASA)&nbsp;: script basé sur Erlang-C qui se concentre sur le délai moyen de réponse. Pour accéder à ce script, contactez votre consultant.
+- Taux d'appels abandonnés&nbsp;: script basé sur Erlang-C vous permettant de définir votre objectif de service comme taux d'appels abandonnés maximum. Vous pouvez également l'utiliser si votre objectif est basé sur le taux de décroché. Pour accéder à ce script, contactez votre consultant.
 
-Les scripts disponibles sont les suivants :
+## Types de données et méthodes de calcul du besoin en personnel pertinents
 
-- {% link_new Besoin constant | features/forecast/requirement-scripts/requirement-constant.md %}: Pour tout type d'activité sur laquelle vous ne disposez pas de données historiques mais pour laquelle vous souhaitez définir le nombre d'employés nécessaires par intervalle.
-- {% link_new Besoin Productivité | features/forecast/requirement-scripts/requirement-linear.md %}: Pour tous les canaux asynchrones tels que les e-mails, courrier, tickets à traiter en mode séquentiel. Ce script peut également être utilisé pour calculer le besoin liée à une activité d'appels entrants pour laquelle vous n'avez d'objectif de Qualité de Service.
-- Backoffice - Productivité : Pour tous les canaux asynchrones tels que les e-mails, courrier, tickets à traiter dans un délai prédéfini.
-- {% link_new Chat - Webchat | features/forecast/requirement-scripts/requirement-chat.md %}: Script basé sur la méthode Erlang C prenant en compte le nombre de sessions de chat simultanées par employé.
-- {% link_new Appels - Mono Activité | features/forecast/requirement-scripts/requirement-erlangc.md %}: Script basé sur la méthode Erlang C permettant de calculer le besoin en fonction d'un objectif de Qualité de Service.
-- {% link_new Appels - Multi Activités | features/forecast/requirement-scripts/requirement-multiactivity.md %}: Script basé sur les méthodes Erlang C, Productivité et Chat permettant de calculer le besoin en personnel pour planifier des activités à des agents disposant de plusieurs compétences.
-- Appels - Temps moyen de réponse : Script basé sur la méthode Erlang C permettant de calculer le besoin en fonction d'un objectif de temps de décroché.
-- Appels - Taux d'abandon : Script basé sur la méthode Erlang C permettant de calculer le besoin en fonction d'un objectif de taux d'abandon ou d'appels répondus (80% d'appels répondus équivaut à 20% d'appels abandonnés).
-- {% link_new Appels sortants | features/forecast/requirement-scripts/requirement-outbound.md %}: Script de prise en compte des campagnes d'appels sortants.
+Le tableau suivant affiche les méthodes de calcul et les scripts adaptés à chaque type de données lors du calcul du besoin en personnel&nbsp;:
 
-Vous hésitez encore sur le script à utiliser ? Le tableau ci-dessous vous aidera à prendre une décision :
-
-{{ 2 | image: 'Tableau' }}
+| Type de données ou paramètre  | Erlang-C (méthode) | Chat (méthode)  | Productivité (méthode) | Besoin constant (script) | Multi-activité (script) | Appels sortants (script) |
+| ----------------------- |-------------------| -------- |--------  | -------- |   ------- | ------- |
+| Données qui peuvent être stockées (par exemple, e-mails, tickets, commandes)   | Non        | Non | Non  | Non |  Oui | Oui |
+| Appels                   | Oui       | Non | Non  | Non |  Oui | Non |
+| chat                   | Non       | Oui | Non  | Oui |  Oui | Non |
+| Contacts entrants                   | Oui       | Oui | Oui  | Oui |  Oui | Non |
+| Contacts sortants                   | Non       | Non | Non  | Non |  Non | Oui |
+| Une seule ligne                       | Oui     | Oui | Oui  | Oui |  Non | Oui |
+| Plusieurs lignes                | Non       | Non | Non  | Non |  Oui | Non |
+| Données historiques               | Oui     | Oui | Oui  | Non |  Oui | Oui |
+| Type d'objectif de service               | Oui   | Oui | Non  | Non |  Oui | Oui |
+| Qualité de service (par exemple 80/20)          | Oui     | Oui | Non  | Non |  Oui | Oui |

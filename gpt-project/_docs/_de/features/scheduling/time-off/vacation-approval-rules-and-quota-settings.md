@@ -27,7 +27,7 @@ Neu bei Urlaub/Abwesenheiten? Lerne zuerst die {% link_new Grundlagen | features
 Im Abschnitt **Genehmigungsregeln**, kannst Du bis zu drei Regeln für das Vorschlagsverfahren aktivieren:
 
 - Urlaubsanspruch: Prüft, ob der Mitarbeiter noch genügend Urlaubstage hat. injixo kann eine Genehmigung vorschlagen, wenn der Mitarbeiter noch genügend {% link_new Urlaubsanspruch | features/scheduling/time-off/vacation-entitlement.md %} für das Jahr hat.
-- Mitarbeiterbedarf: Prüft die Deckung des durchschnittlichen Tagesbedarfs einer Planungseinheit. Genehmigungen sind möglich, wenn genügend Personen arbeiten, um den {% link_new Mitarbeiterbedarf | features/scheduling/employee-requirement.md %} zu decken, basierend auf dem durchschnittlichen täglichen Mitarbeiterbedarf für alle Aktivitäten in der Planungseinheit.
+- Mitarbeiterbedarf: Prüft die Deckung des durchschnittlichen Tagesbedarfs einer Planungseinheit. Genehmigungen sind möglich, wenn genügend Personen arbeiten, um den {% link_new Mitarbeiterbedarf | features/scheduling/edit-or-delete-staff-requirements.md %} zu decken, basierend auf dem durchschnittlichen täglichen Mitarbeiterbedarf für alle Aktivitäten in der Planungseinheit.
 - Abwesenheits-Quote: Überprüft das verfügbare Abwesenheitskontingent einer Planungseinheit. Genehmigungen sind möglich, wenn der konfigurierte Wert für die Abwesenheitsquote noch nicht erreicht ist.
 
 {{ 1 | image: 'Genehmigungsregeln', '90%' }}

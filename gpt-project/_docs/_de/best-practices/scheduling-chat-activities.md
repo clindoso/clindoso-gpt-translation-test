@@ -80,7 +80,7 @@ Um die Berechnungsmethode zu konfigurieren und den Mitarbeiterbedarf zu berechne
 2.  Wähle auf der **Forecast**-Seite einen Zeitraum, für den bereits ein Forecast existiert (Tages-, Wochen- oder Monatsansicht).
 3.  Gehe auf der **Forecast**-Seite zum Abschnitt **Mitarbeiterbedarf** und klicke auf _Berechnungsparameter konfigurieren_{:.doc-button}.
 4.  Wähle im Konfigurationsfenster **Mitarbeiterbedarf** die Option **Chat** aus dem Dropdown-Menü **Berechnungsmethode** und fülle das Formular aus.
-    Erfahre mehr über die Berechnungsmethode für Chat und die benötigten Parameter im Artikel {% link_new Mitarbeiterbedarf berechnen | features/forecast/injixo-forecast/staff-requirement.md | #berechnungsmethoden-konfigurieren %}.
+    Erfahre mehr über die Berechnungsmethode für Chat und die benötigten Parameter im Artikel {% link_new Mitarbeiterbedarf berechnen | features/forecast/injixo-forecast/calculate-staff-requirements.md | #berechnungsmethoden-konfigurieren %}.
 5.  Klicke auf _Konfiguration speichern_{:.doc-button}.
 
 Auf der Forecast-Seite siehst du nun den berechneten Mitarbeiterbedarf für Chat-Aktivitäten.

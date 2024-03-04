@@ -80,7 +80,7 @@ To configure the calculation method and calculate staff requirements, proceed as
 2. Select a period for which a forecast exists.
 3.  Scroll down to the **Staff Requirements** section and click _Edit staff requirements_{:.doc-button}.
 4.  In the **Staff requirements** configuration window, select **Chat** from the **Calculation method** drop-down menu and complete the form.
-    Learn more about the calculation method for chat and required parameters in the article {% link_new Calculate staff requirements | features/forecast/injixo-forecast/staff-requirement.md | #configure-the-calculation-methods %}.
+    Learn more about the calculation method for chat and required parameters in the article {% link_new Calculate staff requirements | features/forecast/injixo-forecast/calculate-staff-requirements.md | #configure-the-calculation-methods %}.
 5.  Click _Save_{:.doc-button}.
 
 The workload details page page now displays calculated staff requirements for chat activities.

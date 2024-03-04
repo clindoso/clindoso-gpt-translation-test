@@ -24,7 +24,7 @@ The goal of workforce management (WFM) is to optimize people deployment to meet 
 In this article you will find an overview of how injixo can support you in all stages of the WFM cycle. 
 The very first step is to provide injixo with the data needed to generate a reliable forecast. To do so, you need to set up an integration with your Automatic Call Distribution (ACD) or Customer Relationship Management (CRM) systems.
 
-New to workforce management? Learn about the key concepts and definitions in our [glossary](https://help.injixo.com/glossary/overview).
+New to workforce management? Learn about the key concepts and definitions in our [glossary](/glossary/overview/).
 
 ## 1. Forecasting
 
@@ -51,7 +51,7 @@ Each new data import updates the generated forecast. You can also {% link_new ad
 
 ### Calculate staff requirements
 
-Once you have generated a forecast, you can {% link_new calculate the staff requirements | features/forecast/injixo-forecast/staff-requirement.md %}, i.e. the amount of people who need to be scheduled to cover the expected workload. You can use several {% link_new calculation methods | best-practices/requirement-scripts.md %} to calculate your staff requirements, which take into account factors like target service level, target answer time, shrinkage, etc. You can also write constant staff requirements without a forecast, if needed.
+Once you have generated a forecast, you can {% link_new calculate the staff requirements | features/forecast/injixo-forecast/calculate-staff-requirements.md %}, i.e. the amount of people who need to be scheduled to cover the expected workload. You can use several {% link_new calculation methods | best-practices/requirement-scripts.md %} to calculate your staff requirements, which take into account factors like target service level, target answer time, shrinkage, etc. You can also write constant staff requirements without a forecast, if needed.
 
 You can use your staff requirements during the scheduling process to create optimized schedules for specific time frames, planning units, and activities.
 

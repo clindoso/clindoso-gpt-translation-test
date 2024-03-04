@@ -3,6 +3,7 @@ title: Outbound calls
 description: Calculate staff requirements for outbound calls.
 toc: true
 product_label:
+  - essential
   - advanced
   - enterprise
   - classic
@@ -15,7 +16,7 @@ To determine staff requirements for campaigns with outgoing calls, use the Calls
 If you do not want to use a fixed value for your outgoing calls, export your forecast first:
 
 1. In _Forecast > Workloads_{:.breadcrumbs}, select a workload.
-2. Select the time frame using the date picker.
+2. Select the time frame using the date picker. Click on a week number to select the whole week, or click any day and drag to select a period shorter or longer than a week.
 3. From the three-dots menu _![Context Menu in injixo Forecast](/assets/img/common/forecast/context-menu.svg)_{:.doc-button-icon} at the top right, select **Use forecast**.
 4. In the window that opens, select your forecast version.
 5. Click _Use forecast_{:.doc-button}.
@@ -51,7 +52,7 @@ In the script window, you can configure the following parameters:
 
 ## Run the script
 
-After you have configured the script, click _OK_{:.doc-button} to start the calculation. A window will display your input parameters and the script execution results. Check the {% link_new saved staff requirements in the Shift Center | features/scheduling/employee-requirement.md %}.
+After you have configured the script, click _OK_{:.doc-button} to start the calculation. A window will display your input parameters and the script execution results. Check the {% link_new saved staff requirements in the Shift Center | features/scheduling/edit-or-delete-staff-requirements.md %}.
 
 {% include reusables/{{ page.lang }}/scripts/on-prem-usage.md %} <!-- keep this or move to classic article? -->
 

@@ -77,7 +77,7 @@ Du kannst einem Wochenmodell sowohl {% link_new fixe als auch variable Tagesmode
 
 > Hinweis
 >
-> injixo kann nur die Tagesmodelle planen, die der Planungseinheit zugewiesen sind, der der Mitarbeiter zugewiesen ist. Wenn du die {% link_new Zuweisung der Tagesmodelle zu deiner Planungseinheit eingeschränkt | features/administration/create-and-manage-planning-units.md | #tagesmodelle-verwalten %} hast, kann es sein, dass Tagesmodelle, die du aufgrund deines Planungsmodells erwartest, nicht verwendet werden.
+> injixo kann nur die Tagesmodelle planen, die der Planungseinheit zugewiesen sind, der der Mitarbeiter zugewiesen ist. Wenn du die {% link_new Zuweisung der Tagesmodelle zu deiner Planungseinheit eingeschränkt | features/administration/create-and-manage-planning-units.md | #tagesmodelle-einschränken %} hast, kann es sein, dass Tagesmodelle, die du aufgrund deines Planungsmodells erwartest, nicht verwendet werden.
 >
 > injixo kann ersetzbare Aktivitäten innerhalb einer Schicht mit planbaren Aktivitäten ersetzen. Damit dies funktioniert, verwende variable Tagesmodelle für jede laut Vertrag vorgegebene Schichtdauer und verwende die Systemaktivität Anwesend (ID: 1) als {% link_new Basisaktivität | features/administration/daymodels/daymodel-basics.md | #basisaktivität-und-schichtdauer %}. Lege nicht für jede einzelne Aktivität ein Tagesmodell an.
 

@@ -1,33 +1,46 @@
 ---
-title: Welches Bedarfsberechnungsskript Du wann nutzen solltest
-toc: false
+title: Berechnungsmethode für Mitarbeiterbedarf auswählen
+product_label:
+  - essential
+  - advanced
+  - enterprise
+  - classic
+description: Erfahre, welche Bedarfsberechnungsmethode für dich am besten geeignet ist.
+toc: true
 ---
 
-injixo bietet Dir eine Vielzahl von Methoden zur Berechnung des Mitarbeiterbedarfs.
-Während das Servicelevel-Ziel Deines Contact Centers darauf ausgerichtet ist, dass 80% aller Anrufe innerhalb von 20 Sekunden angenommen werden, ist Erlang-C möglicherweise nicht immer das optimale Skript zur Ermittlung des Mitarbeiterbedarfs.
-Stattdessen ist es von verschiedenen Faktoren abhängig, welche Berechnungsmethode am besten zu den Anforderungen Deines Contact Centers passt. <br>
-Dieser Best Practice Artikel hilft Dir dabei herauszufinden, welches Bedarfsberechnungsskript für Dein Unternehmen am besten geeignet ist.
+In injixo gibt es verschiedene Berechnungsmethoden und Bedarfsskripte zur Berechnung des Mitarbeiterbedarfs. 
 
-## Entscheidungshilfe
+## Berechnungsmethoden
 
-Das folgende Diagramm hilft Dir bei der Frage, welches Bedarfsberechnungsskript das richtige für Dich ist:
+- Erlang-C: Berechnungsmethode für eingehende Kontakte basierend auf dem zu erwartenden Volumen und dem angestrebten Service-Level.
+- Chat: Auf Erlang-C basierende Berechnungsmethode mit einen zusätzlichen Parameter, mit dem du die maximale Anzahl paralleler Chat-Sitzungen pro Mitarbeiter festlegen kannst.
+- Linear: Berechnungsmethode für Kontakte, die nicht in Echtzeit bearbeitet werden müssen (z.&nbsp;B. Briefe, E-Mails, Tickets oder Bestellungen). Das Berechnungsergebnis basiert auf dem prognostizierten Volumen und optional auch der AHT.
 
-{{ 1 | image: 'Workflow', '60%' }}
+Erfahre, wie du die {% link_new Berechnungsmethoden konfigurieren | features/forecast/injixo-forecast/calculate-staff-requirements.md %} kannst.
 
-## Übersicht über die Bedarfsberechnungsskripte
+## Bedarfsskripte
 
-Für ein vollständiges Bild über alle verfügbaren Berechnungsmethoden erhältst Du hier eine Übersicht:
+- {% link_new Konstanter Bedarf | features/forecast/requirement-scripts/requirement-constant.md %}: Für Aktivitäten, für die du keinen Forecast hast, aber für die du die Anzahl der benötigten Mitarbeiter pro Zeitraum kennst. Du kannst deine eigenen Werte für den Mitarbeiterbedarf eingeben. Du kannst zudem Werte für mehrere Zeiträume und Aktivitäten festlegen.
+- {% link_new Multiaktivität | features/forecast/requirement-scripts/requirement-multiactivity.md %}: Um Multiskill-Mitarbeiter zu planen und verschiedene Kanäle (z.&nbsp;B. mehrere Hotlines oder eine Kombination von Chats und Anrufen) zu kombinieren.
+- {% link_new Outbound | features/forecast/requirement-scripts/requirement-outbound.md %}: Für Kampagnen mit ausgehenden Anrufen. Mit den Parametern kannst du die Kampagnendauer, Wahlwiederholungsrate, Kontaktrate des richtigen Ansprechpartners usw. festlegen.
+- Backoffice linear: Für indirekte Kommunikation, wie Briefe oder E-Mails, die innerhalb eines festgelegten Zeitraums bearbeitet werden müssen. Um dieses Skript zu verwenden, kontaktiere deinen Consultant.
+- Durchschnittliche Antwortzeit (ASA): Auf Erlang-C basierendes Skript, das die durchschnittliche Wartezeit betrachtet. Um dieses Skript zu verwenden, kontaktiere deinen Consultant.
+- Abbrecher-Quote: Auf Erlang-C basierendes Skript, mit dem du die maximale Quote an abgebrochenen Anrufen als Service-Ziel festlegen kannst. Du kannst dieses Skript auch verwenden, wenn dein Service-Ziel die Quote der angenommenen Anrufe ist. Um dieses Skript zu verwenden, kontaktiere deinen Consultant.
 
-- {% link_new Konstanter Bedarf | features/forecast/requirement-scripts/requirement-constant.md %}: Für jede Art von Aktivität, für die kein Forecast vorliegt, du aber genau weißt, wie viele Personen Du zu welchem Zeitpunkt benötigst. Hinterlege bei Bedarf Werte für mehrere Zeiträume und Aktivitäten auf einmal.
-- {% link_new Linearbedarf | features/forecast/requirement-scripts/requirement-linear.md %}: Für indirekte Kommunikation wie Briefe, E-Mails oder Bestellungen, basierend auf der Annahme, dass dieses Volumen sequentiell abgearbeitet wird. Das Berechnungsergebnis basiert auf dem prognostizierten Volumen und optional auch der AHT.
-- Linearbedarf für Backoffice: Für indirekte Kommunikation (Briefe, E-Mails usw.), die Du in einem vordefinierten Zeitrahmen bearbeiten möchtest. Wähle zwischen der Bearbeitung innerhalb von x Stunden oder gib vor, dass alles, was z.B. bis 8 Uhr morgens eingegangen ist, bis zum Ende des Arbeitstages bearbeitet werden soll.
-- {% link_new Chat Bedarf | features/forecast/requirement-scripts/requirement-chat.md %}: Erlang-C-basierte Berechnungsmethode mit einen zusätzlichen Parameter, mit dem Du die maximale Anzahl paralleler Chat-Sitzungen pro Mitarbeiter festsetzen kannst.
-- {% link_new Erlang-C (Single Activity) | features/forecast/requirement-scripts/requirement-erlangc.md %}: Standard-Berechnungsmethode für Anrufe auf Grundlage des Volumens und des zu erreichenen Servicelevels.
-- {% link_new Bedarf für Multiaktivitäten | features/forecast/requirement-scripts/requirement-multiactivity.md %}: Plane Multiskill-Agenten und kombiniere verschiedene Kanäle (z.B. mehrere Hotlines oder eine Kombination aus Anrufen und Chats).
-- Bedarf mit durchschnittlicher Antwortzeit (ASA): Erlang-C Variante mit Fokus auf die durchschnittliche Zeit, die Deine Agenten benötigen, um die eingehenden Anrufe zu beantworten.
-- Erlang C Bedarf mit Abbrecher-Quote: dieses Skript basiert auf Erlang-C. Definiere Dein Servicelevel-Ziel als die maximale Quote abgebrochener Anrufe. Mit diesem Skript kannst Du auch die Quote der angenommenen Anrufe definieren. Hierzu musst Du lediglich den Wert umkehren: für eine Zielquote von 80% angenommener Anrufe, hinterlegst Du stattdessen 20% Abbrecher-Quote.
-- {% link_new Outbound Bedarf | features/forecast/requirement-scripts/requirement-outbound.md %}: Für Kampagnen mit ausgehenden Anrufen. Enthält Parameter zur Angabe von Kampagnendauer, Wahlwiederholungsrate, Kontaktrate des richtigen Ansprechpartners usw.
+## Datentypen und relevante Bedarfsberechnungsmethoden
 
-Bist Du Dir noch unsicher, welches Skript Du verwenden sollst? Wirf einen Blick auf die folgende Tabelle, um Dir die Entscheidung zu erleichtern!
+Die folgende Tabelle zeigt, welche Berechnungsmethoden und Bedarfsskripte für welchen Datentyp geeignet sind, wenn der Mitarbeiterbedarf berechnet wird:
 
-{{ 2 | image: 'Überblick zu den Berechnungsskripten'}}
+| Datentyp oder Parameter  | Erlang-C (Methode) | Chat (Methode)  | Linear (Methode) | Konstanter Bedarf (Skript) | Multi-Aktivitäten (Skript) | Outbound (Skript) |
+| ----------------------- |-------------------| -------- |--------  | -------- |   ------- | ------- |
+| Lagerfähige Daten (z.&nbsp;B. E-Mails, Tickets, Bestellungen)   | Nein        | Nein | Nein  | Nein |  Ja | Ja |
+| Anrufe                   | Ja       | Nein | Nein  | Nein |  Ja | Nein |
+| Chat                   | Nein       | Ja | Nein  | Ja |  Ja | Nein |
+| Eingehende Kontakte                   | Ja       | Ja | Ja  | Ja |  Ja | Nein |
+| Ausgehende Kontakte                   | Nein       | Nein | Nein  | Nein |  Nein | Ja |
+| Einzelner Service                       | Ja     | Ja | Ja  | Ja |  Nein | Ja |
+| Mehrere Services                | Nein       | Nein | Nein  | Nein |  Ja | Nein |
+| Historische Daten               | Ja     | Ja | Ja  | Nein |  Ja | Ja |
+| Art des Service-Ziels               | Ja   | Ja | Nein  | Nein |  Ja | Ja |
+| Service-Level (z.&nbsp;B. 80/20)          | Ja     | Ja | Nein  | Nein |  Ja | Ja |

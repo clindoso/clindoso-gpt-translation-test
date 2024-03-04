@@ -4,7 +4,7 @@ product_label:
   - advanced
   - enterprise
   - classic
-toc: false
+toc: true
 description: Understand how to activate business hours and how they change the forecast behavior.
 related_articles:
   - overwrite_title: Add title for untranslated source

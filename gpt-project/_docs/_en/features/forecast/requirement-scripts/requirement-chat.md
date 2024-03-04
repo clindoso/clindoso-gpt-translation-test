@@ -27,6 +27,6 @@ The Chat - WebChat requirement script is based on Erlang-C. The script calculate
 13. {% include reusables/{{ page.lang }}/scripts/steps/startdate.md %}
 14. {% include reusables/{{ page.lang }}/scripts/steps/number-of-days.md %}
 15. Click _Ok_{:.doc-button} to start the calculation.<br>
-  A window will pop up. It shows your input parameters and the script execution results. Check the {% link_new saved employee requirement in the Shift Center | features/scheduling/employee-requirement.md %}.
+  A window will pop up. It shows your input parameters and the script execution results. Check the {% link_new saved employee requirement in the Shift Center | features/scheduling/edit-or-delete-staff-requirements.md %}.
 
 {{ 1 | image: 'Chat Script UI', '80%' }}

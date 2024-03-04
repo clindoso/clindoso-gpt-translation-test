@@ -20,7 +20,7 @@ Wähle eine **Planungseinheit** aus,  um entsprechend den Mitarbeiterbedarf, die
 
 Die Tabelle enthält die folgenden Zeilen:  
 
-- *Mitarbeiterbedarf*: Die Summe aller Mitarbeiterbedarfe für alle Aktivitäten der ausgewählten Planungseinheit. Stelle sicher, dass Du zuerst die Mitarbeiterbedarfe für alle Aktivitäten der Planungseinheit im *Forecast-Modul* {% link_new berechnest und speicherst | features/forecast/injixo-forecast/staff-requirement.md %}. Ansonsten werden die Mitarbeiterbedarfe hier nicht angezeigt.
+- *Mitarbeiterbedarf*: Die Summe aller Mitarbeiterbedarfe für alle Aktivitäten der ausgewählten Planungseinheit. Stelle sicher, dass Du zuerst die Mitarbeiterbedarfe für alle Aktivitäten der Planungseinheit im *Forecast-Modul* {% link_new berechnest und speicherst | features/forecast/injixo-forecast/calculate-staff-requirements.md %}. Ansonsten werden die Mitarbeiterbedarfe hier nicht angezeigt.
 - *Vertragskapazität*: Die Summe der vertraglichen Soll-Arbeitsstunden aller Mitarbeiter der ausgewählten Planungseinheit. Es werden alle Mitarbeiter mit Vertrag berücksichtigt. Abwesenheiten haben keinen Einfluss auf die Zahlen. Die Zahlen basieren auf der Sollarbeitszeit pro Woche, die für jeden Vertrag im Abschnitt {% link_new Arbeitszeitvorgaben | features/administration/create-contracts.md | #arbeitszeitvorgaben %} definiert ist.
 - *Potentielle Deckung*: Die Differenz der Werte für *Vertragskapazität* und *Mitarbeiterbedarf*.
 

@@ -12,7 +12,7 @@ Für jede Aktivität werden abhängig vom Aktivitätstyp Werte zum Mitarbeiterbe
 ## Queues
 
 Alle Queues, die Du in der *Administration*{:.menu-item} angelegt hast, sowie alle exportierten Workloads werden unter Queues gelistet.
-Die verfügbaren Kennzahlen sind die der Queue zugeordneten *Wertetypen*{:.menu-item}. Für jede Kennzahl kannst Du auswählen, welche Version ausgegeben werden soll. Dabei stehen Dir die Informationen aus den Versionen Historisch (z.B. für den Import aus der ACD), Forecast (für ForecastPro) und Auto-Forecast (für injixo Forecast) zur Verfügung.
+Die verfügbaren Kennzahlen sind die der Queue zugeordneten *Wertetypen*{:.menu-item}. Für jede Kennzahl kannst Du auswählen, welche Version ausgegeben werden soll. Dabei stehen Dir die Informationen aus der Version **Historisch** (z.B. für den Import aus der ACD) bzw. der Option **Forecast** zur Verfügung.
 
 ## Aktivitäten
 

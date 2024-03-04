@@ -21,10 +21,10 @@ Neu in injixo Forecast? Lerne zuerst {% link_new die Grundlagen | features/forec
 
 ## Was sind Forecast-Versionen?
 
-Da der Forecast ständig aktualisiert wird, zeigt der *Auto-Forecast* immer den  aktuellsten verfügbaren Forecast für Deinen Workload an.
+Da der Forecast ständig aktualisiert wird, zeigt die Option **Forecast** immer den  aktuellsten verfügbaren Forecast für Deinen Workload an.
 
 Mit Forecast-Versionen kannst Du:
-- bestimmte Teile des *Auto-Forecasts* zu einem bestimmten Zeitpunkt speichern.
+- bestimmte Teile der Option **Forecast** zu einem bestimmten Zeitpunkt speichern.
 - den gespeicherten Forecast mit den aktuellen Werten vergleichen.
 - den ursprünglichen Forecast, z. B. bevor Du Ereignisse hinzufügst, mit dem aktuellen Forecast vergleichen.
 
@@ -32,9 +32,9 @@ Die folgenden Forecast-Versionen sind verfügbar:
 - *Operativ*: speichere den Forecast, den Du als Grundlage für die Schichtplanung verwendest, bevor Du den Bedarf berechnest
 - *Strategisch*: speichere langfristige Forecasts, die für die Kapazitätsplanung verwendet werden
 
-Änderungen am *Auto-Forecast* überschreiben nicht die in einer Forecast-Version gespeicherten Daten.
+Änderungen am **Forecast** überschreiben nicht die in einer anderen Forecast-Version gespeicherten Daten.
 
-## Speichere den *Auto-Forecast* in einer Forecast-Version
+## Speichere den Forecast in einer Version
 
 1. Gehe zu *Forecast*{:.menu-item}.
 2. Wähle einen **Workload**.
@@ -56,14 +56,14 @@ Du kannst diese in den Volumen- und AHT-Diagrammen innerhalb der Tages-, Wochen-
 
 ## Versionsdaten für die Bedarfsberechnung verwenden
 
-Es gibt zwei Methoden der {% link_new Mitarbeiterbedarfsberechnung | features/forecast/injixo-forecast/staff-requirement.md %}: *Automatisch* und *Andere*. Je nachdem, welche Methode Du nutzt, musst Du unterschiedliche Schritte ausführen.
+Es gibt zwei Methoden der {% link_new Mitarbeiterbedarfsberechnung | features/forecast/injixo-forecast/calculate-staff-requirements.md %}: *Automatisch* und *Andere*. Je nachdem, welche Methode Du nutzt, musst Du unterschiedliche Schritte ausführen.
 
 So verwendest Du die Daten aus einer Forecast-Version für eine automatische Bedarfsberechnung:
 
 1. Gehe zu *Forecast*{:.menu-item}.
 2. Wähle einen **Workload**.
 3. Wähle mithilfe der Zeit-Navigation oberhalb einen **Zeitraum** aus, für den Du die Forecast-Version gespeichert hast.
-4. Wähle im Abschnitt *Mitarbeiterbedarf* die **Forecast-Version** aus dem ersten Dropdown-Menü über dem Diagramm. Du kannst auch den **Auto-Forecast** auswählen.
+4. Wähle im Abschnitt *Mitarbeiterbedarf* die **Forecast-Version** aus dem ersten Dropdown-Menü über dem Diagramm. Du kannst auch die Option **Forecast** auswählen.
 5. Klicke auf _Mitarbeiterbedarf verwenden_{:.doc-button}, um den aktuell sichtbaren Mitarbeiterbedarf für die Schichtplanung zu speichern.
 
 Wenn Du die Daten aus einer Forecast-Version in einer alternativen Methode verwenden möchtest, musst Du die Daten für diesen Zeitraum aus der Forecast-Version ins WFM übertragen:
@@ -72,7 +72,7 @@ Wenn Du die Daten aus einer Forecast-Version in einer alternativen Methode verwe
 2. Wähle einen **Workload**.
 3. Wähle mithilfe der Zeit-Navigation oberhalb einen **Zeitraum** aus, für den Du die Forecast-Version gespeichert hast.
 4. Klicke im Abschnitt *Volumen und AHT* auf _Forecast verwenden_{:.doc-button}.
-5. Wähle die **Forecast-Version** im Fenster *Forecast für den Mitarbeiterbedarf bereitstellen*. Du kannst auch den **Auto-Forecast** auswählen.
-6. Klicke auf *Diesen Forecast verwenden*{:.doc-button}, um die Versionsdaten in die WFM-Version zu übertragen, die auch *Auto-Forecast* heißt.
+5. Wähle die **Forecast-Version** im Fenster *Forecast für den Mitarbeiterbedarf bereitstellen*. Du kannst auch die Option **Forecast** auswählen.
+6. Klicke auf *Diesen Forecast verwenden*{:.doc-button}, um die Versionsdaten in die WFM-Version zu übertragen, die *Auto-Forecast* heißt.
 
 Jetzt kannst Du eine der alternativen Berechnungsmethoden basierend auf den Daten der Forecast-Version ausführen. Im Bedarfsskript musst Du die WFM-Version *Auto-Forecast* als *Version* auswählen.

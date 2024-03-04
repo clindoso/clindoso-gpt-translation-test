@@ -3,7 +3,7 @@ title: Linearbedarf
 toc: false
 related_articles:
   - overwrite_title: Add title for untranslated source
-    filepath: features/forecast/injixo-forecast/staff-requirement.md
+    filepath: features/forecast/injixo-forecast/calculate-staff-requirements.md
 ---
 
 Das Bedarfsskript *Bedarfsskript (linear)* verwendet eine lineare Berechnung, um auf Grundlage eines Forecasts den Mitarbeiterbedarf für lagerfähige Vorgänge, wie z.B. E-Mails oder Briefe, zu ermitteln.

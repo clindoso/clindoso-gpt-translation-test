@@ -11,7 +11,7 @@ related_articles:
   - overwrite_title: Add title for untranslated source
     filepath: features/administration/day-types.md
   - overwrite_title: Add title for untranslated source
-    filepath: features/scheduling/employee-requirement.md
+    filepath: features/scheduling/edit-or-delete-staff-requirements.md
   - overwrite_title: Add title for untranslated source
     filepath: features/scheduling/schedules/schedules-shift-bidding.md
 ---

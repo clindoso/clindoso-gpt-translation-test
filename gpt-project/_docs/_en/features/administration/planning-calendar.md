@@ -1,6 +1,6 @@
 ---
-title: Create and use planning calendars
-description: Set up planning calendars to automatically adjust your operating hours for holidays and other days with special business hours.
+title: Configure planning calendars
+description: Configure planning calendars to automatically adjust your standard business hours for days with different business hours.
 product_label:
   - advanced
   - enterprise
@@ -14,79 +14,50 @@ related_articles:
     filepath: best-practices/scheduling-public-holidays.md
 ---
 
-In this article, you will learn:
+In a planning calendar, you can use {% link_new day types | features/administration/day-types.md %} to mark days with special business hours or staffing needs (e.g. marketing campaign days or public holidays). This way, you can ensure these days are automatically considered during scheduling. If you add a day type to the planning calendar, it overwrites the standard business hours for that day. You can create different planning calendars for different planning units or regions, for example, if those have different opening hours or public holidays.
 
-- what planning calendars are and how they work.
-- how to create, edit, copy and delete them.
-- how to add public holidays and day types.
-- how to use a planning calendar for scheduling.
+## Configure a planning calendar
 
-## What is a planning calendar?
+Prerequisite: Before you configure a planning calendar, make sure that you have created the relevant custom {% link_new day types | features/administration/day-types.md %} you want to add to it.
 
-With a planning calendar, you can mark days with different opening hours and staffing needs (e.g. marketing campaign days or public holidays) to ensure they are automatically considered during scheduling.
+1. Go to _Plan > Configuration > Planning calendar_{:.breadcrumbs}.
+2. In the action bar, click the New icon {% icon item-add | icon-only %}.
+3. Configure the planning calendar:
+    - **Year**: Specify for which year you want to use the planning calendar.<br>To create a planning calendar that spans more than one year, for example, if you create schedules that span more than one year, use _<_{:.doc-button} and _>_{:.doc-button} to navigate to a past or future year. Then, configure each year's calendar separately.
+    - **Calendar Template**: Select the public holiday region and click _Apply_{:.doc-button}.<br>The planning calendar is automatically filled with the public holidays of your selected region or country.<br>If you want to include more than one region in one planning calendar, repeat this step for every region you want to add.<br>Note: Each cell in the planning calendar can only contain one public holiday. If you select a template that includes a public holiday on the same day as a previously selected template, cells that already contain a public holiday entry are overwritten.
+    - **Insert Day Type**: From the drop-down menu, select the custom day type and click every calendar cell you want to add the day type to.<br>Note: You can only assign one day type per day. If you click a cell that already contains a day type, it is overwritten. If you want to include more than one custom day type in one planning calendar, repeat this step for every day type that you want to add.
+4. In the action bar, click the Save as icon _![save as button](/assets/img/common/saveas.gif)_{:.doc-button-icon}.
+5. In the confirmation window, enter a name for the calendar and click _OK_{:.doc-button}.
 
-The days are marked using {% link_new day types | features/administration/day-types.md %}. If you enter a day type in the planning calendar, it overwrites the opening hours of the normal weekday (Mon-Sun) for that day.
+## Remove day types from the planning calendar
 
-It might make sense to create different planning calendars for different planning units or regions. A calendar can span multiple years.
+If your planning unit is closed on certain days and your people do not receive any holiday pay for those days, make sure that those days are not included in your planning calendar as {% link_new day types with holiday mode | features/administration/day-types.md | #holiday-mode %}. If you do not remove those day types from your planning calendar, injixo reduces the target working time for that week and people are scheduled for fewer hours. Learn more about how to {% link_new schedule public holidays | best-practices/scheduling-public-holidays.md | #closed-use-the-planning-calendar %}.
 
-{{ 1 | image: 'empty planning calendar' }}
+To remove day types from the planning calendar, proceed as follows:
+1. Go to _Plan > Configuration > Planning calendar_{:.breadcrumbs}.
+2. To remove individual day types, click **Delete**.
+3. Click every cell in the planning calendar from which you want to remove the day type.
+4. (Optional) To delete all entries in the calendar for the currently selected year, click _Clear Year_{:.doc-button}.
+5. (Optional) To delete all entries in the calendar for the entire time range, click _Delete All_{:.doc-button}.
+5. Click the Save icon _![save button](/assets/img/common/save.gif)_{:.doc-button-icon}.
 
-## Create a planning calendar
 
-1. Go to _WFM > Administration > Scheduling > Planning Calendar_{:.breadcrumbs}
-2. Click the {% icon item-add %} in the action bar. Start editing the empty calendar below.
-3. Click _![save as button](/assets/img/common/saveas.gif)_{:.doc-button-icon} in the action bar to save the empty calendar.
-4. Enter a **Name** for the calendar and click _Ok_{:.doc-button}.
+## Edit an existing planning calendar
 
-Now you can automatically add the public holidays of your region and single day types.
+1. Go to _Plan > Configuration > Planning calendar_{:.breadcrumbs}.
+2. From the **Calendar** drop-down menu in the action bar, select the calendar you want to edit.<br>If you want to copy a planning calendar before editing, for example to use the same template and day types but for a different year, click the Save as icon _![save as button](/assets/img/common/saveas.gif)_{:.doc-button-icon} in the action bar.
+3. When you have completed your changes, click the Save icon _![save button](/assets/img/common/save.gif)_{:.doc-button-icon}.
 
-### Add the public holidays of your region
+## Use a planning calendar for scheduling
 
-1. Go to in _WFM > Administration > Scheduling > Planning Calendar_{:.breadcrumbs}
-2. Select the **Year** for which you want to add public holidays.
-3. Select your country and region from the drop-down menu below **Calendar Template**.
-4. Click _Apply_{:.doc-button} to insert all public holidays from the template. Repeat steps 1 to 3 if you want to add the public holidays of another region or if you want to add the same public holidays to another year. Note that if you insert the public holidays of another template, some days that already contained public holidays can be overwritten with the new data.
-5. Click _![save button](/assets/img/common/save.gif)_{:.doc-button-icon} in the action bar to save the calendar.
+To use a planning calendar for scheduling, proceed as follows:
 
-When you insert a calendar template, injixo automatically creates the {% link_new day types | features/administration/day-types.md %} for all special days included in the template if they do not exist yet.
+1. Go to _Plan > Configuration > Planning units_{:.breadcrumbs}.
+2. Select the planning unit to which you want to assign the planning calendar.
+2. In the **Planning Calendar** section, click the New icon {% icon item-add | icon-only %}.
+3. In the **Planning Calendar** configuration window, select a planning calendar.<br>You can choose a single calendar that spans several years, for example if you create a schedule that exceeds one year. If you want to assign different planning calendars for each year, choose one calendar at a time and use the **Valid from** and **Valid To** fields to set the time period when it should be used. Note that single-year planning calendars only work for single-year schedules.
+4. Click _OK_{:.doc-button}
 
-The inserted days are automatically configured as public holidays by activating the _Holiday Mode_ in the settings of the day type. If you want to treat a certain public holiday as a normal workday in the working time calculation, deactivate the public holiday mode manually at _WFM > Administration > Scheduling > Day Types_{:.breadcrumbs}.
-
-On days where your planning unit is closed but employees do not receive holiday pay, you should delete day types with holiday mode from the calendar. Otherwise, injixo will reduce the target working time for this week and employees will be scheduled for fewer hours than normal.
-
-### Add custom day types to the planning calendar
-
-Make sure you first {% link_new create the day types | features/administration/day-types.md %} you want to add.
-
-1. Select **Insert Day Type**.
-2. Select the **day type** you want to add from the drop-down menu.
-3. To add the day type to a day, click a **day cell** within the planning calendar. You can only assign one day type per day. If you click a cell that already contains a day type, it will be overwritten.
-4. You can use _![undo button](/assets/img/common/undo.gif)_{:.doc-button-icon} and _![redo button](/assets/img/common/redo.gif)_{:.doc-button-icon} in the action bar to undo and redo your changes.
-5. Repeat the process for other day types you want to add.
-6. Click _![save button](/assets/img/common/save.gif)_{:.doc-button-icon} in the action bar to save the calendar.
-
-### Remove day types from the planning calendar
-
-Remove day types from the planning calendar using one of these options:
-
-- Select the option **Delete** and then click a cell within the planning calendar to delete its day type.
-- Click the **Clear Year** button to delete the calendar content for the displayed year.
-- Click the **Delete All** button to delete the calendar content for the entire calendar time range.
-
-## Modify or copy an existing planning calendar
-
-1. Use the **Calendar** drop-down menu in the action bar to select a calendar of your choice. To copy a planning calendar before editing, click _![save as button](/assets/img/common/saveas.gif)_{:.doc-button-icon} in the action bar.
-2. Add or remove day types, or insert a calendar template with public holidays as described above. You can also rename the calendar by clicking _![edit button](/assets/img/common/item-edit.gif)_{:.doc-button-icon} in the action bar.
-3. Click _![save button](/assets/img/common/save.gif)_{:.doc-button-icon} to save the calendar.
-
-## Use a planning calendar for planning
-
-To use a planning calendar, assign it to a planning unit under _WFM > Administration > Scheduling > Planning Units_{:.breadcrumbs}:
-
-1. Select the **Planning Unit**.
-2. Scroll to the **Planning Calendar** section.
-3. Click the {% icon item-add %}.
-4. Choose a **Planning Calendar**. You can assign a single calendar which contains several years. If you want to assign different planning calendars for each year, choose each calendar one at a time and use **Valid from** and **Valid To** to set the time period when it should be used.
-5. Click _Ok_{:.doc-button}
-
-If your planning unit contains subordinate planning units, the planning calendar is _not_ automatically assigned to them. If required, assign the planning calendar manually.
+> Note
+>
+> If your planning unit contains children planning units, the planning calendar is not automatically assigned to them. If required, assign the planning calendar manually to each child planning unit.

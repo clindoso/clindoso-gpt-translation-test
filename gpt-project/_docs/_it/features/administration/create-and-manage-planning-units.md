@@ -18,14 +18,22 @@ redirect_from:
 redirect_reason: Updated filename on 21 July 2023
 ---
 
-Le unità di pianificazione raggruppano i dipendenti e i dati di configurazione ai fini della pianificazione. Le sedi della tua organizzazione non devono necessariamente corrispondere alle unità di pianificazione. Per esempio, dei dipendenti che lavorano in due sedi diverse possono essere {% link_new assegnati | features/administration/employee-overview.md | #configurare-le-impostazioni-del-dipendente %} alla stessa unità di pianificazione. Consigliamo di utilizzare un’unica unità di pianificazione, tranne che nei casi seguenti:
+Le unità di pianificazione raggruppano i dipendenti e i dati di configurazione ai fini della pianificazione. Le sedi della tua organizzazione non devono necessariamente corrispondere alle unità di pianificazione. Per esempio, dei dipendenti che lavorano in due sedi diverse possono essere {% link_new assegnati | features/administration/employee-overview.md | #configurare-le-impostazioni-del-dipendente %} alla stessa unità di pianificazione.
 
-- I dipendenti si trovano in fusi orari diversi. In questo caso, utilizza un'unità di pianificazione per ogni fuso orario.
-- I pianificatori della tua organizzazione sono responsabili di gruppi distinti di dipendenti, per esempio, per diversi dipartimenti dell’azienda.
-
-injixo Advanced e Enterprise WFM prevedono ruoli utente personalizzati per limitare l’accesso alle varie unità di pianificazione.
-
-Se lavori con diverse unità di pianificazione, puoi cambiare temporaneamente l’assegnazione di un dipendente. Scopri come {% link_new trasferire temporaneamente un dipendente | features/administration/employee-overview.md | #trasferire-temporaneamente-i-dipendenti %} a un'altra unità di pianificazione.
+## Quante unità di pianificazione dovrei utilizzare?
+	
+Per ottimizzare il lavoro, puoi pianificare i dipendenti che lavorano in sedi o team diversi in una sola unità di pianificazione utilizzando i {% link_new gruppi di selezione | features/administration/selections.md %}. Utilizza più unità di pianificazione nei seguenti casi:
+-  I dipendenti si trovano in fusi orari diversi.
+-  I pianificatori sono responsabili soltanto per gruppi distinti di dipendenti, per esempio i vari dipartimenti dell’azienda. In injixo Advanced e Enterprise WFM, utilizza i ruoli utente personalizzati per {% link_new limitare l’accesso alle unità di pianificazione | getting-started/configure-user-roles.md | #gestire-laccesso-ai-team-limitare-laccesso-ai-dati-di-configurazione %}.
+- Hai un fabbisogno di personale condiviso, per esempio per gestire il sovraccarico.
+- Se vuoi generare report che includono dati provenienti da diverse unità di pianificazione.
+	
+> Consigli per lavorare con più unità di pianificazione
+>
+> - Per poter analizzare i numeri riguardanti unità di pianificazione diverse, aggiungi un’unità di pianificazione superiore a tutte le unità di pianificazione rilevanti.
+> - È possibile modificare temporaneamente l’assegnazione di un dipendente da un’unità di pianificazione a un’altra.<br>Scopri come {% link_new trasferire temporaneamente un dipendente | features/administration/employee-overview.md | #trasferire-temporaneamente-i-dipendenti %} a un’altra unità di pianificazione.
+	
+<!-- Typically, you assign one planning unit to a person at a time. Reassign a planning unit using valid from and valid to dates in the employee configuration. In rare cases, you will need to assign more than one planning unit to a person. The person's main planning unit is assigned with priority 1. The person is scheduled in this main planning unit. A person's schedule will be displayed in other planning units with lower priority. You can also manually reschedule people in other planning units if needed. -->
 
 ## Creare un’unità di pianificazione
 
@@ -50,11 +58,11 @@ Se lavori con diverse unità di pianificazione, puoi cambiare temporaneamente l�
 
 ### Aggiungere gli orari di apertura
 
-Per aggiungere gli orari di apertura a un’unità di pianificazione, è necessario prima {% link_new crearla | features/administration/create-and-manage-planning-units.md | #creare-ununità-di-pianificazione %}.
+Per poter aggiungere degli orari di apertura a un’unità di pianificazione, è necessario prima {% link_new crearla | features/administration/create-and-manage-planning-units.md | #creare-ununità-di-pianificazione %}.
 
-Per poter pianificare, devi aggiungere gli orari di apertura alla tua unità di pianificazione. Gli orari di apertura definiscono l’intervallo giornaliero per il quale è possibile {% link_new calcolare il fabbisogno di personale | features/forecast/injixo-forecast/staff-requirement.md %} e {% link_new creare pianificazioni ottimizzate | features/scheduling/schedules/schedules-optimized-schedules.md %}. <!-- special public holiday day types or part of the linked article? -->
+Per la pianificazione è necessario aggiungere gli orari di apertura ai tipi di giorno inclusi nell’unità di pianificazione. Gli orari di apertura definiscono le ore per le quali puoi {% link_new calcolare il fabbisogno di personale | features/forecast/injixo-forecast/calculate-staff-requirements.md %} e {% link_new creare pianificazioni ottimizzate | features/scheduling/schedules/schedules-optimized-schedules.md %}. <!-- special public holiday day types or part of the linked article? -->
 
-1. Nella sezione **Orari di apertura** del pannello di configurazione dell’unità di pianificazione, clicca sull’icona Aggiungi {% icon item-add | icon-only %} per aggiungere gli orari di apertura per alcuni tipi di giorno.  
+1. Nella sezione **Orari di apertura** del pannello di configurazione, clicca sull’icona Aggiungi {% icon item-add | icon-only %}.  
    Si aprirà una finestra.
 2. Nella sezione **Tipo di giorno**, seleziona uno o più {% link_new tipi di giorno | features/administration/day-types.md %}.
 3. Inserisci gli orari di inizio e di fine nei campi **dalle** e **alle** (nel formato 24 ore). Se l’unità di pianificazione è aperta 24 ore su 24, inserisci 00:00 in entrambi i campi.
@@ -65,20 +73,21 @@ Per modificare o rimuovere gli orari di apertura, clicca sull’{% icon item-edi
 
 ### Aggiungere le attività
 
-Per aggiungere delle attività a un’unità di pianificazione, è necessario prima {% link_new crearla | features/administration/create-and-manage-planning-units.md | #creare-ununità-di-pianificazione %}.
+Per poter aggiungere delle attività a un’unità di pianificazione, è necessario prima {% link_new creare l’unità di pianificazione | features/administration/create-and-manage-planning-units.md | #creare-ununità-di-pianificazione %}.
 
-Per poter pianificare, devi aggiungere delle attività alle unità di pianificazione. Puoi pianificare i dipendenti soltanto per le attività che sono state aggiunte all’unità di pianificazione. Per impostazione predefinita, tutte le unità di pianificazione includono l’attività Presente. Non è possibile eliminare l’attività Presente.
+Prima di creare le pianificazioni, devi aggiungere tutte le relative attività del tipo Presenza alle unità di pianificazione. Puoi pianificare i dipendenti soltanto per le attività che sono state aggiunte alla loro unità di pianificazione. Per impostazione predefinita, tutte le unità di pianificazione includono l’attività Presente, che non può essere eliminata.
+Per includere attività di qualsiasi tipo nei report, aggiungi le attività alle relative unità di pianificazione.
 
 Per aggiungere delle attività all’unità di pianificazione, procedi come di seguito:
 
 1. Nella sezione **Attività** del pannello di configurazione dell’unità di pianificazione, clicca sull’icona Aggiungi {% icon item-add | icon-only %}.  
    Si aprirà una finestra.
 2. Clicca sull’attività che vuoi aggiungere.
-3. (Facoltativo) Inserisci degli orari nei campi **dalle** e **alle**. La funzionalità {% link_new Crea una pianificazione ottimizzata | features/scheduling/schedules/schedules-optimized-schedules.md %} terrà conto di quest’attività all’interno dell’intervallo che hai configurato. Se entrambi i campi hanno il valore 00:00, injixo terrà conto degli orari di apertura dell’unità di pianificazione. Gli utenti con accesso amministratore possono modificare questo comportamento con l’impostazione _48408_{:.id-label} _Osservare gli orari di apertura dell'unità pianificativa_.
-4. (Facoltativo) Inserisci un periodo nei campi **Validità dal** e **fino al** per definire il periodo in cui l’attività può essere utilizzata per la pianificazione. Per rendere l’attività sempre disponibile per la pianificazione, lascia vuoti i campi **Validità dal** e **fino al**.
+3. Inserisci un intervallo di tempo nei campi **dalle** e **alle**. La funzionalità {% link_new Crea una pianificazione ottimizzata | features/scheduling/schedules/schedules-optimized-schedules.md %} terrà conto di quest’attività all’interno dell’intervallo che hai configurato. Se entrambi i campi hanno il valore 00:00, injixo terrà conto degli orari di apertura dell’unità di pianificazione. Gli utenti con accesso amministratore possono modificare questo comportamento con l’impostazione _48408_{:.id-label} _Osservare gli orari di apertura dell'unità pianificativa_.
+4. (Facoltativo) Inserisci un periodo nei campi **Validità dal** e **fino al** per definire il periodo in cui l’attività può essere utilizzata per la pianificazione.<br>Per rendere l’attività sempre disponibile per la pianificazione, lascia vuoti i campi **Validità dal** e **fino al**.
 5. Clicca su _OK_{:.doc-button}.
 
-Per modificare o eliminare un’attività, clicca sull’{% icon item-edit %} o sull’{% icon item-delete %}.
+Per modificare un'attività clicca sull’{% icon item-edit %}; per eliminarla, clicca sull’{% icon item-delete %}.
 
 ### Aggiungere le multiattività
 
@@ -88,31 +97,29 @@ Per aggiungere una {% link_new multiattività | features/administration/activity
 
 Per impostazione predefinita, alle unità di pianificazione sono assegnati tutti i {% link_new modelli di orario | features/administration/daymodels/daymodel-creation.md %}. Se per una unità di pianificazione non utilizzi tutti i modelli di orario, puoi limitare il numero di modelli di orario per quell’unità di pianificazione.
 
-Limitare i modelli di orario può velocizzare il processo di pianificazione con la funzionalità **Crea una pianificazione ottimizzata**. Però potrai utilizzare soltanto i modelli di orario rimanenti per generare turni, report e pianificazioni ottimizzate. Questo potrebbe comportare una manutenzione più impegnativa per gli altri dati di configurazione, per esempio i modelli settimanali. Eliminare un modello di orario in uso non influisce sulle pianificazioni e sui turni creati con quel modello di orario.
+Limitare i modelli di orario può velocizzare il processo di pianificazione con la funzionalità Crea una pianificazione ottimizzata. Però potrai utilizzare soltanto i modelli di orario che sono assegnati all’unità di pianificazione per creare turni, generare report o creare pianificazioni ottimizzate. Questo potrebbe comportare una manutenzione più impegnativa per gli altri dati di configurazione, per esempio i modelli settimanali. Eliminare un modello di orario non influisce sulle pianificazioni e sui turni creati con quel modello di orario.
 
 > Nota
-> 
-> Se elimini tutti i modelli di orario dall’unità di pianificazione, potrai pianificare i turni soltanto aggiungendo manualmente le attività alla pianificazione, oppure {% link_new inserendo le attività nelle rotazioni | features/administration/shift-sequences.md %}. Tutti gli altri approcci alla pianificazione, per esempio l’utilizzo della funzionalità **Crea una pianificazione ottimizzata** o dei modelli di pianificazione, non funzioneranno.
+>
+> Se elimini tutti i modelli di orario dall’unità di pianificazione, potrai pianificare le attività solo manualmente, oppure {% link_new inserendole nelle rotazioni | features/administration/shift-sequences.md %}. Non potrai più utilizzare la funzionalità **Crea una pianificazione ottimizzata**.
 
 Per limitare il numero di modelli di orario, procedi come di seguito:
 
 1. Vai su _Plan > Configurazione > Unità di pianificazione_{:.breadcrumbs}.
-2. Seleziona l’unità di pianificazione che vuoi modificare e scorri fino alla sezione **Modelli di orario**.
-3. Clicca sull’{% icon item-edit %} accanto all’opzione prestabilita **[Tutti]** e seleziona un modello di orario. Puoi anche cliccare sull’{% icon item-delete %} per eliminare l’opzione **[Tutti]**. Per restringere il numero di modelli di orario, devi sostituire o eliminare l’opzione **[Tutti]**. Non è possibile aggiungere dei modelli di orario a un’unità di pianificazione più di una volta.  
-   Salta il passaggio 3 se vuoi assegnare altri modelli di orario in seguito.
-4. Clicca sull’icona Aggiungi {% icon item-add | icon-only %} per assegnare uno o più modelli di orario.
-5. Clicca su _OK_{:.doc-button}.
-
-Per modificare o eliminare un modello di orario, clicca sull’{% icon item-edit %} o sull’{% icon item-delete %}.
+2. Seleziona l’unità di pianificazione che vuoi modificare e scorri fino alla sezione **Modelli di orario** del pannello di configurazione.
+3. Per limitare il numero di modelli di orario, sostituisci o elimina l’assegnazione prestabilita dei modelli di orario.
+   - Clicca sull’{% icon item-edit %} accanto all’opzione **[Tutti]** e seleziona un modello di orario.
+   - Clicca sull’{% icon item-delete %} per deselezionare l’opzione **[Tutti]**.
+4. Clicca sull’icona Aggiungi {% icon item-add | icon-only %} per assegnare uno o più modelli di orario. Non è possibile assegnare due volte lo stesso modello di orario. Per modificare o eliminare un modello di orario in uso, clicca sull’{% icon item-edit%} o sull’{% icon item-delete %}.
+5. Clicca su _Ok_{:.doc-button}.
 
 ## Eliminare un’unità di pianificazione
 
 > Attenzione
 >
-> Se elimini un’unità di pianificazione, anche le pianificazioni corrispondenti verranno eliminate.
+> Se elimini un’unità di pianificazione non avrai più accesso alle relative pianificazioni.
 
 1. Vai su _Plan > Configurazione > Unità di pianificazione_{:.breadcrumbs}.
-2. Clicca sull’unità di pianificazione che vuoi eliminare.
-3. Per assicurarti che i dati di pianificazione vengano ancora visualizzati correttamente, prima di eliminare un’unità di pianificazione elimina le attività e rimuovi i modelli di orario che le sono assegnati.
-4. Clicca sull’{% icon item-delete %} in alto a sinistra.
-5. Per confermare, clicca su _Sì_{:.doc-button}.
+2. Seleziona l’unità di pianificazione che vuoi eliminare.
+3. Clicca sull’{% icon item-delete %} in alto a sinistra.
+4. Per confermare, clicca su _Sì_{:.doc-button}.

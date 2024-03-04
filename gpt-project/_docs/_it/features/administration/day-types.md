@@ -42,9 +42,9 @@ Per contrassegnare un giorno come festivo, spunta la casella **Modalità festivi
 
 Hai due opzioni per creare i tipi di giorno per le festività nazionali:
 
-- Creare tipi di giorno con modalità festività e {% link_new aggiungerli al calendario pianificativo | features/administration/planning-calendar.md | #add-custom-day-types-to-the-planning-calendar %}.
+- Creare tipi di giorno con modalità festività e {% link_new aggiungerli al calendario pianificativo | features/administration/planning-calendar.md | #configure-a-planning-calendar %}.
 
-- Aggiungere un {% link_new modello di calendario | features/administration/planning-calendar.md |#add-the-public-holidays-of-your-region %} al tuo calendario pianificativo. Quest’azione creerà automaticamente dei tipi di giorno con modalità festività attiva per i giorni festivi inclusi nel modello di calendario.
+- Aggiungere un {% link_new modello di calendario | features/administration/planning-calendar.md |#configure-a-planning-calendar %} al tuo calendario pianificativo. Quest’azione creerà automaticamente dei tipi di giorno con modalità festività attiva per i giorni festivi inclusi nel modello di calendario.
 
 La modalità festività comporterà una riduzione delle ore di lavoro dei dipendenti. Se decidi di pianificare un giorno festivo come un normale giorno lavorativo, puoi sempre disattivare la modalità festività, {% link_new modificando il tipo di giorno | features/administration/day-types.md | #modificare-un-tipo-di-giorno %}.
 

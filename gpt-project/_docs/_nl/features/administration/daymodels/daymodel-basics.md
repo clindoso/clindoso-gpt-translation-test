@@ -62,7 +62,7 @@ De totale tijd van een ingeplande dienst inclusief pauzes is de bruto dienstduur
 De lengte van een dagmodel moet voldoen aan de werkuren in je {% link_new contracten | features/administration/create-contracts.md %}.
 Voor een contract van 40 werkuren per week, verdeeld over 5 weekdagen, is een dagmodel nodig met een nettowerktijd van 8 uur per dag. Voor een contract van 37,5 uur per week is een dagmodel met 7,5 uur nodig.
 
-Gebruik de activiteit Aanwezigheid als basisactiviteit en zorg ervoor dat deze is geconfigureerd als Vervangbaar. Vervolgens kunnen de functionaliteiten Joboptimalisatie en Geoptimaliseerde planning maken de activiteit Aanwezigheid door andere activiteiten vervangen, zolang ze een {% link_new berekende personeelsbehoefte | features/forecast/injixo-forecast/staff-requirement.md %} hebben en geconfigureerd zijn als Planbaar.
+Gebruik de activiteit Aanwezigheid als basisactiviteit en zorg ervoor dat deze is geconfigureerd als Vervangbaar. Vervolgens kunnen de functionaliteiten Joboptimalisatie en Geoptimaliseerde planning maken de activiteit Aanwezigheid door andere activiteiten vervangen, zolang ze een {% link_new berekende personeelsbehoefte | features/forecast/injixo-forecast/calculate-staff-requirements.md %} hebben en geconfigureerd zijn als Planbaar.
 
 ### Gefixeerde elementen versus corridors
 

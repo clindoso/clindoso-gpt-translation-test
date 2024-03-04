@@ -1,72 +1,65 @@
 ---
-title: Mit Diagrammen arbeiten
+title: Diagramme verwenden
 product_label:
   - essential
   - advanced
   - enterprise
   - classic
-description: Lerne wie Du mit Diagrammen in einem Dashboard arbeitest.
+description: Erfahre, wie du Diagramme in einem Dashboard verwendest.
 related_articles:
   - overwrite_title: Add title for untranslated source
     filepath: features/monitoring/dashboards/dashboards-examples.md
 ---
 
-In diesem Artikel lernst Du:
-- wie Du den Datumsbereich änderst.
-- wie Du hinein- und hinauszoomst.
-- wie Du die Tabellenansicht verwendest und Daten kopierst.
-- wie Du Zeitreihen hervorhebst oder ausblendest.
-- wie Du Zeitreihen anpasst oder löschst.
+Unter _Analyze > Dashboards_{:.breadcrumbs} kannst du mit Diagrammen und Zeitreihen deine Daten analysieren. Wähle dafür als erstes oben aus dem Dropdown-Menü ein Dashboard aus.
 
-Um die beschriebenen Funktionen zu nutzen, musst Du ein Dashboard auswählen. Neu in Dashboards? Lerne zuerst {% link_new die Grundlagen | features/monitoring/dashboards/dashboards-overview.md %}.
+Neu bei Dashboards? Lerne zuerst {% link_new die Grundlagen | features/monitoring/dashboards/dashboards-overview.md %}.
 
-## Datumsbereich ändern
+## Diagramme im Überblick
 
-Lege oben rechts in jedem Diagramm einen fixen **Zeitbereich** für die Anzeige fest oder aktiviere zusätzlich **Rollierender Zeitraum** (optional). In diesem Modus wird das Startdatum jeden Tag um einen Tag verschoben.
+Du kannst unter **Dashboards** folgende Aktionen ausführen:
 
-## Hinein- und Hinauszoomen
+- Datumsbereich für die Datenanzeige ändern: Wähle für jedes Diagramm oben rechts aus der Datumsauswahl einen Datumsbereich aus.
+- In einem Diagramm zoomen: Klicke und ziehe die Stelle, die du dir näher ansehen möchtest. 
+- Herauszoomen: Klicke auf _Zoom zurücksetzen_{:.doc-button}.
+- Zur Tabellenansicht wechseln: Klicke oben rechts in einem Diagramm auf das Tabelle-anzeigen-Icon {% icon table-list | icon-only %}.
+- Zur Diagrammansicht zurückkehren: Klicke auf das Diagramm-anzeigen-Icon {% icon chart-view | icon-only %}.
+- Daten in die Zwischenablage kopieren: Klicke auf das Tabelle-in-Zwischenablage-kopieren-Icon {% icon clone | icon-only %}.
 
-Betrachte Diagramme detaillierter mit der Zoomfunktion. Markiere dazu einfach mit der Maus in einem Diagramm den Bereich, der Dich interessiert. Klicke auf *Zoom zurücksetzen*{:.doc-button}, um wieder den gesamten Zeitrahmen zu sehen.
+> Hinweis
+>
+> Die Datums- und Zeitinformationen werden gemäß deinen injixo-Spracheinstellungen angezeigt. Dies kann zu Problemen führen, wenn du von injixo kopierte Daten in ein Excel- oder Google Sheets-Dokument einfügst, das eine andere Sprache verwendet.
 
-## In die Tabellenansicht wechseln
+## Zeitreihen verwenden
 
-Als Alternative zur grafischen Darstellung zeigt die Tabellenansicht Zeitstempel und Werte für jedes Diagramm. Wechsele zwischen Diagramm- und Tabellenansicht, indem Du auf _![Tabellenansicht](/assets/img/common/dashboards/table.png)_{:.doc-button-icon} über einem Diagramm klickst.
+Zeitreihen sind Folgen von Datenpunkten, die in regelmäßigen Intervallen aufgezeichnet werden. Die folgenden Teilabschnitte erklären, wie du Zeitreihen in **Dashboards** verwenden und anpassen und damit deine Daten analysieren kannst, um informierte Entscheidungen zu treffen.
 
-### Daten in die Zwischenablage kopieren
+### Zeitreihen hervorheben
 
-Die Tabellenansicht bietet eine Kopierfunktion. Klicke auf _![Tabelle kopieren](/assets/img/common/dashboards/copy.png)_{:.doc-button-icon} und füge die Daten dann per Copy & Paste in Deine Tabellenkalkulation ein. Die erste Spalte enthält Datum und Uhrzeit, Du musst Formeln in Deiner Tabellenkalkulation nutzen, um beide zu trennen.
+Um eine bestimmte Zeitreihe vorübergehend hervorzuheben, bewege in der Diagrammansicht den Mauszeiger über den Namen der Zeitreihe in der Legende. Alle anderen Zeitreihen treten dann in den Hintergrund.
 
-Hinweis: Die Datums- und Zeitangaben werden entsprechend Deiner injixo-Spracheinstellungen lokalisiert, was problematisch sein könnte, wenn Du die Daten von Deinem Tenant in eine Excel oder Google-Sheets-Version kopierst, die eine andere Sprache verwendet.
+### Zeitreihen ein- und ausblenden
 
-## Zeitreihen hervorheben
+Um Zeitreihen ein- und auszublenden, klicke neben dem Namen in der Legende auf das {% icon eye %} bzw. das {% icon eye_slash %}.
 
-Um eine bestimmte Zeitreihe temporär hervorzuheben, bewege den Mauszeiger über den **Namen der Zeitreihe** in der Legende. Alle anderen Zeitreihen treten dann in den Hintergrund.
+### Zeitreihen anpassen
 
-## Zeitreihen ein- und ausblenden
+1. Gehe zu _Analyze > Dashboards_{:.breadcrumbs}.
+2. Klicke auf das {% icon ellipsis_v %} und wähle die Option **Bearbeiten**.
+3. Bewege den Mauszeiger über den Namen der Zeitreihe in der Legende und klicke auf das Bearbeiten-Icon {% icon pencil | icon-only %}.
+4. Ändere im Konfigurationsfenster **Graph anpassen** die Eigenschaften der Zeitreihe:
+   - Bearbeite den **Namen**, der in der Legende angezeigt wird.
+   - Wähle im Dropdown-Menü **Typ** entweder **Stufen** oder **Histogramm** (Balkendiagramm) aus. 
+   - Wähle eine andere als die vordefinierte **Farbe** aus.
+   - Wähle aus, wie Daten im Diagramm aggregiert werden. Wähle entweder **Nach Intervall** (verfügbar für Zeiträume bis zu 8&nbsp;Tagen), um Intervallwerte anzuzeigen, oder **Nach Tag**, um tägliche Werte anzuzeigen.
+   - Wähle aus, ob du die Werte der y-Achse **Links (standard)** oder **Rechts** anzeigen lassen möchtest.
+5. Klicke auf _Speichern_{:.doc-button}.<br>Klicke auf _Bearbeitungsmodus verlassen_{:.doc-button}, um zum Anzeigemodus zurückzukehren.
 
-Blende andere Zeitreihen aus, indem Du auf _![Diagramme ein- und ausblenden](/assets/img/common/dashboards/view.png)_{:.doc-button-icon} neben dem Namen der Zeitreihe in der Legende klickst.
+### Zeitreihen löschen
 
-## Zeitreihen anpassen
+1. Gehe zu _Analyze > Dashboards_{:.breadcrumbs}.
+2. Klicke auf das {% icon ellipsis_v %} und wähle die Option **Bearbeiten**.
+3. Bewege den Mauszeiger über den Namen der Zeitreihe in der Legende und klicke auf das Bearbeiten-Icon {% icon pencil | icon-only %}.
+4. Klicke im Konfigurationsfenster **Graph anpassen** auf _Löschen_{:.doc-button}.
+5. Klicke auf _Speichern_{:.doc-button}.<br>Klicke auf _Bearbeitungsmodus verlassen_{:.doc-button}, um zum Anzeigemodus zurückzukehren.
 
-1. Klicke auf _![Kontextmenü](/assets/img/common/dashboards/context-menu.png)_{:.doc-button-icon} neben dem Namen des aktuell ausgewählten Dashboards.
-2. Klicke auf **Bearbeiten**, um den Bearbeitungsmodus für das Dashboard aufzurufen.
-3. Bewege den Mauszeiger über den **Namen der Zeitreihe** in der Legende und klicke dann auf das **Bleistiftsymbol**.
-4. Ändere im Dialogfenster *Diagramm anpassen* die Eigenschaften der Zeitreihe. Du kannst:
-    - den **Namen** bearbeiten, der in der Legende angezeigt wird.
-    - den **Typ** des Diagramms ändern. Wähle zwischen **Stufen** oder **Histogramm** (Balkendiagramm).
-    - eine andere vordefinierte **Farbe** auswählen.
-    - ändere die Art der Datenaggregation im Diagramm. Wähle **Nach Intervall** (verfügbar für Zeiträume bis zu 8 Tagen), um Intervallwerte anzuzeigen, oder **Nach Tag**, um die Werte für den Tag anzuzeigen.
-    - Ändere, wo die y-Achse angezeigt wird. Wähle zwischen **Links (Standard)** und **Rechts**.
-5. Klicke auf *Speichern*{:.doc-button}.
-6. Klicke auf *Bearbeitungsmodus schließen*{:.doc-button}, um zum Anzeigemodus zurückzukehren.
-
-   {{ 3 | image: "Einen Graphen anpassen", '40%' }}
-
-## Zeitreihen löschen
-
-1. Klicke auf _![Kontextmenü](/assets/img/common/dashboards/context-menu.png)_{:.doc-button-icon} neben dem Namen des aktuell ausgewählten Dashboards.
-2. Klicke auf **Bearbeiten**, um den Bearbeitungsmodus für das Dashboard aufzurufen.
-3. Bewege den Mauszeiger über den **Namen der Zeitreihe** in der Legende und klicke dann auf das **Bleistiftsymbol**.
-4. Klicke im Dialogfenster *Diagramm anpassen* auf *Löschen*{:.doc-button}, um die ausgewählte Zeitreihe zu löschen. Dadurch wird der Bearbeitungsdialog geschlossen.
-5. Klicke auf *Speichern*{:.doc-button}.
-6. Klicke auf *Bearbeitungsmodus verlassen*{:.doc-button}, um zum Anzeigemodus zurückzukehren.

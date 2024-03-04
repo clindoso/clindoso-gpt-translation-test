@@ -42,9 +42,9 @@ Op sommige dagen wijken je openingstijden mogelijk af van de standaardtijden, bi
 
 Je kunt op twee manieren dagtypes voor nationale feestdagen aanmaken:
 
-- Maak dagtypes aan met de feestdagmodus en {% link_new voeg ze toe aan je planningskalender | features/administration/planning-calendar.md | #add-custom-day-types-to-the-planning-calendar %}.
+- Maak dagtypes aan met de feestdagmodus en {% link_new voeg ze toe aan je planningskalender | features/administration/planning-calendar.md | #configure-a-planning-calendar %}.
 
-- Voeg een {% link_new kalendersjabloon | features/administration/planning-calendar.md |#add-the-public-holidays-of-your-region %} toe aan je planningskalender. Alle daarin opgenomen dagtypes voor nationale feestdagen worden opgenomen. De feestdagmodus is geactiveerd.
+- Voeg een {% link_new kalendersjabloon | features/administration/planning-calendar.md | #configure-a-planning-calendar %} toe aan je planningskalender. Alle daarin opgenomen dagtypes voor nationale feestdagen worden opgenomen. De feestdagmodus is geactiveerd.
 
 De feestdagmodus past de werktijden van medewerkers op deze dag hierop aan. Als je besluit om de dag als normale werkdag in te plannen, dan kun je de feestdagmodus deactiveren door {% link_new het dagtype te bewerken | features/administration/day-types.md | #een-dagtype-bewerken %}.
 

@@ -29,3 +29,9 @@ Neu bei Integrationen? Lerne zuerst {% link_new die Grundlagen | features/acd-in
 3. Wähle im Abschnitt **Konfiguration** deine Kontoregion aus.
 4. (Optional) Aktiviere die Checkbox **Detaillierte On-Queue-Agentenstatus importieren**.<br>Der Agentenstatus on-queue umfasst mehrere Status, z.&nbsp;B. communication, interacting, idle, not responding. Beim Import von Agentenstatus unterscheidet injixo zwischen den einzelnen Status, die unter on-queue zusammengefasst sind.
 5. Klicke auf _Integration speichern_{:.doc-button}.
+
+## Häufig gestellte Fragen
+
+| Frage                            | Antwort                                                                                                                                           |
+| ----------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| Die Integration importiert Daten für abgebrochene Anrufe, durchschnittliche Antwortzeit und Anrufe, die gemäß Service-Level beantwortet wurden. Warum kann ich diese Daten in Dashboards nicht anzeigen? | Du kannst diese Daten in Dashboards anzeigen, wenn du beim Konfigurieren eines Workloads in Forecast ausschließlich Queues von deiner Genesys Cloud-Integration hinzufügst. Du kannst diese Daten nicht anzeigen, wenn du auch Queues von weiteren Integrationen miteinschließt.

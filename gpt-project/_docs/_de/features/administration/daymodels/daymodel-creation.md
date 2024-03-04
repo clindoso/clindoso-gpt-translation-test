@@ -35,7 +35,7 @@ Als nächstes kannst du dem neuen Tagesmodell {% link_new Aktivitäten hinzufüg
 
 > Hinweis
 > 
-> Wenn du in deiner Planungseinheit die {% link_new Anzahl der Tagesmodelle eingeschränkt | features/administration/create-and-manage-planning-units.md | #tagesmodelle-verwalten %} hast, musst du deiner Planungseinheit neue Tagesmodelle manuell zuweisen. Wenn du mit Planungsmodellen arbeitest, aktualisiere die Wochenmodelle.
+> Wenn du in deiner Planungseinheit die {% link_new Anzahl der Tagesmodelle eingeschränkt | features/administration/create-and-manage-planning-units.md | #tagesmodelle-einschränken %} hast, musst du deiner Planungseinheit neue Tagesmodelle manuell zuweisen. Wenn du mit Planungsmodellen arbeitest, aktualisiere die Wochenmodelle.
 
 ### Zeitlich fixierte Schicht
    

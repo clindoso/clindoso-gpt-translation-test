@@ -43,7 +43,7 @@ The script needs three input parameters:
 13. {% include reusables/{{ page.lang }}/scripts/steps/number-of-days.md %}
 14. Click _Ok_{:.doc-button} to start the calculation.
 
-A window will pop up. It shows your input parameters and the script execution results. You can check the {% link_new stored employee requirement values in the Shift Center | features/scheduling/employee-requirement.md %}.
+A window will pop up. It shows your input parameters and the script execution results. You can check the {% link_new stored employee requirement values in the Shift Center | features/scheduling/edit-or-delete-staff-requirements.md %}.
 
 {% include reusables/{{ page.lang }}/scripts/on-prem-usage.md %}
 

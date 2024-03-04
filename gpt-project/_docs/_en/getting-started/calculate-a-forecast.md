@@ -39,7 +39,7 @@ A {% link_new forecast version | features/forecast/injixo-forecast/store-forecas
 
 ## 5. Calculate staff requirements
 
-To create optimized schedules or run the job optimization, you must first {% link_new calculate the staff requirements | features/forecast/injixo-forecast/staff-requirement.md %} for the corresponding activities within your workloads.
+To create optimized schedules or run the job optimization, you must first {% link_new calculate the staff requirements | features/forecast/injixo-forecast/calculate-staff-requirements.md %} for the corresponding activities within your workloads.
 
 
 ## What's next?

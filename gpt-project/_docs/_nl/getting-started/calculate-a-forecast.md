@@ -40,7 +40,7 @@ Een {% link_new forecastversie | features/forecast/injixo-forecast/store-forecas
 
 ## 5\. De personeelsbehoefte berekenen
 
-Om geoptimaliseerde planningen te maken of de joboptimalisatie uit te voeren, moet je eerst {% link_new de personeelsbehoefte berekenen | features/forecast/injixo-forecast/staff-requirement.md %} voor de betreffende activiteiten in je workloads.
+Om geoptimaliseerde planningen te maken of de joboptimalisatie uit te voeren, moet je eerst {% link_new de personeelsbehoefte berekenen | features/forecast/injixo-forecast/calculate-staff-requirements.md %} voor de betreffende activiteiten in je workloads.
 
 
 ## En nu?

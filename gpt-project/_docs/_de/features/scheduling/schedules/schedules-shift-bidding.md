@@ -13,7 +13,7 @@ related_articles:
   - overwrite_title: Add title for untranslated source
     filepath: features/scheduling/schedules/scheduling-periods/what-are-scheduling-periods.md
   - overwrite_title: Add title for untranslated source
-    filepath: features/scheduling/employee-requirement.md
+    filepath: features/scheduling/edit-or-delete-staff-requirements.md
   - overwrite_title: Add title for untranslated source
     filepath: features/scheduling/schedules/schedules-shift-requirement.md
   - overwrite_title: Add title for untranslated source
@@ -39,7 +39,7 @@ Das Schichtwunsch-Verfahren erlaubt es Deinen Mitarbeitern sich am Planungsproze
 
 Nachfolgend siehst Du eine Übersicht zum Prozess des Schichtwunsch-Verfahrens. Dieser Artikel bezieht sich auf die Schritte 4 bis 10. Klicke auf die Links für ausführliche Informationen zu den anderen Schritten.
 
-1. Erstelle {% link_new Mitarbeiterbedarf | features/scheduling/employee-requirement.md %} mit dem *Forecast*-Modul.
+1. Erstelle {% link_new Mitarbeiterbedarf | features/scheduling/edit-or-delete-staff-requirements.md %} mit dem *Forecast*-Modul.
 2. (Optional) Wenn Du Schichtfolgen verwendest, füge diese ein. Erfahre mehr über {% link_new Schichtfolgen einfügen | features/scheduling/schedules/schedules-insert-shift-sequences.md %}.
 3. Erstelle im Modul *Schedules* eine {% link_new Planperiode | features/scheduling/schedules/scheduling-periods/what-are-scheduling-periods.md | #neue-planperiode-anlegen %} mit dem Status *Unveröffentlicht*.
 4. Gib für jedes Tagesmodell [Mindest- und Maximalwerte](#lege-fest-welche-schichten-erzeugt-werden) in der Schichtbedarfstabelle ein.
@@ -75,7 +75,7 @@ Die Schichterzeugung generiert Schichten für jeden Tag der Planperiode. injixo 
 
     {{ 3 | image: 'Parameterfenster für die Schichterzeugung', '50%' }}
 
-Hinweis: Im Schicht Center kannst Du das Ergebnis der Schichterzeugung manuell anpassen, indem Du {% link_new die Anzahl der erzeugten Schichten für einen einzelnen Tag änderst | features/scheduling/employee-requirement.md %}.
+Hinweis: Im Schicht Center kannst Du das Ergebnis der Schichterzeugung manuell anpassen, indem Du {% link_new die Anzahl der erzeugten Schichten für einen einzelnen Tag änderst | features/scheduling/edit-or-delete-staff-requirements.md %}.
 
 Das Schicht Center stellt Kennzahlen für die Schichterzeugung dar. Du findest sie im {% link_new Kennzahlenfenster | features/scheduling/shiftcenter/shift-center-overview.md | #kennzahlenfenster %} unten auf der Seite:  
 

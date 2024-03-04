@@ -39,7 +39,7 @@ Eine {% link_new Forecast-Version | features/forecast/injixo-forecast/store-fore
 
 ## 5\. Mitarbeiterbedarf berechnen
 
-Um optimierte Schichtpläne zu erstellen oder die Job-Optimierung auszuführen, musst du zuerst den {% link_new Mitarbeiterbedarf | features/forecast/injixo-forecast/staff-requirement.md %} für die entsprechenden Aktivitäten innerhalb deiner Workloads berechnen.
+Um optimierte Schichtpläne zu erstellen oder die Job-Optimierung auszuführen, musst du zuerst den {% link_new Mitarbeiterbedarf | features/forecast/injixo-forecast/calculate-staff-requirements.md %} für die entsprechenden Aktivitäten innerhalb deiner Workloads berechnen.
 
 
 ## Wie geht’s weiter?

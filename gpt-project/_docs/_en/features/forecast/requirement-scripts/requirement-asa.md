@@ -37,7 +37,7 @@ The _Calls - Average Speed of Answer_ requirement script calculates the minimum 
 13. {% include reusables/{{ page.lang }}/scripts/steps/number-of-days.md %}
 14. Click _Ok_{:.doc-button} to start the calculation.
 
-A window will pop up. It shows your input parameters and the script execution results. Check the {% link_new saved employee requirement in the Shift Center | features/scheduling/employee-requirement.md %}.
+A window will pop up. It shows your input parameters and the script execution results. Check the {% link_new saved employee requirement in the Shift Center | features/scheduling/edit-or-delete-staff-requirements.md %}.
 
 {% include reusables/{{ page.lang }}/scripts/on-prem-usage.md %}
 

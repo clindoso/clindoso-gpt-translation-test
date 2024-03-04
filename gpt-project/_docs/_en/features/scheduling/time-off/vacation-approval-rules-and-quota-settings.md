@@ -27,7 +27,7 @@ New to Time Off? Learn the {% link_new basics | features/scheduling/time-off/vac
 In the **Approval rules** section, you can activate up to three rules for the suggestion process:
 
 - **The agent has enough entitlement left**: Approvals are possible if the agent has enough remaining {% link_new vacation entitlement | features/scheduling/time-off/vacation-entitlement.md %} for the year.
-- **The daily average staff requirements for the planning unit are covered (including sickness and other planned absences)**:  Approvals are possible if enough people are working to cover the daily average {% link_new staff requirements | features/scheduling/employee-requirement.md %} for all activities in the planning unit.
+- **The daily average staff requirements for the planning unit are covered (including sickness and other planned absences)**:  Approvals are possible if enough people are working to cover the daily average {% link_new staff requirements | features/scheduling/edit-or-delete-staff-requirements.md %} for all activities in the planning unit.
 - **There is enough remaining absence quota for the planning unit left**: Approvals are possible if the configured value for the absence quota is not reached yet.
 
 To save the configuration, click _Save Rules_{:.doc-button}.

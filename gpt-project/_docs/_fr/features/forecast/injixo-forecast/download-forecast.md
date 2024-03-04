@@ -11,14 +11,14 @@ Vous pouvez sélectionner une plage de date allant d'une journée à l'année en
 La granularité des données dépend de l'intervalle du Workload.
 Les données exportées correspondent au fuseau horaire du Workload.
 
-Vous pouvez sélectionner les données des {% link_new Versions | features/forecast/injixo-forecast/store-forecast-versions.md %}. _Auto-Forecast_, _Opérationnel_ et/ou _Stratégique_.
+Vous pouvez sélectionner les données des {% link_new Versions | features/forecast/injixo-forecast/store-forecast-versions.md %}. _Forecast_, _Opérationnel_ et/ou _Stratégique_.
 
 ## Comment télécharger les données
 
 1. Sélectionnez le Workload concerné
 2. Affichez la période de votre choix (jour, semaine, mois, année)
 3. Cliquez sur _![Context Menu in injixo Forecast](/assets/img/common/forecast/context-menu.svg)_{:.doc-button-icon} puis sur **Télécharger au format CSV**.
-4. Choisissez les Versions parmi _Auto-Forecast_, _Opérationnel_ et/ou _Stratégique_.
+4. Choisissez les Versions parmi _Forecast_, _Opérationnel_ et/ou _Stratégique_.
 5. Confirmez votre choix en cliquant sur _Démarrer le téléchargement_{:.doc-button}.
 
 ## Exemple de fichier CSV
@@ -26,7 +26,7 @@ Vous pouvez sélectionner les données des {% link_new Versions | features/forec
 Si vous téléchargez les données de prévision du Workload "SAV", vous obtiendrez un fichier CSV nommé _SAV-Appels.csv_
 Le nom du fichier contient donc le nom du Workload et le type d'opération.
 
-Si vous sélectionnez les Versions _Auto-Forecast_ et _Opérationnel_, le fichier sera constitué ainsi :
+Si vous sélectionnez les Versions _Forecast_ et _Opérationnel_, le fichier sera constitué ainsi :
 
 ```
 Timestamp;Offered_auto;AHT_auto;Offered_operational;AHT_operational

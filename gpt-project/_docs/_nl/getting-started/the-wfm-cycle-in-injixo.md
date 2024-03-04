@@ -21,7 +21,7 @@ Het doel van workforce management (WFM) is het optimaliseren van de inzet van je
 In dit artikel vind je een overzicht van hoe injixo je tijdens alle fasen van de WFM-cyclus ondersteunt.
 Om te beginnen moeten we injixo alle informatie aanleveren die nodig is om een betrouwbare forecast te genereren. Hiervoor zet je een integratie op met je Automatic Call Distribution-systeem (ACD) of je Customer Relationship Management-systeem (CRM).
 
-Ben je nog niet zo vertrouwd met workforce management? Lees dan meer over de belangrijkste concepten en definities in onze [woordenlijst](https://help.injixo.com/glossary/overview). 
+Ben je nog niet zo vertrouwd met workforce management? Lees dan meer over de belangrijkste concepten en definities in onze [woordenlijst](/nl/glossary/overview/). 
 
 ## 1\. Forecasts maken
 
@@ -49,7 +49,7 @@ De gegenereerde forecast wordt na elke nieuwe gegevensimport bijgewerkt. Je kunt
 
 ### De personeelsbehoefte berekenen
 
-Zodra je een forecast hebt gegenereerd, kun je {% link_new de personeelsbehoefte berekenen | features/forecast/injixo-forecast/staff-requirement.md %}, oftewel het aantal medewerkers dat moet worden ingepland om de verwachte workload te dekken. Voor eht berekenen van je personeelsbehoefte kun je verschillende {% link_new berekeningsmethoden | best-practices/requirement-scripts.md %} gebruiken. Hierbij wordt rekening gehouden met factoren als je beoogde service level, beoogde antwoordtijd, shrinkage, enz. Indien nodig kun je ook zonder forecast een contante personeelsbehoefte instellen.
+Zodra je een forecast hebt gegenereerd, kun je {% link_new de personeelsbehoefte berekenen | features/forecast/injixo-forecast/calculate-staff-requirements.md %}, oftewel het aantal medewerkers dat moet worden ingepland om de verwachte workload te dekken. Voor eht berekenen van je personeelsbehoefte kun je verschillende {% link_new berekeningsmethoden | best-practices/requirement-scripts.md %} gebruiken. Hierbij wordt rekening gehouden met factoren als je beoogde service level, beoogde antwoordtijd, shrinkage, enz. Indien nodig kun je ook zonder forecast een contante personeelsbehoefte instellen.
 
 Tijdens het planningsproces kun je je personeelsbehoefte gebruiken om geoptimaliseerde planningen aan te maken voor specifieke perioden, eenheden en activiteiten.
 

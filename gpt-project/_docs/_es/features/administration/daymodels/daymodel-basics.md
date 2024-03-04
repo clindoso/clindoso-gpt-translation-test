@@ -49,7 +49,7 @@ Puedes utilizar modelos de horario fijos en los modelos de planificación para {
 
 Como alternativa a las disponibilidades puedes usar {% link_new rotaciones de turnos | features/administration/shift-sequences.md %} o modelos semanales en los {% link_new modelos de planificación | features/administration/work-time-pattern-models.md | #crear-modelos-semanales %}. También puedes usar ambos para rotar turnos tempranos y tardíos, por ejemplo.
 
-Recomendamos crear un conjunto limitado de modelos de horario variables (combinados con las {% link_new disponibilidades de tus empleados | features/administration/availabilities.md | #create-employee-availabilities %}) en lugar de crear una gran cantidad de modelos de horario fijos.
+Recomendamos crear un conjunto limitado de modelos de horario variables (combinados con las {% link_new disponibilidades de tus empleados | features/administration/availabilities.md %}) en lugar de crear una gran cantidad de modelos de horario fijos.
 
 ## Actividad base y duración del turno
 
@@ -62,7 +62,7 @@ El tiempo total de un turno planificado, pausas incluidas, es la duración bruta
 La duración de un modelo de horario debe respetar las horas laborales establecidas en tus {% link_new contratos | features/administration/create-contracts.md %}.
 Por ejemplo, un contrato con 40 horas laborales distribuidas en 5 días a la semana requiere un modelo de horario con un tiempo laboral neto de 8 horas diarias. Un contrato de 37,5 horas semanales requiere un modelo de horario con 7,5 horas diarias.
 
-Usa la actividad Presente como actividad base y asegúrate de que esté configurada como Reemplazable. De este modo, las funcionalidades Optimización de tareas y Crear planificación optimizada pueden reemplazar la actividad Presente con otras actividades, siempre y cuando estas tengan {% link_new requisitos de personal calculados | features/forecast/injixo-forecast/staff-requirement.md %} y estén configuradas como planificables.
+Usa la actividad Presente como actividad base y asegúrate de que esté configurada como Reemplazable. De este modo, las funcionalidades Optimización de tareas y Crear planificación optimizada pueden reemplazar la actividad Presente con otras actividades, siempre y cuando estas tengan {% link_new requisitos de personal calculados | features/forecast/injixo-forecast/calculate-staff-requirements.md %} y estén configuradas como planificables.
 
 ### Elementos fijos vs. pasillos
 

@@ -8,7 +8,7 @@ related_articles:
   - overwrite_title: Add title for untranslated source
     filepath: features/scheduling/planning-periods/what-are-planning-periods.md
   - overwrite_title: Add title for untranslated source
-    filepath: features/scheduling/employee-requirement.md
+    filepath: features/scheduling/edit-or-delete-staff-requirements.md
   - overwrite_title: Add title for untranslated source
     filepath: features/scheduling/shift-requirement.md
   - overwrite_title: Add title for untranslated source
@@ -21,7 +21,7 @@ Mit dem Schichtwunsch-Verfahren ermöglichst Du Deinen Mitarbeitern, sich aktiv 
 
 Das Wichtigste in Kürze:
 
-* Du erzeugst auf Grundlage des {% link_new Mitarbeiterbedarfs | features/scheduling/employee-requirement.md %} und eines {% link_new Schichtbedarfs | features/scheduling/shift-requirement.md %} Schichten.
+* Du erzeugst auf Grundlage des {% link_new Mitarbeiterbedarfs | features/scheduling/edit-or-delete-staff-requirements.md %} und eines {% link_new Schichtbedarfs | features/scheduling/shift-requirement.md %} Schichten.
 * Dann wünschen sich die Mitarbeiter in *injixo Me*{:.menu-item} die erzeugten Schichten.
 * Du verlost die gewünschten Schichten.
 * Nicht gewünschte, z.B. unbeliebte Schichten, werden zugeteilt.
@@ -50,7 +50,7 @@ In *WFM > Scheduling > SchedulePro > Planperioden*{:.breadcrumbs} steht nach dem
 
 Die für den Prozess benötigten Menüpunkte befinden sich alle in *WFM > Scheduling > SchedulePro*{:.breadcrumbs}.
 
-1. Überprüfe, ob {% link_new Mitarbeiterbedarf | features/scheduling/employee-requirement.md %} vorhanden ist. Dieser ist neben dem Schichtbedarf die Grundlage für die Schichterzeugung.
+1. Überprüfe, ob {% link_new Mitarbeiterbedarf | features/scheduling/edit-or-delete-staff-requirements.md %} vorhanden ist. Dieser ist neben dem Schichtbedarf die Grundlage für die Schichterzeugung.
 
 2. (Optional) Wenn Du Schichtfolgen verwendest, füge diese ein. Erfahre mehr über {% link_new Schichtfolgen einfügen | features/scheduling/schedules/schedules-insert-shift-sequences.md %}.
 

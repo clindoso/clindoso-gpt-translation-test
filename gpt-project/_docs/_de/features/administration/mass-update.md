@@ -6,52 +6,38 @@ product_label:
   - classic
 ---
 
-In diesem Artikel lernst Du, was das Feature *Massenbearbeitung* ist und wie Du es verwendest.
+Mit der Massenbearbeitung kannst du die Zuweisung von Stammdaten für mehrere Mitarbeiter auf einmal ändern.
+Du kannst die Funktionalität Massenbearbeitung für folgende Konfigurationselemente verwenden:
 
-Mit der Massenbearbeitung kannst Du die Stammdaten-Zuordnungen für mehrere Mitarbeiter gleichzeitig bearbeiten. Die Massenbearbeitung funktioniert für Verträge, Qualifikationen, Planungseinheiten, Auswahlgruppen, Schichtfolgen und Planungsmodelle. In injixo Enterprise WFM kannst Du die Funktion zusätzlich für Attribute nutzen.
+- Verträge
+- Qualifikationen
+- Planungseinheiten
+- Auswahl
+- Schichtfolgen
+- Planungsmodelle
 
-## Die Massenbearbeitung starten
+## Voraussetzungen
 
-1. Gehe zu *WFM > Administration > Scheduling > Mitarbeiter*{:.breadcrumbs}.
-2. Wähle eine **Auswahl** oder einen **Mitarbeiterfilter**.
-3. Klicke auf _![Button Massenbearbeitung](/assets/img/common/mass-update.gif)_{:.doc-button-icon} in der Aktionsleiste.  
+Bevor du die Funktionalität Massenbearbeitung verwenden kannst, musst du deine {% link_new Grundkonfiguration einrichten | getting-started/set-up-base-configuration.md %}.
 
-Die Seite für die Massenbearbeitung mit den Bereichen *Parameter* und *Aktion* öffnet sich. Der Bereich *Parameter* zeigt Informationen zum angewendeten Filter und der Anzahl der ausgewählten Mitarbeiter.
+## Massenbearbeitung starten
 
-1. Wähle im Feld *Stammdaten* einen **Eintrag** aus, um zu definieren, welche Stammdaten Du bearbeiten möchtest.
-2. Optional: Schränke den Zeitraum für die Massenbearbeitung über die Felder **Vom** und **Bis** ein. Lass Felder leer, wenn Du Änderungen nicht auf einen Zeitraum beschränken möchtest.
-3. Wähle eine **Aktion**. Unterhalb lernst Du mehr über die [verfügbaren Aktionen](#aktionen-verstehen).
-4. Wähle rechts in den Abschnitten *Bisherige Zuordnungen*, *Neue Zuordnung* oder *Neuer Gültigkeitszeitraum* die **Elemente** aus, die Du hinzufügen, löschen oder ersetzen möchtest (abhängig von der Aktion).
-5. Klicke auf *OK*{:.doc-button}, um die Massenbearbeitung zu starten.
+> Hinweis
+>
+> Du kannst eine Massenbearbeitung nicht zurücksetzen oder rückgängig machen. Starte eine neue Massenbearbeitung, wenn du eine fälschlich durchgeführte Massenbearbeitung überschreiben möchtest oder ändere die Daten für jeden Mitarbeiter einzeln.  
 
-    {{ 1 | image: 'Programmfenster', '50%' }}
+Um eine Massenbearbeitung zu starten, gehe wie folgt vor: 
 
-## Aktionen verstehen
+1. Gehe zu _Plan > Konfiguration > Mitarbeiter_{:.breadcrumbs}.
+2. Um die Mitarbeiter auszuwählen, deren Stammdaten du ändern möchtest, wähle eine Auswahl aus oder klicke auf das Mitarbeiterfilter-Icon {% icon employee-filter | icon-only %}.
+3. Klicke in der Aktionsleiste auf das Massenbearbeitungs-Icon {% icon mass-update | icon-only %}.<br>Die Seite **Massenbearbeitung** öffnet sich. 
+4. Verwende im Abschnitt **Parameter** das Dropdown-Menü **Stammdaten**, um das Konfigurationselement auszuwählen, das du für mehrere Mitarbeiter auf einmal ändern möchtest.<br>(Optional): Verwende die Felder **vom** und **bis**, um einzuschränken, für wie lange die Änderung durch die Massenbearbeitung gilt.
+5. Wähle eine **Aktion**.
+6. Je nach Auswahl erscheinen rechts folgende Abschnitte: **Bisherige Zuordnungen**, **Neue Zuordnung** oder **Neuer Gültigkeitszeitraum**. Wähle in den Abschnitten die Elemente aus, die du hinzufügen, löschen oder ersetzen möchtest.
+7. Um die Massenbearbeitung zu starten, klicke auf **OK**.<br>Das Fenster **Jobverarbeitung** öffnet sich.<br>Eine Seite mit dem Ergebnis der Massenbearbeitung öffnet sich.
 
-Abhängig von Deiner Auswahl im Feld *Stammdaten* ändern sich die Bereiche *Aktion* sowie der Bereich auf der rechten Seite, um die Stammdaten auszuwählen, die Du zuordnen oder ersetzen möchtest. Dort erscheint entweder der Bereich *Neue Zuordnung*, *Bisherige Zuordnungen* oder beide Bereiche.
+| Frage                                                                          | Antwort                                                                                                                                                                                      |
+| --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- | -------------------------------------------- |
+| Warum sind meinen Mitarbeitern nach einer Massenbearbeitung Verträge für eine kürzere Zeit zugewiesen als davor?                              | Wenn du einem Mitarbeiter ein Konfigurationselement mit einem Zeitraum zuweist, der länger ist als der Gültigkeitszeitraum, kann es zu Zeiträumen ohne Zuweisung kommen.<br>Beispiel: Einem Mitarbeiter ist ein Vertrag zugewiesen. Die Zuweisung ist vom 1.&nbsp;März bis 31.&nbsp;Mai. Du gibst einen neuen Gültigkeitszeitraum vom 1.&nbsp;März bis 15.&nbsp;April ein. Nach der Massenbearbeitung gibt es keine Zuweisung mehr für den Zeitraum vom 16.&nbsp;April bis 31.&nbsp;Mai.                                                                                                                                           |
 
-### Zuordnungen hinzufügen oder überschreiben
 
-- **Hinzufügen:** Ordne Mitarbeitern die gewählten Stammdaten zu.
-- **Hinzufügen für Zeiträume ohne Zuordnung:** Ordne Mitarbeitern die gewählten Stammdaten für Zeiträume zu, in denen bisher keine Zuordnung besteht.
-- **Alles überschreiben:** Überschreibe alle bestehenden Zuordnungen mit den gewählten Stammdaten.
-
-{{ 2 | image: 'Bereich neue Zuordnung', '75%'}}
-
-### Bestehende Zuordnungen ersetzen oder löschen
-
-- **Hinzufügen für Zeiträume ohne Zuordnung und bestehende Zuordnungen ersetzen:** Ordne Mitarbeitern die gewählten Stammdaten für Zeiträume zu, in denen es bisher keine Zuordnung gibt. Bisherige Zuordnungen werden zusätzlich ersetzt, wenn sie den definierten Kriterien entsprechen. Alle anderen Zuordnungen bleiben bestehen.
-- **Hinzufügen für Zeiträume mit bestimmten Zuordnungen:** Ordne Mitarbeitern die gewählten Stammdaten für Zeiträume zu, in denen sie bisher die ausgewählten Zuordnungen haben.
-- **Zuordnungen ersetzen:** Ersetze die gewählten Stammdaten bei Mitarbeitern, die bisher diese Zuordnung haben.
-- **Zuordnungen mit gleicher Qualifikationsstufe ersetzen:** Ersetze Qualifikationsstufen bei Mitarbeitern. Aktiviere die Checkbox *Bisherige Qualifikationsstufe überschreiben*, um bestehende Zuordnungen mit der ausgewählten Qualifikationsstufe zu überschreiben. Deaktiviere die Checkbox, wenn bisherige Zuordnungen beibehalten werden sollen.
-- **Löschen:** Lösche alle bestehenden Zuordnungen im ausgewählten Zeitraum.
-
-{{ 3 | image: 'Bisherige und neue Zuordnungen', '75%' }}
-
-### Gültigkeitszeiträume ändern
-
-**Gültigkeitszeitraum ändern:** Wähle die Option *Gültig vom*, um das Startdatum der Stammdaten zu ändern. Wähle stattdessen die Option *Gültig bis* für Enddatum. Wähle dann im Abschnitt *Neuer Gültigkeitszeitraum* ein neues Datum, welches das bestehende Start- oder Enddatum ersetzen soll. Wenn Du einen Zeitraum verlängerst, in dem bereits eine andere Zuordnung für diesen Mitarbeiter besteht, erscheint eine Fehlermeldung. Der Mitarbeiter wird ganz von der Aktion ausgeschlossen.
-
-Wenn Stammdaten einem Mitarbeiter über den Bearbeitungszeitraum hinaus zugeordnet sind, kann es zu Zeiträumen ohne Zuordnung kommen. Beispiel: Ein Mitarbeiter hat einen Vertrag von 1. März bis 31. Mai. Der Bearbeitungszeitraum ist der gesamte April, das neue Enddatum der 15. April. Am Ende besteht keine Vertragszuordnung mehr vom 16. April bis 31. Mai.
-
-{{ 4 | image: 'Bisherige Zuordnungen, neuer Gültigkeitszeitraum', '75%'}}

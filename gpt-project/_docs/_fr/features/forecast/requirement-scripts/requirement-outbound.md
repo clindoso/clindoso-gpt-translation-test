@@ -3,6 +3,7 @@ title: Appels sortants
 description: Calculer le besoin en personnel pour les appels sortants.
 toc: true
 product_label:
+  - essential
   - advanced
   - enterprise
   - classic
@@ -54,7 +55,7 @@ Dans la fenêtre du script, vous pouvez configurer les paramètres suivants&nbsp
 
 ## Exécuter le script
 
-Une fois le script configuré, cliquez sur _OK_{:.doc-button} pour lancer le calcul. Une fenêtre affichera vos paramètres définis et le résultat de l’exécution du script. Vérifiez le besoin en personnel {% link_new sauvegardé dans le Centre de planification | features/scheduling/employee-requirement.md %}.
+Une fois le script configuré, cliquez sur _OK_{:.doc-button} pour lancer le calcul. Une fenêtre affichera vos paramètres définis et le résultat de l’exécution du script. Vérifiez le besoin en personnel {% link_new sauvegardé dans le Centre de planification | features/scheduling/edit-or-delete-staff-requirements.md %}.
 
 {% include reusables/{{ page.lang }}/scripts/on-prem-usage.md %} <!-- keep this or move to classic article? -->
 

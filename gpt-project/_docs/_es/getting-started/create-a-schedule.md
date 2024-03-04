@@ -56,7 +56,7 @@ En _Plan > Vacaciones/Ausencias_{:.breadcrumbs} puedes aprobar o rechazar las {%
 
 ## Crear la planificación
 
-En {% link_new Planificar | features/scheduling/schedules/schedules-overview.md %}, el {% link_new Centro de planificación | features/scheduling/shiftcenter/shift-center-overview.md %} o {% link_new Dashboards | features/monitoring/dashboards/dashboards-overview.md %} puedes comprobar si los {% link_new requisitos de personal | features/forecast/injixo-forecast/staff-requirement.md %} para tus actividades están configurados correctamente.
+En {% link_new Planificar | features/scheduling/schedules/schedules-overview.md %}, el {% link_new Centro de planificación | features/scheduling/shiftcenter/shift-center-overview.md %} o {% link_new Dashboards | features/monitoring/dashboards/dashboards-overview.md %} puedes comprobar si los {% link_new requisitos de personal | features/forecast/injixo-forecast/calculate-staff-requirements.md %} para tus actividades están configurados correctamente.
 
 1. Inserta {% link_new rotaciones de turnos | features/scheduling/schedules/schedules-insert-shift-sequences.md %} para tus empleados.
 2. Configura y aplica {% link_new métodos de planificación | features/scheduling/scheduling-methods.md %} adicionales para completar la planificación.

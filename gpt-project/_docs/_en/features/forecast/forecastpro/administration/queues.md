@@ -10,7 +10,7 @@ description: Learn how to use queues to import data for all of your contact chan
 
 Data about your customer interactions is recorded by your ACD. This contact data is imported into injixo by {% link_new integrations | features/acd-integration/cloud/how-integrations-work.md %} to create forecasts. Xlink does not create queues automatically, other injixo integrations do. Queues are always associated with a channel and can be selectively added to workloads in Forecast.
 
-When you click **Use Forecast** in a workload that contains queues from a non-Xlink integration, a queue will automatically be created in _WFM > Administration > Forecasting > Queues_{:.breadcrumbs} for specific {% link_new staff requirements calculation | features/forecast/injixo-forecast/staff-requirement.md %} methods. This queue will have the name of the workload with a leading asterisk, e.g. \*yourWorkloadName. Forecast data will be available in the Auto-Forecast version. 
+When you click **Use Forecast** in a workload that contains queues from a non-Xlink integration, a queue will automatically be created in _WFM > Administration > Forecasting > Queues_{:.breadcrumbs} for specific {% link_new staff requirements calculation | features/forecast/injixo-forecast/calculate-staff-requirements.md %} methods. This queue will have the name of the workload with a leading asterisk, e.g. \*yourWorkloadName. Forecast data will be available in the version Auto-Forecast. 
 
 ## Create queues
 

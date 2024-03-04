@@ -59,7 +59,7 @@ In _Plan > Time Off_{:.breadcrumbs}, approve or reject any {% link_new pending r
 
 ## Create the schedule
 
-In {% link_new Schedules | features/scheduling/schedules/schedules-overview.md %}, {% link_new Shift Center | features/scheduling/shiftcenter/shift-center-overview.md %} or {% link_new Dashboards | features/monitoring/dashboards/dashboards-overview.md %}, check if {% link_new staff requirements | features/forecast/injixo-forecast/staff-requirement.md %} are correctly set up for your activities.
+In {% link_new Schedules | features/scheduling/schedules/schedules-overview.md %}, {% link_new Shift Center | features/scheduling/shiftcenter/shift-center-overview.md %} or {% link_new Dashboards | features/monitoring/dashboards/dashboards-overview.md %}, check if {% link_new staff requirements | features/forecast/injixo-forecast/calculate-staff-requirements.md %} are correctly set up for your activities.
 
 1. Insert {% link_new shift sequences | features/scheduling/schedules/schedules-insert-shift-sequences.md %} for your people.
 2. Configure and apply additional {% link_new scheduling methods | features/scheduling/scheduling-methods.md %} to complete the schedule.

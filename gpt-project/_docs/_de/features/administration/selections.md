@@ -8,12 +8,16 @@ product_label:
   - classic
 redirect_from: /de/selections-overview/
 redirect_reason: renamed file in April 2022
+toc: true
+related_articles:
+  - overwrite_title: Add title for untranslated source
+    filepath: best-practices/filter-with-selections.md
 ---
 
 Mit Auswahlen kannst du Mitarbeiter nach bestimmten Kriterien gruppieren und filtern. Auswahlen funktionieren ähnlich wie {% link_new Mitarbeiterfilter | features/administration/employee-filter.md %}. So unterscheiden sie sich voneinander:
 
 - Bei Auswahlen kannst du die Kriterien für die Gruppierung selbst festlegen.
-- Mitarbeiterfilter gruppieren auf Grundlage der Stammdaten in injixo wie z.&nbsp;B. Planungseinheiten, Qualifikationen und Verträge.
+- Mitarbeiterfilter gruppieren auf Grundlage der Stammdaten wie z.&nbsp;B. Planungseinheit, Qualifikation und Vertrag.
 
 Zudem sind Mitarbeiterfilter nur in injixo Classic, Advanced und Enterprise verfügbar.
 
@@ -46,25 +50,40 @@ Damit du Mitarbeiter zu einer Auswahl hinzufügen kannst, musst du zuerst {% lin
 2. Klicke auf den Mitarbeiter, den du zu einer Auswahl hinzufügen möchtest.  
    Ein Konfigurationsfenster öffnet sich auf der rechten Seite.
 3. Klicke im Abschnitt **Auswahl** auf das {% icon item-add %}.
-4. Klicke auf die Auswahl, zu der du den Mitarbeiter hinzufügen möchtest.
-5. (Optional) Gib einen Datumsbereich in den Feldern **Gültig vom** und **Gültig bis** ein, um den Gültigkeitszeitraum für die Auswahl zu begrenzen. Wenn du die Felder **Gültig vom** und **Gültig bis** leer lässt, ist die Auswahl unbegrenzt gültig. Erfahre mehr über {% link_new Gültigkeitszeiträume | features/administration/set-a-validity-period.md %}.
-6. Klicke auf _OK_{:.doc-button}.
+4. Fülle folgende Felder aus:  
+   - **Auswahl**: Klicke auf die Auswahl, zu der du den Mitarbeiter hinzufügen möchtest.
+   - (Optional) **Gültig vom/Gültig bis**: Datumsbereich, um den Gültigkeitszeitraum für die Auswahl einzuschränken. Wenn du diese Felder leer lässt, ist die Auswahl immer gültig. Erfahre mehr über {% link_new Gültigkeitszeiträume | features/administration/set-a-validity-period.md %}.
+5. Klicke auf _OK_{:.doc-button}.
 
 Um eine Auswahl zu bearbeiten, der ein Mitarbeiter zugewiesen ist, klicke auf das {% icon item-edit %}. Um die Zuweisung zu der Auswahl zu entfernen, klicke auf das {% icon item-delete %}.
 
+## Mitarbeiter in einer Auswahl verwalten
+
+In _Plan > Konfiguration > Mitarbeiter_{:.breadcrumbs} erhältst du einen Überblick darüber, welche Mitarbeiter einer Auswahl zugewiesen sind und kannst auf ihre Einstellungen zugreifen.
+
+Mit den folgenden Dropdown-Menüs kannst du die Mitarbeiter in einer Auswahl filtern:
+
+- **Planungseinheit**: Wähle die Option [Alle] aus.
+- **Auswahl**: Wähle eine Auswahl aus.  
+   Wenn das Dropdown-Menü **Auswahl** nicht angezeigt wird, klicke in der Aktionsleiste auf das Icon **Standardfilter aktivieren**{% icon selection | icon-only %}.
+
+injixo zeigt alle Mitarbeiter in der Auswahl an. Um auf die Einstellungen eines Mitarbeiters zuzugreifen, klicke auf dessen Zeile in der Liste.
+
 ## Auswahlen einander zuweisen
 
-Kunden von injixo Classic, Advanced und Enterprise können einer bestehenden Auswahl weitere Auswahlen zuweisen. Die Auswahl, der andere Auswahlen zugewiesen werden, wird zur übergeordneten Auswahl. Die zugewiesenen Auswahlen sind die untergeordneten Auswahlen. Über die übergeordnete Auswahl kannst du gleichzeitig auch alle Mitarbeiter filtern, die einer der untergeordneten Auswahlen zugewiesen sind.
+In injixo Classic, Advanced und Enterprise kannst du einer bestehenden Auswahl weitere Auswahlen zuweisen. Die Auswahl, der andere Auswahlen zugewiesen werden, wird zur übergeordneten Auswahl. Die zugewiesenen Auswahlen sind die untergeordneten Auswahlen. Über die übergeordnete Auswahl kannst du gleichzeitig auch alle Mitarbeiter filtern, die einer der untergeordneten Auswahlen zugewiesen sind.
 
 Um eine Hierarchie zwischen einer übergeordneten und mehreren untergeordneten Auswahlen zu erstellen, {% link_new erstelle zunächst die über- und untergeordneten Auswahlen | features/administration/selections.md | #auswahlen-erstellen %}.
 
 Um eine Auswahl einer anderen Auswahl zuzuweisen, gehe wie folgt vor:
 
-1. Klicke in der Auswahlliste auf die Auswahl, die du als übergeordnete Auswahl verwenden möchtest.  
+1. Gehe zu _Plan > Konfiguration > Auswahl_{:.breadcrumbs}.
+2. Klicke in der Auswahlliste auf die Auswahl, die du als übergeordnete Auswahl verwenden möchtest.  
    Ein Konfigurationsfenster öffnet sich auf der rechten Seite.
-2. Klicke im Abschnitt **Auswahl** auf das {% icon item-add %}.
-3. Klicke auf die Auswahl, die du als untergeordnete Auswahl hinzufügen möchtest.
-4. (Optional) Gib einen Datumsbereich in den Feldern **Gültig vom** und **Gültig bis** ein, um die Zuweisung zu einer übergeordneten Auswahl zu begrenzen. Wenn du die Felder **Gültig vom** und **Gültig bis** leer lässt, ist die Zuweisung unbegrenzt gültig.
+3. Klicke im Abschnitt **Auswahl** auf das {% icon item-add %}.
+4. Fülle folgende Felder aus:  
+   - **Auswahlen**: Klicke auf die Auswahl, die du als untergeordnete Auswahl hinzufügen möchtest.
+   - (Optional) **Gültig vom/Gültig bis**: Datumsbereich, um den Zeitraum einzuschränken, in dem die untergeordneten Auswahlen der übergeordneten Auswahl zugewiesen sind. Wenn du diese Felder leer lässt, ist die Zuweisung immer gültig.
 5. Klicke auf _OK_{:.doc-button}.
 
 Um eine untergeordnete Auswahl zu bearbeiten oder zu entfernen, klicke auf das {% icon item-edit %} oder das {% icon item-delete %}.

@@ -15,7 +15,7 @@ Values can be exported for up to one year. The time zone and interval correspond
 ## Download a forecast
 
 1. In _Forecast > Workloads_{:.breadcrumbs}, select a workload.
-2. Select the time frame using the date picker.
+2. Select the time frame using the date picker. Click on a week number to select the whole week, or click any day and drag to select a period shorter or longer than a week.
 3. From the three-dots menu _![Context Menu in injixo Forecast](/assets/img/common/forecast/context-menu.svg)_{:.doc-button-icon} at the top right, select **Download as CSV**.
 4. Select the forecast data that you want to download.  
 5. Click _Download as CSV_{:.doc-button}.<br>

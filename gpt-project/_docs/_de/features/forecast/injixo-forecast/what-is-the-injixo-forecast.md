@@ -23,13 +23,13 @@ related_articles:
 
 injixo Forecast verknüpft deine historischen Daten mit Algorithmen, um daraus qualitativ hochwertige Forecasts zu erstellen. Die Algorithmen erkennen Trends, Muster und Schwankungen in deinen Daten. injixo Forecast verwendet viele verschiedene Arten von Algorithmen wie ARIMA, Holt-Winters, exponentielle Glättung, Regression oder Gradient Boosting. 
 
-injixo Forecast wählt automatisch den Algorithmus aus, der am besten zu deinen Daten passt. Der Forecast wird für 365 Tage erzeugt und kann in täglichen, wöchentlichen, monatlichen und jährlichen Ansichten angezeigt werden.
+injixo Forecast wählt automatisch den Algorithmus aus, der am besten zu deinen Daten passt. injixo erzeugt einen Forecast für 365 Tage nach dem Datenimport.
 
 injixo Essential WFM verwendet einen einfachen Algorithmus, der einfache Durchschnittswerte in den historischen Daten verwendet, um einen langfristigen linearen Trend und wöchentliche Muster zu erkennen.
 
 ## Forecast erstellen
 
-Sieh dir unseren Schnelleinstieg an, um zu erfahren, wie du {% link_new einen Forecast erstellst | getting-started/calculate-a-forecast.md %}. Mit jedem neuen Datenimport wird der erzeugte Forecast aktualisiert. In injixo Essential WFM wird nur einmal pro Woche ein neuer Forecast erzeugt.
+Sieh dir unseren Schnelleinstieg an, um zu erfahren, wie du {% link_new einen Forecast erstellst | getting-started/calculate-a-forecast.md %}. Mit jedem neuen Datenimport wird der erzeugte Forecast aktualisiert. In injixo Essential WFM wird einmal pro Woche ein neuer Forecast erzeugt.
 
 Hinweis: Wenn dein Forecast nur wiederkehrende Wochenverläufe anzeigt, kann es sich dabei trotzdem um den optimalen Forecast handeln. In diesem Fall erfasst der Algorithmus kurzfristige Muster (für sich nicht wiederholende Schwankungen) und stuft langfristige Muster als nicht relevant ein. Schwankungen in den historischen Daten sind nicht immer Muster.
 
@@ -51,7 +51,7 @@ Im folgenden findest du ein paar Tipps, um mit geringer Datenqualität umzugehen
 
 | Zeitraum mit geringer Datenqualität     | Tipp                                                                                                                                                         |
 | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- |
-| Ein paar Tage | Verwende {% link_new Ereignisse | features/forecast/injixo-forecast/events-and-holidays.md %}, um die betroffenen Tage als Ausfall zu kennzeichnen und sie von der Berechnung auszuschließen.                                  |
+| Ein paar Tage | Verwende {% link_new Ereignisse | features/forecast/injixo-forecast/events-and-holidays.md %}, um die betroffenen Tage als Störung zu kennzeichnen und sie von der Berechnung auszuschließen.                                  |
 | Ein paar Wochen    | Lade weitere Daten ohne Datenlücken oder irrelevante Muster hoch. |
 | Mehrere Wochen oder Monate  | Entferne die Daten, die vor der Lücke liegen. Importiere nur Daten, die nach der Lücke liegen.                            |
 
