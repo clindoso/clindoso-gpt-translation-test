@@ -62,4 +62,3 @@ Hide and show other time series by clicking the {% icon eye %} or the {% icon ey
 3. Hover over the time series name in the legend and click the Edit icon {% icon pencil | icon-only %}.
 4. In the **Customize graph** window, click _Delete_{:.doc-button}.
 5. Click _Save_{:.doc-button}.<br>Click _Close Edit mode_{:.doc-button} to return to the view mode.
-

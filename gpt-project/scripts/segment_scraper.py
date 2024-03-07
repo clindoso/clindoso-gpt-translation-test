@@ -56,10 +56,6 @@ def write_prompts_to_jsonl(data, file_path, language):
             file.write('\n')
 
 def main():
-    # Initialize docs directory
-    if not config.docs_directory:
-        raise EnvironmentError("Source docs directory not defined in the config file.")
-    else: docs_directory = config.docs_directory
 
     # Initialize termbase directory
     if not config.termbase_directory:

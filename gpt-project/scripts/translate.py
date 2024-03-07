@@ -364,7 +364,7 @@ def translate_article(client, language, source_text, tm_dict, gpt_model, lang):
             continue
 
         # Check for leading right angle bracket without further content
-        elif re.match(r'^> ', segment[0]):
+        elif re.match(r' *>$', segment[0]):
             translated_segments.append((segment, segment))
             continue
 

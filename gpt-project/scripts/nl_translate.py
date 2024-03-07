@@ -5,7 +5,9 @@ import time
 import csv
 import re
 import Levenshtein as lev
+import spacy
 from openai import OpenAI
+from term_scraper import extract_terms_from_directory
 
 # Use this script to translate whole articles from English into German, Spanish, French, Italian, or Dutch with ChatGPT.
 # The script takes two arguments, --lang and--source, respectively the target language and the source file to be translated.
@@ -95,6 +97,22 @@ def initialize_translation_memory(lang, tm_path):
             tm_dict[row['en']] = row[lang]
     
     return tm_dict
+
+def tokenize(text, model):
+    pass
+
+def initialize_tokenized_termbase(termbase_directory, lang):
+    """
+    Initializes the termbase for the target language
+    Parameters:
+        termbase_directory (str): Termbase directory path
+        lang (str): Target language code
+    """
+    term_list = extract_terms_from_directory(termbase_directory, lang)
+    model = spacy.load(f"{lang}_core_news_sm")
+    # tokenized_termbase = {tokenize_with_spacy(source_term): tokenize_with_spacy(target_term) for source_term, target_term in term_list}
+    
+    # return tokenized_termbase
 
 def check_translation_memory(segment, tm_dict):
     """
@@ -207,6 +225,10 @@ def translate_with_gpt(client, segment, language, gpt_model, previous_segment=''
         )
     
     translated_segment = response.choices[0].message.content
+
+    # Tokenize {segment} and check if tokens any of the tokens is in the tokens dictionary
+    # If they are, check if the correspondent in the target language is in the {translated segment}
+    # If it is not, prompt model to rephrase the {translated segment} based on the target language token
 
     return translated_segment
 
@@ -357,7 +379,7 @@ def translate_article(client, language, source_text, tm_dict, gpt_model):
             continue
 
         # Check for leading right angle bracket without further content
-        elif re.match(r'^> ', segment[0]):
+        elif re.match(r' *>$', segment[0]):
             translated_segments.append((segment, segment))
             continue
 
@@ -428,6 +450,11 @@ def main():
     # Start time tracker
     start_time = time.time()
 
+    # Initialize termbase
+    if not config.termbase_directory:
+        raise EnvironmentError("Source termbase directory not defined in the config file.")
+    else: termbase_directory = config.termbase_directory
+
     # Initialize OpenAI client
     client = initialize_open_ai_client()
 
@@ -439,6 +466,9 @@ def main():
     
     # Initialize translation memory dictionary
     tm_dict = initialize_translation_memory(lang, tm_path)
+
+    # Initialize termbase
+    # termbase = initialize_termbase(termbase_directory, lang)
     
     # Load source file segments
     source_text = load_source_file_segments(source)
