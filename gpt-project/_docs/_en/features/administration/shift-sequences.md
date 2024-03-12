@@ -41,13 +41,11 @@ Each row represents a weekly pattern for your schedule, which is why the number 
 To create shift sequences, you first need to create {% link_new activities | features/administration/activities.md %} or {% link_new day models | features/administration/daymodels/daymodel-creation.md %}.<br>
 After you have created shift sequences, you must {% link_new assign them to your people | features/administration/employee-overview.md | #assign-a-shift-sequence %} before you can insert them in your schedule.<br>
 When you assign a shift sequence to a person, you must set a reference date. The reference date is the first day when the shift sequence will be planned. Starting on that date, the shift sequence repeats without interruption for as long as it is valid.<br>
-Because you configure shift sequences as weekly patterns, set the reference date to a Monday, or to the weekday when your working week starts.
+Because you configure shift sequences as weekly patterns, set the reference date to a Monday or a Sunday, depending on when your working week starts.
 
 >Note
 >
->By default, the working week starts on Monday.
->
->You can change the first day of the week with the setting _48420_{:.id-label} _First day of the scheduling week_.
+>Users with admin access can change the start of the working week in _Account > System settings_{:.breadcrumbs} using the drop-down menu **Start of the week**.
 
 ## Create shift sequences
 

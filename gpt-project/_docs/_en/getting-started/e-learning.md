@@ -17,7 +17,7 @@ To help you or your people work with the full potential of injixo, you can start
 
 ## How can I access the e-learning courses?
 
-To access e-learning courses from injixo, select _![graduation hat icon](/assets/img/common/academic_cap.png)_{:.doc-button-icon} in the upper right. You will be redirected to an overview of available e-learning courses in a new tab.<br>To access e-learning courses from Help Center, go to our [e-learning overview page](/e-learning/overview/).
+To access e-learning courses from injixo, select the graduation hat icon _![graduation hat icon](/assets/img/common/academic_cap.png)_{:.doc-button-icon} in the upper right. You will be redirected to an overview of available e-learning courses in a new tab.<br>To access e-learning courses from Help Center, go to our [e-learning overview page](/e-learning/overview/).
 
 ## How can I navigate e-learning?
 
@@ -38,6 +38,6 @@ There are seven e-learning topics covering the most common injixo training needs
 - injixo Me
 - Account
 
-Select _Start Learning_{:.doc-button} to access each e-learning topic. The topics comprise several courses.
+Select _See courses_{:.doc-button} to access each e-learning topic. The topics comprise several courses.
 
-You can see your e-learning progress in the progress bar at the top left.
+After starting a course, you can see your e-learning progress in the progress bar at the top left.

@@ -50,8 +50,8 @@ Work time guidelines for the minimum, target, and maximum working hours are esse
 
 ### Week
 
-- **Minimum**: Enter the minimum number of working hours per week. You can set the start of the scheduling week with Setting _48420_{:.id-label}. You can define the number of days in the weekend with Setting _48421_{:.id-label}.
-- **Target**: Enter the target working hours per week. This value is required if you do not enter any values in the field **Working Hours for Each day of the Week**. You can set the start of the scheduling week with the Setting _48420_{:.id-label}.
+- **Minimum**: Enter the minimum number of working hours per week. Users with admin access can define the start of the working week in _Account > System settings_{:.breadcrumbs} using the drop-down menu **Start of the week**. You can define the number of days in the weekend with Setting _48421_{:.id-label}.
+- **Target**: Enter the target working hours per week. This value is required if you do not enter any values in the field **Working Hours for Each day of the Week**.
 - **Maximum**: Enter the maximum number of working hours per week. This parameter is verified by the scheduling parameters _2618_{:.id-label} and _2629_{:.id-label}. 
 
 ### Month

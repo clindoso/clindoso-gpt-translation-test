@@ -102,11 +102,11 @@ To use the two day models you just created for planning, follow these steps:
 
 1. {% link_new Create a shift sequence | features/administration/shift-sequences.md | #create-shift-sequences %} with two **Employee rows** and a **Duration** of 14 days.<br>
 2. In the shift sequence, insert the day models alternating. In row 1, add the morning day model in week 1, and the evening day model in week 2. Add the day models in the reverse order in row 2.
-3. Set a **reference date** to define when the shift sequence starts to be planned. Set the reference date to the day of the week when your scheduling week begins, e.g. Monday.
-4. Assign the shift sequence to your people:
+3. {% link_new Assign the shift sequence | features/administration/employee-overview.md | #assign-a-shift-sequence %} to your people:
     - For people in planning unit A, select the first employee row.
     - For people in planning unit B, select the second employee row.
-5. {% link_new Insert the shift sequence | features/scheduling/schedules/schedules-insert-shift-sequences.md | #insert-shift-sequences %} into your schedule.
+    - Set a **reference date** to define when the shift sequence starts to be planned. Set the reference date to the day of the week when your scheduling week begins, e.g. Monday.
+4. {% link_new Insert the shift sequence | features/scheduling/schedules/schedules-insert-shift-sequences.md | #insert-shift-sequences %} into your schedule.
 
 
 ## Configure temporary available people

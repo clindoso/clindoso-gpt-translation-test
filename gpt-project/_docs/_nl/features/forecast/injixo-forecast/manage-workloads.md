@@ -9,6 +9,8 @@ description: Maak workloads aan die het historische en voorspelde contactvolume 
 related_articles:
   - overwrite_title: Wat is injixo Forecast?
     filepath: features/forecast/injixo-forecast/what-is-the-injixo-forecast.md
+  - overwrite_title: Met workloads werken
+    filepath: features/forecast/injixo-forecast/work-with-workloads.md
   - overwrite_title: Openingstijden activeren
     filepath: features/forecast/injixo-forecast/forecast-activate-business-hours.md
 ---
@@ -32,7 +34,7 @@ injixo maakt queues aan op basis van de gegevens die door een integratie zijn ge
 
 Contactgegevens die door een integratie worden geïmporteerd, worden opgeslagen in queues. Deze queues zijn altijd gekoppeld aan een kanaal. Als je [workloads aanmaakt](#workloads-aanmaken) kun je queues filteren op kanaal en ze aan de workload toevoegen. Native integraties stellen automatisch het kanaal in voor queues. Niet alle integraties ondersteunen alle kanalen.
 
-Voor een CSV-integratie moet je het kanaal handmatig instellen. Je kunt een kanaal per kolom toevoegen of één kanaal selecteren voor het bestand wanneer je {% link_new de kolommen van een CSV-bestand toewijst | features/acd-integration/cloud/add-csv-integration.md | #de-kolommen-toewijzen %}.  
+Voor een CSV-integratie moet je het kanaal handmatig instellen. Je kunt een kanaal per kolom toevoegen of één kanaal selecteren voor het bestand wanneer je {% link_new de kolommen van een CSV-bestand toewijst | features/acd-integration/cloud/add-csv-integration.md | #kolommen-toewijzen %}.  
 
 De volgende kanalen worden door integraties ondersteund:
 
@@ -47,7 +49,7 @@ injixo Forecast groepeert queues per kanaal. Je kunt alleen queues met hetzelfde
 
 <!-- anchor for intercom forecast tour -->
 
-## Workloads aanmaken
+## Workloads aanmaken<a name="creating-a-new-workload"></a>
 
 We raden aan om voor elke activiteit die je met personeelsbehoefte wilt inplannen een workload aan te maken. Multiactiviteiten vereisen één workload voor de multiactiviteit, en één workload voor elke deelactiviteit.
 
@@ -77,8 +79,6 @@ We raden aan om voor elke activiteit die je met personeelsbehoefte wilt inplanne
    - Vink de selectievakjes voor geselecteerde, niet-geselecteerde of inactieve queues aan. Inactieve queues zijn queues die geïmporteerd zijn door integraties die verwijderd zijn.
    - Gebruik het zoekveld boven de tabel. Je kunt zoeken op de naam van de queue, de integratie of de workload.
 
-   Opmerking: Als het interval of kanaal van een queue niet overeenkomt met het interval of kanaal van de geselecteerde queue, worden alle queues die niet overeenkomen, uitgegrijsd.
-
 5. Klik op _Workload aanmaken_{:.doc-button}.
 
    De pagina geeft historische gegevens en een eerste forecastversie weer.  
@@ -100,7 +100,7 @@ You only need an integration and historical data import if you want injixo to cr
 2. Click _Create Workload_{:.doc-button} in the upper right corner of the forecast page.
 3. In the *Basic configuration* section, enter a **Name** for your new workload.
 4. Select the **Time zone** to display data. Note: The set time zone must match the planning unit to save staff requirements.
-5. (Optional) Select the **Holiday region** to acknowledge all public holidays that affect your forecast for the year.
+5. (Optional) Select the **Holiday region** to acknowledge all national holidays that affect your forecast for the year.
 6. Select the **Planning unit** and the **Activity**. Note: You must select an option to calculate staff requirements.
     {{ 4 | image: 'Import Workload basic configuration section' }}
 7. Click the tab **Forecast import**.
@@ -112,7 +112,7 @@ You only need an integration and historical data import if you want injixo to cr
 
 1. Selecteer een workload uit de lijst met workloads of typ de naam van de workload in het zoekveld in.
 2. Klik op het {% icon pencil %} om de gegevens van de workload te bewerken.  
-   Je kunt queues toevoegen of verwijderen zonder dat je opnieuw gegevens hoeft te importeren. Weergegeven queues worden uitgegrijsd als hun interval of kanaal niet overeenkomt met eerder toegewezen queues.
+   Je kunt queues toevoegen of verwijderen zonder dat je opnieuw gegevens hoeft te importeren.
 3. Klik op _Workload opslaan_{:.doc-button}.
    Op basis van de nieuwe configuratie wordt de forecast mogelijk bijgewerkt.
 
