@@ -95,7 +95,7 @@ def initialize_tm_file(tm_path, lang):
     The function constructs the TM file name using 'en-' as a prefix followed by the language code and '.csv' extension.
     It then checks if the TM directory exists, creates it if necessary, and clears the content of the TM file.
     """
-    # Defint tm_directory
+    # Define tm_directory
     tm_directory = os.path.dirname(tm_path)
     # Define tm file name
     tm_filename = "en-" + lang + ".csv"
@@ -168,6 +168,8 @@ def extract_file_contents(docs_directory, lang, tm_filepath, file_extension=".md
                     not_aligned_articles.extend(_not_aligned_articles)
                     aligned_qtt += _aligned_qtt
                     not_aligned_qtt += _not_aligned_qtt
+                else:
+                    print(f"{file} has no correspondent article in {lang.upper()}")
 
     return not_aligned_articles, aligned_qtt, not_aligned_qtt
 
