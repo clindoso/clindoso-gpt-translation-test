@@ -29,7 +29,7 @@ People allows you to manage data for the people in your company:
    - **Personnel number**: Unique identifier for the person in your company.
    - **Email (injixo login)**: Enter the email address the person uses to log in to injixo.
 4. To invite the person to log in to injixo, check the checkbox **Send welcome email**.  
-   You can only send the welcome email while creating a person. The email includes instructions to set a password and a link to the injixo login page. When the person sets a password, their email address will be verified.
+   You can only send the welcome email while creating a person. The email includes instructions to set a password and a link to the injixo login page.
 5. (Optional) Enter optional information for the person, such as a phone number or further contact information.
    The input in the **Title** field is not used anywhere in injixo. You can use this to address people, for example when distributing newsletters.
 6. Click _Create person_{:.doc-button}.  

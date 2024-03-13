@@ -127,7 +127,6 @@ Opmerking: In injixo Advanced en Enterprise WFM zijn **Monitoren** en **Administ
 | ------------------------------------ | ----------------------- | ----------------------- | ----------------------- | ----------------------- |
 | **Administratie**                   |                         |                         |                         |                         |
 | **Planning**                         |                         |                         |                         |                         |
-| Kwalificaties                           | <i class="fa fa-check"> | <i class="fa fa-check"> | <i class="fa fa-check"> |                         |
 | Activiteiten                           | <i class="fa fa-check"> | <i class="fa fa-check"> | <i class="fa fa-check"> |                         |
 | Dagmodellen                           | <i class="fa fa-check"> | <i class="fa fa-check"> | <i class="fa fa-check"> |                         |
 | Weekmodellen                   | <i class="fa fa-check"> | <i class="fa fa-check"> |        Alleen lezen        |                         |

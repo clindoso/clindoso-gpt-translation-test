@@ -52,7 +52,7 @@ Als je met meerdere eenheden werkt, dan kun je een medewerker uit een eenheid ti
 
 Om openingstijden aan een eenheid toe te voegen, moet je eerst {% link_new de eenheid aanmaken | features/administration/create-and-manage-planning-units.md | #eenheden-aanmaken %}.
 
-Voor planningsdoeleinden moet je openingstijden aan je eenheid toevoegen. Openingstijden beperken de dagelijkse tijden waarvoor je de {% link_new personeelsbehoefte kunt berekenen | features/forecast/injixo-forecast/calculate-staff-requirements.md %} en {% link_new geoptimaliseerde planningen kunt maken | features/scheduling/schedules/schedules-optimized-schedules.md %}. <!-- special public holiday day types or part of the linked article? -->
+Voor planningsdoeleinden moet je openingstijden aan je eenheid toevoegen. Openingstijden beperken de dagelijkse tijden waarvoor je de {% link_new personeelsbehoefte kunt berekenen | features/forecast/injixo-forecast/staff-requirement.md %} en {% link_new geoptimaliseerde planningen kunt maken | features/scheduling/schedules/schedules-optimized-schedules.md %}. <!-- special public holiday day types or part of the linked article? -->
 
 1. Klik in de sectie **Openingstijden** in het configuratievenster van de eenheid op het pictogram Toevoegen {% icon item-add | icon-only %} om de openingstijden voor bepaalde dagtypes toe te voegen.  
    Er wordt een dialoogvenster geopend.

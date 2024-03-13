@@ -11,44 +11,47 @@ related_articles:
     filepath: features/scheduling/meetings/scheduling-suggestions.md
 ---
 
-In _Plan > Meetings_{:.breadcrumbs}, you can schedule 1:1 meetings, group meetings, and self-learning sessions. You don't need to manually shift meetings around to find the optimal place in your existing schedule. Mathematical optimization ensures minimal impact of the meeting time slots on the coverage of existing activities.
+In this article, you will learn:
+
+- how to schedule 1:1 meetings, group meetings, and self-learning sessions with the _Meetings_ feature.
+- which prerequisites must be fulfilled.
+- about the limitations of scheduling meetings.
 
 ## What is the Meetings feature?
 
-_Plan > Meetings_{:.breadcrumbs} can schedule three meeting types:
+Under _Plan > Meetings_{:.breadcrumbs}, you can schedule three types of meetings for your employees:
 
-- {% link_new 1:1 meetings | features/scheduling/meetings/one-on-ones.md %}: one-on-one meetings with a team leader
-- {% link_new Schedule group meetings | features/scheduling/meetings/group-meetings.md %}: meetings for groups of people with or without a host
-- {% link_new Self-learning sessions | features/scheduling/meetings/self-learning-sessions.md %}: individual training sessions for people
+- {% link_new 1:1 meetings | features/scheduling/meetings/one-on-ones.md %}: schedule one-on-one meetings between employees and their team leader
+- {% link_new Schedule group meetings | features/scheduling/meetings/group-meetings.md %}: schedule meetings for groups of employees with or without a host
+- {% link_new Self-learning sessions | features/scheduling/meetings/self-learning-sessions.md %}: schedule individual training sessions for your employees
 
-Click a link to see how to set up the specific meeting type.
+The _Meetings_ feature will save you precious time, as you don't need to manually shift meetings around to find the optimal place in your schedule. Mathematical optimization ensures that the impact of the meeting time slots on the coverage of existing activities is minimal.
 
-<!-- {{ 1 | image: 'Overview page' }} -->
+{{ 1 | image: 'Overview page' }}
 
 ## Prerequisites and limitations
 
-- You need to have created at least one planning unit, one activity of type Meeting, a scheduling period, and at least one person. 
-- The Schedule level must contain a schedule for the planning unit in which you want to schedule people for meetings.
-- Meetings can only be scheduled for time periods in the future.
-- Meetings replace {% link_new activities | features/administration/activities.md %} of type Presence configured as Replaceable.
-  - Non-replaceable activities are not changed.
-  - Activities of types other than Present are not changed, even if they are configured as Replaceable.
+Some important things to know about the _Meetings_ feature before you start:
 
-## Generate meeting suggestions
+- It requires an existing schedule in the _Schedule_ level.
+- It can only replace {% link_new activities | features/administration/activities.md %} of type _Presence_ which have been configured as _Replaceable_.
+  - It doesn't touch non-replaceable activities at all. They stay as they are.
+  - It doesn't touch activities of types other than _Present_, even if they are configured as _Replaceable_.
+- It does not generate meeting suggestions for employees that are not part of the planning unit which has been selected during the meeting setup process.
+- It uses the time zone of the planning unit.
+- It runs for a maximum of 10 minutes and uses the best solution found during this time.
 
-After you have decided which meeting type you want to schedule, do the following:
+## Generate suggestions for meeting time slots
 
 1. Go to _Plan > Meetings_{:.breadcrumbs}.
-2. Click the **Set up** button in the card for {% link_new 1:1 meetings | features/scheduling/meetings/one-on-ones.md %}, {% link_new group meetings | features/scheduling/meetings/group-meetings.md %}, or {% link_new self-learning sessions | features/scheduling/meetings/self-learning-sessions.md %}.
-3. Configure the required **parameters** for the selected meeting type, which differ depending on the meeting type.
-4. Click **Generate suggestions**.  
-   The maximum runtime to find the best solution is 10 minutes.  
-   Meetings will be scheduled by using the time zone of the planning unit.
+2. Decide which meeting type you want to schedule. You can choose between {% link_new 1:1 meetings | features/scheduling/meetings/one-on-ones.md %}, {% link_new group meetings | features/scheduling/meetings/group-meetings.md %}, and {% link_new self-learning sessions | features/scheduling/meetings/self-learning-sessions.md %}. Click the **Set up** button in the respective card.
+3. Configure the required **parameters** for the selected meeting type. The parameters differ depending on the meeting type. Click one of the links above to learn more about how to set up the specific meeting type.
+4. Click **Generate suggestions**.
 
-## Review and schedule suggestions
+## Review suggestions and write them into the schedule
 
-When you generate meeting suggestions, injixo will create a new entry in the Generated suggestions table. Each table row shows the start time and the selected meeting type and planning unit. When the process has finished, you can do the following:
+When you have started the process to generate meeting suggestions, an entry appears in the _Generated suggestions_ table. It shows when the process has been initiated, the meeting type, and the selected planning unit. The process can take some time to complete. Afterwards, you
 
-1. {% link_new Check the status in the Action column | features/scheduling/meetings/scheduling-suggestions.md | #check-suggestions-generation-results %}.
-2. {% link_new Review the suggested meeting time slots | features/scheduling/meetings/scheduling-suggestions.md | #review-and-apply-the-suggestions %} and apply selected or all suggestions to your schedule.
-3. {% link_new Check the resulting schedule | features/scheduling/meetings/scheduling-suggestions.md | #review-the-scheduling-results %}.
+1. {% link_new check if the process was successful | features/scheduling/meetings/scheduling-suggestions.md | #check-if-the-process-was-successful %},
+2. {% link_new review the meeting time slot suggestions | features/scheduling/meetings/scheduling-suggestions.md | #review-and-apply-the-suggestions %}, write selected or all suggestions into the schedule, and
+3. {% link_new review the scheduling results | features/scheduling/meetings/scheduling-suggestions.md | #review-the-scheduling-results %}.

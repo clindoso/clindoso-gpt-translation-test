@@ -10,7 +10,7 @@ related_articles:
   - overwrite_title: Wat zijn planningsperioden?
     filepath: features/scheduling/schedules/scheduling-periods/what-are-scheduling-periods.md
   - overwrite_title: Medewerkersbehoefte bewerken of verwijderen
-    filepath: features/scheduling/edit-or-delete-staff-requirements.md
+    filepath: features/scheduling/employee-requirement.md
   - overwrite_title: Dienstenbehoefte gebruiken
     filepath: features/scheduling/schedules/schedules-shift-requirement.md
   - overwrite_title: Inschrijven op diensten instellen
@@ -25,7 +25,7 @@ Via Inschrijven op diensten kunnen je collega's actief deelnemen aan het plannin
 
 ## Inschrijven op diensten
 
-Voordat je het inschrijven op diensten gaat starten, dien je eerst {% link_new de personeelsbehoefte te berekenen | features/forecast/injixo-forecast/calculate-staff-requirements.md %} en eventueel {% link_new dienstenseries in te voegen | features/scheduling/schedules/schedules-insert-shift-sequences.md %}.
+Voordat je het inschrijven op diensten gaat starten, dien je eerst {% link_new de personeelsbehoefte te berekenen | features/forecast/injixo-forecast/staff-requirement.md %} en eventueel {% link_new dienstenseries in te voegen | features/scheduling/capacity/capacity-insert-shift-sequences.md %}.
 
 1. Maak in Schedules een {% link_new roosterperiode | features/scheduling/schedules/scheduling-periods/what-are-scheduling-periods.md | #planningsperioden-aanmaken %} aan met de status Niet gepubliceerd.
 2. Voer [minimum- en maximumwaarden](#je-dienstenmix-specificeren) in voor elk dagmodel in de tabel met dienstenbehoeften.
@@ -63,7 +63,7 @@ Bij het genereren van diensten worden diensten aangemaakt voor elke dag in de pl
 
    {{ 3 | image: 'Parametervenster voor dienstengeneratie', '50%' }}
 
-Opmerking: In het Dienstrooster-Center kun je het resultaat van de dienstengeneratie overschrijven door {% link_new het aantal diensten te wijzigen dat voor een enkele dag is gegenereerd | features/scheduling/edit-or-delete-staff-requirements.md %} om bijvoorbeeld een enkele dag aan te passen voor testdoeleinden.
+Opmerking: In het Dienstrooster-Center kun je het resultaat van de dienstengeneratie overschrijven door {% link_new het aantal diensten te wijzigen dat voor een enkele dag is gegenereerd | features/scheduling/employee-requirement.md %} om bijvoorbeeld een enkele dag aan te passen voor testdoeleinden.
 
 Het Dienstrooster-Center geeft de belangrijkste cijfers weer voor de dienstengeneratie. Je vindt ze in het {% link_new parametervenster | features/scheduling/shiftcenter/shift-center-overview.md | #parameter-window %} onderaan de pagina.
 

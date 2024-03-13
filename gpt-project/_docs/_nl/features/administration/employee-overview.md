@@ -12,7 +12,7 @@ related_articles:
   - overwrite_title: Add title for untranslated source
     filepath: getting-started/calculate-a-forecast.md
   - overwrite_title: Add title for untranslated source
-    filepath: features/forecast/injixo-forecast/calculate-staff-requirements.md
+    filepath: features/forecast/injixo-forecast/staff-requirement.md
   - overwrite_title: Add title for untranslated source
     filepath: features/scheduling/schedules/schedules-job-optimization.md
   - overwrite_title: Add title for untranslated source
@@ -134,7 +134,7 @@ Volg deze stappen om een dienstenserie toe te voegen.
 4. Specificeer de volgorde.<br>Deze instelling is alleen relevant als je meer dan één dienstenserie aan een medewerker wilt toewijzen. Dienstenseries met lagere waarden worden als eerste ingevoerd en kunnen door volgende dienstenseries worden overschreven.
 5. Stel een Referentiedatum in voor de dag waarop de dienstenserie begint.
 6. Klik op _OK_{:.doc-button}.
-Je kunt nu {% link_new dienstenseries toevoegen | features/scheduling/schedules/schedules-insert-shift-sequences.md %} aan de planning.
+Je kunt nu {% link_new dienstenseries toevoegen | features/scheduling/capacity/capacity-insert-shift-sequences.md %} aan de planning.
 
 ## Medewerkers overplaatsen
 

@@ -18,26 +18,16 @@ redirect_from:
 redirect_reason: Updated filename on 21 August 2023
 ---
 
-Planning units group people and configuration data for scheduling purposes. Your business locations do not necessarily have to correspond to your planning units. For example, people who work at two different locations can be {% link_new assigned | features/administration/employee-overview.md | #configure-employee-settings %} to one planning unit.
+Planning units group people and configuration data for scheduling purposes. Your business locations do not necessarily have to correspond to your planning units. For example, people who work at two different locations can be {% link_new assigned | features/administration/employee-overview.md | #configure-employee-settings %} to one planning unit. We recommend using one single planning unit, unless:
 
-## How many planning units should I use?
-	
-To minimize efforts, you can schedule people who work in different locations or teams in one planning unit by using {% link_new selections | features/administration/selections.md %}. We recommend using more than one planning unit in the following cases:
--  People work in different time zones.
--  Planners are only responsible for groups of people, e.g. business units. In injixo Advanced and Enterprise WFM, custom user roles can {% link_new restrict access to planning units | getting-started/configure-user-roles.md | #manage-team-access-restrict-access-to-configuration-data %}.
-- You have shared staff requirements, e.g. for overflow scenarios.
-- You want to create reports that include the total numbers from several planning units.
-	
-	
-> Tips for working with multiple planning units
->
-> - To group figures across planning units, add a parent planning unit to all relevant planning units.
-> - You can temporarily change an employee’s assignment from one planning unit to another.<br>Learn more about how to {% link_new delegate employees | features/administration/employee-overview.md | #delegate-employees %}.
-	
-<!-- Typically, you assign one planning unit to a person at a time. Reassign a planning unit using valid from and valid to dates in the employee configuration. In rare cases, you will need to assign more than one planning unit to a person. The person's main planning unit is assigned with priority 1. The person is scheduled in this main planning unit. A person's schedule will be displayed in other planning units with lower priority. You can also manually reschedule people in other planning units if needed. -->
+- people are in different time zones. In this case, use one planning unit per time zone.
+- planners in your company are responsible for separate groups of people, e.g. according to business units.
+
+injixo Advanced and Enterprise WFM provide custom user roles to restrict user access to different planning units.
+
+If you are working with several planning units, you can temporarily change an employee’s assignment from one planning unit to another. Learn more about how to {% link_new delegate employees | features/administration/employee-overview.md | #delegate-employees %}.
 
 ## Create planning units
-
 
 1. Go to _Plan > Configuration > Planning Units_{:.breadcrumbs}.
 2. Click the New icon {% icon item-add | icon-only %} in the upper left.  
@@ -60,11 +50,11 @@ To minimize efforts, you can schedule people who work in different locations or 
 
 ### Add business hours
 
-To add business hours to a planning unit, {% link_new create the planning unit first | features/administration/create-and-manage-planning-units.md | #create-planning-units %}.
+To add business hours to a planning unit, you need to {% link_new create the planning unit first | features/administration/create-and-manage-planning-units.md | #create-planning-units %}.
 
-For scheduling, you need to add business hours to the day types included in the planning unit. Business hours limit the daily hours for which you can {% link_new calculate staff requirements | features/forecast/injixo-forecast/calculate-staff-requirements.md %} and {% link_new create optimized schedules | features/scheduling/schedules/schedules-optimized-schedules.md %}. <!-- special public holiday day types or part of the linked article? -->
+For scheduling, you need to add business hours to your planning unit. Business hours limit the daily hours for which you can {% link_new calculate staff requirements | features/forecast/injixo-forecast/staff-requirement.md %} and {% link_new create optimized schedules | features/scheduling/schedules/schedules-optimized-schedules.md %}. <!-- special public holiday day types or part of the linked article? -->
 
-1. In the **Business Hours** section of the planning unit configuration panel, click the {% icon item-add %}.  
+1. In the **Business Hours** section of the planning unit configuration panel, click the {% icon item-add %} to add the business hours for certain day types.  
    A dialog window opens.
 2. In the **Day Types** section, select one or more {% link_new day types | features/administration/day-types.md %}.
 3. Enter the start and end time in the **From** and **To** fields (24&nbsp;hours format). If you are open 24&nbsp;hours, enter 00:00 in both fields.
@@ -77,16 +67,15 @@ To modify or remove business hours, click the {% icon item-edit %} or the {% ico
 
 To add activities to a planning unit, you need to {% link_new create the planning unit first | features/administration/create-and-manage-planning-units.md | #create-planning-units %}.
 
-Before you create schedules, you need to add all relevant activities of type Presence to planning units. You can only schedule people for activities that you have added to their planning unit. By default, all planning units include the Present activity, which cannot be deleted.
-To include activities of any type in your reports, add the activities to the relevant planning units.
+For scheduling, you need to add activities to planning units. You can only schedule people for activities that you have added to the planning unit. By default, all planning units include the Present activity. You cannot delete the Present activity.
 
 To add activities to a planning unit, proceed as follows:
 
 1. In the **Activities** section of the planning unit configuration panel, click the {% icon item-add %}.  
    A dialog window opens.
 2. Click the activity you want to add.
-3. Enter a time range in the **From** and **To** fields. The {% link_new Create optimized schedules | features/scheduling/schedules/schedules-optimized-schedules.md %} functionality will consider this activity within the time range you entered. When both fields have the value 00:00, injixo considers the business hours of the planning unit. Users with admin access can change this default behavior in setting _48408_{:.id-label} _Take into account business hours in AutoScheduler_.
-4. (Optional) Enter a date range in the **Valid from** and **Valid to** fields to limit when the activity is available for scheduling.<br>Leave the **Valid from** and **Valid to** fields blank to make it always available.
+3. (Optional) Enter a time range in the **From** and **To** fields. The {% link_new Create optimized schedules | features/scheduling/schedules/schedules-optimized-schedules.md %} functionality will consider this activity within the time range you entered. When both fields have the value 00:00, injixo considers the business hours of the planning unit. Users with admin access can change this default behavior in setting _48408_{:.id-label} _Take into account business hours in AutoScheduler_.
+4. (Optional) Enter a time in the **Valid from** and **Valid to** fields to limit when the activity is available for scheduling. Leave **Valid from** and **Valid to** blank to make it always available.
 5. Click _Ok_{:.doc-button}.
 
 To edit or delete an activity, click the {% icon item-edit %} or the {% icon item-delete %}.
@@ -99,31 +88,31 @@ To add a {% link_new multiactivity | features/administration/activity-types-and-
 
 By default, all {% link_new day models | features/administration/daymodels/daymodel-creation.md %} are assigned to your planning units. If you do not use all day models in a planning unit, you can limit the number of day models for that planning unit.
 
-Limiting day models can speed up scheduling with the Create optimized schedules functionality. However, you can only use day models that are assigned to the planning unit to generate shifts, create reports, or create optimized schedules. This may involve more effort in maintaining the other configuration data, e.g. week time patterns. Deleting a day model in use does not affect the schedules and shifts created with that day model.
+Limiting day models can speed up scheduling with the Create optimized schedules functionality. However, you can only use the remaining day models to generate shifts, create reports, or create optimized schedules. This may involve more effort in maintaining the other configuration data, e.g. week time patterns. Deleting a day model in use does not affect the schedules and shifts created with that day model.
 
 > Note
->
-> If you delete all day models in the planning unit, you can only schedule activities manually or by {% link_new inserting activities in shift sequences | features/administration/shift-sequences.md %}. You can no longer use the **Create optimized schedule** functionality.
+> 
+> If you delete all day models in the planning unit, you can only schedule shifts by adding activities manually to the schedule or by {% link_new inserting activities in shift sequences | features/administration/shift-sequences.md %}. All other scheduling approaches, e.g. using the Create optimized schedules functionality or work time pattern models, will not work.
 
 To limit the number of day models, proceed as follows:
 
 1. Go to _Plan > Configuration > Planning Units_{:.breadcrumbs}.
-2. Select the planning unit you want to edit and scroll to the **Day Models** section of the configuration panel.
-3. To limit the number of day models, replace or delete the default day model assignment:
-   - Click the {% icon item-edit %} next to the **[All]** option and select a day model.
-   - Click the {% icon item-delete %} to delete the **[All]** option.
-4. Click the {% icon item-add %} to assign one or more day models. You cannot add the same day model twice. To edit or delete an added day model, click the {% icon item-edit %} or the {% icon item-delete %}.
+2. Select the planning unit you want to edit and scroll to the **Day Models** section.
+3. Click the {% icon item-edit %} next to the default configuration option **[All]** and select a day model. You can also click the {% icon item-delete %} to delete the **[All]** option. To limit the number of day models, you need to either replace or delete the **[All]** option. You cannot add day models to a planning unit more than once.  
+   Skip step 3 if you want to assign more day models later.
+4. Click the {% icon item-add %} to assign one or more day models.
 5. Click _Ok_{:.doc-button}.
+
+To edit or delete a day model, click the {% icon item-edit %} or the {% icon item-delete %}.
 
 ## Delete planning units
 
 > Warning
->
-> If you delete a planning unit, you can no longer access the corresponding schedules.
+> 
+> If you delete a planning unit, the corresponding schedules are also deleted.
 
-1. Go to _Plan > Configuration > Planning units_{:.breadcrumbs}.
-2. Select the planning unit you want to delete.
-3. Click the {% icon item-delete %} in the upper left.
-4. To confirm, click _Yes_{:.doc-button}.
-
-
+1. Go to _Plan > Configuration > Planning Units_{:.breadcrumbs}.
+2. In the list, click the planning unit you want to delete.
+3. To ensure that scheduling data is still displayed correctly, delete the activities and remove the assigned day models from the planning unit before deleting it.
+4. Click the {% icon item-delete %} in the upper left.
+5. To confirm, click _Yes_{:.doc-button}.

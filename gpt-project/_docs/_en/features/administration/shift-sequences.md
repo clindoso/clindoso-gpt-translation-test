@@ -18,7 +18,7 @@ related_articles:
   - overwrite_title: Add title for untranslated source
     filepath: features/administration/employee-overview.md
   - overwrite_title: Add title for untranslated source
-    filepath: features/scheduling/schedules/schedules-insert-shift-sequences.md
+    filepath: features/scheduling/capacity/capacity-insert-shift-sequences.md
 ---
 
 A shift sequence is a weekly pattern of day models or activities. With shift sequences, you can quickly insert these repeating patterns into your schedule, and let injixo optimize the rest of the schedule.
@@ -27,10 +27,10 @@ Shift sequences can save you many hours of work, since you do not have to schedu
 
 There are four use cases for shift sequences:
 
-- Use case 1: Specify days when certain shifts must be scheduled
-- Use case 2: Schedule recurring activities
-- Use case 3: Specify days when people do not work
-- Use case 4: Specify when shifts can be scheduled based on people's availabilities
+1. Specify days when certain shifts must be scheduled
+2. Schedule recurring activities
+3. Specify days when people do not work
+4. Specify when shifts can be scheduled based on people's availabilities
 
 Shift sequences consist of one or more rows. Each row is an individual pattern that can be inserted into the schedule.<br>
 Each row contains cells that represent the days of the week. In the cells, you insert the day models or activities that you want to plan using the shift sequence.<br>
@@ -41,11 +41,13 @@ Each row represents a weekly pattern for your schedule, which is why the number 
 To create shift sequences, you first need to create {% link_new activities | features/administration/activities.md %} or {% link_new day models | features/administration/daymodels/daymodel-creation.md %}.<br>
 After you have created shift sequences, you must {% link_new assign them to your people | features/administration/employee-overview.md | #assign-a-shift-sequence %} before you can insert them in your schedule.<br>
 When you assign a shift sequence to a person, you must set a reference date. The reference date is the first day when the shift sequence will be planned. Starting on that date, the shift sequence repeats without interruption for as long as it is valid.<br>
-Because you configure shift sequences as weekly patterns, set the reference date to a Monday or a Sunday, depending on when your working week starts.
+Because you configure shift sequences as weekly patterns, set the reference date to a Monday, or to the weekday when your working week starts.
 
 >Note
 >
->Users with admin access can change the start of the working week in _Account > System settings_{:.breadcrumbs} using the drop-down menu **Start of the week**.
+>By default, the working week starts on Monday.
+>
+>You can change the first day of the week with the setting _48420_{:.id-label} _First day of the scheduling week_.
 
 ## Create shift sequences
 
@@ -56,7 +58,7 @@ To create shift sequences, go to _Plan > Configuration > Shift sequences_{:.brea
 1. Click the New icon {% icon item-add | icon-only %} in the upper left.
 2. Configure the settings of the shift sequence:<br>
   **Name**: Enter a unique name (max. 50 characters).<br>
-  **Abbreviation**: Enter the name or a shorter version of it (max. 25 characters).<br>
+  **Abbreviation**: Enter the name or a shorten version of it (max. 25 characters).<br>
   **Employee row(s)**: Enter the number of rows for the shift sequence (max. 53).<br>Each row will be assigned a number. Double-click on a row to rename it. You will need the row number or name to assign it to a person later.<br>
   **Duration**: Enter a value between 7 and 371 days. The duration must be a multiple of seven.
 6. Click _Ok_{:.doc-button}.

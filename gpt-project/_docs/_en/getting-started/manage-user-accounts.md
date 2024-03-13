@@ -40,9 +40,7 @@ To create a user, follow these steps:
 
 1. Go to _Account > Users_{:.breadcrumbs}.
 2. Click _Create user_{:.doc-button}.
-3. Fill out the user data.<br>
-   Keep the **Send welcome email** checkbox checked. The user will get an email to set a password, which will verify their email address.<br>
-4. Click _Create_{:.doc-button}.
+3. Fill out the user data and click _Create_{:.doc-button}.
 
 ## Edit a user account
 
@@ -56,16 +54,12 @@ injixo provides two places where you can edit a user account, depending on what 
 | {% link_new Assign a user role to a user | getting-started/configure-user-roles.md | #assign-user-roles-to-users %} | _Account > Users_{:.breadcrumbs} |
 | {% link_new Enforce two-factor authentication | getting-started/manage-2fa.md %}   | _Account > Users_{:.breadcrumbs} |
 
-If you want to edit a user, follow these steps:
+If you want to edit a user, e.g. to change their email address, follow these steps:
 
 1. Go to _Account > Users_{:.breadcrumbs}.
 2. Click the user name of an existing user.
 3. Change the user settings.
 4. Click _Save_{:.doc-button}.
-
-> Note  
-> 
-> If you change a user's email address, the user will receive an email to verify the new address. Uers who have not yet verified their email address, can also click a link in their user profile to receive the verification email again.
 
 ### Grant admin access to a user
 

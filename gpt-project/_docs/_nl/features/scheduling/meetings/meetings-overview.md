@@ -46,6 +46,6 @@ Houd rekening met het volgende voordat je Meetings gaat gebruiken:
 
 Zodra je begint met het genereren van vergaderingvoorstellen, wordt er een item toegevoegd aan de tabel Suggesties genereren. Hier zie je de tijd waarop het proces is gestart, het type vergadering en de geselecteerde eenheid. Het kan even duren voordat het proces is afgerond. Daarna voer je de volgende stappen uit:
 
-1. {% link_new Controleer of het proces is geslaagd | features/scheduling/meetings/scheduling-suggestions.md | #check-suggestions-generation-results %};
+1. {% link_new Controleer of het proces is geslaagd | features/scheduling/meetings/scheduling-suggestions.md | #check-if-the-process-was-successful %};
 2. {% link_new Controleer de voorgestelde vergadertijdslots | features/scheduling/meetings/scheduling-suggestions.md | #review-and-apply-the-suggestions %} en voeg alle of alleen de geselecteerde suggesties toe aan de planning;
 3. {% link_new Controleer de planningsresultaten | features/scheduling/meetings/scheduling-suggestions.md | #review-the-scheduling-results %}.

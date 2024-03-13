@@ -34,7 +34,7 @@ injixo maakt queues aan op basis van de gegevens die door een integratie zijn ge
 
 Contactgegevens die door een integratie worden geïmporteerd, worden opgeslagen in queues. Deze queues zijn altijd gekoppeld aan een kanaal. Als je [workloads aanmaakt](#workloads-aanmaken) kun je queues filteren op kanaal en ze aan de workload toevoegen. Native integraties stellen automatisch het kanaal in voor queues. Niet alle integraties ondersteunen alle kanalen.
 
-Voor een CSV-integratie moet je het kanaal handmatig instellen. Je kunt een kanaal per kolom toevoegen of één kanaal selecteren voor het bestand wanneer je {% link_new de kolommen van een CSV-bestand toewijst | features/acd-integration/cloud/add-csv-integration.md | #kolommen-toewijzen %}.  
+Voor een CSV-integratie moet je het kanaal handmatig instellen. Je kunt een kanaal per kolom toevoegen of één kanaal selecteren voor het bestand wanneer je {% link_new de kolommen van een CSV-bestand toewijst | features/acd-integration/cloud/add-csv-integration.md | #de-kolommen-toewijzen %}.  
 
 De volgende kanalen worden door integraties ondersteund:
 
@@ -49,7 +49,7 @@ injixo Forecast groepeert queues per kanaal. Je kunt alleen queues met hetzelfde
 
 <!-- anchor for intercom forecast tour -->
 
-## Workloads aanmaken<a name="creating-a-new-workload"></a>
+## Workloads aanmaken
 
 We raden aan om voor elke activiteit die je met personeelsbehoefte wilt inplannen een workload aan te maken. Multiactiviteiten vereisen één workload voor de multiactiviteit, en één workload voor elke deelactiviteit.
 
@@ -78,6 +78,8 @@ We raden aan om voor elke activiteit die je met personeelsbehoefte wilt inplanne
    - Filter de queues op kanaal (gesprekken, chats, enz.).
    - Vink de selectievakjes voor geselecteerde, niet-geselecteerde of inactieve queues aan. Inactieve queues zijn queues die geïmporteerd zijn door integraties die verwijderd zijn.
    - Gebruik het zoekveld boven de tabel. Je kunt zoeken op de naam van de queue, de integratie of de workload.
+
+   Opmerking: Als het interval of kanaal van een queue niet overeenkomt met het interval of kanaal van de geselecteerde queue, worden alle queues die niet overeenkomen, uitgegrijsd.
 
 5. Klik op _Workload aanmaken_{:.doc-button}.
 
@@ -112,7 +114,7 @@ You only need an integration and historical data import if you want injixo to cr
 
 1. Selecteer een workload uit de lijst met workloads of typ de naam van de workload in het zoekveld in.
 2. Klik op het {% icon pencil %} om de gegevens van de workload te bewerken.  
-   Je kunt queues toevoegen of verwijderen zonder dat je opnieuw gegevens hoeft te importeren.
+   Je kunt queues toevoegen of verwijderen zonder dat je opnieuw gegevens hoeft te importeren. Weergegeven queues worden uitgegrijsd als hun interval of kanaal niet overeenkomt met eerder toegewezen queues.
 3. Klik op _Workload opslaan_{:.doc-button}.
    Op basis van de nieuwe configuratie wordt de forecast mogelijk bijgewerkt.
 

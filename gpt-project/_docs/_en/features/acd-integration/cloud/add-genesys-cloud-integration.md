@@ -29,9 +29,3 @@ New to integrations? Learn {% link_new the basics | features/acd-integration/clo
 3. In the **Configuration** section, select your account region.
 4. (Optional) Check the checkbox **Import detailed on-queue agent statuses**.<br>The agent status on-queue includes several statuses, e.g. communication, interacting, idle, not responding. When importing agent statuses, injixo will differentiate between the individual statuses summarized under on-queue.
 5. Click _Save integration_{:.doc-button}.
-
-## Frequently asked questions
-
-| Question                            | Answer                                                                                                                                           |
-| ----------------------------------- | -------------------------------------------------------------------------------------------------------- |
-| The integration imports data for abandoned calls, average speed of answer, and calls answered within service level. Why am I unable to display this data in Dashboards? | You can display this data in Dashboards if you add exclusively queues from your Genesys Cloud integration when you set up a workload in Forecast. You cannot display this data if you include queues from other integrations.

@@ -29,7 +29,7 @@ To add a new Zendesk integration in injixo, follow the steps below:
 2. If there already is an integration, click _Add integration_{:.doc-button}.
 3. In the Zendesk tile, click _Add integration_{:.doc-button}.
 4. Enter a unique name for the new integration that identifies the data source.
-5. In the **User credentials** section, enter your Zendesk credentials:
+5. In the **User crendentials** section, enter your Zendesk crendentials:
    * Enter your full Zendesk domain name including the subdomain, e.g. example.zendesk.com.
    * Enter your Zendesk username.
    * Enter your API token.
@@ -57,20 +57,15 @@ Note: Adding new Zendesk views after you have saved the integration will auto-ge
 
 ### Unsupported views
 
-Zendesk allows you to create views to group tickets based on certain criteria, e.g. tickets assigned to you. Learn more in the [Zendesk documentation](https://support.zendesk.com/hc/en-us/articles/4408888828570-Creating-views-to-build-customized-lists-of-tickets). 
+injixo can create source queues for most views but currently does not support views that use the following ticket fields:
 
-injixo's Zendesk integration does not support all fields and operators you can select on the Zendesk view configuration page. In parentheses below, you can see the names used in the Zendesk API. To check if your views are supported, you may need to query the raw view configuration using the Zendesk API.
+- Business Hours
+- SLA
+- Channel
+- Skills
+- Conditions with user-specific values (e.g. Assignee is (current user))
 
-injixo currently does not support views that use the following fields or operators:
-
-- Business Hours (is_business_hours, less_than_business_hours, greater_than_business_hours)
-- SLA-related fields (until_sla_next_breach_at, sla_next_breach_at)
-- Channel (via_id)
-- Skills (skills_match)
-- Conditions with user-specific values for fields (assignee_id, via_id, updated_at, ticket_is_public)
-- Unsupported operators (changed, value, value_previous, not_changed, not_value, not_value_previous)
-
-injixo does not create source queues for such views with unsupported fields or operators.
+If you have Zendesk views with conditions referring to at least one of the fields above, injixo will ignore these views and will not create queues for them.
 
 ### Channel mapping between Zendesk and injixo
 

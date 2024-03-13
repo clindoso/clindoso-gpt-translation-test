@@ -60,7 +60,7 @@ Klik op je **gebruikersnaam** rechts bovenaan om je gebruikersprofiel te openen.
 
 ## Academy
 
-Klik op het {% icon graduation_cap %} naast je gebruikersnaam om {% link_new  Academy te openen | getting-started/e-learning.md %}, het zelfstudieplatform van injixo.
+Klik op het {% icon graduation_cap %} naast je gebruikersnaam om {% link_new  Academy te openen | getting-started/learn-injixo-with-academy.md %}, het zelfstudieplatform van injixo.
 
 ## Support
 

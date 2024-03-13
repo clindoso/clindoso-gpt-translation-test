@@ -50,7 +50,7 @@ injixo Forecast groups queues by channel. You can only add queues with the same 
 
 <!-- anchor for intercom forecast tour -->
 
-## Create workloads<a name="creating-a-new-workload"></a>
+## Create workloads
 
 We recommend creating one workload for each activity you want to schedule using staff requirements. Multiactivities require one workload for the multiactivity, and one workload for each subactivity.
 
@@ -104,7 +104,7 @@ You only need an integration and historical data import if you want injixo to cr
 3. In the *Basic configuration* section, enter a **Name** for your new workload.
 4. Select the **Time zone** to display data. Note: The set time zone must match the planning unit to save staff requirements.
 5. (Optional) Select the **Holiday region** to acknowledge all national holidays that affect your forecast for the year.
-6. Select the **Planning unit** and the **Activity**. Note: You must select an option to calculate staff requirements.
+6. Select the **Planning unit** and the **Activity**. This is required to calculate staff requirements.
     {{ 4 | image: 'Import Workload basic configuration section' }}
 7. Click the tab **Forecast import**.
 8. Select your **Interval length** and the **Channel** for the data import. Both must correspond with your import file.
@@ -114,8 +114,8 @@ You only need an integration and historical data import if you want injixo to cr
 ## Edit workloads
 
 1. Select a workload from the workloads list or type the workload's name in the search field.
-2. To change the workload details, click the {% icon pencil %}.  
-   You can add or remove queues without reimporting data. Listed queues are grayed out if their interval or channel does not match that of already assigned queues.
+2. To change the workload details, click the {% icon pencil %}.<br>  
+   In the **Assign queues** section, you can add or remove queues. If a queue’s interval or channel does not match that of the selected queues, all non-matching queues will be grayed out. If you remove a queue, the imported data is not deleted and the queue can still be added to other workloads.
 3. Click _Save workload_{:.doc-button}.  
    The new configuration may update the forecast.
 

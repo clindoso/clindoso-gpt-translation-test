@@ -15,7 +15,7 @@ related_articles:
     filepath: best-practices/importance-for-activities.md
 ---
 
-Sometimes, people need to work overtime to keep reasonable service levels. The reasons for overtime include an unexpectedly high workload, or understaffing caused by high absence quotes due to illness or public holidays.  
+Sometimes, people need to work overtime to keep reasonable service levels. The reasons for overtime include an unexpectedly high workload, or understaffing caused by high absence quotes due to illness or holiday.  
 In many cases, your people's contracts stipulate that overtime hours are paid higher, or that any amount of overtime hours worked must be granted as additional vacation allowance. It is also important to respect other contractual constraints, such as rest time between shifts when people work overtime. If you are a service provider, you may also be obliged to inform customers about any additional work scheduled. 
 
 In this article, you can find tips on how to configure activities and multiactivities to easily schedule overtime work and display it correctly on your coverage heat map and in your reports.
@@ -24,7 +24,7 @@ Overtime should be scheduled manually in Shift Center or Schedules as an additio
 
 ## Create activities for overtime
 
-The example below uses a new activity named Calls. Follow these steps for all activities that you want to be able to schedule as overtime work, i.e. for Calls or Emails, but not for Illness or Public holiday.
+The example below uses a new activity named Calls. Follow these steps for all activities that you want to be able to schedule as overtime work, i.e. for Calls or Emails, but not for Illness or Holiday.
 
 1. {% link_new Create and configure the activity | features/administration/activities.md %} **Calls**. 
 2. Duplicate the activity **Calls** and name the new one **Calls overtime**. You do not need to add skills to this activity.  

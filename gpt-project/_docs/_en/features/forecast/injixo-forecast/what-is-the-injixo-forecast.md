@@ -23,7 +23,7 @@ related_articles:
 
 injixo Forecast combines your historical data with algorithms to generate high-quality forecasts. The algorithms recognize trends, patterns, and fluctuations included in your data. injixo Forecast uses many types of algorithms, such as ARIMA, Holt-Winters, exponential smoothing, regression, or gradient boosting. 
 
-injixo Forecast automatically selects the algorithm best suited to your data. injixo generates a forecast for 365 days into the future after the data import.
+injixo Forecast automatically selects the algorithm best suited to your data. The forecast is generated for 365 days and can be displayed in daily, weekly, monthly, and yearly views.
 
 injixo Essential WFM uses a basic algorithm that uses simple average values in the historical data to recognize a long-term linear trend and weekly patterns.
 
@@ -43,7 +43,7 @@ Which kind of workloads are available to you depends on your WFM plan (Classic, 
 
 ## How to deal with low data quality
 
-To generate an accurate forecast, historical data must be both complete (enough data with as few gaps as possible) and clean (free of irrelevant patterns). For example, incorrectly marked {% link_new events or public holidays | features/forecast/injixo-forecast/events-and-holidays.md %} will impact forecast quality.
+To generate an accurate forecast, historical data must be both complete (enough data with as few gaps as possible) and clean (free of irrelevant patterns). For example, incorrectly marked {% link_new events or holidays | features/forecast/injixo-forecast/events-and-holidays.md %} will impact forecast quality.
 
 Historical data may include prolonged outages, or it may miss data for a particular timeframe. The closer that missing data is to the current day, the less the forecast quality is affected. 
 
