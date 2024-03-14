@@ -341,6 +341,7 @@ def translate_article(client, language, source_text, tm_dict, gpt_model, lang):
             continue
 
         # Handle code quotation
+
         elif re.match(r'^ *```', segment):
             # Reproduce quotation segments
             translated_segments.append((segment, segment))
@@ -358,13 +359,13 @@ def translate_article(client, language, source_text, tm_dict, gpt_model, lang):
             continue
 
         # Check for segments only with spaces
-        elif re.match(r'^ *$', segment[0]):
+        elif re.match(r'^ +$', segment[0]):
             # Append empty segment
             translated_segment.append((segment, ''))
             continue
 
         # Check for leading right angle bracket without further content
-        elif re.match(r' *>$', segment[0]):
+        elif re.match(r' *> *\n', segment[0]):
             translated_segments.append((segment, segment))
             continue
 

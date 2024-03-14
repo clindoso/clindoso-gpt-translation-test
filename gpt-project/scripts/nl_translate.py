@@ -373,13 +373,13 @@ def translate_article(client, language, source_text, tm_dict, gpt_model):
             continue
 
         # Check for segments only with spaces
-        elif re.match(r'^ +$', segment):
+        elif re.match(r'^ +$', segment[0]):
             # Append empty segment
             translated_segments.append((segment, ''))
             continue
 
         # Check for leading right angle bracket without further content
-        elif re.match(r' *>$', segment[0]):
+        elif re.match(r' *> *\n', segment[0]):
             translated_segments.append((segment, segment))
             print("LRAB match")
             continue
