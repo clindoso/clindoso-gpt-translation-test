@@ -25,6 +25,7 @@ termbase_directory = "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_d
 
 # Text to be translated in the front matter
 front_matter_variables = ['title: ', 'description: ']
+gpt_translation_marker = ('gpt_translation: True', 'gpt_translation: True')
 
 # Tag patterns
 tag_patterns = [

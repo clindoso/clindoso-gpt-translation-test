@@ -280,6 +280,7 @@ def process_front_matter(front_matter_segments, tm_dict, gpt_translation_dict, l
     """
     processed_front_matter = []
     frontmatter_variables = config.front_matter_variables
+    gpt_translation_marker = config.gpt_translation_marker
     for segment in front_matter_segments:
         for frontmatter_variable in frontmatter_variables:
             if segment[0].startswith(frontmatter_variable):
@@ -292,6 +293,7 @@ def process_front_matter(front_matter_segments, tm_dict, gpt_translation_dict, l
                 # No translation needed; reproduce the segment unchanged
                 processed_segment_pair = segment
         processed_front_matter.append(processed_segment_pair)
+    processed_front_matter.insert(-1, gpt_translation_marker)
 
     return processed_front_matter
 
@@ -381,7 +383,6 @@ def translate_article(client, language, source_text, tm_dict, gpt_model):
         # Check for leading right angle bracket without further content
         elif re.match(r' *> *\n', segment[0]):
             translated_segments.append((segment, segment))
-            print("LRAB match")
             continue
 
         # Translate segment using TM or GPT
@@ -412,7 +413,6 @@ def extract_translated_text(translated_segments):
     for _, target_segment in translated_segments:
         # Extract segments from tuples
         extracted_segments.append(target_segment)
-    
     # Join text list in one string 
     joint_translated_text = "\n".join(extracted_segments)
 
