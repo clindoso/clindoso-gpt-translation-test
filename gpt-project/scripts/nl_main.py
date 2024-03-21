@@ -27,8 +27,8 @@ def parse_arguments():
     Returns a tuple of (language, source file path).
     """
     parser = argparse.ArgumentParser(description="Script to translate texts using TM and ChatGPT")
-    parser.add_argument("--lang", required=True, help="Target language for translation")
     parser.add_argument("--source", required=True, help="Source file for translation")
+    parser.add_argument("--lang", required=False, help="Target language for translation", default="nl")
     args = parser.parse_args()
     return args.lang, args.source
 
