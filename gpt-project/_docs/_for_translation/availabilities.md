@@ -33,8 +33,6 @@ By default, injixo respects availabilities when creating optimized schedules. Av
 
 injixo only checks availabilities if the scheduling rule _2611_{:.id-label} is activated. Deactivate this rule to let your people request and be assigned shifts that are longer than their availability.
 
-You can allow {% link_new people to enter their own availabilities | features/injixo-me/use-injixo-me/explore-injixo-me.md | #set-your-availabilities-availability %} in injixo Me up to a maximum of 14. People themselves or planners must regularly delete any obsolete entries from the list. Check these availabilities manually before creating a schedule to avoid scheduling errors.
-
 ## Configure availabilities
 
 You can configure availabilities in two ways:
@@ -150,3 +148,14 @@ If you have configured availabilities with day models of type **Availability per
 2. Select the day model you want to delete.
 3. Click the {% icon item-delete %} in the action bar.
 4. In the **Confirmation** window, click _Yes_{:.doc-button}.
+
+## Availabilities in injixo Me
+
+You can allow {% link_new people to add their own availabilities | features/injixo-me/use-injixo-me/explore-injixo-me.md | #set-your-availabilities-availability %} in injixo Me. People can add up to 14 availabilities. Planners must regularly delete any obsolete entries from the list before creating a schedule to avoid potential scheduling errors.
+
+To allow people to enter their availabilities in injixo Me, follow these steps:
+
+1. Go to **Me**.
+2. Activate the **Availabilities** option.
+
+People can then add or edit their weekly availabilities in Me. Their availability will appear in their configuration data.
