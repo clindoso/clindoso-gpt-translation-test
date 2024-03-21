@@ -1,10 +1,10 @@
 ---
-title: Beschikbaarheden
+title: Beschikbaarheden <!-- TM 100 -->
 product_label:
   - advanced
   - enterprise
   - classic
-description: Maak herbruikbare beschikbaarheden aan om tijdsperiodes te definiëren, tijdens welke medewerkers kunnen worden ingepland.
+description: Maak herbruikbare beschikbaarheden aan om tijdsperiodes te definiëren, tijdens welke medewerkers kunnen worden ingepland. <!-- TM 100 -->
 redirect_from:
   - /availability-periods/
 redirect_reason: rename article September 2022
@@ -20,134 +20,143 @@ related_articles:
 gpt_translation: True
 ---
 
-Beschikbaarheden stellen de niet- of gedeeltelijke beschikbaarheid van medewerkers op bepaalde dagen of tijden tijdens de planning vast. Ze beperken de reeds gedefinieerde beperkingen van de openingsuren en contracten van je medewerkers. <!-- GPT translation -->
+Beschikbaarheidsrestricties bepalen op welke dagen en tijden medewerkers niet of slechts beperkt beschikbaar zijn om werk in te plannen. Zo kun je de beperkingen die worden bepaald door de openingstijden van je eenheden en de contracten van je medewerkers nog verder beperken. <!-- GPT translation -->
 
-Je kunt alleen een dienst of activiteit toevoegen in de planning als deze binnen het geconfigureerde tijdsbestek past. Personen zonder geconfigureerde beschikbaarheid worden geacht om tijdens je (geconfigureerde) openingstijden altijd beschikbaar te zijn. <!-- GPT translation -->
+Je kunt alleen een dienst toevoegen als deze binnen het geconfigureerde tijdsbestek past. Medewerkers zonder geconfigureerde beschikbaarheid worden beschouwd als zijnde altijd beschikbaar binnen je openingstijden. <!-- GPT translation -->
 
-Zo kunnen beschikbaarheden worden gebruikt voor: <!-- GPT translation -->
+Beschikbaarheden worden op verschillende manieren gebruikt, bijvoorbeeld: <!-- GPT translation -->
 
-- Vaste werkdagen/-tijden voor elke week configureren <!-- GPT translation -->
-- Beschikbaarhheidsdiensten heen en weer 'schuiven' tussen weken. <!-- GPT translation -->
-- tijdelijk beschikbare medewerkers configureren <!-- GPT translation -->
+- vaste werkdagen/-tijden voor elke week configureren <!-- GPT translation -->
+- Beschikbaarheid over weken draaien <!-- GPT translation -->
+- De beschikbaarheid te configureren voor medewerkers die tijdelijk beschikbaar zijn. <!-- GPT translation -->
 
-injixo houdt bij het maken van geoptimaliseerde planningen standaard rekening met de beschikbaarheid. Availabilities worden niet meegenomen bij het genereren van diensten, maar pas op het moment dat diensten worden toegewezen. <!-- GPT translation -->
+injixo houdt standaard rekening met medewerkersbeschikbaarheid bij het maken van geoptimaliseerde roosters. Beschikbaarheid wordt niet in acht genomen bij het genereren van diensten, maar pas bij het toewijzen van diensten aan de betreffende medewerker. <!-- GPT translation -->
 
-injixo houdt alleen rekening met de beschikbaarheden als de planningregel _2611_{:.id-label} is geactiveerd. Schakel deze regel uit om agenten diensten te laten aanvragen en toewijzen die langer zijn dan hun beschikbaarheid. <!-- GPT translation -->
-
-In injixo Me kun je de configuratie 'Achteraf verwijderen' activeren, waardoor medewerkers verwijderde beschikbaarheden tijdens het werken gelijk kunnen 'afmelden'. <!-- GPT translation -->
+By default, injixo houdt rekening met Availabilities (2599) bij het maken van geoptimaliseerde planningen. Bij het genereren van diensten niet, maar wel bij het toewijzen ervan. Alleen als de planningsregel _2611_{:.id-label} is geactiveerd, houdt injixo bij het toewijzen van diensten rekening met Availabilities. <!-- GPT translation -->
 
 ## Beschikbaarheden configureren <!-- GPT translation -->
 
-Je kunt de beschikbaarheid op twee manieren configureren: <!-- GPT translation -->
+Beschikbaarheden kun je op twee manieren configureren: <!-- GPT translation -->
 
-- Persoonlijke beschikbaarheden: Je kunt tijdelijke of permanente medewerkersbeschikbaarheden opzetten aan de hand van het pad _Plan > Configuratie > Medewerkers_{:.breadcrumbs}. <!-- GPT translation -->
-- Dagmodelbeschikbaarheden: Voeg beschikbaarheid toe aan dienstenseries om dezelfde beschikbaarheid aan meerdere werknemers toe te kennen. <!-- GPT translation -->
+- Persoonlijke beschikbaarheid: Stel tijdelijke of permanente beschikbaarheden in voor afzonderlijke medewerkers under _Plan > Configuratie > Medewerkers_{:.breadcrumbs}. <!-- GPT translation -->
+- Dagmodelbeschikbaarheden: Voeg beschikbaarheden toe aan dienstenseries om dezelfde beschikbaarheden aan meedere medewerkers toe te wijzen. <!-- GPT translation -->
 
-Opmerking: Dagmodelbeschikbaarheden overschrijven beschikbaarheden die voor een enkele medewerker gelden en handmatig zijn toegevoegd. <!-- GPT translation -->
+Opmerking: Dagmodelbeschikbaarheden overschrijven alle andere beschikbaarheden, inclusief handmatig toegevoegde nieuwe beschikbaarheden. <!-- GPT translation -->
 
-## Een vast weekmodel met werktijden/configureren <!-- GPT translation -->
+## Vaste werkdagen/-tijden configureren voor elke week <!-- GPT translation -->
 
-Voorbeeld: Een medewerker is vanwege zorgtaken op woensdag en vrijdag alleen 's ochtends vanaf 8:00 uur tot 12:00 uur beschikbaar voor werk. Je kunt als volgt de beschikbaarheid van deze medewerker configureren: <!-- GPT translation -->
+Voorbeeld: Een medewerker is vanwege kinderopvang op woensdagen en vrijdagen slechts beschikbaar in de ochtend van 8:00 uur tot 12:00 uur. Je kunt de beschikbaarheid van deze medewerker als volgt configureren: <!-- GPT translation -->
 
-1. Ga naar _Plan > Configuratie > Medewerkers_{:.breadcrumbs}.
-2. Selecteer de naam van de medewerker in de lijst. <!-- GPT translation -->
-3. Klik rechts op het **Beschikbaarheid**-gedeelte op het pictogram Nieuw toevoegen {% icon item-add | icon-only %}. <!-- GPT translation -->
-4. Configureer de beschikbaarheid: <!-- GPT translation -->
-    - (Optioneel) **Geldig vanaf** en **Geldig tot en met**: Als deze beschikbaarheid alleen op een bepaalde datumbereik van toepassing is, dan beperken deze datums de {% link_new geldigheidsperiode | features/administration/set-a-validity-period.md %} van de beschikbaarheid. <!-- GPT translation -->
-    - **Dagtypes**: Selecteer Woensdag en Vrijdag. Druk op CTRL om meerdere items te selecteren. <!-- GPT translation -->
+1. Ga naar _Plan > Configuratie > Medewerkers_{:.breadcrumbs}. <!-- TM 100 -->
+2. Selecteer de persoon in de lijst. <!-- GPT translation -->
+3. Klik in de sectie **Beschikbaarheid** aan de rechterkant op het pictogram Nieuwe toevoegen {% icon item-add | icon-only %}. <!-- GPT translation -->
+4. Stel de beschikbaarheid in: <!-- GPT translation -->
+    - (Optioneel) **Geldig vanaf** en **geldig tot en met**: Als de beschikbaarheid slechts gedurende een bepaalde periode geldig is, dan worden deze datums de {% link_new geldigheidsperiode | features/administration/set-a-validity-period.md %}. <!-- GPT translation -->
+    - **Dagtypes**: Selecteer Woensdag en Vrijdag. Houd CTRL ingedrukt om meerdere opties te selecteren. <!-- GPT translation -->
     - **Vanaf**: Voer 8:00 in. <!-- GPT translation -->
-    - **Tot en met**: Voer 12:00 in. <!-- GPT translation -->
-5. Klik op _OK_{:.doc-button}.
+    - **Tot en met**: Voer vervolgens 12:00 uur in. <!-- GPT translation -->
+5. Klik op _OK_{:.doc-button}. <!-- TM 100 -->
 
-## Beschikbaarheden roteren over weken <!-- GPT translation -->
+## Beschikbaarheden over weken heen kopiëren <!-- GPT translation -->
 
-In de onderstaande subsecties lees je hoe je inzetbaarheden kunt gebruiken om een planning te maken voor het volgende voorbeeld, of voor soortgelijke usecases: <!-- GPT translation -->
+De volgende subsecties leggen uit hoe je aan de hand van het volgende voorbeeld, of soortgelijke use cases plant met beschikbaarheden: <!-- GPT translation -->
 
-- je contactcenter is open van 8.00 - 20.00 uur. <!-- GPT translation -->
-- Tijdens even weken werkt eenheden A de ochtenddienst en eenheid B de avonddienst. <!-- GPT translation -->
-- In oneven weken werkt eenheid B ochtenddiensten en eenheid A avonddiensten. <!-- GPT translation -->
-- De ochtendploeg werkt van 8:00 tot 14:00 uur. <!-- GPT translation -->
-- De late dienst is van 14:00 tot 20:00 uur. <!-- GPT translation -->
+- Je contactcenter is geopend van 8.00 tot 1.9.00 uur. <!-- GPT translation -->
+- In de even weken werkt eenhuid A ochtenddiensten en eenheid B avonddiensten. <!-- GPT translation -->
+- In oneven weken werkt EKEMMM (Eenheid Klaingke week ochtend, akeern week avond) van 06:00 tot 14:00 uur en eenheid AEV van 14:00 tot 22:00 uur. <!-- GPT translation -->
+- De ochtend- vindt plaats van 8.00 uur tot 14.00 uur. <!-- GPT translation -->
+- De middagdienst is van 14:00 tot 20:00 uur. <!-- GPT translation -->
 
-### Dagmodellen Beschikbaarheid aanmaken <!-- GPT translation -->
+### Dagmodellen Beschikbaarheid. <!-- GPT translation -->
 
-Ga naar _Plan > Configuratie > Dagmodellen_{:.breadcrumbs} en klik op het pictogram **Nieuw** {% icon item-add | icon-only %} om {% link_new een dagmodel aan te maken | features/administration/daymodels/daymodel-creation.md %}.<br>In het volgende voorbeeld wordt uitgelegd hoe je twee dagmodellen instelt, zodat een ochtend- en avonddienst afwisselend worden toegewezen. <!-- GPT translation -->
+Om {% link_new dagmodellen aan te maken | features/administration/daymodels/daymodel-creation.md %} ga je naar _Plan > Configuratie > Dagmodellen_{:.breadcrumbs} en klik je op het pictogram Nieuw {% icon item-add | icon-only %}.<br>In het volgende voorbeeld wordt uitgelegd hoe je twee dagmodellen configureert om een ochtend- en avonddienst rouleren. <!-- GPT translation -->
 
-Ga als volgt te werk om het dagmodel voor de ochtenddienst te configureren: <!-- GPT translation -->
+Volg deze stappen om een dagmodel voor de ochtenddienst in te stellen: <!-- GPT translation -->
 
 1. Maak een nieuw dagmodel aan. <!-- GPT translation -->
 2. Stel het dagmodel in: <!-- GPT translation -->
     - **Type**: Selecteer **Beschikbaarheidsperiode**. <!-- GPT translation -->
-    - **Naam** en **Afkorting**: Voer een unieke naam en afkorting in, bijvoorbeeld Beschikbaarheid 8&nbsp;AM - 2&nbsp;PM en Besch 8AM-2PM. <!-- GPT translation -->
-    - (Optioneel) **Kleur**: Selecteer een kleur om het dagmodel gemakkelijker te kunnen vinden. <!-- GPT translation -->
-    - **Begin Beschikbaarheidsperiode**: Voer 8:00 in. <!-- GPT translation -->
-    - **Einde beschikbaarheidskader**: Voer 14:00 in.<br> Je kunt ook de optie **Duur van het-beschikbaarheidkader instellen**. De maximale waarde is 48 uur. <!-- GPT translation -->
-3. Klik op _OK_{:.doc-button}.
+    - **Naam** en **afkorting**: Voer een unieke naam en afkorting in, bijvoorbeeld Beschikbaarheid 8&nbsp;'s ochtends - 2&nbsp;'s middags en Afst 8am-2pm. <!-- GPT translation -->
+    - (Optioneel) **Kleur**: Selecteer een kleur om het dagmodel makkelijker terug te kunnen vinden. <!-- GPT translation -->
+    - **Begintijd Beschikbaarheidsperiode**: Voer 8:00 in. <!-- GPT translation -->
+    - **Einde beschikbaarheidsperiode**: Voer 14:00 in.<br> Je kunt ook de **Duur beschikbaarheidsperiode** instellen. De maximumwaarde is 48 uur. <!-- GPT translation -->
+3. Klik op _OK_{:.doc-button}. <!-- TM 100 -->
 
-Volg deze stappen om het dagmodel voor de avonddienst in te stellen: <!-- GPT translation -->
+Volg de volgende stappen om voor de avonddienst het dagmodel te configureren: <!-- GPT translation -->
 
 1. Maak een nieuw dagmodel aan. <!-- Repetition of GPT translation -->
 2. Stel het dagmodel in: <!-- Repetition of GPT translation -->
     - **Type**: Selecteer **Beschikbaarheidsperiode**. <!-- Repetition of GPT translation -->
-    - **Naam** en **Afkorting**: Voer een unieke Naam en afkorting in, bijv. Beschikbaarheid: 14:00 - 20:00 uur en Besch. 14-20 uur. <!-- GPT translation -->
-    - (Optioneel) **Kleur**: Selecteer een kleur om het dagmodel gemakkelijker te kunnen vinden. <!-- Repetition of GPT translation -->
-    - **Start Beschikbaarheidsperiode**: Voer 14:00 uur in. <!-- GPT translation -->
-    - **Einde beschikbaarheidsperiode**: Voer 20:00 in.<br> Je kunt deze limiet ook in **Beschikbaarheidsperiode duur (optioneel)** instellen. De maximale waarde is 48 uur. <!-- GPT translation -->
-3. Klik op _OK_{:.doc-button}.
+    - **Naam** en **Afkorting**: Voer een unieke naam en afkorting in, bijvoorbeeld Beschikbaarheid 14:00 - 20:00 uur en 2PM-8PM. <!-- GPT translation -->
+    - (Optioneel) **Kleur**: Selecteer een kleur om het dagmodel makkelijker terug te kunnen vinden. <!-- Repetition of GPT translation -->
+    - **Begin Beschikbaarheidsperiode**: Voer 14:00 in. <!-- GPT translation -->
+    - **Einde Beschikbaarheidskader**: Voer 20:00 uur in.<br>  Het is ook mogelijk om de **Beschikbaarheid** te beperken tot een bepaalde tijdsduur. De maximale waarde is 48 uur. <!-- GPT translation -->
+3. Klik op _OK_{:.doc-button}. <!-- TM 100 -->
 
 ### Een dienstenserie aanmaken en toewijzen <!-- GPT translation -->
 
-Volg deze stappen om de twee dagmodellen die je zojuist hebt aangemaakt te gebruiken voor het plannen: <!-- GPT translation -->
+Volg deze stappen om de twee dagmodellen zo in te stellen dat je ze bij het plannen kunt gebruiken: <!-- GPT translation -->
 
-1. {% link_new Maak een dienstenserie aan met twee **Medewerkers-rijen** en een **Duur** van 14 dagen.<br> <!-- GPT translation -->
-2. Voeg de dagmodellen op elkaar afwisselend toe aan de dienstenserie. Selecteer in rij 1 het model Ochtenddienst in week 1, en het model Middagdienst in week 2. Voeg de modellen in omgekeerde volgorde toe in rij 2. <!-- GPT translation -->
-3. {% link_new Wijs de dienstenserie toe | features/administration/employee-overview.md | #dienstenseries-toewijzen %} aan je medewerkers: <!-- GPT translation -->
-    - Selecteer de eerste rij in de tabel. <!-- GPT translation -->
-    - Selecteer de tweede medewerkersregel voor medewerkers toegewezen aan eenheid B. <!-- GPT translation -->
-    - Gebruik een **verwante datum** om te bepalen vanaf welke datum de dienstenserie moet worden gepland. Stel de referentiedatum in op de dag van de week waarop je roosterweek begint, bijvoorbeeld maandag. <!-- GPT translation -->
-4. {% link_new Voer de dienstenserie toe | features/scheduling/schedules/schedules-insert-shift-sequences.md | #dienstenseries-toevoegen %}. <!-- GPT translation -->
+1. {% link_new Maak een dienstenserie aan | features/administration/shift-sequences.md | #dienstenseries-aanmaken %} met twee **Medewerkersregels** en een **Tijdsduur** van 14 dagen.<br> <!-- GPT translation -->
+2. Voeg in de dienstenserie de dagmodellen om en om toe. Gebruik onder rij 1 in week 1 het dagmodel Ochtend, en voeg in week 2 het dagmodel Avond toe. Voeg in rij 2 de dagmodellen in omgekeerde volgorde toe. <!-- GPT translation -->
+3. {% link_new Wijs de dienstenserie toe | features/administration/employee-overview.md | #een-dienstenserie-toewijzen %} aan je medewerkers: <!-- GPT translation -->
+    - Selecteer de eerste medewerkersrij voor mensen in eenheden van het planningstype A. <!-- GPT translation -->
+    - Selecteer de medewerkers in eenheids-B door de tweede personeelsrij te selecteren. <!-- GPT translation -->
+    - Stel een **refentiedatum** in om te definiëren wanneer de dienstenserie begint met plannen. Stel de referentiedatum in op de dag in de week waar je rosterweek begint, bijvoorbeeld maandag. <!-- GPT translation -->
+4. {% link_new Inserteer de dienstenserie | features/scheduling/schedules/schedules-insert-shift-sequences.md | #dienstenseries-toevoegen %}. <!-- GPT translation -->
 
 ## Tijdelijk beschikbare medewerkers configureren <!-- GPT translation -->
 
-Voorbeeld: Een van je medewerkers is in een bepaalde week alleen beschikbaar van 9.00 tot 12.00 uur.<br>Volg de stappen om datums/tijden in te stellen als [weekdagen/tijden met weekfixaties](#weekdagen-inclusief-tijden-met-weekfixaties-instellen). Voeg de relevante geldigheidsperiode toe en ingesteld de juiste **Vanaf**- en **Tot_en_met**-waarden. <!-- GPT translation -->
+Voorbeeld: Een van je medewerkers is de komende week alleen beschikbaar voor werk van **9:00** tot **12:00 uur**.<br>Om hun beschikbaarheid dienovereenkomstig in te stellen, doorloop je de stappen om [vast werkdag-/tijdinstellingen in te stellen voor elke week](#vast-werkdagtijdstijden-instellen-voor-elke-week). Voeg de relevante {% link_new geldigheidsdatum | features/administration/set-a-validity-period.md %} en de juiste **Vanaf** \(*From*\) en **Tot** \( *To* \) toe. <!-- GPT translation -->
 
-## Beschikbaarheid bewerken <!-- GPT translation -->
+## Beschikbaarheden bewerken <!-- GPT translation -->
 
-Je kunt de beschikbaarhheid bewerken die je voor een afzonderlijke medewerker hebt geconfigureerd: <!-- GPT translation -->
+Je kunt de beschikbaarhheidsinstellingen bewerken, die je voor een individuele medewerker hebt geconfigureerd. <!-- GPT translation -->
 
-1. Ga naar _Plan > Configuratie > Medewerkers_{:.breadcrumbs}.
+1. Ga naar _Plan > Configuratie > Medewerkers_{:.breadcrumbs}. <!-- TM 100 -->
 2. Selecteer de medewerker voor wie je de beschikbaarheid wilt bewerken. <!-- GPT translation -->
 3. Klik in het rechter zijpaneel op **Beschikbaarheid**. <!-- GPT translation -->
-4. Klik naast **Beschikbaarheid bewerken** op het {% icon pencil 16px %}. <!-- GPT translation -->
+4. Klik naast de beschikbaarheid die je wilt bewerken op het pictogram Bewerken {% icon pencil | icon-only %}. <!-- GPT translation -->
 5. Bewerk de beschikbaarheid. <!-- GPT translation -->
-6. Klik in de sectie **Beschikbaarheid** op _OK_{:.doc-button}. <!-- GPT translation -->
-7. Klik in de **Beschikbaarheid**-venster op _OK_{:.doc-button}. <!-- GPT translation -->
+6. Klik in het venster **Beschikbaarheid** op _OK_{:.doc-button}. <!-- GPT translation -->
+7. Klik in de rechter benedenhoek van het rechter zijpaneel op _OK_{:.doc-button}. <!-- GPT translation -->
 
-Als je beschikbaarheden hebt geconfigureerd met dagmodellen van het type **Beschikbaarheidsperiode**, bewerk dan het dagmodel: <!-- GPT translation -->
+Als je beschikbaarheden met dagmodellen van het type **Beschikbaarheidsperiode** hebt geconfigureerd, bewerk dan het dagmodel: <!-- GPT translation -->
 
-1. Ga naar _Plan > Configuratie > Dagmodellen_{:.breadcrumbs}. <!-- GPT translation -->
+1. Ga naar *Plan > Configuratie > Dagmodellen*{:.breadcrumbs}. <!-- GPT translation -->
 2. Selecteer het dagmodel dat je wilt bewerken. <!-- GPT translation -->
 3. Bewerk het dagmodel. <!-- GPT translation -->
-4. Klik op _OK_{:.doc-button}.
+4. Klik op _OK_{:.doc-button}. <!-- TM 100 -->
 
-Je kunt ook beschikbaarheid bewerken in Dienstrooster-Center. Lees meer over {% link_new  hoe je plaasten toevoegt en verwijdert in Dienstrooster-Center | features/scheduling/shiftcenter/add-and-delete-items.md | #beschikbaarheid-toevoegen %}. tijdelijke wijzigingen kun je als volgt aanbrengen: Je kopieert persoonlijke en dagmodelbeschikbaarheden naar een cel om deze om te zetten naar handmatig toegevoegde beschikbaarheden. <!-- GPT translation -->
+Je kunt beschikbaarheid ook rechtstreeks in Dienstrooster-Center bewerken. Lees meer over {% link_new hoe je in Dienstrooster-Center beschikbaarheden toevoegt en verwijdert | features/scheduling/shiftcenter/add-and-delete-items.md | #beschikbaarheid-toevoegen %}. Je kunt persoonlijke of dagmodel-beschikbaarheden kopiëren en plakken in een cel om ze tijdelijk in handmatig toegevoegde beschikbaarheid om te zetten. <!-- GPT translation -->
 
-In het Dienstrooster-Center worden de beschikbaarhheidsniveaus weergegeven met een `<>`-symbool. Beweeg de muis over het symbool om de details te bekijken. In het weergavekader van de dag worden de beschikbaarheden weergegeven als oranje elementen. In het uitgeklapte celbereik worden de beschikbaarheden van medewerkers weergegeven als witte balken met een oranje streep eronder. <!-- GPT translation -->
+In Dienstrooster-Center worden beschikbaarheden op ieder niveau met een `<>`-symbool weergegeven. Beweeg je cursor over het symbool voor de details. In de dagcellen worden beschikbaarheden als oranje elementen weergegeven. In uitgeklapte dagcellen worden medewerkersbeschikbaarheden weergegeven als witte balken met een oranje onderstreping. <!-- GPT translation -->
 
 ## Beschikbaarheden verwijderen <!-- GPT translation -->
 
-Je kunt de beschikbaarhheidsinstellingen verwijderen die je voor een afzonderlijke medewerker hebt ingevoerd. <!-- GPT translation -->
+Je kunt de beschikbaarhheidsinstellingen die je voor een individueel persoon hebt geconfigureerd verwijderen: <!-- GPT translation -->
 
-1. Ga naar _Plan > Configuratie > Medewerkers_{:.breadcrumbs}.
-2. Selecteer de medewerker bij wie je de beschikbaarheid wilt verwijderen. <!-- GPT translation -->
+1. Ga naar _Plan > Configuratie > Medewerkers_{:.breadcrumbs}. <!-- TM 100 -->
+2. Selecteer de persoon van wie je de beschikbaarheid wilt verwijderen. <!-- GPT translation -->
 3. Klik in het rechter zijpaneel op **Beschikbaarheid**. <!-- Repetition of GPT translation -->
-4. Klik naast de beschikbaarheid die je wilt verwijderen op het pictogram Verwijderen {% icon item-delete | icon-only %}. <!-- GPT translation -->
-5. Klik in het venster **Bevestigen** op _Ja_{:.doc-button}. <!-- GPT translation -->
-6. Klik op _OK_{:.doc-button}.
+4. **Klik naast de beschikbaarheid die je wilt verwijderen op het pictogram Verwijderen**. <!-- GPT translation -->
+5. Klik in het venster op **Ja**{:.doc-button} om te bevestigen. <!-- GPT translation -->
+6. Klik op _OK_{:.doc-button}. <!-- TM 100 -->
 
-Als je beschikbaarheden hebt ingesteld met dagmodellen van het type **Tijdperiode beschikbaarheid**, verwijder dan het dagmodel: <!-- GPT translation -->
+Als je beschikbaarheden met dagmodellen van het type **Beschikbaarheid** hebt geconfigureerd, verwijder dan het dagmodel: <!-- GPT translation -->
 
-1. Ga naar _Plan > Configuratie > Dagmodellen_{:.breadcrumbs}. <!-- Repetition of GPT translation -->
+1. Ga naar *Plan > Configuratie > Dagmodellen*{:.breadcrumbs}. <!-- Repetition of GPT translation -->
 2. Selecteer het dagmodel dat je wilt verwijderen. <!-- GPT translation -->
-3. Klik in de actiebalk op het pictogram Dagmodel verwijderen {% icon item-delete | icon-only %}. <!-- GPT translation -->
-4. Klik in het venster **Bevestiging** op _Ja_{:.doc-button}. <!-- GPT translation -->
+3. Klik op het pictogram Verwijderen {% icon item-delete | icon-only %} in de handelingenbalk. <!-- GPT translation -->
+4. Klik in het **Bevestigingsvenster** op _Ja_{:.doc-button}. <!-- GPT translation -->
+
+## Beschikbaarheden in injixo Me <!-- GPT translation -->
+
+Je kunt {% link_new medewerkers toestaan om in injixo Me zelf hun beschikbaarheid in te stellen | features/injixo-me/use-injixo-me/explore-injixo-me.md | #beschikbaarheid-instellen %}. Medewerkers kunnen maximaal 14 beschikbaarheden toevoegen. Planners dienen daarom regelmatig verouderde regels te verwijderen voordat zij een planning maken om eventuele planningsconflicten te voorkomen. <!-- GPT translation -->
+
+Volg deze stappen om medewerkers toegang te geven om in injixo Me hun eigen beschikbaarheid in te voeren: <!-- GPT translation -->
+
+1. Ga naar **Me**. <!-- GPT translation -->
+2. Schakel de optie **Beschikbaarheid** in. <!-- GPT translation -->
+
+Zodra dat is ingeschakeld, kunnen medewerkers in Me hun weekbeschikbaarheden toevoegen of aanpassen. Deze informatie wordt opgeslagen onder Configuratie. <!-- GPT translation -->
