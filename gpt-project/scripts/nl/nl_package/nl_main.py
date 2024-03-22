@@ -224,7 +224,7 @@ def translate_with_gpt(client, segment, language, gpt_model, previous_segment=''
           ]
         )
     
-    translated_segment = response.choices[0].message.content
+    translated_segment = (segment, response.choices[0].message.content + " <!-- GPT translation -->")
 
     # Tokenize {segment} and check if tokens any of the tokens is in the tokens dictionary
     # If they are, check if the correspondent in the target language is in the {translated segment}
@@ -262,8 +262,8 @@ def translate_segment(segment, tm_dict, gpt_translation_dict, language, gpt_mode
     # Handle untranslated segments
     else:
         translated_segment = translate_with_gpt(client, segment, language, gpt_model, previous_segment)
-        gpt_translation_dict[segment] = translated_segment
-        return (segment, translated_segment + " <!-- GPT translation -->")
+        gpt_translation_dict[segment] = translated_segment[1]
+        return translated_segment
 
 
 def process_front_matter(front_matter_segments, tm_dict, gpt_translation_dict, language, gpt_model, client):

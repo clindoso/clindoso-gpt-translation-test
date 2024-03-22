@@ -13,7 +13,7 @@ In injixo, availabilities define when a person is available for scheduling on sp
 - Using personal {% link_new weekly availabilities | features/administration/availabilities.md | #configure-availabilities %}
 - Using {% link_new day models | features/administration/availabilities.md | #rotate-availabilities-across-weeks %}
 
-Additionally, people can add [one-time availabilities in inijxo Me](/add-availabilities-in-me#add-an-availability). If you already configured weekly availabilities, one-time availabilities replace them. 
+Additionally, people can add [one-time availabilities in inijxo Me](/add-availabilities-in-me#add-an-availability). If you already configured weekly availabilities, one-time availabilities replace them.
 
 ## Give people access to availabilities
 

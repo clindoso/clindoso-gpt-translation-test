@@ -206,8 +206,11 @@ def translate_with_gpt(client, segment, previous_segment, language, gpt_model):
           ]
         )
     
-    translated_segment = response.choices[0].message.content
-    print(translated_segment)
+    translated_segment = (segment, response.choices[0].message.content + " <!-- GPT translation -->")
+
+    # Tokenize {segment} and check if tokens any of the tokens is in the tokens dictionary
+    # If they are, check if the correspondent in the target language is in the {translated segment}
+    # If it is not, prompt model to rephrase the {translated segment} based on the target language token
 
     return translated_segment
 
@@ -247,8 +250,8 @@ def translate_segment(segment, tm_dict, gpt_translation_dict, language, gpt_mode
             return fuzzy_match
         else:
             translated_segment = translate_with_gpt(client, segment, previous_segment, language, gpt_model)
-            gpt_translation_dict[segment] = translated_segment
-            return (segment, translated_segment + " <!-- GPT translation -->")
+            gpt_translation_dict[segment] = translated_segment[1]
+            return translated_segment
 
 
 def process_front_matter(front_matter_segments, tm_dict, gpt_translation_dict, language, gpt_model, client):
@@ -384,7 +387,6 @@ def translate_article(client, language, source_text, tm_dict, gpt_model, lang):
     translated_segments = translated_front_matter + translated_segments
 
     # Return list of tuples with source and target segments
-    print(translated_segments)
     return translated_segments
 
 def extract_translated_text(translated_segments):
