@@ -15,3 +15,5 @@ python cli.py translate {source article path} --lang {language code}
 ```
 python cli.py align --lang {language code}
 ```
+
+`--lang` is optional. The default value is `nl`, i.e. Dutch.

@@ -1,0 +1,6 @@
+#!/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/env/bin/python
+import sys
+from comet.cli.compare import compare_command
+
+if __name__ == '__main__':
+    sys.exit(compare_command())

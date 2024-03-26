@@ -1,0 +1,6 @@
+#!/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/env/bin/python
+import sys
+from comet.cli.mbr import mbr_command
+
+if __name__ == '__main__':
+    sys.exit(mbr_command())
