@@ -1,22 +1,10 @@
 import config
 import os
 import csv
-import argparse
 from nl_translation_package.config import LANGUAGE_MODELS
 
 # Use this script to create a CSV file as a TM with English as source language
 # This script takes one argument, --lang, the target language of the TM
-
-def parse_arguments():
-    """
-    Parse command-line arguments for TM target language.
-    Returns the string for language.
-    """
-    parser = argparse.ArgumentParser(description="Script to create a translation memory in EN and a selected target language.")
-    parser.add_argument("--lang", required=True, help="TM target language")
-    args = parser.parse_args()
-    return args.lang
-
 
 def read_and_split_file(file_path):
     """
@@ -174,14 +162,14 @@ def extract_file_contents(docs_directory, lang, tm_filepath, file_extension=".md
     return not_aligned_articles, aligned_qtt, not_aligned_qtt
 
 
-def main():
+def main(args):
     # Initialize docs directory
     if not config.docs_directory:
         raise EnvironmentError("Source documents directory not defined in the config file.")
     else: docs_directory = config.docs_directory
 
     # Initializes target lang
-    lang = parse_arguments()
+    lang = args.lang
 
     # Initialize language models
     tm_path = initialize_language_model(lang)

@@ -46,7 +46,7 @@ In _Me > Dashboard_{:.breadcrumbs} vind je een overzicht van je planning: <!-- T
 
 ## Je planning bekijken: Mijn agenda <!-- TM 100 -->
 
-In _Me > My Calendar_{:.breadcrumbs} kun je een dag-, week- of maandweergave selecteren om je planning te bekijken. <!-- GPT translation -->
+In _Me > My Calendar_{:.breadcrumbs} kun je je planning bekijken met weergaven op dag-, week- of maandniveau. <!-- GPT translation -->
 Je kunt ook {% link_new diensten ruilen | features/injixo-me/use-injixo-me/swap-shifts-with-your-colleagues.md | #diensten-ruilen %}. <!-- TM 100 -->
 
 - Om de weergegeven tijdsperiode te wijzigen, klik je op _Dag_{:.doc-button}, _Week_{:.doc-button} of _Maand_{:.doc-button}. <!-- TM 100 -->
@@ -54,7 +54,7 @@ Je kunt ook {% link_new diensten ruilen | features/injixo-me/use-injixo-me/swap-
 - Om een overzicht voor vandaag te bekijken, klik je op _Vandaag_{:.doc-button}. <!-- TM 100 -->
 - Om een datumbereik te selecteren, klik je op het {% icon calendar %}. <!-- TM 100 -->
 - Om het dagaanzicht voor een bepaalde datum weer te geven, selecteer je de dag in de kalender. <!-- TM 100 -->
-- Klik op het {% icon comment %} in de lijst aan de linkerkant (dagweergave) om de opmerking van de planner voor een bepaalde dag te bekijken. <!-- GPT translation -->
+- Om de opmerking van een planner voor een bepaalde dag te zien, klik je in de lijst aan de linkerkant (dagweergave) op het pictogram Dagopmerkingen {% icon comment | icon-only %}. <!-- GPT translation -->
 
 ### Abonneren op de agenda <!-- TM 100 -->
 
@@ -88,7 +88,7 @@ Als je planning is gepubliceerd, dan kun je deze downloaden als PDF- of ICS-best
 
 ## Je teamkalender bekijken: Teamkalender <!-- TM 100 -->
 
-In _Me > Teamkalender_{:.breadcrumbs} kun je alle planningen van medewerkers binnen je eenheid en selectie bekijken. De teamkalender bevat activiteiten die nu niet worden weergegeven in de dagweergave, bijvoorbeeld Groep: Medewerker is de dagstatus activiteit, die wordt gebruikt om aan bedrijfsbeheerders te laten zien dat de medewerker deze dagpartij heeft. Bij weergave per medewerker wordt de dagstatusactiviteit Groep: Medewerker thuiswerk blauw, wat aangeeft dat de medewerker thuiswerkt. Als planningen nog niet beschikbaar zijn, wordt de melding Niets ingepland weergegeven. <!-- GPT translation -->
+In _Me > Teamkalender_{:.breadcrumbs} kun je de planningen van alle medewerkers in je eenheid en selectie bekijken. De teamkalender bevat actviteiten zoals aanwezigheid, pauzes en vakanties. De teamkalender kan dagstatus-activiteiten weergeven, bijvoorbeeld om weer te geven dat medewerkers vanuit huis werken. Als de planningsperiode nog niet is gepubliceerd, wordt de volgende melding weergegeven: Niets gepland. <!-- GPT translation -->
 
 ## Je verlofaanvragen beheren: Verlof <!-- TM 100 -->
 
@@ -178,7 +178,7 @@ Volg de volgende stappen om in te klokken: <!-- TM 100 -->
 
 1. In _Me > Tijdregistratie_{:.breadcrumbs} selecteer je de huidige dag. <!-- TM 100 -->
 2. Klik op _Inklokken_{:.doc-button}. <!-- TM 100 -->
-3. Selecteer in het dialoogvenster een activiteit in het vervolgkeuzemenu en klik op _Starten_{:.doc-button}. <!-- GPT translation -->
+3. Selecteer in het dialoogvenster een activiteit in het vervolgkeuzemenu en klik vervolgens op _Start_{:.doc-button}. <!-- GPT translation -->
    _Me > Dashboard_{:.breadcrumbs} wordt geopend. Naast _Uitklokken_{:.doc-button} worden de inkloktijd en -datum weergegeven. <!-- TM 100 -->
 
 Volg de volgende stappen om over te schakelen naar een andere activiteit: <!-- TM 100 -->

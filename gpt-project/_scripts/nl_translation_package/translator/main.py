@@ -1,18 +1,12 @@
 # main.py
-import argparse
 import sys
-import time
 from .openai_api_client import OpenAIClient
 from .translation import translate_article, initialize_translation_memory, initialize_language_model
 from .utils import load_source_file_segments, write_translated_file, extract_translated_text
 from nl_translation_package.config import termbase_directory, LANGUAGE_MODELS
 
-def main():
-    # Parse command-line arguments
-    parser = argparse.ArgumentParser(description="Script to translate texts using TM and ChatGPT")
-    parser.add_argument("--source", required=True, help="Source file for translation")
-    parser.add_argument("--lang", required=False, help="Target language for translation", default="nl")
-    args = parser.parse_args()
+def main(args):
+    # Initialize source and lang
     source, lang = args.source, args.lang
 
     try:
@@ -46,4 +40,4 @@ def main():
         sys.exit(1)
 
 if __name__ == "__main__":
-    main()
+    main(args)
