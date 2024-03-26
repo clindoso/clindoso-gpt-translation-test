@@ -26,8 +26,8 @@ termbase_directory = "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_d
 translation_memory_directory = "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/tm/"
 
 # Front matter processing variables
-front_matter_variables = ['title: ', 'description: ']
-gpt_translation_marker = ('gpt_translation: true', 'gpt_translation: true')
+FRONT_MATTER_VARIABLES = ['title: ', 'description: ']
+GPT_TRANSLATION_MARKER = ('gpt_translation: true', 'gpt_translation: true')
 
 # Tag patterns
 tag_patterns = [

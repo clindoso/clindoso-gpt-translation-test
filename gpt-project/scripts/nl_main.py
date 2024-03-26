@@ -7,7 +7,7 @@ import re
 import Levenshtein as lev
 import spacy
 from openai import OpenAI
-from term_scraper import extract_terms_from_directory
+
 
 # Use this script to translate whole articles from English into German, Spanish, French, Italian, or Dutch with ChatGPT.
 # The script takes two arguments, --lang and--source, respectively the target language and the source file to be translated.
