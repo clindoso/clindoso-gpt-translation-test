@@ -1,5 +1,5 @@
 from openai import OpenAI
-from .config import OPENAI_API_KEY
+from nl_translation_package.config import OPENAI_API_KEY
 
 class OpenAIClient:
     def __init__(self):

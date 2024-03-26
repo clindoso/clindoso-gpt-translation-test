@@ -1,4 +1,4 @@
-from .config import LANGUAGE_MODELS, LOWER_THRESHOLD, UPPER_THRESHOLD, FRONT_MATTER_VARIABLES, GPT_TRANSLATION_MARKER
+from nl_translation_package.config import LANGUAGE_MODELS, LOWER_THRESHOLD, UPPER_THRESHOLD, FRONT_MATTER_VARIABLES, GPT_TRANSLATION_MARKER
 from .openai_api_client import OpenAIClient
 import csv
 import re

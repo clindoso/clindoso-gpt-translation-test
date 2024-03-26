@@ -5,7 +5,7 @@ import time
 from .openai_api_client import OpenAIClient
 from .translation import translate_article, initialize_translation_memory, initialize_language_model
 from .utils import load_source_file_segments, write_translated_file, extract_translated_text
-from .config import termbase_directory, LANGUAGE_MODELS
+from nl_translation_package.config import termbase_directory, LANGUAGE_MODELS
 
 def main():
     # Parse command-line arguments

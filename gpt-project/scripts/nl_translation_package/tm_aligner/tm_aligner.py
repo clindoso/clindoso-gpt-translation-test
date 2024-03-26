@@ -2,6 +2,7 @@ import config
 import os
 import csv
 import argparse
+from nl_translation_package.config import LANGUAGE_MODELS
 
 # Use this script to create a CSV file as a TM with English as source language
 # This script takes one argument, --lang, the target language of the TM
@@ -66,7 +67,7 @@ def initialize_language_model(lang):
     Returns tm_path
     """
     # Define language model dictionary
-    language_models = config.LANGUAGE_MODELS
+    language_models = LANGUAGE_MODELS
     # Initialize language model
     if lang in language_models:
         tm_path = language_models[lang]["tm_path"]
