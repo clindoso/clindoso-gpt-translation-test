@@ -46,7 +46,7 @@ In _Me > Dashboard_{:.breadcrumbs} vind je een overzicht van je planning: <!-- T
 
 ## Je planning bekijken: Mijn agenda <!-- TM 100 -->
 
-In _Me > My Calendar_{:.breadcrumbs} kun je je planning bekijken met weergaven op dag-, week- of maandniveau. <!-- GPT translation -->
+In _Me > My Calendar_{:.breadcrumbs} kun je je planning bekijken in dag-, week-, of maandweergave. <!-- GPT translation -->
 Je kunt ook {% link_new diensten ruilen | features/injixo-me/use-injixo-me/swap-shifts-with-your-colleagues.md | #diensten-ruilen %}. <!-- TM 100 -->
 
 - Om de weergegeven tijdsperiode te wijzigen, klik je op _Dag_{:.doc-button}, _Week_{:.doc-button} of _Maand_{:.doc-button}. <!-- TM 100 -->
@@ -54,7 +54,7 @@ Je kunt ook {% link_new diensten ruilen | features/injixo-me/use-injixo-me/swap-
 - Om een overzicht voor vandaag te bekijken, klik je op _Vandaag_{:.doc-button}. <!-- TM 100 -->
 - Om een datumbereik te selecteren, klik je op het {% icon calendar %}. <!-- TM 100 -->
 - Om het dagaanzicht voor een bepaalde datum weer te geven, selecteer je de dag in de kalender. <!-- TM 100 -->
-- Om de opmerking van een planner voor een bepaalde dag te zien, klik je in de lijst aan de linkerkant (dagweergave) op het pictogram Dagopmerkingen {% icon comment | icon-only %}. <!-- GPT translation -->
+- Om de opmerking van een planner voor een specifieke dag te bekijken, klik je op het pictogram Opmerking {% icon comment | icon-only %} in de lijst aan de linkerkant (dagweergave).  <!-- GPT translation -->
 
 ### Abonneren op de agenda <!-- TM 100 -->
 
@@ -88,7 +88,7 @@ Als je planning is gepubliceerd, dan kun je deze downloaden als PDF- of ICS-best
 
 ## Je teamkalender bekijken: Teamkalender <!-- TM 100 -->
 
-In _Me > Teamkalender_{:.breadcrumbs} kun je de planningen van alle medewerkers in je eenheid en selectie bekijken. De teamkalender bevat actviteiten zoals aanwezigheid, pauzes en vakanties. De teamkalender kan dagstatus-activiteiten weergeven, bijvoorbeeld om weer te geven dat medewerkers vanuit huis werken. Als de planningsperiode nog niet is gepubliceerd, wordt de volgende melding weergegeven: Niets gepland. <!-- GPT translation -->
+In de sectie _Me > Teamkalender_{:.breadcrumbs} kun je de planningen van alle medewerkers in je eenheid en groep bekijken. In de teamkalender worden activiteiten zoals aanwezigheid, pauzes en vakanties weergegeven. De dagweergave kan dagstatusactiviteiten weergeven om bijvoorbeeld zichtbaar te maken dat medewerkers thuiswerken. Als de planningsperiode nog niet is gepubliceerd, wordt het volgende bericht weergegeven: Geen activiteiten gepland. <!-- GPT translation -->
 
 ## Je verlofaanvragen beheren: Verlof <!-- TM 100 -->
 

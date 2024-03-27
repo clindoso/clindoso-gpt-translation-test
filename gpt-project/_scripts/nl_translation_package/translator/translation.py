@@ -139,7 +139,7 @@ def handle_fuzzy_matches(segment, tm_dict, tm_segments_lengths):
     # If there is no segment with an edit below the upper threshold, return None
     return None
 
-def translate_with_gpt(client, segment, language, gpt_model, previous_segment=''):
+def translate_with_gpt(client, segment, language, gpt_model, comet_model, previous_segment=''):
     """
     Translates the segment using GPT.
 
@@ -153,26 +153,41 @@ def translate_with_gpt(client, segment, language, gpt_model, previous_segment=''
         str: The translated segment.
     """
 
-    if previous_segment:
+    comet_score = 0
+    i = 0
+    while comet_score < 0.79:
+        if previous_segment:
 
-        response = client.chat.completions.create(
-        model=gpt_model,
-        messages=[
-            {"role": "system", "content": f"Given a sentence in Markdown format, translate the sentence to {language} keeping the style, tone, formatting, and terminology consistent and provide strictly just the translation in plain language. For context, consider that the sentence preceding the one you will translate is: '{previous_segment}'"},
-            {"role": "user", "content": segment}
-          ]
-        )
+            response = client.chat.completions.create(
+            model=gpt_model,
+            messages=[
+                {"role": "system", "content": f"Given a sentence in Markdown format, translate the sentence to {language} keeping the style, tone, formatting, and terminology consistent and provide strictly just the translation in plain language. For context, consider that the sentence preceding the one you will translate is: '{previous_segment}'"},
+                {"role": "user", "content": segment}
+            ]
+            )
+        
+        else:
+            response = client.chat.completions.create(
+            model=gpt_model,
+            messages=[
+                {"role": "system", "content": f"Given a sentence in Markdown format, translate the sentence to {language} keeping the style, tone, formatting, and terminology consistent and provide strictly just the translation in plain language."},
+                {"role": "user", "content": segment}
+            ]
+            )
+        gpt_translation = response.choices[0].message.content
+        data = [
+            {
+                "src": segment,
+                "mt": gpt_translation
+            }
+        ]
+        comet_model_output = comet_model.predict(data, batch_size=8, gpus=1)
+        comet_score = comet_model_output.system_score
+        i += 1
     
-    else:
-        response = client.chat.completions.create(
-        model=gpt_model,
-        messages=[
-            {"role": "system", "content": f"Given a sentence in Markdown format, translate the sentence to {language} keeping the style, tone, formatting, and terminology consistent and provide strictly just the translation in plain language."},
-            {"role": "user", "content": segment}
-          ]
-        )
-    
-    translated_segment = (segment, response.choices[0].message.content + " <!-- GPT translation -->")
+    print(f'Score: {comet_score}\n-------------')
+    print(f'Attempts: {i}')
+    translated_segment = (segment, gpt_translation + " <!-- GPT translation -->")
 
     # Tokenize {segment} and check if tokens any of the tokens is in the tokens dictionary
     # If they are, check if the correspondent in the target language is in the {translated segment}
@@ -180,7 +195,7 @@ def translate_with_gpt(client, segment, language, gpt_model, previous_segment=''
 
     return translated_segment
 
-def translate_segment(segment, tm_dict, gpt_translation_dict, language, gpt_model, client, previous_segment=''):
+def translate_segment(segment, tm_dict, gpt_translation_dict, language, gpt_model, comet_model, client, previous_segment=''):
     """
     Translate a single text segment using a translation memory (TM)
     and generative translation
@@ -209,12 +224,12 @@ def translate_segment(segment, tm_dict, gpt_translation_dict, language, gpt_mode
     
     # Handle untranslated segments
     else:
-        translated_segment = translate_with_gpt(client, segment, language, gpt_model, previous_segment)
+        translated_segment = translate_with_gpt(client, segment, language, gpt_model, comet_model, previous_segment)
         gpt_translation_dict[segment] = translated_segment[1]
         return translated_segment
 
 
-def process_front_matter(front_matter_segments, tm_dict, gpt_translation_dict, language, gpt_model, client):
+def process_front_matter(front_matter_segments, tm_dict, gpt_translation_dict, language, gpt_model, comet_model, client):
     """
     Processes the front matter of a document, translating 'title' and 'description'
     fields while leaving their labels and other metadata unchanged.
@@ -234,7 +249,7 @@ def process_front_matter(front_matter_segments, tm_dict, gpt_translation_dict, l
             if segment[0].startswith(frontmatter_variable):
                 # Extract the title text and translate it
                 translatable_text = segment[0][len(frontmatter_variable):]
-                translated_text = translate_segment(translatable_text, tm_dict, gpt_translation_dict,language, gpt_model, client)
+                translated_text = translate_segment(translatable_text, tm_dict, gpt_translation_dict,language, gpt_model, comet_model, client)
                 processed_segment_pair = (segment[0], frontmatter_variable + translated_text[1])
                 break
             else:
@@ -263,9 +278,9 @@ def translate_article(client, language, source_text, tm_dict, gpt_model):
     login(token="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")
     snapshot_download(repo_id="Unbabel/wmt22-cometkiwi-da")
     # Initialize COMET model
-    model_path = download_model("Unbabel/wmt22-cometkiwi-da")
+    comet_model_path = download_model("Unbabel/wmt22-cometkiwi-da")
     # Load the model checkpoint
-    model = load_from_checkpoint(model_path)
+    comet_model = load_from_checkpoint(comet_model_path)
     # Initialize empty list to store front matter segments
     front_matter_segments = []
 
@@ -296,7 +311,7 @@ def translate_article(client, language, source_text, tm_dict, gpt_model):
             continue
         
         if not in_front_matter and not front_matter_processed:
-            translated_front_matter = process_front_matter(front_matter_segments, tm_dict, gpt_translation_dict, language, gpt_model, client)
+            translated_front_matter = process_front_matter(front_matter_segments, tm_dict, gpt_translation_dict, language, gpt_model, comet_model, client)
             front_matter_processed = True
             
         # Check commented out segment in English
@@ -342,16 +357,7 @@ def translate_article(client, language, source_text, tm_dict, gpt_model):
 
         # Translate segment using TM or GPT
         else:
-            segment, translated_segment = translate_segment(segment, tm_dict, gpt_translation_dict, language, gpt_model, client, previous_segment)
-            data = [
-                {
-                    "src": segment,
-                    "mt": translated_segment
-                }
-            ]
-            model_output =model.predict(data, batch_size=8, gpus=1)
-            print(model_output.scores)
-            print(f'{model_output.system_score}\n-------------')
+            segment, translated_segment = translate_segment(segment, tm_dict, gpt_translation_dict, language, gpt_model, comet_model, client, previous_segment)
             translated_segments.append((segment, translated_segment))
             previous_segment = segment
             print(f'- Source segment:\n{segment}')
