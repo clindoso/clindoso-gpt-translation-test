@@ -2,7 +2,7 @@
 title: Docs
 ---
 
-Use this Python package with the following commands in the `nl_translation_package` directory:
+Export your OPENAI_API_KEY. Then, use this Python package with the following commands in the `nl_translation_package` directory:
 
 - For translating Help Center articles:
 

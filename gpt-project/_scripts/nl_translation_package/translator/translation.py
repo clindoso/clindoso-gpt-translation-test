@@ -1,9 +1,9 @@
 from nl_translation_package.config import LANGUAGE_MODELS, LOWER_THRESHOLD, UPPER_THRESHOLD, FRONT_MATTER_VARIABLES, GPT_TRANSLATION_MARKER
-from .openai_api_client import OpenAIClient
 import csv
+from huggingface_hub import snapshot_download, login
 import re
 import Levenshtein as lev
-from openai import OpenAI
+from comet import download_model, load_from_checkpoint
 
 def initialize_language_model(lang):
     """
@@ -259,6 +259,13 @@ def translate_article(client, language, source_text, tm_dict, gpt_model):
     Returns:
         list: List of tuples with source and translated segments.
     """
+    # Login to Hugging Face
+    login(token="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")
+    snapshot_download(repo_id="Unbabel/wmt22-cometkiwi-da")
+    # Initialize COMET model
+    model_path = download_model("Unbabel/wmt22-cometkiwi-da")
+    # Load the model checkpoint
+    model = load_from_checkpoint(model_path)
     # Initialize empty list to store front matter segments
     front_matter_segments = []
 
@@ -336,6 +343,15 @@ def translate_article(client, language, source_text, tm_dict, gpt_model):
         # Translate segment using TM or GPT
         else:
             segment, translated_segment = translate_segment(segment, tm_dict, gpt_translation_dict, language, gpt_model, client, previous_segment)
+            data = [
+                {
+                    "src": segment,
+                    "mt": translated_segment
+                }
+            ]
+            model_output =model.predict(data, batch_size=8, gpus=1)
+            print(model_output.scores)
+            print(f'{model_output.system_score}\n-------------')
             translated_segments.append((segment, translated_segment))
             previous_segment = segment
             print(f'- Source segment:\n{segment}')
