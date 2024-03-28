@@ -7,6 +7,7 @@ import re
 import Levenshtein as lev
 import spacy
 from openai import OpenAI
+from term_scraper import extract_terms_from_directory
 
 
 # Use this script to translate whole articles from English into German, Spanish, French, Italian, or Dutch with ChatGPT.
@@ -98,8 +99,19 @@ def initialize_translation_memory(lang, tm_path):
     
     return tm_dict
 
-def tokenize(text, model):
-    pass
+def tokenize(term, model):
+    """
+    Tokenize a term using a spaCy language model.
+    Parameters:
+        term (str): The term to be tokenized
+        model: The loaded spaCy language model
+    Returns:
+        list of str: A list of tokens
+    """
+    # Use the spaCy model to tokenize the term
+    doc = model(term)
+    # Return the tokens as a list of strings
+    return tuple(token.text for token in doc)
 
 def initialize_tokenized_termbase(termbase_directory, lang):
     """
@@ -109,10 +121,13 @@ def initialize_tokenized_termbase(termbase_directory, lang):
         lang (str): Target language code
     """
     term_list = extract_terms_from_directory(termbase_directory, lang)
-    model = spacy.load(f"{lang}_core_news_sm")
-    # tokenized_termbase = {tokenize_with_spacy(source_term): tokenize_with_spacy(target_term) for source_term, target_term in term_list}
+    source_model = spacy.load("en_core_web_sm")
+    target_model = spacy.load(f"{lang}_core_web_sm")
     
-    # return tokenized_termbase
+    # Tokenize both source and target terms using the loaded spaCy model
+    tokenized_termbase = {tokenize(source_term, source_model): tokenize(target_term, target_model) for source_term, target_term in term_list}
+    
+    return tokenized_termbase
 
 def check_translation_memory(segment, tm_dict):
     """
@@ -469,7 +484,8 @@ def main():
     tm_dict = initialize_translation_memory(lang, tm_path)
 
     # Initialize termbase
-    # termbase = initialize_termbase(termbase_directory, lang)
+    termbase = initialize_tokenized_termbase(termbase_directory, lang)
+    print(termbase)
     
     # Load source file segments
     source_text = load_source_file_segments(source)

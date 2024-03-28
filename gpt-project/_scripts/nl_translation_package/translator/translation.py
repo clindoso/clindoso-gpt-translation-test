@@ -366,8 +366,6 @@ def translate_article(client, language, source_text, tm_dict, gpt_model):
         
     # Prepends translated front matter segments to translated segments
     translated_segments = translated_front_matter + translated_segments
-    
-    # Store segment to serve as context for next segment
 
     # Return list of tuples with source and target segments
     return translated_segments
