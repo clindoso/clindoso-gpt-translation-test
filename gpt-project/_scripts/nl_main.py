@@ -122,12 +122,12 @@ def initialize_tokenized_termbase(termbase_directory, lang):
     """
     term_list = extract_terms_from_directory(termbase_directory, lang)
     source_model = spacy.load("en_core_web_sm")
-    target_model = spacy.load(f"{lang}_core_web_sm")
+    target_model = spacy.load(f"{lang}_core_news_sm")
     
     # Tokenize both source and target terms using the loaded spaCy model
     tokenized_termbase = {tokenize(source_term, source_model): tokenize(target_term, target_model) for source_term, target_term in term_list}
     
-    return tokenized_termbase
+    return tokenized_termbase, source_model, target_model
 
 def check_translation_memory(segment, tm_dict):
     """
@@ -206,7 +206,7 @@ def handle_fuzzy_matches(segment, tm_dict, tm_segments_lengths):
     # If there is no segment with an edit below the upper threshold, return None
     return None
 
-def translate_with_gpt(client, segment, language, gpt_model, previous_segment=''):
+def translate_with_gpt(client, segment, language, gpt_model, tokenized_termbase, source_model, target_model, previous_segment=''):
     """
     Translates the segment using GPT.
 
@@ -239,15 +239,29 @@ def translate_with_gpt(client, segment, language, gpt_model, previous_segment=''
           ]
         )
     
-    translated_segment = (segment, response.choices[0].message.content + " <!-- GPT translation -->")
+    gpt_translation = response.choices[0].message.content
 
-    # Tokenize {segment} and check if tokens any of the tokens is in the tokens dictionary
-    # If they are, check if the correspondent in the target language is in the {translated segment}
-    # If it is not, prompt model to rephrase the {translated segment} based on the target language token
+    # Tokenize {segment} and GPT response
+    tokenized_segment = {token.text for token in source_model(segment)}
+    tokenized_gpt_translation = {token.text for token in target_model(gpt_translation)}
+    # Check if there is a term in source segment
+    i = 0
+    for tokenized_source_term, tokenized_target_term in tokenized_termbase.items():
+        if tokenized_source_term in tokenized_segment and tokenized_target_term not in tokenized_gpt_translation:
+            response = client.chat.completions.create(
+                model=gpt_model,
+                messages=[
+                    {"role": "user", "content": f"Rephrase the translation using the source lange term token `{tokenized_source_term}` and the target langue term token `{tokenized_target_term}`."}
+                ]
+            )
+            gpt_translation = response.choices[0].message.content
+            print("Term corrected")
+
+    translated_segment = (segment, gpt_translation + " <!-- GPT translation -->")
 
     return translated_segment
 
-def translate_segment(segment, tm_dict, gpt_translation_dict, language, gpt_model, client, previous_segment=''):
+def translate_segment(segment, tm_dict, gpt_translation_dict, language, gpt_model, client, tokenized_termbase, source_model, target_model, previous_segment=''):
     """
     Translate a single text segment using a translation memory (TM)
     and generative translation
@@ -276,12 +290,12 @@ def translate_segment(segment, tm_dict, gpt_translation_dict, language, gpt_mode
     
     # Handle untranslated segments
     else:
-        translated_segment = translate_with_gpt(client, segment, language, gpt_model, previous_segment)
+        translated_segment = translate_with_gpt(client, segment, language, gpt_model, tokenized_termbase, source_model, target_model, previous_segment)
         gpt_translation_dict[segment] = translated_segment[1]
         return translated_segment
 
 
-def process_front_matter(front_matter_segments, tm_dict, gpt_translation_dict, language, gpt_model, client):
+def process_front_matter(front_matter_segments, tm_dict, gpt_translation_dict, language, gpt_model, client, tokenized_termbase, source_model, target_model):
     """
     Processes the front matter of a document, translating 'title' and 'description'
     fields while leaving their labels and other metadata unchanged.
@@ -301,7 +315,7 @@ def process_front_matter(front_matter_segments, tm_dict, gpt_translation_dict, l
             if segment[0].startswith(frontmatter_variable):
                 # Extract the title text and translate it
                 translatable_text = segment[0][len(frontmatter_variable):]
-                translated_text = translate_segment(translatable_text, tm_dict, gpt_translation_dict,language, gpt_model, client)
+                translated_text = translate_segment(translatable_text, tm_dict, gpt_translation_dict,language, gpt_model, client, tokenized_termbase, source_model, target_model)
                 processed_segment_pair = (segment[0], frontmatter_variable + translated_text[1])
                 break
             else:
@@ -312,7 +326,7 @@ def process_front_matter(front_matter_segments, tm_dict, gpt_translation_dict, l
 
     return processed_front_matter
 
-def translate_article(client, language, source_text, tm_dict, gpt_model):
+def translate_article(client, language, source_text, tm_dict, gpt_model, tokenized_termbase, source_model, target_model):
     """
     Translates the content of the source file using the specified language model.
 
@@ -325,7 +339,7 @@ def translate_article(client, language, source_text, tm_dict, gpt_model):
 
     Returns:
         list: List of tuples with source and translated segments.
-    """
+    """ 
     # Initialize empty list to store front matter segments
     front_matter_segments = []
 
@@ -356,7 +370,7 @@ def translate_article(client, language, source_text, tm_dict, gpt_model):
             continue
         
         if not in_front_matter and not front_matter_processed:
-            translated_front_matter = process_front_matter(front_matter_segments, tm_dict, gpt_translation_dict, language, gpt_model, client)
+            translated_front_matter = process_front_matter(front_matter_segments, tm_dict, gpt_translation_dict, language, gpt_model, client, tokenized_termbase, source_model, target_model)
             front_matter_processed = True
             
         # Check commented out segment in English
@@ -402,7 +416,7 @@ def translate_article(client, language, source_text, tm_dict, gpt_model):
 
         # Translate segment using TM or GPT
         else:
-            segment, translated_segment = translate_segment(segment, tm_dict, gpt_translation_dict, language, gpt_model, client, previous_segment)
+            segment, translated_segment = translate_segment(segment, tm_dict, gpt_translation_dict, language, gpt_model, client, tokenized_termbase, source_model, target_model, previous_segment)
             translated_segments.append((segment, translated_segment))
             previous_segment = segment
             print(f'- Source segment:\n{segment}')
@@ -484,14 +498,14 @@ def main():
     tm_dict = initialize_translation_memory(lang, tm_path)
 
     # Initialize termbase
-    termbase = initialize_tokenized_termbase(termbase_directory, lang)
-    print(termbase)
+    tokenized_termbase, source_model, target_model = initialize_tokenized_termbase(termbase_directory, lang)
+    print(tokenized_termbase)
     
     # Load source file segments
     source_text = load_source_file_segments(source)
 
     # Perform the translation
-    translated_segments = translate_article(client, language, source_text, tm_dict, gpt_model)
+    translated_segments = translate_article(client, language, source_text, tm_dict, gpt_model, tokenized_termbase, source_model, target_model)
 
     # Create list with translated text
     translated_text = extract_translated_text(translated_segments)
