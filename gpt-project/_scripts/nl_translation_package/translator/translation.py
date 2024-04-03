@@ -155,7 +155,7 @@ def translate_with_gpt(client, segment, language, gpt_model, comet_model, previo
 
     comet_score = 0
     i = 0
-    while comet_score < 0.79:
+    while comet_score < 0.79 and i < 10:
         if previous_segment:
 
             response = client.chat.completions.create(
@@ -187,13 +187,9 @@ def translate_with_gpt(client, segment, language, gpt_model, comet_model, previo
     
     print(f'Score: {comet_score}\n-------------')
     print(f'Attempts: {i}')
-    translated_segment = (segment, gpt_translation + " <!-- GPT translation -->")
+    translated_segment = (segment, gpt_translation + " <!-- GPT Translation -->")
 
-    # Tokenize {segment} and check if tokens any of the tokens is in the tokens dictionary
-    # If they are, check if the correspondent in the target language is in the {translated segment}
-    # If it is not, prompt model to rephrase the {translated segment} based on the target language token
-
-    return translated_segment
+    return translated_segment, gpt_translation
 
 def translate_segment(segment, tm_dict, gpt_translation_dict, language, gpt_model, comet_model, client, previous_segment=''):
     """
@@ -224,8 +220,9 @@ def translate_segment(segment, tm_dict, gpt_translation_dict, language, gpt_mode
     
     # Handle untranslated segments
     else:
-        translated_segment = translate_with_gpt(client, segment, language, gpt_model, comet_model, previous_segment)
-        gpt_translation_dict[segment] = translated_segment[1]
+        translated_segment, gpt_translation = translate_with_gpt(client, segment, language, gpt_model, comet_model, previous_segment)
+        gpt_translation_dict[segment] = gpt_translation
+
         return translated_segment
 
 

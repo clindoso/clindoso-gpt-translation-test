@@ -46,7 +46,7 @@ In _Me > Dashboard_{:.breadcrumbs} vind je een overzicht van je planning: <!-- T
 
 ## Je planning bekijken: Mijn agenda <!-- TM 100 -->
 
-In _Me > My Calendar_{:.breadcrumbs} kun je je planning bekijken in dag-, week-, of maandweergave. <!-- GPT translation -->
+In _Me > My Calendar_{:.breadcrumbs} kun je een dag-, week- of maandweergave van je planning bekijken.
 Je kunt ook {% link_new diensten ruilen | features/injixo-me/use-injixo-me/swap-shifts-with-your-colleagues.md | #diensten-ruilen %}. <!-- TM 100 -->
 
 - Om de weergegeven tijdsperiode te wijzigen, klik je op _Dag_{:.doc-button}, _Week_{:.doc-button} of _Maand_{:.doc-button}. <!-- TM 100 -->
@@ -54,7 +54,7 @@ Je kunt ook {% link_new diensten ruilen | features/injixo-me/use-injixo-me/swap-
 - Om een overzicht voor vandaag te bekijken, klik je op _Vandaag_{:.doc-button}. <!-- TM 100 -->
 - Om een datumbereik te selecteren, klik je op het {% icon calendar %}. <!-- TM 100 -->
 - Om het dagaanzicht voor een bepaalde datum weer te geven, selecteer je de dag in de kalender. <!-- TM 100 -->
-- Om de opmerking van een planner voor een specifieke dag te bekijken, klik je op het pictogram Opmerking {% icon comment | icon-only %} in de lijst aan de linkerkant (dagweergave).  <!-- GPT translation -->
+- Om de opmerking van een planner voor een bepaalde dag te bekijken, klik je op het pictogram Aantekening in de lijst aan de linkerkant (dagweergave).
 
 ### Abonneren op de agenda <!-- TM 100 -->
 
@@ -88,7 +88,7 @@ Als je planning is gepubliceerd, dan kun je deze downloaden als PDF- of ICS-best
 
 ## Je teamkalender bekijken: Teamkalender <!-- TM 100 -->
 
-In de sectie _Me > Teamkalender_{:.breadcrumbs} kun je de planningen van alle medewerkers in je eenheid en groep bekijken. In de teamkalender worden activiteiten zoals aanwezigheid, pauzes en vakanties weergegeven. De dagweergave kan dagstatusactiviteiten weergeven om bijvoorbeeld zichtbaar te maken dat medewerkers thuiswerken. Als de planningsperiode nog niet is gepubliceerd, wordt het volgende bericht weergegeven: Geen activiteiten gepland. <!-- GPT translation -->
+In _Me > Teamkalender_{:.breadcrumbs} kun je de agenda's bekijken van alle medewerkers in je eenheid en groep. In de teamkalender staan activiteiten zoals aanwezigheid, pauzes, en vakanties. De teamkalender kan dagstatus-activiteiten weergeven, bijvoorbeeld om te visualiseren dat medewerkers vanuit huis werken. Als de planningsperiode nog niet is gepubliceerd, wordt het bericht Niets ingepland weergegeven.
 
 ## Je verlofaanvragen beheren: Verlof <!-- TM 100 -->
 
@@ -120,7 +120,7 @@ Je kunt alleen dagen aanvragen die binnen een gepubliceerde verlofperiode vallen
    - **Aanvraag voor hele dag**: pas de **Begindatum** en de **Einddatum** aan. <!-- TM 100 -->
    - **Aanvraag voor dagdeel**: pas de **Begindatum**, de **Begintijd** en de **Eindtijd** aan. <!-- TM 100 -->
 5. (Optioneel) Voeg een opmerking toe voor je planner. <!-- TM 100 -->
-6. Klik op _Aanvraag aanmaken_{:.doc-button}. <!-- GPT translation -->
+6. Klik op _Aanvraag aanmaken_{:.doc-button}.
    Je aanvraag wordt opgeslagen met de status 'in behandeling'. Je nieuwe aanvraag wordt nu in de lijst met aanvragen en je agenda weergegeven. <!-- TM 100 -->
 
 ### Een verlofaanvraag verwijderen <!-- TM 100 -->
@@ -138,7 +138,7 @@ In _Me > Beschikbaarheid_{:.breadcrumbs} kun je maximaal 14 beschikbaarheidskade
 ### Een beschikbaarheidskader aanmaken <!-- TM 100 -->
 
 1. Ga naar _Me > Beschikbaarheid_{:.breadcrumbs}. <!-- TM 100 -->
-2. Klik op _Beschikbaarheid instellen_{:.doc-button} of selecteer een dag in de kalender. <!-- GPT translation -->
+2. Klik op _Beschikbaarheid instellen_{:.doc-button} of selecteer een dag in de kalender.
    Er wordt een dialoogvenster geopend. <!-- TM 100 -->
 3. Zet het schuifje bij **Beschikbaar**: <!-- TM 100 -->
    - op **Ja** om perioden in te voeren waarin je beschikbaar bent. <!-- TM 100 -->
@@ -178,7 +178,7 @@ Volg de volgende stappen om in te klokken: <!-- TM 100 -->
 
 1. In _Me > Tijdregistratie_{:.breadcrumbs} selecteer je de huidige dag. <!-- TM 100 -->
 2. Klik op _Inklokken_{:.doc-button}. <!-- TM 100 -->
-3. Selecteer in het dialoogvenster een activiteit in het vervolgkeuzemenu en klik vervolgens op _Start_{:.doc-button}. <!-- GPT translation -->
+3. Selecteer in het dialoogvenster een taak uit de vervolgkeuzelijst en klik op _Start_{:.doc-button}.
    _Me > Dashboard_{:.breadcrumbs} wordt geopend. Naast _Uitklokken_{:.doc-button} worden de inkloktijd en -datum weergegeven. <!-- TM 100 -->
 
 Volg de volgende stappen om over te schakelen naar een andere activiteit: <!-- TM 100 -->

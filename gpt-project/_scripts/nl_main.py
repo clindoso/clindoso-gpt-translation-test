@@ -6,6 +6,7 @@ import csv
 import re
 import Levenshtein as lev
 import spacy
+from spacy.matcher import PhraseMatcher
 from openai import OpenAI
 from term_scraper import extract_terms_from_directory
 
@@ -99,35 +100,106 @@ def initialize_translation_memory(lang, tm_path):
     
     return tm_dict
 
-def tokenize(term, model):
-    """
-    Tokenize a term using a spaCy language model.
-    Parameters:
-        term (str): The term to be tokenized
-        model: The loaded spaCy language model
-    Returns:
-        list of str: A list of tokens
-    """
-    # Use the spaCy model to tokenize the term
-    doc = model(term)
-    # Return the tokens as a list of strings
-    return tuple(token.text for token in doc)
+def initialize_termbase(termbase_directory, lang):
+    termbase = extract_terms_from_directory(termbase_directory, lang)
 
-def initialize_tokenized_termbase(termbase_directory, lang):
+    return termbase
+
+def split_termbase(termbase):
+    source_terms = [term_tuple[0] for term_tuple in termbase]
+    target_terms = [term_tuple[1] for term_tuple in termbase]
+
+    return source_terms, target_terms
+
+def lemmatize_terms(model, terms):
     """
-    Initializes the termbase for the target language
+    Lemmatize a list of terms using a spaCy model.
+
     Parameters:
-        termbase_directory (str): Termbase directory path
-        lang (str): Target language code
+    - model (spaCy model): The spaCy language model.
+    - terms (list of str): The terms to lemmatize.
+
+    Returns:
+    - dict: A dictionary with original terms as keys and their lemmatized forms as values.
     """
-    term_list = extract_terms_from_directory(termbase_directory, lang)
-    source_model = spacy.load("en_core_web_sm")
+    lemmatized_terms = {}
+    for term in terms:
+        doc = model(term)
+        lemmatized_term = ' '.join([token.lemma_ for token in doc])
+        lemmatized_terms[term] = lemmatized_term
+    return lemmatized_terms
+
+def lemmatize_termbase(source_terms, target_terms):
+    lemmatized_termbase = {lemmatize_terms(source_terms): lemmatize_terms(target_terms)}
+
+    return lemmatized_termbase
+
+def initialize_spacy_models(lang, source_lang_spacy_model=config.SOURCE_LANGUAGE_SPACY_MODEL):
+    source_model = spacy.load(source_lang_spacy_model)
     target_model = spacy.load(f"{lang}_core_news_sm")
+
+    return source_model, target_model
+
+def setup_phrase_matcher(model, terms):
+    # target_model = spacy.load(f"{lang}_core_news_sm")
+    phrase_matcher = PhraseMatcher(model.vocab, attr='LEMMA')
+    add_terms_to_matcher(phrase_matcher, model, terms)
     
-    # Tokenize both source and target terms using the loaded spaCy model
-    tokenized_termbase = {tokenize(source_term, source_model): tokenize(target_term, target_model) for source_term, target_term in term_list}
+    return phrase_matcher
+
+def add_terms_to_matcher(matcher, model, terms):
+    # Convert each term into a Doc object and add it to the matcher
+    for term in terms:
+        doc = model(term)  # Process the term to create a Doc
+        matcher.add("TermbaseTerms", doc)
+
+def index_matches_by_lemma(doc, matches):
+    """
+    Index matches by their lemma form.
     
-    return tokenized_termbase, source_model, target_model
+    Üarameters:
+    - doc (spaCy Doc): The processed document.
+    - matches (list): The list of matches from the PhraseMatcher.
+    
+    Returns:
+    - dict: A dictionary with lemmas as keys and lists of match positions.
+    """
+    lemma_matches = {}
+    for _, start, end in matches:
+        # Extract the match span
+        span = doc[start:end]
+        lemma = ' '.join([token.lemma_ for token in span])
+        if lemma not in lemma_matches:
+            lemma_matches[lemma] = []
+        lemma_matches[lemma].append((start, end))
+    return lemma_matches
+
+def match_terms_in_text(model, matcher, text):
+    """
+    Identifies if the terms from the PhraseMatcher are present in the given text.
+    
+    Parameters:
+        model (spacy.language.Language): The spaCy language model for processing the text.
+        matcher (PhraseMatcher): The PhraseMatcher object with the terms to match.
+        text (str): The text to search for the terms.
+    
+    Returns:
+        bool: True if any of the terms are found in the text, False otherwise.
+    """
+    doc = model(text)
+    matches = matcher(doc)
+    return matches
+
+def verify_termbase_compliance(source_lemma_matches, target_lemma_matches, lemmatized_termbase):
+    for source_term, target_term in lemmatized_termbase.items():
+        # Check if lemmatized source term is in source lemma matches
+        if source_term not in source_lemma_matches:
+            continue # Source term not found
+        if target_term not in target_lemma_matches:
+            print(f"Term not translated: {source_term} -> {target_term}.")
+            return False
+    return True
+
 
 def check_translation_memory(segment, tm_dict):
     """
@@ -206,7 +278,7 @@ def handle_fuzzy_matches(segment, tm_dict, tm_segments_lengths):
     # If there is no segment with an edit below the upper threshold, return None
     return None
 
-def translate_with_gpt(client, segment, language, gpt_model, tokenized_termbase, source_model, target_model, previous_segment=''):
+def translate_with_gpt(client, segment, language, gpt_model, source_model, target_model, source_phrase_matcher, target_phrase_matcher, lemmatized_termbase, previous_segment=''):
     """
     Translates the segment using GPT.
 
@@ -241,27 +313,23 @@ def translate_with_gpt(client, segment, language, gpt_model, tokenized_termbase,
     
     gpt_translation = response.choices[0].message.content
 
-    # Tokenize {segment} and GPT response
-    tokenized_segment = {token.text for token in source_model(segment)}
-    tokenized_gpt_translation = {token.text for token in target_model(gpt_translation)}
-    # Check if there is a term in source segment
-    i = 0
-    for tokenized_source_term, tokenized_target_term in tokenized_termbase.items():
-        if tokenized_source_term in tokenized_segment and tokenized_target_term not in tokenized_gpt_translation:
-            response = client.chat.completions.create(
-                model=gpt_model,
-                messages=[
-                    {"role": "user", "content": f"Rephrase the translation using the source lange term token `{tokenized_source_term}` and the target langue term token `{tokenized_target_term}`."}
-                ]
-            )
-            gpt_translation = response.choices[0].message.content
-            print("Term corrected")
+    # Lemmatize segment and translation
+    lemmatized_segment = source_model(segment)
+    lemmatized_gpt_translation = target_model(gpt_translation)
 
+    # Index matches by lemma
+    source_lemma_matches = index_matches_by_lemma(lemmatized_segment)
+    target_lemma_matches = index_matches_by_lemma(lemmatized_gpt_translation)
+
+    compliance = verify_termbase_compliance(source_lemma_matches, target_lemma_matches, lemmatized_termbase)
+
+    if compliance:
+        print("Term check successful.")
     translated_segment = (segment, gpt_translation + " <!-- GPT translation -->")
 
-    return translated_segment
+    return translated_segment, gpt_translation
 
-def translate_segment(segment, tm_dict, gpt_translation_dict, language, gpt_model, client, tokenized_termbase, source_model, target_model, previous_segment=''):
+def translate_segment(segment, tm_dict, gpt_translation_dict, language, gpt_model, client, source_model, target_model, source_phrase_matcher, target_phrase_matcher, lemmatized_termbase,  previous_segment=''):
     """
     Translate a single text segment using a translation memory (TM)
     and generative translation
@@ -290,12 +358,12 @@ def translate_segment(segment, tm_dict, gpt_translation_dict, language, gpt_mode
     
     # Handle untranslated segments
     else:
-        translated_segment = translate_with_gpt(client, segment, language, gpt_model, tokenized_termbase, source_model, target_model, previous_segment)
-        gpt_translation_dict[segment] = translated_segment[1]
+        translated_segment, gpt_translation = translate_with_gpt(client, segment, language, gpt_model, source_model, target_model, source_phrase_matcher, target_phrase_matcher, lemmatized_termbase,  previous_segment)
+        gpt_translation_dict[segment] = gpt_translation
         return translated_segment
 
 
-def process_front_matter(front_matter_segments, tm_dict, gpt_translation_dict, language, gpt_model, client, tokenized_termbase, source_model, target_model):
+def process_front_matter(front_matter_segments, tm_dict, gpt_translation_dict, language, gpt_model, client, source_model, target_model, source_phrase_matcher, target_phrase_matcher, lemmatized_termbase):
     """
     Processes the front matter of a document, translating 'title' and 'description'
     fields while leaving their labels and other metadata unchanged.
@@ -315,7 +383,7 @@ def process_front_matter(front_matter_segments, tm_dict, gpt_translation_dict, l
             if segment[0].startswith(frontmatter_variable):
                 # Extract the title text and translate it
                 translatable_text = segment[0][len(frontmatter_variable):]
-                translated_text = translate_segment(translatable_text, tm_dict, gpt_translation_dict,language, gpt_model, client, tokenized_termbase, source_model, target_model)
+                translated_text = translate_segment(translatable_text, tm_dict, gpt_translation_dict,language, gpt_model, client, source_model, target_model, source_phrase_matcher, target_phrase_matcher)
                 processed_segment_pair = (segment[0], frontmatter_variable + translated_text[1])
                 break
             else:
@@ -326,7 +394,7 @@ def process_front_matter(front_matter_segments, tm_dict, gpt_translation_dict, l
 
     return processed_front_matter
 
-def translate_article(client, language, source_text, tm_dict, gpt_model, tokenized_termbase, source_model, target_model):
+def translate_article(client, language, source_text, tm_dict, gpt_model, source_model, target_model, source_phrase_matcher, target_phrase_matcher, lemmatized_termbase):
     """
     Translates the content of the source file using the specified language model.
 
@@ -370,7 +438,7 @@ def translate_article(client, language, source_text, tm_dict, gpt_model, tokeniz
             continue
         
         if not in_front_matter and not front_matter_processed:
-            translated_front_matter = process_front_matter(front_matter_segments, tm_dict, gpt_translation_dict, language, gpt_model, client, tokenized_termbase, source_model, target_model)
+            translated_front_matter = process_front_matter(front_matter_segments, tm_dict, gpt_translation_dict, language, gpt_model, client, source_model, target_model, source_phrase_matcher, target_phrase_matcher)
             front_matter_processed = True
             
         # Check commented out segment in English
@@ -404,19 +472,19 @@ def translate_article(client, language, source_text, tm_dict, gpt_model, tokeniz
             continue
 
         # Check for segments only with spaces
-        elif re.match(r'^ +\n', segment[0]):
+        elif re.match(r'^ +\n', segment):
             # Append empty segment
             translated_segments.append((segment, ''))
             continue
 
         # Check for leading right angle bracket without further content
-        elif re.match(r' *> *\n', segment[0]):
+        elif re.match(r'^ *> *$', segment):
             translated_segments.append((segment, segment))
             continue
 
         # Translate segment using TM or GPT
         else:
-            segment, translated_segment = translate_segment(segment, tm_dict, gpt_translation_dict, language, gpt_model, client, tokenized_termbase, source_model, target_model, previous_segment)
+            segment, translated_segment = translate_segment(segment, tm_dict, gpt_translation_dict, language, gpt_model, client, source_model, target_model, source_phrase_matcher, target_phrase_matcher, lemmatized_termbase,  previous_segment)
             translated_segments.append((segment, translated_segment))
             previous_segment = segment
             print(f'- Source segment:\n{segment}')
@@ -480,10 +548,15 @@ def main():
     # Start time tracker
     start_time = time.time()
 
-    # Initialize termbase
-    if not config.termbase_directory:
-        raise EnvironmentError("Source termbase directory not defined in the config file.")
-    else: termbase_directory = config.termbase_directory
+    # Initialize termbase directory from config
+    if not config.TERMBASE_DIRECTORY:
+        raise EnvironmentError("Termbase directory not defined in the config file.")
+    else: termbase_directory = config.TERMBASE_DIRECTORY
+
+    # Initialize source language spaCy model directory from config
+    if not config.SOURCE_LANGUAGE_SPACY_MODEL:
+        raise EnvironmentError("Source language spaCy model not defined in the config file.")
+    else: termbase_directory = config.SOURCE_LANGUAGE_SPACY_MODEL
 
     # Initialize OpenAI client
     client = initialize_open_ai_client()
@@ -498,14 +571,28 @@ def main():
     tm_dict = initialize_translation_memory(lang, tm_path)
 
     # Initialize termbase
-    tokenized_termbase, source_model, target_model = initialize_tokenized_termbase(termbase_directory, lang)
-    print(tokenized_termbase)
-    
+    termbase = initialize_termbase(termbase_directory, lang)
+
+    # Split termbase
+    source_terms, target_terms = split_termbase(termbase)
+
+    # Lemmatize termbase
+    lemmatized_termbase = lemmatize_termbase(source_terms, target_terms)
+
+    # Initialize spaCy models
+    source_model, target_model = initialize_spacy_models(lang)
+
+    # Setup source PhraseMatcher
+    source_phrase_matcher = setup_phrase_matcher(source_model, source_terms)
+
+    # Setup target PhraseMatcher
+    target_phrase_matcher = setup_phrase_matcher(target_model, target_terms)
+
     # Load source file segments
     source_text = load_source_file_segments(source)
 
     # Perform the translation
-    translated_segments = translate_article(client, language, source_text, tm_dict, gpt_model, tokenized_termbase, source_model, target_model)
+    translated_segments = translate_article(client, language, source_text, tm_dict, gpt_model, source_model, target_model, source_phrase_matcher, target_phrase_matcher, lemmatized_termbase)
 
     # Create list with translated text
     translated_text = extract_translated_text(translated_segments)
