@@ -13,11 +13,12 @@ related_articles:
     filepath: features/forecast/injixo-forecast/what-is-the-injixo-forecast.md
   - overwrite_title: Add title for untranslated source
     filepath: features/forecast/injixo-forecast/forecast-activate-business-hours.md
+gpt_translation: true
 ---
 
 Ga naar _Forecast_{:.breadcrumbs} om workloads aan te maken, te bewerken of te verwijderen. <!-- TM 100 -->
 
-Workloads staat voor de kanalen van je externe systeem die de details van je klantinteracties vastleggen. injixo Forecast berekent op basis van geïmporteerde contactgegevens die in queues zijn opgeslagen een forecast voor de workload. Configureerbare gebeurtenissen, feestdagen of openingstijden beïnvloeden de forecast. Je kunt ook je {% link_new forecast importeren | features/forecast/injixo-forecast/import-forecast.md %} in Workloads. <!-- GPT translation -->
+Workloads stellen de inputkanalen van je externe systeem in kaart, waarin de gegevens van de interacties met je klanten worden opgeslagen. Op basis van de in het systeem geïmporteerde contactgegevens die in queues worden opgeslagen, berekent injixo Forecast een forecast voor de workload. Configurable events, feestdagen of openingstijden hebben invloed op het forecastresultaat. Je kunt tevens {% link_new je forecast importeren | features/forecast/injixo-forecast/import-forecast.md %} into workloads. <!-- GPT translation -->
 
 In workloads configureer je de berekening van de personeelsbehoefte. De personeelsbehoefte is nodig voor planningsdoeleinden. <!-- TM 100 -->
 
@@ -48,40 +49,40 @@ injixo Forecast groepeert queues per kanaal. Je kunt alleen queues met hetzelfde
 
 ## Workloads en queues <!-- GPT translation -->
 
-Hoeveel workloads en queues je instelt, hangt volledig af van de behoeften van je organisatie. Bij het instellen moet je aangeven of je afzonderlijke bandbreedtes, AHT- en personeelsbehoeftenberekeningen per queue wilt maken. <!-- GPT translation -->
+Hoeveel workloads en queues je instelt, is volledig afhankelijk van de behoeften van je organisatie. Je moet overwegen of je afzonderlijke berekeningen voor volume, gesprekstijd en personeelsbehoefte voor elke queue nodig hebt. <!-- GPT translation -->
 
 Bekijk het volgende voorbeeld: <!-- GPT translation -->
 
 Je hebt vijf queues geconfigureerd in je ACD-systeem: <!-- GPT translation -->
 
-- Support Tier 1 <!-- GPT translation -->
+* Support Tier 1 <!-- GPT translation -->
 - Support Tier 2 <!-- GPT translation -->
-- Product Sales North <!-- GPT translation -->
+- Verkoop Noord-West <!-- GPT translation -->
 - Product Sales Central <!-- GPT translation -->
-- Product Sales South <!-- GPT translation -->
+- Product Sales Zuid <!-- GPT translation -->
 
-In dit voorbeeld verwijzen de drie productsales-queues naar verschillende regio's van een land waar uitsluitend de hoofdtaal wordt gesproken. Dit betekent dat medewerkers die vragen op het gebied van sales behandelen dit kunnen doen ongeacht waar het contact vandaan komt. Het is relevant om de sales-queues te splitsen op basis van campagnes of andere relevante indicatoren, maar het is niet nodig om de te verwachten contactvolumes en personeelsbehoefte per regio te voorcasten. Je kunt [een workload aanmaken](#workloads-aanmaken) met de naam Product Sales en vervolgens in de sectie **Queues toewijzen** alle drie de queues selecteren. <!-- GPT translation -->
+In dit voorbeeld verwijzen de drie product sales-queues naar verschillende regio's van een land en een voertaal. Dat betekent dat agents met de juiste kwalificaties op alle vragen gerelateerd aan verkoop kunnen antwoorden, ongeacht waar de lead vandaan komt. Het kan relevant zijn om de sales-queues per regio op te splitsen om marketingcampagnes of andere KPI's te volgen, maar het is niet nodig om contactvolumes en personeelsbehoefte per regio te forecasten. Je kunt [een workload aanmaken](#workloads-aanmaken) met de naam Product Sales en selecteer in de sectie **Queues toewijzen** alle drie de Product Sales-queues. <!-- GPT translation -->
 
-De volume en personeelsbehoefte voor supportaanvragen moeten daarentegen afzonderlijk worden berekend. Tier 1-aanvragen zijn algemener en gemakkelijker te behandelen dan tier 2-aanvragen. Medewerkers die tier 1-aanvragen afhandelen, zijn niet per se bevoegd om tier 2-aanvragen te beantwoorden. Daarnaast komen tier 2-aanvragen minder vaak voor. Deze categorie is daarom minder tijdrovend en kan met minder medewerkers worden afgehandeld. Maak hier [twee workloads aan](#workloads-aanmaken) voor Support Tier 1 en Support Tier 2 en wijs de relevante queues toe aan elke workload. Als je medewerkers die verantwoordelijk zijn voor tier 2-aanvragen ook tier 1-aanvragen met minder urgentie wilt laten afhandelen, houd dan de twee afzonderlijke workloads gescheiden en gebruik voor het plannen van de activiteiten van beide medewerkers een {% link_new multiactiviteit | features/administration/activity-types-and-properties.md | #subactiviteiten %}. <!-- GPT translation -->
+In contrast, de contactvolumen en personeelsbehoefte voor supportvragen van niveau 1 moeten apart worden berekend. Vragen van niveau 1 zijn veel voorkomend en gemakkelijker te behandelen dan vragen van niveau 2. Medewerkers die goed zijn in het afhandelen van vragen van niveau 1, zijn niet per se geschikt voor het beantwoorden van vragen van niveau 2. Daarnaast, omdat vragen van niveau 2 minder vaak voorkomen, heb je minder medewerkers nodig om ze te kunnen afhandelen. Hier [maak je twee workloads aan](#workloads-aanmaken), Support Niveau 1 en Support Niveau 2 en wijst de toepasselijke queue toe aan elk van hen. Als je wilt dat de medewerkers die verantwoordelijk zijn voor niveau 2 ook niveau 1-vragen met een lagere prioriteit afhandelen, bewaar dan de twee van elkaar gescheiden workloads, en gebruik een {% link_new multiactiviteit | features/administration/activity-types-and-properties.md | #subactiviteiten %} voor de planning. <!-- GPT translation -->
 
 <!-- anchor for intercom forecast tour -->
 
 ## Workloads aanmaken <!-- TM 100 -->
 
-Maak voor elke activiteit die je wilt plannen op personeelsbehoefte een workload aan. Multiactiviteiten hebben een workload nodig voor de multiactiviteit en voor elke deelactiviteit. <!-- GPT translation -->
+Maak voor elke activiteit die je met personeelsbehoefte wilt inplannen, een workload aan. Multiactiviteiten hebben een workload nodig voor de multiactiviteit en een workload voor elke deelactiviteit. <!-- GPT translation -->
 
-1. Klik in _Forecast > Workloads_{:.breadcrumbs} op _Nieuwe workload_{:.doc-button} boven aan de lijst. <!-- GPT translation -->
+1. Klik in _Forecast > Workloads_{:.breadcrumbs} op de knop _Nieuwe workload_{:.doc-button} boven aan de lijst. <!-- GPT translation -->
 2. Voeg de algemene informatie toe voor je workload: <!-- TM 100 -->
 
    - **Naam**: Unieke naam om je werklast te herkennen. <!-- TM 100 -->
    - **Tijdzone**: De {% link_new tijdzone | best-practices/working-with-timezones.md %} voor de workload kan later niet worden bewerkt. <!-- TM 100 -->
 
      > Opmerking <!-- TM 100 -->
-     > <!-- TM 100 -->
+     >
      > - Om de personeelsbehoefte voor een eenheid op te slaan, moet de tijdzone van de workload overeenkomen met de tijdzone van de eenheid. <!-- TM 100 -->
      > - Als je een andere tijdzone voor je workload hebt ingesteld dan voor de integratie weermee je gegevens importeert, worden de geïmporteerdegegevens met tijdsverschuiving in de workload weergegeven. Als voor een CSV-integratie bijvoorbeeld UTC-tijd is ingesteld en je voor je workload CEST-tijd (UTC +2 uur), worden de geïmporteerde gegevens van 8:00 uur in de workload weergegeven om 10:00 uur. <!-- TM 100 -->
 
-   - (Optioneel) **Feestdagregio**: Bevat feestdagen die van invloed kunnen zijn op je forecast. <!-- GPT translation -->
+   - (Optioneel) **Feestdagregio**: Houdt rekening met feestdagen die van invloed kunnen zijn op je forecast. <!-- GPT translation -->
    - (Optioneel) **Eenheid** en **Activiteit**: Vereist om {% link_new openingstijden te activeren | features/forecast/injixo-forecast/forecast-activate-business-hours.md %} in de sectie **Openingstijden**. <!-- TM 100 -->
 
 3. (alleen injixo Classic) Selecteer een optie uit de sectie **Prijsmodel**: <!-- TM 100 -->
@@ -101,8 +102,8 @@ Maak voor elke activiteit die je wilt plannen op personeelsbehoefte een workload
 
 5. Klik op _Workload aanmaken_{:.doc-button}. <!-- TM 100 -->
 
-   Op de pagina worden historische gegevens en een voorlopige forecastversie weergegeven.   <!-- GPT translation -->
-   Als de berekening is voltooid, dan moet je de pagina vernieuwen om de definitieve forecastversie te zien. <!-- GPT translation -->
+   Op deze pagina worden historische gegevens en een voorlopige versie van de forecast weergegeven. <!-- GPT translation -->
+   Wanneer de berekening is afgerond, moet je de pagina verversen om de uiteindelijke forecastversie te zien. <!-- GPT translation -->
    De nieuwe workload wordt weergegeven in de lijst met workloads. <!-- TM 100 -->
 
 Als je injixo Essential gebruikt, kun je Basic workloads aanmaken. Voor Basic workloads zijn minimaal twee weken aan historische gegevens nodig. Openingstijden worden niet ondersteund door Basic workloads. <!-- TM 100 -->
@@ -120,7 +121,7 @@ You only need an integration and historical data import if you want injixo to cr
 2. Click _Create Workload_{:.doc-button} in the upper right corner of the forecast page. <!-- TM 100 -->
 3. In the *Basic configuration* section, enter a **Name** for your new workload. <!-- TM 100 -->
 4. Select the **Time zone** to display data. Note: The set time zone must match the planning unit to save staff requirements. <!-- TM 100 -->
-5. (Optioneel) Selecteer de **Feestdagregio** om alle feestdagen waarvan de forecast van je huidige jaar afhankelijk is in te stellen. <!-- GPT translation -->
+5. (Optioneel) Selecteer de **Feestdagregio** om rekening te houden met alle feestdagen die invloed hebben op je forecast voor het komende jaar. <!-- GPT translation -->
 6. Select the **Planning unit** and the **Activity**. Note: You must select an option to calculate staff requirements. <!-- TM 100 -->
     {{ 4 | image: 'Import Workload basic configuration section' }} <!-- TM 100 -->
 7. Click the tab **Forecast import**. <!-- TM 100 -->
@@ -130,53 +131,53 @@ You only need an integration and historical data import if you want injixo to cr
 
 ## Workloads bewerken <!-- TM 100 -->
 
-1. Selecteer in _Forecast > Workloads_{:.breadcrumbs} een workload in de lijst of voer de naam van de workload in het zoekveld in. <!-- GPT translation -->
-2. Klik op het pictogram Bewerken {% icon pencil | icon-only %} om de gegevens van de workloads te wijzigen.<br> <!-- GPT translation -->
+1. Selecteer in _Forecast > Workloads_{:.breadcrumbs} een workload uit de lijst of voer de naam van de workload in in het zoekveld. <!-- GPT translation -->
+2. Klik op het pictogram Potlood {% icon pencil | icon-only %} om de detailgegevens van de workload te bewerken. <!-- GPT translation -->
    Je kunt queues toevoegen of verwijderen zonder dat je opnieuw gegevens hoeft te importeren. Weergegeven queues worden uitgegrijsd als hun interval of kanaal niet overeenkomt met eerder toegewezen queues. <!-- TM 100 -->
-3. Klik op _Werkbelasting opslaan_{:.doc-button}.   <!-- GPT translation -->
+3. Klik op _Workload opslaan_{:.doc-button}. <!-- GPT translation -->
    Op basis van de nieuwe configuratie wordt de forecast mogelijk bijgewerkt. <!-- TM 100 -->
 
 ## Workloads verwijderen <!-- TM 100 -->
 
-1. Klik in _Forecast > Workloads_{:.breadcrumbs} op het pictogram met de vuilnisbak {% icon trash | icon-only %} naast de workload die je wilt verwijderen. <!-- GPT translation -->
-2. Klik in het bevestigingsvenster op _Workload verwijderen_{:.doc-button}.    <!-- GPT translation -->
-   injixo bewaart de bijbehorende historische gegevens. Om deze gegevens opnieuw te gebruiken, voeg je het betreffende aandachtsgebied of de aandachtsgebieden toe aan een andere workload. <!-- GPT translation -->
+1. Klik in _Forecast > Workloads_{:.breadcrumbs} op het {% icon trash %} naast de workload die je wilt verwijderen. <!-- GPT translation -->
+2. Klik in het venster op _Workload verwijderen_{:.doc-button}. <!-- GPT translation -->
+   injixo slaat de gerelateerde historische gegevens op. Om de gegevens opnieuw te gebruiken, voeg je de queue(s) toe aan een andere workload. <!-- GPT translation -->
 
-## Navigeren naar Workloads <!-- GPT translation -->
+## Navigatie: Workloads <!-- GPT translation -->
 
-In _Forecast > Workloads_{:.breadcrumbs} selecteer je een workload om de detailpagina van de workload te openen. De pagina bevat drie volgenede secties: <!-- GPT translation -->
+Ga in _Forecast > Workloads_{:.breadcrumbs} naar een workload en selecteer deze om de pagina met workloadgegevens te openen. De pagina bestaat uit de volgende drie secties: <!-- GPT translation -->
 
-- Het gedeelte Volume <!-- GPT translation -->
+- De sectie **Volume** <!-- GPT translation -->
 - De sectie **AHT** <!-- GPT translation -->
-- De sectie **Middelenbehoefte** <!-- GPT translation -->
+- De sectie **Aantal krachten** <!-- GPT translation -->
 
 Elke sectie bevat een grafiek en bewerkingsfunctionaliteiten. <!-- GPT translation -->
 
-De grafieken tonen standaard gegevens van de huidige week. <!-- GPT translation -->
+De grafieken tonen standaard gegevens van deze week. <!-- GPT translation -->
 
-- Gebruik de datumkiezer om een andere tijdsperiode te selecteren. Klik op een weeknummer om de hele week te selecteren, of klik op een dag en sleep om een kortere of langere periode te selecteren. <!-- GPT translation -->
-- Gebruik _<_{:.doc-button} en _>_{:.doc-button} om naar het verleden en volgende week te navigeren van de actueel geselecteerde periode. <!-- GPT translation -->
+- Gebruik het datumkiezer om een andere tijdsperiode te selecteren. Klik op een weeknummer om de hele week te selecteren, of klik op een dag en sleep om een kortere of langere periode dan een week te selecteren. <!-- GPT translation -->
+- Gebruik '<' en '>' om naar eerder en later in de geselecteerde tijdsperiode te navigeren. <!-- GPT translation -->
 
-### Het volumegedeelte <!-- GPT translation -->
+### De sectie Volume <!-- GPT translation -->
 
-De grafiek in de sectie Volume geeft contactvolume weer voor historische gegevens, geïmporteerde forecasts en gegenereerde forecasts. <!-- GPT translation -->
-Beweeg je cursor over de grafiek om gedetailleerde informatie te zien over het Volume, de AHT, de personeelsbehoefte, handmatige aanpassingen en toegevoegde gebeurtenissen.<br> <!-- GPT translation -->
-Lees hoe je de {% link_new bandbreedte aanpast | features/forecast/injixo-forecast/manual-adjustments.md | #bandbreedte-aanpassen%}. <!-- GPT translation -->
+De grafiek in de sectie Volume geeft het contactvolume weer voor eerder geïmporteerde en gegenereerde forecasts. <!-- GPT translation -->
+Beweeg de muisaanwijzer over de grafiek om gedetailleerde informatie weer te geven over de volume, AHT, personeelsbehoefte, handmatige aanpassingen en toegevoegde gebeurtenissen.<br> <!-- GPT translation -->
+Lees hoe je het {% link_new volume aanpast | features/forecast/injixo-forecast/manual-adjustments.md | #het-volume-aanpassen%}. <!-- GPT translation -->
 
 ### De sectie AHT <!-- GPT translation -->
 
-De sectie Gemiddelde afhandeltijd wordt standaard verborgen bij het openen of herladen van de pagina met werkbelasting. Klik op het pictogram Het oog icon eye_slash te klikken om de sectie Gemiddelde afhandeltijd weer te geven. <!-- GPT translation -->
-De AHT-grafiek is alleen beschikbaar wanneer queues van workloads gegevens over de After Call Work (ACW) bevatten.<br> <!-- GPT translation -->
-Ga naar {% link_new Handmatige aanpassingen in de forecast | features/forecast/injixo-forecast/manual-adjustments.md %} voor meer informatie over het {% link_new aanpassen van de AHT | features/forecast/injixo-forecast/manual-adjustments.md %}. <!-- GPT translation -->
+De sectie AHT is standaard verborgen als je de pagina met workload-details opent of herlaadt. Klik op het pictogram 're': {% icon eye_slash | close  %} om de sectie AHT weer te geven. <!-- GPT translation -->
+De AHT-grafiek is alleen zichtbaar voor workloads met queues waarvoor AHT-gegevens beschikbaar zijn.<br> <!-- GPT translation -->
+Lees hoe je de {% link_new AHT-aannames aanpast | features/forecast/injixo-forecast/manual-adjustments.md %}. <!-- GPT translation -->
 
-### Het sectie Behoefte aan medewerkers <!-- GPT translation -->
+### De sectie Personeelsbehoefte <!-- GPT translation -->
 
-In de sectie Vereiste medewerkers wordt een grafiek met de berekende behoefte aan medewerkers weergegeven. <!-- GPT translation -->
-*Onder de grafiek worden de geconfigureerde bandbreedteparameters en het totaal aantal persoon-uren weergegeven. Beweeg je cursor over de grafiek om gedetailleerde informatie te bekijken over AHT, volume, bandbreedte, eventuele handmatige wijzigingen en toegevoegde gebeurtenissen.*<br> <!-- GPT translation -->
-Learn how to use {% link_new personeelsbehoefte voor planning | features/forecast/injixo-forecast/calculate-staff-requirements.md | #use-staff-requirements-for-scheduling %}. <!-- GPT translation -->
+De grafiek in de sectie **Benodigde capaciteit** geeft de berekende personeelsbehoefte weer. <!-- GPT translation -->
+Onder de grafiek zie je de geconfigureerde parameters voor de personeelsbehoefte en het totaal aantal personeelsuren. Beweeg de aanwijzer over de grafiek om gedetailleerde informatie te zien over het AHT, het volume, het personeelsaanbod en eventuele handmatige aanpassingen en toegevoegde gebeurtenissen. <!-- GPT translation -->
+Lees hoe je {% link_new personeelsbehoefteberekeningen gebruikt voor het inplannen | features/forecast/injixo-forecast/calculate-staff-requirements.md | #het-gebruik-van-personeelsbehoefteberekeningen-voor-het-scheduling %}. <!-- GPT translation -->
 
 ## Veelgestelde vragen <!-- TM 100 -->
 
 | Vraag                                     | Antwoord                                                                                                                                                                                                                                                                                                                                                       | <!-- GPT translation -->
 | -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Waarom zijn de grafieken op een workload-pagina leeg? | injixo genereert een forecast voor 365 dagen na de laatste gegevensimport. Als de grafieken op een workload-pagina geen weergavekader tonen over een bepaalde toekomstige periode, controleer dan of je integratie nog steeds gegevens importeert in _Account > Integraties_{:.breadcrumbs}. Controleer ook of in de workload-configuratie de juiste queues aan de workload zijn toegewezen. | <!-- GPT translation -->
+| Waarom zijn de grafieken op een workloadpagina leeg? | injixo genereert een forecast tot 365 dagen na de laatste gegevensimport. Als de grafieken op een workloadpagina voor een bepaalde toekomstige periode geen gegevens weergeven, dan raden we aan om te controleren of je integratie nog wel gegevens blijft importeren. Ga naar _Account > Integraties_{:.breadcrumbs}. Daarnaast is het relevant om te controleren of de juiste queues aan de workload zijn toegewezen in de workload-configuratie. | <!-- GPT translation -->

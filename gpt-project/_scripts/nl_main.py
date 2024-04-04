@@ -122,21 +122,24 @@ def lemmatize_terms(model, terms):
     Returns:
     - dict: A dictionary with original terms as keys and their lemmatized forms as values.
     """
-    lemmatized_terms = {}
+    lemmatized_terms = []
     for term in terms:
         doc = model(term)
         lemmatized_term = ' '.join([token.lemma_ for token in doc])
-        lemmatized_terms[term] = lemmatized_term
+        lemmatized_terms.append(lemmatized_term)
     return lemmatized_terms
 
-def lemmatize_termbase(source_terms, target_terms):
-    lemmatized_termbase = {lemmatize_terms(source_terms): lemmatize_terms(target_terms)}
+def lemmatize_termbase(source_model, source_terms, target_model, target_terms):
+    lemmatized_source_terms = lemmatize_terms(source_model, source_terms)
+    lemmatized_target_terms = lemmatize_terms(target_model, target_terms)
+
+    lemmatized_termbase = dict(zip(lemmatized_source_terms, lemmatized_target_terms))
 
     return lemmatized_termbase
 
-def initialize_spacy_models(lang, source_lang_spacy_model=config.SOURCE_LANGUAGE_SPACY_MODEL):
-    source_model = spacy.load(source_lang_spacy_model)
-    target_model = spacy.load(f"{lang}_core_news_sm")
+def initialize_spacy_models(target_spacy_model, source_spacy_model):
+    source_model = spacy.load(source_spacy_model)
+    target_model = spacy.load(target_spacy_model)
 
     return source_model, target_model
 
@@ -151,7 +154,12 @@ def add_terms_to_matcher(matcher, model, terms):
     # Convert each term into a Doc object and add it to the matcher
     for term in terms:
         doc = model(term)  # Process the term to create a Doc
-        matcher.add("TermbaseTerms", doc)
+        matcher.add("TermbaseTerms", [doc])
+
+def find_matches(phrase_matcher, doc):
+    matches = phrase_matcher(doc)
+
+    return matches
 
 def index_matches_by_lemma(doc, matches):
     """
@@ -196,7 +204,7 @@ def verify_termbase_compliance(source_lemma_matches, target_lemma_matches, lemma
         if source_term not in source_lemma_matches:
             continue # Source term not found
         if target_term not in target_lemma_matches:
-            print(f"Term not translated: {source_term} -> {target_term}.")
+            print(f"Term not translated: {source_term} -> {target_term}")
             return False
     return True
 
@@ -313,13 +321,26 @@ def translate_with_gpt(client, segment, language, gpt_model, source_model, targe
     
     gpt_translation = response.choices[0].message.content
 
+    # Create Doc out of segment and translation
+    segment_doc = source_model(segment)
+    gpt_translation_doc = target_model(gpt_translation)
     # Lemmatize segment and translation
-    lemmatized_segment = source_model(segment)
-    lemmatized_gpt_translation = target_model(gpt_translation)
+    lemmatized_segment = " ".join([token.lemma_ for token in segment_doc])
+    lemmatized_gpt_translation = " ".join([token.lemma_ for token in gpt_translation_doc])
 
+    print("Lemmatized source:\n")
+    print(lemmatized_segment)
+    print('')
+    print("Lemmatized translation:\n")
+    print(lemmatized_gpt_translation)
+    print('\n-------------------------------')
+    # Find matches
+    source_matches = find_matches(source_phrase_matcher, segment_doc)
+    target_matches = find_matches(target_phrase_matcher, gpt_translation_doc)
+    
     # Index matches by lemma
-    source_lemma_matches = index_matches_by_lemma(lemmatized_segment)
-    target_lemma_matches = index_matches_by_lemma(lemmatized_gpt_translation)
+    source_lemma_matches = index_matches_by_lemma(segment_doc, source_matches)
+    target_lemma_matches = index_matches_by_lemma(gpt_translation_doc, target_matches)
 
     compliance = verify_termbase_compliance(source_lemma_matches, target_lemma_matches, lemmatized_termbase)
 
@@ -383,7 +404,7 @@ def process_front_matter(front_matter_segments, tm_dict, gpt_translation_dict, l
             if segment[0].startswith(frontmatter_variable):
                 # Extract the title text and translate it
                 translatable_text = segment[0][len(frontmatter_variable):]
-                translated_text = translate_segment(translatable_text, tm_dict, gpt_translation_dict,language, gpt_model, client, source_model, target_model, source_phrase_matcher, target_phrase_matcher)
+                translated_text = translate_segment(translatable_text, tm_dict, gpt_translation_dict,language, gpt_model, client, source_model, target_model, source_phrase_matcher, target_phrase_matcher, lemmatized_termbase)
                 processed_segment_pair = (segment[0], frontmatter_variable + translated_text[1])
                 break
             else:
@@ -438,7 +459,7 @@ def translate_article(client, language, source_text, tm_dict, gpt_model, source_
             continue
         
         if not in_front_matter and not front_matter_processed:
-            translated_front_matter = process_front_matter(front_matter_segments, tm_dict, gpt_translation_dict, language, gpt_model, client, source_model, target_model, source_phrase_matcher, target_phrase_matcher)
+            translated_front_matter = process_front_matter(front_matter_segments, tm_dict, gpt_translation_dict, language, gpt_model, client, source_model, target_model, source_phrase_matcher, target_phrase_matcher, lemmatized_termbase)
             front_matter_processed = True
             
         # Check commented out segment in English
@@ -556,7 +577,7 @@ def main():
     # Initialize source language spaCy model directory from config
     if not config.SOURCE_LANGUAGE_SPACY_MODEL:
         raise EnvironmentError("Source language spaCy model not defined in the config file.")
-    else: termbase_directory = config.SOURCE_LANGUAGE_SPACY_MODEL
+    else: source_lang_spacy_model = config.SOURCE_LANGUAGE_SPACY_MODEL
 
     # Initialize OpenAI client
     client = initialize_open_ai_client()
@@ -564,9 +585,16 @@ def main():
     # Parse command-line arguments
     lang, source = parse_arguments()
 
+    if lang not in config.LANGUAGE_MODELS:
+        raise ValueError(f"Language {lang} is not supported or not defined in the config file.")
+
     # Initialize language models
-    language, gpt_model, tm_path = initialize_language_model(lang)
-    
+
+    for key, value in config.LANGUAGE_MODELS[lang].items():
+        if not value:
+            raise EnvironmentError(f"{key} not defined for the target language in the language models in the config file.")
+        else: language, gpt_model, tm_path, target_spacy_model = initialize_language_model(lang)
+
     # Initialize translation memory dictionary
     tm_dict = initialize_translation_memory(lang, tm_path)
 
@@ -576,12 +604,13 @@ def main():
     # Split termbase
     source_terms, target_terms = split_termbase(termbase)
 
-    # Lemmatize termbase
-    lemmatized_termbase = lemmatize_termbase(source_terms, target_terms)
-
     # Initialize spaCy models
-    source_model, target_model = initialize_spacy_models(lang)
-
+    source_model, target_model = initialize_spacy_models(target_spacy_model, source_lang_spacy_model)
+    
+    # Lemmatize termbase
+    lemmatized_termbase = lemmatize_termbase(source_model, source_terms, target_model, target_terms)
+    print(lemmatized_termbase)
+    print('\n---------------------------------')
     # Setup source PhraseMatcher
     source_phrase_matcher = setup_phrase_matcher(source_model, source_terms)
 
