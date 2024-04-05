@@ -15,7 +15,7 @@ def extract_term_from_file(file_path, lang, source_lang='en'):
 
         source_term = data[source_lang]["name"]
         target_term = data.get(lang, {}).get("name", "")
-        term_tuple = (source_term, target_term) if target_term else None
+        term_tuple = (file_path, source_term, target_term) if target_term else None
         return term_tuple
     
     except Exception as e:
