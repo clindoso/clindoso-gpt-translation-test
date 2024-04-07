@@ -124,8 +124,6 @@ def lemmatize_terms(model, terms):
     - dict: A dictionary with original terms as keys and their lemmatized forms as values.
     """
     lemmatized_terms = []
-    print("Terms to be lemmatized:\n")
-    print(terms)
     for term in terms:
         doc = model(term)
         lemmatized_term = ' '.join([token.lemma_ for token in doc])
@@ -348,12 +346,6 @@ def translate_with_gpt(client, segment, language, gpt_model, source_model, targe
     lemmatized_segment = " ".join([token.lemma_ for token in segment_doc])
     lemmatized_gpt_translation = " ".join([token.lemma_ for token in gpt_translation_doc])
 
-    print("Lemmatized source:\n")
-    print(lemmatized_segment)
-    print('')
-    print("Lemmatized translation:\n")
-    print(lemmatized_gpt_translation)
-    print('\n-------------------------------')
     # Find matches
     source_matches = filter_matches(source_phrase_matcher, segment_doc)
     target_matches = filter_matches(target_phrase_matcher, gpt_translation_doc)
