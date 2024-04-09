@@ -9,6 +9,7 @@ import spacy
 from spacy.matcher import PhraseMatcher
 from openai import OpenAI
 from term_scraper import extract_terms_from_directory
+from langdetect import detect_langs
 
 
 # Use this script to translate whole articles from English into German, Spanish, French, Italian, or Dutch with ChatGPT.
@@ -127,7 +128,23 @@ def lemmatize_term(model, term):
     lemmatized_term = ' '.join([token.lemma_ for token in doc])
     return lemmatized_term
 
-def lemmatize_termbase(source_model, target_model, termbase):
+def detect_language(text, lang, source_lang='en'):
+    detections = detect_langs(text)
+    # Convert detections to a dictionary {language_code: confidence}
+    detection_dict = {str(detection.lang): detection.prob for detection in detections}
+
+    # Get confidence scores for the source and target languages, defaulting to 0 if not detected
+    source_confidence = detection_dict.get(source_lang, 0)
+    target_confidence = detection_dict.get(lang, 0)
+
+    # Determine which languages has a higher confidence score, defaulting to the source language if equal
+    if source_confidence <= target_confidence:
+        return source_lang
+    else:
+        return lang
+
+
+def lemmatize_termbase(source_model, target_model, termbase, lang):
     source_terms = [term_tuple[1] for term_tuple in termbase]
     target_terms = [term_tuple[2] for term_tuple in termbase]
 
@@ -137,9 +154,15 @@ def lemmatize_termbase(source_model, target_model, termbase):
         lemmatized_source_terms.append(lemmatized_source_term)
     lemmatized_target_terms = []
     for target_term in target_terms:
-        lemmatized_target_term = lemmatize_term(target_model, target_term)
+        language = detect_language(target_term, lang)
+        print(f"\nTerm: {target_term}\n")
+        print(f"Language: {language}\n---------------------")
+        if language == lang:
+            lemmatized_target_term = lemmatize_term(target_model, target_term)
+        else:
+            lemmatized_target_term = lemmatize_term(source_model, target_term)
+        
         lemmatized_target_terms.append(lemmatized_target_term)
-    print(lemmatized_target_terms)
     lemmatized_termbase = [(term_tuple[0], lemmatized_source_terms[i], lemmatized_target_terms[i]) for i, term_tuple  in enumerate(termbase)]
 
     return lemmatized_termbase
@@ -623,7 +646,7 @@ def main():
     source_model, target_model = initialize_spacy_models(target_spacy_model, source_lang_spacy_model)
     
     # Lemmatize termbase
-    lemmatized_termbase = lemmatize_termbase(source_model, target_model, termbase)
+    lemmatized_termbase = lemmatize_termbase(source_model, target_model, termbase, lang)
 
     # Setup source PhraseMatcher
     source_phrase_matcher = setup_phrase_matcher(source_model, source_terms)

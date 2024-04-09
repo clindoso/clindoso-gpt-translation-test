@@ -13,6 +13,7 @@ LANGUAGE_MODELS = {
 }
 
 SOURCE_LANGUAGE_SPACY_MODEL = "en_core_web_sm"
+SOURCE_LANG = 'en'
 
 # Fuzzy matching thresholds
 LOWER_THRESHOLD = 0.05
