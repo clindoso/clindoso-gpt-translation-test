@@ -12,18 +12,18 @@ product_label:
 description: Use injixo Forecast to automatically calculate a forecast for contact volume and AHT.
 related_articles:
   - overwrite_title: Add title for untranslated source
-    filepath: features/forecast/injixo-forecast/manage-workloads.md
+    filepath: features/forecast/injixo-forecast/create-workloads.md
   - overwrite_title: Add title for untranslated source
     filepath: features/forecast/injixo-forecast/manual-adjustments.md
   - overwrite_title: Add title for untranslated source
-    filepath: features/forecast/injixo-forecast/store-forecast-versions.md
+    filepath: features/forecast/injixo-forecast/save-forecast-versions.md
   - overwrite_title: Add title for untranslated source
     filepath: features/forecast/injixo-forecast/download-forecast.md
 ---
 
-injixo Forecast combines your historical data with algorithms to generate high-quality forecasts. The algorithms recognize trends, patterns, and fluctuations included in your data. injixo Forecast uses many types of algorithms, such as ARIMA, Holt-Winters, exponential smoothing, regression, or gradient boosting. 
+injixo Forecast combines your historical data with algorithms to generate high-quality forecasts. The algorithms recognize trends, patterns, and fluctuations included in your data. injixo Forecast uses many types of algorithms, such as ARIMA, Holt-Winters, exponential smoothing, regression, or gradient boosting.
 
-injixo Forecast automatically selects the algorithm best suited to your data. The forecast is generated for 365 days and can be displayed in daily, weekly, monthly, and yearly views.
+injixo Forecast automatically selects the algorithm best suited to your data. injixo generates a forecast for 365 days into the future after the data import.
 
 injixo Essential WFM uses a basic algorithm that uses simple average values in the historical data to recognize a long-term linear trend and weekly patterns.
 
@@ -43,9 +43,9 @@ Which kind of workloads are available to you depends on your WFM plan (Classic, 
 
 ## How to deal with low data quality
 
-To generate an accurate forecast, historical data must be both complete (enough data with as few gaps as possible) and clean (free of irrelevant patterns). For example, incorrectly marked {% link_new events or holidays | features/forecast/injixo-forecast/events-and-holidays.md %} will impact forecast quality.
+To generate an accurate forecast, historical data must be both complete (enough data with as few gaps as possible) and clean (free of irrelevant patterns). For example, incorrectly marked {% link_new events or public holidays | features/forecast/injixo-forecast/events-and-holidays.md %} will impact forecast quality.
 
-Historical data may include prolonged outages, or it may miss data for a particular timeframe. The closer that missing data is to the current day, the less the forecast quality is affected. 
+Historical data may include prolonged outages, or it may miss data for a particular timeframe. The closer that missing data is to the current day, the less the forecast quality is affected.
 
 Here are some tips on managing low data quality depending on how long the period with poor or missing data is:
 

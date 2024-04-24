@@ -53,13 +53,13 @@ You can define an SQL query to read data from a database. Database integrations 
    - **Agent status** for agent status data  
     By default, data is imported every 15 minutes but you can control the import behavior with two additional checkboxes:
         - **Import data in real time**: Data is imported every 10 seconds. Available in injixo Advanced and Enterprise WFM only.
-        - **Data reconciliation**: Controls which time period of agent status data is imported every 15 minutes. Defaults to data from the last 24 hours (recommended).  
+        - **Data reconciliation**: Controls which time period of agent status data is imported every 15 minutes. Defaults to data from the last 24 hours.  
 
 2. Select the **Database time zone** from the drop-down menu.
 3. Enter the **SQL query** that will be used to import data from your database. Learn more about the [SQL Query](#sql-query).
 4. To create the integration, click _Save integration_{:.doc-button}.  
    The integration starts importing data into injixo. The initial import can take a while.  
-   All queues imported from the connected database will automatically be available on the {% link_new workload configuration screen | features/forecast/injixo-forecast/manage-workloads.md | #create-workloads %} in injixo Forecast.  
+   All queues imported from the connected database will automatically be available on the {% link_new workload configuration screen | features/forecast/injixo-forecast/create-workloads.md | #create-workloads %} in injixo Forecast.  
    External activities will be available in the Present activity (ID 1). To import agent status data, you need to {% link_new map external user identifiers and activities | features/acd-integration/cloud/import-agent-status-data.md %}.
 
 ### Data reconciliation
@@ -161,10 +161,9 @@ table th:nth-of-type(4) {
 | ------------------------- | --------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | queueidentifier           | String    | Yes      | Unique identifier for the queue<br>You can rename the queue by changing the queuename, but it will keep the same queueidentifier.                                        |
 | queuename                 | String    | Yes      | Identifier for the queue                                                                                                                                                 |
-| timestamp                 | Datetime  | Yes      | Start of the interval                                                                                                                                                    |
-| offered                   | Integer   | Yes      | Offered contact (value 1)<br>No offered contact (value 0)                                                                                                                |
+| timestamp                 | Datetime  | Yes      | Start of the interval                                                                                                                                                    |                                                                                                       |
 | answered                  | Integer   | Yes      | Handled contact (value 1)<br>No handled contact (value 0)                                                                                                                |
-| duration                  | Integer   | Yes      | Total handle time of a single contact                                                                                                                                    |
+| duration                  | Integer   | No       | Total handle time of a single contact                                                                                                                                    |
 | channel                   | String    | No       | Identifier for the channel of the injixo source queue<br>Defaults to calls if empty<br>Valid values: calls, chats, emails, social_media, documents, cases. |
 
 ## Edit a database integration
@@ -174,4 +173,3 @@ When your database details or data structure change, you can edit the configurat
 ## Known ODBC driver issues
 
 To prevent increasing TCP connections in Cloud Link when querying data from Amazon Athena, make sure to use the [Athena ODBC 2.x driver version](https://docs.aws.amazon.com/athena/latest/ug/odbc-v2-driver.html).
-

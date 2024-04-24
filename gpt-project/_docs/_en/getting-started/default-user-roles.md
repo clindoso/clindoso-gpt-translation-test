@@ -22,8 +22,8 @@ In each role category, injixo provides one default user role with pre-defined ac
 | Planner               | Full access to all functionalities relevant to forecasting, scheduling, intraday management, and configuration data.                                                                         |
 | Supervisor (basic)    | Read-only access to the Schedule level in {% link_new Schedules                                                                                                                              | features/scheduling/schedules/schedules-overview.md %} and {% link_new Shift Center | features/scheduling/shiftcenter/shift-center-overview.md %}. Access to {% link_new Exchange overview | features/scheduling/view-approve-shift-swap-requests.md %} and {% link_new Time Off | features/scheduling/time-off/vacation-absences-management.md %} to manage shift swaps and time-off requests. No access to configuration data. |
 | Supervisor (advanced) | All functionalities of Supervisor (basic), full access to Shift Center and Schedules, permission to change schedules in intraday management, and full access to specific configuration data. |
-| Trainer               | Access to Academy to facilitate training on injixo Me.                                                                                                                                       |
 | Finance               | Access to user and billing information, as well as invoices for injixo services.                                                                                                             |
+| Trainer | No default permissions. |
 
 Note: The tables in this article list components and features for relevant default user roles. The green checkmark icon <i class="fa fa-check" style="color:#1cb396"></i> indicates full (read and write) access. Because your WFM plan also determines available functionality, you may not have access to every item listed.
 

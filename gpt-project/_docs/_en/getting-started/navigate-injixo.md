@@ -26,10 +26,10 @@ Click the items in the navigation bar at the top to access injixo's products and
 
 ------- | --------
 **WFM** | Create the configuration data required to {% link_new map out your company | getting-started/set-up-base-configuration.md %}, {% link_new run reports | features/reporting/standard-reports/creating-reports.md %}, and configure settings and {% link_new scheduling rules | features/administration/create-contracts.md | #scheduling-rules %}.
-**Forecast** | {% link_new Create workloads | features/forecast/injixo-forecast/manage-workloads.md %} to {% link_new generate forecasts | features/forecast/injixo-forecast/what-is-the-injixo-forecast.md %} based on imported historical data.
+**Forecast** | {% link_new Create workloads | features/forecast/injixo-forecast/create-workloads.md %} to {% link_new generate forecasts | features/forecast/injixo-forecast/what-is-the-injixo-forecast.md %} based on imported historical data.
 **Plan** | {% link_new Create schedules | features/scheduling/schedules/schedules-overview.md %}, {% link_new manage time-off periods and requests | features/scheduling/time-off/time-off-periods.md %}, and {% link_new schedule meetings | features/scheduling/meetings/meetings-overview.md %}. Go to {% link_new Shift Center | features/scheduling/shiftcenter/shift-center-overview.md %} to view and manually adjust your schedules. Add configuration data such as {% link_new skills | features/administration/work-with-skills.md %}.
 **Intraday** | In {% link_new Real-Time Adherence | features/intraday/real-time-adherence.md %} you can see details on each employee's current adherence status. This helps you identify and react to unforeseen events and maintain your service level.
-**Analyze** | Go to {% link_new Dashboards | features/monitoring/dashboards/dashboards-overview.md %} to analyze historical and forecasted data, and to view and compare your data in graphs.
+**Analyze** | Go to {% link_new Dashboards | features/monitoring/dashboards/manage-dashboards.md %} to analyze historical and forecasted data, and to view and compare your data in graphs.
 **People**<span class="beta-icon">Beta</span> | {% link_new Create, edit, or delete the profiles | features/people/manage-people.md %} of the people in your organization.
 **Me** | People can {% link_new access their schedules, request time off, swap shifts, and bid on shifts | features/injixo-me/use-injixo-me/explore-injixo-me.md %}. Users with admin access can {% link_new turn features on or off | features/injixo-me/set-up-injixo-me/configure-injixo-me.md %}.
 
@@ -51,16 +51,20 @@ Learn about {% link_new access for the default user roles | getting-started/defa
 
 ## Your user profile
 
-Click your **username** at the top right to open your user profile.
+Click your **user name** at the top right to open your user profile.
 
 ---------- | --------
 **My Profile** | Change your name, and the email address that you use to log in to injixo. Set your language. Set the timezone to correctly display scheduling data (this change is effective after the next login). Allow {% link_new browser notifications | getting-started/notifications.md | #allow-browser-push-notifications %} from injixo.
 **Security** | Change your password. Activate {% link_new two-factor authentication | getting-started/use-two-factor-authentication.md %}.
 **Personal access tokens** | Create a token to access the {% link_new injixo API | features/reporting/injixo-api/injixo-api.md %}.<br>By default, only users with admin access can create personal access tokens. Users with admin access can {% link_new allow other user roles to create personal access tokens | features/reporting/injixo-api/injixo-api.md | #authorization-personal-access-token %}.
 
-## Academy
+## E-learning
 
-Click the {% icon graduation_cap %} next to your username to {% link_new access Academy | getting-started/learn-injixo-with-academy.md %}, injixo's self-service learning platform.
+Click the {% icon graduation_cap %} next to your user name to access {% link_new our e-learning courses | getting-started/e-learning.md %}.
+
+## Product updates
+
+Click the {% icon gift %} next to your user name to access our product updates. Users with the Standard Agent role do not have access to the product updates page. 
 
 ## Support
 

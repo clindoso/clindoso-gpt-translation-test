@@ -11,22 +11,17 @@ redirect_from:
 redirect_reason: Updated filename on 29 November 2023
 ---
 
-Your organization is billed according to your [WFM plan](https://www.injixo.com/pricing) and number of users:
-- In injixo Essential, Advanced, and Enterprise WFM, the billing calculation includes a monthly [base fee with a fixed number of users](https://www.injixo.com/pricing). Your organization will be invoiced for any additional active users.
-- In injixo Classic, your organization is billed per created user.
-
-Your invoice at the end of the month is based on the highest daily user count of that month, minus the number of users included in your plan’s base fee.
+Your organization is billed according to our [terms and conditions](https://www.injixo.com/en-de/terms-and-conditions).
 
 injixo counts all {% link_new user accounts you create | getting-started/manage-user-accounts.md %} under:
 
-- _WFM > Administration > Scheduling > Employees_{:.breadcrumbs}
+- _Plan > Configuration > Employees_{:.breadcrumbs}
 - _Account > Users_{:.breadcrumbs}
 - **People**
 
 The three sections listed above will display all your users, but each user only counts once for billing.
 
-New users are counted and billed at the end of the month.
-The creation date for new users is the Join date in WFM > Administration > Scheduling > Employees. Changing the join date does not change the user count and billing for the first month.
+The creation date for new users is the join date in _Plan > Configuration > Employees_{:.breadcrumbs}. Changing the join date does not change the user count and billing for the first month.
 
 ## View billed and unbilled users
 
@@ -53,12 +48,11 @@ Go to _Account > Billing_{:.breadcrumbs} to access your organization's billing i
 
 ### Check your current user count
 
-Get an overview of licensed users in your injixo account for the current and previous months.
+To get an overview of licensed users in your injixo account for the current and previous months, proceed as follows:
 
 1. Click _Subscription_{:.menu-item}.  
     The **Your Current Subscription** section displays a table with the total user count for the current month.
 2. In the **History** section, select the **month** and **year** to populate a graph in the **User Count** section.
-
 
 Note: Your invoice will include the user count as a line item.
 

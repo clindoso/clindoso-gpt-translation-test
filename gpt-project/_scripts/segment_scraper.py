@@ -58,20 +58,23 @@ def write_prompts_to_jsonl(data, file_path, language):
 def main():
 
     # Initialize termbase directory
-    if not config.termbase_directory:
+    if not config.TERMBASE_DIRECTORY:
         raise EnvironmentError("Source termbase directory not defined in the config file.")
-    else: termbase_directory = config.termbase_directory
+    else: termbase_directory = config.TERMBASE_DIRECTORY
 
 
     lang = parse_arguments()
     language, tm_path = initialize_language_model(lang)
 
-    terms = extract_terms_from_directory(termbase_directory, lang)
+    term_tuples = extract_terms_from_directory(termbase_directory, lang)
+    terms = [(term_tuple[1], term_tuple[2]) for term_tuple in term_tuples]
     segments = read_segments_from_tm(tm_path, lang)
 
-    # Combine terms and segments for training data
-    combined_data = terms + segments
-    train_data, validation_data = train_test_split(combined_data, test_size=0.2, random_state=42)
+    # Split segments for training and validation data
+    train_data, validation_data = train_test_split(segments, test_size=0.2, random_state=42)
+
+    # Add terms to training data
+    train_data = train_data + terms
 
     # Assign output_dir
     output_dir = os.path.dirname(os.path.dirname(tm_path))

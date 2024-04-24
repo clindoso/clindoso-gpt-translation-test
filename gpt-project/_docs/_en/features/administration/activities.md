@@ -41,8 +41,8 @@ injixo includes two pre-configured (non-deletable) activities:
    - **Shortcut**: Optional keyboard shortcut to help you insert the activity more quickly in Shift Center. Learn more about {% link_new shortcuts | best-practices/tips-on-shift-center-usage.md | #tip-2-shortcuts-for-a-quick-assignment-of-activities %}.
    - **Official name and abbreviation**: Alternative name that can be used for internal reporting and integrations. injixo Me always displays the name entered under **Name**.
 3. Check one or more checkboxes to set different {% link_new activity properties | features/administration/activity-types-and-properties.md | #activity-properties %}.
-  If you check Plannable, you can edit the {% link_new importance value | best-practices/importance-for-activities.md %}.
-  If you check Replaceable, you can edit the {% link_new priority value | best-practices/priority-for-activities.md %}.
+   If you check Plannable, you can edit the {% link_new importance value | best-practices/importance-for-activities.md %}.
+   If you check Replaceable, you can edit the {% link_new priority value | best-practices/priority-for-activities.md %}.
 4. (Optional) {% link_new Assign skills | features/administration/work-with-skills.md | #assign-skills-to-activities %} to the activity.
 5. Click _Create activity_{:.doc-button}.
 
@@ -50,13 +50,14 @@ Learn more about {% link_new activity types and properties | features/administra
 
 ### Activity ID
 
-To see the ID of an activity, you can: 
+To see the ID of an activity, you can:
+
 - Click an activity in the **Activities** list. The URL on your browser bar shows the ID of the selected activity (e.g. https://www.injixo.com/plan/configuration/activities/1234).
-- Use the injixo API. Learn how to [manage activities through the injixo API](https://api.injixo.com/resources/activities/).
+- Use the injixo API. Learn how to [manage activities through the injixo API](https://api.injixo.com/resources/schedules/activities).
 
-## Multiactivities and subactivities 
+## Multiactivities and subactivities
 
-Multiactivities allow you to schedule people with several skills when one of their skills is needed. You can turn an activity into a multiactivity by {% link_new assigning other activities | features/administration/activity-types-and-properties.md | #subactivities %} to it. The activities assigned become its subactivities.  In the list of activities, multiactivities are marked with an <em class="multiactivity-icon"></em> icon.
+Multiactivities allow you to schedule people with several skills when one of their skills is needed. You can turn an activity into a multiactivity by {% link_new assigning other activities | features/administration/activity-types-and-properties.md | #subactivities %} to it. The activities assigned become its subactivities. In the list of activities, multiactivities are marked with an <em class="multiactivity-icon"></em> icon.
 
 If an activity is a subactivity, when you click it you can see the section **Multiactivities**, which displays all multiactivities it is assigned to.
 
@@ -67,12 +68,12 @@ You can only assign subactivities to an activity after you have created it.
 
 You can map external statuses from external systems (e.g. an ACD) to an activity in injixo.
 The following procedure provides an overview of the configuration steps. For a more detailed explanation, go to {% link_new Map external statuses to activities | features/intraday/map-external-status.md %}.
+
 1. Select an activity from the list, scroll to the section **External statuses**, and click **Map external statuses in Intraday**.  
    injixo will redirect you to _Intraday > Configuration_{:.breadcrumbs}.
 2. Click the integration with the external system whose external statuses you want to map.
 3. In the **External statuses** section, select all statuses that you want to map to your activity.
 4. Click _Save changes_{:.doc-button}.
-
 
 ## Duplicate an activity
 
@@ -80,7 +81,7 @@ To create a new activity with the same general properties as an existing activit
 
 1. In the **Activities** list, select an activity.
 2. Click **Duplicate activity** under the activity name.  
-A **Create new activity** window opens with pre-checked checkboxes. Assigned skills and subactivities are not duplicated.
+   A **Create new activity** window opens with pre-checked checkboxes. Assigned skills and subactivities are not duplicated.
 3. Enter a **Name** for the new activity.
 4. (Optional) Change the color and other properties.
 5. Click _Create activity_{:.doc-button}.
@@ -88,8 +89,9 @@ A **Create new activity** window opens with pre-checked checkboxes. Assigned ski
 ## Edit or delete an activity
 
 1. In the **Activities** list, select an activity.
-  - To edit the activity, edit the information you want to change and click _Save changes_{:.doc-button}.
-  - To delete the activity, click _Delete activity_{:.doc-button} in the lower right.
+
+- To edit the activity, edit the information you want to change and click _Save changes_{:.doc-button}.
+- To delete the activity, click _Delete activity_{:.doc-button} in the lower right.
 
 If the deleted activity was assigned to other configuration items, such as planning units or day models, its name is displayed in italics in these items. A deleted activity loses its assignments to other items but will remain visible in configuration data. You may need to recreate existing day models that used the deleted activity.
 

@@ -119,6 +119,9 @@ Use the {% icon down-arrow-blue %} and the {% icon up-arrow-blue %} to define th
 | D    | Combined Rotation (A/B) | injixo respects the position defined for the week time patterns. | injixo chooses one day model for the whole week.| Flexible (within a time frame)    |  Based on staff requirements, injixo can schedule people with early shifts to start working between 8&nbsp;AM and 10&nbsp;AM. With type D, injixo can schedule more flexibly to best meet staff requirements, while at the same time assigning fairly consistent schedules to your people. |
 
 
+The following graph shows how the different types of work time pattern models influence your schedule. This example includes a work time pattern model with four week time patterns (WTP in the graph), and three day models in each week time pattern.
+
+{{ 2 | image: 'Sample schedule with the different work time pattern model types' }}
 
 ## Exception days
 

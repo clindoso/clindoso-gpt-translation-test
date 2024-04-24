@@ -9,7 +9,6 @@ import spacy
 from spacy.matcher import PhraseMatcher
 from openai import OpenAI
 from term_scraper import extract_terms_from_directory
-from langdetect import detect_langs
 
 
 # Use this script to translate whole articles from English into German, Spanish, French, Italian, or Dutch with ChatGPT.
@@ -128,22 +127,6 @@ def lemmatize_term(model, term):
     lemmatized_term = ' '.join([token.lemma_ for token in doc])
     return lemmatized_term
 
-def detect_language(text, lang, source_lang='en'):
-    detections = detect_langs(text)
-    # Convert detections to a dictionary {language_code: confidence}
-    detection_dict = {str(detection.lang): detection.prob for detection in detections}
-
-    # Get confidence scores for the source and target languages, defaulting to 0 if not detected
-    source_confidence = detection_dict.get(source_lang, 0)
-    target_confidence = detection_dict.get(lang, 0)
-
-    # Determine which languages has a higher confidence score, defaulting to the source language if equal
-    if source_confidence <= target_confidence:
-        return source_lang
-    else:
-        return lang
-
-
 def lemmatize_termbase(source_model, target_model, termbase, lang):
     source_terms = [term_tuple[1] for term_tuple in termbase]
     target_terms = [term_tuple[2] for term_tuple in termbase]
@@ -154,16 +137,9 @@ def lemmatize_termbase(source_model, target_model, termbase, lang):
         lemmatized_source_terms.append(lemmatized_source_term)
     lemmatized_target_terms = []
     for target_term in target_terms:
-        language = detect_language(target_term, lang)
-        print(f"\nTerm: {target_term}\n")
-        print(f"Language: {language}\n---------------------")
-        if language == lang:
-            lemmatized_target_term = lemmatize_term(target_model, target_term)
-        else:
-            lemmatized_target_term = lemmatize_term(source_model, target_term)
-        
+        lemmatized_target_term = lemmatize_term(target_model, target_term)
         lemmatized_target_terms.append(lemmatized_target_term)
-    lemmatized_termbase = [(term_tuple[0], lemmatized_source_terms[i], lemmatized_target_terms[i]) for i, term_tuple  in enumerate(termbase)]
+    lemmatized_termbase = [(term_tuple[1], term_tuple[2], lemmatized_source_terms[i], lemmatized_target_terms[i]) for i, term_tuple  in enumerate(termbase)]
 
     return lemmatized_termbase
 
@@ -240,7 +216,7 @@ def match_terms_in_text(model, matcher, text):
 
 def verify_termbase_compliance(source_lemma_matches, target_lemma_matches, lemmatized_termbase):
     term_not_found = False
-    for _, source_term, target_term in lemmatized_termbase:
+    for _, _, source_term, target_term in lemmatized_termbase:
         # Check if lemmatized source term is in source lemma matches
 
         if source_term not in source_lemma_matches:
@@ -502,12 +478,21 @@ def translate_article(client, language, source_text, tm_dict, gpt_model, source_
             translated_front_matter = process_front_matter(front_matter_segments, tm_dict, gpt_translation_dict, language, gpt_model, client, source_model, target_model, source_phrase_matcher, target_phrase_matcher, lemmatized_termbase)
             front_matter_processed = True
             
-        # Check commented out segment in English
+        is_in_comment = False  # Flag to track if we are inside a comment block
+        # Check if the current segment starts a comment block
         if segment.startswith("<!--"):
-            # Reproduce untranslated commented out segment
-            translated_segments.append((segment, segment))
-            continue
+            is_in_comment = True
         
+        # If inside a comment block, reproduce the segment untranslated
+        if is_in_comment:
+            translated_segments.append((segment, segment))
+
+            # Check if the current segment ends the comment block
+            if segment.endswith("-->"):
+                is_in_comment = False
+
+            continue # Skip further processing for this segment
+    
         # Handle Markdown table formatting
         elif re.match(r'^\|(\s?)---', segment):
             # Reproduce table formatting
@@ -515,7 +500,6 @@ def translate_article(client, language, source_text, tm_dict, gpt_model, source_
             continue
 
         # Handle for code quotation
-
         elif re.match(r'^ *```', segment):
             # Reproduce quotation segments
             translated_segments.append((segment, segment))

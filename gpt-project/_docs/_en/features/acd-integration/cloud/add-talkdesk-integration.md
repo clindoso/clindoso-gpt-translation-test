@@ -13,7 +13,7 @@ related_articles:
   - overwrite_title: Add title for untranslated source
     filepath: features/acd-integration/cloud/import-agent-status-data.md
   - overwrite_title: Add title for untranslated source
-    filepath: features/forecast/injixo-forecast/manage-workloads.md
+    filepath: features/forecast/injixo-forecast/create-workloads.md
 ---
 
 A Talkdesk integration is a cloud integration that imports historical call data and agent status data.

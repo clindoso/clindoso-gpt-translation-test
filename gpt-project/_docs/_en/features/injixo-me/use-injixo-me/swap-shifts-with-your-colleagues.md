@@ -23,7 +23,7 @@ Here is an overview of the shift swap process:
 4. You accept one of the counteroffers.
 5. (Optional) Your planner approves the swap.  
    
-If you are on the Essential WFM plan, you will not be able to send email invitations to your colleagues (step 2).
+If your organization is on the Essential WFM plan, you will not be able to send email invitations to your colleagues (step 2).
 
 ## Swap shifts
 ### Offer a shift
@@ -39,7 +39,7 @@ If you are on the Essential WFM plan, you will not be able to send email invitat
    
    > Note
    > 
-   > The page to send notifications will not be displayed if email notifications for Me are deactivated under _Account > Notifications_{:.breadcrumbs}.
+   > The page to send notifications will not be displayed if your planner has not activated email notifications for Me.
 7. (Optional) To leave a comment, click the {% icon message %} next to the offered shift.
 8. Click _Close_{:.doc-button}.
 
@@ -64,7 +64,7 @@ If you offered a shift and received a counteroffer, you will see a **Shift Offer
 2. In the **Notices** section, click _View_{:.doc-button} next to the **Shift Offer Received** notification.  
    A dialog window opens.
 3. Under **Shift Offers**, click _Accept_{:.doc-button}.  
-   If you need planner approval for the swap, a yellow banner shows the message This shift swap is pending approval. The counteroffer icon _![Available Shifts To Swap Button](/assets/img/common/injixo-me/counter-offer.png)_{:.doc-button-icon} turns yellow.
+   If you need planner approval for the swap, a yellow banner shows the following message: This shift swap is pending approval. The counteroffer icon _![Available Shifts To Swap Button](/assets/img/common/injixo-me/counter-offer.png)_{:.doc-button-icon} turns yellow.
 4. Click _Close_{:.doc-button}.
 
 ### Reject a counteroffer

@@ -211,7 +211,7 @@ The following table gives you an overview of the columns required in the SQL que
 | queue       | String    | Yes      | Identifier for the queue                                                                                                                                                                                 |
 | timestamp   | Datetime  | Yes      | Start of the interval in the format YYYY-MM-DD hh:mm:ss                                                                                                                                                  |
 | offered     | Integer   | Yes      | Amount of contacts (e.g calls or emails) in the interval                                                                                                                                                 |
-| answered    | Integer   | Yes      | interval-based: Amount of contacts that have been handled in the interval<br>contact-based: The value 1 indicates that the contact has been handled. The value 0 indicates that it has not been handled. |
+| handled     | Integer   | Yes      | interval-based: Amount of contacts that have been handled in the interval<br>contact-based: The value 1 indicates that the contact has been handled. The value 0 indicates that it has not been handled. |
 | aht         | Float     | No       | Average handling time for all contacts in the interval                                                                                                                                                   |
 | duration    | Integer   | Yes      | Total handling time of a single contact                                                                                                                                                                  |
 | channel     | String    | Yes      | Identifier for the channel of the injixo source queue<br>Allowed values: calls, chats, emails, social_media, documents, cases                                                                            |
@@ -282,7 +282,7 @@ You can replace the header row by using the Preprocessing options of the integra
 ```
  SELECT
    A as queue,
-   DATE('now')||' '|| "B"||':00' as timestamp,
+   DATE('now')||' '|| B || ':00' as timestamp,
    FLOOR(C) as offered,
    FLOOR (D) as handled,
    (CAST(substr(E, 1, 1) AS INTEGER) * 3600) +
@@ -297,7 +297,7 @@ If you do not replace the header row, refer to the actual column names using dou
 ```
  SELECT
    "Queue Name" as queue,
-   DATE('now')||' '|| "Hour in hh:mm"||':00' as timestamp,
+   DATE('now')||' '|| "Hour in hh:mm" || ':00' as timestamp,
    FLOOR("Offered Calls") as offered,
    FLOOR ("Handled Calls") as handled,
    (CAST(substr("Average Handling Time", 1, 1) AS INTEGER) * 3600) +
@@ -488,11 +488,11 @@ Use UTF-8 to avoid generic error messages.
 
 ### Automatic file import
 
-[Configure a CSV integration](#configure-a-new-csv-integration) and connect injixo Cloud Link. injixo Cloud Link will upload new data to injixo. By default, every time you save a new CSV file in the injixo Cloud Link installation directory, a new upload will start. You can change the default installation directory (C:\Program Files\injixo Cloud Link) during the installation.
+[Configure a CSV integration](#configure-a-new-csv-integration) and connect injixo Cloud Link. injixo Cloud Link will periodically upload new data to injixo by looking for CSV files in its installation directory. You can change the default installation directory (C:\Program Files\injixo Cloud Link) during the installation.
 
 Alternatively, configure a separate {% link_new import folder | features/acd-integration/cloud/install-cloud-link.md | #configure-import-folder %} for file uploads. Save the new files in the import folder instead.
 
-After data has been uploaded, you can {% link_new add new queues to a workload | features/forecast/injixo-forecast/manage-workloads.md %} in Forecast, or you will see updated data in your existing workloads. If no data is uploaded, use the manual file import described below to check if your file format is valid.
+After data has been uploaded, you can {% link_new add new queues to a workload | features/forecast/injixo-forecast/create-workloads.md %} in Forecast, or you will see updated data in your existing workloads. If no data is uploaded, use the manual file import described below to check if your file format is valid.
 
 ### Manual file import
 
@@ -507,12 +507,12 @@ Once you have [added a CSV integration](#configure-a-new-csv-integration), you c
    To avoid error messages, the file format must match the [CSV schema](#create-a-csv-schema).
 5. To upload the data, click _Apply data_{:.doc-button}.
 
-After your data has been processed, you can {% link_new add the queues to a workload | features/forecast/injixo-forecast/manage-workloads.md %} in injixo Forecast. The maximum file size is 7 MB.
+After your data has been processed, you can {% link_new add the queues to a workload | features/forecast/injixo-forecast/create-workloads.md %} in injixo Forecast. The maximum file size is 7 MB.
 
 ## Frequently asked questions
 
 | Question                                                                  | Answer                                                                                                                                                                                                                                                                                   |
 | ------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Can I import the same file twice?                                         | Yes, if you import data manually. No, if you are using Cloud Link. To detect duplicate files, injixo calculates checksums during the import. Imported files with the same checksum will not be imported again. If the file has the same name but different content, it will be imported. |
+| Can I import the same file twice?                                         | Yes, if you import data manually. No, if you are using Cloud Link. To detect duplicate files, injixo calculates checksums during the import. Imported files with the same checksum will not be imported again. However, if the file has the same name but different content, the checksum will change and the file will be imported again. |
 | Will injixo delete the automatically imported CSV files after the import? | No. Imported files will remain in the injixo Cloud Link client directory. You can manually delete them or set up a recurring task yourself.                                                                                                                                              |
 | Can I import a CSV file that contains future data?                        | Yes, it is possible. However, keep in mind that injixo will not skip future data, but will store it as historical data. You can still calculate a forecast, but the graphs for history and forecast will overlap.                                               |

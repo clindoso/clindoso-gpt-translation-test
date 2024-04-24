@@ -12,7 +12,7 @@ related_articles:
   - overwrite_title: Add title for untranslated source
     filepath: getting-started/calculate-a-forecast.md
   - overwrite_title: Add title for untranslated source
-    filepath: features/forecast/injixo-forecast/staff-requirement.md
+    filepath: features/forecast/injixo-forecast/calculate-staff-requirements.md
   - overwrite_title: Add title for untranslated source
     filepath: features/scheduling/schedules/schedules-job-optimization.md
   - overwrite_title: Add title for untranslated source
@@ -24,7 +24,7 @@ injixo provides three places where you can create and edit an employee, dependin
 | Place                                           | Description              |
 | ----------------------------------------------- | ------------------------ |
 | _Plan > Configuration > Employees_{:.breadcrumbs}   | {% link_new Configure an employee for scheduling | features/administration/employee-overview.md | #overview-of-employee-settings %}. Employees without assigned planning units will not appear on the list.      |
-| _Account > Users_{:.breadcrumbs}                                 | Manage user access rights via {% link_new user roles | getting-started/configure-user-roles.md | #create-new-user-roles %}, {% link_new unlock locked users | getting-started/manage-user-accounts.md | #unlock-users %}, {% link_new set a new password for users | getting-started/manage-user-accounts.md | #set-a-new-user-password %}, and {% link_new check which users are billed | getting-started/how-does-billing-work.md | #view-billed-and-unbilled-users %} and which are not. You can also {% link_new delete users | getting-started/manage-user-accounts.md | #delete-a-user-account %} so that you are no longer billed for them. |
+| _Account > Users_{:.breadcrumbs}                                 | Manage user access rights via {% link_new user roles | getting-started/configure-user-roles.md | #create-a-new-user-role %}, {% link_new unlock locked users | getting-started/manage-user-accounts.md | #unlock-users %}, {% link_new set a new password for users | getting-started/manage-user-accounts.md | #set-a-new-user-password %}, and {% link_new check which users are billed | getting-started/how-does-billing-work.md | #view-billed-and-unbilled-users %} and which are not. You can also {% link_new delete users | getting-started/manage-user-accounts.md | #delete-a-user-account %} so that you are no longer billed for them. |
 | **People**                                                           | {% link_new Create and manage | features/people/manage-people.md %} a person's account and manage contact and address information. |
 
 In _Plan > Configuration > Employees_{:.breadcrumbs}, users without admin access can only see employees assigned to the planning units they have permissions for. Employees who are not assigned to a planning unit do not appear in the list, even if All is selected in the planning unit and selection drop-down menus. Users with admin access can see all employees.
@@ -136,7 +136,7 @@ To assign a shift sequence, follow the steps below:
 4. Specify the sequence.<br>This setting is only relevant if you need to assign more than one shift sequence to an employee. Shift sequences with lower values are inserted first and can be overwritten by subsequent ones.
 5. Set a reference date that defines the start day of the shift sequence.
 6. Click _OK_{:.doc-button}.
-You can now {% link_new insert shift sequences | features/scheduling/capacity/capacity-insert-shift-sequences.md %} into the schedule.
+You can now {% link_new insert shift sequences | features/scheduling/schedules/schedules-insert-shift-sequences.md %} into the schedule.
 
 ## Delegate employees
 

@@ -18,7 +18,7 @@ related_articles:
   - overwrite_title: Add title for untranslated source
     filepath: features/administration/employee-overview.md
   - overwrite_title: Add title for untranslated source
-    filepath: features/scheduling/capacity/capacity-insert-shift-sequences.md
+    filepath: features/scheduling/schedules/schedules-insert-shift-sequences.md
 ---
 
 A shift sequence is a weekly pattern of day models or activities. With shift sequences, you can quickly insert these repeating patterns into your schedule, and let injixo optimize the rest of the schedule.
@@ -27,10 +27,10 @@ Shift sequences can save you many hours of work, since you do not have to schedu
 
 There are four use cases for shift sequences:
 
-1. Specify days when certain shifts must be scheduled
-2. Schedule recurring activities
-3. Specify days when people do not work
-4. Specify when shifts can be scheduled based on people's availabilities
+- Use case 1: Specify days when certain shifts must be scheduled
+- Use case 2: Schedule recurring activities
+- Use case 3: Specify days when people do not work
+- Use case 4: Specify when shifts can be scheduled based on people's availabilities
 
 Shift sequences consist of one or more rows. Each row is an individual pattern that can be inserted into the schedule.<br>
 Each row contains cells that represent the days of the week. In the cells, you insert the day models or activities that you want to plan using the shift sequence.<br>
@@ -58,7 +58,7 @@ To create shift sequences, go to _Plan > Configuration > Shift sequences_{:.brea
 1. Click the New icon {% icon item-add | icon-only %} in the upper left.
 2. Configure the settings of the shift sequence:<br>
   **Name**: Enter a unique name (max. 50 characters).<br>
-  **Abbreviation**: Enter the name or a shorten version of it (max. 25 characters).<br>
+  **Abbreviation**: Enter the name or a shorter version of it (max. 25 characters).<br>
   **Employee row(s)**: Enter the number of rows for the shift sequence (max. 53).<br>Each row will be assigned a number. Double-click on a row to rename it. You will need the row number or name to assign it to a person later.<br>
   **Duration**: Enter a value between 7 and 371 days. The duration must be a multiple of seven.
 6. Click _Ok_{:.doc-button}.
@@ -133,6 +133,19 @@ To delete all elements from a shift sequence, follow these steps:
 3. Click the {% icon item-delete %} in the top action bar.
 4. In the confirmation dialog, click _Yes_{:.doc-button}.
 
+### Unassign deleted shift sequences
+
+When you delete a shift sequence, it remains assigned to your people and still appears when you {% link_new insert shift sequences | features/scheduling/schedules/schedules-insert-shift-sequences.md | #insert-shift-sequences %}. To unassign a deleted shift sequence, proceed as follows:
+
+1. Go to _Plan > Configuration > Employees_{:.breadcrumbs}.
+2. Select the person to whom the deleted shift sequence is assigned.
+3. Click **Shift sequences** in the panel on the right.
+4. Click the Display all icon {% icon assignment-history | icon-only %}.<br>The deleted shift sequence appears in the list.
+5. Click the Delete icon {% icon item-delete | icon-only %}.
+6. Click _Yes_{:.doc-button}.
+
+To unassign the deleted shift sequence from several people at once, use the {% link_new mass update | features/administration/mass-update.md %} functionality.
+
 ## Use cases
 
 You can use shift sequences for various scenarios.
@@ -141,7 +154,7 @@ You can use shift sequences for various scenarios.
 
 This use case applies, for example, when you need to plan early and late shifts for different groups of people. Or if you have a team member who cannot start working before 11 AM on Mondays, although they are available earlier all other days of the week. 
  
-You can learn more about whether this use case applies to you and how to configure shift sequences accordingly in our Academy training video below:
+You can learn more about whether this use case applies to you and how to configure shift sequences accordingly in our training video below:
 
 <div class="inline-video-container">
   <video class="inline-video-player-v" controls> 
@@ -155,7 +168,7 @@ You can learn more about whether this use case applies to you and how to configu
 
 This use case applies, for example, when you need to plan meetings that take place every week, or if you want to schedule a person to do one-hour slot of back-office work every day at a specific time.
 
-You can learn more about whether this use case applies to you and how to configure shift sequences accordingly in our Academy training video below:
+You can learn more about whether this use case applies to you and how to configure shift sequences accordingly in our training video below:
 
 <div class="inline-video-container">
   <video class="inline-video-player-v" controls>
@@ -169,7 +182,7 @@ You can learn more about whether this use case applies to you and how to configu
 
 This use case applies, for example, if you need to define specific patterns of days off for individual people. 
 
-You can learn more about whether this use case applies to you and how to configure shift sequences accordingly in our Academy training below:
+You can learn more about whether this use case applies to you and how to configure shift sequences accordingly in our training below:
 
   <div class="inline-video-container">
     <video class="inline-video-player-v" controls> 
@@ -183,7 +196,7 @@ You can learn more about whether this use case applies to you and how to configu
 
 This use case applies when you want to schedule people with varying availability.
 
-You can learn more about whether this use case applies to you and how to configure shift sequences accordingly in our Academy training below:
+You can learn more about whether this use case applies to you and how to configure shift sequences accordingly in our training below:
 
 <div class="inline-video-container">
   <video class="inline-video-player-v" controls>
@@ -205,6 +218,6 @@ You can generate a report in PDF format that includes all data of a shift sequen
 The report shows the start and end times of the activities or day models included in the shift sequence as well as their net duration in hours. The report is structured in weeks.
 Additionally, the report shows the following totals and averages of the net duration:
 
-- Sum row: Net duration of all activities or day models in the shift sequence.
-- Sum column: Total added net duration of the activities or day models per week.
-- Average row: Average value for all values in the Total row.
+- **Sum** row: Net duration of all activities or day models in the shift sequence.
+- **Sum** column: Total added net duration of the activities or day models per week.
+- **Average** row: Average value for all values in the **Total** row.

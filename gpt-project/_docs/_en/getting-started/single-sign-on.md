@@ -113,6 +113,18 @@ To deactivate SSO and allow logins with username and password again, users with 
 
 ## Use SSO on multiple tenants
 
-If your organization has multiple injixo tenants, and you want some or all of your users to have access to more than one tenant, the standard SSO configuration will not work. Contact your consultant to set up a configuration for this specific use case.
+If your organization has multiple injixo tenants, and you want some or all of your users to access more than one tenant, add a User Principal Name (UPN) for each person. Their email address and password is different for each injixo tenant. The person's UPN is the same across tenants. The person's UPN is configured in your IdP. The UPN is the identifier injixo uses to authenticate the user against their IdP. The format of the UPN, e.g. email address, depends on your IdP and setup.
+
+To add a UPN to a person, proceed as follows:
+
+1. Go to _People_{:.breadcrumbs}.
+2. Click the person who needs to have access to multiple tenants.
+3. In the People details view, click **Account** in the top right.
+4. In the **User principal name** field, enter a user principal name for the person.
+5. Click _Save_{:.doc-button}.
+
+The user's injixo email address, and not their UPN, is used for all email verification processes and for notifications or reports. The email address must be unique for each tenant. You can use [plus addressing](https://en.wikipedia.org/wiki/Email_address#Sub-addressing).
+
+SSO for multiple tenants is available to customers on the Advanced and Enterprise WFM plans. If you don't have access to SSO, the UPN field is still displayed on the page. Any input is ignored.
 
 <!-- SSO for multiple tenants can be activated by the feature flag multi_tenant_sso, see also https://github.com/ivx/internal-support-documentation/tree/main/Cortex-->

@@ -92,8 +92,8 @@ The table below gives an overview of the optional configuration items you can co
       <td>Work time pattern models and week time patterns help you organize shifts by ensuring a fair distribution of (rotating) shifts among the people you schedule. Work time pattern models contain at least one week time pattern. Week time patterns group shifts by parameters such as start time, shift length, or activities. They contain sets of day models.<br>Week time patterns are assigned to work time pattern models. Work time pattern models are assigned to people.</td>
     </tr>
     <tr>
-      <td>{% link_new Planning calendars and day types | features/administration/planning-calendar.md %}</td>
-      <td>Planning calendars contain days with deviating business hours and staffing needs (e.g., marketing campaign days or national holidays). These special days are configured using day types. This helps ensure they are automatically considered during scheduling without any additional manual effort.<br> Planning calendars are assigned to planning units.</td>
+      <td>{% link_new Planning calendars and day types | features/administration/configure-planning-calendars.md %}</td>
+      <td>Planning calendars contain days with deviating business hours and staffing needs (e.g., marketing campaign days or public holidays). These special days are configured using day types. This helps ensure they are automatically considered during scheduling without any additional manual effort.<br> Planning calendars are assigned to planning units.</td>
     </tr>
   </tbody>
 </table>

@@ -79,7 +79,7 @@ If the injixo client is not installed, the IE logo in the left navigation identi
 
 ## Firewall exceptions
 
-To access the injixo web pages, allow web traffic to and from \*.injixo.com via port 443.
+To access the injixo web pages, allow web traffic to and from *.injixo.com via port 443.
 
 If you use ActiveX-based features or custom SDK applications, add another firewall exception. These applications use port 45054 for outgoing traffic (port 80 for injixo hosts prior to 2019) and require direct Internet access over Transmission Control Protocol (TCP). Proxy servers configured in the browser are not supported.
 

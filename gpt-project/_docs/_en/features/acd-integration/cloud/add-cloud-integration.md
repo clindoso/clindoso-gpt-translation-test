@@ -33,6 +33,6 @@ Cloud integrations fetch data directly from a cloud system. injixo supports a va
 
 {{ 1 | image: 'Five9 integration', '80%' }}
 
-The integration now imports data into injixo. The initial import can take up to 15 minutes. All queues from the connected system will automatically be available for mapping on the {% link_new workload configuration screen | features/forecast/injixo-forecast/manage-workloads.md | #create-workloads %} in injixo Forecast.
+The integration now imports data into injixo. The initial import can take up to 15 minutes. All queues from the connected system will automatically be available for mapping on the {% link_new workload configuration screen | features/forecast/injixo-forecast/create-workloads.md | #create-workloads %} in injixo Forecast.
 
 If your integration supports the import of agent status data, you need to {% link_new map external user identifiers and activities | features/acd-integration/cloud/import-agent-status-data.md %} before agent status data can be imported.

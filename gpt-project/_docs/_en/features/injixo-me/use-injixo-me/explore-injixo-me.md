@@ -45,7 +45,7 @@ In _Me > Dashboard_{:.breadcrumbs} you can see an overview of your schedule:
 
 ## See your schedule: My Calendar
 
-In _Me > My Calendar_{:.breadcrumbs} you can see your schedule in a daily, weekly, or monthly view.
+In _Me > My Calendar_{:.breadcrumbs}, you can see your schedule in a daily, weekly, or monthly view.
 You can also {% link_new swap shifts | features/injixo-me/use-injixo-me/swap-shifts-with-your-colleagues.md | #swap-shifts %}.
 
 - To change the displayed time period, click _Day_{:.doc-button}, _Week_{:.doc-button}, or _Month_{:.doc-button}.
@@ -87,7 +87,7 @@ If your schedule has been published, you can download it as a PDF or as an ICS f
 
 ## See your team's schedule: Team calendar
 
-In _Me > Team Calendar_{:.breadcrumbs}, you can see the schedules of all employees in your planning unit and selection. The team calendar includes activities such as presence, breaks, and vacations. The team calendar can display day status activities, e.g. to visualize that people work in home office.
+In _Me > Team Calendar_{:.breadcrumbs}, you can see the schedules of all employees in your planning unit and selection. The team calendar includes activities such as presence, breaks, and vacations. The team calendar can display day status activities, e.g. to visualize that people work in home office. If the scheduling period is still unpublished, you see the following message: Nothing scheduled.
 
 ## Manage your time-off requests: Time Off
 

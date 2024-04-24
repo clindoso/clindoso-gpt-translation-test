@@ -59,9 +59,9 @@ In _Plan > Time Off_{:.breadcrumbs}, approve or reject any {% link_new pending r
 
 ## Create the schedule
 
-In {% link_new Schedules | features/scheduling/schedules/schedules-overview.md %}, {% link_new Shift Center | features/scheduling/shiftcenter/shift-center-overview.md %} or {% link_new Dashboards | features/monitoring/dashboards/dashboards-overview.md %}, check if {% link_new staff requirements | features/forecast/injixo-forecast/staff-requirement.md | #view-calculated-staff-requirements %} are correctly set up for your activities.
+In {% link_new Schedules | features/scheduling/schedules/schedules-overview.md %}, {% link_new Shift Center | features/scheduling/shiftcenter/shift-center-overview.md %} or {% link_new Dashboards | features/monitoring/dashboards/manage-dashboards.md %}, check if {% link_new staff requirements | features/forecast/injixo-forecast/calculate-staff-requirements.md %} are correctly set up for your activities.
 
-1. Insert {% link_new shift sequences | features/scheduling/capacity/capacity-insert-shift-sequences.md %} for your people.
+1. Insert {% link_new shift sequences | features/scheduling/schedules/schedules-insert-shift-sequences.md %} for your people.
 2. Configure and apply additional {% link_new scheduling methods | features/scheduling/scheduling-methods.md %} to complete the schedule.
 3. Run the {% link_new job optimization | features/scheduling/schedules/schedules-job-optimization.md %}. You can skip this step if you {% link_new create an optimized schedule | features/scheduling/schedules/schedules-optimized-schedules.md %}.
 

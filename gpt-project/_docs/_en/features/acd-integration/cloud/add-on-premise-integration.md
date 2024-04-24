@@ -31,6 +31,6 @@ On-premise integrations use {% link_new injixo Cloud Link | features/acd-integra
 
 {{ 1 | image: 'Genesys Engage integration', '85%' }}
 
-The integration now imports contact data into injixo. The first import can take some time. All queues from the connected system will automatically be available for mapping on the {% link_new workload configuration screen | features/forecast/injixo-forecast/manage-workloads.md | #create-workloads %} in injixo Forecast.
+The integration now imports contact data into injixo. The first import can take some time. All queues from the connected system will automatically be available for mapping on the {% link_new workload configuration screen | features/forecast/injixo-forecast/create-workloads.md | #create-workloads %} in injixo Forecast.
 
 If your integration supports the import of agent status data, {% link_new map external user identifiers and activities | features/acd-integration/cloud/import-agent-status-data.md %}. The integration can then import agent status data.

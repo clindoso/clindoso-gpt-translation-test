@@ -10,7 +10,7 @@ related_articles:
   - overwrite_title: Add title for untranslated source
     filepath: features/scheduling/schedules/scheduling-periods/what-are-scheduling-periods.md
   - overwrite_title: Add title for untranslated source
-    filepath: features/scheduling/employee-requirement.md
+    filepath: features/scheduling/edit-or-delete-staff-requirements.md
   - overwrite_title: Add title for untranslated source
     filepath: features/scheduling/schedules/schedules-shift-requirement.md
   - overwrite_title: Add title for untranslated source
@@ -25,7 +25,7 @@ Shift bidding allows people to take part in the scheduling process by bidding on
 
 ## Shift bidding process
 
-Before you start the shift bidding process, you need to {% link_new calculate staff requirements | features/forecast/injixo-forecast/staff-requirement.md %} and optionally {% link_new insert shift sequences | features/scheduling/capacity/capacity-insert-shift-sequences.md %}.
+Before you start the shift bidding process, you need to {% link_new calculate staff requirements | features/forecast/injixo-forecast/calculate-staff-requirements.md %} and optionally {% link_new insert shift sequences | features/scheduling/schedules/schedules-insert-shift-sequences.md %}.
 
 1. In Schedules, create a {% link_new Scheduling period | features/scheduling/schedules/scheduling-periods/what-are-scheduling-periods.md | #create-scheduling-periods %} with the status Unpublished.
 2. Enter [minimum and maximum values](#specify-your-shift-mix) for each day model in the shift requirement table.
@@ -63,7 +63,7 @@ The shift generation process creates shifts for each day of the scheduling perio
 
    {{ 3 | image: 'Parameter window for shift generation', '50%' }}
 
-Note: In Shift Center, you can overwrite the shift generation result by {% link_new changing the number of shifts generated for a single day | features/scheduling/employee-requirement.md %}, e.g. to modify a single day for testing.
+Note: In Shift Center, you can overwrite the shift generation result by {% link_new changing the number of shifts generated for a single day | features/scheduling/edit-or-delete-staff-requirements.md %}, e.g. to modify a single day for testing.
 
 The Shift Center displays key figures related to the shift generation. You find them in the {% link_new parameter window | features/scheduling/shiftcenter/shift-center-overview.md | #parameter-window %} at the bottom of the page:
 
@@ -86,7 +86,7 @@ After you have generated shifts, do the following:
 
 3. When the bidding period is over (or the deadline has passed), set the scheduling period back to **status** Unpublished.
 
-To see peoples' bids, go to Schedules or Shift Center and add level Request (first bids) or Alternative Request (second bids) to your view. Learn more on how to add the level in {% link_new Shift Center | features/scheduling/shiftcenter/shift-center-overview.md | #choose-the-time-range-and-levels %} and {% link_new Schedules | features/scheduling/schedules/schedules-overview.md | #by-level %}.
+To see peoples' bids, go to Schedules or Shift Center and add level Request (first bids) or Alternative Request (second bids) to your view. Learn more on how to add the level in {% link_new Shift Center | features/scheduling/shiftcenter/shift-center-overview.md | #choose-the-time-range-and-levels %} and {% link_new Schedules | features/scheduling/schedules/schedules-overview.md | #level-column %}.
 
 ## Run the shift lottery
 

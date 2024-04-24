@@ -19,11 +19,12 @@ related_articles:
     filepath: features/forecast/injixo-forecast/store-forecast-versions.md
   - overwrite_title: Add title for untranslated source
     filepath: features/forecast/injixo-forecast/download-forecast.md
+gpt_translation: true
 ---
 
-injixo Forecast combineert je historische gegevens met algoritmen om nauwkeurige forecasts te genereren. De algoritmen herkennen trends, patronen en fluctuaties in de gegevens. injixo Forecast maakt gebruik van een groot aantal algoritmen, waaronder ARIMA, Holt-Winters, exponential smoothing, regressie, en gradient boosting. <!-- GPT translation -->
+injixo Forecast neemt je historische gegevens als basis en werkt deze uit met behulp van algoritmes om nauwkeurige forecasts te genereren. De algoritmes herkennen trends, patronen en fluctuaties die in je gegevens opgenomen zijn. injixo Forecast maakt hiervoor gebruik van verschillende soorten algoritmes, zoals ARIMA, Holt-Winters, exponentiële gladstrijking, regressie of gradient boosting. <!-- GPT translation -->
 
-injixo Forecast selecteert automatisch het best passende algoritme voor jouw gegevens. Na het importeren van de gegevens, genereert injixo een forecast voor 365 dagen in de toekomst. <!-- GPT translation -->
+injixo Forecast kiest automatisch het algoritme dat het beste bij jouw gegevens past. injixo maakt een forecast aan voor 365 dagen na het importeren van de gegevens. <!-- GPT translation -->
 
 injixo Essential WFM maakt gebruik van een basisalgoritme dat gemiddelde waarden in de historische gegevens gebruikt om een langetermijntrend en weekpatronen te herkennen. <!-- TM 100 -->
 
@@ -43,9 +44,9 @@ Welke soort workloads voor jou beschikbaar zijn, is afhankelijk van je WFM-plan 
 
 ## Omgang met gegevens van een slechte kwaliteit <!-- TM 100 -->
 
-Om een nauwkeurige forecast te genereren, moet de historische gegevensset zowel compleet (veel gegevens met zo min mogelijk hiaten) als schoon (vrij van onbelangrijke patronen) zijn. Als bijvoorbeeld {% link_new gebeurtenissen onjuist zijn getagd of feestdagen | features/forecast/injixo-forecast/events-and-holidays.md %}, dan heeft dat een nadelig effect op de kwaliteit van de forecast. <!-- GPT translation -->
+Om een nauwkeurige forecast te genereren, moeten historische gegevens compleet zijn (genoeg gegevens met zo min mogelijk hiaten) en zuiver (vrij van irrelevante patronen). Zo heeft een foutieve markering van {% link_new gebeurtenissen of feestdagen | features/forecast/injixo-forecast/events-and-holidays.md %} een negatieve invloed op de foreacastkwaliteit. <!-- GPT translation -->
 
-Historische gegevens kunnen bijvoorbeeld lange perioden van uitval bevatten, of er ontbreken gegevens voor een bepaalde tijdsperiode. Hoe dichterbij de ontbrekende gegevens bij de huidige datum liggen, des te minder de kwaliteit van de forecast beïnvloed wordt. <!-- GPT translation -->
+Historische gegevens kunnen ontbrekende of beschadigde en verkeerd gelabelde gegevens bevatten.  <!-- GPT translation -->
 
 Hier zijn enkele tips voor het beheer van gegevens van een slechte kwaliteit, afhankelijk van hoe lang de periode met slechte of ontbrekende gegevens is: <!-- TM 100 -->
 
@@ -58,7 +59,7 @@ Hier zijn enkele tips voor het beheer van gegevens van een slechte kwaliteit, af
 Opmerking: Als je geen aanvullende gegevens kunt uploaden of niet genoeg gegevens hebt van na het gat, dan proberen de Smart Forecast-algoritmen de negatieve invloed van de ontbrekende gegevens automatisch te minimaliseren. <!-- TM 100 -->
 
 > Controleer en zuiver gegevens voordat je deze importeert. <!-- TM 100 -->
-> <!-- TM 100 -->
+>
 > Je kunt historische gegevens niet verwijderen. Neem contact op met je Customer Success-team indien nodig. <!-- TM 100 -->
 
 ## Forecasts genereren voor lage contactvolumes <!-- TM 100 -->

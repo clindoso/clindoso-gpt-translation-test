@@ -24,7 +24,7 @@ The goal of workforce management (WFM) is to optimize people deployment to meet 
 In this article you will find an overview of how injixo can support you in all stages of the WFM cycle. 
 The very first step is to provide injixo with the data needed to generate a reliable forecast. To do so, you need to set up an integration with your Automatic Call Distribution (ACD) or Customer Relationship Management (CRM) systems.
 
-New to workforce management? Learn about the key concepts and definitions in our [glossary](https://help.injixo.com/glossary/overview).
+New to workforce management? Learn about the key concepts and definitions in our [glossary](/glossary/overview/).
 
 ## 1. Forecasting
 
@@ -39,7 +39,7 @@ You can configure your integrations in _Account > Integrations_{:.breadcrumbs}.
 
 ### Create a workload  
 
-To use injixo Forecast, you first need to {% link_new create a workload | features/forecast/injixo-forecast/manage-workloads.md | #create-workloads %} using the queues imported by your integration. Workloads contain all your historical data and related forecasts. To create a workload, your ACD must be correctly connected and imported queues must be available.
+To use injixo Forecast, you first need to {% link_new create a workload | features/forecast/injixo-forecast/create-workloads.md | #create-workloads %} using the queues imported by your integration. Workloads contain all your historical data and related forecasts. To create a workload, your ACD must be correctly connected and imported queues must be available.
 
 You can create workloads in _Forecast > Workloads_{:.breadcrumbs}. 
 
@@ -51,7 +51,7 @@ Each new data import updates the generated forecast. You can also {% link_new ad
 
 ### Calculate staff requirements
 
-Once you have generated a forecast, you can {% link_new calculate the staff requirements | features/forecast/injixo-forecast/staff-requirement.md %}, i.e. the amount of people who need to be scheduled to cover the expected workload. You can use several {% link_new calculation methods | best-practices/requirement-scripts.md %} to calculate your staff requirements, which take into account factors like target service level, target answer time, shrinkage, etc. You can also write constant staff requirements without a forecast, if needed.
+Once you have generated a forecast, you can {% link_new calculate the staff requirements | features/forecast/injixo-forecast/calculate-staff-requirements.md %}, i.e. the amount of people who need to be scheduled to cover the expected workload. You can use several {% link_new calculation methods | best-practices/requirement-scripts.md %} to calculate your staff requirements, which take into account factors like target service level, target answer time, shrinkage, etc. You can also write constant staff requirements without a forecast, if needed.
 
 You can use your staff requirements during the scheduling process to create optimized schedules for specific time frames, planning units, and activities.
 
@@ -85,6 +85,6 @@ With that information, you can make short-notice adjustments to the schedule to 
 
 ## 5. Analytics
  
-injixo allows you to {% link_new create dashboards | features/monitoring/dashboards/dashboards-overview.md %} with graphics to better visualize different metrics, e.g. a comparison of staff requirements and actual coverage, or of forecasted vs. actual incoming calls for different time series.
+injixo allows you to {% link_new create dashboards | features/monitoring/dashboards/manage-dashboards.md %} with graphics to better visualize different metrics, e.g. a comparison of staff requirements and actual coverage, or of forecasted vs. actual incoming calls for different time series.
 
 injixo can also {% link_new generate multiple types of reports | features/reporting/standard-reports/creating-reports.md %} that help you keep the overview over relevant metrics, such as capacity according to contract type, time worked per planning unit or vacation overview.

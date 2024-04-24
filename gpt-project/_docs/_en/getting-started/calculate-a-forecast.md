@@ -25,7 +25,7 @@ Under _Account > Integrations_{:.breadcrumbs}, set up an {% link_new integration
 
 ## 2. Set up a workload
 
-Under _Forecast_{:.breadcrumbs}, create {% link_new a workload from the queues created by your integration | features/forecast/injixo-forecast/manage-workloads.md %}. A forecast will be generated within minutes.
+Under _Forecast_{:.breadcrumbs}, create {% link_new a workload from the queues created by your integration | features/forecast/injixo-forecast/create-workloads.md %}. A forecast will be generated within minutes.
 
 Note: To {% link_new import external forecasts | features/forecast/injixo-forecast/import-forecast.md %} you must select at least one queue. If no queue is present, you must upload at least one data point using a {% link_new CSV integration | features/acd-integration/cloud/add-csv-integration.md %}.
 
@@ -35,11 +35,11 @@ Create all {% link_new events | features/forecast/injixo-forecast/events-and-hol
 
 ## 4. Save a forecast version
 
-A {% link_new forecast version | features/forecast/injixo-forecast/store-forecast-versions.md %} is a snapshot of the current calculation result. Save the forecast version for later review or to compare your forecast with the volume on the actual day, e.g. in {% link_new Dashboards | features/monitoring/dashboards/dashboards-overview.md %}.
+A {% link_new forecast version | features/forecast/injixo-forecast/save-forecast-versions.md %} is a snapshot of the current calculation result. Save the forecast version for later review or to compare your forecast with the volume on the actual day, e.g. in {% link_new Dashboards | features/monitoring/dashboards/manage-dashboards.md %}.
 
 ## 5. Calculate staff requirements
 
-To create optimized schedules or run the job optimization, you must first {% link_new calculate the staff requirements | features/forecast/injixo-forecast/staff-requirement.md %} for the corresponding activities within your workloads.
+To create optimized schedules or run the job optimization, you must first {% link_new calculate the staff requirements | features/forecast/injixo-forecast/calculate-staff-requirements.md %} for the corresponding activities within your workloads.
 
 
 ## What's next?
