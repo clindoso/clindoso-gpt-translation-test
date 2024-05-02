@@ -39,3 +39,8 @@ tag_patterns = [
     r'_\b',
     r'\b_'
 ]
+
+# RoBERT checkpoint
+ROBBERT_CHECKPOINT = "pdelobelle/robbert-v2-dutch-base"
+ROBBERT_MODEL_SAVE_PATH = 'gpt-project/_data/RoBERT_model/trained_model'
+TOKENIZER_SAVE_PATH = 'gpt-project/_data/RoBERT_model/tokenizer'
