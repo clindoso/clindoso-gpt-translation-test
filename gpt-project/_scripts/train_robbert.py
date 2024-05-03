@@ -95,14 +95,19 @@ def main():
     # Split 
     train_valid_split = dataset['train'].train_test_split(test_size=0.2)
 
-    # Tokenize dataset splits
-    tokenized_train_dataset = train_valid_split['train'].map(lambda dataset: tokenize_function(dataset, tokenizer), batched=True)
+    # Tokenize validation dataset
     tokenized_valid_dataset = train_valid_split['test'].map(lambda dataset: tokenize_function(dataset, tokenizer), batched=True)
+    print("Tokenized validation split example:", tokenized_valid_dataset[0])
     tokenized_valid_dataset = prepare_data(tokenized_valid_dataset, tokenizer)
+    print("Tokenized prepared validation dataset example:", tokenized_valid_dataset[0])
     tokenized_valid_dataset = tokenized_valid_dataset.map(ensure_input_fields, batched=True)
-    # Add terms to training dataset
-    tokenized_train_dataset = concatenate_datasets([tokenized_train_dataset, tokenized_term_dataset])    
+    # Tokenize training dataset
+    tokenized_train_dataset = train_valid_split['train'].map(lambda dataset: tokenize_function(dataset, tokenizer), batched=True)
+        # Add tokenized term dataset to train dataset
+    tokenized_train_dataset = concatenate_datasets([tokenized_train_dataset, tokenized_term_dataset])
+    print("Tokenized training split example:", tokenized_train_dataset[0])   
     tokenized_train_dataset = prepare_data(tokenized_train_dataset, tokenizer)
+    print("Tokenized prepared training dataset example:", tokenized_train_dataset[0])
     tokenized_train_dataset = tokenized_train_dataset.map(ensure_input_fields, batched=True)
 
     print("Tokenized data example:", tokenized_train_dataset[0])
@@ -126,6 +131,8 @@ def main():
         weight_decay=0.01,
         save_total_limit=3,
         num_train_epochs=3,
+        logging_dir='./logs',
+        load_best_model_at_end=True,
         predict_with_generate=True
     )
 
