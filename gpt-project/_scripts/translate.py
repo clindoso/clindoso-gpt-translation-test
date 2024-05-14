@@ -54,7 +54,7 @@ def load_source_file_segments(source):
 
     return source_text
 
-def initialize_language_model(lang="nl"):
+def initialize_language_model(lang):
     """
     Initializes language model.
     Returns language name, gpt_model, tm_path
@@ -93,6 +93,11 @@ def initialize_translation_memory(lang, tm_path):
         reader = csv.DictReader(tm)
         for row in reader:
             tm_dict[row['en']] = row[lang]
+            for key, value in tm_dict.items():
+                if key == None:
+                    print("Value for None key: {value}")
+                if value == None:
+                    print("Key for None value: {key}")
     
     return tm_dict
 
@@ -108,8 +113,12 @@ def check_translation_memory(segment, tm_dict):
         tuple or None: The TM translation if available, else None.
     """
     if segment in tm_dict:
-        return (segment, tm_dict[segment] + " <!-- TM 100 -->")
-    return None
+        tm_translation = tm_dict[segment]
+        tm_segment = tm_translation + " <!-- TM 100 -->"
+        return tm_segment, tm_translation
+    else:
+        return None, None
+    
 
 def check_gpt_translations(segment, gpt_translation_dict):
     """
@@ -123,8 +132,10 @@ def check_gpt_translations(segment, gpt_translation_dict):
         tuple or None: The GPT translation if available, else None.
     """
     if segment in gpt_translation_dict:
-        return (segment, gpt_translation_dict[segment] + " <!-- Repetition of GPT translation")
-    return None
+        gpt_auto_propagation = gpt_translation_dict[segment]
+        gpt_segment = gpt_translation_dict[segment] + " <!-- GPT auto-propagation -->"
+        return gpt_segment, gpt_auto_propagation
+    return None, None
 
 def handle_fuzzy_matches(segment, tm_dict, tm_segments_lengths):
     """
@@ -168,7 +179,7 @@ def handle_fuzzy_matches(segment, tm_dict, tm_segments_lengths):
         # If the smallest edit distance is below the threshold, use content of TM
         if normalized_min_edit_distance < upper_threshold:
             fuzzy_match_score = (1 - normalized_min_edit_distance)
-            return (segment, tm_dict[closest_segment] + f" <!-- TM {fuzzy_match_score*100:.0f} -->")
+            return tm_dict[closest_segment] + f" <!-- TM {fuzzy_match_score*100:.0f} -->"
     
     # If there is no segment with an edit below the upper threshold, return None
     return None
@@ -206,15 +217,16 @@ def translate_with_gpt(client, segment, previous_segment, language, gpt_model):
           ]
         )
     
-    translated_segment = (segment, response.choices[0].message.content + " <!-- GPT translation -->")
-
+    gpt_translation = response.choices[0].message.content
+    
+    translated_segment = gpt_translation + " <!-- GPT translation -->"
     # Tokenize {segment} and check if tokens any of the tokens is in the tokens dictionary
     # If they are, check if the correspondent in the target language is in the {translated segment}
     # If it is not, prompt model to rephrase the {translated segment} based on the target language token
 
-    return translated_segment
+    return translated_segment, gpt_translation
 
-def translate_segment(segment, tm_dict, gpt_translation_dict, language, gpt_model, client, previous_segment=''):
+def translate_segment(segment, tm_dict, gpt_translation_dict, language, gpt_model, client, tm_segments_lengths, previous_segment=''):
     """
     Translate a single text segment using a translation memory (TM)
     and generative translation
@@ -230,31 +242,29 @@ def translate_segment(segment, tm_dict, gpt_translation_dict, language, gpt_mode
     Returns:
     - A tuple containing the original segment and its translation.
     """
-    # Pre-calculate TM segments lengths for fuzzy match calculation
-    tm_segments_lengths = {tm_segment:len(tm_segment) for tm_segment in tm_dict}
 
     # Check for existing translation in TM
-    tm_translation = check_translation_memory(segment, tm_dict)
-    if tm_translation:
-        return tm_translation
+    tm_segment, tm_translation = check_translation_memory(segment, tm_dict)
+    if tm_segment is not None:
+        return tm_segment, tm_translation
     
     # Check for existing GPT translation
-    gpt_translation = check_gpt_translations(segment, gpt_translation_dict)
-    if gpt_translation:
-        return gpt_translation
+    gpt_segment, gpt_auto_propagation = check_gpt_translations(segment, gpt_translation_dict)
+    if gpt_segment is not None:
+        return gpt_segment, gpt_auto_propagation
     
     # Handle untranslated segments
     else:
         fuzzy_match = handle_fuzzy_matches(segment, tm_dict, tm_segments_lengths)
         if fuzzy_match:
-            return fuzzy_match
+            return fuzzy_match, segment
         else:
-            translated_segment = translate_with_gpt(client, segment, previous_segment, language, gpt_model)
-            gpt_translation_dict[segment] = translated_segment[1]
-            return translated_segment
+            translated_segment, gpt_translation = translate_with_gpt(client, segment, previous_segment, language, gpt_model)
+            gpt_translation_dict[segment] = gpt_translation
+            return translated_segment, gpt_translation
 
 
-def process_front_matter(front_matter_segments, tm_dict, gpt_translation_dict, language, gpt_model, client):
+def process_front_matter(front_matter_segments, tm_dict, gpt_translation_dict, language, gpt_model, client, tm_segments_lengths):
     """
     Processes the front matter of a document, translating 'title' and 'description'
     fields while leaving their labels and other metadata unchanged.
@@ -274,8 +284,8 @@ def process_front_matter(front_matter_segments, tm_dict, gpt_translation_dict, l
             if segment[0].startswith(frontmatter_variable):
                 # Extract the title text and translate it
                 translatable_text = segment[0][len(frontmatter_variable):]
-                translated_text = translate_segment(translatable_text, tm_dict, gpt_translation_dict,language, gpt_model, client)
-                processed_segment_pair = (segment[0], frontmatter_variable + translated_text[1])
+                translated_text, _ = translate_segment(translatable_text, tm_dict, gpt_translation_dict,language, gpt_model, client, tm_segments_lengths)
+                processed_segment_pair = (segment[0], frontmatter_variable + translated_text)
                 break
             else:
                 # No translation needed; reproduce the segment unchanged
@@ -285,7 +295,7 @@ def process_front_matter(front_matter_segments, tm_dict, gpt_translation_dict, l
 
     return processed_front_matter
 
-def translate_article(client, language, source_text, tm_dict, gpt_model, lang):
+def translate_article(client, language, source_text, tm_dict, gpt_model):
     """
     Translates the content of the source file using the specified language model.
 
@@ -302,21 +312,25 @@ def translate_article(client, language, source_text, tm_dict, gpt_model, lang):
     # Initialize empty list to store front matter segments
     front_matter_segments = []
 
+    # Pre-calculate TM segments lengths for fuzzy match calculation
+    tm_segments_lengths = {tm_segment:len(tm_segment) for tm_segment in tm_dict}
+
     # Initialize empty list to store translated segments from the article
     translated_segments = []
 
     # Initialize empty dictionary to store GPT translations for repetitions
     gpt_translation_dict = {}
 
-    # Flag to check front matter
+    # Flags for formatting issues
     in_front_matter = False
     front_matter_processed = False
     in_code_quotation = False
+
+    # Initialize empty previous segment
     previous_segment=''
 
     # Iterate over each segment of the source text
     for segment in source_text:
-        print(segment)
         # Check if segment is the start or end of the front matter
         if segment == '---':
             front_matter_segments.append((segment, segment))
@@ -330,23 +344,39 @@ def translate_article(client, language, source_text, tm_dict, gpt_model, lang):
             continue
         
         if not in_front_matter and not front_matter_processed:
-            translated_front_matter = process_front_matter(front_matter_segments, tm_dict, gpt_translation_dict, language, gpt_model, client)
+            translated_front_matter = process_front_matter(front_matter_segments, tm_dict, gpt_translation_dict, language, gpt_model, client, tm_segments_lengths)
             front_matter_processed = True
             
         # Check commented out segment in English
+        is_in_comment = False  # Flag to track if we are inside a comment block
+        # Check if the current segment starts a comment block
         if segment.startswith("<!--"):
-            # Reproduce untranslated commented out segment
+            is_in_comment = True
+
+        pattern = r'^\}|^<style>|^<details|^<summary>|^<br>$|^<table>|\s+<thead>|\s+<tr>|\s+</tr>|\s+</thead>|</table>|</details>'
+        
+        # If inside a comment block, reproduce the segment untranslated
+        if is_in_comment:
             translated_segments.append((segment, segment))
-            continue
+
+            # Check if the current segment ends the comment block
+            if segment.endswith("-->"):
+                is_in_comment = False
+
+            continue # Skip further processing for this segment
 
         # Handle Markdown table formatting
         elif re.match(r'^\|(\s?)---', segment):
             # Reproduce table formatting
             translated_segments.append((segment, segment))
             continue
+        
+        elif re.match(pattern, segment):
+            # Reproduce table formatting
+            translated_segments.append((segment, segment))
+            continue
 
         # Handle code quotation
-
         elif re.match(r'^ *```', segment):
             # Reproduce quotation segments
             translated_segments.append((segment, segment))
@@ -364,23 +394,22 @@ def translate_article(client, language, source_text, tm_dict, gpt_model, lang):
             continue
 
         # Check for segments only with spaces
-        elif re.match(r'^ +$', segment[0]):
+        elif re.match(r'^ +\n', segment):
             # Append empty segment
             translated_segment.append((segment, ''))
             continue
 
         # Check for leading right angle bracket without further content
-        elif re.match(r' *> *\n', segment[0]):
+        elif re.match(r' *> *\n', segment):
             translated_segments.append((segment, segment))
             continue
 
         # Translate segment using TM, fuzzy matching, or GPT
         else:
-            segment, translated_segment = translate_segment(segment, tm_dict, gpt_translation_dict, language, gpt_model, client, previous_segment)
+            translated_segment, previous_segment = translate_segment(segment, tm_dict, gpt_translation_dict, language, gpt_model, client, tm_segments_lengths, previous_segment)
             translated_segments.append((segment, translated_segment))
-            previous_segment = segment
             print(f'- Source segment:\n{segment}')
-            print(f'- Target segment:\n{translated_segment}')
+            print(f'- Target segment:\n{translated_segment}\n-------------------')
             continue
         
     # Prepends translated front matter segments to translated segments
@@ -389,7 +418,7 @@ def translate_article(client, language, source_text, tm_dict, gpt_model, lang):
     # Return list of tuples with source and target segments
     return translated_segments
 
-def extract_translated_text(translated_segments):
+def join_translated_text(translated_segments):
     """
     Extracts the target text the translated segments list
     Returns text in one string
@@ -400,8 +429,7 @@ def extract_translated_text(translated_segments):
     for _, target_segment in translated_segments:
         # Extract segments from tuples
         extracted_segments.append(target_segment)
-    
-    # Join text list in one string 
+    # Join text list in one string
     joint_translated_text = "\n".join(extracted_segments)
 
     return joint_translated_text
@@ -410,9 +438,9 @@ def write_translated_file(language, source, translated_article):
     """
     Saves translated article with the same name of the source file in a subdirectory of the source file
     Parameters:
-      language: Language for translation
-      source: Source file path
-      translated_article: Article in target language
+      language (str): Language for translation
+      source (str): Source file path
+      translated_article (str): Article in target language
     """
 
     # Extract source directory
@@ -455,10 +483,10 @@ def main():
     source_text = load_source_file_segments(source)
 
     # Perform the translation
-    translated_segments = translate_article(client, language, source_text, tm_dict, gpt_model, lang)
+    translated_segments = translate_article(client, language, source_text, tm_dict, gpt_model)
 
     # Create list with translated text
-    translated_text = extract_translated_text(translated_segments)
+    translated_text = join_translated_text(translated_segments)
 
     # Save file in repository
     write_translated_file(language, source, translated_text)

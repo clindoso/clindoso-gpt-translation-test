@@ -244,7 +244,6 @@ def check_translation_memory(segment, tm_dict):
     """
     if segment in tm_dict:
         return (segment, tm_dict[segment] + " <!-- TM 100 -->")
-    return None
 
 def check_gpt_translations(segment, gpt_translation_dict):
     """
@@ -458,6 +457,8 @@ def translate_article(client, language, source_text, tm_dict, gpt_model, source_
     in_front_matter = False
     front_matter_processed = False
     in_code_quotation = False
+
+    # Initialize empty previous segment
     previous_segment = ''
 
     # Iterate over each segment of the source text
@@ -499,7 +500,7 @@ def translate_article(client, language, source_text, tm_dict, gpt_model, source_
             translated_segments.append((segment, segment))
             continue
 
-        # Handle for code quotation
+        # Handle code quotation
         elif re.match(r'^ *```', segment):
             # Reproduce quotation segments
             translated_segments.append((segment, segment))
@@ -538,8 +539,6 @@ def translate_article(client, language, source_text, tm_dict, gpt_model, source_
         
     # Prepends translated front matter segments to translated segments
     translated_segments = translated_front_matter + translated_segments
-    
-    # Store segment to serve as context for next segment
 
     # Return list of tuples with source and target segments
     return translated_segments

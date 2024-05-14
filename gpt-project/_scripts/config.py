@@ -40,7 +40,10 @@ tag_patterns = [
     r'\b_'
 ]
 
-# RoBERT checkpoint
+# RobBERT checkpoint
 ROBBERT_CHECKPOINT = "pdelobelle/robbert-v2-dutch-base"
 ROBBERT_MODEL_SAVE_PATH = 'gpt-project/_data/RoBERT_model/trained_model'
 TOKENIZER_SAVE_PATH = 'gpt-project/_data/RoBERT_model/tokenizer'
+
+# Trained RobBERT model
+ROBBERT_MODEL_PATH = "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_scripts/results/checkpoint-537"
