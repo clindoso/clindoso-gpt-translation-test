@@ -350,7 +350,7 @@ def translate_article(client, language, source_text, tm_dict, gpt_model):
         # Check commented out segment in English
         is_in_comment = False  # Flag to track if we are inside a comment block
         # Check if the current segment starts a comment block
-        if segment.startswith("<!--"):
+        if segment.startswith("\s*<!--"):
             is_in_comment = True
 
         pattern = r'^\}|^<style>|^<details|^<summary>|^<br>$|^<table>|\s+<thead>|\s+<tr>|\s+</tr>|\s+</thead>|</table>|</details>'
@@ -430,7 +430,7 @@ def join_translated_text(translated_segments):
         # Extract segments from tuples
         extracted_segments.append(target_segment)
     # Join text list in one string
-    joint_translated_text = "\n".join(extracted_segments)
+    joint_translated_text = "\n".join(extracted_segments) + "\n"
 
     return joint_translated_text
 
