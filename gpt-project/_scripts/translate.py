@@ -6,7 +6,7 @@ import time
 import csv
 import Levenshtein as lev
 from openai import OpenAI
-
+# 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
 # Use this script to translate whole articles from English into German, Spanish, French, Italian, or Dutch with ChatGPT.
 # The script takes two arguments, --lang and--source, respectively the target language and the source file to be translated.
 

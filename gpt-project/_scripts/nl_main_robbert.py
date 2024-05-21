@@ -126,7 +126,7 @@ def check_translation_memory(segment, tm_dict):
         tuple or None: The TM translation if available, else None.
     """
     if segment in tm_dict:
-        return (segment, tm_dict[segment] + " <!-- TM 100 -->")
+        return tm_dict[segment] + " <!-- TM 100 -->"
     return None
 
 def check_robbert_translations(segment, robbert_translation_dict):
@@ -191,7 +191,7 @@ def handle_fuzzy_matches(segment, tm_dict, tm_segments_lengths):
     # If there is no segment with an edit below the upper threshold, return None
     return None
 
-def translate_with_robbert(segment, tokenizer, model, max_length_factor=1.5):
+def translate_with_robbert(segment, tokenizer, model, max_length_factor=1.5, batch_size=8):
     """
     Generates text from a given prompt using the specified tokenizer and model.
 
@@ -199,28 +199,27 @@ def translate_with_robbert(segment, tokenizer, model, max_length_factor=1.5):
         prompt (str): The input string to generate text from.
         tokenizer (transformers.PreTrainedTokenizer): The tokenizer for encoding the input.
         model (transformers.PreTrainedModel): The model used 
-    """
-
+    """    
+    
     # Encode the prompt into tensor format
     inputs = tokenizer.encode_plus(segment, return_tensors='pt')
     input_length = inputs['input_ids'].size(1)  # Now you access input_ids from a dictionary
+    max_length = int(input_length * max_length_factor) # Set maximum length based on the input length and factor
 
-
-    # Set maximum length based on the input length and factor
-    max_length = int(input_length * max_length_factor)
-    
     # Generate outputs from the model without updating gradients
     with torch.no_grad():
         outputs = model.generate(
             inputs.input_ids,
             max_length=min(max_length, 512),
+            num_beams=10,
             num_return_sequences=1,
-            temperature=0.9,
+            temperature=1.0,
             no_repeat_ngram_size=2,
             top_k=50,
-            top_p=0.95
+            top_p=0.95,
+            early_stopping=True
         )
-    
+
     generated_text = [tokenizer.decode(output, skip_special_tokens=True) for output in outputs]
     generated_text_str = ' '.join(generated_text)
     print(f"Source segment: {segment}")
@@ -391,7 +390,7 @@ def translate_article(source_text, tm_dict, tokenizer, model):
 
         # Translate segment using TM or GPT
         else:
-            segment, translated_segment = translate_segment(segment, tm_dict, robbert_translation_dict, tokenizer, model)
+            translated_segment = translate_segment(segment, tm_dict, robbert_translation_dict, tokenizer, model)
             translated_segments.append((segment, translated_segment))
             print(f'- Source segment:\n{segment}')
             print(f'- Target segment:\n{translated_segment}\n-------------')
