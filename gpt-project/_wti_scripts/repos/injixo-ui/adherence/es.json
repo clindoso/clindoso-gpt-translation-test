@@ -1,0 +1,301 @@
+{
+  "common": {
+    "planningUnit": {
+      "no-data": "Ningún elemento",
+      "label": "Unidad de planificación",
+      "placeholder": "Buscar o seleccionar"
+    },
+    "selection": {
+      "no-data": "Ningún elemento",
+      "label": "Grupo",
+      "placeholder": "Buscar o seleccionar"
+    },
+    "employee": {
+      "no-data": "No hay ítems",
+      "label": "Agente",
+      "placeholder": "Buscar o seleccionar"
+    },
+    "search": {
+      "label": "Buscar",
+      "placeholder": "Buscar por nombre"
+    },
+    "label": {
+      "today": "Hoy",
+      "yesterday": "Ayer"
+    }
+  },
+  "table": {
+    "loading": "Cargando",
+    "no-results-header": "No se han encontrado resultados",
+    "no-results-body": "No hay empleados que coincidan con el filtro.",
+    "no-filter-specified-header": "Ninguno seleccionado",
+    "no-filter-specified-body": "Selecciona una unidad de planificación o un grupo primero para ver la adherencia de tus empleados.",
+    "header": {
+      "show-only-out-of-adherence": "Mostrar únicamente fuera de adherencia"
+    },
+    "column": {
+      "name": "Nombre",
+      "actual-activity": "Actividad efectiva",
+      "scheduled-activity": "Actividad planificada",
+      "out-of-adherence-duration": "Duración de fuera de adherencia",
+      "current-activity-duration": "Duración de la actividad actual",
+      "status": "Status"
+    },
+    "adherence-status-display": {
+      "notPresent": "No está presente",
+      "notPresentOutOfBufferTime": "No está presente",
+      "notScheduled": "No está planificado",
+      "notScheduledOutOfBufferTime": "No está planificado",
+      "wrongActivity": "Actividad errónea",
+      "wrongActivityOutOfBufferTime": "Actividad errónea"
+    },
+    "adherence-status": {
+      "notPresent": "No está presente (fuera de adherencia)",
+      "notPresentInBufferTime": "No está presente (dentro del periodo de gracia)",
+      "notPresentOutOfBufferTime": "No está presente (fuera de adherencia)",
+      "notScheduled": "No está planificado (fuera de adherencia)",
+      "notScheduledInBufferTime": "No está planificado (dentro del periodo de gracia)",
+      "notScheduledOutOfBufferTime": "No está planificado (fuera de adherencia)",
+      "wrongActivity": "Actividad errónea (fuera de adherencia)",
+      "wrongActivityInBufferTime": "Actividad errónea (dentro del periodo de gracia)",
+      "wrongActivityOutOfBufferTime": "Actividad errónea (fuera de adherencia)",
+      "inAdherence": "En adherencia"
+    },
+    "staff-id": "Personnel number",
+    "pin-agent": "Anclar arriba",
+    "unpin-agent": "Desanclar de arriba"
+  },
+  "adherence-score": {
+    "header": "Adherencia",
+    "connection-state": {
+      "disconnected": "Desconectado",
+      "live": "Activo"
+    },
+    "agents-in-adherence": "En adherencia",
+    "agents-in-buffer-time": "Dentro del periodo de gracia",
+    "agents-out-of-adherence": "Fuera de adherencia",
+    "last-updated": "Última actualización {{lastUpdatedAt}}",
+    "today-so-far": "Hoy hasta ahora"
+  },
+  "activity-overview": {
+    "header": "Resumen de actividad",
+    "column": {
+      "activity": "Actividad",
+      "scheduled": "Personas planificadas",
+      "current": "Actual",
+      "delta": "Cobertura",
+      "score": "Adherencia",
+      "breaks": "Pausas",
+      "presence": "Presencia"
+    },
+    "label": {
+      "actual": "Actual",
+      "planned": "Planificado",
+      "difference": "Difference",
+      "add-activity-to-search": "Add activity {{activityName}} to search",
+      "view-matches-for-activity": "Ver Matches para la actividad {{activityName}}",
+      "edit-matches-for-activity": "Editar Matches para la actividad {{activityName}}",
+      "no-acd-mapping-for-activity": "There exists no agent status mapping for activity {{activityName}}"
+    },
+    "agent-overview": "Agent overview"
+  },
+  "notification": {
+    "connection": {
+      "reconnecting": "Hemos perdido la conexión. Estamos intentando reconectar automáticamente...",
+      "offline": "No hemos podido reconectar. Por favor, vuelve a probar en unos minutos.",
+      "session-invalid": "Actualmente tu sesión está cerrada. Puedes iniciar sesión <0>aquí</0>.",
+      "label": {
+        "login-link": "Ir al inicio de sesión"
+      }
+    },
+    "failure": {
+      "general": "Ha ocurrido un error. Por favor, vuelve a intentarlo más tarde.",
+      "agent-details": "Ha ocurrido un error al cargar los datos del agente. Por favor, <0>vuelve a intentarlo</0>."
+    },
+    "success": {
+      "threshold-settings": "Changes of threshold have been applied."
+    }
+  },
+  "input": {
+    "omni-search": {
+      "placeholder": "Buscar por nombres, actividades y estados",
+      "tooltip": "Añade los términos de búsqueda separados por comas y con al menos dos caracteres cada uno."
+    }
+  },
+  "settings": {
+    "buffer-times": {
+      "header-edit": "Ajustar el periodo de gracia",
+      "header-view": "Ver la configuración del periodo de gracia",
+      "readonly-message": "No tienes permisos para cambiar estas configuraciones.",
+      "hint": "Los agentes que se encuentran dentro del periodo de gracia no tienen ningún efecto negativo en el cálculo de la adherencia. Tampoco se mostrarán en la vista de fuera de adherencia. Esta configuración es global y se aplica a todos los usuarios.",
+      "apply": "Aplicar",
+      "applying": "Aplicando...",
+      "cancel": "Cancelar",
+      "close": "Cerrar",
+      "placeholder": "Buscar o seleccionar",
+      "no-data": "No hay ítems",
+      "load-failed": "No se han podido cargar los datos, por favor, vuelve a intentarlo",
+      "update-failed": "No se han podido actualizar los datos, por favor, vuelve a intentarlo.",
+      "threshold": {
+        "instantly": "Instantáneamente",
+        "15-seconds": "15 segundos",
+        "30-seconds": "30 segundos",
+        "1-minute": "1 minuto",
+        "2-minutes": "2 minutos",
+        "3-minutes": "3 minutos",
+        "5-minutes": "5 minutos"
+      }
+    },
+    "adjust-target-score": {
+      "header": "Ajusta tu adherencia objetivo",
+      "label": "Configura tu adherencia objetivo a:",
+      "description": "Vas a establecer un objetivo de adherencia. Si la adherencia actual es inferior al objetivo, se visualizará en rojo."
+    }
+  },
+  "matches": {
+    "label": {
+      "header-edit": "Matches de actividad",
+      "header-view": "Ver Matches de actividad",
+      "additional-matching-activities": "Actividades adicionales coincidentes",
+      "no-activity-selected": "Ninguna actividad seleccionada",
+      "no-activity-selected-sub": "Selecciona una actividad para editar sus Matches",
+      "all-type": "Cualquiera del tipo",
+      "add-activity": "Añadir la actividad {{activityName}} a Matches",
+      "add-activity-type": "Añadir el tipo de actividad {{activityType}} a Matches",
+      "remove-activity": "Eliminar la actividad {{activityName}} de Matches",
+      "remove-activity-type": "Quitar el tipo de actividad {{activityType}} de Matches",
+      "type": "Tipo",
+      "manage-activities": "Gestionar los Matches de actividad",
+      "external-system-mappings": "Asignación de sistemas externos",
+      "manage": "Editar en Intraday",
+      "include-unmapped-activities": "Mostrar únicamente actividades mapeadas",
+      "no-acd-mappings": "No se han definido mapeos",
+      "no-activity-matches": "No hay más Matches",
+      "activity-mappings": "Asignación de estados externos"
+    },
+    "link": {
+      "back-to-adherence": "Volver a Adherencia"
+    },
+    "placeholder": {
+      "search-activity": "Buscar actividad por nombre",
+      "search-activity-name-or-type": "Buscar actividad por nombre o tipo"
+    },
+    "button": {
+      "apply": "Aplicar",
+      "applying": "Aplicando...",
+      "cancel": "Cancelar"
+    },
+    "activityType": {
+      "present": "Presente",
+      "holiday": "Vacaciones",
+      "break": "Pausa",
+      "absence": "Ausencia",
+      "meeting": "Reunión",
+      "illness": "Enfermedad"
+    },
+    "notification": {
+      "success": {
+        "manage-activities": "Los cambios se han guardado y aplicado correctamente"
+      },
+      "error": {
+        "manage-activities": "Ha ocurrido un error al guardar los cambios, por favor, vuelve a intentarlo."
+      }
+    }
+  },
+  "heading": {
+    "intraday-adherence": "Adherencia Intradiaria",
+    "real-time-adherence": "Adherencia en Tiempo Real"
+  },
+  "info": {
+    "activity": {
+      "offline": "Esta es una actividad especial para cuando el agente no tiene un estado del ACD"
+    }
+  },
+  "label": {
+    "activity": {
+      "no-scheduled": "No hay ninguna actividad planificada",
+      "offline": "Fuera de línea"
+    },
+    "agent-details": {
+      "schedule": "Plan",
+      "retry": "Volver a intentarlo",
+      "actual": "Actual",
+      "insights-heading": "Vista detallada de fuera de adherencia"
+    },
+    "business-hours": "Horas de Apertura",
+    "close-agent-details": "Close agent details",
+    "highcharts": {
+      "decimal-point": ",",
+      "reset-zoom": "Restablecer zoom"
+    },
+    "scheduled-time": "Planificado",
+    "adherence-status": {
+      "notPresent": "No está presente",
+      "notScheduled": "No está planificado",
+      "wrongActivity": "Actividad errónea"
+    },
+    "return-to-agent-details": "Volver a los detalles de los agentes",
+    "timezoneInfo": "Todos los tiempos están en: ({{timezoneOffset}}) {{timezoneName}}",
+    "quarterly-adherence": "Promedio de 15 minutos",
+    "average-adherence": "Promedio diario"
+  },
+  "historical-adherence": {
+    "column": {
+      "score": "Adherencia"
+    },
+    "pagination": {
+      "current-page": "Current page",
+      "page": "Page",
+      "ellipsis": "Ellipsis",
+      "previous-page": "Previous page",
+      "next-page": "Next page",
+      "previous-month": "Mes anterior",
+      "next-month": "Próximo mes",
+      "previous-day": "Día anterior",
+      "next-day": "Día siguiente"
+    },
+    "error": {
+      "reload_resource": "Ha ocurrido un error. Intenta recargar la página <0>{{resource}}</0> o vuelve a intentarlo más tarde.",
+      "no-data": "No hay datos de adherencia para la fecha seleccionada. Puede ser que una integración esté pausada. Contacta con alguien con acceso de administrador."
+    },
+    "chart": {
+      "targetScore": "Objetivo"
+    },
+    "reload_adherence": "Reload Adherence",
+    "adherence": "Adherence",
+    "agent-details": {
+      "heading": "Agent Intraday Adherence",
+      "table": {
+        "heading": "Out of Adherence Incident Details",
+        "column": {
+          "time-range": {
+            "label": "Período de tiempo"
+          }
+        }
+      },
+      "no-filter-specified-body": "Selecciona una unidad de planificación y un agente para ver su adherencia.",
+      "daily-overview": {
+        "header": "Resumen diario",
+        "no-score": "Sin cálculo"
+      },
+      "edit-actual-activities": {
+        "button": {
+          "label": "Editar actividades efectivas"
+        }
+      }
+    },
+    "report": {
+      "button_cancel": "Cancelar",
+      "button_download": "Descargar informe",
+      "button_open": "Descargar informe",
+      "date_range_label": "Rango de fechas del informe",
+      "modal_content": "El informe de adherencia (archivo CSV) incluye información detallada sobre adherencia a las horas de trabajo y las actividades planificadas.",
+      "modal_title": "Descargar informe",
+      "toast_success": "La descarga comenzará en unos segundos."
+    }
+  },
+  "unknown_activity": {
+    "name": "Actividad desconocida",
+    "type": "tipo desconocido"
+  }
+}

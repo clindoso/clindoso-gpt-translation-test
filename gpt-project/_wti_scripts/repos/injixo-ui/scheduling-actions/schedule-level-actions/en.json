@@ -1,0 +1,160 @@
+{
+  "document_title": {
+    "module": "Plan",
+    "page": {
+      "copy_level_content": "Copy Level Content",
+      "empty_levels": "Empty Levels",
+      "replace_activities": "Replace Activities"
+    }
+  },
+  "error": {
+    "copy-level-content-request": "Failed to copy level content",
+    "empty-levels-request": "Failed to request empty levels",
+    "incomplete-form": "The form data is incomplete. Make sure you correct all highlighted fields.",
+    "planning-unit": "A planning unit must be selected",
+    "replace-activities-request": "Failed to request activity replacement"
+  },
+  "explanation": {
+    "copy-level-content": {
+      "daterange-and-startdate": "The content of the entire date range will be pasted from the beginning of the target start date.",
+      "empty-level": "By ticking the checkbox the data from the source level gets deleted after copying.",
+      "levels": "Copies the source level content to the selected target level. Please note that any content that is previously stored in the target level will be overwritten."
+    },
+    "employee-selection": "By default, this is the full list of employees in the selected planning unit. You can further refine the group of employees by choosing a selection or an employee filter from the corresponding dropdown.",
+    "empty-levels": {
+      "level-selection": "The content of the selected level(s) will be deleted within the chosen date range."
+    },
+    "replace-activities": {
+      "level-daterange": "Replace activities in multiple levels at once within the selected date range."
+    }
+  },
+  "heading": {
+    "copy-level-content": "Copy level content",
+    "employees": "Employees ({{amountSelected}}/{{amountTotal}} selected)",
+    "empty-levels": "Empty levels",
+    "replace-activities": "Replace activities",
+    "settings": "Settings"
+  },
+  "hint": {
+    "copy-level-content": {
+      "background-job": "Copy level content starts a background process. To see the status, check the <0>JobProcessor</0>."
+    },
+    "empty-levels": {
+      "background-job": "Empty levels starts a background process. To see the status, check the <0>JobProcessor</0>."
+    },
+    "replace-activities": {
+      "background-job": "Replacing activities starts a background process. To see the status, check the <0>JobProcessor</0>."
+    }
+  },
+  "label": {
+    "aria-enhancement": {
+      "button": "button",
+      "dropdown": "dropdown"
+    },
+    "back-to-schedules": "Back to Schedules",
+    "button": {
+      "cancel": "Cancel",
+      "copy-level-content": "Copy level content",
+      "empty-levels": "Empty levels",
+      "level_one": "{{count}} Level selected",
+      "level_other": "{{count}} Levels selected",
+      "replace-activities": "Replace activities"
+    },
+    "date-range": "Date range",
+    "employee-filter": "Employee filter",
+    "empty-level": "Empty source level content after copying",
+    "empty-levels": {
+      "level-selection": "Level(s) to be emptied"
+    },
+    "form-error": {
+      "no-employees": "No employee selected. At least one employee is necessary in order to proceed."
+    },
+    "levels": "Levels",
+    "no-employees": {
+      "caption": "No employees",
+      "empty-planning-unit": "The action cannot be executed as there are no employees for the selected planning unit.",
+      "empty-planning-unit-and-employee-filter": "The action cannot be executed as there are no employees for the selected planning unit and employee filter.",
+      "empty-planning-unit-and-selection": "The action cannot be executed as there are no employees for the selected planning unit and selection.",
+      "no-planning-unit": "The action cannot be executed as there is no planning unit selected."
+    },
+    "no-entries": "No entries",
+    "no-planning-unit-selected": "Select planning unit first",
+    "selection": "Selection",
+    "source-activity": "Activity to be replaced",
+    "source-date-range": "Source date range",
+    "source-level": "Source level",
+    "start-date": "Target start date",
+    "target-activity": "Replace activity with",
+    "target-level": "Target level"
+  },
+  "level": {
+    "absenceWishes": {
+      "name": "Time off request"
+    },
+    "alternativeWishes": {
+      "name": "Alternative request"
+    },
+    "backup": {
+      "name": "Version 1"
+    },
+    "backupVersion2": {
+      "name": "Version 2"
+    },
+    "backupVersion3": {
+      "name": "Version 3"
+    },
+    "final": {
+      "name": "Actual"
+    },
+    "plan": {
+      "name": "Schedule"
+    },
+    "wishes": {
+      "name": "Request"
+    }
+  },
+  "message": {
+    "copy-level-content": {
+      "request-not-successful": "Copy level content could not be started. Please try again.",
+      "request-sent": "Copy level content in progress. View progress in JobProcessor."
+    },
+    "empty-levels": {
+      "request-not-successful": "Empty levels could not be started for levels: {{levels}}. Please try again.",
+      "request-sent": "Empty levels in progress for levels: {{levels}}. View progress in JobProcessor."
+    },
+    "replace-activities": {
+      "request-not-successful": "Replacing activities could not be started. Please try again.",
+      "request-sent": "Replacing activities in progress. View progress in JobProcessor."
+    }
+  },
+  "notification": {
+    "failure": {
+      "general": "An error has occurred. Please try again later."
+    }
+  },
+  "placeholder": {
+    "dropdown": "Search or select"
+  },
+  "table": {
+    "column": {
+      "employee_name": "Name"
+    }
+  },
+  "validation": {
+    "selected-levels": {
+      "required": "At least one level must be selected"
+    },
+    "source-activity": {
+      "required": "A source activity must be selected"
+    },
+    "source-level": {
+      "required": "A source level must be selected"
+    },
+    "target-activity": {
+      "required": "A target activity must be selected"
+    },
+    "target-level": {
+      "required": "A target level must be selected"
+    }
+  }
+}

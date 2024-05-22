@@ -1,0 +1,45 @@
+{
+  "request_state": {
+    "approved": "Genehmigt",
+    "canceled": "Storniert",
+    "cancellation_requested": "Stornierung beantragt",
+    "rejected": "Abgelehnt",
+    "requested": "Beantragt"
+  },
+  "requests_overview_pdf": {
+    "copyright": "© {{year}} injixo",
+    "file_name": "Abwesenheitsuebersicht-{{year}}",
+    "footer": {
+      "page_indicator": "Seite {{currentPage}} von {{totalPages}}",
+      "timestamp": "Erstellt am {{timestamp}}",
+      "conflict_explanation": "Die zu buchende Zeit ändert sich möglicherweise noch, weil du mindestens einen weiteren Abwesenheitsantrag für diese Woche gestellt hast."
+    },
+    "table": {
+      "header": {
+        "date": "Datum",
+        "duration": "Dauer",
+        "status": "Status",
+        "type": "Typ",
+        "counted_hours_days": "Angerechnete Stunden/Tage"
+      }
+    },
+    "title": "Abwesenheitsübersicht"
+  },
+  "schedule_pdf": {
+    "title": "Schichtplan für {{firstName}} {{lastName}}, {{date_range}}",
+    "file_name": "Schichtplan_{{start}}-{{end}}",
+    "page_info": {
+      "page_indicator": "Seite {{currentPage}}/{{totalPages}}",
+      "timestamp": "Heruntergeladen am {{timestamp}}"
+    },
+    "table": {
+      "week_number": "KW {{weekNumber}}",
+      "day": "Tag",
+      "start": "Beginn",
+      "end": "Ende",
+      "duration": "Dauer",
+      "not_planned": "Noch kein Schichtplan veröffentlicht",
+      "total": "Summe"
+    }
+  }
+}

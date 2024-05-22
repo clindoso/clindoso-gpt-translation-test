@@ -1,0 +1,74 @@
+{
+  "document_title": {
+    "context": "Intercambio de turnos",
+    "module": "Me",
+    "page": {
+      "invite_colleagues": "Invitar a colegas"
+    }
+  },
+  "footer": {
+    "button": {
+      "back": "Volver al cuadro de mandos",
+      "continue_one": "Selecciona {{count}} turno disponible",
+      "continue_zero": "Continuar sin selección",
+      "continue_other": "Selecciona {{count}} turnos disponibles",
+      "invite_one": "Enviar {{count}} invitación",
+      "invite_zero": "Enviar invitación",
+      "invite_other": "Enviar {{count}} invitaciones",
+      "next": "Continúa sin selección",
+      "previous": "Volver a la selección anterior",
+      "skip": "Omitir invitaciones"
+    }
+  },
+  "heading": "Invitar a los/as compañeros/as adecuados/as para intercambiar turnos",
+  "help-button": {
+    "content": "<0>Aprende más</0> sobre los intercambios de turno.",
+    "link": "https://help.injixo.com/injixo-me-invite-suitable-colleagues/",
+    "link-alt": "Enlace al Help Center"
+  },
+  "invite": {
+    "error": {
+      "message": "No se han podido enviar las invitaciones. Por favor, vuelve a intentarlo."
+    }
+  },
+  "offered-shift": {
+    "all-day": "Todo el día",
+    "error": {
+      "content": "Ha ocurrido un error y tu turno no se ha podido cargar. Intenta <0>recargar</0> la página o vuelve a intentarlo más tarde.",
+      "retry-alt": "Recargar tu turno"
+    },
+    "multiple": {
+      "title": "Pareja de turnos ofrecidos"
+    },
+    "nothing-scheduled": "Nada planificado",
+    "title": "El turno"
+  },
+  "success": {
+    "back-to-employee-portal": "Volver a injixo Me",
+    "title_one": "{{count}} invitación enviada correctamente.",
+    "title_other": "{{count}} invitaciones enviadas correctamente."
+  },
+  "suitable-shift": {
+    "employees_one": "{{count}} empleado apto",
+    "employees_other": "{{count}} empleados aptos",
+    "empty": {
+      "back-alt": "Volver a intercambio de turnos",
+      "content": "No se encontraron turnos disponibles para tu grupo. <0>Volver al intercambio de turnos</0>."
+    },
+    "error": {
+      "content": "Ha ocurrido un error y los turnos aptos no se han podido cargar. Intenta <0>recargar</0> la página o vuelve a intentarlo más tarde."
+    },
+    "multiple": {
+      "title": "Pareja de turnos disponibles"
+    },
+    "select-all": {
+      "checkbox": {
+        "label": "Todas"
+      }
+    },
+    "title": "Turnos aptos"
+  },
+  "title": {
+    "back": "Volver al intercambio de turnos"
+  }
+}

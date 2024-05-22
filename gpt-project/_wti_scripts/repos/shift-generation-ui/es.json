@@ -1,0 +1,16 @@
+{
+  "loading": "Cargando",
+  "save": "Guardar",
+  "saving": "Guardando",
+  "select_planning_unit": "Por favor, escoge una unidad de planificación",
+  "planning_unit": "Unidad de planificación",
+  "day_model": "Modelo de horario",
+  "day_type": "Tipo de día",
+  "min": "Mín",
+  "max": "Máx",
+  "server_error": "Ha ocurrido un error interno. Por favor, inténtalo de nuevo más tarde.",
+  "edit-constraints": {
+    "success": "¡Los valores se han guardado!",
+    "failure": "Los valores no se han podido guardar. Por favor, revisa los valores y vuelve a intentarlo."
+  }
+}

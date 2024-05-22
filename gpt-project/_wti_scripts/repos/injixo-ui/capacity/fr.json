@@ -1,0 +1,48 @@
+{
+  "application": {
+    "title": "Capacity",
+    "tableHint": "Les valeurs sont exprimées en heures",
+    "tableHintDescription": "1 ETP équivaut à 40 heures par semaine",
+    "infoMessageFirst": "Bienvenue dans le nouveau module Capacity ! Vous serez bientôt en mesure de réaliser votre planification à long terme. Vous trouvez ca encore trop basique ?",
+    "infoMessageSecond": "Transmettez-nous vos idées et propositions !",
+    "insertShiftSequencesButton": "Insérer des rotations d'horaires"
+  },
+  "filters": {
+    "label": {
+      "planningUnit": "Unité opérationnelle"
+    },
+    "placeholder": {
+      "planningUnit": "Sélectionner une unité opérationnelle"
+    },
+    "result": {
+      "noResult": "Aucun résultat"
+    }
+  },
+  "capacityTable": {
+    "headers": {
+      "Coverage": "Couverture potentielle",
+      "staffRequirements": "Besoin en personnel",
+      "contractedCapacity": "Capacitaire contractuel",
+      "cw": "Sem.",
+      "timePeriod": "Période",
+      "dateFormat": "d MMMM yyyy"
+    },
+    "placeholders": {
+      "noData": "Aucun capacitaire disponbible pour cette Unité opérationnelle.",
+      "loading": "Chargement"
+    }
+  },
+  "planning_units": "Unités opérationnelles",
+  "capacities": "Capacitaire",
+  "reload": {
+    "planning_units": "Recharger les Unités opérationnelles",
+    "capacities": "Recharger le capacitaire"
+  },
+  "document_title": {
+    "module": "Plan",
+    "sub_module": "Capacity"
+  },
+  "error": {
+    "reload_resource": "Une erreur est survenue. Actualisez la page <0>{{resource}}</0> ou réessayer plus tard."
+  }
+}

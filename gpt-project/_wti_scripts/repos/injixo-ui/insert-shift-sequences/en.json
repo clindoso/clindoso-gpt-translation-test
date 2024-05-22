@@ -1,0 +1,88 @@
+{
+  "application": {
+    "title": "Insert Shift Sequences",
+    "backToCapacity": "Back to Capacity",
+    "backToSchedules": "Back to Schedules"
+  },
+  "filters": {
+    "label": {
+      "planningUnit": "Planning unit",
+      "selection": "Selection",
+      "timePeriod": "Time period"
+    },
+    "placeholder": {
+      "planningUnit": "Choose a planning unit",
+      "selection": "Choose a selection"
+    },
+    "result": {
+      "noResult": "No entries"
+    }
+  },
+  "shiftSequencesTable": {
+    "heading": "Overview",
+    "headers": {
+      "select": "Select",
+      "personnelNumber": "Personnel number",
+      "name": "Name",
+      "shiftSequence": "Shift sequence",
+      "sequence": "Sequence",
+      "employeeRow": "Employee row",
+      "referenceDate": "Reference date",
+      "validFrom": "Valid from",
+      "validTo": "Valid to"
+    },
+    "dateFormat": "dd LLL, yyyy",
+    "noData": "No shift sequences found.",
+    "singleCheckbox": "Select shift sequence",
+    "allCheckbox": "Select all shift sequences"
+  },
+  "insertingOptions": {
+    "heading": "Options",
+    "description": "Select the options for inserting shift sequences.",
+    "option1": "Delete full-day activities",
+    "option2": "Delete availability periods",
+    "option3": "Delete all activities and shifts"
+  },
+  "jobHistory": {
+    "heading": "History",
+    "headers": {
+      "select": "Select",
+      "status": "Status",
+      "startedAt": "Initiated on"
+    },
+    "processing": "Insertion in progress",
+    "viewDetails": "View details",
+    "timeFormat": "dd LLL yyyy, HH:mm",
+    "singleCheckbox": "Select insertion job",
+    "allCheckbox": "Select all insertion jobs",
+    "noData": "No insertion jobs found.",
+    "clearCreatedJobs": "Delete entries"
+  },
+  "planning_units": "planning units",
+  "selections": "selections",
+  "shift_sequences": "shift sequences",
+  "insertion_jobs": "insertion jobs",
+  "reload": {
+    "planning_units": "Reload planning units",
+    "selections": "Reload selections",
+    "shift_sequences": "Reload shift sequences",
+    "insertion_jobs": "Reload insertion jobs"
+  },
+  "creatingJob": {
+    "failed": "Insertion job creation failed. Please, try again.",
+    "success": "Insertion job successfully created."
+  },
+  "document_title": {
+    "module": "Plan",
+    "sub_module": "Insert Shift Sequences"
+  },
+  "error": {
+    "reload_resource": "An error has occurred. Try to reload <0>{{resource}}</0> or try again later."
+  },
+  "insert_shift_sequences": "Insert shift sequences",
+  "level": {
+    "actual": "Actual",
+    "plan": "Schedule"
+  },
+  "target_level": "Target level"
+}

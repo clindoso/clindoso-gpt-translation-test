@@ -1,0 +1,74 @@
+{
+  "document_title": {
+    "context": "Bourse d'échanges",
+    "module": "Me",
+    "page": {
+      "invite_colleagues": "Propositions"
+    }
+  },
+  "footer": {
+    "button": {
+      "back": "Retour au Tableau de bord",
+      "continue_one": "Choisir {{count}} horaire disponible",
+      "continue_zero": "Passer à l'étape suivante",
+      "continue_other": "Choisir {{count}} horaires disponibles",
+      "invite_one": "Envoyer {{count}} proposition",
+      "invite_zero": "Envoyer",
+      "invite_other": "Envoyer {{count}} propositions",
+      "next": "Passer à l'étape suivante",
+      "previous": "Retour à l'étape précédente",
+      "skip": "Ne pas envoyer de proposition"
+    }
+  },
+  "heading": "Envoyer des propositions d'échanges",
+  "help-button": {
+    "content": "<0>Consultez l'aide</0> sur la bourse d'échanges.",
+    "link": "https://help.injixo.com/fr/me-proposition-echange",
+    "link-alt": "Lien vers le Help center."
+  },
+  "invite": {
+    "error": {
+      "message": "Impossible d'envoyer les propositions. Essayez à nouveau."
+    }
+  },
+  "offered-shift": {
+    "all-day": "Journée entière",
+    "error": {
+      "content": "Une erreur est survenue. <0>Rechargez</0> la page ou essayez à nouveau plus tard.",
+      "retry-alt": "Recharger"
+    },
+    "multiple": {
+      "title": "Horaires à échanger"
+    },
+    "nothing-scheduled": "Aucune planification",
+    "title": "Horaire"
+  },
+  "success": {
+    "back-to-employee-portal": "Retour à injixo Me",
+    "title_one": "{{count}} proposition a été envoyée.",
+    "title_other": "{{count}} propositions ont été envoyées."
+  },
+  "suitable-shift": {
+    "employees_one": "{{count}} employé compatible",
+    "employees_other": "{{count}} employés compatibles",
+    "empty": {
+      "back-alt": "Retour à la bourse d'échanges",
+      "content": "Aucune journée n’est disponible pour votre groupe. <0>Retour à la bourse d'échanges</0>."
+    },
+    "error": {
+      "content": "Une erreur est survenue. <0>Rechargez</0> la page ou essayez à nouveau plus tard."
+    },
+    "multiple": {
+      "title": "Horaires disponibles"
+    },
+    "select-all": {
+      "checkbox": {
+        "label": "Tous"
+      }
+    },
+    "title": "Horaires disponibles"
+  },
+  "title": {
+    "back": "Retour à la bourse d’échanges"
+  }
+}

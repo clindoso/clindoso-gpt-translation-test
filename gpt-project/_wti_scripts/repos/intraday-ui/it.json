@@ -1,0 +1,106 @@
+{
+  "error": {
+    "insufficient_permissions": "You lack the required permission for this action."
+  },
+  "configuration": {
+    "page_title": "Configurazione",
+    "activity_mapping": {
+      "heading": "Associare gli stati esterni alle attività in injixo",
+      "activity_type": {
+        "present": "Presenza",
+        "holiday": "Ferie",
+        "break": "Pausa",
+        "absence": "Assenza",
+        "meeting": "Meeting",
+        "illness": "Malattia"
+      },
+      "integrations": {
+        "heading": "Integrazioni"
+      },
+      "integration_activities": {
+        "heading": "Stati esterni",
+        "search": {
+          "placeholder": "Cerca stati esterni o digita \"non associati\"."
+        },
+        "edit_activity": "Modifica attività",
+        "heading_mapped": "Associati",
+        "heading_not_mapped": "Non associati",
+        "mapped_empty_label": "Non ci sono stati esterni associati",
+        "not_mapped_empty_label": "Tutti gli stati esterni sono associati a questa attività di injixo.",
+        "unmapped": "Non associati",
+        "overwrite_warning_tooltip": "L'associazione a questa attività di injixo verrà sostituita dalla nuova associazione.",
+        "button_save": "Salva modifiche",
+        "button_cancel": "Scarta modifiche"
+      },
+      "search_activity": {
+        "placeholder": "Cerca attività di injixo"
+      },
+      "mapped_tooltip": "A questa attività di injixo sono associati degli stati esterni.",
+      "toast_save_success": "Associazione salvata",
+      "message_save_error": "Non è stato possibile salvare questa associazione. Per favore riprova.",
+      "no_activity_selected": {
+        "explanation": "Seleziona prima un'attività di injixo.",
+        "headline": "Non è stata selezionata nessuna attività di injixo"
+      },
+      "no_integration_activities": {
+        "explanation": "Non ci sono stati esterni importati dall'integrazione.",
+        "headline": "Non è disponibile nessuno stato esterno"
+      },
+      "no_integrations": {
+        "headline": "Non è stata trovata nessuna integrazione",
+        "link_text": "Aggiungi prima un'integrazione"
+      },
+      "activity-select-list": {
+        "aria-label": "Select the injixo activity you want to map external statuses to."
+      }
+    }
+  },
+  "edit-actual-activities": {
+    "headline": {
+      "text": "{{personName}} il {{date}}"
+    },
+    "page-title": {
+      "return-link": {
+        "aria-label": "Torna all'aderenza intraday dell'agente"
+      },
+      "text": "Modificare le attività effettive"
+    },
+    "table": {
+      "actual-activity": {
+        "label": "Attività effettiva"
+      },
+      "empty-state": {
+        "no-activities": {
+          "description": "Non ci sono attività registrate per il {{date}}",
+          "headline": "Non ci sono attività registrate"
+        }
+      },
+      "time-period": {
+        "buttons": {
+          "cancel": {
+            "aria-label": "Esci dalla modalità di modifica"
+          },
+          "confirm": {
+            "aria-label": "Conferma la nuova ora di fine"
+          },
+          "edit": {
+            "aria-label": "Modifica l'ora di fine {{endTime}}"
+          }
+        },
+        "edit": {
+          "error-message": {
+            "generic": "Non è stato possibile aggiornare l'ora di fine. Per favore riprova.",
+            "invalid-end-time": "L'ora di fine che hai stabilito non è valida."
+          },
+          "success": {
+            "toast-message": "L'ora di fine è stata corretta."
+          },
+          "time-input": {
+            "aria-label": "Inserisci l'ora di fine corretta"
+          }
+        },
+        "label": "Periodo"
+      }
+    }
+  }
+}

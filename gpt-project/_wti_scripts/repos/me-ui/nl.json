@@ -1,0 +1,407 @@
+{
+  "time_tracking": {
+    "page_title": "Tijdregistratie",
+    "hour_abbreviation": "h",
+    "punch": {
+      "activities": {
+        "combobox": {
+          "aria_label": "Activiteiten",
+          "placeholder": "Een activiteit selecteren"
+        }
+      },
+      "clock_in": {
+        "button": {
+          "label": "Start activiteit"
+        },
+        "toast": "Activiteit gestart"
+      },
+      "clock_out": {
+        "button": {
+          "aria_label": "Stop tijdsregistratie voor actuele activiteit"
+        },
+        "toast": "Activiteit gestopt"
+      },
+      "switch": {
+        "button": {
+          "label": "Van activiteit wisselen"
+        }
+      },
+      "timer": {
+        "aria_label": "Start tijdregistratie voor geselecteerde activiteit"
+      }
+    },
+    "records": {
+      "duration": "Tijdsduur",
+      "empty": {
+        "description": "Houd de tijd bij die je besteedt aan je activiteiten bovenaan de pagina.",
+        "headline": "Er zijn geen geregistreerde activiteiten."
+      },
+      "heading_today": "Geregistreerde activiteiten",
+      "heading_yesterday": "Geregistreerde activiteiten",
+      "now": "nu",
+      "ongoing": "Tijdregistratie loopt",
+      "unknown_activity": "Onbekende activiteit"
+    },
+    "statistics": {
+      "calculation_tooltip": "Tijdsstatistieken voor de geselecteerde periode. In het geval van nachtdiensten worden alleen de tijden binnen de geselecteerde periode meegenomen.",
+      "current_day": "Vandaag",
+      "current_month": "Deze maand",
+      "current_week": "Deze week",
+      "day": "Dag",
+      "deviation": "Afwijking",
+      "heading": "Statistieken",
+      "month": "Maand",
+      "previous_day": "Gisteren",
+      "previous_month": "Vorige maand",
+      "previous_week": "Vorige week",
+      "scheduled_paid_time": "Ingeplande werktijd",
+      "tracked_paid_time": "Geregistreerde werktijd",
+      "tracked_time": "Totaal geregistreerde tijd",
+      "week": "Week"
+    }
+  },
+  "time_off": {
+    "balance_overview": {
+      "pending": "In behandeling",
+      "remaining": "Resterend",
+      "taken": "Opgenomen",
+      "title": "Overzicht verlofsaldo",
+      "current_balance": "Huidig Saldo"
+    },
+    "calendar": {
+      "title": "Jaar"
+    },
+    "download_time_off_overview": "Verlofoverzicht downloaden",
+    "entitlement_picker": {
+      "current_period": "Huidige periode",
+      "next_period": "Volgende periode",
+      "previous_period": "Vorige periode"
+    },
+    "page_title": "Verlof",
+    "request": {
+      "comments": "Opmerkingen bekijken"
+    },
+    "request_state": {
+      "approved": "Goedgekeurd",
+      "canceled": "Geannuleerd",
+      "cancellation_requested": "Annulering aangevraagd",
+      "rejected": "Afgewezen",
+      "requested": "Aangevraagd"
+    },
+    "request_time_off": "Verlof aanvragen",
+    "requests": {
+      "creation_form": {
+        "cancel": "Annuleren",
+        "comment": "Opmerking",
+        "create": "Verlof aanvragen",
+        "created": "De geselecteerde verlofaanvraag is ingediend.",
+        "date": "Datum",
+        "end_date": "Einddatum",
+        "end_time": "Eindtijd",
+        "error": {
+          "comment_too_long": "Voeg een opmerking toe (max. 100 tekens).",
+          "conflict_with_existing_plan_data_request": "De duur van de aanvraag overlapt een bestaande aanvraag.",
+          "conflict_with_existing_request": "De duur van de aanvraag overlapt een bestaande aanvraag.",
+          "conflict_with_existing_time_off": "De duur van de aanvraag overlapt een bestaande aanvraag.",
+          "employee_marked_as_unavailable": "Je staat op deze datum gemarkeerd als niet beschikbaar. Wijzig je beschikbaarheid zelf of vraag je leidinggevende om dit te doen.",
+          "no_time_off_period": "Je kunt voor deze periode geen verlof aanvragen. De verlofperiode voor deze aanvraag is niet gepubliceerd. Neem contact op met je planningsteam.",
+          "start_date_before_end": "De einddatum moet op of na de begindatum liggen.",
+          "start_time_before_end": "De eindtijd moet na de begintijd liggen.",
+          "times_required": "Voer een begin- en eindtijd in.",
+          "unknown": "De verlofaanvraag kon niet worden aangemaakt.",
+          "no_contract": "Het aangevraagde verlof valt buiten je contract.",
+          "no_employment": "Het aangevraagde verlof valt buiten je dienstverband."
+        },
+        "full_day_request": "Aanvraag voor hele dag",
+        "part_day": "Vraag een dagdeel aan",
+        "part_day_request": "Dagdeel",
+        "start_date": "Begindatum",
+        "start_time": "Begintijd",
+        "submitting": "Wordt verwerkt",
+        "time_off_request": "Nieuwe verlofaanvraag"
+      },
+      "filter": {
+        "label": "Filter aanvraagstatus",
+        "status": {
+          "all": "Alle",
+          "approved": "Goedgekeurd",
+          "canceled": "Geannuleerd",
+          "decided": "Beoordeeld",
+          "pending": "In behandeling",
+          "rejected": "Afgewezen",
+          "requested": "Aangevraagd"
+        }
+      },
+      "link_to_schedule": "{{ time_range }} in kalender openen",
+      "no_items": "Geen verlofaanvragen",
+      "title": "Verlofaanvragen"
+    },
+    "pdf_download": {
+      "all": "Alle",
+      "all_request_statuses": "Alle aanvraagstatussen",
+      "all_time_off_types": "Alle verloftypen",
+      "cancel": "Annuleren",
+      "download": "Downloaden",
+      "entitlement_period": "Aanspraakperiode",
+      "request_statuses": "Aanvraagstatussen",
+      "time_off_types": "Verloftypen",
+      "title": "Verlofoverzicht",
+      "time_off_type_deleted": "(Verwijderd)"
+    },
+    "type_selection": {
+      "label": "Verloftype",
+      "no_result": "Geen verloftype gevonden",
+      "placeholder": "Verloftype selecteren",
+      "deleted_type": "{{name}} (Verwijderd)"
+    },
+    "unit": {
+      "days_one": "dag",
+      "days_other": "dagen",
+      "hours_one": "uur",
+      "hours_other": "uren"
+    },
+    "year_picker": {
+      "current_year": "Dit jaar",
+      "next_year": "Volgend jaar",
+      "previous_year": "Vorig jaar"
+    }
+  },
+  "time-off-list": {
+    "card-list": {
+      "card-item": {
+        "button": {
+          "request-cancellation": {
+            "popover": {
+              "button": {
+                "close": {
+                  "label": "Sluiten"
+                },
+                "request": {
+                  "label": "Annulering aanvragen"
+                }
+              },
+              "text-area": {
+                "reason": {
+                  "label": "Reden voor annulering"
+                }
+              }
+            },
+            "aria-label": "{{ time_range }}, verlof, annulering aanvragen",
+            "label": "Annulering aanvragen"
+          },
+          "withdraw": {
+            "aria-label": "{{ time_range }}, Aanvraag in behandeling, Intrekken",
+            "label": "Intrekken"
+          },
+          "withdraw-cancellation-request": {
+            "aria-label": "{{ time_range }}, Annuleringsaanvraag voor verlof, Intrekken",
+            "label": "Intrekken"
+          },
+          "comments": {
+            "aria-label": "Opmerkingen bekijken",
+            "label": "{{count}} opmerkingen"
+          }
+        },
+        "booked": {
+          "text": "Geboekt"
+        },
+        "status": {
+          "approved": {
+            "text": "Goedgekeurd"
+          },
+          "canceled": {
+            "text": "Geannuleerd"
+          },
+          "cancellation_requested": {
+            "text": "Annulering aangevraagd"
+          },
+          "rejected": {
+            "text": "Afgewezen"
+          },
+          "requested": {
+            "text": "Aangevraagd"
+          },
+          "text": "Status"
+        },
+        "to-be-booked": {
+          "text": "Te boeken",
+          "valuation-conflict": {
+            "label": "De tijd om te worden geboekt kan veranderen omdat je minstens nog één verlofaanvraag voor deze week hebt ingediend."
+          }
+        }
+      }
+    }
+  },
+  "time-off": {
+    "toast": {
+      "request-cancellation": {
+        "failure": {
+          "text": "De annuleringsaanvraag voor het verlof kon niet worden ingediend."
+        },
+        "success": {
+          "text": "De annuleringsaanvraag voor het verlof is ingediend."
+        }
+      },
+      "withdraw": {
+        "failure": {
+          "text": "De geselecteerde verlofaanvraag kon niet worden verwijderd."
+        },
+        "success": {
+          "text": "De geselecteerde verlofaanvraag is verwijderd."
+        }
+      },
+      "withdraw-cancellation-request": {
+        "failure": {
+          "text": "De annuleringsaanvraag voor het verlof kon niet worden ingetrokken."
+        },
+        "success": {
+          "text": "De annuleringsaanvraag voor het verlof is ingetrokken."
+        }
+      }
+    }
+  },
+  "availability": {
+    "delete": {
+      "button": {
+        "label": "Verwijder"
+      }
+    },
+    "edit": {
+      "form": {
+        "button": {
+          "cancel": {
+            "label": "Annuleer"
+          },
+          "submit": {
+            "label": "Wijzigingen bewaren"
+          }
+        },
+        "inline-message": {
+          "error": {
+            "text": "Je wijzigingen konden niet worden opgeslagen. Probeer het opnieuw."
+          }
+        },
+        "toast": {
+          "success": "Beschikbaarheid gewijzigd"
+        }
+      },
+      "page-heading": {
+        "return-link": "Terug naar overzicht",
+        "text": "{{date}} wijzigen"
+      },
+      "page_title": "Beschikbaarheid bewerken"
+    },
+    "inline-message": {
+      "unexpected-error": {
+        "text": "Je beschikbaarheden konden niet worden geladen. Gelieve <Link>opnieuw te laden</Link> of probeer het later nog eens."
+      }
+    },
+    "modal": {
+      "delete-confirmation": {
+        "button": {
+          "cancel": "Terug",
+          "confirm": "Beschikbaarheid verwijderen"
+        },
+        "content": "Je beschikbaarheden voor {{date}} worden verwijderd. Je planner zal een wekelijkse beschikbaarheid voor die dag gebruiken, als er een is.",
+        "content-label": "Eenmalige beschikbaarheid verwijderen",
+        "inline-message": {
+          "error": "Beschikbaarheid kon niet worden verwijderd. Probeer het opnieuw."
+        },
+        "title": "Beschikbaarheid verwijderen?",
+        "toast": {
+          "success": "Beschikbaarheid verwijderd"
+        }
+      }
+    },
+    "new": {
+      "form": {
+        "button": {
+          "add-time": {
+            "label": "Tijdstip toevoegen"
+          },
+          "cancel": {
+            "label": "Annuleer"
+          },
+          "remove-time": {
+            "label": "Tijdstip verwijderen"
+          },
+          "submit": {
+            "label": "Beschikbaarheid toevoegen"
+          }
+        },
+        "date-input": {
+          "booking-date": {
+            "error": {
+              "required": "Selecteer een datum."
+            }
+          }
+        },
+        "inline-message": {
+          "conflict-error": {
+            "text": "Er zijn beschikbaarheden voor deze datum. Selecteer een andere datum of <Link>wijzig de beschikbaarheden voor deze datum</Link>."
+          },
+          "error": {
+            "text": "Beschikbaarheid kon niet worden aangemaakt. Probeer het opnieuw."
+          }
+        },
+        "time-input": {
+          "end-time": {
+            "error": {
+              "required": "Voer een eindtijd in."
+            },
+            "label": "Eindtijd"
+          },
+          "start-time": {
+            "error": {
+              "required": "Voer een starttijd in."
+            },
+            "label": "Starttijd"
+          }
+        },
+        "toast": {
+          "success": "Beschikbaarheid aangemaakt"
+        }
+      },
+      "page-heading": {
+        "return-link": "Terug naar overzicht",
+        "text": "Beschikbaarheid toevoegen"
+      },
+      "page_title": "Beschikbaarheid aanmaken"
+    },
+    "next_month": "Volgende maand",
+    "one_time": {
+      "empty": {
+        "heading": "Geen beschikbaarheden voor deze maand",
+        "text": "Laat je Planner weten wanneer je beschikbaar bent, of ga naar de <Link>volgende maand</Link>."
+      }
+    },
+    "overnight-indicator": "+ 1 dag",
+    "overview": {
+      "button": {
+        "add_availability": {
+          "label": "Beschikbaarheid toevoegen"
+        },
+        "edit-availability": {
+          "label": "Bewerk"
+        }
+      },
+      "heading": "Overzicht beschikbaarheden",
+      "inline-message": {
+        "cute-off-date": {
+          "text": "Je kunt je beschikbaarheden pas wijzigen vanaf {{cutOffDate}}."
+        }
+      },
+      "tag": {
+        "one-time": {
+          "text": "Eenmalig"
+        },
+        "weekly": {
+          "text": "Wekelijks"
+        }
+      }
+    },
+    "page_title": "Beschikbaarheden",
+    "prev_month": "Vorige maand",
+    "time_period": "Tijdsperiode"
+  }
+}

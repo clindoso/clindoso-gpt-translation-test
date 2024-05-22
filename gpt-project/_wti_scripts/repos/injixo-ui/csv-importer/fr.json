@@ -1,0 +1,112 @@
+{
+  "csv_importer": {
+    "confirmation_page": {
+      "apply": "Confirmer",
+      "cancel": "Annuler",
+      "confirm": "Confirmer l'import des données."
+    },
+    "error_page": {
+      "import_error": "Une erreur est survenue durant l'import.",
+      "message": {
+        "before_error": "Le fichier n'a pu être importé. Les anomalies sont les suivantes :",
+        "retry_after_error": "Vérifiez le format du fichier et essayez à nouveau."
+      }
+    },
+    "errors": {
+      "empty_file": "Le fichier est vide.",
+      "end_time_before_start_time": "L’heure de fin ne doit pas être antérieure à l’heure de début.",
+      "error_on_line": "Erreur à la ligne {{line_number}} :",
+      "excessive_data": "La période de l'import se limite à un an de données maximum.",
+      "file_too_large": "Le fichier à importer est trop volumineux. La taille maximale est de 7 Mo.",
+      "invalid_channel": "Média non supporté.",
+      "invalid_date_format": "Format de date incorrect.",
+      "invalid_date_or_time_format": "Format de date ou d'heure incorrect.",
+      "invalid_duration_cdr": "L'interaction est déclarée comme traitée mais n'a pas de durée.",
+      "invalid_end_of_line": "Utiliser un caractère de fin de ligne identique sur tout le fichier.",
+      "invalid_handled_cdr": "Les valeurs acceptées dans le champ Handled (Traité) sont 1 ou 0.",
+      "invalid_headers": "Entêtes manquants ou mal orthographiés.",
+      "invalid_number": "Vérifier les formats des valeurs numériques.",
+      "invalid_row_length": "Le nombre de champs sur cette ligne ne correspond pas au nombre de champs dans l'entête.",
+      "invalid_separator": "Le séparateur est invalide.",
+      "invalid_time_format": "Format d'heure incorrect.",
+      "invalid_time_range": "Les données dépassent la période maximum de 10 ans.",
+      "invalid_timestamp": "Horodatage incompatible avec l'intervalle horaire.",
+      "invalid_year": "L'année ne doit pas être antérieure à 1970.",
+      "missing_activity": "L'identifiant de l’activité est manquant.",
+      "missing_agent": "L'identifiant de l’agent est manquant.",
+      "missing_queue": "La colonne \"File d'attente\" est manquante.",
+      "negative_number": "Les nombres négatifs ne sont pas autorisés.",
+      "non_existing_timestamp": "L'heure locale spécifiée ne correspond pas à un horodatage existant.",
+      "number_too_big": "Nombre trop grand.",
+      "sql_error": "An SQL error occurred.",
+      "string_too_long": "Le nombre maximum de caractères est de 255.",
+      "unexpected": "Une erreur est survenue.",
+      "unknown_error": "Une erreur est survenue."
+    },
+    "heading": "Import des données historiques",
+    "success_page": {
+      "import_again": "Importer un autre fichier CSV",
+      "success": "Fichier CSV analysé avec succès.",
+      "to_forecast": "Aller à Forecast",
+      "to_intraday": "Aller à Intraday"
+    },
+    "summary": {
+      "failure": "Echec de l'import",
+      "first_date": "date de début (UTC)",
+      "heading": {
+        "confirm": "Confirmer l'import",
+        "success": "Import réussi"
+      },
+      "imported_agents": "agents importés",
+      "imported_lines": "lignes importées",
+      "imported_queues": "Files d'attente importées",
+      "last_date": "date de fin (UTC)",
+      "title": "Votre import",
+      "try_again": "Essayer à nouveau"
+    },
+    "upload_form": {
+      "file_input": {
+        "active_description": {
+          "invalid": "Déposer uniquement un fichier au format CSV",
+          "valid": "Déposer ici le fichier CSV..."
+        },
+        "description": {
+          "multiple": "Glisser ici les fichiers CSV à importer",
+          "single": "Glisser ici le fichier CSV (.csv ou .txt) à importer"
+        },
+        "file_limit_warning": "Importez votre fichier en cliquant sur \"Importer le fichier\"",
+        "joiner": "ou",
+        "link": "ouvrez votre explorateur de fichiers",
+        "loading": "chargement"
+      },
+      "help": {
+        "link": "Consultez la documentation.",
+        "text": "Besoin d'aide ?"
+      },
+      "integration": {
+        "label": "Intégration",
+        "no_result": "Aucune intégration trouvée",
+        "placeholder": "Sélectionner..."
+      },
+      "introduction": "Importez vos données historiques depuis un fichier CSV pour générer une prévision dans injixo. La taille maximale du fichier CSV est de 7 Mo.",
+      "invalid_file": "Le fichier \"{{file_name}}\" ne peut être sélectionné. Choisissez un fichier CSV valide.",
+      "multi_upload_warning": "Importer simultanément vos données depuis plusieurs navigateurs peut endommager les données de vos files d'attente.",
+      "no_integration": {
+        "link": "Veuillez ajouter une intégration CSV",
+        "text": "Vous devez ajouter une intégration CSV avant d'importer un fichier."
+      },
+      "submit": {
+        "loading": "Import",
+        "title": "Importer le fichier"
+      }
+    },
+    "writing_page": {
+      "writing": "Merci de patienter...",
+      "writing_status": "Import des données..."
+    }
+  },
+  "document_title": {
+    "module": "Importateur CSV",
+    "page_title": "Importation de données historiques"
+  }
+}

@@ -1,0 +1,803 @@
+{
+  "rules": {
+    "title": "Rules",
+    "toolbar": {
+      "search": {
+        "aria_label": "Search rules by name or abbreviation",
+        "placeholder": "Search rules by name or abbreviation"
+      },
+      "cta": {
+        "new": "New rule"
+      }
+    },
+    "table": {
+      "header": {
+        "name": "Name",
+        "abbreviation": "Abbreviation",
+        "description": "Description"
+      },
+      "placeholder": "No rules found",
+      "row": {
+        "aria-label": "Open details for {{name}}"
+      }
+    },
+    "details": {
+      "check": {
+        "title-prefix": "Test:",
+        "cta": {
+          "open": "Configure test",
+          "report": "Run test",
+          "close": "Back to editing"
+        },
+        "table": {
+          "placeholder": "No employees found",
+          "header": {
+            "name": "Name",
+            "personnel-number": "Personnel number"
+          }
+        },
+        "date": {
+          "label": "Date",
+          "aria-label": "Select a date for the test"
+        },
+        "people-search": {
+          "label": "Employee",
+          "aria-label": "Search employees by name or personnel number",
+          "placeholder": "Search employees by name or personnel number"
+        }
+      },
+      "aria_label": {
+        "close": "Close the rule edit window",
+        "panel": "Edit rule"
+      },
+      "cta": {
+        "close": {
+          "existing": "Close",
+          "new": "Close"
+        },
+        "delete": "Delete rule",
+        "discard": {
+          "existing": "Discard changes",
+          "new": "Discard rule"
+        },
+        "save": {
+          "existing": "Save changes",
+          "new": "Create new rule"
+        }
+      },
+      "delete": {
+        "consequences1": "You will no longer be able to calculate time management accounts for the rule definitions.",
+        "consequences2": "All affected accounts will be recalculated on the basis of affected rules.",
+        "consequences3": "You will no longer be able to access the data of affected accounts.",
+        "consequences4": "Rules will no longer be mapped to selections.",
+        "content": "<0>{{name}}</0> will be deleted.",
+        "cta": {
+          "cancel": "Keep rule",
+          "confirm": "Delete rule"
+        },
+        "error": {
+          "general": "The rule could not be deleted. Please try again.",
+          "missing": "The rule {{name}} does not exist."
+        },
+        "id_validation_failed": "The rule does not exist.",
+        "success": "The rule was deleted.",
+        "title": "Delete rule?"
+      },
+      "save": {
+        "error": {
+          "name": {
+            "not-unique": "The rule name already exists. Enter a different rule name."
+          },
+          "abbreviation": {
+            "not-unique": "The rule abbreviation already exists. Enter a different rule abbreviation."
+          },
+          "content": {
+            "syntax": "The rule definition contains a syntax error. Enter a rule definition in DSL format."
+          },
+          "unknown": "The rule could not be saved. Please try again.",
+          "timeout": "The validation took longer than expected. Please reload the page in a few minutes."
+        },
+        "success": {
+          "create": "The rule has been created successfully.",
+          "update": "The rule has been updated successfully."
+        }
+      },
+      "validate": {
+        "error": {
+          "name": {
+            "required": "Enter a rule name (up to 50 characters).",
+            "max-length": "Enter a shorter rule name (up to 50 characters)."
+          },
+          "abbreviation": {
+            "required": "Enter a rule abbreviation (up to 25 characters).",
+            "max-length": "Enter a shorter rule abbreviation (up to 25 characters)."
+          },
+          "description": {
+            "max-length": "Enter a shorter rule description (up to 250 characters)."
+          },
+          "content": {
+            "required": "Enter a rule definition in DSL format or a comment."
+          }
+        }
+      },
+      "unsaved-changes": {
+        "new": {
+          "title": "Discard unsaved rule?",
+          "cta": {
+            "cancel": "Back to creating",
+            "confirm": "Discard rule"
+          }
+        },
+        "update": {
+          "title": "Discard unsaved changes?",
+          "cta": {
+            "cancel": "Back to editing",
+            "confirm": "Discard changes"
+          }
+        }
+      },
+      "label": {
+        "abbreviation": "Abbreviation",
+        "name": "Name",
+        "description": "Description",
+        "content": "Rule definitions"
+      },
+      "not-found": "The rule was not found",
+      "no-create-permission": "You do not have permission to create a rule. Contact a person with admin access.",
+      "access-denied": "You do not have permission to change a rule. Contact a person with admin access.",
+      "title": {
+        "new": "Create new rule"
+      }
+    }
+  },
+  "libraries": {
+    "title": "Rule libraries",
+    "toolbar": {
+      "search": {
+        "aria_label": "Search rule libaries by name or abbreviation",
+        "placeholder": "Search rule libraries by name or abbreviation"
+      },
+      "cta": {
+        "new": "New library"
+      }
+    },
+    "table": {
+      "header": {
+        "name": "Name",
+        "abbreviation": "Abbreviation",
+        "description": "Description"
+      },
+      "placeholder": "No rule libraries found",
+      "row": {
+        "aria-label": "Open details for {{name}}"
+      }
+    },
+    "details": {
+      "aria_label": {
+        "close": "Close edit window",
+        "panel": "Edit rule library details"
+      },
+      "cta": {
+        "close": {
+          "existing": "Close",
+          "new": "Close"
+        },
+        "delete": "Delete rule library",
+        "discard": {
+          "existing": "Discard changes",
+          "new": "Discard rule library"
+        },
+        "save": {
+          "existing": "Save changes",
+          "new": "Create rule library"
+        }
+      },
+      "delete": {
+        "consequences1": "You will no longer be able to calculate time management accounts for the rule definitions.",
+        "consequences2": "All affected accounts will be recalculated on the basis of affected rules.",
+        "consequences3": "You will no longer be able to access the data of affected accounts.",
+        "consequences4": "Rules will no longer be mapped to selections.",
+        "content": "<0>{{name}}</0> will be deleted.",
+        "cta": {
+          "cancel": "Keep rule library",
+          "confirm": "Delete rule library"
+        },
+        "error": {
+          "general": "The rule library could not be deleted. Please try again.",
+          "missing": "The rule library {{name}} does not exist."
+        },
+        "id_validation_failed": "The rule library does not exist.",
+        "success": "The rule library was deleted successfully.",
+        "title": "Delete rule library?"
+      },
+      "save": {
+        "error": {
+          "name": {
+            "not-unique": "The rule library name already exists. Enter a different rule library name."
+          },
+          "abbreviation": {
+            "not-unique": "The rule library abbreviation already exists. Enter a different rule library abbreviation."
+          },
+          "content": {
+            "syntax": "The rule library definition contains a syntax error. Enter a rule library definition in DSL format."
+          },
+          "unknown": "The rule library could not be changed. Please try again.",
+          "timeout": "The validation took longer than expected. Please reload the page in a few minutes."
+        },
+        "success": {
+          "create": "The rule library was created successfully.",
+          "update": "The rule library was updated successfully."
+        }
+      },
+      "validate": {
+        "error": {
+          "name": {
+            "required": "Enter a rule library name (up to 50 characters).",
+            "max-length": "Enter a shorter rule library name (up to 50 characters)."
+          },
+          "abbreviation": {
+            "required": "Enter a rule library abbreviation (up to 25 characters).",
+            "max-length": "Enter a shorter rule library abbreviation (up to 25 characters)."
+          },
+          "description": {
+            "max-length": "Enter a shorter rule library description (up to 250 characters)."
+          },
+          "content": {
+            "required": "Enter a rule definition in DSL format or a comment."
+          }
+        }
+      },
+      "unsaved-changes": {
+        "new": {
+          "title": "Discard unsaved rule library?",
+          "cta": {
+            "cancel": "Back to creating",
+            "confirm": "Discard rule library"
+          }
+        },
+        "update": {
+          "title": "Discard rule library changes?",
+          "cta": {
+            "cancel": "Back to editing",
+            "confirm": "Discard changes"
+          }
+        }
+      },
+      "label": {
+        "abbreviation": "Abbreviation",
+        "name": "Name",
+        "description": "Description",
+        "content": "Rule definitions"
+      },
+      "not-found": "The rule library does not exist.",
+      "no-create-permission": "You do not have permission to create a rule library. Contact a person with admin access.",
+      "access-denied": "You do not have permission to change a rule library. Contact a person with admin access.",
+      "title": {
+        "new": "Create rule library"
+      }
+    }
+  },
+  "accounts": {
+    "title": "Accounts",
+    "toolbar": {
+      "search": {
+        "aria_label": "Search accounts by name or type",
+        "placeholder": "Search accounts by name or type"
+      },
+      "cta": {
+        "new": "New account"
+      }
+    },
+    "table": {
+      "header": {
+        "name": "Name",
+        "abbreviation": "Abbreviation",
+        "description": "Description",
+        "category": "Account type",
+        "measure_unit": "Unit of measure"
+      },
+      "placeholder": "No accounts found",
+      "row": {
+        "aria-label": "Open details for {{name}}"
+      }
+    },
+    "details": {
+      "name": {
+        "label": "Name"
+      },
+      "abbreviation": {
+        "label": "Abbreviation"
+      },
+      "description": {
+        "label": "Description"
+      },
+      "account_group": {
+        "label": "Account group"
+      },
+      "category": {
+        "label": "Account type",
+        "options": {
+          "time_account": "Time account",
+          "payment": "Payment",
+          "entitlement": "Entitlement",
+          "counter": "Counter"
+        }
+      },
+      "measure_unit": {
+        "label": "Unit of measure"
+      },
+      "aria_label": {
+        "close": "Close the account edit window",
+        "panel": "Edit account"
+      },
+      "cta": {
+        "close": {
+          "existing": "Close",
+          "new": "Close"
+        },
+        "delete": "Delete account",
+        "discard": {
+          "existing": "Discard changes",
+          "new": "Discard account"
+        },
+        "save": {
+          "existing": "Save changes",
+          "new": "Create new account"
+        }
+      },
+      "delete": {
+        "content": "<0>{{name}}</0> will be deleted.",
+        "cta": {
+          "cancel": "Keep account",
+          "confirm": "Delete account"
+        },
+        "error": {
+          "general": "The account could not be deleted. Please try again.",
+          "missing": "The account {{name}} does not exist."
+        },
+        "id_validation_failed": "The account does not exist.",
+        "success": "The account was deleted.",
+        "title": "Delete account?"
+      },
+      "save": {
+        "error": {
+          "name": {
+            "not-unique": "The account name already exists. Enter a different account name."
+          },
+          "abbreviation": {
+            "not-unique": "The account abbreviation already exists. Enter a different account abbreviation."
+          },
+          "unknown": "The account could not be saved. Please try again."
+        },
+        "success": {
+          "create": "The account has been created successfully.",
+          "update": "The account has been updated successfully."
+        }
+      },
+      "validate": {
+        "error": {
+          "name": {
+            "required": "Enter a account name (up to 50 characters).",
+            "max-length": "Enter a shorter account name (up to 50 characters)."
+          },
+          "abbreviation": {
+            "required": "Enter a account abbreviation (up to 25 characters).",
+            "max-length": "Enter a shorter account abbreviation (up to 25 characters)."
+          },
+          "description": {
+            "max-length": "Enter a shorter account description (up to 250 characters)."
+          },
+          "measure_unit": {
+            "required": "Select one of the available measure units."
+          },
+          "account_group": {
+            "required": "Select one of the available account groups."
+          },
+          "category": {
+            "required": "Select one of the available account types."
+          }
+        }
+      },
+      "unsaved-changes": {
+        "new": {
+          "title": "Discard unsaved account?",
+          "cta": {
+            "cancel": "Back to creating",
+            "confirm": "Discard account"
+          }
+        },
+        "update": {
+          "title": "Discard unsaved changes?",
+          "cta": {
+            "cancel": "Back to editing",
+            "confirm": "Discard changes"
+          }
+        }
+      },
+      "label": {
+        "abbreviation": "Abbreviation",
+        "name": "Name",
+        "description": "Description"
+      },
+      "not-found": "The account was not found",
+      "no-create-permission": "You do not have permission to create a account. Contact a person with admin access.",
+      "access-denied": "You do not have permission to change a account. Contact a person with admin access.",
+      "title": {
+        "new": "Create new account"
+      }
+    }
+  },
+  "account-groups": {
+    "title": "Account groups",
+    "toolbar": {
+      "search": {
+        "aria_label": "Search account groups by name or abbreviation",
+        "placeholder": "Search account groups by name or abbreviation"
+      },
+      "cta": {
+        "new": "New account group"
+      }
+    },
+    "table": {
+      "header": {
+        "name": "Name",
+        "abbreviation": "Abbreviation",
+        "description": "Description"
+      },
+      "placeholder": "No account groups found",
+      "row": {
+        "aria-label": "Open details for {{name}}"
+      }
+    },
+    "details": {
+      "section": {
+        "general": "General",
+        "balance_calculation": "Balance calculation"
+      },
+      "projection_type": {
+        "label": "Projection type",
+        "options": {
+          "none": "No projection. Account balances will only be calculated for past days.",
+          "fixed_period": "Projection of account balances for a fixed period",
+          "to_end_of_period": "Projection of account balances until the end of a period"
+        }
+      },
+      "projection_period": {
+        "label": "Projection period",
+        "options": {
+          "year": "Year",
+          "month": "Month(s)",
+          "week": "Week(s)",
+          "day": "Day(s)"
+        }
+      },
+      "projection_duration": {
+        "label": "Projection duration"
+      },
+      "aria_label": {
+        "close": "Close the account group edit window",
+        "panel": "Edit account group"
+      },
+      "cta": {
+        "close": {
+          "existing": "Close",
+          "new": "Close"
+        },
+        "delete": "Delete account group",
+        "discard": {
+          "existing": "Discard changes",
+          "new": "Discard account group"
+        },
+        "save": {
+          "existing": "Save changes",
+          "new": "Create new account group"
+        }
+      },
+      "delete": {
+        "content": "<0>{{name}}</0> will be deleted.",
+        "cta": {
+          "cancel": "Keep account group",
+          "confirm": "Delete account group"
+        },
+        "error": {
+          "referenced": "The account group '{{name}}' cannot be deleted, because it is referenced in at least one account.",
+          "internal": "The account group '{{name}}' is predefined an cannot be deleted.",
+          "general": "The account group could not be deleted. Please try again.",
+          "missing": "The account group {{name}} does not exist."
+        },
+        "id_validation_failed": "The account group does not exist.",
+        "success": "The account group was deleted.",
+        "title": "Delete account group?"
+      },
+      "save": {
+        "error": {
+          "name": {
+            "not-unique": "The account group name already exists. Enter a different account group name."
+          },
+          "abbreviation": {
+            "not-unique": "The account group abbreviation already exists. Enter a different account group abbreviation."
+          },
+          "unknown": "The account group could not be saved. Please try again."
+        },
+        "success": {
+          "create": "The account group has been created successfully.",
+          "update": "The account group has been updated successfully."
+        }
+      },
+      "validate": {
+        "error": {
+          "name": {
+            "required": "Enter a account group name (up to 50 characters).",
+            "max-length": "Enter a shorter account group name (up to 50 characters)."
+          },
+          "abbreviation": {
+            "required": "Enter a account group abbreviation (up to 25 characters).",
+            "max-length": "Enter a shorter account group abbreviation (up to 25 characters)."
+          },
+          "description": {
+            "max-length": "Enter a shorter account group description (up to 250 characters)."
+          },
+          "projection_type": {
+            "required": "Select one of the projection type options."
+          },
+          "projection_period": {
+            "required": "Select one of the projection period options."
+          },
+          "projection_duration": {
+            "required": "Enter a valid duration for the projection period (one year, up to 18 months, or up to 78 weeks or days)."
+          }
+        }
+      },
+      "unsaved-changes": {
+        "new": {
+          "title": "Discard unsaved account group?",
+          "cta": {
+            "cancel": "Back to creating",
+            "confirm": "Discard account group"
+          }
+        },
+        "update": {
+          "title": "Discard unsaved changes?",
+          "cta": {
+            "cancel": "Back to editing",
+            "confirm": "Discard changes"
+          }
+        }
+      },
+      "label": {
+        "abbreviation": "Abbreviation",
+        "name": "Name",
+        "description": "Description"
+      },
+      "not-found": "The account group was not found",
+      "no-create-permission": "You do not have permission to create a account group. Contact a person with admin access.",
+      "access-denied": "You do not have permission to change a account group. Contact a person with admin access.",
+      "title": {
+        "new": "Create new account group"
+      }
+    }
+  },
+  "modification-reasons": {
+    "title": "Reasons for modification"
+  },
+  "time-categories": {
+    "title": "Time categories",
+    "toolbar": {
+      "search": {
+        "aria_label": "Search time categories by name or abbreviation",
+        "placeholder": "Search time categories by name or abbreviation"
+      },
+      "cta": {
+        "new": "New time category"
+      }
+    },
+    "table": {
+      "header": {
+        "name": "Name",
+        "abbreviation": "Abbreviation",
+        "description": "Description"
+      },
+      "placeholder": "No time categories found",
+      "row": {
+        "aria-label": "Open details for {{name}}"
+      }
+    },
+    "details": {
+      "section": {
+        "general": "General",
+        "attributes": "Attributes"
+      },
+      "aria_label": {
+        "close": "Close the time category edit window",
+        "panel": "Edit time category"
+      },
+      "cta": {
+        "close": {
+          "existing": "Close",
+          "new": "Close"
+        },
+        "delete": "Delete time category",
+        "discard": {
+          "existing": "Discard changes",
+          "new": "Discard time category"
+        },
+        "save": {
+          "existing": "Save changes",
+          "new": "Create new time category"
+        }
+      },
+      "delete": {
+        "content": "<0>{{name}}</0> will be deleted.",
+        "cta": {
+          "cancel": "Keep time category",
+          "confirm": "Delete time category"
+        },
+        "error": {
+          "general": "The time category could not be deleted. Please try again.",
+          "missing": "The time category {{name}} does not exist."
+        },
+        "id_validation_failed": "The time category does not exist.",
+        "success": "The time category was deleted.",
+        "title": "Delete time category?"
+      },
+      "save": {
+        "error": {
+          "name": {
+            "not-unique": "The time category name already exists. Enter a different time category name."
+          },
+          "abbreviation": {
+            "not-unique": "The time category abbreviation already exists. Enter a different time category abbreviation."
+          },
+          "unknown": "The time category could not be saved. Please try again."
+        },
+        "success": {
+          "create": "The time category has been created successfully.",
+          "update": "The time category has been updated successfully."
+        }
+      },
+      "validate": {
+        "error": {
+          "name": {
+            "required": "Enter a time category name (up to 50 characters).",
+            "max-length": "Enter a shorter time category name (up to 50 characters)."
+          },
+          "abbreviation": {
+            "required": "Enter a time category abbreviation (up to 25 characters).",
+            "max-length": "Enter a shorter time category abbreviation (up to 25 characters)."
+          },
+          "description": {
+            "max-length": "Enter a shorter time category description (up to 250 characters)."
+          }
+        }
+      },
+      "unsaved-changes": {
+        "new": {
+          "title": "Discard unsaved time category?",
+          "cta": {
+            "cancel": "Back to creating",
+            "confirm": "Discard time category"
+          }
+        },
+        "update": {
+          "title": "Discard unsaved changes?",
+          "cta": {
+            "cancel": "Back to editing",
+            "confirm": "Discard changes"
+          }
+        }
+      },
+      "label": {
+        "abbreviation": "Abbreviation",
+        "name": "Name",
+        "description": "Description"
+      },
+      "not-found": "The time category was not found",
+      "no-create-permission": "You do not have permission to create a time category. Contact a person with admin access.",
+      "access-denied": "You do not have permission to change a time category. Contact a person with admin access.",
+      "title": {
+        "new": "Create new time category"
+      },
+      "attributes": {
+        "button_label": {
+          "add": "Add",
+          "cancel": "Cancel",
+          "create": "Add attribute",
+          "save": "Save changes"
+        },
+        "create_title": "Add attribute",
+        "delete": {
+          "confirm_button": "Remove attribute",
+          "content": "The attribute will be removed from the time category.",
+          "error": "The attribute could not be removed from the time category.",
+          "success": "The attribute was removed from the time category.",
+          "title": "Remove attribute"
+        },
+        "input": {
+          "add_attribute": {
+            "label": "Select an attribute",
+            "no_content": "<0>No attribute selected</0>Select an attribute."
+          },
+          "date": {
+            "label": "Date"
+          },
+          "hour": {
+            "invalid": "Enter a time (0 h to 9999 h 00 min)."
+          },
+          "minute": {
+            "label": "Minutes"
+          },
+          "number": {
+            "invalid": "Enter a number (up to 8-digits).",
+            "label": "Number"
+          },
+          "priority": {
+            "error_date_range_overlapping": "Select a priority that is not used by an added attribute within the selected validity period.",
+            "invalid": "Enter a priority (1 to 99).",
+            "label": "Priority"
+          },
+          "text": {
+            "invalid": "Shorten your text to a max. of 250 characters.",
+            "label": "Text"
+          },
+          "time": {
+            "label": "Time"
+          },
+          "valid_from": {
+            "error_date_range_overlapping": "Select a period that is not used by another added attribute with the same priority.",
+            "invalid": "Select a date before the end of the validity period.",
+            "label": "Valid from"
+          },
+          "valid_to": {
+            "invalid": "Select a date after the start of the validity period.",
+            "label": "Valid to"
+          }
+        },
+        "list_edit_aria_label": "Edit assignment of attribute",
+        "list_empty": "No attributes assigned.",
+        "list_header": {
+          "attribute": "Attribute",
+          "details": "Details"
+        },
+        "list_value": {
+          "boolean": {
+            "false": "No",
+            "label": "Value",
+            "true": "Yes"
+          },
+          "hours": "h",
+          "minutes": "min",
+          "priority": "Priority",
+          "valid_from": "Valid from",
+          "valid_to": "Valid to"
+        },
+        "message": {
+          "create_error": "The attribute could not be added to the activity.",
+          "create_success": "The attribute was added.",
+          "error": "The attribute details could not be changed.",
+          "success": "The attribute details were changed."
+        },
+        "title_edit": "Attribute details"
+      }
+    }
+  },
+  "navigation": {
+    "no-access": {
+      "body": "To access the rule configuration, contact a person with admin access.",
+      "header": "Missing permissions"
+    },
+    "aria-label": "Menu items"
+  },
+  "overview": {
+    "page-title": "Time Management configuration | injixo",
+    "aria-label": "Time Management configuration"
+  },
+  "general": {
+    "details": {
+      "unsaved-changes": {
+        "action": {
+          "explanation": "Your changes will not be saved."
+        }
+      }
+    }
+  }
+}

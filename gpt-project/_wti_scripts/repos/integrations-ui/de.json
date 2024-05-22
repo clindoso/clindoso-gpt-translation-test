@@ -1,0 +1,439 @@
+{
+  "catalog": {
+    "title": "Neue Integration hinzufügen",
+    "add_button": "Integration hinzufügen",
+    "select_model": "Modell wählen",
+    "back_link": "Zurück zum Katalog",
+    "features_label": "Features",
+    "features": {
+      "call": "Anruf-Historie",
+      "chat": "Chat-Historie",
+      "ticket": "Ticket-Historie",
+      "email": "E-Mail-Historie",
+      "social_media": "Social-Media-Historie",
+      "document": "Dokumenten-Historie",
+      "agent_status": "Agentenstatus",
+      "rta": "RTA"
+    },
+    "delivery_mode_label": "Verbindungstyp",
+    "delivery_mode": {
+      "cloud": "Cloud",
+      "on-prem": "On-Premise",
+      "legacy": "On-Premise"
+    }
+  },
+  "csv": {
+    "schemas": {
+      "column_mappings": {
+        "aht": {
+          "source": {
+            "label": "AHT entspricht",
+            "required": "Wähle einen Namen für die Quellspalte „AHT“.",
+            "placeholder": "Wähle den Spaltennamen"
+          },
+          "format": {
+            "label": "AHT-Format",
+            "options": {
+              "%f": "Sekunden (z. B. 120.5)",
+              "%H:%M:%S": "hh:mm:ss (z. B. 01:30:00)"
+            },
+            "placeholder": "AHT-Format auswählen",
+            "required": "Wähle ein AHT-Format."
+          },
+          "headline": "Vorgangsdauer"
+        },
+        "date": {
+          "format": {
+            "label": "Datumsformat",
+            "options": {
+              "%d.%m.%Y": "TT.MM.JJJJ (z.B. 23.08.2020)",
+              "%Y-%m-%d": "JJJJ-MM-TT (z.B. 2020-08-23)",
+              "%d/%m/%Y": "TT/MM/JJJJ (z.B. 23/08/2020)",
+              "%m/%d/%Y": "MM/TT/JJJJ (z.B. 08/23/2020)",
+              "%m/%d/%y": "MM/TT/JJ (z.B. 08/23/20)",
+              "%Y%m%d": "JJJJMMTT (z.B. 20200823)",
+              "%Y/%m/%d": "JJJJ/MM/TT (z.B. 2020/08/23)"
+            },
+            "placeholder": "Wähle ein Datumsformat aus",
+            "required": "Wähle ein Datumsformat."
+          },
+          "source": {
+            "label": "Datum entspricht",
+            "required": "Wähle einen Namen für die Quellspalte „Datum“.",
+            "placeholder": "Wähle den Spaltennamen"
+          },
+          "custom_format": {
+            "invalid": "Du musst den Tag (D, DD), den Monat (M,MM) und das Jahr (Y, YY) angeben.",
+            "label": "Benutzerdefiniertes Datumsformat",
+            "placeholder": "Eingabeformat, z. B. D/M/YY",
+            "preview": "Vorschau",
+            "required": "Definiere ein Datumsformat.",
+            "tooltip": {
+              "example": "Beispiele:",
+              "example_one": "DD-MM-YYY für 01.03.2023",
+              "example_two": "D/M/YY für 1/3/23",
+              "instruction": "Definiere ein Datumsformat:",
+              "instruction_one": "Nutze Großbuchstaben für den Tag (D, DD), den Monat (M, MM) und das Jahr (YY, YYYY)",
+              "instruction_two": "Gib ein Datumsformat ein, das den Tag, den Monat und das Jahr einschließt."
+            }
+          },
+          "headline": "Datum"
+        },
+        "handled": {
+          "source": {
+            "label": "Angenommene entspricht",
+            "required": "Wähle einen Namen für die Quellspalte „Angenommene“.",
+            "placeholder": "Wähle den Spaltennamen"
+          },
+          "headline": "Angenommene"
+        },
+        "headline": "Lege fest, welche Spalten aus Deiner Beispieldatei verwendet werden sollen.",
+        "offered": {
+          "source": {
+            "label": "Eingehende entspricht",
+            "required": "Wähle einen Namen für die Quellspalte „Eingehende“.",
+            "placeholder": "Wähle den Spaltennamen"
+          },
+          "headline": "Eingehende"
+        },
+        "queue": {
+          "source": {
+            "label": "Queue-Name entspricht",
+            "required": "Wähle einen Namen für die Quellspalte „Queue-Name“.",
+            "placeholder": "Wähle den Spaltennamen"
+          },
+          "headline": "Queue Name"
+        },
+        "time": {
+          "source": {
+            "label": "Zeit entspricht",
+            "required": "Wähle einen Namen für die Quellspalte „Zeit“.",
+            "placeholder": "Wähle den Spaltennamen"
+          },
+          "format": {
+            "label": "Zeitformat",
+            "options": {
+              "%H:%M": "hh:mm (z.B. 16:30)",
+              "%H:%M:%S": "hh:mm:ss (z.B. 16:30:00)",
+              "%I:%M %p": "h:mm AM/PM (z.B. 4:30 PM)"
+            },
+            "placeholder": "Wähle ein Zeitformat aus",
+            "required": "Wähle ein Zeitformat."
+          },
+          "headline": "Zeit"
+        },
+        "channel": {
+          "source": {
+            "label": "Kanal entspricht",
+            "required": "Wähle einen Namen für die Quellspalte „Kanal“.",
+            "extended_info": "Diese Spalte sollte nur die Werte calls, chats, emails, cases, documents oder social_media enthalten.",
+            "info": "Diese Spalte sollte nur die Werte calls, chats oder emails enthalten.",
+            "placeholder": "Wähle den Spaltennamen"
+          }
+        },
+        "activity_identifier": {
+          "source": {
+            "label": "Aktivitätskennung entspricht",
+            "placeholder": "Spalte auswählen",
+            "required": "Wähle einen Namen für die Quellspalte „Aktivitätskennung“."
+          }
+        },
+        "agent_identifier": {
+          "source": {
+            "label": "Agentenkennung entspricht",
+            "placeholder": "Spalte auswählen",
+            "required": "Wähle einen Namen für die Quellspalte „Agentenkennung“."
+          }
+        },
+        "duration": {
+          "headline": "Dauer",
+          "source": {
+            "label": "Dauer entspricht",
+            "placeholder": "Wähle die 'Dauer'-Spalte",
+            "required": "Wähle einen Namen für die Quellspalte „Dauer“."
+          }
+        },
+        "end_date": {
+          "source": {
+            "label": "Enddatum entspricht",
+            "placeholder": "Spalte auswählen",
+            "required": "Wähle einen Namen für die Quellspalte „Enddatum“."
+          }
+        },
+        "end_time": {
+          "source": {
+            "label": "Endzeit entspricht",
+            "placeholder": "Spalte auswählen",
+            "required": "Wähle einen Namen für die Quellspalte „Endzeit“."
+          }
+        },
+        "end_timestamp": {
+          "custom_format": {
+            "label": "Format",
+            "placeholder": "Gib ein Format ein, z. B. DD-MM-YYYY hh:mm:ss"
+          },
+          "source": {
+            "label": "Endzeitstempel entspricht",
+            "placeholder": "Wähle die Spalte aus"
+          }
+        },
+        "no_column": {
+          "source": {
+            "label": "Keine Spalte"
+          }
+        },
+        "start_date": {
+          "source": {
+            "label": "Startdatum entspricht",
+            "placeholder": "Spalte auswählen",
+            "required": "Wähle einen Namen für die Quellspalte „Startdatum“."
+          }
+        },
+        "start_time": {
+          "source": {
+            "label": "Startzeit entspricht",
+            "placeholder": "Spalte auswählen",
+            "required": "Wähle einen Namen für die Quellspalte „Startzeit“."
+          }
+        },
+        "start_timestamp": {
+          "custom_format": {
+            "label": "Format",
+            "placeholder": "Gib ein Format ein, z. B. DD-MM-YYYY hh:mm:ss"
+          },
+          "source": {
+            "label": "Startzeitstempel entspricht",
+            "placeholder": "Wähle die Spalte aus",
+            "required": "Wähle einen Namen für die Quellspalte „Startzeitstempel“."
+          }
+        },
+        "timestamp": {
+          "custom_format": {
+            "invalid": "Verwende ein Format mit Angaben zu Tag, Monat, Jahr, Stunden, Minuten und optional Sekunden, z. B. DD-MM-YYYY hh:mm:ss.",
+            "label": "Format",
+            "placeholder": "Gib ein Format ein, z. B. DD-MM-YYYY hh:mm:ss",
+            "required": "Wähle ein Zeitstempelformat.",
+            "tooltip": {
+              "example": "Beispiele:",
+              "example_one": "D/M/YY h:mm für 1/3/23 1:05",
+              "example_two": "DD-MM-YYYY hh:mm:ss für 01-03-2023 01:59:58",
+              "instruction": "Lege ein Zeitstempelformat fest:",
+              "instruction_one": "Verwende ein Format mit Angaben zu Tag, Monat, Jahr, Stunden, Minuten und optional Sekunden",
+              "instruction_three": "Verwende Kleinbuchstaben für Stunden (h bzw. hh), Minuten (m bzw. mm) und Sekunden (s bzw. ss)",
+              "instruction_two": "Verwende Großbuchstaben für Tag (D bzw. DD), Monat (M bzw. MM) und Jahr (YY bzw. YYYY)"
+            }
+          },
+          "source": {
+            "label": "Zeitstempel entspricht",
+            "placeholder": "Wähle die Spalte für „Zeitstempel“",
+            "required": "Wähle einen Namen für die Quellspalte „Zeitstempel“."
+          },
+          "switch_label": "Datum und Zeit in einer Spalte"
+        }
+      },
+      "created": "CSV-Schema wurde angelegt.",
+      "general_schema": {
+        "channel": {
+          "calls": "Anrufe",
+          "cases": "Tickets",
+          "chats": "Chats",
+          "documents": "Dokumente",
+          "emails": "E-Mails",
+          "fixed": {
+            "label": "Kanal"
+          },
+          "placeholder": "Wähle einen Kanal",
+          "required": "Wähle einen Kanal.",
+          "social_media": "Social Media",
+          "headline": "Kanal"
+        },
+        "errors": {
+          "server": "Es ist ein serverseitiger Fehler aufgetreten. Bitte erneut versuchen.",
+          "analyze_sample": "Beim Analysieren Deiner Beispieldatei ist ein Fehler aufgetreten. Überprüfe das Spaltentrennzeichen und stelle sicher, dass Deine Datei mindestens eine Kopfzeile enthält."
+        },
+        "gap_filling_strategy": {
+          "headline": "Fehlende Werte in vorhandenen Intervallen behandeln",
+          "option_empty": "Leer lassen - Wird in Queue als \"no data\" angezeigt",
+          "option_zero": "Mit Null auffüllen - Wird in Queue als \"0\" angezeigt",
+          "required": "Wähle aus, wie Lücken gefüllt werden sollen.",
+          "explanation": "Abhängig von Deiner Auswahl wird der fehlende Wert mit Null (0) aufgefüllt oder leer gelassen. Sollten für dieses Intervall bereits Daten vorhanden sein, so werden diese entweder mit Null (0) ersetzt oder entfernt."
+        },
+        "headline": "CSV-Schema erstellen",
+        "interval_length": {
+          "headline": "Wähle die Intervalllänge",
+          "option_15": "15 Minuten",
+          "option_30": "30 Minuten",
+          "option_60": "60 Minuten",
+          "required": "Wähle eine Intervalllänge."
+        },
+        "name": {
+          "headline": "Benenne das CSV-Schema.",
+          "required": "Gib einen Namen ein.",
+          "unique": "Der Name muss eindeutig sein."
+        },
+        "sample_file": {
+          "button": "Datei hochladen",
+          "description": "Die Beispieldatei sollte wie eine typische CSV-Datei aussehen, die Du zum Importieren Deiner Daten verwendest. Du wirst damit im nächsten Schritt arbeiten, wenn Du die Daten den injixo-Anforderungen zuordnest.",
+          "headline": "CSV-Beispieldatei",
+          "placeholder": "Wähle...",
+          "required": "Lade eine Beispieldatei hoch.",
+          "explanation": "Lade eine CSV-Datei (.csv oder .txt) hoch, die Du zum Datenimport verwendest. Im nächsten Schritt wirst Du die CSV-Daten zuordnen.",
+          "reupload": "Datei erneut hochladen"
+        },
+        "separator": {
+          "comma": "Komma",
+          "headline": "Spaltentrennzeichen der CSV-Datei",
+          "placeholder": "Wähle das Trennzeichen",
+          "required": "Wähle ein Trennzeichen.",
+          "semicolon": "Semikolon",
+          "tab": "Tabstopp"
+        },
+        "timezone": {
+          "headline": "Zeitzone",
+          "no_result": "Keine passende Zeitzone gefunden",
+          "placeholder": "Suche oder wähle eine Zeitzone",
+          "required": "Wähle eine Zeitzone.",
+          "tooltip": "Du kannst nach einer Stadt oder nach dem Zeitversatz suchen (UTC+/-hh:mm)."
+        },
+        "analyze_sample_file": "Deine Beispieldatei wird analysiert...",
+        "edit_headline": "CSV-Schema bearbeiten",
+        "layout": {
+          "cdr": "Kontaktbasiert",
+          "explanation": "injixo aggregiert einzelne Kontakte zu 15-Minuten-Intervallen.",
+          "headline": "Datenlayout",
+          "interval": "Intervallbasiert",
+          "required": "Wähle ein Layout."
+        }
+      },
+      "page2": {
+        "primary_action": "Schema speichern",
+        "headline": "Spalten zuordnen",
+        "preview": {
+          "headline": "Vorschau"
+        }
+      },
+      "page1": {
+        "primary_action": "Zur Spaltenzuordnung",
+        "headline": "Einrichtung"
+      },
+      "back": "Zurück",
+      "back_link": "Zurück zur Integration",
+      "document_title": {
+        "context": {
+          "page": {
+            "mapping": "Spaltenzuordnung",
+            "setup": "CSV Setup"
+          }
+        },
+        "module": "CSV Schema",
+        "create": "CSV-Schema erstellen",
+        "edit": "CSV-Schema bearbeiten"
+      },
+      "optional": "Optional",
+      "preprocessing": {
+        "edit_disabled": "Um die Optionen für die Vorverarbeitung anzupassen, musst Du die CSV-Datei erneut hochladen.",
+        "empty_lines": {
+          "explanation": "Überspringe Zeilen, die nur Trennzeichen, aber keine Werte enthalten.",
+          "label": "Leere Zeilen überspringen"
+        },
+        "headerless": {
+          "explanation": "Spaltenkopfzeilen werden mit A, B, C usw. beschriftet.",
+          "label": "Spaltenkopfzeile hinzufügen"
+        },
+        "skip_lines_containing": {
+          "add_string": "String hinzufügen",
+          "explanation": "Überspringe Zeilen mit Werten, die in mindestens einem der hinzugefügten Strings enthalten sind.",
+          "label": "Überspringe die Zeile(n) mit:",
+          "or": "oder"
+        },
+        "skip_starting_lines": {
+          "explanation": "Überspringe die angegebenen Zeilen von oben beginnend.",
+          "label": "Überspringe die erste(n) <input /> Zeile(n)"
+        },
+        "title": "Vorverarbeitungsoptionen"
+      },
+      "mapping_mode": {
+        "modal": {
+          "cancel": "Zurück zum Bearbeiten",
+          "content": "Du bist dabei, das CSV-Schema mit einer anderen Zuordnungsmethode zu speichern.",
+          "title": "CSV-Zuordnungsmethode ändern?",
+          "warning": {
+            "overwriting": "Dein aktuelles CSV-Schema wird überschrieben.",
+            "restoring": "Du kannst das vorherige CSV-Schema nicht wiederherstellen."
+          }
+        },
+        "toggle": {
+          "label": "Spaltenzuordnung über SQL-Abfrage",
+          "tooltip": "Verwende diese Option, wenn du von deiner ACD keine CSV-Dateien mit den untenstehenden Spaltennamen erhältst."
+        }
+      },
+      "query": {
+        "input": {
+          "explanation": "Erfahre mehr im <explanationTarget>Help Center</explanationTarget>.",
+          "label": "SQL-Abfrage",
+          "required": "Gib eine SQL-Abfrage ein.",
+          "explanationLinkTarget": "https://help.injixo.com/add-csv-integration#map-the-columns-sql-query"
+        }
+      },
+      "test": {
+        "action": "Zuordnung testen",
+        "result": {
+          "hint": "Bitte überprüfe in der Vorschau, dass Spalten desselben Datentyps (z. B. Eingehende und Angenommene) nicht vertauscht sind. Erfahre mehr im <explanationTarget>Help Center</explanationTarget>.",
+          "preview": {
+            "label": "Vorschau der Spaltenzuordnung"
+          },
+          "tagline": "Keine Probleme gefunden",
+          "title": "Testergebnis"
+        },
+        "unknown_error": "Die Zuordnung konnte nicht getestet werden."
+      },
+      "reupload_required_info": {
+        "label": "Um das Spaltentrennzeichen oder die Vorverarbeitungsoptionen zu ändern, lade die CSV-Datei erneut hoch."
+      }
+    },
+    "errors": {
+      "empty_file": "Die Datei ist leer.",
+      "end_time_before_start_time": "Endzeit darf nicht vor Startzeit liegen.",
+      "error_on_line": "Fehler in Zeile {{line_number}}:",
+      "excessive_data": "Daten von mehr als einem Jahr werden nicht unterstützt.",
+      "file_too_large": "Die Datei, die Du versucht hast hochzuladen, ist zu groß. Die maximale Größe beträgt 7MB.",
+      "invalid_channel": "Nicht unterstützter Kanal.",
+      "invalid_date_format": "Ungültiges Datumsformat.",
+      "invalid_date_or_time_format": "Ungültiges Datums- oder Zeitformat.",
+      "invalid_duration_cdr": "Der Kundenkontakt wird als bearbeitet angegeben, hat aber keine Dauer.",
+      "invalid_end_of_line": "Verwende innerhalb einer Datei konsistente Zeilenende-Zeichen (EOL Zeichen).",
+      "invalid_handled_cdr": "Das betroffene Feld muss entweder 0 oder 1 enthalten.",
+      "invalid_headers": "Fehlende oder falsch geschriebene Spalten in der Kopfzeile.",
+      "invalid_number": "Überprüfe die Formate der numerischen Werte.",
+      "invalid_row_length": "Die Anzahl der Felder in dieser Zeile stimmt nicht mit der Anzahl der Felder in der Kopfzeile überein.",
+      "invalid_separator": "Ungültiger Separator.",
+      "invalid_time_format": "Ungültiges Zeitformat.",
+      "invalid_timestamp": "Ungültiger Zeitstempel basierend auf der Intervalllänge.",
+      "invalid_year": "Das Jahr darf nicht vor 1970 liegen.",
+      "missing_activity": "Fehlende Aktivitäten-Kennung.",
+      "missing_agent": "Fehlende Agenten-Kennung.",
+      "missing_queue": "Fehlender Queue-Name.",
+      "negative_number": "Negative Zahlen sind nicht erlaubt.",
+      "non_existing_timestamp": "Die angegebene lokale Zeit stellt keinen existierenden Zeitstempel dar.",
+      "number_too_big": "Die Zahl ist zu groß.",
+      "string_too_long": "Kürze den Wert auf 255 Zeichen.",
+      "unexpected": "Ein unerwarteter Fehler ist aufgetreten.",
+      "unknown_error": "Ein unbekannter Fehler ist aufgetreten.",
+      "invalid_time_range": "Die Daten überschreiten den maximal zulässigen Zeitraum von 10 Jahren."
+    }
+  },
+  "external_system": {
+    "database": {
+      "model_display_name": "Datenbank"
+    }
+  },
+  "overview": {
+    "page_title": "Aktuelle Integrationen"
+  },
+  "setup": {
+    "controls": {
+      "cancel": "Abbrechen"
+    }
+  },
+  "module": "Integrationen"
+}

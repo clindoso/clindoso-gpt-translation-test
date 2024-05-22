@@ -1,0 +1,309 @@
+{
+  "roles_overview": {
+    "page_title": "Rollen",
+    "search_role": "Suche nach Rollen",
+    "category_change_failed": "Das Ändern der Rollenkategorie ist fehlgeschlagen.",
+    "description": "Rollen mit ähnlichen Berechtigungen werden in Kategorien gruppiert, z. B. in die Kategorie <0> Planer</0> . Rollen erhalten Berechtigungen für neue injixo-Funktionalitäten automatisch und abhängig von ihrer Rollenkategorie.<br>Rollen in der Kategorie <0> Sonstige</0> erhalten keine Standardberechtigungen für neue Funktionalitäten.<br> Erfahre mehr im <1>Help Center</1>.",
+    "heading": "Rollen",
+    "link_to_docs": "https://help.injixo.com/de/user-roles-in-detail/",
+    "section": "Überblick"
+  },
+  "user_details": {
+    "save": "Speichern",
+    "create": "Erstellen",
+    "show_iwfm_employee": "In WFM anzeigen",
+    "heading": {
+      "create_user": "Benutzer erstellen",
+      "edit_user": "{{name}} bearbeiten",
+      "account": "Konto",
+      "preferences": "Einstellungen",
+      "security": "Sicherheit",
+      "role_assignment": "Rolle(n) zuweisen",
+      "object_permissions": "Objektrechte verwalten"
+    },
+    "2fa_disabled": "2FA deaktiviert",
+    "2fa_enabled": "2FA aktiviert",
+    "change_email": "Ist diese E-Mail-Adresse falsch? <0>Ändern</0>",
+    "confirm_email": "Du musst Deine E-Mail-Adresse bestätigen um fortzufahren.",
+    "creating": "Erstellt",
+    "delete": "Löschen",
+    "delete_modal": {
+      "confirmation": "Ich habe verstanden, dass der Benutzer <0>{{name}}</0> und die dazugehörigen Plandaten gelöscht werden.",
+      "description": "Dieser Schritt kann nicht rückgängig gemacht werden. Der Benutzer <0>{{name}}</0> und seine Planungsdaten werden endgültig gelöscht.",
+      "end_staff_membership": {
+        "description": "Um den Benutzer <0>{{name}}</0> von injixo auszuschließen und nicht mehr abzurechnen, beende die Betriebszugehörigkeit mit einem Enddatum. Sämtliche Plandaten bleiben hierbei erhalten.",
+        "heading": "Betriebszugehörigkeit beenden",
+        "view": "Betriebszugehörigkeit"
+      },
+      "title": "Benutzer löschen",
+      "confirmation_skills_lms": "I understand that the user record for <0>{{name}}</0> will be deleted and training history anonymized.",
+      "description_skills_lms": "This action cannot be undone. The user <0>{{name}}</0> will be deleted from your Account section and also deactivated and anonymized in the learning management system (LMS) enrollment and reporting sections.",
+      "title_skills_lms": "Delete / deactivate user"
+    },
+    "deleting": "Löscht",
+    "email_not_verified": "Diese E-Mail Adresse wurde noch nicht bestätigt.",
+    "employment_period_expired": "Dieser Benutzer kann sich nicht anmelden, weil keine aktuell gültige Betriebszugehörigkeit besteht.",
+    "field": {
+      "admin": {
+        "checkbox": "Admin-Zugriff gewähren",
+        "heading": "Admin-Zugriff",
+        "hint": "Administratoren haben vollen Zugriff auf alle Funktionalitäten von injixo. Nur Administratoren können diese Einstellung ändern.",
+        "label": "injixo-Vollzugriff"
+      },
+      "email": "E-Mail",
+      "enforce2fa": "Zur 2FA-Aktivierung verpflichten",
+      "enforce2fa_tooltip": "Der Benutzer muss bei der nächsten Anmeldung 2FA aktivieren.",
+      "firstName": "Vorname",
+      "language": {
+        "label": "Sprache",
+        "no_result": "Keine Sprache gefunden",
+        "placeholder": "Sprache auswählen..."
+      },
+      "lastName": "Nachname",
+      "locked": {
+        "hint": "Der Benutzer ist wegen mehrfacher, fehlerhafter Eingabe des Passworts gesperrt.",
+        "label": "Benutzer gesperrt",
+        "unlock": "Benutzer entsperren",
+        "unlocking": "Entsperrt"
+      },
+      "password": {
+        "hint": "Der Benutzer kann sein Passwort zu einem späteren Zeitpunkt noch ändern.",
+        "label": "Passwort",
+        "set_password": "Neues Passwort setzen"
+      },
+      "sendMail": {
+        "details": "Die E-Mail enthält Hinweise zum Setzen des eigenen Passwortes und für die erste Anmeldung.",
+        "label": "Neuen Benutzer per E-Mail benachrichtigen",
+        "sso_enforced_details": "Die E-Mail enthält Hinweise für die erste Anmeldung."
+      },
+      "timeZone": {
+        "label": "Zeitzone",
+        "no_result": "Keine Zeitzone gefunden",
+        "placeholder": "Zeitzone auswählen..."
+      },
+      "object_permission": {
+        "full_access": "Vollzugriff",
+        "label": "Objektrechte wählen",
+        "no_access": "Kein Zugriff",
+        "no_result": "Keine passenden Berechtigungen gefunden",
+        "placeholder": "Objektrechte auswählen..."
+      },
+      "user_principal_name": {
+        "hint": "Gib nur den Benutzerprinzipalnamen (User Principal Name, UPN) ein, wenn die E-Mail zur Anmeldung bei injixo vom UPN des Identity Providers abweicht.",
+        "label": "Benutzerprinzipalname",
+        "unique": "Gib einen Benutzerprinzipalnamen ein, der noch nicht in diesem Tenant verwendet wird."
+      }
+    },
+    "saving": "Speichert",
+    "success_modal": {
+      "ok": "Okay"
+    },
+    "title": "Benutzer",
+    "unsaved_changes_modal": {
+      "iwfm": {
+        "hint": "Du bist dabei zu <0>WFM Mitarbeiter</0> zu wechseln. Dort kannst du zusätzliche Berechtigungen für Produkte und Features wie SchedulePro oder ForecastPro vergeben.",
+        "title": "WFM-Mitarbeiter"
+      },
+      "set_password": {
+        "hint": "Du bist dabei zu der \"Passwort setzen\"-Seite zu wechseln. Dort kannst du ein neues Passwort für <0>{{name}}</0> setzen."
+      },
+      "object_access": {
+        "hint": "Du bist dabei zu der Seite <0>Neue Objektrechte</0> zu wechseln. Dort kannst du zusätzliche Berechtigungen für Objekte vergeben.",
+        "title": "Neue Objektrechte"
+      }
+    },
+    "user_creation_failed": "Der Benutzer konnte nicht erstellt werden.",
+    "user_creation_successful": "Benutzer erfolgreich erstellt.",
+    "user_deletion_failed": "Das Löschen des Benutzers ist fehlgeschlagen.",
+    "user_deletion_successful": "Benutzer wurde erfolgreich gelöscht.",
+    "user_locked": "Benutzer gesperrt",
+    "user_unlock_failed": "Das Entsperren des Benutzers ist fehlgeschlagen.",
+    "user_update_failed": "Der Benutzer konnte nicht gespeichert werden.",
+    "user_update_successful": "Der Benutzer wurde erfolgreich aktualisiert.",
+    "validation": {
+      "email": "Gib eine E-Mail-Adresse ein, z. B. mail@test.com.",
+      "max": "Die Eingabe darf nicht länger als {{max}} Zeichen sein.",
+      "required": "Das Feld darf nicht leer sein.",
+      "unique": "Die Eingabe ist schon vergeben."
+    },
+    "verify_email": "Klicke in der E-Mail, die wir an <0>{{email}}</0> gesendet haben, auf den Bestätigungslink.",
+    "create_object_group": "Neue Objektrechte",
+    "information": {
+      "sso": {
+        "password_hint": "Passwörter werden in Deinem Identify Provider verwaltet."
+      },
+      "sso_activated": "Single Sign-On ist aktiviert",
+      "sso_enforced": "Um auf injixo zuzugreifen muss der Nutzer entsprechende Berechtigungen im Identity Provider haben."
+    },
+    "return_to_overview": "Zurück zu Benutzer",
+    "banner-message": "Wechsele zu <PeopleLink>People</PeopleLink>, Deinem neuen Zuhause für alle Benutzerverwaltungsfunktionen! Jetzt mit einer modernen Oberfläche, einschließlich Rollenverwaltung, Admin-Zugang und verbesserter Sicherheit.",
+    "banner-message-deprecation": "Diese Funktionen sind bald nur noch in People verfügbar.",
+    "return_to_people": "Return to people"
+  },
+  "two_factor": {
+    "title": "Zwei-Faktor-Authentifizierung",
+    "enabled": "Aktiviert",
+    "disabled": "Deaktiviert",
+    "enforced": "Der Benutzer muss bei der nächsten Anmeldung 2FA aktivieren.",
+    "enabled_and_enforced": "Aktivierung verpflichtend und aktiviert",
+    "disable": "2FA deaktivieren",
+    "disabling": "Deaktiviert",
+    "disabling_failed": "2FA konnte nicht deaktiviert werden."
+  },
+  "password_strength": {
+    "none": "Kein Passwort",
+    "strong": "Starkes Passwort",
+    "sufficient": "Durchschnittliches Passwort",
+    "weak": "Schwaches Passwort"
+  },
+  "role_list": {
+    "other": "Sonstige",
+    "create_role": "Eine Rolle in der Rollenkategorie {{category}} erstellen"
+  },
+  "set_password": {
+    "cancel": "Abbrechen",
+    "description": "Bitte informiere den Benutzer über das neue Passwort. Es gibt keine automatische Benachrichtigung.",
+    "failure": "Das Setzen des Passworts ist fehlgeschlagen.",
+    "label": "Passwort",
+    "save": "Speichern",
+    "saving": "Speichert",
+    "strength_hint": "Ein starkes Passwort besteht aus mindestens 8 Zeichen, aus Groß- und Kleinbuchstaben, Ziffern und Sonderzeichen.",
+    "success": "Neues Passwort erfolgreich gesetzt. <0>Zurück</0>",
+    "title": "Neues Passwort für {{name}}"
+  },
+  "unsaved_changes_modal": {
+    "cancel": "Abbrechen",
+    "error": "Du kannst nicht fortfahren solange das Formular Fehler enthält.",
+    "hint": "Deine ungespeicherten Änderungen werden beim Fortfahren gespeichert.",
+    "save_and_continue": "Speichern und fortfahren"
+  },
+  "users_overview": {
+    "role_filter": {
+      "search_roles": "Suche nach Rollen",
+      "all_roles": "Alle Rollen"
+    },
+    "billed_users": "Abgerechnete Benutzer",
+    "column": {
+      "2fa": "2FA",
+      "email": "E-Mail",
+      "name": "Name",
+      "roles": "Rollen"
+    },
+    "create_user": "Benutzer erstellen",
+    "export_csv": "Als CSV exportieren",
+    "exporting": "Exportieren",
+    "heading": "Benutzer",
+    "import_csv": "Aus CSV importieren",
+    "loading_users_failed": "Fehler beim Laden der Benutzer.",
+    "search_placeholder": "Suche nach Namen und E-Mail-Adressen",
+    "title": "Benutzer",
+    "tooltip": {
+      "email_unverified": "Der Benutzer hat seine E-Mail-Adresse bisher nicht bestätigt.",
+      "locked": "Der Benutzer ist gesperrt. Klicke hier und gehe zu den Benutzerdetails. Der Benutzer kann dort entsperrt werden."
+    },
+    "unbilled_users": "Nicht abgerechnete Benutzer",
+    "unbilled_users_hint": "Die Betriebszugehörigkeit dieser Benutzer besteht nicht mehr. Sie können sich nicht anmelden und werden nicht abgerechnet."
+  },
+  "objectgroup_overview": {
+    "heading": "Objektrechte",
+    "section": "Überblick",
+    "description": "Um den Zugriff eines Nutzers auf bestimmte Objekte in injixo zu beschränken, kannst Du Objektrechte erstellen. Darin werden alle erlaubten Objekte wie z.B. bestimmte Dashboards gruppiert. Ein Benutzer kann entweder „Vollzugriff“ erhalten oder der Zugriff wird mithilfe der definierten Objektrechte eingeschränkt.",
+    "create": "Erstellen",
+    "title": "Objektrechte",
+    "edit": "Bearbeiten",
+    "is_restricted": "Zugriff eingeschränkt",
+    "object_group_count": "Zugewiesene Benutzer: <0>{{count}}</0>"
+  },
+  "objectgroup_details": {
+    "heading": {
+      "create": "Neue Objektrechte",
+      "basic_information": "Allgemeine Informationen",
+      "permissions": "Zugriffsberechtigte Objekte",
+      "edit": "Objektrechte bearbeiten"
+    },
+    "name": "Name",
+    "description": "Beschreibung",
+    "validation": {
+      "unique": "Die Eingabe ist schon vergeben.",
+      "required": "Das Feld darf nicht leer sein."
+    },
+    "creation_failed": "Fehler beim Erstellen der Objektrechte.",
+    "creation_successful": "Objektrechte \"{{name}}\" erstellt.",
+    "optional": "Optional",
+    "creating": "Erstellt",
+    "create": "Erstellen",
+    "objects": {
+      "restrict_access": "Zugriff einschränken",
+      "access_info": "Berechtigte Benutzer haben Zugriff auf die gewählten Elemente",
+      "search": "Elemente suchen...",
+      "selected": "{{selected}}/{{total}} ausgewählt",
+      "full_access": "Vollzugriff auf alle bestehenden und zukünftigen Elemente",
+      "go_to_iwfm": "Gehe zu Benutzerrollenrechte",
+      "iwfm_description": "Gehe zur Ansicht Benutzerrollenrechte, um Berechtigungen für andere Objekte zu finden.",
+      "iwfm_heading": "Objekt nicht gefunden?",
+      "iwfm_path": "Auch zugänglich über WFM <0 /> Administration <0 /> System <0 /> Benutzerrollenrechte"
+    },
+    "page_title": "Objektrechte - {{name}}",
+    "saving": "Speichert",
+    "save": "Speichern",
+    "update_failed": "Fehler beim Aktualisieren der Objektrechte.",
+    "update_successful": "Die Objektrechte wurden erfolgreich aktualisiert.",
+    "return_to_overview": "Zurück zu Objektrechte",
+    "object_group_count": "Zugewiesene Benutzer: {{count}}",
+    "delete_disabled_tooltip": "Die Objektrechte können erst gelöscht werden, nachdem alle zugewiesenen Benutzer entfernt wurden.",
+    "delete": "Löschen",
+    "delete_modal": {
+      "description": "Bist Du Dir sicher, dass Du „<0>{{name}}</0>“ löschen möchtest? Diese Aktion kann nicht rückgängig gemacht werden.",
+      "title": "Objektrechte löschen"
+    },
+    "deleting": "Lösche",
+    "objectgroup_deletion_failed": "Fehler beim Löschen der Objektrechte.",
+    "objectgroup_deletion_successful": "„{{name}}“ wurde gelöscht.",
+    "unsaved_changes_modal": {
+      "iwfm": {
+        "hint": "Du bist dabei, zu <0>Benutzerrollenrechte</0> zu wechseln. Vergib dort Berechtigungen für andere Objekte.",
+        "title": "Gehe zu Benutzerrollenrechte"
+      }
+    }
+  },
+  "back": "Zurück",
+  "cancel": "Abbrechen",
+  "document_title": {
+    "module": "Account",
+    "context": {
+      "users": {
+        "title": "Benutzer",
+        "page": {
+          "overview": "Übersicht",
+          "create": "Benutzer erstellen",
+          "edit": "Benutzer bearbeiten"
+        }
+      },
+      "user_roles": {
+        "title": "Rollen",
+        "page": {
+          "overview": "Übersicht",
+          "create": "Rolle erstellen",
+          "edit": "{{name}} bearbeiten"
+        }
+      },
+      "object_access": {
+        "title": "Objektrechte",
+        "page": {
+          "overview": "Übersicht",
+          "create": "Neue Objektrechte",
+          "edit": "{{name}} bearbeiten"
+        }
+      }
+    }
+  },
+  "admin": "Admin",
+  "objectgroups_overview": {
+    "search_object_group": "Objektrechte durchsuchen..."
+  },
+  "role_details": {
+    "access_type": {
+      "edit_agent_status": "Agentenstatus bearbeiten"
+    }
+  }
+}

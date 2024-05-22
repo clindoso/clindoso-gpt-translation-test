@@ -1,0 +1,187 @@
+{
+  "button": {
+    "back-to-overview": "Terug naar overzicht",
+    "back-to-schedules": "Terug naar Schedules",
+    "delete-schedules_one": "Item verwijderen",
+    "delete-schedules_other": "Items verwijderen",
+    "set-up-new-extra-activity": "Nieuwe extra activiteit instellen"
+  },
+  "connection": {
+    "offline": "De verbinding kon niet worden hersteld. Probeer over een paar minuten opnieuw te laden.",
+    "reconnecting": "De verbinding is verbroken. We proberen de verbinding automatisch te herstellen."
+  },
+  "document_title": {
+    "context": {
+      "schedules": {
+        "page": {
+          "new": "Nieuwe Extra Activiteit",
+          "overview": "Extra Activiteiten",
+          "results": "Extra Activiteiten Resultaten",
+          "suggestions": "Extra Activiteiten Suggesties"
+        },
+        "title": "Schedules"
+      }
+    },
+    "module": "Plan"
+  },
+  "dropdown": {
+    "minimum-session-duration": "{{minutes}} minuten"
+  },
+  "error": {
+    "extra-activities-request": "Aanvragen van extra activiteiten is mislukt",
+    "incomplete-form": "De gegevens zijn onvolledig. Zorg ervoor dat alle gemarkeerde velden gecorrigeerd worden."
+  },
+  "heading": {
+    "employee-table": "Medewerkerstabel",
+    "initial": "Extra activiteiten plannen",
+    "proposal-page": "Extra activiteiten inplannen - Suggesties",
+    "proposal-view": "{{scheduledHours}} /{{requestedHours}} arbeidsuren worden voorgesteld, {{selectedHours}} arbeidsuren worden ingepland",
+    "results-page": "Extra activiteiten inplannen - Resultaten",
+    "scheduling-history": "Planning geschiedenis"
+  },
+  "helper-text-for-setting": {
+    "activity-selection": "De extra activiteit kan alleen een \"Betaalde\" activiteit zijn van het type \"Aanwezigheid\".",
+    "date-range": "Standaard is dit bereik ingesteld op de volgende maandag-zondag werkweek na de huidige datum. Als de huidige datum een maandag is, dan wordt deze ingesteld op de huidige maandag-zondag werkweek.",
+    "distribute-staff-hours-evenly": "Als deze optie is aangevinkt, wordt het aantal arbeidsuren bij de optimalisatie zo gelijkmatig mogelijk over de medewerkers verdeeld. Wees je ervan bewust dat dit kan leiden tot een iets slechtere dekking.",
+    "employee-selection": "Standaard is dit de volledige lijst van medewerkers binnen de geselecteerde eenheid. Je kunt de groep medewerkers verder verfijnen door een groep of een medewerkersfilter te kiezen vanuit de juiste dropdown. Je kunt alleen medewerkers selecteren die de vereiste kwalificaties voor de extra activiteit hebben.",
+    "number-of-staff-hours": "Het aantal arbeidsuren moet een getal zijn dat groter is dan of gelijk is aan de gekozen minimumduur en dat deelbaar is door het interval van de geselecteerde eenheid."
+  },
+  "helper-text": {
+    "delete-schedules_one": "Het geselecteerde item wordt uit de tabel verwijderd. Eventuele geplande extra activiteiten worden niet beïnvloed.",
+    "delete-schedules_other": "De geselecteerde items worden uit de tabel verwijderd. Eventuele geplande extra activiteiten worden niet beïnvloed."
+  },
+  "label": {
+    "activity": "Te plannen extra activiteit",
+    "aria-enhancement": {
+      "button": "knop",
+      "delete-entries": "Items verwijderen",
+      "dropdown": "dropdown",
+      "select": "selecteren",
+      "select-all": "alles selecteren"
+    },
+    "button": {
+      "cancel": "Annuleren",
+      "generate-suggestions": "Suggesties genereren",
+      "schedule-extra-activity": "Extra activiteit inplannen"
+    },
+    "coverage-disclaimer": "De dekking werd berekend bij het opstellen van dit voorstel. De waarden worden niet automatisch bijgewerkt. Als de activiteit meerdere intervallen beslaat, wordt voor elk interval een waarde weergegeven.",
+    "date-range": "Datumbereik",
+    "distribute-staff-hours-evenly": "Arbeidsuren gelijkmatig verdelen over de medewerkers",
+    "employee-section": {
+      "employee-filter": "Medewerkersfilter",
+      "selection": "Groep"
+    },
+    "form-error": {
+      "no-participants": "Geen medewerkers geselecteerd. Selecteer ten minste één medewerker om extra activiteiten te plannen."
+    },
+    "heading": {
+      "employees": "Medewerkers ({{amountSelected}}/{{amountTotal}} geselecteerd)",
+      "extra-activities": "Extra activiteiten plannen - Nieuwe extra activiteit instellen",
+      "scheduling-info": "Conflict weergeven",
+      "settings": "Instellingen"
+    },
+    "minimum-session-duration": "Minimumduur van de activiteit",
+    "no-employees": {
+      "caption": "Geen medewerkers",
+      "empty-planning-unit": "Je kunt geen extra activiteiten plannen, omdat er geen medewerkers zijn voor de geselecteerde eenheid.",
+      "empty-planning-unit-and-employee-filter": "Je kunt geen extra activiteiten plannen, omdat er geen medewerkers zijn voor de geselecteerde eenheid en medewerkersfilter.",
+      "empty-planning-unit-and-selection": "Je kunt geen extra activiteiten plannen, omdat er geen medewerkers zijn voor de geselecteerde eenheid en groep.",
+      "no-planning-unit": "Je kunt geen extra activiteiten plannen, omdat er geen eenheid is geselecteerd."
+    },
+    "no-entries": "Geen gegevens",
+    "no-scheduling-results": {
+      "details": "Plan extra activiteiten om de status en suggesties van de optimalisatie hier te zien.",
+      "heading": "Geen extra activiteiten gepland"
+    },
+    "number-of-staff-hours": "Totaal aantal te plannen arbeidsuren",
+    "results-status": {
+      "excluded": "Uitgesloten",
+      "execution-error": "Er was een fout bij het schrijven van de extra activiteit naar de planning van de medewerker, waardoor deze niet kon worden ingepland.",
+      "failed": "Mislukt",
+      "scheduled": "Gepland",
+      "staff-hours_one": "{{count}} arbeidsuur",
+      "staff-hours_other": "{{count}} arbeidsuren"
+    },
+    "scheduling-status": {
+      "error": "Inplannen is mislukt. Probeer het nog eens.",
+      "error_with_info": "Niet mogelijk",
+      "execution_error": "Het inplannen is mislukt. Probeer het nog eens.",
+      "proposed": "Beschikbare suggesties",
+      "scheduling": "Planning in uitvoering...",
+      "written": "Ingeplande extra activiteit"
+    }
+  },
+  "link": {
+    "proposed": "Suggesties weergeven",
+    "view-schedule": "Bekijk rooster",
+    "written": "Resultaten weergeven"
+  },
+  "message": {
+    "introduction": "Definieer een bepaald aantal arbeidsuren en vervang bestaande activiteiten door extra activiteiten zoals chat, e-mail of backoffice. Ga voor meer informatie naar het <0>Help Center</0>.",
+    "introduction-docs-link": "https://help.injixo.com/schedules-extra-activities/"
+  },
+  "notification": {
+    "failure": {
+      "general": "Er is een fout opgetreden. Probeer het later nog eens."
+    },
+    "form-error": {
+      "no-schedule-entry-selected": "Er is geen suggestie geselecteerd. Selecteer er minstens één."
+    },
+    "warning": {
+      "information": "Niet alle arbeidsuren die ingepland moeten worden, kunnen worden toegewezen.",
+      "reason": "Reden:",
+      "reason-text": "De geselecteerde medewerkers hebben niet genoeg vervangbare betaalde activiteiten van het type aanwezigheid in hun rooster. ",
+      "solution": "Mogelijke oplossing",
+      "solution-text": "Start het proces vanaf het begin als je extra arbeidsuren wilt inplannen."
+    }
+  },
+  "placeholder": {
+    "dropdown": "Zoek of selecteer"
+  },
+  "popup": {
+    "timezone-helper": "De datum- en tijdgegevens hebben betrekking op de tijdzone van de eenheid."
+  },
+  "scheduling-info": {
+    "not-possible": {
+      "reason": "Het was niet mogelijk om tijdvakken te vinden voor de geselecteerde medewerkers. Deze medewerkers hebben te weinig vervangbare activiteiten van het type aanwezigheid in hun rooster of de opgegeven minimumduur van de tijdvakken is te lang."
+    },
+    "not-solved": {
+      "reason": "Het berekenen van de optimale suggesties voor de gevraagde extra activiteiten is te complex en kon niet binnen de gestelde tijdslimiet worden verwerkt. Je kan proberen om minder medewerkers te selecteren of een kleiner datumbereik."
+    }
+  },
+  "suitable-activities-info": {
+    "hint": "Sommige medewerkers zijn niet selecteerbaar omdat ze de vereiste kwalificatie(s) voor de geselecteerde activiteit niet hebben."
+  },
+  "table": {
+    "column": {
+      "activity-to-schedule": "Te plannen extra activiteit",
+      "date-range": "Datumbereik",
+      "employee": "Medewerker",
+      "employee-name": "Naam",
+      "extra-activity": "Extra activiteit",
+      "information": "Informatie",
+      "initiated-on": "Geïnitieerd op",
+      "planning-unit": "Eenheid",
+      "replaced-activity": "Vervangen activiteit",
+      "resulting-coverage": "Resulterende dekking",
+      "scheduled-time-slot": "Gepland tijdvak",
+      "status": "Status",
+      "time-slot": "Voorgesteld tijdstip",
+      "user": "Gebruiker"
+    }
+  },
+  "validation": {
+    "activity": {
+      "required": "Selecteer een activiteit"
+    },
+    "number-of-staff-hours": {
+      "has-more-than-two-decimal-places": "Voer een getal in met max. 2 cijfers achter de komma.",
+      "min": "Voer een getal in dat groter is dan of gelijk is aan de geselecteerde minimumduur.",
+      "required": "Voer een getal in dat groter is dan of gelijk is aan de geselecteerde minimumduur.",
+      "type-error": "Voer een getal in dat groter is dan of gelijk is aan de geselecteerde minimumduur."
+    },
+    "planning-unit": {
+      "required": "Selecteer een eenheid"
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "application": {
+    "title": "Derecho de vacaciones",
+    "backToTimeOff": "Volver a Permisos"
+  },
+  "options": {
+    "button": {
+      "export": "Exportar a CSV",
+      "transfer": "Transferir el derecho de vacaciones"
+    }
+  },
+  "filters": {
+    "label": {
+      "planningUnit": "Unidad de planificación",
+      "selection": "Grupo",
+      "year": "Año",
+      "search": "Buscar"
+    },
+    "placeholder": {
+      "planningUnit": "Elegir unidad de planificación",
+      "selection": "Elegir grupo",
+      "year": "Elegir año",
+      "search": "Usa comas para separar los nombres"
+    },
+    "result": {
+      "noResult": "No hay resultados"
+    }
+  },
+  "entitlementsTable": {
+    "label": {
+      "personnelNumber": "Número de empleado",
+      "employeeName": "Nombre",
+      "contract": "Contrato",
+      "remainCurrentYear": "Restantes del año actual",
+      "remainLastYear": "Restantes del año anterior",
+      "currentYear": "Año actual",
+      "takenRatio": "Vacaciones tomadas",
+      "takenRatioPercent": "Vacaciones tomadas {{percent}}%"
+    },
+    "result": {
+      "loading": "Cargando",
+      "noEmployeesFound": "No se encontraron empleados/as.",
+      "noPlanningUnitsFound": "Sin unidad de planificación disponibles."
+    }
+  },
+  "transferModal": {
+    "text": {
+      "description": "The remaining vacation entitlement for the current selection will be transferred",
+      "from": "Desde",
+      "to": "Hasta"
+    },
+    "button": {
+      "transfer": "Transferir",
+      "cancel": "Cancelar"
+    },
+    "transferSuccess": "Derecho de vacaciones correctamente transferido a {{nextYear}}"
+  },
+  "error": {
+    "fetchingEntitlements": "Ha ocurrido un error (Recurso: Derecho de vacaciones)",
+    "fetchingVacations": "Ha ocurrido un error (Recurso: Vacaciones tomadas)",
+    "fetchingPlanningUnits": "Ha ocurrido un error (Recurso: Unidad de planificación)",
+    "fetchingSelections": "Ha ocurrido un error (Recurso: Grupo)",
+    "fetchingEmployees": "Ha ocurrido un error (Recurso: Empleados)",
+    "fetchingAccessRights": "Ha ocurrido un error (Recurso: Derechos de acceso)",
+    "transferEntitlements": "Ha ocurrido un error (Recurso: Transferir el derecho de vacaciones)",
+    "savingEntitlements": "Ha ocurrido un error (Recurso: Derecho de vacaciones) - Detalles:",
+    "exportCsv": "Ha ocurrido un error (Recurso: Exportar a CSV)"
+  },
+  "document_title": {
+    "module": "Plan",
+    "sub_module": "Derecho de vacaciones"
+  }
+}

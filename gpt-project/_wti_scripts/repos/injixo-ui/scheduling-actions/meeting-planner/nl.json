@@ -1,0 +1,526 @@
+{
+  "label": {
+    "planning-unit": "Eenheid",
+    "button": {
+      "add_availability": "Voeg dag en tijdspanne toe",
+      "proposal": "Suggesties genereren",
+      "create-new-1on1": "Opzetten van nieuwe 1:1-vergaderingen",
+      "back-to-main": "Terug naar overzicht",
+      "cancel": "Annuleren",
+      "meeting-proposal": "Suggesties voor meetings genereren"
+    },
+    "day": "Dag",
+    "heading": {
+      "employee-section": "Deelnemers ({{amountSelected}}/{{amountTotal}} geselecteerd)",
+      "configure-meeting-participants": "De vergadering wordt gepland tussen:",
+      "meeting-host": "Organisator van de vergadering",
+      "one-on-one-meeting": "Opzetten van 1:1-vergaderingen",
+      "participant": "Deelnemer",
+      "participant-selection": "Plan individuele 1:1-vergaderingen met",
+      "settings": "Instellingen",
+      "available-proposals": "Gegenereerde suggesties",
+      "configure-group-meetings-participants": "Groepsvergaderingen worden ingepland tussen",
+      "configure-session-participants": "Zelfstudie-sessies om in te plannen voor:",
+      "group-meeting": "Opzetten van groepsvergaderingen",
+      "group-meeting-card": "Groepsvergaderingen",
+      "group-meetings-host-selection": "Definieer de beschikbaarheid van de organisator van de vergadering",
+      "group-meetings-participant-selection": "Deelnemers aan groepsvergaderingen toewijzen",
+      "group-meetings-results": "Resultaten - Groepsvergaderingen",
+      "one-on-one-meeting-card": "1:1-vergaderingen",
+      "one-on-one-results": "Resultaten - 1:1-vergaderingen",
+      "optional-settings": "Optionele instellingen",
+      "pending-proposals": "Suggesties worden gegenereerd",
+      "self-learning": "Opzetten van zelfstudie-sessies",
+      "self-learning-meeting-card": "Zelfstudie-sessies",
+      "self-learning-results": "Resultaten - Zelfstudie-sessies"
+    },
+    "from": "Van",
+    "loading": "Laden",
+    "no-employees": {
+      "caption": "Geen medewerkers",
+      "empty-planning-unit": "Je kunt geen vergaderingen plannen omdat er geen medewerkers zijn voor de geselecteerde eenheid.",
+      "no-planning-unit": "Je kunt geen vergaderingen plannen omdat er geen eenheid is geselecteerd.",
+      "empty-planning-unit-and-employee-filter": "Er kunnen geen vergaderingen worden ingepland omdat er geen medewerkers zijn voor de geselecteerde eenheid en medewerkersfilter.",
+      "empty-planning-unit-and-selection": "Er kunnen geen vergaderingen worden ingepland omdat er geen medewerkers zijn voor de geselecteerde eenheid en groep."
+    },
+    "no-entries": "Geen gegevens",
+    "team-leader": {
+      "availability": "Definieer de beschikbaarheid van de organisator van de vergadering"
+    },
+    "timespan": "Tijdspanne toevoegen",
+    "to": "Tot",
+    "weekday": {
+      "all_weekdays": "Maandag tot en met vrijdag",
+      "friday": "Vrijdag",
+      "monday": "Maandag",
+      "saturday": "Zaterdag",
+      "sunday": "Zondag",
+      "thursday": "Donderdag",
+      "tuesday": "Dinsdag",
+      "wednesday": "Woensdag",
+      "all_days": "Maandag tot en met zondag",
+      "monday_to_saturday": "Maandag tot en met zaterdag"
+    },
+    "meeting-type": "Te plannen activiteit",
+    "no-activities": {
+      "caption": "Geen activiteiten",
+      "details": "Je hebt geen vergaderactiviteiten voor de geselecteerde eenheid."
+    },
+    "no-data": {
+      "caption": "Het lijkt erop dat je nog niet helemaal klaar bent om de vergaderplanner te gebruiken.",
+      "details": "De vergaderplanner helpt je om het beste tijdstip te vinden in de zin van dekking en beschikbaarheid voor alle verschillende soorten vergaderingen, zoals de 1:1-vergaderingen. Om hier je vergaderingen in te kunnen plannen heb je minstens één eenheid, medewerkers, een geldige planningsperiode en vergaderactiviteiten nodig."
+    },
+    "proposed-time-span": "Voorgesteld tijdstip",
+    "with-agent": "Deelnemer",
+    "form-error": {
+      "no-participants": "Geen enkele deelnemer geselecteerd. Selecteer ten minste één deelnemer om vergaderingen te kunnen plannen."
+    },
+    "infeasible_instance": "Er zijn geen suggesties die aan de eisen voldoen.",
+    "no-meetings-proposed": "Niet mogelijk om vergaderingen voor te stellen",
+    "collapsible-content": {
+      "auto-group-meeting-error": "Door een fout kon het verzoek om suggesties niet worden voltooid. Probeer de groepsvergaderingen opnieuw op te zetten.",
+      "one-on-one-error": "Door een fout kon het verzoek voor suggesties niet worden voltooid. Probeer opnieuw een 1:1 vergadering op te zetten. ",
+      "problem": "Probleem",
+      "self-learning-error": "Door een fout kon het verzoek voor suggesties niet worden voltooid. Probeer opnieuw zelfstudie sessies op te zetten. "
+    },
+    "collapsible-heading": "Bekijk conflict",
+    "collapsible-heading-action-request": "Vereiste actie",
+    "collapsible-heading-conflict": "Bekijk conflict",
+    "collapsible-heading-error": "Fout weergeven",
+    "action-request": {
+      "host-written-but-employee-participants-failed": "De vergadering is in het rooster van de organisator gezet, maar kon niet worden ingepland (zie de conflicten voor de deelnemers). De vergadering dient handmatig te worden verwijderd uit het rooster van de organisator en probeer een nieuwe vergadering op te zetten voor de betrokken deelnemers.",
+      "host-written-but-participant-failed": "De vergadering is weggeschreven naar het rooster van de organisator, maar kon niet worden ingepland (zie het conflict voor de deelnemer). Je dient handmatig de vergadering te verwijderen uit het rooster van de organisator van de vergadering en te proberen een nieuwe vergadering op te zetten voor de betreffende deelnemer."
+    },
+    "activity": "Te plannen activiteit",
+    "aria-enhancement": {
+      "input": "invoer",
+      "dropdown": "dropdown"
+    },
+    "conflict-message": {
+      "all-participants-failed-warning": "Er is een fout opgetreden tijdens het wegschrijven van de vergadering naar het rooster van de deelnemer, waardoor de vergadering niet kon worden ingepland. Probeer een nieuwe vergadering op te zetten voor de betrokken deelnemers.",
+      "check-paid-configuration": "Controleer of de activiteiten de juiste configuratie hebben voor de eigenschap \"betaald\".",
+      "competing_employees": {
+        "intro": "Er zijn een paar medewerkers die in aanmerking komen voor dezelfde vergadertijden met de organisator van de vergadering."
+      },
+      "competing_employees_day_limit": {
+        "intro": "Er zijn niet genoeg vergadermogelijkheden voor alle medewerkers met de geconfigureerde dagelijkse vergaderlimiet."
+      },
+      "decrease-date-range": "Verklein het geconfigureerde datumbereik",
+      "decrease-gap-length": "Verlaag de vereiste buffer tussen de vergaderingen",
+      "failed-to-write-host": "Er is een fout opgetreden tijdens het wegschrijven van de vergadering voor de organisator, waardoor de vergadering niet kon worden ingepland. Je kunt proberen een nieuwe vergadering op te zetten voor de betreffende deelnemer.",
+      "host-failed-warning": "Er is een fout opgetreden tijdens het wegschrijven van de vergadering naar het rooster van de organisator, waardoor de vergadering niet kon worden ingepland. Probeer een nieuwe vergadering op te zetten voor de betrokken deelnemers.",
+      "host-written-but-participant-failed": "Er is een fout opgetreden tijdens het wegschrijven van de vergadering naar het rooster van de deelnemer, waardoor de vergadering niet kon worden ingepland.",
+      "increase-corridors": "Verhoog het aantal geconfigureerde tijdvakken",
+      "increase-daily-meeting-limit": "Verhoog het aantal maximaal mogelijke vergaderingen per dag",
+      "increase-date-range": "Datumbereik verlengen",
+      "increase-meeting-host-availibility": "De beschikbaarheid van de organisator van de vergadering uitbreiden",
+      "insufficient-distinguished-meeting-slots-for-meetings": {
+        "intro": "Er zijn niet genoeg vergadermogelijkheden om het gevraagde aantal vergaderingen met de vereiste duur in te plannen. Probeer een aantal van de volgende zaken om dit op te lossen:"
+      },
+      "insufficient-number-of-meetings-due-to-day-limit": {
+        "intro": "De dagelijkse vergaderlimiet is te laag om vergaderingen te vinden voor alle medewerkers in het gevraagde tijdsbestek."
+      },
+      "insufficient_distinguished_meeting_slots": {
+        "intro": "Er zijn niet genoeg vergadermogelijkheden om vergaderingen met de vereiste duur voor alle medewerkers te plannen. Om dit op te lossen kun je het volgende proberen:"
+      },
+      "intro": "De organisator van de vergadering heeft niet genoeg beschikbaarheid om alle gevraagde vergaderingen te dekken. Om dit op te lossen kun je het volgende proberen:",
+      "meeting-written-but-participation-failed-warning": "Er is een fout opgetreden tijdens het wegschrijven van de vergadering naar het rooster van de deelnemer. Je zou het handmatig kunnen toevoegen aan het rooster. ",
+      "no-meeting-distribution-with-gap-length": {
+        "intro": "De organisator van de vergadering heeft niet genoeg beschikbaarheid om alle gewenste vergaderingen met de vereiste buffer te dekken. Om dit op te lossen kun je het volgende proberen:"
+      },
+      "no-overwritable-activity-paid-unpaid": {
+        "intro": "Er zijn geen activiteiten in de planning die door de gekozen vergaderactiviteit kunnen worden overschreven zonder de wekelijkse netto werktijden van de medewerkers te wijzigen."
+      },
+      "not-solved": {
+        "intro": "Het berekenen van de optimale suggesties voor de gevraagde meetings is te ingewikkeld en kon niet binnen de tijdslimiet worden verwerkt. Je kan proberen om:"
+      },
+      "outro": "Zorg er ook voor dat de activiteiten die vervangen moeten worden, vervangbaar zijn.",
+      "reduce-number-of-meetings": "Verminder het aantal vergaderingen",
+      "reduce-participants": "Deelnemers verminderen",
+      "too-small-daily-meeting-limit-host": {
+        "intro": "De organisator van de vergadering is niet in staat om alle vergaderingen te organiseren binnen het gevraagde tijdsbestek met de gekozen dagelijkse vergaderlimiet."
+      }
+    },
+    "coverage-disclaimer": "De dekking werd berekend bij het opstellen van dit voorstel. De waarden worden niet automatisch bijgewerkt. Als de vergadering meerdere intervallen beslaat, wordt voor elk interval een waarde weergegeven.",
+    "coverage-threshold": "Overweeg alleen tijdstippen waarin de resulterende dekking ten minste zal zijn:",
+    "date-range-picker": "Datumbereik",
+    "employee-section": {
+      "employee-filter": "Medewerkersfilter",
+      "filter-by": "Filter op",
+      "selection": "Selectie"
+    },
+    "excluded": "Uitgesloten",
+    "failed": "Mislukt",
+    "gap-length": "Buffer",
+    "group-meeting-assignment": "Vergadering",
+    "group-meeting-info": "Meeting {{count}}",
+    "group-meeting-tabs": "Vergadering",
+    "group-meetings-proposed_zero": "0 vergaderingen zijn voorgesteld",
+    "group-meetings-proposed_one": "1 vergadering is voorgesteld",
+    "group-meetings-proposed_other": "{{count}} vergaderingen zijn voorgesteld",
+    "group-meetings-will-be-scheduled_zero": "0 geselecteerde vergaderingen zullen worden ingepland",
+    "group-meetings-will-be-scheduled_one": "1 geselecteerde vergadering zal worden ingepland",
+    "group-meetings-will-be-scheduled_other": "{{count}} geselecteerde vergaderingen zullen worden ingepland",
+    "impact-on-coverage": "Resulterende dekking",
+    "info": {
+      "group-meeting-card": "Plan vergaderingen voor groepen medewerkers met of zonder een organisator.",
+      "one-on-one-meeting-card": "Plan 1:1 vergaderingen tussen medewerkers en hun teamleider.",
+      "self-learning-meeting-card": "Plan individuele trainingen voor de medewerkers."
+    },
+    "information-for-meeting": {
+      "manually-excluded": "Handmatig uitgesloten van het inplannen"
+    },
+    "limit-meeting-number": "Beperk het aantal vergaderingen per dag tot een maximum van",
+    "limit-meetings": "Beperk het aantal vergaderingen per dag tot een maximum van:",
+    "limit-sessions": "Beperk het aantal sessies per dag voor iedere deelnemer tot maximaal:",
+    "limit-sessions-after-input": "voor iedere deelnemer",
+    "limit-sessions-before-input": "Beperk het aantal sessies per dag tot maximaal",
+    "maintenance": {
+      "caption": "We zijn op dit moment bezig met het verbeteren van Meetings",
+      "details": "Excuses voor het eventuele ongemak dat dit noodzakelijke onderhoud met zich mee kan brengen. Meetings zou binnen enkele minuten weer beschikbaar moeten zijn. Bedankt voor je geduld!"
+    },
+    "meeting-host-disclaimer": "Op dit moment worden de vergaderingen niet opgenomen in het rooster van de organisator van de vergadering.",
+    "meeting-host": {
+      "employee": "Kies medewerker",
+      "employee-helper": "Om beschikbaarheid vanuit het rooster in injixo van de organisator van de vergadering te verkrijgen.",
+      "employee-selection": "Medewerker",
+      "manually": "Voer handmatig in",
+      "manually-helper": "Als de organisator van de vergadering niet via injixo wordt ingepland.",
+      "timezone-helper": "De vermelde tijden zijn in de tijdzone van de eenheid."
+    },
+    "meeting-length": "Duur van de vergadering",
+    "meeting-limit": "Vergadering limiet",
+    "meeting-not-scheduled": "1 vergadering kon niet worden ingepland",
+    "meeting-scheduled": "1 vergadering is ingepland",
+    "meetings-not-scheduled": "{{count}} vergaderingen konden niet worden ingepland",
+    "meetings-scheduled": "{{count}} vergaderingen zijn ingepland",
+    "no-proposals": {
+      "caption": "Geen suggesties",
+      "details": "Zodra de suggesties zijn berekend, worden ze hier weergegeven."
+    },
+    "no-requests": {
+      "caption": "Geen suggesties",
+      "details": "Terwijl er suggesties worden gegenereerd, wordt je aanvraag hier weergegeven."
+    },
+    "one-on-one-gap-length": "Zorg voor een buffer tussen twee vergaderingen:",
+    "one-on-one-gap-length-after-dropdown": "tussen twee vergaderingen in",
+    "one-on-one-gap-length-before-dropdown": "Zorg voor een buffer van",
+    "one-on-one-meeting-proposed": "1 vergadering is voorgesteld",
+    "one-on-one-meeting-will-be-scheduled": "1 geselecteerde vergadering zal worden ingepland",
+    "one-on-one-meetings-proposed": "{{count}} vergaderingen zijn voorgesteld",
+    "one-on-one-meetings-will-be-scheduled": "{{count}} geselecteerde vergaderingen zullen worden ingepland",
+    "proposal-not-possible": "Niet mogelijk",
+    "proposal-pending": "Suggestie wordt gegenereerd...",
+    "replaced-activities": "Vervangen activiteit",
+    "resolvable-precheck": {
+      "affected-employees": "Getroffen medewerkers",
+      "competing-employees": {
+        "reason": "Het was niet mogelijk om een vergadering in te plannen voor deze medewerkers, omdat er conflicten waren met voorgestelde vergaderingen voor andere medewerkers."
+      },
+      "conflicts-with-other-participants": {
+        "reason": "Deze medewerkers zijn niet op het best mogelijke moment beschikbaar voor de rest van de groep.",
+        "solution": "Ken deze medewerkers toe aan een andere groep of zorg ervoor dat er een tijdvak is waarin elke deelnemer beschikbaar is."
+      },
+      "coverage-threshold-not-satisfied": {
+        "reason": "Deze medewerkers hebben geen vergaderingen omdat het niet mogelijk is om een rooster te vinden met meer vergaderingen met inachtneming van de minimale dekkingsgraad.",
+        "solution": "Nieuwe vergaderingen opzetten en de te overwegen dekkingsgraad verlagen."
+      },
+      "label": {
+        "resolvable-precheck": {
+          "competing-employees": {
+            "solution": "Probeer een vergadering te plannen voor de medewerker met de organisator van de vergadering in een groter tijdsbestek of met minder andere medewerkers."
+          }
+        }
+      },
+      "no-overwritable-paid-unpaid-slot": {
+        "reason": "Het is niet mogelijk om voor deze medewerkers een vergadering te plannen zonder hun wekelijkse netto werktijd te wijzigen.",
+        "solution": "Controleer of de configuratie van de activiteit (eigenschap: betaald) correct is. Je kan ook proberen om het tijdsbereik van je aanvraag te verlengen."
+      },
+      "no-present-activities-group-meeting": {
+        "reason": "Deze medewerkers hebben niet genoeg activiteiten van het type aanwezigheid in hun rooster om een vergadering van de gevraagde duur en tijdvenster mogelijk te maken.",
+        "solution": "Zorg ervoor dat het rooster van deze medewerkers activiteiten van het type aanwezigheid bevat, verminder de duur van de vergadering of verleng het tijdvenster."
+      },
+      "no-present-activities-overlapping-with-meeting-host": {
+        "reason": "Deze medewerkers hebben niet genoeg activiteiten van het type aanwezigheid in hun rooster die overlappen met de beschikbaarheid van de organisator.",
+        "solution": "Zorg ervoor dat het rooster van deze medewerkers activiteiten van het type aanwezigheid bevat, vergroot de beschikbaarheid van de organisator van de vergadering of verleng het tijdvenster."
+      },
+      "no-present-activities-self-learning": {
+        "reason": "Deze medewerkers hebben niet genoeg activiteiten van het type aanwezigheid in hun rooster om alle zelfstudie sessies in het gevraagde tijdvenster af te ronden.",
+        "solution": "Zorg ervoor dat het rooster van deze medewerkers activiteiten van het type aanwezigheid bevat en overweeg om het tijdvenster te verlengen of de parameters voor de tussenruimte of het maximale aantal dagen te verlagen."
+      },
+      "no-present-activities-with-allowed-intervals-group-meeting": {
+        "reason": "Deze medewerkers hebben niet genoeg activiteiten van het type aanwezigheid in hun rooster die overlappen met de geconfigureerde tijdvakken.",
+        "solution": "Zorg ervoor dat het rooster van deze medewerkers activiteiten van het type aanwezigheid bevat, verleng de geconfigureerde tijdvakken of verleng het tijdsbestek."
+      },
+      "no-present-activities-with-meeting-host-group-meeting": {
+        "reason": "Deze medewerkers hebben niet genoeg activiteiten van het type aanwezigheid in hun rooster die overlappen met de beschikbaarheid van de organisator.",
+        "solution": "Zorg ervoor dat het rooster van deze medewerkers activiteiten van het type aanwezigheid bevat, vergroot de beschikbaarheid van de organisator van de vergadering of verleng het tijdvenster."
+      },
+      "no-present-activities": {
+        "reason": "Deze medewerkers hebben niet genoeg activiteiten van het type aanwezigheid in hun rooster om een vergadering van de gevraagde duur en tijdvenster mogelijk te maken.",
+        "solution": "Zorg ervoor dat het rooster van deze medewerkers activiteiten van het type aanwezigheid bevat, verminder de duur van de vergadering of verleng het tijdvenster."
+      },
+      "no-replaceable-activities-group-meeting": {
+        "reason": "Deze medewerkers hebben niet genoeg vervangbare activiteiten in hun rooster om een vergadering van de gevraagde duur mogelijk te maken.",
+        "solution": "Zorg ervoor dat de agenda van deze medewerkers activiteiten bevat die vervangbaar zijn of verkort de duur van de vergadering."
+      },
+      "no-replaceable-activities-overlapping-with-allowed-intervals-group-meeting": {
+        "reason": "Er zijn niet genoeg overlappende tijden voor deze medewerkers en de geconfigureerde intervallen voor het plannen van een vergadering met de vereiste duur.",
+        "solution": "Verleng de geconfigureerde tijdvakken of verkort de duur van de vergadering."
+      },
+      "no-replaceable-activities-overlapping-with-meeting-host-group-meeting": {
+        "reason": "Er zijn niet genoeg overlappende tijdstippen voor deze medewerkers en de organisator voor het inplannen van een vergadering met de vereiste duur.",
+        "solution": "Breid de beschikbaarheid van de organisator van de vergadering uit of verkort de duur van de vergadering."
+      },
+      "no-replaceable-activities-overlapping-with-meeting-host": {
+        "reason": "Er zijn niet genoeg overlappende tijdstippen voor deze medewerkers en de organisator voor het inplannen van een vergadering met de vereiste duur.",
+        "solution": "Breid de beschikbaarheid van de organisator van de vergadering uit of verkort de duur van de vergadering."
+      },
+      "no-replaceable-activities-self-learning": {
+        "reason": "Deze medewerkers hebben niet genoeg vervangbare activiteiten in hun rooster om alle zelfstudie-sessies in het gevraagde tijdsbestek af te ronden.",
+        "solution": "Zorg ervoor dat het rooster van deze medewerkers activiteiten bevat die vervangbaar zijn en overweeg om het tijdsbestek te verlengen of de parameters voor de tussenruimte of het maximale aantal dagen te verlagen."
+      },
+      "no-replaceable-activities": {
+        "reason": "Deze medewerkers hebben niet genoeg vervangbare activiteiten in hun rooster om een vergadering van de gevraagde duur mogelijk te maken.",
+        "solution": "Zorg ervoor dat de agenda van deze medewerkers activiteiten bevat die vervangbaar zijn of verkort de duur van de vergadering."
+      },
+      "no-session-distribution": {
+        "reason": "Het is niet mogelijk om alle zelfstudie-sessies voor deze medewerkers in te plannen in het gevraagde tijdsbestek.",
+        "solution": "Overweeg om het tijdsbestek van de aanvraag te verlengen, om de afstand tussen de sessies te verkleinen of om de limiet van de sessies per dag te verhogen."
+      },
+      "reason": "Reden:",
+      "solution": "Mogelijke oplossing:",
+      "not-enough-common-participants": {
+        "reason": "Er zijn geen geschikte tijdstippen in het rooster van de medewerkers waarop een meeting met voldoende andere medewerkers mogelijk is.",
+        "solution": "Zorg ervoor dat in het rooster van deze medewerkers activiteiten zijn opgenomen die vervangbaar zijn en overweeg een verlenging van de gevraagde termijn."
+      }
+    },
+    "scheduled": "Ingepland",
+    "scheduled-time-span": "Gepland tijdstip",
+    "self-learning-session-proposed": "1 sessie is voorgesteld",
+    "self-learning-session-will-be-scheduled": "1 geselecteerde sessie wordt ingepland",
+    "self-learning-sessions-proposed": "{{count}} sessies zijn voorgesteld",
+    "self-learning-sessions-will-be-scheduled": "{{count}} geselecteerde sessies worden ingepland",
+    "self-learnings-gap-length": "Zorg voor een buffer tussen de sessies voor iedere deelnemer:",
+    "self-learnings-gap-length-after-dropdown": "tussen de sessies voor iedere deelnemer",
+    "self-learnings-gap-length-before-dropdown": "Zorg voor een buffer van",
+    "session-duration": "Duur van de sessie",
+    "session-limit": "Sessie limiet",
+    "sessions-per-participant": "Sessies per deelnemer",
+    "status": {
+      "participants-available": "beschikbaar",
+      "participants-available-group-meeting": "{{count}} in {{meetingCount}} mogelijke vergaderingen",
+      "participants-not-available": "niet beschikbaar",
+      "participants-not-scheduled": "niet ingepland",
+      "participants-scheduled": "ingepland",
+      "participants-scheduled-group-meeting": "{{count}} in {{meetingCount}} vergaderingen gepland",
+      "schedule-execution-error": "Fout",
+      "schedule-suggested": "{{suggestedCount}} voorgesteld, {{excludedCount}} uitgesloten",
+      "schedule-suggested-fail": "{{count}} niet mogelijk",
+      "schedule-suggested-success": "{{count}} voorgesteld",
+      "schedule-written": "{{scheduledCount}} ingepland, {{failedCount}} mislukt",
+      "schedule-written-fail": "{{count}} mislukt",
+      "schedule-written-success": "{{count}} ingepland",
+      "participants-available-group-meetings_one": "in één meeting beschikbaar",
+      "participants-available-group-meetings_other": "in {{count}} meetings beschikbaar",
+      "participants-scheduled-group-meetings_one": "in {{count}} vergaderingen gepland",
+      "participants-scheduled-group-meetings_other": "in {{count}} vergaderingen gepland"
+    },
+    "with-meeting-host": {
+      "option": "Groepsvergaderingen met een organisator"
+    },
+    "without-meeting-host": {
+      "option": "Groepsvergaderingen zonder een organisator",
+      "specify-timeframe": "Definieer tijdkaders voor de vergaderingen"
+    },
+    "advanced-feature": "Deze functie maakt deel uit van het Advanced plan.",
+    "availability": "Stel extra beschikbaarheidsbeperking in",
+    "back-to-meetings": "Terug naar Meetings",
+    "external-host": "Externe host",
+    "host": "Host",
+    "internal-host": "Interne host",
+    "no-host": "Geen host",
+    "participants_one": "{{count}} deelnemer",
+    "participants_other": "{{count}} deelnemers",
+    "split-meeting-participants": "Minimum aantal deelnemers per tijdsvak",
+    "split-meeting-slots-result": "Voor {{selectedEmployeesCount}} deelnemers zal dit resulteren in ongeveer {{slotsCount}} tijdsvakken.",
+    "split-meeting-toggle": "Splits de meeting op in verschillende tijdsblokken"
+  },
+  "button": {
+    "remove_availability": "Verwijder dag",
+    "add-group-meeting": "Vergadering",
+    "delete-jobs_one": "Item verwijderen",
+    "delete-jobs_other": "Items verwijderen",
+    "delete-schedules_one": "Item verwijderen",
+    "delete-schedules_other": "Items verwijderen",
+    "set-up": "Instellen",
+    "write-group-meetings": "Vergaderingen plannen",
+    "write-one-on-one-meetings": "Vergaderingen plannen",
+    "write-self-learning-sessions": "Sessies inplannen",
+    "writing": "Planning",
+    "write-count-group-meetings_one": "Plan {{count}} meeting",
+    "write-count-group-meetings_other": "Plan {{count}} meetings"
+  },
+  "table": {
+    "column": {
+      "employee_name": "Naam",
+      "actions": "Acties",
+      "activity-to-schedule": "Te plannen activiteit",
+      "host": "Organisator",
+      "information": "Information",
+      "initiated-on": "Geïnitieerd op",
+      "job-id": "Suggestie-ID",
+      "meeting-type": "Type",
+      "meeting_assignment": "Toegewezen aan",
+      "participant": "Deelnemer",
+      "participant-status": "Status van deelnemer",
+      "planning-unit": "Eenheid",
+      "replaced-activity": "Vervangen activiteit",
+      "resulting-coverage": "Resulterende dekking",
+      "schedule-id": "Informatie",
+      "start-time": "Aangevraagd op",
+      "status": "Status",
+      "suggested-time-slot": "Voorgesteld tijdstip"
+    }
+  },
+  "notification": {
+    "form-error": {
+      "timespan": "Selecteer eindtijd na starttijd",
+      "select-day": "Selecteer een dag",
+      "select-planning-unit": "Selecteer een eenheid",
+      "coverage-threshold": "Voer een dekkingsgraad in",
+      "group-meetings-empty-meetings": "Er is ten minste één vergadering met geen enkele deelnemer geselecteerd. Selecteer de deelnemers voor elke vergadering om verder te kunnen gaan met het genereren van suggesties.",
+      "limit-meeting-number": "Voer het aantal maximaal mogelijke vergaderingen per dag in",
+      "limit-session-number": "Voer het aantal maximaal mogelijke sessies per dag in",
+      "meeting-length-error": "Voer een duur van de vergadering in die een veelvoud van 5 is",
+      "no-group-meetings-selected": "Er zijn geen voorgestelde vergaderingen geselecteerd. Selecteer er minstens één.",
+      "no-one-on-one-meetings-selected": "Er zijn geen voorgestelde vergaderingen geselecteerd. Selecteer er minstens één.",
+      "no-self-learning-sessions-selected": "Geen voorgestelde sessies geselecteerd. Selecteer er minstens één.",
+      "select-activity": "Selecteer een activiteit",
+      "select-meeting-host": "Selecteer een organisator van de vergadering",
+      "session-duration-error": "Voer een duur van de sessie in die een veelvoud van 5 is",
+      "sessions-per-participant": "Voer een positief aantal sessies per deelnemer in"
+    },
+    "failure": {
+      "general": "Er is een fout opgetreden. Probeer het later nog eens.",
+      "response-error": "De server was niet in staat om de aanvraag af te ronden. Probeer het later nog eens.",
+      "job-not-existing": "Er is een fout opgetreden. Probeer het later nog eens.",
+      "schedule-not-existing": "Er is een fout opgetreden. Probeer het later nog eens."
+    },
+    "number-of-meetings": "{{successCount}} van {{totalCount}} vergaderingen zijn succesvol ingepland.",
+    "warning": {
+      "no-meeting-slots-for-employee": "Niet mogelijk om tijdstippen voor vergadering te vinden voor één medewerker.",
+      "no-meeting-slots-for-employees": "Niet mogelijk om tijdstippen voor vergadering te vinden voor {{count}} medewerkers.",
+      "no-session-slots-for-employee": "Niet mogelijk om tijdvakken voor sessies te vinden voor een medewerker.",
+      "no-session-slots-for-employee-group-meeting": "Niet mogelijk om tijdstippen voor vergadering te vinden voor één medewerker.",
+      "no-session-slots-for-employee-group-meeting-multiple-employees": "Niet mogelijk om tijdstippen voor vergadering te vinden voor {{count}}  medewerkers in één vergadering.",
+      "no-session-slots-for-employee-group-meeting-part-one_one": "Het is niet mogelijk om vergadertijdstippen te vinden voor {{count}} medewerker",
+      "no-session-slots-for-employee-group-meeting-part-one_other": "Het is niet mogelijk om vergadertijdstippen te vinden voor {{count}} medewerkers",
+      "no-session-slots-for-employee-group-meeting-part-two_one": "in {{count}} vergadering.",
+      "no-session-slots-for-employee-group-meeting-part-two_other": "in {{count}} vergaderingen.",
+      "no-session-slots-for-employee-group-meeting-plural": "Niet mogelijk om tijdstippen voor vergadering te vinden voor {{employeeCount}} medewerkers in {{meetingCount}} vergaderingen.",
+      "no-session-slots-for-employees": "Niet mogelijk om tijdvakken voor sessies te vinden voor {{count}} medewerkers."
+    }
+  },
+  "message": {
+    "invalid-data": "De gegevens van het formulier zijn onvolledig. Zorg ervoor dat je alle gemarkeerde velden corrigeert.",
+    "irreplaceable-activities": {
+      "hint_one": "{{count}} van de {{totalCount}} \"Aanwezigheid\" activiteiten in de geselecteerde eenheid is niet \"Vervangbaar\".",
+      "hint_other": "{{count}} van de {{totalCount}} \"Aanwezigheid\" activiteiten in de geselecteerde eenheid zijn niet \"Vervangbaar\".",
+      "reminder": "injixo Meetings kan alleen vergaderingen plannen door bestaande <0>activiteiten te vervangen die gemarkeerd zijn als \"Vervangbaar\"</0>. Een hoger aantal vervangbare activiteiten leidt tot betere resultaten. Je kunt je activiteiten configureren onder WFM > Beheer > Planning > Activiteiten.",
+      "reminder-link-to-docs": "https://help.injixo.com/creating-activities/"
+    },
+    "request-sent": "Aanvraag succesvol ontvangen. Suggesties worden gegenereerd.",
+    "external-host": {
+      "header": "Let op dat meetings met een externe organisator:",
+      "point1": "Kan niet gelijktijdig worden gepland",
+      "point2": "Zijn gepland door de optionele <0>beschikbaarheidsbeperkingen</0> hierboven ingesteld"
+    },
+    "unpaid-meeting-activity": {
+      "hint": "De geselecteerde Meeting activiteit is niet gemarkeerd als \"Betaald\". injixo Meetings kan alleen onbetaalde Meetings inplannen als er andere onbetaalde activiteiten beschikbaar zijn in de agenda. Wij raden je aan om <0>de Meeting activiteit te markeren als \"Betaald\"</0> als je injixo Meetings wilt gebruiken. Je kunt je activiteiten configureren onder WFM > Beheer > Planning > Activiteiten.",
+      "hint-link-to-docs": "https://help.injixo.com/creating-activities/"
+    }
+  },
+  "date-range-picker": {
+    "helper-text": "De data liggen in de tijdzone van de eenheid."
+  },
+  "dropdown": {
+    "meeting-length": "{{minutes}} Minuten"
+  },
+  "heading": {
+    "group-meeting-proposal-page": "Suggesties - Groepsvergaderingen",
+    "one-on-one-proposal-page": "Suggesties - 1:1-vergaderingen",
+    "result-page": "{{count1}} vergaderingen konden niet worden ingepland, {{count2}} vergaderingen zijn ingepland",
+    "result-page-fail-plural": "{{count}} vergaderingen konden niet worden ingepland",
+    "result-page-fail-singular": "1 vergadering kon niet worden ingepland",
+    "result-page-success-plural": "{{count}} vergaderingen zijn ingepland",
+    "result-page-success-singular": "1 vergadering is ingepland",
+    "self-learning-proposal-page": "Suggesties - Zelfstudie-sessies"
+  },
+  "helper-text-for-setting": {
+    "coverage-threshold": "De minimale resulterende dekking kan een positieve waarde zijn, een negatieve waarde of een nul.",
+    "date-range": "Standaard is dit bereik ingesteld op de volgende maandag-zondag werkweek na de huidige datum. Als de huidige datum een maandag is, dan wordt deze ingesteld op de huidige maandag-zondag werkweek.",
+    "duration": "De duur van de vergadering moet een veelvoud van 5 zijn.",
+    "duration-sessions": "De duur van de sessie moet een veelvoud van 5 zijn.",
+    "group-meeting-participants": "Je kunt vergaderingen plannen voor deelnemers die verdeeld zijn in zoveel groepsvergaderingen als je maar wilt. Elke deelnemer kan slechts voor één groepsvergadering worden ingepland.",
+    "group-meeting-with-host": "Groepsvergaderingen met een organisator konden niet tegelijkertijd worden gepland.",
+    "group-meeting-without-host": "Groepsvergaderingen zonder organisator kunnen op hetzelfde moment worden ingepland. Optioneel kun je een tijdskader bepalen wanneer de vergaderingen moeten plaatsvinden.",
+    "one-on-one-day-limit": "Het aantal vergaderingen per dag moet een positieve waarde hebben.",
+    "one-on-one-gap-length": "Standaard is de bufferduur ingesteld op het interval van de geselecteerde eenheid. Deze kan worden gewijzigd in een veelvoud van dit interval.",
+    "select-manual-host": "Selecteer deze optie als de organisator van de vergadering niet in injixo wordt ingepland.",
+    "select-scheduled-host": "Selecteer deze optie om het rooster in injixo van de organisator van de vergadering te gebruiken als hun beschikbaarheid. Je kunt medewerkers uit een andere eenheid selecteren, maar beide eenheden moeten hetzelfde interval hebben. Als je deze optie kiest, worden de resulterende vergaderingen toegevoegd aan het rooster van de organisator van de vergadering.",
+    "selection-filter": "Standaard is dit de volledige lijst van medewerkers in de geselecteerde eenheid. Je kunt de groep deelnemers verder verfijnen door een groep of een medewerkersfilter te kiezen uit de betreffende dropdown.",
+    "self-learnings-day-limit": "Het aantal sessies per dag moet een positieve waarde zijn.",
+    "self-learnings-gap-length": "Standaard is de bufferduur ingesteld op het interval van de geselecteerde eenheid. Deze kan worden gewijzigd in een veelvoud van dit interval."
+  },
+  "helper-text": {
+    "delete-jobs": "De geselecteerde items worden uit de tabel verwijderd. Eventuele geplande vergaderingen worden niet beïnvloed.",
+    "delete-schedules": "De geselecteerde items worden uit de tabel verwijderd. Eventuele geplande vergaderingen worden niet beïnvloed."
+  },
+  "link": {
+    "retrigger-job": "Probeer opnieuw",
+    "view-results": "Bekijk resultaten",
+    "view-schedule": "Bekijk rooster",
+    "view-suggestion": "Bekijk suggesties"
+  },
+  "meeting-type": {
+    "group-meeting": "Groepsvergadering",
+    "one-on-one": "1:1-vergaderingen",
+    "self-learning": "Zelfstudie-sessies",
+    "auto-group-meeting": "Groepsvergadering"
+  },
+  "placeholder": {
+    "dropdown": "Zoek of selecteer",
+    "non-searchable-dropdown": "Selecteer",
+    "select-gap-length": "Selecteer bufferlengte",
+    "select-meeting-length": "Selecteer de duur van de vergadering",
+    "select-session-duration": "Selecteer de duur van de sessie"
+  },
+  "popup": {
+    "timezone-helper": "De datum- en tijdgegevens hebben betrekking op de tijdzone van de eenheid."
+  },
+  "units": {
+    "minutes": "minuten"
+  },
+  "connection": {
+    "offline": "De verbinding kon niet worden hersteld. Probeer over een paar minuten opnieuw te laden.",
+    "reconnecting": "De verbinding is verbroken. We proberen de verbinding automatisch te herstellen."
+  },
+  "document_title": {
+    "context": {
+      "group_meeting_results": "Groepsvergaderingen Resultaten",
+      "group_meeting_suggestions": "Groepsvergaderingen Suggesties",
+      "one_on_one_meeting_results": "1:1-vergaderingen Resultaten",
+      "one_on_one_meeting_suggestions": "1:1-vergaderingen Suggesties",
+      "self_learning_results": "Zelfstudie-sessies Resultaten",
+      "self_learning_suggestions": "Zelfstudie-sessies Suggesties"
+    },
+    "module": "Plan",
+    "sub_module": "Meetings"
+  },
+  "explaination": {
+    "external-host": "De organisator is niet bekend bij injixo en de tijdsvakken voor de meetings kunnen elkaar niet overlappen",
+    "internal-host": "De organisator is bekend bij injixo en de tijdsvakken voor de meetings kunnen elkaar niet overlappen",
+    "no-host": "De tijdsvakken van de meetings kunnen elkaar overlappen"
+  }
+}

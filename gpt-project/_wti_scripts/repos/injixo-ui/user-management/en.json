@@ -1,0 +1,309 @@
+{
+  "roles_overview": {
+    "page_title": "Roles",
+    "search_role": "Search for roles",
+    "category_change_failed": "The role category could not be changed.",
+    "description": "Roles with similar permissions are grouped into categories, e.g. the <0>Planner</0> category. Permissions for new injixo functionalities are automatically assigned to roles depending on their role category.<br>Roles in the <0>Other</0> category do not get default permissions for new injixo functionalities.<br>Learn more in <1>Help Center</1>.",
+    "heading": "Roles",
+    "link_to_docs": "https://help.injixo.com/user-roles-in-detail/",
+    "section": "Overview"
+  },
+  "user_details": {
+    "save": "Save",
+    "create": "Create",
+    "show_iwfm_employee": "Show in WFM",
+    "heading": {
+      "create_user": "Create user",
+      "edit_user": "Edit {{name}}",
+      "account": "Account",
+      "preferences": "Preferences",
+      "security": "Security",
+      "role_assignment": "Assign role(s)",
+      "object_permissions": "Manage object access"
+    },
+    "2fa_disabled": "2FA deactivated",
+    "2fa_enabled": "2FA activated",
+    "change_email": "Incorrect email address? <0>Change</0>",
+    "confirm_email": "To continue we must confirm your email address.",
+    "creating": "Creating",
+    "delete": "Delete",
+    "delete_modal": {
+      "confirmation": "I understand that the user record and all scheduling data for <0>{{name}}</0> will be deleted.",
+      "description": "The action cannot be undone. The user <0>{{name}}</0> and related scheduling data would be deleted permanently as a result.",
+      "end_staff_membership": {
+        "description": "Set a leave date for <0>{{name}}</0>. This will remove the user from the monthly invoice and disable their injixo login, but all of their scheduling data will be retained.",
+        "heading": "End staff membership",
+        "view": "Staff membership"
+      },
+      "title": "Delete user",
+      "confirmation_skills_lms": "I understand that the user record for <0>{{name}}</0> will be deleted and training history anonymized.",
+      "description_skills_lms": "This action cannot be undone. The user <0>{{name}}</0> will be deleted from your Account section and also deactivated and anonymized in the learning management system (LMS) enrollment and reporting sections.",
+      "title_skills_lms": "Delete / deactivate user"
+    },
+    "deleting": "Deleting",
+    "email_not_verified": "This email address has not been verified.",
+    "employment_period_expired": "This user cannot log in because no current employment period was found.",
+    "field": {
+      "admin": {
+        "checkbox": "Grant admin access",
+        "heading": "Admin access",
+        "hint": "Admins have full access to all injixo functionality. Only admins can adjust this setting.",
+        "label": "Full injixo access"
+      },
+      "email": "Email (injixo login)",
+      "enforce2fa": "Enforce 2FA activation",
+      "enforce2fa_tooltip": "The user has to activate 2FA on their next login.",
+      "firstName": "First name",
+      "language": {
+        "label": "Language",
+        "no_result": "No language found",
+        "placeholder": "Select language..."
+      },
+      "lastName": "Last name",
+      "locked": {
+        "hint": "The user is locked due to multiple incorrect password entries.",
+        "label": "User locked",
+        "unlock": "Unlock user",
+        "unlocking": "Unlocking"
+      },
+      "password": {
+        "hint": "The user can reset their password later on",
+        "label": "Password",
+        "set_password": "Set new password"
+      },
+      "sendMail": {
+        "details": "Email instructions for setting up the initial password and logging in.",
+        "label": "Send welcome email",
+        "sso_enforced_details": "Email instructions for logging in."
+      },
+      "timeZone": {
+        "label": "Time zone",
+        "no_result": "No time zone found",
+        "placeholder": "Select time zone..."
+      },
+      "object_permission": {
+        "full_access": "Full access",
+        "label": "Select group of accessible objects",
+        "no_access": "No access",
+        "no_result": "No object permission found",
+        "placeholder": "Select object permission..."
+      },
+      "user_principal_name": {
+        "hint": "Only enter the user principal name (UPN) if the email for the injixo login differs from the UPN used by the single sign-on identity provider.",
+        "label": "User principal name",
+        "unique": "Enter a user principal name that is not already in use in this tenant."
+      }
+    },
+    "saving": "Saving",
+    "success_modal": {
+      "ok": "Okay"
+    },
+    "title": "User",
+    "unsaved_changes_modal": {
+      "iwfm": {
+        "hint": "You are about to switch to <0>WFM employee</0>, where you can set additional user permissions for products and features like SchedulePro or ForecastPro.",
+        "title": "WFM employee"
+      },
+      "set_password": {
+        "hint": "You are about switch to the set password page, where you can set a new password for <0>{{name}}</0>."
+      },
+      "object_access": {
+        "hint": "You are about to switch to the <0>new object access</0> page. Define new object access permissions there.",
+        "title": "New object access"
+      }
+    },
+    "user_creation_failed": "Failed to create user.",
+    "user_creation_successful": "User successfully created.",
+    "user_deletion_failed": "Failed to delete user.",
+    "user_deletion_successful": "User was successfully deleted.",
+    "user_locked": "User locked",
+    "user_unlock_failed": "Failed to unlock the user.",
+    "user_update_failed": "Failed to save user.",
+    "user_update_successful": "The user has been updated successfully.",
+    "validation": {
+      "email": "Enter an email address, e.g. mail@test.com.",
+      "max": "The input cannot be longer than {{max}} characters.",
+      "required": "The input cannot be empty.",
+      "unique": "The input is already taken."
+    },
+    "verify_email": "Click the link in the verification email sent to <0>{{email}}</0>",
+    "create_object_group": "New object access",
+    "information": {
+      "sso": {
+        "password_hint": "Passwords are managed by your identity provider."
+      },
+      "sso_activated": "Single sign-on activated",
+      "sso_enforced": "The user needs to be granted access within your identity provider to access injixo."
+    },
+    "return_to_overview": "Return to Users",
+    "banner-message": "Switch to <PeopleLink>People</PeopleLink>, your new home for all user management features! Now with a modern interface, including role assignments, admin access, and enhanced security.",
+    "banner-message-deprecation": "Transition to People today — this location will soon be phased out!",
+    "return_to_people": "Return to people"
+  },
+  "two_factor": {
+    "title": "Two-factor authentication",
+    "enabled": "Activated",
+    "disabled": "Deactivated",
+    "enforced": "The user has to activate 2FA on next login",
+    "enabled_and_enforced": "Activation enforced and enabled",
+    "disable": "Deactivate 2FA",
+    "disabling": "Deactivating",
+    "disabling_failed": "Failed to deactivate 2FA."
+  },
+  "password_strength": {
+    "none": "No password",
+    "strong": "Strong password",
+    "sufficient": "Average password",
+    "weak": "Weak password"
+  },
+  "role_list": {
+    "other": "Other",
+    "create_role": "Create a role in the {{category}} role category"
+  },
+  "set_password": {
+    "cancel": "Cancel",
+    "description": "Please advise the user of their new password. No automatic notifications apply.",
+    "failure": "Failed to set password.",
+    "label": "Password",
+    "save": "Save",
+    "saving": "Saving",
+    "strength_hint": "Use at least 8 characters, combine upper and lowercase letters, numbers and special characters.",
+    "success": "Set new password successfully. <0>Go Back</0>",
+    "title": "New password for {{name}}"
+  },
+  "unsaved_changes_modal": {
+    "cancel": "Cancel",
+    "error": "You cannot continue while the form has errors.",
+    "hint": "Your unsaved changes will be saved when continuing.",
+    "save_and_continue": "Save and continue"
+  },
+  "users_overview": {
+    "role_filter": {
+      "search_roles": "Search for roles",
+      "all_roles": "All roles"
+    },
+    "billed_users": "Billed users",
+    "column": {
+      "2fa": "2FA",
+      "email": "Email",
+      "name": "Name",
+      "roles": "Roles"
+    },
+    "create_user": "Create user",
+    "export_csv": "Export to CSV",
+    "exporting": "Exporting",
+    "heading": "Users",
+    "import_csv": "Import from CSV",
+    "loading_users_failed": "Failed to load users.",
+    "search_placeholder": "Search names and email addresses",
+    "title": "Users",
+    "tooltip": {
+      "email_unverified": "This user needs to verify their email address.",
+      "locked": "This user is locked. Click here and go to the user details page. The user can be unlocked there."
+    },
+    "unbilled_users": "Unbilled users",
+    "unbilled_users_hint": "Staff membership of these users has ended. They are not billed and cannot log in."
+  },
+  "objectgroup_overview": {
+    "heading": "Object access",
+    "section": "Overview",
+    "description": "To limit user access to only specific objects or data in injixo, create a group that defines all accessible objects, e.g. specific Dashboards. Every user can be granted with “Full access” or one of these restrictive object groups.",
+    "create": "Create",
+    "title": "Object access",
+    "edit": "Edit",
+    "is_restricted": "Restricted access",
+    "object_group_count": "Total number of assigned users: <0>{{count}}</0>"
+  },
+  "objectgroup_details": {
+    "heading": {
+      "create": "New object access",
+      "basic_information": "Basic information",
+      "permissions": "Accessible objects",
+      "edit": "Edit object access"
+    },
+    "name": "Name",
+    "description": "Description",
+    "validation": {
+      "unique": "The input is already taken.",
+      "required": "The input cannot be empty."
+    },
+    "creation_failed": "Failed to create object access.",
+    "creation_successful": "Created object group \"{{name}}\".",
+    "optional": "Optional",
+    "creating": "Creating",
+    "create": "Create",
+    "objects": {
+      "restrict_access": "Restrict access",
+      "access_info": "Authorized users have access to the selected elements",
+      "search": "Search elements...",
+      "selected": "{{selected}}/{{total}} selected",
+      "full_access": "Full access to all current and future elements",
+      "go_to_iwfm": "Go to Role Authorization",
+      "iwfm_description": "Find permissions for all other objects by navigating to the Role Authorization view.",
+      "iwfm_heading": "Can't find the object?",
+      "iwfm_path": "Also accessible via WFM <0 /> Administration <0 /> System <0 /> Role Authorization"
+    },
+    "page_title": "Object Group - {{name}}",
+    "saving": "Saving",
+    "save": "Save",
+    "update_failed": "Failed to update the object group.",
+    "update_successful": "The object group has been updated successfully.",
+    "return_to_overview": "Return to Object access",
+    "object_group_count": "Total number of assigned users: {{count}}",
+    "delete_disabled_tooltip": "This object group can be deleted only after removing all the assigned users.",
+    "delete": "Delete",
+    "delete_modal": {
+      "description": "Are you sure you want to delete \"<0>{{name}}</0>\"? This action cannot be undone.",
+      "title": "Delete object group"
+    },
+    "deleting": "Deleting",
+    "objectgroup_deletion_failed": "Failed to delete object group.",
+    "objectgroup_deletion_successful": "\"{{name}}\" was deleted.",
+    "unsaved_changes_modal": {
+      "iwfm": {
+        "hint": "You are about to switch to <0>Role Authorization</0>. Set role permissions for other objects there.",
+        "title": "Go to Role Authorization"
+      }
+    }
+  },
+  "back": "Back",
+  "cancel": "Cancel",
+  "document_title": {
+    "module": "Account",
+    "context": {
+      "users": {
+        "title": "Users",
+        "page": {
+          "overview": "Overview",
+          "create": "Create user",
+          "edit": "Edit user"
+        }
+      },
+      "user_roles": {
+        "title": "Roles",
+        "page": {
+          "overview": "Overview",
+          "create": "Create role",
+          "edit": "Edit {{name}}"
+        }
+      },
+      "object_access": {
+        "title": "Object access",
+        "page": {
+          "overview": "Overview",
+          "create": "New object access",
+          "edit": "Edit {{name}}"
+        }
+      }
+    }
+  },
+  "admin": "Admin",
+  "objectgroups_overview": {
+    "search_object_group": "Search object groups..."
+  },
+  "role_details": {
+    "access_type": {
+      "edit_agent_status": "Edit agent status"
+    }
+  }
+}

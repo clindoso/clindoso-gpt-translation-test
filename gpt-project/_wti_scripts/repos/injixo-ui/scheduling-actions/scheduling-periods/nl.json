@@ -1,0 +1,122 @@
+{
+  "heading": {
+    "initial": "Planningsperioden",
+    "create": "Planningsperiode aanmaken",
+    "edit": "Planningsperiode bewerken",
+    "lottery": "Start diensten verloten",
+    "assignment": "Diensten toewijzen",
+    "generate": "Diensten genereren"
+  },
+  "button": {
+    "back-to-schedules": "Terug naar Schedules",
+    "cancel": "Annuleren",
+    "delete-selected": "Selectie verwijderen",
+    "save": "Opslaan",
+    "start-lottery": "Diensten verloten starten",
+    "generate-shifts": "Diensten genereren",
+    "start-assignment": "Diensten toewijzen"
+  },
+  "error": {
+    "create": {
+      "error": "Er is een fout opgetreden bij het aanmaken van de planningsperiode."
+    },
+    "edit": {
+      "request": "Mislukt om een update te vragen"
+    },
+    "incomplete-form": "De gegevens zijn onvolledig. Zorg ervoor dat alle gemarkeerde velden gecorrigeerd worden.",
+    "fetching-data": "Er is een fout opgetreden en de planningsperioden konden niet worden geladen. Probeer <0>planningsperioden opnieuw te laden</0> of probeer het later nog eens.",
+    "generate": {
+      "shift-coverage": "Voer een percentage in"
+    },
+    "shift-bidding-modal": {
+      "no-selected-employees": "Geen medewerker geselecteerd. Er is ten minste één medewerker nodig om verder te gaan."
+    }
+  },
+  "explanation": {
+    "shift-bidding-modal-toggle": "Houd rekening met de gemiddelde begintijd van andere diensten",
+    "shift-bidding-modal-tolerance": "Maximale bandbreedte dat de begintijd van een dienst mag afwijken van de begintijd van de gemiddelde werknemer",
+    "generate-based-on-contractual-hours": "van het aantal uren in het contract",
+    "generate-based-on-employee-requirement": "van de medewerkersbehoefte",
+    "generate-shift-coverage-percentage": "Vereiste diensten genereren"
+  },
+  "label": {
+    "aria-enhancement": {
+      "select": "selecteren",
+      "select-all": "alles selecteren"
+    },
+    "create": "Planningsperiode aanmaken",
+    "deadline": "Deadline",
+    "no-planning-untis": "Geen eenheden gevonden",
+    "no-selections": "Geen groepen gevonden",
+    "shift-requirements": "Aanpassen diensten genereren",
+    "status": "Status",
+    "daterange": "Datumbereik",
+    "tolerance": "Bandbreedte"
+  },
+  "notification": {
+    "create": {
+      "error": "Er is een fout opgetreden bij het aanmaken van de planningsperiode. Probeer het opnieuw.",
+      "success": "Planningsperiode aangemaakt"
+    },
+    "delete": {
+      "failed_one": "{{count}} planningsperiode kan niet worden verwijderd",
+      "failed_other": "{{count}} planningsperioden kunnen niet worden verwijderd",
+      "success_one": "{{count}} planningsperiode verwijderd",
+      "success_other": "{{count}} planningsperioden verwijderd"
+    },
+    "edit": {
+      "edit-error": "Er is een fout opgetreden tijdens het updaten, probeer het later nog eens",
+      "edit-success": "Planningsperiode bijgewerkt",
+      "status-error": "Er is een fout opgetreden bij het bijwerken van de status, probeer het later nog eens",
+      "status-success": "Status van planningsperiode bijgewerkt"
+    },
+    "assignment": {
+      "error": "Er is een fout opgetreden bij het toewijzen van diensten. Gelieve opnieuw te proberen.",
+      "success": "Toewijzen diensten succesvol begonnen"
+    },
+    "generate-shifts": {
+      "error": "Er is een fout opgetreden bij het genereren van diensten. Gelieve opnieuw te proberen.",
+      "success": "Diensten genereren succesvol gestart"
+    },
+    "lottery": {
+      "error": "Er is een fout opgetreden bij het starten van het diensten verloten. Gelieve opnieuw te proberen.",
+      "success": "Diensten verloten succesvol gestart"
+    }
+  },
+  "placeholder": {
+    "all-selections": "Alle groepen",
+    "deadline-none": "Geen",
+    "planning-unit": "Selecteer een eenheid",
+    "table": "Er zijn nog geen planningsperioden. Probeer het filter te veranderen of een nieuwe toe te voegen."
+  },
+  "tab": {
+    "expired": "Verlopen",
+    "ongoing": "Lopend"
+  },
+  "table": {
+    "heading": {
+      "deadline": "Deadline",
+      "inherited-from": "Geërfd van",
+      "selection": "Groep",
+      "status": "Status",
+      "valid-from": "Geldig vanaf",
+      "valid-to": "Geldig tot"
+    },
+    "none": "Geen",
+    "status": {
+      "published": "Gepubliceerd",
+      "finished": "Afgesloten",
+      "unpublished": "Niet gepubliceerd",
+      "shift_bidding_enabled": "Inschrijven op diensten geactiveerd"
+    }
+  },
+  "document_title": {
+    "context": "Planningsperioden",
+    "module": "Plan"
+  },
+  "hints": {
+    "assignment-modal-background-job": "Diensten toewijzen begint een achtergrondproces. Om de status te zien, controleer de <0>JobProcessor</0>.",
+    "generate-shifts-modal-background-job": "Diensten genereren begint een achtergrond proces. Om de status te zien, controleer de <0>JobProcessor</0>.",
+    "lottery-modal-background-job": "Start diensten verloten begint een achtergrondproces. Om de status te zien, controleer de <0>JobProcessor</0>."
+  }
+}

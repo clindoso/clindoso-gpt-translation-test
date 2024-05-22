@@ -1,0 +1,66 @@
+{
+  "document_title": {
+    "module": "Plan",
+    "context": "Centro de planificación"
+  },
+  "parametersBar": {
+    "apply": "Aplicar",
+    "startDate": "Fecha de Inicio",
+    "duration": "Duración",
+    "levels": "Niveles",
+    "units": {
+      "days": "Dias",
+      "weeks": "Semanas",
+      "months": "Meses",
+      "years": "Años"
+    },
+    "unit": "Unidad",
+    "selection": "Grupo",
+    "employeeFilter": "Filtro de empleados",
+    "editEmployeeFilter": "Editar el filtro de empleados",
+    "filterEditor": "Editor del filtro avanzado",
+    "chooseSelections": "Elige Grupo",
+    "chooseEmployeeFilter": "Filter Employees",
+    "dateFormat": "d MMMM yyyy",
+    "noResult": "no result"
+  },
+  "shiftCenterFrame": {
+    "loading": "Cargando"
+  },
+  "levelSelector": {
+    "levels": {
+      "plan": "Plan",
+      "final": "Estado actual",
+      "correction": "Corrección",
+      "timeRecording": "Control de presencia",
+      "acd": "Sistema externo",
+      "wishes": "Solicitud",
+      "alternativeWishes": "Solicitud alternativa",
+      "absenceWishes": "Solicitud de ausencias",
+      "availabilities": "Disponibilidad",
+      "backup": "Copia de seguridad 1",
+      "backupVersion2": "Copia de seguridad 2",
+      "backupVersion3": "Copia de seguridad 3"
+    }
+  },
+  "error": {
+    "configuration": "Ha ocurrido un error (Recurso: Configuración)",
+    "accessRights": "Ha ocurrido un error (Recurso: Derechos de acceso)",
+    "settings": "Ha ocurrido un error (Recurso: Configuraciones) - Detalles:",
+    "postMessage": "Posting a message to Shift Center failed.",
+    "accountBalances": {
+      "message": "Vuelve a recargar <0>Saldo de Cuentas</0> o prueba más tarde.",
+      "label": "Recargar Saldo de Cuentas"
+    },
+    "generic": "Se ha producido un error."
+  },
+  "timeAccounts": {
+    "accountBalances": "Cálculo de los saldos",
+    "accountX": "Cuenta {{number}}",
+    "chooseAccount": "Elegir cuenta",
+    "dateLabel": "Fecha",
+    "none": "Ninguna",
+    "closeModal": "Cerrar",
+    "noResult": "No existe ningún registro."
+  }
+}

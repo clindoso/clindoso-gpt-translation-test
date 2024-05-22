@@ -1,0 +1,260 @@
+{
+  "document_title": {
+    "module": "Profiel",
+    "context": {
+      "profile": {
+        "title": "Mijn Profiel",
+        "page": "Persoonlijke gegevens"
+      },
+      "security": {
+        "title": "Beveiliging",
+        "page": {
+          "overview": "Overzicht",
+          "enable2fa": "2FA inschakelen",
+          "disable2fa": "2FA uitschakelen",
+          "sso": "Single sign-on"
+        }
+      }
+    }
+  },
+  "label": {
+    "email": "E-mail",
+    "loading": "Laden...",
+    "saving": "Opslaan...",
+    "password": "Wachtwoord",
+    "language": "Taal",
+    "first_name": "Voornaam",
+    "last_name": "Achternaam",
+    "timezone": "Tijdzone",
+    "to_login_page": "Ga naar de loginpagina",
+    "password_strength_hint": "Gebruik minstens 8 karakters, combineer hoofdletters en kleine letters, cijfers en speciale karakters.",
+    "personnel_number": "Personnel number"
+  },
+  "placeholder": {
+    "timezone": "Tijdzone",
+    "language": "Taal"
+  },
+  "error": {
+    "other": "Er heeft zich een technisch probleem voorgedaan. Probeer het nogmaals."
+  },
+  "password_strength": {
+    "none": "Geen wachtwoord",
+    "weak": "Zwak wachtwoord",
+    "sufficient": "Gemiddeld wachtwoord",
+    "strong": "Sterk wachtwoord"
+  },
+  "login_page": {
+    "otp": {
+      "header": "Two-factor authenticatie",
+      "hint1": "Voer de code van de authenticator-app op je mobiele apparaat in.",
+      "hint2": "Gebruik in plaats daarvan een <0>back-upcode</0> of ontvang instructies voor het <1>herstellen van je account</1>.",
+      "hint2_header": "Heb je problemen?",
+      "label": "Eenmalig wachtwoord",
+      "verify": "Controleer",
+      "link_to_recovery_docs": "https://help.injixo.com/nl/use-two-factor-authentication/#aanmelden-zonder-je-persoonlijke-apparaat-en-back-upcodes"
+    },
+    "backupCode": {
+      "header": "Two-factor authenticatie",
+      "label": "Back-up code",
+      "hint1": "Voer een back-up code in voor het geval je de toegang tot je mobiele apparaat bent kwijtgeraakt.",
+      "hint2": "Ontvang instructies over hoe je <0> je account kunt herstellen</0>.",
+      "hint2_header": "Heb je nog steeds problemen?",
+      "verify": "Controleer"
+    },
+    "error": {
+      "invalid": "Ongeldig e-mailadres of wachtwoord.",
+      "otp_invalid": "Ongeldig eenmalig wachtwoord.",
+      "otp_timeout": "Time-out. Voer de gegevens en eenmalig wachtwoord in binnen 5 minuten.",
+      "backup_code_invalid": "Ongeldige back-up code."
+    },
+    "forgot_pw_link": "Wachtwoord vergeten?",
+    "header": "Log in op je account",
+    "submit": "Aanmelden",
+    "title": "Aanmelden",
+    "sso_login_link": "Aanmelden met SSO"
+  },
+  "logout_page": {
+    "header": "Je bent afgemeld",
+    "title": "Afmelden"
+  },
+  "forgot_password_page": {
+    "title": "Wachtwoord vergeten",
+    "header": "Wachtwoord vergeten",
+    "submit": "Instructies sturen",
+    "success_message": "Er wordt een e-mail gestuurd als het opgegeven adres geldig is.",
+    "empty_email": "Voer je e-mailadres in"
+  },
+  "reset_password_page": {
+    "title": "Wachtwoord opnieuw instellen",
+    "header": "Wachtwoord opnieuw instellen",
+    "new_psw": "Nieuw wachtwoord",
+    "new_psw_confirmation": "Nieuw wachtwoord bevestigen",
+    "submit": "Nieuw wachtwoord opslaan",
+    "success_message": "Je wachtwoord is opnieuw ingesteld. Meld je nu aan met het nieuwe wachtwoord.",
+    "no_token_message": "Er is geen actieve link beschikbaar om je wachtwoord opnieuw in te stellen. Maak een nieuw verzoek.",
+    "confirmation_mismatch": "komt niet overeen met het wachtwoord"
+  },
+  "welcome_page": {
+    "title": "Welkom",
+    "header": "Welkom",
+    "explanation": "Om in te loggen en toegang te krijgen tot de wereld van injixo, vul je je nieuwe wachtwoord in.",
+    "success_message": "Welkom, je hebt je wachtwoord succesvol ingesteld en kunt je nu aanmelden."
+  },
+  "profile_page": {
+    "title": "Profiel",
+    "update_successful": "Je profiel is bijgewerkt.",
+    "update_error": "Je profiel kan niet worden opgeslagen.",
+    "header": "Persoonlijke gegevens",
+    "account_header": "Account",
+    "preferences_header": "Voorkeuren",
+    "submit": "Profiel opslaan",
+    "submit_success": "Je profiel is succesvol bijgewerkt.",
+    "no_result_found": "Geen resultaat gevonden",
+    "email_verification": {
+      "pending": "Je e-mailadres is niet geverifieerd. <0> Verificatie-e-mail opnieuw verzenden. </0>",
+      "verified": "Je e-mailadres is geverifieerd. Je hebt nu toegang tot de overige functies.",
+      "failure": "Je e-mailadres kon niet worden geverifieerd. De gevraagde koppeling bestaat niet.",
+      "resent": "We hebben je zojuist een e-mail gestuurd om je e-mailadres te verifiëren."
+    },
+    "validation": {
+      "required": "mag niet leeg zijn.",
+      "max": "mag niet langer zijn dan {{max}} tekens.",
+      "email": "is geen geldig e-mail formaat.",
+      "not_unique": "niet uniek."
+    },
+    "notifications": {
+      "allowed": "Je browser staat injixo-meldingen toe.",
+      "blocked": "Je browser staat geen injixo-meldingen toe. Je kunt dit wijzigen in je browserinstellingen.",
+      "not_set": "Om injixo-meldingen te ontvangen, moet je deze eerst inschakelen in je browserinstellingen.",
+      "not_supported": "Je huidige browser ondersteunt geen meldingen.",
+      "request": "injixo-meldingen toestaan",
+      "title": "Meldingen"
+    },
+    "password_confirmation": {
+      "title": "Wijzig e-mail adres"
+    }
+  },
+  "security_page": {
+    "change_password": {
+      "header": "Wachtwoord wijzigen",
+      "current_password": "Huidig wachtwoord",
+      "submit": "Wachtwoord opslaan",
+      "submit_failed": "Het wachtwoord kan niet worden opgeslagen.",
+      "submit_success": "Je wachtwoord is bijgewerkt.",
+      "wrong_current_password": "Voer je huidige wachtwoord in."
+    },
+    "two_factor_auth": {
+      "header": "Twee-factor-authenticatie",
+      "enable": "2FA inschakelen",
+      "disable": "2FA uitschakelen",
+      "enabled": {
+        "hint": "Je account is beveiligd door middel van 2FA.",
+        "hint2": "Om je account te beschermen raden we het sterk aan om 2FA ingeschakeld te houden. Om een nieuw apparaat te registreren, activeer 2FA opnieuw.",
+        "help": "Neem contact op met een injixo-beheerder in geval van problemen of om over te schakelen op een nieuw toestel."
+      },
+      "disabled": {
+        "link_to_docs": "https://help.injixo.com/2fa",
+        "hint": "Twee-factor authenticatie (2FA) voegt een extra beveiligingslaag toe aan je account door meer dan alleen een wachtwoord te vereisen om in te loggen. Ga voor meer informatie naar het <0>Help Center</0>."
+      },
+      "tooltip_enforced": "Het gebruik van 2FA is verplicht voor je account"
+    },
+    "enable_2fa_page": {
+      "header": "Twee-factor authenticatie inschakelen",
+      "continue": "Verder",
+      "enable": "2FA inschakelen",
+      "cancel": "Annuleren",
+      "copy": "Kopieer",
+      "copied": "Gekopieerd",
+      "otp_verification_failed": "Ongeldige code, probeer opnieuw",
+      "backup_codes_confirmation": "Bevestig dat je de back-upcodes veilig hebt opgeslagen.",
+      "sudo_expired": "De sessie is verlopen. Je kan opnieuw beginnen door de pagina opnieuw te laden.",
+      "enabling_failed": "Er is iets misgegaan bij het inschakelen van 2FA. Probeer het later nog eens.",
+      "step_1": {
+        "header": "1. Installeer een authenticator-app op je mobiele apparaat",
+        "description": "Installeer een van de volgende authenticatie-apps op je mobiele of tablet-apparaat:",
+        "apps": "Use <0>Authy</0>, <0>Google Authenticator</0>, or <0>Microsoft Authenticator</0>",
+        "download_links": {
+          "header": "Download links",
+          "authy": {
+            "google_play_url": "https://play.google.com/store/apps/details?id=com.authy.authy&hl=nl",
+            "apple_store_url": "https://apps.apple.com/nl/app/authy/id494168017"
+          },
+          "google_authenticator": {
+            "google_play_url": "https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=nl",
+            "apple_store_url": "https://apps.apple.com/nl/app/google-authenticator/id388497605"
+          },
+          "microsoft_authenticator": {
+            "google_play_url": "https://play.google.com/store/apps/details?id=com.azure.authenticator&hl=nl",
+            "apple_store_url": "https://apps.apple.com/nl/app/microsoft-authenticator/id983156458"
+          }
+        }
+      },
+      "step_2": {
+        "header": "2. Voeg injixo toe aan je authenticator-app",
+        "qr_code": "Scan QR code",
+        "or": "of",
+        "setup_key": "Voer de key handmatig in",
+        "description": "In de authenticatie app, voeg een nieuwe account toe door",
+        "copied_setup_key": "De setup key is naar het klembord gekopieerd!"
+      },
+      "step_3": {
+        "header": "3. Voer eenmalig het wachtwoord vanuit de authenticator-app in",
+        "description": "Voer de code in die door de authenticator-app is gegenereerd om je apparaat te registreren"
+      },
+      "step_4": {
+        "header": "4. Bewaar de back-up codes",
+        "description": "Als je de toegang tot je authenticator-app verliest, kun je een van de volgende eenmalige wachtwoorden gebruiken om je identiteit te verifiëren. Behandel ze vertrouwelijk en bewaar ze op een veilige plaats.",
+        "warning": "Je hebt geen toegang meer tot deze wachtwoorden zodra je dit scherm verlaat.",
+        "download_backup_codes": "Download",
+        "copied_backup_codes": "Back-up codes zijn naar het klembord gekopieerd!",
+        "checkbox": "Ik heb mijn back-up codes veilig opgeborgen."
+      },
+      "enforcement": {
+        "message": "Twee-factor authenticatie is verplicht gesteld om injixo te gebruiken. Volg de stappen hieronder om verder te gaan met aanmelden.",
+        "more_details": "Meer details",
+        "less_details": "Minder details",
+        "hint": "Twee-factor authenticatie (2FA) voegt een extra beveiligingslaag toe aan je account door meer dan alleen een wachtwoord te vereisen om in te loggen. Ga voor meer informatie naar het <0>Help Center</0>.",
+        "link_to_docs": "https://help.injixo.com/2fa"
+      }
+    },
+    "enable_2fa": {
+      "success_message": "Twee-factor authenticatie is met succes ingeschakeld"
+    },
+    "disable_2fa": {
+      "success_message": "Twee-factor authenticatie is met succes uitgeschakeld",
+      "header": "Twee-factor authenticatie uitschakelen"
+    },
+    "single_sign_on": {
+      "header": "Single sign-on",
+      "hint": {
+        "admin": "Single sign-on is actief voor je account. De standaard aanmelding met e-mail en wachtwoord is niet langer beschikbaar.",
+        "password": "Je e-mail en wachtwoord worden nu beheerd in je identity provider. Neem contact op met de beheerder voor eventuele updates",
+        "user": "Single sign-on is actief voor je account. De standaard aanmelding met e-mailadres en wachtwoord is niet langer beschikbaar. Als je je opgeslagen gegevens wilt bijwerken of een nieuwe toegang wilt aanvragen, neem dan contact op met je beheerder."
+      }
+    }
+  },
+  "sudo_confirmation": {
+    "failed": "Ongeldig wachtwoord.",
+    "hint": "Voer je wachtwoord in om verder te gaan",
+    "button": {
+      "continue": "Verder",
+      "cancel": "Annuleren"
+    }
+  },
+  "login_sso_page": {
+    "authentication_failed": "Authenticatie mislukt. Neem contact op met je beheerder.",
+    "header": "Log in op je account via SSO",
+    "login_link": "Aanmelden met e-mail en wachtwoord",
+    "login_request_expired": "Aanmeldverzoek is verlopen. Probeer het opnieuw.",
+    "submit": "Verder",
+    "title": "SSO"
+  },
+  "password_confirmation": {
+    "button": {
+      "cancel": "Annuleren",
+      "continue": "Verder"
+    },
+    "failed": "Ongeldig wachtwoord.",
+    "hint": "Voer je wachtwoord in om verder te gaan"
+  }
+}

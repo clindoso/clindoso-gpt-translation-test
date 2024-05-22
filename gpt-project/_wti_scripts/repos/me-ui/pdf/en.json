@@ -1,0 +1,45 @@
+{
+  "request_state": {
+    "approved": "Approved",
+    "canceled": "Canceled",
+    "cancellation_requested": "Cancellation requested",
+    "rejected": "Rejected",
+    "requested": "Requested"
+  },
+  "requests_overview_pdf": {
+    "copyright": "© {{year}} injixo",
+    "file_name": "Time-off-overview-{{year}}",
+    "footer": {
+      "page_indicator": "Page {{currentPage}} of {{totalPages}}",
+      "timestamp": "Generated on {{timestamp}}",
+      "conflict_explanation": "The time to be booked may change because you have submitted at least one more time-off request for this week."
+    },
+    "table": {
+      "header": {
+        "date": "Date",
+        "duration": "Duration",
+        "status": "Status",
+        "type": "Type",
+        "counted_hours_days": "Counted hours/days"
+      }
+    },
+    "title": "Time-off overview"
+  },
+  "schedule_pdf": {
+    "title": "Schedule for {{firstName}} {{lastName}}, {{date_range}}",
+    "file_name": "Schedule_{{start}}-{{end}}",
+    "page_info": {
+      "page_indicator": "Page {{currentPage}}/{{totalPages}}",
+      "timestamp": "Downloaded on {{timestamp}}"
+    },
+    "table": {
+      "week_number": "Week {{weekNumber}}",
+      "day": "Day",
+      "start": "Start",
+      "end": "End",
+      "duration": "Duration",
+      "not_planned": "No schedule published yet",
+      "total": "Total"
+    }
+  }
+}

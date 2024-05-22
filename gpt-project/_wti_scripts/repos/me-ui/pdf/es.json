@@ -1,0 +1,45 @@
+{
+  "request_state": {
+    "approved": "Aprobada",
+    "canceled": "Cancelada",
+    "cancellation_requested": "Cancelación solicitada",
+    "rejected": "Rechazada",
+    "requested": "Solicitada"
+  },
+  "requests_overview_pdf": {
+    "copyright": "© {{year}} injixo",
+    "file_name": "Resumen-de-permisos-{{year}}",
+    "footer": {
+      "page_indicator": "Página {{currentPage}} de {{totalPages}}",
+      "timestamp": "Generado el {{timestamp}}",
+      "conflict_explanation": "The time to be booked may change because you have submitted at least one more time-off request for this week."
+    },
+    "table": {
+      "header": {
+        "date": "Fecha",
+        "duration": "Duración",
+        "status": "Estado",
+        "type": "Tipo",
+        "counted_hours_days": "Counted hours/days"
+      }
+    },
+    "title": "Resumen de permisos"
+  },
+  "schedule_pdf": {
+    "title": "Planificación de {{firstName}} {{lastName}}, {{date_range}}",
+    "file_name": "Planificación_{{start}}-{{end}}",
+    "page_info": {
+      "page_indicator": "Página {{currentPage}}/{{totalPages}}",
+      "timestamp": "Descargado el {{timestamp}}"
+    },
+    "table": {
+      "week_number": "Semana {{weekNumber}}",
+      "day": "Día",
+      "start": "Inicio",
+      "end": "Fin",
+      "duration": "Duración",
+      "not_planned": "Ninguna planificación publicada hasta el momento",
+      "total": "Total"
+    }
+  }
+}

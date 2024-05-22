@@ -1,0 +1,88 @@
+{
+  "application": {
+    "title": "Insertar rotaciones de turnos",
+    "backToCapacity": "Volver a Capacidad",
+    "backToSchedules": "Volver a Planificar"
+  },
+  "filters": {
+    "label": {
+      "planningUnit": "Unidad de planificación",
+      "selection": "Grupo",
+      "timePeriod": "Periodo de tiempo"
+    },
+    "placeholder": {
+      "planningUnit": "Elegir una unidad de planificación",
+      "selection": "Elegir grupo"
+    },
+    "result": {
+      "noResult": "No hay resultados"
+    }
+  },
+  "shiftSequencesTable": {
+    "heading": "Resumen",
+    "headers": {
+      "select": "Seleccionar",
+      "personnelNumber": "Número personal",
+      "name": "Nombre",
+      "shiftSequence": "Rotación de turnos",
+      "sequence": "Orden",
+      "employeeRow": "Fila de empleados",
+      "referenceDate": "Fecha de referencia",
+      "validFrom": "Válido desde",
+      "validTo": "Válido hasta"
+    },
+    "dateFormat": "dd LLL, yyyy",
+    "noData": "No se encontraron rotaciones de turnos/as.",
+    "singleCheckbox": "Seleccionar una rotación de turnos",
+    "allCheckbox": "Seleccionar todas las rotaciones de turnos"
+  },
+  "insertingOptions": {
+    "heading": "Opciones",
+    "description": "Elija en esta sección las opciones para insertar las rotaciones de turnos.",
+    "option1": "Eliminar actividades de jornada completa",
+    "option2": "Eliminar márgenes de disponibilidad",
+    "option3": "Eliminar actividades y turnos"
+  },
+  "jobHistory": {
+    "heading": "Histórico",
+    "headers": {
+      "select": "Seleccionar",
+      "status": "Estado",
+      "startedAt": "Iniciado el"
+    },
+    "processing": "Inserción en curso",
+    "viewDetails": "Ver detalles",
+    "timeFormat": "dd LLL yyyy, HH:mm",
+    "singleCheckbox": "Selecciona la tarea de inserción",
+    "allCheckbox": "Selecciona todas las tareas de inserción",
+    "noData": "No se ha encontrado ninguna tarea de inserción.",
+    "clearCreatedJobs": "Eliminar entradas"
+  },
+  "planning_units": "Unidades de Planificación",
+  "selections": "Grupos",
+  "shift_sequences": "Rotaciones de turnos",
+  "insertion_jobs": "Tareas de inserción",
+  "reload": {
+    "planning_units": "Recargar Unidades de Planificación",
+    "selections": "Recargar Grupos",
+    "shift_sequences": "Recargar Rotaciones de turnos",
+    "insertion_jobs": "Recargar Tareas de inserción"
+  },
+  "creatingJob": {
+    "failed": "La creación de la tarea de inserción ha fallado. Por favor, vuelve a intentarlo.",
+    "success": "Se ha creado correctamente la tarea de inseción."
+  },
+  "document_title": {
+    "module": "Plan",
+    "sub_module": "Insertar rotaciones de turnos"
+  },
+  "error": {
+    "reload_resource": "Ha ocurrido un error. Intenta recargar la página <0>{{resource}}</0> o vuelve a intentarlo más tarde."
+  },
+  "insert_shift_sequences": "Insertar rotaciones de turnos",
+  "level": {
+    "actual": "Estado Actual",
+    "plan": "Plan"
+  },
+  "target_level": "Nivel destino"
+}

@@ -1,0 +1,73 @@
+{
+  "application": {
+    "title": "Vakantierecht",
+    "backToTimeOff": "Terug naar Verlof"
+  },
+  "options": {
+    "button": {
+      "export": "Export CSV",
+      "transfer": "Overdragen Vakantierecht"
+    }
+  },
+  "filters": {
+    "label": {
+      "planningUnit": "Eenheid",
+      "selection": "Groep",
+      "year": "Jaar",
+      "search": "Zoeken"
+    },
+    "placeholder": {
+      "planningUnit": "Kies een Eenheid",
+      "selection": "Kies een Groep",
+      "year": "Kies een jaar",
+      "search": "Gebruik een komma om namen te scheiden"
+    },
+    "result": {
+      "noResult": "Geen gegevens"
+    }
+  },
+  "entitlementsTable": {
+    "label": {
+      "personnelNumber": "Personeelsnummer",
+      "employeeName": "Naam",
+      "contract": "Contract",
+      "remainCurrentYear": "Resterend Huidig Jaar",
+      "remainLastYear": "Resterend Vorig Jaar",
+      "currentYear": "Huidig jaar",
+      "takenRatio": "Genomen Vakantie",
+      "takenRatioPercent": "Genomen Vakantie {{percent}}%"
+    },
+    "result": {
+      "loading": "Laden",
+      "noEmployeesFound": "Geen medewerkers gevonden.",
+      "noPlanningUnitsFound": "Geen Eenheid aanwezig."
+    }
+  },
+  "transferModal": {
+    "text": {
+      "description": "The remaining vacation entitlement for the current selection will be transferred",
+      "from": "Van",
+      "to": "Tot"
+    },
+    "button": {
+      "transfer": "Overdragen",
+      "cancel": "Annuleren"
+    },
+    "transferSuccess": "Saldo is overgedragen naar {{nextYear}}"
+  },
+  "error": {
+    "fetchingEntitlements": "Er is een fout opgetreden (Bron: Vakantierecht)",
+    "fetchingVacations": "Er is een fout opgetreden (Bron: Vakantie genomen)",
+    "fetchingPlanningUnits": "Er is een fout opgetreden (Bron: Eenheid)",
+    "fetchingSelections": "Er is een fout opgetreden (Bron: Groep)",
+    "fetchingEmployees": "Er is een fout opgetreden (Bron: Medewerkers)",
+    "fetchingAccessRights": "Er is een fout opgetreden (Bron: Toegangsrechten)",
+    "transferEntitlements": "Er is een fout opgetreden (Bron: Overdragen Vakantierecht)",
+    "savingEntitlements": "Er is een fout opgetreden (Bron: Vakantierecht) - Details:",
+    "exportCsv": "Er is een fout opgetreden (Bron: Esport CSV)"
+  },
+  "document_title": {
+    "module": "Plan",
+    "sub_module": "Vakantierecht"
+  }
+}

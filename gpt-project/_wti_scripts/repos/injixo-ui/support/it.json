@@ -1,0 +1,71 @@
+{
+  "form": {
+    "id": "0ade9186-7007-4280-91db-02c9cd4b1a74",
+    "label": {
+      "create-ticket": "Nuovo Ticket",
+      "guide": "Guida",
+      "your-ticket": "Il tuo Ticket",
+      "upload": "File allegati",
+      "files-selected": "file selezionati",
+      "submit": "Invia",
+      "try-again": "Riprova",
+      "error-loading-form": "Errore durante il caricamento del form",
+      "category": "Tipo di Ticket",
+      "description": "Descrizione",
+      "error-sending-form": "Invio fallito",
+      "impact": "Impatto sulla tua attività",
+      "phone": "Numero di Telefono",
+      "title": "Titolo",
+      "error-loading-application": "Errore nel caricamento dell'applicazione"
+    },
+    "validation": {
+      "single-field": "Si prega di compilare questo campo obbligatorio.",
+      "all-fields": "Si prega di compilare tutti i campi obbligatori.",
+      "no-result": "No Risultato"
+    },
+    "info": {
+      "submit": "Grazie per aver inviato la tua richiesta.",
+      "error-loading-form": "Si è verificato un errore durante il caricamento della pagina. È possibile riprovare facendo clic sul pulsante.",
+      "error-sending-form": "Ci dispiace. Qualcosa è andato storto durante l'invio del modulo. Riprovare o inviare un'email a support@injixo.com. Ti ringraziamo per la comprensione."
+    },
+    "option": {
+      "category": {
+        "billing-issue": "Problema di fatturazione",
+        "question": "Domanda",
+        "software-issue": "Problema di software",
+        "system-outage": "Caduta completa del sistema"
+      },
+      "impact": {
+        "critical": "Critico",
+        "major": "Maggiore",
+        "minor": "Minore"
+      }
+    },
+    "placeholder": {
+      "description": "Per poter elaborare il tuo ticket in modo efficiente, ti chiediamo di registrare un solo problema per ticket.",
+      "phone": "Il numero di telefono deve contenere solo numeri, + ( ) - . e x",
+      "category": "Seleziona",
+      "impact": "Seleziona"
+    }
+  },
+  "guide": {
+    "create-ticket": "Crea un ticket per chiedere l'assistenza degli esperti di injixo.",
+    "provide-information": "Basta fornire informazioni su ciò che si vorrebbe fare e su ciò che invece sta accadendo.",
+    "whats-next": {
+      "pre": "Dopo aver inviato la richiesta, riceverai un'email di conferma con l'ID del ticket come riferimento. Il team risponderà alla tua richiesta il più rapidamente possibile via email. Sarebbe utile fornire un numero di telefono per poterti contattare in caso di urgenza."
+    },
+    "gdpr": {
+      "pre": "InVision ha bisogno delle informazioni di contatto che ci fornisci per contattarti in merito al tuo problema. Per informazioni sulle nostre pratiche sulla privacy e sull'impegno a proteggere la tua privacy, ti preghiamo di rivedere la nostra",
+      "link": "Politica sulla Privacy"
+    },
+    "docs": {
+      "link": "Help Center",
+      "post": "dove puoi trovare la documentazione su come utilizzare injixo.",
+      "pre": "Puoi controllare la nostra conoscenza di base"
+    }
+  },
+  "document_title": {
+    "module": "Support",
+    "page_title": "Tickets"
+  }
+}

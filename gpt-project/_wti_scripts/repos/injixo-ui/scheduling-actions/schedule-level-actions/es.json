@@ -1,0 +1,160 @@
+{
+  "document_title": {
+    "module": "Plan",
+    "page": {
+      "copy_level_content": "Copiar Contenido del Nivel",
+      "empty_levels": "Vaciar niveles",
+      "replace_activities": "Sustituir Actividades"
+    }
+  },
+  "error": {
+    "copy-level-content-request": "No se ha podido copiar el contenido del nivel",
+    "empty-levels-request": "No se ha podido solicitar el vaciado de niveles",
+    "incomplete-form": "Los datos del formulario están incompletos. Asegúrate de corregir todos los campos resaltados.",
+    "planning-unit": "Debes seleccionar una unidad de planificación",
+    "replace-activities-request": "No se ha podido solicitar la sustitución de actividades"
+  },
+  "explanation": {
+    "copy-level-content": {
+      "daterange-and-startdate": "El contenido del rango de fechas completo se pegará desde la fecha de inicio destino.",
+      "empty-level": "Al marcar la casilla, los datos del nivel de origen se eliminarán después de copiar.",
+      "levels": "Copia el contenido del nivel de origen al nivel destino seleccionado. Por favor, ten en cuenta que el contenido existente del nivel destino será sobrescrito."
+    },
+    "employee-selection": "Por defecto, esta es la lista completa de empleados en la unidad de planificación seleccionada. Puedes afinar los empleados seleccionando un grupo o un filtro de empleados del desplegable correspondiente.",
+    "empty-levels": {
+      "level-selection": "El contenido de los niveles seleccionados se eliminará para el rango de fechas seleccionado."
+    },
+    "replace-activities": {
+      "level-daterange": "Sustituir actividades en múltiples niveles al mismo tiempo en el intervalo de fechas seleccionado."
+    }
+  },
+  "heading": {
+    "copy-level-content": "Copiar contenido del nivel",
+    "employees": "Empleados ({{amountSelected}}/{{amountTotal}} seleccionado(s))",
+    "empty-levels": "Vaciar niveles",
+    "replace-activities": "Sustituir actividades",
+    "settings": "Configuraciones"
+  },
+  "hint": {
+    "copy-level-content": {
+      "background-job": "La copia de contenido del nivel ejecuta un proceso en segundo plano. Para ver su estado, revisa el <0>JobProcessor</0>."
+    },
+    "empty-levels": {
+      "background-job": "Vaciar niveles ejecuta un proceso en segundo plano. Para ver su estado, revisa el <0>JobProcessor</0>."
+    },
+    "replace-activities": {
+      "background-job": "Sustituir actividades ejecuta un proceso en segundo plano. Para ver su estado, revisa el <0>JobProcessor</0>."
+    }
+  },
+  "label": {
+    "aria-enhancement": {
+      "button": "botón",
+      "dropdown": "despleglable"
+    },
+    "back-to-schedules": "Volver a Planificar",
+    "button": {
+      "cancel": "Cancelar",
+      "copy-level-content": "Copiar contenido del nivel",
+      "empty-levels": "Vaciar niveles",
+      "level_one": "{{count}} Nivel seleccionado",
+      "level_other": "{{count}} Niveles seleccionados",
+      "replace-activities": "Sustituir actividades"
+    },
+    "date-range": "Rango de fechas",
+    "employee-filter": "Filtro de empleado",
+    "empty-level": "Vaciar el contenido del nivel origen después de copiar.",
+    "empty-levels": {
+      "level-selection": "Niveles a vaciar"
+    },
+    "form-error": {
+      "no-employees": "No se han seleccionado empleados. Al menos un empleado es necesario para poder continuar."
+    },
+    "levels": "Niveles",
+    "no-employees": {
+      "caption": "No hay empleados",
+      "empty-planning-unit": "La acción no se puede ejecutar ya que no existen empleados para la unidad de planificación seleccionada.",
+      "empty-planning-unit-and-employee-filter": "La acción no se puede ejecutar ya que no existen empleados para la unidad de planificación y filtro de empleado seleccionados.",
+      "empty-planning-unit-and-selection": "La acción no se puede ejecutar ya que no existen empleados para la unidad de planificación y grupo seleccionados.",
+      "no-planning-unit": "La acción no se puede ejecutar ya que no se ha seleccionado ninguna unidad de planificación."
+    },
+    "no-entries": "No hay resultados",
+    "no-planning-unit-selected": "Seleccionar primero una unidad de planificación",
+    "selection": "Grupo",
+    "source-activity": "Actividad a sustituir",
+    "source-date-range": "Rango de fechas origen",
+    "source-level": "Nivel origen",
+    "start-date": "Fecha de inicio destino",
+    "target-activity": "Sustituir actividad con",
+    "target-level": "Nivel destino"
+  },
+  "level": {
+    "absenceWishes": {
+      "name": "Solicitud de ausencias y vacaciones"
+    },
+    "alternativeWishes": {
+      "name": "Solicitud alternativa"
+    },
+    "backup": {
+      "name": "Versión 1"
+    },
+    "backupVersion2": {
+      "name": "Versión 2"
+    },
+    "backupVersion3": {
+      "name": "Versión 3"
+    },
+    "final": {
+      "name": "Estado Actual"
+    },
+    "plan": {
+      "name": "Plan"
+    },
+    "wishes": {
+      "name": "Solicitud"
+    }
+  },
+  "message": {
+    "copy-level-content": {
+      "request-not-successful": "No se ha podido comenzar el copiado de nivel. Por favor, vuelve a intentarlo.",
+      "request-sent": "Copiado de nivel en marcha. Revisa el estado en el JobProcessor."
+    },
+    "empty-levels": {
+      "request-not-successful": "No se ha podido comenzar el vaciado de niveles para los niveles: {{levels}}. Por favor, vuelve a intentarlo.",
+      "request-sent": "Vaciado de niveles en marcha para los niveles: {{levels}}. Comprueba el estado en el JobProcessor."
+    },
+    "replace-activities": {
+      "request-not-successful": "No se ha podido comenzar la sustitución de actividades. Por favor, vuelve a intentarlo.",
+      "request-sent": "Sustitución de actividades en marcha. Comprueba el estado en el JobProcessor."
+    }
+  },
+  "notification": {
+    "failure": {
+      "general": "Ha ocurrido un error. Por favor, vuelve a intenarlo."
+    }
+  },
+  "placeholder": {
+    "dropdown": "Buscar o seleccionar"
+  },
+  "table": {
+    "column": {
+      "employee_name": "Nombre"
+    }
+  },
+  "validation": {
+    "selected-levels": {
+      "required": "Debes seleccionar al menos un nivel"
+    },
+    "source-activity": {
+      "required": "Debes seleccionar una actividad de origen"
+    },
+    "source-level": {
+      "required": "Debes seleccionar un nivel origen"
+    },
+    "target-activity": {
+      "required": "Debes seleccionar una actividad de destino"
+    },
+    "target-level": {
+      "required": "Debes seleccionar un nivel destino"
+    }
+  }
+}

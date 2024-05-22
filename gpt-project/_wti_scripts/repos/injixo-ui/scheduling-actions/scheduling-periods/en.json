@@ -1,0 +1,122 @@
+{
+  "heading": {
+    "initial": "Scheduling periods",
+    "create": "Create scheduling period",
+    "edit": "Edit scheduling period",
+    "lottery": "Start shift lottery",
+    "assignment": "Assign shifts",
+    "generate": "Generate shifts"
+  },
+  "button": {
+    "back-to-schedules": "Back to Schedules",
+    "cancel": "Cancel",
+    "delete-selected": "Delete selected",
+    "save": "Save",
+    "start-lottery": "Start shift lottery",
+    "generate-shifts": "Generate shifts",
+    "start-assignment": "Assign shifts"
+  },
+  "error": {
+    "create": {
+      "error": "An error occurred while creating the scheduling period."
+    },
+    "edit": {
+      "request": "Failed to request an update"
+    },
+    "incomplete-form": "The form data is incomplete. Make sure you correct all highlighted fields.",
+    "fetching-data": "An error has occurred and scheduling periods could not be loaded. Try to <0>reload scheduling periods</0> or try again later.",
+    "generate": {
+      "shift-coverage": "Enter a percentage number"
+    },
+    "shift-bidding-modal": {
+      "no-selected-employees": "No employee selected. At least one employee is necessary in order to proceed."
+    }
+  },
+  "explanation": {
+    "shift-bidding-modal-toggle": "Consider average start time of other shifts",
+    "shift-bidding-modal-tolerance": "Maximum tolerance that a shift's start time may deviate from the average employee’s shift start time",
+    "generate-based-on-contractual-hours": "of the contractual hours",
+    "generate-based-on-employee-requirement": "of the staff requirements",
+    "generate-shift-coverage-percentage": "Shift generation requirement"
+  },
+  "label": {
+    "aria-enhancement": {
+      "select": "select",
+      "select-all": "select all"
+    },
+    "create": "Create scheduling period",
+    "deadline": "Deadline",
+    "no-planning-untis": "No planning units found",
+    "no-selections": "No selections found",
+    "shift-requirements": "Adjust shift generation",
+    "status": "Status",
+    "daterange": "Date Range",
+    "tolerance": "Tolerance"
+  },
+  "notification": {
+    "create": {
+      "error": "An error occurred while creating the scheduling period. Please try again.",
+      "success": "Scheduling period successful created"
+    },
+    "delete": {
+      "failed_one": "Failed to delete {{count}} scheduling period",
+      "failed_other": "Failed to delete {{count}} scheduling periods",
+      "success_one": "{{count}} scheduling period deleted successfully",
+      "success_other": "{{count}} scheduling periods deleted successfully"
+    },
+    "edit": {
+      "edit-error": "An error occurred while updating, please try again later",
+      "edit-success": "Scheduling period updated successfully",
+      "status-error": "An error occurred while updating the status, please try again later",
+      "status-success": "Scheduling period status updated successfully"
+    },
+    "assignment": {
+      "error": "An error occurred while assigning shifts. Please try again.",
+      "success": "Assign shifts successfully started"
+    },
+    "generate-shifts": {
+      "error": "An error occurred while generating shifts. Please try again.",
+      "success": "Generate shifts successfully started"
+    },
+    "lottery": {
+      "error": "An error occurred while starting the shift lottery. Please try again.",
+      "success": "Shift lottery successfully started"
+    }
+  },
+  "placeholder": {
+    "all-selections": "All selections",
+    "deadline-none": "None",
+    "planning-unit": "Select a planning unit",
+    "table": "There are no scheduling periods yet. Try to change your filter or add a new one."
+  },
+  "tab": {
+    "expired": "Expired",
+    "ongoing": "Ongoing"
+  },
+  "table": {
+    "heading": {
+      "deadline": "Deadline",
+      "inherited-from": "Inherited from",
+      "selection": "Selection",
+      "status": "Status",
+      "valid-from": "Valid from",
+      "valid-to": "Valid to"
+    },
+    "none": "None",
+    "status": {
+      "published": "Published",
+      "finished": "Finished",
+      "unpublished": "Unpublished",
+      "shift_bidding_enabled": "Shift bidding enabled"
+    }
+  },
+  "document_title": {
+    "context": "Scheduling Periods",
+    "module": "Plan"
+  },
+  "hints": {
+    "assignment-modal-background-job": "Assign shifts starts a background process. To see the status, check the <0>JobProcessor</0>.",
+    "generate-shifts-modal-background-job": "Generate shifts starts a background process. To see the status, check the <0>JobProcessor</0>.",
+    "lottery-modal-background-job": "Start shift lottery starts a background process. To see the status, check the <0>JobProcessor</0>."
+  }
+}

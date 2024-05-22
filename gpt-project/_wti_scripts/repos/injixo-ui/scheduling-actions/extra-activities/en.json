@@ -1,0 +1,187 @@
+{
+  "button": {
+    "back-to-overview": "Back to overview",
+    "back-to-schedules": "Back to Schedules",
+    "delete-schedules_one": "Delete entry",
+    "delete-schedules_other": "Delete entries",
+    "set-up-new-extra-activity": "Set up new extra activity"
+  },
+  "connection": {
+    "offline": "We’ve lost the connection. We are trying to reconnect automatically.",
+    "reconnecting": "We were unable to connect. Please try to reload in a few minutes."
+  },
+  "document_title": {
+    "context": {
+      "schedules": {
+        "page": {
+          "new": "New Extra Activity",
+          "overview": "Extra Activities",
+          "results": "Extra Activity Results",
+          "suggestions": "Extra Activity Suggestions"
+        },
+        "title": "Schedules"
+      }
+    },
+    "module": "Plan"
+  },
+  "dropdown": {
+    "minimum-session-duration": "{{minutes}} minutes"
+  },
+  "error": {
+    "extra-activities-request": "Failed to request extra activities",
+    "incomplete-form": "The form data is incomplete. Make sure you correct all highlighted fields."
+  },
+  "heading": {
+    "employee-table": "Employee table",
+    "initial": "Schedule extra activities",
+    "proposal-page": "Schedule extra activities - Suggestions",
+    "proposal-view": "{{scheduledHours}}/{{requestedHours}} person-hours are suggested, {{selectedHours}} person-hours will be scheduled",
+    "results-page": "Schedule extra activities - Results",
+    "scheduling-history": "Scheduling history"
+  },
+  "helper-text-for-setting": {
+    "activity-selection": "The extra activity to schedule can only be a “Paid” activity of type “Presence”.",
+    "date-range": "By default, this range is set to the next Monday-Sunday work week following the current date. If the current date is a Monday, then it is set to the current Monday-Sunday work week.",
+    "distribute-staff-hours-evenly": "If this option is checked, the optimization will distribute the person-hours as evenly as possible among the people. Be aware that this may result in slightly worse coverage.",
+    "employee-selection": "By default, this is the full list of employees within the selected planning unit. You can further refine the group of employees by choosing a selection or an employee filter from the corresponding dropdown. You can only select employees that have the required skills for the extra activity.",
+    "number-of-staff-hours": "The number of person-hours must be a number that is greater than or equal to the selected minimum duration and is divisible by the interval of the selected planning unit."
+  },
+  "helper-text": {
+    "delete-schedules_one": "The selected entry will be deleted from the table. Any scheduled extra activities will not be affected.",
+    "delete-schedules_other": "The selected entries will be deleted from the table. Any scheduled extra activities will not be affected."
+  },
+  "label": {
+    "activity": "Extra activity to schedule",
+    "aria-enhancement": {
+      "button": "button",
+      "delete-entries": "delete entries",
+      "dropdown": "dropdown",
+      "select": "select",
+      "select-all": "select all"
+    },
+    "button": {
+      "cancel": "Cancel",
+      "generate-suggestions": "Generate suggestions",
+      "schedule-extra-activity": "Schedule extra activity"
+    },
+    "coverage-disclaimer": "Coverage was calculated when this proposal was created. The values don’t update automatically. If the activity spans multiple intervals, a value will be displayed for each interval.",
+    "date-range": "Date range",
+    "distribute-staff-hours-evenly": "Distribute person-hours evenly among people",
+    "employee-section": {
+      "employee-filter": "Employee filter",
+      "selection": "Selection"
+    },
+    "form-error": {
+      "no-participants": "No employees selected. Select at least one employee to schedule extra activities."
+    },
+    "heading": {
+      "employees": "Employees ({{amountSelected}}/{{amountTotal}} selected)",
+      "extra-activities": "Schedule extra activities - Set up new extra activity",
+      "scheduling-info": "View conflict",
+      "settings": "Settings"
+    },
+    "minimum-session-duration": "Minimum duration of slots",
+    "no-employees": {
+      "caption": "No employees",
+      "empty-planning-unit": "You can't schedule any extra activities as there are no employees for the selected planning unit.",
+      "empty-planning-unit-and-employee-filter": "You can't schedule any extra activities as there are no employees for the selected planning unit and employee filter.",
+      "empty-planning-unit-and-selection": "You can't schedule any extra activities as there are no employees for the selected planning unit and selection.",
+      "no-planning-unit": "You can't schedule any extra activities as there is no planning unit selected."
+    },
+    "no-entries": "No entries",
+    "no-scheduling-results": {
+      "details": "Schedule extra activities to see the status and suggestions of the optimization here.",
+      "heading": "No extra activities scheduled"
+    },
+    "number-of-staff-hours": "Total person-hours to be scheduled",
+    "results-status": {
+      "excluded": "Excluded",
+      "execution-error": "An error occurred while the extra activity was added to the person's schedule. The extra activity could not be scheduled.",
+      "failed": "Failed",
+      "scheduled": "Scheduled",
+      "staff-hours_one": "{{count}} person-hour",
+      "staff-hours_other": "{{count}} person-hours"
+    },
+    "scheduling-status": {
+      "error": "Scheduling failed. Please try again.",
+      "error_with_info": "Not possible",
+      "execution_error": "Scheduling failed. Please try again.",
+      "proposed": "Suggestions available",
+      "scheduling": "Scheduling in progress...",
+      "written": "Extra activity scheduled"
+    }
+  },
+  "link": {
+    "proposed": "View suggestions",
+    "view-schedule": "View schedule",
+    "written": "View results"
+  },
+  "message": {
+    "introduction": "Define a specified amount of person-hours and replace existing activities with any extra activities like chat, email or back office. Learn more in <0> Help Center</0>.",
+    "introduction-docs-link": "https://help.injixo.com/schedules-extra-activities/"
+  },
+  "notification": {
+    "failure": {
+      "general": "An error has occurred. Please try again later."
+    },
+    "form-error": {
+      "no-schedule-entry-selected": "No suggested schedule entry selected. Select at least one."
+    },
+    "warning": {
+      "information": "Not possible to allocate all person-hours that need to be scheduled.",
+      "reason": "Reason",
+      "reason-text": "The selected employees do not have enough replaceable paid activities of type presence in their schedule. ",
+      "solution": "Possible solution",
+      "solution-text": "Start the process from the beginning if you need to schedule additional person-hours."
+    }
+  },
+  "placeholder": {
+    "dropdown": "Search or select"
+  },
+  "popup": {
+    "timezone-helper": "Date and time data refer to the planning unit’s timezone."
+  },
+  "scheduling-info": {
+    "not-possible": {
+      "reason": "It was not possible to find slots for the selected employees. These employees do not have enough replaceable activities of type presence in the their schedule or the provided minimum duration of slots is too long."
+    },
+    "not-solved": {
+      "reason": "Calculating the optimal suggestions for the requested extra activities is too complex and couldn’t be processed within its time limit. You can try to select fewer employees or a smaller date range."
+    }
+  },
+  "suitable-activities-info": {
+    "hint": "Some of the employees are not selectable because they are missing the required skill(s) for the selected activity."
+  },
+  "table": {
+    "column": {
+      "activity-to-schedule": "Extra activity to schedule",
+      "date-range": "Date range",
+      "employee": "Employee",
+      "employee-name": "Name",
+      "extra-activity": "Extra activity",
+      "information": "Information",
+      "initiated-on": "Initiated on",
+      "planning-unit": "Planning unit",
+      "replaced-activity": "Replaced activity",
+      "resulting-coverage": "Resulting coverage",
+      "scheduled-time-slot": "Scheduled time slot",
+      "status": "Status",
+      "time-slot": "Suggested time slot",
+      "user": "User"
+    }
+  },
+  "validation": {
+    "activity": {
+      "required": "Select an activity"
+    },
+    "number-of-staff-hours": {
+      "has-more-than-two-decimal-places": "Enter a number with max. 2 decimal places.",
+      "min": "Enter a number that is greater than or equal to the selected minimum duration.",
+      "required": "Enter a number that is greater than or equal to the selected minimum duration.",
+      "type-error": "Enter a number that is greater than or equal to the selected minimum duration."
+    },
+    "planning-unit": {
+      "required": "Select a planning unit"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "loading": "Lade",
+  "save": "Speichern",
+  "saving": "Speichern",
+  "select_planning_unit": "Bitte wähle eine Planungseinheit",
+  "planning_unit": "Planungseinheit",
+  "day_model": "Tagesmodell",
+  "day_type": "Tagestyp",
+  "min": "min",
+  "max": "max",
+  "server_error": "Es ist ein technischer Fehler aufgetreten. Bitte versuche es später noch einmal.",
+  "edit-constraints": {
+    "success": "Die Einstellungen wurden gespeichert!",
+    "failure": "Bitte korrigiere die markierten Felder und versuche es erneut."
+  }
+}

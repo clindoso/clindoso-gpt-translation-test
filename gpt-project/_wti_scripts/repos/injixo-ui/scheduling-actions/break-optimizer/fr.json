@@ -1,0 +1,109 @@
+{
+  "heading": {
+    "initial": "Optimiser les pauses",
+    "optimization-history": "Historique",
+    "optimization-results": "Résultat de l'optimisation",
+    "settings": "Configuration"
+  },
+  "button": {
+    "back-to-day-view": "Retour à la vue journalière",
+    "back-to-schedules": "Retourner à Schedules",
+    "close": "Fermer",
+    "delete-break-optimizations_one": "Supprimer la ligne",
+    "delete-break-optimizations_other": "Supprimer les lignes",
+    "optimize-schedule": "Démarrer l'optimisation"
+  },
+  "error": {
+    "break-optimization-request": "L'optimisation des pauses a échoué",
+    "incomplete-form": "Il manque des informations. Veuillez vérifier les champs mis en évidence."
+  },
+  "helper-text": {
+    "delete-break-optimizations": "Les lignes sélectionnées seront supprimées du tableau. Les plannings associés ne seront pas modifiés."
+  },
+  "hint": {
+    "optimized-schedule-writing": "Le résultat sera inscrit dans la catégorie Planning"
+  },
+  "label": {
+    "aria-enhancement": {
+      "delete-entries": "supprimer les lignes",
+      "dropdown": "Menu déroulant",
+      "loading-spinner": "Chargement spinner",
+      "select": "sélectionner",
+      "select-all": "sélectionner tout"
+    },
+    "axis": {
+      "coverage-total-deviation-from-zero": "Couverture - Ecart total",
+      "optimized-schedule": "Planning optimisé",
+      "schedule-before-optimization": "Planning avant optimisation"
+    },
+    "date-range": "Période",
+    "in-progress": "en cours",
+    "maintenance": {
+      "caption": "L'optimisation des pauses est en cours d'amélioration",
+      "details": "L'optimisation des pauses sera disponible dans quelques minutes suite à une opération de maintenance. Merci pour votre patience."
+    },
+    "no-entries": "Aucune donnée",
+    "no-optimization-data": {
+      "details": "Démarrer une optimisation en sélectionnant une Unité opérationnelle et une période pour voir les résultats affichés ci-dessous.",
+      "heading": "Aucune optimisation disponible"
+    },
+    "optimization-result": {
+      "content": "Résultat de l'optimisation"
+    },
+    "optimization-status": {
+      "failed": "L'optimisation a échoué. Essayez à nouveau.",
+      "optimized": "Optimisation complète",
+      "partly-optimized": "Optimisation partielle",
+      "scheduling": "Optimisation en cours ..."
+    },
+    "view-results": "Voir les résultats"
+  },
+  "notification": {
+    "failure": {
+      "general": "Une erreur est survenue. Essayez à nouveau."
+    }
+  },
+  "placeholder": {
+    "dropdown": "Rechercher ou sélectionner"
+  },
+  "result": {
+    "info": {
+      "day_models": "L'Unité opérationnelle sélectionnée contient des Modèles horaires qui n'ont pu être converti en activités sur cette période. Les pauses de ces Modèles horaires n'ont pas été optimisées."
+    }
+  },
+  "success": {
+    "break-optimization-request": "L'optimisation des pauses a été traitée avec succès"
+  },
+  "table": {
+    "column": {
+      "date-range": "Période",
+      "initiated-on": "Démarrée le",
+      "planning-unit": "Unité opérationnelle",
+      "selection": "Groupe",
+      "status": "Statut",
+      "user": "Utilisateur"
+    },
+    "message": {
+      "partly-optimized": "Optimisation partielle",
+      "partly-optimized-description": "<0>Qu'est-ce que cela signifie ?</0>",
+      "partly-optimized-link": "https://help.injixo.com/fr/optimisation-pauses#optimisation-partielle",
+      "optimized": "Optimisé"
+    }
+  },
+  "tooltip": {
+    "outdated-graph": "Le graphique a été généré au démarrage de l'optimisation."
+  },
+  "validation": {
+    "planning-unit": {
+      "required": "Sélectionner une unité opérationnelle"
+    }
+  },
+  "connection": {
+    "offline": "Impossible de se reconnecter. Merci de recharger la page dans quelques minutes.",
+    "reconnecting": "Connexion perdue. Tentative de reconnexion..."
+  },
+  "document_title": {
+    "context": "Optimiser les pauses",
+    "module": "Plan"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "form": {
+    "id": "dc4b684b-e073-4667-a08a-885dc5e035d4",
+    "label": {
+      "create-ticket": "Nieuw ticket",
+      "guide": "Gids",
+      "your-ticket": "Je ticket",
+      "upload": "Voeg bestanden toe",
+      "files-selected": "bestanden geselecteerd",
+      "submit": "Verzenden",
+      "try-again": "Probeer opnieuw",
+      "error-loading-form": "Fout bij laden van formulier",
+      "category": "Type ticket",
+      "description": "Omschrijving",
+      "error-sending-form": "Indienen mislukt",
+      "impact": "Impact",
+      "phone": "Telefoonnummer",
+      "title": "Titel",
+      "error-loading-application": "Fout laden toepassing"
+    },
+    "validation": {
+      "single-field": "Dit veld is verplicht.",
+      "all-fields": "Vul alle verplichte velden in.",
+      "no-result": "Geen resultaat"
+    },
+    "info": {
+      "submit": "Bedankt voor het sturen van je verzoek.",
+      "error-loading-form": "Er is een fout opgetreden tijdens het laden van de pagina. Probeer het opnieuw door op de knop te klikken.",
+      "error-sending-form": "Er is iets misgegaan bij het versturen van het formulier. Probeer het opnieuw of stuur een e-mail naar support@injixo.com. Bedankt voor je begrip."
+    },
+    "option": {
+      "category": {
+        "billing-issue": "Probleem met facturering",
+        "question": "Vraag",
+        "software-issue": "Probleem met software",
+        "system-outage": "Systeemuitval"
+      },
+      "impact": {
+        "critical": "Kritiek",
+        "major": "Groot",
+        "minor": "Klein"
+      }
+    },
+    "placeholder": {
+      "description": "Om je ticket efficiënter te kunnen afhandelen, vragen wij je om slechts één probleem per ticket te melden.",
+      "phone": "Telefoonnummer mag alleen cijfers bevatten, + ( ) - . en x",
+      "category": "Selecteer",
+      "impact": "Selecteer"
+    }
+  },
+  "guide": {
+    "create-ticket": "Maak een ticket om deskundig advies te vragen aan injixo.",
+    "provide-information": "Geef simpelweg informatie over wat je zou willen doen en wat er gebeurt.",
+    "whats-next": {
+      "pre": "Na het verzenden van je verzoek, ontvang je een bevestigingsmail met een Ticket ID ter referentie. Het team zal je verzoek zo snel mogelijk beantwoorden via e-mail. Het zou helpen als je een telefoonnummer opgeeft, zodat we in dringende gevallen contact met je kunnen opnemen."
+    },
+    "gdpr": {
+      "pre": "InVision heeft de contactgegevens nodig die je ons verstrekt om contact met je op te nemen over je probleem. Voor meer informatie over ons privacybeleid en betrokkenheid bij het beschermen van je privacy, zie onze",
+      "link": "Privacybeleid"
+    },
+    "docs": {
+      "link": "Help Center",
+      "post": "waar je documentatie kan vinden over hoe je injixo gebruikt.",
+      "pre": "Je kan onze kennisbank raadplegen"
+    }
+  },
+  "document_title": {
+    "module": "Support",
+    "page_title": "Tickets"
+  }
+}

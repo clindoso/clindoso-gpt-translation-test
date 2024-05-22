@@ -1,0 +1,99 @@
+{
+  "application": {
+    "title": "Abwesenheitsperioden",
+    "backToTimeOff": "Zurück zu Urlaub/Abwesenheiten",
+    "optional": "optional"
+  },
+  "filters": {
+    "label": {
+      "planningUnit": "Planungseinheit",
+      "selection": "Auswahl",
+      "timePeriod": "Zeitraum",
+      "absenceActivity": "Aktivität",
+      "status": "Status"
+    },
+    "placeholder": {
+      "planningUnit": "Planungseinheit wählen",
+      "selection": "Auswahl festlegen",
+      "absenceActivity": "Aktivität wählen",
+      "status": "Status auswählen"
+    },
+    "result": {
+      "noResult": "Keine Einträge"
+    },
+    "buttons": {
+      "createPeriod": "Neue Abwesenheitsperiode"
+    }
+  },
+  "planning_units": "Planungseinheiten",
+  "selections": "Auswahlen",
+  "reload_planning_units": "Planungseinheiten neu laden",
+  "reload_selections": "Auswahlen neu laden",
+  "periodsTable": {
+    "tabs": {
+      "ongoing": "Gültig",
+      "expired": "Abgelaufen",
+      "counters": {
+        "ongoing": "Anzahl gültiger Abwesenheitsperioden",
+        "expired": "Anzahl abgelaufener Abwesenheitsperioden"
+      }
+    },
+    "headers": {
+      "select": "Auswählen",
+      "selection": "Auswahl",
+      "validFrom": "Gültig ab",
+      "validTo": "Gültig bis",
+      "deadline": "Stichtag",
+      "inheritedFrom": "Geerbt von",
+      "status": "Status"
+    },
+    "noData": "Keine Abwesenheitsperioden gefunden.",
+    "singleCheckbox": "Abwesenheitsperiode auswählen",
+    "allCheckbox": "Alle Abwesenheitsperioden auswählen",
+    "deleteEntries": "Ausgewählte löschen",
+    "statuses": {
+      "enabled": "Veröffentlicht",
+      "locked": "Unveröffentlicht"
+    },
+    "editPeriod": "Abwesenheitsperiode bearbeiten",
+    "selectStatus": "Status auswählen",
+    "error": {
+      "deletePeriod": "{{number}} Abwesenheitsperiode(n) konnte(n) nicht gelöscht werden."
+    },
+    "statusSuccessfullyUpdated": "Der Status der Abwesenheitsperiode wurde erfolgreich aktualisiert."
+  },
+  "reload_time_off_periods": "Abwesenheitsperioden neu laden",
+  "types": "Aktivitätstypen",
+  "reload_types": "Aktivitätstypen neu laden",
+  "periodModal": {
+    "title": {
+      "create": "Neue Abwesenheitsperiode erstellen",
+      "edit": "Abwesenheitsperiode bearbeiten"
+    },
+    "button": {
+      "save": "Änderungen speichern",
+      "cancel": "Abbrechen",
+      "create": "Abwesenheitsperiode erstellen"
+    },
+    "label": {
+      "dateRange": "Zeitraum",
+      "deadline": "Stichtag"
+    },
+    "error": {
+      "createPeriod": "Abwesenheitsperiode konnte nicht erstellt werden.",
+      "editPeriod": "Abwesenheitsperiode(n) konnte(n) nicht aktualisiert werden."
+    },
+    "deadline": {
+      "empty": "Keinen",
+      "remove": "Stichtag entfernen"
+    }
+  },
+  "document_title": {
+    "module": "Plan",
+    "sub_module": "Abwesenheitsperioden"
+  },
+  "error": {
+    "reload_resource": "Es ist ein Fehler aufgetreten. Versuche, <0>{{resource}}</0> neu zu laden, oder probiere es später noch einmal."
+  },
+  "time_off_periods": "Abwesenheitsperioden"
+}

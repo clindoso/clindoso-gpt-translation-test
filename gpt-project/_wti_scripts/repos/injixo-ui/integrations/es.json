@@ -1,0 +1,993 @@
+{
+  "overview": {
+    "title": "Integraciones actuales",
+    "last_imported": "Última importación {{from}}",
+    "never_imported": "Ninguna importación todavía",
+    "add_button": "Añadir integración",
+    "edit_integration": "Editar",
+    "back_link": "Volver al resumen",
+    "connection_status": {
+      "connected": "Operacional",
+      "disconnected": "Problema detectado",
+      "suspended": "Pausado",
+      "xlink": "Xlink",
+      "pending": "Conectando",
+      "importing": "Importazione in corso"
+    },
+    "in_preparation": "En preparación",
+    "latest_datapoint": "Último dato importado {{datapoint}}"
+  },
+  "catalogue": {
+    "title": "Añadir una nueva integración",
+    "add_button": "Añadir integración",
+    "select_model": "Selecciona el modelo",
+    "back_link": "Volver al catálogo",
+    "features_label": "Funcionalidades",
+    "features": {
+      "call": "Histórico de llamadas",
+      "chat": "Histórico de chats",
+      "ticket": "Histórico de tickets",
+      "email": "Histórico de emails",
+      "social_media": "Histórico de redes sociales",
+      "document": "Histórico de documentos",
+      "agent_status": "Estado de los agentes",
+      "rta": "Adherencia en tiempo real (RTA)"
+    },
+    "delivery_mode_label": "Modo de distribución",
+    "delivery_mode": {
+      "cloud": "Cloud",
+      "on-prem": "On-Premise",
+      "legacy": "On-Premise"
+    }
+  },
+  "edit": {
+    "title": "Editar integración",
+    "pause_tooltip": "Suspender la importación",
+    "resume_tooltip": "Reanudar la importación",
+    "pause_integration_results": {
+      "error": "Ha ocurrido un error al intentar suspender la integración: {{error}}",
+      "success": "La integración se ha suspendido correctamente"
+    },
+    "resume_integration_results": {
+      "error": "Ha ocurrido un error al intentar reanudar la integración: {{error}}",
+      "success": "La integración se ha reanudado correctamente"
+    },
+    "support_link_label": "Saber más"
+  },
+  "setup": {
+    "vendor_and_model": "Elige sistema externo",
+    "temporary_add_integration_error": "Ha ocurrido un error al preparar tu integración: {{error}}",
+    "add_integration_results": {
+      "error": "Ha ocurrido un error al añadir la integración: {{error}}",
+      "successful": "La integración nueva se ha añadido correctamente"
+    },
+    "delete_integration_results": {
+      "error": "Ha ocurrido un error al intentar eliminar la integración: {{error}}",
+      "successful": "Integración eliminada correctamente"
+    },
+    "edit_integration_results": {
+      "error": "Ha ocurrido un error al intentar actualizar la integración: {{error}}",
+      "successful": "Integración actualizada correctamente"
+    },
+    "get_integration_results": {
+      "error": "No se ha podido cargar esta integración. Te hemos redireccionado a la página de resumen de las integraciones. (Detalles: {{error}})"
+    },
+    "get_verification_results": {
+      "error": "Ha ocurrido un error al intentar conectar a tu integración.",
+      "disconnected": "No se ha podido verificar la integración con los datos proporcionados.",
+      "credential_validation_error": "Las credenciales proporcionadas no son válidas.",
+      "insufficient_privilege_error": "El usuario proporcionado no tiene privilegios suficientes.",
+      "timezone_mismatch_error": "La zona horaria de tu sistema externo no coincide con la zona horaria de tu integración. Ajusta la zona horaria correctamente.",
+      "unmapped_error": "Un {{error}} ha occurido",
+      "cloud_link_connection_error": "No hay conexión con Cloud Link, verifique su instalación de Cloud Link."
+    },
+    "delete_confirmation": {
+      "title": "Eliminar integración",
+      "confirm": "Eliminar integración",
+      "introduction": "Esta integración será eliminada de injixo.",
+      "warning_list": "<li>Se mantendrán todas las colas importadas.</li> \n<li>Si vuelves a añadir la integración, se añadirán nuevas colas con los mismos nombres.</li>"
+    },
+    "cancel_confirmation": {
+      "title": "¿Estás seguro?",
+      "description": "Ya has establecido una conexión a injixo Cloud Link, que se perderá si continúas. Para conectar injixo Cloud Link a una nueva integración, tienes que reiniciarlo para generar un nuevo PIN.",
+      "confirm": "Sí, cancelar realmente",
+      "cancel": "Continuar editando"
+    },
+    "authentication_error": "No se ha podido autentificar al usuario. Por favor, inicie sesión de nuevo.",
+    "controls": {
+      "cancel": "Cancelar",
+      "delete": "Eliminar integración",
+      "save": "Guardar integración",
+      "verifying": "Verificando..."
+    },
+    "sections": {
+      "integration_name": {
+        "label": "Nombre de la integración",
+        "explanation": "Nombre personalizado para esta integración.",
+        "validation": "Introduce un nombre personalizado para la integración."
+      },
+      "configuration": {
+        "title": "Configuración",
+        "agent_status_active": {
+          "explanation": "Marca esta casilla para importar datos sobre los estados de los agentes desde tu base de datos.",
+          "label": "Importar datos sobre el estado del agente"
+        }
+      },
+      "cloudLink": {
+        "title": "injixo Cloud Link",
+        "download": {
+          "explanation": "Descarga el instalador correspondiente a tu sistema operativo. Aprende más en el <explanationLinkText>Help Center</explanationLinkText>.",
+          "platform_label": "Sistema operativo de servidor",
+          "button_label": {
+            "64_bit": "Descargar 64-bit",
+            "32_bit": "Descargar 32-bit",
+            "arm": "Download ARM"
+          }
+        },
+        "connect": {
+          "explanation": "Durante la instalación de injixo Cloud Link se muestra un PIN necesario para continuar. El PIN caduca a los 5 minutos.",
+          "linkTarget": "https://help.injixo.com/install-cloud-link/",
+          "label": "PIN mostrado durante la instalación",
+          "not_claimable": "No se ha podido conectar la integración a injixo Cloud Link.",
+          "success": "Vinculado con éxito",
+          "error": "El PIN es incorrecto. Asegúrate de que el PIN no ha caducado. Si no estás seguro, simplemente reinicia el injixo Cloud Link para generar un nuevo PIN e inténtalo de nuevo.",
+          "claim_button": "Conectar",
+          "new_cloud_link": "Conectar una nueva instalación de injixo Cloud Link",
+          "retry": "Volver a intentarlo"
+        },
+        "download_for": "Descargar para"
+      },
+      "csv_schema": {
+        "title": "Configuración",
+        "explanation": "El esquema CSV se utiliza para leer y procesar tu archivo CSV. Si deseas importar archivos CSV con diferentes formatos, debes configurar una integración CSV para cada formato.",
+        "create_schema": "Crear un nuevo esquema CSV",
+        "select_schema": "Esquema CSV",
+        "placeholder": "Seleccionar un esquema",
+        "validation": "Seleccionar un esquema",
+        "edit_schema": "Editar el esquema CSV",
+        "schema_exists": "El esquema CSV se ha guardado correctamente",
+        "type": {
+          "explanation": "Solo puedes seleccionar un tipo de datos por integración. Para importar datos de otro tipo, crea una integración nueva.",
+          "label": "Tipo de datos a importar",
+          "options": {
+            "agent_status": "Estados de los agentes",
+            "history": "Datos de contacto"
+          },
+          "validation": "Selecciona el tipo de datos a importar"
+        }
+      },
+      "api_key": {
+        "label": "Clave de la API de injixo",
+        "copy": "Copiar",
+        "copied": "Copiada",
+        "copied_tooltip": "Clave de la API de injixo copiada al portapapeles",
+        "generate": "Generar",
+        "regenerate": "Regenerar",
+        "placeholder": "La clave de la API de injixo se mostrará después de generarse",
+        "create_info": "La sección Acceder a la API de injixo estará disponible cuando hayas guardado la integración. Entonces podrás generar la clave de la API de injixo.",
+        "modal": {
+          "title": "Regenerar una clave de la API de injixo",
+          "info": "Cuando la nueva clave de la API de injixo haya sido generada:",
+          "generate_new": "Generar nueva clave de la API",
+          "keep": "Mantener la clave actual",
+          "key_deleted": "La clave actual de la API será eliminada.",
+          "key_exchange": "Tendrás que intercambiar la clave actual de la API por la clave nueva en la aplicación injixo en Freshdesk."
+        },
+        "freshdesk": {
+          "title": "Instalar la aplicación injixo",
+          "app_info": "Permite a injixo importar datos de Freshdesk de manera continua.",
+          "guide": {
+            "go_to_marketplace": "Ve a la <stepLinkText>página de la aplicación de injixo</stepLinkText> en el Marketplace de Freshdesk Apps.",
+            "install_app": "<bold>Instalar</bold> la aplicación cliente injixo.",
+            "paste_api_key": "<bold>Pegar</bold> la clave de la API generada en el campo correspondiente de la página de instalación de la aplicación injixo."
+          }
+        },
+        "error": "No se pudo generar la clave de la API"
+      },
+      "api_section": {
+        "api_key": {
+          "copied_tooltip": "Clave de la API de injixo copiada al portapapeles",
+          "error": "No se pudo generar la clave de la API",
+          "generate": "Generar",
+          "label": "Clave de la API de injixo",
+          "modal": {
+            "generate_new": "Generar nueva clave de la API de injixo",
+            "info": "Cuando la nueva clave de la API de injixo haya sido generada:",
+            "keep": "Mantener la clave actual",
+            "key_deleted": "La clave actual de la API será eliminada.",
+            "key_exchange": "debes intercambiar la clave actual de la API por la nueva clave de la API.",
+            "title": "Regenerar una clave de la API de injixo"
+          },
+          "placeholder": "La clave de la API de injixo generada aparecerá aquí.",
+          "regenerate": "Regenerar"
+        },
+        "copied": "Copiada",
+        "copy": "Copiar",
+        "create_info": "Para generar la clave de la API de injixo primero tienes que guardar la integración.",
+        "freshdesk": {
+          "guide": {
+            "go_to_marketplace": "Ve a la <externalLinkText>página de la aplicación de injixo</externalLinkText> en el Marketplace de Freshdesk Apps.",
+            "install_app": "Instala la aplicación cliente injixo.",
+            "paste_api_key": "Pega la clave de la API generada en el campo correspondiente de la página de instalación de la aplicación injixo."
+          },
+          "info": "Permite a injixo importar datos de Freshdesk de manera continua.",
+          "modal": {
+            "key_deleted": "La clave actual de la API será eliminada.",
+            "key_exchange": "Tendrás que intercambiar la clave actual de la API por la clave nueva en la aplicación injixo en Freshdesk."
+          },
+          "title": "Instalar la aplicación injixo"
+        },
+        "freshdesk_contact_center": {
+          "guide": {
+            "go_to_marketplace": "Ve a la <externalLinkText>página de la aplicación de injixo</externalLinkText> en el Marketplace de Freshdesk Contact Center Apps.",
+            "install_app": "Instalar la aplicación injixo.",
+            "paste_api_key": "Pega la clave de la API generada en el campo correspondiente de la página de instalación de la aplicación injixo.",
+            "activate_agent_status": "(Opcional) Marca la casilla <i>Agent status</i> para importar información sobre los estados de los agentes en tiempo real."
+          },
+          "info": "Permite a injixo importar datos de Freshdesk Contact Center de manera continua.",
+          "modal": {
+            "key_deleted": "La clave actual de la API será eliminada.",
+            "key_exchange": "Tendrás que intercambiar la clave actual de la API por la clave nueva en la aplicación injixo en Freshdesk Contact Center."
+          },
+          "title": "Instalar la aplicación injixo"
+        },
+        "freshchat": {
+          "guide": {
+            "go_to_marketplace": "Ve a la <externalLinkText>página de la aplicación de injixo</externalLinkText> en el Marketplace de Freshchat Apps.",
+            "install_app": "Instalar la aplicación cliente injixo.",
+            "paste_api_key": "Pega la clave de la API generada en el campo correspondiente de la página de instalación de la aplicación injixo."
+          },
+          "info": "Permite a injixo importar datos de Freshchat de manera continua.",
+          "modal": {
+            "key_deleted": "La clave actual de la API será eliminada.",
+            "key_exchange": "Tendrás que intercambiar la clave actual de la API por la clave nueva en la aplicación injixo en Freshchat."
+          },
+          "title": "Instalar la aplicación injixo"
+        },
+        "info": "La clave de la API te permite acceder a la API de injixo.",
+        "integration_configuration_id": {
+          "copied_tooltip": "ID de configuración de la integración copiado al portapapeles",
+          "label": "ID de configuración de la integración"
+        },
+        "title": "Acceder a la API de injixo"
+      }
+    },
+    "dropdown_no_result": "No hay resultados",
+    "dropdown_placeholder": "Seleccionar...",
+    "dropdown_placeholder_timezone": "Busca o selecciona una zona horaria",
+    "cloud_link_not_connected": "Tu injixo Cloud Link no está conectado."
+  },
+  "external_system": {
+    "five9": {
+      "user_credentials": {
+        "title": "Credenciales de usuario",
+        "explanation": "Introduce las credenciales válidas de un usuario con rol de administrador.",
+        "fields": {
+          "username": {
+            "label": "Usuario",
+            "validation": "Introduce un nombre de usuario"
+          },
+          "password": {
+            "label": "Contraseña",
+            "validation": "Introduce un contraseña válida"
+          }
+        }
+      },
+      "configuration": {
+        "title": "Configuración",
+        "account_region": {
+          "label": "Región de acceso",
+          "explanation": "Por favor, selecciona una región para tu integración con Five9.",
+          "options": {
+            "europe": "Europa",
+            "usa": "Estados Unidos"
+          },
+          "validation": "Por favor, selecciona una región"
+        },
+        "grouping": {
+          "label": "Agrupamiento de colas",
+          "explanation": "Selecciona el método con el que se van a agrupar las colas. Ten en cuenta que la agrupación basada en skills requiere configurar un informe personalizado en Five9.",
+          "options": {
+            "campaigns": "Campañas",
+            "skills": "Skills (requiere informe personalizado)"
+          },
+          "validation": "Elige un método de agrupación de colas."
+        }
+      },
+      "support_link": "https://help.injixo.com/add-five9-integration/",
+      "support_link_title": "Añadir una integración de Five9"
+    },
+    "vonage": {
+      "credentials": {
+        "title": "Credenciales de usuario",
+        "explanation": "Proporciona un id y un secreto de cliente válidos para tu ACD Vonage. Consulta la documentación de Vonage para obtener el id y el secreto de cliente.",
+        "fields": {
+          "id": {
+            "label": "ID de cliente",
+            "validation": "Introduce un ID de cliente válido"
+          },
+          "secret": {
+            "label": "Clave secreta de cliente",
+            "validation": "Introduce una clave secreta de cliente válida"
+          }
+        }
+      },
+      "configuration": {
+        "title": "Configuración",
+        "region": {
+          "explanation": "Selecciona la región de tu cuenta de Vonage.",
+          "label": "Region de acceso",
+          "options": {
+            "apac": "APAC",
+            "emea": "EMEA",
+            "usa": "USA"
+          },
+          "validation": "Selecciona una región"
+        },
+        "grouping": {
+          "explanation": "Selecciona cómo quieres agrupar tus colas. No podrás cambiar la selección después de guardarla.\nLas colas de Vonage combinan datos de tipo de cola, nombre de cola y plan de interacción.",
+          "label": "Agrupar las colas por",
+          "options": {
+            "interaction_plan": "Número de teléfono",
+            "queues": "Colas de Vonage"
+          },
+          "validation": "Selecciona un método para agrupar las colas."
+        }
+      }
+    },
+    "talkdesk": {
+      "user_credentials": {
+        "title": "Credenciales de usuario",
+        "account": {
+          "explanation": "Para obtener acceso a tus datos históricos de llamadas, proporciona el nombre de tu cuenta de Talkdesk.",
+          "fields": {
+            "name": {
+              "label": "Nombre de la cuenta",
+              "validation": "Introduce un nombre de cuenta"
+            }
+          }
+        },
+        "client": {
+          "explanation": "Introduce un ID de cliente y un secreto válidos para tu ACD Talkdesk. Talkdesk te puede proporcionar las credenciales de usuario necesarias para acceder al ACD.",
+          "fields": {
+            "id": {
+              "label": "ID de cliente",
+              "validation": "Introduce un ID de cliente válido"
+            },
+            "secret": {
+              "label": "Clave secreta de cliente",
+              "validation": "Introduce una clave secreta de cliente válida"
+            }
+          }
+        }
+      },
+      "configuration": {
+        "account_region": {
+          "explanation": "Por favor, selecciona una región para tu integración con Talkdesk.",
+          "label": "Región de acceso",
+          "options": {
+            "canada": "Canadá",
+            "europe": "Europa",
+            "usa": "Estados Unidos"
+          },
+          "validation": "Por favor, selecciona una región"
+        },
+        "title": "Configuración"
+      }
+    },
+    "freshdesk": {
+      "credentials": {
+        "title": "Credenciales",
+        "domain": {
+          "explanation": "Para obtener acceso a tus datos, introduce tu dominio de Freshdesk (ejemplo.freshdesk.com).",
+          "label": "Dominio",
+          "validation": "Introduce tu dominio de Freshdesk (ejemplo.freshdesk.com)"
+        },
+        "api_key": {
+          "explanation": "Introduce una clave de API válida para un usuario con el rol <bold>Account Administrator</bold>. Puedes obtener la clave de la API de Freshdesk en tu página de <bold>Configuración del perfil</bold>.",
+          "label": "Clave de la API",
+          "validation": "Introduce una clave válida del API"
+        }
+      },
+      "support_link": "https://help.injixo.com/add-freshdesk-integration/",
+      "support_link_title": "Añadir una integración de Freshdesk"
+    },
+    "pure_engage": {
+      "database": {
+        "title": "Credenciales de la base de datos",
+        "adapter": {
+          "explanation": "Selecciona el adaptador de la base de datos que utiliza tu ACD.",
+          "label": "Adaptador de la base de datos",
+          "options": {
+            "sqlServer": "MS SQL Server",
+            "postgres": "PostgreSQL"
+          },
+          "validation": "Selecciona el adaptador de la base de datos"
+        },
+        "host": {
+          "explanation": "Introduce el host y el puerto de tu base de datos.",
+          "fields": {
+            "host": {
+              "label": "Host",
+              "validation": "Introduce el host"
+            },
+            "port": {
+              "label": "Puerto",
+              "validation": "Introduce el puerto"
+            }
+          }
+        },
+        "credentials": {
+          "explanation": "Introduce credenciales válidas de un usuario de la base de datos con acceso de lectura a las bases de datos del ACD",
+          "fields": {
+            "username": {
+              "label": "Nombre de usario",
+              "validation": "Introduce un nombre de usario válido"
+            },
+            "password": {
+              "label": "Contraseña",
+              "validation": "Introduce una contraseña válida"
+            }
+          }
+        },
+        "names": {
+          "config": {
+            "explanation": "Nombre de la base de datos de configuración. Esta base de datos contiene tablas como cfg_dn y cfg_person. No es necesario si tiene una base de datos Postgres."
+          },
+          "etl": {
+            "explanation": "Nombre de la base de datos ETL. Esta base de datos contiene tablas como qinfo y status."
+          },
+          "fields": {
+            "db_config": {
+              "label": "Base de datos de configuración"
+            },
+            "db_etl": {
+              "label": "Base de datos ETL"
+            }
+          }
+        }
+      }
+    },
+    "mivoice_business": {
+      "credentials": {
+        "title": "Credenciales de la base de datos",
+        "host": {
+          "explanation": "Introduce el host y el puerto de tu base de datos.",
+          "fields": {
+            "host": {
+              "label": "Host",
+              "validation": "Introduce un host"
+            },
+            "port": {
+              "label": "Puerto",
+              "validation": "Introduce un puerto"
+            }
+          }
+        },
+        "credentials": {
+          "explanation": "Introduce credenciales válidas para un usuario de la base de datos que tenga acceso de lectura a la base de datos <bold>\"CCMData\"</bold>.",
+          "fields": {
+            "username": {
+              "label": "Nombre de usario",
+              "validation": "Introduce un nombre de usario válido"
+            },
+            "password": {
+              "label": "Contraseña",
+              "validation": "Introduce una contraseña válida"
+            }
+          }
+        }
+      },
+      "regional": {
+        "timezone": {
+          "explanation": "En el caso de que el sistema que gestiona tu ACD Mitel no esté configurado en UTC±00:00, selecciona la zona horaria local de tu sistema aquí.",
+          "label": "Zona horaria del ACD",
+          "validation": "Seleccione una zona horaria"
+        },
+        "title": "Configuraciones regionales"
+      },
+      "configuration": {
+        "agent_status_active": {
+          "explanation": "injixo puede importar datos sobre los estados de los agentes si la información se encuentra en las siguientes tablas en tu base de datos: tblConfig_Attributes_User_Employee, AgentTraceEventsStats y tblConfig_Agent.",
+          "label": "Importar estados de los agentes"
+        }
+      }
+    },
+    "sikom": {
+      "credentials": {
+        "title": "Credenciales de la base de datos",
+        "timezone": {
+          "explanation": "Seleccione la zona horaria de tu base de datos",
+          "label": "Zona horaria de la base de datos",
+          "validation": "Seleccione una zona horaria"
+        },
+        "host": {
+          "explanation": "Introduce el host y el puerto de tu base de datos.",
+          "fields": {
+            "host": {
+              "label": "Host",
+              "validation": "Introduce un host"
+            },
+            "port": {
+              "label": "Puerto",
+              "validation": "Introduce un puerto"
+            }
+          }
+        },
+        "credentials": {
+          "explanation": "Introduce credenciales válidas para un usuario de la base de datos que tenga acceso de lectura a la base de datos <bold>\"sk_acc_v5\"</bold>.",
+          "fields": {
+            "username": {
+              "label": "Nombre de usario",
+              "validation": "Introduce un nombre de usario válido"
+            },
+            "password": {
+              "label": "Contraseña",
+              "validation": "Introduce una contraseña válida"
+            }
+          }
+        }
+      }
+    },
+    "pure_cloud": {
+      "credentials": {
+        "title": "Credenciales de API",
+        "explanation": "Proporciona una clave y un secreto del API válidos para Genesys Cloud ACD. Los siguientes permisos son necesarios: <bold>\"analytics:userDetail:view\"</bold>, <bold>\"analytics:userObservation:view\"</bold>, <bold>\"analytics:conversationAggregate:view\"</bold>, <bold>analytics:conversationDetail:view\"</bold> y <bold>\"routing:queue:view\"</bold>.",
+        "fields": {
+          "key": {
+            "label": "Clave de la API",
+            "validation": "Introduce una clave secreta de API válida"
+          },
+          "secret": {
+            "label": "Clave secreta de API",
+            "validation": "Introduce una clave secreta de API válida"
+          }
+        }
+      },
+      "configuration": {
+        "title": "Configuración",
+        "region": {
+          "explanation": "Selecciona una región para tu integración con Genesys Cloud.",
+          "placeholder": "Selecciona una región",
+          "options": {
+            "australia": "Asia Pacific (Sydney)",
+            "japan": "Asia Pacific (Tokyo)",
+            "europe": "EMEA (Dublin)",
+            "germany": "EMEA (Frankfurt)",
+            "united_states_east": "America (EEUU Este)",
+            "united_states_west": "America (EEUU Oeste)",
+            "europe_west_2": "EMEA (London)"
+          },
+          "validation": "Selecciona una región",
+          "label": "Región de acceso"
+        },
+        "detailed_on_queue_status": {
+          "explanation": "injixo diferenciará los distintos estados de los agentes agrupados bajo on-queue, p. ej. communication, interacting, idle, not responding.",
+          "label": "Importar estados detallados de agentes on-queue"
+        }
+      }
+    },
+    "ujet": {
+      "credentials": {
+        "title": "Credenciales de la API",
+        "subdomain": {
+          "explanation": "Para acceder a tus datos, introduce tu subdominio de ujet.",
+          "fields": {
+            "subdomain": {
+              "label": "Subdominio",
+              "validation": "Introduce un subdominio"
+            }
+          }
+        },
+        "company": {
+          "explanation": "Introduce una clave y secreto de empresa válidos para tu ACD de ujet.",
+          "fields": {
+            "key": {
+              "label": "Clave de empresa",
+              "validation": "Introduce una clave de empresa válida"
+            },
+            "secret": {
+              "label": "Código secreto de empresa",
+              "validation": "Introduce un código secreto de empresa válido"
+            }
+          }
+        }
+      }
+    },
+    "universal": {
+      "description": "Los datos de tu ACD se pueden importar ya sea manualmente con el Xlink. Más detalles sobre cómo configurar y usar Xlink se pueden encontrar aqui: <0>https://www.injixo.com/community/downloads</0>."
+    },
+    "avaya_cms": {
+      "configuration": {
+        "title": "Configuración",
+        "grouping": {
+          "label": "Agrupamiento de llamadas",
+          "explanation": "Seleccione cómo quieres agrupar tus llamadas en colas.",
+          "options": {
+            "vdn": "Basado en VDNs",
+            "split": "Basado en Splits"
+          },
+          "validation": "Selecciona el método de agrupamiento"
+        },
+        "data_source": {
+          "explanation": "Introduce el nombre de la fuente de datos ODBC para su base de datos Avaya CMS.",
+          "label": "Fuente de datos",
+          "validation": "Introduce una fuente de datos"
+        },
+        "port": {
+          "explanation": "injixo Cloud Link escuchará este puerto para importar datos sobre los estados de los agentes en tiempo real.",
+          "label": "Puerto",
+          "validation": "Introduce el puerto"
+        },
+        "detailed_statuses": {
+          "explanation": "injixo añadirá información sobre skills/split a los estados de los agentes.",
+          "label": "Importar detalles de los estados de los agentes"
+        }
+      }
+    },
+    "zendesk": {
+      "credentials": {
+        "title": "Credenciales de usario",
+        "domain": {
+          "explanation": "Para obtener acceso a tus datos, introduce to dominio de Zendesk (ejemplo.zendesk.com).",
+          "fields": {
+            "domain": {
+              "label": "Dominio de Zendesk",
+              "validation": "Introduce tu dominio de Zendesk (ejemplo.zendesk.com)"
+            }
+          }
+        },
+        "token": {
+          "explanation": "Introduce las credenciales válidas de un usuario con rol de administrador. Puedes obtener los tokens de API desde la interfaz de administración de Zendesk Support en <bold>\"Admin > Canales > API\"</bold>.",
+          "fields": {
+            "username": {
+              "label": "Nombre de usario",
+              "validation": "Introduce un nombre de usario válido"
+            },
+            "token": {
+              "label": "Token del API",
+              "validation": "Introduce un token del API válido"
+            }
+          }
+        }
+      },
+      "configuration": {
+        "grouping": {
+          "explanation": "El enfoque de agrupación predeterminado utilizado es <bold>por grupo</bold>. Selecciona esta opción para crear adicionalmente una cola de datos de origen para cada <bold>marca</bold> de Zendesk.",
+          "fields": {
+            "by_group": {
+              "inner_label": "Por marca",
+              "label": "Agrupar tickets"
+            }
+          }
+        },
+        "title": "Configuración",
+        "call_grouping": {
+          "explanation": "Selecciona cómo quieres agrupar los datos de <bold>Zendesk Talk</bold> en las colas de origen.",
+          "label": "Agrupar las llamadas de Zendesk Talk por",
+          "options": {
+            "ivr": "IVR (Interactive Voice Response)",
+            "phone_number": "Número de teléfono"
+          },
+          "validation": "Selecciona la estrategia de agrupamiento de los datos de Zendesk Talk."
+        },
+        "agent_status_data": {
+          "title": "Agent status data"
+        },
+        "checkbox": {
+          "rta": {
+            "label": "Importar datos en tiempo real"
+          }
+        }
+      },
+      "preparation_info": "Para crear colas de datos de Zendesk basadas en vistas, tenemos que importar el historial de tickets completo hasta el momento actual.",
+      "support_link": "https://help.injixo.com/add-zendesk-integration/",
+      "support_link_title": "Añadir una integración de Zendesk"
+    },
+    "freshdesk_contact_center": {
+      "configuration": {
+        "call_grouping": {
+          "explanation": "Selecciona cómo quieres agrupar los datos de Freshdesk Contact Center en las colas origen.",
+          "label": "Agrupar las colas por",
+          "options": {
+            "phone_number": "Número de Teléfono",
+            "skills": "Enrutamiento (equipo/agente)"
+          },
+          "validation": "Elige un método de agrupación de colas"
+        },
+        "title": "Configuración"
+      },
+      "credentials": {
+        "api_key": {
+          "explanation": "Introduce una clave de API válida para un usuario con el rol <bold>Administrador de la Cuenta</bold>. Puedes obtener la clave de la API de Freshdesk Contact Center en tu página de <bold>Configuración del perfil</bold>.",
+          "label": "Clave de la API",
+          "validation": "Introduce una clave válida del API"
+        },
+        "domain": {
+          "explanation": "Para obtener acceso a tus datos, introduce tu dominio de Freshdesk Contact Center (ejemplo.freshcaller.com).",
+          "label": "Dominio",
+          "validation": "Introduce tu dominio de Freshdesk Contact Center (ejemplo.freshcaller.com)"
+        },
+        "title": "Credenciales"
+      },
+      "support_link": "https://help.injixo.com/add-freshdesk-contact-center-integration/",
+      "support_link_title": "Añadir una integración de Freshdesk Contact Center"
+    },
+    "freshchat": {
+      "credentials": {
+        "api_key": {
+          "explanation": "Introduce una clave de API válida para un usuario con el rol <bold>Account Administrator</bold>. Puedes obtener la clave de la API de Freshchat en tu página de <bold>Tokens de API</bold> en <bold>Administración > Configuración</bold>.",
+          "label": "Clave de la API",
+          "validation": "Introduce una clave válida del API"
+        },
+        "domain": {
+          "explanation": "Para obtener acceso a tus datos, introduce tu dominio de Freshchat (ejemplo.freshchat.com).",
+          "label": "Dominio",
+          "validation": "Introduce tu dominio de Freshchat (ejemplo.freshchat.com)"
+        },
+        "title": "Credenciales"
+      },
+      "support_link": "https://help.injixo.com/es/add-freshchat-integration/",
+      "support_link_title": "Añadir una integración de Freshchat"
+    },
+    "csv": {
+      "support_link": "https://help.injixo.com/add-csv-integration/",
+      "support_link_title": "Añadir una integración de archivos CSV"
+    },
+    "database": {
+      "configuration": {
+        "fields": {
+          "data_type": {
+            "agent_status": {
+              "label": "Estados de los agentes"
+            },
+            "contacts": {
+              "label": "En base a contactos"
+            },
+            "explanation": "Solo puedes seleccionar un tipo de datos por integración. Para importar datos de otro tipo, crea una integración nueva.",
+            "label": "Tipo de datos a importar",
+            "queues": {
+              "label": "En base a intervalos"
+            },
+            "required": "Rellena el tipo de datos"
+          },
+          "db_type": {
+            "explanation": "Selecciona el tipo de tu base de datos.",
+            "label": "Tipo de base de datos",
+            "required": "Especifica tu tipo de base de datos",
+            "options": {
+              "odbc": "Otro (ODBC)"
+            }
+          },
+          "rta": {
+            "label": "Importar datos en tiempo real"
+          },
+          "template": {
+            "explanation": "Esta consulta SQL se ejecuta automáticamente cada 15 minutos. Aprende más en el <explanationLinkText>Help Center</explanationLinkText>.",
+            "help_center_link": "https://help.injixo.com/add-database-integration/#sample-queries-and-available-fields",
+            "label": "Consulta SQL",
+            "required": "Tienes que especificar la consulta SQL"
+          },
+          "timezone": {
+            "explanation": "Selecciona la zona horaria de tu base de datos",
+            "label": "Zona horaria de la base de datos",
+            "validation": "Seleccione una zona horaria"
+          },
+          "interval_length": {
+            "option_15": "15 minutos",
+            "option_30": "30 minutos",
+            "placeholder": "Seleccionar la longitud del intervalo",
+            "required": "Tienes que seleccionar una duración del intervalo"
+          },
+          "reconciliation": {
+            "explanation": "Si la casilla <bold>Reconciliación de datos</bold> está marcada, injixo reimporta todos los datos de las últimas 24 horas cada 15 minutos. Si la casilla está desmarcada, injixo importa solamente los datos de los últimos 15 minutos cada 15 minutos. Para acceder a las correcciones de datos de las últimas 24 horas, mantén la casilla marcada. Puedes leer más en el <explanationLinkText>Help Center</explanationLinkText>.",
+            "explanationLinkTarget": "https://help.injixo.com/es/add-database-integration/#reconciliaci%C3%B3n-de-datos",
+            "label": "Reconciliación de datos"
+          },
+          "rta_interval_clause": {
+            "explanation": "Introduce una cláusula SQL para calcular el intervalo de importación (intervalo de importación = hora actual - segundos del intervalo). Esta cláusula se utilizará en la consulta SQL anterior para establecer la importación en tiempo real. Aprende más en el <explanationLinkText>Help Center </explanationLinkText>.",
+            "help_center_link": "https://help.injixo.com/add-database-integration/",
+            "label": "Cláusula SQL para el intervalo del RTA",
+            "required": "Introduce la cláusula SQL"
+          }
+        },
+        "title": "Configuración"
+      },
+      "credentials": {
+        "fields": {
+          "db_connection": {
+            "explanation": "Introduce el host y el puerto de la base de datos. Si utilizas una instancia nombrada en la conexión con MS SQL Server, no introduzcas el puerto. Aprende más en el <explanationLinkText>Help Center</explanationLinkText>.",
+            "help_center_link": "https://help.injixo.com/add-database-integration/",
+            "host": {
+              "label": "Host",
+              "required": "Rellena el host de la base de datos"
+            },
+            "port": {
+              "label": "Puerto",
+              "required": "Rellena el puerto de la base de datos"
+            }
+          },
+          "db_credentials": {
+            "explanation": "Introduce las credenciales válidas de un usuario de la base de datos que tenga acceso de lectura a la misma.",
+            "password": {
+              "label": "Contraseña",
+              "required": "Rellena la contraseña"
+            },
+            "user": {
+              "label": "Usuario",
+              "required": "Rellena el nombre de usuario de la base de datos"
+            }
+          },
+          "db_name": {
+            "explanation": "Selecciona la base de datos a la que deseas conectarte.",
+            "label": "Nombre de la base de datos",
+            "required": "Introduce el nombre de la base de datos"
+          },
+          "db_connection_string": {
+            "explanation": "Introduce una cadena de conexión para conectarte a la base de datos. La cadena de conexión debe ser específica para tu tipo de base de datos y su controlador ODBC.",
+            "label": "Cadena de conexión",
+            "required": "Introduce la cadena de conexión"
+          }
+        },
+        "title": "Credenciales"
+      },
+      "support_link": "https://help.injixo.com/add-database-integration/",
+      "support_link_text": "Añadir una integración de base de datos",
+      "model_display_name": "Base de datos"
+    },
+    "api": {
+      "support_link": "https://help.injixo.com/import-data-with-injixo-api/",
+      "support_link_title": "Importar datos con injixo API"
+    },
+    "cisco_icm": {
+      "configuration": {
+        "title": "Configuración"
+      },
+      "rta": {
+        "credentials": {
+          "client_id": {
+            "label": "ID del cliente",
+            "validation": "Introduce tu ID del cliente Cisco."
+          },
+          "explanation": "Introduce tu ID y contraseña del cliente Cisco ICM.",
+          "password": {
+            "label": "Contraseña",
+            "validation": "Introduce tu contraseña del cliente Cisco."
+          }
+        },
+        "peripheral_gateways": {
+          "gateway_1": {
+            "explanation": "Introduce las direcciones (como direcciones IP o nombres DNS) y números de puerto que se usarán. Separa las direcciones con comas. La primera dirección se considera una puerta de enlace periférica lado A, y la segunda, una lado B. Si solo introduces una, injixo asume que no hay lado B.\nP. ej.: “192.168.0.1:42027, 192.168.0.2:43027”.",
+            "label": "Puerta de enlace periférica 1",
+            "validation": "Introduce la información de tu primera puerta de enlace periférica."
+          },
+          "gateway_2": {
+            "explanation": "(Opcional) Introduce la información de tu segunda puerta de enlace periférica.",
+            "label": "Puerta de enlace periférica 2",
+            "validation": "Introduce la información de tu segunda puerta de enlace periférica."
+          }
+        }
+      }
+    },
+    "in_in": {
+      "configuration": {
+        "acd_servers": {
+          "explanation": "Introduce la dirección del servidor de tu ACD como nombre DNS (p. ej. acdserver.example.com:8080) o como dirección IP (p. ej. 192.168.1.1:8080). Si no especificas ningún puerto, injixo usa por defecto el puerto 42027. Si introduces múltiples ACD, usa comas para separar las direcciones.",
+          "label": "Direcciones del servidor del ACD",
+          "validation": "Introduce una dirección del servidor de ACD válida."
+        },
+        "timezone": {
+          "explanation": "Selecciona la zona horaria de tu sistema ACD.",
+          "label": "Zona horaria",
+          "validation": "Selecciona una zona horaria."
+        },
+        "title": "Configuración"
+      }
+    },
+    "odigo": {
+      "configuration": {
+        "agent_status_data": {
+          "title": "Data de los estados de los agentes"
+        },
+        "break_labels": {
+          "explanation": "injixo añadirá el tipo de pausa a los estados de pausa, p. ej. Break (Lunch break) en lugar de Break. Los estados de pausa modificados en Odigo están disponibles en injixo tras un máximo de 4 horas. Tendrás que actualizar la asignación de las actividades.",
+          "inner_label": "Importar detalles de los estados de pausa de los agentes",
+          "title": "Estados de pausa de los agentes con detalles",
+          "ws_login": {
+            "explanation": "Ponte en contacto con Odigo para más información y asistencia.",
+            "label": "Usuario del servicio web",
+            "validation": "Introduce un nombre de usuario válido del servicio web."
+          },
+          "ws_password": {
+            "label": "Contraseña del servicio web",
+            "validation": "Introduce una contraseña válida del servicio web."
+          },
+          "wsdl_domain": {
+            "explanation": "Introduce tu URL de Odigo, que incluye tu ID de cliente, p.ej.: https://example.odigo.cx/odigo-tenant-id.",
+            "label": "URL de odigo",
+            "placeholder": "https://example.odigo.cx/odigo-tenant-id",
+            "required": "Introduce la URL de Odigo.",
+            "validation": "Introduce tu URL de Odigo que incluye tu ID de cliente, p.ej.: https://example.odigo.cx/odigo-tenant-id."
+          }
+        },
+        "contact_data": {
+          "api_domain": {
+            "explanation": "En Odigo, este campo corresponde a pef-api-domain.",
+            "label": "Dominio API",
+            "validation": "Introduce el pef-api-domain de Odigo."
+          },
+          "app_id": {
+            "explanation": "En Odigo, este campo corresponde a pef-app-id.",
+            "label": "App ID",
+            "validation": "Introduce el pef-app-id de Odigo."
+          },
+          "description": "Los datos de contacto de cada día se importan a las 3 a.m.<br>Ponte en contacto con Odigo si necesitas más información.",
+          "instance": {
+            "explanation": "En Odigo, este campo corresponde a x-ws-instance.",
+            "label": "Instancia",
+            "validation": "Introduce el x-ws-instance de Odigo."
+          },
+          "ivr_timezone": {
+            "label": "Zona horaria del IVR",
+            "validation": "Selecciona la zona horaria del IVR."
+          },
+          "statistics_table_id": {
+            "explanation": "En Odigo, este campo corresponde a statistics_table_id.",
+            "label": "ID de la tabla de estadísticas",
+            "type_validation": "El ID de la tabla de estadísticas tiene que ser numérico.",
+            "validation": "Introduce el ID de la tabla de estadísticas de Odigo."
+          },
+          "title": "Datos de contacto",
+          "user_name": {
+            "explanation": "En Odigo, este campo corresponde a odigo-user-id.",
+            "label": "Nombre de usuario",
+            "validation": "Introduce el ID de usuario de Odigo."
+          }
+        },
+        "credentials": {
+          "tech_account": {
+            "explanation": "En Odigo, estos campos corresponden a pef-tech-account y pef-tech-password.",
+            "label": "Cuenta tech",
+            "validation": "Introduce la cuenta tech para conectarte a la API de autenticación de Odigo."
+          },
+          "tech_password": {
+            "label": "Contraseña tech",
+            "validation": "Introduce la contraseña tech para conectarte a la API de autenticación de Odigo."
+          },
+          "title": "Credenciales",
+          "ws_login": {
+            "validation": "Introduce el nombre de usuario para conectarte al servicio web de Odigo."
+          },
+          "ws_password": {
+            "validation": "Introduce la contraseña para conectarte al servicio web de Odigo."
+          }
+        },
+        "url_token": {
+          "creation_required": "Para generar el token de URL injixo, guarda primero la integración.",
+          "explanation": "Genera una dirección URL para proporcionar un flujo de adherencia en tiempo real que registra cambios en los estados de los agentes.",
+          "label": "Token de URL injixo",
+          "modal": {
+            "confirm": "Generar nuevo token de URL",
+            "keep": "Mantener token actual",
+            "key_deleted": "Cuando se genere el nuevo token de URL injixo, el token actual será eliminado.",
+            "key_exchange": "Tendrás que reemplazar el token de URL actual con el nuevo en Odigo.",
+            "title": "Generar un nuevo token de URL injixo"
+          },
+          "placeholder": "El token de URL injixo aparecerá cuando haya sido generado.",
+          "title": "Generar token de URL injixo"
+        }
+      }
+    }
+  },
+  "integration_status": {
+    "connection": "Conexión",
+    "established": "establecida",
+    "failed": "falló"
+  },
+  "document_title": {
+    "module": "Integraciones",
+    "create": "Crear",
+    "edit": "Editar"
+  },
+  "plan_ng_message": "We are developing new updates for this functionality. While we work on them, injixo cannot import agent status data, or use the data in Intraday."
+}

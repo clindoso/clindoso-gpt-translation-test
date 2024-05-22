@@ -1,0 +1,99 @@
+{
+  "application": {
+    "title": "Verlofperiodes",
+    "backToTimeOff": "Terug naar Vakantie/Afwezigheid",
+    "optional": "optioneel"
+  },
+  "filters": {
+    "label": {
+      "planningUnit": "Eenheid",
+      "selection": "Groep",
+      "timePeriod": "Tijdsperiode",
+      "absenceActivity": "Activity",
+      "status": "Status"
+    },
+    "placeholder": {
+      "planningUnit": "Kies een Eenheid",
+      "selection": "Kies een Groep",
+      "absenceActivity": "Choose an activity",
+      "status": "Kies een status"
+    },
+    "result": {
+      "noResult": "Geen gegevens"
+    },
+    "buttons": {
+      "createPeriod": "Nieuwe verlofperiode"
+    }
+  },
+  "planning_units": "Eenheden",
+  "selections": "Groepen",
+  "reload_planning_units": "Eenheden opnieuw laden",
+  "reload_selections": "Groepen opnieuw laden",
+  "periodsTable": {
+    "tabs": {
+      "ongoing": "Doorlopend",
+      "expired": "Verlopen",
+      "counters": {
+        "ongoing": "Aantal actuele verlofperiodes",
+        "expired": "Aantal verlopen verlofperiodes"
+      }
+    },
+    "headers": {
+      "select": "Selecteer",
+      "selection": "Groep",
+      "validFrom": "Geldig vanaf",
+      "validTo": "Geldig tot",
+      "deadline": "Deadline",
+      "inheritedFrom": "Geërfd van",
+      "status": "Status"
+    },
+    "noData": "Geen verlofperiode gevonden",
+    "singleCheckbox": "Verlofperiode selecteren",
+    "allCheckbox": "Alle verlofperiodes selecteren",
+    "deleteEntries": "Invoer verwijderen",
+    "statuses": {
+      "enabled": "Gepubliceerd",
+      "locked": "Niet gepubliceerd"
+    },
+    "editPeriod": "Verlofperiode bewerken",
+    "selectStatus": "Selecteer status",
+    "error": {
+      "deletePeriod": "{{number}} Verlofperiode(s) kon niet worden verwijderd. Probeer het alsjeblieft opnieuw."
+    },
+    "statusSuccessfullyUpdated": "Status succesvol bijgewerkt."
+  },
+  "reload_time_off_periods": "Verlofperiodes opnieuw laden",
+  "types": "Types",
+  "reload_types": "Types opnieuw laden",
+  "periodModal": {
+    "title": {
+      "create": "Verlofperiode aanmaken",
+      "edit": "Verlofperiode bewerken"
+    },
+    "button": {
+      "save": "Wijzigingen opslaan",
+      "cancel": "Annuleren",
+      "create": "Verlofperiode aanmaken"
+    },
+    "label": {
+      "dateRange": "Datumbereik",
+      "deadline": "Deadline"
+    },
+    "error": {
+      "createPeriod": "Verlofperiode kon niet worden aangemaakt.",
+      "editPeriod": "Verlofperiode kon niet worden bijgewerkt."
+    },
+    "deadline": {
+      "empty": "Geen",
+      "remove": "Termijn verwijderen"
+    }
+  },
+  "document_title": {
+    "module": "Plan",
+    "sub_module": "Verlofperiodes"
+  },
+  "error": {
+    "reload_resource": "Er is een fout opgetreden. Probeer opnieuw te laden <0>{{resource}}</0> of probeer het later nog eens."
+  },
+  "time_off_periods": "verlofperiodes"
+}

@@ -1,0 +1,59 @@
+{
+  "aria-enhancement": {
+    "button": "button",
+    "dropdown": "dropdown"
+  },
+  "coverage-details": {
+    "label": "Interval"
+  },
+  "irreplaceable-activities-info": {
+    "hint_one": "{{count}} out of {{totalCount}} \"Presence\" activities in the selected planning unit is not \"Replaceable\".",
+    "hint_other": "{{count}} out of {{totalCount}} \"Presence\" activities in the selected planning unit are not \"Replaceable\".",
+    "reminder": {
+      "link-to-docs": "https://help.injixo.com/creating-activities/",
+      "text": "Make sure to <0>mark them as \"Replaceable\"</0> to get as many suggestions as possible. You can do this under WFM > Administration > Scheduling > Activities."
+    }
+  },
+  "label": {
+    "employee-filter": "Employee filter",
+    "no-entries": "No entries",
+    "selection": "Selection",
+    "aria-enhancement": {
+      "dropdown": "dropdown",
+      "loading-spinner": "loading spinner"
+    },
+    "date-range": "Date Range",
+    "in-progress": "in progress",
+    "planning-unit": "Planning unit"
+  },
+  "placeholder": {
+    "searchable-dropdown": "Search or select"
+  },
+  "scheduled-entry-information": {
+    "excluded": "Manually excluded from scheduling",
+    "problem": "Problem",
+    "view-conflict": "View conflict"
+  },
+  "employee-selection": {
+    "heading-employees": "Employees ({{amountSelected}}/{{amountTotal}} selected)",
+    "no-employees": {
+      "caption": "No employees",
+      "empty-planning-unit": "The action cannot be executed as there are no employees for the selected planning unit.",
+      "empty-planning-unit-and-employee-filter": "The action cannot be executed as there are no employees for the selected planning unit and employee filter.",
+      "empty-planning-unit-and-selection": "The action cannot be executed as there are no employees for the selected planning unit and selection.",
+      "form-error": "No employee selected. At least one employee is necessary in order to proceed.",
+      "no-planning-unit": "The action cannot be executed as there is no planning unit selected."
+    },
+    "table": {
+      "employee_name": "Name"
+    }
+  },
+  "error": {
+    "planning-unit": "A planning unit must be selected"
+  },
+  "notification": {
+    "failure": {
+      "general": "An error has occurred. Please try again later."
+    }
+  }
+}

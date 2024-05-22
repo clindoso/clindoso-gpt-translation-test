@@ -1,0 +1,46 @@
+{
+  "document_title": {
+    "module": "Account",
+    "context": "Persoonlijke access tokens",
+    "page": {
+      "overview": "Overzicht",
+      "create": "Nieuwe access token genereren",
+      "edit": "Token {{name}} bijwerken"
+    }
+  },
+  "pat": {
+    "description": "Persoonlijke access tokens kunnen worden gebruikt om injixo API's te authentificeren",
+    "learn_more": "Meer ervaren",
+    "title_list": "Je persoonlijke access tokens",
+    "title_new": "Nieuwe persoonlijke access token",
+    "title_update": "Persoonlijke access token bijwerken",
+    "title_created": "Je nieuwe persoonlijke access token",
+    "message_created": "Sla je persoonlijke access token nu op. Wij slaan deze niet op en je kunt deze naderhand ook niet meer zien.",
+    "label": {
+      "description": "Beschrijving"
+    },
+    "action": {
+      "new": "Nieuwe access token genereren",
+      "create": "Nieuwe access token genereren",
+      "update": "Token bijwerken",
+      "delete": {
+        "label": "Verwijderen",
+        "confirm": "Ja, token verwijderen",
+        "cancel": "Nee, token bewaren",
+        "success": "Token is succesvol verwijderd",
+        "modal_header": "Token verwijderen",
+        "modal_description": "Weet je zeker dat je deze token wilt verwijderen?"
+      }
+    }
+  },
+  "back_to_main": "Terug naar profiel",
+  "cancel": "Annuleren",
+  "copy_to_clipboard": "Naar het klembord kopiëren",
+  "copied_to_clipboard": "Gekopiëerd",
+  "done": "Klaar",
+  "edit": "Bewerken",
+  "error_occured": "Er is een fout opgetreden",
+  "token_clipboard_copied": "Gekopieerd",
+  "token_clipboard_copy": "Kopie",
+  "token_clipboard_tooltip": "Persoonlijke access token naar klembord gekopieerd!"
+}

@@ -1,0 +1,99 @@
+{
+  "application": {
+    "title": "Periodi di permesso",
+    "backToTimeOff": "Ritorna a Permessi",
+    "optional": "opzionale"
+  },
+  "filters": {
+    "label": {
+      "planningUnit": "Unità di pianificazione",
+      "selection": "Selezione",
+      "timePeriod": "Periodo",
+      "absenceActivity": "Attività",
+      "status": "Stato"
+    },
+    "placeholder": {
+      "planningUnit": "Scegli un'unità di pianificazione",
+      "selection": "Scegli una selezione",
+      "absenceActivity": "Scegli una attività",
+      "status": "Scegli uno stato"
+    },
+    "result": {
+      "noResult": "Nessuna voce"
+    },
+    "buttons": {
+      "createPeriod": "Nuovo periodo di permesso"
+    }
+  },
+  "planning_units": "unità di pianificazione",
+  "selections": "Selezioni",
+  "reload_planning_units": "Ricarica unità di pianificazione",
+  "reload_selections": "Ricarica Selezioni",
+  "periodsTable": {
+    "tabs": {
+      "ongoing": "In corso",
+      "expired": "Scaduto",
+      "counters": {
+        "ongoing": "Numero di periodi di permesso in corso",
+        "expired": "Numero di periodi di permesso scaduti"
+      }
+    },
+    "headers": {
+      "select": "Seleziona",
+      "selection": "Selezione",
+      "validFrom": "Valido da",
+      "validTo": "Valido fino",
+      "deadline": "Scadenza",
+      "inheritedFrom": "Ereditato da",
+      "status": "Stato"
+    },
+    "noData": "Nessun periodo di permesso trovato.",
+    "singleCheckbox": "Seleziona periodo di permesso",
+    "allCheckbox": "Seleziona tutti i periodi di permesso",
+    "deleteEntries": "Elimina voci",
+    "statuses": {
+      "enabled": "Pubblicato",
+      "locked": "Non pubblicato"
+    },
+    "editPeriod": "Modifica periodo di permesso",
+    "selectStatus": "Seleziona lo stato",
+    "error": {
+      "deletePeriod": "Non è stato possibile eliminare {{number}} periodo/i di permesso. Per favore riprova."
+    },
+    "statusSuccessfullyUpdated": "Periodo di permesso aggiornato correttamente."
+  },
+  "reload_time_off_periods": "Ricarica periodi di permesso",
+  "types": "Tipi",
+  "reload_types": "Ricarica Tipi",
+  "periodModal": {
+    "title": {
+      "create": "Crea nuovo periodo di permesso",
+      "edit": "Modifica periodo di permesso"
+    },
+    "button": {
+      "save": "Salva modifiche",
+      "cancel": "Annulla",
+      "create": "Crea periodo di permesso"
+    },
+    "label": {
+      "dateRange": "Intervallo di date",
+      "deadline": "Scadenza"
+    },
+    "error": {
+      "createPeriod": "Non è stato possibile creare il periodo di permesso. Per favore riprova.",
+      "editPeriod": "Impossibile aggiornare il periodo di permesso. Per favore riprova."
+    },
+    "deadline": {
+      "empty": "Nessuno",
+      "remove": "Rimuovi scadenza"
+    }
+  },
+  "document_title": {
+    "module": "Plan",
+    "sub_module": "Periodi di permesso"
+  },
+  "error": {
+    "reload_resource": "C'è stato un errore. Prova a ricaricare <0>{{resource}}</0> o riprovare più tardi."
+  },
+  "time_off_periods": "periodi di permesso"
+}

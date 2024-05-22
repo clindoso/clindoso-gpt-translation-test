@@ -1,0 +1,160 @@
+{
+  "document_title": {
+    "module": "Plan",
+    "page": {
+      "copy_level_content": "Niveau-inhoud kopiëren",
+      "empty_levels": "Lege Niveaus",
+      "replace_activities": "Activiteiten Vervangen"
+    }
+  },
+  "error": {
+    "copy-level-content-request": "Niveau-inhoud kopiëren mislukt",
+    "empty-levels-request": "Niet gelukt om lege niveaus aan te vragen",
+    "incomplete-form": "De gegevens zijn onvolledig. Zorg ervoor dat alle gemarkeerde velden gecorrigeerd worden.",
+    "planning-unit": "Er moet een eenheid worden gekozen",
+    "replace-activities-request": "Niet gelukt om activiteit te vervangen"
+  },
+  "explanation": {
+    "copy-level-content": {
+      "daterange-and-startdate": "De inhoud van het hele datumbereik wordt geplakt vanaf het begin van de beoogde begindatum.",
+      "empty-level": "Door het aanvinken van het selectievakje worden de gegevens van het bronniveau verwijderd na het kopiëren.",
+      "levels": "Kopieert de inhoud van het bronniveau naar het geselecteerde doelniveau. Houd er rekening mee dat alle inhoud die eerder op het doelniveau is opgeslagen, wordt overschreven."
+    },
+    "employee-selection": "Standaard is dit de volledige lijst van medewerkers in de geselecteerde eenheid. Je kan de groep medewerkers verder verfijnen door een selectie of een medewerkersfilter te kiezen in de bijbehorende dropdown.",
+    "empty-levels": {
+      "level-selection": "De inhoud van het (de) geselecteerde niveau('s) zal worden verwijderd binnen het gekozen datumbereik."
+    },
+    "replace-activities": {
+      "level-daterange": "Vervang activiteiten op meerdere niveaus tegelijk binnen het geselecteerde datumbereik."
+    }
+  },
+  "heading": {
+    "copy-level-content": "Niveau-inhoud kopiëren",
+    "employees": "Medewerkers ({{amountSelected}}/{{amountTotal}} geselecteerd)",
+    "empty-levels": "Lege niveaus",
+    "replace-activities": "Activiteiten vervangen",
+    "settings": "Instellingen"
+  },
+  "hint": {
+    "copy-level-content": {
+      "background-job": "Niveau-inhoud kopiëren start een proces op de achtergrond. Om de status te zien, controleer de <0>JobProcessor</0>."
+    },
+    "empty-levels": {
+      "background-job": "Lege niveaus start een proces op de achtergrond. Om de status te zien, controleer de <0>JobProcessor</0>."
+    },
+    "replace-activities": {
+      "background-job": "Het vervangen van activiteiten start een proces op de achtergrond. Om de status te zien, controleer de <0>JobProcessor</0>"
+    }
+  },
+  "label": {
+    "aria-enhancement": {
+      "button": "knop",
+      "dropdown": "dropdown"
+    },
+    "back-to-schedules": "Terug naar Schedules",
+    "button": {
+      "cancel": "Annuleren",
+      "copy-level-content": "Niveau-inhoud kopiëren",
+      "empty-levels": "Lege niveaus",
+      "level_one": "{{count}} Geselecteerd niveau",
+      "level_other": "{{count}} Geselecteerde niveaus",
+      "replace-activities": "Activiteiten vervangen"
+    },
+    "date-range": "Datumbereik",
+    "employee-filter": "Medewerkersfilter",
+    "empty-level": "Leeg bronniveau-inhoud na kopiëren",
+    "empty-levels": {
+      "level-selection": "Te legen niveau('s)"
+    },
+    "form-error": {
+      "no-employees": "Geen medewerker geselecteerd. Er is ten minste één medewerker nodig om verder te gaan."
+    },
+    "levels": "Niveaus",
+    "no-employees": {
+      "caption": "Geen medewerkers",
+      "empty-planning-unit": "De actie kan niet worden uitgevoerd omdat er geen medewerkers voor de geselecteerde eenheid zijn.",
+      "empty-planning-unit-and-employee-filter": "De actie kan niet worden uitgevoerd omdat er geen medewerkers zijn voor de geselecteerde eenheid en werknemersfilter.",
+      "empty-planning-unit-and-selection": "De actie kan niet worden uitgevoerd omdat er geen medewerkers zijn voor de geselecteerde eenheid en selectie.",
+      "no-planning-unit": "De actie kan niet worden uitgevoerd omdat er geen eenheid is geselecteerd."
+    },
+    "no-entries": "Geen gegevens",
+    "no-planning-unit-selected": "Kies eerst de eenheid",
+    "selection": "Groep",
+    "source-activity": "Te vervangen activiteit",
+    "source-date-range": "Datumbereik bron",
+    "source-level": "Bronniveau",
+    "start-date": "Beoogde begindatum",
+    "target-activity": "Vervang activiteit door",
+    "target-level": "Doelniveau"
+  },
+  "level": {
+    "absenceWishes": {
+      "name": "Vakantie-/ Afwezigheidswens"
+    },
+    "alternativeWishes": {
+      "name": "Alternatieve wens"
+    },
+    "backup": {
+      "name": "Versie 1"
+    },
+    "backupVersion2": {
+      "name": "Versie 2"
+    },
+    "backupVersion3": {
+      "name": "Versie 3"
+    },
+    "final": {
+      "name": "Huidige Staat"
+    },
+    "plan": {
+      "name": "Planning"
+    },
+    "wishes": {
+      "name": "Wens"
+    }
+  },
+  "message": {
+    "copy-level-content": {
+      "request-not-successful": "Niveau-inhoud kopiëren kon niet worden gestart. Probeer het opnieuw.",
+      "request-sent": "Niveau-inhoud wordt gekopieerd. Bekijk voortgang in JobProcessor."
+    },
+    "empty-levels": {
+      "request-not-successful": "Lege niveaus konden niet gestart worden voor niveaus: {{levels}}. Gelieve opnieuw te proberen.",
+      "request-sent": "Lege niveaus in uitvoering voor niveaus: {{levels}}. Bekijk voortgang in JobProcessor."
+    },
+    "replace-activities": {
+      "request-not-successful": "Het vervangen van activiteiten kon niet worden gestart. Probeer het opnieuw.",
+      "request-sent": "Vervangen van activiteiten in uitvoering. Voortgang bekijken in JobProcessor."
+    }
+  },
+  "notification": {
+    "failure": {
+      "general": "Er is een fout opgetreden. Probeer het later nog eens."
+    }
+  },
+  "placeholder": {
+    "dropdown": "Zoeken of selecteren"
+  },
+  "table": {
+    "column": {
+      "employee_name": "Naam"
+    }
+  },
+  "validation": {
+    "selected-levels": {
+      "required": "Er moet ten minste één niveau worden gekozen"
+    },
+    "source-activity": {
+      "required": "Er moet een bronactiviteit worden geselecteerd"
+    },
+    "source-level": {
+      "required": "Er moet een bronniveau worden geselecteerd"
+    },
+    "target-activity": {
+      "required": "Er moet een doelactiviteit worden gekozen"
+    },
+    "target-level": {
+      "required": "Er moet een doelniveau worden gekozen"
+    }
+  }
+}

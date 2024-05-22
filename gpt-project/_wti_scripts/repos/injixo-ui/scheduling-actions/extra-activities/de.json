@@ -1,0 +1,187 @@
+{
+  "button": {
+    "back-to-overview": "Zurück zum Überblick",
+    "back-to-schedules": "Zurück zu Schedules",
+    "delete-schedules_one": "Eintrag löschen",
+    "delete-schedules_other": "Einträge löschen",
+    "set-up-new-extra-activity": "Neue Extra-Aktivität einrichten"
+  },
+  "connection": {
+    "offline": "Die Wiederherstellung der Verbindung ist fehlgeschlagen. Bitte versuchen Sie es in ein paar Minuten erneut.",
+    "reconnecting": "Die Verbindung wurde unterbrochen. Wir versuchen, sie automatisch wieder herzustellen."
+  },
+  "document_title": {
+    "context": {
+      "schedules": {
+        "page": {
+          "new": "Neue Extra-Aktvität",
+          "overview": "Extra-Aktivitäten",
+          "results": "Extra-Aktivitäten Ergebnis",
+          "suggestions": "Extra-Aktivitäten Vorschläge"
+        },
+        "title": "Schedules"
+      }
+    },
+    "module": "Plan"
+  },
+  "dropdown": {
+    "minimum-session-duration": "{{minutes}} Minuten"
+  },
+  "error": {
+    "extra-activities-request": "Anfragen von Extra-Aktivitäten ist fehlgeschlagen",
+    "incomplete-form": "Es fehlen Daten im Formular. Korrigiere die Daten in den markierten Feldern."
+  },
+  "heading": {
+    "employee-table": "Mitarbeiter-Tabelle",
+    "initial": "Extra-Aktivitäten planen",
+    "proposal-page": "Extra-Aktivitäten planen - Vorschläge",
+    "proposal-view": "{{scheduledHours}}/{{requestedHours}} Personenstunden sind vorgeschlagen, {{selectedHours}} Personenstunden werden geplant",
+    "results-page": "Extra-Aktivitäten planen - Ergebnis",
+    "scheduling-history": "Planungshistorie"
+  },
+  "helper-text-for-setting": {
+    "activity-selection": "Die zu planende Extra-Aktivität kann nur eine Aktivität vom Typ \"Anwesenheit\" sein, die zudem als \"Bezahlt\" konfiguriert ist.",
+    "date-range": "Standardmäßig ist dies die nächste Arbeitswoche Montag-Sonntag nach dem aktuellen Datum. Wenn das aktuelle Datum ein Montag ist, dann wird der Zeitraum auf die aktuelle Arbeitswoche Montag-Sonntag gesetzt.",
+    "distribute-staff-hours-evenly": "Wenn diese Option aktiviert ist, verteilt die Optimierung die Personenstunden so gleichmäßig wie möglich auf die Mitarbeiter. Beachte, dass dies zu einer geringfügig schlechteren Deckung führen kann.",
+    "employee-selection": "Standardmäßig enthält die Liste alle Mitarbeiter der Planungseinheit. Du kannst die Teilnehmer weiter eingrenzen, indem Du eine Auswahl oder einen Mitarbeiterfilter anwendest. Du kannst nur Mitarbeiter mit den erforderlichen Qualifikationen für die Extra-Aktivität auswählen.",
+    "number-of-staff-hours": "Die Anzahl der Personenstunden muss größer oder gleich der gewählten Mindestdauer sein und durch das Intervall der gewählten Planungseinheit geteilt werden können."
+  },
+  "helper-text": {
+    "delete-schedules_one": "Der ausgewählte Eintrag wird aus der Tabelle gelöscht. Bereits geplante Extra-Aktivitäten sind davon nicht betroffen.",
+    "delete-schedules_other": "Die ausgewählten Einträge werden aus der Tabelle gelöscht. Bereits geplante Extra-Aktivitäten sind davon nicht betroffen."
+  },
+  "label": {
+    "activity": "Zu planende Extra-Aktivität",
+    "aria-enhancement": {
+      "button": "Schaltfläche",
+      "delete-entries": "Einträge löschen",
+      "dropdown": "Auswahl",
+      "select": "auswählen",
+      "select-all": "alle auswählen"
+    },
+    "button": {
+      "cancel": "Abbrechen",
+      "generate-suggestions": "Vorschläge erzeugen",
+      "schedule-extra-activity": "Extra-Aktivität planen"
+    },
+    "coverage-disclaimer": "Die Deckung wurde beim Erstellen der Vorschläge berechnet. Die Werte werden nicht automatisch aktualisiert. Wenn sich die Aktivität über mehrere Intervalle erstreckt, wird für jedes Intervall ein Wert angezeigt.",
+    "date-range": "Zeitraum",
+    "distribute-staff-hours-evenly": "Personenstunden gleichmäßig auf Mitarbeiter verteilen",
+    "employee-section": {
+      "employee-filter": "Mitarbeiterfilter",
+      "selection": "Auswahl"
+    },
+    "form-error": {
+      "no-participants": "Es sind keine Mitarbeiter ausgewählt. Wähle mindestens einen Mitarbeiter aus."
+    },
+    "heading": {
+      "employees": "Mitarbeiter ({{amountSelected}}/{{amountTotal}} ausgewählt)",
+      "extra-activities": "Extra-Aktivitäten planen - Neue Extra-Aktivität einrichten",
+      "scheduling-info": "Konflikt anschauen",
+      "settings": "Eckdaten"
+    },
+    "minimum-session-duration": "Mindestdauer der Slots",
+    "no-employees": {
+      "caption": "Keine Mitarbeiter",
+      "empty-planning-unit": "Du kannst noch keine Extra-Aktivitäten planen, da es für die ausgewählte Planungseinheit keine Mitarbeiter gibt.",
+      "empty-planning-unit-and-employee-filter": "Du kannst noch keine Extra-Aktivitäten planen, da es für die ausgewählte Planungseinheit und Mitarbeiterfilter keine Mitarbeiter gibt.",
+      "empty-planning-unit-and-selection": "Du kannst noch keine Extra-Aktivitäten planen, da es für die ausgewählte Planungseinheit und Auswahl keine Mitarbeiter gibt.",
+      "no-planning-unit": "Du kannst noch keine Extra-Aktivitäten planen, da keine Planungseinheit ausgewählt wurde."
+    },
+    "no-entries": "Keine Einträge",
+    "no-scheduling-results": {
+      "details": "Plane Extra-Aktivitäten, um hier ihren Status und Optimierungsvorschläge zu sehen.",
+      "heading": "Keine Extra-Aktivitäten geplant"
+    },
+    "number-of-staff-hours": "Gesamte zu planende Personenstunden",
+    "results-status": {
+      "excluded": "Ausgeschlossen",
+      "execution-error": "Beim Hinzufügen der Extra-Aktivität zum Schichtplan des Mitarbeiters ist ein Fehler aufgetreten. Die Aktivität konnte nicht geplant werden.",
+      "failed": "Fehlgeschlagen",
+      "scheduled": "Geplant",
+      "staff-hours_one": "{{count}} Personenstunde",
+      "staff-hours_other": "{{count}} Personenstunden"
+    },
+    "scheduling-status": {
+      "error": "Die Planung ist fehlgeschlagen. Bitte versuche es erneut.",
+      "error_with_info": "Nicht möglich",
+      "execution_error": "Die Planung ist fehlgeschlagen. Bitte versuche es erneut.",
+      "proposed": "Vorschläge verfügbar",
+      "scheduling": "Planung in Bearbeitung...",
+      "written": "Geplante Extra-Aktivitäten"
+    }
+  },
+  "link": {
+    "proposed": "Vorschläge anschauen",
+    "view-schedule": "Plan anschauen",
+    "written": "Ergebnis anschauen"
+  },
+  "message": {
+    "introduction": "Definiere eine bestimmte Anzahl von Personenstunden und ersetze bestehende Aktivitäten durch Extra-Aktivitäten wie Chat, E-Mail oder Backoffice. Erfahre mehr im <0>Help Center</0>.",
+    "introduction-docs-link": "https://help.injixo.com/de/schedules-extra-activities/"
+  },
+  "notification": {
+    "failure": {
+      "general": "Ein Fehler ist aufgetreten. Bitte versuche es später erneut."
+    },
+    "form-error": {
+      "no-schedule-entry-selected": "Es wurde kein Vorschlag ausgewählt. Wähle mindestens einen Eintrag aus."
+    },
+    "warning": {
+      "information": "Es ist nicht möglich, alle Personenstunden zuzuweisen, die geplant werden müssen.",
+      "reason": "Grund",
+      "reason-text": "Die ausgewählten Mitarbeiter haben nicht genügend ersetzbare bezahlte Aktivitäten vom Typ Präsenz in ihrem Plan. ",
+      "solution": "Mögliche Lösung",
+      "solution-text": "Beginne den Prozess von vorn, wenn du zusätzliche Personenstunden planen musst."
+    }
+  },
+  "placeholder": {
+    "dropdown": "Suchen oder auswählen"
+  },
+  "popup": {
+    "timezone-helper": "Datums- und Zeitangaben beziehen sich auf die Zeitzone der Planungseinheit."
+  },
+  "scheduling-info": {
+    "not-possible": {
+      "reason": "Es war nicht möglich, Slots für die ausgewählten Mitarbeiter zu finden. Diese Mitarbeiter haben nicht genügend ersetzbare Aktivitäten vom Typ Anwesenheit in ihrem Plan oder die vorgesehene Mindestdauer der Slots ist zu lang."
+    },
+    "not-solved": {
+      "reason": "Die Berechnung der optimalen Vorschläge für die gewünschten Extra-Aktivitäten ist zu komplex und konnte nicht innerhalb des Zeitlimits bearbeitet werden. Du kannst versuchen, weniger Mitarbeiter oder einen kleineren Datumsbereich auszuwählen."
+    }
+  },
+  "suitable-activities-info": {
+    "hint": "Einige Mitarbeiter sind nicht auswählbar, da sie nicht über die benötigten Qualifikationen für die ausgewählte Aktivität verfügen."
+  },
+  "table": {
+    "column": {
+      "activity-to-schedule": "Zu planende Extra-Aktivität",
+      "date-range": "Zeitraum",
+      "employee": "Mitarbeiter",
+      "employee-name": "Name",
+      "extra-activity": "Extra-Aktivität",
+      "information": "Information",
+      "initiated-on": "Ausgelöst am",
+      "planning-unit": "Planungseinheit",
+      "replaced-activity": "Ersetzte Aktivität",
+      "resulting-coverage": "Geänderte Deckung",
+      "scheduled-time-slot": "Geplantes Zeitfenster",
+      "status": "Status",
+      "time-slot": "Vorgeschlagener Termin",
+      "user": "Nutzer"
+    }
+  },
+  "validation": {
+    "activity": {
+      "required": "Wähle eine Aktivität aus"
+    },
+    "number-of-staff-hours": {
+      "has-more-than-two-decimal-places": "Gib einen Wert mit maximal 2 Nachkommastellen an.",
+      "min": "Gib eine Zahl ein, die größer oder gleich der gewählten Mindestdauer ist.",
+      "required": "Gib eine Zahl ein, die größer oder gleich der gewählten Mindestdauer ist.",
+      "type-error": "Gib eine Zahl ein, die größer oder gleich der gewählten Mindestdauer ist."
+    },
+    "planning-unit": {
+      "required": "Wähle eine Planungseinheit aus"
+    }
+  }
+}

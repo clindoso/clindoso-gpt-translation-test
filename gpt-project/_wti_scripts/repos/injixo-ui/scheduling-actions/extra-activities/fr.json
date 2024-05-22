@@ -1,0 +1,187 @@
+{
+  "button": {
+    "back-to-overview": "Retour à la vue d'ensemble",
+    "back-to-schedules": "Retourner à Schedules",
+    "delete-schedules_one": "Supprimer la ligne",
+    "delete-schedules_other": "Supprimer les lignes",
+    "set-up-new-extra-activity": "Configurer une activité supplémentaire"
+  },
+  "connection": {
+    "offline": "Impossible de se reconnecter. Merci de recharger la page dans quelques minutes.",
+    "reconnecting": "Connexion perdue. Tentative de reconnexion..."
+  },
+  "document_title": {
+    "context": {
+      "schedules": {
+        "page": {
+          "new": "Nouvelle Activité Supplémentaire",
+          "overview": "Activités Supplémentaires",
+          "results": "Activités Supplémentaires Résultats",
+          "suggestions": "Activités Supplémentaires Propositions"
+        },
+        "title": "Schedules"
+      }
+    },
+    "module": "Plan"
+  },
+  "dropdown": {
+    "minimum-session-duration": "{{minutes}} minutes"
+  },
+  "error": {
+    "extra-activities-request": "La planification d'Activités supplémentaires a échoué.",
+    "incomplete-form": "Il manque des informations. Veuillez vérifier les champs mis en évidence."
+  },
+  "heading": {
+    "employee-table": "Liste des employés",
+    "initial": "Planifier les activités supplémentaires",
+    "proposal-page": "Planifier des Activités supplémentaires - Propositions",
+    "proposal-view": "{{scheduledHours}}/{{requestedHours}} heures-personnes proposées, {{selectedHours}} heures-personnes seront planifiées",
+    "results-page": "Planification des Activités supplémentaires - Résultats",
+    "scheduling-history": "Historique"
+  },
+  "helper-text-for-setting": {
+    "activity-selection": "L’activité supplémentaire doit être une activité \"Rémunérée\" de type \"Présence\".",
+    "date-range": "Par défaut, la plage est définie pour la prochaine semaine de travail du lundi au dimanche. Si la date du jour est un lundi alors la plage est la semaine en cours.",
+    "distribute-staff-hours-evenly": "Si cette option est cochée, l’optimisation répartira le nombre d’heures-personnes le plus uniformément possible entre les employés. Attention, cette option peut légèrement dégrader la couverture.",
+    "employee-selection": "Par défaut, tous les employés de l'unité opérationnelle sont sélectionnés. Vous pouvez réduire le nombre d'employés en choisissant un groupe ou un filtre avancé. Vous pouvez sélectionner uniquement les employés qui ont les compétences sur l'activité sélectionnée.",
+    "number-of-staff-hours": "Le nombre d’heures-personnes doit être un nombre entier supérieur à la durée minimum définie et un multiple de l’intervalle de l’Unité opérationnelle sélectionnée."
+  },
+  "helper-text": {
+    "delete-schedules_one": "La ligne sélectionnée sera supprimée du tableau sans impact sur les activités supplémentaires déjà planifiées.",
+    "delete-schedules_other": "Les lignes sélectionnées seront supprimées du tableau sans impact sur les activités supplémentaires déjà planifiées."
+  },
+  "label": {
+    "activity": "Activité supplémentaire à planifier",
+    "aria-enhancement": {
+      "button": "bouton",
+      "delete-entries": "Supprimer les lignes",
+      "dropdown": "Liste déroulante",
+      "select": "sélectionner",
+      "select-all": "tout sélectionner"
+    },
+    "button": {
+      "cancel": "Annuler",
+      "generate-suggestions": "Générer les propositions",
+      "schedule-extra-activity": "Planifier une Activité supplémentaire"
+    },
+    "coverage-disclaimer": "La couverture a été calculée lors de la génération des propositions. La mise à jour n'est pas automatique. Si la réunion couvre plusieurs intervalles, la valeur est affichée pour chaque intervalle.",
+    "date-range": "Période",
+    "distribute-staff-hours-evenly": "Répartir uniformément les heures-personnes entre les employés",
+    "employee-section": {
+      "employee-filter": "Filtre avancé",
+      "selection": "Groupe"
+    },
+    "form-error": {
+      "no-participants": "Aucun participant sélectionné. Veuillez sélectionner au moins un participant pour planifier des Activités supplémentaires."
+    },
+    "heading": {
+      "employees": "Employés ({{amountSelected}} /{{amountTotal}} sélectionné(s))",
+      "extra-activities": "Configurer une activité supplémentaire",
+      "scheduling-info": "Voir le conflit",
+      "settings": "Configuration"
+    },
+    "minimum-session-duration": "Durée minimum de l'activité",
+    "no-employees": {
+      "caption": "Aucun employé",
+      "empty-planning-unit": "Aucune réunion ne peut être planifiée car il n'existe aucun Employé pour l'Unité opérationnelle sélectionnée.",
+      "empty-planning-unit-and-employee-filter": "Aucune réunion ne peut être planifiée car il n'existe aucun Employé pour l'Unité opérationnelle et le filtre avancé sélectionnés.",
+      "empty-planning-unit-and-selection": "Aucune réunion ne peut être planifiée car il n'existe aucun Employé pour l'Unité opérationnelle et le Groupe sélectionnés.",
+      "no-planning-unit": "Aucune réunion ne peut être planifiée car aucune Unité opérationnelle est sélectionnée."
+    },
+    "no-entries": "Aucune donnée",
+    "no-scheduling-results": {
+      "details": "Planifier des activités supplémentaires pour obtenir des propositions d'optimisation.",
+      "heading": "Aucune activité supplémentaire planifiée"
+    },
+    "number-of-staff-hours": "Total d’heures-personnes à planifier",
+    "results-status": {
+      "excluded": "Exclu",
+      "execution-error": "Une erreur est survenue lors de la planification de l’activité supplémentaire. L’activité supplémentaire n’a pas pu être planifiée.",
+      "failed": "Echec",
+      "scheduled": "Planifié",
+      "staff-hours_one": "{{count}} heure-personne",
+      "staff-hours_other": "{{count}} heures-personnes"
+    },
+    "scheduling-status": {
+      "error": "Erreur lors de la planification. Essayez à nouveau.",
+      "error_with_info": "Optimisation impossible",
+      "execution_error": "La planification a échoué. Essayez à nouveau.",
+      "proposed": "Propositions disponibles",
+      "scheduling": "Planification en cours ...",
+      "written": "Activité supplémentaire planifiée"
+    }
+  },
+  "link": {
+    "proposed": "Afficher les propositions",
+    "view-schedule": "Afficher le planning",
+    "written": "Voir les résultats"
+  },
+  "message": {
+    "introduction": "Définissez un nombre d’heures-personnes et remplacez les activités existantes par des activités supplémentaires, comme e-mail, chat ou back office. Pour en savoir plus, consultez le <0>Help Center</0>.",
+    "introduction-docs-link": "https://help.injixo.com/schedules-extra-activities/"
+  },
+  "notification": {
+    "failure": {
+      "general": "Une erreur est survenue. Essayez à nouveau."
+    },
+    "form-error": {
+      "no-schedule-entry-selected": "Aucune proposition sélectionnée. Vous devez en sélectionner au moins une."
+    },
+    "warning": {
+      "information": "Impossible d’attribuer toutes les heures-personnes à planifier.",
+      "reason": "Raison",
+      "reason-text": "Les employés sélectionnés n'ont pas assez d'Activités remplaçables et rémunérées de type Présence dans leur planning.",
+      "solution": "Solution possible",
+      "solution-text": "Recommencez le processus depuis le début si vous souhaitez planifier des heures-personnes supplémentaires."
+    }
+  },
+  "placeholder": {
+    "dropdown": "Rechercher ou sélectionner"
+  },
+  "popup": {
+    "timezone-helper": "La date et l'heure sont basées sur le fuseau horaire de l'Unité opérationnelle."
+  },
+  "scheduling-info": {
+    "not-possible": {
+      "reason": "Impossible de planifier l'Activité supplémentaire pour les employés concernés. Ils n'ont pas assez d'Activités remplaçables de type Présence dans leur planning ou la durée minimum de l'Activité supplémentaire est trop grande."
+    },
+    "not-solved": {
+      "reason": "Le calcul des propositions pour les Activités Supplémentaires est trop complexe et n'a pas pu être traité dans le temps imparti. Vous pouvez relancer le processus en sélectionnant moins d'employés ou une période plus restreinte."
+    }
+  },
+  "suitable-activities-info": {
+    "hint": "Certains employés ne peuvent être sélectionnés car ils n'ont pas la compétence requise pour l'activité concernée."
+  },
+  "table": {
+    "column": {
+      "activity-to-schedule": "Activité supplémentaire à planifier",
+      "date-range": "Période",
+      "employee": "Employé",
+      "employee-name": "Nom",
+      "extra-activity": "Activité supplémentaire",
+      "information": "Information",
+      "initiated-on": "Démarrée le",
+      "planning-unit": "UO",
+      "replaced-activity": "Activité remplacée",
+      "resulting-coverage": "Couverture résultante",
+      "scheduled-time-slot": "Activité supplémentaire planifiée",
+      "status": "Statut",
+      "time-slot": "Créneau horaire proposé",
+      "user": "Utilisateur"
+    }
+  },
+  "validation": {
+    "activity": {
+      "required": "Sélectionner une Activité"
+    },
+    "number-of-staff-hours": {
+      "has-more-than-two-decimal-places": "Le nombre doit avoir au maximum deux décimales.",
+      "min": "Entrer un nombre entier plus grand que la durée minimum.",
+      "required": "Entrer un nombre entier plus grand que la durée minimum.",
+      "type-error": "Entrer un nombre entier plus grand que la durée minimum."
+    },
+    "planning-unit": {
+      "required": "Sélectionner une unité opérationnelle"
+    }
+  }
+}

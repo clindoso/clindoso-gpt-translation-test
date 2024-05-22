@@ -1,0 +1,439 @@
+{
+  "catalog": {
+    "title": "Añadir una nueva integración",
+    "add_button": "Añadir integración",
+    "select_model": "Selecciona el modelo",
+    "back_link": "Volver al catálogo",
+    "features_label": "Funcionalidades",
+    "features": {
+      "call": "Histórico de llamadas",
+      "chat": "Histórico de chats",
+      "ticket": "Histórico de tickets",
+      "email": "Histórico de Emails",
+      "social_media": "Histórico Medios Sociales",
+      "document": "Histórico de Documentos",
+      "agent_status": "Estados de los agentes",
+      "rta": "RTA"
+    },
+    "delivery_mode_label": "Modo de distribución",
+    "delivery_mode": {
+      "cloud": "Cloud",
+      "on-prem": "On-Premise",
+      "legacy": "On-Premise"
+    }
+  },
+  "csv": {
+    "schemas": {
+      "column_mappings": {
+        "aht": {
+          "source": {
+            "label": "TMO corresponde a",
+            "required": "Selecciona el nombre de la columna de origen para 'TMO'.",
+            "placeholder": "Selecciona la columna con el 'TMO'"
+          },
+          "format": {
+            "label": "Formato de TMO",
+            "options": {
+              "%f": "Segundos (p. ej. 120.5)",
+              "%H:%M:%S": "hh:mm:ss (p. ej. 01:30:00)"
+            },
+            "placeholder": "Seleccionar el formato para el TMO",
+            "required": "Selecciona un formato para el TMO."
+          },
+          "headline": "TMO"
+        },
+        "date": {
+          "format": {
+            "label": "Formato de fecha",
+            "options": {
+              "%d.%m.%Y": "DD.MM.AAAA (p.e. 23.08.2020)",
+              "%Y-%m-%d": "AAAA-MM-DD (p.e. 2020-08-23)",
+              "%d/%m/%Y": "DD/MM/AAAA (p.e. 23/08/2020)",
+              "%m/%d/%Y": "MM/DD/AAAA (p.e. 08/23/2020)",
+              "%m/%d/%y": "MM/DD/AA (p.e. 08/23/20)",
+              "%Y%m%d": "AAAAMMDD (p.e. 20200823)",
+              "%Y/%m/%d": "AAAA/MM/DD (p.e. 2020/08/23)"
+            },
+            "placeholder": "Seleccionar un formato de fecha",
+            "required": "Selecciona un formato de fecha."
+          },
+          "source": {
+            "label": "Fecha corresponde a",
+            "required": "Selecciona el nombre de la columna de origen para 'Fecha'.",
+            "placeholder": "Selecciona la columna con la 'Fecha'"
+          },
+          "custom_format": {
+            "invalid": "Introduce un formato de fecha que incluya día, mes y año, p. ej. DD.MM.YYYY.",
+            "label": "Formato de fecha personalizado",
+            "placeholder": "Introduce un formato de fecha",
+            "preview": "Vista previa",
+            "required": "Define un formato de fecha.",
+            "tooltip": {
+              "example": "Ejemplos:",
+              "example_one": "DD-MM-YYYY para 01-03-2023",
+              "example_two": "D/M/YY para 1/3/23",
+              "instruction": "Especifica un formato de fecha:",
+              "instruction_one": "Usa mayúsculas para día (D o DD), mes (M o MM) y año (YY o YYYY).",
+              "instruction_two": "Introduce un formato de fecha que incluya día, mes y año."
+            }
+          },
+          "headline": "Fecha"
+        },
+        "handled": {
+          "source": {
+            "label": "Atendidos corresponde a",
+            "required": "Selecciona el nombre de la columna de origen para 'Atendidas'.",
+            "placeholder": "Selecciona la columna con los/as 'Atendidos/as'"
+          },
+          "headline": "Atendidos/as"
+        },
+        "headline": "Define que columnas de tu fichero de muestra se deben usar.",
+        "offered": {
+          "source": {
+            "label": "Entrantes corresponde a",
+            "required": "Selecciona el nombre de la columna de origen para 'Recibidas'.",
+            "placeholder": "Selecciona la columna con los/as 'Recibidos/as'"
+          },
+          "headline": "Recibidos/as"
+        },
+        "queue": {
+          "source": {
+            "label": "Nombre de la cola corresponde a",
+            "required": "Selecciona el nombre de la columna de origen para 'Cola'.",
+            "placeholder": "Selecciona la columna con la 'Cola'"
+          },
+          "headline": "Cola"
+        },
+        "time": {
+          "source": {
+            "label": "Hora corresponde a",
+            "required": "Selecciona el nombre de la columna de origen para 'Hora'.",
+            "placeholder": "Selecciona la columna con la 'Hora'"
+          },
+          "format": {
+            "label": "Formato de hora",
+            "options": {
+              "%H:%M": "hh:mm (p.e. 16:30)",
+              "%H:%M:%S": "hh:mm:ss (p.e. 16:30:00)",
+              "%I:%M %p": "h:mm AM/PM (p.e. 4:30 PM)"
+            },
+            "placeholder": "Selecciona un formato de hora",
+            "required": "Selecciona un formato de hora."
+          },
+          "headline": "Hora"
+        },
+        "channel": {
+          "source": {
+            "label": "Canal corresponde a",
+            "required": "Selecciona el nombre de la columna de origen para 'Canal'.",
+            "extended_info": "Los valores en este columna deberían contener únicamente calls, chats, emails, cases, documents, o social_media.",
+            "info": "Los valores en esta columna deberían únicamente contener llamadas, chats o correos electrónicos.",
+            "placeholder": "Selecciona la columna con el 'Canal'"
+          }
+        },
+        "activity_identifier": {
+          "source": {
+            "label": "Identificador de actividad corresponde a",
+            "placeholder": "Select column",
+            "required": "Selecciona el nombre de la columna de origen para 'Identificador de actividad'."
+          }
+        },
+        "agent_identifier": {
+          "source": {
+            "label": "Identificador de agente corresponde a",
+            "placeholder": "Select column",
+            "required": "Selecciona el nombre de la columna de origen para 'Identificador de agente'."
+          }
+        },
+        "duration": {
+          "headline": "Duración",
+          "source": {
+            "label": "Duración",
+            "placeholder": "Selecciona la columna para la 'Duración'",
+            "required": "Selecciona el nombre de la columna de origen para 'Duración'."
+          }
+        },
+        "end_date": {
+          "source": {
+            "label": "Fecha de finalización corresponde a",
+            "placeholder": "Select column",
+            "required": "Selecciona el nombre de la columna de origen para 'Fecha de finalización'."
+          }
+        },
+        "end_time": {
+          "source": {
+            "label": "Hora de finalización corresponde a",
+            "placeholder": "Select column",
+            "required": "Selecciona el nombre de la columna de origen para 'Hora de finalización'."
+          }
+        },
+        "end_timestamp": {
+          "custom_format": {
+            "label": "Formato",
+            "placeholder": "Introduce un formato, p. ej.: DD-MM-YYYY hh:mm:ss"
+          },
+          "source": {
+            "label": "Marca de tiempo de finalización corresponde a",
+            "placeholder": "Selecciona una columna"
+          }
+        },
+        "no_column": {
+          "source": {
+            "label": "Sin columna"
+          }
+        },
+        "start_date": {
+          "source": {
+            "label": "Fecha de inicio corresponde a",
+            "placeholder": "Select column",
+            "required": "Selecciona el nombre de la columna de origen para 'Fecha de inicio'."
+          }
+        },
+        "start_time": {
+          "source": {
+            "label": "Hora de inicio corresponde a",
+            "placeholder": "Select column",
+            "required": "Selecciona el nombre de la columna de origen para 'Hora de inicio'."
+          }
+        },
+        "start_timestamp": {
+          "custom_format": {
+            "label": "Formato",
+            "placeholder": "Introduce un formato, p. ej.: DD-MM-YYYY hh:mm:ss"
+          },
+          "source": {
+            "label": "Marca de tiempo de inicio corresponde a",
+            "placeholder": "Selecciona una columna",
+            "required": "Selecciona el nombre de la columna de origen para 'Marca de tiempo de inicio'."
+          }
+        },
+        "timestamp": {
+          "custom_format": {
+            "invalid": "Introduce un formato que incluya día, mes, año, horas, minutos y, opcionalmente, segundos, p. ej.: DD-MM-YYYY hh:mm:ss.",
+            "label": "Formato",
+            "placeholder": "Introduce un formato, p. ej.: DD-MM-YYYY hh:mm:ss",
+            "required": "Selecciona un formato para la marca de tiempo.",
+            "tooltip": {
+              "example": "Ejemplos:",
+              "example_one": "D/M/YY h:mm para 1/3/23 1:05",
+              "example_two": "DD-MM-YYYY hh:mm:ss para 01-03-2023 01:59:58",
+              "instruction": "Especifica un formato para la marca de tiempo:",
+              "instruction_one": "Introduce un formato que incluya día, mes, año, horas, minutos y, opcionalmente, segundos.",
+              "instruction_three": "Usa minúsculas para horas (h o hh), minutos (m o mm) y segundos (s o ss).",
+              "instruction_two": "Usa mayúsculas para día (D o DD), mes (M o MM) y año (YY o YYYY)."
+            }
+          },
+          "source": {
+            "label": "Marca de tiempo corresponde a",
+            "placeholder": "Selecciona la columna 'Marca de tiempo'",
+            "required": "Selecciona el nombre de la columna de origen para 'Marca de tiempo'."
+          },
+          "switch_label": "Fecha y hora en una columna"
+        }
+      },
+      "created": "El esquema CSV se ha creado.",
+      "general_schema": {
+        "channel": {
+          "calls": "Llamadas",
+          "cases": "Casos",
+          "chats": "Chats",
+          "documents": "Documentos",
+          "emails": "Emails",
+          "fixed": {
+            "label": "Canal"
+          },
+          "placeholder": "Selecciona el canal",
+          "required": "Selecciona un canal.",
+          "social_media": "Redes sociales",
+          "headline": "Canal"
+        },
+        "errors": {
+          "server": "Ha ocurrido un error de servidor. Por favor, inténtalo de nuevo más tarde.",
+          "analyze_sample": "Ha ocurrido un error al analizar tu fichero de muestra. Comprueba el separador y asegúrate de que tu fichero tiene al menos un encabezado."
+        },
+        "gap_filling_strategy": {
+          "headline": "Gestión de los valores faltantes en los intervalos",
+          "option_empty": "Dejar vacío: se muestra en la cola como \"no data\"",
+          "option_zero": "Rellenar con cero: se muestra en la cola como \"0\"",
+          "required": "Selecciona una estrategia para rellenar los huecos.",
+          "explanation": "Dependiendo de tu selección, los valores que faltan se rellenarán con ceros (0) o se dejarán vacíos. En el caso de que ya existan datos para el intervalo, se rellenarán con ceros (0) o se eliminarán."
+        },
+        "headline": "Esquema CSV",
+        "interval_length": {
+          "headline": "Seleccionar la longitud del intervalo",
+          "option_15": "15 minutos",
+          "option_30": "30 minutos",
+          "option_60": "60 minutos",
+          "required": "Selecciona una duración del intervalo."
+        },
+        "name": {
+          "headline": "Ponle nombre a tu esquema CSV.",
+          "required": "Introduce un nombre.",
+          "unique": "El nombre debe ser único."
+        },
+        "sample_file": {
+          "button": "Cargar fichero",
+          "description": "El fichero de muestra debe ser como un fichero CSV típico que utilices para importar tus datos. En el próximo paso trabajarás con este fichero para mapear tus datos con los datos requeridos por injixo.",
+          "headline": "Fichero de muestra CSV",
+          "placeholder": "Seleccionar...",
+          "required": "Proporciona un archivo de muestra.",
+          "explanation": "Cargar un fichero CSV (.csv o .txt) que utilices para importar tus datos. Asignarás estos datos CSV en el siguiente paso.",
+          "reupload": "Volver a cargar el fichero"
+        },
+        "separator": {
+          "comma": "Coma",
+          "headline": "Separador de columnas del fichero CSV",
+          "placeholder": "Selecciona separador",
+          "required": "Selecciona un separador.",
+          "semicolon": "Punto y coma",
+          "tab": "Tabulador"
+        },
+        "timezone": {
+          "headline": "Zona horaria",
+          "no_result": "No se ha encontrado ninguna zona horario que concuerde.",
+          "placeholder": "Busca o selecciona una zona horaria",
+          "required": "Selecciona una zona horaria.",
+          "tooltip": "Puedes buscar por ciudad o por su desviación (UTC+/-hh:mm)."
+        },
+        "analyze_sample_file": "Analizando tu fichero de muestra...",
+        "edit_headline": "Editar el esquema CSV",
+        "layout": {
+          "cdr": "En base a contactos",
+          "explanation": "injixo agregará los contactos individuales en intervalos de 15 minutos.",
+          "headline": "Disposición de los datos",
+          "interval": "En base a intervalos",
+          "required": "Selecciona una disposición."
+        }
+      },
+      "page2": {
+        "primary_action": "Guardar esquema",
+        "headline": "Asignar columnas",
+        "preview": {
+          "headline": "Vista previa"
+        }
+      },
+      "page1": {
+        "primary_action": "Asignar las columnas",
+        "headline": "Configuración"
+      },
+      "back": "Volver",
+      "back_link": "Volver a la integración",
+      "document_title": {
+        "context": {
+          "page": {
+            "mapping": "Mapeo de columnas",
+            "setup": "Configuración del CSV"
+          }
+        },
+        "module": "Esquema CSV",
+        "create": "Crear esquema CSV",
+        "edit": "Editar el esquema CSV"
+      },
+      "optional": "Optional",
+      "preprocessing": {
+        "edit_disabled": "Para modificar las opciones de preprocesamiento, debes volver a cargar el fichero CSV.",
+        "empty_lines": {
+          "explanation": "Omitir las filas que contienen únicamente separadores pero no valores.",
+          "label": "Omitir filas vacías"
+        },
+        "headerless": {
+          "explanation": "Las columnas de encabezado se etiquetarán como A, B, etc.",
+          "label": "Añadir fila de encabezado"
+        },
+        "skip_lines_containing": {
+          "add_string": "Añadir texto",
+          "explanation": "Omitir las filas que contengan valores que coincidan con al menos uno de los textos añadidos.",
+          "label": "Omitir la(s) fila(s) que contengan:",
+          "or": "o"
+        },
+        "skip_starting_lines": {
+          "explanation": "Omitir el número de filas especificado, empezando desde el inicio.",
+          "label": "Omitir la(s) primera(s) <input /> fila(s)"
+        },
+        "title": "Opciones de preprocesamiento"
+      },
+      "mapping_mode": {
+        "modal": {
+          "cancel": "Volver a la edición",
+          "content": "Estás a punto de guardar el esquema CSV con un método de asignación distinto.",
+          "title": "¿Cambiar el método de asignación de las columnas?",
+          "warning": {
+            "overwriting": "Tu esquema CSV actual será sobrescrito.",
+            "restoring": "No puedes restablecer el esquema CSV previo."
+          }
+        },
+        "toggle": {
+          "label": "Usar una consulta SQL para asignar las columnas",
+          "tooltip": "Usa esta opción si tu ACD no genera archivos CSV con los nombres de columnas que ves aquí abajo."
+        }
+      },
+      "query": {
+        "input": {
+          "explanation": "Aprende más en el <explanationTarget>Help Center</explanationTarget>.",
+          "label": "Consulta SQL",
+          "required": "Introduce una consulta SQL.",
+          "explanationLinkTarget": "https://help.injixo.com/add-csv-integration#map-the-columns-sql-query"
+        }
+      },
+      "test": {
+        "action": "Probar la asignación",
+        "result": {
+          "hint": "Comprueba en la vista previa que no se hayan intercambiado columnas con el mismo tipo de datos (p. ej. Entrantes y Atendidos). Aprende más en el <explanationTarget>Help Center</explanationTarget>.",
+          "preview": {
+            "label": "Vista previa de las columnas asignadas"
+          },
+          "tagline": "No se identificó ningún problema.",
+          "title": "Resultado de la prueba"
+        },
+        "unknown_error": "No se pudo testear la asignación."
+      },
+      "reupload_required_info": {
+        "label": "Para cambiar el separador de columnas o las opciones de preprocesamiento, vuelve a subir el archivo CSV."
+      }
+    },
+    "errors": {
+      "empty_file": "El fichero está vacío.",
+      "end_time_before_start_time": "La hora de finalización no debe ser anterior a la hora de inicio.",
+      "error_on_line": "Error en la línea {{line_number}}:",
+      "excessive_data": "No se soporta más de un año de datos.",
+      "file_too_large": "El fichero que has intentado cargar es demasiado grande. El tamaño máximo de fichero es 7MB.",
+      "invalid_channel": "Canal no soportado.",
+      "invalid_date_format": "El formato de fecha no es correcto.",
+      "invalid_date_or_time_format": "Los formatos de fecha o hora no son correctos.",
+      "invalid_duration_cdr": "El contacto se ha atendido pero sin embargo no tiene duración.",
+      "invalid_end_of_line": "Utiliza de manera consistente los caracteres de fin de línea en el fichero.",
+      "invalid_handled_cdr": "El campo de atendidos debe contener o un 0 o un 1.",
+      "invalid_headers": "Los encabezados no existen o están mal escritos.",
+      "invalid_number": "Comprueba los formatos de los valores numéricos.",
+      "invalid_row_length": "El número de campos en esta línea no concuerda con el número de campos en la línea de encabezado.",
+      "invalid_separator": "Separador inválido.",
+      "invalid_time_format": "El formato de hora no es correcto.",
+      "invalid_timestamp": "La hora no es válida teniendo en cuenta la longitud del intervalo.",
+      "invalid_year": "El año no puede ser anterior a 1970.",
+      "missing_activity": "Falta el identificador de actividad.",
+      "missing_agent": "Falta el identificador de agente.",
+      "missing_queue": "Falta el nombre de la cola de datos.",
+      "negative_number": "Los números negativos no están permitidos.",
+      "non_existing_timestamp": "La hora local especificada no representa una hora existente.",
+      "number_too_big": "Número demasiado grande.",
+      "string_too_long": "Acorta el valor a 255 caracteres.",
+      "unexpected": "Ha ocurrido un error no esperado.",
+      "unknown_error": "Ha ocurrido un error desconocido.",
+      "invalid_time_range": "Los datos exceden el periodo máximo de 10 años."
+    }
+  },
+  "external_system": {
+    "database": {
+      "model_display_name": "Base de datos"
+    }
+  },
+  "overview": {
+    "page_title": "Integraciones actuales"
+  },
+  "setup": {
+    "controls": {
+      "cancel": "Cancelar"
+    }
+  },
+  "module": "Integraciones"
+}

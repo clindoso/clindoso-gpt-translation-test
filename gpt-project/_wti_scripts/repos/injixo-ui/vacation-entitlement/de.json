@@ -1,0 +1,73 @@
+{
+  "application": {
+    "title": "Urlaubsanspruch",
+    "backToTimeOff": "Zurück zu Urlaub/Abwesenheiten"
+  },
+  "options": {
+    "button": {
+      "export": "CSV exportieren",
+      "transfer": "Urlaubsansprüche übertragen"
+    }
+  },
+  "filters": {
+    "label": {
+      "planningUnit": "Planungseinheit",
+      "selection": "Auswahl",
+      "year": "Jahr",
+      "search": "Suche"
+    },
+    "placeholder": {
+      "planningUnit": "Planungseinheit wählen",
+      "selection": "Auswahl festlegen",
+      "year": "Jahr auswählen",
+      "search": "Komma zum Trennen der Suchbegriffe verwenden"
+    },
+    "result": {
+      "noResult": "Keine Einträge"
+    }
+  },
+  "entitlementsTable": {
+    "label": {
+      "personnelNumber": "Personalnummer",
+      "employeeName": "Name",
+      "contract": "Vertrag",
+      "remainCurrentYear": "Restanspruch (dieses Jahr)",
+      "remainLastYear": "Restanspruch (letztes Jahr)",
+      "currentYear": "Urlaubsanspruch",
+      "takenRatio": "Genommener Urlaub",
+      "takenRatioPercent": "Genommener Urlaub {{percent}}%"
+    },
+    "result": {
+      "loading": "Lädt",
+      "noEmployeesFound": "Keine Mitarbeiter gefunden.",
+      "noPlanningUnitsFound": "Keine Planungseinheit verfügbar."
+    }
+  },
+  "transferModal": {
+    "text": {
+      "description": "The remaining vacation entitlement for the current selection will be transferred",
+      "from": "Von",
+      "to": "Bis"
+    },
+    "button": {
+      "transfer": "Übertragen",
+      "cancel": "Abbrechen"
+    },
+    "transferSuccess": "Urlaubsansprüche erfolgreich nach {{nextYear}} übertragen"
+  },
+  "error": {
+    "fetchingEntitlements": "Es ist ein Fehler aufgetreten (Ressource: Urlaubsanspruch)",
+    "fetchingVacations": "Es ist ein Fehler aufgetreten (Ressource: Genommener Urlaub)",
+    "fetchingPlanningUnits": "Es ist ein Fehler aufgetreten (Ressource: Planungseinheit)",
+    "fetchingSelections": "Es ist ein Fehler aufgetreten (Ressource: Auswahl)",
+    "fetchingEmployees": "Es ist ein Fehler aufgetreten (Ressource: Mitarbeiter)",
+    "fetchingAccessRights": "Es ist ein Fehler aufgetreten (Ressource: Zugriffsrechte)",
+    "transferEntitlements": "Es ist ein Fehler aufgetreten (Ressource: Urlaubsansprüche übertragen)",
+    "savingEntitlements": "Es ist ein Fehler aufgetreten (Ressource: Urlaubsanspruch) - Details:",
+    "exportCsv": "Es ist ein Fehler aufgetreten (Ressource: CSV exportieren)"
+  },
+  "document_title": {
+    "module": "Plan",
+    "sub_module": "Urlaubsanspruch"
+  }
+}

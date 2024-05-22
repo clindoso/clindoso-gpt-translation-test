@@ -1,0 +1,1342 @@
+{
+  "save": "Sauvegarder",
+  "retry_saving": "Sauvegarder à nouveau",
+  "cancel": "Annuler",
+  "edit": "Éditer",
+  "close": "Fermer",
+  "done": "Fermer",
+  "back": "Retour",
+  "back_to_custom": "Retour à {{ backToName }}",
+  "current_day": "Aujourd'hui",
+  "current_week": "Cette semaine",
+  "current_month": "Ce mois",
+  "current_year": "Cette année",
+  "loading": "Chargement",
+  "preview": "Mode Aperçu",
+  "prev": {
+    "aria_label": "Précédent"
+  },
+  "next": {
+    "aria_label": "Suivant"
+  },
+  "planning_unit": "Unité opérationnelle",
+  "version": "Version",
+  "queue": "File d'attente",
+  "activity": "Activité",
+  "value_type": "Type de valeur",
+  "dropdown_no_result": "Aucun résultat trouvé",
+  "dropdown_placeholder": "Sélectionner",
+  "auto_forecast": "Auto-Forecast",
+  "operational": "Opérationnel",
+  "strategic": "Stratégique",
+  "import": "Import",
+  "forecasts": {
+    "auto": "Auto-Forecast",
+    "operational": "Opérationnel",
+    "strategic": "Stratégique",
+    "import": "Import"
+  },
+  "forecast": "Prévision",
+  "staff_requirements": "Besoin en personnel",
+  "welcome_page": {
+    "title": "Bienvenue sur injixo Forecast",
+    "introduction": "Vous y êtes presque ! Avant d'utiliser injixo Forecast, un Workload doit être créer. Un Workload est le cœur de votre prévision. Il contient vos données historique et prévisionnelle associées en un seul endroit. Sans cet élément, aucune prévision ne pourra être générée.",
+    "introduction_workload": "Les cartes ci-dessous présentent un résumé de votre configuration actuelle d'injixo Forecast. Pour utiliser les workloads, une configuration de d'une connexion à l'ACD et des disponibilités des files d'attente à importer sont requises. Vous pouvez maintenant cliquer sur les cartes bleues pour continuer.",
+    "card": {
+      "acd": {
+        "title": "Configurer ACD",
+        "unchecked": {
+          "link": "Configurer la connexion à l'ACD.",
+          "desc": "Pour utiliser Forecast, vous devez connecter un système externe à injixo."
+        },
+        "invalid": {
+          "desc": "Vos identifiants ont été rejetés par l'ACD. Merci de vérifier que vos identifiants sont valides."
+        },
+        "checked": {
+          "desc": "La connexion à l'ACD est configurée."
+        }
+      },
+      "queue": {
+        "title": "Importer les files d'attente",
+        "requesting": {
+          "title": "Démarrage de l'import",
+          "desc": "Vérification des données disponibles"
+        },
+        "importing": {
+          "xlink": {
+            "title": "{{ importedQueuesCount }} / {{ importableQueuesCount }} Files d'attente importées",
+            "guidance_link": "En savoir plus"
+          },
+          "cloud": {
+            "title": "Import démarré",
+            "desc": "Import des données historiques disponibles"
+          }
+        },
+        "delay_warning": "Cela peut prendre quelques minutes pour que vos données ACD soient importées.",
+        "success": {
+          "title": "Import terminé",
+          "description": {
+            "xlink": "Les données historiques disponibles ont été importées avec succès.",
+            "cloud": "L'import initial a réussi.",
+            "general": "Les imports seront réalisés régulièrement."
+          }
+        },
+        "disabled": {
+          "desc": "Pour importer les files d'attente vous avez premièrement besoin d'une connexion ACD."
+        }
+      },
+      "workload": {
+        "title": "Créer un workload",
+        "disabled": {
+          "desc": "Veuillez vous assurer que les files d'attente sont disponibles dans le but de créer un workload."
+        },
+        "checked": {
+          "desc": "Vous avez déjà des workloads dans votre système. Vous pouvez les parcourir ici.",
+          "link": "Aller aux Workloads"
+        },
+        "unchecked": {
+          "desc": "Créer un workload et lancer la prévision."
+        }
+      }
+    },
+    "integrations": {
+      "add": "Créer une intégration",
+      "body": "Créez une nouvelle intégration pour connecter votre ACD et importer vos données historiques. Sélectionnez un système externe dans la liste disponible ou utilisez l'interface universelle.",
+      "configured": "{{ integrationCount }} intégration(s) configurée(s)",
+      "header": "Configurez vos intégrations",
+      "not_configured": "Aucune intégration configurée."
+    },
+    "workload": {
+      "with_history": {
+        "body": "Plus que quelques clics avant d'utiliser Forecast. Créez votre premier Workload et utilisez vos données historiques.",
+        "create_workload": "Créer un Workload",
+        "header": "Créer un Workload",
+        "no_queues": "Aucune file d'attente disponible.",
+        "queue_count_import": "{{ importedQueues }} file(s) d'attente importée(s) sur {{ importableQueues }}."
+      }
+    }
+  },
+  "requirement_scripts": {
+    "default_scripts": {
+      "title": "Default Scripts",
+      "button_label": "Open"
+    },
+    "custom_scripts": {
+      "title": "Custom Scripts",
+      "sort_by": {
+        "label": "Sort by",
+        "option": {
+          "name_desc": "Name A-Z",
+          "name_asc": "Name Z-A"
+        }
+      },
+      "search": {
+        "label": "Search",
+        "placeholder": "Search your scripts"
+      },
+      "no_result": "No result found"
+    }
+  },
+  "requirement_calculation": {
+    "configuration": {
+      "not_configured": {
+        "headline": "La calcul du besoin en personnel n'est pas encore configuré.",
+        "button_label": "Définir les paramètres de calcul"
+      },
+      "save": "Sauvegarder la configuration",
+      "edit": "Editer la méthode de calcul",
+      "pu_activity_headline": "Données de planification associées",
+      "other_info": "Vous pouvez renseigner les paramètres des \"autres\" méthodes de dimensionnement dans la boite de dialogue de la fenêtre de la prévision.",
+      "custom_explanation": "... tous les scripts supplémentaires",
+      "pu_help": {
+        "text": "Impossible de sélectionner une unité opérationnelle supérieure."
+      }
+    },
+    "max_sessions": "Nombre de sessions maximum",
+    "max_sessions_info": "Le nombre maximum de sessions de Chats simultanées par employé.",
+    "error": {
+      "max_sessions": {
+        "required": "Nombre maximum de sessions requis."
+      },
+      "overhead": {
+        "required": "Overhead requis.",
+        "out_of_range": "Renseigner un nombre entier entre 0 et 99."
+      },
+      "shrinkage": "Seulement un nombre compris entre 0 et 99",
+      "min_agents": {
+        "too_high": "Le minimum doit être inférieur au maximum ({{ max }})."
+      },
+      "max_agents": {
+        "too_low": "Le maximum doit être supérieur au minimum ({{ min }})."
+      }
+    },
+    "overhead": "Overhead",
+    "overhead_info": "Le pourcentage du Temps Moyen de Traitement qu'un employé dédie à une tâche qui ne peut être traitée en parallèle (comme par exemple annoter une fiche client dans le CRM).",
+    "algorithms": {
+      "erlang_c": "Erlang-C",
+      "linear": "Productivité",
+      "other": "Autres",
+      "chat": "Chat"
+    },
+    "not_based_on_forecast": {
+      "link": "Scripts de dimensionnement pour les multi-activités, les activités sans prévision et les appels sortants",
+      "card": {
+        "explanation_list": {
+          "multiactivity": "Pour calculer le besoin en personnel d'une multi-activité, transférer au préalable la prévision de chaque sous-activité (sélectionner la version \"Auto-Forecast\" dans le script).",
+          "constant": "Aucune prévision n'est nécessaire pour calculer un besoin constant.",
+          "outbound": "La prévision est optionnelle pour le calcul du besoin en personnel des appels sortants.",
+          "multiple_planning_units": "Le script de calcul besoin sur plusieurs Unités opérationnelles utilise la méthode Erlang C pour repartir le besoin en personnel sur une ou plusieurs Unités opérationnelles."
+        },
+        "placeholder": "Sélectionner un script",
+        "aria_label": "Choix du script iWFM",
+        "warning": "La connexion au WFM a échoué.",
+        "multiactivity": "Multi-activités",
+        "outbound": "Appels sortants",
+        "constant": "Besoin Constant"
+      },
+      "link_without_additional_scripts": "Calcul du besoin constant",
+      "link_with_additional_saferun_and_mpu_scripts": "Scripts de calcul du besoin pour les multi-activités, le besoin constant, les appels sortants et plusieurs Unités opérationnelles",
+      "link_with_mpu_scripts": "Scripts de calcul du besoin constant et sur plusieurs Unités opérationnelles"
+    },
+    "based_on_forecast": {
+      "card": {
+        "selection_label": "Script de calcul du besoin",
+        "body": "Pour obtenir un résultat adapté, la <strong>prévision sur la période désirée doit être exportée (bouton \"Utiliser cette prévision\")</strong> avant d'effectuer le calcul du besoin en personnel.",
+        "auto_forecast": "La <strong>version Auto-Forecast</strong> doit être sélectionnée dans le script.",
+        "hint": "Utiliser la nouvelle méthode automatisée",
+        "hint_link_linear": "Script de productivité",
+        "hint_link_connection": "et",
+        "hint_link_chat": "Calcul du besoin Chat"
+      }
+    },
+    "saving": "Transfert ...",
+    "save": "Transfert vers SchedulePro",
+    "retry_saving": "Essayer à nouveau de transférer vers SchedulePro",
+    "service_level": "Niveau de service",
+    "target_service_level": "Objectif de niveau de service",
+    "target_service_level_aria_label": "Entrer l'objectif du niveau de service",
+    "target_answer_time": "Objectif de temps de réponse",
+    "target_answer_time_aria_label": "Entrer l'objectif du temps de réponse",
+    "average_handling_time": "Temps Moyen de Traitement (TMT)",
+    "shrinkage": "Shrinkage",
+    "shrinkage_aria_label": "Saisie du Shrinkage",
+    "fixed_aht": "Temps moyen de traitement",
+    "staff_requirement_calculation": "Calcul du besoin en personnel",
+    "no_forecasted_aht": "Pour utiliser le TMT prévisionnel, toutes les files d'attentes possédent des données relative au TMT.",
+    "min_agent_label": "Personnel minimum",
+    "max_agent_label": "Personnel maximum",
+    "unsupported_timespan_error": {
+      "title": "Le calcul du besoin en personnel n'est pas disponible sur l'affichage annuel.",
+      "description": "Veuillez sélectionner l'affichage journalier, hebdomadaire ou mensuel."
+    },
+    "no_forecasted_elements_error": {
+      "title": "Le calcul du besoin en personnel n'est pas disponible pour les jours sans prévision.",
+      "description": "Veuillez choisir un jour où la prévision est disponible."
+    },
+    "agents_required": "Besoin en personnel",
+    "to_wfm": "Transférer le besoin",
+    "marker": {
+      "staff_requirement": "Besoin en personnel"
+    },
+    "date_formats": {
+      "day": "HH:mm",
+      "week": "ddd MMM D"
+    },
+    "man_hours": "nb heures",
+    "man_hours_sum": "Besoin total en heures",
+    "export_modal": {
+      "transfer_to": "Transférer vers",
+      "not_assigned": "Non assigné",
+      "status": {
+        "failed": "Le transfert du besoin en personnel a échoué suite à une erreur interne. Veuillez essayer à nouveau.",
+        "succeeded": "Le besoin en personnel a été transféré correctement.",
+        "processing": "Transfert du besoin en personnel…",
+        "connection_error": "La connexion à WFM a échoué. Veuillez essayer à nouveau.",
+        "timezone_mismatch": {
+          "failed": "Les fuseaux horaire de l'Unité opérationnelle et du Workload sont différents."
+        },
+        "target_invalid": {
+          "date_format": "dd/LL",
+          "failed": "Le transfert du besoin en personnel a échoué sur la période sélectionnée. Vérifier la validité de l'activité dans l'Unité Opérationnelle dans WFM et essayer à nouveau.",
+          "one_day": "Le transfert du besoin en personnel a été transféré sur les jours valides. Le {{ one }}, l'Activité n'est pas affecté à l'Unité Opérationnelle et le transfert n'a pas eu lieu.",
+          "two_days": "Le transfert du besoin en personnel a été transféré sur les jours valides. Le {{ one }} et le {{ two }}, l'Activité n'est pas affecté à l'Unité Opérationnelle et le transfert n'a pas eu lieu.",
+          "three_days": "Le transfert du besoin en personnel a été transféré sur les jours valides. Le {{ one }}, le {{ two }} et le {{ three }}, l'Activité n'est pas affecté à l'Unité Opérationnelle et le transfert n'a pas eu lieu.",
+          "many_days": "Le transfert du besoin en personnel a été transféré sur les jours valides. Le {{ one }}, le {{ two }}, le {{ three }} et les {{ numberRest }} autres jours, l'Activité n'est pas affecté à l'Unité Opérationnelle et le transfert n'a pas eu lieu."
+        }
+      },
+      "title": "Transférer le besoin en personnel",
+      "saving": "Le calcul du besoin en personnel sera enregistré et utilisé pour créer votre planification.",
+      "overwrite_hint": "Votre besoin en personnel existant sur cette période sera écrasé.",
+      "other_algorithm": "Pour utiliser un algorithme de calcul différent, vous devez transférer la Prévision en cliquant sur le bouton \"Utiliser cette prévision\" dans la section Volume et TMT.",
+      "save_as": "Transférer vers",
+      "title_without_schdule_pro": "Enregistrer le besoin en personnel"
+    },
+    "modal": {
+      "save": "Calcul du besoin en personnel",
+      "cancel": "Annuler",
+      "heading": "Modifier les paramètres du calcul du besoin en personnel",
+      "description": "Vous pouvez ajuster les paramètres pour le calcul du besoin.",
+      "error": {
+        "aht": "Veuillez entrer un nombre entier supérieur à 0.",
+        "service_level": "Veuillez entrer un nombre entier entre 1 et 99.",
+        "target_answer_time": "Veuillez entrer un nombre entier supérieur à 0."
+      }
+    },
+    "shrinkage_info": "Si vous ne souhaitez pas renseigner de shrinkage, vous pouvez laisser la valeur 0 par défaut.",
+    "overhead_explanation": "Si vous définissez le nombre maximum de sessions à 1, le paramètre Overhead ne sera pas pris en compte.",
+    "use_fixed_aht_as_fallback_only": "Appliquer ce TMT si aucune valeur n'est calculée par Forecast",
+    "warnings": {
+      "workload_mismatch": "Votre configuration est différente de celle enregistrée lors de la création du workload."
+    }
+  },
+  "optional": "Champ facultatif",
+  "forecast_version": {
+    "loading_error": "Les Versions ne peuvent être chargées.",
+    "store_version": "Sauvegarder la prévision dans une version",
+    "saving_error": "La Version n'a pas pu être sauvegardée. Merci de réessayer.",
+    "modal": {
+      "selected_timeframe": "Période sélectionnée :",
+      "selection": {
+        "title": "Sauvegarder la prévision dans la version suivante :"
+      },
+      "info": "Les données existantes de cette version seront écrasées."
+    },
+    "name": {
+      "operational": "Opérationnel",
+      "strategic": "Stratégique"
+    }
+  },
+  "forecast_download": {
+    "name": {
+      "auto": "Auto-Forecast",
+      "operational": "Opérationnel",
+      "all": "Tout"
+    },
+    "title": "Exporter la prévision",
+    "modal": {
+      "selected_timeframe": "Période sélectionnée",
+      "selection": {
+        "source": "Version",
+        "data": "Sélectionner la version à exporter."
+      },
+      "save": "Exporter",
+      "error": "Le fichier CSV ne peut être téléchargé.",
+      "info_link": "https://help.injixo.com/fr/telecharger-prevision/",
+      "info": "En savoir plus."
+    }
+  },
+  "forecast_import": {
+    "menu_title": "Importer la prévision",
+    "title": "Statut de l'import",
+    "modal": {
+      "start": "Importer",
+      "ready": "Prêt pour l'import",
+      "importing": "Import en cours",
+      "info_link_description": "injixo Help Center.",
+      "info_link": "https://help.injixo.com/fr/import-donnees-prevision/",
+      "info": "Pour en savoir plus, consultez ",
+      "imported_lines": "Lignes importées",
+      "choose": "Sélectionner un fichier"
+    },
+    "select_file": "Sélectionnez un fichier CSV à importer"
+  },
+  "guidance": {
+    "missing_queues": {
+      "action": "Une file d'attente est manquante ? Cliquez ici.",
+      "action_no_results": "Files d'attente manquantes ?",
+      "close_modal": "Ok",
+      "title": "Files d'attente manquantes",
+      "description": "Une file d'attente manquante est due à une erreur de configuration. Il est nécessaire dans ce cas de configurer les types de valeur selon la table suivante :",
+      "table": {
+        "title_required": "Requis",
+        "tooltip_required": "Tous les types de valeurs de cette colonne doivent être affectés à une file d'attente dans WFM.",
+        "title_optional": "Optionnel",
+        "tooltip_optional": "Si ces types de valeurs sont attribués à une file d'attente dans WFM, ils seront également utilisés.",
+        "title_other": "Autre",
+        "tooltip_other": "Ces types de valeurs sont ignorés durant l'import.",
+        "calls_required_value_types": {
+          "offered": "Appels reçus"
+        },
+        "calls_optional_value_types": {
+          "answered": "Appels répondus",
+          "aht": "Appels TMT"
+        },
+        "calls_other_value_types": {
+          "abandoned": "Appels abandonnés",
+          "service_level": "Appels SL",
+          "speed_of_answer": "Appels ASA",
+          "predicted_service_level": "Niveau de service prévu sur Appels"
+        },
+        "emails_required_value_types": {
+          "offered": "Emails reçus"
+        },
+        "emails_optional_value_types": {
+          "answered": "Emails répondus",
+          "aht": "Emails TMT"
+        },
+        "emails_other_value_types": {
+          "service_level": "Email SL",
+          "speed_of_answer": "Email ASA",
+          "predicted_service_level": "Niveau de service prévu sur Emails"
+        },
+        "documents_required_value_types": {
+          "offered": "Documents reçus"
+        },
+        "documents_optional_value_types": {
+          "answered": "Documents répondus",
+          "aht": "Documents AHT"
+        },
+        "documents_other_value_types": {
+          "service_level": "Documents SL",
+          "speed_of_answer": "Documents ASA",
+          "predicted_service_level": "Niveau de service prévu sur Documents"
+        },
+        "chats_required_value_types": {
+          "offered": "Chats reçus"
+        },
+        "chats_optional_value_types": {
+          "answered": "Chats répondus",
+          "aht": "Chats AHT"
+        },
+        "chats_other_value_types": {
+          "abandoned": "Chats abandonnés",
+          "service_level": "Chats SL",
+          "speed_of_answer": "Chats ASA",
+          "predicted_service_level": "Niveau de service prévu sur Chats"
+        },
+        "cases_required_value_types": {
+          "offered": "Dossiers reçus"
+        },
+        "cases_optional_value_types": {
+          "completed": "Dossiers complétés",
+          "aht": "Temps de traitement moyen par Dossier"
+        },
+        "cases_other_value_types": {
+          "existing": "Dossiers existants",
+          "service_level": "Niveau de service sur Dossiers",
+          "predicted_service_level": "Niveau de service prévu sur Dossiers"
+        },
+        "social_media_required_value_types": {
+          "offered": "Messages reçus"
+        },
+        "social_media_optional_value_types": {
+          "answered": "Messages répondus",
+          "aht": "Messages TMT"
+        },
+        "social_media_other_value_types": {
+          "speed_of_answer": "Messages ASA",
+          "service_level": "Messages SL",
+          "predicted_service_level": "Niveau de service prévu sur Messages"
+        }
+      },
+      "outbound_value_types_hint": "N'importe quel type de valeur pour les appels sortants",
+      "wfm_hint": "Après avoir modifié les types de valeurs dans WFM, il est nécessaire d'attendre quelques minutes avant de visualiser les files d'attente disponibles dans Forecast."
+    }
+  },
+  "acd": {
+    "type": {
+      "five9": "Five9",
+      "talkdesk": "Talkdesk",
+      "xlink": "Intégration ACD"
+    },
+    "status": {
+      "last_import": "Dernier import : ",
+      "connection": {
+        "loading": "Vérification de la connexion à l'ACD ...",
+        "not_configured": "Pas de connexion à l'ACD",
+        "connected": "Connecté",
+        "disconnected": "Déconnecté",
+        "auth_failed": "Identifiants non valides."
+      },
+      "import": {
+        "null": "Chargement ...",
+        "started": "Démarré",
+        "success": "Début",
+        "error": "Échec",
+        "auth_failed": "Echec",
+        "fail": {
+          "label": "La connexion ACD n'a pas pu être établie.",
+          "link": "Vérifier les paramètres de configuration"
+        }
+      }
+    }
+  },
+  "integrations": {
+    "title": "Intégrations",
+    "loading": "Récupération des statuts des intégrations...",
+    "status": {
+      "none": "Aucune intégration n'a été paramétrée.",
+      "all_connected": "Toutes les intégrations fonctionnent.",
+      "none_connected": "Toutes les intégrations sont déconnectées.",
+      "some_connected": "{{ count }} intégration(s) comportent des erreurs.",
+      "some_suspended": "{{ count }} intégration est suspendue."
+    },
+    "more_information": {
+      "label": "Plus d'informations sur le",
+      "link": "statut des intégrations"
+    }
+  },
+  "adjustments": {
+    "heading": "Ajuster le volume",
+    "error_on_save": "Une erreur est survenue pendant l'écrasement des données.",
+    "error_on_delete": "Une erreur est survenue pendant la suppression du volume modifié.",
+    "selected_day": "Sélectionner un jour",
+    "start_time": "Heure de début",
+    "end_time": "Heure de fin",
+    "date_range": "Période",
+    "volume": "Ajustement",
+    "reason_for_editing": "Motif",
+    "placeholder_selected_day": "Sélectionner une journée.",
+    "placeholder_start_time": "Sélectionner une heure de début",
+    "placeholder_end_time": "Sélectionner une heure de fin",
+    "placeholder_selected_reason": "Sélectionner un motif",
+    "clear_selected_adjustments": "Réinitialiser les modifications sélectionnées",
+    "clear_all_adjustments": "Réinitialiser toutes les modifications",
+    "error_selected_day": "Veuillez sélectionner une date valide",
+    "error_selected_time": "Veuillez sélectionner un horaire valide",
+    "error_selected_range": "Sélectionner une période valide",
+    "error_selected_reason": "Veuillez choisir un motif",
+    "alter": "Modifier (+/- n%)",
+    "overwrite": "Remplacer",
+    "offered": {
+      "open_section": "Ajuster le volume",
+      "error_below_zero": "Le volume ne peut être négatif",
+      "error_non_number": "La valeur doit être un nombre",
+      "error_below_min_percentage": "Le volume ne peut être inférieur à -100",
+      "error_above_max_percentage": "Le volume ne peut être supérieur à 1000"
+    },
+    "aht": {
+      "open_section": "Ajuster le TMT",
+      "error_below_zero": "Le TMT ne peut être négatif",
+      "error_non_number": "Le TMT doit être un nombre",
+      "error_below_min_percentage": "Le TMT ne peut être inférieur à -100",
+      "error_above_max_percentage": "Le TMT ne peut être supérieur à 1000",
+      "help": "L'ajustement du TMT n'est pas pris en compte s'il n'y a aucun appel reçu sur cette période. Ajustez d'abord les appels reçus pour réaliser l'ajustement du TMT."
+    },
+    "reasons": {
+      "marketing_sales_activity": "Marketing / Vente",
+      "bank_holidays": "Jours fériés",
+      "what_if_scenario": "Simulation",
+      "errors_in_historical_data": "Erreur données historiques",
+      "insufficient_historical_data": "Données historiques insuffisantes",
+      "lost_business_customers": "Marchés / Clients perdus",
+      "dst_changes": "Changement de fuseau horaire",
+      "shrinkage": "Shrinkage",
+      "other": "Autre"
+    }
+  },
+  "reforecast": {
+    "open_section": "Afficher le Reforecast",
+    "heading": "Reforecast",
+    "info": "Les modifications existantes seront écrasées sur la période concernée.",
+    "warning": "Le Reforecast n'est pas disponible dans votre configuration actuelle",
+    "apply": "Appliquer",
+    "apply_and_adjust": "Appliquer et modifier manuellement",
+    "apply_error": "Le Reforecast ne peut être utilisé",
+    "discard": "Annuler",
+    "loading_error": "Le Reforecast ne peut être chargé",
+    "source_selection_info": "Reforecast basé sur les données historiques et la version"
+  },
+  "chart": {
+    "legend": {
+      "staff": "Besoin en personnel",
+      "staff_min": "Besoin en personnel minimum",
+      "staff_max": "Besoin en personnel maximum",
+      "history": "Historique",
+      "forecast": "Prévision",
+      "operational": "Opérationnel",
+      "strategic": "Stratégique",
+      "forecast_decrease": "Diminution manuelle",
+      "forecast_increase": "Augmentation manuelle"
+    },
+    "x_axis": {
+      "formats": {
+        "datetime": "%H:%M",
+        "date": "%a %e %b",
+        "week": "%b %d"
+      }
+    },
+    "tooltip": {
+      "datetime_format": {
+        "interval": "%H:%M %p",
+        "day": "%a %e %B",
+        "day_with_year": "%A %e %B %Y"
+      },
+      "formats": {
+        "interval": "HH:mm",
+        "day": "dddd, Do",
+        "range": {
+          "start": "dd/M",
+          "connector": " - ",
+          "end": "DD/M"
+        }
+      },
+      "holiday": "Congé",
+      "holidays_during": "Evénements"
+    },
+    "info": {
+      "label": {
+        "combined_tooltip": "La valeur est basée sur les données historiques et sur la version Auto-Forecast.",
+        "auto-forecast": "Auto-Forecast",
+        "combined": "Combiné",
+        "history": "Historique",
+        "import": "Import"
+      }
+    }
+  },
+  "chart_datetime_format": "%A %m/%d/%Y %H:%M",
+  "chart_date_format": "%A %m/%d/%Y",
+  "chart_month_format": "%b %Y",
+  "date_format": "dd/MM/yyyy",
+  "volume": "Volume d'appels",
+  "aht": "TMT",
+  "time": "Heure",
+  "date": "Date",
+  "start_date": "Date de début",
+  "no_data": "Aucune donnée disponible",
+  "merge_in_progress": {
+    "title": "Préparation des données",
+    "body": "Cela peut prendre un certain temps. Quand le processus sera terminé, vos données seront automatiquement affichées ici."
+  },
+  "unknown": "inconnu",
+  "units": {
+    "seconds": "secondes",
+    "minutes": "Minutes",
+    "day": "Jour",
+    "week": "Semaine",
+    "second_abbreviated": "sec",
+    "minute_abbreviated": "min"
+  },
+  "forecast_page": {
+    "create": "Créer",
+    "edit": "Editer",
+    "sections": {
+      "forecast": {
+        "title": "Volume et TMT",
+        "no_aht": "Aucune donnée de TMT pour le Workload sur la période sélectionnée.",
+        "empty_value_type": {
+          "description": "Ce type de valeur ne contient aucune donnée. Vous pouvez importer des données en utilisant notre importation CSV dans les options ci-dessus.",
+          "title": "Type de valeur vide"
+        }
+      },
+      "staff_requirements": {
+        "title": "Besoin en personnel",
+        "adjust_params": "Adjuster les paramètres",
+        "error_no_params": "Le calcul du besoin en personnel a échoué suite à une erreur interne",
+        "reload_graph": "Recharger graphique"
+      }
+    },
+    "all_workloads": "Voir la liste des Workloads"
+  },
+  "workloads": {
+    "title": "Workloads",
+    "navigation": {
+      "search": {
+        "placeholder": "Sélectionner ou rechercher un workload",
+        "no_result": "Pas de Workload trouvé"
+      }
+    },
+    "loading_error": "Le Workload n'a pas pu être chargé.",
+    "mode": {
+      "test": "Test",
+      "live": "Live",
+      "basic": "Basic",
+      "smart": "Smart",
+      "switch": "Basculer le Workload en statut Live",
+      "is_live": "Le Workload est en statut Live et sera facturé mensuellement.",
+      "description_test": "Afin de bénéficier des fonctionnalités complètes d'injixo Forecast, il suffit de basculer ce Workload en statut Live. A partir de ce moment, le Workload sera facturé. Aussi longtemps que ce Workload n'est pas basculé en statut Live, il restera en statut Test. Les Workloads en statut Test ne sont pas facturés mais sont limités en termes de fonctionnalités et ne peuvent être utilisés pour les étapes de planification. Veuillez noter qu'un Workload ne peut être remis en statut Test une fois qu'il a été basculé en statut Live.",
+      "faq_link": "Plus d'informations"
+    },
+    "details": "Détails",
+    "channel": "Média",
+    "channel_desc": "Le Workload contient uniquement {{ channel }}",
+    "forecast_in_progress": "Prévision",
+    "action_refresh": "Rafraichir",
+    "holiday_region_label": "Calendrier des jours fériés",
+    "select_holiday_regions": "Prendre en compte les jours fériés pour la Prévision ?",
+    "holiday_section_description": "La sélection d'un calendrier des jours fériés impacte la prévision du workload en se basant sur les données historiques observées.\nLes jours fériés sont prédéfinis en fonction du pays sélectionné. L'ajustement de la prévision reste possible même sur un jour férié.",
+    "calculation_method_label": "Méthode de calcul",
+    "calculation_method_placeholder": "Sélectionnez une méthode de calcul",
+    "calculation_method_info": "Choisir l'activité de l'unité opérationnelle sur laquelle transférer le besoin en personnel.",
+    "select_unit_activity": {
+      "errors": {
+        "failed_to_load": "Le chargement des données sur le activités et les unités opérationnelles a échoué. Merci d'essayer à nouveau dans quelques minutes.",
+        "missing_activity": "L'Activité est obligatoire."
+      },
+      "infos": {
+        "in_use": "Déjà utilisée",
+        "no_planning_unit": "Vous devez créer au moins une Unité opérationnelle et une activité pour copier votre besoin en personnel vers WFM. Merci de recharger la page après avoir configuré WFM.",
+        "no_activity": "Pour transférer votre besoin en personnel, vous devez affecter au moins une activité à une unité opérationnelle dans WFM. Merci de recharger la page après avoir configuré votre WFM."
+      },
+      "label": {
+        "planning_unit": "Unité opérationnelle",
+        "activity": "Activité"
+      },
+      "placeholder": {
+        "planning_unit": "Sélectionner une unité opérationnelle",
+        "activity": "Sélectionner une activité"
+      },
+      "description": "Sélectionner une unité opérationnelle et une activité pour copier votre besoin en personnel dans WFM.",
+      "title": "Calcul du besoin avec Erlang-C",
+      "subheader": {
+        "assign_planning_unit": "Assignez l'unité opérationnelle et l'activité.",
+        "parameter": "Paramètre",
+        "unit_activity": "Transférer les résultats vers"
+      },
+      "inline": {
+        "in": "dans"
+      }
+    },
+    "warnings": {
+      "staff_requirements_could_not_be_saved": "Le besoin en personnel ne peut pas être sauvegardé. Veuillez essayer à nouveau ultérieuement.",
+      "at_least_on_queue_in_workload": "Veuillez assigner une file d'attente à votre Workload.",
+      "no_workloads_but_queues": {
+        "title": "Aucun Workload",
+        "description": "Sélectionnez + pour créer un nouveau Workload"
+      },
+      "different_channels_hint": "Vous ne pouvez pas sélectionner {{ newChannelQueues }} tant que {{ oldChannelQueues }} sont sélectionnés."
+    },
+    "search": {
+      "title": "Rechercher des Workloads",
+      "placeholder": "Rechercher des files d'attente et workloads",
+      "aria_label": "Rechercher des Workloads",
+      "no_results": {
+        "header": "Pas de file d'attente.",
+        "description": "Utiliser un autre critère de filtre."
+      },
+      "show_deleted": "Afficher les files d’attente inactives"
+    },
+    "add": {
+      "aria_label": "Ajouter des Workloads"
+    },
+    "section": {
+      "forecast": "Forecast",
+      "export": "Données historique",
+      "mode": "Statut",
+      "basic_information": "Informations de base",
+      "calculation_parameters": "Paramètres",
+      "advanced_options": "Options avancées"
+    },
+    "edit": {
+      "header": "Editer le workload",
+      "name_label": "Nom",
+      "timezone_label": "Fuseau horaire",
+      "timezone_selection_placeholder": "Sélectionner un fuseau horaire",
+      "exporter_hint": "Les nouvelles données seront exportées régulièrement vers la file d'attente '*{{ workloadName }}' dans WFM.",
+      "exporter_hint_name_change": "Changer le nom du Workload va écraser le nom de la file d'attente dans WFM au prochain export.",
+      "warnings": {
+        "no_valid_value_types": "Le TMT de ce Workload ne peut pas être calculé correctement. Il y a au minimum une file d'attente avec des données sur le TMT incorrectes ou manquantes."
+      },
+      "save": {
+        "label": "Sauvegarder",
+        "success": "Workload sauvegardé avec succès.",
+        "errors": {
+          "fields_hint": "Merci de compléter tous les champs.",
+          "server": "Une erreur est survenue. Merci de réessayer.",
+          "name_taken": "Le nom est déjà utilisé.",
+          "name_not_blank": "Le champ Nom est obligatoire.",
+          "no_timezone": "Un fuseau horaire est requis.",
+          "different_channels": "Les files d'attente de différentes types de source ne peuvent être fusionnées. Veuillez sélectionner des files d'attentes du même type.",
+          "different_intervals": "Des files d'attentes avec des intervalles différents ne peuvent être fusionnées. Veuillez choisir des files d'attente avec des intervalles identiques.",
+          "fixed_aht": {
+            "required": "Vous devez saisir un TMT.",
+            "required_history": "Vous devez saisir un temps moyen de décroché. Au moins une file d'attente sélectionnée a un temps moyen de décroché incorrect ou incomplet."
+          }
+        }
+      },
+      "delete": {
+        "label": "Supprimer le workload",
+        "confirm": "Oui, supprimer le workload",
+        "cancel": "Non, conserver le Workload",
+        "success": "Workload supprimé avec succès.",
+        "failure": "Le Workload n'a pu être supprimé.",
+        "modal_header": "Voulez-vous supprimer ce Workload ?",
+        "modal_list": {
+          "header": "Voilà ce qui va se passer :",
+          "billing": "Ce Workload restera facturé jusqu'à la fin du mois.",
+          "history_queues": "Les données historiques de la file d'attente associée seront conservées.",
+          "workload_queue": "La file d'attente dans WFM ne sera pas affectée. Quoi qu'il en soit, il n'y aura plus d'export de nouvelles données historiques."
+        }
+      },
+      "hint": {
+        "no_edit_timezone": "Attention, le fuseau horaire d'un workload ne peut être modifié après création."
+      },
+      "error": "Une erreur est survenue. Merci d'essayer à nouveau.",
+      "queues_assigned_label": "Files d'attentes assignées à",
+      "queue_name": "Nom",
+      "interval": "Intervalle",
+      "aht": {
+        "label": "TMT",
+        "label_tooltip": "Le TMT est disponible pour les files d'attentes dont les types de valeur \"{{ channel }} répondus\" et \"Temps Moyen de Traitement d'un {{ channel }}\" sont attribués dans WFM.",
+        "available": "Disponible",
+        "not_available": "Non Disponible",
+        "info": "Précisez un temps moyen de traitement fixe si vous ne pouvez ou ne voulez pas travailler avec celui prévu."
+      },
+      "assigned_to": "Assignée à",
+      "integration": "Intégration",
+      "basic_configuration": "Configuration"
+    },
+    "new": {
+      "title": "Créer un workload",
+      "save": "Créer",
+      "queues": "Sélectionner des files d'attente",
+      "queues_hint": "Un workload contient uniquement les files d'attente d'un même canal. Une fois configuré, le canal du workload ne peut être modifié.",
+      "different_channels_action": "Supprimer la sélection actuelle",
+      "selected_queues": "Sélectionnée(s)",
+      "exporter_hint": "Les données de J-1 et J du workload sont régulièrement synchronisées dans une file d'attente '*{{ workloadName }}'.",
+      "errors": {
+        "select_queue": "Au moins une file d'attente nécessaire"
+      },
+      "exporter_hint_styled": "The workload history for today and yesterday will be exported to WFM periodically into a dedicated queue named '*<b>{{ workloadName }}</b>'."
+    },
+    "business_hours_association": {
+      "errors": {
+        "missing_planning_unit": "Unité opérationnelle obligatoire."
+      },
+      "subheading": "Horaires d'ouverture",
+      "warnings": {
+        "staff_requirements_mismatch": "Votre configuration est différente de celle enregistrée lors du paramétrage de la méthode de dimensionnement."
+      },
+      "select": "Prévision ajustée aux horaires d'ouverture",
+      "explanation": "Cochez cette case pour prendre en compte les horaires d'ouverture de l'unité opérationnelle et de l'activité lors du calcul de la prévision. Les volumes hors des heures d'ouvertures sont redistribués dans la journée. Un délai est nécessaire pour prendre en compte ces changements.",
+      "label": "Horaires d'ouverture",
+      "hint": "Pour activer cette option, vous devez sélectionner une unité opérationnelle et une activité dans la section Configuration."
+    },
+    "calculation_models": {
+      "explanation_basic": "Le modèle de prévision Basic fonctionne avec un algorithme basé sur une moyenne des données historiques. La prévision est recalculée une fois par semaine.<br><b>Mise à jour 2023:</b> tous les workloads Basic deviendront des workloads Smart.",
+      "explanation_smart": "Avec le modèle de prévision Forecast Smart, injixo sélectionne l’algorithme le plus pertinent pour calculer la meilleure prévision possible. Une nouvelle prévision est générée à chaque mise à jour d’historique.",
+      "label": "Modèle de prévision",
+      "basic": "Basic",
+      "smart": "Smart",
+      "hint": "En sélectionnant le modèle Basic, les fonctionnalités du modèle Smart seront désactivées.",
+      "explanation_basic_classic": "Le modèle de prévision Basic fonctionne avec un algorithme basé sur une moyenne des données historiques. La prévision est recalculée une fois par semaine."
+    },
+    "pricing_model": {
+      "explanation_live": "Le <b>mode Live</b> active toutes les fonctionnalités d'injixo Forecast. <b>La facturation sera réalisée mensuellement.</b> Notez qu'un Workload en statut Live ne peut revenir en statut Test ou en mode Basic.",
+      "explanation_test": "Les <b>Workloads en mode Test</b> ne sont pas facturés, mais les fonctionnalités sont restreintes. Notez qu'un Workload en statut Live ne peut revenir en <b>statut Test</b> ou en <b>mode Basic</b>.",
+      "label": "Tarifs",
+      "live": "Statut Live",
+      "test": "Statut Test"
+    },
+    "pu_activity": {
+      "explanation": "Sélectionner une unité opérationnelle et une activité pour afficher les horaires d'ouverture dans la vue journalière."
+    },
+    "history_starting_time_field": {
+      "default": "défaut",
+      "explanation": "Choisissez une date de début de prise en compte des données historiques pour le calcul de prévision. Toutes les données antérieures à cette date seront exclues du calcul. A défaut, le système prend en compte la première date de l'historique disponible.",
+      "label": "Date de début de prise en compte des données historiques"
+    },
+    "list": {
+      "last_viewed_column": "Dernière consultation",
+      "search": {
+        "sort_by_dropdown": {
+          "label": "Trier la liste",
+          "option": {
+            "last_seen": "Dernière consultation",
+            "name": "Nom"
+          }
+        }
+      },
+      "tooltip": {
+        "create_workload": "Nouveau Workload",
+        "delete_workload": "Supprimer le Workload",
+        "edit_workload": "Modifier le Workload"
+      },
+      "workload_count_zero": "Aucun Workload",
+      "workload_count_one": "<CountHeading>1</CountHeading> <span>Workload</span>",
+      "workload_count_other": "<CountHeading>{{count}}</CountHeading> <span>Workloads</span>"
+    },
+    "type": "Type"
+  },
+  "queues": {
+    "header": "Files d'attentes",
+    "aht_kpi_tag": "TMT",
+    "total_calls_kpi_tag": "Volume total d'appels",
+    "chart": "Graphe",
+    "channel": {
+      "calls": "Appels",
+      "calls_queues": "Files d'attente téléphonique",
+      "chats": "Chats",
+      "chats_queues": "Chat Queues",
+      "emails": "E-mails",
+      "emails_queues": "Files d'attente e-mail",
+      "documents": "Documents",
+      "cases": "Dossiers",
+      "cases_queues": "Files d'attente dossier",
+      "documents_queues": "Files d'attente document",
+      "social_media": "Réseaux sociaux",
+      "social_media_queues": "Files d'attente réseaux sociaux",
+      "unknown_queues": "Files d'attente inconnues",
+      "unknown": "Média"
+    },
+    "last_imported": "Dernier import {{ from }}",
+    "no_queues": "Aucune donnée disponible",
+    "no_queues_search": "Aucun Workload correspondant",
+    "no_queues_hint": "Les données historiques seront importées toutes les 15 minutes.",
+    "series": {
+      "offered": "{{ channel }} reçus",
+      "aht": "TMT"
+    },
+    "filter": {
+      "all": "Tous",
+      "selected": "Sélectionnée(s)",
+      "unselected": "Désélectionné(s)"
+    },
+    "plotlines": {
+      "now": "Maintenant",
+      "history": "Historique",
+      "forecast": "Prévision"
+    },
+    "save_modal_header": "Transférer la prévision",
+    "legacy_save_modal_header": "Transférer Forecast dans ForecastPro",
+    "save": "Transférer la prévision",
+    "save_info": {
+      "saving": "Transfert ...",
+      "save": "Transférer",
+      "legacy_save": "Transfert vers ForecastPro",
+      "failure_text": "Impossible de transférer les données. Veuillez réessayer.",
+      "overwriting_hint": "Le volume et le TMT existants seront écrasés sur la période concernée.",
+      "ratelimited_text": "Enregistrement déjà en cours.",
+      "timeframe": {
+        "title": {
+          "multiple_days": "Intervalle de temps",
+          "single_day": "Date"
+        },
+        "details": {
+          "multiple_days": "De {{ start }} à {{ end }}"
+        }
+      },
+      "select_forecast": "Sélectionner la version",
+      "queue": {
+        "title": "File d'attente"
+      },
+      "value_types": {
+        "title": "Types de valeur"
+      },
+      "version": {
+        "title": "Version"
+      },
+      "what": "Utiliser cette prévision pour calculer votre dimensionnement avec les scripts de multi-activités ou appels sortants. Les données seront accessibles dans la version \"Auto-Forecast\".",
+      "legacy_what": "Transférer la prévision vers ForecastPro pour utiliser une méthode de calcul du besoin en personnel différente. Les données seront sauvegardées dans la version \"Auto-Forecast\".",
+      "legacy_staff_req_note": "Astuce : éviter le calcul du besoin dans dans ForecastPro en utilisant le bouton \"Transférer le besoin\" !",
+      "mode": {
+        "description_test": "Ce Workload est actuellement en statut Test. Afin de bénéficier de toutes les fonctionnalités d'injixo Forecast, il suffit de basculer le Workload en statut Live. En cliquant sur ce bouton, vous confirmez que ce Workload sera en statut Live. A partir de ce moment, le Workload sera facturé. Merci de noter qu'un Workload ne peut être remis en statut Test une fois qu'il a été basculé en statut Live."
+      }
+    },
+    "save_waiting": "Enregistrement ...",
+    "save_triggered": "Sauvegarde en cours. Votre Prévision sera disponible dans le WFM dans quelques minutes.",
+    "save_failed": "La sauvegarde a échoué.",
+    "delete": {
+      "confirm_header": "Confirmer la suppression",
+      "text": "Toutes les données historiques et les prévisions seront effacées définitivement.",
+      "cancel": "Annuler",
+      "delete": "Supprimer",
+      "header": "Effacer la file d'attente"
+    },
+    "day-button": "Jour",
+    "week-button": "Semaine",
+    "month-button": "Mois",
+    "year-button": "Année",
+    "error_fetching": "Récupération des files d'attentes impossible.",
+    "selected_from_deleted_integration_hint": "Les files d’attentes inactives sont liées à des intégrations qui ont été supprimées et les données ne sont plus importées."
+  },
+  "default_form_errors": {
+    "mixed": {
+      "required": "Doit être rempli."
+    },
+    "number": {
+      "integer": "Doit être un nombre entier.",
+      "positive": "Doit être supérieur à 0.",
+      "too_large": "Le nombre est trop grand."
+    }
+  },
+  "days": {
+    "monday": "Lu",
+    "tuesday": "Ma",
+    "wednesday": "Me",
+    "thursday": "Je",
+    "friday": "Ve",
+    "saturday": "Sa",
+    "sunday": "Di"
+  },
+  "generic": {
+    "no_result": "Pas de résultat"
+  },
+  "common": {
+    "numericSymbols": [
+      "K",
+      "L",
+      "G",
+      "J",
+      "M",
+      "O"
+    ],
+    "months": [
+      "Janvier",
+      "Février",
+      "Mars",
+      "Avril",
+      "Mai",
+      "Juin",
+      "Juillet",
+      "Août",
+      "Septembre",
+      "Octobre",
+      "Novembre",
+      "Décembre"
+    ],
+    "shortMonths": [
+      "Jan",
+      "Fev",
+      "Mar",
+      "Avr",
+      "mai",
+      "Jun",
+      "Jul",
+      "Aou",
+      "sept",
+      "oct",
+      "Nov",
+      "Dec"
+    ],
+    "weekdays": [
+      "Dimanche",
+      "lundi",
+      "mardi",
+      "mercredi",
+      "jeudi",
+      "vendredi",
+      "samedi"
+    ],
+    "shortWeekdays": [
+      "Di",
+      "Lu",
+      "Ma",
+      "Me",
+      "Je",
+      "Ve",
+      "Sa"
+    ]
+  },
+  "libs": {
+    "humanize-number": {
+      "delimiter": " ",
+      "separator": ","
+    },
+    "pikaday": {
+      "previousMonth": "Mois précédent",
+      "nextMonth": "Mois suivant"
+    }
+  },
+  "events": {
+    "heading": "Evénements",
+    "heading_outages": "Pannes",
+    "mailing": "Mailing",
+    "newsletter": "Newsletter",
+    "catalogue_release": "Sortie du catalogue",
+    "promotion": "Promotion",
+    "product_release": "Nouveau produit",
+    "billing_cycle": "Période de facturation",
+    "debt_collection": "Recouvrement de créances",
+    "product_recall": "Rappel de produit",
+    "flash_sale": "Vente flash",
+    "outage": "Panne",
+    "add_outage": "Ajouter une panne",
+    "add_outage_error": "Panne ne peut être créé.",
+    "delete_outage_error": "Panne ne peut être supprimé.",
+    "context_menu": {
+      "assign_events": "Ajouter un événement",
+      "customize_event_types": "Créer un type d'événement"
+    },
+    "no_events_yet": "Aucun événement sur cette période",
+    "no_outages_yet": "Aucune panne n'a été attribuée.",
+    "outage_already_exists": "Panne existe déjà.",
+    "assigned_events": {
+      "add_event": "Ajouter un événement",
+      "assign": "Ajouter",
+      "select_type": "Type d'événement",
+      "select_date": "Sélectionner un jour",
+      "heading": "Evénements",
+      "placeholder": "Aucun évènement attribué.",
+      "event_already_exists": "L'événement existe déjà.",
+      "types_dropdown": {
+        "placeholder": "Sélectionner un type d'événement",
+        "no_result": "Aucun résultat trouvé",
+        "error": "Vous devez sélectionner un type d'événement"
+      }
+    },
+    "customize_types": {
+      "heading": "Créer un type d'événement",
+      "explanation": "Vous pouvez créer jusqu'à 7 types d'événements dans chaque catégorie.",
+      "max_types_exceeded": "Vous ne pouvez ajouter plus de 7 types d'évènements.",
+      "name_already_taken": "Un type d'évènement avec le même nom existe déjà.",
+      "category": "Catégorie",
+      "category_dropdown": {
+        "placeholder": "Sélectionner une catégorie",
+        "no_result": "Aucun résultat trouvé",
+        "error": "Une erreur est survenue"
+      },
+      "placeholder": "Aucun type d'événement créé",
+      "event_types": "Type d'événements",
+      "event_type": "Nom",
+      "add_new_type": "Créer un type d'événement",
+      "delete_event": "Supprimer {{ name }}",
+      "delete_error": "Le type d'évènement ne peut être supprimé.",
+      "update_error": "Le type d'évènement ne peut être modifié.",
+      "rename_event": "Renommer {{ name }}",
+      "assign": "Créer",
+      "modal": {
+        "heading": "Etes-vous sûr de vouloir supprimer ce type d'évènement ?",
+        "open": "Ouvrir la fenêtre pour suppression",
+        "events": "Évènements associés",
+        "body": "Tous les évènements associés à ce type d'évènement seront supprimés définitivement. Cela s'applique aux événements passés et futurs.",
+        "delete": "Supprimer"
+      },
+      "note": "Les types d'événements créés ne sont pas automatiquement rattachés à un workload.",
+      "assign_error": "L'ajout du type de valeur a échoué."
+    },
+    "assign_error": "Cet évènement a déjà été attribué le {{ date }}.",
+    "assign_success": "Évènement attribué avec succès le {{ date }}."
+  },
+  "holidays": {
+    "select": {
+      "placeholder": "Sélectionner"
+    },
+    "heading": "Jours fériés",
+    "noneInDateRange": "Aucun jour férié sur cette période",
+    "no_holiday_regions_yet": "Aucun calendrier de congés n'a été attribué à votre Workload.",
+    "addRegionsGuidance": "Ajouter un jour férié",
+    "editRegionsGuidance": "Modifier le calendrier des jours fériés",
+    "regionalHint": "pays"
+  },
+  "public_holidays": {
+    "de": "Allemagne",
+    "at": "Autriche",
+    "ch": "Suisse",
+    "fr": "France",
+    "gb": "Royaume-Uni",
+    "us": "Etats-Unis",
+    "it": "Italie",
+    "es": "Espagne",
+    "ca": "Canada",
+    "nl": "Pays-bas",
+    "be_fr": "Belgique",
+    "ie": "Irlande",
+    "gb_eng": "Angleterre",
+    "gb_nir": "Irlande du nord",
+    "gb_sct": "Ecosse",
+    "gb_wls": "Pays de Galles",
+    "mt_en": "Malte",
+    "fi": "Finlande",
+    "dk": "Danemark",
+    "nz": "Nouvelle-Zélande",
+    "se": "Suède",
+    "za": "Afrique du sud",
+    "cy": "Chypre",
+    "bg_en": "Bulgarie",
+    "hk": "Hong Kong",
+    "kr": "Corée",
+    "ph": "Philippines",
+    "pl": "Pologne",
+    "ro": "Roumanie",
+    "vn": "Viêt Nam"
+  },
+  "countries": {
+    "de": "Allemagne",
+    "at": "Autriche",
+    "ch": "Suisse",
+    "fr": "France",
+    "gb": "Grande Bretagne",
+    "us": "Etats-Unis",
+    "none": "Aucun"
+  },
+  "multiple_planning_units_form": {
+    "script_name": "Besoin pour des Unités opérationnelles multiples",
+    "number_of_days": "Nombre de jours",
+    "erlang_c_parameters": "Paramètres ErlangC",
+    "service_level": "Qualité de Service (%)",
+    "service_seconds": "Temps de décroché",
+    "shrinkage": "Shrinkage (%)",
+    "minimum_staff": "Ressources min.",
+    "maximum_staff": "Ressources max.",
+    "fixed_average_handling_time": "TMT fixe",
+    "quota_percent": "Quota (%)",
+    "average_handling_time": "Temps Moyen de Traitement",
+    "queue_parameters": "Paramètres de la file d'attente",
+    "contacts": "Contacts",
+    "planning_unit_params": "Paramètres de l'Unité opérationnelle",
+    "activity_params": "Chevauchement d'activités",
+    "submit": "Distribuer",
+    "timezone_selection": "Afficher les résultats dans le fuseau horaire",
+    "empty_fields": "Merci de compléter tous les champs",
+    "quotas_invalid": "La somme des quotas doit être de 100",
+    "post_error": "Une erreur est survenue lors du calcul",
+    "use_fixed_aht_option": "--- Utiliser un TMT fixe ---",
+    "export_successful": "L'export s'est déroulé avec succès",
+    "export_in_progress": "Export en cours",
+    "export_failed": "L'export a échoué",
+    "start_date_timezone": "Dans le fuseau horaire",
+    "info": "Les données déjà présentes sur cette période seront écrasées.",
+    "optional": "(facultatif)",
+    "range": "Période"
+  },
+  "iwfm_queues": {
+    "loading_error": "Les files d'attentes n'ont pu être chargées."
+  },
+  "_placeholder": {
+    "fi": {
+      "File_to_upload": {
+        "header": "Fichier à importer"
+      },
+      "headline": "Importer vos données de prévision",
+      "schema": {
+        "header": "Schéma CSV",
+        "inf": "Les schémas contiennent le format d'import de vos données. Si aucun schéma n'a été créé, créez-en un."
+      },
+      "title": "Import de la prévision",
+      "workload": {
+        "header": "Workload"
+      }
+    },
+    "tab1": {
+      "history_available": "Données historiques disponibles"
+    },
+    "tab2": {
+      "without_history": "Sans données historiques"
+    },
+    "wh": {
+      "channel": {
+        "header": "Média",
+        "info": "Sélectionner un média pour votre import"
+      },
+      "headline": {
+        "forecast_attributes": "Paramètres de la prévision"
+      },
+      "interval_length": {
+        "header": "Durée de l'intervalle",
+        "info": "Sélectionner la durée de l'intervalle de vos données de prévision. Si vous souhaitez modifier cette durée, créez un nouveau Workload."
+      }
+    }
+  },
+  "`_placeholder": {
+    "fi": {
+      "ready`": "Votre import est prêt"
+    }
+  },
+  "business_hours_activated_message": "La prise en compte des heures d'ouverture sera effective dans quelques minutes. Attention les heures d'ouverture ne sont visibles que dans la vue journalière.",
+  "business_hours_deactivated_message": "Les heures d'ouverture ne seront plus prises en compte dans quelques minutes.",
+  "business_hours_link_deactivated_activated": "Actualisez la prévision dans quelques minutes",
+  "import_slice2_section": {
+    "title": {
+      "auto-forecast": "Configuration Auto-Forecast"
+    }
+  },
+  "import_slice3_help": {
+    "text": {
+      "channel": "Le média d'un Workload ne peut être modifié. Vous devez créer un nouveau Workload.",
+      "interval_length": "L'intervalle d'un Workload ne peut être modifié. Vous devez créer un nouveau Workload."
+    }
+  },
+  "import_slice3_label": {
+    "channel": "Média",
+    "interval_length": "Durée de l'intervalle"
+  },
+  "import_slice3_section": {
+    "title": {
+      "forecast_import": "Configuration de l'import de la prévision"
+    }
+  },
+  "import_slice3_tab": {
+    "title": {
+      "auto-forecast": "Auto-Forecast",
+      "forecast_import": "Import de la prévision"
+    }
+  },
+  "import_slice4_": {
+    "welcome_page": {
+      "option3": {
+        "headline": "Créer un Workload et importer votre prévision"
+      }
+    }
+  },
+  "import_slice4_welcome_page": {
+    "option1": {
+      "warning": "Aucune intégration configurée."
+    },
+    "option2": {
+      "text": "Encore quelques clics avant de visualiser la prévision. Créez votre premier Workload et utilisez vos données historiques.",
+      "warning": "Aucune File d'attente disponible."
+    },
+    "option3": {
+      "button": "Créer un Workload avec l'import de la prévision",
+      "text": "Si vous ne souhaitez de connexion à votre ACD ou si vous n'avez pas de données historiques, créez un Workload et utilisez l'option d'import de données de prévision."
+    }
+  },
+  "document_title": "Forecast",
+  "forecast_forecast": {
+    "loading_error": "La prévision ne peut pas se charger en raison d'une erreur de connexion. Veuillez recharger la page.",
+    "loading_error_action": "Essayez de recharger la page.",
+    "loading_error_message": "La prévision n'a pu être chargée en raison d'une erreur de connexion."
+  },
+  "forecast_history": {
+    "loading_error": "L'historique ne peut pas se charger en raison d'une erreur de connexion. Veuillez recharger la page.",
+    "loading_error_action": "Essayez de recharger la page.",
+    "loading_error_message": "L'historique n'a pu être chargé en raison d'une erreur de connexion."
+  },
+  "general_error": "Une erreur est survenue.",
+  "outages": {
+    "assign_error": "Panne a déjà été attribué le {{ date }}.",
+    "assign_success": "Panne a été attribué avec succès le {{ date }}."
+  },
+  "queue_filter": {
+    "channel": {
+      "aria_label": "Filtrer par média"
+    },
+    "selection": {
+      "aria_label": "Filtrer par groupe"
+    }
+  },
+  "errors": {
+    "insufficient_permissions": "You lack the required permission for this action."
+  },
+  "setup_page": {
+    "body_text": "Pour utiliser injixo Forecast, vous devez d’abord créer un Workload. Les Workloads sont au cœur de votre prévision.<br/>Ils contiennent toutes vos données historiques. Sans Workload, aucune prévision ne peut être générée.<br/>Pour créer un Workoad, votre ACD doit être correctement connecté et des files d’attente importées doivent être disponibles.",
+    "create_workload_card": {
+      "body_text": {
+        "done": "Vous pouvez maintenant créer un Workload.<br/>Les données historiques peuvent mettre quelques minutes avant d’être disponibles pour la prévision.",
+        "initial": "Dès que des files d’attente seront disponibles, vous pourrez commencer à créer un Workload."
+      },
+      "create_workload_button": "Nouveau Workload",
+      "heading": "3. Créer un Workload"
+    },
+    "import_queues_card": {
+      "body_text": {
+        "done": "Des files d’attente sont disponibles.<br/>injixo continuera à importer les files d’attente régulièrement.",
+        "initial": "Pour importer les files d’attente, vous devez d’abord connecter votre ACD à injixo.",
+        "pending": "Vos files d’attente sont en cours d’importation.<br/>Cette opération peut prendre quelques minutes."
+      },
+      "heading": "2. Importer les files d’attente",
+      "import_error_message": "Les files d’attente n’ont pas pu être importées.<IntegrationStatusLink>Vérifiez le statut de votre intégration</IntegrationStatusLink> ."
+    },
+    "page_header": {
+      "h1": "Bienvenue dans injixo Forecast",
+      "h2": "Vous y êtes presque !"
+    },
+    "setup_acd_card": {
+      "body_text": {
+        "done": "L’ACD est connecté.<br/>Les files d’attentes sont importées automatiquement.",
+        "initial": "Pour utiliser Forecast, vous devez d’abord connecter votre ACD à injixo."
+      },
+      "headline": "1. Configurez votre ACD",
+      "setup_acd_button": "Configurer l’ACD"
+    }
+  },
+  "workload_insights": {
+    "created": "Créé :",
+    "currently_no_data_available": "Aucune information disponible actuellement",
+    "edited": "Modifié :",
+    "last_data_upload": "Dernières données envoyées :",
+    "last_update": "Dernière mise à jour :",
+    "no_data_available": "Aucune information disponible"
+  }
+}

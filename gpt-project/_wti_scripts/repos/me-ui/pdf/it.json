@@ -1,0 +1,45 @@
+{
+  "request_state": {
+    "approved": "Approvata",
+    "canceled": "Annullata",
+    "cancellation_requested": "Annullamento richiesto",
+    "rejected": "Rifiutata",
+    "requested": "Richiesta"
+  },
+  "requests_overview_pdf": {
+    "copyright": "© {{year}} injixo",
+    "file_name": "Panoramica-dei-permessi-{{year}}",
+    "footer": {
+      "page_indicator": "Pagina {{currentPage}} di {{totalPages}}",
+      "timestamp": "Generata il {{timestamp}}",
+      "conflict_explanation": "Il tempo totale da programmare potrebbe cambiare perché hai inoltrato almeno un'altra richiesta di permesso per questa settimana."
+    },
+    "table": {
+      "header": {
+        "date": "Data",
+        "duration": "Durata",
+        "status": "Stato",
+        "type": "Tipo",
+        "counted_hours_days": "Giorni/ore conteggiati"
+      }
+    },
+    "title": "Panoramica dei permessi"
+  },
+  "schedule_pdf": {
+    "title": "Pianificazione di {{firstName}} {{lastName}}, {{date_range}}",
+    "file_name": "Pianificazione_{{start}}-{{end}}",
+    "page_info": {
+      "page_indicator": "Pagina {{currentPage}} / {{totalPages}}",
+      "timestamp": "Scaricata il {{timestamp}}"
+    },
+    "table": {
+      "week_number": "Settimana {{weekNumber}}",
+      "day": "Giorno",
+      "start": "Inizio",
+      "end": "Fine",
+      "duration": "Durata",
+      "not_planned": "Non è stata ancora pubblicata nessuna pianificazione",
+      "total": "Totale"
+    }
+  }
+}

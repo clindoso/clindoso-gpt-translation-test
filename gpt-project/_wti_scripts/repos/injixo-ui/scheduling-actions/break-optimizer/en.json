@@ -1,0 +1,109 @@
+{
+  "heading": {
+    "initial": "Optimize breaks",
+    "optimization-history": "Break optimization history",
+    "optimization-results": "Break optimization results",
+    "settings": "Set up break optimization"
+  },
+  "button": {
+    "back-to-day-view": "Back to day-view",
+    "back-to-schedules": "Back to Schedules",
+    "close": "Close",
+    "delete-break-optimizations_one": "Delete entry",
+    "delete-break-optimizations_other": "Delete entries",
+    "optimize-schedule": "Optimize breaks"
+  },
+  "error": {
+    "break-optimization-request": "Failed to request break optimization",
+    "incomplete-form": "The form data is incomplete. Make sure you correct all highlighted fields."
+  },
+  "helper-text": {
+    "delete-break-optimizations": "The selected entries will be deleted from the table. Any optimized schedules will not be affected."
+  },
+  "hint": {
+    "optimized-schedule-writing": "The optimized schedule will be written directly to the Schedule level."
+  },
+  "label": {
+    "aria-enhancement": {
+      "delete-entries": "delete entries",
+      "dropdown": "dropdown",
+      "loading-spinner": "loading spinner",
+      "select": "select",
+      "select-all": "select all"
+    },
+    "axis": {
+      "coverage-total-deviation-from-zero": "Coverage - Total deviation from 0",
+      "optimized-schedule": "Optimized schedule",
+      "schedule-before-optimization": "Schedule before optimization"
+    },
+    "date-range": "Date range",
+    "in-progress": "in progress",
+    "maintenance": {
+      "caption": "We are currently improving Break optimization",
+      "details": "We apologize for any inconvenience this necessary maintenance might cause you. The Break optimization should be available again in a few minutes. Thank you for your patience!"
+    },
+    "no-entries": "No entries",
+    "no-optimization-data": {
+      "details": "Start a new optimization by selecting a planning unit and a date range above to see its results listed here.",
+      "heading": "No optimizations available"
+    },
+    "optimization-result": {
+      "content": "Break optimization results"
+    },
+    "optimization-status": {
+      "failed": "Optimization failed. Please try again.",
+      "optimized": "Optimized schedule",
+      "partly-optimized": "Partly optimized schedule",
+      "scheduling": "Optimization in progress..."
+    },
+    "view-results": "View results"
+  },
+  "notification": {
+    "failure": {
+      "general": "An error has occurred. Please try again later."
+    }
+  },
+  "placeholder": {
+    "dropdown": "Search or select"
+  },
+  "result": {
+    "info": {
+      "day_models": "The selected planning unit contains day models in the selected date range that could not get converted into activities. Breaks in these day models were not optimized."
+    }
+  },
+  "success": {
+    "break-optimization-request": "Break optimization requested successfully"
+  },
+  "table": {
+    "column": {
+      "date-range": "Date range",
+      "initiated-on": "Initiated on",
+      "planning-unit": "Planning unit",
+      "selection": "Selection",
+      "status": "Status",
+      "user": "User"
+    },
+    "message": {
+      "partly-optimized": "Partly optimized",
+      "partly-optimized-description": "<0>What does this mean?</0>",
+      "partly-optimized-link": "https://help.injixo.com/break-optimization#partly-optimized-schedule",
+      "optimized": "Optimized"
+    }
+  },
+  "tooltip": {
+    "outdated-graph": "The relevant graph data was generated when the optimization was initiated."
+  },
+  "validation": {
+    "planning-unit": {
+      "required": "Select a planning unit"
+    }
+  },
+  "connection": {
+    "offline": "We were unable to connect. Please try to reload in a few minutes.",
+    "reconnecting": "We’ve lost the connection. We are trying to reconnect automatically."
+  },
+  "document_title": {
+    "context": "Break Optimizer",
+    "module": "Plan"
+  }
+}

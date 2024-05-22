@@ -1,0 +1,871 @@
+{
+  "time_off_overview": {
+    "confirmation_modal": {
+      "cancel": "Annuler"
+    },
+    "approved": "Validé",
+    "cancellation_requested": "Annulation demandée",
+    "decided": "Traité",
+    "heading": "Demandes de congés",
+    "page_title": "Absences | injixo",
+    "rejected": "Refusée",
+    "requested": "Congés demandés",
+    "canceled": "Annulé",
+    "comment": {
+      "placeholder": "Ajoutez votre commentaire ici",
+      "label": "Commenter",
+      "optional": "facultatif"
+    },
+    "employee_balances": "Soldes personnels",
+    "manual_action_required": "Mettre à jour le planning manuellement",
+    "processing": "Demandes en attente",
+    "recommendation": {
+      "approval": "Valider",
+      "pending": "En attente",
+      "rejection": "Refuser",
+      "cancellation": "Annuler",
+      "not_possible": "Aucune recommandation intelligente possible",
+      "outdated": "Création de la recommandation intelligente"
+    },
+    "time_off_configuration": "Configuration des congés",
+    "valuation": {
+      "conflict": {
+        "reason": "Le temps à planifier peut changer car {{ username }} a envoyé au moins une demande de congé supplémentaire pour cette semaine."
+      }
+    },
+    "action": {
+      "approve": {
+        "error": {
+          "already_decided": "Une décision a déjà été prise pour cette demande de congé.",
+          "generic": "La demande de congé n'a pas pu être validée."
+        },
+        "go_to_decided": "Aller aux décisions",
+        "hint": "Le congé sera ajouté au planning.",
+        "label": "Valider le congé",
+        "submit": "Valider",
+        "submitting": "Congé en cours de validation",
+        "success": "Congé validé"
+      },
+      "approve_cancellation": {
+        "error": {
+          "generic": "Le congé a déjà été annulé."
+        },
+        "label": "Annuler le congé",
+        "no_sync_hint": "injixo ne mettra pas à jour le planning de l'employé automatiquement. Vérifiez et mettez le planning à jour manuellement si nécessaire.",
+        "submit": "Confirmer l’annulation",
+        "submitting": "Congé en cours d’annulation",
+        "success": "Congé annulé"
+      },
+      "cancel": {
+        "error": {
+          "already_canceled": "Le congé a déjà été annulé.",
+          "generic": "Impossible d’annuler le congé."
+        },
+        "label": "Annuler le congé",
+        "no_sync_hint": "injixo ne mettra pas à jour le planning de l'employé automatiquement. Vérifiez et mettez le planning à jour manuellement si nécessaire.",
+        "submit": "Confirmer l’annulation",
+        "submitting": "Congé en cours d’annulation",
+        "success": "Congé annulé"
+      },
+      "recommend_approval": {
+        "error": {
+          "already_recommended": "Une recommandation a déjà été faite.",
+          "generic": "Échec de la recommandation de validation"
+        },
+        "label": "Recommander la validation",
+        "submit": "Valider",
+        "submitting": "Recommandation de validation en cours",
+        "success": "Validation recommandée"
+      },
+      "recommend_cancellation_approval": {
+        "error": {
+          "generic": "Impossible de recommander la validation de l’annulation"
+        },
+        "label": "Recommander l'annulation",
+        "submit": "Confirmer",
+        "submitting": "Recommandation d'annulation en cours",
+        "success": "Validation de l’annulation recommandée"
+      },
+      "recommend_cancellation_rejection": {
+        "error": {
+          "generic": "Impossible de recommander le refus de l’annulation"
+        },
+        "label": "Recommander le refus",
+        "submit": "Confirmer",
+        "submitting": "Recommandation du refus en cours",
+        "success": "Refus de l’annulation recommandé"
+      },
+      "recommend_rejection": {
+        "error": {
+          "already_recommended": "Une recommandation a déjà été faite.",
+          "generic": "Échec de la recommandation de refus"
+        },
+        "label": "Recommander le refus",
+        "submit": "Valider",
+        "submitting": "Recommandation du refus en cours",
+        "success": "Refus recommandé"
+      },
+      "reject": {
+        "error": {
+          "already_decided": "Une décision a déjà été prise pour cette demande de congé.",
+          "generic": "La demande de congé n'a pas pu être refusée."
+        },
+        "go_to_decided": "Aller aux décisions",
+        "label": "Refuser",
+        "submit": "Valider",
+        "submitting": "Demande de congé en cours de refus",
+        "success": "Demande de congé refusée"
+      },
+      "reject_cancellation": {
+        "error": {
+          "generic": "La demande d'annulation n'a pas pu être refusée."
+        },
+        "label": "Refuser",
+        "submit": "Valider",
+        "submitting": "Annulation en cours de refus",
+        "success": "Demande d'annulation refusée"
+      }
+    },
+    "comments_one": "1 commentaire",
+    "comments_other": "{{count}} commentaires",
+    "created_at": "Demandé le {{datetime}}",
+    "empty_state": {
+      "cancellation_requested": {
+        "description": "Lorsque les employés souhaitent annuler un congé validé, vous trouverez leurs demandes ici. <br />Vous recherchez les demandes ayant une décision ? Allez à l'onglet <decidedLink>Traité</decidedLink>.",
+        "title": "Aucune demande d'annulation"
+      },
+      "decided": {
+        "description": "Une fois qu'une décision a été prise pour les absences et les annulations, elles apparaîtront ici.",
+        "title": "Aucune décision de congé prise"
+      },
+      "no_results": {
+        "action": "Réinitialisez les filtres et recherchez",
+        "description": "Modifiez ou réinitialisez vos filtres et recherchez.",
+        "title": "Aucune demande trouvée"
+      },
+      "requested": {
+        "description": "Lorsque les employés demandent des congés, vous trouverez leurs demandes ici.<br />Vous recherchez les demandes ayant une décision ? Allez à l'onglet <decidedLink>Traité</decidedLink>.",
+        "title": "Aucune demande de congé"
+      }
+    },
+    "filter": {
+      "planning_units": {
+        "empty": "Aucune unité opérationnelle",
+        "label": "Unités opérationnelles",
+        "search": "Rechercher dans les unités opérationnelles",
+        "select_all": "Toutes les unités opérationnelles"
+      },
+      "recommendations": {
+        "empty": "Aucune recommandation",
+        "label": "Recommandation",
+        "options": {
+          "approval": {
+            "label": "Valider"
+          },
+          "pending": {
+            "label": "En attente"
+          },
+          "rejection": {
+            "label": "Refuser"
+          }
+        },
+        "search": "Rechercher une recommandation",
+        "select_all": "Toutes les recommandations"
+      },
+      "selections": {
+        "empty": "Aucun groupe",
+        "label": "Groupes",
+        "search": "Rechercher dans les groupes",
+        "select_all": "Tous les groupes"
+      },
+      "time_period": {
+        "clear": "Effacer",
+        "label": "Période de temps",
+        "placeholder": "Sélectionner une période"
+      },
+      "types": {
+        "deleted": "(Supprimé)",
+        "empty": "Aucun type de congé",
+        "label": "Types de congés",
+        "search": "Rechercher dans les types de congés",
+        "select_all": "Tous les types de congés"
+      }
+    },
+    "label": {
+      "comments": "Commentaires",
+      "current_balance": "Solde actuel",
+      "decision": "Statut",
+      "planning_unit": "Unité opérationnelle",
+      "projected": "Prévu",
+      "recommendation": "Recommandation",
+      "remaining": "Solde",
+      "time": "Période",
+      "to_be_booked": "À planifier",
+      "type": "Type",
+      "type_deleted": "(Supprimé)"
+    },
+    "pagination": {
+      "aria_label": "Page"
+    },
+    "recommendation_insights": {
+      "current_schedule": "Planning actuel",
+      "empty": "Aucune activité n'est planifiée pour la période demandée.",
+      "error": "Une erreur est survenue. <RetryLink> Veuillez réessayer</RetryLink>.",
+      "hide": "Cacher la couverture et les congés",
+      "people_absent": "Employés en congé",
+      "show": "Afficher la couverture et les congés"
+    },
+    "schedule_restoration_modal": {
+      "blank_out_shift": "Effacer la journée",
+      "cancel": "Annuler",
+      "cancellation": {
+        "submit": "Annuler le congé",
+        "submitting": "Congé en cours d’annulation",
+        "title": "Annuler le congé et mettre à jour le planning ?"
+      },
+      "comment": "Commentaire",
+      "decision": {
+        "submit": "Confirmer",
+        "submitting": "Annulation en cours de validation"
+      },
+      "employee": "Employé",
+      "load_error": "Les données de planification n'ont pas pu être chargées. Veuillez <RetryLink>recharger maintenant</RetryLink> ou réessayer plus tard.",
+      "recommendation": {
+        "submit": "Recommander la validation",
+        "submitting": "Recommandation de validation en cours",
+        "title": "Recommander l'annulation du congé et la mise à jour du planning"
+      },
+      "recommended": "Recommandé",
+      "restore_history": "Restaurer l'historique"
+    },
+    "search": {
+      "placeholder": "Rechercher des employés"
+    },
+    "sorting": {
+      "created_at": {
+        "ascending": "Plus ancien",
+        "descending": "Plus récent"
+      },
+      "name": {
+        "ascending": "Nom A-Z",
+        "descending": "Nom Z-A"
+      }
+    }
+  },
+  "balance_details": {
+    "approved_time_off": "Congé validé",
+    "back_to_time_off": "Retour à Absences",
+    "canceled_time_off": "Congé annulé",
+    "column": {
+      "counted": {
+        "days": "Jours décomptés",
+        "hours": "Heures décomptées"
+      },
+      "date": "Date",
+      "processed_by": "Traité par",
+      "reason": "Motif"
+    },
+    "edit_entitlement": {
+      "aria_label": "Modifier le droit aux congés",
+      "cancel": "Annuler",
+      "error": {
+        "reason": {
+          "missing": "Veuillez saisir un motif. ({{maxLength}} caractères maximum).",
+          "too_long": "Saisissez un motif ({{maxLength}} caractères maximum)."
+        },
+        "unknown": "Le droit aux congés n'a pas pu être modifié. Veuillez réessayer plus tard.",
+        "value": {
+          "invalid_number": "Entrez un chiffre égal ou supérieur à 0."
+        }
+      },
+      "heading": "Modifier le droit aux congés",
+      "hint": {
+        "addition": "Vous êtes sur le point d’ajouter {{diff}} {{diff_unit}} au droit aux congés.",
+        "deduction": "Vous êtes sur le point de retirer {{diff}} {{diff_unit}} du droit aux congés.",
+        "result": "Le nouveau droit aux congés sera de {{new_value}} {{new_value_unit}}."
+      },
+      "new_entitlement": "Nouveau droit aux congés",
+      "reason": "Motif de la modification",
+      "save": "Sauvegarder les modifications",
+      "saving": "Enregistrement"
+    },
+    "edit_taken": {
+      "aria_label": "Modifier les congés utilisés",
+      "cancel": "Annuler",
+      "error": {
+        "reason": {
+          "missing": "Veuillez saisir un motif (jusqu’à {{maxLength}} caractères).",
+          "too_long": "Veuillez saisir un motif (jusqu’à {{maxLength}} caractères)."
+        },
+        "unknown": "Les congés utilisés n’ont pas pu être sauvegardés. Veuillez réessayer.",
+        "value": {
+          "invalid_number": "Entrez un chiffre égal ou supérieur à 0."
+        }
+      },
+      "heading": "Modifier les congés utilisées",
+      "hint": {
+        "addition": "Vous êtes sur le point d'ajouter {{diff}} {{diff_unit}} aux congés utilisés.",
+        "deduction": "Vous êtes sur le point de déduire {{diff}} {{diff_unit}} des congés utilisés.",
+        "result": "Les congés utilisés seront {{new_value}} {{new_value_unit}}."
+      },
+      "new_taken": "Congés utilisés",
+      "reason": "Motif de la modification",
+      "save": "Sauvegarder les modifications",
+      "saving": "Enregistrement"
+    },
+    "employee": "Employé",
+    "employees": "Employés",
+    "empty": {
+      "action": "Sélectionner un autre employé ou revenir aux demandes de congés.",
+      "message": "Aucune information pour le type de congé de cet employé.",
+      "description": "Vous pouvez suivre les modifications suivantes ici :<unorderedList><li>Demandes de congés validées</li><li>Annulations des congés validés</li><li>Mises à jour du droit aux congés et congés utilisés</li></UnorderedList>",
+      "title": "Aucune modification des heures de l'employé"
+    },
+    "entitlement_period": "Période de droit aux congés",
+    "heading": "Soldes personnels",
+    "no_employee_found": "Aucun employé trouvé",
+    "no_employees": "Aucun employé disponible dans l’unité opérationnelle ou droits manquants",
+    "no_planning_units": "Aucune unité disponible",
+    "no_records": "Aucune donnée pour l’employé sélectionné",
+    "no_types": "Aucun type de congé",
+    "planning_unit": "Unité opérationnelle",
+    "remaining": {
+      "days": "Jours restants",
+      "hours": "Solde"
+    },
+    "search_employees": {
+      "aria_label": "Rechercher des employés",
+      "placeholder": "Rechercher des employés",
+      "empty": {
+        "description": "Modifiez vos filtres.",
+        "title": "Aucun employé disponible"
+      }
+    },
+    "success": {
+      "entitlement_changed": "Le nouveau droit aux congés a été enregistré.",
+      "taken_changed": "Congés utilisés enregistrés"
+    },
+    "type": "Type de congé",
+    "year": "Année",
+    "type_deleted": "{{name}} (Supprimé)"
+  },
+  "balance_summary": {
+    "entitlement": {
+      "label": "Droit aux congés"
+    },
+    "remaining": "Solde",
+    "taken": {
+      "label": "Utilisé"
+    }
+  },
+  "configuration": {
+    "back_to_time_off": "Retour aux demandes de congés",
+    "page_heading": "Configuration des absences",
+    "time_off_periods": "Périodes de congés",
+    "time_off_types": "Types d’absences",
+    "time-off-types": {
+      "button": {
+        "filter-time-off-types": {
+          "checkbox": {
+            "display-all-types": {
+              "label": "Tous"
+            },
+            "display-available-types": {
+              "label": "Disponible"
+            },
+            "display-deleted-types": {
+              "label": "Supprimé"
+            }
+          },
+          "label": "Filtre"
+        }
+      },
+      "table": {
+        "types": {
+          "empty-state": {
+            "heading": {
+              "text": "Aucun type d’absence trouvé"
+            },
+            "no-results": {
+              "description": {
+                "text": "Modifiez ou <resetFiltersLink>réinitialisez vos filtres</resetFiltersLink>."
+              }
+            }
+          }
+        }
+      }
+    },
+    "types": {
+      "table": {
+        "types": {
+          "deleted-type": {
+            "text": "(Supprimé)"
+          }
+        }
+      }
+    }
+  },
+  "schedule_sync": {
+    "failed": "Le congé n’a pas pu être ajouté au planning.",
+    "not_implemented": "Le congé a été annulé et n’a pas été mis à jour dans le planning. \nVeuillez mettre à jour le planning manuellement.",
+    "not_needed": "Demande de congé refusée. Le congé n’a pas été ajouté au planning.",
+    "processing": "Ajout du congé au planning",
+    "processing_hint": "Le congé sera ajouté au planning.",
+    "resolve": "Marquer comme résolu. Le planning a été mis à jour manuellement.",
+    "resolved-approved": "Le congé a été ajoutée au planning.",
+    "resolved-canceled": "Le congé a été supprimé du planning."
+  },
+  "types_overview": {
+    "add": "Ajouter",
+    "column": {
+      "archived_date": "Archivé le",
+      "name": "Nom",
+      "paid": "Rémunéré",
+      "requestable": "Demandes autorisées par employé",
+      "unit": "Unité de temps",
+      "unit_error": "Sélectionnez une unité de temps.",
+      "fill_up": "Remplir le planning"
+    },
+    "create": {
+      "action": "Nouveau type de congé"
+    },
+    "form": {
+      "cancel": "Annuler",
+      "create": {
+        "heading": "Créer un nouveau type de congé",
+        "label": "Créer un nouveau type de congé",
+        "submit": "Créer un type de congé",
+        "submit_error": "Le type de congé n’a pas pu être créé. Veuillez vérifier les champs indiqués.",
+        "submitting": "Création"
+      },
+      "create_unit_hint": "Vous ne pouvez pas modifier l’unité de temps après avoir créé le type de congé.",
+      "delete": {
+        "cancel": "Annuler",
+        "consequences": {
+          "1": "L'activité ayant le même nom sera supprimée dans iWFM.",
+          "2": "Impossible de restaurer le type de congé."
+        },
+        "heading": "Supprimer le type de congé ?",
+        "label": "Supprimer le type de congé {{name}}",
+        "precondition": "Seuls les types de congés inutilisés peuvent être supprimés.",
+        "submit": "Supprimer le type de congé",
+        "submitting": "Suppression du type de congé",
+        "description": "<b>{{ name }}</b> sera supprimé d'injixo."
+      },
+      "edit": {
+        "heading": "Modifier le type de congé",
+        "label": "Modifier le type de congé {{name}}",
+        "submit": "Enregistrer les modifications",
+        "submit_error": "Le type de congé n’a pas pu être sauvegardé. Vérifiez les champs indiqués.",
+        "submitting": "Enregistrement"
+      },
+      "edit_unit_hint": "Vous ne pouvez pas modifier l’unité de temps après avoir créé le type de congé.",
+      "entitlement_periods": {
+        "create": "Ajouter une période de droit aux congés",
+        "delete": "Supprimer la période de droits aux congés {{number}}",
+        "end_date": "Date de fin",
+        "end_date_aria": "Date de fin de la période de droit aux congés {{number}}",
+        "heading": "Périodes de droits aux congés",
+        "start_date": "Date de début",
+        "start_date_aria": "Date de début de la période de droit aux congés {{number}}",
+        "warning": "Vous ne pouvez pas modifier une période de droit aux congés une fois qu'un employé a demandé des congés sur cette période."
+      },
+      "error": {
+        "entitlement_periods": {
+          "consecutive": "Sélectionnez une date de début suivant directement la date de fin précédente.",
+          "start_date_before_end": "Sélectionnez une date de fin supérieure à la date de début."
+        },
+        "name": {
+          "activity_already_exists": "Ce nom n'est pas disponible.",
+          "already_exists": "Veuillez saisir un nom inutilisé.",
+          "required": "Veuillez saisir un nom inutilisé."
+        },
+        "unit": {
+          "required": "Sélectionnez une unité de temps."
+        },
+        "fillUpTypeId": {
+          "not_found": "Le type de congé sélectionné n'existe pas.",
+          "paid_type": "Le type de congé doit être non rémunéré.",
+          "required": "Sélectionnez un type de congé.",
+          "wrong_unit": "L'unité de temps du type de congé est incorrecte."
+        },
+        "paid": {
+          "paid_fill_up": "Le type de congé est utilisé pour remplacer des heures de repos et ne peut être rémunéré."
+        }
+      },
+      "error_unit": "Vous devez sélectionner une unité de temps avant d'enregistrer la demande.",
+      "help_unit_selected": "Vous ne pouvez pas modifier l’unité de temps après avoir créé le type de congé.",
+      "paid": "Rémunéré",
+      "requestable": "Demandes autorisées par employé",
+      "type": {
+        "heading": "Général"
+      },
+      "type_name": "Nom",
+      "unit": "Unité de temps",
+      "unit_already_exists_hint": "L’unité de temps a été définie et ne peut plus être changée.",
+      "unkown_error": "Le type de congé n’a pas pu être créé. Veuillez réessayer.",
+      "unsaved_changes": {
+        "bodytext": "Vos modifications ne seront pas enregistrées.",
+        "discard": "Abandonner",
+        "title": "Quitter sans sauvegarder ?",
+        "back_to_create": "Revenir à la création",
+        "back_to_edit": "Revenir à l’édition"
+      },
+      "schedule_setting": {
+        "activate_fill_up": "Remplacer les activités non rémunérées (par exemple les pauses) et remplir les heures de repos avec le type de congé non rémunéré suivant :",
+        "fill_up": {
+          "label": "Type de congé",
+          "placeholder": "Sélectionnez le type de congé non rémunéré"
+        },
+        "heading": "Paramètre du planning",
+        "info": {
+          "paid": "Par défaut, injixo remplace uniquement les activités rémunérées planifiées ou les heures de travail contractuelles par ce type de congé. Pour en savoir plus, consultez le <helpCenterLink>Help Center</helpCenterLink>.",
+          "paid_hint": "Ce paramètre impactera uniquement les nouvelles demandes de congés.",
+          "paid_link": "https://help.injixo.com/time-off-types#fill-up-functionality",
+          "unpaid": "Il n’existe pas de paramètres du planning pour les types de congés non rémunérés."
+        }
+      },
+      "unit_days": "jours",
+      "unit_hours": "heures"
+    },
+    "heading": "Types d’absences",
+    "no_types": "Aucun type de congé",
+    "success": {
+      "type_archived": "Type de congé archivé",
+      "type_created": "Le type de congé a été créé.",
+      "type_deleted": "Le type de congé a été supprimé.",
+      "type_updated": "Type de congé mis à jour"
+    },
+    "type": {
+      "hint": {
+        "has_relations": "Ce type de congé est utilisé. Les types de congé utilisés ne peuvent pas être supprimés."
+      }
+    }
+  },
+  "unit": {
+    "days_one": "jour",
+    "days_other": "jours",
+    "hours_one": "heure",
+    "hours_other": "heures"
+  },
+  "unit_short": {
+    "days_one": "j",
+    "days_other": "j",
+    "hours_one": "h",
+    "hours_other": "h"
+  },
+  "add-time-off": {
+    "elevated-side-panel": {
+      "aria-label": "Ajouter un congé",
+      "button": {
+        "add": {
+          "label": "Ajouter un congé"
+        },
+        "cancel": {
+          "label": "Annuler"
+        }
+      },
+      "combo-box": {
+        "entitlement-period": {
+          "errors": {
+            "required": "Sélectionnez une période de droit aux congés"
+          },
+          "label": "Période de droit aux congés",
+          "placeholder": "Sélectionner"
+        },
+        "person": {
+          "errors": {
+            "required": "Sélectionnez un employé"
+          },
+          "label": "Employé",
+          "placeholder": "Sélectionner"
+        },
+        "time-off-type": {
+          "errors": {
+            "required": "Sélectionnez un type de congé."
+          },
+          "label": "Type de congé",
+          "placeholder": "Sélectionner"
+        }
+      },
+      "date-range-picker": {
+        "errors": {
+          "required": "Sélectionnez une période."
+        },
+        "label": "Période",
+        "placeholder": "Sélectionner"
+      },
+      "end-time": {
+        "errors": {
+          "error_end_before_start": "Sélectionnez une heure de fin ultérieure à l'heure de début.",
+          "required": "Saisissez une heure de début et de fin."
+        },
+        "label": "Heure de fin"
+      },
+      "helper-text": "L'employé sera notifié par e-mail.",
+      "inline-message": {
+        "error": {
+          "conflict_with_existing_time_off": "L'employé a déjà un congé pour la période sélectionnée. Veuillez sélectionner une période différente.",
+          "generic": "Le congé n'a pas pu être ajouté. Veuillez réessayer.",
+          "no_time_off_period": "Aucune période de congés n'est publiée pour le type de congé sélectionné. Publiez la période de congés ou sélectionnez un type de congé différent."
+        }
+      },
+      "start-time": {
+        "errors": {
+          "required": "Saisissez une heure de début et de fin."
+        },
+        "label": "Heure de début"
+      },
+      "switch": {
+        "part-day": {
+          "label": "Demander une journée partielle"
+        }
+      },
+      "textarea": {
+        "comment": {
+          "errors": {
+            "max_length": "Saisissez un commentaire (jusqu’à 100 caractères)."
+          },
+          "label": "Commentaire <optional>facultatif</optional>",
+          "placeholder": "Ajouter votre commentaire"
+        }
+      },
+      "title": "Ajouter un congé"
+    },
+    "toast": {
+      "action": {
+        "text": "Aller aux décisions"
+      },
+      "save-success": {
+        "text": "Congé ajouté"
+      }
+    }
+  },
+  "balance_filter": {
+    "view": {
+      "label": "Vue par",
+      "multi": "Plusieurs employés",
+      "single": "Employés individuels"
+    }
+  },
+  "balance_overview": {
+    "column": {
+      "entitlement": "Droit aux congés",
+      "name": "Nom",
+      "personnel_number": "Matricule",
+      "remaining": "Solde",
+      "taken": "Utilisé"
+    },
+    "edit_entitlements": {
+      "discard": "Abandonner",
+      "entitlement": {
+        "aria_label": "Droits aux congés de {{personnelNumber}}",
+        "unsaved": "Le droit aux congés n'a pas été sauvegardé."
+      },
+      "error": {
+        "invalid_fields": "Les droits aux congés n'ont pas pu être sauvegardés. Veuillez vérifier les champs mis en évidence.",
+        "unknown": "Les droits aux congés n'ont pas pu être modifiés. Veuillez réessayer."
+      },
+      "reason": {
+        "label": "Motif de la modification"
+      },
+      "save": "Enregistrer les modifications",
+      "success": "Droits aux congés enregistrés"
+    },
+    "no_employees": "Aucun employé disponible dans l’unité opérationnelle ou droits manquants"
+  },
+  "edit-time-off": {
+    "elevated-side-panel": {
+      "aria-label": "Edit time off",
+      "button": {
+        "cancel": {
+          "label": "Cancel"
+        },
+        "edit": {
+          "label": "Edit time off"
+        }
+      },
+      "combo-box": {
+        "person": {
+          "label": "Person"
+        },
+        "time-off-type": {
+          "label": "Time-off type"
+        }
+      },
+      "date-range-picker": {
+        "errors": {
+          "required": "Select a time range."
+        },
+        "label": "Time range",
+        "placeholder": "Select"
+      },
+      "end-time": {
+        "errors": {
+          "error_end_before_start": "Select an end time that is later than the start time.",
+          "required": "Enter a start and end time"
+        },
+        "label": "End time"
+      },
+      "helper-text": "The person will be notified by email.",
+      "inline-message": {
+        "error": {
+          "conflict_with_existing_time_off": "During the selected time range, the person already has time off. Select a different time range.",
+          "generic": "Time off could not be edited. Please try again",
+          "no_time_off_period": "For the selected time-off type, no time-off period has been published. Publish the time-off period or select a different time-off type."
+        }
+      },
+      "start-time": {
+        "errors": {
+          "required": "Enter a start and end time."
+        },
+        "label": "Start time"
+      },
+      "switch": {
+        "part-day": {
+          "label": "Request a part of the day"
+        }
+      },
+      "textarea": {
+        "comment": {
+          "errors": {
+            "max_length": "Enter a comment (up to 100 characters)."
+          },
+          "label": "Comment <optional>optional</optional>",
+          "placeholder": "Add your comment"
+        }
+      },
+      "title": "Edit time off"
+    },
+    "toast": {
+      "action": {
+        "text": "Go to decided"
+      },
+      "save-success": {
+        "text": "Time off edited"
+      }
+    }
+  },
+  "personal-balances": {
+    "individual-people": {
+      "balance-summary": {
+        "current-balance": {
+          "label": "Solde actuel"
+        }
+      },
+      "modal": {
+        "edit-entitlement": {
+          "date-picker": {
+            "booking-date": {
+              "label": "Date"
+            }
+          }
+        },
+        "edit-taken": {
+          "date-picker": {
+            "booking-date": {
+              "label": "Date"
+            }
+          }
+        }
+      }
+    },
+    "multiple-people": {
+      "edit-entitlement": {
+        "date-picker": {
+          "booking-date": {
+            "label": "Date"
+          }
+        }
+      },
+      "table": {
+        "people-balances": {
+          "table-column": {
+            "current": {
+              "label": "Solde actuel"
+            }
+          }
+        }
+      }
+    }
+  },
+  "plan-page": {
+    "filter-bar": {
+      "date-range-navigator": {
+        "aria-label": "Sélectionnez la période à visualiser"
+      },
+      "search-input": {
+        "placeholder": "Rechercher des employés"
+      },
+      "view-switch": {
+        "list": {
+          "aria-label": "Vue par liste"
+        },
+        "plan": {
+          "aria-label": "Vue par planning"
+        }
+      }
+    },
+    "timeline": {
+      "empty-state": {
+        "no-results": {
+          "clear-filters": {
+            "button": {
+              "label": "Réinitialisez les filtres et recherchez"
+            }
+          },
+          "description": "Modifiez ou réinitialisez vos filtres et recherchez.",
+          "heading": "Aucun employé trouvé"
+        }
+      },
+      "people-header": {
+        "sort-button": {
+          "aria-label": "Configurer le tri"
+        },
+        "sort-by": {
+          "person-asc": "Nom A→ Z",
+          "person-desc": "Nom Z→ A",
+          "start-time": "Heure de début"
+        },
+        "text": "Nom de l'employé"
+      },
+      "statistics": {
+        "people-off": {
+          "approved": {
+            "text": "Employés en congé"
+          },
+          "pending": {
+            "text": "Employés en attente"
+          }
+        }
+      }
+    }
+  },
+  "time-off-overview": {
+    "button": {
+      "add-time-off": {
+        "label": "Ajouter un congé"
+      }
+    },
+    "card-list": {
+      "time-off": {
+        "card-item": {
+          "time-off-entry": {
+            "booked": {
+              "label": "Planifié"
+            },
+            "current-balance": {
+              "label": "Solde actuel"
+            },
+            "plan-link": {
+              "label": "Voir dans le planning"
+            },
+            "projected-balance": {
+              "label": "Prévu"
+            }
+          }
+        }
+      }
+    }
+  }
+}

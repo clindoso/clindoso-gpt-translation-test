@@ -1,0 +1,106 @@
+{
+  "error": {
+    "insufficient_permissions": "You lack the required permission for this action."
+  },
+  "configuration": {
+    "page_title": "Configuration",
+    "activity_mapping": {
+      "heading": "Mapper les statuts externes aux activités d’injixo",
+      "activity_type": {
+        "present": "Présence",
+        "holiday": "Congés",
+        "break": "Pause",
+        "absence": "Absence",
+        "meeting": "Meeting",
+        "illness": "Maladie"
+      },
+      "integrations": {
+        "heading": "Intégrations"
+      },
+      "integration_activities": {
+        "heading": "Statuts externes",
+        "search": {
+          "placeholder": "Rechercher des statuts externes ou saisissez « non mappé »."
+        },
+        "edit_activity": "Modifier l’activité",
+        "heading_mapped": "Mappée",
+        "heading_not_mapped": "Non mappée",
+        "mapped_empty_label": "Aucun statut externe mappé",
+        "not_mapped_empty_label": "Tous les statuts externes sont mappés à cette activité d’injixo.",
+        "unmapped": "Non mappée",
+        "overwrite_warning_tooltip": "Le mapping de cette activité d’injixo sera remplacée par le nouveau mapping.",
+        "button_save": "Enregistrer les modifications",
+        "button_cancel": "Annuler les modifications"
+      },
+      "search_activity": {
+        "placeholder": "Rechercher une activité d’injixo"
+      },
+      "mapped_tooltip": "Les statuts externes sont mappés à cette activité d’injixo.",
+      "toast_save_success": "Mapping enregistré",
+      "message_save_error": "Le mapping n’a pas pu être sauvegardé. Veuillez réessayer.",
+      "no_activity_selected": {
+        "explanation": "Sélectionnez d’abord une activité injixo.",
+        "headline": "Aucune activité d’injixo sélectionnée"
+      },
+      "no_integration_activities": {
+        "explanation": "Aucun statut externe n’est importé par l’intégration.",
+        "headline": "Aucun statut externe disponible"
+      },
+      "no_integrations": {
+        "headline": "Aucune intégration trouvée.",
+        "link_text": "Ajoutez d’abord une intégration"
+      },
+      "activity-select-list": {
+        "aria-label": "Select the injixo activity you want to map external statuses to."
+      }
+    }
+  },
+  "edit-actual-activities": {
+    "headline": {
+      "text": "{{personName}} le {{date}}"
+    },
+    "page-title": {
+      "return-link": {
+        "aria-label": "Retour à l'adhérence intra-journalière agent"
+      },
+      "text": "Modifier les activités effectuées"
+    },
+    "table": {
+      "actual-activity": {
+        "label": "Activité effectuée"
+      },
+      "empty-state": {
+        "no-activities": {
+          "description": "Aucune activité n'a été enregistrée pour le {{date}}",
+          "headline": "Aucune activité enregistrée"
+        }
+      },
+      "time-period": {
+        "buttons": {
+          "cancel": {
+            "aria-label": "Annuler les modifications"
+          },
+          "confirm": {
+            "aria-label": "Confirmer la nouvelle heure de fin"
+          },
+          "edit": {
+            "aria-label": "Modifier l'heure de fin {{endTime}}"
+          }
+        },
+        "edit": {
+          "error-message": {
+            "generic": "L'heure de fin n'a pas pu être mise à jour. Veuillez réessayer.",
+            "invalid-end-time": "L'heure de fin saisie est invalide."
+          },
+          "success": {
+            "toast-message": "Heure de fin corrigée avec succès."
+          },
+          "time-input": {
+            "aria-label": "Saisissez l'heure de fin correcte"
+          }
+        },
+        "label": "Période"
+      }
+    }
+  }
+}

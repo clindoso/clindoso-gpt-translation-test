@@ -1,0 +1,73 @@
+{
+  "application": {
+    "title": "Vacation Entitlement",
+    "backToTimeOff": "Back to Time Off"
+  },
+  "options": {
+    "button": {
+      "export": "Export CSV",
+      "transfer": "Transfer Entitlement"
+    }
+  },
+  "filters": {
+    "label": {
+      "planningUnit": "Planning unit",
+      "selection": "Selection",
+      "year": "Year",
+      "search": "Search"
+    },
+    "placeholder": {
+      "planningUnit": "Choose a planning unit",
+      "selection": "Choose a selection",
+      "year": "Choose a year",
+      "search": "Use comma to separate names"
+    },
+    "result": {
+      "noResult": "No entries"
+    }
+  },
+  "entitlementsTable": {
+    "label": {
+      "personnelNumber": "Employee Number",
+      "employeeName": "Name",
+      "contract": "Contract",
+      "remainCurrentYear": "Remain Current Year",
+      "remainLastYear": "Remain Last Year",
+      "currentYear": "Current Year",
+      "takenRatio": "Taken Vacation",
+      "takenRatioPercent": "Taken Vacation {{percent}}%"
+    },
+    "result": {
+      "loading": "Loading",
+      "noEmployeesFound": "No employees found.",
+      "noPlanningUnitsFound": "No planning unit available."
+    }
+  },
+  "transferModal": {
+    "text": {
+      "description": "The remaining vacation entitlement for the current selection will be transferred",
+      "from": "From",
+      "to": "To"
+    },
+    "button": {
+      "transfer": "Transfer",
+      "cancel": "Cancel"
+    },
+    "transferSuccess": "Entitlement successfully transferred to {{nextYear}}"
+  },
+  "error": {
+    "fetchingEntitlements": "An error has occurred (Resource: Vacation Entitlement)",
+    "fetchingVacations": "An error has occurred (Resource: Taken vacation)",
+    "fetchingPlanningUnits": "An error has occurred (Resource: Planning Unit)",
+    "fetchingSelections": "An error has occurred (Resource: Selections)",
+    "fetchingEmployees": "An error has occurred (Resource: Employees)",
+    "fetchingAccessRights": "An error has occurred (Resource: Access Rights)",
+    "transferEntitlements": "An error has occurred (Resource: Transfer Vacation Entitlement)",
+    "savingEntitlements": "An error has occurred (Resource: Vacation Entitlement) - Details:",
+    "exportCsv": "An error has occurred (Resource: Export CSV)"
+  },
+  "document_title": {
+    "module": "Plan",
+    "sub_module": "Vacation Entitlement"
+  }
+}

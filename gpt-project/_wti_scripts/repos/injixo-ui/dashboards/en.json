@@ -1,0 +1,195 @@
+{
+  "button-title": {
+    "context-menu": {
+      "show": "Options"
+    },
+    "fullscreen": {
+      "enter": "Enter Full Screen",
+      "leave": "Leave Full Screen"
+    },
+    "table": {
+      "copy": "Copy table to clipboard",
+      "hide": "Show Chart",
+      "show": "Show Table"
+    }
+  },
+  "label": {
+    "button": {
+      "cancel": "Cancel",
+      "close-edit-mode": "Close Edit mode",
+      "copy": "Duplicate Dashboard",
+      "create-new": "Create New Dashboard",
+      "delete": "Delete",
+      "edit": "Edit",
+      "save": "Save",
+      "toggle-auto-refresh": "Auto-Refresh"
+    },
+    "copy-prefix": "Copy of",
+    "datepicker": {
+      "rolling-dates": "Use Rolling Dates"
+    },
+    "empty-name": "Name must not be empty",
+    "highcharts": {
+      "date": "Date",
+      "decimal-point": ".",
+      "reset-zoom": "Reset Zoom",
+      "thousands-sep": ","
+    },
+    "invalid-name": "Name has already been taken",
+    "layout": "Layout",
+    "loading": "Loading",
+    "name": "Name",
+    "timezone-info": "All times are in:",
+    "tree": {
+      "activities": "Activities",
+      "activity-type": {
+        "absence": "Absence",
+        "break": "Break",
+        "holiday": "Vacation",
+        "illness": "Illness",
+        "meeting": "Meeting",
+        "present": "Presence"
+      },
+      "no-data": "No items",
+      "planning-units": "Planning Units",
+      "shifts": "Shifts",
+      "totals": "Totals",
+      "totals-prefix": "Total",
+      "workloads": "Workloads",
+      "wfm-queues": "WFM Queues"
+    },
+    "last-updated-info": "Last updated",
+    "auto-refresh-hint": "auto-refresh",
+    "cannot-check": "Verifying the name is currently not possible.",
+    "error-deleting-dashboard": "An error occurred while deleting the Dashboard.",
+    "error-loading-dashboard": "A problem occurred while loading this dashboard. You can <0>reload now</0> or try again later.",
+    "error-loading-dashboard-list": "List of existing Dashboards can not be loaded.",
+    "error-loading-nodes": "A problem occurred while loading the key data. You can <0>reload now</0> or try again later.",
+    "error-saving-dashboard": "An error occurred while saving the Dashboard."
+  },
+  "level": {
+    "absence-wishes": "Vacation requests",
+    "acd": "External System",
+    "actual": "Actual",
+    "backup": "Version 1",
+    "backup_version_2": "Version 2",
+    "forecast": "Forecast",
+    "historic": "History",
+    "plan": "Schedule",
+    "wishes": "Requests",
+    "backup_version_3": "Version 3"
+  },
+  "modal": {
+    "change-layout": {
+      "cancel": "Keep current layout",
+      "confirm": "Change layout",
+      "title": "Change Layout",
+      "warning": "Changing the layout will remove at least one chart. Are you sure you want to proceed?"
+    },
+    "delete-dashboard": {
+      "cancel": "Keep Dashboard",
+      "confirm": "Delete Dashboard",
+      "title": "Do you want to delete this Dashboard?",
+      "warning": "You are about to delete this Dashboard."
+    },
+    "graph-settings": {
+      "aggregation": {
+        "by-day": "By day",
+        "by-interval": "By interval",
+        "label": "Aggregate data",
+        "not-available": "Interval data cannot be selected for this time range"
+      },
+      "color": "Color",
+      "title": "Customize graph",
+      "type": {
+        "histogram": "Histogram",
+        "label": "Type",
+        "step": "Step"
+      },
+      "y-axis": {
+        "label": "Show y-axis on",
+        "left": "Left (default)",
+        "right": "Right"
+      }
+    },
+    "unsaved-changes": {
+      "discard": "Discard changes",
+      "stay": "Stay in Edit Mode",
+      "title": "Unsaved changes",
+      "warning": "Your Dashboard contains unsaved changes. Leaving Edit Mode will discard all changes. Are you sure you want to proceed?"
+    }
+  },
+  "notification": {
+    "failure": {
+      "general": "An error has occured. Please try again later."
+    },
+    "success": {
+      "saved": "Dashboard successfully saved"
+    }
+  },
+  "placeholder": {
+    "chart-title": "Untitled Chart",
+    "dashboard-dropdown": "Select Dashboard",
+    "dashboard-name": "Untitled Dashboard",
+    "drop_target": "Drop values here to create a graph",
+    "no-series": "No graph selected",
+    "search": "Search Workloads or Planning Units",
+    "type-dropdown": "Select Type"
+  },
+  "table": {
+    "timestamp": "Timestamp"
+  },
+  "tooltip": {
+    "copied": "Data copied to clipboard",
+    "datepicker": {
+      "rolling-dates": "Selecting this checkbox will move the selected date / range by +1 day every day"
+    },
+    "no-data": "No data in this date range",
+    "version-mismatch": "The data is calculated now, reload the page to view it.",
+    "toggle-auto-refresh": "Refresh data automatically every 15 mins",
+    "not-existing": "This workload does not exist anymore. Delete or replace it by editing the dashboard.",
+    "no-permission": "You do not have permissions to view this data.",
+    "no-business-hours": "No Business Hours available"
+  },
+  "hint": {
+    "auto-refresh-enabled": "Auto-Refresh activated"
+  },
+  "values": {
+    "planning-unit": {
+      "coverage": "Coverage",
+      "requirement": "Requirement",
+      "staffing": "Staffing"
+    },
+    "shift": {
+      "coverage_including_wishes": "Coverage Including Requests",
+      "wishes": "Requests"
+    },
+    "workload": {
+      "aht": "AHT {{channel}}",
+      "answered": "Answered {{channel}}",
+      "channel": {
+        "calls": "Calls",
+        "cases": "Cases",
+        "chats": "Chats",
+        "documents": "Documents",
+        "social_media": "Social Media",
+        "emails": "Emails"
+      },
+      "forecast": "Forecast",
+      "offered": "Offered {{channel}}",
+      "operational": "Operational",
+      "strategic": "Strategic",
+      "total_handling_time": "Total Handling Time",
+      "abandon_rate": "Abandon Rate",
+      "abandoned": "Abandoned {{channel}}",
+      "answered_within_service_level": "Answered {{channel}} Within Service Level",
+      "average_speed_of_answered": "Average Speed Of Answer",
+      "import": "Import",
+      "service_level_historical": "Service Level",
+      "waiting_time_until_answered": "Waiting Time Until Answered"
+    }
+  },
+  "document_title": {
+    "module": "Dashboards"
+  }
+}

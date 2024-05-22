@@ -1,0 +1,301 @@
+{
+  "common": {
+    "planningUnit": {
+      "no-data": "Keine Einträge",
+      "label": "Planungseinheit",
+      "placeholder": "Suchen oder auswählen"
+    },
+    "selection": {
+      "no-data": "Keine Einträge",
+      "label": "Auswahl",
+      "placeholder": "Suchen oder auswählen"
+    },
+    "employee": {
+      "no-data": "Keine Daten",
+      "label": "Agent",
+      "placeholder": "Suchen oder auswählen"
+    },
+    "search": {
+      "label": "Suche",
+      "placeholder": "Suche nach Name"
+    },
+    "label": {
+      "today": "Heute",
+      "yesterday": "Gestern"
+    }
+  },
+  "table": {
+    "loading": "Lädt",
+    "no-results-header": "Keine Ergebnisse gefunden.",
+    "no-results-body": "Es wurden keine Mitarbeiter gefunden",
+    "no-filter-specified-header": "Nichts ausgewählt",
+    "no-filter-specified-body": "Wähle zuerst eine Planungseinheit oder Auswahl aus, um die Adherence Deiner Mitarbeiter zu sehen.",
+    "header": {
+      "show-only-out-of-adherence": "Nur Planabweichungen anzeigen"
+    },
+    "column": {
+      "name": "Name",
+      "actual-activity": "Tatsächliche Aktivität",
+      "scheduled-activity": "Geplante Aktivität",
+      "out-of-adherence-duration": "Abweichungsdauer",
+      "current-activity-duration": "Aktuelle Aktivitätsdauer",
+      "status": "Status"
+    },
+    "adherence-status-display": {
+      "notPresent": "Nicht Anwesend",
+      "notPresentOutOfBufferTime": "Nicht Anwesend",
+      "notScheduled": "Nicht Geplant",
+      "notScheduledOutOfBufferTime": "Nicht Geplant",
+      "wrongActivity": "Falsche Aktivität",
+      "wrongActivityOutOfBufferTime": "Falsche Aktivität"
+    },
+    "adherence-status": {
+      "notPresent": "Nicht Anwesend (in Planabweichung)",
+      "notPresentInBufferTime": "Nicht Anwesend (in Toleranzzeit)",
+      "notPresentOutOfBufferTime": "Nicht Anwesend (in Planabweichung)",
+      "notScheduled": "Nicht Geplant (in Planabweichung)",
+      "notScheduledInBufferTime": "Nicht Geplant (in Toleranzzeit)",
+      "notScheduledOutOfBufferTime": "Nicht Geplant (in Planabweichung)",
+      "wrongActivity": "Falsche Aktivität (in Planabweichung)",
+      "wrongActivityInBufferTime": "Falsche Aktivität (in Toleranzzeit)",
+      "wrongActivityOutOfBufferTime": "Falsche Aktivität (in Planabweichung)",
+      "inAdherence": "Plankonform"
+    },
+    "staff-id": "Personalnummer",
+    "pin-agent": "Agent anheften",
+    "unpin-agent": "Anheftung entfernen"
+  },
+  "adherence-score": {
+    "header": "Abweichung",
+    "connection-state": {
+      "disconnected": "Verbindung unterbrochen",
+      "live": "Live"
+    },
+    "agents-in-adherence": "Plankonform",
+    "agents-in-buffer-time": "in Toleranzzeit",
+    "agents-out-of-adherence": "in Planabweichung",
+    "last-updated": "Letzte Aktualisierung {{lastUpdatedAt}}",
+    "today-so-far": "Bisheriger Tag"
+  },
+  "activity-overview": {
+    "header": "Aktivitätsübersicht",
+    "column": {
+      "activity": "Aktivität",
+      "scheduled": "Geplant",
+      "current": "Tatsächlich",
+      "delta": "Deckung",
+      "score": "Adherence",
+      "breaks": "Pausen",
+      "presence": "Anwesenheit"
+    },
+    "label": {
+      "actual": "Tatsächlich",
+      "planned": "Geplant",
+      "difference": "Abweichung",
+      "add-activity-to-search": "Aktivität {{activityName}} zur Suche hinzufügen",
+      "view-matches-for-activity": "Matches für Aktivität {{activityName}} anzeigen",
+      "edit-matches-for-activity": "Matches für Aktivität {{activityName}} bearbeiten",
+      "no-acd-mapping-for-activity": "Für die Aktivität {{activityName}} existiert keine Verknüpfung mit einem Externen System."
+    },
+    "agent-overview": "Agentenübersicht"
+  },
+  "notification": {
+    "connection": {
+      "reconnecting": "Die Verbindung wurde unterbrochen. Wir versuchen, sie automatisch wieder herzustellen...",
+      "offline": "Die Wiederherstellung der Verbindung ist fehlgeschlagen. Bitte versuchen Sie es in ein paar Minuten erneut.",
+      "session-invalid": "Du wurdest abgemeldet. Du kannst dich <0>hier</0> erneut anmelden.",
+      "label": {
+        "login-link": "Zur Anmeldung"
+      }
+    },
+    "failure": {
+      "general": "Ein Fehler ist aufgetreten. Bitte versuche es später erneut.",
+      "agent-details": "Ein Problem beim Laden der Mitarbeiterdetails ist aufgetreten. Bitte <0>versuche es erneut</0>."
+    },
+    "success": {
+      "threshold-settings": "Änderungen an den Toleranzzeiten wurden gespeichert."
+    }
+  },
+  "input": {
+    "omni-search": {
+      "placeholder": "Nach Name, Personalnummer, Aktivität und Status suchen",
+      "tooltip": "Suchbegriffe (mit mindestens zwei Zeichen) komma-separiert eingeben"
+    }
+  },
+  "settings": {
+    "buffer-times": {
+      "header-edit": "Toleranzzeiten anpassen",
+      "header-view": "Toleranzzeiten anzeigen",
+      "readonly-message": "Du hast nicht die Berechtigung, diese Werte anzupassen.",
+      "hint": "Agenten werden hervorgehoben, wenn ihre aktuelle Abweichungsdauer die Toleranzzeit überschritten hat. Diese Einstellung ist global und gilt für alle Nutzer.",
+      "apply": "Anwenden",
+      "applying": "Anwenden...",
+      "cancel": "Abbrechen",
+      "close": "Schließen",
+      "placeholder": "Suchen oder auswählen",
+      "no-data": "Keine Einträge",
+      "load-failed": "Die Daten konnten nicht geladen werden, bitte versuche es später erneut.",
+      "update-failed": "Die Daten konnten nicht gespeichert werden, bitte versuche es später erneut.",
+      "threshold": {
+        "instantly": "Sofort",
+        "15-seconds": "15 Sekunden",
+        "30-seconds": "30 Sekunden",
+        "1-minute": "1 Minute",
+        "2-minutes": "2 Minuten",
+        "3-minutes": "3 Minuten",
+        "5-minutes": "5 Minuten"
+      }
+    },
+    "adjust-target-score": {
+      "header": "Zielwert für die Planeinhaltung anpassen",
+      "label": "Lege den Zielwert für die Planeinhaltung fest:",
+      "description": "Damit legst Du ein Planeinhaltungsziel fest. Wenn die tatsächliche Planeinhaltung unter den Zielwert fällt, färbt sich der Zielwert rot."
+    }
+  },
+  "matches": {
+    "label": {
+      "header-edit": "Aktivitäts-Matches",
+      "header-view": "Aktivitäts-Matches anzeigen",
+      "additional-matching-activities": "Zusätzliche Aktivitäts-Matches",
+      "no-activity-selected": "Keine Aktivität ausgewählt",
+      "no-activity-selected-sub": "Eine Aktivität auswählen, um Matches zu bearbeiten",
+      "all-type": "Jede vom Typ",
+      "add-activity": "Aktivität {{activityName}} zu Matches hinzufügen",
+      "add-activity-type": "Aktivitätstyp {{activityType}} zu Matches hinzufügen",
+      "remove-activity": "Aktivität {{activityName}} von Matches entfernen",
+      "remove-activity-type": "Aktivitätstyp {{activityType}} von Matches entfernen",
+      "type": "Typ",
+      "manage-activities": "Aktivitäts-Matches bearbeiten",
+      "external-system-mappings": "Mappings von Externen Systemen",
+      "manage": "In Intraday bearbeiten",
+      "include-unmapped-activities": "Nur Aktivitäten mit Mappings anzeigen",
+      "no-acd-mappings": "Keine Mappings eingerichtet",
+      "no-activity-matches": "Keine zusätzlichen Matches",
+      "activity-mappings": "Zuordnung externer Status"
+    },
+    "link": {
+      "back-to-adherence": "Zurück zu Adherence"
+    },
+    "placeholder": {
+      "search-activity": "Nach Aktivitätsname suchen",
+      "search-activity-name-or-type": "Nach Aktivitätsname oder -typ suchen"
+    },
+    "button": {
+      "apply": "Anwenden",
+      "applying": "Anwenden...",
+      "cancel": "Abbrechen"
+    },
+    "activityType": {
+      "present": "Anwesenheit",
+      "holiday": "Urlaub",
+      "break": "Pause",
+      "absence": "Abwesenheit",
+      "meeting": "Meeting",
+      "illness": "Krankheit"
+    },
+    "notification": {
+      "success": {
+        "manage-activities": "Änderungen wurden erfolgreich übernommen"
+      },
+      "error": {
+        "manage-activities": "Beim Speichern ist ein Fehler aufgetreten, bitte versuche es erneut"
+      }
+    }
+  },
+  "heading": {
+    "intraday-adherence": "Intraday Adherence",
+    "real-time-adherence": "Echtzeit Adherence"
+  },
+  "info": {
+    "activity": {
+      "offline": "Diese Aktivität wird für Agenten genutzt, die keinen ACD-Status haben"
+    }
+  },
+  "label": {
+    "activity": {
+      "no-scheduled": "Keine geplante Aktivität",
+      "offline": "Offline"
+    },
+    "agent-details": {
+      "schedule": "Plan",
+      "retry": "Erneut versuchen",
+      "actual": "Tatsächlich",
+      "insights-heading": "Detail-Ansicht der Planabweichungen"
+    },
+    "business-hours": "Öffnungszeiten",
+    "close-agent-details": "Close agent details",
+    "highcharts": {
+      "decimal-point": ",",
+      "reset-zoom": "Zoom zurücksetzen"
+    },
+    "scheduled-time": "Geplant",
+    "adherence-status": {
+      "notPresent": "Nicht Anwesend",
+      "notScheduled": "Nicht Geplant",
+      "wrongActivity": "Falsche Aktivität"
+    },
+    "return-to-agent-details": "Zurück zu den Mitarbeiterdetails",
+    "timezoneInfo": "Alle Zeiten in: ({{timezoneOffset}}) {{timezoneName}}",
+    "quarterly-adherence": "15-minütiger Durchschnitt",
+    "average-adherence": "Tagesaktueller Durchschnitt"
+  },
+  "historical-adherence": {
+    "column": {
+      "score": "Adherence"
+    },
+    "pagination": {
+      "current-page": "Aktuelle Seite",
+      "page": "Seite",
+      "ellipsis": "Ellipsis",
+      "previous-page": "Vorherige Seite",
+      "next-page": "Nächste Seite",
+      "previous-month": "Vorheriger Monat",
+      "next-month": "Nächster Monat",
+      "previous-day": "Vorheriger Tag",
+      "next-day": "Nächster Tag"
+    },
+    "error": {
+      "reload_resource": "Es ist ein Fehler aufgetreten. Versuche, <0>{{resource}}</0> neu zu laden, oder probiere es später noch einmal.",
+      "no-data": "Für den ausgewählten Tag sind keine Daten zur Planeinhaltung verfügbar. Eventuell wurde eine Integration pausiert. Bitte wende dich an einen Mitarbeiter mit Admin-Zugriff."
+    },
+    "chart": {
+      "targetScore": "Zielwert"
+    },
+    "reload_adherence": "Adherence neu laden",
+    "adherence": "Adherence",
+    "agent-details": {
+      "heading": "Agent Intraday Adherence",
+      "table": {
+        "heading": "Planabweichungsdetails",
+        "column": {
+          "time-range": {
+            "label": "Zeitraum"
+          }
+        }
+      },
+      "no-filter-specified-body": "Wähle zuerst eine Planungseinheit und einen Mitarbeiter aus, um die Planeinhaltung zu sehen.",
+      "daily-overview": {
+        "header": "Tagesübersicht",
+        "no-score": "Kein Zielwert"
+      },
+      "edit-actual-activities": {
+        "button": {
+          "label": "Tatsächliche Aktivitäten bearbeiten"
+        }
+      }
+    },
+    "report": {
+      "button_cancel": "Abbrechen",
+      "button_download": "Report herunterladen",
+      "button_open": "Report herunterladen",
+      "date_range_label": "Datumsbereich für den Report",
+      "modal_content": "Der Planeinhaltungs-Report (CSV-Datei) enthält detaillierte Daten zur Einhaltung der geplanten Arbeitszeiten und Aktivitäten.",
+      "modal_title": "Report herunterladen",
+      "toast_success": "Der Download beginnt in wenigen Sekunden."
+    }
+  },
+  "unknown_activity": {
+    "name": "Aktivität unbekannt",
+    "type": "Typ unbekannt"
+  }
+}

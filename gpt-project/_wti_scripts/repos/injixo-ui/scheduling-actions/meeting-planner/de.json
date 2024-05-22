@@ -1,0 +1,526 @@
+{
+  "label": {
+    "planning-unit": "Planungseinheit",
+    "button": {
+      "add_availability": "Tag und Zeitspanne hinzufügen",
+      "proposal": "Termine vorschlagen",
+      "create-new-1on1": "Einzeltermine anlegen",
+      "back-to-main": "Zurück zum Überblick",
+      "cancel": "Abbrechen",
+      "meeting-proposal": "Meeting Termine vorschlagen"
+    },
+    "day": "Tag",
+    "heading": {
+      "employee-section": "Teilnehmer ({{amountSelected}}/{{amountTotal}} ausgewählt)",
+      "configure-meeting-participants": "Der Termin findet statt zwischen:",
+      "meeting-host": "Gastgeber",
+      "one-on-one-meeting": "Einzeltermine anlegen",
+      "participant": "Teilnehmer",
+      "participant-selection": "Erstelle individuelle Termine mit",
+      "settings": "Eckdaten",
+      "available-proposals": "Erzeugte Vorschläge",
+      "configure-group-meetings-participants": "Die Gruppentermine finden statt zwischen",
+      "configure-session-participants": "Self-learning Sessions werden geplant für:",
+      "group-meeting": "Gruppentermine anlegen",
+      "group-meeting-card": "Gruppentermine",
+      "group-meetings-host-selection": "Verfügbarkeit des Gastgebers",
+      "group-meetings-participant-selection": "Weise die Teilnehmer den Gruppenterminen zu",
+      "group-meetings-results": "Ergebnisse - Gruppentermine",
+      "one-on-one-meeting-card": "1:1-Meetings",
+      "one-on-one-results": "Ergebnisse - 1:1-Meetings",
+      "optional-settings": "Optionale Eckdaten",
+      "pending-proposals": "Vorschläge in Bearbeitung",
+      "self-learning": "Self-learning Sessions anlegen",
+      "self-learning-meeting-card": "Self-learning Sessions",
+      "self-learning-results": "Ergebnisse - Self-learning Sessions"
+    },
+    "from": "Von",
+    "loading": "Lädt",
+    "no-employees": {
+      "caption": "Keine Mitarbeiter",
+      "empty-planning-unit": "Du kannst noch keine Meetings planen, da es für die ausgewählte Planungseinheit keine Mitarbeiter gibt.",
+      "no-planning-unit": "Du kannst noch keine Meetings planen, da keine Planungseinheit ausgewählt wurde.",
+      "empty-planning-unit-and-employee-filter": "Du kannst noch keine Meetings planen, da es für die ausgewählte Planungseinheit und Mitarbeiterfilter keine Mitarbeiter gibt.",
+      "empty-planning-unit-and-selection": "Du kannst noch keine Meetings planen, da es für die ausgewählte Planungseinheit und Auswahl keine Mitarbeiter gibt."
+    },
+    "no-entries": "Keine Einträge",
+    "team-leader": {
+      "availability": "Verfügbarkeit des Gastgebers"
+    },
+    "timespan": "Zeitspanne hinzufügen",
+    "to": "Bis",
+    "weekday": {
+      "all_weekdays": "Montag bis Freitag",
+      "friday": "Freitag",
+      "monday": "Montag",
+      "saturday": "Samstag",
+      "sunday": "Sonntag",
+      "thursday": "Donnerstag",
+      "tuesday": "Dienstag",
+      "wednesday": "Mittwoch",
+      "all_days": "Montag bis Sonntag",
+      "monday_to_saturday": "Montag bis Samstag"
+    },
+    "meeting-type": "Zu planende Aktivität",
+    "no-activities": {
+      "caption": "Keine Aktivitäten",
+      "details": "Um Termine anlegen zu können, benötigst Du Aktivitäten vom Typ Meeting."
+    },
+    "no-data": {
+      "caption": "Du bist noch nicht ganz bereit, um Meetings nutzen zu können.",
+      "details": "Meetings hilft Dir, den besten Zeitslot für Deine Termine zu finden. Dabei wird die er Verfügbarkeiten und die Besetzung beachtet. Um Meetings benutzen zu können, benötigst Du mindestens eine Planungseinheit, Mitarbeiter, eine gültige Planungsperiode und Meetingaktivitäten."
+    },
+    "proposed-time-span": "Vorgeschlagener Termin",
+    "with-agent": "Teilnehmer",
+    "form-error": {
+      "no-participants": "Es sind keine Teilnehmer ausgewählt. Wähle mindestens einen Teilnehmer aus."
+    },
+    "infeasible_instance": "Es existieren keine Terminvorschläge, die Deinen Anforderungen entsprechen.",
+    "no-meetings-proposed": "Keine Terminvorschläge möglich",
+    "collapsible-content": {
+      "auto-group-meeting-error": "Aufgrund eines Fehlers konnten keine Vorschläge erzeugt werden. Bitte versuche erneut, Gruppentermine zu erstellen.",
+      "one-on-one-error": "Aufgrund eines Fehlers konnten keine Vorschläge erzeugt werden. Bitte versuche erneut, 1:1-Meetings zu erstellen.",
+      "problem": "Problem",
+      "self-learning-error": "Aufgrund eines Fehlers konnten keine Vorschläge erzeugt werden. Bitte versuche erneut, Self-learning Sessions zu erstellen."
+    },
+    "collapsible-heading": "Konflikt anzeigen",
+    "collapsible-heading-action-request": "Aktion erforderlich",
+    "collapsible-heading-conflict": "Konflikt anzeigen",
+    "collapsible-heading-error": "Fehler anzeigen",
+    "action-request": {
+      "host-written-but-employee-participants-failed": "Das Meeting wurde in den Plan des Gastgebers eingetragen, konnte aber aufgrund von Konflikten nicht für die Teilnehmer geplant werden. Du solltest das Meeting manuell aus dem Plan des Gastgebers löschen und versuchen, ein neues Meeting für die betroffenen Teilnehmer zu erstellen.",
+      "host-written-but-participant-failed": "Der Termin wurde zum Schichtplan des Gastgebers hinzugefügt, konnte aber aufgrund eines Terminkonflikts eines Teilnehmers nicht geplant werden. Entferne den Eintrag manuell aus dem Plan des Gastgebers und richte einen neuen Termin ein."
+    },
+    "activity": "Zu planende Aktivität",
+    "aria-enhancement": {
+      "input": "Eingabe",
+      "dropdown": "dropdown"
+    },
+    "conflict-message": {
+      "all-participants-failed-warning": "Es ist ein Fehler beim Speichern des Meetings für den Teilnehmer aufgetreten, daher konnte es nicht geplant werden. Versuche für die betroffenen Teilnehmer ein neues Meeting zu erstellen.",
+      "check-paid-configuration": "Überprüfe, ob deine Aktivitäten für die Eigenschaft \"bezahlt\" richtig konfiguriert sind",
+      "competing_employees": {
+        "intro": "Es gibt einige Mitarbeiter, die um die gleichen Meetingtermine mit dem Gastgeber konkurrieren."
+      },
+      "competing_employees_day_limit": {
+        "intro": "Die maximale Anzahl an Meetings pro Tag lässt nicht genügend Zeitfenster für alle Mitarbeiter zu."
+      },
+      "decrease-date-range": "Verkleinere den gewählten Zeitraum",
+      "decrease-gap-length": "Reduziere den erforderlichen Mindestabstand zwischen den Terminen",
+      "failed-to-write-host": "Es gab einen Fehler beim Schreiben des Termins in den Plan des Gastgebers, daher konnte der Termin nicht geplant werden. Du solltest versuchen, einen neuen Termin für den betroffenen Teilnehmer einzurichten.",
+      "host-failed-warning": "Es ist ein Fehler beim Speichern des Meetings für den Gastgeber aufgetreten, daher konnte es nicht geplant werden. Versuche für die betroffenen Teilnehmer ein neues Meeting zu erstellen.",
+      "host-written-but-participant-failed": "Es gab einen Fehler beim Schreiben des Termins in den Plan des Teilnehmers, daher konnte der Termin nicht geplant werden.",
+      "increase-corridors": "Verlängere die möglichen Zeitfenster",
+      "increase-daily-meeting-limit": "Erhöhe die Anzahl der maximal möglichen Meetings pro Tag",
+      "increase-date-range": "Verlängere den Zeitraum",
+      "increase-meeting-host-availibility": "Erhöhe die Verfügbarkeit des Gastgebers",
+      "insufficient-distinguished-meeting-slots-for-meetings": {
+        "intro": "Es gibt nicht genügend Zeitfenster, um die geforderte Anzahl an Meetings mit entsprechender Länge zu planen. Versuche folgende Lösungsvorschläge:"
+      },
+      "insufficient-number-of-meetings-due-to-day-limit": {
+        "intro": "Die maximale Anzahl der Meetings pro Tag ist zu klein, um für alle Mitarbeiter Meetings im gewählten Zeitraum zu platzieren."
+      },
+      "insufficient_distinguished_meeting_slots": {
+        "intro": "Es gibt nicht genügend Zeitfenster, um für alle Mitarbeiter Termine mit der erforderlichen Dauer zu planen. Um dies zu beheben, versuche einige der folgenden Punkte:"
+      },
+      "intro": "Der Gastgeber hat nicht genügend Verfügbarkeiten, um alle beantragten Termine wahrzunehmen. Um dies zu beheben, versuche einige der folgenden Punkte:",
+      "meeting-written-but-participation-failed-warning": "Es ist ein Fehler beim Speichern des Meetings für den Teilnehmer aufgetreten. Versuche das Meeting manuell in den Plan einzutragen. ",
+      "no-meeting-distribution-with-gap-length": {
+        "intro": "Der Gastgeber hat nicht genügend Verfügbarkeiten, um alle beantragten Termine mit dem erforderlichen Mindestabstand wahrzunehmen. Um dies zu beheben, versuche einige der folgenden Punkte:"
+      },
+      "no-overwritable-activity-paid-unpaid": {
+        "intro": "Für deine gewählte Aktivität vom Typ Meeting gibt es keine Aktivitäten in deinem Plan die wir überschreiben können ohne dabei die wöchentliche Arbeitszeit deiner Mitarbeiter zu verändern."
+      },
+      "not-solved": {
+        "intro": "Die Berechnung optimaler Vorschläge für die angeforderten Termine ist zu komplex und konnte nicht innerhalb des Zeitlimits abgeschossen werden. Versuche folgende Lösungsvorschläge:"
+      },
+      "outro": "Stelle außerdem sicher, dass Aktivitäten, die ersetzt werden sollten, als ersetzbar definiert sind.",
+      "reduce-number-of-meetings": "Reduziere die Anzahl der Meetings",
+      "reduce-participants": "Reduziere die Teilnehmer",
+      "too-small-daily-meeting-limit-host": {
+        "intro": "Der Gastgeber kann wegen der gewählten Anzahl maximaler Meetings pro Tag nicht an allen Meetings im gewählten Zeitraum teilnehmen."
+      }
+    },
+    "coverage-disclaimer": "Die Deckung wurde beim Erstellen der Terminvorschläge berechnet. Die Werte werden nicht automatisch aktualisiert. Wenn sich der Termin über mehrere Intervalle erstreckt, wird für jedes Intervall ein Wert angezeigt.",
+    "coverage-threshold": "Erlaube Termine nur in Zeiträumen mit einer Deckung von mindestens:",
+    "date-range-picker": "Zeitraum",
+    "employee-section": {
+      "employee-filter": "Mitarbeiterfilter",
+      "filter-by": "Filtern nach",
+      "selection": "Auswahl"
+    },
+    "excluded": "Herausgenommen",
+    "failed": "Fehlgeschlagen",
+    "gap-length": "Pause",
+    "group-meeting-assignment": "Termin",
+    "group-meeting-info": "Termin {{count}}",
+    "group-meeting-tabs": "Termin",
+    "group-meetings-proposed_one": "1 Terminvorschlag",
+    "group-meetings-proposed_zero": "0 Terminvorschläge",
+    "group-meetings-proposed_other": "{{count}} Terminvorschläge",
+    "group-meetings-will-be-scheduled_one": "1 ausgewählter Termin wird geplant",
+    "group-meetings-will-be-scheduled_zero": "0 ausgewählte Termine werden geplant",
+    "group-meetings-will-be-scheduled_other": "{{count}} ausgewählte Termine werden geplant",
+    "impact-on-coverage": "Geänderte Deckung",
+    "info": {
+      "group-meeting-card": "Plane Gruppentermine für Deine Mitarbeiter mit oder ohne Gastgeber.",
+      "one-on-one-meeting-card": "Plane 1:1-Meetings zwischen Mitarbeitern und ihren Teamleitern.",
+      "self-learning-meeting-card": "Plane individuelle Trainingssessions für Deine Mitarbeiter."
+    },
+    "information-for-meeting": {
+      "manually-excluded": "Manuell von der Planung herausgenommen"
+    },
+    "limit-meeting-number": "Beschränke die Anzahl der Meetings pro Tag auf maximal",
+    "limit-meetings": "Beschränke die Anzahl der Meetings pro Tag auf maximal:",
+    "limit-sessions": "Beschränke für jeden Teilnehmer die Anzahl der Sessions pro Tag auf maximal:",
+    "limit-sessions-after-input": "pro Teilnehmer",
+    "limit-sessions-before-input": "Beschränke die Anzahl der Sessions pro Tag auf maximal",
+    "maintenance": {
+      "caption": "Wir verbessern momentan Meetings",
+      "details": "Aktuell wird eine notwendige Wartung durchgeführt. Für eventuelle Unannehmlichkeiten entschuldigen wir uns. Meetings sollte in wenigen Minuten wieder verfügbar sein. Wir danken Dir für Deine Geduld!"
+    },
+    "meeting-host-disclaimer": "Meetings werden derzeit nicht in den Plan des Gastgebers übernommen.",
+    "meeting-host": {
+      "employee": "Mitarbeiter auswählen",
+      "employee-helper": "Die Verfügbarkeit des Gastgebers ergibt sich aus dessen Schichtplan.",
+      "employee-selection": "Mitarbeiter",
+      "manually": "Manuell eingeben",
+      "manually-helper": "Wenn der Gastgeber nicht über injixo geplant wird.",
+      "timezone-helper": "Alle Zeitangaben beziehen sich auf die Zeitzone der Planungseinheit."
+    },
+    "meeting-length": "Meetinglänge",
+    "meeting-limit": "Meeting Limit",
+    "meeting-not-scheduled": "1 Termin konnte nicht angelegt werden",
+    "meeting-scheduled": "1 Termin wurde angelegt",
+    "meetings-not-scheduled": "{{count}} Termine konnten nicht angelegt werden",
+    "meetings-scheduled": "{{count}} Termine wurden angelegt",
+    "no-proposals": {
+      "caption": "Keine Vorschläge",
+      "details": "Wenn die Vorschläge erzeugt wurden, werden sie hier angezeigt."
+    },
+    "no-requests": {
+      "caption": "Keine Vorschläge",
+      "details": "Die Vorschläge werden hier aufgelistet, während sie in Bearbeitung sind."
+    },
+    "one-on-one-gap-length": "Plane eine Pause zwischen einzelnen Meetings:",
+    "one-on-one-gap-length-after-dropdown": "zwischen einzelnen Meetings",
+    "one-on-one-gap-length-before-dropdown": "Plane eine Pause von mindestens",
+    "one-on-one-meeting-proposed": "1 Terminvorschlag",
+    "one-on-one-meeting-will-be-scheduled": "1 ausgewählter Termin wird geplant",
+    "one-on-one-meetings-proposed": "{{count}} Terminvorschläge",
+    "one-on-one-meetings-will-be-scheduled": "{{count}} ausgewählte Termine werden geplant",
+    "proposal-not-possible": "Nicht möglich",
+    "proposal-pending": "Vorschlag wird erstellt...",
+    "replaced-activities": "Ersetzte Aktivität",
+    "resolvable-precheck": {
+      "affected-employees": "Betroffene Mitarbeiter:",
+      "competing-employees": {
+        "reason": "Es war nicht möglich für diese Mitarbeiter Meetings zu platzieren, da sie mit den vorgeschlagenen Meetings für andere Mitarbeiter in Konflikt standen."
+      },
+      "conflicts-with-other-participants": {
+        "reason": "Diese Mitarbeiter sind zum bestmöglichen Termin ihrer Gruppe nicht verfügbar.",
+        "solution": "Stelle sicher, dass es ein Zeitfenster gibt in dem alle Mitarbeiter zur Verfügung stehen oder weise die Mitarbeiter einer anderen Gruppe zu."
+      },
+      "coverage-threshold-not-satisfied": {
+        "reason": "Diese Mitarbeiter haben keinen Einzeltermin, da es nicht möglich war einen Plan mit mehr Einzelterminen zu finden bei dem die Mindestdeckung eingehalten wird.",
+        "solution": "Stelle eine neue Meeting Anfrage mit einer niedrigeren Mindestdeckung."
+      },
+      "label": {
+        "resolvable-precheck": {
+          "competing-employees": {
+            "solution": "Versuche das Meeting zwischen dem Mitarbeiter und dem Gastgeber in einem größeren Zeitraum zu planen oder versuche es mit weniger anderen Mitarbeitern."
+          }
+        }
+      },
+      "no-overwritable-paid-unpaid-slot": {
+        "reason": "Für diese Mitarbeiter ist es nicht möglich einen Termin zu platzieren, ohne dabei ihre wöchentliche Arbeitszeit zu verändern.",
+        "solution": "Überprüfe, ob die Konfiguration deiner Aktivitäten (Eigenschaft: \"bezahlt\") korrekt ist. Du kannst außerdem versuchen den Zeitraum deiner Anfrage zu erweitern."
+      },
+      "no-present-activities-group-meeting": {
+        "reason": "Diese Mitarbeiter haben nicht genügend Aktivitäten vom Typ Anwesenheit in ihrem Plan, um einen Termin mit der erforderlichen Dauer zu planen.",
+        "solution": "Stelle sicher, dass der Plan dieser Mitarbeiter Aktivitäten vom Typ Anwesenheit enthält, verkürze die Dauer des Termins oder verlängere den Zeitraum."
+      },
+      "no-present-activities-overlapping-with-meeting-host": {
+        "reason": "Diese Mitarbeiter haben nicht genügend Aktivitäten vom Typ Anwesenheit in ihrem Plan, die sich mit der Verfügbarkeit des Gastgebers überschneiden. ",
+        "solution": "Stelle sicher, dass der Plan dieser Mitarbeiter Aktivitäten vom Typ Anwesenheit enthält, erhöhe die Verfügbarkeit des Gastgebers oder vergrößere den Zeitraum."
+      },
+      "no-present-activities-self-learning": {
+        "reason": "Diese Mitarbeiter haben nicht genügend Aktivitäten vom Typ Anwesenheit in ihrem Plan, um die Self-learning Sessions im angegebenen Zeitraum zu erledigen.",
+        "solution": "Stelle sicher, dass die Schichten der Mitarbeiter Aktivitäten vom Typ Anwesenheit enthalten und prüfe, ob Du das Zeitfenster erweitern kannst oder die Pausenlänge oder die maximale Anzahl an Tagen verringern kannst."
+      },
+      "no-present-activities-with-allowed-intervals-group-meeting": {
+        "reason": "Diese Mitarbeiter haben nicht genügend Aktivitäten vom Typ Anwesenheit in ihrem Plan, die sich mit den konfigurierten Zeitspannen überschneiden.",
+        "solution": "Stelle sicher, dass der Plan dieser Mitarbeiter Aktivitäten vom Typ Anwesenheit enthält, erhöhe die Anzahl der konfigurierten Zeitspannen oder vergrößere den Zeitraum."
+      },
+      "no-present-activities-with-meeting-host-group-meeting": {
+        "reason": "Diese Mitarbeiter haben nicht genügend Aktivitäten vom Typ Anwesenheit in ihrem Plan, die sich mit der Verfügbarkeit des Gastgebers überschneiden.",
+        "solution": "Stelle sicher, dass der Plan dieser Mitarbeiter Aktivitäten vom Typ Anwesenheit enthält, erhöhe die Verfügbarkeit des Gastgebers oder vergrößere den Zeitraum."
+      },
+      "no-present-activities": {
+        "reason": "Diese Mitarbeiter haben nicht genügend Aktivitäten vom Typ Anwesenheit in ihrem Plan, um einen Termin mit der erforderlichen Dauer zu planen.",
+        "solution": "Stelle sicher, dass der Plan dieser Mitarbeiter Aktivitäten vom Typ Anwesenheit enthält oder verkürze die Dauer des Termins."
+      },
+      "no-replaceable-activities-group-meeting": {
+        "reason": "Diese Mitarbeiter haben nicht genügend ersetzbare Aktivitäten in ihrem Plan, um einen Termin mit der erforderlichen Dauer zu planen.",
+        "solution": "Stelle sicher, dass der Plan dieser Mitarbeiter Aktivitäten enthält, die ersetzbar sind oder verkürze die Dauer des Termins."
+      },
+      "no-replaceable-activities-overlapping-with-allowed-intervals-group-meeting": {
+        "reason": "Es gibt nicht genügend sich überschneidende Zeitfenster für diese Mitarbeiter und die eingestellten möglichen Zeiträume, um einen Termin mit der erforderlichen Dauer zu planen.",
+        "solution": "Erhöhe die konfigurierten Zeitfenster oder verkürze die Dauer des Termins."
+      },
+      "no-replaceable-activities-overlapping-with-meeting-host-group-meeting": {
+        "reason": "Es gibt nicht genügend sich überschneidende Zeitfenster für diese Mitarbeiter und den Gastgeber, um einen Termin mit der erforderlichen Dauer zu planen.",
+        "solution": "Erhöhe die Verfügbarkeit des Gastgebers oder verkürze die Dauer des Termins."
+      },
+      "no-replaceable-activities-overlapping-with-meeting-host": {
+        "reason": "Es gibt nicht genügend sich überschneidende Zeitfenster für diese Mitarbeiter und den Gastgeber, um einen Termin mit der erforderlichen Dauer zu planen.",
+        "solution": "Erhöhe die Verfügbarkeit des Gastgebers oder verkürze die Dauer des Termins."
+      },
+      "no-replaceable-activities-self-learning": {
+        "reason": "Diese Mitarbeiter haben nicht ausreichend ersetzbare Aktivitäten in ihren Schichten, um alle Self-learning Sessions in dem gewünschten Zeitfenster zu beenden.",
+        "solution": "Stelle sicher, dass die Schichten der Mitarbeiter ersetzbare Aktivitäten enthalten und prüfe, ob Du das Zeitfenster erweitern kannst oder die Pausenlänge oder die maximale Anzahl an Tagen verringern kannst."
+      },
+      "no-replaceable-activities": {
+        "reason": "Diese Mitarbeiter haben nicht genügend ersetzbare Aktivitäten in ihrem Plan, um einen Termin mit der erforderlichen Dauer zu planen.",
+        "solution": "Stelle sicher, dass der Plan dieser Mitarbeiter Aktivitäten enthält, die ersetzbar sind oder verkürze die Dauer des Termins."
+      },
+      "no-session-distribution": {
+        "reason": "Es ist nicht möglich, für diese Mitarbeiter alle Sessions in dem gewünschten Zeitfenster zu planen.",
+        "solution": "Überprüfe, ob Du den Zeitrahmen verlängern, die Pausen zwischen den Sessions verkürzen oder das Sessionlimit pro Tag erhöhen kannst."
+      },
+      "reason": "Grund:",
+      "solution": "Mögliche Lösung:",
+      "not-enough-common-participants": {
+        "reason": "Es gibt keine passenden Zeiträume in den Plänen dieser Mitarbeiter, an denen ein Termin mit genügend anderen Mitarbeitern möglich ist.",
+        "solution": "Stelle sicher, dass die Schichten der Mitarbeiter ersetzbare Aktivitäten enthalten und prüfe, ob Du das Zeitfenster erweitern kannst."
+      }
+    },
+    "scheduled": "Angelegt",
+    "scheduled-time-span": "Geplanter Termin",
+    "self-learning-session-proposed": "1 Session wurde vorgeschlagen",
+    "self-learning-session-will-be-scheduled": "1 ausgewählte Session wird geplant",
+    "self-learning-sessions-proposed": "{{count}} Sessions wurden vorgeschlagen",
+    "self-learning-sessions-will-be-scheduled": "{{count}} ausgewählte Sessions werden geplant",
+    "self-learnings-gap-length": "Plane eine Pause zwischen den Sessions für jeden Teilnehmer:",
+    "self-learnings-gap-length-after-dropdown": "zwischen den Sessions für jeden Teilnehmer",
+    "self-learnings-gap-length-before-dropdown": "Plane eine Pause von mindestens",
+    "session-duration": "Länge der Session",
+    "session-limit": "Sessionlimit",
+    "sessions-per-participant": "Sessions pro Teilnehmer",
+    "status": {
+      "participants-available": "verfügbar",
+      "participants-available-group-meeting": "{{count}} in {{meetingCount}} Terminen verfügbar",
+      "participants-not-available": "nicht verfügbar",
+      "participants-not-scheduled": "nicht geplant",
+      "participants-scheduled": "geplant",
+      "participants-scheduled-group-meeting": "{{count}} in {{meetingCount}} Terminen geplant",
+      "schedule-execution-error": "Fehler",
+      "schedule-suggested": "{{suggestedCount}} vorgeschlagen, {{excludedCount}} nicht möglich",
+      "schedule-suggested-fail": "{{count}} nicht möglich",
+      "schedule-suggested-success": "{{count}} vorgeschlagen",
+      "schedule-written": "{{scheduledCount}} angelegt, {{failedCount}} fehlgeschlagen",
+      "schedule-written-fail": "{{count}} fehlgeschlagen",
+      "schedule-written-success": "{{count}} angelegt",
+      "participants-available-group-meetings_one": "in einem Termin verfügbar",
+      "participants-available-group-meetings_other": "in {{count}} Terminen verfügbar",
+      "participants-scheduled-group-meetings_one": "in einem Termin geplant",
+      "participants-scheduled-group-meetings_other": "in {{count}} Terminen geplant"
+    },
+    "with-meeting-host": {
+      "option": "Gruppentermine mit Gastgeber"
+    },
+    "without-meeting-host": {
+      "option": "Gruppentermine ohne Gastgeber",
+      "specify-timeframe": "Bestimme mögliche Zeiträume für die Gruppentermine"
+    },
+    "advanced-feature": "Dieses Feature ist im Advanced-WFM-Plan verfügbar.",
+    "availability": "Zusätzliche Verfügbarkeitsbedingungen einstellen",
+    "back-to-meetings": "Zurück zu Meetings",
+    "external-host": "Externer Gastgeber",
+    "host": "Gastgeber",
+    "internal-host": "Interner Gastgeber",
+    "no-host": "Ohne Gastgeber",
+    "participants_one": "{{count}} Teilnehmer",
+    "participants_other": "{{count}} Teilnehmer",
+    "split-meeting-participants": "Minimale Anzahl an Teilnehmern pro Zeitfenster",
+    "split-meeting-slots-result": "Bei insgesamt {{selectedEmployeesCount}} Teilnehmern ergibt dies ungefähr {{slotsCount}} Termine.",
+    "split-meeting-toggle": "Teile das Meeting in mehrere Termine auf"
+  },
+  "button": {
+    "remove_availability": "Tag entfernen",
+    "add-group-meeting": "Termin",
+    "delete-jobs_one": "Eintrag löschen",
+    "delete-jobs_other": "Einträge löschen",
+    "delete-schedules_one": "Eintrag löschen",
+    "delete-schedules_other": "Einträge löschen",
+    "set-up": "Erstellen",
+    "write-group-meetings": "Gruppentermine anlegen",
+    "write-one-on-one-meetings": "Einzeltermine anlegen",
+    "write-self-learning-sessions": "Plane Sessions",
+    "writing": "Termine werden angelegt",
+    "write-count-group-meetings_one": "{{count}} Gruppentermin anlegen",
+    "write-count-group-meetings_other": "{{count}} Gruppentermine anlegen"
+  },
+  "table": {
+    "column": {
+      "employee_name": "Name",
+      "actions": "Aktionen",
+      "activity-to-schedule": "Zu planende Aktivität",
+      "host": "Gastgeber",
+      "information": "Details",
+      "initiated-on": "Ausgelöst am",
+      "job-id": "Vorschlag ID",
+      "meeting-type": "Art",
+      "meeting_assignment": "Zugewiesen zu",
+      "participant": "Teilnehmer",
+      "participant-status": "Teilnehmerstatus",
+      "planning-unit": "Planungseinheit",
+      "replaced-activity": "Ersetzte Aktivität",
+      "resulting-coverage": "Geänderte Deckung",
+      "schedule-id": "Details",
+      "start-time": "Angefragt um",
+      "status": "Status",
+      "suggested-time-slot": "Vorgeschlagener Termin"
+    }
+  },
+  "notification": {
+    "form-error": {
+      "timespan": "Wähle eine Endzeit, die nach der Startzeit liegt",
+      "select-day": "Wähle einen Tag aus",
+      "select-planning-unit": "Wähle eine Planungseinheit aus",
+      "coverage-threshold": "Gebe die Mindestdeckung ein",
+      "group-meetings-empty-meetings": "Es gibt mindestens ein Meeting ohne ausgewählte Teilnehmer. Wähle für jedes Meeting Teilnehmer aus, damit du Terminvorschläge erzeugen kannst.",
+      "limit-meeting-number": "Gebe die maximale mögliche Anzahl von Meetings pro Tag ein",
+      "limit-session-number": "Beschränke die maximale Anzahl der Sessions pro Tag",
+      "meeting-length-error": "Gebe eine Terminlänge an, die ein Vielfaches von 5 ist",
+      "no-group-meetings-selected": "Keine Terminvorschläge ausgewählt. Wähle mindestens einen aus.",
+      "no-one-on-one-meetings-selected": "Keine Terminvorschläge ausgewählt. Wähle mindestens einen aus.",
+      "no-self-learning-sessions-selected": "Du hast keinen Vorschlag ausgewählt. Wähle mindestens einen aus.",
+      "select-activity": "Wähle eine Aktivität aus",
+      "select-meeting-host": "Wähle einen Gastgeber aus",
+      "session-duration-error": "Gebe eine Sitzungslänge an, die ein Vielfaches von 5 ist",
+      "sessions-per-participant": "Gib einen positiven Wert für die Sessions pro Teilnehmer an"
+    },
+    "failure": {
+      "general": "Ein Fehler ist aufgetreten. Bitte versuche es später erneut.",
+      "response-error": "Der Server kann Deine Anfrage momentan nicht verarbeiten. Bitte versuche es später erneut.",
+      "job-not-existing": "Ein Fehler ist aufgetreten. Bitte versuche es später erneut.",
+      "schedule-not-existing": "Ein Fehler ist aufgetreten. Bitte versuche es später erneut."
+    },
+    "number-of-meetings": "{{successCount}} von {{totalCount}} Einzelterminen wurden angelegt.",
+    "warning": {
+      "no-meeting-slots-for-employee": "Für einen Teilnehmer kann kein Terminvorschlag gemacht werden.",
+      "no-meeting-slots-for-employees": "Für {{count}} Teilnehmer können keine Terminvorschläge gemacht werden.",
+      "no-session-slots-for-employee": "Für einen Mitarbeiter ist es nicht möglich, einen Termin zu finden.",
+      "no-session-slots-for-employee-group-meeting": "Für einen Mitarbeiter konnte kein Termin gefunden werden.",
+      "no-session-slots-for-employee-group-meeting-multiple-employees": "Für {{count}} Mitarbeiter in einer Gruppe konnte kein Termin gefunden werden.",
+      "no-session-slots-for-employee-group-meeting-part-one_one": "Für {{count}} Mitarbeiter konnte kein Termin gefunden werden.",
+      "no-session-slots-for-employee-group-meeting-part-one_other": "Für {{count}} Mitarbeiter konnte kein Termin gefunden werden.",
+      "no-session-slots-for-employee-group-meeting-part-two_one": "in {{count}} Meeting.",
+      "no-session-slots-for-employee-group-meeting-part-two_other": "in {{count}} Meetings.",
+      "no-session-slots-for-employee-group-meeting-plural": "Für {{employeeCount}} Mitarbeiter in {{meetingCount}} Gruppen konnte kein Termin gefunden werden.",
+      "no-session-slots-for-employees": "Für {{count}} Mitarbeiter ist es nicht möglich, einen Termin zu finden."
+    }
+  },
+  "message": {
+    "invalid-data": "Es fehlen Daten im Formular. Korrigiere die Daten in den markierten Feldern.",
+    "irreplaceable-activities": {
+      "hint_one": "{{count}} von {{totalCount}} Aktivitäten des Typs \"Anwesenheit\" in der ausgewählten Planungseinheit ist nicht \"Ersetzbar\".",
+      "hint_other": "{{count}} von {{totalCount}} Aktivitäten des Typs \"Anwesenheit\" in der ausgewählten Planungseinheit sind nicht \"Ersetzbar\".",
+      "reminder": "injixo Meetings kann nur dann Meetings planen, wenn ausreichend <0>ersetzbare Aktivitäten</0> im Plan vorhanden sind. Ein höherer Anteil an ersetzbaren Aktivitäten im Plan führt zu besseren Ergebnissen. Du kannst dies unter WFM > Administration > Scheduling > Aktivitäten tun.",
+      "reminder-link-to-docs": "https://help.injixo.com/de/activities/"
+    },
+    "request-sent": "Anfrage eingegangen. Vorschläge werden erzeugt.",
+    "external-host": {
+      "header": "Beachte, dass Gruppentermine mit externem Gastgeber:",
+      "point1": "nicht parallel stattfinden können",
+      "point2": "nach den optional eingestellten <0>Verfügbarkeitsbedingungen</0> geplant werden"
+    },
+    "unpaid-meeting-activity": {
+      "hint": "Die ausgewählte Meeting Aktivität ist nicht als \"Bezahlt\" konfiguriert. injixo Meetings kann nur unbezahlte Meetings planen, wenn andere unbezahlte Aktivitäten im Plan verfügbar sind. Wir empfehlen <0>die Meeting Aktivität als \"Bezahlt\" zu markieren</0>, wenn Du injixo Meetings nutzen möchtest. Du kannst dies unter WFM > Administration > Scheduling > Aktivitäten tun.",
+      "hint-link-to-docs": "https://help.injixo.com/de/activities/"
+    }
+  },
+  "date-range-picker": {
+    "helper-text": "Alle Daten beziehen sich auf die Zeitzone der Planungseinheit."
+  },
+  "dropdown": {
+    "meeting-length": "{{minutes}} Minuten"
+  },
+  "heading": {
+    "group-meeting-proposal-page": "Vorschläge - Gruppentermine",
+    "one-on-one-proposal-page": "Vorschläge - 1:1-Meetings",
+    "result-page": "{{count1}} Termine konnten nicht angelegt werden, {{count2}} Termine wurden angelegt",
+    "result-page-fail-plural": "{{count}} Termine konnten nicht angelegt werden",
+    "result-page-fail-singular": "1 Termin konnte nicht angelegt werden",
+    "result-page-success-plural": "{{count}} Termine wurden angelegt",
+    "result-page-success-singular": "1 Termin wurde angelegt",
+    "self-learning-proposal-page": "Vorschläge - Self-learning Sessions"
+  },
+  "helper-text-for-setting": {
+    "coverage-threshold": "Die kleinste geänderte Deckung ist eine ganze Zahl, die auch negativ oder null sein darf.",
+    "date-range": "Standardmäßig ist dies die nächste Arbeitswoche Montag-Sonntag nach dem aktuellen Datum. Wenn das aktuelle Datum ein Montag ist, dann wird auf die aktuelle Arbeitswoche Montag-Sonntag gesetzt.",
+    "duration": "Die Terminlänge muss ein Vielfaches von 5 sein.",
+    "duration-sessions": "Die Sitzungslänge muss ein Vielfaches von 5 sein.",
+    "group-meeting-participants": "Du kannst die Teilnehmer auf beliebig viele Gruppen verteilen. Jeder Teilnehmer kann nur für einen Gruppentermin geplant werden.",
+    "group-meeting-with-host": "Gruppentermine mit einem Gastgeber können nicht parallel stattfinden.",
+    "group-meeting-without-host": "Gruppentermine ohne Gastgeber können parallel stattfinden. Optional können Zeiträume definiert werden, in denen Termine stattfinden können.",
+    "one-on-one-day-limit": "Die Anzahl der Meetings pro Tag muss eine positive ganze Zahl sein.",
+    "one-on-one-gap-length": "Standardmäßig wird die Pausendauer auf das Intervall der ausgewählten Planungseinheit eingestellt. Sie kann auf ein Vielfaches dieses Intervalls geändert werden.",
+    "select-manual-host": "Wähle diese Option, wenn der Gastgeber nicht in injixo geplant ist.",
+    "select-scheduled-host": "Wähle diese Option, um die Verfügbarkeit des Gastgebers aus injixo auszulesen. Du kannst Mitarbeiter aus einer anderen Planungseinheit auswählen, aber beide Planungseinheiten müssen auf das gleiche Intervall eingestellt sein. Wenn diese Option gewählt ist, werden die geplanten Termine auch in den Plan des Gastgebers geschrieben.",
+    "selection-filter": "Standardmäßig enthält die Liste alle Mitarbeiter der Planungseinheit. Du kannst die Teilnehmer weiter eingrenzen, indem Du eine Auswahl oder einen Mitarbeiterfilter anwendest.",
+    "self-learnings-day-limit": "Die Anzahl der Sessions pro Tag muss ein positiver Wert sein.",
+    "self-learnings-gap-length": "Standardmäßig wird die Pausendauer auf das Intervall der ausgewählten Planungseinheit eingestellt. Sie kann auf ein Vielfaches dieses Intervalls eingestellt werden."
+  },
+  "helper-text": {
+    "delete-jobs": "Die ausgewählten Einträge werden aus der Tabelle gelöscht. Bereits geplante Termine sind davon nicht betroffen.",
+    "delete-schedules": "Die ausgewählten Einträge werden aus der Tabelle gelöscht. Bereits geplante Termine sind davon nicht betroffen."
+  },
+  "link": {
+    "retrigger-job": "Erneut versuchen",
+    "view-results": "Ergebnis anschauen",
+    "view-schedule": "Plan anschauen",
+    "view-suggestion": "Vorschläge anschauen"
+  },
+  "meeting-type": {
+    "group-meeting": "Gruppentermin",
+    "one-on-one": "1:1-Meetings",
+    "self-learning": "Self-learning Sessions",
+    "auto-group-meeting": "Gruppentermin"
+  },
+  "placeholder": {
+    "dropdown": "Suchen oder auswählen",
+    "non-searchable-dropdown": "Auswählen...",
+    "select-gap-length": "Pausenlänge wählen",
+    "select-meeting-length": "Meetinglänge wählen",
+    "select-session-duration": "Wähle die Länge der Session aus"
+  },
+  "popup": {
+    "timezone-helper": "Datums- und Zeitangaben beziehen sich auf die Zeitzone der Planungseinheit."
+  },
+  "units": {
+    "minutes": "Minuten"
+  },
+  "connection": {
+    "offline": "Die Wiederherstellung der Verbindung ist fehlgeschlagen. Bitte versuchen Sie es in ein paar Minuten erneut.",
+    "reconnecting": "Die Verbindung wurde unterbrochen. Wir versuchen, sie automatisch wieder herzustellen."
+  },
+  "document_title": {
+    "context": {
+      "group_meeting_results": "Gruppentermine Ergebnisse",
+      "group_meeting_suggestions": "Gruppentermine Vorschläge",
+      "one_on_one_meeting_results": "1:1-Meetings Ergebnisse",
+      "one_on_one_meeting_suggestions": "1:1-Meetings Vorschläge",
+      "self_learning_results": "Self-learning Sessions Ergebnisse",
+      "self_learning_suggestions": "Self-learning Sessions Vorschläge"
+    },
+    "module": "Plan",
+    "sub_module": "Meetings"
+  },
+  "explaination": {
+    "external-host": "Der Gastgeber wird nicht mit injixo geplant. Die Meetingzeiträume können nicht überlappen.",
+    "internal-host": "Der Gastgeber wird mit injixo geplant. Die Meetingzeiträume können nicht überlappen.",
+    "no-host": "Die Gruppentermine können parallel stattfinden"
+  }
+}

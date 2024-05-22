@@ -1,0 +1,407 @@
+{
+  "time_tracking": {
+    "page_title": "Registrazione presenze",
+    "hour_abbreviation": "h",
+    "punch": {
+      "activities": {
+        "combobox": {
+          "aria_label": "Attività",
+          "placeholder": "Seleziona o cerca un'attività da registrare"
+        }
+      },
+      "clock_in": {
+        "button": {
+          "label": "Registra inizio attività"
+        },
+        "toast": "Registrazione avviata"
+      },
+      "clock_out": {
+        "button": {
+          "aria_label": "Registra la fine dell'attività in corso"
+        },
+        "toast": "Registrazione conclusa"
+      },
+      "switch": {
+        "button": {
+          "label": "Cambia attività"
+        }
+      },
+      "timer": {
+        "aria_label": "Registra l'inizio dell'attività selezionata"
+      }
+    },
+    "records": {
+      "duration": "Durata",
+      "empty": {
+        "description": "Monitora le tue ore in cima alla pagina.",
+        "headline": "Non hai registrazioni per questo giorno."
+      },
+      "heading_today": "Registrazioni di oggi",
+      "heading_yesterday": "Registrazioni di ieri",
+      "now": "adesso",
+      "ongoing": "In corso",
+      "unknown_activity": "Attività sconosciuta"
+    },
+    "statistics": {
+      "calculation_tooltip": "Statistiche orarie per il mese, la settimana o il mese selezionato. In caso di turni notturni, sono incluse soltanto le ore all'interno del periodo selezionato.",
+      "current_day": "Oggi",
+      "current_month": "Mese in corso",
+      "current_week": "Settimana in corso",
+      "day": "Giorno",
+      "deviation": "Scostamento",
+      "heading": "Statistiche",
+      "month": "Mese",
+      "previous_day": "Ieri",
+      "previous_month": "Mese scorso",
+      "previous_week": "Settimana scorsa",
+      "scheduled_paid_time": "Ore lavorative pianificate",
+      "tracked_paid_time": "Ore lavorative registrate",
+      "tracked_time": "Totale ore registrate",
+      "week": "Settimana"
+    }
+  },
+  "time_off": {
+    "balance_overview": {
+      "pending": "In sospeso",
+      "remaining": "Restanti",
+      "taken": "Utilizzati",
+      "title": "Panoramica del saldo permessi",
+      "current_balance": "Saldo attuale"
+    },
+    "calendar": {
+      "title": "Anno"
+    },
+    "download_time_off_overview": "Scarica panoramica dei permessi",
+    "entitlement_picker": {
+      "current_period": "Periodo in corso",
+      "next_period": "Periodo seguente",
+      "previous_period": "Periodo precedente"
+    },
+    "page_title": "Permessi",
+    "request": {
+      "comments": "Leggi i commenti"
+    },
+    "request_state": {
+      "approved": "Approvata",
+      "canceled": "Annullata",
+      "cancellation_requested": "Annullamento richiesto",
+      "rejected": "Rifiutata",
+      "requested": "Richiesta"
+    },
+    "request_time_off": "Richiedi permesso",
+    "requests": {
+      "creation_form": {
+        "cancel": "Annulla",
+        "comment": "Commento",
+        "create": "Richiedi permesso",
+        "created": "La richiesta di permesso selezionata è stata inviata.",
+        "date": "Data",
+        "end_date": "Data di fine",
+        "end_time": "Ora di fine",
+        "error": {
+          "comment_too_long": "Scrivi un commento (max 100 caratteri).",
+          "conflict_with_existing_plan_data_request": "La durata della richiesta si sovrappone a una richiesta già esistente.",
+          "conflict_with_existing_request": "La durata della richiesta si sovrappone a una richiesta già esistente.",
+          "conflict_with_existing_time_off": "La durata della richiesta si sovrappone a una richiesta già esistente.",
+          "employee_marked_as_unavailable": "In questa data risulti non disponibile. Modifica la tua disponibilità o chiedi al tuo supervisore.",
+          "no_time_off_period": "Non è possibile richiedere permessi per questo periodo. Il periodo di permesso per questa richiesta non è stato pubblicato. Contatta i responsabili della pianificazione.",
+          "start_date_before_end": "La data di fine deve essere uguale alla data di inizio o essere successiva.",
+          "start_time_before_end": "La data di fine deve essere successiva alla data di inizio.",
+          "times_required": "Inserisci un'ora di inizio e di fine.",
+          "unknown": "Non è stato possibile creare la richiesta di permesso.",
+          "no_contract": "Il permesso richiesto non rientra nelle date del tuo contratto.",
+          "no_employment": "Il permesso richiesto non rientra nelle date della tua appartenenza all'organico."
+        },
+        "full_day_request": "Giorno intero",
+        "part_day": "Richiedi parte di giorno",
+        "part_day_request": "Parte di giorno",
+        "start_date": "Data d’inizio",
+        "start_time": "Ora d’inizio",
+        "submitting": "Elaborazione in corso",
+        "time_off_request": "Nuova richiesta di permesso"
+      },
+      "filter": {
+        "label": "Filtro stato richieste",
+        "status": {
+          "all": "Tutte",
+          "approved": "Autorizzate",
+          "canceled": "Annullate",
+          "decided": "Processate",
+          "pending": "In sospeso",
+          "rejected": "Rifiutate",
+          "requested": "Inviate"
+        }
+      },
+      "link_to_schedule": "{{ time_range }} apri nel calendario",
+      "no_items": "Non ci sono richieste di permesso",
+      "title": "Richieste di permesso"
+    },
+    "pdf_download": {
+      "all": "Tutte",
+      "all_request_statuses": "Tutti gli stati delle richieste",
+      "all_time_off_types": "Tutti i tipi di permesso",
+      "cancel": "Annulla",
+      "download": "Scarica",
+      "entitlement_period": "Periodo di diritto ai permessi",
+      "request_statuses": "Stati delle richieste",
+      "time_off_types": "Tipi di permesso",
+      "title": "Panoramica dei permessi",
+      "time_off_type_deleted": "(Eliminato)"
+    },
+    "type_selection": {
+      "label": "Tipo di permesso",
+      "no_result": "Non è stato trovato nessun tipo di permesso",
+      "placeholder": "Seleziona il tipo di permesso",
+      "deleted_type": "{{name}} (Eliminato)"
+    },
+    "unit": {
+      "days_one": "giorno",
+      "days_other": "giorni",
+      "hours_one": "ora",
+      "hours_other": "ore"
+    },
+    "year_picker": {
+      "current_year": "Anno in corso",
+      "next_year": "Anno successivo",
+      "previous_year": "Anno precedente"
+    }
+  },
+  "time-off-list": {
+    "card-list": {
+      "card-item": {
+        "button": {
+          "request-cancellation": {
+            "popover": {
+              "button": {
+                "close": {
+                  "label": "Chiudi"
+                },
+                "request": {
+                  "label": "Richiedi annullamento"
+                }
+              },
+              "text-area": {
+                "reason": {
+                  "label": "Motivo dell'annullamento"
+                }
+              }
+            },
+            "aria-label": "{{ time_range }}, Permesso, Richiedi annullamento",
+            "label": "Richiedi annullamento"
+          },
+          "withdraw": {
+            "aria-label": "{{ time_range }}, Richiesta in sospeso, Ritira",
+            "label": "Ritira"
+          },
+          "withdraw-cancellation-request": {
+            "aria-label": "{{ time_range }}, Richiesta di annullamento permesso, Ritira",
+            "label": "Ritira"
+          },
+          "comments": {
+            "aria-label": "Vedi i commenti",
+            "label": "{{count}} commenti"
+          }
+        },
+        "booked": {
+          "text": "Programmati"
+        },
+        "status": {
+          "approved": {
+            "text": "Approvata"
+          },
+          "canceled": {
+            "text": "Annullata"
+          },
+          "cancellation_requested": {
+            "text": "Annullamento richiesto"
+          },
+          "rejected": {
+            "text": "Rifiutata"
+          },
+          "requested": {
+            "text": "Inviata"
+          },
+          "text": "Stato"
+        },
+        "to-be-booked": {
+          "text": "Da programmare",
+          "valuation-conflict": {
+            "label": "Il tempo totale da programmare potrebbe cambiare perché hai inoltrato almeno un'altra richiesta di permesso per questa settimana."
+          }
+        }
+      }
+    }
+  },
+  "time-off": {
+    "toast": {
+      "request-cancellation": {
+        "failure": {
+          "text": "Non è stato possibile presentare la richiesta di annullamento del permesso."
+        },
+        "success": {
+          "text": "La richiesta di annullamento del permesso è stata inviata."
+        }
+      },
+      "withdraw": {
+        "failure": {
+          "text": "Non è stato possibile eliminare la richiesta di permesso selezionata."
+        },
+        "success": {
+          "text": "La richiesta di permesso selezionata è stata eliminata."
+        }
+      },
+      "withdraw-cancellation-request": {
+        "failure": {
+          "text": "Non è stato possibile ritirare la richiesta di annullamento del permesso."
+        },
+        "success": {
+          "text": "La richiesta di annullamento del permesso è stata ritirata."
+        }
+      }
+    }
+  },
+  "availability": {
+    "delete": {
+      "button": {
+        "label": "Elimina"
+      }
+    },
+    "edit": {
+      "form": {
+        "button": {
+          "cancel": {
+            "label": "Annulla"
+          },
+          "submit": {
+            "label": "Salva modifiche"
+          }
+        },
+        "inline-message": {
+          "error": {
+            "text": "Non è stato possibile salvare le modifiche. Per favore riprova."
+          }
+        },
+        "toast": {
+          "success": "Disponibilità modificata"
+        }
+      },
+      "page-heading": {
+        "return-link": "Torna alla panoramica",
+        "text": "Modifica {{date}}"
+      },
+      "page_title": "Modifica disponibilità"
+    },
+    "inline-message": {
+      "unexpected-error": {
+        "text": "Non è stato possibile caricare le tue disponibilità. Per favore <Link>aggiorna la pagina adesso</Link> o riprova in seguito."
+      }
+    },
+    "modal": {
+      "delete-confirmation": {
+        "button": {
+          "cancel": "Torna indietro",
+          "confirm": "Elimina disponbilità"
+        },
+        "content": "Le tue disponibilità per il {{date}} saranno eliminate. Il tuo pianificatore utilizzerà una disponibilità settimanale per quel giorno, se ne esiste una.",
+        "content-label": "Elimina disponibilità unica",
+        "inline-message": {
+          "error": "Non è stato possibile eliminare la disponibilità. Per favore riprova."
+        },
+        "title": "Eliminare disponibilità?",
+        "toast": {
+          "success": "Disponibilità eliminata"
+        }
+      }
+    },
+    "new": {
+      "form": {
+        "button": {
+          "add-time": {
+            "label": "Aggiungi fascia oraria"
+          },
+          "cancel": {
+            "label": "Annulla"
+          },
+          "remove-time": {
+            "label": "Rimuovi fascia oraria"
+          },
+          "submit": {
+            "label": "Aggiungi disponibilità"
+          }
+        },
+        "date-input": {
+          "booking-date": {
+            "error": {
+              "required": "Seleziona una data."
+            }
+          }
+        },
+        "inline-message": {
+          "conflict-error": {
+            "text": "Per questa data ci sono già delle disponibilità. Scegli un'altra data o <Link>modifica le disponibilità per questa data</Link>."
+          },
+          "error": {
+            "text": "Non è stato possibile creare la disponibilità. Per favore riprova."
+          }
+        },
+        "time-input": {
+          "end-time": {
+            "error": {
+              "required": "Inserisci un'ora di fine."
+            },
+            "label": "Ora di fine"
+          },
+          "start-time": {
+            "error": {
+              "required": "Inserisci un'ora di inizio."
+            },
+            "label": "Ora di inizio"
+          }
+        },
+        "toast": {
+          "success": "Disponibilità creata"
+        }
+      },
+      "page-heading": {
+        "return-link": "Torna alla panoramica",
+        "text": "Aggiungi disponibilità"
+      },
+      "page_title": "Crea disponibilità"
+    },
+    "next_month": "Mese successivo",
+    "one_time": {
+      "empty": {
+        "heading": "Non ci sono disponibilità in questo mese.",
+        "text": "Comunica al tuo pianificatore quando sei disponibile o vai al <Link>mese successivo</Link>."
+      }
+    },
+    "overnight-indicator": "+1 giorno",
+    "overview": {
+      "button": {
+        "add_availability": {
+          "label": "Aggiungi disponibilità"
+        },
+        "edit-availability": {
+          "label": "Modifica"
+        }
+      },
+      "heading": "Panoramica delle disponibilità",
+      "inline-message": {
+        "cute-off-date": {
+          "text": "Puoi modificare le tue disponibilità solo a partire dal {{cutOffDate}}."
+        }
+      },
+      "tag": {
+        "one-time": {
+          "text": "Unica"
+        },
+        "weekly": {
+          "text": "Settimanale"
+        }
+      }
+    },
+    "page_title": "Disponibilità",
+    "prev_month": "Mese precedente",
+    "time_period": "Periodo"
+  }
+}

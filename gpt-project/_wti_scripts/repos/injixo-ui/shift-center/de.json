@@ -1,0 +1,66 @@
+{
+  "document_title": {
+    "module": "Plan",
+    "context": "SchichtCenter"
+  },
+  "parametersBar": {
+    "apply": "Anwenden",
+    "startDate": "Startdatum",
+    "duration": "Dauer",
+    "levels": "Ebenen",
+    "units": {
+      "days": "Tage",
+      "weeks": "Wochen",
+      "months": "Monate",
+      "years": "Jahre"
+    },
+    "unit": "Einheit",
+    "selection": "Auswahl",
+    "employeeFilter": "Mitarbeiterfilter",
+    "editEmployeeFilter": "Mitarbeiterfilter bearbeiten",
+    "filterEditor": "Filter-Editor",
+    "chooseSelections": "Auswahl festlegen",
+    "chooseEmployeeFilter": "Mitarbeiter filtern",
+    "dateFormat": "d. MMMM yyyy",
+    "noResult": "no result"
+  },
+  "shiftCenterFrame": {
+    "loading": "Lädt"
+  },
+  "levelSelector": {
+    "levels": {
+      "plan": "Plan",
+      "final": "Aktueller Stand",
+      "correction": "Korrektur",
+      "timeRecording": "Zeiterfassung",
+      "acd": "Externes System",
+      "wishes": "Wunsch",
+      "alternativeWishes": "Ausweichwunsch",
+      "absenceWishes": "Abwesenheitswunsch",
+      "availabilities": "Verfügbarkeit",
+      "backup": "Version 1",
+      "backupVersion2": "Version 2",
+      "backupVersion3": "Version 3"
+    }
+  },
+  "error": {
+    "configuration": "Es ist ein Fehler aufgetreten (Resource: Konfiguration)",
+    "accessRights": "Es ist ein Fehler aufgetreten (Resource: Zugriffsrechte)",
+    "settings": "Es ist ein Fehler aufgetreten (Ressource: Einstellungen) - Details:",
+    "postMessage": "Nachricht konnte nicht an Schicht Center gesendet werden.",
+    "accountBalances": {
+      "message": "Versuchen Sie, <0>Kontensalden</0> neu zu laden oder versuchen Sie es später noch einmal",
+      "label": "Kontensalden wiederaufladen"
+    },
+    "generic": "Es ist ein Fehler aufgetreten."
+  },
+  "timeAccounts": {
+    "accountBalances": "Kontensalden",
+    "accountX": "Zeitwirtschaftskonto {{number}}",
+    "chooseAccount": "Konto auswählen",
+    "dateLabel": "Datum",
+    "none": "Kein",
+    "closeModal": "Schließen",
+    "noResult": "Es sind keine Einträge vorhanden."
+  }
+}

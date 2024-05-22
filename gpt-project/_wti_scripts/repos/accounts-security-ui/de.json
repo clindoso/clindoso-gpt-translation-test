@@ -1,0 +1,159 @@
+{
+  "ip_filtering": {
+    "button_deactivate": "IP-Filterung deaktivieren",
+    "button_discard": "Änderungen verwerfen",
+    "button_save": "Filterung aktivieren",
+    "button_update": "Speichern",
+    "description": "Lege die IP-Adressen fest, die auf deinen injixo-Tenant zugreifen können.",
+    "enter_ip_addresses": "IP-Adressbereich",
+    "enter_ip_addresses_message": "Gib einen IP-Adressbereich ein (z. B. {{validatedRemoteIpAddress}}/32). Um auf injixo zuzugreifen, muss deine IP-Adresse in einem der IP-Adressbereiche sein. Füge einzelne IP-Adressen hinzu (z. B. {{validatedRemoteIpAddress}}), wenn du keine IP-Adressbereiche verwendest.",
+    "field_errors": {
+      "invalid_ip_address": "Gib einen IP-Adressbereich in der CIDR-Notation ein."
+    },
+    "heading": "IP-Filterung",
+    "help_center_hint": "Erfahre mehr im <0>Help Center</0>.",
+    "help_center_link": "https://help.injixo.com/de/ip-filtering",
+    "submit": {
+      "deactivated_success": "Die IP-Filterung wurde deaktiviert.",
+      "success": "Die IP-Adressbereiche wurden gespeichert.."
+    },
+    "submit_errors": {
+      "ip_address_out_of_range": "Deine IP-Adresse gehört nicht zum IP-Adressbereich. Mit dieser IP-Adresse kannst du dich nicht anmelden. Gib eine IP-Adresse aus dem IP-Adressbereich ein.",
+      "submission_failed": "Eine oder mehrere IP-Adressen konnten nicht gespeichert werden. Bitte versuche es erneut."
+    },
+    "submit_warning": "Wenn du diese Änderungen speicherst, werden alle Benutzer in deinem Unternehmen abgemeldet. Melde dich erneut an, um mit injixo weiterzuarbeiten.",
+    "your_ip_address": "Deine IP-Adresse"
+  },
+  "page_heading": "Sicherheit",
+  "page_title": "Sicherheit - Account | injixo",
+  "two_factor_auth": {
+    "disabled": {
+      "button": "2FA für alle Mitarbeiter erzwingen",
+      "description1": "2FA ist aktuell optional. Mitarbeiter können selbst entscheiden, ob sie 2FA aktivieren oder deaktivieren möchten.",
+      "description2": "Wenn du 2FA für alle Mitarbeiter erzwingst, müssen sie bei der nächsten Anmeldung 2FA aktivieren. Andernfalls können sie sich nicht bei injixo anmelden. Erfahre mehr im <0>Help Center</0> .",
+      "success_message": "2FA erfolgreich erzwungen."
+    },
+    "enabled": {
+      "button": "2FA-Zwang aufheben",
+      "description1": "2FA ist aktuell für alle Mitarbeiter erzwungen.",
+      "description2": "Mitarbeiter können sich nur mit 2FA anmelden. Erfahre mehr im <0>Help Center</0>.",
+      "success_message": "2FA-Zwang erfolgreich aufgehoben."
+    },
+    "error_message": "Es gab ein technisches Problem. Bitte versuche es erneut.",
+    "heading": "Zwei-Faktor-Authentifizierung (2FA)",
+    "link_to_docs": "https://help.injixo.com/2fa",
+    "loading": "Lädt...",
+    "sso_enforced": "Die Anmeldung bei injixo ist nur per Single Sign-On möglich. 2FA ist in injixo nicht mehr verfügbar. Richte stattdessen einen weiteren Authentifizierungsfaktor über den Identity Provider ein.",
+    "user_stats_2fa_disabled": "2FA nicht aktiviert",
+    "user_stats_2fa_enabled": "2FA aktiviert",
+    "user_stats_total": "Gesamt",
+    "user_stats_suffix": "Mitarbeiter"
+  },
+  "single_sign_on": {
+    "configuration": {
+      "create": "Konfiguration speichern",
+      "creating": "Speichert",
+      "header": "Konfiguration",
+      "save": "Änderungen speichern",
+      "saving": "Speichert",
+      "success_message": "SSO wurde erfolgreich aktiviert."
+    },
+    "description": "injixo unterstützt Single Sign-On (SSO) auf Basis von SAML 2.0. Die Zwei-Faktor-Authentifizierung wird bei der Anmeldung über SSO übersprungen. Stattdessen sollte der Identity Provider (IdP) 2FA bereitstellen. Erfahre mehr im <0>Help Center</0>.",
+    "disable_confirmation": {
+      "consequences": "Die SSO-Anmeldung ist für dein injixo Konto nicht mehr verfügbar. Alle Benutzer erhalten weitere Anweisungen per E-Mail.",
+      "failed": "SSO konnte nicht deaktiviert werden",
+      "failed_message": "Der Link aus deiner E-Mail ist nicht gültig. Bitte gehe zu Account > Sicherheit deaktiviere SSO.",
+      "next_step": "Um fortzufahren, setze auf der nächsten Seite ein neues Passwort.",
+      "set_new_password": "Neues Passwort setzen"
+    },
+    "disabled": "SSO deaktiviert",
+    "disablement": {
+      "cancel": "Abbrechen",
+      "disable": "Deaktivieren",
+      "disabling": "Deaktiviert",
+      "enforced": {
+        "2fa_hint": "Wir empfehlen dringend, als nächstes 2FA als zusätzliche Sicherheitsmaßnahme zu aktivieren.",
+        "details": "Nach der Deaktivierung muss jeder Benutzer sich mit E-Mail und Passwort anmelden. Benutzer werden per E-Mail darüber informiert, wie sie ein neues Passwort setzen.",
+        "next_step": "Um die Deaktivierung von SSO zu bestätigen, senden wir eine E-Mail mit einer detaillierten Beschreibung an <0>{{email}}</0>."
+      },
+      "result": {
+        "accepted": "Wir haben dir eine E-Mail gesendet, um die Deaktivierung von SSO zu bestätigen.",
+        "disabled": "SSO wurde erfolgreich deaktiviert. Alle Benutzer müssen sich nun wieder mit E-Mail und Passwort anmelden.",
+        "error": "SSO konnte nicht deaktiviert werden."
+      },
+      "title": "SSO deaktivieren",
+      "unenforced": {
+        "details": "Da SSO noch nicht erzwungen wurde, kannst du es einfach deaktivieren. Die Anmeldung über SSO ist dann nicht mehr möglich. Jeder Benutzer muss sich mit E-Mail und Passwort anmelden. Benutzer werden nicht benachrichtigt."
+      }
+    },
+    "download": "Herunterladen",
+    "download_certificate": "Zertifikat herunterladen",
+    "enforced": "Single Sign-On ist aktiv. Die Anmeldung mit E-Mail und Passwort ist nicht mehr möglich. Benutzer können sich nur bei injixo anmelden, wenn sie die entsprechenden Berechtigungen im Identity Provider haben. Erfahre mehr im <0>Help Center</0>.",
+    "enforcement": {
+      "cancel": "Abbrechen",
+      "description": "Erzwinge SSO, nachdem du deine Konfiguration getestet hast. Alle Benutzer müssen sich dann über SSO anmelden. Die Anmeldung mit E-Mail und Passwort ist nicht mehr möglich.",
+      "enforce": "Erzwingen",
+      "enforcing": "Erzwingt",
+      "header": "SSO erzwingen",
+      "modal": {
+        "generic_error": "Ein unbekannter Fehler ist aufgetreten. Versuche es später erneut.",
+        "password_label": "Gib dein Passwort zur Bestätigung ein",
+        "preconditions": {
+          "item_1": "Alle Benutzer müssen über die entsprechenden Berechtigungen innerhalb deines Identity Providers verfügen, um auf injixo zuzugreifen. Andernfalls können sie sich nicht bei injixo anmelden.",
+          "title": "Voraussetzungen"
+        },
+        "related_changes": {
+          "item_1": "Alle Benutzer werden per E-Mail benachrichtigt, dass sie ab diesem Zeitpunkt SSO verwenden müssen.",
+          "item_2": "Die Anmeldung mit E-Mail und Passwort ist dann nicht mehr möglich.",
+          "item_3": "Alle Benutzerpasswörter werden nach einem Kulanzzeitraum von 48 Stunden zurückgesetzt.",
+          "item_4": "2FA ist dann nicht mehr in injixo verfügbar. Bei Bedarf kannst du über deinen IdP Zwei-Faktor-Authentifizierung aktivieren.",
+          "item_5": "Benutzerpasswörter müssen bei deinem IdP verwaltet werden.",
+          "title": "Folgen"
+        },
+        "title": "SSO für alle Benutzer erzwingen",
+        "wrong_password_error": "Ungültiges Passwort."
+      },
+      "not_enforced_warning": "Du solltest den SSO-Zwang nur temporär aufheben, um deine Konfiguration zu testen.",
+      "success": "SSO wurde erfolgreich für alle Benutzer erzwungen."
+    },
+    "error_message": "Es ist ein Fehler aufgetreten.",
+    "federated_metadata_url": {
+      "error": {
+        "generic": "Unbekannter Fehler",
+        "host_not_allowed": "Host nicht unterstützt",
+        "https_required": "HTTPS benötigt",
+        "identity_provider_not_reachable": "Identity Provider ist nicht erreichbar",
+        "invalid": "Ungültige URL",
+        "invalid_metadata": "Ungültige Metadaten"
+      },
+      "label": "Föderationsmetadaten-URL"
+    },
+    "header": "Single Sign-On",
+    "help_center_url": "https://help.injixo.com/de/single-sign-on",
+    "identity_provider": {
+      "description": "Folgende Angaben werden vom IdP (z. B. Microsoft Azure AD oder Okta) bereitgestellt.",
+      "header": "Identity Provider"
+    },
+    "injixo_metadata": {
+      "acs_url": "Assertion Consumer Service (ACS) URL",
+      "description": "Lade die folgende Metadatendatei (.xml) in deinem IdP hoch, um injixo als gültigen Service Provider zu konfigurieren.",
+      "download": "Metadaten herunterladen",
+      "header": "injixo SAML-Metadaten",
+      "logout_url": "Abmeldungs-URL",
+      "service_provider_details": "Service-Provider-Details",
+      "service_provider_entitiy_identifier": "Service-Provider-Entity-Identifier"
+    },
+    "token_encryption": {
+      "description": "Zertifikat zur Verschlüsselung von SAML-Assertions.\nGültig bis <0>{{expiration_date}}</0>.\nSechs Wochen vor Ablauf des Gültigkeitszeitraums kannst du das neue Zertifikat hier herunterladen.",
+      "header": "Tokenverschlüsselung"
+    },
+    "verification": {
+      "details": "Alle Benutzer müssen der injixo SAML-Applikation in deinem IdP zugewiesen werden. SSO kann parallel zur Anmeldung mit E-Mail und Passwort verwendet werden.",
+      "error": "Dein IdP erlaubt den Zugriff auf injixo nicht. Überprüfe die Einstellungen im IdP und stelle sicher, dass du dich mit deinem Benutzerkonto bei injixo über SSO anmelden darfst.",
+      "redirect_failed": "Weiterleitung fehlgeschlagen",
+      "redirecting": "Leitet weiter",
+      "success": "Du hast dich erfolgreich bei deinem IdP authentifiziert und darfst auf injixo über SSO zugreifen.",
+      "verify": "Konfiguration testen"
+    }
+  }
+}

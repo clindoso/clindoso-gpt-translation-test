@@ -1,0 +1,74 @@
+{
+  "heading": {
+    "initial": "Dienstruilingen goedkeuren"
+  },
+  "alt": {
+    "reload-planning-units": "Eenheden opnieuw laden",
+    "reload-selections": "Groepen opnieuw laden",
+    "reload-shift-exchange-commitments": "Laad diensten ruilen opnieuw"
+  },
+  "button": {
+    "approve-selected": "Selectie goedkeuren",
+    "back-to-schedules": "Terug naar Schedules",
+    "reject-selected": "Selectie afwijzen"
+  },
+  "document_title": {
+    "module": "Plan",
+    "page": {
+      "approve_shift_exchange": "Dienstruilingen goedkeuren"
+    }
+  },
+  "filter": {
+    "no-result-found": "Geen resultaten gevonden"
+  },
+  "message": {
+    "error": "Kan gegevens niet ophalen",
+    "planning-units": {
+      "error": "Er is een fout opgetreden en de eenheden konden niet worden geladen. Probeer <0>eenheden opnieuw te laden</0> of probeer het later nog eens."
+    },
+    "selections": {
+      "error": "Er is een fout opgetreden en groepen kon niet worden geladen. Probeer <0>groepen opnieuw te laden</0> of probeer het later opnieuw."
+    },
+    "shift-exchange-commitments": {
+      "error": "De dienstruilverzoeken konden niet worden geladen. Laad je <0>dienstruilverzoeken opnieuw</0> of probeer het later opnieuw.",
+      "update-error": "Kon dienstruilverzoek(en) niet bijwerken",
+      "update-success": "Dienstruilverzoek(en) bijgewerkt"
+    }
+  },
+  "placeholder": {
+    "planning-unit": "Kies een Eenheid",
+    "selection": "Kies een Groep"
+  },
+  "status": {
+    "tooltip": {
+      "acceptor-resigned": "De ruilpartner heeft de dienst ingetrokken.",
+      "acceptor-shift-changed": "De dienst van de ruilpartner is gewijzigd",
+      "deadline-missed": "Deadline gemist",
+      "invalid": "Dienstruiling is ongeldig.",
+      "offerer-resigned": "De aanbieder heeft de dienst ingetrokken.",
+      "offerer-shift-changed": "De dienst van de aanbieder is gewijzigd",
+      "rule-breached": "Er is een regel overtreden"
+    },
+    "value": {
+      "approved": "Goedgekeurd",
+      "canceled": "Geannuleerd",
+      "pending": "Openstaand",
+      "rejected": "Afgewezen"
+    }
+  },
+  "tab": {
+    "information": "Informatie",
+    "pending": "Openstaand"
+  },
+  "table": {
+    "heading": {
+      "compensation-date": "Datum tegenaanbod",
+      "exchange-date": "Ruildatum",
+      "exchange-partner": "Ruilpartner",
+      "initiator": "Initiatiefnemer",
+      "modification-date": "Bijgewerkt op",
+      "status": "Status"
+    },
+    "no-results": "Er zijn geen dienstruilingen gevonden."
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "ip_filtering": {
+    "button_deactivate": "Desactivar filtrado",
+    "button_discard": "Descartar cambios",
+    "button_save": "Activar filtrado",
+    "button_update": "Guardar",
+    "description": "Define un grupo de direcciones IP que pueden acceder a tu tenant de injixo.",
+    "enter_ip_addresses": "Rango de direcciones IP",
+    "enter_ip_addresses_message": "Introduce un rango de direcciones IP, p. ej. {{validatedRemoteIpAddress}}/32. Para acceder a injixo, tu dirección IP debe estar incluida en uno de los rangos. Si no usas rangos de direcciones IP, puedes añadir direcciones IP individuales, p. ej.{{validatedRemoteIpAddress}}.",
+    "field_errors": {
+      "invalid_ip_address": "Introduce un rango de direcciones IP en formato CIDR."
+    },
+    "heading": "Filtrado IP",
+    "help_center_hint": "Aprende más en el <0>Help Center</0>.",
+    "help_center_link": "https://help.injixo.com/es/ip-filtering",
+    "submit": {
+      "deactivated_success": "El filtrado IP ha sido desactivado.",
+      "success": "Los rangos de direcciones IP han sido guardados."
+    },
+    "submit_errors": {
+      "ip_address_out_of_range": "No puedes iniciar sesión con esta dirección IP porque no está incluida en el rango de direcciones IP. Introduce una dirección IP que forme parte del rango.",
+      "submission_failed": "No se pudo guardar la dirección o direcciones IP. Inténtalo de nuevo."
+    },
+    "submit_warning": "Si guardas estos cambios, se cerrará la sesión de todos los usuarios de tu organización. Vuelve a iniciar sesión para seguir trabajando en injixo.",
+    "your_ip_address": "Tu dirección IP"
+  },
+  "page_heading": "Seguridad",
+  "page_title": "Seguridad - Cuenta | injixo",
+  "two_factor_auth": {
+    "disabled": {
+      "button": "Activar obligatoriedad de 2FA para todos los usuarios",
+      "description1": "Actualmente la 2FA es opcional y cada usuario puede elegir si activarla o desactivarla.",
+      "description2": "Si activas la obligatoriedad de 2FA, los usuarios tendrán que activar la 2FA para su cuenta. De lo contrario, no podrán iniciar sesión. Puedes leer más en el <0>Help Center</0>.",
+      "success_message": "La obligatoriedad ha sido activada correctamente."
+    },
+    "enabled": {
+      "button": "Revocar obligatoriedad",
+      "description1": "Actualmente la 2FA es obligatoria para todos los usuarios.",
+      "description2": "Los usuarios solo pueden iniciar sesión con 2FA. Puedes leer más en el <0>Help Center</0>.",
+      "success_message": "Obligatoriedad revocada correctamente."
+    },
+    "error_message": "Ha habido un problema técnico. Por favor, inténtalo más tarde.",
+    "heading": "Autenticación de dos factores (2FA)",
+    "link_to_docs": "https://help.injixo.com/es/2fa",
+    "loading": "Cargando...",
+    "sso_enforced": "El inicio de sesión único (SSO) es obligatorio, y la 2FA no está disponible en injixo. La configuración de un segundo factor de autenticación debe hacerse a través de tu proveedor de identidad.",
+    "user_stats_2fa_disabled": "2FA desactivada",
+    "user_stats_2fa_enabled": "2FA activada",
+    "user_stats_total": "Total",
+    "user_stats_suffix": "Empleados"
+  },
+  "single_sign_on": {
+    "configuration": {
+      "create": "Guardar configuración",
+      "creating": "Guardando",
+      "header": "Configuración",
+      "save": "Guardar cambios",
+      "saving": "Guardando",
+      "success_message": "El SSO ha sido activado correctamente."
+    },
+    "description": "injixo soporta el SSO basado en SAML 2.0. Iniciar sesión con SSO omitirá la 2FA de injixo. Puede que tu proveedor de identidad ofrezca 2FA en su lugar. Aprende más en el <0>Help Center</0>.",
+    "disable_confirmation": {
+      "consequences": "El SSO ya no está disponible para tu cuenta de injixo. Todos los usuarios recibirán instrucciones por correo electrónico sobre cómo proceder.",
+      "failed": "No se pudo desactivar el SSO",
+      "failed_message": "El enlace de tu correo no es válido. Ve a Account > Seguridad y desactiva de nuevo el SSO.",
+      "next_step": "Para continuar, establece una nueva contraseña en la página siguiente.",
+      "set_new_password": "Establecer contraseña nueva"
+    },
+    "disabled": "SSO desactivado",
+    "disablement": {
+      "cancel": "Cancelar",
+      "disable": "Desactivar",
+      "disabling": "Desactivando",
+      "enforced": {
+        "2fa_hint": "Recomendamos encarecidamente activar la 2FA como una capa adicional de seguridad.",
+        "details": "Tras desactivar el SSO, los usuarios tienen que iniciar sesión con correo electrónico y contraseña. Recibirán instrucciones por correo electrónico para crear una contraseña nueva.",
+        "next_step": "Para confirmar la desactivación del SSO enviaremos un correo electrónico a <0>{email}}</0> con instrucciones detalladas sobre cómo proceder."
+      },
+      "result": {
+        "accepted": "Acabamos de enviarte un correo electrónico para confirmar la desactivación del SSO.",
+        "disabled": "El SSO ha sido desactivado correctamente. Todos los usuarios tienen que iniciar sesión con correo electrónico y contraseña.",
+        "error": "No se pudo desactivar el SSO."
+      },
+      "title": "Desactivar SSO",
+      "unenforced": {
+        "details": "Como el SSO no es obligatorio, puedes simplemente desactivarlo. Ya no será posible iniciar sesión vía SSO. Todos los usuarios tendrán que iniciar sesión con correo electrónico y contraseña. Los usuarios no recibirán ninguna notificación."
+      }
+    },
+    "download": "Descargar",
+    "download_certificate": "Descargar certificado",
+    "enforced": "El inicio de sesión único está activado. No se puede iniciar sesión con correo electrónico y contraseña. Los usuarios solo pueden iniciar sesión en injixo si tienen los permisos necesarios en el proveedor de identidad. Puedes leer más sobre el SSO en el <0>Help Center</0>",
+    "enforcement": {
+      "cancel": "Cancelar",
+      "description": "Antes de activar el SSO para todos los usuarios, comprueba más arriba que tu configuración funciona correctamente. Activar el SSO prar todos los usuarios deshabilitará el inicio de sesión con correo electrónico y contraseña.",
+      "enforce": "Activar el SSO para todos los usuarios",
+      "enforcing": "Activando el SSO",
+      "header": "Activar el SSO para todos los usuarios",
+      "modal": {
+        "generic_error": "Ha ocurrido un error desconocido. Vuelve a intentarlo más tarde.",
+        "password_label": "Introduce tu contraseña para confirmar",
+        "preconditions": {
+          "item_1": "Todos los usuarios deben tener los permisos necesarios en tu proveedor de identidad para acceder a injixo. De lo contrario, no podrán iniciar sesión en injixo.",
+          "title": "Requisitos"
+        },
+        "related_changes": {
+          "item_1": "Se informará a todos los usuarios por correo electrónico de que deberán iniciar sesión vía SSO.",
+          "item_2": "Ya no será posible iniciar sesión con correo electrónico y contraseña.",
+          "item_3": "Todas las contraseñas de los usuarios serán restablecidas tras 48 horas.",
+          "item_4": "La 2FA dejará de estar disponible en injixo. Puedes comprobar si tu proveedor de identidad requiere un segundo factor de autenticación.",
+          "item_5": "Las contraseñas de los usuarios tienen que ser gestionadas en el proveedor de identidad.",
+          "title": "Consecuencias"
+        },
+        "title": "Activar el SSO para todos los usuarios",
+        "wrong_password_error": "Contraseña incorrecta."
+      },
+      "not_enforced_warning": "La desactivación de la SSO debería ser sólo temporal para comprobar la instalación y configuración.",
+      "success": "El SSO ha sido activado para todos los usuarios."
+    },
+    "error_message": "Ha ocurrido un problema.",
+    "federated_metadata_url": {
+      "error": {
+        "generic": "Error desconocido",
+        "host_not_allowed": "Host no autorizado",
+        "https_required": "HTTPS requerido",
+        "identity_provider_not_reachable": "No se pudo contactar con el proveedor de identidiad.",
+        "invalid": "URL incorrecta",
+        "invalid_metadata": "Metadatos incorrectos"
+      },
+      "label": "URL de metadatos de federación"
+    },
+    "header": "Inicio de sesión único (SSO)",
+    "help_center_url": "https://help.injixo.com/es/single-sign-on",
+    "identity_provider": {
+      "description": "Obtén la siguiente información en tu proveedor de identidad, p. ej. Microsoft Azure AD u Okta.",
+      "header": "Proveedor de identidad"
+    },
+    "injixo_metadata": {
+      "acs_url": "URL del servicio ACS (Assertion Consumer Service)",
+      "description": "Sube el siguiente fichero de metadatos (.xml) a tu proveedor de identidad para configurar injixo como proveedor de servicios.",
+      "download": "Descargar metadatos",
+      "header": "Metadatos SAML de injixo",
+      "logout_url": "URL de cierre de sesión",
+      "service_provider_details": "Detalles del proveedor de servicios",
+      "service_provider_entitiy_identifier": "Identificador de entidad del proveedor de servicios"
+    },
+    "token_encryption": {
+      "description": "Para cifrar las aserciones SAML enviadas por el proveedor de identidad, usa el siguiente archivo de certificado (.crt). La comunicación en general se encripta vía SSL/TLS. El certificado es válido hasta el <0>{{expiration_date}}</0>.",
+      "header": "Cifrado de tokens"
+    },
+    "verification": {
+      "details": "Todos los usuarios tienen que ser asignados a la aplicación SAML injixo en tu proveedor de identidad. El SSO se puede utilizar en paralelo al inicio de sesión con correo electrónico y contraseña.",
+      "error": "Tu proveedor de identidad no te permite acceder a injixo. Asegúrate de que tu proveedor de identidad está configurado correctamente y que tu cuenta de usuario puede autenticarse en injixo vía SSO.",
+      "redirect_failed": "Ha fallado la redirección",
+      "redirecting": "Redireccionando",
+      "success": "Te has autenticado con éxito en tu proveedor de identidad y puedes acceder a injixo vía SSO.",
+      "verify": "Probar la configuración"
+    }
+  }
+}

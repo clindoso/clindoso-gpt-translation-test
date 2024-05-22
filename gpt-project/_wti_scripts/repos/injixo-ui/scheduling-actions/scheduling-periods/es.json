@@ -1,0 +1,122 @@
+{
+  "heading": {
+    "initial": "Periodos de planificación",
+    "create": "Crear periodo de planificación",
+    "edit": "Editar periodo de planificación",
+    "lottery": "Empezar sorteo de turnos",
+    "assignment": "Asignar turnos",
+    "generate": "Generar turnos"
+  },
+  "button": {
+    "back-to-schedules": "Volver a Planificar",
+    "cancel": "Cancelar",
+    "delete-selected": "Eliminar seleccionado",
+    "save": "Guardar",
+    "start-lottery": "Empezar sorteo de turnos",
+    "generate-shifts": "Generar turnos",
+    "start-assignment": "Asignar turnos"
+  },
+  "error": {
+    "create": {
+      "error": "Ha ocurrido un error al crear el periodo de planificación."
+    },
+    "edit": {
+      "request": "No se ha podido solicitar la actualización"
+    },
+    "incomplete-form": "Los datos del formulario están incompletos. Asegúrate de corregir todos los campos resaltados.",
+    "fetching-data": "Ha ocurrido un error y no se han podido cargar los periodos de planificación. Prueba a <0>recargar los periodos de planificación</0> o prueba más tarde.",
+    "generate": {
+      "shift-coverage": "Introducir un porcentaje"
+    },
+    "shift-bidding-modal": {
+      "no-selected-employees": "No se han seleccionado empleados. Se necesita al menos un empleado para poder proceder."
+    }
+  },
+  "explanation": {
+    "shift-bidding-modal-toggle": "Considerar la hora de inicio promedio de otros turnos",
+    "shift-bidding-modal-tolerance": "Tolerancia máxima que se puede desviar la hora de inicio de un turno de la hora de inicio promedio de los empleados",
+    "generate-based-on-contractual-hours": "de las horas de contrato",
+    "generate-based-on-employee-requirement": "de la necesidad de empleados",
+    "generate-shift-coverage-percentage": "Necesidad de turnos"
+  },
+  "label": {
+    "aria-enhancement": {
+      "select": "seleccionar",
+      "select-all": "seleccionar todo"
+    },
+    "create": "Crear periodo de planificación",
+    "deadline": "Fecha tope",
+    "no-planning-untis": "No se han encontrado unidades de planificación",
+    "no-selections": "No se han encontrado grupos",
+    "shift-requirements": "Ajustar la generación de turnos",
+    "status": "Estado",
+    "daterange": "Rango de fechas",
+    "tolerance": "Tolerancia"
+  },
+  "notification": {
+    "create": {
+      "error": "Ha ocurrido un error al crear el periodo de planificación. Por favor, vuelve a intentarlo.",
+      "success": "Periodo de planificación creado correctamente"
+    },
+    "delete": {
+      "failed_one": "No se ha podido eliminar {{count}} periodo de planificación",
+      "failed_other": "No se han podido eliminar {{count}} periodos de planificación",
+      "success_one": "{{count}} periodo de planificación se ha eliminado correctamente",
+      "success_other": "{{count}} periodos de planificación se han eliminado correctamente"
+    },
+    "edit": {
+      "edit-error": "Ha ocurrido un error al actualizar, por favor vuelve a intentarlo más tarde",
+      "edit-success": "Periodo de planificación actualizado correctamente",
+      "status-error": "Ha ocurrido un error al actualizar el estado, por favor vuelve a intentarlo más tarde.",
+      "status-success": "Periodo de planificación actualizado correctamente"
+    },
+    "assignment": {
+      "error": "Ha ocurrido un error al iniciar la asignación de turnos. Por favor, vuelve a intentarlo.",
+      "success": "La asignación de turnos se ha iniciado correctamente"
+    },
+    "generate-shifts": {
+      "error": "Ha ocurrido un error al iniciar la generación de turnos. Por favor, vuelve a intentarlo.",
+      "success": "La generación de turnos se ha iniciado correctamente."
+    },
+    "lottery": {
+      "error": "Ha ocurrido un error al iniciar el sorteo de turnos. Por favor, vuelve a intentarlo.",
+      "success": "El sorteo de turnos se ha iniciado correctamente"
+    }
+  },
+  "placeholder": {
+    "all-selections": "Todos los grupos",
+    "deadline-none": "Ninguno",
+    "planning-unit": "Selecciona una unidad de planificación",
+    "table": "No hay todavía periodos de planificación. Prueba a cambiar el filtro o añade uno nuevo."
+  },
+  "tab": {
+    "expired": "Caducado",
+    "ongoing": "En marcha"
+  },
+  "table": {
+    "heading": {
+      "deadline": "Fecha tope",
+      "inherited-from": "Heredado de",
+      "selection": "Grupo",
+      "status": "Estado",
+      "valid-from": "Válido desde",
+      "valid-to": "Válido hasta"
+    },
+    "none": "Ninguno",
+    "status": {
+      "published": "Publicado",
+      "finished": "Finalizado",
+      "unpublished": "No publicado",
+      "shift_bidding_enabled": "Oferta de turnos habilitada"
+    }
+  },
+  "document_title": {
+    "context": "Periodos de Planificación",
+    "module": "Plan"
+  },
+  "hints": {
+    "assignment-modal-background-job": "Al iniciar la asignación de turnos, se inicia un proceso en segundo plano. Para ver el estado, comprueba el <0>JobProcessor</0>.",
+    "generate-shifts-modal-background-job": "Al iniciar la generación de turnos, se inicia un proceso en segundo plano. Para ver el estado, comprueba el <0>JobProcessor</0>.",
+    "lottery-modal-background-job": "Al iniciar el sorteo de turnos, se inicia un proceso en segundo plano. Para ver el estado, comprueba el <0>JobProcessor</0>."
+  }
+}

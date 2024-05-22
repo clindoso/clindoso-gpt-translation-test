@@ -1,0 +1,122 @@
+{
+  "heading": {
+    "initial": "Périodes de planification",
+    "create": "Créer une période de planification",
+    "edit": "Modifier la Période de planification",
+    "lottery": "Tirage au sort",
+    "assignment": "Attribuer les missions",
+    "generate": "Générer les missions"
+  },
+  "button": {
+    "back-to-schedules": "Retour à Schedules",
+    "cancel": "Annuler",
+    "delete-selected": "Supprimer la sélection",
+    "save": "Sauvegarder",
+    "start-lottery": "Démarrer le tirage au sort",
+    "generate-shifts": "Générer les missions",
+    "start-assignment": "Attribuer les missions"
+  },
+  "error": {
+    "create": {
+      "error": "Une erreur est survenue."
+    },
+    "edit": {
+      "request": "Impossible de mettre à jour"
+    },
+    "incomplete-form": "Il manque des informations. Veuillez vérifier les champs mis en évidence.",
+    "fetching-data": "Une erreur est survenue lors de l'affichage des périodes de planification. Vous pouvez <0>recharger</0> les périodes de planification ou réessayer plus tard.",
+    "generate": {
+      "shift-coverage": "Entrer un pourcentage"
+    },
+    "shift-bidding-modal": {
+      "no-selected-employees": "Aucun employé sélectionné. Sélectionnez au moins un employé."
+    }
+  },
+  "explanation": {
+    "shift-bidding-modal-toggle": "Tenir compte de l'heure moyenne de début des autres horaires",
+    "shift-bidding-modal-tolerance": "Ecart maximal entre l'heure de début et l'heure moyenne de début des autres horaires",
+    "generate-based-on-contractual-hours": "des heures contractuelles",
+    "generate-based-on-employee-requirement": "du besoin en personnel",
+    "generate-shift-coverage-percentage": "Besoin en missions"
+  },
+  "label": {
+    "aria-enhancement": {
+      "select": "sélectionner",
+      "select-all": "tout sélectionner"
+    },
+    "create": "Créer une période de planification",
+    "deadline": "Date limite",
+    "no-planning-untis": "Aucune Unité opérationnelle trouvée",
+    "no-selections": "Aucun Groupe trouvé",
+    "shift-requirements": "Ajuster le besoin en missions",
+    "status": "Statut",
+    "daterange": "Période",
+    "tolerance": "Ecart"
+  },
+  "notification": {
+    "create": {
+      "error": "Une erreur est survenue. Essayez à nouveau.",
+      "success": "Nouvelle Période de planification créée"
+    },
+    "delete": {
+      "failed_one": "{{count}} Période de planification n'a pu être supprimée",
+      "failed_other": "{{count}} Périodes de planification n'ont pu être supprimées.",
+      "success_one": "{{count}} Période de planification supprimée",
+      "success_other": "{{count}} Périodes de planification supprimées"
+    },
+    "edit": {
+      "edit-error": "Une erreur est survenue. Essayez à nouveau.",
+      "edit-success": "Mise à jour effectuée",
+      "status-error": "Une erreur est survenue. Essayez à nouveau.",
+      "status-success": "Mise à jour effectuée"
+    },
+    "assignment": {
+      "error": "Impossible de démarrer l'attribution de missions. Essayez à nouveau.",
+      "success": "L'attribution de mission a démarré avec succès"
+    },
+    "generate-shifts": {
+      "error": "Impossible de démarrer la génération de missions. Essayez à nouveau.",
+      "success": "La génération de missions à démarré avec succès"
+    },
+    "lottery": {
+      "error": "Impossible de démarrer le tirage au sort. Essayez à nouveau.",
+      "success": "Le tirage au sort a démarré avec succès"
+    }
+  },
+  "placeholder": {
+    "all-selections": "Tous les groupes",
+    "deadline-none": "Aucun",
+    "planning-unit": "Sélectionner une unité opérationnelle",
+    "table": "Aucune Période de planification trouvée. Modifiez le filtre ou créez-en une nouvelle."
+  },
+  "tab": {
+    "expired": "Expirée(s)",
+    "ongoing": "En cours"
+  },
+  "table": {
+    "heading": {
+      "deadline": "Date limite",
+      "inherited-from": "Héritée de",
+      "selection": "Groupe",
+      "status": "Statut",
+      "valid-from": "Valide du",
+      "valid-to": "Jusqu'au"
+    },
+    "none": "Aucun",
+    "status": {
+      "published": "Publiée",
+      "finished": "Clôturée",
+      "unpublished": "Non publiée",
+      "shift_bidding_enabled": "Missions disponibles"
+    }
+  },
+  "document_title": {
+    "context": "Périodes de Planification",
+    "module": "Plan"
+  },
+  "hints": {
+    "assignment-modal-background-job": "L'opération s'exécute en arrière-plan. Pour vérifier l'avancée du traitement, aller dans le menu <0>JobProcessor</0>.",
+    "generate-shifts-modal-background-job": "L'opération s'exécute en arrière-plan. Pour vérifier l'avancée du traitement, aller dans le menu <0>JobProcessor</0>.",
+    "lottery-modal-background-job": "L'opération s'exécute en arrière-plan. Pour vérifier l'avancée du traitement, aller dans le menu <0>JobProcessor</0>."
+  }
+}

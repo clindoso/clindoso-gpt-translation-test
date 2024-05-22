@@ -1,0 +1,122 @@
+{
+  "heading": {
+    "initial": "Planperioden",
+    "create": "Planperiode erstellen",
+    "edit": "Planperiode bearbeiten",
+    "lottery": "Schichten verlosen",
+    "assignment": "Schichten zuteilen",
+    "generate": "Schichten erzeugen"
+  },
+  "button": {
+    "back-to-schedules": "Zurück zu Schedules",
+    "cancel": "Abbrechen",
+    "delete-selected": "Ausgewählte löschen",
+    "save": "Speichern",
+    "start-lottery": "Schichten verlosen",
+    "generate-shifts": "Schichten erzeugen",
+    "start-assignment": "Schichten zuteilen"
+  },
+  "error": {
+    "create": {
+      "error": "Beim Erstellen der Planperiode ist ein Fehler aufgetreten."
+    },
+    "edit": {
+      "request": "Anfrage zum Speichern fehlgeschlagen"
+    },
+    "incomplete-form": "Es fehlen Daten im Formular. Korrigiere die Daten in den markierten Feldern.",
+    "fetching-data": "Beim Laden der Planperioden ist ein Fehler aufgetreten. <0>Lade Planperioden neu</0> oder versuche es später erneut.",
+    "generate": {
+      "shift-coverage": "Eine Prozentzahl eintragen"
+    },
+    "shift-bidding-modal": {
+      "no-selected-employees": "Kein Mitarbeiter ausgewählt. Mindestens 1 Mitarbeiter muss ausgewählt werden um fortzufahren."
+    }
+  },
+  "explanation": {
+    "shift-bidding-modal-toggle": "Durchschnittliche Startzeiten der Schichten berücksichtigen",
+    "shift-bidding-modal-tolerance": "Maximale Toleranz, welche die Startzeit einer Schicht von der durchschnittlichen Schichtstartzeit eines Mitarbeiters abweichen kann",
+    "generate-based-on-contractual-hours": "der Stunden laut Vertrag",
+    "generate-based-on-employee-requirement": "des Mitarbeiterbedarfs",
+    "generate-shift-coverage-percentage": "Schichterzeugungsbedarf"
+  },
+  "label": {
+    "aria-enhancement": {
+      "select": "auswählen",
+      "select-all": "alle auswählen"
+    },
+    "create": "Planperiode erstellen",
+    "deadline": "Stichtag",
+    "no-planning-untis": "Keine Planungseinheit gefunden",
+    "no-selections": "Keine Auswahl gefunden",
+    "shift-requirements": "Schichterzeugung anpassen",
+    "status": "Status",
+    "daterange": "Zeitraum",
+    "tolerance": "Toleranz"
+  },
+  "notification": {
+    "create": {
+      "error": "Beim Erstellen der Planperiode ist ein Fehler aufgetreten. Bitte versuche es erneut.",
+      "success": "Die Planperiode wurde erfolgreich erstellt"
+    },
+    "delete": {
+      "failed_one": "{{count}} Planperiode konnte nicht gelöscht werden",
+      "failed_other": "{{count}} Planperioden konnten nicht gelöscht werden",
+      "success_one": "{{count}} Planperiode wurden erfolgreich gelöscht",
+      "success_other": "{{count}} Planperioden wurden erfolgreich gelöscht"
+    },
+    "edit": {
+      "edit-error": "Beim Speichern ist ein Fehler aufgetreten, bitte versuche es erneut",
+      "edit-success": "Die Planperiode wurde erfolgreich aktualisiert",
+      "status-error": "Beim Speichern ist ein Fehler aufgetreten, bitte versuche es erneut",
+      "status-success": "Der Status der Planperiode wurde erfolgreich aktualisiert"
+    },
+    "assignment": {
+      "error": "Beim Starten der Schichtzuteilung ist ein Fehler aufgetreten. Bitte versuche es erneut.",
+      "success": "Schichtzuteilung erfolgreich gestartet"
+    },
+    "generate-shifts": {
+      "error": "Beim Starten der Schichterzeugung ist ein Fehler aufgetreten. Bitte versuche es erneut.",
+      "success": "Schichtzuteilung erfolgreich gestartet"
+    },
+    "lottery": {
+      "error": "Beim Starten der Schichtverlosung ist ein Fehler aufgetreten. Bitte versuche es erneut.",
+      "success": "Schichtverlosung erfolgreich gestartet"
+    }
+  },
+  "placeholder": {
+    "all-selections": "Alle Auswahlen",
+    "deadline-none": "Keinen",
+    "planning-unit": "Wähle eine Planungseinheit aus",
+    "table": "Es sind keine Planperioden vorhanden. Versuche den Filter anzupassen oder erstelle eine neue Planperiode."
+  },
+  "tab": {
+    "expired": "Abgelaufen",
+    "ongoing": "Gültig"
+  },
+  "table": {
+    "heading": {
+      "deadline": "Stichtag",
+      "inherited-from": "Geerbt von",
+      "selection": "Auswahl",
+      "status": "Status",
+      "valid-from": "Gültig ab",
+      "valid-to": "Gültig bis"
+    },
+    "none": "-",
+    "status": {
+      "published": "Veröffentlicht",
+      "finished": "Abgeschlossen",
+      "unpublished": "Unveröffentlicht",
+      "shift_bidding_enabled": "Schichtwünsche freigeschaltet"
+    }
+  },
+  "document_title": {
+    "context": "Planperioden",
+    "module": "Plan"
+  },
+  "hints": {
+    "assignment-modal-background-job": "Schichten zuteilen startet einen Prozess im Hintergrund. Um den Status zu sehen, überprüfe den <0>JobProcessor</0>.",
+    "generate-shifts-modal-background-job": "Schichten erzeugen startet einen Prozess im Hintergrund. Um den Status zu sehen, überprüfe den <0>JobProcessor</0>.",
+    "lottery-modal-background-job": "Schichten verlosen startet einen Prozess im Hintergrund. Um den Status zu sehen, überprüfe den <0>JobProcessor</0>."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "loading": "Loading",
+  "save": "Save",
+  "saving": "Saving",
+  "select_planning_unit": "Please select a Planning Unit",
+  "planning_unit": "Planning Unit",
+  "day_model": "Day Model",
+  "day_type": "Day Type",
+  "min": "Min.",
+  "max": "Max.",
+  "server_error": "An internal error occured. Please try again later.",
+  "edit-constraints": {
+    "success": "Values have been saved successfully.",
+    "failure": "Values could not be saved. Please review the values and try again."
+  }
+}

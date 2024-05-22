@@ -1,0 +1,112 @@
+{
+  "csv_importer": {
+    "confirmation_page": {
+      "apply": "Apply data",
+      "cancel": "Cancel",
+      "confirm": "Confirm your data to write it to the cloud."
+    },
+    "error_page": {
+      "import_error": "An error occurred during the import.",
+      "message": {
+        "before_error": "The file could not be imported due to the following problems:",
+        "retry_after_error": "Check the file syntax and try again."
+      }
+    },
+    "errors": {
+      "empty_file": "File is empty.",
+      "end_time_before_start_time": "End time must not be before start time.",
+      "error_on_line": "Error on line {{line_number}}:",
+      "excessive_data": "More than one year of data is not supported.",
+      "file_too_large": "The file you tried to upload is too large. The maximum size is 7MB.",
+      "invalid_channel": "Unsupported channel.",
+      "invalid_date_format": "Wrong date format.",
+      "invalid_date_or_time_format": "Wrong date or time format.",
+      "invalid_duration_cdr": "The contact was claimed to be handled but has no duration.",
+      "invalid_end_of_line": "Use consistent end of line characters in one file.",
+      "invalid_handled_cdr": "The handled field must contain either 0 or 1.",
+      "invalid_headers": "Missing or misspelled headers.",
+      "invalid_number": "Check the formats of the numeric values.",
+      "invalid_row_length": "The number of fields in this line doesn't match the number of fields in the header row.",
+      "invalid_separator": "Invalid separator.",
+      "invalid_time_format": "Wrong time format.",
+      "invalid_time_range": "The data exceeds the maximum period of 10 years.",
+      "invalid_timestamp": "Invalid timestamp according to the interval length.",
+      "invalid_year": "Year must not be before 1970.",
+      "missing_activity": "Missing activity identifier.",
+      "missing_agent": "Missing agent identifier.",
+      "missing_queue": "Missing queue name.",
+      "negative_number": "Negative numbers are not allowed.",
+      "non_existing_timestamp": "The specified local time does not represent an existing timestamp.",
+      "number_too_big": "Number too big.",
+      "sql_error": "An SQL error occurred.",
+      "string_too_long": "Shorten your value to 255 characters.",
+      "unexpected": "An unexpected error has occurred.",
+      "unknown_error": "An unknown error occurred."
+    },
+    "heading": "Historical data import",
+    "success_page": {
+      "import_again": "Upload another CSV file",
+      "success": "Successfully analyzed your CSV file.",
+      "to_forecast": "Go to Forecast",
+      "to_intraday": "Go to Intraday"
+    },
+    "summary": {
+      "failure": "Import failed",
+      "first_date": "first date (UTC)",
+      "heading": {
+        "confirm": "Confirm import",
+        "success": "Import successful"
+      },
+      "imported_agents": "imported agents",
+      "imported_lines": "imported lines",
+      "imported_queues": "imported Queues",
+      "last_date": "last date (UTC)",
+      "title": "Your import",
+      "try_again": "Try again"
+    },
+    "upload_form": {
+      "file_input": {
+        "active_description": {
+          "invalid": "Drop only one file with a CSV format.",
+          "valid": "Drop your CSV file here..."
+        },
+        "description": {
+          "multiple": "Drag CSV files here to add them.",
+          "single": "Drag one CSV file (.csv or .txt) here to add it"
+        },
+        "file_limit_warning": "You can upload the file by clicking on \"Import file\".",
+        "joiner": "or",
+        "link": "open your file explorer.",
+        "loading": "loading"
+      },
+      "help": {
+        "link": "Read what's supported.",
+        "text": "Need help?"
+      },
+      "integration": {
+        "label": "Import through",
+        "no_result": "No integration found",
+        "placeholder": "Select integration..."
+      },
+      "introduction": "Import one CSV file of your historical data from your ACD to create a forecast in injixo. The maximum size of the CSV file must not exceed 7MB.",
+      "invalid_file": "The file '{{file_name}}' could not be selected. Provide a valid CSV file.",
+      "multi_upload_warning": "Uploading data from multiple browser windows or computers at the same time may damage your existing queue data.",
+      "no_integration": {
+        "link": "Add a CSV integration now",
+        "text": "In order to import CSV data, you first need to create a CSV integration."
+      },
+      "submit": {
+        "loading": "Uploading",
+        "title": "Import file"
+      }
+    },
+    "writing_page": {
+      "writing": "Please wait a moment while your data is written into the cloud...",
+      "writing_status": "Writing your data to the cloud..."
+    }
+  },
+  "document_title": {
+    "module": "CSV Importer",
+    "page_title": "Historical data import"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "heading": {
+    "initial": "Tauschanfragen genehmigen"
+  },
+  "alt": {
+    "reload-planning-units": "Planungseinheiten neu laden",
+    "reload-selections": "Auswahlen neu laden",
+    "reload-shift-exchange-commitments": "Tauschanfragen neu laden"
+  },
+  "button": {
+    "approve-selected": "Ausgewählte genehmigen",
+    "back-to-schedules": "Zurück zu Schedules",
+    "reject-selected": "Ausgewählte ablehnen"
+  },
+  "document_title": {
+    "module": "Plan",
+    "page": {
+      "approve_shift_exchange": "Tauschanfragen genehmigen"
+    }
+  },
+  "filter": {
+    "no-result-found": "Keine Ergebnisse gefunden"
+  },
+  "message": {
+    "error": "Daten können nicht geladen werden",
+    "planning-units": {
+      "error": "Beim Laden der Planungseinheiten ist ein Fehler aufgetreten. <0>Lade Planungseinheiten neu</0> oder versuche es später erneut."
+    },
+    "selections": {
+      "error": "Beim Laden der Auswahlen ist ein Fehler aufgetreten. <0>Lade Auswahlen neu</0> oder versuche es später erneut."
+    },
+    "shift-exchange-commitments": {
+      "error": "Die Tauschanfragen konnten nicht geladen werden. <0>Lade Tauschanfragen neu</0> oder versuche es später erneut.",
+      "update-error": "Die Tauschanfrage(n) konnten nicht aktualisiert werden.",
+      "update-success": "Tauschanfrage(n) aktualisiert"
+    }
+  },
+  "placeholder": {
+    "planning-unit": "Planungseinheit wählen",
+    "selection": "Auswahl festlegen"
+  },
+  "status": {
+    "tooltip": {
+      "acceptor-resigned": "Der Tauschpartner ist vom Tausch zurückgetreten.",
+      "acceptor-shift-changed": "Die Schicht des Tauschpartners hat sich geändert",
+      "deadline-missed": "Frist abgelaufen",
+      "invalid": "Der Schichttausch ist ungültig.",
+      "offerer-resigned": "Der Anbieter ist vom Tausch zurückgetreten",
+      "offerer-shift-changed": "Die Schicht des Anbieters hat sich geändert",
+      "rule-breached": "Eine Planungsregel wurde verletzt"
+    },
+    "value": {
+      "approved": "Genehmigt",
+      "canceled": "Storniert",
+      "pending": "Ausstehend",
+      "rejected": "Abgelehnt"
+    }
+  },
+  "tab": {
+    "information": "Information",
+    "pending": "Ausstehend"
+  },
+  "table": {
+    "heading": {
+      "compensation-date": "Datum des Gegenangebots",
+      "exchange-date": "Tauschdatum",
+      "exchange-partner": "Tauschpartner",
+      "initiator": "Initiator",
+      "modification-date": "Geändert am",
+      "status": "Status"
+    },
+    "no-results": "Keine Tauschanfragen gefunden."
+  }
+}

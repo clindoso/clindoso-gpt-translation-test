@@ -1,0 +1,74 @@
+{
+  "document_title": {
+    "context": "Shift Trading",
+    "module": "Me",
+    "page": {
+      "invite_colleagues": "Invite colleagues"
+    }
+  },
+  "footer": {
+    "button": {
+      "back": "Back to dashboard",
+      "continue_one": "Select {{count}} available shift",
+      "continue_zero": "Continue without selection",
+      "continue_other": "Select {{count}} available shifts",
+      "invite_one": "Send {{count}} invitation",
+      "invite_zero": "Send invitation",
+      "invite_other": "Send {{count}} invitations",
+      "next": "Continue without selection",
+      "previous": "Back to previous selection",
+      "skip": "Skip invitations"
+    }
+  },
+  "heading": "Invite suitable colleagues to swap shifts",
+  "help-button": {
+    "content": "<0>Learn more</0> about swapping shifts.",
+    "link": "https://help.injixo.com/injixo-me-invite-suitable-colleagues/",
+    "link-alt": "Link to Help Center."
+  },
+  "invite": {
+    "error": {
+      "message": "Invites could not be sent. Please try again"
+    }
+  },
+  "offered-shift": {
+    "all-day": "All day",
+    "error": {
+      "content": "An error has occurred and your shift could not be loaded. Try to <0>reload</0> or try again later.",
+      "retry-alt": "Reload your shift"
+    },
+    "multiple": {
+      "title": "Offered shift pair"
+    },
+    "nothing-scheduled": "Nothing scheduled",
+    "title": "Your shift"
+  },
+  "success": {
+    "back-to-employee-portal": "Go back to injixo Me",
+    "title_one": "{{count}} invitation was sent successfully.",
+    "title_other": "{{count}} invitations were sent successfully."
+  },
+  "suitable-shift": {
+    "employees_one": "{{count}} suitable employee",
+    "employees_other": "{{count}} suitable employees",
+    "empty": {
+      "back-alt": "Back to shift swap",
+      "content": "No suitable shifts for your selection found. <0>Back to shift swap</0>."
+    },
+    "error": {
+      "content": "An error has occurred and suitable shifts could not be loaded. Try to <0>reload</0> or try again later."
+    },
+    "multiple": {
+      "title": "Available shift pairs"
+    },
+    "select-all": {
+      "checkbox": {
+        "label": "All"
+      }
+    },
+    "title": "Suitable shifts"
+  },
+  "title": {
+    "back": "Back to shift swap"
+  }
+}

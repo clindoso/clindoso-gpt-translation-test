@@ -1,0 +1,66 @@
+{
+  "document_title": {
+    "module": "Plan",
+    "context": "Centro dei turni"
+  },
+  "parametersBar": {
+    "apply": "Applica",
+    "startDate": "Data di inizio",
+    "duration": "Durata",
+    "levels": "Levels",
+    "units": {
+      "days": "Giorni",
+      "weeks": "Settimane",
+      "months": "Mesi",
+      "years": "Anni"
+    },
+    "unit": "Unità",
+    "selection": "Selezione",
+    "employeeFilter": "Filtro dipendenti",
+    "editEmployeeFilter": "Modifica filtro dipendenti",
+    "filterEditor": "Editor filtri",
+    "chooseSelections": "Selezione",
+    "chooseEmployeeFilter": "Filter Employees",
+    "dateFormat": "d MMMM yyyy",
+    "noResult": "no result"
+  },
+  "shiftCenterFrame": {
+    "loading": "Loading"
+  },
+  "levelSelector": {
+    "levels": {
+      "plan": "Piano",
+      "final": "Stato effettivo",
+      "correction": "Correzione",
+      "timeRecording": "Rilevazione presenze",
+      "acd": "Sistema esterno",
+      "wishes": "Richieste normali",
+      "alternativeWishes": "Richieste alternative",
+      "absenceWishes": "Richieste di assenza",
+      "availabilities": "Disponibilità",
+      "backup": "Versione salvata 1",
+      "backupVersion2": "Versione salvata 2",
+      "backupVersion3": "Versione salvata 3"
+    }
+  },
+  "error": {
+    "configuration": "C'è stato un errore (Risorsa: Configurazione)",
+    "accessRights": "C'è stato un errore (Risorsa: Diritti di accesso)",
+    "settings": "C'è stato un errore (Risorsa: Impostazioni) - Dettagli:",
+    "postMessage": "Posting a message to Shift Center failed.",
+    "accountBalances": {
+      "message": "Prova a ricaricare il <0>Saldo dei Conti</0> o riprova più tardi.",
+      "label": "Ricarica Saldo dei Conti"
+    },
+    "generic": "C’è stato un errore."
+  },
+  "timeAccounts": {
+    "accountBalances": "Saldi dei conti di time management",
+    "accountX": "Conto di time management {{number}}",
+    "chooseAccount": "Scegli conto",
+    "dateLabel": "Data",
+    "none": "Nessuna",
+    "closeModal": "Chiudi",
+    "noResult": "Nessun dato disponibile."
+  }
+}

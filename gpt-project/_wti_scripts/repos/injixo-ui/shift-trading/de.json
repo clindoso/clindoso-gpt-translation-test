@@ -1,0 +1,74 @@
+{
+  "document_title": {
+    "context": "Shift Trading",
+    "module": "Me",
+    "page": {
+      "invite_colleagues": "Kollegen einladen"
+    }
+  },
+  "footer": {
+    "button": {
+      "back": "Zurück zur Übersicht",
+      "continue_one": "Wähle {{count}} verfügbare Schicht",
+      "continue_zero": "Weiter ohne Auswahl",
+      "continue_other": "Wähle {{count}} verfügbare Schichten",
+      "invite_one": "{{count}} Einladung versenden",
+      "invite_zero": "Einladungen versenden",
+      "invite_other": "{{count}} Einladungen versenden",
+      "next": "Nächster Schritt",
+      "previous": "Vorheriger Schritt",
+      "skip": "Einladungen überspringen"
+    }
+  },
+  "heading": "Kollegen zum Schichttausch einladen",
+  "help-button": {
+    "content": "<0>Hilfe und weitere Infos</0> zum Thema Schichttausch",
+    "link": "https://help.injixo.com/de/injixo-me-invite-suitable-colleagues/",
+    "link-alt": "Link zum Help Center."
+  },
+  "invite": {
+    "error": {
+      "message": "Die Einladungen konnten nicht versendet werden. Bitte versuche es noch einmal."
+    }
+  },
+  "offered-shift": {
+    "all-day": "Ganztägig",
+    "error": {
+      "content": "Ein Fehler ist aufgetreten und Deine Schicht konnte nicht geladen werden. Versuche erneut zu <0>laden</0> oder versuche es später noch einmal.",
+      "retry-alt": "Deine Schicht erneut laden"
+    },
+    "multiple": {
+      "title": "Angebotenes Schichtpaar"
+    },
+    "nothing-scheduled": "Keine Planung vorhanden",
+    "title": "Deine Schicht"
+  },
+  "success": {
+    "back-to-employee-portal": "Zurück zu injixo Me",
+    "title_one": "{{count}} Einladung wurde erfolgreich versendet.",
+    "title_other": "{{count}} Einladungen wurden erfolgreich versendet."
+  },
+  "suitable-shift": {
+    "employees_one": "{{count}} Kollege",
+    "employees_other": "{{count}} Kollegen",
+    "empty": {
+      "back-alt": "Zurück zum Schichttausch",
+      "content": "Keine passenden Schichten gefunden. <0>Zurück zum Schichttausch</0>."
+    },
+    "error": {
+      "content": "Ein Fehler ist aufgetreten und die möglichen Schichten konnten nicht geladen werden. Versuche erneut zu <0>laden</0> oder versuche es später noch einmal."
+    },
+    "multiple": {
+      "title": "Verfügbare Schichtpaare"
+    },
+    "select-all": {
+      "checkbox": {
+        "label": "Alle"
+      }
+    },
+    "title": "Mögliche Schichten"
+  },
+  "title": {
+    "back": "Zurück zum Schichttausch"
+  }
+}

@@ -1,0 +1,260 @@
+{
+  "document_title": {
+    "module": "Profil",
+    "context": {
+      "profile": {
+        "title": "Mein Profil",
+        "page": "Meine Informationen"
+      },
+      "security": {
+        "title": "Sicherheit",
+        "page": {
+          "overview": "Übersicht",
+          "enable2fa": "2FA aktivieren",
+          "disable2fa": "2FA deaktivieren",
+          "sso": "Single Sign-On"
+        }
+      }
+    }
+  },
+  "label": {
+    "email": "E-Mail",
+    "loading": "Lädt...",
+    "saving": "Speichert...",
+    "password": "Passwort",
+    "language": "Sprache",
+    "first_name": "Vorname",
+    "last_name": "Nachname",
+    "timezone": "Zeitzone",
+    "to_login_page": "Zur Anmeldeseite",
+    "password_strength_hint": "Ein starkes Passwort besteht aus mindestens 8 Zeichen, aus Groß- und Kleinbuchstaben, Ziffern und Sonderzeichen.",
+    "personnel_number": "Personnel number"
+  },
+  "placeholder": {
+    "timezone": "Zeitzone",
+    "language": "Sprache"
+  },
+  "error": {
+    "other": "Es gab ein technisches Problem. Bitte versuche es erneut."
+  },
+  "password_strength": {
+    "none": "Kein Passwort",
+    "weak": "Schwaches Passwort",
+    "sufficient": "Durchschnittliches Passwort",
+    "strong": "Starkes Passwort"
+  },
+  "login_page": {
+    "otp": {
+      "header": "Zwei-Faktor Authentifizierung",
+      "hint1": "Gib den Code aus der Authentifizierungsapp auf Deinem mobilen Gerät ein.",
+      "hint2": "Du kannst einen <0>Backup-Code</0> verwenden oder Anweisungen erhalten, wie Du <1>Dein Benutzerkonto wiederherstellen</1> kannst.",
+      "hint2_header": "Gibt es Probleme?",
+      "label": "Einmal-Passwort",
+      "verify": "Überprüfen",
+      "link_to_recovery_docs": "https://help.injixo.com/de/use-two-factor-authentication/#ohne-privates-gerät-und-backup-codes-anmelden"
+    },
+    "backupCode": {
+      "header": "Zwei-Faktor Authentifizierung",
+      "label": "Backup-Code",
+      "hint1": "Gib einen Backup-Code für den Fall ein, dass Du den Zugang auf Dein mobiles Gerät verloren hast.",
+      "hint2": "Hier findst Du Anweisungen, wie Du <0>Dein Benutzerkonto wiederherstellen</0> kannst.",
+      "hint2_header": "Gibt es noch Probleme?",
+      "verify": "Überprüfen"
+    },
+    "error": {
+      "invalid": "Falsche E-Mail-Adresse oder falsches Passwort.",
+      "otp_invalid": "Ungültiges Einmal-Passwort.",
+      "otp_timeout": "Zeitüberschreitung. Gib die Anmeldedaten und das OTP innerhalb von 5 Minuten ein.",
+      "backup_code_invalid": "Ungültiger Backup-Code."
+    },
+    "forgot_pw_link": "Hast Du Dein Passwort vergessen?",
+    "header": "Kunden-Anmeldung",
+    "submit": "Anmelden",
+    "title": "Anmelden",
+    "sso_login_link": "Über SSO anmelden"
+  },
+  "logout_page": {
+    "header": "Du bist nun abgemeldet",
+    "title": "Abmelden"
+  },
+  "forgot_password_page": {
+    "title": "Passwort vergessen",
+    "header": "Passwort vergessen",
+    "submit": "Passwort zurücksetzen",
+    "success_message": "Du erhältst in Kürze eine E-Mail, um Dein Passwort zurückzusetzen.",
+    "empty_email": "Gib Deine E-Mail-Adresse ein"
+  },
+  "reset_password_page": {
+    "title": "Password zurücksetzen",
+    "header": "Setze Dein Passwort zurück",
+    "new_psw": "Neues Passwort",
+    "new_psw_confirmation": "Neues Passwort bestätigen",
+    "submit": "Passwort speichern",
+    "success_message": "Du kannst Dich jetzt mit Deinem neuen Passwort anmelden.",
+    "no_token_message": "Es existiert kein gültiger Link, um das Passwort zurückzusetzen. Bitte setze Dein Passwort erneut zurück.",
+    "confirmation_mismatch": "stimmt nicht mit dem Passwort überein"
+  },
+  "welcome_page": {
+    "title": "Willkommen",
+    "header": "Willkommen",
+    "explanation": "Gib Dein neues Passwort für die Anmeldung bei injixo ein.",
+    "success_message": "Willkommen! Du hast Dein Passwort erfolgreich gesetzt und kannst Dich nun anmelden."
+  },
+  "profile_page": {
+    "title": "Profil",
+    "update_successful": "Dein Profil wurde erfolgreich aktualisiert.",
+    "update_error": "Dein Profil konnte nicht gespeichert werden.",
+    "header": "Meine Informationen",
+    "account_header": "Konto",
+    "preferences_header": "Einstellungen",
+    "submit": "Profil speichern",
+    "submit_success": "Dein Profil wurde erfolgreich aktualisiert.",
+    "no_result_found": "Kein Ergebnis gefunden",
+    "email_verification": {
+      "pending": "Deine E-Mail-Adresse ist noch nicht bestätigt. <0> Bestätigungsmail erneut senden. </0>",
+      "verified": "Deine E-Mail-Adresse wurde bestätigt. Dir stehen nun sämtliche Funktionen zur Verfügung.",
+      "failure": "Deine E-Mail-Adresse konnte nicht bestätigt werden. Der aufgerufene Link ist nicht gültig.",
+      "resent": "Wir haben Dir eine neue Bestätigungsmail gesendet."
+    },
+    "validation": {
+      "required": "darf nicht leer sein.",
+      "max": "darf nicht länger als {{max}} Zeichen sein.",
+      "email": "ist kein gültiges E-Mail-Format.",
+      "not_unique": "ist schon vergeben."
+    },
+    "notifications": {
+      "allowed": "Dein Browser erlaubt Benachrichtigungen von injixo.",
+      "blocked": "Dein Browser erlaubt keine injixo-Benachrichtigungen. Du kannst dies in deinen Browser-Einstellungen ändern.",
+      "not_set": "Um injixo-Benachrichtigungen in deinem Browser zu erhalten, musst du diese in deinen Browsereinstellungen erlauben.",
+      "not_supported": "Dein Browser unterstützt keine Benachrichtigungen.",
+      "request": "Benachrichtigungen von injixo erlauben",
+      "title": "Benachrichtigungen"
+    },
+    "password_confirmation": {
+      "title": "E-Mail-Adresse ändern"
+    }
+  },
+  "security_page": {
+    "change_password": {
+      "header": "Passwort ändern",
+      "current_password": "Aktuelles Passwort",
+      "submit": "Passwort speichern",
+      "submit_failed": "Das Passwort konnte nicht gespeichert werden.",
+      "submit_success": "Das Passwort wurde erfolgreich aktualisiert.",
+      "wrong_current_password": "Bitte geben Sie das aktuelle Passwort ein."
+    },
+    "two_factor_auth": {
+      "header": "Zwei-Faktor Authentifizierung",
+      "enable": "2FA aktivieren",
+      "disable": "2FA deaktivieren",
+      "enabled": {
+        "hint": "Dein Account ist mit 2FA gesichert.",
+        "hint2": "Um Deinen Account zu schützen empfehlen wir Dir 2FA aktiviert zu lassen. Um ein anderes Gerät zu registrieren kannst Du einfach 2FA reaktivieren.",
+        "help": "Kontaktiere einen injixo Administrator bei Problemen oder um ein neues Endgerät zu konfigurieren."
+      },
+      "disabled": {
+        "link_to_docs": "https://help.injixo.com/de/2fa",
+        "hint": "Zwei-Faktor Authentifizierung (2FA) erhöht die Sicherheit Deines Accounts, in dem es beim Anmelden nicht nur das Passwort abfragt. Erfahre mehr im <0>Help Center</0>."
+      },
+      "tooltip_enforced": "2FA ist für Dein Account verpflichtend"
+    },
+    "enable_2fa_page": {
+      "header": "Zwei-Faktor-Authentifizierung aktivieren",
+      "continue": "Fortfahren",
+      "enable": "2FA aktivieren",
+      "cancel": "Abbrechen",
+      "copy": "Kopieren",
+      "copied": "Kopiert!",
+      "otp_verification_failed": "Ungültiges Einmal-Passwort, versuche es erneut",
+      "backup_codes_confirmation": "Du musst bestätigen, dass Du Deine Backup-Codes sicher abgespeichert hast.",
+      "sudo_expired": "Deine Sitzung ist abgelaufen. Du kannst den Aktivierungsprozess von vorne beginnen in dem Du die Seite neu lädst.",
+      "enabling_failed": "Es ist etwas schief gelaufen. Bitte versuche es später erneut.",
+      "step_1": {
+        "header": "1. Installiere eine Authenticator App auf Deinem mobilen Endgerät",
+        "description": "Installiere eine der folgenden Authenticator Apps auf Deinem Smartphone oder Tablet PC:",
+        "apps": "Verwende <0>Authy</0>, <0>Google Authenticator</0>, oder <0>Microsoft Authenticator</0>",
+        "download_links": {
+          "header": "Download links",
+          "authy": {
+            "google_play_url": "https://play.google.com/store/apps/details?id=com.authy.authy&hl=de",
+            "apple_store_url": "https://apps.apple.com/de/app/authy/id494168017"
+          },
+          "google_authenticator": {
+            "google_play_url": "https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=de",
+            "apple_store_url": "https://apps.apple.com/de/app/google-authenticator/id388497605"
+          },
+          "microsoft_authenticator": {
+            "google_play_url": "https://play.google.com/store/apps/details?id=com.azure.authenticator&hl=de",
+            "apple_store_url": "https://apps.apple.com/de/app/microsoft-authenticator/id983156458"
+          }
+        }
+      },
+      "step_2": {
+        "header": "2. Füge injixo in Deiner Authenticator App hinzu",
+        "qr_code": "QR-Code scannen",
+        "or": "oder",
+        "setup_key": "Setup-Key manuell eingeben",
+        "description": "In your anthenticator app, add a new account by",
+        "copied_setup_key": "Der Setup-Key wurden in die Zwischenablage kopiert!"
+      },
+      "step_3": {
+        "header": "3. Gib das Einmal-Passwort aus Deiner Authenticator App ein",
+        "description": "Gib das von der Authenticator-App erzeugte Einmal-Passwort ein, um dein Gerät zu registrieren."
+      },
+      "step_4": {
+        "header": "4. Speichere Deine Backup-Codes",
+        "description": "Wenn Du den Zugriff auf Deine Authenticator App verlierst, kannst Du eines der folgenden Einmal-Passwörter verwenden um Dich zu identifizieren. Behandele sie vertraulich und bewahre sie an einem sicheren Ort auf.",
+        "warning": "Du kannst auf diese Passwörter nicht mehr zugreifen sobald Du diese Seite verlässt.",
+        "download_backup_codes": "Herunterladen",
+        "copied_backup_codes": "Die Backup-Codes wurden in die Zwischenablage kopiert!",
+        "checkbox": "Ich habe meine Backup-Codes sicher abgespeichert."
+      },
+      "enforcement": {
+        "message": "Die Zwei-Faktor-Authentifizierung ist von nun an verpflichtend für die Nutzung von injixo. Um mit der Anmeldung fortzufahren, führe die folgenden Schritte durch.",
+        "more_details": "Mehr Details",
+        "less_details": "Weniger Details",
+        "hint": "Zwei-Faktor Authentifizierung (2FA) erhöht die Sicherheit Deines Accounts, in dem es beim Anmelden nicht nur das Passwort abfragt. Erfahre mehr im <0>Help Center</0>.",
+        "link_to_docs": "https://help.injixo.com/de/2fa"
+      }
+    },
+    "enable_2fa": {
+      "success_message": "Zwei-Faktor-Authentifizierung wurde erfolgreich aktiviert"
+    },
+    "disable_2fa": {
+      "success_message": "Zwei-Faktor-Authentifizierung wurde erfolgreich deaktiviert",
+      "header": "Zwei-Faktor-Authentisierung deaktivieren"
+    },
+    "single_sign_on": {
+      "header": "Single Sign-On",
+      "hint": {
+        "admin": "Für deinen Account ist Single Sign-On aktiviert. Die Standardanmeldung mit E-Mail und Passwort ist nicht mehr verfügbar.",
+        "password": "Deine Email und Dein Passwort werden über einen Identify Provider verwaltet. Wende dich an einen Administrator wenn Du sie ändern musst.",
+        "user": "Für deinen Account ist Single Sign-On aktiviert. Die Standardanmeldung mit E-Mail und Passwort ist nicht mehr verfügbar. Wende dich an einen Administrator, um deine Daten oder E-Mail zu ändern."
+      }
+    }
+  },
+  "sudo_confirmation": {
+    "failed": "Falsches Passwort.",
+    "hint": "Gib dein Passwort ein, um fortzufahren",
+    "button": {
+      "continue": "Fortfahren",
+      "cancel": "Abbrechen"
+    }
+  },
+  "login_sso_page": {
+    "authentication_failed": "Authentifizierung fehlgeschlagen. Kontaktiere Deinen Administrator.",
+    "header": "Melde Dich in Deinen Account mit SSO an",
+    "login_link": "Stattdessen mit E-Mail-Adresse und Passwort anmelden",
+    "login_request_expired": "Anmeldeanfrage ist abgelaufen. Versuche es erneut.",
+    "submit": "Weiter",
+    "title": "SSO"
+  },
+  "password_confirmation": {
+    "button": {
+      "cancel": "Abbrechen",
+      "continue": "Fortfahren"
+    },
+    "failed": "Falsches Passwort.",
+    "hint": "Gib dein Passwort ein, um fortzufahren"
+  }
+}

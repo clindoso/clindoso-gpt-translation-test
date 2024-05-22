@@ -1,0 +1,524 @@
+{
+  "label": {
+    "planning-unit": "Planning unit",
+    "button": {
+      "add_availability": "Add day and time span",
+      "proposal": "Generate suggestions",
+      "create-new-1on1": "Set up new 1:1 meetings",
+      "back-to-main": "Back to overview",
+      "cancel": "Cancel",
+      "meeting-proposal": "Generate meeting suggestions"
+    },
+    "day": "Day",
+    "heading": {
+      "employee-section": "Participants ({{amountSelected}}/{{amountTotal}} selected)",
+      "configure-meeting-participants": "Meeting to be scheduled between:",
+      "meeting-host": "Meeting host",
+      "one-on-one-meeting": "Set up 1:1 meetings",
+      "participant": "Participant",
+      "participant-selection": "Schedule individual 1:1 meetings with",
+      "settings": "Settings",
+      "available-proposals": "Generated suggestions",
+      "configure-group-meetings-participants": "Group meetings to be scheduled between",
+      "configure-session-participants": "Self-learning sessions to be scheduled for:",
+      "group-meeting": "Set up group meetings",
+      "group-meeting-card": "Group meetings",
+      "group-meetings-host-selection": "Define availability of the meeting host",
+      "group-meetings-participant-selection": "Assign participants to group meetings",
+      "group-meetings-results": "Results - Group meetings",
+      "one-on-one-meeting-card": "1:1 meetings",
+      "one-on-one-results": "Results - 1:1 meetings",
+      "optional-settings": "Optional settings",
+      "pending-proposals": "Suggestions being generated",
+      "self-learning": "Set up self-learning sessions",
+      "self-learning-meeting-card": "Self-learning sessions",
+      "self-learning-results": "Results - Self-learning sessions"
+    },
+    "from": "From",
+    "loading": "Loading",
+    "no-employees": {
+      "caption": "No employees",
+      "empty-planning-unit": "You can't schedule any meetings as there are no employees for the selected planning unit.",
+      "no-planning-unit": "You can't schedule any meetings as there is no planning unit selected.",
+      "empty-planning-unit-and-employee-filter": "You can't schedule any meetings as there are no employees for the selected planning unit and employee filter.",
+      "empty-planning-unit-and-selection": "You can't schedule any meetings as there are no employees for the selected planning unit and selection."
+    },
+    "no-entries": "No entries",
+    "team-leader": {
+      "availability": "Define availability of the meeting host"
+    },
+    "timespan": "Add time span",
+    "to": "To",
+    "weekday": {
+      "all_weekdays": "Monday to Friday",
+      "friday": "Friday",
+      "monday": "Monday",
+      "saturday": "Saturday",
+      "sunday": "Sunday",
+      "thursday": "Thursday",
+      "tuesday": "Tuesday",
+      "wednesday": "Wednesday",
+      "all_days": "Monday to Sunday",
+      "monday_to_saturday": "Monday to Saturday"
+    },
+    "meeting-type": "Activity to schedule",
+    "no-activities": {
+      "caption": "No activities",
+      "details": "You don't have any meeting activities for the selected planning unit."
+    },
+    "no-data": {
+      "caption": "Looks like you are not quite ready to use Meetings.",
+      "details": "Meetings helps you to find the best slot in terms of coverage and availability for all different types of meetings like the 1:1 meetings. In order to schedule your meetings here you need to have at least one planning unit, employees, a valid planning period and meeting activities."
+    },
+    "proposed-time-span": "Suggested time slot",
+    "with-agent": "Participant",
+    "form-error": {
+      "no-participants": "No participant selected. Select at least one participant to schedule meetings."
+    },
+    "infeasible_instance": "There are no meeting suggestions that satisfy your requirements.",
+    "no-meetings-proposed": "Not possible to suggest meetings",
+    "collapsible-content": {
+      "auto-group-meeting-error": "Due to an error, the request for suggestions could not be completed. Please try to set up group meetings again.",
+      "one-on-one-error": "Due to an error, the request for suggestions could not be completed. Please try to set up 1:1 meetings again.",
+      "problem": "Problem",
+      "self-learning-error": "Due to an error, the request for suggestions could not be completed. Please try to set up self-learning sessions again."
+    },
+    "collapsible-heading": "View conflict",
+    "collapsible-heading-action-request": "Action required",
+    "collapsible-heading-conflict": "View conflict",
+    "collapsible-heading-error": "View error",
+    "action-request": {
+      "host-written-but-employee-participants-failed": "The meeting was written to the schedule of the host but could not be scheduled (see the conflicts for the participants). You should manually remove the written meeting from the schedule of the host and try setting up a new meeting for the affected participants.",
+      "host-written-but-participant-failed": "The meeting was added to the host's schedule but could not be scheduled due to a participant's conflict. Manually remove the meeting from the host's schedule and set up a new meeting."
+    },
+    "activity": "Activity to schedule",
+    "aria-enhancement": {
+      "input": "input",
+      "dropdown": "dropdown"
+    },
+    "conflict-message": {
+      "all-participants-failed-warning": "There was an error while writing the meeting to the schedule of the participant, therefore the meeting could not be scheduled. You should try setting up a new meeting for the affected participants.",
+      "check-paid-configuration": "Check if your activities have the correct configuration for the property \"paid\".",
+      "competing_employees": {
+        "intro": "There are a few employees that compete for the same meeting times with the meeting host."
+      },
+      "competing_employees_day_limit": {
+        "intro": "There are not enough possible meeting slots for all employees with the configured daily meeting limit."
+      },
+      "decrease-date-range": "Decrease the configured date range",
+      "decrease-gap-length": "Decrease the required buffer between meetings",
+      "failed-to-write-host": "There was an error while writing the meeting to the schedule of the host, therefore the meeting could not be scheduled. You should try setting up a new meeting for the affected participant.",
+      "host-failed-warning": "There was an error while writing the meeting to the schedule of the host, therefore the meeting could not be scheduled. You should try setting up a new meeting for the affected participants.",
+      "host-written-but-participant-failed": "There was an error while writing the meeting to the schedule of the participant, therefore the meeting could not be scheduled.",
+      "increase-corridors": "Increase the amount of configured time slots",
+      "increase-daily-meeting-limit": "Increase the number of maximum possible meetings per day",
+      "increase-date-range": "Increase date range",
+      "increase-meeting-host-availibility": "Increase the meeting host’s availability",
+      "insufficient-distinguished-meeting-slots-for-meetings": {
+        "intro": "There are not enough meeting slots to schedule the requested amount of meetings with the required duration. To resolve this try some of the following:"
+      },
+      "insufficient-number-of-meetings-due-to-day-limit": {
+        "intro": "The daily meeting limit is too small to find meetings for all employees in the requested schedule time frame."
+      },
+      "insufficient_distinguished_meeting_slots": {
+        "intro": "There are not enough meeting slots to schedule meetings with the required duration for all employees. To resolve this try some of the following:"
+      },
+      "intro": "The meeting host doesn’t have enough availability to cover all requested meetings. To resolve this try some of the following:",
+      "meeting-written-but-participation-failed-warning": "There was an error while writing the meeting to the schedule of the participant. You could add it manually to the schedule. ",
+      "no-meeting-distribution-with-gap-length": {
+        "intro": "The meeting host doesn't have enough availability to cover all requested meetings with the required buffer. To resolve this try some of the following:"
+      },
+      "no-overwritable-activity-paid-unpaid": {
+        "intro": "There are no activities in your schedule that can be overwritten by the chosen meeting activity without changing the weekly net working times of your employees."
+      },
+      "not-solved": {
+        "intro": "Calculating the optimal suggestions for the requested meetings is too complex and couldn’t be processed within its time limit. You can try to:"
+      },
+      "outro": "Also make sure activities that should be replaced are set to replaceable.",
+      "reduce-number-of-meetings": "Reduce the number of meetings",
+      "reduce-participants": "Reduce participants",
+      "too-small-daily-meeting-limit-host": {
+        "intro": "The meeting host is not able to host all meetings in the requested schedule time frame with the chosen daily meeting limit."
+      }
+    },
+    "coverage-disclaimer": "Coverage was calculated when this proposal was created. The values don’t update automatically. If the meeting spans multiple intervals, a value will be displayed for each interval.",
+    "coverage-threshold": "Consider only time slots for which the resulting coverage will be at least:",
+    "date-range-picker": "Date range",
+    "employee-section": {
+      "employee-filter": "Employee filter",
+      "filter-by": "Filter by",
+      "selection": "Selection"
+    },
+    "excluded": "Excluded",
+    "failed": "Failed",
+    "gap-length": "Buffer",
+    "group-meeting-assignment": "Meeting",
+    "group-meeting-info": "Meeting {{count}}",
+    "group-meeting-tabs": "Meeting",
+    "group-meetings-proposed_one": "1 meeting is suggested",
+    "group-meetings-proposed_other": "{{count}} meetings are suggested",
+    "group-meetings-will-be-scheduled_one": "1 selected meeting will be scheduled",
+    "group-meetings-will-be-scheduled_other": "{{count}} selected meetings will be scheduled",
+    "impact-on-coverage": "Resulting coverage",
+    "info": {
+      "group-meeting-card": "Schedule meetings for groups of your employees with or without a host.",
+      "one-on-one-meeting-card": "Schedule 1:1 meetings between employees and their team leader.",
+      "self-learning-meeting-card": "Schedule individual training sessions for your employees."
+    },
+    "information-for-meeting": {
+      "manually-excluded": "Manually excluded from scheduling"
+    },
+    "limit-meeting-number": "Limit the number of meetings per day to a maximum of",
+    "limit-meetings": "Limit the number of meetings per day to maximum:",
+    "limit-sessions": "Limit the number of sessions per day for each participant to maximum:",
+    "limit-sessions-after-input": "for each participant",
+    "limit-sessions-before-input": "Limit the number of sessions per day to maximum",
+    "maintenance": {
+      "caption": "We are currently improving Meetings",
+      "details": "We apologize for any inconvenience this necessary maintenance might cause you. Meetings should be available again in a few minutes. Thank you for your patience!"
+    },
+    "meeting-host-disclaimer": "Currently meetings will not be taken over into the schedule of the meeting host.",
+    "meeting-host": {
+      "employee": "Choose employee",
+      "employee-helper": "To obtain availability from the meeting host’s injixo schedule.",
+      "employee-selection": "Employee",
+      "manually": "Enter manually",
+      "manually-helper": "If your meeting host is not scheduled through injixo.",
+      "timezone-helper": "The times listed are in the planning unit's time zone."
+    },
+    "meeting-length": "Meeting duration",
+    "meeting-limit": "Meeting limit",
+    "meeting-not-scheduled": "1 meeting could not be scheduled",
+    "meeting-scheduled": "1 meeting was scheduled",
+    "meetings-not-scheduled": "{{count}} meetings could not be scheduled",
+    "meetings-scheduled": "{{count}} meetings were scheduled",
+    "no-proposals": {
+      "caption": "No suggestions",
+      "details": "Once the suggestions have been calculated they will be displayed here."
+    },
+    "no-requests": {
+      "caption": "No suggestions",
+      "details": "While suggestions are being generated your request will be displayed here."
+    },
+    "one-on-one-gap-length": "Ensure a buffer between meetings:",
+    "one-on-one-gap-length-after-dropdown": "between meetings",
+    "one-on-one-gap-length-before-dropdown": "Ensure a buffer of",
+    "one-on-one-meeting-proposed": "1 meeting is suggested",
+    "one-on-one-meeting-will-be-scheduled": "1 selected meeting will be scheduled",
+    "one-on-one-meetings-proposed": "{{count}} meetings are suggested",
+    "one-on-one-meetings-will-be-scheduled": "{{count}} selected meetings will be scheduled",
+    "proposal-not-possible": "Not possible",
+    "proposal-pending": "Suggestion is being generated...",
+    "replaced-activities": "Replaced activity",
+    "resolvable-precheck": {
+      "affected-employees": "Affected employees:",
+      "competing-employees": {
+        "reason": "It was not possible to place a meeting for these employees, because there were conflicts with proposed meetings for other employees."
+      },
+      "conflicts-with-other-participants": {
+        "reason": "These employees are not available at the best possible time slot for the rest of the group.",
+        "solution": "Either assign these employees to another group or make sure there is a time slot where every participant is available."
+      },
+      "coverage-threshold-not-satisfied": {
+        "reason": "These employees have no meetings as it is not possible to find a schedule with more meetings while respecting the minimum coverage threshold.",
+        "solution": "Set up new meetings and decrease the coverage threshold to be considered."
+      },
+      "label": {
+        "resolvable-precheck": {
+          "competing-employees": {
+            "solution": "Try to schedule a meeting for the employee with the meeting host in a bigger time frame or with fewer other employees."
+          }
+        }
+      },
+      "no-overwritable-paid-unpaid-slot": {
+        "reason": "It is not possible to place a meeting for these employees without changing their weekly net working time.",
+        "solution": "Check if your activity configuration (property: paid) is correct. You may also try to extend the time range of your request."
+      },
+      "no-present-activities-group-meeting": {
+        "reason": "These employees do not have enough activities of type presence in their schedule to allow a meeting of the requested duration and time frame.",
+        "solution": "Make sure the schedule of these employees includes activities of type presence, reduce the duration of the meeting or increase the time frame."
+      },
+      "no-present-activities-overlapping-with-meeting-host": {
+        "reason": "These employees don't have enough activities of type presence in their schedule that are overlapping with the availability of the host.",
+        "solution": "Make sure the schedule of these employees includes activities of type presence, increase the meeting host's availability or increase the time frame."
+      },
+      "no-present-activities-self-learning": {
+        "reason": "These employees do not have enough activities of type presence in their schedule to complete all self-learning sessions in the requested time frame.",
+        "solution": "Make sure the schedule of these employees includes activities of type presence and consider extending the time frame or decreasing the gap length or maximum number of days parameters."
+      },
+      "no-present-activities-with-allowed-intervals-group-meeting": {
+        "reason": "These employees don't have enough activities of type presence in their schedule that are overlapping with the configured time frames.",
+        "solution": "Make sure the schedule of these employees includes activities of type presence, increase the configured time spans or increase the time frame."
+      },
+      "no-present-activities-with-meeting-host-group-meeting": {
+        "reason": "These employees don't have enough activities of type presence in their schedule that are overlapping with the availability of the host.",
+        "solution": "Make sure the schedule of these employees includes activities of type presence, increase the meeting host's availability or increase the time frame."
+      },
+      "no-present-activities": {
+        "reason": "These employees do not have enough activities of type presence in their schedule to allow a meeting of the requested duration and time frame.",
+        "solution": "Make sure the schedule of these employees includes activities of type presence, reduce the duration of the meeting or increase the time frame."
+      },
+      "no-replaceable-activities-group-meeting": {
+        "reason": "These employees do not have enough replaceable activities in their schedule to allow a meeting of the requested duration.",
+        "solution": "Make sure the schedule of these employees includes activities that are replaceable or reduce the duration of the meeting."
+      },
+      "no-replaceable-activities-overlapping-with-allowed-intervals-group-meeting": {
+        "reason": "There are not enough overlapping slots for these employees and the configured intervals for scheduling a meeting with the required duration.",
+        "solution": "Increase the configured time frames or reduce the duration of the meeting."
+      },
+      "no-replaceable-activities-overlapping-with-meeting-host-group-meeting": {
+        "reason": "There are not enough overlapping slots for these employees and the host for scheduling a meeting with the required duration.",
+        "solution": "Increase the meeting host's availability or reduce the duration of the meeting."
+      },
+      "no-replaceable-activities-overlapping-with-meeting-host": {
+        "reason": "There are not enough overlapping slots for these employees and the host for scheduling a meeting with the required duration.",
+        "solution": "Increase the meeting host's availability or reduce the duration of the meeting."
+      },
+      "no-replaceable-activities-self-learning": {
+        "reason": "These employees do not have enough replaceable activities in their schedule to complete all self-learning sessions in the requested time frame.",
+        "solution": "Make sure the schedule of these employees includes activities that are replaceable and consider extending the time frame or decreasing the gap length or maximum number of days parameters."
+      },
+      "no-replaceable-activities": {
+        "reason": "These employees do not have enough replaceable activities in their schedule to allow a meeting of the requested duration.",
+        "solution": "Make sure the schedule of these employees includes activities that are replaceable or reduce the duration of the meeting."
+      },
+      "no-session-distribution": {
+        "reason": "It is not possible to schedule all self-learning sessions for these employees in the requested time frame.",
+        "solution": "Consider extending the time frame of your request, decreasing gaps between sessions or increasing the limit of sessions per day."
+      },
+      "reason": "Reason:",
+      "solution": "Possible solution:",
+      "not-enough-common-participants": {
+        "reason": "There are no suitable times in the employees' schedules where a meeting with enough other employees is possible.",
+        "solution": "Make sure the schedule of these employees includes activities that are replaceable and consider extending the requested time frame."
+      }
+    },
+    "scheduled": "Scheduled",
+    "scheduled-time-span": "Scheduled time slot",
+    "self-learning-session-proposed": "1 session is suggested",
+    "self-learning-session-will-be-scheduled": "1 selected session will be scheduled",
+    "self-learning-sessions-proposed": "{{count}} sessions are suggested",
+    "self-learning-sessions-will-be-scheduled": "{{count}} selected sessions will be scheduled",
+    "self-learnings-gap-length": "Ensure a buffer between sessions for each participant:",
+    "self-learnings-gap-length-after-dropdown": "between sessions for each participant",
+    "self-learnings-gap-length-before-dropdown": "Ensure a buffer of",
+    "session-duration": "Session duration",
+    "session-limit": "Session limit",
+    "sessions-per-participant": "Sessions per participant",
+    "status": {
+      "participants-available": "available",
+      "participants-available-group-meeting": "{{count}} in {{meetingCount}} meetings available",
+      "participants-not-available": "not available",
+      "participants-not-scheduled": "not scheduled",
+      "participants-scheduled": "scheduled",
+      "participants-scheduled-group-meeting": "{{count}} in {{meetingCount}} meetings scheduled",
+      "schedule-execution-error": "Error",
+      "schedule-suggested": "{{suggestedCount}} suggested, {{excludedCount}} excluded",
+      "schedule-suggested-fail": "{{count}} not possible",
+      "schedule-suggested-success": "{{count}} suggested",
+      "schedule-written": "{{scheduledCount}} scheduled, {{failedCount}} failed",
+      "schedule-written-fail": "{{count}} failed",
+      "schedule-written-success": "{{count}} scheduled",
+      "participants-available-group-meetings_one": "in one meeting available",
+      "participants-available-group-meetings_other": "in {{count}} meetings available",
+      "participants-scheduled-group-meetings_one": "in one meeting scheduled",
+      "participants-scheduled-group-meetings_other": "in {{count}} meetings scheduled"
+    },
+    "with-meeting-host": {
+      "option": "Group meetings with a host"
+    },
+    "without-meeting-host": {
+      "option": "Group meetings without a host",
+      "specify-timeframe": "Define time frames for the meetings"
+    },
+    "advanced-feature": "This feature is part of the Advanced plan.",
+    "availability": "Set additional availability constraint",
+    "back-to-meetings": "Back to Meetings",
+    "external-host": "External host",
+    "host": "Host",
+    "internal-host": "Internal host",
+    "no-host": "No host",
+    "participants_one": "{{count}} participant",
+    "participants_other": "{{count}} participants",
+    "split-meeting-participants": "Minimum amount of participants per slot",
+    "split-meeting-slots-result": "For {{selectedEmployeesCount}} participants this will result in approximately {{slotsCount}} time slots.",
+    "split-meeting-toggle": "Split the meeting into several time slots"
+  },
+  "button": {
+    "remove_availability": "Remove day",
+    "add-group-meeting": "Meeting",
+    "delete-jobs_one": "Delete entry",
+    "delete-jobs_other": "Delete entries",
+    "delete-schedules_one": "Delete entry",
+    "delete-schedules_other": "Delete entries",
+    "set-up": "Set up",
+    "write-group-meetings": "Schedule meetings",
+    "write-one-on-one-meetings": "Schedule meetings",
+    "write-self-learning-sessions": "Schedule sessions",
+    "writing": "Scheduling",
+    "write-count-group-meetings_one": "Schedule {{count}} meeting",
+    "write-count-group-meetings_other": "Schedule {{count}} meetings"
+  },
+  "table": {
+    "column": {
+      "employee_name": "Name",
+      "actions": "Actions",
+      "activity-to-schedule": "Activity to schedule",
+      "host": "Host",
+      "information": "Information",
+      "initiated-on": "Initiated on",
+      "job-id": "Suggestion ID",
+      "meeting-type": "Type",
+      "meeting_assignment": "Assigned to",
+      "participant": "Participant",
+      "participant-status": "Participant status",
+      "planning-unit": "Planning unit",
+      "replaced-activity": "Replaced activity",
+      "resulting-coverage": "Resulting coverage",
+      "schedule-id": "Information",
+      "start-time": "Requested on",
+      "status": "Status",
+      "suggested-time-slot": "Suggested time slot"
+    }
+  },
+  "notification": {
+    "form-error": {
+      "timespan": "Select end time after start time",
+      "select-day": "Select a day",
+      "select-planning-unit": "Select a planning unit",
+      "coverage-threshold": "Enter a coverage threshold",
+      "group-meetings-empty-meetings": "There is at least one meeting with no participants selected. Select participants for every meeting to be able to proceed with generating suggestions.",
+      "limit-meeting-number": "Enter the number of maximum possible meetings per day",
+      "limit-session-number": "Enter the number of maximum possible sessions per day",
+      "meeting-length-error": "Enter a meeting duration that is a multiple of 5",
+      "no-group-meetings-selected": "No suggested meetings selected. Select at least one.",
+      "no-one-on-one-meetings-selected": "No suggested meetings selected. Select at least one.",
+      "no-self-learning-sessions-selected": "No suggested sessions selected. Select at least one.",
+      "select-activity": "Select an activity",
+      "select-meeting-host": "Select a meeting host",
+      "session-duration-error": "Enter a session duration that is a multiple of 5",
+      "sessions-per-participant": "Enter a positive number of sessions per participant"
+    },
+    "failure": {
+      "general": "An error has occurred. Please try again later.",
+      "response-error": "The server was unable to complete your request. Try again later.",
+      "job-not-existing": "An error has occurred. Please try again later.",
+      "schedule-not-existing": "An error has occurred. Please try again later."
+    },
+    "number-of-meetings": "{{successCount}} of {{totalCount}} meetings have successfully been scheduled.",
+    "warning": {
+      "no-meeting-slots-for-employee": "Not possible to find meeting slots for one employee.",
+      "no-meeting-slots-for-employees": "Not possible to find meeting slots for {{count}} employees.",
+      "no-session-slots-for-employee": "Not possible to find session slots for one employee.",
+      "no-session-slots-for-employee-group-meeting": "Not possible to find meeting slots for one employee.",
+      "no-session-slots-for-employee-group-meeting-multiple-employees": "Not possible to find meeting slots for {{count}} employees in one meeting.",
+      "no-session-slots-for-employee-group-meeting-part-one_one": "Not possible to find meeting slots for {{count}} employee",
+      "no-session-slots-for-employee-group-meeting-part-one_other": "Not possible to find meeting slots for {{count}} employees",
+      "no-session-slots-for-employee-group-meeting-part-two_one": "in {{count}} meeting.",
+      "no-session-slots-for-employee-group-meeting-part-two_other": "in {{count}} meetings.",
+      "no-session-slots-for-employee-group-meeting-plural": "Not possible to find meeting slots for {{employeeCount}} employees in {{meetingCount}} meetings.",
+      "no-session-slots-for-employees": "Not possible to find session slots for {{count}} employees."
+    }
+  },
+  "message": {
+    "invalid-data": "The form data is incomplete. Make sure you correct all highlighted fields.",
+    "irreplaceable-activities": {
+      "hint_one": "{{count}} out of {{totalCount}} \"Presence\" activities in the selected planning unit is not \"Replaceable\".",
+      "hint_other": "{{count}} out of {{totalCount}} \"Presence\" activities in the selected planning unit are not \"Replaceable\".",
+      "reminder": "injixo Meetings can only schedule meetings by replacing existing <0>activities marked as \"Replaceable\"</0>. A higher amount of replaceable activities leads to better results. You can configure your activities under WFM > Administration > Scheduling > Activities.",
+      "reminder-link-to-docs": "https://help.injixo.com/creating-activities/"
+    },
+    "request-sent": "Request received successfully. Suggestions are being generated.",
+    "external-host": {
+      "header": "Note that meetings with external host:",
+      "point1": "Cannot be scheduled concurrently",
+      "point2": "Are scheduled by the optional <0>availability constraints</0> set above"
+    },
+    "unpaid-meeting-activity": {
+      "hint": "The selected Meeting activity is not marked as \"Paid\". injixo Meetings can only schedule unpaid Meetings if other unpaid activities are available in the schedule. We suggest to <0>mark the Meeting activity as \"Paid\"</0> if you want to use injixo Meetings. You can configure your activities under WFM > Administration > Scheduling > Activities.",
+      "hint-link-to-docs": "https://help.injixo.com/creating-activities/"
+    }
+  },
+  "date-range-picker": {
+    "helper-text": "The dates are in the planning unit's time zone."
+  },
+  "dropdown": {
+    "meeting-length": "{{minutes}} Minutes"
+  },
+  "heading": {
+    "group-meeting-proposal-page": "Suggestions - Group meetings",
+    "one-on-one-proposal-page": "Suggestions - 1:1 meetings",
+    "result-page": "{{count1}} meetings could not be scheduled, {{count2}} meetings were scheduled",
+    "result-page-fail-plural": "{{count}} meetings could not be scheduled",
+    "result-page-fail-singular": "1 meeting could not be scheduled",
+    "result-page-success-plural": "{{count}} meetings were scheduled",
+    "result-page-success-singular": "1 meeting was scheduled",
+    "self-learning-proposal-page": "Suggestions - Self-learning sessions"
+  },
+  "helper-text-for-setting": {
+    "coverage-threshold": "The minimum resulting coverage can be a positive value, a negative value, or zero.",
+    "date-range": "By default, this range is set to the next Monday-Sunday work week following the current date. If the current date is a Monday, then it is set to the current Monday-Sunday work week.",
+    "duration": "The meeting duration needs to be a multiple of 5.",
+    "duration-sessions": "The session duration needs to be a multiple of 5.",
+    "group-meeting-participants": "You can schedule meetings for participants distributed in as many group meetings you like. Each participant can be scheduled for only one group meeting.",
+    "group-meeting-with-host": "Group meetings with a host could not be scheduled at the same time.",
+    "group-meeting-without-host": "Group meetings without a host could be scheduled at the same time. Optionally you can define time frames when the meetings should occur.",
+    "one-on-one-day-limit": "The number of meetings per day must be a positive value.",
+    "one-on-one-gap-length": "By default, the buffer duration is set to the interval of the selected planning unit. It can be changed to a multiple of this interval.",
+    "select-manual-host": "Select this option if the meeting host is not scheduled in injixo.",
+    "select-scheduled-host": "Select this option to use the meeting host’s injixo schedule as their availability. You can select employees from a different planning unit, but both planning units must be set to the same interval. If you choose this option, the resulting meetings will be added to the host’s schedule.",
+    "selection-filter": "By default, this is the full list of employees in the selected planning unit. You can further refine the group of participants by choosing a selection or an employee filter from the corresponding dropdown.",
+    "self-learnings-day-limit": "The number of sessions per day must be a positive value.",
+    "self-learnings-gap-length": "By default, the buffer duration is set to the interval of the selected planning unit. It can be changed to a multiple of this interval."
+  },
+  "helper-text": {
+    "delete-jobs": "The selected entries will be deleted from the table. Any scheduled meetings will not be affected.",
+    "delete-schedules": "The selected entries will be deleted from the table. Any scheduled meetings will not be affected."
+  },
+  "link": {
+    "retrigger-job": "Retry",
+    "view-results": "View results",
+    "view-schedule": "View schedule",
+    "view-suggestion": "View suggestions"
+  },
+  "meeting-type": {
+    "group-meeting": "Group meeting",
+    "one-on-one": "1:1 meetings",
+    "self-learning": "Self-learning sessions",
+    "auto-group-meeting": "Group meeting"
+  },
+  "placeholder": {
+    "dropdown": "Search or select",
+    "non-searchable-dropdown": "Select...",
+    "select-gap-length": "Select buffer length",
+    "select-meeting-length": "Select meeting length",
+    "select-session-duration": "Select session duration"
+  },
+  "popup": {
+    "timezone-helper": "Date and time data refer to the planning unit’s timezone."
+  },
+  "units": {
+    "minutes": "minutes"
+  },
+  "connection": {
+    "offline": "We were unable to connect. Please try to reload in a few minutes.",
+    "reconnecting": "We’ve lost the connection. We are trying to reconnect automatically."
+  },
+  "document_title": {
+    "context": {
+      "group_meeting_results": "Group Meeting Results",
+      "group_meeting_suggestions": "Group Meeting Suggestions",
+      "one_on_one_meeting_results": "1:1 Meeting Results",
+      "one_on_one_meeting_suggestions": "1:1 Meeting Suggestions",
+      "self_learning_results": "Self-learning Session Results",
+      "self_learning_suggestions": "Self-learning Session Suggestions"
+    },
+    "module": "Plan",
+    "sub_module": "Meetings"
+  },
+  "explaination": {
+    "external-host": "The host is not known to injixo and the meeting time slots cannot overlap",
+    "internal-host": "The host is known to injixo and the meeting time slots cannot overlap",
+    "no-host": "The meeting time slots can overlap"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "application": {
+    "title": "Ferie spettanti",
+    "backToTimeOff": "Ritorna a Permessi"
+  },
+  "options": {
+    "button": {
+      "export": "Esporta CSV",
+      "transfer": "Trasferisci ferie spettanti"
+    }
+  },
+  "filters": {
+    "label": {
+      "planningUnit": "Unità di pianificazione",
+      "selection": "Selezione",
+      "year": "Anno",
+      "search": "Ricerca"
+    },
+    "placeholder": {
+      "planningUnit": "Seleziona unità di pianificazione",
+      "selection": "Scegli una selezione",
+      "year": "Seleziona anno",
+      "search": "Usa la virgola per separare i nomi"
+    },
+    "result": {
+      "noResult": "Nessuna voce"
+    }
+  },
+  "entitlementsTable": {
+    "label": {
+      "personnelNumber": "Numero dipendente",
+      "employeeName": "Nome",
+      "contract": "Contratto",
+      "remainCurrentYear": "Residuo anno corrente",
+      "remainLastYear": "Residuo anno scorso",
+      "currentYear": "Anno corrente",
+      "takenRatio": "Ferie prese",
+      "takenRatioPercent": "Ferie prese {{percent}}%"
+    },
+    "result": {
+      "loading": "Caricamento",
+      "noEmployeesFound": "Non è stato trovato nessun dipendente.",
+      "noPlanningUnitsFound": "Nessuna unita pianificativa disponibile"
+    }
+  },
+  "transferModal": {
+    "text": {
+      "description": "The remaining vacation entitlement for the current selection will be transferred",
+      "from": "Da",
+      "to": "A"
+    },
+    "button": {
+      "transfer": "Trasferisci",
+      "cancel": "Cancella"
+    },
+    "transferSuccess": "Diritto trasferito con successo a {{nextYear}}"
+  },
+  "error": {
+    "fetchingEntitlements": "C'è stato un errore (Risorsa: Ferie spettanti)",
+    "fetchingVacations": "C'è stato un errore (Risorsa: Ferie prese)",
+    "fetchingPlanningUnits": "C'è stato un errore (Risorsa: unità di pianificazione)",
+    "fetchingSelections": "C'è stato un errore (Risorsa: Seleziona team)",
+    "fetchingEmployees": "C'è stato un errore (Risorsa: Dipendenti)",
+    "fetchingAccessRights": "C'è stato un errore (Risorsa: Diritti di accesso)",
+    "transferEntitlements": "C'è stato un errore (Risorsa: Trasferisci ferie spettanti)",
+    "savingEntitlements": "C'è stato un errore (Risorsa: Ferie spettanti) - Dettagli:",
+    "exportCsv": "C'è stato un errore (Risorsa: Esporta CSV)"
+  },
+  "document_title": {
+    "module": "Plan",
+    "sub_module": "Ferie spettanti"
+  }
+}

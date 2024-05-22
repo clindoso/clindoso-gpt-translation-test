@@ -1,0 +1,260 @@
+{
+  "document_title": {
+    "module": "Profile",
+    "context": {
+      "profile": {
+        "title": "My Profile",
+        "page": "Personal Details"
+      },
+      "security": {
+        "title": "Security",
+        "page": {
+          "overview": "Overview",
+          "enable2fa": "Enable 2FA",
+          "disable2fa": "Deactivate 2FA",
+          "sso": "Single sign-on"
+        }
+      }
+    }
+  },
+  "label": {
+    "email": "Email",
+    "loading": "Loading...",
+    "saving": "Saving...",
+    "password": "Password",
+    "language": "Language",
+    "first_name": "First Name",
+    "last_name": "Last Name",
+    "timezone": "Time Zone",
+    "to_login_page": "Go to the login page",
+    "password_strength_hint": "Use at least 8 characters, combine upper and lowercase letters, numbers and special characters.",
+    "personnel_number": "Personnel number"
+  },
+  "placeholder": {
+    "timezone": "Time Zone",
+    "language": "Language"
+  },
+  "error": {
+    "other": "There was a technical problem. Please try again."
+  },
+  "password_strength": {
+    "none": "No password",
+    "weak": "Weak password",
+    "sufficient": "Average password",
+    "strong": "Strong password"
+  },
+  "login_page": {
+    "otp": {
+      "header": "Two-factor authentication",
+      "hint1": "Enter the code from the authenticator app on your mobile device.",
+      "hint2": "Use a <0>backup code</0> instead or get instructions on how to <1>recover your account</1>.",
+      "hint2_header": "Having problems?",
+      "label": "One-time password",
+      "verify": "Verify",
+      "link_to_recovery_docs": "https://help.injixo.com/use-two-factor-authentication/#log-in-without-your-personal-device-and-backup-codes"
+    },
+    "backupCode": {
+      "header": "Two-factor authentication",
+      "label": "Backup code",
+      "hint1": "Enter a backup code in case you lost access to your mobile device.",
+      "hint2": "Get instructions on how to <0>recover your account</0>.",
+      "hint2_header": "Still having problems?",
+      "verify": "Verify"
+    },
+    "error": {
+      "invalid": "Invalid email or password.",
+      "otp_invalid": "Invalid one-time password.",
+      "otp_timeout": "Time out. Enter credentials and OTP within 5 minutes.",
+      "backup_code_invalid": "Invalid backup code."
+    },
+    "forgot_pw_link": "Forgot your Password?",
+    "header": "Log in to your account",
+    "submit": "Login",
+    "title": "Login",
+    "sso_login_link": "Log in with SSO"
+  },
+  "logout_page": {
+    "header": "You have logged out successfully",
+    "title": "Log Out"
+  },
+  "forgot_password_page": {
+    "title": "Forgot password",
+    "header": "Forgot password",
+    "submit": "Send Instructions",
+    "success_message": "An email will be sent if the provided address is valid.",
+    "empty_email": "Enter your email address"
+  },
+  "reset_password_page": {
+    "title": "Password reset",
+    "header": "Reset your password",
+    "new_psw": "New password",
+    "new_psw_confirmation": "Confirm new password",
+    "submit": "Save new password",
+    "success_message": "Your password has been reset. Please log in using your new password.",
+    "no_token_message": "There is no active password reset link available. Please create a new request.",
+    "confirmation_mismatch": "does not match password"
+  },
+  "welcome_page": {
+    "title": "Welcome",
+    "header": "Welcome",
+    "explanation": "To enable you to log in and access the world of injixo, enter your new password.",
+    "success_message": "Welcome, you successfully set your password and can log in now."
+  },
+  "profile_page": {
+    "title": "Profile",
+    "update_successful": "Your profile has been updated successfully.",
+    "update_error": "Your profile could not be saved.",
+    "header": "Personal Details",
+    "account_header": "Account",
+    "preferences_header": "Preferences",
+    "submit": "Save Profile",
+    "submit_success": "Your profile has been updated successfully.",
+    "no_result_found": "No result found",
+    "email_verification": {
+      "pending": "Your email address has not been verified. <0> Resend verification email. </0>",
+      "verified": "Your email address has been verified successfully. You now have access to the remaining features.",
+      "failure": "Your email address could not be verified. The link that you have requested does not exist.",
+      "resent": "We have just sent you an email to verify your email address."
+    },
+    "validation": {
+      "required": "must not be empty.",
+      "max": "must not be longer than {{max}} characters.",
+      "email": "is not a valid email format.",
+      "not_unique": "not unique."
+    },
+    "notifications": {
+      "allowed": "Your browser allows injixo notifications.",
+      "blocked": "Your browser does not allow injixo notifications. You can change this in your browser settings.",
+      "not_set": "To receive injixo notifications in your browser, you need to allow them in your browser settings.",
+      "not_supported": "Your current browser does not support notifications.",
+      "request": "Allow injixo notifications",
+      "title": "Notifications"
+    },
+    "password_confirmation": {
+      "title": "Modify email address"
+    }
+  },
+  "security_page": {
+    "change_password": {
+      "header": "Change Password",
+      "current_password": "Current password",
+      "submit": "Save password",
+      "submit_failed": "The password could not be saved.",
+      "submit_success": "Your password has been updated successfully.",
+      "wrong_current_password": "Please enter your current password."
+    },
+    "two_factor_auth": {
+      "header": "Two-factor authentication",
+      "enable": "Activate 2FA",
+      "disable": "Deactivate 2FA",
+      "enabled": {
+        "hint": "Your account is secured by 2FA.",
+        "hint2": "To protect your account we strongly recommend keeping 2FA enabled. To register a new device simply re-enable 2FA.",
+        "help": "Contact an injixo administrator in case of any problems or to switch to a new device."
+      },
+      "disabled": {
+        "link_to_docs": "https://help.injixo.com/2fa",
+        "hint": "Two-factor authentication (2FA) adds an additional layer of security to your account by requiring more than just a password to log in. Learn more in <0>Help Center</0>."
+      },
+      "tooltip_enforced": "2FA is enforced for your account"
+    },
+    "enable_2fa_page": {
+      "header": "Activate two-factor authentication",
+      "continue": "Continue",
+      "enable": "Activate 2FA",
+      "cancel": "Cancel",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "otp_verification_failed": "Invalid code, try again",
+      "backup_codes_confirmation": "You need to confirm that you securely stored your backup codes.",
+      "sudo_expired": "Your session has expired. You can restart the activation process by reloading the page.",
+      "enabling_failed": "Something went wrong while activating 2FA. Please try again later.",
+      "step_1": {
+        "header": "1. Install an authenticator app on your mobile device",
+        "description": "Install one of the following authenticator apps on your mobile or tablet device:",
+        "apps": "Use <0>Authy</0>, <0>Google Authenticator</0>, or <0>Microsoft Authenticator</0>",
+        "download_links": {
+          "header": "Download links",
+          "authy": {
+            "google_play_url": "https://play.google.com/store/apps/details?id=com.authy.authy",
+            "apple_store_url": "https://apps.apple.com/us/app/authy/id494168017"
+          },
+          "google_authenticator": {
+            "google_play_url": "https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2",
+            "apple_store_url": "https://apps.apple.com/us/app/google-authenticator/id388497605"
+          },
+          "microsoft_authenticator": {
+            "google_play_url": "https://play.google.com/store/apps/details?id=com.azure.authenticator",
+            "apple_store_url": "https://apps.apple.com/us/app/microsoft-authenticator/id983156458"
+          }
+        }
+      },
+      "step_2": {
+        "header": "2. Add injixo to your authenticator app",
+        "qr_code": "Scan QR code",
+        "or": "or",
+        "setup_key": "Enter key manually",
+        "description": "In your anthenticator app, add a new account by",
+        "copied_setup_key": "Copied setup key to clipboard!"
+      },
+      "step_3": {
+        "header": "3. Enter one-time password from your authenticator app",
+        "description": "Enter the code generated by the authenticator app to register your device"
+      },
+      "step_4": {
+        "header": "4. Store your backup codes",
+        "description": "If you lose access to your authenticator app, you can use one of the following one-time passwords to verify your identity. Treat them confidentially and store them in a secure place.",
+        "warning": "You will not be able to access these passwords once you leave this screen.",
+        "download_backup_codes": "Download",
+        "copied_backup_codes": "Copied backup codes to clipboard!",
+        "checkbox": "I securely stored my backup codes."
+      },
+      "enforcement": {
+        "message": "Two-factor authentication has been made mandatory to use injixo. To proceed with your login, follow the steps below.",
+        "more_details": "More details",
+        "less_details": "Fewer details",
+        "hint": "Two-factor authentication (2FA) adds an additional layer of security to your account by requiring more than just a password to log in. Learn more in <0>Help Center</0>.",
+        "link_to_docs": "https://help.injixo.com/2fa"
+      }
+    },
+    "enable_2fa": {
+      "success_message": "Two-factor authentication has been enabled successfully"
+    },
+    "disable_2fa": {
+      "success_message": "Two-factor authentication has been deactivated successfully",
+      "header": "Deactivate two-factor authentication"
+    },
+    "single_sign_on": {
+      "header": "Single sign-on",
+      "hint": {
+        "admin": "Single sign-on is active for your account. The default login with email and password is no longer available.",
+        "password": "Your email and password is now managed in your identity provider. For any updates contact your administrator",
+        "user": "Single sign-on is active for your account. The default login with email and password is no longer available. If you need to update your stored data or request a new login, contact your administrator."
+      }
+    }
+  },
+  "sudo_confirmation": {
+    "failed": "Invalid password.",
+    "hint": "Enter your password to continue",
+    "button": {
+      "continue": "Continue",
+      "cancel": "Cancel"
+    }
+  },
+  "login_sso_page": {
+    "authentication_failed": "Authentication failed. Contact your administrator.",
+    "header": "Log in to your account via SSO",
+    "login_link": "Log in with email & password instead",
+    "login_request_expired": "Login request expired. Try again.",
+    "submit": "Continue",
+    "title": "SSO"
+  },
+  "password_confirmation": {
+    "button": {
+      "cancel": "Cancel",
+      "continue": "Continue"
+    },
+    "failed": "Invalid password.",
+    "hint": "Enter your password to continue"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "document_title": {
+    "context": "Benachrichtigungen",
+    "module": "Account"
+  },
+  "heading": "Benachrichtigungen",
+  "message": {
+    "empty": "Es sind keine Einstellungen verfügbar",
+    "error": {
+      "load": "Beim Laden ist ein Fehler aufgetreten",
+      "save": "Beim Speichern ist ein Fehler aufgetreten"
+    }
+  },
+  "notification_channel": {
+    "browser_push": {
+      "header": "Browser-Benachrichtigung",
+      "tooltip": "Um Browser-Benachrichtigungen zu erhalten, musst Du sie in Deinem Browser aktivieren."
+    },
+    "email": {
+      "header": "E-Mail"
+    }
+  },
+  "notification_settings_group": {
+    "me": {
+      "title": "Me"
+    },
+    "schedules": {
+      "title": "Schedules"
+    }
+  },
+  "notification_type": {
+    "schedule_changed": {
+      "description": "Wenn Du Mitarbeiter benachrichtigen in Schedules verwendest, erhalten die ausgewählten Mitarbeiter eine Mitteilung. <0>Mehr erfahren</0>",
+      "link": "https://help.injixo.com/de/schedules-notify-scheduling-changes/",
+      "title": "Einen Plan anpassen"
+    },
+    "scheduling_period": {
+      "description": "Wenn der Plan veröffentlicht wurde, werden Mitarbeitende benachrichtigt. <0>Mehr erfahren</0>",
+      "link": "https://help.injixo.com/de/schedules-enable-employees-to-see-their-schedules",
+      "title": "Einen Plan veröffentlichen"
+    },
+    "shift_trading": {
+      "description": "Wenn ein Mitarbeitender einen anderen Mitarbeitenden zum Schichttausch auswählt, wird der zweite Mitarbeitende benachrichtigt. <0>Mehr erfahren</0>",
+      "link": "https://help.injixo.com/de/injixo-me-invite-suitable-colleagues/",
+      "title": "Schichttausch"
+    }
+  },
+  "status": {
+    "error": "Deine Änderungen konnten nicht gespeichert werden",
+    "idle": "Alle Änderungen wurden gespeichert",
+    "initial": "Änderungen werden automatisch gespeichert",
+    "saved": "Gespeichert",
+    "saving": "Speichern"
+  }
+}

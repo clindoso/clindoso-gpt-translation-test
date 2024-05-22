@@ -1,0 +1,48 @@
+{
+  "application": {
+    "title": "Capacity",
+    "tableHint": "Tutti i valori in ore",
+    "tableHintDescription": "1 full time equivalent (FTE) corrisponde a 40 ore settimanali",
+    "infoMessageFirst": "Benvenuto nella prima versione della tua nuova vista Capacity! Presto, farai la tua pianificazione a lungo termine qui. Ancora piuttosto semplice?",
+    "infoMessageSecond": "Inviaci il tuo feedback e le tue idee via email!",
+    "insertShiftSequencesButton": "Inserimento di rotazioni"
+  },
+  "filters": {
+    "label": {
+      "planningUnit": "Unità di pianificazione"
+    },
+    "placeholder": {
+      "planningUnit": "Seleziona unità di pianificazione"
+    },
+    "result": {
+      "noResult": "Nessuna voce"
+    }
+  },
+  "capacityTable": {
+    "headers": {
+      "Coverage": "Potenziale copertura",
+      "staffRequirements": "Fabbisogno del personale",
+      "contractedCapacity": "Capacità contrattata",
+      "cw": "CW",
+      "timePeriod": "Periodo di tempo",
+      "dateFormat": "d MMMM yyyy"
+    },
+    "placeholders": {
+      "noData": "Non sono disponibili dati sulla capacità per questa unità di pianificazione",
+      "loading": "Caricamento"
+    }
+  },
+  "planning_units": "unità di pianificazione",
+  "capacities": "Capacità",
+  "reload": {
+    "planning_units": "Ricarica unità di pianificazione",
+    "capacities": "Ricarica Capacità"
+  },
+  "document_title": {
+    "module": "Plan",
+    "sub_module": "Capacity"
+  },
+  "error": {
+    "reload_resource": "C'è stato un errore. Prova a ricaricare <0>{{resource}}</0> o riprovare più tardi."
+  }
+}

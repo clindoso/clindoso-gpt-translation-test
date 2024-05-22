@@ -1,0 +1,2370 @@
+{
+  "page-title": "Dipendenti | injixo",
+  "people": {
+    "heading": {
+      "page-title": {
+        "text": "Dipendenti"
+      }
+    },
+    "list": {
+      "combo-box": {
+        "sort-by": {
+          "aria-label": "Ordina per",
+          "sort-options": {
+            "lastName_asc": "Cognome A-Z",
+            "lastName_desc": "Cognome Z-A",
+            "firstName_asc": "Nome A-Z",
+            "firstName_desc": "Nome Z-A",
+            "personnelNumber_asc": "Numero di matricola A-Z",
+            "personnelNumber_desc": "Numero di matricola Z-A"
+          }
+        },
+        "role-filter": {
+          "aria-label": "Filtrare in base a",
+          "option": {
+            "all": {
+              "label": "Tutti i ruoli"
+            }
+          }
+        }
+      },
+      "empty-results": {
+        "suggestion": {
+          "text": "Modifica la ricerca o <0>cancella la ricerca</0>."
+        },
+        "title": {
+          "text": "Non è stato trovato nessun dipendente"
+        }
+      },
+      "inline-message": {
+        "error": {
+          "text": "A problem occured while loading the list. Please try again later"
+        }
+      },
+      "pagination": {
+        "aria-label": "Numeri di pagina dell'elenco dei dipendenti"
+      }
+    },
+    "filter": {
+      "button": {
+        "new-person": {
+          "text": "Nuovo dipendente"
+        }
+      },
+      "input": {
+        "search": {
+          "aria-label": "Cerca",
+          "placeholder": "Cerca per nome, numero di matricola o email"
+        }
+      },
+      "button-group": {
+        "active": {
+          "text": "Attivi"
+        },
+        "inactive": {
+          "text": "Non attivi"
+        }
+      }
+    },
+    "elevated-side-panel": {
+      "footer": {
+        "button": {
+          "close": {
+            "label": "Chiudi"
+          }
+        }
+      },
+      "segment": {
+        "inline-message": {
+          "error": "Section could not be loaded."
+        }
+      }
+    },
+    "person-card": {
+      "tooltip": {
+        "enforced-2fa": {
+          "label": "2FA imposta"
+        },
+        "locked": {
+          "label": "Il login è stato bloccato per motivi di sicurezza. Puoi sbloccarlo nella scheda Accesso."
+        },
+        "missing-2fa": {
+          "label": "2FA non attiva"
+        },
+        "unverified-email": {
+          "label": "L'indirizzo email non è ancora stato verificato"
+        }
+      }
+    }
+  },
+  "link": {
+    "help-center": {
+      "text": "Per saperne di più, vedi l'<helpCenterLink>Help Center</helpCenterLink>."
+    }
+  },
+  "person": {
+    "show": {
+      "button": {
+        "edit-section": {
+          "text": "Modifica"
+        }
+      },
+      "empty-state": {
+        "generic-error": {
+          "label": "Something went wrong!",
+          "message": "Please try again later."
+        },
+        "not-found": {
+          "label": "Il dipendente non è stato trovato.",
+          "message": "Non è stato trovato nessun dipendente."
+        }
+      }
+    },
+    "modal": {
+      "delete-person": {
+        "title": "Eliminare questo dipendente da injixo?",
+        "prompt": "<bold>{{lastName}} {{firstName}}</bold> sarà eliminato da injixo.",
+        "consequence1": "Questo dipendente non può essere riattivato.",
+        "consequence2": {
+          "wfm": "Questo dipendente verrà rimosso da tutte le pianificazioni presenti e future.",
+          "skills": "Il dipendente verrà disattivato e reso anonimo nella gestione dei corsi."
+        },
+        "error": "È stato impossible eliminare questo dipendente. Per favore, riprova."
+      }
+    },
+    "button": {
+      "cancel-deletion": {
+        "text": "Annulla"
+      },
+      "delete-person": {
+        "text": "Elimina dipendente"
+      },
+      "deleting-in-progress": {
+        "text": "Eliminazione in corso"
+      },
+      "delete-section-item": {
+        "text": "Delete"
+      },
+      "remove-section-item": {
+        "text": "Remove"
+      }
+    },
+    "link": {
+      "iwfm-employee": {
+        "text": "WFM"
+      },
+      "user-settings": {
+        "text": "Account"
+      }
+    },
+    "new": {
+      "heading": {
+        "text": "Crea nuovo dipendente"
+      },
+      "basic-information": {
+        "radio": {
+          "auto-generate-personnel-number": {
+            "label": "Genera un numero automaticamente"
+          },
+          "use-custom-number": {
+            "label": "Utilizza un numero personalizzato"
+          }
+        },
+        "tooltip": {
+          "auto-generate-personnel-number": {
+            "label": "Il numero di matricola generato automaticamente è unico, e può contenere fino a sei cifre. Viene generato dopo la creazione di un dipendente."
+          },
+          "send-welcome-email": {
+            "label": "L'email di benvenuto permette al dipendente di impostare la sua password."
+          }
+        },
+        "input": {
+          "email": {
+            "message": "L'indirizzo email usato per accedere a injixo."
+          }
+        },
+        "checkbox": {
+          "send-welcome-email": {
+            "label": "Invia email di benvenuto"
+          }
+        },
+        "heading": {
+          "text": "Start with basic information"
+        }
+      },
+      "button": {
+        "save-changes": {
+          "text": "Crea dipendente"
+        },
+        "saving-in-progress": {
+          "text": "Creazione in corso"
+        }
+      },
+      "creation-steps-count": {
+        "text": "Step {{step}} of 2"
+      },
+      "roles": {
+        "step-headline": "Ruoli"
+      },
+      "staff-memberships": {
+        "step-headline": "Appartenenza all'organico"
+      },
+      "step-headline": "Informazioni generali"
+    },
+    "profile": {
+      "basic-information": {
+        "input": {
+          "last-name": {
+            "label": "Cognome",
+            "error": {
+              "required": "Inserisci il cognome (max. 50 caratteri)."
+            }
+          },
+          "first-name": {
+            "label": "Nome",
+            "error": {
+              "required": "Inserisci il nome (max. 50 caratteri)."
+            }
+          },
+          "middle-name": {
+            "label": "Secondo nome"
+          },
+          "personnel-number": {
+            "label": "Numero di matricola",
+            "error": {
+              "required": "Inserisci un numero di matricola (max. 25 caratteri).",
+              "too-long": "Inserisci un massimo di 25 caratteri"
+            }
+          },
+          "email": {
+            "label": "Email (per il login in injixo)",
+            "error": {
+              "is-invalid": "Inserisci un indirizzo email, per es. nome@email.com.",
+              "required": "Inserisci un indirizzo email, per es. nome@email.com."
+            }
+          },
+          "title": {
+            "label": "Titolo",
+            "message": "Per es. Sig.ra, Sig."
+          },
+          "birth-date": {
+            "label": "Data di nascita"
+          },
+          "birth-place": {
+            "label": "Luogo di nascita"
+          },
+          "color": {
+            "aria-label": "Scegli un colore per il profilo",
+            "label": "Colore del profilo"
+          }
+        },
+        "combo-box": {
+          "marital-status": {
+            "label": "Stato civile",
+            "options": {
+              "unknown": "Sconosciuto",
+              "single": "Celibe/nubile",
+              "married": "Coniugato/a",
+              "widowed": "Vedovo/a",
+              "divorced": "Divorziato/a"
+            }
+          }
+        },
+        "button": {
+          "aria-label": "Modifica profilo",
+          "cancel": {
+            "text": "Annulla"
+          },
+          "next": {
+            "text": "Avanti"
+          },
+          "save": {
+            "text": "Salva"
+          }
+        },
+        "heading": {
+          "text": "Informazioni di base"
+        },
+        "inline-message": {
+          "error": "Non è stato possibile creare questo dipendente. Per favore, riprova."
+        }
+      },
+      "contact-information": {
+        "heading": {
+          "text": "Contatti"
+        },
+        "input": {
+          "phone": {
+            "label": "Numero di telefono"
+          },
+          "phone-alt": {
+            "label": "Numero di telefono aggiuntivo"
+          },
+          "email-alt": {
+            "label": "Indirizzo email aggiuntivo"
+          }
+        }
+      },
+      "address": {
+        "heading": {
+          "text": "Indirizzo"
+        },
+        "input": {
+          "street": {
+            "label": "Via e numero civico"
+          },
+          "postcode": {
+            "label": "CAP"
+          },
+          "city": {
+            "label": "Città"
+          },
+          "country": {
+            "label": "Stato"
+          }
+        }
+      },
+      "external-identifiers": {
+        "button": {
+          "aria-label": "Edit external identifiers"
+        },
+        "combo-box": {
+          "integration": {
+            "placeholder": "Seleziona integrazione"
+          }
+        },
+        "empty-state": {
+          "button": {
+            "text": "Assegna identificatore esterno"
+          },
+          "suggestion": {
+            "text": "Per utilizzare in injixo i dati sugli stati di un dipendente che provengono da un sistema esterno, assegna qui il loro identificatore esterno."
+          }
+        },
+        "header-row": {
+          "active": {
+            "label": "Attivo"
+          },
+          "identifier": {
+            "label": "Identificatore"
+          },
+          "integration": {
+            "label": "Integrazione"
+          }
+        },
+        "heading": {
+          "text": "Identificatori esterni"
+        }
+      },
+      "language-time-zone": {
+        "button": {
+          "aria-label": "Modifica la lingua e il fuso orario"
+        },
+        "heading": {
+          "text": "Lingua e fuso orario"
+        },
+        "language": {
+          "de": "Tedesco",
+          "en": "Inglese",
+          "en-gb": "Inglese",
+          "es": "Spagnolo",
+          "fr": "Francese",
+          "it": "Italiano",
+          "label": "Lingua",
+          "nl": "Olandese",
+          "sv": "Svenska",
+          "unknown": "Sconosciuto"
+        },
+        "timezone": {
+          "label": "Fuso orario"
+        }
+      },
+      "staff-membership": {
+        "button": {
+          "next": {
+            "text": "Avanti"
+          },
+          "save": {
+            "text": "Salva"
+          }
+        },
+        "date-picker": {
+          "join-date": {
+            "label": "Data di inizio",
+            "placeholder": "Seleziona"
+          },
+          "leave-date": {
+            "label": "Data di fine",
+            "placeholder": "Seleziona"
+          }
+        },
+        "inline-message": {
+          "error": "Non è stato possibile salvare le modifiche. Per favore riprova."
+        },
+        "text": "Il dipendente da adesso appartiene all'organico e può accedere a injixo. Se è necessario, modifica l'appartenenza all'organico:"
+      }
+    },
+    "edit-profile": {
+      "button": {
+        "cancel": {
+          "text": "Annulla"
+        },
+        "save": {
+          "text": "Salva modifiche"
+        },
+        "saving-in-progress": {
+          "text": "Salvataggio in corso"
+        }
+      },
+      "external-identifiers": {
+        "form-error": {
+          "unknown": {
+            "create": "Non è stato possibile creare questo dipendente. Per favore, riprova.",
+            "update": "Non è stato possibile modificare questo dipendente. Per favore, riprova."
+          },
+          "firstName": {
+            "required": "Inserisci il nome (max. 50 caratteri)."
+          },
+          "lastName": {
+            "required": "Inserisci il cognome (max. 50 caratteri)."
+          },
+          "personnelNumber": {
+            "required": "Inserisci un numero di matricola (max. 25 caratteri).",
+            "max-length": "Inserisci fino a 25 caratteri.",
+            "already-taken": "Inserisci un numero di matricola che non sia già in uso."
+          },
+          "email": {
+            "required": "Inserisci un indirizzo email, per es. nome@email.com.",
+            "invalid-format": "Inserisci un indirizzo email, per es. nome@email.com.",
+            "already-taken": "Inserisci un indirizzo email che non sia già in uso."
+          },
+          "emailAlt": {
+            "invalid-format": "Inserisci un indirizzo email, per es. nome@email.com.",
+            "already-taken": "Inserisci un indirizzo email che non sia già in uso."
+          },
+          "timezone": {
+            "required": "Scegli un fuso orario."
+          },
+          "locale": {
+            "required": "Scegli una lingua."
+          },
+          "external-identifiers": {
+            "conflict": "Non è stato possibile assegnare l'identificatore o gli identificatori esterni. Per favore, riprova.",
+            "empty": "Devi inserire un identificatore.",
+            "not-unique": "Inserisci un identificatore esterno che non sia già in uso."
+          }
+        },
+        "button": {
+          "add-mapping": {
+            "text": "Aggiungi identificatore esterno"
+          },
+          "remove-mapping": {
+            "text": "Rimuovi identificatore esterno"
+          }
+        },
+        "inline-message": {
+          "duplicate-information-error": {
+            "text": "L'identificatore {{identifier}} è già assegnato a <Link>un altro dipendente</Link>. Assegna un altro identificatore, o rimuovi l'identificatore dall'altro dipendente."
+          }
+        }
+      }
+    },
+    "access": {
+      "authentication": {
+        "button": {
+          "aria-label": "Modifica l'autenticazione e la password"
+        },
+        "heading": {
+          "text": "Autenticazione e password"
+        },
+        "password": {
+          "inline-message": {
+            "info": "Il login è stato bloccato per motivi di sicurezza. Puoi ripristinare la password per permettere al dipendente di fare il login con la vecchia password."
+          }
+        },
+        "read-only-data": {
+          "2fa": {
+            "name": "Autenticazione a due fattori (2FA)"
+          },
+          "password": {
+            "name": "Password"
+          }
+        },
+        "read-only-text": {
+          "active": "Attiva",
+          "inactive": "Non attiva",
+          "managed-by-provider": "Gestita dal provider di identità"
+        },
+        "two-factor-auth": {
+          "inline-message": {
+            "info": "La 2FA è stata imposta. Il dipendente deve ancora configurare la 2FA per poter fare il login."
+          }
+        }
+      },
+      "object-access": {
+        "button": {
+          "aria-label": "Modifica l'accesso agli oggetti"
+        },
+        "heading": {
+          "text": "Accesso agli oggetti"
+        },
+        "read-only-data": {
+          "name": "Gruppo di oggetti"
+        },
+        "tooltip": {
+          "hint": {
+            "label": "Specifica a quale gruppo di oggetti può accedere il dipendente, per esempio, l'accesso a specifici pannelli di controllo."
+          }
+        }
+      },
+      "roles": {
+        "admin-access": {
+          "text": "Accesso amministratore concesso"
+        },
+        "button": {
+          "aria-label": "Modifica i ruoli e l'accesso amministratore"
+        },
+        "empty-state": {
+          "button": {
+            "assign-roles": {
+              "text": "Assegna ruoli"
+            }
+          },
+          "suggestion": {
+            "text": "Assegna al dipendente le autorizzazioni per i prodotti e le funzionalità."
+          }
+        },
+        "heading": {
+          "text": "Ruoli e accesso amministratore"
+        },
+        "no-admin-access": {
+          "text": "Non è stato concesso l'accesso amministratore"
+        },
+        "tooltip": {
+          "hint": {
+            "label": "Assegna al dipendente le autorizzazioni per i prodotti e le funzionalità, e concedi l'accesso amministratore."
+          }
+        }
+      },
+      "single-sign-on": {
+        "button": {
+          "aria-label": "Modifica l'autenticazione unica"
+        },
+        "heading": {
+          "text": "Autenticazione unica (single sign-on)"
+        }
+      }
+    },
+    "attributes": {
+      "edit": {
+        "button": {
+          "add-attribute": {
+            "label": "Add attribute"
+          }
+        },
+        "combo-box": {
+          "attribute": {
+            "placeholder": "Select attribute"
+          }
+        },
+        "empty-state": {
+          "suggestion": {
+            "text": "Add custom attributes to this person"
+          },
+          "title": {
+            "text": "No attributes assigned"
+          }
+        },
+        "heading": {
+          "text": "Edit attributes"
+        },
+        "input": {
+          "date-value": {
+            "label": "Date"
+          },
+          "fixed-range-text-value": {
+            "label": "Value"
+          },
+          "hours": {
+            "label": "Hours"
+          },
+          "minutes": {
+            "label": "Minutes"
+          },
+          "number-value": {
+            "label": "Number",
+            "message": "Enter a value ( 0 to 99_999_999)"
+          },
+          "priority": {
+            "label": "Priority",
+            "message": "Enter a priority ( 1 to 99 ).",
+            "overlapping-error": {
+              "message": "Select a priority that is not yet used within the validity period of the selected attribute. Alternatively, change the validity period."
+            }
+          },
+          "text-value": {
+            "label": "Text",
+            "message": "Shorten the text to a max. of 250 characters."
+          },
+          "time-value": {
+            "message": "Enter a time (0 h to 9999 h 00 min)."
+          }
+        },
+        "modal": {
+          "delete-confirmation": {
+            "consequence-1": "This is a consequence of deleting this attribute",
+            "error-message": "Failed to delete attribute. Please try again later.",
+            "message": "The attribute will be deleted.",
+            "title": "Delete attribute?"
+          }
+        },
+        "radio-group": {
+          "attribute-applies": {
+            "label": "Value",
+            "radio": {
+              "false": {
+                "text": "False"
+              },
+              "true": {
+                "text": "True"
+              }
+            }
+          }
+        },
+        "toast": {
+          "delete-success": {
+            "message": "Attribute deleted"
+          },
+          "save-success": {
+            "message": "Attribute updated"
+          }
+        }
+      },
+      "show": {
+        "attribute-priority": {
+          "text": "Priority {{priority}}"
+        },
+        "empty-state": {
+          "button": {
+            "add-attribute": {
+              "label": "Add attribute"
+            }
+          },
+          "suggestion": {
+            "text": "Add your custom attributes to this person."
+          }
+        },
+        "heading": {
+          "text": "Attributes"
+        },
+        "tooltip": {
+          "hint": {
+            "label": "Attributes tooltip text"
+          }
+        }
+      }
+    },
+    "basic-information": {
+      "input": {
+        "email": {
+          "error": {
+            "already-taken": "Questo indirizzo email è già in uso. Inserisci un indirizzo email diverso."
+          }
+        },
+        "personnel-number": {
+          "error": {
+            "already-taken": "Questo numero di matricola è già in uso. Inserisci un numero diverso."
+          }
+        }
+      }
+    },
+    "create": {
+      "toast": {
+        "success": "Dipendente salvato"
+      }
+    },
+    "date-picker": {
+      "generic-error-message": {
+        "text": "Something went wrong, please try again later."
+      },
+      "invalid-date-range-error-message": {
+        "text": "Select a date before the end of the validity period."
+      },
+      "overlapping-error-message": {
+        "text": "Date range overlaps with another date range."
+      },
+      "select-date": {
+        "placeholder": "Select a date"
+      },
+      "valid-from": {
+        "label": "Valid from"
+      },
+      "valid-to": {
+        "label": "Valid to"
+      }
+    },
+    "edit-availabilities": {
+      "add-button": "Add availability",
+      "button": {
+        "back": "Back"
+      },
+      "checkbox": {
+        "label": "Time period ends next day"
+      },
+      "combo-box": {
+        "day-type": {
+          "aria-label": "Select day type",
+          "message": {
+            "required": "Select a day type."
+          },
+          "placeholder": "Select day type"
+        }
+      },
+      "empty-state": {
+        "message": {
+          "text": "No availability added"
+        },
+        "suggestion": {
+          "text": "Add patterns of when the person is available for scheduling."
+        }
+      },
+      "heading": {
+        "text": "Edit availabilities"
+      },
+      "inline-message": {
+        "create": {
+          "error": "Availability could not be created. Please try again."
+        },
+        "update": {
+          "error": "Availability could not be updated. Please try again."
+        }
+      },
+      "modal": {
+        "error-message": "The availability could not be deleted. Please try again.",
+        "remove": {
+          "inline-message": {
+            "warning": "Describe what happens when the availability is removed."
+          },
+          "message": "The availability will be removed.",
+          "title": "Delete availability?"
+        }
+      },
+      "read-only-data": {
+        "time-period": {
+          "name": "Time period",
+          "text": "From {{startTime}} to {{endTime}}"
+        }
+      },
+      "time-input": {
+        "end-time": {
+          "label": "End time"
+        },
+        "start-time": {
+          "label": "Start time"
+        }
+      },
+      "toast": {
+        "remove-success": {
+          "message": "Availability deleted"
+        },
+        "success-create": {
+          "text": "Availability saved"
+        },
+        "success-update": {
+          "text": "Availability updated"
+        }
+      }
+    },
+    "edit-calendars": {
+      "add-button": "Add calendar",
+      "button": {
+        "back": "Back"
+      },
+      "combo-box": {
+        "calendar": {
+          "aria-label": "Calendar",
+          "message": {
+            "required": "required"
+          },
+          "placeholder": "Select calendar"
+        }
+      },
+      "empty-state": {
+        "message": {
+          "text": "No calendar assigned"
+        },
+        "suggestion": {
+          "text": "Define what it means that the person has a planning calendar"
+        }
+      },
+      "heading": {
+        "text": "Edit calendars"
+      },
+      "inline-message": {
+        "create": {
+          "error": "Calendar assignment could not be created. Please try again."
+        },
+        "update": {
+          "error": "Calendar assignment could not be updated. Please try again."
+        }
+      },
+      "modal": {
+        "error-message": "Calendar assignment could not be deleted. Please try again.",
+        "remove": {
+          "inline-message": {
+            "warning": "Describe what happens when the assignment of the calendar is deleted"
+          },
+          "message": "The calendar assignment will be deleted",
+          "title": "Delete Calendar?"
+        }
+      },
+      "toast": {
+        "remove-success": {
+          "message": "Calendar assignment was deleted"
+        },
+        "success-create": {
+          "text": "Calendar assignment added"
+        },
+        "success-update": {
+          "text": "Calendar assignment updated"
+        }
+      }
+    },
+    "edit-categories": {
+      "add-button": "Add category",
+      "button": {
+        "back": "Back"
+      },
+      "combo-box": {
+        "category": {
+          "aria-label": "Category",
+          "message": {
+            "required": "Select a category"
+          },
+          "placeholder": "Select a category"
+        }
+      },
+      "empty-state": {
+        "message": {
+          "text": "No category assigned"
+        },
+        "suggestion": {
+          "text": "Define what it means that the person has a category assigned"
+        }
+      },
+      "heading": {
+        "text": "Edit categories"
+      },
+      "inline-message": {
+        "create": {
+          "error": "Category assignment could not be created. Please try again."
+        },
+        "update": {
+          "error": "Category assignment could not be updated. Please try again."
+        }
+      },
+      "input": {
+        "priority": {
+          "label": "Priority",
+          "message": "Enter a priority from 1 to 100."
+        }
+      },
+      "modal": {
+        "error-message": "Category assignment could not be deleted. Please try again.",
+        "remove": {
+          "inline-message": {
+            "warning": "Describe what happens when the assignment of the category is deleted"
+          },
+          "message": "The category assignment will be deleted",
+          "title": "Delete Category?"
+        }
+      },
+      "toast": {
+        "remove-success": {
+          "message": "Category assignment was deleted"
+        },
+        "success-create": {
+          "text": "Category assignment added"
+        },
+        "success-update": {
+          "text": "Category assignment updated"
+        }
+      }
+    },
+    "edit-day-model-assignments": {
+      "add-button": "Add day model",
+      "button": {
+        "back": "Back"
+      },
+      "combo-box": {
+        "day-model": {
+          "aria-label": "Select day model",
+          "message": {
+            "required": "Select a day model."
+          },
+          "placeholder": "Select day model"
+        }
+      },
+      "empty-state": {
+        "message": {
+          "text": "No day model added"
+        },
+        "suggestion": {
+          "text": "Add day models to optimize a person's schedule on a daily basis."
+        }
+      },
+      "heading": {
+        "text": "Edit day models"
+      },
+      "inline-message": {
+        "create": {
+          "error": "Day model could not be created. Please try again."
+        },
+        "update": {
+          "error": "Day model could not be updated. Please try again."
+        }
+      },
+      "modal": {
+        "error-message": "The day model could not be deleted. Please try again.",
+        "remove": {
+          "inline-message": {
+            "warning": "Day model will be reset to default, which is the total time a scheduled person is present during a shift."
+          },
+          "message": "Deleting the day model will have one consequence.",
+          "title": "Delete day model?"
+        }
+      },
+      "toast": {
+        "remove-success": {
+          "message": "Day model deleted"
+        },
+        "success-create": {
+          "text": "Day model saved"
+        },
+        "success-update": {
+          "text": "Day model updated"
+        }
+      }
+    },
+    "edit-external-system-assignments": {
+      "add-button": "Add external system",
+      "button": {
+        "back": "Back"
+      },
+      "checkbox": {
+        "active": {
+          "label": "Active"
+        }
+      },
+      "combo-box": {
+        "external-system": {
+          "aria-label": "Select external system",
+          "message": {
+            "required": "Select an external system."
+          },
+          "placeholder": "Select external system"
+        }
+      },
+      "empty-state": {
+        "message": {
+          "text": "No external systems assigned"
+        },
+        "suggestion": {
+          "text": "Add one or more external system to the person"
+        }
+      },
+      "heading": {
+        "text": "Edit external systems"
+      },
+      "inline-message": {
+        "create": {
+          "error": "External system could not be added. Please try again."
+        },
+        "update": {
+          "error": "External system could not be updated. Please try again."
+        }
+      },
+      "input": {
+        "extension": {
+          "label": "Extension",
+          "message": {
+            "required": "Enter an extension.",
+            "too-long": "Enter a maximum of 50 characters."
+          }
+        },
+        "identification": {
+          "label": "Identification",
+          "message": {
+            "positive": "Enter a number greater than 0.",
+            "required": "Enter an identification number.",
+            "too-long": "Enter a maximum of 9 digits."
+          }
+        }
+      },
+      "modal": {
+        "error-message": "The external system could not be deleted. Please try again.",
+        "remove": {
+          "inline-message": {
+            "warning": "Activities of the person will no longer be tracked by the external system."
+          },
+          "message": "The assignment to the external system will be deleted.",
+          "title": "Delete external system?"
+        }
+      },
+      "toast": {
+        "remove-success": {
+          "message": "External system deleted"
+        },
+        "success-create": {
+          "text": "External system saved"
+        },
+        "success-update": {
+          "text": "External system updated"
+        }
+      },
+      "tooltip": {
+        "identification": {
+          "label": "Use the identification given to the person in the external system."
+        }
+      }
+    },
+    "edit-identification-numbers": {
+      "button": {
+        "add-identification-number": {
+          "text": "Add identification number"
+        }
+      },
+      "identification-number": {
+        "input": {
+          "invalid-length": {
+            "error-message": "Enter a maximum of 50 digits."
+          },
+          "invalid-required": {
+            "error-message": "Enter an identification number (up to 50 digits)."
+          },
+          "label": "Identification number"
+        }
+      }
+    },
+    "edit-planning-unit-memberships": {
+      "button": {
+        "add-planning-unit": {
+          "text": "Add planning unit"
+        },
+        "back": "Back"
+      },
+      "combo-box": {
+        "planning-unit": {
+          "message": {
+            "required": "Select a planning unit"
+          }
+        },
+        "rule": {
+          "aria-label": "Planning unit",
+          "placeholder": "Select planning unit"
+        }
+      },
+      "empty-state": {
+        "message": {
+          "text": "No planning unit assigned"
+        },
+        "suggestion": {
+          "text": "Add one or more planning units to qualify the person for planning in a predefined time zone."
+        }
+      },
+      "heading": {
+        "text": "Edit planning units"
+      },
+      "inline-message": {
+        "create": {
+          "error": "Planning unit can't be created. Please try again."
+        },
+        "update": {
+          "error": "Planning unit can't be updated. Please try again"
+        }
+      },
+      "input": {
+        "priority": {
+          "aria-label": "Priority",
+          "label": "Priority",
+          "message": "Enter a priority ( 1 to 99 )."
+        }
+      },
+      "modal": {
+        "error-message": "Failed to delete planning unit. Please try again later.",
+        "remove": {
+          "inline-message": {
+            "warning": "Consequence of deleting the planning unit."
+          },
+          "message": "The planning unit will be deleted.",
+          "title": "Delete planning unit?"
+        }
+      },
+      "toast": {
+        "remove-success": {
+          "message": "Planning unit deleted successfully"
+        },
+        "success-create": {
+          "text": "Planning unit added"
+        },
+        "success-update": {
+          "text": "Planning unit updated successfully"
+        }
+      }
+    },
+    "edit-rule-assignments": {
+      "add-button": "Add rule",
+      "button": {
+        "back": "Back"
+      },
+      "combo-box": {
+        "rule": {
+          "aria-label": "Select a rule",
+          "message": {
+            "required": "Rule is required"
+          },
+          "placeholder": "Select a rule"
+        }
+      },
+      "empty-state": {
+        "message": {
+          "text": "No rules are defined"
+        },
+        "suggestion": {
+          "text": "Add one or more rules to get started"
+        }
+      },
+      "heading": {
+        "text": "Edit rules"
+      },
+      "inline-message": {
+        "create": {
+          "error": "Could not create rule. Please try again."
+        },
+        "update": {
+          "error": "Rule can't be updated. Please try again."
+        }
+      },
+      "modal": {
+        "error-message": "Can't delete rule. Please try again",
+        "remove": {
+          "inline-message": {
+            "warning": "This action has consequences to time-management functionality."
+          },
+          "message": "The rule will be deleted.",
+          "title": "Delete rule?"
+        }
+      },
+      "toast": {
+        "remove-success": {
+          "message": "Rule deleted"
+        },
+        "success-create": {
+          "text": "Rule added"
+        },
+        "success-update": {
+          "text": "Rule updated"
+        }
+      }
+    },
+    "edit-shift-sequence-assignments": {
+      "add-button": "Add shift sequence",
+      "button": {
+        "back": "Close"
+      },
+      "combo-box": {
+        "shift-sequence-row": {
+          "label": "Shift sequence row",
+          "placeholder": "Select a shift sequence row"
+        },
+        "shift-sequence": {
+          "label": "Shift sequence",
+          "message": {
+            "required": "Shift sequence is required"
+          },
+          "placeholder": "Select a shift sequence"
+        },
+        "shit-sequence-row": {
+          "message": {
+            "required": "Shift sequence row is required"
+          }
+        }
+      },
+      "empty-state": {
+        "message": {
+          "text": "No shift sequences assigned yet"
+        },
+        "suggestion": {
+          "text": "Add shift sequences"
+        }
+      },
+      "heading": {
+        "text": "Edit shift sequences"
+      },
+      "input": {
+        "reference-date": {
+          "label": "Reference date",
+          "message": {
+            "required": "Reference date is required"
+          }
+        },
+        "sequence": {
+          "label": "Sequence",
+          "message": {
+            "required": "Select a sequence between 1 and 10"
+          }
+        }
+      },
+      "tooltip": {
+        "sequence": {
+          "label": "Sequence is used for ..."
+        }
+      }
+    },
+    "edit-work-time-pattern-model-assignments": {
+      "add-button": "Add work time pattern model",
+      "button": {
+        "back": "Back"
+      },
+      "combo-box": {
+        "work-time-pattern-model": {
+          "aria-label": "Work time pattern model",
+          "message": {
+            "required": "Work time pattern model is required"
+          },
+          "placeholder": "Select a work time pattern model"
+        }
+      },
+      "empty-state": {
+        "message": {
+          "text": "No work time patter models defined"
+        },
+        "suggestion": {
+          "text": "Define work time pattern models to [...]"
+        }
+      },
+      "heading": {
+        "text": "Edit work time pattern models"
+      },
+      "inline-message": {
+        "create": {
+          "error": "Work time pattern model could not be created. Please try again."
+        },
+        "update": {
+          "error": "Work time pattern model could not be updated. Please try again."
+        }
+      },
+      "input": {
+        "reference-date": {
+          "label": "Reference date",
+          "message": {
+            "required": "Reference date is required"
+          }
+        }
+      },
+      "modal": {
+        "error-message": "Work time pattern model could not be deleted. Please try again.",
+        "remove": {
+          "inline-message": {
+            "warning": "This is a possible consequence of delete this assignment"
+          },
+          "message": "The work time pattern model will be deleted",
+          "title": "Delete work time pattern model?"
+        }
+      },
+      "toast": {
+        "remove-success": {
+          "message": "Work time pattern model deleted"
+        },
+        "success-create": {
+          "text": "Work time pattern model added"
+        },
+        "success-update": {
+          "text": "Work time pattern model updated"
+        }
+      }
+    },
+    "edit": {
+      "authentication": {
+        "button": {
+          "close": "Chiudi"
+        },
+        "heading": "Modifica l'autenticazione e la password",
+        "input": {
+          "password": {
+            "label": "Nuova password"
+          }
+        },
+        "password-strength": {
+          "none": "Nessuna password",
+          "strong": "Password forte",
+          "sufficient": "Password media",
+          "weak": "Password debole"
+        },
+        "password": {
+          "button": {
+            "discard": "Annulla",
+            "save": "Salva"
+          },
+          "heading": "Password",
+          "inline-message": {
+            "error": "Non è stato possibile salvare la password. Per favore riprova.",
+            "info": "Il login è stato bloccato per motivi di sicurezza. Puoi ripristinare la password per permettere alla persona di fare il login con la vecchia password."
+          },
+          "input": {
+            "password": {
+              "error": "Inserisci almeno 8 caratteri. Utilizza lettere maiuscole e minuscole, numeri e caratteri speciali."
+            }
+          },
+          "text": "Puoi impostare una nuova password per la dipendente. Inserisci una password di almeno 8 caratteri, che includa lettere maiuscole e minuscole, numeri e caratteri speciali."
+        },
+        "toast": {
+          "success": "L'autenticazione e la password sono state aggiornate"
+        },
+        "two-factor-auth": {
+          "active": "Attiva",
+          "button": {
+            "deactivate-2fa": "Resetta la 2FA",
+            "enable-2fa-editing": "Permetti la disattivazione della 2FA",
+            "enforce-2fa": "Imponi la 2FA",
+            "withdraw-enforcement": "Revoca l'imposizione della 2FA"
+          },
+          "disable2fa": {
+            "toast": {
+              "success": "La 2FA è stata resettata"
+            }
+          },
+          "heading": "Autenticazione a due fattori (2FA)",
+          "inactive": "Non attiva",
+          "inline-message": {
+            "enforced": "La 2FA è stata imposta. Puoi permettere alla persona di disattivare la 2FA per se stessa.",
+            "enforcement-pending": "La persona dovrà configurare la 2FA al prossimo login.",
+            "error": "Non è stato possibile salvare le modifiche. Per favore riprova."
+          },
+          "pending-activation": "In attesa dell'attivazione da parte della persona",
+          "status": "Stato",
+          "update-enforcement": {
+            "toast": {
+              "success": "L'imposizione della 2FA è stata aggiornata"
+            }
+          }
+        },
+        "unlock": {
+          "button": {
+            "restore": "Ripristina password"
+          },
+          "inline-message": {
+            "error": "Non è stato possibile ripristinare la password. Per favore riprova."
+          },
+          "toast": {
+            "success": "La password è stata ripristinata"
+          }
+        }
+      },
+      "base-information": {
+        "heading": "Modifica il profilo"
+      },
+      "basic-information": {
+        "inline-message": {
+          "error": "Non è stato possibile modificare il profilo."
+        },
+        "toast": {
+          "success": "Le informazioni generali sono state aggiornate"
+        }
+      },
+      "external-identifiers": {
+        "button": {
+          "cancel": "Cancel",
+          "primary": "Save"
+        },
+        "heading": "Edit external identifiers",
+        "inline-message": {
+          "error": "Your changes could not be saved. Please try again."
+        },
+        "toast": {
+          "success": "External identifiers saved"
+        }
+      },
+      "language-time-zone": {
+        "button": {
+          "cancel": "Annulla",
+          "save": "Salva"
+        },
+        "combo-box": {
+          "language": {
+            "label": "Lingua",
+            "option": {
+              "de": "Tedesco",
+              "en": "Inglese",
+              "en-gb": "Inglese (Regno Unito)",
+              "es": "Spagnolo",
+              "fr": "Francese",
+              "it": "Italiano",
+              "nl": "Olandese",
+              "sv": "Svedese"
+            }
+          },
+          "timezone": {
+            "label": "Fuso orario"
+          }
+        },
+        "heading": "Modifica la lingua e il fuso orario",
+        "inline-message": {
+          "error": "Non è stato possibile salvare le modifiche. Per favore riprova."
+        },
+        "toast": {
+          "success": "La lingua e il fuso orario sono stati salvati"
+        }
+      },
+      "object-access": {
+        "button": {
+          "cancel": "Annulla",
+          "save": "Salva"
+        },
+        "combo-box": {
+          "aria-label": "Gruppo di oggetti",
+          "placeholder": "Seleziona un gruppo di oggetti"
+        },
+        "heading": "Modifica l'accesso agli oggetti",
+        "inline-message": {
+          "error": "Non è stato possibile salvare questo gruppo di oggetti. Per favore riprova."
+        },
+        "toast": {
+          "success": "Il gruppo di oggetti è stato salvato"
+        }
+      },
+      "role-assignment": {
+        "button": {
+          "cancel": "Annulla",
+          "primary": "Salva"
+        },
+        "inline-message": {
+          "error": "Non è stato possibile salvare le modifiche. Per favore riprova."
+        },
+        "toast": {
+          "success": "Il ruolo e l'accesso amministratore sono stati salvati"
+        }
+      },
+      "roles": {
+        "heading": "Modifica i ruoli e l'accesso amministratore"
+      },
+      "single-sign-on": {
+        "button": {
+          "cancel": "Annulla",
+          "save": "Salva"
+        },
+        "heading": "Modifica l'autenticazione unica",
+        "inline-message": {
+          "error": "Non è stato possibile salvare il nome principale dell'utente. Per favore riprova."
+        },
+        "input": {
+          "user-principal-name": {
+            "label": "Nome principale dell'utente (UPN)",
+            "message": "Inserisci il nome principale dell'utente (UPN) solo se l'indirizzo email per il login in injixo è diverso dall'UPN utilizzato dal provider di identità dell'autenticazione unica."
+          }
+        },
+        "toast": {
+          "success": "Il nome principale dell'utente è stato salvato"
+        }
+      }
+    },
+    "identification-numbers": {
+      "button": {
+        "aria-label": "Edit identification numbers"
+      },
+      "empty-state": {
+        "button": {
+          "text": "Add identification number"
+        }
+      }
+    },
+    "planning": {
+      "barred-from-scheduling": {
+        "always-barred-from-scheduling": {
+          "text": "Always barred from scheduling."
+        },
+        "always-excluded-from-scheduling": {
+          "text": "Person always excluded from scheduling"
+        },
+        "button": {
+          "aria-label": "Edit schedule exclusion"
+        },
+        "empty-state": {
+          "button": {
+            "add-period": {
+              "label": "Add period"
+            }
+          },
+          "suggestion": {
+            "text": "Add a period in case the person needs to be excluded from the schedule."
+          }
+        },
+        "excluded-from-scheduling": {
+          "text": "Person excluded from scheduling"
+        },
+        "heading": {
+          "text": "Barred from scheduling"
+        },
+        "included-in-scheduling": {
+          "text": "Person included in scheduling"
+        },
+        "tooltip": {
+          "hint": {
+            "label": "Define specific periods to exclude a person from the schedules. These periods have to be defined within an active staff membership."
+          }
+        }
+      },
+      "calendars": {
+        "button": {
+          "aria-label": "Edit planning calendars"
+        },
+        "empty-state": {
+          "button": {
+            "add-calendar": {
+              "text": "Add calendar"
+            }
+          },
+          "suggestion": {
+            "text": "Define the persons planning calendar"
+          }
+        },
+        "heading": {
+          "text": "Calendars"
+        },
+        "tooltip": {
+          "hint": {
+            "label": "Info about planning calendars"
+          }
+        }
+      },
+      "day-models": {
+        "button": {
+          "aria-label": "Edit day models"
+        },
+        "empty-state": {
+          "button": {
+            "add-day-model": {
+              "text": "Add day model"
+            }
+          },
+          "suggestion": {
+            "text": "Add day models to optimize a person's schedule on a daily basis."
+          }
+        },
+        "heading": {
+          "text": "Day models"
+        },
+        "tooltip": {
+          "hint": {
+            "label": "Add day models to optimize a person's schedule on a daily basis."
+          }
+        }
+      },
+      "edit-barred-from-scheduling": {
+        "button": {
+          "add-period": {
+            "text": "Add period"
+          }
+        },
+        "date-range-undefined-info": {
+          "text": "Leaving the date fields undefined will always keep the person off the schedule."
+        },
+        "empty-state": {
+          "message": {
+            "text": "No periods assigned"
+          },
+          "suggestion": {
+            "text": "Add one or more periods to exclude the person from the schedule."
+          }
+        },
+        "heading": {
+          "text": "Barred from scheduling"
+        },
+        "modal": {
+          "delete-period": {
+            "consequence-1": "Consequence 1 of deleting this period",
+            "error-message": "Failed to delete the period. Please try again later.",
+            "message": "The barred from scheduling period will be deleted.",
+            "title": "Delete barred from scheduling period?"
+          }
+        },
+        "toast": {
+          "delete-success": {
+            "message": "Period deleted successfully."
+          },
+          "save-success": {
+            "message": "Period updated successfully."
+          }
+        }
+      },
+      "edit-identification-numbers": {
+        "button": {
+          "cancel": {
+            "text": "Cancel"
+          }
+        },
+        "empty-state": {
+          "message": {
+            "text": "No identification number added"
+          },
+          "suggestion": {
+            "text": "Add one or more identification numbers to the person."
+          }
+        },
+        "form": {
+          "inline-message": {
+            "create-error": "Identification number could not be created. Please try again.",
+            "update-error": "Identification number could not be updated. Please try again."
+          }
+        },
+        "heading": {
+          "text": "Edit identification numbers"
+        },
+        "modal": {
+          "error-message": "The identification number could not be deleted. Please try again.",
+          "message": "The identification number will be deleted.",
+          "title": "Delete identification number?",
+          "toast": {
+            "success": {
+              "text": "Identification number deleted"
+            }
+          }
+        },
+        "toast": {
+          "success-create": {
+            "text": "Identification number created"
+          },
+          "success-update": {
+            "text": "Identification number updated"
+          }
+        }
+      },
+      "edit-planning-units": {
+        "date-picker": {
+          "overlapping-timezone-error-message": {
+            "text": "The planning unit belongs to a different time zone than a planning unit that is assigned to the employee."
+          }
+        }
+      },
+      "edit-schedule-position": {
+        "button": {
+          "cancel": {
+            "text": "Cancel"
+          },
+          "save": {
+            "text": "Save"
+          }
+        },
+        "heading": {
+          "text": "Edit schedule position"
+        },
+        "inline-message": {
+          "error": "Position could not be updated. Please try again."
+        },
+        "input": {
+          "schedule-position": {
+            "label": "Position"
+          }
+        },
+        "toast": {
+          "success": "Schedule position saved"
+        }
+      },
+      "edit-selections": {
+        "button": {
+          "add-selection": {
+            "text": "Add selection"
+          },
+          "cancel": {
+            "text": "Cancel"
+          }
+        },
+        "combo-box": {
+          "required-error-message": {
+            "text": "Select a selection."
+          },
+          "selection": {
+            "label": "Selection",
+            "placeholder": "Select Selection"
+          }
+        },
+        "empty-state": {
+          "message": {
+            "text": "No selections assigned."
+          },
+          "suggestion": {
+            "text": "Add one or more selections to the person."
+          }
+        },
+        "form-error-create": {
+          "text": "Selection could not be created. Please try again."
+        },
+        "form-error-update": {
+          "text": "Selection could not be updated. Please try again."
+        },
+        "heading": {
+          "text": "Edit selections"
+        },
+        "modal": {
+          "delete-selection": {
+            "consequence-1": "Consequence for deleting selection",
+            "error-message": "Failed to delete the selection. Please try again later.",
+            "message": "The selection will be deleted.",
+            "title": "Delete selection?",
+            "toast": {
+              "success": {
+                "text": "Selection deleted"
+              }
+            }
+          }
+        },
+        "toast": {
+          "success-create": {
+            "text": "Selection saved"
+          },
+          "success-update": {
+            "text": "Selection updated"
+          }
+        }
+      },
+      "edit-shift-sequences": {
+        "button": {
+          "add-shift-sequence": {
+            "text": "Add shift sequence"
+          }
+        },
+        "combo-box": {
+          "shift-sequence": {
+            "placeholder": "Select a shift sequence"
+          }
+        },
+        "date-picker": {
+          "reference-date": {
+            "label": "Reference date"
+          }
+        },
+        "empty-state": {
+          "message": {
+            "text": "No shift sequence assigned"
+          },
+          "suggestion": {
+            "text": "Assign one or more shift sequences to a person to define their repeating weekly pattern."
+          }
+        },
+        "heading": {
+          "text": "Edit shift sequences"
+        },
+        "input": {
+          "employee-row": {
+            "label": "Employee row",
+            "message": "Enter an employee row ( 1 to {{rowCount}} )."
+          },
+          "priority": {
+            "overlapping-error": {
+              "message": "Select a sequence that is not yet used within the validity period. Alternatively, change the validity period."
+            }
+          },
+          "sequence": {
+            "label": "Sequence",
+            "message": "Enter a sequence ( 1 to 10 )."
+          }
+        },
+        "modal": {
+          "delete-shift-sequence": {
+            "consequence-1": "Consequence of deleting shift sequence.",
+            "error-message": "Failed to remove shift sequence. please try again later.",
+            "message": "The shift sequence will be deleted.",
+            "title": "Delete shift sequence?"
+          }
+        },
+        "toast": {
+          "delete-success": {
+            "message": "Shift sequence deleted successfully"
+          },
+          "save-success": {
+            "message": "Shift sequences updated"
+          }
+        },
+        "tooltip": {
+          "employee-row-hint": {
+            "label": "Specify the row of the shift sequence."
+          },
+          "reference-date-info": {
+            "label": "Set a start day for the shift sequence"
+          },
+          "sequence-hint": {
+            "label": "Lower values are inserted first to a person’s sequences."
+          }
+        }
+      },
+      "planning-units": {
+        "button": {
+          "aria-label": "Edit planning units"
+        },
+        "empty-state": {
+          "button": {
+            "add-planning-unit": {
+              "text": "Add planning unit"
+            }
+          },
+          "suggestion": {
+            "text": "Assign one or more planning units to qualify the person for planning."
+          }
+        },
+        "heading": {
+          "text": "Planning units"
+        },
+        "planning-unit-priority": {
+          "text": "Priority {{priority}}"
+        },
+        "tooltip": {
+          "hint": {
+            "label": "Specify the person’s qualification by assigning one or more skill levels. The weighting affects the related activity."
+          }
+        }
+      },
+      "schedule-position": {
+        "button": {
+          "aria-label": "Edit schedule position"
+        },
+        "heading": {
+          "text": "Schedule position"
+        },
+        "label": "Position",
+        "tooltip": {
+          "hint": {
+            "label": "Enter a position to individually sort the list of people in the Shift Center. Sorting by Schedule Position must be enabled."
+          }
+        }
+      },
+      "selections": {
+        "button": {
+          "aria-label": "Edit selections"
+        },
+        "empty-state": {
+          "button": {
+            "add-selection": {
+              "text": "Add selection"
+            }
+          },
+          "suggestion": {
+            "text": "Assign person to a selection."
+          }
+        },
+        "heading": {
+          "text": "Selections"
+        },
+        "tooltip": {
+          "hint": {
+            "label": "Selections of the person"
+          }
+        }
+      },
+      "shift-sequences": {
+        "button": {
+          "aria-label": "Edit shift sequences"
+        },
+        "empty-state": {
+          "button": {
+            "add-shift-sequence": {
+              "text": "Add shift sequence"
+            }
+          },
+          "suggestion": {
+            "text": "Add shift sequences to the employee, e.g. to plan regularly recurring tasks or availabilities."
+          }
+        },
+        "heading": {
+          "text": "Shift sequences"
+        },
+        "reference-date": {
+          "text": "starts at {{referenceDate}}"
+        },
+        "shift-sequence-sequence": {
+          "text": "Sequence {{sequence}}"
+        },
+        "tooltip": {
+          "hint": {
+            "label": "A shift sequence is a set of day models or activities that is repeated regularly."
+          }
+        }
+      },
+      "work-time-pattern-models": {
+        "button": {
+          "edit": {
+            "aria-label": "Edit"
+          }
+        },
+        "heading": {
+          "text": "Work Time Pattern Models"
+        },
+        "tooltip": {
+          "hint": {
+            "label": "Work time pattern models are very useful!"
+          }
+        }
+      }
+    },
+    "role-assignment": {
+      "button": {
+        "primary": "Salva"
+      },
+      "checkbox": {
+        "grant-admin-access": {
+          "label": "Concedi l'accesso amministratore"
+        }
+      },
+      "empty-results": {
+        "text": "Soltanto i ruoli che sono stati predefiniti nella gestione dei ruoli verranno presi in considerazione.",
+        "title": "Questo ruolo non esiste"
+      },
+      "heading": "Ruoli",
+      "input": {
+        "search": {
+          "placeholder": "Cerca ruoli"
+        }
+      },
+      "tooltip": {
+        "grant-admin-access": {
+          "label": "Concedi l'accesso a tutte le funzionalità di injixo. Questa impostazione può essere modificata solo dai dipendenti con accesso amministratore."
+        }
+      }
+    },
+    "single-sign-on": {
+      "read-only-data": {
+        "user-principal-name": {
+          "name": "Nome principale dell'utente (UPN)"
+        }
+      }
+    },
+    "tabs": {
+      "access": {
+        "label": "Accesso"
+      },
+      "attributes": {
+        "label": "Attributes"
+      },
+      "planning": {
+        "label": "Planning"
+      },
+      "profile": {
+        "label": "Profilo"
+      },
+      "time-management": {
+        "label": "Time Management"
+      },
+      "work-profile": {
+        "label": "Work profile"
+      }
+    },
+    "time-management": {
+      "categories": {
+        "button": {
+          "aria-label": "Edit categories"
+        },
+        "empty-state": {
+          "add-category": {
+            "text": "Add category"
+          },
+          "suggestion": {
+            "text": "Define the persons' category"
+          }
+        },
+        "heading": {
+          "text": "Categories"
+        },
+        "tooltip": {
+          "hint": {
+            "label": "Categories tooltip content"
+          }
+        }
+      },
+      "rules": {
+        "button": {
+          "edit": {
+            "aria-label": "Edit"
+          }
+        },
+        "empty-state": {
+          "button": {
+            "add-rule": {
+              "text": "Add a rule"
+            }
+          },
+          "suggestion": {
+            "text": "No rules defined yet."
+          }
+        },
+        "heading": {
+          "text": "Rules"
+        },
+        "tooltip": {
+          "hint": {
+            "label": "Rules tooltip content"
+          }
+        }
+      }
+    },
+    "valid-from": {
+      "text": "Valid from"
+    },
+    "valid-until": {
+      "text": "Valid until"
+    },
+    "work-profile": {
+      "activities": {
+        "activity-suitability-message": {
+          "text": "Matches {{suitability}}% of the selected skill level."
+        },
+        "empty-state": {
+          "message": {
+            "text": "Once skill levels are assigned, the related activities will be shown."
+          }
+        },
+        "heading": {
+          "text": "Activities"
+        },
+        "tooltip": {
+          "activity-not-assigned-to-skill": {
+            "label": "Activity is potentially suitable for the assigned skill levels."
+          },
+          "hint": {
+            "label": "See how the assigned skill levels match the related activities."
+          }
+        }
+      },
+      "availabilities": {
+        "button": {
+          "aria-label": "Edit availabilities"
+        },
+        "empty-state": {
+          "button": {
+            "add-availability": {
+              "text": "Add availability"
+            }
+          },
+          "suggestion": {
+            "text": "Add availabilities to define patterns for the person's available periods."
+          }
+        },
+        "heading": {
+          "text": "Availabilities"
+        },
+        "text": {
+          "ends-on-next-day": "+1 day"
+        },
+        "tooltip": {
+          "hint": {
+            "label": "Add availabilities to define patterns for the person's available periods."
+          }
+        }
+      },
+      "contracts": {
+        "button": {
+          "aria-label": "Edit contracts"
+        },
+        "empty-state": {
+          "button": {
+            "add-contract": {
+              "text": "Add contract"
+            }
+          },
+          "suggestion": {
+            "text": "Attach contracts to enable the person’s schedule ability."
+          }
+        },
+        "heading": {
+          "text": "Contracts"
+        },
+        "tooltip": {
+          "hint": {
+            "label": "Attach the assigned contract to enable the person for scheduling."
+          }
+        }
+      },
+      "edit-contracts": {
+        "button": {
+          "add-contract": {
+            "text": "Add contract"
+          }
+        },
+        "combo-box": {
+          "contract": {
+            "placeholder": "Select contract"
+          }
+        },
+        "empty-state": {
+          "message": {
+            "text": "No contract attached"
+          },
+          "suggestion": {
+            "text": "Add one or more contracts to specify the person’s schedule."
+          }
+        },
+        "heading": {
+          "text": "Edit contracts"
+        },
+        "modal": {
+          "delete-contract": {
+            "consequence-1": "consequence 1 for deleting the contract.",
+            "consequence-2": "consequence 2 for deleting the contract.",
+            "error-message": "Failed to remove contract. please try again later.",
+            "message": "The contract will be deleted.",
+            "title": "Delete contract?"
+          }
+        },
+        "toast": {
+          "delete-success": {
+            "message": "The contract was deleted successfully."
+          },
+          "save-success": {
+            "message": "The contract was updated successfully."
+          }
+        }
+      },
+      "edit-skill-levels": {
+        "button": {
+          "add-skill-level": {
+            "text": "Add skill level"
+          }
+        },
+        "combo-box": {
+          "skill-level": {
+            "placeholder": "Select skill level"
+          }
+        },
+        "empty-state": {
+          "message": {
+            "text": "No skill levels assigned"
+          },
+          "suggestion": {
+            "text": "Add one or more skill levels to specify the person’s qualification"
+          }
+        },
+        "heading": {
+          "text": "Edit skill levels"
+        },
+        "modal": {
+          "delete-skill-level": {
+            "consequence-1": "Consequence for deleting the skill level",
+            "error-message": "Failed to delete skill level. Please try again later.",
+            "message": "The skill level will be deleted.",
+            "title": "Delete skill level?"
+          }
+        },
+        "toast": {
+          "delete-success": {
+            "message": "Skill level deleted successfully"
+          },
+          "save-success": {
+            "message": "Skill levels updated successfully"
+          }
+        }
+      },
+      "edit-staff-membership": {
+        "button": {
+          "add-staff-membership": {
+            "text": "Add date range"
+          },
+          "cancel": {
+            "text": "Cancel"
+          },
+          "discard-changes": {
+            "text": "Discard changes"
+          }
+        },
+        "date-range-input": {
+          "join-date": {
+            "label": "Join date"
+          },
+          "leave-date": {
+            "label": "Leave date"
+          }
+        },
+        "heading": {
+          "text": "Edit staff membership"
+        },
+        "modal": {
+          "delete-staff-membership": {
+            "consequence-1": "Consequence 1 of deleting staff membership.",
+            "consequence-2": "Consequence 2 of deleting staff membership.",
+            "error-message": "Failed to delete staff membership. Please try again later.",
+            "message": "The staff membership will be deleted.",
+            "title": "Delete staff membership?"
+          }
+        },
+        "toast": {
+          "delete-success": {
+            "message": "Staff membership deleted."
+          },
+          "save-success": {
+            "message": "Staff memberships saved"
+          }
+        },
+        "tooltip": {
+          "remove-last-item-hint": {
+            "label": "At least one date must be specified."
+          }
+        }
+      },
+      "external-systems": {
+        "button": {
+          "aria-label": "Edit external systems"
+        },
+        "empty-state": {
+          "button": {
+            "add-external-system": {
+              "text": "Add external system"
+            }
+          },
+          "suggestion": {
+            "text": "Add an external system to import data using Xlink."
+          }
+        },
+        "heading": {
+          "text": "External Systems"
+        },
+        "icon": {
+          "check": {
+            "aria-label": "External system is active"
+          },
+          "pause_circle": {
+            "aria-label": "External system is inactive"
+          }
+        },
+        "tooltip": {
+          "hint": {
+            "label": "Add an external system to import data using Xlink."
+          }
+        }
+      },
+      "identification-numbers": {
+        "heading": {
+          "text": "Identification Numbers"
+        }
+      },
+      "skill-levels": {
+        "button": {
+          "aria-label": "Edit skill levels"
+        },
+        "empty-state": {
+          "button": {
+            "add-skill-level": {
+              "text": "Add skill level"
+            }
+          },
+          "suggestion": {
+            "text": "Assign one or more skill levels to rate the person’s qualification."
+          }
+        },
+        "heading": {
+          "text": "Skill levels"
+        },
+        "tooltip": {
+          "deleted-skill-level": {
+            "label": "This skill level has been removed."
+          },
+          "hint": {
+            "label": "Specify the person’s qualification by assigning one or more skill levels. The weighting affects the related activity."
+          }
+        }
+      },
+      "staff-membership": {
+        "button": {
+          "aria-label": "Edit staff memberships",
+          "show-history": {
+            "text": "Show history"
+          }
+        },
+        "heading": {
+          "text": "Staff membership"
+        },
+        "tooltip": {
+          "hint": {
+            "label": "By setting a date, the entry is taken into account for licensing and the person can be scheduled."
+          }
+        }
+      },
+      "work-time-pattern-models": {
+        "empty-state": {
+          "button": {
+            "add-work-time-pattern-model": {
+              "text": "Add work time pattern model"
+            }
+          },
+          "suggestion": {
+            "text": "Add a work time pattern model"
+          }
+        }
+      }
+    }
+  },
+  "modal": {
+    "unsaved-changes": {
+      "title": "Scartare le modifiche non salvate?",
+      "description": "Le modifiche non saranno salvate.",
+      "stay": {
+        "create": "Torna alla creazione",
+        "update": "Torna alle modifiche"
+      },
+      "discard": {
+        "create": "Scarta modifiche",
+        "update": "Scarta modifiche"
+      }
+    }
+  },
+  "generic": {
+    "resource-assignment": {
+      "button": {
+        "cancel": {
+          "text": "Cancel"
+        },
+        "remove": {
+          "text": "Remove"
+        },
+        "submit": {
+          "text": "Save"
+        }
+      },
+      "date-picker": {
+        "valid-from": {
+          "label": "Valid from"
+        },
+        "valid-to": {
+          "label": "Valid to"
+        },
+        "validity-end-date": {
+          "error-message": "The date must be before or after an existing date range."
+        },
+        "validity-start-date": {
+          "error-message": "The date must be before or after an existing date range."
+        }
+      },
+      "form": {
+        "inline-message": {
+          "error": "Failed to save. Please try again."
+        }
+      },
+      "modal": {
+        "cancel-button": {
+          "text": "Cancel"
+        },
+        "destructive-button": {
+          "text": "Remove"
+        },
+        "error-message": {
+          "text": "Failed to delete. Please try again."
+        }
+      }
+    }
+  },
+  "person-card": {
+    "multiple-roles": "{{firstRole}} and more",
+    "two-roles": "{{firstRole}} and {{secondRole}}"
+  },
+  "tag": {
+    "admin": {
+      "label": "Admin"
+    }
+  }
+}

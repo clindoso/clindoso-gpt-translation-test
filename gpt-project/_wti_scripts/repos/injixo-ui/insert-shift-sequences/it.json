@@ -1,0 +1,88 @@
+{
+  "application": {
+    "title": "Inserire le rotazioni",
+    "backToCapacity": "Ritorna a Capacity",
+    "backToSchedules": "Ritorna a Schedules"
+  },
+  "filters": {
+    "label": {
+      "planningUnit": "Unità di pianificazione",
+      "selection": "Selezione",
+      "timePeriod": "Periodo di tempo"
+    },
+    "placeholder": {
+      "planningUnit": "Seleziona unità di pianificazione",
+      "selection": "Scegli una selezione"
+    },
+    "result": {
+      "noResult": "Nessuna voce"
+    }
+  },
+  "shiftSequencesTable": {
+    "heading": "Riepilogo",
+    "headers": {
+      "select": "Seleziona",
+      "personnelNumber": "Numero di matricola",
+      "name": "Nome",
+      "shiftSequence": "Rotazione",
+      "sequence": "Ordine di inserimento",
+      "employeeRow": "Riga dipendenti",
+      "referenceDate": "Data di riferimento",
+      "validFrom": "Validità dal",
+      "validTo": "Fino al"
+    },
+    "dateFormat": "dd LLL, yyyy",
+    "noData": "Non è stata trovata nessuna rotazione.",
+    "singleCheckbox": "Seleziona una rotazione",
+    "allCheckbox": "Seleziona tutte le rotazioni"
+  },
+  "insertingOptions": {
+    "heading": "Opzioni",
+    "description": "Scegliere in questa sezione le opzioni per inserire le rotazioni.",
+    "option1": "Elimina attività di giorni interi",
+    "option2": "Elimina margini di disponibilità",
+    "option3": "Elimina tutte le attività e tutti i turni"
+  },
+  "jobHistory": {
+    "heading": "Cronologia",
+    "headers": {
+      "select": "Seleziona",
+      "status": "Stato",
+      "startedAt": "Iniziato il"
+    },
+    "processing": "Inserimento in corso",
+    "viewDetails": "Visualizza dettagli",
+    "timeFormat": "dd LLL yyyy, HH:mm",
+    "singleCheckbox": "Seleziona processo di inserimento",
+    "allCheckbox": "Seleziona tutti i processi di inserimento",
+    "noData": "Nessun processo di inserimento trovato.",
+    "clearCreatedJobs": "Elimina voci"
+  },
+  "planning_units": "unità di pianificazione",
+  "selections": "Gruppi di selezione",
+  "shift_sequences": "Rotazioni",
+  "insertion_jobs": "Processi di inserimento",
+  "reload": {
+    "planning_units": "Ricarica unità di pianificazione",
+    "selections": "Ricarica Gruppi di selezione",
+    "shift_sequences": "Ricarica Rotazioni",
+    "insertion_jobs": "Ricarica Processi di inserimento"
+  },
+  "creatingJob": {
+    "failed": "Creazione del processo di inserimento non riuscita. Per favore riprova.",
+    "success": "Processo di inserimento creato con successo."
+  },
+  "document_title": {
+    "module": "Plan",
+    "sub_module": "Inserimento di rotazioni"
+  },
+  "error": {
+    "reload_resource": "C'è stato un errore. Prova a ricaricare <0>{{resource}}</0> o riprovare più tardi."
+  },
+  "insert_shift_sequences": "Inserimento di rotazioni",
+  "level": {
+    "actual": "Stato Effettivo",
+    "plan": "Piano"
+  },
+  "target_level": "Livello di destinazione"
+}

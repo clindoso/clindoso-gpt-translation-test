@@ -1,0 +1,993 @@
+{
+  "overview": {
+    "title": "Huidige Integraties",
+    "last_imported": "Laatst geïmporteerd {{from}}",
+    "never_imported": "Nog geen import",
+    "add_button": "Voeg integratie toe",
+    "edit_integration": "Bewerk",
+    "back_link": "Terug naar overzicht",
+    "connection_status": {
+      "connected": "Operationeel",
+      "disconnected": "Probleem gedetecteerd",
+      "suspended": "Gepauzeerd",
+      "xlink": "Xlink",
+      "pending": "Verbinden",
+      "importing": "Importeren"
+    },
+    "in_preparation": "In voorbereiding",
+    "latest_datapoint": "Laatst geïmporteerde datapunt {{datapoint}}"
+  },
+  "catalogue": {
+    "title": "Voeg een nieuwe integratie toe",
+    "add_button": "Voeg integratie toe",
+    "select_model": "Kies een model",
+    "back_link": "Terug naar catalogus",
+    "features_label": "Kenmerken",
+    "features": {
+      "call": "Oproepgeschiedenis",
+      "chat": "Chatgeschiedenis",
+      "ticket": "Ticket geschiedenis",
+      "email": "Email geschiedenis",
+      "social_media": "Sociale media geschiedenis",
+      "document": "Document Geschiedenis",
+      "agent_status": "Agentstatus",
+      "rta": "RTA"
+    },
+    "delivery_mode_label": "Bezorgingsmodus",
+    "delivery_mode": {
+      "cloud": "Cloud",
+      "on-prem": "On-Premise",
+      "legacy": "On-Premise"
+    }
+  },
+  "edit": {
+    "title": "Bewerk Integratie",
+    "pause_tooltip": "Importeren opschorten",
+    "resume_tooltip": "Importeren hervatten",
+    "pause_integration_results": {
+      "error": "Er is een fout opgetreden bij het opschorten van de integratie: {{error}}",
+      "success": "Integratie is met succes opgeschort"
+    },
+    "resume_integration_results": {
+      "error": "Er is een fout opgetreden bij het hervatten van de integratie: {{error}}",
+      "success": "Integratie is met succes hervat"
+    },
+    "support_link_label": "Leer meer"
+  },
+  "setup": {
+    "vendor_and_model": "Selecteer extern systeem",
+    "temporary_add_integration_error": "Er is een fout opgetreden bij het voorbereiden van je integratie: {{error}}",
+    "add_integration_results": {
+      "error": "Er is een fout opgetreden bij het toevoegen van de integratie: {{error}}",
+      "successful": "Nieuwe integratie succesvol toegevoegd"
+    },
+    "delete_integration_results": {
+      "error": "Er is een fout opgetreden bij het verwijderen van de integratie: {{error}}",
+      "successful": "Integratie succesvol verwijderd"
+    },
+    "edit_integration_results": {
+      "error": "Er is een fout opgetreden bij het bijwerken van de integratie: {{error}}",
+      "successful": "Integratie met succes bijgewerkt"
+    },
+    "get_integration_results": {
+      "error": "Kan deze integratie niet laden. Je bent doorverwezen naar de integratiepagina. (Details: {{error}})"
+    },
+    "get_verification_results": {
+      "error": "Er is een fout opgetreden tijdens het verbinden met je integratie.",
+      "disconnected": "Kan de integratie niet verifiëren met de verstrekte gegevens.",
+      "credential_validation_error": "De inloggegevens die je hebt opgegeven zijn ongeldig.",
+      "insufficient_privilege_error": "De ingevoerde gebruiker heeft onvoldoende rechten.",
+      "timezone_mismatch_error": "De tijdzone van je externe systeem komt niet overeen met de tijdzone van je integratie. Pas je ongeldige tijdzone aan.",
+      "unmapped_error": "Er is een {{error}} opgetreden",
+      "cloud_link_connection_error": "Geen verbinding met Cloud Link, controleer je Cloud Link installatie."
+    },
+    "delete_confirmation": {
+      "title": "Integratie verwijderen",
+      "confirm": "Integratie verwijderen",
+      "introduction": "De integratie wordt in injixo verwijderd.",
+      "warning_list": "<li>Alle geïmporteerde queues blijven behouden.</li>\n<li>Als je de integratie opnieuw toevoegt, worden er nieuwe queues met dezelfde namen toegevoegd.</li>"
+    },
+    "cancel_confirmation": {
+      "title": "Weet je het zeker?",
+      "description": "Je hebt al een verbinding gemaakt met je injixo Cloud Link die verloren gaat wanneer je verder gaat. Om je injixo Cloud Link te koppelen aan een nieuwe integratie, moet deze opnieuw worden opgestart om een nieuwe PIN te genereren.",
+      "confirm": "Ja, echt annuleren",
+      "cancel": "Verder bewerken"
+    },
+    "authentication_error": "Kan gebruiker niet verifiëren. Log alsjeblieft nogmaals in.",
+    "controls": {
+      "cancel": "Annuleren",
+      "delete": "Integratie verwijderen",
+      "save": "Integratie opslaan",
+      "verifying": "Verifiëren..."
+    },
+    "sections": {
+      "integration_name": {
+        "label": "Naam",
+        "explanation": "Gepersonaliseerde naam voor deze integratie.",
+        "validation": "Voer een gepersonaliseerde naam in voor de integratie."
+      },
+      "configuration": {
+        "title": "Configuratie",
+        "agent_status_active": {
+          "explanation": "Vink dit aan als de agentstatusgegevens uit de database moeten worden geïmporteerd.",
+          "label": "Agentstatusgegevens importeren"
+        }
+      },
+      "cloudLink": {
+        "title": "injixo Cloud Link",
+        "download": {
+          "explanation": "Download het juiste installatieprogramma voor je besturingssysteem. Ga voor meer informatie naar het <explanationLinkText>Help Center</explanationLinkText>.",
+          "platform_label": "Server besturingssysteem",
+          "button_label": {
+            "64_bit": "64-bit downloaden",
+            "32_bit": "32-bit downloaden",
+            "arm": "Download ARM"
+          }
+        },
+        "connect": {
+          "explanation": "Tijdens de installatie van injixo Cloud Link wordt er in je terminal een PIN weergegeven die je nodig hebt om verder te gaan. Deze blijft slechts 5 minuten geldig.",
+          "linkTarget": "https://help.injixo.com/install-cloud-link/",
+          "label": "PIN getoond tijdens installatie",
+          "not_claimable": "Deze integratie kan niet worden verbonden met een injixo Cloud Link.",
+          "success": "Succesvol verbonden",
+          "error": "De PIN is onjuist. Zorg ervoor dat de PIN niet is verlopen. Als je het niet zeker weet, start dan de injixo Cloud Link opnieuw op om een nieuwe PIN te genereren en probeer het opnieuw.",
+          "claim_button": "Verbinden",
+          "new_cloud_link": "Verbind een nieuwe installatie van injixo Cloud Link",
+          "retry": "Probeer het nog eens."
+        },
+        "download_for": "Download voor"
+      },
+      "csv_schema": {
+        "title": "CSV-schemaconfiguratie",
+        "explanation": "Het CSV schema wordt gebruikt om je CSV bestand te lezen en te verwerken. Als je CSV-bestanden met verschillende formaten wilt importeren, moet je voor elk formaat een andere CSV-integratie opzetten.",
+        "create_schema": "Nieuw CSV-schema aanmaken",
+        "select_schema": "CSV-schema",
+        "placeholder": "Kies een schema",
+        "validation": "Kies een schema",
+        "edit_schema": "CSV-schema bewerken",
+        "schema_exists": "CSV schema has been saved successfully",
+        "type": {
+          "explanation": "Je kunt telkens maar één importgegevenstype selecteren. Om gegevens van een ander type te importeren, dien je een nieuwe integratie aan te maken.",
+          "label": "Importgegevenstype",
+          "options": {
+            "agent_status": "Agentstatus",
+            "history": "Contactgegevens"
+          },
+          "validation": "Select the type of import data"
+        }
+      },
+      "api_key": {
+        "label": "injixo API key",
+        "copy": "Kopiëren",
+        "copied": "Gekopieerd",
+        "copied_tooltip": "API key gekopieerd naar klembord",
+        "generate": "Genereren",
+        "regenerate": "Opnieuw genereren",
+        "placeholder": "De API key zal worden getoond na het generen",
+        "create_info": "De sectie Toegang tot de injixo API wordt beschikbaar na het opslaan van de integratie. Daarna kun je de injixo API key genereren.",
+        "modal": {
+          "title": "Genereer een injixo API key opnieuw",
+          "info": "Wanneer de nieuwe injixo API key is gegenereerd:",
+          "generate_new": "Genereer nieuwe API key",
+          "keep": "Huidige behouden",
+          "key_deleted": "De huidige API key zal worden verwijderd.",
+          "key_exchange": "Je dient de huidige API key te vervangen door de nieuwe API key in de injixo app in Freshdesk."
+        },
+        "freshdesk": {
+          "title": "Installeer injixo app",
+          "app_info": "Het stelt injixo in staat om continu gegevens uit Freshdesk te importeren.",
+          "guide": {
+            "go_to_marketplace": "Ga naar de <stepLinkText>injixo app pagina</stepLinkText> in Freshdesk Apps marketplace.",
+            "install_app": "<bold>Installeer</bold> de injixo client applicatie.",
+            "paste_api_key": "<bold>Plak</bold> de gegenereerde API key in het corresponderende veld op de injixo app installatiepagina."
+          }
+        },
+        "error": "Kon geen API key genereren"
+      },
+      "api_section": {
+        "api_key": {
+          "copied_tooltip": "API key gekopieerd naar klembord",
+          "error": "Kon geen API key genereren",
+          "generate": "Genereren",
+          "label": "injixo API key",
+          "modal": {
+            "generate_new": "Genereer nieuwe API key",
+            "info": "Wanneer de nieuwe injixo API key is gegenereerd:",
+            "keep": "Huidige behouden",
+            "key_deleted": "De huidige API key zal worden verwijderd.",
+            "key_exchange": "Je dient de huidige API key te vervangen door de nieuwe API key.",
+            "title": "Genereer opnieuw een injixo API key"
+          },
+          "placeholder": "De gegenereerde API key zal hier worden getoond.",
+          "regenerate": "Opnieuw genereren"
+        },
+        "copied": "Gekopieerd",
+        "copy": "Kopiëren",
+        "create_info": "Om de injixo API key te zien, moet je de integratie opslaan.",
+        "freshdesk": {
+          "guide": {
+            "go_to_marketplace": "Ga naar de <externalLinkText>injixo app pagina</externalLinkText> in Freshdesk Apps marketplace.",
+            "install_app": "Installeer de injixo client app.",
+            "paste_api_key": "Plak de gegenereerde API key in het corresponderende veld op de injixo app installatiepagina."
+          },
+          "info": "Het stelt injixo in staat om continu gegevens uit Freshdesk te importeren.",
+          "modal": {
+            "key_deleted": "De huidige API key zal worden verwijderd.",
+            "key_exchange": "Je dient de huidige API key te vervangen door de nieuwe API key in de injixo app in Freshdesk."
+          },
+          "title": "Installeer injixo app"
+        },
+        "freshdesk_contact_center": {
+          "guide": {
+            "go_to_marketplace": "Ga naar de <externalLinkText>injixo app pagina</externalLinkText> in Freshdesk Contact Center Apps marketplace.",
+            "install_app": "Installeer de injixo client app.",
+            "paste_api_key": "Plak de gegenereerde API key in het corresponderende veld op de injixo app installatiepagina.",
+            "activate_agent_status": "(Optioneel) Vink het selectievakje agentstatus aan om realtime statusgegevens van de agent te importeren."
+          },
+          "info": "Het stelt injixo in staat om continu gegevens uit Freshdesk Contact Center te importeren.",
+          "modal": {
+            "key_deleted": "De huidige API key zal worden verwijderd.",
+            "key_exchange": "Je dient de huidige API key te vervangen door de nieuwe API key in de injixo app in Freshdesk Contact Center."
+          },
+          "title": "Installeer injixo app"
+        },
+        "freshchat": {
+          "guide": {
+            "go_to_marketplace": "Ga naar de <externalLinkText>injixo app pagina</externalLinkText> in Freshchat Apps marketplace.",
+            "install_app": "Installeer de injixo client app.",
+            "paste_api_key": "Plak de gegenereerde API key in het corresponderende veld op de injixo app installatiepagina."
+          },
+          "info": "Het stelt injixo in staat om continu gegevens uit Freshchat te importeren.",
+          "modal": {
+            "key_deleted": "De huidige API key zal worden verwijderd.",
+            "key_exchange": "Je dient de huidige API key te vervangen door de nieuwe API key in de injixo app in Freshchat."
+          },
+          "title": "Installeer injixo app"
+        },
+        "info": "De API key geeft je toegang tot de injixo API.",
+        "integration_configuration_id": {
+          "copied_tooltip": "Integratie configuratie ID naar klembord gekopieerd",
+          "label": "Integratie configuratie ID"
+        },
+        "title": "Toegang tot de injixo API"
+      }
+    },
+    "dropdown_no_result": "Geen resultaat",
+    "dropdown_placeholder": "Selecteer...",
+    "dropdown_placeholder_timezone": "Zoek of kies een tijdzone",
+    "cloud_link_not_connected": "Je injixo Cloud Link is niet verbonden."
+  },
+  "external_system": {
+    "five9": {
+      "user_credentials": {
+        "title": "Gebruikersgegevens",
+        "explanation": "Voer geldige inloggegevens in voor een gebruiker met beheerdersrol.",
+        "fields": {
+          "username": {
+            "label": "Gebruikersnaam",
+            "validation": "Voer een geldige gebruikersnaam in"
+          },
+          "password": {
+            "label": "Wachtwoord",
+            "validation": "Voer een geldig wachtwoord in"
+          }
+        }
+      },
+      "configuration": {
+        "title": "Configuratie",
+        "account_region": {
+          "label": "Accountregio",
+          "explanation": "Selecteer de regio van je Five9 account.",
+          "options": {
+            "europe": "Europa",
+            "usa": "USA"
+          },
+          "validation": "Selecteer een regio"
+        },
+        "grouping": {
+          "label": "Groepeer queues aan de hand van",
+          "explanation": "Selecteer hoe je de queues wilt groeperen. Houd er rekening mee dat voor een op vaardigheden gebaseerde groepering een op maat gemaakt rapport moet worden ingesteld in je Five9-account.",
+          "options": {
+            "campaigns": "Campagnes",
+            "skills": "Vaardigheden (vereist een aangepast rapport)"
+          },
+          "validation": "Selecteer een queue groeperingsmethode."
+        }
+      },
+      "support_link": "https://help.injixo.com/add-five9-integration/",
+      "support_link_title": "Een Five9-integratie toevoegen"
+    },
+    "vonage": {
+      "credentials": {
+        "title": "Gebruikersgegevens",
+        "explanation": "Voer een geldige client-ID en client-secret voor je Vonage ACD in. Raadpleeg de Vonage-documentatie over hoe je een client-ID en client-secret kunt verkrijgen.",
+        "fields": {
+          "id": {
+            "label": "Client-ID",
+            "validation": "Voer een geldig client-ID in"
+          },
+          "secret": {
+            "label": "Client-secret",
+            "validation": "Voer een geldige client-secret in"
+          }
+        }
+      },
+      "configuration": {
+        "title": "Configuratie",
+        "region": {
+          "explanation": "Selecteer de regio van je Vonage account.",
+          "label": "Accountregio",
+          "options": {
+            "apac": "APAC",
+            "emea": "EMEA",
+            "usa": "USA"
+          },
+          "validation": "Selecteer een regio"
+        },
+        "grouping": {
+          "explanation": "Selecteer de manier waarop je je queues wilt groeperen. Zodra de groeperingskeuze is opgeslagen, kan deze niet meer worden gewijzigd.\nDe optie Vonage-queues combineert gegevens van het queue-type, de queue-naam en het interactieplan.",
+          "label": "Queues groeperen aan de hand van",
+          "options": {
+            "interaction_plan": "Telefoonnummer",
+            "queues": "Vonage-queues"
+          },
+          "validation": "Selecteer een groeperingsmethode."
+        }
+      }
+    },
+    "talkdesk": {
+      "user_credentials": {
+        "title": "Gebruikersgegevens",
+        "account": {
+          "explanation": "Voer je Talkdesk-accountnaam in, om toegang te krijgen tot je gegevens",
+          "fields": {
+            "name": {
+              "label": "Accountnaam",
+              "validation": "Voer een accountnaam in"
+            }
+          }
+        },
+        "client": {
+          "explanation": "Voer een geldige client-ID en client-secret in voor je Talkdesk ACD. Talkdesk kan je voorzien van gebruikersgegevens voor ACD toegang.",
+          "fields": {
+            "id": {
+              "label": "Client-ID",
+              "validation": "Voer een geldig client-ID in"
+            },
+            "secret": {
+              "label": "Client-secret",
+              "validation": "Voer een geldige client-secret in"
+            }
+          }
+        }
+      },
+      "configuration": {
+        "account_region": {
+          "explanation": "Selecteer de regio van je Talkdesk account.",
+          "label": "Accountregio",
+          "options": {
+            "canada": "Canada",
+            "europe": "Europa",
+            "usa": "USA"
+          },
+          "validation": "Selecteer een regio"
+        },
+        "title": "Configuratie"
+      }
+    },
+    "freshdesk": {
+      "credentials": {
+        "title": "Toegangsgegevens",
+        "domain": {
+          "explanation": "Om toegang te krijgen tot je gegevens, voer je je Freshdesk-domein in (example.freshdesk.com).",
+          "label": "Domein",
+          "validation": "Voer je Freshdesk domein in (example.freshdesk.com)"
+        },
+        "api_key": {
+          "explanation": "Voer een geldige API-key in van een gebruiker met de <bold>Account Administrator</bold> rol. Je kunt de API-key in Freshdesk verkrijgen op je <bold>Profielinstellingen</bold> pagina.",
+          "label": "API-key",
+          "validation": "Voer een geldige API-key in"
+        }
+      },
+      "support_link": "https://help.injixo.com/add-freshdesk-integration/",
+      "support_link_title": "Add a Freshdesk Integration"
+    },
+    "pure_engage": {
+      "database": {
+        "title": "Toegangsgegevens database",
+        "adapter": {
+          "explanation": "Selecteer de database-adapter die je ACD gebruikt.",
+          "label": "Database-adapter",
+          "options": {
+            "sqlServer": "MS SQL Server",
+            "postgres": "PostgreSQL"
+          },
+          "validation": "Selecteer een database-adapter"
+        },
+        "host": {
+          "explanation": "Voer de host en poort van je database in.",
+          "fields": {
+            "host": {
+              "label": "Host",
+              "validation": "Voer een host in"
+            },
+            "port": {
+              "label": "Poort",
+              "validation": "Voer een poort in"
+            }
+          }
+        },
+        "credentials": {
+          "explanation": "Voer geldige inloggegevens in voor een databasegebruiker die leestoegang heeft tot de databases van de ACD",
+          "fields": {
+            "username": {
+              "label": "Gebruikersnaam",
+              "validation": "Voer een geldige gebruikersnaam in"
+            },
+            "password": {
+              "label": "Wachtwoord",
+              "validation": "Voer een geldig wachtwoord in"
+            }
+          }
+        },
+        "names": {
+          "config": {
+            "explanation": "Naam van de configuratiedatabase. Deze database bevat tabellen zoals cfg_dn en cfg_person. Niet nodig als je een Postgres database hebt."
+          },
+          "etl": {
+            "explanation": "Naam van de ETL database. Deze database bevat tabellen zoals qinfo en status."
+          },
+          "fields": {
+            "db_config": {
+              "label": "Configuratie database"
+            },
+            "db_etl": {
+              "label": "ETL-database"
+            }
+          }
+        }
+      }
+    },
+    "mivoice_business": {
+      "credentials": {
+        "title": "Toegangsgegevens database",
+        "host": {
+          "explanation": "Voer de host en poort van je database in.",
+          "fields": {
+            "host": {
+              "label": "Host",
+              "validation": "Voer een host in"
+            },
+            "port": {
+              "label": "Poort",
+              "validation": "Voer een poort in"
+            }
+          }
+        },
+        "credentials": {
+          "explanation": "Voer geldige inloggegevens in voor een databasegebruiker die leestoegang heeft tot de database <bold>\"CCMData\"</bold>.",
+          "fields": {
+            "username": {
+              "label": "Gebruikersnaam",
+              "validation": "Voer een geldige gebruikersnaam in"
+            },
+            "password": {
+              "label": "Wachtwoord",
+              "validation": "Voer een geldig wachtwoord in"
+            }
+          }
+        }
+      },
+      "regional": {
+        "timezone": {
+          "explanation": "Als het systeem waarop de Mitel ACD draait niet in UTC±00:00 is ingesteld, kies dan hier de lokale tijdzone van het systeem.",
+          "label": "ACD tijdzone",
+          "validation": "Selecteer een tijdzone"
+        },
+        "title": "Regionale instellingen"
+      },
+      "configuration": {
+        "agent_status_active": {
+          "explanation": "injixo kan alleen agentstatusgegevens als deze zich in de volgende tabellen in je database bevinden: tblConfig_Attributes_User_Employee, AgentTraceEventsStats en tblConfig_Agent.",
+          "label": "Agentstatusgegevens importeren"
+        }
+      }
+    },
+    "sikom": {
+      "credentials": {
+        "title": "Toegangsgegevens database",
+        "timezone": {
+          "explanation": "Selecteer de tijdzone van je database.",
+          "label": "Tijdzone database",
+          "validation": "Selecteer een tijdzone"
+        },
+        "host": {
+          "explanation": "Voer de host en poort van je database in.",
+          "fields": {
+            "host": {
+              "label": "Host",
+              "validation": "Voer een host in"
+            },
+            "port": {
+              "label": "Poort",
+              "validation": "Voer een poort in"
+            }
+          }
+        },
+        "credentials": {
+          "explanation": "Voer geldige inloggegevens in voor een databasegebruiker die leestoegang heeft tot de database <bold>\"sk_acc_v5\"</bold>.",
+          "fields": {
+            "username": {
+              "label": "Gebruikersnaam",
+              "validation": "Voer een geldige gebruikersnaam in"
+            },
+            "password": {
+              "label": "Wachtwoord",
+              "validation": "Voer een geldig wachtwoord in"
+            }
+          }
+        }
+      }
+    },
+    "pure_cloud": {
+      "credentials": {
+        "title": "API toegangsgegevens",
+        "explanation": "Voer een geldige API-key en API-secret voor je Genesys Cloud ACD in. De volgende rechten zijn vereist: <bold>\"analytics:userDetail:view\"</bold>, <bold>\"analytics:userObservation:view\"</bold>, <bold>\"analytics:conversationAggregate:view\"</bold>, <bold>\"analytics:conversationDetail:view\"</bold> en <bold>\"routing:queue:view\"</bold>.",
+        "fields": {
+          "key": {
+            "label": "API-key",
+            "validation": "Voer een geldige API-key in"
+          },
+          "secret": {
+            "label": "API-secret",
+            "validation": "Voer een geldige API-secret in"
+          }
+        }
+      },
+      "configuration": {
+        "title": "Configuratie",
+        "region": {
+          "explanation": "Selecteer de regio van je Genesys Cloud account.",
+          "placeholder": "Selecteer een regio",
+          "options": {
+            "australia": "Asia Pacific (Sydney)",
+            "japan": "Asia Pacific (Tokyo)",
+            "europe": "EMEA (Dublin)",
+            "germany": "EMEA (Frankfurt)",
+            "united_states_east": "Americas (US East)",
+            "united_states_west": "Americas (US West)",
+            "europe_west_2": "EMEA (London)"
+          },
+          "validation": "Selecteer een regio",
+          "label": "Accountregio"
+        },
+        "detailed_on_queue_status": {
+          "explanation": "injixo onderscheidt  agentstatussen die onder de on-queue-statussen worden gecombineerd, bijvoorbeeld communication, interaction, idle en not responding.",
+          "label": "Gedetailleerde 'on-queue'-agentstatussen importeren"
+        }
+      }
+    },
+    "ujet": {
+      "credentials": {
+        "title": "API toegangsgegevens",
+        "subdomain": {
+          "explanation": "Voer je ujet-subdomein in, om toegang te krijgen tot je gegevens",
+          "fields": {
+            "subdomain": {
+              "label": "Subdomein",
+              "validation": "Voer een subdomein in"
+            }
+          }
+        },
+        "company": {
+          "explanation": "Voer een geldige company-key en company-secret-code voor je ujet ACD in.",
+          "fields": {
+            "key": {
+              "label": "Company-key",
+              "validation": "Voer een geldige company-key in"
+            },
+            "secret": {
+              "label": "Company-secret-code",
+              "validation": "Voer een geldige company-secret-code in"
+            }
+          }
+        }
+      }
+    },
+    "universal": {
+      "description": "Je ACD-gegevens kunnen handmatig of via Xlink worden geïmporteerd. Meer informatie over het instellen en gebruiken van Xlink vindt je her: <0>https://www.injixo.com/community/downloads</0>."
+    },
+    "avaya_cms": {
+      "configuration": {
+        "title": "Configuratie",
+        "grouping": {
+          "label": "Groepering van gesprekken",
+          "explanation": "Selecteer hoe je de gesprekken in queues wilt groeperen.",
+          "options": {
+            "vdn": "VDN-based",
+            "split": "Split-based"
+          },
+          "validation": "Selecteer een groeperingsmethode."
+        },
+        "data_source": {
+          "explanation": "Voer de naam in van de ODBC-databron voor je Avaya CMS database.",
+          "label": "Databron",
+          "validation": "Voer een databron in"
+        },
+        "port": {
+          "explanation": "injixo Cloud Link luistert op deze poort om realtime agentstatusgegevens te importeren.",
+          "label": "Poort",
+          "validation": "Voer de poort in"
+        },
+        "detailed_statuses": {
+          "explanation": "injixo voegt kwalificaties toe aan/splitst informatie op tussen de agentstatussen.",
+          "label": "Gedetailleerde agentstatussen importeren"
+        }
+      }
+    },
+    "zendesk": {
+      "credentials": {
+        "title": "Gebruikersgegevens",
+        "domain": {
+          "explanation": "Voer je Zendesk-domein (voorbeeld.zendesk.com) in, om toegang te krijgen tot je gegevens",
+          "fields": {
+            "domain": {
+              "label": "Zendesk-domein",
+              "validation": "Voer je Zendesk-domein (voorbeeld.zendesk.com) in"
+            }
+          }
+        },
+        "token": {
+          "explanation": "Voer geldige inloggegevens in voor een gebruiker met beheerdersrol. Je kunt API tokens verkrijgen via de Zendesk Support admin interface bij <bold>\"Admin > Channels > API\"</bold>.",
+          "fields": {
+            "username": {
+              "label": "Gebruikersnaam",
+              "validation": "Voer een geldige gebruikersnaam in"
+            },
+            "token": {
+              "label": "API-token",
+              "validation": "Voer een geldige API-token in"
+            }
+          }
+        }
+      },
+      "configuration": {
+        "grouping": {
+          "explanation": "De standaard gebruikte groeperingsaanpak is <bold>per groep</bold>. Selecteer deze optie om aanvullend een bronwachtrij te maken voor elk Zendesk <bold>merk</bold>.",
+          "fields": {
+            "by_group": {
+              "inner_label": "Per merk",
+              "label": "Groepeer tickets"
+            }
+          }
+        },
+        "title": "Configuratie",
+        "call_grouping": {
+          "explanation": "Selecteer hoe je de <bold>Zendesk Talk</bold> gesprekken in queues wilt groeperen.",
+          "label": "Groepeer de gesprekken in queues op",
+          "options": {
+            "ivr": "IVR (Interactive Voice Response)",
+            "phone_number": "Telefoonnummer"
+          },
+          "validation": "Selecteer de manier van groeperen van Zendesk Talk gesprekken"
+        },
+        "agent_status_data": {
+          "title": "Agent status data"
+        },
+        "checkbox": {
+          "rta": {
+            "label": "Realtime gegevens importeren"
+          }
+        }
+      },
+      "preparation_info": "Om view-gebaseerde Zendesk queues te maken, moeten we de ticket geschiedenis tot het huidige punt in de tijd volledig importeren.",
+      "support_link": "https://help.injixo.com/add-zendesk-integration/",
+      "support_link_title": "Een Zendesk-integratie toevoegen"
+    },
+    "freshdesk_contact_center": {
+      "configuration": {
+        "call_grouping": {
+          "explanation": "Selecteer hoe je Freshdesk Contact Center gegevens wilt groeperen in source queues.",
+          "label": "Groepeer queues aan de hand van",
+          "options": {
+            "phone_number": "Telefoonnummer",
+            "skills": "Routing (team/agent)"
+          },
+          "validation": "Selecteer een queue groeperingsmethode.Selecteer een queue groeperingsmethode"
+        },
+        "title": "Configuratie"
+      },
+      "credentials": {
+        "api_key": {
+          "explanation": "Voer een geldige API-key in van een gebruiker met de <bold>Account Administrator</bold> rol. Je kan de API-key in Freshdesk Contact Center verkrijgen op jullie <bold>Profielinstellingen</bold> pagina.",
+          "label": "API key",
+          "validation": "Voer een geldige API-key in"
+        },
+        "domain": {
+          "explanation": "Om toegang te krijgen tot jullie gegevens, voer je jullie Freshdesk Contact Center domein in (example.freshcaller.com).",
+          "label": "Domein",
+          "validation": "Voer jullie Freshdesk Contact Center domein in (example.freshcaller.com)"
+        },
+        "title": "Toegangsgegevens"
+      },
+      "support_link": "https://help.injixo.com/add-freshdesk-contact-center-integration/",
+      "support_link_title": "Een Freshdesk Contact Center-integratie toevoegen"
+    },
+    "freshchat": {
+      "credentials": {
+        "api_key": {
+          "explanation": "Voer een geldige API-key in van een gebruiker met de <bold>Account Administrator</bold> rol. Je kan de API-key verkrijgen via de <bold>API-Tokens</bold> pagina in <bold>Beheer > Configureren</bold> in Freshchat.",
+          "label": "API-key",
+          "validation": "Voer een geldige API-key in"
+        },
+        "domain": {
+          "explanation": "Om toegang te krijgen tot je gegevens, voer je je Freshchat domein in (example.freshchat.com).",
+          "label": "Domein",
+          "validation": "Voer je Freshchat-domein in (example.freshchat.com)"
+        },
+        "title": "Toegangsgegevens"
+      },
+      "support_link": "https://help.injixo.com/nl/add-freshchat-integration/",
+      "support_link_title": "Een Freshchat-integratie toevoegen"
+    },
+    "csv": {
+      "support_link": "https://help.injixo.com/add-csv-integration/",
+      "support_link_title": "Een CSV-integratie toevoegen"
+    },
+    "database": {
+      "configuration": {
+        "fields": {
+          "data_type": {
+            "agent_status": {
+              "label": "Agentstatussen"
+            },
+            "contacts": {
+              "label": "Contactgebaseerd"
+            },
+            "explanation": "Je kunt telkens maar één importgegevenstype selecteren. Om gegevens van een ander type te importeren, dien je een nieuwe integratie aan te maken.",
+            "label": "Importgegevenstype",
+            "queues": {
+              "label": "Intervalgebaseerd"
+            },
+            "required": "Geef een gegevenstype op"
+          },
+          "db_type": {
+            "explanation": "Selecteer het type database.",
+            "label": "Type database",
+            "required": "Specificeer je databasetype",
+            "options": {
+              "odbc": "Overige (ODBC)"
+            }
+          },
+          "rta": {
+            "label": "Realtime gegevens importeren"
+          },
+          "template": {
+            "explanation": "Deze SQL-query wordt elke 15 minuten automatisch uitgevoerd. Ga voor meer informatie naar het <explanationLinkText>Help Center</explanationLinkText>.",
+            "help_center_link": "https://help.injixo.com/add-database-integration/#sample-queries-and-available-fields",
+            "label": "SQL-query",
+            "required": "Specificeer een SQL-query"
+          },
+          "timezone": {
+            "explanation": "Selecteer de tijdzone van je database.",
+            "label": "Tijdzone database",
+            "validation": "Selecteer een tijdzone"
+          },
+          "interval_length": {
+            "option_15": "15 minuten",
+            "option_30": "30 minuten",
+            "placeholder": "Selecteer lengte van interval",
+            "required": "Je dient een intervallengte te kiezen"
+          },
+          "reconciliation": {
+            "explanation": "Als het selectievakje <bold>Afstemming van gegevens</bold>  is aangevinkt, worden alle gegevens van de laatste 24 uur om de 15 minuten opnieuw door injixo geïmporteerd. Als het selectievakje niet is aangevinkt, importeert injixo alleen om de 15 minuten de gegevens van de laatste 15 minuten. Om gegevenscorrecties van de afgelopen 24 uur te raadplegen, laat je het selectievakje aangevinkt. Ga voor meer informatie naar het <explanationLinkText>Help Center</explanationLinkText>.",
+            "explanationLinkTarget": "https://help.injixo.com/add-database-integration/#data-reconciliation",
+            "label": "Afstemming van gegevens"
+          },
+          "rta_interval_clause": {
+            "explanation": "Voer een SQL-clausule in om de importinterval (importinteral = actuele tijd - intervalseconden). Deze clausule wordt in de eerder genoemde SQL-query gebruikt om de realtime import mogelijk te maken. Ga voor meer informatie naar het <explanationLinkText>Help Center</explanationLinkText>.",
+            "help_center_link": "https://help.injixo.com/add-database-integration/",
+            "label": "SQL-clausule voor RTA-interval",
+            "required": "Voer de SQL-clausule in"
+          }
+        },
+        "title": "Configuratie"
+      },
+      "credentials": {
+        "fields": {
+          "db_connection": {
+            "explanation": "Voer de host en de poort van de database in. Als je een benoemd exemplaar op een MS SQL Server-verbinding gebruikt, hoef je geen poort in te voeren. Ga voor meer informatie naar het <explanationLinkText>Help Center</explanationLinkText>.",
+            "help_center_link": "https://help.injixo.com/add-database-integration/",
+            "host": {
+              "label": "Host",
+              "required": "Voer de database-host in"
+            },
+            "port": {
+              "label": "Poort",
+              "required": "Voer de database poort in"
+            }
+          },
+          "db_credentials": {
+            "explanation": "Voer geldige inloggegevens in voor een databasegebruiker die leestoegang heeft tot de database.",
+            "password": {
+              "label": "Wachtwoord",
+              "required": "Voer het wachtwoord in"
+            },
+            "user": {
+              "label": "Gebruikersnaam",
+              "required": "Voer de database gebruikersnaam in"
+            }
+          },
+          "db_name": {
+            "explanation": "Selecteer de database die je wilt verbinden.",
+            "label": "Naam van de database",
+            "required": "Vul de naam van de database in"
+          },
+          "db_connection_string": {
+            "explanation": "Voer een connection string in om je database te verbinden. De connection string moet specifiek zijn voor je databasetype en ODBC-driver.",
+            "label": "Connection string",
+            "required": "Voer de connection string in"
+          }
+        },
+        "title": "Inloggegevens"
+      },
+      "support_link": "https://help.injixo.com/add-database-integration/",
+      "support_link_text": "Een database-integratie toevoegen",
+      "model_display_name": "Database"
+    },
+    "api": {
+      "support_link": "https://help.injixo.com/import-data-with-injixo-api/",
+      "support_link_title": "Gegevens importeren met injixo API"
+    },
+    "cisco_icm": {
+      "configuration": {
+        "title": "Configuratie"
+      },
+      "rta": {
+        "credentials": {
+          "client_id": {
+            "label": "Client-ID",
+            "validation": "Voer je Cisco-client-ID in."
+          },
+          "explanation": "Voer je client-ID en wachtwoord voor Cisco ICM in.",
+          "password": {
+            "label": "Wachtwoord",
+            "validation": "Voer je Cisco-client-ID in."
+          }
+        },
+        "peripheral_gateways": {
+          "gateway_1": {
+            "explanation": "Voer de adressen (als IP-adres of DNS-naam) en de poortnummers in die je wilt gebruiken. Gebruik een komma als scheidingsteken tussen de adressen. Het eerste adres wordt als Side A PG beschouwd en het tweede als een Side B PG. Als je maar één adres invoert, gaat injixo ervan uit dat er geen Side B bestaat. \nBijv. \"192.168.0.1:42027, 192.168.0.2:43027\".",
+            "label": "Periferie-gateway 1",
+            "validation": "Voer de informatie in voor je eerste periferie-gateway."
+          },
+          "gateway_2": {
+            "explanation": "(Optioneel) Voer de informatie voor je tweede periferie-gateway in.",
+            "label": "Periferie-gateway 2",
+            "validation": "Voer de informatie in voor je tweede periferie-gateway."
+          }
+        }
+      }
+    },
+    "in_in": {
+      "configuration": {
+        "acd_servers": {
+          "explanation": "Voer je ACD-serveradres in als DNS-naam (bijv. acdserver.voorbeeld.com:8080) of als IP-adres (bijv. 192.168.1.1:8080). Als je geen poort opgeeft, gebruikt injixo de standaardpoort 42027. Voor meerdere ACD's, scheid de adressen met komma's.",
+          "label": "ACD-serveradressen",
+          "validation": "Voer een geldig ACD-serveradres in."
+        },
+        "timezone": {
+          "explanation": "Selecteer de tijdzone van je ACD.",
+          "label": "Tijdzone",
+          "validation": "Selecteer een tijdzone."
+        },
+        "title": "Configuratie"
+      }
+    },
+    "odigo": {
+      "configuration": {
+        "agent_status_data": {
+          "title": "Agentstatusgegevens"
+        },
+        "break_labels": {
+          "explanation": "injixo voegt het type pauze toe aan de pauzestatussen, bijvoorbeeld Pauze (lunchpauze) in plaats van alleen Pauze. Pauzelabels die in Odigo worden gewijzigd, zijn uiterlijk 4 uur later zichtbaar in injixo. Je dient de gekoppelde activiteiten bij te werken.",
+          "inner_label": "Agentstatus Pauze met details importeren",
+          "title": "Agentstatus Pauze met details",
+          "ws_login": {
+            "explanation": "Neem voor meer informatie en ondersteuning contact op met Odigo.",
+            "label": "Webservice-gebruikersnaam",
+            "validation": "Voer een geldige webservice-gebruikersnaam in."
+          },
+          "ws_password": {
+            "label": "Webservice-wachtwoord",
+            "validation": "Voer een geldig webservice-wachtwoord in."
+          },
+          "wsdl_domain": {
+            "explanation": "Voer je Odigo-URL in met in het pad de tenant-ID, bijvoorbeeld: https://example.odigo.cx/odigo-tenant-id.",
+            "label": "Odigo-URL",
+            "placeholder": "https://voorbeeld.odigo.cx/odigo-tenant-id",
+            "required": "Voer de Odigo-URL in.",
+            "validation": "Voer je Odigo-URL in met in het pad de tenant-ID, bijvoorbeeld: https://example.odigo.cx/odigo-tenant-id."
+          }
+        },
+        "contact_data": {
+          "api_domain": {
+            "explanation": "In Odigo wordt dit pef-api-domain genoemd.",
+            "label": "API-domein",
+            "validation": "Voer het Odigo pef-api-domain in."
+          },
+          "app_id": {
+            "explanation": "In Odigo wordt dit pef-app-id genoemd.",
+            "label": "App-ID",
+            "validation": "Voer het Odigo pef-app-id in."
+          },
+          "description": "De contactgegevens voor elke dag worden om 3:00 uur geïmporteerd.<br>Neem voor meer informatie contact op met Odigo.",
+          "instance": {
+            "explanation": "In Odigo wordt dit x-ws-instance genoemd.",
+            "label": "Exemplaar",
+            "validation": "Voer de Odigo x-ws-instance in."
+          },
+          "ivr_timezone": {
+            "label": "IVR-tijdzone",
+            "validation": "Selecteer de tijdzone van de IVR."
+          },
+          "statistics_table_id": {
+            "explanation": "In Odigo wordt dit statistics_table_id genoemd.",
+            "label": "ID van tabel met statistieken",
+            "type_validation": "De ID van de tabel met statistieken moet een getal zijn.",
+            "validation": "Voer de ID van de tabel met statistieken van Odigo in."
+          },
+          "title": "Contactgegevens",
+          "user_name": {
+            "explanation": "In Odigo wordt dit odigo-user-id genoemd.",
+            "label": "Gebruikersnaam",
+            "validation": "Voer de gebruikers-ID voor Odigo in."
+          }
+        },
+        "credentials": {
+          "tech_account": {
+            "explanation": "In Odigo wordt dit pef-tech-account en pef-tech-password genoemd.",
+            "label": "Tech-account",
+            "validation": "Voer het tech-account in om verbinding te maken met de Odigo authenticatie-API."
+          },
+          "tech_password": {
+            "label": "Tech-wachtwoord",
+            "validation": "Voer het technische wachtwoord in voor de verbinding met de Odigo authenticatie-API."
+          },
+          "title": "Aanmeldgegevens",
+          "ws_login": {
+            "validation": "Voer de gebruikersnaam in om verbinding te maken met de Odigo-webservice."
+          },
+          "ws_password": {
+            "validation": "Voer het wachtwoord in om verbinding te maken met de Odigo-webservice."
+          }
+        },
+        "url_token": {
+          "creation_required": "Sla de integratie eerst op voordat je een injixo-URL-token genereert.",
+          "explanation": "Genereer een URL-adres om een RTA-stream tot stand te brengen voor het registreren van statuswijzigingen van agents.",
+          "label": "injixo-URL-token",
+          "modal": {
+            "confirm": "Nieuwe URL-token genereren",
+            "keep": "Huidige token behouden",
+            "key_deleted": "Als de nieuwe injixo-URL-token is gegenereerd, wordt de huidige URL-token verwijderd.",
+            "key_exchange": "Je dient de huidige URL-token in Odigo door de nieuwe te vervangen.",
+            "title": "Een nieuwe URL-token genereren"
+          },
+          "placeholder": "De injixo-URL-token verschijnt zodra deze is gegenereerd.",
+          "title": "injixo-URL-token genereren"
+        }
+      }
+    }
+  },
+  "integration_status": {
+    "connection": "Verbinding:",
+    "established": "gemaakt",
+    "failed": "mislukt"
+  },
+  "document_title": {
+    "module": "Integraties",
+    "create": "Create",
+    "edit": "Edit"
+  },
+  "plan_ng_message": "We are developing new updates for this functionality. While we work on them, injixo cannot import agent status data, or use the data in Intraday."
+}

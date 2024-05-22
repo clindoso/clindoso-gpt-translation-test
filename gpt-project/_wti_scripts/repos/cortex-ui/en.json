@@ -1,0 +1,992 @@
+{
+  "feature-flags": {
+    "button": {
+      "cancel": {
+        "label": "Cancel"
+      },
+      "submit": {
+        "label": "Save changes"
+      }
+    },
+    "deviation-filter": {
+      "toggle": {
+        "deprecated": {
+          "label": "Deprecated"
+        },
+        "development": {
+          "label": "Development"
+        },
+        "exceeding": {
+          "label": "Exceeding"
+        },
+        "missing": {
+          "label": "Missing"
+        },
+        "unknown": {
+          "label": "Unknown"
+        }
+      }
+    },
+    "deviations-filter": {
+      "label": "Deviations from current plan"
+    },
+    "inline-message": {
+      "edit-not-permitted-error": {
+        "text": "You are not allowed to edit feature flags."
+      },
+      "restart-required-warning": {
+        "text": "One or more of the changed feature flags require a restart of Main iWFM Service."
+      }
+    },
+    "page-heading": {
+      "return-link": "Back to tenant",
+      "text": "Features"
+    },
+    "page-title": "Manage feature flags - Tenants - Cortex | injixo",
+    "state-filter": {
+      "label": "Filter features by status"
+    },
+    "table": {
+      "features": {
+        "column-header-tooltip": {
+          "iwfm-restart-required": {
+            "text": "After changing this feature flag, you have to restart the iWFM Host."
+          },
+          "plans": {
+            "text": "Plan: Classic, Essential, Advanced, Enterprise, NG Ultimate"
+          }
+        },
+        "column-header": {
+          "description": {
+            "label": "Description"
+          },
+          "iwfm-restart-required": {
+            "label": "iWFM restart required"
+          },
+          "name": {
+            "label": "Name"
+          },
+          "state": {
+            "label": "Status"
+          }
+        }
+      }
+    },
+    "tag": {
+      "deprecated": {
+        "text": "Deprecated"
+      },
+      "development": {
+        "text": "Development"
+      },
+      "released": {
+        "text": "Released"
+      }
+    },
+    "tenant-details": {
+      "tenant-id": {
+        "label": "Tenant ID:"
+      },
+      "tenant-name": {
+        "label": "Tenant name:"
+      },
+      "tenant-plan": {
+        "label": "Plan:"
+      }
+    }
+  },
+  "inline-message": {
+    "users-loading-error": {
+      "text": "The users could not be loaded. Please <0>reload now</0> or try again later."
+    }
+  },
+  "invoices": {
+    "inline-message": {
+      "save-email-error": {
+        "text": "The email address could not be saved. Please try again."
+      }
+    },
+    "invoices-list": {
+      "heading": {
+        "text": "Invoices"
+      },
+      "table": {
+        "column-header": {
+          "invoice-number": {
+            "label": "Invoice ID"
+          },
+          "invoiced-at": {
+            "label": "Invoiced on"
+          },
+          "total": {
+            "label": "Total"
+          }
+        },
+        "placeholder": "There are no invoices yet."
+      }
+    },
+    "modal": {
+      "email-deletion-confirmation": {
+        "button": {
+          "confirm": {
+            "label": "Delete email address"
+          },
+          "discard": {
+            "label": "Cancel"
+          }
+        },
+        "inline-message": {
+          "email-deletion-error": {
+            "text": "The email address could not be deleted. Please try again."
+          }
+        },
+        "summary": "<strong>{{emailAddress}}</strong> will be deleted.\nInvoices will no longer be sent to this address.",
+        "title": "Delete recipient's email address?"
+      }
+    },
+    "page-heading": {
+      "return-link": "$t(feature-flags.page-heading.return-link)"
+    },
+    "page-title": "Invoices - Tenants - Cortex | injixo",
+    "recipients": {
+      "button": {
+        "add-recipient": {
+          "label": "Add email address"
+        },
+        "delete-recipient": {
+          "aria-label": "Delete email address"
+        },
+        "discard-changes": {
+          "label": "Discard changes"
+        },
+        "save": {
+          "label": "Save changes"
+        }
+      },
+      "heading": {
+        "text": "Invoice recipients"
+      },
+      "input": {
+        "email": {
+          "label": "Email address",
+          "placeholder": "Enter an email address for the recipient"
+        }
+      }
+    },
+    "table": {
+      "invoices": {
+        "link": {
+          "download": {
+            "aria-label": "$t(tenant.invoices.button.download-invoice.aria-label)"
+          }
+        }
+      }
+    },
+    "toast-message": {
+      "email-created": {
+        "text": "The email was created."
+      },
+      "email-deleted": {
+        "text": "The recipient's email address was deleted."
+      }
+    }
+  },
+  "modal": {
+    "discard-changes-confirmation": {
+      "button": {
+        "cancel-creating": {
+          "label": "Back to creating"
+        },
+        "cancel": {
+          "label": "Back to editing"
+        },
+        "confirm": {
+          "label": "Discard changes"
+        }
+      },
+      "summary": "Your changes will not be saved.",
+      "summary-with-places": "Your changes in <strong>{{list}}</strong> will not be saved.",
+      "title": "Discard unsaved changes?"
+    }
+  },
+  "tag": {
+    "tenant-deactivated": {
+      "text": "Deactivated"
+    },
+    "tenant-terminated": {
+      "text": "Terminated"
+    }
+  },
+  "tenant-new": {
+    "button": {
+      "cancel": {
+        "label": "Cancel"
+      },
+      "submit": {
+        "label": "Create tenant"
+      }
+    },
+    "heading": {
+      "admin-user": {
+        "text": "Admin user"
+      },
+      "details": {
+        "text": "Details"
+      },
+      "subscription": {
+        "text": "Subscription"
+      }
+    },
+    "inline-message": {
+      "admin-user-warning": {
+        "text": "The admin user must be a natural person from the customer's organization."
+      },
+      "save-error": {
+        "text": "The tenant could not be created. Please try again."
+      }
+    },
+    "input": {
+      "email": {
+        "label": "Email",
+        "validation-error": "Enter the email address in this format: info@ivx.com"
+      },
+      "first-name": {
+        "label": "First name",
+        "validation-error": "Enter the first name (up to 75 characters)."
+      },
+      "last-name": {
+        "label": "Last name",
+        "validation-error": "Enter the last name (up to 75 characters)."
+      },
+      "name": {
+        "validation-error": "Enter the tenant name (up to 75 characters)."
+      }
+    },
+    "page-heading": {
+      "return-link": "$t(tenant.page-heading.return-link)",
+      "text": "Create new tenant"
+    },
+    "page-title": "Create new tenant - Tenants - Cortex | injixo"
+  },
+  "tenant": {
+    "billing": {
+      "button": {
+        "cancel": {
+          "label": "Discard changes"
+        },
+        "submit": {
+          "label": "Save changes"
+        }
+      },
+      "checkbox": {
+        "direct-debit-payment": {
+          "label": "Direct debit payment",
+          "text": "Pay by direct debit"
+        }
+      },
+      "date-picker": {
+        "activation-date": {
+          "label": "Activation date"
+        },
+        "base-fee-prepaid-until": {
+          "aria-label": "Base fee prepaid until",
+          "label": "Base fee prepaid until"
+        },
+        "deactivation-date": {
+          "label": "Deactivation date"
+        },
+        "users-prepaid-until": {
+          "label": "Users prepaid until"
+        }
+      },
+      "heading": {
+        "aria-label": "Billing details",
+        "contract": {
+          "text": "Contract"
+        },
+        "invoice-recipient": {
+          "text": "Invoice recipient"
+        },
+        "text": "Billing details"
+      },
+      "inline-message": {
+        "billing-details-save-error": {
+          "text": "The billing details could not be saved. Please try again."
+        }
+      },
+      "input": {
+        "base-fee": {
+          "label": "Base fee"
+        },
+        "biller": {
+          "aria-label": "Biller",
+          "label": "Biller",
+          "placeholder": "Select a biller"
+        },
+        "country": {
+          "aria-label": "Country",
+          "label": "Country",
+          "placeholder": "Select a country"
+        },
+        "currency": {
+          "aria-label": "Currency",
+          "label": "Currency",
+          "placeholder": "Select a currency"
+        },
+        "debitor-number": {
+          "aria-label": "Debitor number",
+          "label": "Debitor number"
+        },
+        "included-users": {
+          "aria-label": "Included users ",
+          "label": "Included users",
+          "placeholder": "(Optional)"
+        },
+        "invoice-language": {
+          "aria-label": "Invoice language",
+          "label": "Invoice language",
+          "placeholder": "Select a language for the invoice"
+        },
+        "minimum-users": {
+          "aria-label": "Minimum users",
+          "label": "Minimum users",
+          "placeholder": "(Optional)"
+        },
+        "name": {
+          "aria-label": "Name",
+          "label": "Name"
+        },
+        "po-number": {
+          "aria-label": "PO number",
+          "label": "PO number"
+        },
+        "price-per-user-per-month": {
+          "label": "Price per user per month"
+        },
+        "price-per-workload-per-month": {
+          "label": "Price per workload per month"
+        },
+        "users-prepaid-until": {
+          "aria-label": "Users prepaid until"
+        },
+        "vat-id": {
+          "aria-label": "VAT ID",
+          "label": "VAT ID"
+        }
+      },
+      "radio-button": {
+        "annually": {
+          "text": "Annually"
+        },
+        "monthly": {
+          "text": "Monthly"
+        }
+      },
+      "radio-group": {
+        "base-fee-billing-period": {
+          "label": "Base fee billing period"
+        }
+      },
+      "text-area": {
+        "address": {
+          "aria-label": "Address",
+          "label": "Address"
+        },
+        "note": {
+          "aria-label": "Note",
+          "label": "Note",
+          "placeholder": "(Optional)"
+        }
+      },
+      "tooltip": {
+        "base-fee-billing-period-info": {
+          "text": "If you select “annually”, the base fee will not appear on\nthe invoice and the customer will be invoiced manually."
+        },
+        "base-fee-info": {
+          "text": "Enter the base fee amount, which will appear as a separate line on the monthly invoice (if the base fee billing period = \"monthly\")."
+        },
+        "base-fee-prepaid-until-info": {
+          "text": "Enter the date until which the base fee has been prepaid. Leave this field\nempty if the billing period is “monthly” or the customer has not prepaid."
+        },
+        "direct-debit-payment-info": {
+          "text": "Activate this option if the invoices should be paid by direct debit.\nThis will change the information related to the payment date on the invoice."
+        },
+        "included-users-info": {
+          "text": "Enter the number of users who are included in the base fee\nand will not be billed additionally."
+        },
+        "minimum-users-info": {
+          "text": "Enter the minimum number of users that will be billed, unless they have\nbeen prepaid for. The users included in the base fee will be subtracted."
+        },
+        "users-prepaid-until-info": {
+          "text": "Enter the date until which the minimum users have been paid for."
+        }
+      }
+    },
+    "details": {
+      "button": {
+        "discard-changes": {
+          "label": "Discard changes"
+        },
+        "save": {
+          "label": "Save changes"
+        }
+      },
+      "heading": "Details",
+      "inline-message": {
+        "tenant-save-error": {
+          "text": "The tenant could not be changed. Please try again."
+        }
+      },
+      "input": {
+        "country-code": {
+          "label": "Country",
+          "placeholder": "Select country"
+        },
+        "default-locale": {
+          "label": "Language",
+          "placeholder": "Select language"
+        },
+        "default-time-zone": {
+          "label": "Time zone",
+          "placeholder": "Select time zone"
+        },
+        "name": {
+          "label": "Tenant name",
+          "validation-error": "Enter the tenant name (up to 75 characters)."
+        }
+      },
+      "menu": {
+        "tenant-actions": {
+          "aria-label": "Tenant actions",
+          "option-activate": "Activate tenant",
+          "option-deactivate": "Deactivate tenant",
+          "option-terminate": "Terminate tenant"
+        }
+      },
+      "tenant-created-at": "Created on {{creationDate}}"
+    },
+    "feature-flags": {
+      "heading": {
+        "aria-label": "Features",
+        "text": "Features"
+      }
+    },
+    "host": {
+      "button": {
+        "create-host": {
+          "label": "Create WFM host"
+        }
+      },
+      "heading": {
+        "title": {
+          "text": "WFM host"
+        }
+      },
+      "link": {
+        "open-details": {
+          "text": "iWFM host app"
+        }
+      },
+      "not-allowed-to-create-host": "You do not have permission to create a host. Contact a person with admin access."
+    },
+    "inline-message": {
+      "tenant-deactivated": {
+        "text": "The tenant is deactivated. Users cannot log in to injixo. <0>Activate tenant</0>"
+      },
+      "tenant-terminated": {
+        "text": "The tenant was terminated on {{terminationDate}}."
+      }
+    },
+    "input": {
+      "plan": {
+        "label": "Plan",
+        "placeholder": "Select plan"
+      },
+      "product": {
+        "label": "Product"
+      }
+    },
+    "integrations": {
+      "heading": {
+        "aria-label": "Integrations",
+        "title": {
+          "text": "Integrations"
+        }
+      }
+    },
+    "invoices": {
+      "button": {
+        "download-invoice": {
+          "aria-label": "Download invoice"
+        },
+        "open-details": {
+          "aria-label": "Manage invoices"
+        }
+      },
+      "heading": {
+        "aria-label": "Invoices",
+        "text": "Invoices"
+      },
+      "invoices-list": {
+        "placeholder": "$t(invoices.invoices-list.table.placeholder)"
+      },
+      "subheading": {
+        "text": "Invoice recipients"
+      }
+    },
+    "modal": {
+      "activation-confirmation": {
+        "button": {
+          "confirm": {
+            "label": "Activate tenant"
+          },
+          "discard": {
+            "label": "Cancel"
+          }
+        },
+        "inline-message": {
+          "tenant-activation-error": {
+            "text": "The tenant could not be activated. Please try again."
+          }
+        },
+        "summary": "When the tenant is activated, users can log in to injixo.",
+        "title": "Activate tenant?"
+      },
+      "deactivation-confirmation": {
+        "button": {
+          "confirm": {
+            "label": "Deactivate tenant"
+          },
+          "discard": {
+            "label": "Cancel"
+          }
+        },
+        "inline-message": {
+          "login-deactivated-warning": {
+            "text": "The users cannot log in to injixo."
+          },
+          "tenant-deactivation-error": {
+            "text": "The tenant could not be deactivated. Please try again."
+          }
+        },
+        "summary": "<strong>{{tenantName}}</strong> will be deactivated.",
+        "title": "Deactivate tenant?"
+      },
+      "termination-confirmation": {
+        "button": {
+          "confirm": {
+            "label": "Terminate tenant"
+          },
+          "discard": {
+            "label": "Cancel"
+          }
+        },
+        "checkbox": {
+          "confirm": {
+            "label": "Yes, terminate this tenant."
+          }
+        },
+        "inline-message": {
+          "consequences-warning": {
+            "text": "• Existing users will be deleted.\n• Automated billing will be deactivated.\n• <strong>This cannot be undone.</strong>"
+          },
+          "error": {
+            "text": "The tenant could not be terminated. Please try again."
+          }
+        },
+        "input": {
+          "password": {
+            "label": "Confirm with your injixo password",
+            "validation-error": "Your password is incorrect. Please try again."
+          }
+        },
+        "summary": "<strong>{{tenantName}}</strong> will be terminated.",
+        "title": "Terminate tenant?"
+      }
+    },
+    "page-heading": {
+      "return-link": "Back to Tenants"
+    },
+    "page-title": "Tenant - Tenants - Cortex | injixo",
+    "plan": {
+      "button": {
+        "discard-changes": {
+          "label": "Discard changes"
+        },
+        "save": {
+          "label": "Save changes"
+        }
+      },
+      "heading": "Subscription",
+      "inline-message": {
+        "save-error": {
+          "text": "The subscription could not be saved. Please try again."
+        }
+      }
+    },
+    "toast-message": {
+      "billing-details-saved": {
+        "text": "The billing details were changed."
+      },
+      "plan-changed": {
+        "text": "The plan was changed."
+      },
+      "tenant-activated": {
+        "text": "The tenant was activated."
+      },
+      "tenant-changed": {
+        "text": "The tenant was changed."
+      },
+      "tenant-created": {
+        "text": "The tenant was created."
+      },
+      "tenant-deactivated": {
+        "text": "The tenant was deactivated."
+      },
+      "tenant-terminated": {
+        "text": "The tenant was terminated."
+      }
+    },
+    "users": {
+      "billed-users": {
+        "text": "Currently billed users"
+      },
+      "button": {
+        "open-details": {
+          "aria-label": "Manage Users"
+        }
+      },
+      "chart": {
+        "loading-text": "Loading…",
+        "user-count": {
+          "legend": {
+            "billed-users": {
+              "text": "Billed users"
+            }
+          },
+          "maximum": "Maximum:"
+        }
+      },
+      "heading": {
+        "text": "Users"
+      },
+      "inline-message": {
+        "loading-error": {
+          "text": "The user count data could not be loaded. Please try again."
+        }
+      },
+      "input": {
+        "month": {
+          "label": "Month"
+        },
+        "year": {
+          "label": "Year"
+        }
+      },
+      "link": {
+        "open-email-change": {
+          "text": "Manage"
+        },
+        "open-invoices-list": {
+          "text": "See all invoices"
+        },
+        "open-user-list": {
+          "text": "See all"
+        }
+      }
+    },
+    "workload-configurations": {
+      "heading": {
+        "aria-label": "Workload configurations",
+        "title": {
+          "text": "Workload configurations"
+        }
+      }
+    }
+  },
+  "tenants": {
+    "filter-bar": {
+      "button": {
+        "create-tenant": {
+          "aria-label": "Create new tenant",
+          "label": "New tenant"
+        }
+      },
+      "inline-message": {
+        "tenants-loading-error": {
+          "text": "The tenants could not be loaded. Please reload the page or try again later."
+        }
+      },
+      "input": {
+        "feature": {
+          "label": "Feature",
+          "option": {
+            "all-features": {
+              "label": "All feature flags"
+            }
+          },
+          "validation-error": "Features could not be loaded."
+        },
+        "plan": {
+          "label": "Plan",
+          "option": {
+            "all-plans": {
+              "label": "All plans"
+            }
+          }
+        },
+        "product": {
+          "label": "Product",
+          "option": {
+            "all-products": {
+              "label": "All products"
+            }
+          }
+        },
+        "search": {
+          "label": "Search",
+          "placeholder": "Search for tenant name"
+        }
+      }
+    },
+    "page-heading": {
+      "text": "Tenants"
+    },
+    "page-title": "Tenants - Cortex | injixo",
+    "table": {
+      "tenants": {
+        "column-header": {
+          "active-users": {
+            "label": "Active users"
+          },
+          "country": {
+            "label": "Country"
+          },
+          "id": {
+            "label": "ID"
+          },
+          "name": {
+            "label": "Tenant name"
+          },
+          "plan": {
+            "label": "Plan"
+          },
+          "product": {
+            "label": "Product"
+          }
+        },
+        "placeholder": {
+          "on-filtering": {
+            "action": "Clear filters",
+            "message": "No tenants found",
+            "suggestion": "Change your filters."
+          },
+          "on-loading-error": {
+            "action": "Reload tenants",
+            "message": "No tenants found"
+          }
+        }
+      }
+    },
+    "tabs": {
+      "state": {
+        "option": {
+          "activated": {
+            "label": "Activated"
+          },
+          "deactivated": {
+            "label": "Deactivated"
+          },
+          "terminated": {
+            "label": "Terminated"
+          }
+        }
+      }
+    }
+  },
+  "user-search": {
+    "page-title": "Users - Cortex | injixo",
+    "users-list": {
+      "table": {
+        "column-header": {
+          "product": {
+            "label": "Product"
+          },
+          "tenant": {
+            "label": "Tenant"
+          }
+        }
+      }
+    }
+  },
+  "user": {
+    "account": {
+      "button": {
+        "discard": {
+          "label": "Discard changes"
+        },
+        "save": {
+          "label": "Save changes"
+        }
+      },
+      "heading": {
+        "text": "Account"
+      },
+      "inline-message": {
+        "email-save-error": {
+          "text": "The email could not be saved. Please try again."
+        }
+      },
+      "input": {
+        "email": {
+          "label": "Email"
+        }
+      }
+    },
+    "assigned-roles": {
+      "heading": {
+        "text": "Assigned roles"
+      },
+      "text": {
+        "roles": {
+          "label": "Roles"
+        }
+      }
+    },
+    "details": {
+      "heading": {
+        "text": "Details"
+      },
+      "text": {
+        "created": {
+          "label": "Created on"
+        },
+        "failed-login-count": {
+          "label": "Failed login attempts"
+        },
+        "locked": {
+          "label": "Locked"
+        },
+        "login-allowed": {
+          "label": "Login allowed"
+        },
+        "terms-accepted": {
+          "label": "Terms accepted"
+        },
+        "updated": {
+          "label": "Updated on"
+        }
+      }
+    },
+    "page-heading": {
+      "return-link": {
+        "tenant": {
+          "text": "Back to tenant"
+        },
+        "users": {
+          "text": "Back to users"
+        }
+      },
+      "text": "{{tenantName}} – {{userName}}"
+    },
+    "page-title": "User - Tenants - Cortex | injixo",
+    "preferences": {
+      "heading": {
+        "text": "Preferences"
+      },
+      "text": {
+        "language": {
+          "label": "Language"
+        },
+        "timezone": {
+          "label": "Time zone"
+        }
+      }
+    },
+    "tag": {
+      "admin": {
+        "text": "Admin"
+      }
+    },
+    "toast-message": {
+      "email-changed": {
+        "text": "The email address was changed."
+      }
+    },
+    "users-list": {
+      "table": {
+        "helper-text": {
+          "total-users": {
+            "text": "{{usersCount}} users"
+          }
+        }
+      }
+    }
+  },
+  "users": {
+    "page-heading": {
+      "return-link": "Back to tenant",
+      "text": "{{tenantName}} – Users"
+    },
+    "page-title": "Users - Tenants - Cortex | injixo",
+    "user-list": {
+      "input": {
+        "search": {
+          "placeholder": "Search for user name, user ID, or email"
+        }
+      }
+    },
+    "users-list": {
+      "table": {
+        "column-header": {
+          "2fa": {
+            "label": "2FA"
+          },
+          "user-email": {
+            "label": "Email"
+          },
+          "user-id": {
+            "label": "ID"
+          },
+          "user-name": {
+            "label": "User name"
+          },
+          "user-roles": {
+            "label": "Roles"
+          }
+        },
+        "placeholder": {
+          "loading-error": {
+            "action": "Reload now",
+            "message": "No users loaded"
+          },
+          "no-search-result": {
+            "action": "Clear search",
+            "message": "No users found",
+            "suggestion": "Change or clear your search."
+          }
+        },
+        "tooltip": {
+          "2fa-activated-and-enforced": {
+            "text": "Activation enforced and activated"
+          },
+          "2fa-activated": {
+            "text": "Activated"
+          },
+          "2fa-deactivated": {
+            "text": "Deactivated"
+          },
+          "2fa-enforced": {
+            "text": "The user has to enable 2FA on next login"
+          },
+          "email-not-verified": {
+            "text": "This user needs to verify their email address."
+          },
+          "locked": {
+            "text": "The user cannot log in."
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "application": {
+    "title": "Droits au congés",
+    "backToTimeOff": "Retour au menu Congés/Absences"
+  },
+  "options": {
+    "button": {
+      "export": "Export CSV",
+      "transfer": "Transférer le solde"
+    }
+  },
+  "filters": {
+    "label": {
+      "planningUnit": "Unité opérationnelle",
+      "selection": "Groupe",
+      "year": "Année",
+      "search": "Rechercher"
+    },
+    "placeholder": {
+      "planningUnit": "Sélectionner une unité opérationnelle",
+      "selection": "Sélectionner une équipe",
+      "year": "Sélectionner une année",
+      "search": "Utilisez une virgule pour séparer les noms"
+    },
+    "result": {
+      "noResult": "Aucun résultat"
+    }
+  },
+  "entitlementsTable": {
+    "label": {
+      "personnelNumber": "Matricule",
+      "employeeName": "Nom",
+      "contract": "Contrat",
+      "remainCurrentYear": "Solde année en cours",
+      "remainLastYear": "Solde année précédente",
+      "currentYear": "Année en cours",
+      "takenRatio": "Congés pris",
+      "takenRatioPercent": "Congés pris {{percent}}%"
+    },
+    "result": {
+      "loading": "Chargement",
+      "noEmployeesFound": "Aucun employé trouvé.",
+      "noPlanningUnitsFound": "Aucune unité de planification disponible."
+    }
+  },
+  "transferModal": {
+    "text": {
+      "description": "The remaining vacation entitlement for the current selection will be transferred",
+      "from": "De",
+      "to": "Au"
+    },
+    "button": {
+      "transfer": "Transférer",
+      "cancel": "Annuler"
+    },
+    "transferSuccess": "Droits transférés avec succès vers {{nextYear}}"
+  },
+  "error": {
+    "fetchingEntitlements": "Une erreur est survenue (Ressource: Droits au congés) ",
+    "fetchingVacations": "Une erreur est survenue (Ressource: Congés pris)",
+    "fetchingPlanningUnits": "Une erreur est survenue (Ressource: Unité opérationnelle)",
+    "fetchingSelections": "Une erreur est survenue (Ressource: Groupe)",
+    "fetchingEmployees": "Une erreur est survenue (Ressource: Employés)",
+    "fetchingAccessRights": "Une erreur est survenue (Ressource: Des droits d'accès)",
+    "transferEntitlements": "Une erreur est survenue (Ressource: Transférer le solde)",
+    "savingEntitlements": "Une erreur est survenue (Ressource: Droits au congés) - Détails:",
+    "exportCsv": "Une erreur est survenue (Ressource: Export CSV)"
+  },
+  "document_title": {
+    "module": "Plan",
+    "sub_module": "Droits au congés"
+  }
+}

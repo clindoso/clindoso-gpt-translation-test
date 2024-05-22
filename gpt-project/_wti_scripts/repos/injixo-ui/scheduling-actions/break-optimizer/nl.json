@@ -1,0 +1,109 @@
+{
+  "heading": {
+    "initial": "Pauze-optimalisatie",
+    "optimization-history": "Pauze-optimalisatie geschiedenis",
+    "optimization-results": "Pauze-optimalisatie resultaten",
+    "settings": "Pauze-optimalisatie instellen"
+  },
+  "button": {
+    "back-to-day-view": "Terug naar dagweergave",
+    "back-to-schedules": "Terug naar Schedules",
+    "close": "Sluiten",
+    "delete-break-optimizations_one": "Item verwijderen",
+    "delete-break-optimizations_other": "Items verwijderen",
+    "optimize-schedule": "Pauze-optimalisatie"
+  },
+  "error": {
+    "break-optimization-request": "Mislukt om pauze-optimalisatie aan te vragen",
+    "incomplete-form": "De gegevens zijn onvolledig. Zorg ervoor dat alle gemarkeerde velden gecorrigeerd worden."
+  },
+  "helper-text": {
+    "delete-break-optimizations": "De geselecteerde items worden uit de tabel verwijderd. Geoptimaliseerde roosters worden niet beïnvloed."
+  },
+  "hint": {
+    "optimized-schedule-writing": "Het geoptimaliseerde rooster wordt direct naar het niveau Planning geschreven."
+  },
+  "label": {
+    "aria-enhancement": {
+      "delete-entries": "Items verwijderen",
+      "dropdown": "dropdown",
+      "loading-spinner": "laden spinner",
+      "select": "selecteren",
+      "select-all": "alles selecteren"
+    },
+    "axis": {
+      "coverage-total-deviation-from-zero": "Dekking - Totale afwijking ten opzichte van 0",
+      "optimized-schedule": "Geoptimaliseerd rooster",
+      "schedule-before-optimization": "Rooster voor optimalisatie"
+    },
+    "date-range": "Datumbereik",
+    "in-progress": "in progress",
+    "maintenance": {
+      "caption": "We are currently improving Break optimization",
+      "details": "We apologize for any inconvenience this necessary maintenance might cause you. The Break optimization should be available again in a few minutes. Thank you for your patience!"
+    },
+    "no-entries": "Geen gegevens",
+    "no-optimization-data": {
+      "details": "Start een nieuwe optimalisatie door het selecteren van een Eenheid en een datumbereik hierboven om de resultaten hier te zien.",
+      "heading": "Geen optimalisaties mogelijk"
+    },
+    "optimization-result": {
+      "content": "Resultaten pauze-optimalisatie"
+    },
+    "optimization-status": {
+      "failed": "Optimalisatie is mislukt. Probeer het nog eens.",
+      "optimized": "Geoptimaliseerd rooster",
+      "partly-optimized": "Gedeeltelijk geoptimaliseerd rooster",
+      "scheduling": "Optimalisatie in uitvoering..."
+    },
+    "view-results": "Resultaten weergeven"
+  },
+  "notification": {
+    "failure": {
+      "general": "Er is een fout opgetreden. Probeer het later nog eens."
+    }
+  },
+  "placeholder": {
+    "dropdown": "Zoeken of selecteren"
+  },
+  "result": {
+    "info": {
+      "day_models": "De geselecteerde eenheid bevat dagmodellen in het geselecteerde datumbereik die niet omgezet konden worden in activiteiten. De pauzes in deze dagmodellen zijn niet geoptimaliseerd."
+    }
+  },
+  "success": {
+    "break-optimization-request": "Pauze-optimalisatie succesvol aangevraagd"
+  },
+  "table": {
+    "column": {
+      "date-range": "Datumbereik",
+      "initiated-on": "Geïnitieerd op",
+      "planning-unit": "Eenheid",
+      "selection": "Groep",
+      "status": "Status",
+      "user": "Gebruiker"
+    },
+    "message": {
+      "partly-optimized": "Gedeeltelijk geoptimaliseerd",
+      "partly-optimized-description": "<0>Wat betekent dit?</0>",
+      "partly-optimized-link": "https://help.injixo.com/break-optimization#partly-optimized-schedule",
+      "optimized": "Geoptimaliseerd"
+    }
+  },
+  "tooltip": {
+    "outdated-graph": "De relevante grafiekdata zijn gegenereerd bij het opstarten van de optimalisatie. Het kan dus zijn dat deze verouderd zijn als ze op een later tijdstip worden bekeken."
+  },
+  "validation": {
+    "planning-unit": {
+      "required": "Selecteer een Eenheid"
+    }
+  },
+  "connection": {
+    "offline": "De verbinding kon niet worden hersteld. Probeer over een paar minuten opnieuw te laden.",
+    "reconnecting": "De verbinding is verbroken. We proberen de verbinding automatisch te herstellen."
+  },
+  "document_title": {
+    "context": "Pauze-optimalisatie",
+    "module": "Plan"
+  }
+}

@@ -1,0 +1,368 @@
+{
+  "activityDetails": {
+    "comment": "Commentaar"
+  },
+  "filter": {
+    "selection": {
+      "placeholder": "Kies Groep"
+    },
+    "planningUnit": {
+      "placeholder": "Zoek eenheden",
+      "label": "Eenheid",
+      "all": "Alle eenheden",
+      "multiple": "Eenheden"
+    },
+    "employeeFilter": {
+      "placeholder": "Kies Medewerkersfilter",
+      "label": "Medewerkersfilter"
+    },
+    "search": {
+      "placeholder": "Zoek medewerkers"
+    },
+    "level": {
+      "singleLevel": "Niveau",
+      "multipleLevel": "Niveaus"
+    },
+    "noResults": "Geen resultaten gevonden"
+  },
+  "navigation": {
+    "today": "Vandaag",
+    "current-month": "Huidige maand",
+    "current-week": "Huidige week",
+    "next-month": "Volgende maand",
+    "next-week": "Volgende week",
+    "optimization": {
+      "menu": "Contextmenu"
+    },
+    "tomorrow": "Morgen"
+  },
+  "table": {
+    "level": "Niveau",
+    "loading": "Bezig met laden"
+  },
+  "level": {
+    "plan": {
+      "name": "Planning"
+    },
+    "final": {
+      "name": "Huidige Staat"
+    },
+    "availabilities": {
+      "name": "Beschikbaarheid"
+    },
+    "wishes": {
+      "name": "Wens"
+    },
+    "alternativeWishes": {
+      "name": "Alternatieve wens"
+    },
+    "absenceWishes": {
+      "name": "Vakantie-/ Afwezigheidswens"
+    },
+    "backup": {
+      "name": "Versie 1"
+    },
+    "backupVersion2": {
+      "name": "Versie 2"
+    },
+    "backupVersion3": {
+      "name": "Versie 3"
+    }
+  },
+  "sort": {
+    "key": {
+      "name": "Naam medewerker",
+      "diff": "Verschil",
+      "actual": "Werkelijk",
+      "contractual": "Contractueel",
+      "startTime": "Begintijd",
+      "activityName": "Naam Activiteit",
+      "activity": "Activiteit",
+      "sum": "Som",
+      "userName": "Name",
+      "changedAt": "Datum en tijd",
+      "changedReason": "Actie"
+    },
+    "level": {
+      "menu": "Sorteer op niveau"
+    }
+  },
+  "edit": {
+    "title": {
+      "editlevel": "Bewerk Niveau",
+      "quote": "\"",
+      "unquote": "\"",
+      "of": "van",
+      "shiftFrom": "Verplaatsing van"
+    },
+    "cancel": "Annuleren",
+    "save": "Opslaan",
+    "saving": "Opslaan",
+    "deleteAll": "Alle activiteiten verwijderen",
+    "problem": "Probleem",
+    "activitiesTab": {
+      "title": "Bewerken",
+      "activityType": "Activiteitstype",
+      "addNewActivity": "Nieuwe activiteit toevoegen",
+      "addNewFullDayActivity": "Nieuwe activiteiten over de hele dag toevoegen",
+      "noActivitiesInShift": "Er zijn geen activiteiten in deze dienst.",
+      "startTime": "Starttijd",
+      "startDate": "Startdatum",
+      "endTime": "Eindtijd",
+      "endDate": "Einddatum",
+      "planningUnitTimezoneDiff": "Tijdsverschil van de eenheid",
+      "userTimezoneDiff": "Tijdsverschil van de gebruiker",
+      "validation": {
+        "onlyOneFullDayActivityAllowed": "Slechts één activiteit over de hele dag toegestaan",
+        "noActivityOfThisTypeAvailable": "Geen activiteit van dit type beschikbaar"
+      }
+    },
+    "historyTab": {
+      "title": "Verloop",
+      "noHistoryInShift": "Er zijn geen historische gegevens voor deze dienst."
+    },
+    "savedSuccessfully": "Succesvol opgeslagen",
+    "planDataType": {
+      "activity": "Activiteit",
+      "full_day_activity": "Activiteit over de hele dag"
+    },
+    "activityType": {
+      "present": "Aanwezigheid",
+      "holiday": "Vakantie",
+      "break": "Pauze",
+      "absence": "Afwezigheid",
+      "meeting": "Vergadering",
+      "illness": "Ziek"
+    },
+    "shortcuts": {
+      "copyAction": "kopieer naar",
+      "moveAction": "verplaats naar",
+      "copyErrorTitle": "Conflict tijdens het kopiëren van dienst",
+      "moveErrorTitle": "Conflict tijdens het verplaatsen van dienst",
+      "deleteErrorTitle": "Conflict tijdens het verwijderen van dienst",
+      "errorDismiss": "Sluiten",
+      "genericShortcutError": "There was a problem changing the shifts. Please try again later."
+    },
+    "message": {
+      "invalidParams": "Kies een geldige eenheid of medewerker"
+    },
+    "unsavedChanges": {
+      "continue": "Wijzigingen negeren",
+      "abort": "Blijven",
+      "hint": "Je hebt wijzigingen aangebracht die verloren gaan als je deze pagina verlaat.",
+      "continueQuestion": "Weet je zeker dat je wilt doorgaan en deze veranderingen wilt negeren?",
+      "title": "Niet opgeslagen wijzigingen"
+    },
+    "unsavedChangesOverwriteOtherData": {
+      "continue": "Toch opslaan",
+      "abort": "Annuleren",
+      "hint": "Je hebt wijzigingen aangebracht in andere tabbladen die verloren zullen gaan als je ervoor kiest om door te gaan.",
+      "continueQuestion": "Weet je zeker dat je het huidige tabblad wilt opslaan en alle andere wijzigingen wilt negeren?",
+      "title": "Niet-opgeslagen wijzigingen in andere tabbladen"
+    },
+    "deleteBlock": {
+      "abort": "Annuleren",
+      "continue": "Blok verwijderen",
+      "info": "Als je het huidige rooster wilt wijzigen, moet je het blok eerst verwijderen.",
+      "title": "Conflict tijdens het opslaan",
+      "warning": "Alle huidige veranderingen zullen verloren gaan"
+    },
+    "activities": {
+      "heading": "Activiteiten",
+      "warning": {
+        "full_day_override": "Deze activiteit over de hele dag vervangt alle activiteiten nadat je op Opslaan hebt geklikt."
+      }
+    },
+    "comment": {
+      "error": {
+        "loading": "Het commentaar kon niet worden geladen. Probeer het later opnieuw.",
+        "save": "Het commentaar kon niet worden opgeslagen. Probeer het later opnieuw."
+      },
+      "heading": "Commentaar",
+      "placeholder": "Voeg commentaar toe aan deze dag (niet meer dan 250 tekens).",
+      "warning": {
+        "length": "Het commentaar is te lang. Gebruik maximaal 250 tekens."
+      }
+    },
+    "history": {
+      "heading": "Verloop"
+    },
+    "inline-message": {
+      "overlapping-activities": {
+        "text": "Je hebt overlappende activiteiten. Verander de eind- of starttijd van de betrokken activiteiten. Als je de overlap niet verwijdert, verkort injixo de duur van de eerste activiteit."
+      }
+    }
+  },
+  "error": {
+    "default": "Er is een fout opgetreden tijdens het opvragen van gegevens",
+    "websocket": "Service kon niet worden bereikt. Er wordt een nieuwe verbinding gemaakt.",
+    "activitiesPermissionDenied": "Je hebt niet de juiste rechten voor één of meerdere geselecteerde activiteiten."
+  },
+  "select": {
+    "all": "Alle",
+    "noResults": "Niets gevonden",
+    "activities": {
+      "placeholder": "Kies activiteit"
+    },
+    "dayPicker": {
+      "placeholder": "Kies dag"
+    }
+  },
+  "coverage": {
+    "type": "Type",
+    "panelStatusIndicator": {
+      "closePanel": "Sluit dekking-venster",
+      "openPanel": "Open dekking-venster"
+    },
+    "tabs": {
+      "activitiesCoverage": "Activiteiten - Dekking",
+      "activitiesRequirements": "Activiteiten - Behoefte",
+      "activitiesStaffings": "Activiteiten - Bezetting"
+    },
+    "loadingIndicator": "Laden van dekkingsgegevens",
+    "filterPlaceholder": "Zoek op naam of type activiteit",
+    "noPlanningUnitSelected": "Geen eenheid gekozen.",
+    "noActivitiesSelected": "Geen activiteiten geselecteerd.",
+    "noActivitiesSelectedHint": "Gebruik het bovenstaande filterpictogram om de activiteiten te filteren.",
+    "detailsPopover": {
+      "interval": "Interval",
+      "staffings": "Bezetting",
+      "requirements": "Behoefte",
+      "coverage": "Dekking"
+    }
+  },
+  "planDataHistory": {
+    "actions": {
+      "applyShiftSequences": "Dienstenseries toevoegen",
+      "assignCoachedShifts": "Kopiëren naar trainee",
+      "cancelMeeting": "Vergadering annuleren",
+      "confirmSchedule": "Wens inwilligen",
+      "copyNPasteOperation": "Daginhoud gecreëerd (kopiëren en invoegen)",
+      "cutNPasteOperation": "Daginhoud gecreëerd (knippen en plakken)",
+      "deleteFulldayBlock": "Verwijderen (gerelateerde activiteiten over de hele dag)",
+      "deleteFulldayContent": "Verwijderen (activiteiten over de hele dag)",
+      "deleteOrdinaryContent": "Verwijderen (activiteiten en diensten)",
+      "deleteSchedule": "Handmatig verwijderen (invoer)",
+      "deleteShiftsNodesk": "Diensttoedeling opgeheven",
+      "detachShiftReference": "Van dienst loskoppelen",
+      "detachShiftReferenceEx": "Van dienst loskoppelen en activiteiten vervangen",
+      "eraseToplayer": "Verwijderen (gehele daginhoud)",
+      "exchangingContent": "Diensten ruilen",
+      "importingAcdData": "Import (Extern Systeem)",
+      "massInsert": "Massa-invoegen",
+      "moveContentTo": "Verplaatsen (complete daginhoud naar andere medewerker)",
+      "moveScheduleTo": "Verplaatsen (naar andere medewerker)",
+      "planToFinalCopy": "Kopiëren (invoer van niveau Planning naar Huidige Staat)",
+      "removeAssignedDesks": "Werkplektoedeling opgeheven",
+      "rescheduleToplayer": "Herstellen (Staat van verloop)",
+      "restoreFromBackup": "Herstellen (Daginhoud van niveau Versie 1)",
+      "restorePrevWorkOnFulldayWork": "Vervangen (activiteiten over de hele dag met een oudere staat van afloop)",
+      "rollbackToplayer": "Herstellen (Staat van verloop met verlies)",
+      "saveAsBackup": "Opslaan (Daginhoud naar niveau Versie 1)",
+      "scheduleBlockApprove": "Wens inwilligen",
+      "scheduleBlockDelete": "Wens verwijderen",
+      "scheduleBlockReject": "Wens afwijzen",
+      "scheduleBlockRequest": "Wensen invoegen",
+      "slideContent": "Verplaatsen (complete daginhoud over periode)",
+      "staffDischarge": "Uittreding van medewerker",
+      "unspecific": "Onbekend",
+      "writeAtomicMeeting": "Vergadering invoegen",
+      "writeCorridorFixing": "Specificatie (pauzes in een dagmodel)",
+      "writeNewToplayer": "Overschrijven (gehele daginhoud)",
+      "writeSchedule": "Handmatige verandering (invoer)",
+      "writeScheduleRepeated": "Toevoegen (op meerdere op elkaar volgende dagen)",
+      "writeScheduleToGroup": "Toevoegen (bij een groep)"
+    },
+    "nameUnknown": "Onbekend"
+  },
+  "button": {
+    "jump-date_one": "{{count}} Dag",
+    "jump-date_other": "{{count}} dagen"
+  },
+  "scheduling-actions": {
+    "cancel": "Annuleren",
+    "insert-shift-sequences-link": "Dienstenseries toevoegen",
+    "copy-level-content-link": "Niveau-inhoud kopiëren",
+    "create-optimized-schedule-link": "Geoptimaliseerde planning maken",
+    "create-optimized-schedule": {
+      "background-job": "Geoptimaliseerde planning maken start een achtergrondproces. Om de status te zien, controleer de <0>JobProcessor</0>.",
+      "content-label": "Geoptimaliseerde planningsmodal maken",
+      "optimize-again": "Opnieuw optimaliseren",
+      "request-error": "Geoptimaliseerde planning maken mislukt",
+      "request-not-successful": "Geoptimaliseerde planning maken kon niet worden gestart. Probeer het opnieuw.",
+      "request-sent": "Geoptimaliseerde planning wordt gemaakt. Bekijk voortgang in JobProcessor.",
+      "submit": "Geoptimaliseerde planning maken",
+      "title": "Geoptimaliseerde planning maken",
+      "request-action": "JobProcessor"
+    },
+    "date-range": "Datumbereik",
+    "empty-levels-link": "Niveau's leeg maken",
+    "error": {
+      "incomplete-form": "De gegevens zijn onvolledig. Zorg ervoor dat alle gemarkeerde velden gecorrigeerd worden.",
+      "planning-unit": "Er moet een eenheid worden gekozen"
+    },
+    "extra-activities-link": "Extra activiteiten plannen",
+    "job-optimizer-link": "Job-optimalisatie",
+    "job-optimizer": {
+      "background-job": "Job-optimalisatie start een achtergrondproces. Om de status te zien, controleer de <0>JobProcessor</0>.",
+      "request-error": "Job-optimalisatie starten mislukt",
+      "request-not-successful": "Job-optimalisatie kon niet worden gestart. Probeer het opnieuw.",
+      "request-sent": "Job-optimalisatie in uitvoering. Bekijk voortgang in JobProcessor.",
+      "submit": "Start job-optimalisatie",
+      "title": "Job-optimalisatie"
+    },
+    "optimize-breaks-link": "Pauzes optimaliseren",
+    "placeholder": {
+      "dropdown": "Zoeken of selecteren",
+      "no-results": "Geen resultaten"
+    },
+    "planning-unit": "Eenheid",
+    "replace-activities-link": "Activiteiten vervangen",
+    "scheduling-actions": "Planningsacties",
+    "scheduling-periods-link": "Planningsperioden",
+    "selection": "Groep",
+    "shift-exchange-overview-link": "Dienstruilingen goedkeuren",
+    "schedule-change-notifications": {
+      "employee": {
+        "description": "Selecteer medewerkers die over de wijzigingen in hun planning moeten worden geïnformeerd.",
+        "empty": "Geen medewerkers gevonden",
+        "empty-details": "Wijzig de eenheid, de groep of het datumbereik.",
+        "heading": "Medewerkers ({{amountSelected}}/{{amountTotal}} geselecteerd)",
+        "name": "Naam"
+      },
+      "error": "Meldingen verzenden mislukt",
+      "scheduling-period-error": "Niet alle geselecteerde datums vallen binnen de gepubliceerde planningsperioden. Beheer je <0>planningsperioden</0>.",
+      "submit_zero": "Medewerkers inlichten",
+      "submit_one": "{{count}} medewerker inlichten",
+      "submit_other": "{{count}} medewerkers inlichten",
+      "success": "De meldingen zijn verzonden.",
+      "title": "Medewerkers inlichten"
+    },
+    "create-schedule": {
+      "request-error": "Failed to create schedule",
+      "request-not-successful": "Schedule creation could not be started. Please try again.",
+      "request-sent": "Schedule creation in progress.",
+      "submit": "Create schedule",
+      "title": "Create schedule"
+    },
+    "schedule-requests": {
+      "request-not-successful": "Schedule creation could not be started. Please try again.",
+      "request-sent": "Schedule creation in progress."
+    }
+  },
+  "tooltip": {
+    "employee-name": "Details medewerker weergeven"
+  },
+  "document_title": {
+    "context": "Schedules",
+    "module": "Plan",
+    "page": {
+      "edit": "Dienst aanpassen"
+    }
+  },
+  "schedules": {
+    "schedule-change-notifications": {
+      "search-placeholder": "Zoek op naam"
+    }
+  }
+}

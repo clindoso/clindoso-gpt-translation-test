@@ -1,0 +1,71 @@
+{
+  "form": {
+    "id": "41905721-b2c1-4ded-b657-fc5c35320ede",
+    "label": {
+      "create-ticket": "New Ticket",
+      "guide": "Guide",
+      "your-ticket": "Your Ticket",
+      "upload": "Attach Files",
+      "files-selected": "files selected",
+      "submit": "Send",
+      "try-again": "Try again",
+      "error-loading-form": "Error loading form",
+      "category": "Ticket Type",
+      "description": "Description",
+      "error-sending-form": "Submit failed",
+      "impact": "Impact on Business",
+      "phone": "Phone Number",
+      "title": "Title",
+      "error-loading-application": "Error loading application"
+    },
+    "validation": {
+      "single-field": "Please complete this required field.",
+      "all-fields": "Please complete all required fields.",
+      "no-result": "No Result"
+    },
+    "info": {
+      "submit": "Thanks for sending your request.",
+      "error-loading-form": "An error occurred while loading the page. You can try again by clicking on the button.",
+      "error-sending-form": "We're sorry. Something went wrong while sending the form. Please try again or send an email to support@injixo.com. We thank you for your understanding."
+    },
+    "option": {
+      "category": {
+        "billing-issue": "Billing Issue",
+        "question": "Question",
+        "software-issue": "Software Issue",
+        "system-outage": "System Outage"
+      },
+      "impact": {
+        "critical": "Critical",
+        "major": "Major",
+        "minor": "Minor"
+      }
+    },
+    "placeholder": {
+      "description": "In order to be able to process your ticket more efficiently, we ask that you only record one problem per ticket.",
+      "phone": "Phone number must contain only numbers, + ( ) - . and x",
+      "category": "Select",
+      "impact": "Select"
+    }
+  },
+  "guide": {
+    "create-ticket": "Create a ticket to ask for expert support from injixo.",
+    "provide-information": "Just provide information about what you want to do and what is happening instead.",
+    "whats-next": {
+      "pre": "After sending your request, you will receive a confirmation email including a Ticket ID for your reference. The team will answer your request as quickly as possible via email. It would be helpful to provide a phone number so we can contact you in urgent cases."
+    },
+    "gdpr": {
+      "pre": "InVision needs the contact information you provide to us to contact you about your issue. For information about our privacy practices and commitment to protecting your privacy, please review our",
+      "link": "Privacy Policy"
+    },
+    "docs": {
+      "link": "Help Center",
+      "post": "where you can find documentation about how to use injixo.",
+      "pre": "You can also check our knowledge base"
+    }
+  },
+  "document_title": {
+    "module": "Support",
+    "page_title": "Tickets"
+  }
+}

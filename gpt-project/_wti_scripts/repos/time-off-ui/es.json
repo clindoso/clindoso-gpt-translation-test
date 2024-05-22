@@ -1,0 +1,871 @@
+{
+  "time_off_overview": {
+    "confirmation_modal": {
+      "cancel": "Cancelar"
+    },
+    "approved": "Aprobadas",
+    "cancellation_requested": "Cancelación solicitada",
+    "decided": "Decididas",
+    "heading": "Solicitudes de permiso",
+    "page_title": "Permisos | injixo",
+    "rejected": "Rechazadas",
+    "requested": "Permisos solicitados",
+    "canceled": "Cancelado",
+    "comment": {
+      "placeholder": "Añade tu comentario",
+      "label": "Comentario",
+      "optional": "opcional"
+    },
+    "employee_balances": "Saldos de los empleados",
+    "manual_action_required": "Actualiza la planificación manualmente.",
+    "processing": "Solicitudes pendientes",
+    "recommendation": {
+      "approval": "Aprobar",
+      "pending": "Pendiente",
+      "rejection": "Rechazar",
+      "cancellation": "Cancelar",
+      "not_possible": "Ninguna recomendación del sistema posible",
+      "outdated": "Creando recomendación del sistema"
+    },
+    "time_off_configuration": "Configuración de permisos",
+    "valuation": {
+      "conflict": {
+        "reason": "Las horas por planificar pueden cambiar porque {{ username }} ha solicitado al menos un permiso más durante esta semana."
+      }
+    },
+    "action": {
+      "approve": {
+        "error": {
+          "already_decided": "Ya se ha tomado una decisión para esta solicitud.",
+          "generic": "No se pudo aprobar la solicitud."
+        },
+        "go_to_decided": "Ir a Decididas",
+        "hint": "El permiso será añadido a la planificación.",
+        "label": "Aprobar permiso",
+        "submit": "Confirmar",
+        "submitting": "Aprobando permiso",
+        "success": "Permiso aprobado"
+      },
+      "approve_cancellation": {
+        "error": {
+          "generic": "Este permiso ya ha sido cancelado."
+        },
+        "label": "Cancelar permiso",
+        "no_sync_hint": "injixo no actualizará automáticamente la planificación del empleado. En caso necesario, compruébala y actualízala manualmente.",
+        "submit": "Confirmar cancelación",
+        "submitting": "Cancelando permiso",
+        "success": "Permiso cancelado"
+      },
+      "cancel": {
+        "error": {
+          "already_canceled": "Este permiso ya ha sido cancelado.",
+          "generic": "No se pudo cancelar el permiso."
+        },
+        "label": "Cancelar permiso",
+        "no_sync_hint": "injixo no actualizará automáticamente la planificación del empleado. En caso necesario, compruébala y actualízala manualmente.",
+        "submit": "Confirmar cancelación",
+        "submitting": "Cancelando permiso",
+        "success": "Permiso cancelado"
+      },
+      "recommend_approval": {
+        "error": {
+          "already_recommended": "Ya se ha hecho una recomendación.",
+          "generic": "No se pudo recomendar la aprobación."
+        },
+        "label": "Recomendar aprobación",
+        "submit": "Confirmar",
+        "submitting": "Recomendando aprobación",
+        "success": "Aprobación recomendada"
+      },
+      "recommend_cancellation_approval": {
+        "error": {
+          "generic": "No se pudo recomendar aprobar la cancelación."
+        },
+        "label": "Recomendar cancelación",
+        "submit": "Confirmar",
+        "submitting": "Recomendando cancelación",
+        "success": "Aprobación de la cancelación recomendada"
+      },
+      "recommend_cancellation_rejection": {
+        "error": {
+          "generic": "No se pudo recomendar rechazar la cancelación."
+        },
+        "label": "Recomendar rechazo",
+        "submit": "Confirmar",
+        "submitting": "Recomendando rechazo",
+        "success": "Rechazo de la cancelación recomendado"
+      },
+      "recommend_rejection": {
+        "error": {
+          "already_recommended": "Ya se ha hecho una recomendación.",
+          "generic": "No se pudo recomendar el rechazo."
+        },
+        "label": "Recomendar rechazo",
+        "submit": "Confirmar",
+        "submitting": "Recomendando rechazo",
+        "success": "Rechazo recomendado"
+      },
+      "reject": {
+        "error": {
+          "already_decided": "Ya se ha tomado una decisión para esta solicitud.",
+          "generic": "No se pudo rechazar la solicitud."
+        },
+        "go_to_decided": "Ir a Decididas",
+        "label": "Rechazar",
+        "submit": "Confirmar",
+        "submitting": "Rechazando solicitud",
+        "success": "Solicitud de permiso rechazada"
+      },
+      "reject_cancellation": {
+        "error": {
+          "generic": "No se pudo rechazar la solicitud de cancelación."
+        },
+        "label": "Rechazar",
+        "submit": "Confirmar",
+        "submitting": "Rechazando cancelación",
+        "success": "Solicitud de cancelación rechazada"
+      }
+    },
+    "comments_one": "1 comentario",
+    "comments_other": "{{count}} comentarios",
+    "created_at": "Solicitado el {{datetime}}",
+    "empty_state": {
+      "cancellation_requested": {
+        "description": "Cuando tus empleados soliciten cancelar permisos ya aprobados, encontrarás sus solicitudes aqui. <br />¿Buscas las solicitudes ya decididas? Ve a la pestaña <decidedLink>Decididas</decidedLink>.",
+        "title": "Ninguna solicitud de cancelación"
+      },
+      "decided": {
+        "description": "Once time-off and cancellation requests have been decided on, you will find them here.",
+        "title": "Ninguna solicitud de permiso aprobada, rechazada ni cancelada"
+      },
+      "no_results": {
+        "action": "Restablecer filtros y búsqueda",
+        "description": "Modifica o restablece tus filtros y búsqueda.",
+        "title": "No se ha encontrado ninguna solicitud"
+      },
+      "requested": {
+        "description": "Cuando tus empleados soliciten permisos, encontrarás sus solicitudes aquí. <br />¿Buscas las solicitudes ya decididas? Ve a la pestaña <decidedLink>Decididas</decidedLink>.",
+        "title": "Ninguna solicitud de permiso"
+      }
+    },
+    "filter": {
+      "planning_units": {
+        "empty": "Ninguna unidad de planificación",
+        "label": "Unidades de planificación",
+        "search": "Buscar unidades de planificación",
+        "select_all": "Todas las unidades de planificación"
+      },
+      "recommendations": {
+        "empty": "No recommendations",
+        "label": "Recommendation",
+        "options": {
+          "approval": {
+            "label": "Approve"
+          },
+          "pending": {
+            "label": "Pending"
+          },
+          "rejection": {
+            "label": "Reject"
+          }
+        },
+        "search": "Search recommendations",
+        "select_all": "All recommendations"
+      },
+      "selections": {
+        "empty": "Ningún grupo",
+        "label": "Grupos",
+        "search": "Buscar grupos",
+        "select_all": "Todos los grupos"
+      },
+      "time_period": {
+        "clear": "Borrar",
+        "label": "Periodo de tiempo",
+        "placeholder": "Selecciona un periodo"
+      },
+      "types": {
+        "deleted": "(Borrado)",
+        "empty": "Ningún tipo de permiso",
+        "label": "Tipos de permiso",
+        "search": "Buscar tipos de permiso",
+        "select_all": "Todos los tipos de permiso"
+      }
+    },
+    "label": {
+      "comments": "Comentarios",
+      "current_balance": "Current balance",
+      "decision": "Estado",
+      "planning_unit": "Unidad de planificación",
+      "projected": "Projected",
+      "recommendation": "Recomendación",
+      "remaining": "Restante",
+      "time": "Periodo de tiempo",
+      "to_be_booked": "Por planificar",
+      "type": "Tipo",
+      "type_deleted": "(Borrado)"
+    },
+    "pagination": {
+      "aria_label": "Paginación"
+    },
+    "recommendation_insights": {
+      "current_schedule": "Planificación actual",
+      "empty": "No hay actividades planificadas en el periodo solicitado.",
+      "error": "Ha ocurrido un error. <RetryLink>Inténtalo de nuevo</RetryLink>.",
+      "hide": "Ocultar cobertura y ausencias",
+      "people_absent": "Empleados ausentes",
+      "show": "Mostrar cobertura y ausencias"
+    },
+    "schedule_restoration_modal": {
+      "blank_out_shift": "Anular el turno",
+      "cancel": "Cancelar",
+      "cancellation": {
+        "submit": "Cancelar permiso",
+        "submitting": "Cancelando permiso",
+        "title": "¿Cancelar el permiso y actualizar la planificación?"
+      },
+      "comment": "Comentario",
+      "decision": {
+        "submit": "Confirmar",
+        "submitting": "Aprobando la cancelación"
+      },
+      "employee": "Empleado",
+      "load_error": "No se pudo cargar los datos de planificación. <RetryLink>Recarga la página<RetryLink> o inténtalo de nuevo más tarde.",
+      "recommendation": {
+        "submit": "Recomendar aprobación",
+        "submitting": "Recomendando aprobación",
+        "title": "Recomendar cancelar el permiso y actualizar la planificación"
+      },
+      "recommended": "Recomendado",
+      "restore_history": "Restaurar historial"
+    },
+    "search": {
+      "placeholder": "Buscar empleados"
+    },
+    "sorting": {
+      "created_at": {
+        "ascending": "Más antiguo",
+        "descending": "Más nuevo"
+      },
+      "name": {
+        "ascending": "Nombre A-Z",
+        "descending": "Nombre Z-A"
+      }
+    }
+  },
+  "balance_details": {
+    "approved_time_off": "Permiso aprobado",
+    "back_to_time_off": "Volver a Permisos",
+    "canceled_time_off": "Permiso cancelado",
+    "column": {
+      "counted": {
+        "days": "Días contados",
+        "hours": "Horas contadas"
+      },
+      "date": "Fecha",
+      "processed_by": "Procesado por",
+      "reason": "Razón"
+    },
+    "edit_entitlement": {
+      "aria_label": "Editar el permiso acumulado",
+      "cancel": "Cancelar",
+      "error": {
+        "reason": {
+          "missing": "Introduce un motivo (máx. {{maxLength}} caracteres).",
+          "too_long": "Introduce un motivo (máx. {{maxLength}} caracteres)."
+        },
+        "unknown": "No se pudo cambiar el permiso acumulado. Inténtalo de nuevo.",
+        "value": {
+          "invalid_number": "Introduce 0 o un número mayor que 0."
+        }
+      },
+      "heading": "Editar permiso acumulado",
+      "hint": {
+        "addition": "Estás a punto de añadir {{diff}} {{diff_unit}} al permiso acumulado.",
+        "deduction": "Estás a punto de deducir {{diff}} {{diff_unit}} del permiso acumulado.",
+        "result": "El nuevo permiso acumulado será de {{new_value}} {{new_value_unit}}."
+      },
+      "new_entitlement": "Nuevo permiso acumulado",
+      "reason": "Motivo del cambio",
+      "save": "Guardar el cambio",
+      "saving": "Guardando"
+    },
+    "edit_taken": {
+      "aria_label": "Editar permiso disfrutado",
+      "cancel": "Cancelar",
+      "error": {
+        "reason": {
+          "missing": "Introduce un motivo (máx. {{maxLength}} caracteres).",
+          "too_long": "Introduce un motivo (máx. {{maxLength}} caracteres)."
+        },
+        "unknown": "No se pudo modificar el permiso disfrutado. Inténtalo de nuevo.",
+        "value": {
+          "invalid_number": "Introduce 0 o un número mayor que 0."
+        }
+      },
+      "heading": "Editar permiso disfrutado",
+      "hint": {
+        "addition": "Estás a punto de añadir {{diff}} {{diff_unit}} al permiso disfrutado.",
+        "deduction": "Estás a punto de deducir {{diff}} {{diff_unit}} del permiso disfrutado.",
+        "result": "El nuevo permiso disfrutado será {{new_value}} {{new_value_unit}}."
+      },
+      "new_taken": "Permiso disfrutado",
+      "reason": "Razón del cambio",
+      "save": "Guardar cambio",
+      "saving": "Guardando"
+    },
+    "employee": "Empleado",
+    "employees": "Empleados",
+    "empty": {
+      "action": "Selecciona otro empleado o vuelve a las solicitudes de permisos.",
+      "message": "No hay información sobre el tipo de permiso de este empleado.",
+      "description": "Puedes controlar los siguientes cambios aquí:<unorderedList><li>Solicitudes de permiso aprobadas</li><li>Cancelaciones de permisos aprobados</li><li>Actualizaciones de saldos acumulados y permisos disfrutados</li></UnorderedList>",
+      "title": "No se han modificado las horas del empleado"
+    },
+    "entitlement_period": "Periodo de permisos",
+    "heading": "Saldos de los empleados",
+    "no_employee_found": "No se ha encontrado ningún empleado",
+    "no_employees": "No hay empleados disponibles en la unidad de planificación, o no tienes los permisos necesarios",
+    "no_planning_units": "No hay unidades disponibles",
+    "no_records": "No hay datos para el empleado seleccionado",
+    "no_types": "Ningún tipo de permiso",
+    "planning_unit": "Unidad de planificación",
+    "remaining": {
+      "days": "Días restantes",
+      "hours": "Horas restantes"
+    },
+    "search_employees": {
+      "aria_label": "Buscar empleados",
+      "placeholder": "Buscar empleados",
+      "empty": {
+        "description": "Modifica tus filtros.",
+        "title": "Ningún empleado disponible"
+      }
+    },
+    "success": {
+      "entitlement_changed": "El permiso acumulado ha sido modificado.",
+      "taken_changed": "Se ha guardado el permiso disfrutado."
+    },
+    "type": "Tipo de permiso",
+    "year": "Año",
+    "type_deleted": "{{name}} (Borrado)"
+  },
+  "balance_summary": {
+    "entitlement": {
+      "label": "Permiso acumulado"
+    },
+    "remaining": "Restante",
+    "taken": {
+      "label": "Tomado"
+    }
+  },
+  "configuration": {
+    "back_to_time_off": "Volver a Solicitudes de permiso",
+    "page_heading": "Configuración de permisos",
+    "time_off_periods": "Periodos de disfrute",
+    "time_off_types": "Tipos de permiso",
+    "time-off-types": {
+      "button": {
+        "filter-time-off-types": {
+          "checkbox": {
+            "display-all-types": {
+              "label": "Todos"
+            },
+            "display-available-types": {
+              "label": "Disponibles"
+            },
+            "display-deleted-types": {
+              "label": "Borrados"
+            }
+          },
+          "label": "Filtro"
+        }
+      },
+      "table": {
+        "types": {
+          "empty-state": {
+            "heading": {
+              "text": "No se ha encontrado ningún tipo de permiso"
+            },
+            "no-results": {
+              "description": {
+                "text": "Modifica o <resetFiltersLink>restablece tus filtros</resetFiltersLink>."
+              }
+            }
+          }
+        }
+      }
+    },
+    "types": {
+      "table": {
+        "types": {
+          "deleted-type": {
+            "text": "(Borrado)"
+          }
+        }
+      }
+    }
+  },
+  "schedule_sync": {
+    "failed": "No se pudo añadir el permiso a la planificación",
+    "not_implemented": "El permiso ha sido cancelado, pero no se ha actualizado la planificación.\nActualiza la planificación manualmente.",
+    "not_needed": "La solicitud ha sido rechazada y el permiso no será añadido a la planificación.",
+    "processing": "Añadiendo el permiso a la planificación",
+    "processing_hint": "El permiso será añadido a la planificación.",
+    "resolve": "Marcar como solucionado porque la planificación ha sido actualizada manualmente.",
+    "resolved-approved": "El permiso ha sido añadido a la planificación.",
+    "resolved-canceled": "El permiso ha sido eliminado de la planificación."
+  },
+  "types_overview": {
+    "add": "Añadir",
+    "column": {
+      "archived_date": "Archivado el",
+      "name": "Nombre",
+      "paid": "Remunerado",
+      "requestable": "Solicitable por los empleados",
+      "unit": "Unidad de tiempo",
+      "unit_error": "Selecciona una unidad de tiempo.",
+      "fill_up": "Rellenar planificación"
+    },
+    "create": {
+      "action": "Nuevo tipo de permiso"
+    },
+    "form": {
+      "cancel": "Cancelar",
+      "create": {
+        "heading": "Crear nuevo tipo de permiso",
+        "label": "Crear nuevo tipo de permiso",
+        "submit": "Crear tipo de permiso",
+        "submit_error": "No se pudo crear el tipo de permiso. Comprueba los campos resaltados.",
+        "submitting": "Creando"
+      },
+      "create_unit_hint": "No puedes modificar la unidad de tiempo tras crear el tipo de permiso.",
+      "delete": {
+        "cancel": "Cancelar",
+        "consequences": {
+          "1": "Se eliminará la actividad con el mismo nombre en iWFM.",
+          "2": "No puedes restablecer el tipo de permiso."
+        },
+        "heading": "¿Eliminar el tipo de permiso?",
+        "label": "Eliminar tipo de permiso {{name}}",
+        "precondition": "Solo se puede eliminar tipos de permiso que no estén en uso.",
+        "submit": "Eliminar tipo de permiso",
+        "submitting": "Eliminando el tipo de permiso",
+        "description": "<b>{{ name }}</b> será eliminado de injixo."
+      },
+      "edit": {
+        "heading": "Editar tipo de permiso",
+        "label": "Editar tipo de permiso {{name}}",
+        "submit": "Guardar cambios",
+        "submit_error": "No se pudo guardar el tipo de permiso. Comprueba los campos resaltados.",
+        "submitting": "Guardando"
+      },
+      "edit_unit_hint": "No puedes modificar la unidad de tiempo tras crear el tipo de permiso.",
+      "entitlement_periods": {
+        "create": "Añadir periodo de permisos",
+        "delete": "Eliminar el periodo de permisos {{number}}",
+        "end_date": "Fecha de finalización",
+        "end_date_aria": "Fecha de finalización del periodo de permisos {{number}}",
+        "heading": "Periodos de permisos",
+        "start_date": "Fecha de inicio",
+        "start_date_aria": "Fecha de inicio del periodo de permisos {{number}}",
+        "warning": "No puedes modificar un periodo de permisos cuando un empleado ya ha solicitado un permiso durante ese periodo."
+      },
+      "error": {
+        "entitlement_periods": {
+          "consecutive": "Selecciona una fecha de inicio directamente tras la fecha de finalización previa.",
+          "start_date_before_end": "Selecciona una fecha de finalización posterior a la fecha de inicio."
+        },
+        "name": {
+          "activity_already_exists": "Este nombre no está disponible.",
+          "already_exists": "Ya existe un tipo de permiso con este nombre.",
+          "required": "Introduce un nombre que no esté en uso."
+        },
+        "unit": {
+          "required": "Selecciona una unidad de tiempo."
+        },
+        "fillUpTypeId": {
+          "not_found": "El tipo de permiso seleccionado no existe.",
+          "paid_type": "El tipo de permiso debe ser no remunerado.",
+          "required": "Selecciona un tipo de permiso.",
+          "wrong_unit": "El tipo de permiso tiene la unidad de tiempo incorrecta."
+        },
+        "paid": {
+          "paid_fill_up": "El tipo de permiso se usa para sustituir las horas no laborables y no puede ser remunerado."
+        }
+      },
+      "error_unit": "Selecciona una unidad de tiempo para poder guardar.",
+      "help_unit_selected": "No puedes cambiar la unidad de tiempo tras crear el tipo de permiso.",
+      "paid": "Remunerado",
+      "requestable": "Solicitable por los empleados",
+      "type": {
+        "heading": "General"
+      },
+      "type_name": "Nombre",
+      "unit": "Unidad de tiempo",
+      "unit_already_exists_hint": "La unidad de tiempo ya ha sido definida y no se puede modificar.",
+      "unkown_error": "No se pudo crear el tipo de permiso. Inténtalo de nuevo.",
+      "unsaved_changes": {
+        "bodytext": "No se guardarán tus cambios.",
+        "discard": "Descartar cambios",
+        "title": "¿Descartar los cambios no guardados?",
+        "back_to_create": "Seguir creando",
+        "back_to_edit": "Seguir editando"
+      },
+      "schedule_setting": {
+        "activate_fill_up": "Sustituir adicionalmente las actividades no remuneradas (p. ej. pausas) y completar las horas no laborables con el siguiente tipo de permiso no remunerado:",
+        "fill_up": {
+          "label": "Tipo de permiso",
+          "placeholder": "Seleccionar tipo de permiso no remunerado"
+        },
+        "heading": "Parámetro de planificación",
+        "info": {
+          "paid": "Por defecto, injixo solo sustituye las actividades remuneradas planificadas o las horas laborables contractuales con este tipo de permiso. Aprende más en el <helpCenterLink>Help Center</helpCenterLink>.",
+          "paid_hint": "Este parámetro afectará solamente a solicitudes de permiso nuevas.",
+          "paid_link": "https://help.injixo.com/time-off-types#fill-up-functionality",
+          "unpaid": "Ningún ajuste de planificación para los tipos de permiso no remunerados."
+        }
+      },
+      "unit_days": "Días",
+      "unit_hours": "Horas"
+    },
+    "heading": "Tipos de permiso",
+    "no_types": "Ningún tipo de permiso",
+    "success": {
+      "type_archived": "Se ha archivado el tipo de permiso.",
+      "type_created": "Se ha creado el tipo de permiso.",
+      "type_deleted": "Se ha eliminado el tipo de permiso.",
+      "type_updated": "Se ha actualizado el tipo de permiso."
+    },
+    "type": {
+      "hint": {
+        "has_relations": "Este tipo de permiso está en uso y no puede ser eliminado."
+      }
+    }
+  },
+  "unit": {
+    "days_one": "día",
+    "days_other": "días",
+    "hours_one": "hora",
+    "hours_other": "horas"
+  },
+  "unit_short": {
+    "days_one": "d",
+    "days_other": "d",
+    "hours_one": "h",
+    "hours_other": "h"
+  },
+  "add-time-off": {
+    "elevated-side-panel": {
+      "aria-label": "Añadir permiso",
+      "button": {
+        "add": {
+          "label": "Añadir permiso"
+        },
+        "cancel": {
+          "label": "Cancelar"
+        }
+      },
+      "combo-box": {
+        "entitlement-period": {
+          "errors": {
+            "required": "Selecciona un periodo de permisos."
+          },
+          "label": "Periodo de permisos",
+          "placeholder": "Seleccionar"
+        },
+        "person": {
+          "errors": {
+            "required": "Selecciona un empleado."
+          },
+          "label": "Empleado",
+          "placeholder": "Seleccionar"
+        },
+        "time-off-type": {
+          "errors": {
+            "required": "Selecciona un tipo de permiso."
+          },
+          "label": "Tipo de permiso",
+          "placeholder": "Seleccionar"
+        }
+      },
+      "date-range-picker": {
+        "errors": {
+          "required": "Selecciona un periodo de tiempo."
+        },
+        "label": "Periodo de tiempo",
+        "placeholder": "Seleccionar"
+      },
+      "end-time": {
+        "errors": {
+          "error_end_before_start": "Selecciona una hora de finalización posterior a la hora de inicio.",
+          "required": "Introduce una hora de inicio y de finalización."
+        },
+        "label": "Hora de finalización"
+      },
+      "helper-text": "El empleado será notificado por correo electrónico.",
+      "inline-message": {
+        "error": {
+          "conflict_with_existing_time_off": "El periodo de tiempo seleccionado ya incluye un permiso de este empleado. Selecciona otro periodo de tiempo.",
+          "generic": "No se pudo añadir el permiso. Inténtalo de nuevo.",
+          "no_time_off_period": "No hay ningún periodo de disfrute publicado para el tipo de permiso seleccionado. Publica un periodo de disfrute o selecciona otro tipo de permiso."
+        }
+      },
+      "start-time": {
+        "errors": {
+          "required": "Introduce una hora de inicio y de finalización."
+        },
+        "label": "Hora de inicio"
+      },
+      "switch": {
+        "part-day": {
+          "label": "Solicitar parte de una jornada"
+        }
+      },
+      "textarea": {
+        "comment": {
+          "errors": {
+            "max_length": "Introduce un comentario (hasta 100 caracteres)."
+          },
+          "label": "Comentario<optional>opcional</optional>",
+          "placeholder": "Añade tu comentario"
+        }
+      },
+      "title": "Añadir permiso"
+    },
+    "toast": {
+      "action": {
+        "text": "Ir a Decididas"
+      },
+      "save-success": {
+        "text": "Permiso añadido."
+      }
+    }
+  },
+  "balance_filter": {
+    "view": {
+      "label": "Vista",
+      "multi": "Múltiples empleados",
+      "single": "Empleados individuales"
+    }
+  },
+  "balance_overview": {
+    "column": {
+      "entitlement": "Permiso acumulado",
+      "name": "Nombre",
+      "personnel_number": "Identificador personal",
+      "remaining": "Restante",
+      "taken": "Disfrutado"
+    },
+    "edit_entitlements": {
+      "discard": "Descartar cambios",
+      "entitlement": {
+        "aria_label": "Permiso acumulado de {{personnelNumber}}",
+        "unsaved": "Este permiso acumulado no ha sido guardado."
+      },
+      "error": {
+        "invalid_fields": "No se pudo guardar los permisos acumulados. Comprueba los campos resaltados.",
+        "unknown": "No se pudo cambiar los permisos acumulados. Por favor, inténtalo de nuevo."
+      },
+      "reason": {
+        "label": "Razón del cambio"
+      },
+      "save": "Guardar cambios",
+      "success": "Los permisos acumulados han sido guardados."
+    },
+    "no_employees": "No hay empleados disponibles en la unidad de planificación, o no tienes los permisos necesarios"
+  },
+  "edit-time-off": {
+    "elevated-side-panel": {
+      "aria-label": "Edit time off",
+      "button": {
+        "cancel": {
+          "label": "Cancel"
+        },
+        "edit": {
+          "label": "Edit time off"
+        }
+      },
+      "combo-box": {
+        "person": {
+          "label": "Person"
+        },
+        "time-off-type": {
+          "label": "Time-off type"
+        }
+      },
+      "date-range-picker": {
+        "errors": {
+          "required": "Select a time range."
+        },
+        "label": "Time range",
+        "placeholder": "Select"
+      },
+      "end-time": {
+        "errors": {
+          "error_end_before_start": "Select an end time that is later than the start time.",
+          "required": "Enter a start and end time"
+        },
+        "label": "End time"
+      },
+      "helper-text": "The person will be notified by email.",
+      "inline-message": {
+        "error": {
+          "conflict_with_existing_time_off": "During the selected time range, the person already has time off. Select a different time range.",
+          "generic": "Time off could not be edited. Please try again",
+          "no_time_off_period": "For the selected time-off type, no time-off period has been published. Publish the time-off period or select a different time-off type."
+        }
+      },
+      "start-time": {
+        "errors": {
+          "required": "Enter a start and end time."
+        },
+        "label": "Start time"
+      },
+      "switch": {
+        "part-day": {
+          "label": "Request a part of the day"
+        }
+      },
+      "textarea": {
+        "comment": {
+          "errors": {
+            "max_length": "Enter a comment (up to 100 characters)."
+          },
+          "label": "Comment <optional>optional</optional>",
+          "placeholder": "Add your comment"
+        }
+      },
+      "title": "Edit time off"
+    },
+    "toast": {
+      "action": {
+        "text": "Go to decided"
+      },
+      "save-success": {
+        "text": "Time off edited"
+      }
+    }
+  },
+  "personal-balances": {
+    "individual-people": {
+      "balance-summary": {
+        "current-balance": {
+          "label": "Current balance"
+        }
+      },
+      "modal": {
+        "edit-entitlement": {
+          "date-picker": {
+            "booking-date": {
+              "label": "Date"
+            }
+          }
+        },
+        "edit-taken": {
+          "date-picker": {
+            "booking-date": {
+              "label": "Date"
+            }
+          }
+        }
+      }
+    },
+    "multiple-people": {
+      "edit-entitlement": {
+        "date-picker": {
+          "booking-date": {
+            "label": "Date"
+          }
+        }
+      },
+      "table": {
+        "people-balances": {
+          "table-column": {
+            "current": {
+              "label": "Current balance"
+            }
+          }
+        }
+      }
+    }
+  },
+  "plan-page": {
+    "filter-bar": {
+      "date-range-navigator": {
+        "aria-label": "Select a view range"
+      },
+      "search-input": {
+        "placeholder": "Buscar empleados"
+      },
+      "view-switch": {
+        "list": {
+          "aria-label": "List view"
+        },
+        "plan": {
+          "aria-label": "Plan view"
+        }
+      }
+    },
+    "timeline": {
+      "empty-state": {
+        "no-results": {
+          "clear-filters": {
+            "button": {
+              "label": "Reset filters and search"
+            }
+          },
+          "description": "Modifica o restablece tus filtros y búsqueda.",
+          "heading": "No people found"
+        }
+      },
+      "people-header": {
+        "sort-button": {
+          "aria-label": "Set sorting option"
+        },
+        "sort-by": {
+          "person-asc": "Name A → Z",
+          "person-desc": "Name Z → A",
+          "start-time": "Start time"
+        },
+        "text": "Person name"
+      },
+      "statistics": {
+        "people-off": {
+          "approved": {
+            "text": "People off"
+          },
+          "pending": {
+            "text": "People off (pending)"
+          }
+        }
+      }
+    }
+  },
+  "time-off-overview": {
+    "button": {
+      "add-time-off": {
+        "label": "Añadir permiso"
+      }
+    },
+    "card-list": {
+      "time-off": {
+        "card-item": {
+          "time-off-entry": {
+            "booked": {
+              "label": "Booked"
+            },
+            "current-balance": {
+              "label": "Current balance"
+            },
+            "plan-link": {
+              "label": "View in plan"
+            },
+            "projected-balance": {
+              "label": "Projected"
+            }
+          }
+        }
+      }
+    }
+  }
+}

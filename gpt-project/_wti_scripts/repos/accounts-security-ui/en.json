@@ -1,0 +1,159 @@
+{
+  "ip_filtering": {
+    "button_deactivate": "Deactivate filtering",
+    "button_discard": "Discard changes",
+    "button_save": "Activate filtering",
+    "button_update": "Save",
+    "description": "Define the sets of IP addresses that can access your injixo tenant.",
+    "enter_ip_addresses": "IP address range",
+    "enter_ip_addresses_message": "Enter an IP address range, e.g. {{validatedRemoteIpAddress}}/32. To access injixo, your IP address must be within one of these IP address ranges. If you do not use IP address ranges, you can add individual IP addresses, e.g. {{validatedRemoteIpAddress}}.",
+    "field_errors": {
+      "invalid_ip_address": "Enter an IP address range in the CIDR format."
+    },
+    "heading": "IP filtering",
+    "help_center_hint": "Learn more in <0>Help Center</0>.",
+    "help_center_link": "https://help.injixo.com/ip-filtering",
+    "submit": {
+      "deactivated_success": "The IP filtering was deactivated.",
+      "success": "The IP address ranges were saved."
+    },
+    "submit_errors": {
+      "ip_address_out_of_range": "Your IP address is not part of the IP address range. You cannot log in with this IP address. Enter an IP address that is part of the range.",
+      "submission_failed": "The IP address(es) could not be saved. Please try again."
+    },
+    "submit_warning": "If you save these changes, all users in your organization will be logged out. Log in again to continue working with injixo.",
+    "your_ip_address": "Your IP address"
+  },
+  "page_heading": "Security",
+  "page_title": "Security - Account | injixo",
+  "two_factor_auth": {
+    "disabled": {
+      "button": "Enforce 2FA for all people",
+      "description1": "Currently, 2FA is optional and each person can choose whether to activate or deactivate 2FA.",
+      "description2": "If you enforce 2FA for all people, they have to activate 2FA upon their next login. Otherwise, they cannot log in. Learn more in <0>Help Center</0>.",
+      "success_message": "2FA successfully enforced."
+    },
+    "enabled": {
+      "button": "Revoke enforcement",
+      "description1": "2FA is currently enforced for all people.",
+      "description2": "People can only log in with 2FA. Learn more in <0>Help Center</0>.",
+      "success_message": "Enforcement successfully revoked."
+    },
+    "error_message": "There was a technical problem. Please try again.",
+    "heading": "Two-factor authentication (2FA)",
+    "link_to_docs": "https://help.injixo.com/2fa",
+    "loading": "Loading...",
+    "sso_enforced": "Single sign-on is enforced, and 2FA is not available in injixo. Set up a second authentication factor through your identity provider instead.",
+    "user_stats_2fa_disabled": "2FA inactive",
+    "user_stats_2fa_enabled": "2FA active",
+    "user_stats_total": "Total",
+    "user_stats_suffix": "People"
+  },
+  "single_sign_on": {
+    "configuration": {
+      "create": "Save configuration",
+      "creating": "Saving",
+      "header": "Configuration",
+      "save": "Save changes",
+      "saving": "Saving",
+      "success_message": "SSO was successfully activated."
+    },
+    "description": "injixo supports single sign-on (SSO) based on SAML 2.0. Logging in with SSO will skip injixo's two-factor authentication. Your identity provider (IdP) may provide 2FA instead. Learn more in <0>Help Center</0>.",
+    "disable_confirmation": {
+      "consequences": "The SSO login is no longer available for your injixo account. All users will get instructions via email on how to proceed.",
+      "failed": "SSO could not be disabled",
+      "failed_message": "The link from your email is not valid. Please go to Account > Security and disable SSO again.",
+      "next_step": "To continue, set a new password on the next page.",
+      "set_new_password": "Set new password"
+    },
+    "disabled": "SSO disabled",
+    "disablement": {
+      "cancel": "Cancel",
+      "disable": "Disable",
+      "disabling": "Disabling",
+      "enforced": {
+        "2fa_hint": "We highly recommend activating 2FA as an additional layer of security afterwards.",
+        "details": "After disabling, each user has to login via email and password. They will get instructions via email on how to create a new password.",
+        "next_step": "To confirm disabling SSO we will send an email to <0>{{email}}</0> with detailed instructions on how to proceed."
+      },
+      "result": {
+        "accepted": "We just sent you an email to confirm deactivating SSO.",
+        "disabled": "SSO successfully deactivated. All users have to login via email and password again.",
+        "error": "Could not disable SSO."
+      },
+      "title": "Disable SSO",
+      "unenforced": {
+        "details": "As SSO was not yet enforced, you can simply disable it. Logging in with SSO won’t be possible anymore. Every user has to use the normal login with email and password. Users will not receive any notification."
+      }
+    },
+    "download": "Download",
+    "download_certificate": "Download certificate",
+    "enforced": "Single sign-on is active. The login with email and password is no longer available. Users can only log in to injixo if they have the relevant permissions in the identity provider. Learn more in <0>Help Center</0>.",
+    "enforcement": {
+      "cancel": "Cancel",
+      "description": "Enforce SSO after you have successfully tested your configuration above. This will disable login via email and password and all users have to use SSO.",
+      "enforce": "Enforce",
+      "enforcing": "Enforcing",
+      "header": "Enforcement",
+      "modal": {
+        "generic_error": "An unknown error occurred. Try again later.",
+        "password_label": "Enter your password to confirm",
+        "preconditions": {
+          "item_1": "All users must have appropriate permissions within your Identity provider to access injixo. If not, they won’t be able to log in to injixo.",
+          "title": "Preconditions"
+        },
+        "related_changes": {
+          "item_1": "Each user will be informed via email, that they have to use SSO from then on.",
+          "item_2": "Logging in with email and password will not be possible any longer.",
+          "item_3": "All user passwords will be reset after a grace period of 48 hours.",
+          "item_4": "injixo 2FA will no longer be available. You might want to ensure that your IdP requests a second factor to authenticate.",
+          "item_5": "User passwords have to be managed in the IdP.",
+          "title": "Implications"
+        },
+        "title": "Enforce SSO for all users",
+        "wrong_password_error": "Invalid password."
+      },
+      "not_enforced_warning": "Not enforcing SSO should just be temporary in order to test your setup and configuration.",
+      "success": "Successfully enforced SSO for all users."
+    },
+    "error_message": "Something went wrong.",
+    "federated_metadata_url": {
+      "error": {
+        "generic": "Unknown error",
+        "host_not_allowed": "Host not allowed",
+        "https_required": "HTTPS required",
+        "identity_provider_not_reachable": "Identity provider not reachable",
+        "invalid": "Invalid URL",
+        "invalid_metadata": "Invalid metadata"
+      },
+      "label": "Federation Metadata URL"
+    },
+    "header": "Single sign-on",
+    "help_center_url": "https://help.injixo.com/single-sign-on",
+    "identity_provider": {
+      "description": "Obtain the following information from your IdP, e.g. Microsoft Azure AD or Okta.",
+      "header": "Identity Provider"
+    },
+    "injixo_metadata": {
+      "acs_url": "Assertion Consumer Service (ACS) URL",
+      "description": "Upload the following metadata file (.xml) to your IdP to configure injixo as valid Service Provider.",
+      "download": "Download metadata",
+      "header": "injixo SAML Metadata",
+      "logout_url": "Logout URL",
+      "service_provider_details": "Service Provider details",
+      "service_provider_entitiy_identifier": "Service Provider Entity Identifier"
+    },
+    "token_encryption": {
+      "description": "Certificate to encrypt SAML assertions.\nValid until <0>{{expiration_date}}</0>.\nSix weeks before the end of the validity period, you can download the new certificate here.",
+      "header": "Token encryption"
+    },
+    "verification": {
+      "details": "All users have to be assigned to the injixo SAML application in your IdP. SSO can then be used in parallel to the normal login with email and password.",
+      "error": "Your IdP does not allow you to access injixo. Make sure your IdP is set up correctly and your user account is allowed to authenticate for injixo via SSO.",
+      "redirect_failed": "Redirect failed",
+      "redirecting": "Redirecting",
+      "success": "You successfully authenticated against your IdP and are allowed to access injixo via SSO.",
+      "verify": "Test configuration"
+    }
+  }
+}

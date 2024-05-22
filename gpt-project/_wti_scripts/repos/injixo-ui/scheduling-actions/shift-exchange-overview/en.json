@@ -1,0 +1,74 @@
+{
+  "heading": {
+    "initial": "Approve shift swaps"
+  },
+  "alt": {
+    "reload-planning-units": "Reload planning units",
+    "reload-selections": "Reload selections",
+    "reload-shift-exchange-commitments": "Reload shift swap requests"
+  },
+  "button": {
+    "approve-selected": "Approve selected",
+    "back-to-schedules": "Back to Schedules",
+    "reject-selected": "Reject selected"
+  },
+  "document_title": {
+    "module": "Plan",
+    "page": {
+      "approve_shift_exchange": "Approve shift swaps"
+    }
+  },
+  "filter": {
+    "no-result-found": "No results found"
+  },
+  "message": {
+    "error": "Unable to fetch data",
+    "planning-units": {
+      "error": "An error has occurred and planning units could not be loaded. Try to <0>reload planning units</0> or try again later."
+    },
+    "selections": {
+      "error": "An error has occurred and selections could not be loaded. Try to <0>reload selections</0> or try again later."
+    },
+    "shift-exchange-commitments": {
+      "error": "The shift swap requests could not be loaded. Please try to <0>reload shift swap requests</0> or try again later.",
+      "update-error": "The shift swap request(s) could not be updated.",
+      "update-success": "Shift swap request(s) updated"
+    }
+  },
+  "placeholder": {
+    "planning-unit": "Choose a planning unit",
+    "selection": "Choose a selection"
+  },
+  "status": {
+    "tooltip": {
+      "acceptor-resigned": "The acceptor has retracted from the shift swap.",
+      "acceptor-shift-changed": "The acceptor shift has changed",
+      "deadline-missed": "Deadline missed",
+      "invalid": "The shift swap is invalid.",
+      "offerer-resigned": "The offerer has retracted from the shift swap.",
+      "offerer-shift-changed": "The offerer shift has changed",
+      "rule-breached": "A rule has been breached"
+    },
+    "value": {
+      "approved": "Approved",
+      "canceled": "Canceled",
+      "pending": "Pending",
+      "rejected": "Rejected"
+    }
+  },
+  "tab": {
+    "information": "Information",
+    "pending": "Pending"
+  },
+  "table": {
+    "heading": {
+      "compensation-date": "Date of Possible Swap",
+      "exchange-date": "Swap date",
+      "exchange-partner": "Swap partner",
+      "initiator": "Initiator",
+      "modification-date": "Updated at",
+      "status": "Status"
+    },
+    "no-results": "No shift swaps found."
+  }
+}

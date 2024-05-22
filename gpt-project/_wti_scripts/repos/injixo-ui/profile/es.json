@@ -1,0 +1,260 @@
+{
+  "document_title": {
+    "module": "Perfil",
+    "context": {
+      "profile": {
+        "title": "Mi perfil",
+        "page": "Datos personales"
+      },
+      "security": {
+        "title": "Seguridad",
+        "page": {
+          "overview": "Información general",
+          "enable2fa": "Activar 2FA",
+          "disable2fa": "Desactivar 2FA",
+          "sso": "Inicio de sesión único"
+        }
+      }
+    }
+  },
+  "label": {
+    "email": "Correo electrónico",
+    "loading": "Cargando...",
+    "saving": "Guardando...",
+    "password": "Contraseña",
+    "language": "Idioma",
+    "first_name": "Nombre",
+    "last_name": "Apellidos",
+    "timezone": "Zona horaria",
+    "to_login_page": "Ir a la página de inicio de sesión",
+    "password_strength_hint": "Utiliza al menos 8 caracteres, combinando letras mayúsculas y minúsculas, números y caracteres especiales.",
+    "personnel_number": "Personnel number"
+  },
+  "placeholder": {
+    "timezone": "Zona horaria",
+    "language": "Idioma"
+  },
+  "error": {
+    "other": "Se ha producido un problema técnico. Inténtalo de nuevo."
+  },
+  "password_strength": {
+    "none": "Sin contraseña",
+    "weak": "Contraseña débil",
+    "sufficient": "Contraseña media",
+    "strong": "Contraseña fuerte"
+  },
+  "login_page": {
+    "otp": {
+      "header": "Autenticación de dos factores",
+      "hint1": "Introduce el código de tu aplicación de autenticación de tu dispositivo móvil.",
+      "hint2": "Usa un <0>código de respaldo</0> o sigue las instrucciones para <1>recuperar tu cuenta</1>.",
+      "hint2_header": "¿Tienes problemas?",
+      "label": "Contraseña de un sólo uso",
+      "verify": "Verificar",
+      "link_to_recovery_docs": "https://help.injixo.com/es/use-two-factor-authentication/#iniciar-sesión-sin-dispositivo-personal-y-sin-códigos-de-respaldo"
+    },
+    "backupCode": {
+      "header": "Autenticación de dos factores",
+      "label": "Código de respaldo",
+      "hint1": "Introduce un código de respaldo si no tienes acceso a tu dispositivo móvil.",
+      "hint2": "Obtén instrucciones de cómo <0>recuperar tu cuenta</0>.",
+      "hint2_header": "¿Aún tienes problemas?",
+      "verify": "Verificar"
+    },
+    "error": {
+      "invalid": "Dirección de correo electrónico o contraseña no válida.",
+      "otp_invalid": "Contraseña de un sólo uso inválida.",
+      "otp_timeout": "Tiempo expirado. Introduce tus credenciales y la contraseña de un sólo uso en los próximos 5 minutos.",
+      "backup_code_invalid": "El código de respaldo no es válido."
+    },
+    "forgot_pw_link": "¿Has olvidado la contraseña?",
+    "header": "Accede a tu cuenta",
+    "submit": "Inicio de sesión",
+    "title": "Inicio de sesión",
+    "sso_login_link": "Iniciar sesión con SSO"
+  },
+  "logout_page": {
+    "header": "Has cerrado la sesión correctamente",
+    "title": "Salir"
+  },
+  "forgot_password_page": {
+    "title": "Contraseña olvidada",
+    "header": "Contraseña olvidada",
+    "submit": "Enviar instrucciones",
+    "success_message": "Se enviará un correo electrónico si la dirección facilitada es válida.",
+    "empty_email": "Introduce tu correo electrónico"
+  },
+  "reset_password_page": {
+    "title": "Restablecer contraseña",
+    "header": "Restablecimiento de contraseña",
+    "new_psw": "Nueva contraseña",
+    "new_psw_confirmation": "Confirmar nueva contraseña",
+    "submit": "Guardar nueva contraseña",
+    "success_message": "Se ha restablecido la contraseña. Inicia sesión con la nueva contraseña.",
+    "no_token_message": "No hay ningún enlace para restablecer contraseña activo. Cree una nueva solicitud.",
+    "confirmation_mismatch": "no coincide la contraseña"
+  },
+  "welcome_page": {
+    "title": "Bienvenido/a",
+    "header": "Bienvenido/a",
+    "explanation": "Para permitir que puedas acceder al mundo de injixo, introduce una nueva contraseña.",
+    "success_message": "Bienvenido/a, has establecido tu contraseña y ahora puedes acceder."
+  },
+  "profile_page": {
+    "title": "Perfil",
+    "update_successful": "Se ha actualizado tu perfil correctamente.",
+    "update_error": "No se ha podido guardar tu perfil.",
+    "header": "Datos personales",
+    "account_header": "Cuenta",
+    "preferences_header": "Preferencias",
+    "submit": "Guardar perfil",
+    "submit_success": "Tu perfil se ha actualizado correctamente.",
+    "no_result_found": "No se ha encontrado ningún resultado",
+    "email_verification": {
+      "pending": "Tu dirección de correo electrónico no se ha verificado. <0> Volver a enviar el correo electrónico de verificación. </0>",
+      "verified": "Tu dirección de correo electrónico se ha verificado correctamente. Ahora tienes acceso al resto de funcionalidades.",
+      "failure": "Tu dirección de correo electrónico no se ha podido verificar. El enlace que has solicitado no existe.",
+      "resent": "Te acabamos de enviar el correo electrónico de confirmación a tu dirección de correo electrónico."
+    },
+    "validation": {
+      "required": "no debe estar vacío.",
+      "max": "no debe ser más largo de {{max}} caracteres.",
+      "email": "no es un formato de correo electrónico válido.",
+      "not_unique": "no es único."
+    },
+    "notifications": {
+      "allowed": "Tu navegador permite las notificaciones de injixo.",
+      "blocked": "Tu navegador no permite las notificaciones de injixo. Puedes modificar los permisos en los ajustes de tu navegador.",
+      "not_set": "Para recibir notificaciones de injixo en tu navegador, tienes que autorizarlas en los ajustes del navegador.",
+      "not_supported": "Tu navegador actual no soporta las notificaciones.",
+      "request": "Permitir las notificaciones de injixo",
+      "title": "Notificaciones"
+    },
+    "password_confirmation": {
+      "title": "Modificar la dirección de correo electrónico"
+    }
+  },
+  "security_page": {
+    "change_password": {
+      "header": "Cambiar contraseña",
+      "current_password": "Contraseña actual",
+      "submit": "Guardar contraseña",
+      "submit_failed": "No se ha podido guardar la contraseña.",
+      "submit_success": "Su contraseña se ha actualizado correctamente.",
+      "wrong_current_password": "Introduzca su contraseña actual."
+    },
+    "two_factor_auth": {
+      "header": "Autenticación de dos factores (2FA)",
+      "enable": "Activar 2FA",
+      "disable": "Desactivar 2FA",
+      "enabled": {
+        "hint": "Tu cuenta está asegurada mediante 2FA.",
+        "hint2": "Para proteger tu cuenta, recomendamos encarecidamente tener 2FA activado. Para registrar un nuevo dispositivo simplemente re-activa 2FA.",
+        "help": "Contacta con un administrador de injixo si encuentras algún problema o para cambiar a un dispositivo nuevo."
+      },
+      "disabled": {
+        "link_to_docs": "https://help.injixo.com/2fa",
+        "hint": "La autenticación de dos factores (2FA) añade una capa de seguridad adicional a tu cuenta al requerir más que solo una contraseña para iniciar sesión. Lee más en el <0>Help Center</0>."
+      },
+      "tooltip_enforced": "2FA es obligatorio en tu cuenta"
+    },
+    "enable_2fa_page": {
+      "header": "Activar autenticación de dos factores",
+      "continue": "Continuar",
+      "enable": "Activar 2FA",
+      "cancel": "Cancelar",
+      "copy": "Copiar",
+      "copied": "¡Copiado!",
+      "otp_verification_failed": "Código inválido, vuelve a intentarlo",
+      "backup_codes_confirmation": "Tienes que confirmar que has almacenado de manera segura tus códigos de respaldo.",
+      "sudo_expired": "Tu sesión ha caducado. Puedes volver a empezar el proceso refrescando la página.",
+      "enabling_failed": "Algo no ha funcionado al activar 2FA. Por favor, vuelve a intentarlo más tarde.",
+      "step_1": {
+        "header": "1. Instala una aplicación de autenticación en tu dispositivo móvil.",
+        "description": "Instala una de las siguientes aplicaciones de autenticación en tu dispositivo móvil o tablet:",
+        "apps": "Utiliza <0>Authy</0>, <0>Google Authenticator</0>, o <0>Microsoft Authenticator</0>",
+        "download_links": {
+          "header": "Enlaces de descarga",
+          "authy": {
+            "google_play_url": "https://play.google.com/store/apps/details?id=com.authy.authy&hl=es",
+            "apple_store_url": "https://apps.apple.com/es/app/authy/id494168017"
+          },
+          "google_authenticator": {
+            "google_play_url": "https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=es",
+            "apple_store_url": "https://apps.apple.com/es/app/google-authenticator/id388497605"
+          },
+          "microsoft_authenticator": {
+            "google_play_url": "https://play.google.com/store/apps/details?id=com.azure.authenticator&hl=es",
+            "apple_store_url": "https://apps.apple.com/es/app/microsoft-authenticator/id983156458"
+          }
+        }
+      },
+      "step_2": {
+        "header": "2. Añade injixo a tu aplicación de autenticación",
+        "qr_code": "Escanear código QR",
+        "or": "o",
+        "setup_key": "Introducir clave manualmente",
+        "description": "En tu aplicación de autenticación, añade una nueva cuenta",
+        "copied_setup_key": "¡Se ha copiado la configuración al portapapeles!"
+      },
+      "step_3": {
+        "header": "3. Introduce la contraseña de un único uso de tu aplicación de autenticación",
+        "description": "Introduce el código generado por tu aplicación de autenticación para registrar el dispositivo"
+      },
+      "step_4": {
+        "header": "4. Guarda tus códigos de respaldo",
+        "description": "Si pierdes el acceso a tu aplicación de autenticación, puedes utilizar una de las siguientes contraseñas de un solo uso para verificar tu identidad. Trátalos con confidencialidad y almacénalos en un lugar seguro.",
+        "warning": "No tendrás acceso a estas contraseñas una vez abandones esta pantalla.",
+        "download_backup_codes": "Descarga",
+        "copied_backup_codes": "¡Códigos de respaldo copiados al portapapeles!",
+        "checkbox": "He almacenado de manera segura mis códigos de respaldo."
+      },
+      "enforcement": {
+        "message": "La autenticación de dos factores se ha activado como obligatoria para utilizar injixo. Para poder entrar, sigue los pasos siguientes.",
+        "more_details": "Más detalles",
+        "less_details": "Menos detalles",
+        "hint": "La autenticación de dos factores (2FA) añade una capa de seguridad adicional a tu cuenta al requerir más que solo una contraseña para iniciar sesión. Lee más en el <0>Help Center</0>.",
+        "link_to_docs": "https://help.injixo.com/2fa"
+      }
+    },
+    "enable_2fa": {
+      "success_message": "La autenticación de dos factores se ha activado correctamente"
+    },
+    "disable_2fa": {
+      "success_message": "La autenticación de dos factores se ha desactivado correctamente",
+      "header": "Desactivar la autenticación de dos factores"
+    },
+    "single_sign_on": {
+      "header": "Inicio de sesión único",
+      "hint": {
+        "admin": "El inicio de sesión único (SSO) está habilitado para tu cuenta. El inicio de sesión estándar con correo electrónico y contraseña ya no está disponible.",
+        "password": "Tu correo electrónico y tu contraseña se gestionan ahora mediante tu proveedor de identidad. Para cualquier actualización, ponte en contacto con tu administrador",
+        "user": "El inicio de sesión único (SSO) está activado para tu cuenta. El inicio de sesión estándar con correo electrónico y contraseña ya no está disponible. Si necesitas actualizar tus datos almacenados o solicitar nuevas credenciales, contacta a tu administrador."
+      }
+    }
+  },
+  "sudo_confirmation": {
+    "failed": "Contraseña incorrecta.",
+    "hint": "Introduce to contraseña para continuar",
+    "button": {
+      "continue": "Continuar",
+      "cancel": "Cancelar"
+    }
+  },
+  "login_sso_page": {
+    "authentication_failed": "Ha fallado la autenticación. Contacta con tu administrador.",
+    "header": "Inicia sesión en tu cuenta a través de SSO",
+    "login_link": "Iniciar sesión con correo electrónico y contraseña",
+    "login_request_expired": "La solicitud de inicio de sesión ha caducado. Vuelve a intentarlo.",
+    "submit": "Continuar",
+    "title": "SSO"
+  },
+  "password_confirmation": {
+    "button": {
+      "cancel": "Cancelar",
+      "continue": "Continuar"
+    },
+    "failed": "Contraseña incorrecta.",
+    "hint": "Introduce to contraseña para continuar"
+  }
+}

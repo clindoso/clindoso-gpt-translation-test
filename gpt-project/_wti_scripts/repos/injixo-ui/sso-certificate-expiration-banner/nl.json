@@ -1,0 +1,3 @@
+{
+  "label": "Het SSO token encryptie certificaat dat momenteel wordt gebruikt, staat op het punt te verlopen. <0>Download het nieuwe certificaat en voeg het toe aan je Identity Provider</0>. injixo SSO werkt mogelijk niet meer als het certificaat is verlopen."
+}

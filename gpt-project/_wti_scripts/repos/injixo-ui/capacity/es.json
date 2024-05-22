@@ -1,0 +1,48 @@
+{
+  "application": {
+    "title": "Capacidad",
+    "tableHint": "Todos los valores están en horas",
+    "tableHintDescription": "1 equivalente a tiempo completo (ETC) son 40 horas a la semana",
+    "infoMessageFirst": "Bienvenido a la primera versión de la nueva vista de cálculo de Capacidades. Muy pronto podrás realizar tus planificaciones a largo plazo desde aquí. ¿Echas de menos alguna funcionalidad?",
+    "infoMessageSecond": "¡Escríbenos un correo electrónico con tus impresiones e ideas!",
+    "insertShiftSequencesButton": "Insertar rotaciones de turnos"
+  },
+  "filters": {
+    "label": {
+      "planningUnit": "Unidad de planificación"
+    },
+    "placeholder": {
+      "planningUnit": "Elegir una unidad de planificación"
+    },
+    "result": {
+      "noResult": "No hay resultados"
+    }
+  },
+  "capacityTable": {
+    "headers": {
+      "Coverage": "Cobertura potencial",
+      "staffRequirements": "Necesidad de empleados",
+      "contractedCapacity": "Capacidad contratada",
+      "cw": "SC",
+      "timePeriod": "Periodo de tiempo",
+      "dateFormat": "d MMMM yyyy"
+    },
+    "placeholders": {
+      "noData": "No hay datos de capacidad disponibles para esta unidad de planificación.",
+      "loading": "Cargando"
+    }
+  },
+  "planning_units": "Unidades de Planificación",
+  "capacities": "Capacidades",
+  "reload": {
+    "planning_units": "Recargar Unidades de Planificación",
+    "capacities": "Recargar Capacidades"
+  },
+  "document_title": {
+    "module": "Plan",
+    "sub_module": "Capacidad"
+  },
+  "error": {
+    "reload_resource": "Ha ocurrido un error. Intenta recargar la página <0>{{resource}}</0> o vuelve a intentarlo más tarde."
+  }
+}

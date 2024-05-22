@@ -1,0 +1,66 @@
+{
+  "document_title": {
+    "module": "Plan",
+    "context": "Shift Center"
+  },
+  "parametersBar": {
+    "apply": "Apply",
+    "startDate": "Start date",
+    "duration": "Duration",
+    "levels": "Levels",
+    "units": {
+      "days": "Days",
+      "weeks": "Weeks",
+      "months": "Months",
+      "years": "Years"
+    },
+    "unit": "Unit",
+    "selection": "Selection",
+    "employeeFilter": "Employee Filter",
+    "editEmployeeFilter": "Edit Employee Filter",
+    "filterEditor": "Filter editor",
+    "chooseSelections": "Choose Selection",
+    "chooseEmployeeFilter": "Filter Employees",
+    "dateFormat": "d MMMM yyyy",
+    "noResult": "no result"
+  },
+  "shiftCenterFrame": {
+    "loading": "Loading"
+  },
+  "levelSelector": {
+    "levels": {
+      "plan": "Schedule",
+      "final": "Actual",
+      "correction": "Correction",
+      "timeRecording": "Time Recording",
+      "acd": "External System",
+      "wishes": "Request",
+      "alternativeWishes": "Alternative Request",
+      "absenceWishes": "Absence Request",
+      "availabilities": "Availability",
+      "backup": "Version 1",
+      "backupVersion2": "Version 2",
+      "backupVersion3": "Version 3"
+    }
+  },
+  "error": {
+    "configuration": "An error has occurred (Resource: Configuration)",
+    "accessRights": "An error has occurred (Resource: Access Rights)",
+    "settings": "An error has occurred (Resource: Settings) - Details:",
+    "postMessage": "Posting a message to Shift Center failed.",
+    "accountBalances": {
+      "message": "Try to reload <0>Account Balances</0> or try again later.",
+      "label": "Reload Account Balances"
+    },
+    "generic": "An error has occurred."
+  },
+  "timeAccounts": {
+    "accountBalances": "Account balances",
+    "accountX": "Account {{number}}",
+    "chooseAccount": "Choose account",
+    "dateLabel": "Date",
+    "none": "None",
+    "closeModal": "Close",
+    "noResult": "No entries are available."
+  }
+}

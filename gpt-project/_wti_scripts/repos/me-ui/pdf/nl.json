@@ -1,0 +1,45 @@
+{
+  "request_state": {
+    "approved": "Goedgekeurd",
+    "canceled": "Geannuleerd",
+    "cancellation_requested": "Annulering aangevraagd",
+    "rejected": "Afgewezen",
+    "requested": "Aangevraagd"
+  },
+  "requests_overview_pdf": {
+    "copyright": "© {{year}} injixo",
+    "file_name": "Verlofoverzicht-{{year}}",
+    "footer": {
+      "page_indicator": "Pagina {{currentPage}} van {{totalPages}}",
+      "timestamp": "Gegenereerd op {{timestamp}}",
+      "conflict_explanation": "De tijd om te worden geboekt kan veranderen omdat je minstens nog één verlofaanvraag voor deze week hebt ingediend."
+    },
+    "table": {
+      "header": {
+        "date": "Datum",
+        "duration": "Tijdsduur",
+        "status": "Status",
+        "type": "Type",
+        "counted_hours_days": "Getelde uren/dagen"
+      }
+    },
+    "title": "Verlofoverzicht"
+  },
+  "schedule_pdf": {
+    "title": "Planning van {{firstName}} {{lastName}}, {{date_range}}",
+    "file_name": "Planning_{{start}}-{{end}}",
+    "page_info": {
+      "page_indicator": "Pagina {{currentPage}} / {{totalPages}}",
+      "timestamp": "Aangemaakt op {{timestamp}}"
+    },
+    "table": {
+      "week_number": "Week {{weekNumber}}",
+      "day": "Dag",
+      "start": "Begin",
+      "end": "Einde",
+      "duration": "Tijdsduur",
+      "not_planned": "Niet ingepland",
+      "total": "Totaal"
+    }
+  }
+}

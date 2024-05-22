@@ -1,0 +1,16 @@
+{
+  "loading": "Caricamento in corso",
+  "save": "Salva",
+  "saving": "Salvando",
+  "select_planning_unit": "Per favore, scegli una Unità di pianificazione",
+  "planning_unit": "Unità di pianificazione",
+  "day_model": "Modello di orario",
+  "day_type": "Tipo di giorno",
+  "min": "Min.",
+  "max": "Max.",
+  "server_error": "Si è verificato un errore interno. Per favore riprova più tardi.",
+  "edit-constraints": {
+    "success": "I valori sono stati salvati",
+    "failure": "I valori non possono essere salvati. Per favore controlla i valori e prova di nuovo."
+  }
+}

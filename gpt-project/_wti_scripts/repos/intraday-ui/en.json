@@ -1,0 +1,106 @@
+{
+  "error": {
+    "insufficient_permissions": "You lack the required permission for this action."
+  },
+  "configuration": {
+    "page_title": "Configuration",
+    "activity_mapping": {
+      "heading": "Map external statuses to injixo activities",
+      "activity_type": {
+        "present": "Presence",
+        "holiday": "Vacation",
+        "break": "Break",
+        "absence": "Absence",
+        "meeting": "Meeting",
+        "illness": "Illness"
+      },
+      "integrations": {
+        "heading": "Integrations"
+      },
+      "integration_activities": {
+        "heading": "External statuses",
+        "search": {
+          "placeholder": "Search for external statuses or type 'unmapped'."
+        },
+        "edit_activity": "Edit activity",
+        "heading_mapped": "Mapped",
+        "heading_not_mapped": "Not mapped",
+        "mapped_empty_label": "No external status mapped",
+        "not_mapped_empty_label": "All external statuses are mapped to this injixo activity.",
+        "unmapped": "Unmapped",
+        "overwrite_warning_tooltip": "The mapping to this injixo activity will be replaced with the new mapping.",
+        "button_save": "Save changes",
+        "button_cancel": "Discard changes"
+      },
+      "search_activity": {
+        "placeholder": "Search for injixo activity"
+      },
+      "mapped_tooltip": "External statuses are mapped to this injixo activity.",
+      "toast_save_success": "Mapping saved",
+      "message_save_error": "The mapping could not be saved. Please try again.",
+      "no_activity_selected": {
+        "explanation": "Select an injixo activity first.",
+        "headline": "No injixo activity selected"
+      },
+      "no_integration_activities": {
+        "explanation": "No external status imported.",
+        "headline": "No external statuses available"
+      },
+      "no_integrations": {
+        "headline": "No integration found",
+        "link_text": "Add an integration first"
+      },
+      "activity-select-list": {
+        "aria-label": "Select the injixo activity you want to map external statuses to."
+      }
+    }
+  },
+  "edit-actual-activities": {
+    "headline": {
+      "text": "{{personName}} on {{date}}"
+    },
+    "page-title": {
+      "return-link": {
+        "aria-label": "Return to agent intraday adherence"
+      },
+      "text": "Edit actual activities"
+    },
+    "table": {
+      "actual-activity": {
+        "label": "Actual activity"
+      },
+      "empty-state": {
+        "no-activities": {
+          "description": "There are no recorded activities for {{date}}",
+          "headline": "No recorded activities"
+        }
+      },
+      "time-period": {
+        "buttons": {
+          "cancel": {
+            "aria-label": "Cancel editing"
+          },
+          "confirm": {
+            "aria-label": "Confirm new end time"
+          },
+          "edit": {
+            "aria-label": "Edit end time {{endTime}}"
+          }
+        },
+        "edit": {
+          "error-message": {
+            "generic": "The end time could not be updated. Please try again.",
+            "invalid-end-time": "The provided end time is invalid."
+          },
+          "success": {
+            "toast-message": "End time successfully corrected."
+          },
+          "time-input": {
+            "aria-label": "Enter the correct end time"
+          }
+        },
+        "label": "Time period"
+      }
+    }
+  }
+}

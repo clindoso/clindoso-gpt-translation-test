@@ -1,0 +1,549 @@
+{
+  "activities": {
+    "activity_type": {
+      "absence": "Absence",
+      "break": "Break",
+      "holiday": "Vacation",
+      "illness": "Illness",
+      "meeting": "Meeting",
+      "on_call": "On-call",
+      "present": "Presence"
+    },
+    "assignable": {
+      "CTA": {
+        "back": "Cancel",
+        "discard": "Discard changes",
+        "save": "Save changes"
+      },
+      "checkbox_aria_label": {
+        "assign": "Select activity {{value}}",
+        "unassign": "Unselect activity {{value}}"
+      },
+      "heading": {
+        "assignable": "Selectable activities",
+        "assigned": "Assigned activities",
+        "non_assignable": "Unselectable activities"
+      },
+      "invalid_reason": {
+        "multi_activity_and_assignable_activity_date_period_must_overlap": {
+          "long": "You cannot select this activity because it is not valid during the validity period of the multiactivity.",
+          "short": "Validity period"
+        },
+        "must_be_plannable": {
+          "long": "You cannot select this activity because it is not set as plannable.",
+          "short": "Not plannable"
+        },
+        "must_have_same_planning_unit": {
+          "long": "Add this activity to all planning units to which you have assigned the multiactivity.",
+          "short": "Planning unit"
+        },
+        "must_not_be_multi_activity": {
+          "long": "You cannot select this activity because it is a multiactivity.",
+          "short": "Multiactivity"
+        },
+        "must_not_overlap_with_planning_unit_activity": {
+          "long": "You cannot select this activity because the validity periods of two multiactivities cannot overlap within the same planning unit.",
+          "short": "Validity period conflict"
+        }
+      },
+      "no_activities": "No activities available",
+      "no_activities_assigned": "No subactivities assigned",
+      "no_activities_found": "No activities found. Change your search.",
+      "save_error": "The subactivities could not be saved.",
+      "save_success": "The subactivities were updated.",
+      "search_placeholder": "Search for activities",
+      "title": "Subactivities"
+    },
+    "assigned": {
+      "CTA": {
+        "assign": "Assign subactivities",
+        "edit": "Edit"
+      },
+      "hint": {
+        "already_assigned": "This activity is assigned to the following multiactivities:",
+        "empty": "Assigning subactivities to this activity will turn it into a multiactivity.",
+        "generic": "No subactivities assigned.",
+        "has_shortcut": "To be able to assign activities, remove the shortcut and save the activity.",
+        "is_new": "To assign subactivities, create this activity first.",
+        "not_plannable": "To be able to assign subactivities, check the Plannable checkbox and save the activity.",
+        "not_present": "You can only assign activities to activities of type Presence."
+      },
+      "subactivity_title": "Multiactivities",
+      "title": "Subactivities"
+    },
+    "beta_message": "This page is in Beta testing. You can find all the functionalities in WFM. <1>Go to WFM</1>",
+    "details": {
+      "CTA": {
+        "delete": "Delete activity",
+        "duplicate": "Duplicate activity",
+        "save": {
+          "existing": "Save changes",
+          "new": "Create activity"
+        }
+      },
+      "aria_label": {
+        "close": "Close edit of activity",
+        "panel": "Edit activity details"
+      },
+      "attributes": {
+        "add_attribute": {
+          "no_content": "<0>No attribute selected</0>Select an attribute."
+        },
+        "button": {
+          "add_attribute": {
+            "label": "Add",
+            "tooltip": "To add attributes, save your changes."
+          },
+          "create": {
+            "label": "Add attribute"
+          },
+          "delete": {
+            "aria_label": "Remove attribute"
+          }
+        },
+        "combobox": {
+          "add_attribute": {
+            "label": "Select an attribute"
+          }
+        },
+        "create_title": "Add attribute",
+        "delete": {
+          "button": {
+            "label": "Remove attribute"
+          },
+          "confirm": "Remove attribute",
+          "content": "The <bold>{{attributeName}}</bold> attribute will be removed from the activity <bold>{{activityName}}</bold>.",
+          "error": "The attribute could not be removed from the activity.",
+          "success": "The attribute was removed from the activity.",
+          "title": "Remove attribute from activity?"
+        },
+        "input": {
+          "boolean": {
+            "label_false": "No",
+            "label_group": "Value",
+            "label_true": "Yes"
+          },
+          "date": {
+            "label": "Date"
+          },
+          "hour": {
+            "invalid": "Enter a time (0 h to 9999 h 00 min).",
+            "label": "Time"
+          },
+          "minute": {
+            "label": "Minutes"
+          },
+          "number": {
+            "invalid": "Enter a number (up to 8 digits).",
+            "label": "Number"
+          },
+          "priority": {
+            "invalid": "Enter a priority (1 to 99).",
+            "label": "Priority",
+            "not_unique": "Select a priority that is not yet used for this attribute within the validity period. Alternatively, change the validity period."
+          },
+          "text": {
+            "invalid": "Shorten the text to a max. of 250 characters.",
+            "label": "Text"
+          },
+          "text_range": {
+            "label": "Value"
+          },
+          "time": {
+            "label": "Time"
+          },
+          "valid_from": {
+            "invalid": "Select a date before the end of the validity period.",
+            "label": "Valid from",
+            "not_unique": "Select a period that does not overlap with existing periods of this attribute."
+          },
+          "valid_to": {
+            "invalid": "Select a date after the start of the validity period.",
+            "label": "Valid to"
+          }
+        },
+        "list_header": {
+          "attribute": "Name",
+          "detail": "Details"
+        },
+        "messages": {
+          "create_error": "The attribute could not be added to the activity.",
+          "create_success": "The attribute was added.",
+          "error": "The attribute details could not be changed.",
+          "success": "The attribute details were changed.",
+          "validation_failed": "The attribute could not be added. Change the priority or the validity period."
+        },
+        "no_content": {
+          "assignments": {
+            "link": "Add attribute",
+            "text": "Add your custom attributes to this activity.",
+            "text_read_only": "No attributes assigned."
+          },
+          "attributes": {
+            "link": "Create attributes",
+            "text": "Add your custom attributes to this activity."
+          }
+        },
+        "time_abbreviation": {
+          "hours": "h",
+          "minutes": "min"
+        },
+        "title": "Attributes",
+        "title_new": "Attribute details"
+      },
+      "delete": {
+        "CTA": {
+          "confirm": "Delete activity"
+        },
+        "consequences1": "You will no longer be able to assign the activity to day models, planning units, or employees.",
+        "consequences2": "Activities assigned to day models, planning units and employees will remain but will be labeled as deleted.",
+        "consequences3": "You will no longer be able to replace the activity in a schedule. The activity will still be visible but will be displayed blank.",
+        "consequences4": "You will no longer be able to insert a shift sequence with a day model that contains the activity.",
+        "content": "Do you really want to delete the activity <0>{{name}}</0>?",
+        "defaultActivity_validation_failed": "Default activities cannot be deleted.",
+        "error": "The activity could not be deleted. Please try again.",
+        "subactivity_validation_failed": "Activities that have been assigned to a multiactivity cannot be deleted.",
+        "success": "The activity was deleted.",
+        "title": "Delete activity?"
+      },
+      "external_systems": {
+        "title": "External systems"
+      },
+      "input": {
+        "abbreviation_invalid": "Enter an abbreviation (up to 25 characters).",
+        "importance_invalid": "Enter the importance (1% to 100%).",
+        "name_invalid": "Enter an activity name (up to 50 characters).",
+        "official_abbreviation_invalid": "Enter an official abbreviation (up to 25 characters).",
+        "official_name_invalid": "Enter an official activity name (up to 50 characters).",
+        "priority_invalid": "Enter a priority (1 to 100).",
+        "shortcut_invalid": "Enter a shortcut (up to 5 characters). If it is an instant shortcut, add a hash sign (#) at the end."
+      },
+      "iwfm_link": "Show in WFM",
+      "label": {
+        "abbreviation": "Abbreviation",
+        "activity_type": "Type",
+        "allow_overstaffing": "Allow overstaffing if shift requirements are zero",
+        "color": "Color",
+        "day_status": "Can be a day status",
+        "exchangeable": "Exchangeable with shift swap",
+        "fullday": "Allow as full-day activity",
+        "importance": "Importance",
+        "name": "Name",
+        "official_abbreviation": "Official abbreviation",
+        "official_name": "Official name",
+        "paid": "Paid",
+        "plannable": "Plannable",
+        "priority": "Priority",
+        "replaceable": "Replaceable",
+        "requestable": "Requestable in Me",
+        "rest_period": "Comply with rest period",
+        "shortcut": "Shortcut",
+        "special_optimization_handling": "Special handling in optimized scheduling"
+      },
+      "mappings": {
+        "CTA": "Map external statuses in Intraday",
+        "content": "Define which external statuses should be mapped to this injixo activity.",
+        "title": "External statuses"
+      },
+      "message": {
+        "create_error": "The activity could not be created. Please try again.",
+        "create_success": "The activity has been created.",
+        "errors": {
+          "abbreviation_not_unique": "The activity abbreviation {{value}} already exists. Enter a different activity abbreviation.",
+          "abbreviation_not_unique_match": "This abbreviation is already used by the activity “{{value}}”.",
+          "activitySkills": "The skill could not be assigned to the activity. Please try again.",
+          "activitySkills_not_found": "The skill was deleted and could not be assigned.",
+          "keyboardShortcut_not_unique": "The activity shortcut {{value}} already exists. Enter a different activity shortcut.",
+          "keyboardShortcut_not_unique_match": "This shortcut is already used by the activity “{{value}}”.",
+          "keyboardShortcut_validation_failed_multi_activity": "A shortcut can't be assigned to a multiactivity",
+          "name_not_unique": "The activity name {{value}} already exists. Enter a different activity name."
+        },
+        "update_error": "The activity could not be changed.",
+        "update_success": "The activity has been changed.",
+        "warning": {
+          "activity_type": "The activity type cannot be modified once the activity is created."
+        }
+      },
+      "more_options": {
+        "CTA": "Edit in WFM",
+        "content": "This page is still under development.<1/>You can find the missing functionalities in WFM.",
+        "title": "More options"
+      },
+      "new": {
+        "subactivity_attribute": {
+          "description": "To assign subactivities and add attributes, create this activity first.",
+          "title": "Subactivities and attributes"
+        }
+      },
+      "not_found": "The activity was not found.",
+      "section": {
+        "general": "General"
+      },
+      "skills": {
+        "add_skill": {
+          "empty_placeholder": "No skills available",
+          "placeholder": "Select skill"
+        },
+        "delete_aria_label": "Delete skill assignment",
+        "skill_header": "Skill",
+        "system_activity_hint": "This is a pre-configured (non-deletable) activity. You can assign skills only to self-created activities.",
+        "weight": {
+          "aria_label": "Change weighting of skill {{skillname}}",
+          "invalid": "Enter a weighting (1 to 100)."
+        },
+        "weighting_header": "Weighting"
+      },
+      "title": {
+        "new": "Create new activity"
+      }
+    },
+    "hint": {
+      "daystatus_disabled": "Check Allow as full-day activity to activate this option.",
+      "edit_subactivities_disabled": "To edit the subactivities, save your changes.",
+      "importance_disabled": "Check Plannable first to activate this option.",
+      "plannable_disabled": {
+        "is_multi": "Multiactivities have to be Plannable.",
+        "is_sub": "Subactivities have to be Plannable."
+      },
+      "shortcut_disabled": "Multiactivities cannot have shortcuts.",
+      "special_handling_disabled": {
+        "default_present": "Cannot be activated for the default system activity Present (activity ID: 1).",
+        "non_present": "Only available for activities of the type Presence."
+      },
+      "type_disabled": "The activity type can only be set when creating the activity."
+    },
+    "overview": {
+      "CTA": {
+        "create_activity": "New activity"
+      },
+      "load_error": "The activities could not be loaded. Please try again.",
+      "table": {
+        "placeholder": {
+          "message": "No activities created",
+          "suggestion": "Start by creating an activity."
+        },
+        "placeholder_searched": {
+          "message": "No activities found",
+          "suggestion": "Change your search or <0>clear search</0>."
+        }
+      }
+    },
+    "table_header": {
+      "activity_name": "Name",
+      "activity_type": "Type",
+      "fullday": "Full-day",
+      "importance": "Importance",
+      "paid": "Paid",
+      "plannable": "Plannable",
+      "priority": "Priority",
+      "replaceable": "Replaceable",
+      "requestable": "Requestable"
+    },
+    "title": "Activities"
+  },
+  "attributes": {
+    "title": "Attributes"
+  },
+  "bonus_point_systems": {
+    "title": "Bonus points systems"
+  },
+  "break_models": {
+    "title": "Break models"
+  },
+  "button": {
+    "cancel": {
+      "label": "Cancel"
+    }
+  },
+  "contracts": {
+    "title": "Contracts"
+  },
+  "day_models": {
+    "title": "Day models"
+  },
+  "day_types": {
+    "title": "Day types"
+  },
+  "employee_categories": {
+    "title": "Employee categories"
+  },
+  "employees": {
+    "title": "Employees"
+  },
+  "general": {
+    "availabilities": {
+      "heading": {
+        "text": "Availabilities in injixo Me"
+      }
+    },
+    "availability": {
+      "button": {
+        "cancel": {
+          "label": "Cancel"
+        },
+        "submit": {
+          "label": "Save changes"
+        }
+      },
+      "inline-message": {
+        "generic-error": {
+          "text": "Your changes could not be saved. Please try again."
+        }
+      },
+      "input": {
+        "date": {
+          "label": "Date",
+          "placeholder": "No date selected",
+          "validation-errors": {
+            "default": "Set date"
+          }
+        }
+      },
+      "text": {
+        "date-description": "Prevent people from changing one-time availabilities before "
+      },
+      "toast": {
+        "save-success": {
+          "text": "The setting was updated."
+        }
+      },
+      "tooltip": {
+        "date": {
+          "text": "If no date is selected, people can add or change future one-time availabilities."
+        }
+      }
+    },
+    "title": "General"
+  },
+  "modulation_periods": {
+    "title": "Modulation periods"
+  },
+  "navigation": {
+    "no-access": {
+      "body": "To access configuration, contact a person with Admin access.",
+      "header": "Missing permissions"
+    },
+    "no-entities": {
+      "body": "Set up configuration items to create or adjust schedules.",
+      "header": "Configure Scheduling",
+      "link": {
+        "label": "Learn more in Help Center",
+        "url": "https://help.injixo.com/"
+      }
+    }
+  },
+  "page_title": "Configuration",
+  "planning_calendar": {
+    "title": "Planning calendar"
+  },
+  "planning_units": {
+    "title": "Planning units"
+  },
+  "selections": {
+    "title": "Selections"
+  },
+  "shift_sequences": {
+    "title": "Shift sequences"
+  },
+  "skills": {
+    "create": {
+      "button": {
+        "save": {
+          "label": "Create skill"
+        }
+      },
+      "error": "An error occurred while creating the skill",
+      "success": "The skill has been created."
+    },
+    "details": {
+      "CTA": {
+        "duplicate": "Duplicate skill"
+      },
+      "abbreviation": "Abbreviation",
+      "create": "Create new skill",
+      "delete": {
+        "action": "Delete skill",
+        "consequences1": "The skill will no longer be available, e.g. for activities.",
+        "consequences2": "The skill will be removed from the activities that use the skill.",
+        "consequences3": "Skill levels assigned to the employee will remain but labeled as deleted.",
+        "content": "Do you really want to delete skill <0>{{name}}</0>?",
+        "error": "The skill could not be deleted.",
+        "success": "The skill has been deleted.",
+        "title": "Delete skill?"
+      },
+      "input": {
+        "abbreviation_required": "Enter an abbreviation (up to 25 characters).",
+        "abbreviation_too_long": "Enter an abbreviation (up to 25 characters).",
+        "name_required": "Enter a skill name (up to 50 characters).",
+        "name_too_long": "Enter a skill name (up to 50 characters)."
+      },
+      "name": "Name",
+      "not_found": "Skill was not found",
+      "skill_levels": {
+        "abbreviation": "Abbreviation",
+        "add": "Add skill level",
+        "delete": "Delete skill level",
+        "heading": "Skill levels",
+        "input": {
+          "abbreviation_required": "Enter a skill level abbreviation (up to 25 characters).",
+          "abbreviation_too_long": "Enter a skill level abbreviation (up to 25 characters).",
+          "abbreviation_unique": "Enter a skill level abbreviation that has not been used yet.",
+          "name_required": "Enter a skill level name (up to 50 characters).",
+          "name_too_long": "Enter a skill level name (up to 50 characters).",
+          "name_unique": "Enter a skill level name that has not been used yet.",
+          "percentage_invalid": "Enter a rating (1% to 100%).",
+          "percentage_required": "Enter a rating (1% to 100%).",
+          "percentage_unique": "Enter a rating that has not been used yet."
+        },
+        "name": "Name",
+        "rating": "Rating"
+      }
+    },
+    "edit": {
+      "button": {
+        "save": {
+          "label": "Save changes"
+        }
+      }
+    },
+    "errors": {
+      "abbreviation_not_unique": "The skill name abbreviation {{value}} already exists. Enter a different abbreviation.",
+      "abbreviation_not_unique_match": "This abbreviation is already used by the skill “{{value}}”.",
+      "name_not_unique": "The skill name {{value}} already exists. Enter a different skill name."
+    },
+    "table": {
+      "create": "New skill",
+      "error": "Sorry, there was an error while loading skills. Please try again later.",
+      "placeholder": "No skills have been defined yet. Click New skill to add a skill."
+    },
+    "title": "Skills",
+    "update": {
+      "error": "An error occurred while updating the skill",
+      "success": "The skill has been updated."
+    }
+  },
+  "table": {
+    "header": {
+      "name": "Name"
+    },
+    "search": {
+      "aria_label": "Search",
+      "placeholder": "Search"
+    }
+  },
+  "unsaved_changes": {
+    "cta": {
+      "cancel_create": "Back to creating",
+      "cancel_edit": "Back to editing",
+      "confirm": "Discard changes"
+    },
+    "text": "Your changes will not be saved.",
+    "title": "Discard unsaved changes?"
+  },
+  "week_time_patterns": {
+    "title": "Week time patterns"
+  },
+  "work_time_pattern_models": {
+    "title": "Work time pattern models"
+  }
+}

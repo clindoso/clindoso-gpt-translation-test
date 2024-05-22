@@ -1,0 +1,112 @@
+{
+  "csv_importer": {
+    "confirmation_page": {
+      "apply": "Gegevens verwerken",
+      "cancel": "Annuleren",
+      "confirm": "Bevestig je data om het naar de cloud weg te schrijven."
+    },
+    "error_page": {
+      "import_error": "Er is een fout opgetreden tijdens de import.",
+      "message": {
+        "before_error": "Het bestand kon niet worden geïmporteerd vanwege de volgende problemen:",
+        "retry_after_error": "Controleer de bestandssyntax en probeer het opnieuw."
+      }
+    },
+    "errors": {
+      "empty_file": "Het bestand is leeg.",
+      "end_time_before_start_time": "De eindtijd mag niet vóór de begintijd vallen.",
+      "error_on_line": "Fout op regel {{line_number}}:",
+      "excessive_data": "Meer dan een jaar aan gegevens wordt niet ondersteund.",
+      "file_too_large": "Het bestand dat je probeerde te uploaden is te groot. De maximale grootte is 7MB.",
+      "invalid_channel": "Niet-ondersteund kanaal.",
+      "invalid_date_format": "Verkeerde datumindeling.",
+      "invalid_date_or_time_format": "Verkeerde datum of tijdsindeling.",
+      "invalid_duration_cdr": "The contact was claimed to be handled but has no duration.",
+      "invalid_end_of_line": "Gebruik dezelfde eindregeltekens in één bestand.",
+      "invalid_handled_cdr": "The handled field must contain either 0 or 1.",
+      "invalid_headers": "Ontbrekende of verkeerd gespelde kopteksten.",
+      "invalid_number": "Controleer de opmaak van de numerieke waarden.",
+      "invalid_row_length": "Het aantal velden in deze regel komt niet overeen met het aantal velden in de kopregel.",
+      "invalid_separator": "Ongeldig scheidingsteken.",
+      "invalid_time_format": "Verkeerde tijdsindeling.",
+      "invalid_time_range": "De gegevens overschrijden de maximale periode van 10 jaar.",
+      "invalid_timestamp": "Ongeldige timestamp op basis van de intervallengte.",
+      "invalid_year": "Het jaar mag niet voor 1970 liggen.",
+      "missing_activity": "Ontbrekende identificatiecode voor activiteit.",
+      "missing_agent": "Ontbrekende agent identifier.",
+      "missing_queue": "Ontbrekende naam van queue.",
+      "negative_number": "Negatieve getallen zijn niet toegestaan.",
+      "non_existing_timestamp": "De opgegeven lokale tijd vertegenwoordigt geen geldige tijdsaanduiding.",
+      "number_too_big": "Getal is te groot.",
+      "sql_error": "An SQL error occurred.",
+      "string_too_long": "Verkort de tekst tot 255 karakters.",
+      "unexpected": "Er is een onverwachte fout opgetreden.",
+      "unknown_error": "Er is een onbekende fout opgetreden."
+    },
+    "heading": "Importeren van historische gegevens",
+    "success_page": {
+      "import_again": "Nog een CSV-bestand uploaden",
+      "success": "Je CSV-bestand is geanalyseerd.",
+      "to_forecast": "Ga naar Forecast",
+      "to_intraday": "Go to Intraday"
+    },
+    "summary": {
+      "failure": "Import mislukt",
+      "first_date": "begindatum (UTC)",
+      "heading": {
+        "confirm": "Bevestig import",
+        "success": "Import geslaagd"
+      },
+      "imported_agents": "geïmporteerde agenten",
+      "imported_lines": "Geïmporteerde lijnen",
+      "imported_queues": "Geïmporteerde Queues",
+      "last_date": "einddatum (UTC)",
+      "title": "De import",
+      "try_again": "Opnieuw proberen"
+    },
+    "upload_form": {
+      "file_input": {
+        "active_description": {
+          "invalid": "Zet hier slechts één bestand met een CSV-formaat neer.",
+          "valid": "Zet je csv-bestand hier neer..."
+        },
+        "description": {
+          "multiple": "Sleep CSV-bestanden hier naartoe om ze toe te voegen.",
+          "single": "Sleep een CSV-bestand (.csv of .txt) naar hier om het toe te voegen"
+        },
+        "file_limit_warning": "Je kunt het bestand uploaden door te klikken op \"Import file\".",
+        "joiner": "of",
+        "link": "open je bestandsverkenner.",
+        "loading": "laden"
+      },
+      "help": {
+        "link": "Lees wat er wordt ondersteund.",
+        "text": "Hulp nodig?"
+      },
+      "integration": {
+        "label": "Importeren via",
+        "no_result": "Geen integratie gevonden",
+        "placeholder": "Kies integratie..."
+      },
+      "introduction": "Importeer een CSV-bestand met de historische gegevens van de ACD om een forecast in injixo te maken. De maximale grootte van het CSV-bestand mag niet groter zijn dan 7MB.",
+      "invalid_file": "Het bestand \"{{file_name}}\" kon niet worden geselecteerd. Zorg voor een geldig CSV-bestand.",
+      "multi_upload_warning": "Het uploaden van gegevens van meerdere browservensters of computers tegelijkertijd kan je bestaande queue data beschadigen.",
+      "no_integration": {
+        "link": "Voeg een CSV-integratie toe",
+        "text": "Om CSV-gegevens te importeren, moet je eerst een CSV-integratie maken."
+      },
+      "submit": {
+        "loading": "Uploaden",
+        "title": "Importbestand"
+      }
+    },
+    "writing_page": {
+      "writing": "Gelieve even te wachten terwijl de gegevens naar de cloud worden weggeschreven...",
+      "writing_status": "Wegschrijven van je gegevens naar de cloud..."
+    }
+  },
+  "document_title": {
+    "module": "CSV Importeur",
+    "page_title": "Historische gegevens importeren"
+  }
+}

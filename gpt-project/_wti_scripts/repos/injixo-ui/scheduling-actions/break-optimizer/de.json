@@ -1,0 +1,109 @@
+{
+  "heading": {
+    "initial": "Pausenoptimierung",
+    "optimization-history": "Optimierungshistorie",
+    "optimization-results": "Optimierungsergebnisse",
+    "settings": "Optimierungseinstellungen"
+  },
+  "button": {
+    "back-to-day-view": "Zurück zur Tagesansicht",
+    "back-to-schedules": "Zurück zu Schedules",
+    "close": "Schließen",
+    "delete-break-optimizations_one": "Eintrag löschen",
+    "delete-break-optimizations_other": "Einträge löschen",
+    "optimize-schedule": "Pausen optimieren"
+  },
+  "error": {
+    "break-optimization-request": "Pausenoptimierungsanfrage fehlgeschlagen",
+    "incomplete-form": "Es fehlen Daten im Formular. Korrigiere die Daten in den markierten Feldern."
+  },
+  "helper-text": {
+    "delete-break-optimizations": "Die ausgewählten Einträge werden aus der Tabelle gelöscht. Bereits optimierte Pläne sind davon nicht betroffen."
+  },
+  "hint": {
+    "optimized-schedule-writing": "Der optimierte Plan wird direkt in die Ebene Plan geschrieben."
+  },
+  "label": {
+    "aria-enhancement": {
+      "delete-entries": "Einträge löschen",
+      "dropdown": "Dropdown",
+      "loading-spinner": "Lade-Spinner",
+      "select": "auswählen",
+      "select-all": "alle auswählen"
+    },
+    "axis": {
+      "coverage-total-deviation-from-zero": "Deckung - Gesamtabweichung von 0",
+      "optimized-schedule": "Optimierter Plan",
+      "schedule-before-optimization": "Plan vor der Optimierung"
+    },
+    "date-range": "Zeitraum",
+    "in-progress": "in Bearbeitung",
+    "maintenance": {
+      "caption": "Wir verbessern momentan die Pausenoptimierung",
+      "details": "Aktuell wird eine notwendige Wartung durchgeführt. Für eventuelle Unannehmlichkeiten entschuldigen wir uns. Die Pausenoptimierung sollte in wenigen Minuten wieder verfügbar sein. Wir danken Dir für Deine Geduld!"
+    },
+    "no-entries": "Keine Einträge",
+    "no-optimization-data": {
+      "details": "Starte eine neue Optimierung, indem Du eine Planungseinheit und einen Zeitraum auswählst. Die Ergebnisse werden anschließend hier gelistet.",
+      "heading": "Keine Optimierungsergebnisse verfügbar"
+    },
+    "optimization-result": {
+      "content": "Optimierungsergebnisse"
+    },
+    "optimization-status": {
+      "failed": "Die Optimierung ist fehlgeschlagen. Bitte versuche es erneut.",
+      "optimized": "Optimierter Plan",
+      "partly-optimized": "Teilweise optimierter Plan",
+      "scheduling": "Optimierung in Bearbeitung..."
+    },
+    "view-results": "Ergebnisse anzeigen"
+  },
+  "notification": {
+    "failure": {
+      "general": "Ein Fehler ist aufgetreten. Bitte versuche es später erneut."
+    }
+  },
+  "placeholder": {
+    "dropdown": "Suchen oder auswählen"
+  },
+  "result": {
+    "info": {
+      "day_models": "Die ausgewählte Planungseinheit enthält Tagesmodelle im ausgewählten Zeitraum die nicht in Aktivitäten umgewandelt werden konnten. Pausen in diesen Tagesmodellen wurden nicht optimiert."
+    }
+  },
+  "success": {
+    "break-optimization-request": "Pausenoptimierungsanfrage erfolgreich"
+  },
+  "table": {
+    "column": {
+      "date-range": "Zeitraum",
+      "initiated-on": "Ausgelöst am",
+      "planning-unit": "Planungseinheit",
+      "selection": "Auswahl",
+      "status": "Status",
+      "user": "Nutzer"
+    },
+    "message": {
+      "partly-optimized": "Teilweise optimiert",
+      "partly-optimized-description": "<0>Was bedeutet das?</0>",
+      "partly-optimized-link": "https://help.injixo.com/de/break-optimization#teilweise-optimierter-plan",
+      "optimized": "Optimiert"
+    }
+  },
+  "tooltip": {
+    "outdated-graph": "Die entsprechenden Diagrammdaten wurden beim Ausführen der Optimierung erzeugt."
+  },
+  "validation": {
+    "planning-unit": {
+      "required": "Wähle eine Planungseinheit aus"
+    }
+  },
+  "connection": {
+    "offline": "Die Wiederherstellung der Verbindung ist fehlgeschlagen. Bitte versuchen Sie es in ein paar Minuten erneut.",
+    "reconnecting": "Die Verbindung wurde unterbrochen. Wir versuchen, sie automatisch wieder herzustellen."
+  },
+  "document_title": {
+    "context": "Pausenoptimierer",
+    "module": "Plan"
+  }
+}

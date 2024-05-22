@@ -1,0 +1,99 @@
+{
+  "application": {
+    "title": "Time-off periods",
+    "backToTimeOff": "Back to Time Off",
+    "optional": "optional"
+  },
+  "filters": {
+    "label": {
+      "planningUnit": "Planning unit",
+      "selection": "Selection",
+      "timePeriod": "Time period",
+      "absenceActivity": "Activity",
+      "status": "Status"
+    },
+    "placeholder": {
+      "planningUnit": "Choose a planning unit",
+      "selection": "Choose a selection",
+      "absenceActivity": "Choose an activity",
+      "status": "Choose a status"
+    },
+    "result": {
+      "noResult": "No entries"
+    },
+    "buttons": {
+      "createPeriod": "New time-off period"
+    }
+  },
+  "planning_units": "planning units",
+  "selections": "selections",
+  "reload_planning_units": "Reload planning units",
+  "reload_selections": "Reload selections",
+  "periodsTable": {
+    "tabs": {
+      "ongoing": "Ongoing",
+      "expired": "Expired",
+      "counters": {
+        "ongoing": "Number of ongoing time-off periods",
+        "expired": "Number of expired time-off periods"
+      }
+    },
+    "headers": {
+      "select": "Select",
+      "selection": "Selection",
+      "validFrom": "Valid from",
+      "validTo": "Valid to",
+      "deadline": "Deadline",
+      "inheritedFrom": "Inherited from",
+      "status": "Status"
+    },
+    "noData": "No time-off periods found.",
+    "singleCheckbox": "Select time-off period",
+    "allCheckbox": "Select all time-off periods",
+    "deleteEntries": "Delete entries",
+    "statuses": {
+      "enabled": "Published",
+      "locked": "Unpublished"
+    },
+    "editPeriod": "Edit time-off period",
+    "selectStatus": "Select status",
+    "error": {
+      "deletePeriod": "{{number}} time-off period(s) could not be deleted."
+    },
+    "statusSuccessfullyUpdated": "Time-off period status updated successfully."
+  },
+  "reload_time_off_periods": "Reload time-off periods",
+  "types": "types",
+  "reload_types": "Reload types",
+  "periodModal": {
+    "title": {
+      "create": "Create new time-off period",
+      "edit": "Edit time-off period"
+    },
+    "button": {
+      "save": "Save changes",
+      "cancel": "Cancel",
+      "create": "Create time-off period"
+    },
+    "label": {
+      "dateRange": "Date range",
+      "deadline": "Deadline"
+    },
+    "error": {
+      "createPeriod": "Time-off period could not be created.",
+      "editPeriod": "Time-off period could not be updated."
+    },
+    "deadline": {
+      "empty": "None",
+      "remove": "Remove deadline"
+    }
+  },
+  "document_title": {
+    "module": "Plan",
+    "sub_module": "Time-off Periods"
+  },
+  "error": {
+    "reload_resource": "An error has occurred. Try to reload <0>{{resource}}</0> or try again later."
+  },
+  "time_off_periods": "time-off periods"
+}

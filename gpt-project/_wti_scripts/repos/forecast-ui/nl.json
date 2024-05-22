@@ -1,0 +1,1651 @@
+{
+  "save": "Opslaan",
+  "retry_saving": "Opslaan opnieuw proberen",
+  "cancel": "Annuleer",
+  "edit": "Bewerken",
+  "close": "Sluit",
+  "done": "Klaar",
+  "back": "Terug",
+  "back_to_custom": "Terug naar '{{ backToName }}'",
+  "current_day": "Vandaag",
+  "current_week": "Deze week",
+  "current_month": "Deze maand",
+  "current_year": "Dit jaar",
+  "loading": "Laden",
+  "preview": "Preview Modus",
+  "prev": {
+    "aria_label": "Achteruit gaan"
+  },
+  "next": {
+    "aria_label": "Vooruitgaan"
+  },
+  "planning_unit": "Eenheid",
+  "version": "Versie",
+  "queue": "Queue",
+  "activity": "Activiteit",
+  "value_type": "Waardetype",
+  "dropdown_no_result": "Geen resultaat gevonden",
+  "dropdown_placeholder": "Selecteer",
+  "auto_forecast": "Forecast",
+  "operational": "Operationeel",
+  "strategic": "Strategisch",
+  "import": "Import",
+  "forecasts": {
+    "auto": "Forecast",
+    "operational": "Operationeel",
+    "strategic": "Strategisch",
+    "import": "Geïmporteerde forecast"
+  },
+  "forecast": "Forecast",
+  "staff_requirements": "Personeelsbehoefte",
+  "welcome_page": {
+    "title": "Welkom bij injixo Forecast",
+    "introduction": "We zijn er bijna! Voordat je de injixo Forecast kunt gebruiken, moet er een Workload worden aangemaakt. Workloads zijn het hart van jouw forecast. Ze bevatten al jouw historische gegevens en gerelateerde forecasts op één plaats. Zonder hen kan geen forecast worden gegenereerd.",
+    "introduction_workload": "De onderstaande kaarten tonen een samenvatting van jouw huidige injixo Forecast setup. Om workloads te gebruiken, is de juiste setup van jouw ACD connectie en de beschikbaarheid van geïmporteerde queues vereist. Je kunt nu op de blauwe kaarten klikken om verder te gaan.",
+    "card": {
+      "acd": {
+        "title": "Instellen ACD",
+        "unchecked": {
+          "link": "Stel de ACD verbinding in.",
+          "desc": "Om Forecast te kunnen gebruiken dien je een extern systeem op injixo aan te sluiten."
+        },
+        "invalid": {
+          "desc": "Jouw gegevens zijn geweigerd door de ACD. Zorg ervoor dat je geldige credentials invult."
+        },
+        "checked": {
+          "desc": "De ACD verbinding is geconfigureerd."
+        }
+      },
+      "queue": {
+        "title": "Importeer queues",
+        "requesting": {
+          "title": "Beginnen met importeren",
+          "desc": "Controleren op beschikbare gegevens."
+        },
+        "importing": {
+          "xlink": {
+            "title": "{{ importedQueuesCount }} / {{ importableQueuesCount }} Queue's geïmporteerd",
+            "guidance_link": "Leer meer"
+          },
+          "cloud": {
+            "title": "Import gestart",
+            "desc": "Importeren van beschikbare historische gegevens."
+          }
+        },
+        "delay_warning": "Het kan enkele minuten duren voordat de historische gegevens beschikbaar zijn voor de forecast.",
+        "success": {
+          "title": "Import voltooid",
+          "description": {
+            "xlink": "Beschikbare historische gegevens werden met succes geïmporteerd.",
+            "cloud": "Initiële import is geslaagd.",
+            "general": "De import zal op regelmatige basis worden voortgezet."
+          }
+        },
+        "disabled": {
+          "desc": "Om queue's te importeren heb je eerst een ACD verbinding nodig."
+        }
+      },
+      "workload": {
+        "title": "Workload aanmaken",
+        "disabled": {
+          "desc": "Zorg ervoor dat er queue's beschikbaar zijn om een Workload aan te maken."
+        },
+        "checked": {
+          "desc": "Je hebt al workloads in je systeem. Bekijk het hier.",
+          "link": "Naar Workloads"
+        },
+        "unchecked": {
+          "desc": "Creëer een Workload om te beginnen met forecasten."
+        }
+      }
+    },
+    "integrations": {
+      "add": "Creëer integratie",
+      "body": "Als je jouw ACD wilt verbinden om queue’s te importeren, creëer dan een nieuwe integratie. Kies uit een van de externe systemen, of gebruik onze universele interfaces.",
+      "configured": "{{ integrationCount }} integratie(s) geconfigureerd",
+      "header": "Integratie opzetten",
+      "not_configured": "Geen integratie(s) geconfigureerd."
+    },
+    "workload": {
+      "with_history": {
+        "body": "Je bent slechts een paar klikken verwijderd om je Auto-Forecast in gebruik te nemen. Maak jouw eerste workload en gebruik je historische gegevens.",
+        "create_workload": "Workload aanmaken met Auto-Forecast",
+        "header": "Creëer een workload met Auto-Forecast",
+        "no_queues": "Geen queue(s) beschikbaar.",
+        "queue_count_import": "{{ importedQueues }} van {{ importableQueues }} queues geïmporteerd."
+      }
+    }
+  },
+  "requirement_scripts": {
+    "default_scripts": {
+      "title": "Standaard scripts",
+      "button_label": "Openen"
+    },
+    "custom_scripts": {
+      "title": "Aangepaste scripts",
+      "sort_by": {
+        "label": "Sorteren op",
+        "option": {
+          "name_desc": "Naam A-Z",
+          "name_asc": "Naam Z-A"
+        }
+      },
+      "search": {
+        "label": "Zoeken",
+        "placeholder": "Zoeken naar scripts"
+      },
+      "no_result": "Geen scripts gevonden"
+    }
+  },
+  "requirement_calculation": {
+    "configuration": {
+      "not_configured": {
+        "headline": "De berekening van de personeelsbehoefte is nog niet geconfigureerd.",
+        "button_label": "Berekeningsparameters configureren"
+      },
+      "save": "Configuratie opslaan",
+      "edit": "Berekeningsmethode bewerken",
+      "pu_activity_headline": "Bijbehorende eenheid en activiteit",
+      "other_info": "Je kan de parameters voor de volgende \"andere\" berekeningsmethoden instellen in het dialoogvenster op de forecastpagina.",
+      "custom_explanation": "Aangepaste berekeningsmethoden",
+      "pu_help": {
+        "text": "De superieure eenheden kunnen niet worden geselecteerd."
+      },
+      "use_workload_pu": "Gebruik de personeelsbehoefte voor de eenheid en de activiteit die in de workloadconfiguratie is ingesteld"
+    },
+    "max_sessions": "Maximaal aantal sessies",
+    "max_sessions_info": "Het maximale aantal parallelle chatsessies dat een agent tegelijkertijd kan hebben.",
+    "error": {
+      "max_sessions": {
+        "required": "Maximaal aantal sessies is vereist."
+      },
+      "overhead": {
+        "required": "Overhead is vereist.",
+        "out_of_range": "Voer alleen een heel getal van 0 tot 99 in."
+      },
+      "shrinkage": "Voer alleen een geheel getal in van 0 tot 99.",
+      "min_agents": {
+        "too_high": "Het minimum moet lager zijn dan het maximum ({{ max }})."
+      },
+      "max_agents": {
+        "too_low": "Het maximum moet groter zijn dan Minimum ({{ min }})"
+      }
+    },
+    "overhead": "Overhead",
+    "overhead_info": "Het percentage van de AHT dat een agent moet besteden aan taken die hij niet parallel kan uitvoeren (zoals het toevoegen van notities aan het CRM).",
+    "algorithms": {
+      "erlang_c": "Erlang-C",
+      "linear": "Lineair",
+      "other": "Andere",
+      "chat": "Chat"
+    },
+    "not_based_on_forecast": {
+      "link": "Berekeningen voor Multiactiviteit, Constante behoefte en Outbound",
+      "card": {
+        "explanation_list": {
+          "multiactivity": "Voor multiactivities, transfereer de forecasts van alle deelactiviteiten eerst en gebruik de \"Auto-Forecast\"-versie in het script.",
+          "constant": "Er is geen forecast nodig om een constante behoefte te berekenen.",
+          "outbound": "Voor de berekening van de outbound behoefte is een forecast optioneel.",
+          "multiple_planning_units": "Het script voor meerdere eenheden gebruikt Erlang C om de personeelsbehoeften te verdelen over één of meerdere eenheden."
+        },
+        "placeholder": "Selecteer een behoefte script",
+        "aria_label": "iWFM-script selectie",
+        "warning": "Verbinding met WFM is mislukt.",
+        "multiactivity": "Multiactivity",
+        "outbound": "Outbound",
+        "constant": "Constante Behoefte"
+      },
+      "link_without_additional_scripts": "Berekening voor Constante Behoefte",
+      "link_with_additional_saferun_and_mpu_scripts": "Berekeningen voor Multiactiviteit, Constante Behoefte, Outbound en meerdere eenheden",
+      "link_with_mpu_scripts": "Berekeningen voor Constante Behoefte en meervoudige eenheden"
+    },
+    "based_on_forecast": {
+      "card": {
+        "selection_label": "Personeelsbehoefte Script",
+        "body": "Voor een correct berekeningsresultaat moet de <strong> forecast voor de gewenste periode worden geëxporteerd (knop \"Forecast gebruiken\") </ strong> voordat de personeelsbehoefte berekend kan worden.",
+        "auto_forecast": "De <strong>Forecast versie</strong> moet vervolgens in het script worden geselecteerd.",
+        "hint": "Maak gebruik van de nieuwe automatische",
+        "hint_link_linear": "Lineaire berekening",
+        "hint_link_connection": "en",
+        "hint_link_chat": "Chat berekening"
+      }
+    },
+    "saving": "Overdragen...",
+    "save": "Opslaan in SchedulePro",
+    "retry_saving": "Overdragen naar SchedulePro opnieuw proberen",
+    "service_level": "Service level",
+    "target_service_level": "Beoogde servicegraad",
+    "target_service_level_aria_label": "Invoerveld beoogde servicegraad",
+    "target_answer_time": "Beoogde antwoordtijd",
+    "target_answer_time_aria_label": "Invoerveld beoogde antwoordtijd",
+    "average_handling_time": "Gemiddelde afhandelingstijd (AHT)",
+    "shrinkage": "Shrinkage",
+    "shrinkage_aria_label": "Invoer Shrinkage",
+    "fixed_aht": "Vaste gemiddelde afhandeltijd (AHT)",
+    "staff_requirement_calculation": "Behoeftecalculatie",
+    "no_forecasted_aht": "Om gebruik te maken van voorspelde AHT moeten alle queues voorzien zijn van volledige AHT-gegevens.",
+    "min_agent_label": "Minimaal benodigde bezetting",
+    "max_agent_label": "Maximaal benodigde bezetting",
+    "unsupported_timespan_error": {
+      "title": "Behoeftecalculatie is niet beschikbaar in het jaaroverzicht.",
+      "description": "Selecteer dag-, week-, of maandaanzicht."
+    },
+    "no_forecasted_elements_error": {
+      "title": "Behoeftecalculatie is niet beschikbaar voor dagen zonder forecast.",
+      "description": "Kies een voorspelde dag."
+    },
+    "agents_required": "Benodigde medewerkers",
+    "to_wfm": "Personeelsbehoefte opslaan",
+    "marker": {
+      "staff_requirement": "Personeelsbehoefte"
+    },
+    "date_formats": {
+      "day": "HH:mm",
+      "week": "ddd MMM D"
+    },
+    "man_hours": "Arbeidsuren",
+    "man_hours_sum": "Arbeidsuren Σ",
+    "export_modal": {
+      "transfer_to": "wordt opgeslagen in",
+      "not_assigned": "Niet toegewezen",
+      "status": {
+        "failed": "Overdracht van personeelsbehoefte is mislukt als gevolg van een interne fout. Probeer het nog eens.",
+        "succeeded": "De personeelsbehoefte is met succes overgedragen.",
+        "processing": "Overdragen van personeelsbehoefte...",
+        "connection_error": "Verbinding met WFM is mislukt. Probeer het nog eens.",
+        "timezone_mismatch": {
+          "failed": "De tijdzone van de workload moet overeenkomen met de tijdzone van de eenheid."
+        },
+        "target_invalid": {
+          "date_format": "LL/dd",
+          "failed": "Overdracht van personeelsbehoefte is mislukt voor het geselecteerde tijdvak. Controleer de geldigheid van de activiteit binnen deze eenheid in WFM en probeer het opnieuw.",
+          "one_day": "Het overdragen van de personeelsbehoefte was succesvol op alle geldige dagen. Op {{ one }} is de activiteit niet toegewezen aan de eenheid en heeft de overdracht niet plaatsgevonden.",
+          "two_days": "Het overdragen van de personeelsbehoefte was succesvol op alle geldige dagen. Op {{ one }} en {{ two }} is de activiteit niet toegewezen aan de eenheid en heeft de overdracht niet plaatsgevonden.",
+          "three_days": "Het overdragen van de personeelsbehoefte was succesvol op alle geldige dagen. Op {{ one }},{{ two }} en {{ three }} is de activiteit niet toegewezen aan de eenheid en heeft de overdracht niet plaatsgevonden.",
+          "many_days": "Het overdragen van de personeelsbehoefte was succesvol op alle geldige dagen. Op {{ one }},{{ two }},{{ three }} en {{ numberRest }} andere dagen is de activiteit niet toegewezen aan de eenheid en heeft de overdracht niet plaatsgevonden."
+        }
+      },
+      "title": "Personeelsbehoefte overdragen naar SchedulePro",
+      "saving": "Om de personeelsbehoefte tijdens het planningsproces te kunnen gebruiken, moet je ze eerst opslaan.",
+      "overwrite_hint": "De bestaande personeelsbehoefte voor deze tijdsperiode wordt overschreven.",
+      "other_algorithm": "Om een ander berekeningsalgoritme te kunnen gebruiken, is het nodig om de Forecast over te dragen via de knop “Forecast gebruiken\" in het gedeelte volume en AHT.",
+      "save_as": "wordt opgeslagen als",
+      "title_without_schdule_pro": "Personeelsbehoefte opslaan"
+    },
+    "modal": {
+      "save": "Bereken personeelsbehoefte",
+      "cancel": "Annuleren",
+      "heading": "Parameters voor de behoeftecalculatie aanpassen",
+      "description": "Je kan de parameters voor de behoeftecalculatie aanpassen.",
+      "error": {
+        "aht": "Voer alleen een heel getal in dat groter is dan 0.",
+        "service_level": "Voer alleen een heel getal in tussen 1-99.",
+        "target_answer_time": "Voer alleen een heel getal in dat groter is dan 0."
+      }
+    },
+    "shrinkage_info": "Voer een getal hoger dan 0 in voor ongeplande pauzes (bijv. toiletbezoek). Als je geen rekening wilt houden met shrinkage, laat 0 dan staan.",
+    "overhead_explanation": "Als je 1 invoert voor Maximale aantal sessies, zal de parameter Overhead geen effect hebben.",
+    "use_fixed_aht_as_fallback_only": "Pas de vaste AHT alleen toe als er geen AHT-waarde beschikbaar is.",
+    "warnings": {
+      "workload_mismatch": "De configuratie verschilt ten opzichte van de instellingen die je hebt geselecteerd op de bewerkingspagina van de workload."
+    }
+  },
+  "optional": "Optioneel",
+  "forecast_version": {
+    "loading_error": "Versies konden niet geladen worden.",
+    "store_version": "Forecastversie opslaan",
+    "saving_error": "De versie kon niet worden opgeslagen. Probeer het opnieuw.",
+    "modal": {
+      "selected_timeframe": "Geselecteerde periode:",
+      "selection": {
+        "title": "Sla de gegevens in deze forecastversie op:"
+      },
+      "info": "Reeds bestaande versies worden overschreven."
+    },
+    "name": {
+      "operational": "Operationeel",
+      "strategic": "Strategisch"
+    }
+  },
+  "forecast_download": {
+    "name": {
+      "auto": "Forecast",
+      "operational": "Operationeel",
+      "all": "Alles"
+    },
+    "title": "Downloaden als CSV",
+    "modal": {
+      "selected_timeframe": "Geselecteerde tijdsbestek",
+      "selection": {
+        "source": "Forecastgegevens",
+        "data": "Selecteer de gegevens die je wilt downloaden."
+      },
+      "save": "Downloaden als CSV",
+      "error": "CSV kon niet worden geleverd.",
+      "info_link": "https://help.injixo.com/download-forecast/",
+      "info": "Ga voor meer informatie naar het <HelpCenterLink>Help Center.</HelpCenterLink>."
+    }
+  },
+  "forecast_import": {
+    "menu_title": "Forecastgegevens importeren",
+    "title": "Forecastgegevens importeren",
+    "modal": {
+      "start": "Gegevens importeren",
+      "ready": "Klaar voor import",
+      "importing": "Gegevens importeren",
+      "info_link_description": "Help Center.",
+      "info_link": "https://help.injixo.com/nl/import-forecast/",
+      "info": "Lees meer in ",
+      "imported_lines": "regels",
+      "choose": "Bestand kiezen",
+      "errors": {
+        "empty_file": "Het bestand is leeg. Probeer het opnieuw te exporteren of upload een ander bestand.",
+        "end_time_before_start_time": "De eindtijd mag niet vóór de begintijd liggen.",
+        "error_on_line": "We hebben een fout gevonden in regel {{line_number}}:",
+        "excessive_data": "Het bestand kan maximaal een jaar aan gegevens bevatten.",
+        "file_too_large": "Het bestand dat je probeerde te uploaden is te groot. De maximale grootte is 7MB.",
+        "invalid_channel": "Dit kanaal wordt niet ondersteund. We ondersteunen calls, emails, chats, documents, cases, social_media.",
+        "invalid_date_format": "De datums in het bestand moeten de datumindeling YYY-MM-DD volgen.",
+        "invalid_date_or_time_format": "De datums in het bestand moeten de indeling YYYY-MM-DD volgen. De tijden moeten de indeling HH:MM volgen.",
+        "invalid_duration_cdr": "Het contact heeft de status afgehandeld, maar er is geen tijdsduur voor.",
+        "invalid_end_of_line": "Alle regels in het bestand moeten dezelfde eindregeltekens hebben als de eerste regel.",
+        "invalid_handled_cdr": "Het veld Afgehandeld moet de waarde 0 of 1 bevatten.",
+        "invalid_headers": "Ale koppen moeten de indeling: \"Tijdstempel;Aangeboden;AHT (standaard formaat)\" of \"Tijdstempel;Aangeboden_vrijetekst;AHT_vrijetekst (vrije tekst met verplichte underscore)\" volgen.",
+        "invalid_number": "Numerieke waarden moeten hele getallen of decimale getallen zijn, met een punt als scheidingsteken (bijvoorbeeld 1.5).",
+        "invalid_row_length": "Het aantal velden in deze regel komt niet overeen met het aantal velden in de kopregel.",
+        "invalid_separator": "Het scheidingsteken moet een komma (,) of een puntkomma (;) zijn.",
+        "invalid_time_format": "De tijden in het bestand moeten de indeling HH:MM volgen.",
+        "invalid_timestamp": "De tijdstempel komt niet overeen met de intervallengte.",
+        "invalid_year": "Het eerste jaar dat wordt ondersteund is 1970.",
+        "missing_activity": "Ontbrekende activiteiten-ID.",
+        "missing_agent": "Ontbrekende agenten-ID.",
+        "missing_queue": "Ontbrekende naam van queue.",
+        "negative_number": "Numerieke waarden moeten positieve getallen zijn.",
+        "non_existing_timestamp": "De opgegeven lokale tijd komt niet overeen met een bestaande tijdstempel. Dit kan het gevolg zijn van een tijdswijziging.",
+        "number_too_big": "Het getal is te groot. Corrigeer je gegevens of neem voor ondersteuning contact op met ons supportteam.",
+        "string_too_long": "Het veld kan maximaal 255 tekens bevatten.",
+        "unexpected": "Er is een onverwachte fout opgetreden. Controleer je gegevens of probeer het bestand opnieuw te uploaden.",
+        "unknown_error": "Er is een onbekende fout opgetreden. Controleer je gegevens of probeer het bestand opnieuw te uploaden.",
+        "invalid_time_range": "De gegevens overschrijden de maximale periode van 10 jaar."
+      },
+      "import_error_fileName": "Afwijzing van het importeren van {{ fileName }} is mislukt",
+      "imported_fileName": "{{ fileName }} is geïmporteerd",
+      "status": "Status"
+    },
+    "select_file": "Selecteer een CSV-bestand om te importeren"
+  },
+  "guidance": {
+    "missing_queues": {
+      "action": "Queues ontbreken in deze tabel?",
+      "action_no_results": "Ontbrekende queues?",
+      "close_modal": "Ok",
+      "title": "Ontbrekende queues",
+      "description": "Ontbrekende queues zijn het gevolg van onjuiste waardetypes. Om de ontbrekende queues in forecast te kunnen gebruiken, is het nodig om de waardetypes volgens de volgende tabel in te stellen:",
+      "table": {
+        "title_required": "Vereist",
+        "tooltip_required": "Alle waardetypes van deze kolom moeten worden toegewezen aan een queue in WFM.",
+        "title_optional": "Optioneel",
+        "tooltip_optional": "Indien toegewezen aan een queue in WFM, zullen deze waardetypes ook beschikbaar zijn.",
+        "title_other": "Andere",
+        "tooltip_other": "Indien toegewezen, worden deze waardetypes tijdens de import genegeerd. Andere waardetypen voorkomen dat er een queue beschikbaar is.",
+        "calls_required_value_types": {
+          "offered": "Gesprekken aangeboden"
+        },
+        "calls_optional_value_types": {
+          "answered": "Beantwoorde gesprekken",
+          "aht": "Gesprekken gemiddeld Omgaan met tijd"
+        },
+        "calls_other_value_types": {
+          "abandoned": "Afgebroken oproepen",
+          "service_level": "Gesprekken Service Level",
+          "speed_of_answer": "Gesprekken gemiddelde snelheid van antwoord",
+          "predicted_service_level": "Gesprekken voorspelde Service Level"
+        },
+        "emails_required_value_types": {
+          "offered": "Email aangeboden"
+        },
+        "emails_optional_value_types": {
+          "answered": "Beantwoorde Email",
+          "aht": "Email gemiddeld Omgaan met tijd"
+        },
+        "emails_other_value_types": {
+          "service_level": "Email Service Level",
+          "speed_of_answer": "Emails gemiddelde snelheid van antwoord",
+          "predicted_service_level": "Email voorspelde Service Level"
+        },
+        "documents_required_value_types": {
+          "offered": "Documenten aangeboden"
+        },
+        "documents_optional_value_types": {
+          "answered": "Documenten beantwoord",
+          "aht": "Documenten gemiddeld Omgaan met tijd"
+        },
+        "documents_other_value_types": {
+          "service_level": "Documenten Service Level",
+          "speed_of_answer": "Documenten gemiddelde snelheid van antwoord",
+          "predicted_service_level": "Documenten voorspelde Service Level"
+        },
+        "chats_required_value_types": {
+          "offered": "Chat aangeboden"
+        },
+        "chats_optional_value_types": {
+          "answered": "Beantwoorde Chat",
+          "aht": "Chat gemiddeld Omgaan met tijd"
+        },
+        "chats_other_value_types": {
+          "abandoned": "Chat afgebroken",
+          "service_level": "Chat Service Level",
+          "speed_of_answer": "Chat gemiddelde snelheid van antwoord",
+          "predicted_service_level": "Chats voorspelde Service Level"
+        },
+        "cases_required_value_types": {
+          "offered": "Cases aangeboden"
+        },
+        "cases_optional_value_types": {
+          "completed": "Cases Answered",
+          "aht": "Cases gemiddeld Omgaan met tijd"
+        },
+        "cases_other_value_types": {
+          "existing": "Cases old",
+          "service_level": "Cases Service Level",
+          "predicted_service_level": "Cases voorspelde Service Level"
+        },
+        "social_media_required_value_types": {
+          "offered": "Social Media aangeboden"
+        },
+        "social_media_optional_value_types": {
+          "answered": "Beantwoorde Social Media",
+          "aht": "Social Media gemiddeld Omgaan met tijd"
+        },
+        "social_media_other_value_types": {
+          "speed_of_answer": "Social Media gemiddelde snelheid van antwoord",
+          "service_level": "Social Media Service Level",
+          "predicted_service_level": "Social Media voorspelde Service Level"
+        }
+      },
+      "outbound_value_types_hint": "Elk uitgaande waardetype",
+      "wfm_hint": "Na het wijzigen van een waardetype in WFM kan het enkele minuten duren voordat de bijgewerkte queues beschikbaar zijn in forecast."
+    }
+  },
+  "acd": {
+    "type": {
+      "five9": "Five9",
+      "talkdesk": "Talkdesk",
+      "xlink": "ACD-integratie"
+    },
+    "status": {
+      "last_import": "Laatste import: ",
+      "connection": {
+        "loading": "ACD-verbinding controleren...",
+        "not_configured": "Geen ACD-verbinding",
+        "connected": "Verbonden",
+        "disconnected": "Geen verbinding",
+        "auth_failed": "inloggegevens ongeldig"
+      },
+      "import": {
+        "null": "Laden",
+        "started": "Gestart",
+        "success": "gestart",
+        "error": "mislukt",
+        "auth_failed": "mislukt",
+        "fail": {
+          "label": "Er kon geen ACD-verbinding tot stand worden gebracht.",
+          "link": "Integratie-instellingen controleren"
+        }
+      }
+    }
+  },
+  "integrations": {
+    "title": "Integraties",
+    "loading": "Verkrijgen integratiestatus...",
+    "status": {
+      "none": "Er zijn geen integraties opgezet.",
+      "all_connected": "Alle integraties werken.",
+      "none_connected": "Alle integraties zijn verbroken.",
+      "some_connected": "{{ count }} integratie(s) ondervinden problemen.",
+      "some_suspended": "{{ count }} integratie(s) zijn opgeschort."
+    },
+    "more_information": {
+      "label": "Zie voor meer informatie",
+      "link": "Integratie Status"
+    }
+  },
+  "adjustments": {
+    "heading": "Handmatige aanpassingen",
+    "error_on_save": "Er is een fout opgetreden tijdens het opslaan van het overschreven volume.",
+    "error_on_delete": "Er is een fout opgetreden bij het verwijderen van je overschreven volume.",
+    "selected_day": "Geselecteerde dag",
+    "start_time": "Begintijd",
+    "end_time": "Eindtijd",
+    "date_range": "Datumbereik",
+    "volume": "Volume",
+    "reason_for_editing": "Reden van wijziging",
+    "placeholder_selected_day": "Kies een dag",
+    "placeholder_start_time": "Selecteer een starttijd",
+    "placeholder_end_time": "Selecteer een eindtijd",
+    "placeholder_selected_reason": "Kies een reden",
+    "clear_selected_adjustments": "Geselecteerde aanpassingen wissen",
+    "clear_all_adjustments": "Alle aanpassingen verwijderen",
+    "error_selected_day": "Selecteer een geldige dag",
+    "error_selected_time": "Selecteer een geldige tijd",
+    "error_selected_range": "Selecteer een geldig bereik",
+    "error_selected_reason": "Selecteer een reden",
+    "alter": "wijzigen (%)",
+    "overwrite": "overschrijven",
+    "offered": {
+      "open_section": "Volume aanpassen",
+      "error_below_zero": "Volume kan niet negatief zijn",
+      "error_non_number": "Voer een volume in.",
+      "error_below_min_percentage": "Volume mag niet kleiner zijn dan -100",
+      "error_above_max_percentage": "Volume mag niet hoger zijn dan 1000",
+      "add": {
+        "heading": "Aanpassing toevoegen"
+      },
+      "delete": {
+        "explanation": "Verwijder alle volumeaanpassingen binnen de tijdspanne die op de achtergrond wordt weergegeven.",
+        "heading": "Aanpassingen verwijderen",
+        "no_adjustments": "Er zijn geen volumeaanpassingen in de tijdspanne die op de achtergrond wordt weergegeven."
+      },
+      "error_start_after_end": "Selecteer een eindtijd die later is dan de starttijd."
+    },
+    "aht": {
+      "open_section": "AHT aanpassen",
+      "error_below_zero": "AHT kan niet negatief zijn",
+      "error_non_number": "AHT moet een getal zijn",
+      "error_below_min_percentage": "AHT kan niet lager zijn dan -100",
+      "error_above_max_percentage": "AHT kan niet hoger zijn dan 1000",
+      "help": "De aangepaste AHT-waarden blijven nul als er geen aangeboden oproepen zijn voor deze periode. Pas de aangeboden oproepen aan om de AHT-aanpassing ook te weer te geven.",
+      "add": {
+        "heading": "Aanpassing toevoegen"
+      },
+      "delete": {
+        "explanation": "Verwijder alle AHT-aanpassingen binnen de tijdspanne die op de achtergrond wordt weergegeven.",
+        "heading": "Aanpassingen verwijderen",
+        "no_adjustments": "Er zijn geen AHT-aanpassingen in de tijdspanne die op de achtergrond wordt weergegeven."
+      },
+      "error_start_after_end": "Selecteer een eindtijd die later is dan de starttijd."
+    },
+    "reasons": {
+      "marketing_sales_activity": "Marketing/sales activiteit",
+      "bank_holidays": "Feestdagen",
+      "what_if_scenario": "What-if Scenario",
+      "errors_in_historical_data": "Fouten in historische data",
+      "insufficient_historical_data": "Onvoldoende historische data",
+      "lost_business_customers": "Verloren business / klanten",
+      "dst_changes": "Zomertijdwijziging",
+      "shrinkage": "Shrinkage",
+      "other": "Andere"
+    },
+    "value": "Waarde"
+  },
+  "reforecast": {
+    "open_section": "Toon Reforecast",
+    "heading": "Reforecast",
+    "info": "Bestaande handmatige aanpassingen worden voor het geselecteerde tijdsbestek overschreven.",
+    "warning": "Reforcasting is niet mogelijk voor de huidige situatie.",
+    "apply": "Toepassen",
+    "apply_and_adjust": "Toepassen en handmatig aanpassen.",
+    "apply_error": "Reforecast kon niet worden toegepast",
+    "discard": "Verwerpen",
+    "loading_error": "Reforecast kon niet worden geladen.",
+    "source_selection_info": "Herberekening op basis van historische gegevens en"
+  },
+  "chart": {
+    "legend": {
+      "staff": "Personeelsbehoefte",
+      "staff_min": "Minimale personeelsbehoefte",
+      "staff_max": "Maximale personeelsbehoefte",
+      "history": "Historie",
+      "forecast": "Forecast",
+      "operational": "Operationeel",
+      "strategic": "Strategisch",
+      "forecast_decrease": "Handmatige verlaging",
+      "forecast_increase": "Handmatige verhoging"
+    },
+    "x_axis": {
+      "formats": {
+        "datetime": "%H:%M",
+        "date": "%a %e %b",
+        "week": "%e %b"
+      }
+    },
+    "tooltip": {
+      "datetime_format": {
+        "interval": "%H:%M",
+        "day": "%a %e %b",
+        "day_with_year": "%A, %e %b, %Y"
+      },
+      "formats": {
+        "interval": "HH:mm",
+        "day": "dddd DD",
+        "range": {
+          "connector": " - ",
+          "end": "DD/M"
+        }
+      },
+      "holiday": "Feestdag",
+      "holidays_during": "Evenementen"
+    },
+    "info": {
+      "label": {
+        "combined_tooltip": "De waarde is gebaseerd op gegevens uit de Historie en de Auto-Forecast.",
+        "auto-forecast": "Forecast",
+        "combined": "Gecombineerd",
+        "history": "Historie",
+        "import": "Importeer"
+      }
+    },
+    "staff_requirements": {
+      "select_version_label": "Basis voor de berekening van de personeelsbehoefte"
+    },
+    "summary": {
+      "auto": "Forecast",
+      "combined": "Gecombineerd (Historisch en Forecast)",
+      "historic": "Historisch",
+      "import": "Geïmporteerde forecast",
+      "operational": "Operationele versie",
+      "strategic": "Strategische versie"
+    }
+  },
+  "chart_datetime_format": "%A %d/%m/%Y %H:%M",
+  "chart_date_format": "%A %d/%m/%Y",
+  "chart_month_format": "%b %Y",
+  "date_format": "dd/MM/yyyy",
+  "volume": "Gespreksvolume",
+  "aht": "AHT",
+  "time": "Tijd",
+  "date": "Datum",
+  "start_date": "Startdatum",
+  "no_data": "Geen gegevens beschikbaar",
+  "merge_in_progress": {
+    "title": "Gegevens voorbereiden",
+    "body": "Dit kan een tijdje duren. Als het proces klaar is, worden je gegevens hier automatisch weergegeven."
+  },
+  "unknown": "Onbekend",
+  "units": {
+    "seconds": "seconden",
+    "minutes": "minuten",
+    "day": "Dag",
+    "week": "week",
+    "second_abbreviated": "sec",
+    "minute_abbreviated": "min"
+  },
+  "forecast_page": {
+    "create": "Nieuwe workload",
+    "edit": "Workload bewerken",
+    "sections": {
+      "forecast": {
+        "title": "Volume en AHT",
+        "no_aht": "Deze workload heeft geen AHT-gegevens voor het geselecteerde tijdsframe.",
+        "empty_value_type": {
+          "description": "Dit waardetype bevat geen gegevens. Je kunt gegevens uploaden met behulp van onze CSV-import uit het optiemenu hierboven.",
+          "title": "Leeg waarde type"
+        },
+        "forecast-updating": "De forecast wordt bijgewerkt. Dit kan 24 uur duren."
+      },
+      "staff_requirements": {
+        "title": "Personeelsbehoefte",
+        "adjust_params": "Parameters aanpassen",
+        "error_no_params": "Berekening van de personeelsbehoefte is mislukt als gevolg van een interne fout",
+        "reload_graph": "Grafiek opnieuw laden"
+      }
+    },
+    "all_workloads": "Lijst met workloads bekijken"
+  },
+  "workloads": {
+    "title": "Workloads",
+    "navigation": {
+      "search": {
+        "placeholder": "Selecteer of zoek een workload",
+        "no_result": "Geen workload gevonden"
+      }
+    },
+    "loading_error": "Workload kon niet worden geladen.",
+    "mode": {
+      "test": "Test",
+      "live": "Live",
+      "basic": "Basic",
+      "smart": "Smart",
+      "switch": "Workload in Live-modus zetten",
+      "is_live": "Deze Workload staat in de Live-modus en wordt maandelijks in rekening gebracht.",
+      "description_test": "Deze workload bevindt zich momenteel in de Test-modus. Zet deze workload in de Live-modus om alle functionaliteiten van injixo Forecast te kunnen gebruiken. Live-workloads worden afzonderlijk in rekening gebracht. Je kunt een Live-workload niet terugzetten in de Test-modus.",
+      "faq_link": "Meer informatie"
+    },
+    "details": "Details",
+    "channel": "Kanaal",
+    "channel_desc": "Deze workload bevat alleen {{ channel }}",
+    "forecast_in_progress": "Forecasting",
+    "action_refresh": "Vernieuwen",
+    "holiday_region_label": "Feestdagen regio",
+    "select_holiday_regions": "Overweeg feestdagen voor forecasting?",
+    "holiday_section_description": "De forecast wordt aangepast op basis van de feestdagenregio en de historische trends voor elke feestdag.",
+    "calculation_method_label": "Berekeningsmethode",
+    "calculation_method_placeholder": "Kies een berekeningsmethode",
+    "calculation_method_info": "Wijs de activiteit van een eenheid toe om de eis over te dragen aan.",
+    "select_unit_activity": {
+      "errors": {
+        "failed_to_load": "Het laden van activiteiten en eenheid gegevens is mislukt. Probeer het over een paar minuten opnieuw.",
+        "missing_activity": "Activiteit is vereist."
+      },
+      "infos": {
+        "in_use": "in gebruik",
+        "no_planning_unit": "Je moet minstens één eenheid en één activiteit aanmaken om de berekening van je personeelsbehoefte over te brengen naar je WFM. Gelieve deze pagina opnieuw te laden na het configureren van je WFM.",
+        "no_activity": "Je dient minstens één activiteit in WFM toe te wijzen aan de eenheid om de berekening van je personeelsbehoefte over te dragen aan WFM. Gelieve deze pagina opnieuw te laden na het configureren van je WFM."
+      },
+      "label": {
+        "planning_unit": "Eenheid",
+        "activity": "Activiteit"
+      },
+      "placeholder": {
+        "planning_unit": "Zoek of selecteer een planningseenheid",
+        "activity": "Zoek of selecteer een activiteit"
+      },
+      "description": "Selecteer de eenheid en activiteit om je personeelsbehoefte over te dragen aan WFM.",
+      "title": "Erlang-C behoeftecalculatie",
+      "subheader": {
+        "assign_planning_unit": "Eenheid en activiteit toewijzen",
+        "parameter": "Parameter",
+        "unit_activity": "Resultaten overdragen naar"
+      },
+      "inline": {
+        "in": "in"
+      }
+    },
+    "warnings": {
+      "staff_requirements_could_not_be_saved": "Personeelsbehoefte kann niet worden opgeslagen. Later opnieuw toe te wijzen.",
+      "at_least_on_queue_in_workload": "Wijs ten minste één queue toe aan je workload.",
+      "no_workloads_but_queues": {
+        "title": "Geen workloads",
+        "description": "Kies + om nieuwe workloads aan te maken"
+      },
+      "different_channels_hint": "Je kunt {{ newChannelQueues }} niet selecteren terwijl {{ oldChannelQueues }}  zijn geselecteerd."
+    },
+    "search": {
+      "title": "Workloads zoeken",
+      "placeholder": "Queues en workloads zoeken",
+      "aria_label": "Workloads zoeken",
+      "no_results": {
+        "header": "Geen queues",
+        "description": "Gebruik andere filtercriteria."
+      },
+      "show_deleted": "Inactieve queues weergeven",
+      "show_all": "Alle queues",
+      "show_selected": "Geselecteerde queues",
+      "show_unselected": "Niet-geselecteerde queues"
+    },
+    "add": {
+      "aria_label": "Voeg workload toe"
+    },
+    "section": {
+      "forecast": "Forecast",
+      "export": "Historische gegevens",
+      "mode": "Modus",
+      "basic_information": "Basisinformatie",
+      "calculation_parameters": "Berekeningsparameters",
+      "advanced_options": "Geavanceerde opties"
+    },
+    "edit": {
+      "header": "Workload bewerken",
+      "name_label": "Naam",
+      "timezone_label": "Tijdzone",
+      "timezone_selection_placeholder": "Selecteer een tijdzone.",
+      "exporter_hint": "Nieuwe gegevens zullen periodiek worden geëxporteerd naar de bijbehorende queue '*{{ workloadName }}' onder WFM.",
+      "exporter_hint_name_change": "Als je de naam van de workload wijzigt, wordt de naam van de queue in WFM overschreven door de volgende export.",
+      "warnings": {
+        "no_valid_value_types": "De AHT van deze workload kan niet correct worden berekend. Ten minste één geselecteerde queue heeft onjuiste of onvolledige AHT-gegevens."
+      },
+      "save": {
+        "label": "Workload opslaan",
+        "success": "Workload succesvol opgeslagen.",
+        "errors": {
+          "fields_hint": "Zorg ervoor dat je alle gemarkeerde velden invult.",
+          "server": "Er is een serverfout opgetreden. Probeer het later nog eens.",
+          "name_taken": "De naam van de workload is al in gebruik. Voer een naam in die nog niet wordt gebruikt.",
+          "name_not_blank": "Voer een naam in.",
+          "no_timezone": "Selecteer een tijdzone.",
+          "different_channels": "Queues met verschillende brontypen kunnen niet worden samengevoegd. Kies queues met hetzelfde brontype.",
+          "different_intervals": "Queues met verschillende intervallengtes kunnen niet worden samengevoegd. Kies queues met dezelfde intervallengte.",
+          "fixed_aht": {
+            "required": "Je moet een AHT ingeven.",
+            "required_history": "Je moet een AHT ingeven. Ten minste één geselecteerde queue heeft onjuiste of onvolledige AHT-gegevens."
+          }
+        }
+      },
+      "delete": {
+        "label": "Workload verwijderen",
+        "confirm": "Workload verwijderen",
+        "cancel": "Annuleren",
+        "success": "De workload is verwijderd.",
+        "failure": "De workload kon niet worden verwijderd.",
+        "modal_header": "Workload verwijderen?",
+        "modal_list": {
+          "header": "De workload <bold>{{ workload_name }}</bold> wordt verwijderd.",
+          "billing": "De workload wordt nog gefactureerd tot het einde van de huidige maand.",
+          "history_queues": "De bijbehorende historische queuegegevens blijven in het systeem bestaan.",
+          "workload_queue": "De queues worden niet beïnvloed. Er worden geen gegevens meer geëxporteerd."
+        }
+      },
+      "hint": {
+        "no_edit_timezone": "De tijdzone kan later niet meer worden bewerkt."
+      },
+      "error": "Er is een fout opgetreden. Probeer het later nog eens.",
+      "queues_assigned_label": "Queues toegewezen aan",
+      "queue_name": "Naam",
+      "interval": "Interval",
+      "aht": {
+        "label": "AHT",
+        "label_tooltip": "AHT is beschikbaar voor queues met de waardetypes \"{{ channel }}  beantwoord\" en \"{{ channel }} gemiddelde afhandeltijd\" toegewezen in WFM.",
+        "available": "Beschikbaar",
+        "not_available": "Niet beschikbaar",
+        "info": "Stel een vaste AHT in als je niet met de voorspelde AHT kunt of wilt werken."
+      },
+      "assigned_to": "Toegewezen aan",
+      "integration": "Integratie",
+      "basic_configuration": "Basisconfiguratie",
+      "service_level_target": "Beoogde servicegraad",
+      "target_answer_seconds_aria_label": "Beoogde gemiddelde snelheid van antwoord in seconden",
+      "target_answer_seconds_label": "Snelheid van antwoord",
+      "target_service_level_aria_label": "Beoogde servicegraad",
+      "target_service_level_label": "Percentage van gesprekken"
+    },
+    "new": {
+      "title": "Nieuwe workload",
+      "save": "Workload aanmaken",
+      "queues": "Queues toewijzen",
+      "queues_hint": "Een workload kan alleen queues bevatten van hetzelfde kanaal. Eenmaal toegewezen kan het workload-kanaal niet meer worden gewijzigd. Het kan alleen worden bijgewerkt door een nieuwe workload aan te maken.",
+      "different_channels_action": "Huidige selectie verwijderen",
+      "selected_queues": "geselecteerd",
+      "exporter_hint": "De workload geschiedenis voor vandaag en gisteren zal periodiek worden geëxporteerd naar WFM, in een speciale queue met de naam '*{{ workloadName }}'.",
+      "errors": {
+        "select_queue": "Minstens één queue vereist"
+      },
+      "exporter_hint_styled": "injixo maakt automatisch een queue aan met dezelfde naam als je workload, voorafgegaan door een asterisk (*). Selecteer deze queue als je de berekeningsmethode voor de personeelsbehoefte configureert."
+    },
+    "business_hours_association": {
+      "errors": {
+        "missing_planning_unit": "De planningseenheid is vereist."
+      },
+      "subheading": "Openingstijden",
+      "warnings": {
+        "staff_requirements_mismatch": "De configuratie wijkt af van de instellingen die je bij de berekeningsmethode voor de personeelsbehoefte hebt geselecteerd."
+      },
+      "select": "Forecast uitsluitend binnen openingstijden.",
+      "explanation": "Houd bij de berekening van de forecast rekening met de openingstijden van de planningseenheid en de activiteit. Volumes buiten de openingstijden worden herverdeeld binnen de openingstijden. De Forecast zal enige tijd nodig hebben om zich aan deze wijziging aan te passen.",
+      "label": "Openingstijden",
+      "hint": "Om deze optie in te schakelen moet je een planningseenheid en een activiteit selecteren in de basis configuratie sectie."
+    },
+    "calculation_models": {
+      "explanation_basic": "Basic Forecast gebruikt een algoritme op basis van gemiddelde historische waarden. De forecast wordt eenmaal per week berekend.<br><b>Update in 2023:</b> Alle Basic Forecast-workloads worden opgewaardeerd naar Smart Forecast-workloads.",
+      "explanation_smart": "Met Smart Forecast selecteer je het algoritme voor de meest nauwkeurige forecast op basis van machine learning. Telkens wanneer je historische gegevens worden bijgewerkt, wordt er een nieuwe forecast gegenereerd. Probeer Smart Forecast nu gratis met Smart Forecast (testmodus).",
+      "label": "Forecast model",
+      "basic": "Basic Forecast",
+      "smart": "Smart Forecast",
+      "hint": "Houd er rekening mee dat het selecteren van de Basic Forecast functies deactiveert die alleen beschikbaar zijn met de Smart Forecast optie.",
+      "explanation_basic_classic": "Basic Forecast gebruikt een algoritme op basis van gemiddelde waarden van historische gegevens. De forecast wordt eenmaal per week berekend. Probeer nu de nauwkeurigere Smart Forecast."
+    },
+    "pricing_model": {
+      "explanation_live": "Live <b>modus activeert</b> de volledige injixo Forecast functionaliteit voor deze workload. <b>Deze zal maandelijks in rekening worden gebracht.</b> Houd er rekening mee dat een workload niet kan worden teruggezet naar Test-modus of Basic Forecast als deze eenmaal live is gezet.",
+      "explanation_test": "De <b>workloads in testmodus</b> zijn niet belast, maar de functionaliteit is beperkt. Ze zijn alleen bedoeld voor evaluatiedoeleinden. Houd er rekening mee dat een workload niet kan worden teruggezet naar <b>Testmodus</b> of <b>Basisprognose</b> wanneer deze eenmaal live is gezet.",
+      "label": "Prijsmodel",
+      "live": "Live-modus",
+      "test": "Test-modus"
+    },
+    "pu_activity": {
+      "explanation": "Door een Eenheid en Activiteit te selecteren, kan je de openingstijden in de forecastgrafiek laten zien. Eenheden en Activiteiten zijn onderhevig aan gebruikersrechten- Neem contact op met de beheerder als je iets niet kunt vinden in de selectie velden.\nOpmerking: Als aan een Eenheid een planningskalender is toegewezen, heb je deze rechten ook nodig om de openingstijden weer te geven (ze zijn alleen zichtbaar in het dagaanzicht)."
+    },
+    "history_starting_time_field": {
+      "default": "standaard",
+      "explanation": "Kies een begindatum voor de historische data die in aanmerking moeten worden genomen voor de Forecast. Alle gegevens van vóór die datum worden bij de berekeningen buiten beschouwing gelaten. Anders neemt de berekening de eerste historische datum als standaard.",
+      "label": "Startdatum voor historische data waarmee rekening moet worden."
+    },
+    "list": {
+      "last_viewed_column": "Laatst bekeken",
+      "search": {
+        "sort_by_dropdown": {
+          "label": "Lijst sorteren",
+          "option": {
+            "last_seen": "Laatst bekeken",
+            "name": "Naam"
+          }
+        }
+      },
+      "tooltip": {
+        "create_workload": "Nieuwe workload",
+        "delete_workload": "Verwijderen",
+        "edit_workload": "Bewerken"
+      },
+      "workload_count_zero": "Geen workloads gevonden",
+      "workload_count_one": "<CountHeading>1</CountHeading> <span>workload</span>",
+      "workload_count_other": "<CountHeading>{{count}}</CountHeading> <span>workloads</span>"
+    },
+    "type": "Type",
+    "forecast_model": {
+      "basic": "Basic Forecast",
+      "live": "Smart Forecast (live-modus)",
+      "test": "Smart Forecast (testmodus)"
+    },
+    "overflow_menu": "Overloopmenu workloads",
+    "queue_table": {
+      "show_selected": "Geselecteerde queues weergeven",
+      "show_unselected": "Niet-geselecteerde queues weergeven"
+    }
+  },
+  "queues": {
+    "header": "Queues",
+    "aht_kpi_tag": "AHT",
+    "total_calls_kpi_tag": "Totaal gespreksvolume",
+    "chart": "Grafiek",
+    "channel": {
+      "calls": "Gesprekken",
+      "calls_queues": "Gesprek queues",
+      "chats": "Chats",
+      "chats_queues": "Chat queues",
+      "emails": "Emails",
+      "emails_queues": "Email queues",
+      "documents": "Documenten",
+      "cases": "Cases",
+      "cases_queues": "Case queues",
+      "documents_queues": "Document queues",
+      "social_media": "Social Media",
+      "social_media_queues": "Social Media queues",
+      "unknown_queues": "Queues van onbekend kanaal",
+      "unknown": "Kanaal"
+    },
+    "last_imported": "Laatst geïmporteerd {{ from }}",
+    "no_queues": "Geen gegevens beschikbaar",
+    "no_queues_search": "Geen overeenkomende workloads",
+    "no_queues_hint": "Historische gegevens worden om de 15 minuten geïmporteerd.",
+    "series": {
+      "offered": "Aangeboden {{ channel }}",
+      "aht": "AHT"
+    },
+    "filter": {
+      "all": "Alle",
+      "selected": "Geselecteerd",
+      "unselected": "Niet geselecteerd"
+    },
+    "plotlines": {
+      "now": "Nu",
+      "history": "Historie",
+      "forecast": "Forecast"
+    },
+    "save_modal_header": "Gebruik deze forecast om de personeelsbehoefte te berekenen.",
+    "legacy_save_modal_header": "Forecast overdragen naar ForecastPro",
+    "save": "Forecast gebruiken",
+    "save_info": {
+      "saving": "Overdragen...",
+      "save": "Forecast gebruiken",
+      "legacy_save": "Opslaan in ForecastPro",
+      "failure_text": "Kan het volume en de AHT-gegevens niet overdragen. De doelqueue of het waardetype bestaat niet. Voeg het waardetype toe aan de queue of maak de workload opnieuw aan als de queue is verwijderd.",
+      "overwriting_hint": "Je bestaande volume- en AHT-gegevens voor deze tijdsperiode worden overschreven.",
+      "ratelimited_text": "De overdracht is al in uitvoering.",
+      "timeframe": {
+        "title": {
+          "multiple_days": "Tijdsspanne",
+          "single_day": "Datum"
+        },
+        "details": {
+          "multiple_days": "Van {{ start }} tot {{ end }}"
+        }
+      },
+      "select_forecast": "Forecast selecteren",
+      "queue": {
+        "title": "Queue"
+      },
+      "value_types": {
+        "title": "Waardetypes"
+      },
+      "version": {
+        "title": "Versie"
+      },
+      "what": "Sla deze forecast op om andere berekeningsmethoden dan Erlang-C te gebruiken.",
+      "legacy_what": "Draag de forecast over naar ForecastPro om een alternatieve methode voor de berekening van de personeelsbehoefte te gebruiken. Het zal worden verstrekt als versie \"Auto-Forecast\".",
+      "mode": {
+        "description_test": "Deze Workload staat momenteel in de Test-modus. Zet deze workload in de Live-modus om alle functionaliteiten van injixo Forecast te benutten. Live-workloads worden apart in rekening gebracht. Je kunt een Live-workload niet terugzetten in de Test-modus."
+      }
+    },
+    "save_waiting": "Opslaan",
+    "save_triggered": "Opslaan is in uitvoering. Je forecast is binnen enkele minuten beschikbaar in WFM.",
+    "save_failed": "Opslaan is mislukt",
+    "delete": {
+      "confirm_header": "Verwijderen bevestigen",
+      "text": "Alle historische en voorspelde gegevens worden permanent verwijderd.",
+      "cancel": "Annuleer",
+      "delete": "Legen",
+      "header": "Queue verwijderen"
+    },
+    "day-button": "Dag",
+    "week-button": "Week",
+    "month-button": "Maand",
+    "year-button": "Jaar",
+    "error_fetching": "Kon de queues niet ophalen.",
+    "selected_from_deleted_integration_hint": "Inactieve queues zijn geïmporteerd uit integraties die inmiddels zijn verwijderd en ontvangen geen gegevens meer.",
+    "no_results": {
+      "description": "Wijzig of wis je filters.",
+      "header": "Geen queues gevonden"
+    }
+  },
+  "default_form_errors": {
+    "mixed": {
+      "required": "Moet ingevuld zijn."
+    },
+    "number": {
+      "integer": "Moet een heel getal zijn.",
+      "positive": "Moet groter zijn dan 0.",
+      "too_large": "Het getal is te groot.",
+      "gt": "Moet hoger zijn dan {{ value }}",
+      "gte": "Moet groter dan of gelijk zijn aan {{ value }}",
+      "lt": "Moet lager zijn dan {{ value }}",
+      "lte": "Moet lager zijn dan of gelijk zijn aan {{ value }}"
+    }
+  },
+  "days": {
+    "monday": "ma",
+    "tuesday": "di",
+    "wednesday": "wo",
+    "thursday": "do",
+    "friday": "vr",
+    "saturday": "za",
+    "sunday": "zo"
+  },
+  "generic": {
+    "no_result": "Geen resultaat gevonden"
+  },
+  "common": {
+    "numericSymbols": ["k", "M", "G", "T", "P", "E"],
+    "months": [
+      "januari",
+      "februari",
+      "maart",
+      "april",
+      "mei",
+      "juni",
+      "juli",
+      "augustus",
+      "september",
+      "oktober",
+      "november",
+      "december"
+    ],
+    "shortMonths": [
+      "jan",
+      "feb",
+      "mrt",
+      "apr",
+      "mei",
+      "jun",
+      "jul",
+      "aug",
+      "sept",
+      "okt",
+      "nov",
+      "dec"
+    ],
+    "weekdays": [
+      "zondag",
+      "maandag",
+      "dinsdag",
+      "woensdag",
+      "donderdag",
+      "vrijdag",
+      "zaterdag"
+    ],
+    "shortWeekdays": ["zo", "ma", "di", "wo", "do", "vr", "za"]
+  },
+  "libs": {
+    "humanize-number": {
+      "delimiter": ".",
+      "separator": ","
+    },
+    "pikaday": {
+      "previousMonth": "Vorige maand",
+      "nextMonth": "Volgende maand"
+    }
+  },
+  "events": {
+    "heading": "Evenementen",
+    "heading_outages": "Uitvallen",
+    "mailing": "Mailing",
+    "newsletter": "Nieuwsbrief",
+    "catalogue_release": "Uitgave catalogus",
+    "promotion": "Promotie",
+    "product_release": "Product release",
+    "billing_cycle": "Facturatie",
+    "debt_collection": "Incasso",
+    "product_recall": "Terugroepen van producten",
+    "flash_sale": "Flitsverkoop",
+    "outage": "Uitval",
+    "add_outage": "Nieuwe Storing toevoegen",
+    "add_outage_error": "Storing kon niet worden gemaakt.",
+    "delete_outage_error": "Storing kon niet worden verwijderd.",
+    "context_menu": {
+      "assign_events": "Evenement(en) Toewijzen",
+      "customize_event_types": "Gebeurtenistypen aanpassen"
+    },
+    "no_events_yet": "Je hebt nog geen Evenement toegevoegd aan je Forecast",
+    "no_outages_yet": "Er is geen Storing toegewezen.",
+    "outage_already_exists": "Storing bestaat al.",
+    "assigned_events": {
+      "add_event": "Voeg evenement toe",
+      "assign": "Evenement Toewijzen",
+      "select_type": "Selecteer een aangepast evenementtype",
+      "select_date": "Selecteer een dag",
+      "heading": "Toegewezen Evenementen",
+      "placeholder": "Je hebt nog geen evenement toegewezen.",
+      "event_already_exists": "Evenement bestaat al.",
+      "types_dropdown": {
+        "placeholder": "Selecteer een evenementtype",
+        "no_result": "Geen resultaat gevonden",
+        "error": "Je moet een evenementtype selecteren."
+      },
+      "create_event": "Gebeurtenis toevoegen",
+      "create_outage": "Uitval toevoegen"
+    },
+    "customize_types": {
+      "heading": "Gebeurtenistypen aanpassen",
+      "explanation": "Je kunt maximaal zeven aangepaste evenementtypen aan elke categorie toevoegen.",
+      "max_types_exceeded": "Je kunt niet meer dan zeven evenementtypes toevoegen.",
+      "name_already_taken": "Er bestaat al een evenementtype met dezelfde naam.",
+      "category": "Categorie",
+      "category_dropdown": {
+        "placeholder": "Selecteer",
+        "no_result": "Geen resultaat gevonden",
+        "error": "Er is een fout opgetreden"
+      },
+      "placeholder": "Er zijn nog geen evenementtypen toegewezen.",
+      "event_types": "Gebeurtenistypen",
+      "event_type": "Gebeurtenistype",
+      "add_new_type": "Voeg nieuw evenementtype toe",
+      "delete_event": "Verwijder {{ name }}",
+      "delete_error": "Evenementtype kon niet worden verwijderd.",
+      "update_error": "Evenementtype kon niet worden bijgewerkt.",
+      "rename_event": "Hernoem {{ name }}",
+      "assign": "Gebeurtenistype toevoegen",
+      "modal": {
+        "heading": "Weet je zeker dat je dit evenementtype wilt verwijderen?",
+        "open": "Bevestigingsmodule voor verwijdering openen",
+        "events": "Bijbehorende evenementen",
+        "body": "Alle evenementen die verband houden met dit type evenement worden permanent verwijderd. Dit heeft gevolgen voor zowel historische als toekomstige evenementen.",
+        "delete": "Gebeurtenistype verwijderen"
+      },
+      "note": "Houd er rekening mee dat je geconfigureerde evenementtype niet workload-specifiek zijn.",
+      "assign_error": "De gebeurtenis kon niet worden aangemaakt.",
+      "associated_events": {
+        "empty_message": "Er zijn geen gebeurtenistypen in deze categorie.",
+        "heading": "Bijbehorende gebeurtenissen ({{ eventCount }}/{{ maxEvents }})"
+      },
+      "event_creation_error": "Het gebeurtenistype kon niet worden aangemaakt. Controleer of er al een gebeurtenistype met dezelfde naam bestaat en of de gebeurteniscategorie al 7 gebeurtenistypen bevat."
+    },
+    "assign_error": "Het evenement bestaat al op {{ date }}.",
+    "assign_success": "Evenement met succes toegewezen aan {{ date }}.",
+    "delete": {
+      "toast": {
+        "success": "Event deleted"
+      }
+    },
+    "elevated-side-panel": {
+      "footer": {
+        "button": {
+          "close": {
+            "label": "Close"
+          },
+          "delete": {
+            "label": "Delete event"
+          }
+        }
+      }
+    },
+    "list": {
+      "button": {
+        "new-event": {
+          "text": "Create event"
+        }
+      },
+      "table": {
+        "body": {
+          "forecast-handling": {
+            "anomaly": "Anomaly",
+            "regular": "Regular"
+          }
+        },
+        "header": {
+          "event-name": "Event name",
+          "forecast-handling": "Handling in forecast",
+          "occurences-count": "Occurences count",
+          "workload-count": "Workload usage count"
+        }
+      }
+    },
+    "modal": {
+      "delete-event": {
+        "button": {
+          "cancel": "Cancel",
+          "delete": "Delete event"
+        },
+        "consequence1": "Any occurrences within the event will be delete and unassigned from workloads.",
+        "consequence2": "Forecast recalculation as the events has been removed, it may take a significant amount of time.",
+        "error": "The event could not be deleted. Please try again.",
+        "prompt": "The event <bold>{{eventName}}</bold> will be deleted from injixo.",
+        "title": "Delete event"
+      }
+    },
+    "new": {
+      "button": {
+        "cancel": {
+          "text": "Cancel"
+        },
+        "create": {
+          "text": "Create event"
+        }
+      },
+      "heading": {
+        "text": "Create event"
+      },
+      "inline-message": {
+        "error": "The event could not be created. Please try again."
+      },
+      "input": {
+        "event-name": {
+          "label": "Event name"
+        },
+        "impact-mode": {
+          "label": "Impact of the forecast calculation"
+        },
+        "name": {
+          "error": {
+            "required": "Enter the event name"
+          }
+        }
+      },
+      "radio": {
+        "impact-anomaly": {
+          "label": "Anomaly - Ignore historical data"
+        },
+        "impact-regular": {
+          "label": "Regular event - Analyze patterns"
+        }
+      },
+      "toast": {
+        "success": "Event has been created"
+      },
+      "tooltip": {
+        "impact-anomaly": {
+          "label": "The forecast calculation will ignore the historical data where this event occurred."
+        },
+        "impact-regular": {
+          "label": "The forecast calculation will identify the effect of past occurrences of this event in the historical data and apply a similar effect to future occurrences."
+        }
+      }
+    },
+    "show": {
+      "button": {
+        "edit": {
+          "aria-label": "Edit event",
+          "text": "Edit"
+        }
+      },
+      "read-only-data": {
+        "impact-mode": "Impact on forecast calculation",
+        "name": "Name"
+      },
+      "read-only-text": {
+        "impact-anomaly": "Anomaly - Ignore historical data",
+        "impact-regular": "Regular event - Analyze patterns"
+      }
+    },
+    "unknown": "Unknown"
+  },
+  "holidays": {
+    "select": {
+      "placeholder": "Selecteer feestdagen regio"
+    },
+    "heading": "Feestdagen",
+    "noneInDateRange": "Geen feestdagen binnen het tijdsbestek",
+    "no_holiday_regions_yet": "Je hebt nog geen feestdagenregio toegevoegd voor deze workload.",
+    "addRegionsGuidance": "Voeg een feestdagen regio toe",
+    "editRegionsGuidance": "Feestdagen regio bewerken",
+    "regionalHint": "regionaal"
+  },
+  "public_holidays": {
+    "de": "Duitse feestdagen",
+    "at": "Oostenrijkse feestdagen",
+    "ch": "Zwitserse feestdagen",
+    "fr": "Franse feestdagen",
+    "gb": "Britse feestdagen",
+    "us": "Feestdagen Verenigde Staten",
+    "it": "Italiaanse feestdagen",
+    "es": "Spaanse feestdagen",
+    "ca": "Canadese feestdagen",
+    "nl": "Nederlandse feestdagen",
+    "be_fr": "Belgische feestdagen",
+    "ie": "Ierse feestdagen",
+    "gb_eng": "Engelse feestdagen",
+    "gb_nir": "Noord-Ierse feestdagen",
+    "gb_sct": "Schotse feestdagen",
+    "gb_wls": "Welshe feestdagen",
+    "mt_en": "Maltese feestdagen",
+    "fi": "Finse feestdagen",
+    "dk": "Deense feestdagen",
+    "nz": "Nieuw-Zeelandse feestdagen",
+    "se": "Zweedse feestdagen",
+    "za": "Zuid-Afrikaanse feestdagen",
+    "cy": "Cypriotische feestdagen",
+    "bg_en": "Bulgaarse feestdagen",
+    "hk": "Feestdagen in Hongkong",
+    "kr": "Koreaanse feestdagen",
+    "ph": "Filippijnse feestdagen",
+    "pl": "Poolse feestdagen",
+    "ro": "Roemeense feestdagen",
+    "vn": "Vietnamese feestdagen"
+  },
+  "countries": {
+    "de": "Duitsland",
+    "at": "Oostenrijk",
+    "ch": "Zwitserland",
+    "fr": "Frankrijk",
+    "gb": "Groot-Brittannië",
+    "us": "Verenigde Staten",
+    "none": "Geen"
+  },
+  "multiple_planning_units_form": {
+    "script_name": "Behoefte voor meerdere eenheden",
+    "number_of_days": "Aantal dagen",
+    "erlang_c_parameters": "Erlang C Parameters",
+    "service_level": "Service Level (%)",
+    "service_seconds": "Service Seconds",
+    "shrinkage": "Shrinkage (%)",
+    "minimum_staff": "Minimum aantal medewerkers",
+    "maximum_staff": "Maximaal aantal medewerkers",
+    "fixed_average_handling_time": "Vaste gemiddelde afhandelingstijd",
+    "quota_percent": "Quota (%)",
+    "average_handling_time": "Gemiddelde afhandelingstijd",
+    "queue_parameters": "Queue Parameters",
+    "contacts": "Contacten",
+    "planning_unit_params": "Parameters van de eenheid",
+    "activity_params": "Overlappende activiteit",
+    "submit": "Verdelen",
+    "timezone_selection": "Resultaten weergeven in tijdzone",
+    "empty_fields": "Vul alle verplichte velden in",
+    "quotas_invalid": "De som van alle quota moet 100 zijn.",
+    "post_error": "Er is een fout opgetreden tijdens de berekening",
+    "use_fixed_aht_option": "--- Gebruik vaste AHT...",
+    "export_successful": "De export is geslaagd",
+    "export_in_progress": "De export is nog steeds bezig",
+    "export_failed": "Export is mislukt",
+    "start_date_timezone": "In tijdzone",
+    "info": "Reeds bestaande gegevens in deze periode zullen worden overschreven.",
+    "optional": "(optioneel)",
+    "range": "Datumbereik"
+  },
+  "iwfm_queues": {
+    "loading_error": "Queues konden niet worden geladen van."
+  },
+  "_placeholder": {
+    "fi": {
+      "File_to_upload": {
+        "header": "Te uploaden bestand"
+      },
+      "headline": "Upload jouw forecastgegevens",
+      "schema": {
+        "header": "CSV schema",
+        "inf": "Schema's bevatten het formaat van de geïmporteerde data. Als je geen schema hebt voor jouw import, maak dan een nieuw schema aan."
+      },
+      "title": "Forecast import",
+      "workload": {
+        "header": "Workload"
+      }
+    },
+    "tab1": {
+      "history_available": "Beschikbare historie "
+    },
+    "tab2": {
+      "without_history": "Zonder historie"
+    },
+    "wh": {
+      "channel": {
+        "header": "Kanaal",
+        "info": "Selecteer een kanaal voor het importeren. "
+      },
+      "headline": {
+        "forecast_attributes": "Prognoses"
+      },
+      "interval_length": {
+        "header": "Intervallengte",
+        "info": "Selecteer de intervallengte van de forecastgegevens. Als je de intervallengte moet wijzigen, maak dan een nieuwe workload aan."
+      }
+    }
+  },
+  "`_placeholder": {
+    "fi": {
+      "ready`": "Klaar voor jouw import"
+    }
+  },
+  "business_hours_activated_message": "Het kan een paar minuten duren voordat de openingstijden worden toegepast op de forecast. Let op: de openingstijden zijn alleen zichtbaar in het dagaanzicht.",
+  "business_hours_deactivated_message": "Het kan een paar minuten duren voordat de openingstijden niet meer worden toegepast op de forecast.",
+  "business_hours_link_deactivated_activated": "Herlaad de forecast in een paar minuten",
+  "import_slice2_section": {
+    "title": {
+      "auto-forecast": "Auto-Forecast configuratie"
+    }
+  },
+  "import_slice3_help": {
+    "text": {
+      "channel": "Het kanaal van een workload kan alleen worden gewijzigd door een nieuwe workload aan te maken.",
+      "interval_length": "De intervallengte van een workload kan alleen worden gewijzigd door een nieuwe workload aan te maken."
+    }
+  },
+  "import_slice3_label": {
+    "channel": "Kanaal",
+    "interval_length": "Intervallengte"
+  },
+  "import_slice3_section": {
+    "title": {
+      "forecast_import": "Forecast import configuratie"
+    }
+  },
+  "import_slice3_tab": {
+    "title": {
+      "auto-forecast": "Auto-Forecast",
+      "forecast_import": "Forecast import"
+    }
+  },
+  "import_slice4_": {
+    "welcome_page": {
+      "option3": {
+        "headline": "Creëer een eigen workload en importeer jouw eigen forecast gegevens"
+      }
+    }
+  },
+  "import_slice4_welcome_page": {
+    "option1": {
+      "warning": "Geen integraties geconfigureerd."
+    },
+    "option2": {
+      "text": "Je bent slechts een paar klikken verwijderd van het opstarten van jouw Forecast. Maak voor de eerste keer een workload aan en gebruik daarbij de historische gegevens.",
+      "warning": "Geen queues beschikbaar."
+    },
+    "option3": {
+      "button": "Workload aanmaken met forecast-import",
+      "text": "Als je geen ACD-integratie nodig hebt of als je nog geen historische data hebt, maak dan een workload aan en gebruik de forecast import."
+    }
+  },
+  "document_title": "Forecast",
+  "forecast_forecast": {
+    "loading_error": "Forecast kon niet worden geladen vanwege een verbindingsfout. Probeer de pagina opnieuw te laden.",
+    "loading_error_action": "Probeer de pagina opnieuw te laden.",
+    "loading_error_message": "Forecast kon niet worden geladen vanwege een verbindingsfout."
+  },
+  "forecast_history": {
+    "loading_error": "Historie kon niet worden geladen vanwege een verbindingsfout. Probeer de pagina opnieuw te laden.",
+    "loading_error_action": "Probeer de pagina opnieuw te laden.",
+    "loading_error_message": "Historie kon niet worden geladen vanwege een verbindingsfout."
+  },
+  "general_error": "Er is een fout opgetreden.",
+  "outages": {
+    "assign_error": "De uitval bestaat al op {{ date }}.",
+    "assign_success": "Uitval succesvol toegewezen aan {{ date }}."
+  },
+  "queue_filter": {
+    "channel": {
+      "aria_label": "Filteren op kanaal"
+    },
+    "selection": {
+      "aria_label": "Filteren op selectie"
+    }
+  },
+  "errors": {
+    "insufficient_permissions": "Je hebt niet de vereiste toestemming voor deze actie."
+  },
+  "setup_page": {
+    "body_text": "Om injixo Forecast te kunnen gebruiken, moet je eerst een workload aanmaken. Workloads vormen de basis van je forecast.<br/>Ze bevatten al je historische gegevens en gerelateerde forecasts. Zonder workloads kun je geen forecasts genereren.<br/>Om een workload aan te maken, moet je ACD zijn verbonden en moeten geïmporteerde queues beschikbaar zijn.",
+    "create_workload_card": {
+      "body_text": {
+        "done": "Je kunt nu een workload aanmaken.<br/>Het kan even duren voordat de historische gegevens beschikbaar zijn voor de forecast.",
+        "initial": "Zodra er queues beschikbaar zijn, kun je workloads gaan aanmaken."
+      },
+      "create_workload_button": "Nieuwe workload",
+      "heading": "3. Maak een workload aan"
+    },
+    "import_queues_card": {
+      "body_text": {
+        "done": "Er zijn queues beschikbaar.<br/>Deze worden regelmatig door injixo geïmporteerd.",
+        "initial": "Om queues te kunnen importeren, dien je eerst je ACD met injixo te verbinden.",
+        "pending": "Je queues worden geïmporteerd.<br/>Dit kan een paar minuten duren."
+      },
+      "heading": "2. Importeer de queues",
+      "import_error_message": "De queues konden niet worden geïmporteerd. <IntegrationStatusLink>Controleer de status van je integratie</IntegrationStatusLink>."
+    },
+    "page_header": {
+      "h1": "Welkom bij injixo Forecast",
+      "h2": "Je bent er bijna!"
+    },
+    "setup_acd_card": {
+      "body_text": {
+        "done": "De ACD is verbonden.<br/>De queues worden automatisch geïmporteerd.",
+        "initial": "Om Forecast te kunnen gebruiken, dien je eerst je ACD met injixo te verbinden."
+      },
+      "headline": "1. Configureer je ACD",
+      "setup_acd_button": "ACD configureren"
+    }
+  },
+  "workload_insights": {
+    "created": "Aangemaakt:",
+    "currently_no_data_available": "Momenteel geen informatie beschikbaar",
+    "edited": "Bewerkt:",
+    "last_data_upload": "Laatste gegevensupload:",
+    "last_update": "Laatste update:",
+    "no_data_available": "Geen informatie beschikbaar"
+  },
+  "activity_short": "ACT",
+  "assigned_events": {
+    "assign_event": "Gebeurtenis toevoegen",
+    "label": {
+      "category": "Categorie",
+      "date": "Datum",
+      "delete": "Verwijderen",
+      "event": "Gebeurtenis",
+      "public_holiday": "Feestdag"
+    },
+    "assign_event_hint": "Gebeurtenissen kunnen altijd alleen aan een enkele dag worden toegewezen.",
+    "deleted": "De gebeurtenis of uitval is verwijderd. De forecast wordt bijgewerkt.",
+    "empty_state_message": "Er zijn geen gebeurtenissen in de periode die je hebt geselecteerd.",
+    "errors": {
+      "event_deletion_failed": "De gebeurtenis kon niet worden verwijderd.",
+      "outage_deletion_failed": "De uitval kon niet worden verwijderd."
+    },
+    "headline": "Gebeurtenissen beheren",
+    "success": "De gebeurtenis of uitval is toegevoegd. De forecast wordt bijgewerkt."
+  },
+  "planning_unit_short": "EH",
+  "apply": "Aanpassing toepassen",
+  "assign_events_modal": {
+    "assign_outage": "Uitval toevoegen"
+  },
+  "back_to_workload": "Terug naar workload",
+  "back_to_workload_list": "Terug naar de lijst met workloads",
+  "chart_empty": {
+    "heading": "Geen gegevens gevonden voor deze periode",
+    "staff_requirements": {
+      "not_configured_headline": "Je hebt nog geen personeelsbehoefte.",
+      "not_configured_subtext": "De personeelsbehoefte bepaalt hoeveel medewerkers je nodig hebt voor een activiteit op een specifiek moment."
+    },
+    "subtitle": "Pas de periode aan."
+  },
+  "customize_events": "Gebeurtenistypen aanpassen",
+  "discard_changes_modal": {
+    "body": "Je wijzigingen worden niet opgeslagen.",
+    "buttons": {
+      "continue_editing": "Terug naar bewerken",
+      "discard_changes": "Wijzigingen annuleren"
+    },
+    "headline": "Wijzigingen annuleren?"
+  },
+  "edit_calculation": "Personeelsbehoefte bewerken",
+  "error_page": {
+    "unexpected_server_error": "Er is een onverwachte serverfout opgetreden. <ReloadLink>Laad de pagina opnieuw</ReloadLink>. Als het probleem blijft bestaan, <ContactSupportLink>neem dan contact op met support</ContactSupportLink>."
+  },
+  "filter_queues": "Queues filteren",
+  "modal": {
+    "unsaved-changes": {
+      "description": "Your changes will not be saved.",
+      "discard": {
+        "create": "Discard changes",
+        "update": "Discard changes"
+      },
+      "stay": {
+        "create": "Back to creating",
+        "update": "Back to editing"
+      },
+      "title": "Discard unsaved changes?"
+    }
+  },
+  "new-workload": {
+    "basic-configuration": {
+      "link": {
+        "help-center": {
+          "label": "Ga voor meer informatie naar het <linkText>Help Center</linkText>.",
+          "target": "https://help.injixo.com/create-workloads/"
+        }
+      },
+      "tooltip": {
+        "planning-unit-and-activity": {
+          "label": "Select a planning unit and activity to display business hours\nand set it as the default target for staff requirements."
+        }
+      }
+    },
+    "modal": {
+      "discard-selected-queues": {
+        "description": "You are about to change the channel or interval. Any selected queues in the current channel and interval will be discarded.",
+        "discard": "Unassign queues",
+        "keep": "Cancel",
+        "title": "Unassign selected queues?"
+      },
+      "unassign-all-queues": {
+        "cancel": "Back to editing",
+        "confirm": "Stop using",
+        "description": "<para>You are about to unassign the queues. This action will cease the utilization of historical data by the workload. It will happen:</para><list><item>Historical data will no longer be displayed</item><item>Auto-forecast data will be deleted</item></list>",
+        "title": "Stop using historical data"
+      }
+    },
+    "workload-data-type": {
+      "channel": {
+        "label": "Kanaal"
+      },
+      "combo-box": {
+        "interval": {
+          "errors": {
+            "missing-value": "Select an interval"
+          },
+          "label": "Interval",
+          "placeholder": "Selecteer een interval"
+        }
+      },
+      "heading": {
+        "text": "Workload data type"
+      },
+      "inline-message": {
+        "immutable-channel-and-interval": "Je kunt het kanaal of interval niet wijzigen na het aanmaken van de workload."
+      }
+    }
+  }
+}

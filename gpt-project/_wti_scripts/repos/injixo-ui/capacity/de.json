@@ -1,0 +1,48 @@
+{
+  "application": {
+    "title": "Kapazitätsplanung",
+    "tableHint": "Alle Werte in Stunden",
+    "tableHintDescription": "1 Vollzeitäquivalent (VZÄ) entspricht 40 Stunden pro Woche",
+    "infoMessageFirst": "Dies ist die erste Version Deines neuen Features zur Kapazitätsplanung. Demnächst kannst Du hier langfristige Planungen erstellen. Hast Du Ideen oder Feedback?",
+    "infoMessageSecond": "Schreib uns gern!",
+    "insertShiftSequencesButton": "Schichtfolgen einfügen"
+  },
+  "filters": {
+    "label": {
+      "planningUnit": "Planungseinheit"
+    },
+    "placeholder": {
+      "planningUnit": "Planungseinheit wählen"
+    },
+    "result": {
+      "noResult": "Keine Einträge"
+    }
+  },
+  "capacityTable": {
+    "headers": {
+      "Coverage": "Potentielle Deckung",
+      "staffRequirements": "Mitarbeiterbedarf",
+      "contractedCapacity": "Vertragskapazität",
+      "cw": "KW",
+      "timePeriod": "Zeitraum",
+      "dateFormat": "d. MMMM yyyy"
+    },
+    "placeholders": {
+      "noData": "Für diese Planungseinheit sind keine Kapazitätsdaten verfügbar.",
+      "loading": "Laden"
+    }
+  },
+  "planning_units": "Planungseinheiten",
+  "capacities": "Kapazitäten",
+  "reload": {
+    "planning_units": "Lade Planning Units neu",
+    "capacities": "Lade Kapazitäten neu"
+  },
+  "document_title": {
+    "module": "Plan",
+    "sub_module": "Kapazitätsplanung"
+  },
+  "error": {
+    "reload_resource": "Es ist ein Fehler aufgetreten. Versuche, <0>{{resource}}</0> neu zu laden, oder probiere es später noch einmal."
+  }
+}

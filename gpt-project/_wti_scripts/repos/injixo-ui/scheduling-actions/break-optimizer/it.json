@@ -1,0 +1,109 @@
+{
+  "heading": {
+    "initial": "Ottimizzare le pause",
+    "optimization-history": "Storico dell'ottimizzazione delle pause",
+    "optimization-results": "Risultati dell'ottimizzazione delle pause",
+    "settings": "Imposta l'ottimizzazione delle pause"
+  },
+  "button": {
+    "back-to-day-view": "Torna alla vista giornaliera",
+    "back-to-schedules": "Torna a Schedules",
+    "close": "Chiudi",
+    "delete-break-optimizations_one": "Elimina voce",
+    "delete-break-optimizations_other": "Elimina voci",
+    "optimize-schedule": "Ottimizzare le pause"
+  },
+  "error": {
+    "break-optimization-request": "Errore nel lancio della ottimizzazione delle pause",
+    "incomplete-form": "I dati del form sono incompleti. Assicurarsi di correggere tutti i campi evidenziati."
+  },
+  "helper-text": {
+    "delete-break-optimizations": "Le voci selezionate verranno eliminate dalla tabella. Eventuali pianificazioni ottimizzate non saranno interessate."
+  },
+  "hint": {
+    "optimized-schedule-writing": "La pianificazione ottimizzata verrà scritta direttamente nel livello Piano."
+  },
+  "label": {
+    "aria-enhancement": {
+      "delete-entries": "Elimina voci",
+      "dropdown": "menu a tendina",
+      "loading-spinner": "caricamento",
+      "select": "seleziona",
+      "select-all": "seleziona tutti"
+    },
+    "axis": {
+      "coverage-total-deviation-from-zero": "Copertura - Scostamento totale da 0",
+      "optimized-schedule": "Pianificazione ottimizzata",
+      "schedule-before-optimization": "Pianificazione prima dell'ottimizzazione"
+    },
+    "date-range": "Intervallo di date",
+    "in-progress": "in corso",
+    "maintenance": {
+      "caption": "Stiamo attualmente migliorando Ottimizzare le pause",
+      "details": "Ci scusiamo per gli eventuali disagi causati da questa necessaria manutenzione. Ottimizzare le pause dovrebbe essere di nuovo disponibile tra pochi minuti. Grazie per la vostra pazienza!"
+    },
+    "no-entries": "Nessuna voce",
+    "no-optimization-data": {
+      "details": "Lancia una nuova ottimizzazione selezionando un'unità di pianificazione e un intervallo di date per vedere qui i risultati.",
+      "heading": "Nessuna ottimizzazione disponibile"
+    },
+    "optimization-result": {
+      "content": "Risultati dell'ottimizzazione delle pause"
+    },
+    "optimization-status": {
+      "failed": "Ottimizzazione fallita. Per favore, riprova.",
+      "optimized": "Pianificazione ottimizzata",
+      "partly-optimized": "Pianificazione parzialmente ottimizzata",
+      "scheduling": "Ottimizzazione in corso..."
+    },
+    "view-results": "Vedi risultati"
+  },
+  "notification": {
+    "failure": {
+      "general": "Si è verificato un errore. Si prega di riprovare più tardi."
+    }
+  },
+  "placeholder": {
+    "dropdown": "Cerca o seleziona"
+  },
+  "result": {
+    "info": {
+      "day_models": "L'unità di pianificazione selezionata contiene modelli di orario nell'intervallo di date selezionato che non è stato possibile convertire in attività. Le pause in questi modelli di orario non sono state ottimizzate."
+    }
+  },
+  "success": {
+    "break-optimization-request": "Ottimizzazione delle pause lanciata con successo."
+  },
+  "table": {
+    "column": {
+      "date-range": "Intervallo di date",
+      "initiated-on": "Iniziato il",
+      "planning-unit": "Unità di pianificazione",
+      "selection": "Selezione",
+      "status": "Stato",
+      "user": "Utente"
+    },
+    "message": {
+      "partly-optimized": "Parzialmente ottimizzata",
+      "partly-optimized-description": "<0>Cosa significa questo?</0>",
+      "partly-optimized-link": "https://help.injixo.com/break-optimization#partly-optimized-schedule",
+      "optimized": "Ottimizzati"
+    }
+  },
+  "tooltip": {
+    "outdated-graph": "I dati rilevanti del grafico sono stati generati quando è stata avviata l'ottimizzazione."
+  },
+  "validation": {
+    "planning-unit": {
+      "required": "Seleziona un'unità di pianificazione"
+    }
+  },
+  "connection": {
+    "offline": "Non siamo riusciti a riconnetterci. Prova a ricaricare tra qualche minuto.",
+    "reconnecting": "Abbiamo perso la connessione. Stiamo provando a riconnetterci automaticamente."
+  },
+  "document_title": {
+    "context": "ottimizzatore di pause",
+    "module": "Plan"
+  }
+}

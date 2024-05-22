@@ -1,0 +1,112 @@
+{
+  "csv_importer": {
+    "confirmation_page": {
+      "apply": "Daten übernehmen",
+      "cancel": "Abbrechen",
+      "confirm": "Bestätige Deine Daten, um sie in der Cloud zu speichern."
+    },
+    "error_page": {
+      "import_error": "Während des Imports ist ein Fehler aufgetreten.",
+      "message": {
+        "before_error": "Die Datei konnte aufgrund folgender Probleme nicht importiert werden:",
+        "retry_after_error": "Überprüfe die Syntax der Datei und versuche es noch einmal."
+      }
+    },
+    "errors": {
+      "empty_file": "Die Datei ist leer.",
+      "end_time_before_start_time": "Endzeit darf nicht vor Startzeit liegen.",
+      "error_on_line": "Fehler in Zeile {{line_number}}:",
+      "excessive_data": "Daten von mehr als einem Jahr werden nicht unterstützt.",
+      "file_too_large": "Die Datei, die Du versucht hast hochzuladen, ist zu groß. Die maximale Größe beträgt 7MB.",
+      "invalid_channel": "Nicht unterstützter Kanal.",
+      "invalid_date_format": "Ungültiges Datumsformat.",
+      "invalid_date_or_time_format": "Ungültiges Datums- oder Zeitformat.",
+      "invalid_duration_cdr": "Der Kundenkontakt wird als bearbeitet angegeben, hat aber keine Dauer.",
+      "invalid_end_of_line": "Verwende innerhalb einer Datei konsistente Zeilenende-Zeichen (EOL Zeichen).",
+      "invalid_handled_cdr": "Das betroffene Feld muss entweder 0 oder 1 enthalten.",
+      "invalid_headers": "Fehlende oder falsch geschriebene Spalten in der Kopfzeile.",
+      "invalid_number": "Überprüfe die Formate der numerischen Werte.",
+      "invalid_row_length": "Die Anzahl der Felder in dieser Zeile stimmt nicht mit der Anzahl der Felder in der Kopfzeile überein.",
+      "invalid_separator": "Ungültiger Separator.",
+      "invalid_time_format": "Ungültiges Zeitformat.",
+      "invalid_time_range": "Die Daten überschreiten den maximal zulässigen Zeitraum von 10 Jahren.",
+      "invalid_timestamp": "Ungültiger Zeitstempel basierend auf der Intervalllänge.",
+      "invalid_year": "Das Jahr darf nicht vor 1970 liegen.",
+      "missing_activity": "Fehlende Aktivitäten-Kennung.",
+      "missing_agent": "Fehlende Agenten-Kennung.",
+      "missing_queue": "Fehlender Queue-Name.",
+      "negative_number": "Negative Zahlen sind nicht erlaubt.",
+      "non_existing_timestamp": "Die angegebene lokale Zeit stellt keinen existierenden Zeitstempel dar.",
+      "number_too_big": "Die Zahl ist zu groß.",
+      "sql_error": "An SQL error occurred.",
+      "string_too_long": "Kürze den Wert auf 255 Zeichen.",
+      "unexpected": "Ein unerwarteter Fehler ist aufgetreten.",
+      "unknown_error": "Ein unbekannter Fehler ist aufgetreten."
+    },
+    "heading": "Import historischer Daten",
+    "success_page": {
+      "import_again": "Eine weitere CSV-Datei hochladen",
+      "success": "Deine CSV-Datei wurde erfolgreich analysiert.",
+      "to_forecast": "Zu Forecast gehen",
+      "to_intraday": "Zu Intraday"
+    },
+    "summary": {
+      "failure": "Import fehlgeschlagen",
+      "first_date": "Anfangsdatum (UTC)",
+      "heading": {
+        "confirm": "Import bestätigen",
+        "success": "Import erfolgreich"
+      },
+      "imported_agents": "importierte Agenten",
+      "imported_lines": "importierte Zeilen",
+      "imported_queues": "importierte Queues",
+      "last_date": "Enddatum (UTC)",
+      "title": "Dein Import",
+      "try_again": "Versuche es noch einmal"
+    },
+    "upload_form": {
+      "file_input": {
+        "active_description": {
+          "invalid": "Lege nur eine Datei im CSV-Format ab.",
+          "valid": "Lege Deine CSV-Datei hier ab..."
+        },
+        "description": {
+          "multiple": "Ziehe CSV-Dateien hierher, um sie hinzuzufügen.",
+          "single": "Ziehe eine CSV-Datei (.csv oder .txt) hierher, um sie hinzuzufügen"
+        },
+        "file_limit_warning": "Du kannst die Datei hochladen, indem Du auf „Datei importieren“ klickst.",
+        "joiner": "oder",
+        "link": "öffne Deinen Datei-Explorer.",
+        "loading": "lädt"
+      },
+      "help": {
+        "link": "Finde heraus, was unterstützt wird.",
+        "text": "Brauchst Du Hilfe?"
+      },
+      "integration": {
+        "label": "Import mittels",
+        "no_result": "Keine Integration gefunden",
+        "placeholder": "Wähle eine Integration..."
+      },
+      "introduction": "Importiere eine CSV-Datei mit den historischen Daten aus Deiner ACD, um dann einen Forecast in injixo zu erstellen. Die maximale Größe der CSV-Datei darf 7MB nicht überschreiten.",
+      "invalid_file": "Die Datei '{{file_name}}' konnte nicht ausgewählt werden. Stelle eine gültige CSV-Datei zur Verfügung.",
+      "multi_upload_warning": "Das gleichzeitige Hochladen von Daten aus mehreren Browserfenstern oder von verschiedenen Computern aus kann Deine vorhandenen Queue-Daten beschädigen.",
+      "no_integration": {
+        "link": "Füge jetzt eine CSV-Integration hinzu",
+        "text": "Um CSV-Daten importieren zu können, musst Du zunächst eine CSV-Integration erstellen."
+      },
+      "submit": {
+        "loading": "Lädt hoch",
+        "title": "Datei importieren"
+      }
+    },
+    "writing_page": {
+      "writing": "Bitte warte einen Moment, während Deine Daten in der Cloud gespeichert werden...",
+      "writing_status": "Deine Daten werden in der Cloud gespeichert..."
+    }
+  },
+  "document_title": {
+    "module": "CSV Importer",
+    "page_title": "Importieren historischer Daten"
+  }
+}

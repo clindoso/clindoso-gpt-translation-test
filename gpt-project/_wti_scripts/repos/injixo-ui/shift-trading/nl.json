@@ -1,0 +1,74 @@
+{
+  "document_title": {
+    "context": "Diensten ruilen",
+    "module": "Me",
+    "page": {
+      "invite_colleagues": "Collega's uitnodigen"
+    }
+  },
+  "footer": {
+    "button": {
+      "back": "Terug naar Dashboard",
+      "continue_one": "Kies {{count}} beschikbare dienst",
+      "continue_zero": "Doorgaan zonder selectie",
+      "continue_other": "Kies {{count}} beschikbare diensten",
+      "invite_one": "Stuur {{count}} uitnodiging",
+      "invite_zero": "Uitnodiging versturen",
+      "invite_other": "Stuur {{count}} uitnodigingen",
+      "next": "Doorgaan zonder selectie",
+      "previous": "Terug naar vorige selectie",
+      "skip": "Uitnodigingen overslaan"
+    }
+  },
+  "heading": "Nodig de juiste collega’s uit om diensten te ruilen",
+  "help-button": {
+    "content": "<0>Lees meer</0> over het ruilen van diensten.",
+    "link": "https://help.injixo.com/injixo-me-invite-suitable-colleagues/",
+    "link-alt": "Link naar het Help Center."
+  },
+  "invite": {
+    "error": {
+      "message": "Uitnodigingen konden niet worden verzonden. Gelieve opnieuw te proberen"
+    }
+  },
+  "offered-shift": {
+    "all-day": "De hele dag",
+    "error": {
+      "content": "Er is een fout opgetreden en je dienst kon niet worden geladen. Probeer <0>opnieuw te laden</0> of probeer het later nog eens.",
+      "retry-alt": "Herlaad je dienst"
+    },
+    "multiple": {
+      "title": "Aangeboden diensten"
+    },
+    "nothing-scheduled": "Niets gepland",
+    "title": "Je dienst"
+  },
+  "success": {
+    "back-to-employee-portal": "Ga terug naar injixo Me",
+    "title_one": "{{count}} uitnodiging is succesvol verzonden.",
+    "title_other": "{{count}} uitnodigingen zijn succesvol verzonden."
+  },
+  "suitable-shift": {
+    "employees_one": "{{count}} geschikte medewerkers",
+    "employees_other": "{{count}} geschikte medewerkers",
+    "empty": {
+      "back-alt": "Terug naar diensten ruilen",
+      "content": "Er zijn op dit moment helaas geen geschikte diensten voor je selectie. <0>Terug naar diensten ruilen</0>."
+    },
+    "error": {
+      "content": "Er is een fout opgetreden en geschikte diensten konden niet worden geladen. Probeer <0>opnieuw te laden</0> of probeer het later nog eens."
+    },
+    "multiple": {
+      "title": "Beschikbare diensten"
+    },
+    "select-all": {
+      "checkbox": {
+        "label": "Alle"
+      }
+    },
+    "title": "Geschikte diensten"
+  },
+  "title": {
+    "back": "Terug naar diensten ruilen"
+  }
+}

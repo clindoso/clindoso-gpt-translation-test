@@ -1,0 +1,74 @@
+{
+  "heading": {
+    "initial": "Approvare gli scambi di turni"
+  },
+  "alt": {
+    "reload-planning-units": "Ricaricare le unità di pianificazione",
+    "reload-selections": "Ricaricare le selezioni",
+    "reload-shift-exchange-commitments": "Ricarica le richieste di scambio turni"
+  },
+  "button": {
+    "approve-selected": "Approva selezionate",
+    "back-to-schedules": "Torna a Schedules",
+    "reject-selected": "Rifiuta selezionate"
+  },
+  "document_title": {
+    "module": "Plan",
+    "page": {
+      "approve_shift_exchange": "Approvare gli scambi di turni"
+    }
+  },
+  "filter": {
+    "no-result-found": "Nessun risultato trovato"
+  },
+  "message": {
+    "error": "Impossibile recuperare i dati",
+    "planning-units": {
+      "error": "Si è verificato un errore e non è stato possibile caricare le unità di pianificazione. Prova a <0>ricaricare le unità pianificative</0> o riprova più tardi."
+    },
+    "selections": {
+      "error": "Si è verificato un errore e non è stato possibile caricare le selezioni. Prova a <0>ricaricare le selezioni</0> o riprova più tardi."
+    },
+    "shift-exchange-commitments": {
+      "error": "Non è stato possibile caricare le richieste di scambio turni. Prova a <0>ricaricare le richieste di scambio turni</0> o riprova più tardi.",
+      "update-error": "Impossibile aggiornare le richieste di scambio turni.",
+      "update-success": "Le richieste di scambio turni sono state aggiornate"
+    }
+  },
+  "placeholder": {
+    "planning-unit": "Seleziona unità di pianificazione",
+    "selection": "Scegli una selezione"
+  },
+  "status": {
+    "tooltip": {
+      "acceptor-resigned": "L'accettante si è ritirato dallo scambio di turni.",
+      "acceptor-shift-changed": "Il turno dell'accettante è cambiato",
+      "deadline-missed": "Manca la scadenza",
+      "invalid": "Lo scambio turni non è valido.",
+      "offerer-resigned": "L'offerente si è ritirato dallo scambio di turni.",
+      "offerer-shift-changed": "Il turno dell'offerente è cambiato",
+      "rule-breached": "Una regola è stata violata"
+    },
+    "value": {
+      "approved": "Approvato",
+      "canceled": "Annullato",
+      "pending": "In sospeso",
+      "rejected": "Rifiutato"
+    }
+  },
+  "tab": {
+    "information": "Informazione",
+    "pending": "In sospeso"
+  },
+  "table": {
+    "heading": {
+      "compensation-date": "Data della controfferta",
+      "exchange-date": "Data di scambio",
+      "exchange-partner": "Partner dello scambio",
+      "initiator": "Autore",
+      "modification-date": "Aggiornato a",
+      "status": "Stato"
+    },
+    "no-results": "Non sono stati trovati scambi di turni."
+  }
+}

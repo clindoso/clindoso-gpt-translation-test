@@ -1,0 +1,526 @@
+{
+  "label": {
+    "planning-unit": "Unidad de Planificación",
+    "button": {
+      "add_availability": "Añadir día e intervalo de tiempo",
+      "proposal": "Generar sugerencias",
+      "create-new-1on1": "Establece nuevas reuniones 1 a 1",
+      "back-to-main": "Volver al resumen",
+      "cancel": "Cancelar",
+      "meeting-proposal": "Generar sugerencias de reuniones"
+    },
+    "day": "Día",
+    "heading": {
+      "employee-section": "Participantes",
+      "configure-meeting-participants": "Reunión para ser planificada entre",
+      "meeting-host": "Organizador de la reunión",
+      "one-on-one-meeting": "Establecer una reunión 1 a 1.",
+      "participant": "Participante",
+      "participant-selection": "Planificar reuniones individuales de 1 a 1 con",
+      "settings": "Configuraciones",
+      "available-proposals": "Sugerencias generadas",
+      "configure-group-meetings-participants": "Reuniones de grupo para ser planificadas entre",
+      "configure-session-participants": "Sesiones de auto-aprendizaje a planificar para:",
+      "group-meeting": "Configurar reuniones de grupo",
+      "group-meeting-card": "Reuniones de grupo",
+      "group-meetings-host-selection": "Definir la disponibilidad del organizador de la reunión",
+      "group-meetings-participant-selection": "Asignar participantes a las reuniones de grupo",
+      "group-meetings-results": "Resultados - Reuniones de grupo",
+      "one-on-one-meeting-card": "Reuniones 1 a 1",
+      "one-on-one-results": "Resultados - Reuniones 1 a 1",
+      "optional-settings": "Configuraciones opcionales",
+      "pending-proposals": "Se están generando las sugerencias",
+      "self-learning": "Configura sesiones de auto-aprendizaje",
+      "self-learning-meeting-card": "Sesiones de auto-aprendizaje",
+      "self-learning-results": "Resultados - Sesiones de auto-aprendizaje"
+    },
+    "from": "Desde",
+    "loading": "Cargando",
+    "no-employees": {
+      "caption": "No hay empleados",
+      "empty-planning-unit": "No puedes planificar reuniones ya que no hay empleados en la unidad de planificación seleccionada.",
+      "no-planning-unit": "No puedes planificar ninguna reunión ya que no hay ninguna unidad de planificación seleccionada.",
+      "empty-planning-unit-and-employee-filter": "No puedes planificar ninguna reunión ya que no hay empleados para la unidad de planificación y filtro de empleados seleccionados.",
+      "empty-planning-unit-and-selection": "No puedes planificar ninguna reunión ya que no hay empleados para la unidad de planificación y grupo seleccionados."
+    },
+    "no-entries": "Sin resultados",
+    "team-leader": {
+      "availability": "Establecer la disponibilidad del organizador de la reunión"
+    },
+    "timespan": "Añadir el intervalo de tiempo",
+    "to": "Hasta",
+    "weekday": {
+      "all_weekdays": "De Lunes a Viernes",
+      "friday": "Viernes",
+      "monday": "Lunes",
+      "saturday": "Sábado",
+      "sunday": "Domingo",
+      "thursday": "Jueves",
+      "tuesday": "Martes",
+      "wednesday": "Miércoles",
+      "all_days": "Lunes a Domingo",
+      "monday_to_saturday": "Lunes a Sábado"
+    },
+    "meeting-type": "Actividad que planificar",
+    "no-activities": {
+      "caption": "No hay actividades",
+      "details": "No hay actividades de tipo reunión en la unidad de planificación seleccionada."
+    },
+    "no-data": {
+      "caption": "Parece ser que no estás preparado para utilizar el planificador de reuniones.",
+      "details": "El planificador de reuniones te ayuda a encontrar el mejor momento en términos de cobertura y disponibilidad para todos los distintos tipos de reuniones, como por ejemplo reuniones 1 a 1. Para poder utilizar el planificador de reuniones necesitas al menos una unidad de planificación, empleados, un periodo de planificación válido y actividades de tipo reunión."
+    },
+    "proposed-time-span": "Intervalo propuesto",
+    "with-agent": "Participante",
+    "form-error": {
+      "no-participants": "No se ha seleccionado ningún participante. Selecciona al menos un participante para planificar reuniones."
+    },
+    "infeasible_instance": "No hay sugerencias de reuniones que satisfagan tus requisitos.",
+    "no-meetings-proposed": "No es posible sugerir reuniones",
+    "collapsible-content": {
+      "auto-group-meeting-error": "Debido a un error, no se ha podido completar la petición de sugerencias. Por favor, vuelve a intentar establecer una reunión de grupo.",
+      "one-on-one-error": "Debido a un error, la petición para obtener sugerencias no se pudo completar. Por favor, intenta configurar la reunión 1 a 1 otra vez. ",
+      "problem": "Problema",
+      "self-learning-error": "Debido a un error, la petición para obtener sugerencias no se pudo completar.  Por favor, intenta configurar la sesión de auto-aprendizaje otra vez. "
+    },
+    "collapsible-heading": "Ver conflictos",
+    "collapsible-heading-action-request": "Acción requerida",
+    "collapsible-heading-conflict": "Ver conflicto",
+    "collapsible-heading-error": "Ver error",
+    "action-request": {
+      "host-written-but-employee-participants-failed": "La reunión se ha añadido a la planificación del organizador pero no se ha podido planificar (ver los conflictos con los participantes). Debes eliminar de manera manual la reunión de la planificación del organizador e intentar establecer otra reunión nueva para los participantes afectados.",
+      "host-written-but-participant-failed": "La reunión ha sido añadida al calendario del organizador, pero no se pudo planificar debido a un conflicto de un participante. Elimina la reunión del calendario del anfitrión y organiza una nueva reunión."
+    },
+    "activity": "Actividad que planificar",
+    "aria-enhancement": {
+      "input": "entrada",
+      "dropdown": "desplegable"
+    },
+    "conflict-message": {
+      "all-participants-failed-warning": "Ha habido un error al añadir la reunión a la planificación del participante, por tanto la reunión no se pudo planificar. Prueba a establecer una nueva reunión para los participantes afectados.",
+      "check-paid-configuration": "Comprueba si tus actividades tienen la configuración correcta para la propiedad \"remunerada\".",
+      "competing_employees": {
+        "intro": "Hay una serie de empleados que compiten por los mismos periodos de reunión con el organizador de las reuniones."
+      },
+      "competing_employees_day_limit": {
+        "intro": "No hay suficientes intervalos de reuniones posibles para todos los empleados con el límite de reuniones diarios configurado."
+      },
+      "decrease-date-range": "Disminuir el rango de fechas configurado",
+      "decrease-gap-length": "Disminuye la longitud de espaciado entre reuniones",
+      "failed-to-write-host": "Ha habido un error al escribir la reunión en la planificación del organizador, por tanto, no se ha podido planificar la reunión. Intenta establecer una nueva reunión para el participante afectado.",
+      "host-failed-warning": "Ha habido un error al añadir la reunión a la planificación del organizador, por tanto la reunión no se pudo planificar. Prueba a establecer una nueva reunión para los participantes afectados.",
+      "host-written-but-participant-failed": "Ha habido un error al escribir la reunión en la planificación del participante, por tanto, no se ha podido planificar la reunión.",
+      "increase-corridors": "Incrementar los intervalos de tiempo configurados",
+      "increase-daily-meeting-limit": "Incrementar el número máximo de reuniones por día",
+      "increase-date-range": "Incrementa el rango de fechas",
+      "increase-meeting-host-availibility": "Incrementa la disponibilidad del organizador de las reuniones",
+      "insufficient-distinguished-meeting-slots-for-meetings": {
+        "intro": "No hay suficientes intervalos de reunión para planificar la cantidad de reuniones requeridas con la duración requerida. Para resolver esto, prueba alguna de las siguientes propuestas:"
+      },
+      "insufficient-number-of-meetings-due-to-day-limit": {
+        "intro": "El límite diario de reuniones es demasiado bajo para encontrar reuniones para todos los empleados en el intervalo de tiempo seleccionado."
+      },
+      "insufficient_distinguished_meeting_slots": {
+        "intro": "No hay suficientes intervalos de reunión para planificar las reuniones de la duración requerida para todos los empleados. Para resolver esta incidencia, prueba alguna de las siguientes opciones:"
+      },
+      "intro": "El organizador de la reunión no tiene disponibilidad suficiente para cubrir las reuniones pedidas. Para resolver esta incidencia, prueba alguna de las siguientes opciones:",
+      "meeting-written-but-participation-failed-warning": "Ha habido un error al añadir la reunión en la planificación del participante. Puedes añadirla manualmente a la planificación. ",
+      "no-meeting-distribution-with-gap-length": {
+        "intro": "El organizador de la reunión no tiene suficiente disponibilidad para cubrir todas las reuniones pedidas para la longitud de espaciado requerida. Para resolverlo, intenta una de las siguientes:"
+      },
+      "no-overwritable-activity-paid-unpaid": {
+        "intro": "No hay actividades en tu planificación que se puedan sobrescribir por la actividad de reunión seleccionada sin cambiar los tiempos netos de trabajo semanales de los empleados."
+      },
+      "not-solved": {
+        "intro": "El cálculo de las sugerencias óptimas para las reuniones solicitadas es demasiado complejo y no se puede procesar dentro del límite de tiempo establecido. Puedes intentar:"
+      },
+      "outro": "También asegúrate que las actividades que deben ser remplazadas están marcadas como remplazables.",
+      "reduce-number-of-meetings": "Reducir el número de reuniones",
+      "reduce-participants": "Reduce los participantes",
+      "too-small-daily-meeting-limit-host": {
+        "intro": "El organizador de la reunión no puede organizar todas las reuniones en el intervalo de tiempo seleccionado y el límite diario escogido."
+      }
+    },
+    "coverage-disclaimer": "La cobertura se ha calculado al crear la propuesta. Los valores no se actualizan automáticamente.",
+    "coverage-threshold": "Sólo considera franjas horarias donde la cobertura resultante sea de al menos:",
+    "date-range-picker": "Rango de fechas",
+    "employee-section": {
+      "employee-filter": "Filtro de empleado",
+      "filter-by": "Filtrar por",
+      "selection": "Grupo"
+    },
+    "excluded": "Excluidos",
+    "failed": "Fallido",
+    "gap-length": "Espaciado",
+    "group-meeting-assignment": "Reunión",
+    "group-meeting-info": "Reunión",
+    "group-meeting-tabs": "Reunión",
+    "group-meetings-proposed_one": "1 reunión se ha sugerido",
+    "group-meetings-proposed_zero": "0 reuniones se han sugerido",
+    "group-meetings-proposed_other": "{{count}} reuniones se han sugerido",
+    "group-meetings-will-be-scheduled_one": "1 reunión seleccionada se va a planificar",
+    "group-meetings-will-be-scheduled_zero": "0 reuniones seleccionadas se van a planificar",
+    "group-meetings-will-be-scheduled_other": "{{count}} reuniones seleccionadas se van a planificar",
+    "impact-on-coverage": "Cobertura resultante",
+    "info": {
+      "group-meeting-card": "Planificar reuniones para grupos de tus empleados con o sin organizador.",
+      "one-on-one-meeting-card": "Planificar reuniones 1 a 1 entre empleados y su líder de equipo.",
+      "self-learning-meeting-card": "Planificar sesiones de formación individual para tus empleados."
+    },
+    "information-for-meeting": {
+      "manually-excluded": "Excluídos manualmente de la planificación"
+    },
+    "limit-meeting-number": "Limitar el número de reuniones por día al máximo",
+    "limit-meetings": "Limitar el número de reuniones por día a un máximo de:",
+    "limit-sessions": "Limita el número de sesiones por día para cada participante a un máximo de:",
+    "limit-sessions-after-input": "para cada participante",
+    "limit-sessions-before-input": "Limita el número de sesiones por día a un máximo de",
+    "maintenance": {
+      "caption": "Actualmente estamos mejorando Reuniones",
+      "details": "Nos disculpamos por los inconvenientes que se puedan crear debidos al mantenimiento. Reuniones debería estar disponible otra vez en unos minutos. ¡Gracias por tu paciencia!"
+    },
+    "meeting-host-disclaimer": "Actualmente las reuniones no se añadirán a la planificación del organizador de la reunión.",
+    "meeting-host": {
+      "employee": "Seleccionar empleado",
+      "employee-helper": "Obtener la disponibilidad del organizador de la reunión de su planificación en injixo.",
+      "employee-selection": "Empleado",
+      "manually": "Añadir manualmente",
+      "manually-helper": "Si el organizador de la reunión no se planifica a través de injixo.",
+      "timezone-helper": "Todos los datos hace referencia a la zona horaria de la unidad de planificación."
+    },
+    "meeting-length": "Duración",
+    "meeting-limit": "Límite de reuniones",
+    "meeting-not-scheduled": "1 reunión no se ha podido planificar",
+    "meeting-scheduled": "1 reunión se ha planificado",
+    "meetings-not-scheduled": "{{count}} reuniones no se han podido planificar",
+    "meetings-scheduled": "{{count}} reuniones se han planificado",
+    "no-proposals": {
+      "caption": "No hay sugerencias",
+      "details": "Una vez se generen las sugerencias, se mostrarán aquí."
+    },
+    "no-requests": {
+      "caption": "No hay sugerencias",
+      "details": "Mientras se generan las sugerencias, tu petición se mostrará aquí."
+    },
+    "one-on-one-gap-length": "Asegurar un espaciado entre reuniones:",
+    "one-on-one-gap-length-after-dropdown": "entre reuniones",
+    "one-on-one-gap-length-before-dropdown": "Asegurar un espaciado de",
+    "one-on-one-meeting-proposed": "1 reunión se ha sugerido",
+    "one-on-one-meeting-will-be-scheduled": "1 reunión seleccionada se va a planificar",
+    "one-on-one-meetings-proposed": "{{count}} reuniones se han sugerido",
+    "one-on-one-meetings-will-be-scheduled": "{{count}} reuniones seleccionadas se van a planificar",
+    "proposal-not-possible": "No es posible",
+    "proposal-pending": "Se está generando una sugerencia...",
+    "replaced-activities": "Actividad remplazada",
+    "resolvable-precheck": {
+      "affected-employees": "Empleados afectados:",
+      "competing-employees": {
+        "reason": "No ha sido posible asignar una reunión para estos empleados ya que existen conflictos con las reuniones propuestas para otros empleados."
+      },
+      "conflicts-with-other-participants": {
+        "reason": "Estos empleados no están disponibles en el mejor intervalo de tiempo del resto del grupo.",
+        "solution": "Asigna estos empleados a otro grupo o asegúrate que hay un intervalo de tiempo donde todos los participantes están disponibles."
+      },
+      "coverage-threshold-not-satisfied": {
+        "reason": "Estos empleados no tienen reuniones ya que no es posible encontrar una planificación con más reuniones que respete el umbral de cobertura mínima.",
+        "solution": "Establece nuevas reuniones y disminuye el umbral de cobertura a considerar."
+      },
+      "label": {
+        "resolvable-precheck": {
+          "competing-employees": {
+            "solution": "Intenta planificar una reunión para el empleado con el organizador en un intervalo de tiempo más grande o con menos empleados."
+          }
+        }
+      },
+      "no-overwritable-paid-unpaid-slot": {
+        "reason": "No es posible insertar una reunión para estos empleados sin cambiar el tiempo neto de trabajo semanal.",
+        "solution": "Comprueba si la configuración de la actividad (propiedad: remunerada) es correcta. También puedes tratar de extender el intervalo de tiempo de tu petición."
+      },
+      "no-present-activities-group-meeting": {
+        "reason": "Los siguientes empleados no tienen suficientes actividades del tipo presencia en su planificación para permitir una reunión de la duración e intervalo de tiempo requeridos.",
+        "solution": "Asegúrate de que la planificación de estos empleados incluye actividades de tipo presencia, reduce la duración de la reunión o incrementa el intervalo de tiempo."
+      },
+      "no-present-activities-overlapping-with-meeting-host": {
+        "reason": "Los siguientes empleados no tienen suficientes actividades de tipo presencia en su planificación que se solapen con la disponibilidad del organizador.",
+        "solution": "Asegúrate de que la planificación de estos empleados incluye actividades de tipo presencia, incrementa la disponibilidad del organizador o reduce el intervalo de tiempo."
+      },
+      "no-present-activities-self-learning": {
+        "reason": "Los siguientes empleados no tienen suficientes actividades de tipo presencia en su planificación para completar todas las sesiones de auto-aprendizaje en el intervalo de tiempo requerido.",
+        "solution": "Asegúrate de que la planificación de estos empleados incluye actividades de tipo presencia y considera la opción de extender el intervalo de tiempo o de reducir los parámetros de longitud del espaciado o de número de días máximo."
+      },
+      "no-present-activities-with-allowed-intervals-group-meeting": {
+        "reason": "Estos empleados no tienen suficientes actividades de tipo presencia en su planificación que se solapen con los intervalos de tiempo configurados.",
+        "solution": "Asegúrate de que la planificación de estos empleados incluye actividades de tipo presencia, incrementa los intervalos de tiempo configurados o incrementa el tiempo total."
+      },
+      "no-present-activities-with-meeting-host-group-meeting": {
+        "reason": "Los siguientes empleados no tienen suficientes actividades de tipo presencia en su planificación que se solapen con la disponibilidad del organizador.",
+        "solution": "Asegúrate de que la planificación de estos empleados incluye actividades de tipo presencia, incrementa la disponibilidad del organizador o reduce el intervalo de tiempo."
+      },
+      "no-present-activities": {
+        "reason": "Los siguientes empleados no tienen suficientes actividades del tipo presencia en su planificación para permitir una reunión de la duración e intervalo de tiempo requeridos.",
+        "solution": "Asegúrate de que la planificación de estos empleados incluye actividades de tipo presencia, reduce la duración de la reunión o incrementa el intervalo de tiempo."
+      },
+      "no-replaceable-activities-group-meeting": {
+        "reason": "Estos empleados no tienen suficientes actividades remplazables en su planificación para planificar una reunión de la duración requerida.",
+        "solution": "Asegúrate que las planificaciones de estos empleados incluyen actividades que son remplazables o reduce la duración de la reunión."
+      },
+      "no-replaceable-activities-overlapping-with-allowed-intervals-group-meeting": {
+        "reason": "No hay suficientes intervalos que se solapen para estos empleados y los intervalos configurados para planificar una reunión con la duración requerida.",
+        "solution": "Incrementa los intervalos de tiempo configurados o reduce la duración de la reunión."
+      },
+      "no-replaceable-activities-overlapping-with-meeting-host-group-meeting": {
+        "reason": "No hay suficientes intervalos que se solapen entre los empleados y el organizador de la reunión para planificar una reunión de la duración requerida.",
+        "solution": "Incrementa la disponibilidad del organizador de la reunión o reduce la duración de la reunión."
+      },
+      "no-replaceable-activities-overlapping-with-meeting-host": {
+        "reason": "No hay suficientes intervalos que se solapen entre los empleados y el organizador de la reunión para planificar una reunión de la duración requerida.",
+        "solution": "Incrementa la disponibilidad del organizador de la reunión o reduce la duración de la reunión."
+      },
+      "no-replaceable-activities-self-learning": {
+        "reason": "Estos empleados no tienen suficientes actividades sustituibles en sus planificaciones para completar todas las sesiones de auto-formación en el intervalo de tiempo requerido.",
+        "solution": "Asegúrate que las planificaciones de los empleados contienen actividades sustituibles y considera extender el intervalo de tiempo o reducir los intervalos de tiempo entre sesiones o el parámetro de máximo número de días."
+      },
+      "no-replaceable-activities": {
+        "reason": "Estos empleados no tienen suficientes actividades remplazables en su planificación para planificar una reunión de la duración requerida.",
+        "solution": "Asegúrate que las planificaciones de estos empleados incluyen actividades que son remplazables o reduce la duración de la reunión."
+      },
+      "no-session-distribution": {
+        "reason": "No es posible planificar todas las sesiones de auto-formación para estos empleados en el intervalo de tiempo especificado.",
+        "solution": "Considera extender el intervalo de tiempo de tu petición, reduciendo los intervalos entre sesiones o incrementando el límite de sesiones por día."
+      },
+      "reason": "Razón:",
+      "solution": "Solución posible:",
+      "not-enough-common-participants": {
+        "reason": "No hay horarios adecuados en la planificación de los empleados en los que sea posible una reunión con un número suficiente de empleados.",
+        "solution": "Asegúrate de que el horario de estos empleados incluya actividades que sean sustituibles y considera la posibilidad de ampliar el plazo solicitado."
+      }
+    },
+    "scheduled": "Planificado",
+    "scheduled-time-span": "Intervalo de tiempo planificado",
+    "self-learning-session-proposed": "1 sesión se ha sugerido",
+    "self-learning-session-will-be-scheduled": "1 sesión seleccionada se ha planificado",
+    "self-learning-sessions-proposed": "{{count}} sesiones se han sugerido",
+    "self-learning-sessions-will-be-scheduled": "{{count}} sesiones seleccionadas se han planificado",
+    "self-learnings-gap-length": "Asegurar un espaciado entre sesiones para cada participante:",
+    "self-learnings-gap-length-after-dropdown": "entre sesiones para cada participante",
+    "self-learnings-gap-length-before-dropdown": "Asegurar un espaciado de",
+    "session-duration": "Duración de la sesión",
+    "session-limit": "Límite de sesión",
+    "sessions-per-participant": "Sesiones por participante",
+    "status": {
+      "participants-available": "disponibles",
+      "participants-available-group-meeting": "{{count}} de {{meetingCount}} reuniones disponibles",
+      "participants-not-available": "no disponibles",
+      "participants-not-scheduled": "no planificados",
+      "participants-scheduled": "planificados",
+      "participants-scheduled-group-meeting": "{{count}} de {{meetingCount}} reuniones planificadas",
+      "schedule-execution-error": "Error",
+      "schedule-suggested": "{{suggestedCount}} sugerencias, {{excludedCount}} exclusiones",
+      "schedule-suggested-fail": "{{count}} exclusiones",
+      "schedule-suggested-success": "{{count}} sugerencias",
+      "schedule-written": "{{scheduledCount}} planificadas, {{failedCount}} fallidaas",
+      "schedule-written-fail": "{{count}} fallidas",
+      "schedule-written-success": "{{count}} planificadas",
+      "participants-available-group-meetings_one": "de {{count}} reuniones disponibles",
+      "participants-available-group-meetings_other": "de {{count}} reuniones disponibles",
+      "participants-scheduled-group-meetings_one": "planificado en una reunión",
+      "participants-scheduled-group-meetings_other": "planificado en {{count}} reuniones"
+    },
+    "with-meeting-host": {
+      "option": "Reuniones de grupo con un organizador"
+    },
+    "without-meeting-host": {
+      "option": "Reuniones de grupo sin un organizador",
+      "specify-timeframe": "Definir los intervalos de tiempo de las reuniones"
+    },
+    "advanced-feature": "Esta funcionalidad es parte del plan Advanced.",
+    "availability": "Establece una restricción de disponibilidad adicional",
+    "back-to-meetings": "Volver a Reuniones",
+    "external-host": "Anfitrión externo",
+    "host": "Anfitrión",
+    "internal-host": "Anfitrión interno",
+    "no-host": "Sin anfitrión",
+    "participants_one": "{{count}} participante",
+    "participants_other": "{{count}} participantes",
+    "split-meeting-participants": "Número mínimo de participantes por franja horaria",
+    "split-meeting-slots-result": "Para los {{selectedEmployeesCount}} participantes se necesitarán aproximadamente {{slotsCount}} franjas horarias.",
+    "split-meeting-toggle": "Dividir la reunión en varias franjas horarias"
+  },
+  "button": {
+    "remove_availability": "Eliminar día",
+    "add-group-meeting": "Reunión",
+    "delete-jobs_one": "Eliminar entrada",
+    "delete-jobs_other": "Eliminar entradas",
+    "delete-schedules_one": "Eliminar entrada",
+    "delete-schedules_other": "Eliminar entradas",
+    "set-up": "Configuración",
+    "write-group-meetings": "Planificar reuniones",
+    "write-one-on-one-meetings": "Planificar reuniones",
+    "write-self-learning-sessions": "Planificar sesiones",
+    "writing": "Planificando",
+    "write-count-group-meetings_one": "Planificar {{count}} reunión",
+    "write-count-group-meetings_other": "Planificar {{count}} reuniones"
+  },
+  "table": {
+    "column": {
+      "employee_name": "Nombre",
+      "actions": "Acciones",
+      "activity-to-schedule": "Actividad a planificar",
+      "host": "Organizador",
+      "information": "Información",
+      "initiated-on": "Iniciado el",
+      "job-id": "ID de la sugerencia",
+      "meeting-type": "Tipo",
+      "meeting_assignment": "Asignada a",
+      "participant": "Participante",
+      "participant-status": "Estado del participante",
+      "planning-unit": "Unidad de planificación",
+      "replaced-activity": "Actividad remplazada",
+      "resulting-coverage": "Cobertura resultante",
+      "schedule-id": "Información",
+      "start-time": "Pedido el",
+      "status": "Estado",
+      "suggested-time-slot": "Franja horaria sugerida"
+    }
+  },
+  "notification": {
+    "form-error": {
+      "timespan": "Seleccionar una hora de fin posterior a la de inicio",
+      "select-day": "Selecciona un día",
+      "select-planning-unit": "Selecciona una unidad de planificación",
+      "coverage-threshold": "Introduce un umbral de cobertura",
+      "group-meetings-empty-meetings": "Hay al menos una reunión sin participantes seleccionados. Selecciona participantes para cada reunión para poder proceder a generar las sugerencias.",
+      "limit-meeting-number": "Introducir el número máximo de reuniones por día",
+      "limit-session-number": "Introduce el número máximo de sesiones por día posibles",
+      "meeting-length-error": "Introduce una duración de la reunión que sea un múltiplo de 5",
+      "no-group-meetings-selected": "No hay reuniones sugeridas seleccionadas. Elige al menos una.",
+      "no-one-on-one-meetings-selected": "No hay reuniones sugeridas seleccionadas. Elige al menos una.",
+      "no-self-learning-sessions-selected": "No se ha seleccionado ninguna sesión sugerida. Elige al menos una.",
+      "select-activity": "Selecciona una actividad",
+      "select-meeting-host": "Seleccionar un organizador para la reunión",
+      "session-duration-error": "Introduce una duración de sesión que sea un múltiplo de 5",
+      "sessions-per-participant": "Introduce un número positivo de sesiones por participante"
+    },
+    "failure": {
+      "general": "Ha ocurrido un error. Por favor, inténtalo de nuevo.",
+      "response-error": "El servidor no ha podido gestionar tu petición. Vuelve a intentarlo más tarde.",
+      "job-not-existing": "Ha ocurrido un error. Por favor, inténtalo de nuevo.",
+      "schedule-not-existing": "Ha ocurrido un error. Por favor, inténtalo de nuevo."
+    },
+    "number-of-meetings": "{{successCount}} de {{totalCount}} reuniones se han planificado correctamente.",
+    "warning": {
+      "no-meeting-slots-for-employee": "No ha sido posible encontrar intervalos para la reunión para un empleado.",
+      "no-meeting-slots-for-employees": "No ha sido posible encontrar intervalos para la reunión para {{count}} empleados.",
+      "no-session-slots-for-employee": "No ha sido posible encontrar intervalos para la sesión para un empleado.",
+      "no-session-slots-for-employee-group-meeting": "No ha sido posible encontrar intervalos para la reunión para un empleado.",
+      "no-session-slots-for-employee-group-meeting-multiple-employees": "No ha sido posible encontrar intervalos para la reunión para {{count}} empleados en una reunión.",
+      "no-session-slots-for-employee-group-meeting-part-one_one": "No es posible encontrar intervalos para la reunión para {{count}} empleado",
+      "no-session-slots-for-employee-group-meeting-part-one_other": "No es posible encontrar intervalos para la reunión para {{count}} empleados",
+      "no-session-slots-for-employee-group-meeting-part-two_one": "en {{count}} reunión.",
+      "no-session-slots-for-employee-group-meeting-part-two_other": "en {{count}} reuniones.",
+      "no-session-slots-for-employee-group-meeting-plural": "No ha sido posible encontrar intervalos para la reunión para {{employeeCount}} empleados en {{meetingCount}} reuniones.",
+      "no-session-slots-for-employees": "No ha sido posible encontrar intervalos para la sesión para {{count}} empleados."
+    }
+  },
+  "message": {
+    "invalid-data": "Los datos del formulario son incorrectos. Asegúrate que has corregido todos los campos resaltados.",
+    "irreplaceable-activities": {
+      "hint_one": "{{count}} de {{totalCount}} actividades de \"Presencia\" en la unidad de planificación seleccionada no es \"Sustituible\".",
+      "hint_other": "{{count}} de {{totalCount}} actividades de \"Presencia\" en la unidad de planificación seleccionada no son \"Sustituibles\".",
+      "reminder": "injixo Reuniones únicamente puede planificar reuniones reemplazando actividades existentes <0>marcadas como \"Sustituible\"</0>. Tener un mayor número de actividades sustituibles permite obtener mejores resultados. Puedes configurar tus actividades en WFM > Gestión > Planificación > Actividades.",
+      "reminder-link-to-docs": "https://help.injixo.com/creating-activities/"
+    },
+    "request-sent": "Petición recibida correctamente. Se están generando las sugerencias.",
+    "external-host": {
+      "header": "Ten en cuenta que las reuniones con anfitrión externo:",
+      "point1": "No se pueden planificar simultáneamente",
+      "point2": "Están planificadas por las <0>restricciones opcionales de disponibilidad</0> establecidas anteriormente"
+    },
+    "unpaid-meeting-activity": {
+      "hint": "La actividad de Reunión seleccionada no está marcada como \"Pagada\". injixo Reuniones únicamente puede planificar Reuniones no pagadas si hay otras actividades no pagadas disponibles en la planificación. Te sugerimos <0>marcar la actividad de Reunión como \"Pagada\"</0> si quieres utilizar injixo Reuniones. Puedes configurar tus actividades en WFM > Gestión > Planificación > Actividades.",
+      "hint-link-to-docs": "https://help.injixo.com/creating-activities/"
+    }
+  },
+  "date-range-picker": {
+    "helper-text": "Todos los datos hace referencia a la zona horaria de la unidad de planificación."
+  },
+  "dropdown": {
+    "meeting-length": "{{minutes}} minutos"
+  },
+  "heading": {
+    "group-meeting-proposal-page": "Suregencias - Reuniones de grupo",
+    "one-on-one-proposal-page": "Sugerencias - Reuniones 1 a 1",
+    "result-page": "{{count1}} reuniones no se han podido planificar, por otro lado {{count2}} se han planificado.",
+    "result-page-fail-plural": "{{count}} reuniones no se han podido planificar",
+    "result-page-fail-singular": "1 reunión no se ha podido planificar",
+    "result-page-success-plural": "{{count}} reuniones se han planificado",
+    "result-page-success-singular": "1 reunión se ha planificado",
+    "self-learning-proposal-page": "Sugerencias - Sesiones de auto-aprendizaje"
+  },
+  "helper-text-for-setting": {
+    "coverage-threshold": "La cobertura mínima resultante puede ser un valor positivo, negativo o cero.",
+    "date-range": "Por defecto, este rango está establecido como la próxima semana laborable de Lunes a Domingo a partir de la fecha actual. Si la fecha actual es Lunes, entonces se refiere a la semana laborable actual de Lunes a Domingo.",
+    "duration": "La duración de la reunión debe ser un múltiplo de 5.",
+    "duration-sessions": "La duración de la sesión debe ser un múltiplo de 5.",
+    "group-meeting-participants": "Puedes planificar reuniones para participantes distribuidos en tantos grupos como quieras. Cada participante se puede planificar únicamente en un grupo.",
+    "group-meeting-with-host": "Las reuniones de grupo con un organizador no se pudieron planificar al mismo tiempo.",
+    "group-meeting-without-host": "Las reuniones de grupo sin organizador se pueden planificar al mismo tiempo. Opcionalmente, puedes definir intervalos de tiempo de cuando las reuniones tienen que ser.",
+    "one-on-one-day-limit": "El número de reuniones por día debe ser un valor positivo.",
+    "one-on-one-gap-length": "Por defecto, la longitud del espaciado se establece al intervalo de la unidad de planificación. Se puede cambiar a un múltiplo de este intervalo.",
+    "select-manual-host": "Selecciona esta opción si el organizador de la reunión no está planificado en injixo.",
+    "select-scheduled-host": "Selecciona esta opción para utilizar la planificación de injixo del organizador de la reunión como su disponibilidad. Puedes elegir empleados de otras unidades de planificación, pero ambas unidades de planificación deben tener el mismo intervalo. Si eliges esta opción, las reuniones resultantes se añadirán a la planificación del organizador.",
+    "selection-filter": "Por defecto, esta es la lista completa de empleados de la unidad de planificación seleccionada. Puedes afinar el grupo de participantes seleccionando un grupo o un filtro de empleados desde el desplegable correspondiente.",
+    "self-learnings-day-limit": "El número de sesiones por día debe ser un valor positivo.",
+    "self-learnings-gap-length": "Por defecto, la longitud del espaciado se establece al intervalo de la unidad de planificación. Se puede cambiar a un múltiplo de este intervalo."
+  },
+  "helper-text": {
+    "delete-jobs": "Las entradas seleccionadas se eliminarán de la tabla. Cualquier reunión planificada no se verá afectada.",
+    "delete-schedules": "Las entradas seleccionadas se eliminarán de la tabla. Cualquier reunión planificada no se verá afectada."
+  },
+  "link": {
+    "retrigger-job": "Reintentar",
+    "view-results": "Ver resultados",
+    "view-schedule": "Ver planificación",
+    "view-suggestion": "Ver sugerencias"
+  },
+  "meeting-type": {
+    "group-meeting": "Reunión de grupo",
+    "one-on-one": "Reuniones 1 a 1",
+    "self-learning": "Sesiones de auto-aprendizaje",
+    "auto-group-meeting": "Reunión de grupo"
+  },
+  "placeholder": {
+    "dropdown": "Buscar o seleccionar",
+    "non-searchable-dropdown": "Seleccionar",
+    "select-gap-length": "Seleccionar la longitud del espaciado",
+    "select-meeting-length": "Seleccionar la duración de la reunión",
+    "select-session-duration": "Selecciona la duración de la sesión"
+  },
+  "popup": {
+    "timezone-helper": "Los datos de fecha y hora hacen referencia a la zona horaria de la unidad de planificación."
+  },
+  "units": {
+    "minutes": "minutos"
+  },
+  "connection": {
+    "offline": "No hemos podido reconectar. Por favor, vuelve a probar en unos minutos.",
+    "reconnecting": "Hemos perdido la conexión. Estamos intentando reconectar automáticamente."
+  },
+  "document_title": {
+    "context": {
+      "group_meeting_results": "Reuniones de grupo Resultados",
+      "group_meeting_suggestions": "Reuniones de grupo Suregencias",
+      "one_on_one_meeting_results": "Reuniones 1 a 1 Resultados",
+      "one_on_one_meeting_suggestions": "Reuniones 1 a 1 Sugerencias",
+      "self_learning_results": "Sesiones de auto-aprendizaje Resultados",
+      "self_learning_suggestions": "Sesiones de auto-aprendizaje Sugerencias"
+    },
+    "module": "Plan",
+    "sub_module": "Meetings"
+  },
+  "explaination": {
+    "external-host": "El anfitrión no es planificado en injixo y las franjas horarias de las reuniones no pueden solaparse",
+    "internal-host": "El organizador es planificado en injixo y las franjas horarias de las reuniones no pueden solaparse",
+    "no-host": "Las franjas horarias de las reuniones pueden solaparse"
+  }
+}

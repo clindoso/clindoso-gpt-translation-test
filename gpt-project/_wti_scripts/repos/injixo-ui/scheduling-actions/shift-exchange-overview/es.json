@@ -1,0 +1,74 @@
+{
+  "heading": {
+    "initial": "Aprobar intercambio de turnos"
+  },
+  "alt": {
+    "reload-planning-units": "Recargar las unidades de planificación",
+    "reload-selections": "Recargar los grupos",
+    "reload-shift-exchange-commitments": "Recargar los intercambios de turno"
+  },
+  "button": {
+    "approve-selected": "Aprobar seleccionados",
+    "back-to-schedules": "Volver a Planificar",
+    "reject-selected": "Rechazar seleccionados"
+  },
+  "document_title": {
+    "module": "Plan",
+    "page": {
+      "approve_shift_exchange": "Aprobar intercambio de turnos"
+    }
+  },
+  "filter": {
+    "no-result-found": "No se han encontrado resultados"
+  },
+  "message": {
+    "error": "No se han podido obtener los datos",
+    "planning-units": {
+      "error": "Ha ocurrido un error y no se han podido cargar las unidades de planificación. Prueba a <0>recargar las unidades de planificación</0> o prueba más tarde."
+    },
+    "selections": {
+      "error": "Ha ocurrido un error y no se han podido cargar los grupos. Prueba a <0>recargar los grupos</0> o prueba más tarde."
+    },
+    "shift-exchange-commitments": {
+      "error": "No se pudo cargar las peticiones de intercambio de turnos. Prueba a <0>recargar las peticiones de intercambio</0> o inténtalo de nuevo más tarde.",
+      "update-error": "Las peticiones de intercambio de turnos no se han podido actualizar.",
+      "update-success": "Las peticiones de intercambio de turnos han sido actualizadas"
+    }
+  },
+  "placeholder": {
+    "planning-unit": "Elegir una unidad de planificación",
+    "selection": "Elegir grupo"
+  },
+  "status": {
+    "tooltip": {
+      "acceptor-resigned": "El aceptante se ha retirado del intercambio de turnos.",
+      "acceptor-shift-changed": "El turno aceptante ha cambiado",
+      "deadline-missed": "Ha pasado el plazo",
+      "invalid": "El intercambio de turnos es inválido.",
+      "offerer-resigned": "El ofertante se ha retirado del intercambio de turnos.",
+      "offerer-shift-changed": "El turno ofertante ha cambiado",
+      "rule-breached": "Se ha infringido una regla"
+    },
+    "value": {
+      "approved": "Aprobada",
+      "canceled": "Cancelado",
+      "pending": "Pendiente",
+      "rejected": "Rechazado"
+    }
+  },
+  "tab": {
+    "information": "Información",
+    "pending": "Pendiente"
+  },
+  "table": {
+    "heading": {
+      "compensation-date": "Fecha de la contraoferta",
+      "exchange-date": "Fecha del intercambio",
+      "exchange-partner": "Pareja de intercambio",
+      "initiator": "Iniciador",
+      "modification-date": "Actualizado el",
+      "status": "Estado"
+    },
+    "no-results": "No se ha encontrado ningún intercambio de turnos."
+  }
+}

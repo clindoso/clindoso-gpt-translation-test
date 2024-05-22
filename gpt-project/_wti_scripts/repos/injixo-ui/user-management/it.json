@@ -1,0 +1,309 @@
+{
+  "roles_overview": {
+    "page_title": "Ruoli",
+    "search_role": "Cerca ruoli",
+    "category_change_failed": "Impossibile modificare la categoria di ruoli.",
+    "description": "I ruoli con autorizzazioni simili sono riuniti in categorie, per esempio <0>Pianificatore</0>. Le autorizzazioni per le nuove funzionalità di injixo vengono assegnate in modo automatico ai ruoli in base alla loro categoria di ruoli.<br> I ruoli della categoria di ruoli <0>Altro</0> non ricevono autorizzazioni prestabilite per le nuove funzionalità injixo.<br>Per saperne di più, vedi l'<1>Help Center</1>.",
+    "heading": "Ruoli",
+    "link_to_docs": "https://help.injixo.com/it/default-user-roles/",
+    "section": "Panoramica"
+  },
+  "user_details": {
+    "save": "Salva",
+    "create": "Crea",
+    "show_iwfm_employee": "Mostra nel WFM",
+    "heading": {
+      "create_user": "Crea utente",
+      "edit_user": "Modifica {{name}}",
+      "account": "Account",
+      "preferences": "Preferenze",
+      "security": "Sicurezza",
+      "role_assignment": "Assegna ruolo o ruoli",
+      "object_permissions": "Gestisci l'accesso agli oggetti"
+    },
+    "2fa_disabled": "2FA disattivata",
+    "2fa_enabled": "2FA attivata",
+    "change_email": "Indirizzo email errato? <0>Cambia</0>",
+    "confirm_email": "Per continuare dobbiamo confermare il tuo indirizzo email.",
+    "creating": "Creando",
+    "delete": "Elimina",
+    "delete_modal": {
+      "confirmation": "Comprendo che il record dell'utente e tutti i dati di pianificazione di <0>{{name}}</0> verranno eliminati.",
+      "description": "L'azione non può essere annullata. Di conseguenza, l'utente <0>{{name}}</0> e i relativi dati di pianificazione verranno eliminati in modo permanente.",
+      "end_staff_membership": {
+        "description": "Imposta una data di licenziamento per <0>{{name}}</0>. In questo modo l'utente verrà escluso dalla fatturazione mensile e verrà disabilitato il suo account injixo. Tutti i suoi dati di pianificazione verranno conservati.",
+        "heading": "Termina l'appartenenza all'organico",
+        "view": "Appartenenza all'organico"
+      },
+      "title": "Elimina utente",
+      "confirmation_skills_lms": "I understand that the user record for <0>{{name}}</0> will be deleted and training history anonymized.",
+      "description_skills_lms": "This action cannot be undone. The user <0>{{name}}</0> will be deleted from your Account section and also deactivated and anonymized in the learning management system (LMS) enrollment and reporting sections.",
+      "title_skills_lms": "Delete / deactivate user"
+    },
+    "deleting": "Eliminando",
+    "email_not_verified": "Questo indirizzo email non è stato verificato.",
+    "employment_period_expired": "Questo utente non può accedere perché non è stato trovato nessun periodo di lavoro in corso.",
+    "field": {
+      "admin": {
+        "checkbox": "Concedi l'accesso come amministratore",
+        "heading": "Accesso amministratore",
+        "hint": "Gli amministratori hanno pieno accesso a tutte le funzionalità di injixo. Solo gli amministratori possono modificare questa impostazione.",
+        "label": "Accesso completo a injixo"
+      },
+      "email": "Email",
+      "enforce2fa": "Imponi l'attivazione della 2FA",
+      "enforce2fa_tooltip": "L'utente deve attivare la 2FA al prossimo login.",
+      "firstName": "Nome",
+      "language": {
+        "label": "Lingua",
+        "no_result": "Nessuna lingua trovata",
+        "placeholder": "Scegli lingua..."
+      },
+      "lastName": "Cognome",
+      "locked": {
+        "hint": "L'utente è bloccato a causa dell'immissione si più password errate",
+        "label": "Utente bloccato",
+        "unlock": "Sblocca utente",
+        "unlocking": "Sbloccando"
+      },
+      "password": {
+        "hint": "L'utente può reimpostare la password in un secondo momento",
+        "label": "Password",
+        "set_password": "Imposta nuova password"
+      },
+      "sendMail": {
+        "details": "Invia le istruzioni via email per impostare la password iniziale e accedere.",
+        "label": "Invia email di benvenuto",
+        "sso_enforced_details": "Email con le istruzioni per accedere."
+      },
+      "timeZone": {
+        "label": "Fuso orario",
+        "no_result": "Nessun fuso orario trovato",
+        "placeholder": "Scegli fuso orario"
+      },
+      "object_permission": {
+        "full_access": "Accesso completo",
+        "label": "Seleziona il gruppo di oggetti accessibili",
+        "no_access": "Nessun accesso",
+        "no_result": "Nessun permesso per l'oggetto trovato",
+        "placeholder": "Seleziona autorizzazione oggetto ..."
+      },
+      "user_principal_name": {
+        "hint": "Inserisci il nome principale dell'utente (UPN) solo se l'email per il login injixo è diversa dall'UPN utilizzato dal provider di identità dell'autenticazione unica.",
+        "label": "Nome principale dell'utente (UPN)",
+        "unique": "Inserisci un nome principale dell'utente che non è già utilizzato in questo tenant."
+      }
+    },
+    "saving": "Salvando",
+    "success_modal": {
+      "ok": "Ok"
+    },
+    "title": "Utente",
+    "unsaved_changes_modal": {
+      "iwfm": {
+        "hint": "Stai per passare a <0>Dipendente WFM</0>, dove puoi impostare autorizzazioni utente aggiuntive per prodotti e funzionalità come SchedulePro o ForecastPro.",
+        "title": "Dipendente WFM"
+      },
+      "set_password": {
+        "hint": "Stai per passare alla pagina di impostazione della password, dove puoi impostare una nuova password per <0>{{name}}</0>."
+      },
+      "object_access": {
+        "hint": "Stai per passare alla pagina <0>nuovo accesso agli oggetti</0>. Definire lì i nuovi permessi di accesso agli oggetti.",
+        "title": "Nuovo accesso agli oggetti"
+      }
+    },
+    "user_creation_failed": "Impossibile creare l'utente.",
+    "user_creation_successful": "Utente creato con successo.",
+    "user_deletion_failed": "Impossibile eliminare l'utente.",
+    "user_deletion_successful": "L'utente è stato eliminato con successo.",
+    "user_locked": "Utente bloccato",
+    "user_unlock_failed": "Impossibile sbloccare l'utente",
+    "user_update_failed": "Impossibile salvare l'utente.",
+    "user_update_successful": "L'utente è stato aggiornato con successo.",
+    "validation": {
+      "email": "Inserisci un indirizzo email, per esempio mail@test.com.",
+      "max": "L'input non deve essere più lungo di {{max}} caratteri.",
+      "required": "L'input non può essere vuoto.",
+      "unique": "L'input è già stato preso."
+    },
+    "verify_email": "Fare clic sul collegamento nell'email di verifica inviata a <0>{{email}}</0>",
+    "create_object_group": "Nuovo accesso agli oggetti",
+    "information": {
+      "sso": {
+        "password_hint": "Passwords are managed by your identity provider."
+      },
+      "sso_activated": "Single sign-on activated",
+      "sso_enforced": "The user needs to be granted access within your identity provider to access injixo."
+    },
+    "return_to_overview": "Torna a Utenti",
+    "banner-message": "Passa a <PeopleLink>People</PeopleLink> per una gestione centralizzata degli utenti! Esplora la nuova interfaccia, che include l'assegnazione dei ruoli, l'accesso amministratore, e le opzioni per una maggiore sicurezza.",
+    "banner-message-deprecation": "Passa a People oggi stesso - questa pagina verrà ritirata presto.",
+    "return_to_people": "Return to people"
+  },
+  "two_factor": {
+    "title": "Autenticazione a due fattori",
+    "enabled": "Attivato",
+    "disabled": "Disattivata",
+    "enforced": "L'utente deve attivare la 2FA al prossimo login",
+    "enabled_and_enforced": "Attivazione applicata e attivata",
+    "disable": "Disattiva 2FA",
+    "disabling": "Disattivazione in corso",
+    "disabling_failed": "Impossibile disattivare 2FA"
+  },
+  "password_strength": {
+    "none": "Nessuna password",
+    "strong": "Password robusta",
+    "sufficient": "Password media",
+    "weak": "Password debole"
+  },
+  "role_list": {
+    "other": "Altro",
+    "create_role": "Crea un ruolo nella categoria di ruoli {{category}}"
+  },
+  "set_password": {
+    "cancel": "Annulla",
+    "description": "Si prega di avvisare l'utente della nuova password. Le notifiche non sono automatiche.",
+    "failure": "L'impostazione della password è fallita.",
+    "label": "Password",
+    "save": "Salva",
+    "saving": "Salvando",
+    "strength_hint": "Utilizzare almeno 8 caratteri, combinare lettere maiuscole e minuscole, numeri e caratteri speciali.",
+    "success": "Impostata la nuova password con successo. <0>Torna indietro</0>",
+    "title": "Nuova password per {{name}}"
+  },
+  "unsaved_changes_modal": {
+    "cancel": "Annulla",
+    "error": "Non puoi continuare perchè il modulo contiene errori.",
+    "hint": "Le modifiche non salvate verranno salvate quando si continua.",
+    "save_and_continue": "Salva e continua"
+  },
+  "users_overview": {
+    "role_filter": {
+      "search_roles": "Cerca ruoli",
+      "all_roles": "Tutti i ruoli"
+    },
+    "billed_users": "Utenti fatturati",
+    "column": {
+      "2fa": "2FA",
+      "email": "Email",
+      "name": "Nome",
+      "roles": "Ruoli"
+    },
+    "create_user": "Crea utente",
+    "export_csv": "Esporta in CSV",
+    "exporting": "Esportando",
+    "heading": "Utenti",
+    "import_csv": "Importa da CSV",
+    "loading_users_failed": "Impossibile caricare gli utenti.",
+    "search_placeholder": "Cerca nomi e indirizzi email",
+    "title": "Utenti",
+    "tooltip": {
+      "email_unverified": "Questo utente deve verificare il proprio indirizzo email.",
+      "locked": "Questo utente è bloccato. Clicca qui e vai alla pagina dei dettagli dell'utente per sbloccarlo."
+    },
+    "unbilled_users": "Utenti non fatturati",
+    "unbilled_users_hint": "L'appartenenza all'organico di questi utenti è terminata. Questi utenti non vengono fatturati e non possono accedere."
+  },
+  "objectgroup_overview": {
+    "heading": "Accesso agli oggetti",
+    "section": "Panoramica",
+    "description": "Per limitare l'accesso degli utenti solo a oggetti o dati specifici in injixo, crea un gruppo che definisce tutti gli oggetti accessibili, ad es. dashboard specifiche. A ogni utente può essere concesso l'\"accesso completo\" o l'accesso a uno di questi gruppi ristretti di oggetti.",
+    "create": "Creare",
+    "title": "Accesso agli oggetti",
+    "edit": "Modifica",
+    "is_restricted": "Accesso limitato",
+    "object_group_count": "Numero totale di utenti assegnati: <0>{{count}}</0>"
+  },
+  "objectgroup_details": {
+    "heading": {
+      "create": "Nuovo accesso agli oggetti",
+      "basic_information": "Informazioni di base",
+      "permissions": "Oggetti accessibili",
+      "edit": "Modifica accesso agli oggetti"
+    },
+    "name": "Nome",
+    "description": "Descrizione",
+    "validation": {
+      "unique": "L'input è già stato preso.",
+      "required": "L'input non può essere vuoto."
+    },
+    "creation_failed": "Impossibile creare l'accesso all'oggetto.",
+    "creation_successful": "Creato gruppo di oggetti \"{{name}}\"",
+    "optional": "Opzionale",
+    "creating": "Creazione",
+    "create": "Creare",
+    "objects": {
+      "restrict_access": "Restringere accesso",
+      "access_info": "Gli utenti di questo gruppo hanno accesso agli elementi selezionati",
+      "search": "Ricerca elementi...",
+      "selected": "{{selected}}/{{total}} selezionati",
+      "full_access": "Accesso completo agli oggetti injixo. Questa è l'impostazione predefinita per ogni nuovo utente.",
+      "go_to_iwfm": "Vai a Diritti per ruoli di utenti",
+      "iwfm_description": "Trova le autorizzazioni per tutti gli altri oggetti accedendo alla vista Diritti per ruoli di utenti.",
+      "iwfm_heading": "Non riesci a trovare l'oggetto?",
+      "iwfm_path": "Accessibile anche da WFM <0 />Administration<0 />Sistema<0 /> Diritti per ruoli di utenti"
+    },
+    "page_title": "Gruppo di oggetti - {{name}}",
+    "saving": "Salvataggio",
+    "save": "Salva",
+    "update_failed": "Impossibile aggiornare il gruppo di oggetti.",
+    "update_successful": "Il gruppo di oggetti è stato aggiornato correttamente.",
+    "return_to_overview": "Torna ad accesso agli oggetti",
+    "object_group_count": "Numero totale di utenti assegnati: {{count}}",
+    "delete_disabled_tooltip": "Questo gruppo di oggetti può essere eliminato solo dopo aver rimosso tutti gli utenti assegnati.",
+    "delete": "Elimina",
+    "delete_modal": {
+      "description": "Sei sicuro di voler eliminare \"<0>{{name}}</0>\"? Questa azione non può essere annullata.",
+      "title": "Elimina gruppo di oggetti"
+    },
+    "deleting": "Eliminazione",
+    "objectgroup_deletion_failed": "Impossibile eliminare il gruppo di oggetti.",
+    "objectgroup_deletion_successful": "{{name}} è stato eliminato",
+    "unsaved_changes_modal": {
+      "iwfm": {
+        "hint": "Stai per passare a <0>Diritti per ruoli di utenti</0>. Lì puoi impostare i permessi dei ruoli per altri oggetti.",
+        "title": "Vai a Diritti per ruoli di utenti"
+      }
+    }
+  },
+  "back": "Indietro",
+  "cancel": "Annulla",
+  "document_title": {
+    "module": "Account",
+    "context": {
+      "users": {
+        "title": "Utenti",
+        "page": {
+          "overview": "Panoramica",
+          "create": "Crea utente",
+          "edit": "Modifica utente"
+        }
+      },
+      "user_roles": {
+        "title": "Ruoli",
+        "page": {
+          "overview": "Panoramica",
+          "create": "Creare un ruolo",
+          "edit": "Modifica {{name}}"
+        }
+      },
+      "object_access": {
+        "title": "Accesso agli oggetti",
+        "page": {
+          "overview": "Panoramica",
+          "create": "Nuovo accesso agli oggetti",
+          "edit": "Modifica {{name}}"
+        }
+      }
+    }
+  },
+  "admin": "Amministratore",
+  "objectgroups_overview": {
+    "search_object_group": "Cerca gruppi di oggetti..."
+  },
+  "role_details": {
+    "access_type": {
+      "edit_agent_status": "Modifica lo stato dell'agente"
+    }
+  }
+}

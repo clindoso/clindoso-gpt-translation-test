@@ -1,0 +1,407 @@
+{
+  "time_tracking": {
+    "page_title": "Time tracking",
+    "hour_abbreviation": "h",
+    "punch": {
+      "activities": {
+        "combobox": {
+          "aria_label": "Activities",
+          "placeholder": "Select activity"
+        }
+      },
+      "clock_in": {
+        "button": {
+          "label": "Start activity"
+        },
+        "toast": "Activity started"
+      },
+      "clock_out": {
+        "button": {
+          "aria_label": "Stop time tracking for current activity"
+        },
+        "toast": "Activity stopped"
+      },
+      "switch": {
+        "button": {
+          "label": "Switch activity"
+        }
+      },
+      "timer": {
+        "aria_label": "Start time tracking for selected activity"
+      }
+    },
+    "records": {
+      "duration": "Duration",
+      "empty": {
+        "description": "Track your time at the top of the page.",
+        "headline": "You have no tracked activities."
+      },
+      "heading_today": "Tracked activities",
+      "heading_yesterday": "Tracked activities",
+      "now": "now",
+      "ongoing": "Ongoing",
+      "unknown_activity": "Unknown activity"
+    },
+    "statistics": {
+      "calculation_tooltip": "Time statistics for the selected time period. In the case of overnight shifts, only the times within the selected period are included.",
+      "current_day": "Today",
+      "current_month": "Current month",
+      "current_week": "Current week",
+      "day": "Day",
+      "deviation": "Deviation",
+      "heading": "Statistics",
+      "month": "Month",
+      "previous_day": "Yesterday",
+      "previous_month": "Last month",
+      "previous_week": "Last week",
+      "scheduled_paid_time": "Scheduled paid time",
+      "tracked_paid_time": "Paid time tracked",
+      "tracked_time": "Total time tracked",
+      "week": "Week"
+    }
+  },
+  "time_off": {
+    "balance_overview": {
+      "pending": "Pending",
+      "remaining": "Remaining",
+      "taken": "Taken",
+      "title": "Time-off balance overview",
+      "current_balance": "Current balance"
+    },
+    "calendar": {
+      "title": "Year"
+    },
+    "download_time_off_overview": "Download time-off overview",
+    "entitlement_picker": {
+      "current_period": "Current period",
+      "next_period": "Next period",
+      "previous_period": "Previous period"
+    },
+    "page_title": "Time Off",
+    "request": {
+      "comments": "View comments"
+    },
+    "request_state": {
+      "approved": "Approved",
+      "canceled": "Canceled",
+      "cancellation_requested": "Cancellation requested",
+      "rejected": "Rejected",
+      "requested": "Requested"
+    },
+    "request_time_off": "Request time off",
+    "requests": {
+      "creation_form": {
+        "cancel": "Cancel",
+        "comment": "Comment",
+        "create": "Request time off",
+        "created": "The selected time-off request has been submitted successfully.",
+        "date": "Date",
+        "end_date": "End date",
+        "end_time": "End time",
+        "error": {
+          "comment_too_long": "Enter a comment (up to 100 characters).",
+          "conflict_with_existing_plan_data_request": "The duration of the request overlaps with an existing request.",
+          "conflict_with_existing_request": "The duration of the request overlaps with an existing request.",
+          "conflict_with_existing_time_off": "The duration of the request overlaps with an existing request.",
+          "employee_marked_as_unavailable": "You are marked as not available on this date. Please change your availability yourself or ask your supervisor.",
+          "no_time_off_period": "You cannot request time off for this period. The time-off period for this request has not been published. Contact your planning team.",
+          "start_date_before_end": "The end date must be on or after the start date.",
+          "start_time_before_end": "The end time must be after the start time.",
+          "times_required": "Enter a start and end time.",
+          "unknown": "The time-off request could not be created.",
+          "no_contract": "The requested time off lies outside of your contract.",
+          "no_employment": "The requested time off lies outside of your staff membership."
+        },
+        "full_day_request": "Full day",
+        "part_day": "Request a part of the day",
+        "part_day_request": "Part day",
+        "start_date": "Start date",
+        "start_time": "Start time",
+        "submitting": "Processing",
+        "time_off_request": "New time-off request"
+      },
+      "filter": {
+        "label": "Request status filter",
+        "status": {
+          "all": "All",
+          "approved": "Approved",
+          "canceled": "Canceled",
+          "decided": "Decided",
+          "pending": "Pending",
+          "rejected": "Rejected",
+          "requested": "Requested"
+        }
+      },
+      "link_to_schedule": "{{ time_range }} open in calendar",
+      "no_items": "No time-off requests",
+      "title": "Time-off requests"
+    },
+    "pdf_download": {
+      "all": "All",
+      "all_request_statuses": "All request statuses",
+      "all_time_off_types": "All time-off types",
+      "cancel": "Cancel",
+      "download": "Download",
+      "entitlement_period": "Entitlement period",
+      "request_statuses": "Request statuses",
+      "time_off_types": "Time-off types",
+      "title": "Time-off overview",
+      "time_off_type_deleted": "(Deleted)"
+    },
+    "type_selection": {
+      "label": "Time-off type",
+      "no_result": "No time-off type found",
+      "placeholder": "Select time-off type",
+      "deleted_type": "{{name}} (Deleted)"
+    },
+    "unit": {
+      "days_one": "day",
+      "days_other": "days",
+      "hours_one": "hour",
+      "hours_other": "hours"
+    },
+    "year_picker": {
+      "current_year": "This year",
+      "next_year": "Next year",
+      "previous_year": "Previous year"
+    }
+  },
+  "time-off-list": {
+    "card-list": {
+      "card-item": {
+        "button": {
+          "request-cancellation": {
+            "popover": {
+              "button": {
+                "close": {
+                  "label": "Close"
+                },
+                "request": {
+                  "label": "Request cancellation"
+                }
+              },
+              "text-area": {
+                "reason": {
+                  "label": "Reason for cancellation"
+                }
+              }
+            },
+            "aria-label": "{{ time_range }}, Time off, Request cancellation",
+            "label": "Request cancellation"
+          },
+          "withdraw": {
+            "aria-label": "{{ time_range }}, Request pending, Withdraw",
+            "label": "Withdraw"
+          },
+          "withdraw-cancellation-request": {
+            "aria-label": "{{ time_range }}, Time-off cancellation request, Withdraw",
+            "label": "Withdraw"
+          },
+          "comments": {
+            "aria-label": "View comments",
+            "label": "{{count}} comments"
+          }
+        },
+        "booked": {
+          "text": "Booked"
+        },
+        "status": {
+          "approved": {
+            "text": "Approved"
+          },
+          "canceled": {
+            "text": "Canceled"
+          },
+          "cancellation_requested": {
+            "text": "Cancellation requested"
+          },
+          "rejected": {
+            "text": "Rejected"
+          },
+          "requested": {
+            "text": "Requested"
+          },
+          "text": "Status"
+        },
+        "to-be-booked": {
+          "text": "To be booked",
+          "valuation-conflict": {
+            "label": "The time to be booked may change because you have submitted at least one more time-off request for this week."
+          }
+        }
+      }
+    }
+  },
+  "time-off": {
+    "toast": {
+      "request-cancellation": {
+        "failure": {
+          "text": "The time-off cancellation request could not be submitted."
+        },
+        "success": {
+          "text": "The time-off cancellation request has been submitted successfully."
+        }
+      },
+      "withdraw": {
+        "failure": {
+          "text": "The selected time-off request could not be deleted."
+        },
+        "success": {
+          "text": "The selected time-off request has been deleted successfully."
+        }
+      },
+      "withdraw-cancellation-request": {
+        "failure": {
+          "text": "The time-off cancellation request could not be withdrawn."
+        },
+        "success": {
+          "text": "The time-off cancellation request was successfully withdrawn."
+        }
+      }
+    }
+  },
+  "availability": {
+    "delete": {
+      "button": {
+        "label": "Delete"
+      }
+    },
+    "edit": {
+      "form": {
+        "button": {
+          "cancel": {
+            "label": "Cancel"
+          },
+          "submit": {
+            "label": "Save changes"
+          }
+        },
+        "inline-message": {
+          "error": {
+            "text": "Your changes could not be saved. Please try again."
+          }
+        },
+        "toast": {
+          "success": "Availability changed"
+        }
+      },
+      "page-heading": {
+        "return-link": "Back to overview",
+        "text": "Edit {{date}}"
+      },
+      "page_title": "Edit availability"
+    },
+    "inline-message": {
+      "unexpected-error": {
+        "text": "Your availabilities could not be loaded. Please <Link>reload now</Link> or try again later."
+      }
+    },
+    "modal": {
+      "delete-confirmation": {
+        "button": {
+          "cancel": "Back",
+          "confirm": "Delete availability"
+        },
+        "content": "Your availabilities for {{date}} will be deleted. Your planner will use a weekly availability for that day, if there is one.",
+        "content-label": "Delete one-time availability",
+        "inline-message": {
+          "error": "Availability could not be deleted. Please try again."
+        },
+        "title": "Delete availability?",
+        "toast": {
+          "success": "Availability deleted"
+        }
+      }
+    },
+    "new": {
+      "form": {
+        "button": {
+          "add-time": {
+            "label": "Add time slot"
+          },
+          "cancel": {
+            "label": "Cancel"
+          },
+          "remove-time": {
+            "label": "Remove time slot"
+          },
+          "submit": {
+            "label": "Add availability"
+          }
+        },
+        "date-input": {
+          "booking-date": {
+            "error": {
+              "required": "Select a date."
+            }
+          }
+        },
+        "inline-message": {
+          "conflict-error": {
+            "text": "There are availabilities for this date. Select a different date or <Link>change the availabilities for this date</Link>."
+          },
+          "error": {
+            "text": "Availability could not be created. Please try again."
+          }
+        },
+        "time-input": {
+          "end-time": {
+            "error": {
+              "required": "Enter an end time."
+            },
+            "label": "End time"
+          },
+          "start-time": {
+            "error": {
+              "required": "Enter a start time."
+            },
+            "label": "Start time"
+          }
+        },
+        "toast": {
+          "success": "Availability created"
+        }
+      },
+      "page-heading": {
+        "return-link": "Back to overview",
+        "text": "Add availability"
+      },
+      "page_title": "Create availability"
+    },
+    "next_month": "Next month",
+    "one_time": {
+      "empty": {
+        "heading": "No availabilities for this month",
+        "text": "Let your planner know when you're available, or go to the <Link>next month</Link>."
+      }
+    },
+    "overnight-indicator": "+1 day",
+    "overview": {
+      "button": {
+        "add_availability": {
+          "label": "Add availability"
+        },
+        "edit-availability": {
+          "label": "Edit"
+        }
+      },
+      "heading": "Availabilities overview",
+      "inline-message": {
+        "cute-off-date": {
+          "text": "You can only change your availabilities from {{cutOffDate}}."
+        }
+      },
+      "tag": {
+        "one-time": {
+          "text": "One-time"
+        },
+        "weekly": {
+          "text": "Weekly"
+        }
+      }
+    },
+    "page_title": "Availabilities",
+    "prev_month": "Previous month",
+    "time_period": "Time period"
+  }
+}

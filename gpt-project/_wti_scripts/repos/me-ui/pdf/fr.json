@@ -1,0 +1,45 @@
+{
+  "request_state": {
+    "approved": "Validée",
+    "canceled": "Annulée",
+    "cancellation_requested": "Annulation demandée",
+    "rejected": "Refusée",
+    "requested": "Demandée"
+  },
+  "requests_overview_pdf": {
+    "copyright": "© {{year}} injixo",
+    "file_name": "Time-off-overview-{{year}}",
+    "footer": {
+      "page_indicator": "Page {{currentPage}} sur {{totalPages}}",
+      "timestamp": "Générée le {{timestamp}}",
+      "conflict_explanation": "Le temps à planifier est sujet à modifications car vous avez envoyé au moins une demande d'absence supplémentaire pour cette semaine."
+    },
+    "table": {
+      "header": {
+        "date": "Date",
+        "duration": "Durée",
+        "status": "Statut",
+        "type": "Type",
+        "counted_hours_days": "Heures/jours décomptés"
+      }
+    },
+    "title": "Vue d’ensemble des absences"
+  },
+  "schedule_pdf": {
+    "title": "Planning de {{firstName}} {{lastName}}, {{date_range}}",
+    "file_name": "Planning_{{start}}-{{end}}",
+    "page_info": {
+      "page_indicator": "Page {{currentPage}} / {{totalPages}}",
+      "timestamp": "Téléchargé le {{timestamp}}"
+    },
+    "table": {
+      "week_number": "Semaine {{weekNumber}}",
+      "day": "Jour",
+      "start": "Début",
+      "end": "Fin",
+      "duration": "Durée",
+      "not_planned": "Aucun planning publié pour le moment",
+      "total": "Total"
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "document_title": {
+    "context": "Notifications",
+    "module": "Account"
+  },
+  "heading": "Notifications",
+  "message": {
+    "empty": "Aucun paramètre disponible",
+    "error": {
+      "load": "Une erreur est survenue",
+      "save": "Une erreur est survenue"
+    }
+  },
+  "notification_channel": {
+    "browser_push": {
+      "header": "Navigateur",
+      "tooltip": "Chaque utilisateur doit autoriser les notifications sur son navigateur."
+    },
+    "email": {
+      "header": "E-mail"
+    }
+  },
+  "notification_settings_group": {
+    "me": {
+      "title": "Me"
+    },
+    "schedules": {
+      "title": "Schedules"
+    }
+  },
+  "notification_type": {
+    "schedule_changed": {
+      "description": "La fonctionnalité Notification avertit les employés sélectionnés. <0>En savoir plus</0>",
+      "link": "https://help.injixo.com/fr/schedules-notify-scheduling-changes/",
+      "title": "Modification du planning"
+    },
+    "scheduling_period": {
+      "description": "Les employés recevront une notification une fois le planning publié. <0>En savoir plus</0>.",
+      "link": "https://help.injixo.com/fr/schedules-enable-employees-to-see-their-schedules",
+      "title": "Publication du planning"
+    },
+    "shift_trading": {
+      "description": "Lorsqu’un employé sélectionne un autre employé pour échanger des journées, le second employé reçoit une notification. <0>En savoir plus</0>.",
+      "link": "https://help.injixo.com/fr/injixo-me-invite-suitable-colleagues/",
+      "title": "Bourse d’échanges"
+    }
+  },
+  "status": {
+    "error": "Impossible d’enregistrer",
+    "idle": "Modifications sauvegardées",
+    "initial": "Les modifications seront sauvegardées automatiquement",
+    "saved": "Enregistré",
+    "saving": "Enregistrement"
+  }
+}

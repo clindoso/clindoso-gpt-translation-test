@@ -1,0 +1,55 @@
+{
+  "document_title": {
+    "context": "Notifiche",
+    "module": "Account"
+  },
+  "heading": "Notifiche",
+  "message": {
+    "empty": "Non ci sono impostazioni disponibili",
+    "error": {
+      "load": "Si è verificato un errore durante il caricamento",
+      "save": "Si è verificato un errore durante il salvataggio"
+    }
+  },
+  "notification_channel": {
+    "browser_push": {
+      "header": "Browser Push",
+      "tooltip": "Ogni utente deve dare al suo browser il permesso di ricevere notifiche."
+    },
+    "email": {
+      "header": "Email"
+    }
+  },
+  "notification_settings_group": {
+    "me": {
+      "title": "Me"
+    },
+    "schedules": {
+      "title": "Schedules"
+    }
+  },
+  "notification_type": {
+    "schedule_changed": {
+      "description": "Quando usi la funzione Notifica ai dipendenti in Schedules, i dipendenti selezionati ricevono una notifica. <0>Per saperne di più</0>",
+      "link": "https://help.injixo.com/schedules-notify-scheduling-changes/",
+      "title": "Modifica della pianificazione"
+    },
+    "scheduling_period": {
+      "description": "Quando la pianificazione è stata pubblicata, i dipendenti ricevono una notifica. <0>Per saperne di più</0>",
+      "link": "https://help.injixo.com/schedules-enable-employees-to-see-their-schedules",
+      "title": "Pubblicazione della pianificazione"
+    },
+    "shift_trading": {
+      "description": "Quando un dipendente seleziona un altro dipendente per scambiare i turni, il secondo dipendente riceve una notifica. <0>Per saperne di più</0>",
+      "link": "https://help.injixo.com/injixo-me-invite-suitable-colleagues/",
+      "title": "Scambio turni"
+    }
+  },
+  "status": {
+    "error": "Le tue modifiche non possono essere salvate",
+    "idle": "Tutte le modifiche sono state salvate",
+    "initial": "Le modifiche saranno salvate automaticamente",
+    "saved": "Salvato",
+    "saving": "Salvataggio"
+  }
+}

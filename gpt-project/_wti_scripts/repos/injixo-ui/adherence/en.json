@@ -1,0 +1,301 @@
+{
+  "common": {
+    "planningUnit": {
+      "no-data": "No items",
+      "label": "Planning unit",
+      "placeholder": "Search or select"
+    },
+    "selection": {
+      "no-data": "No items",
+      "label": "Selection",
+      "placeholder": "Search or select"
+    },
+    "employee": {
+      "no-data": "No items",
+      "label": "Agent",
+      "placeholder": "Search or select"
+    },
+    "search": {
+      "label": "Search",
+      "placeholder": "Search by name"
+    },
+    "label": {
+      "today": "Today",
+      "yesterday": "Yesterday"
+    }
+  },
+  "table": {
+    "loading": "Loading",
+    "no-results-header": "No results found",
+    "no-results-body": "There are no employees matching your filters.",
+    "no-filter-specified-header": "None selected",
+    "no-filter-specified-body": "Select a planning unit or selection first to see the adherence of your employees.",
+    "header": {
+      "show-only-out-of-adherence": "Show only out of adherence"
+    },
+    "column": {
+      "name": "Name",
+      "actual-activity": "Actual activity",
+      "scheduled-activity": "Scheduled activity",
+      "out-of-adherence-duration": "Out of adherence duration",
+      "current-activity-duration": "Current activity duration",
+      "status": "Status"
+    },
+    "adherence-status-display": {
+      "notPresent": "Not present",
+      "notPresentOutOfBufferTime": "Not present",
+      "notScheduled": "Not scheduled",
+      "notScheduledOutOfBufferTime": "Not scheduled",
+      "wrongActivity": "Wrong activity",
+      "wrongActivityOutOfBufferTime": "Wrong activity"
+    },
+    "adherence-status": {
+      "notPresent": "Not present (out of adherence)",
+      "notPresentInBufferTime": "Not present (in buffer time)",
+      "notPresentOutOfBufferTime": "Not present (out of adherence)",
+      "notScheduled": "Not scheduled (out of adherence)",
+      "notScheduledInBufferTime": "Not scheduled (in buffer time)",
+      "notScheduledOutOfBufferTime": "Not scheduled (out of adherence)",
+      "wrongActivity": "Wrong activity (out of adherence)",
+      "wrongActivityInBufferTime": "Wrong activity (in buffer time)",
+      "wrongActivityOutOfBufferTime": "Wrong activity (out of adherence)",
+      "inAdherence": "In adherence"
+    },
+    "staff-id": "Personnel number",
+    "pin-agent": "Pin to top",
+    "unpin-agent": "Unpin from top"
+  },
+  "adherence-score": {
+    "header": "Out of Adherence",
+    "connection-state": {
+      "disconnected": "Disconnected",
+      "live": "Live"
+    },
+    "agents-in-adherence": "In adherence",
+    "agents-in-buffer-time": "In buffer time",
+    "agents-out-of-adherence": "Out of adherence",
+    "last-updated": "Last updated {{lastUpdatedAt}}",
+    "today-so-far": "Today so far"
+  },
+  "activity-overview": {
+    "header": "Activity overview",
+    "column": {
+      "activity": "Activity",
+      "scheduled": "Scheduled",
+      "current": "Actual",
+      "delta": "Coverage",
+      "score": "Adherence",
+      "breaks": "Breaks",
+      "presence": "Presence"
+    },
+    "label": {
+      "actual": "Actual",
+      "planned": "Scheduled",
+      "difference": "Difference",
+      "add-activity-to-search": "Add activity {{activityName}} to search",
+      "view-matches-for-activity": "View Matches for activity {{activityName}}",
+      "edit-matches-for-activity": "Edit Matches for activity {{activityName}}",
+      "no-acd-mapping-for-activity": "There exists no agent status mapping for activity {{activityName}}"
+    },
+    "agent-overview": "Agent overview"
+  },
+  "notification": {
+    "connection": {
+      "reconnecting": "We’ve lost the connection. We are trying to reconnect automatically...",
+      "offline": "We were unable to reconnect. Please try to reload in a few minutes.",
+      "session-invalid": "You are currently logged out. You can login <0>here</0>.",
+      "label": {
+        "login-link": "Go to login"
+      }
+    },
+    "failure": {
+      "general": "An error has occurred. Please try again later.",
+      "agent-details": "A problem occured while loading agent details. Please <0>try again</0>."
+    },
+    "success": {
+      "threshold-settings": "Changes to the buffer time have been applied."
+    }
+  },
+  "input": {
+    "omni-search": {
+      "placeholder": "Search for names, personnel numbers, activities and status",
+      "tooltip": "Add comma-separated search terms each with at least two characters."
+    }
+  },
+  "settings": {
+    "buffer-times": {
+      "header-edit": "Adjust your buffer time",
+      "header-view": "View buffer time settings",
+      "readonly-message": "You do not have the permission to change these settings.",
+      "hint": "Agents who are in buffer time have no negative effects on the adherence score. They will also not appear in the out of adherence filter view. This is a global setting and applies to all users.",
+      "apply": "Apply",
+      "applying": "Applying...",
+      "cancel": "Cancel",
+      "close": "Close",
+      "placeholder": "Search or select",
+      "no-data": "No items",
+      "load-failed": "The data could not be loaded, please try again later.",
+      "update-failed": "The data could not be updated, please try again later.",
+      "threshold": {
+        "instantly": "Instantly",
+        "15-seconds": "15 seconds",
+        "30-seconds": "30 seconds",
+        "1-minute": "1 minute",
+        "2-minutes": "2 minutes",
+        "3-minutes": "3 minutes",
+        "5-minutes": "5 minutes"
+      }
+    },
+    "adjust-target-score": {
+      "header": "Adjust your Adherence Target",
+      "label": "Set your Adherence Target Score to:",
+      "description": "You are about to set a target adherence score. If the actual adherence falls below your target score, the display will turn red."
+    }
+  },
+  "matches": {
+    "label": {
+      "header-edit": "Activity matches",
+      "header-view": "View activity matches",
+      "additional-matching-activities": "Additional matching activities",
+      "no-activity-selected": "No activity selected",
+      "no-activity-selected-sub": "Select an activity to edit Matches",
+      "all-type": "Any of type",
+      "add-activity": "Add activity {{activityName}} to Matches",
+      "add-activity-type": "Add activity type {{activityType}} to Matches",
+      "remove-activity": "Remove activity {{activityName}} from Matches",
+      "remove-activity-type": "Remove activity type {{activityType}} from Matches",
+      "type": "Type",
+      "manage-activities": "Manage activity matches",
+      "external-system-mappings": "External system mappings",
+      "manage": "Edit in Intraday",
+      "include-unmapped-activities": "Show only mapped activities",
+      "no-acd-mappings": "No mappings defined",
+      "no-activity-matches": "No additional Matches",
+      "activity-mappings": "Mapping of external statuses"
+    },
+    "link": {
+      "back-to-adherence": "Back to Adherence"
+    },
+    "placeholder": {
+      "search-activity": "Search for activity name",
+      "search-activity-name-or-type": "Search activity by name or type"
+    },
+    "button": {
+      "apply": "Apply",
+      "applying": "Applying...",
+      "cancel": "Cancel"
+    },
+    "activityType": {
+      "present": "Present",
+      "holiday": "Holiday",
+      "break": "Break",
+      "absence": "Absence",
+      "meeting": "Meeting",
+      "illness": "Illness"
+    },
+    "notification": {
+      "success": {
+        "manage-activities": "Changes have been saved and applied successfully"
+      },
+      "error": {
+        "manage-activities": "An error occurred while saving the changes, please try again"
+      }
+    }
+  },
+  "heading": {
+    "intraday-adherence": "Intraday Adherence",
+    "real-time-adherence": "Real-Time Adherence"
+  },
+  "info": {
+    "activity": {
+      "offline": "This is a special activity when the agent has no ACD status"
+    }
+  },
+  "label": {
+    "activity": {
+      "no-scheduled": "No scheduled activity",
+      "offline": "Offline"
+    },
+    "agent-details": {
+      "schedule": "Schedule",
+      "retry": "Retry",
+      "actual": "Actual",
+      "insights-heading": "Out of adherence details view"
+    },
+    "business-hours": "Business Hours",
+    "close-agent-details": "Close agent details",
+    "highcharts": {
+      "decimal-point": ".",
+      "reset-zoom": "Reset zoom"
+    },
+    "scheduled-time": "Scheduled",
+    "adherence-status": {
+      "notPresent": "Not present",
+      "notScheduled": "Not scheduled",
+      "wrongActivity": "Wrong activity"
+    },
+    "return-to-agent-details": "Return to agent details",
+    "timezoneInfo": "All times are in: ({{timezoneOffset}}) {{timezoneName}}",
+    "quarterly-adherence": "15-minute average",
+    "average-adherence": "Daily average"
+  },
+  "historical-adherence": {
+    "column": {
+      "score": "Adherence"
+    },
+    "pagination": {
+      "current-page": "Current page",
+      "page": "Page",
+      "ellipsis": "Ellipsis",
+      "previous-page": "Previous page",
+      "next-page": "Next page",
+      "previous-month": "Previous month",
+      "next-month": "Next month",
+      "previous-day": "Previous day",
+      "next-day": "Next day"
+    },
+    "error": {
+      "reload_resource": "An error has occurred. Try to reload <0>{{resource}}</0> or try again later.",
+      "no-data": "No adherence data available for the selected date. An integration may be paused. Please contact a person with admin access."
+    },
+    "chart": {
+      "targetScore": "Target"
+    },
+    "reload_adherence": "Reload Adherence",
+    "adherence": "Adherence",
+    "agent-details": {
+      "heading": "Agent Intraday Adherence",
+      "table": {
+        "heading": "Out of Adherence Incident Details",
+        "column": {
+          "time-range": {
+            "label": "Time period"
+          }
+        }
+      },
+      "no-filter-specified-body": "Select a planning unit and agent first to see their adherence.",
+      "daily-overview": {
+        "header": "Daily Overview",
+        "no-score": "No score"
+      },
+      "edit-actual-activities": {
+        "button": {
+          "label": "Edit actual activities"
+        }
+      }
+    },
+    "report": {
+      "button_cancel": "Cancel",
+      "button_download": "Download report",
+      "button_open": "Download report",
+      "date_range_label": "Report date range",
+      "modal_content": "The Adherence report (CSV file) includes detailed adherence and conformance data.",
+      "modal_title": "Download report",
+      "toast_success": "The download will start in a few seconds."
+    }
+  },
+  "unknown_activity": {
+    "name": "Activity unknown",
+    "type": "type unknown"
+  }
+}

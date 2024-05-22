@@ -1,0 +1,159 @@
+{
+  "ip_filtering": {
+    "button_deactivate": "Filter uitschakelen",
+    "button_discard": "Wijzigingen annuleren",
+    "button_save": "Filter inschakelen",
+    "button_update": "Opslaan",
+    "description": "Geef aan welke IP-adressen toegang hebben tot jouw injixo-tenant.",
+    "enter_ip_addresses": "IP-adresbereik",
+    "enter_ip_addresses_message": "Voer een IP-adresbereik in, bijvoorbeeld: {{validatedRemoteIpAddress}}/32. Om toegang te krijgen tot injixo, moet je IP-adres binnen een van deze IP-bereiken liggen. Als je geen gebruik maakt van IP-adresbereiken, voeg dan individuele IP-adressen toe, bijvoorbeeld: {{validatedRemoteIpAddress}}.",
+    "field_errors": {
+      "invalid_ip_address": "Voer een IP-adresbereik in het CIDR-formaat in."
+    },
+    "heading": "IP-filtering",
+    "help_center_hint": "Ga voor meer informatie naar het <0>Help Center</0>.",
+    "help_center_link": "https://help.injixo.com/nl/ip-filtering",
+    "submit": {
+      "deactivated_success": "De IP-filtering is uitgeschakeld.",
+      "success": "De IP-adresbereiken zijn opgeslagen."
+    },
+    "submit_errors": {
+      "ip_address_out_of_range": "Je IP-adres valt niet binnen het IP-adresbereik. Je kunt je met dit IP-adres niet aanmelden. Voer een IP-adres in dat binnen het bereik valt.",
+      "submission_failed": "Een of meerdere IP-adressen konden niet worden opgeslagen. Probeer het opnieuw."
+    },
+    "submit_warning": "Als je deze wijzigingen opslaat, worden alle gebruikers in je organisatie afgemeld. Meld je opnieuw aan om verder te werken met injixo.",
+    "your_ip_address": "Je IP-adres"
+  },
+  "page_heading": "Beveiliging",
+  "page_title": "Beveiliging - Account | injixo",
+  "two_factor_auth": {
+    "disabled": {
+      "button": "2FA voor alle medewerkers verplicht stellen",
+      "description1": "Op dit moment is 2FA optioneel en elke medewerker kan zelf bepalen om 2FA in of uit te schakelen.",
+      "description2": "Als je het gebruik van 2FA voor alle medewerker verplicht stelt, dan moeten medewerkers 2FA bij hun volgende aanmelding inschakelen. Ga voor meer informatie naar het <0>Help Center</0>.",
+      "success_message": "2FA is als verplicht ingeschakeld."
+    },
+    "enabled": {
+      "button": "Verplichting intrekken",
+      "description1": "2FA wordt momenteel verplicht gesteld voor alle medewerkers.",
+      "description2": "Medewerkers kunnen zich alleen met 2FA aanmelden. Lees meer in <0>Help Center</0>.",
+      "success_message": "Verplichting met succes ingetrokken."
+    },
+    "error_message": "Er was een technisch probleem. Probeer het nog een keer.",
+    "heading": "Twee-factor authenticatie (2FA)",
+    "link_to_docs": "https://help.injixo.com/2fa",
+    "loading": "Laden...",
+    "sso_enforced": "Single sign-on is afgedwongen en 2FA is niet beschikbaar in injixo. Stel in plaats daarvan een tweede authenticatiefactor in via je identiteitsprovider.",
+    "user_stats_2fa_disabled": "2FA uitgeschakeld",
+    "user_stats_2fa_enabled": "2FA ingeschakeld",
+    "user_stats_total": "Totaal",
+    "user_stats_suffix": "Medewerkers"
+  },
+  "single_sign_on": {
+    "configuration": {
+      "create": "Configuratie opslaan",
+      "creating": "Opslaan",
+      "header": "Configuratie",
+      "save": "Wijzigingen opslaan",
+      "saving": "Opslaan",
+      "success_message": "SSO is succesvol ingeschakeld."
+    },
+    "description": "injixo ondersteunt single sign-on (SSO) gebaseerd op SAML 2.0. Aanmelden met SSO zal injixo's twee-factor authenticatie overslaan. Je identity provider (IdP) kan in plaats daarvan 2FA bieden. Ga voor meer informatie naar het <0>Help Center</0>.",
+    "disable_confirmation": {
+      "consequences": "Aanmelden met SSO is niet langer beschikbaar voor je injixo-account. Alle gebruikers ontvangen per e-mail instructies over hoe verder te gaan.",
+      "failed": "SSO kon niet worden uitgeschakeld",
+      "failed_message": "De link van je e-mail is niet geldig. Ga naar Account > Beveiliging en schakel SSO weer uit.",
+      "next_step": "Om verder te gaan, stel een nieuw wachtwoord in op de volgende pagina.",
+      "set_new_password": "Stel nieuw wachtwoord in"
+    },
+    "disabled": "SSO uitgeschakeld",
+    "disablement": {
+      "cancel": "Annuleren",
+      "disable": "Uitschakelen",
+      "disabling": "Uitschakelen",
+      "enforced": {
+        "2fa_hint": "Wij raden ten zeerste aan om 2FA te activeren als een extra beveiligingslaag.",
+        "details": "Zodra SSO is uitgeschakeld, moeten alle gebruikers zich weer aanmelden met hun e-mailadres en wachtwoord. Ze ontvangen per e-mail instructies voor het aanmaken van een nieuw wachtwoord.",
+        "next_step": "Om de deactivering van SSO te bevestigen, sturen we een e-mail naar <0>{{email}}</0> met gedetailleerde instructies over hoe je verder moet gaan."
+      },
+      "result": {
+        "accepted": "We hebben je net een e-mail gestuurd om het uitschakelen van SSO te bevestigen.",
+        "disabled": "SSO is uitgeschakeld. Alle gebruikers moeten zich opnieuw aanmelden met hun e-mailadres en wachtwoord.",
+        "error": "Kan SSO niet uitschakelen."
+      },
+      "title": "SSO uitschakelen",
+      "unenforced": {
+        "details": "Omdat het gebruik van SSO nog niet verplicht is gesteld, kun je het gewoon uitschakelen. Je kunt je dan niet meer met SSO aanmelden. Alle gebruikers melden zich gewoon met hun e-mailadres en gebruikersnaam aan. Gebruikers ontvangen hierover geen meldingen."
+      }
+    },
+    "download": "Download",
+    "download_certificate": "Certificaat downloaden",
+    "enforced": "Single sign-on is actief. De standaard aanmelding met e-mail en wachtwoord is niet langer beschikbaar. Gebruikers kunnen zich alleen aanmelden bij injixo als ze de juiste rechten hebben in de identity provider. Ga voor meer informatie over SSO naar het <0>Help Center</0>.",
+    "enforcement": {
+      "cancel": "Annuleren",
+      "description": "Activeer SSO nadat je je configuratie hierboven hebt getest. Alle gebruikers kunnen zich nu niet meer met hun e-mailadres en wachtwoord aanmelden en moeten gebruik maken van SSO.",
+      "enforce": "Verplicht stellen",
+      "enforcing": "Verplicht stellen",
+      "header": "Verplicht stellen",
+      "modal": {
+        "generic_error": "Er is een onbekende fout opgetreden. Probeer het later nog eens.",
+        "password_label": "Voer je wachtwoord in om te bevestigen",
+        "preconditions": {
+          "item_1": "Alle gebruikers moeten de juiste rechten hebben binnen de Identity provider om toegang te krijgen tot injixo. Zo niet, dan kunnen ze zich niet aanmelden bij injixo.",
+          "title": "Randvoorwaarden"
+        },
+        "related_changes": {
+          "item_1": "Elke gebruiker zal via e-mail op de hoogte worden gebracht dat SSO vanaf dan moet worden gebruikt.",
+          "item_2": "Gebruikers kunnen zich dan niet meer aanmelden met hun e-mailadres en wachtwoord.",
+          "item_3": "Alle gebruikerswachtwoorden worden na een bedenktijd van 48 uur opnieuw ingesteld.",
+          "item_4": "injixo 2FA zal niet langer beschikbaar zijn. Je zou ervoor kunnen zorgen dat je IdP een tweede factor vraagt om te authenticeren.",
+          "item_5": "Gebruikerswachtwoorden moeten in de IdP worden beheerd.",
+          "title": "Gevolgen"
+        },
+        "title": "SSO verplicht stellen voor alle gebruikers",
+        "wrong_password_error": "Ongeldig wachtwoord."
+      },
+      "not_enforced_warning": "SSO niet verplicht stellen zou slechts tijdelijk moeten zijn om je setup en configuratie te testen.",
+      "success": "Succesvol SSO verplicht gesteld voor alle gebruikers."
+    },
+    "error_message": "Er is iets fout gegaan.",
+    "federated_metadata_url": {
+      "error": {
+        "generic": "Onbekende fout",
+        "host_not_allowed": "Host niet toegestaan",
+        "https_required": "HTTPS vereist",
+        "identity_provider_not_reachable": "Identity provider niet bereikbaar",
+        "invalid": "Ongeldige URL",
+        "invalid_metadata": "Ongeldige metadata"
+      },
+      "label": "Federation Metadata URL"
+    },
+    "header": "Single sign-on",
+    "help_center_url": "https://help.injixo.com/single-sign-on",
+    "identity_provider": {
+      "description": "Verzamel de volgende informatie van je IdP, bijv. Microsoft Azure AD of Okta.",
+      "header": "Identity Provider"
+    },
+    "injixo_metadata": {
+      "acs_url": "Assertion Consumer Service (ACS) URL",
+      "description": "Upload het volgende metadatabestand (.xml) naar je IdP om injixo als geldige Service Provider te configureren.",
+      "download": "Metadata downloaden",
+      "header": "injixo SAML Metadata",
+      "logout_url": "Afmeldings-URL",
+      "service_provider_details": "Service Provider details",
+      "service_provider_entitiy_identifier": "Service Provider Entity Identifier"
+    },
+    "token_encryption": {
+      "description": "Certificaat voor encryptie van SAML-assertions.\nGeldig tot <0>{{expiration_date}}</0>.\nZes weken voor het einde van de geldigheidsperiode kun je hier het nieuwe certificaat downloaden.",
+      "header": "Token encryptie"
+    },
+    "verification": {
+      "details": "Alle gebruikers moeten in je IdP aan de SAML-toepassing zijn toegewezen. SSO kan dan naast de gewone aanmelding met e-mailadres en wachtwoord worden gebruikt.",
+      "error": "Je IdP geeft je geen toegang tot injixo. Zorg ervoor dat je IdP correct is ingesteld en dat je gebruikersaccount toestemming heeft om zich via SSO te authenticeren voor injixo.",
+      "redirect_failed": "Doorsturen mislukt",
+      "redirecting": "Doorsturen",
+      "success": "Je hebt je succesvol geauthenticeerd bij je IdP en krijgt toegang tot injixo via SSO.",
+      "verify": "Configuratie testen"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "application": {
+    "title": "Capacity",
+    "tableHint": "All values in hours",
+    "tableHintDescription": "1 full time equivalent (FTE) is 40 hours per week",
+    "infoMessageFirst": "Welcome to the first version of your new Capacity view! Soon, you’ll do your long-term planning here. Still pretty basic?",
+    "infoMessageSecond": "Email us your feedback and ideas!",
+    "insertShiftSequencesButton": "Insert shift sequences"
+  },
+  "filters": {
+    "label": {
+      "planningUnit": "Planning unit"
+    },
+    "placeholder": {
+      "planningUnit": "Choose a planning unit"
+    },
+    "result": {
+      "noResult": "No entries"
+    }
+  },
+  "capacityTable": {
+    "headers": {
+      "Coverage": "Potential coverage",
+      "staffRequirements": "Staff requirements",
+      "contractedCapacity": "Contracted capacity",
+      "cw": "CW",
+      "timePeriod": "Time period",
+      "dateFormat": "d MMMM yyyy"
+    },
+    "placeholders": {
+      "noData": "No capacity data available for this planning unit.",
+      "loading": "Loading"
+    }
+  },
+  "planning_units": "planning units",
+  "capacities": "capacities",
+  "reload": {
+    "planning_units": "Reload planning units",
+    "capacities": "Reload capacities"
+  },
+  "document_title": {
+    "module": "Plan",
+    "sub_module": "Capacity"
+  },
+  "error": {
+    "reload_resource": "An error has occurred. Try to reload <0>{{resource}}</0> or try again later."
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "application": {
+    "title": "Période de congés",
+    "backToTimeOff": "Retour au menu Congés/Absences",
+    "optional": "optionnel"
+  },
+  "filters": {
+    "label": {
+      "planningUnit": "Unité opérationnelle",
+      "selection": "Groupe",
+      "timePeriod": "Période",
+      "absenceActivity": "Activité",
+      "status": "Statut"
+    },
+    "placeholder": {
+      "planningUnit": "Sélectionner une unité opérationnelle",
+      "selection": "Sélectionner un groupe",
+      "absenceActivity": "Sélectionner une activité",
+      "status": "Sélectionner un statut"
+    },
+    "result": {
+      "noResult": "Aucun résultat"
+    },
+    "buttons": {
+      "createPeriod": "Nouvelle période de congés"
+    }
+  },
+  "planning_units": "Unités opérationnelles",
+  "selections": "Groupes",
+  "reload_planning_units": "Recharger les Unités opérationnelles",
+  "reload_selections": "Recharger les Groupes",
+  "periodsTable": {
+    "tabs": {
+      "ongoing": "En cours",
+      "expired": "Expirée",
+      "counters": {
+        "ongoing": "Nombre de périodes de congés en cours",
+        "expired": "Nombre de périodes de congés expirées"
+      }
+    },
+    "headers": {
+      "select": "Sélectionner",
+      "selection": "Groupe",
+      "validFrom": "Valide du",
+      "validTo": "Jusqu'au",
+      "deadline": "Date limite",
+      "inheritedFrom": "Héritée",
+      "status": "Statut"
+    },
+    "noData": "Aucune période de congés trouvée.",
+    "singleCheckbox": "Sélectionner une période de congés",
+    "allCheckbox": "Sélectionner toutes les périodes de congés",
+    "deleteEntries": "Supprimer les lignes",
+    "statuses": {
+      "enabled": "Publiée",
+      "locked": "Non publiée"
+    },
+    "editPeriod": "Modifier la période de congés",
+    "selectStatus": "Sélectionner un statut",
+    "error": {
+      "deletePeriod": "Impossible de supprimer {{number}} période(s) de congés. Essayez à nouveau."
+    },
+    "statusSuccessfullyUpdated": "Mise à jour effectuée."
+  },
+  "reload_time_off_periods": "Recharger les périodes de congés",
+  "types": "Types",
+  "reload_types": "Recharger les types",
+  "periodModal": {
+    "title": {
+      "create": "Créer une nouvelle période de congés",
+      "edit": "Modifier la période de congés"
+    },
+    "button": {
+      "save": "Enregistrer les modifications",
+      "cancel": "Annuler",
+      "create": "Créer une période de congés"
+    },
+    "label": {
+      "dateRange": "Période",
+      "deadline": "Date limite"
+    },
+    "error": {
+      "createPeriod": "Impossible de créer la période de congés. Essayez à nouveau.",
+      "editPeriod": "Impossible de mettre à jour la période de congés. Essayez à nouveau."
+    },
+    "deadline": {
+      "empty": "Aucune",
+      "remove": "Supprimer la date limite"
+    }
+  },
+  "document_title": {
+    "module": "Plan",
+    "sub_module": "Période de congés"
+  },
+  "error": {
+    "reload_resource": "Une erreur est survenue. Actualisez la page <0>{{resource}}</0> ou réessayer plus tard."
+  },
+  "time_off_periods": "périodes de congés"
+}

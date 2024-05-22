@@ -1,0 +1,16 @@
+{
+  "loading": "Bezig met laden",
+  "save": "Opslaan",
+  "saving": "Even wachten",
+  "select_planning_unit": "Selecteer een eenheid",
+  "planning_unit": "Eenheid",
+  "day_model": "Dagmodel",
+  "day_type": "Dagtype",
+  "min": "Min.",
+  "max": "Max.",
+  "server_error": "Er is een serverfout opgetreden. Probeer het later opnieuw.",
+  "edit-constraints": {
+    "success": "Waarden zijn succesvol opgeslagen.",
+    "failure": "Corrigeer de gemarkeerde velden en probeer het opnieuw."
+  }
+}

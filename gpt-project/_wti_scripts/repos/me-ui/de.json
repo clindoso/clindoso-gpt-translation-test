@@ -1,0 +1,407 @@
+{
+  "time_tracking": {
+    "page_title": "Zeiterfassung",
+    "hour_abbreviation": "h",
+    "punch": {
+      "activities": {
+        "combobox": {
+          "aria_label": "Aktivitäten",
+          "placeholder": "Aktivität für Zeiterfassung auswählen oder suchen"
+        }
+      },
+      "clock_in": {
+        "button": {
+          "label": "Start"
+        },
+        "toast": "Zeiterfassung läuft"
+      },
+      "clock_out": {
+        "button": {
+          "aria_label": "Zeiterfassung für aktuelle Aktivität beenden"
+        },
+        "toast": "Zeiterfassung beendet"
+      },
+      "switch": {
+        "button": {
+          "label": "Aktivität wechseln"
+        }
+      },
+      "timer": {
+        "aria_label": "Zeiterfassung für ausgewählte Aktivität starten"
+      }
+    },
+    "records": {
+      "duration": "Dauer",
+      "empty": {
+        "description": "Erfasse oben auf der Seite deine Zeit.",
+        "headline": "Für diesen Tag wurden keine Zeiten erfasst."
+      },
+      "heading_today": "Heute erfasste Zeiten",
+      "heading_yesterday": "Gestern erfasste Zeiten",
+      "now": "jetzt",
+      "ongoing": "Zeiterfassung läuft",
+      "unknown_activity": "Unbekannte Aktivität"
+    },
+    "statistics": {
+      "calculation_tooltip": "Zeitstatistiken für den ausgewählten Tag, die Woche oder den Monat. Bei Nachtarbeit zählen nur die Zeiten innerhalb des ausgewählten Zeitraums.",
+      "current_day": "Heute",
+      "current_month": "Aktueller Monat",
+      "current_week": "Aktuelle Woche",
+      "day": "Tag",
+      "deviation": "Abweichung",
+      "heading": "Statistiken",
+      "month": "Monat",
+      "previous_day": "Gestern",
+      "previous_month": "Vorheriger Monat",
+      "previous_week": "Vorherige Woche",
+      "scheduled_paid_time": "Geplante Arbeitszeit",
+      "tracked_paid_time": "Erfasste Arbeitszeit",
+      "tracked_time": "Insgesamt erfasste Zeit",
+      "week": "Woche"
+    }
+  },
+  "time_off": {
+    "balance_overview": {
+      "pending": "Ausstehend",
+      "remaining": "Verbleibend",
+      "taken": "Beansprucht",
+      "title": "Restanspruch für Abwesenheiten",
+      "current_balance": "Aktueller Anspruch"
+    },
+    "calendar": {
+      "title": "Jahr"
+    },
+    "download_time_off_overview": "Abwesenheitsübersicht herunterladen",
+    "entitlement_picker": {
+      "current_period": "Aktueller Zeitraum",
+      "next_period": "Nächster Zeitraum",
+      "previous_period": "Vorheriger Zeitraum"
+    },
+    "page_title": "Abwesenheit",
+    "request": {
+      "comments": "Kommentare ansehen"
+    },
+    "request_state": {
+      "approved": "Genehmigt",
+      "canceled": "Storniert",
+      "cancellation_requested": "Stornierung beantragt",
+      "rejected": "Abgelehnt",
+      "requested": "Beantragt"
+    },
+    "request_time_off": "Abwesenheit beantragen",
+    "requests": {
+      "creation_form": {
+        "cancel": "Abbrechen",
+        "comment": "Kommentar",
+        "create": "Abwesenheit beantragen",
+        "created": "Der ausgewählte Abwesenheitsantrag wurde erfolgreich übermittelt.",
+        "date": "Datum",
+        "end_date": "Enddatum",
+        "end_time": "Endzeit",
+        "error": {
+          "comment_too_long": "Gib einen Kommentar ein (bis zu 100 Zeichen).",
+          "conflict_with_existing_plan_data_request": "Die Dauer des Antrags überschneidet sich mit der eines bereits bestehenden Antrags.",
+          "conflict_with_existing_request": "Die Dauer des Antrags überschneidet sich mit der eines bereits bestehenden Antrags.",
+          "conflict_with_existing_time_off": "Die Dauer des Antrags überschneidet sich mit der eines bereits bestehenden Antrags.",
+          "employee_marked_as_unavailable": "Keine Verfügbarkeit für dieses Datum. Bitte passe deine Verfügbarkeiten selbst an oder wende dich an deinen Vorgesetzten.",
+          "no_time_off_period": "Du kannst für diesen Zeitraum keine Abwesenheit beantragen. Die Abwesenheitsperiode wurde noch nicht veröffentlicht. Wende dich an dein Planungsteam.",
+          "start_date_before_end": "Das Enddatum muss identisch mit dem Startdatum oder ein späteres Datum sein.",
+          "start_time_before_end": "Die Endzeit muss später als die Startzeit sein.",
+          "times_required": "Gib eine Start- und Endzeit ein.",
+          "unknown": "Der Abwesenheitsantrag konnte nicht erstellt werden.",
+          "no_contract": "Die beantragte Abwesenheit liegt außerhalb deines Vertrags.",
+          "no_employment": "Die beantragte Abwesenheit liegt außerhalb deiner Betriebszugehörigkeit."
+        },
+        "full_day_request": "Ganztägig",
+        "part_day": "Untertägige Abwesenheit beantragen",
+        "part_day_request": "Untertägig",
+        "start_date": "Startdatum",
+        "start_time": "Startzeit",
+        "submitting": "Verarbeitet",
+        "time_off_request": "Neuer Abwesenheitsantrag"
+      },
+      "filter": {
+        "label": "Antragsstatusfilter",
+        "status": {
+          "all": "Alle",
+          "approved": "Genehmigt",
+          "canceled": "Storniert",
+          "decided": "Entschieden",
+          "pending": "Ausstehend",
+          "rejected": "Abgelehnt",
+          "requested": "Beantragt"
+        }
+      },
+      "link_to_schedule": "{{ time_range }} im Kalender öffnen",
+      "no_items": "Keine Abwesenheitsanträge",
+      "title": "Abwesenheitsanträge"
+    },
+    "pdf_download": {
+      "all": "Alle",
+      "all_request_statuses": "Alle Antragsstatus",
+      "all_time_off_types": "Alle Abwesenheitstypen",
+      "cancel": "Abbrechen",
+      "download": "Herunterladen",
+      "entitlement_period": "Anspruchszeitraum",
+      "request_statuses": "Antragsstatus",
+      "time_off_types": "Abwesenheitstypen",
+      "title": "Abwesenheitsübersicht",
+      "time_off_type_deleted": "(Gelöscht)"
+    },
+    "type_selection": {
+      "label": "Abwesenheitstyp",
+      "no_result": "Keinen Abwesenheitstyp gefunden",
+      "placeholder": "Abwesenheitstyp auswählen",
+      "deleted_type": "{{name}} (Gelöscht)"
+    },
+    "unit": {
+      "days_one": "Tag",
+      "days_other": "Tage",
+      "hours_one": "Stunde",
+      "hours_other": "Stunden"
+    },
+    "year_picker": {
+      "current_year": "Laufendes Jahr",
+      "next_year": "Nächstes Jahr",
+      "previous_year": "Vorheriges Jahr"
+    }
+  },
+  "time-off-list": {
+    "card-list": {
+      "card-item": {
+        "button": {
+          "request-cancellation": {
+            "popover": {
+              "button": {
+                "close": {
+                  "label": "Schließen"
+                },
+                "request": {
+                  "label": "Stornierung beantragen"
+                }
+              },
+              "text-area": {
+                "reason": {
+                  "label": "Stornierungsgrund"
+                }
+              }
+            },
+            "aria-label": "{{ time_range }}, Abwesenheit, Stornierung anfragen",
+            "label": "Stornierung beantragen"
+          },
+          "withdraw": {
+            "aria-label": "{{ time_range }}, Ausstehender Antrag, Zurückziehen",
+            "label": "Zurückziehen"
+          },
+          "withdraw-cancellation-request": {
+            "aria-label": "{{ time_range }}, Antrag auf Stornierung der genehmigten Abwesenheit, Zurückziehen",
+            "label": "Zurückziehen"
+          },
+          "comments": {
+            "aria-label": "Kommentare ansehen",
+            "label": "{{count}} Kommentare"
+          }
+        },
+        "booked": {
+          "text": "Gebucht"
+        },
+        "status": {
+          "approved": {
+            "text": "Genehmigt"
+          },
+          "canceled": {
+            "text": "Storniert"
+          },
+          "cancellation_requested": {
+            "text": "Stornierung beantragt"
+          },
+          "rejected": {
+            "text": "Abgelehnt"
+          },
+          "requested": {
+            "text": "Beantragt"
+          },
+          "text": "Status"
+        },
+        "to-be-booked": {
+          "text": "Zu buchen",
+          "valuation-conflict": {
+            "label": "Die zu buchende Zeit ändert sich möglicherweise noch, weil du mindestens einen weiteren Abwesenheitsantrag für diese Woche gestellt hast."
+          }
+        }
+      }
+    }
+  },
+  "time-off": {
+    "toast": {
+      "request-cancellation": {
+        "failure": {
+          "text": "Der Antrag auf Stornierung der Abwesenheit konnte nicht übermittelt werden."
+        },
+        "success": {
+          "text": "Der Antrag auf Stornierung der Abwesenheit wurde erfolgreich übermittelt."
+        }
+      },
+      "withdraw": {
+        "failure": {
+          "text": "Der ausgewählte Abwesenheitsantrag konnte nicht gelöscht werden."
+        },
+        "success": {
+          "text": "Der ausgewählte Abwesenheitsantrag wurde erfolgreich gelöscht."
+        }
+      },
+      "withdraw-cancellation-request": {
+        "failure": {
+          "text": "Der Antrag auf Stornierung der Abwesenheit konnte nicht zurückgezogen werden."
+        },
+        "success": {
+          "text": "Der Antrag auf Stornierung der Abwesenheit wurde erfolgreich zurückgezogen."
+        }
+      }
+    }
+  },
+  "availability": {
+    "delete": {
+      "button": {
+        "label": "Löschen"
+      }
+    },
+    "edit": {
+      "form": {
+        "button": {
+          "cancel": {
+            "label": "Abbrechen"
+          },
+          "submit": {
+            "label": "Änderungen speichern"
+          }
+        },
+        "inline-message": {
+          "error": {
+            "text": "Deine Änderungen konnten nicht gespeichert werden. Bitte versuche es erneut."
+          }
+        },
+        "toast": {
+          "success": "Verfügbarkeit geändert"
+        }
+      },
+      "page-heading": {
+        "return-link": "Zurück zur Übersicht",
+        "text": "Bearbeite {{date}}"
+      },
+      "page_title": "Verfügbarkeit bearbeiten"
+    },
+    "inline-message": {
+      "unexpected-error": {
+        "text": "Deine Verfügbarkeiten konnten nicht geladen werden. Bitte <Link>lade sie erneut</Link> oder versuche es später noch einmal."
+      }
+    },
+    "modal": {
+      "delete-confirmation": {
+        "button": {
+          "cancel": "Zurück",
+          "confirm": "Verfügbarkeit löschen"
+        },
+        "content": "Deine Verfügbarkeiten für {{date}} werden gelöscht. Dein Planer verwendet eine wöchentliche Verfügbarkeit für diesen Tag, sofern eine vorliegt.",
+        "content-label": "Einmalige Verfügbarkeit löschen",
+        "inline-message": {
+          "error": "Verfügbarkeit konnte nicht gelöscht werden. Bitte versuche es erneut."
+        },
+        "title": "Verfügbarkeit löschen?",
+        "toast": {
+          "success": "Verfügbarkeit gelöscht"
+        }
+      }
+    },
+    "new": {
+      "form": {
+        "button": {
+          "add-time": {
+            "label": "Zeitraum hinzufügen"
+          },
+          "cancel": {
+            "label": "Abbrechen"
+          },
+          "remove-time": {
+            "label": "Zeitraum entfernen"
+          },
+          "submit": {
+            "label": "Verfügbarkeit hinzufügen"
+          }
+        },
+        "date-input": {
+          "booking-date": {
+            "error": {
+              "required": "Wähle ein Datum aus."
+            }
+          }
+        },
+        "inline-message": {
+          "conflict-error": {
+            "text": "Für dieses Datum liegen keine Verfügbarkeiten vor. Wähle ein anderes Datum aus oder <Link>ändere die Verfügbarkeiten für dieses Datum</Link>."
+          },
+          "error": {
+            "text": "Verfügbarkeit konnte nicht erstellt werden. Bitte versuche es erneut."
+          }
+        },
+        "time-input": {
+          "end-time": {
+            "error": {
+              "required": "Gib eine Endzeit ein."
+            },
+            "label": "Endzeit"
+          },
+          "start-time": {
+            "error": {
+              "required": "Gib eine Startzeit ein."
+            },
+            "label": "Startzeit"
+          }
+        },
+        "toast": {
+          "success": "Verfügbarkeit erstellt"
+        }
+      },
+      "page-heading": {
+        "return-link": "Zurück zur Übersicht",
+        "text": "Verfügbarkeit hinzufügen"
+      },
+      "page_title": "Verfügbarkeit erstellen"
+    },
+    "next_month": "Nächster Monat",
+    "one_time": {
+      "empty": {
+        "heading": "Keine Verfügbarkeiten für diesen Monat",
+        "text": "Teile deinem Planer mit, wann du verfügbar bist oder gehe zum <Link>nächsten Monat</Link>."
+      }
+    },
+    "overnight-indicator": "+1 Tag",
+    "overview": {
+      "button": {
+        "add_availability": {
+          "label": "Verfügbarkeit hinzufügen"
+        },
+        "edit-availability": {
+          "label": "Bearbeiten"
+        }
+      },
+      "heading": "Übersicht über alle Verfügbarkeiten",
+      "inline-message": {
+        "cute-off-date": {
+          "text": "Du kannst deine Verfügbarkeiten erst ab diesem Datum ändern: {{cutOffDate}}"
+        }
+      },
+      "tag": {
+        "one-time": {
+          "text": "Einmalig"
+        },
+        "weekly": {
+          "text": "Wöchentlich"
+        }
+      }
+    },
+    "page_title": "Verfügbarkeiten",
+    "prev_month": "Vorheriger Monat",
+    "time_period": "Zeitraum"
+  }
+}

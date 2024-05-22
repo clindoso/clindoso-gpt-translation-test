@@ -1,0 +1,871 @@
+{
+  "time_off_overview": {
+    "confirmation_modal": {
+      "cancel": "Abbrechen"
+    },
+    "approved": "Genehmigt",
+    "cancellation_requested": "Stornierung beantragt",
+    "decided": "Entschieden",
+    "heading": "Abwesenheitsanträge",
+    "page_title": "Abwesenheiten | injixo",
+    "rejected": "Abgelehnt",
+    "requested": "Abwesenheit beantragt",
+    "canceled": "Storniert",
+    "comment": {
+      "placeholder": "Füge einen Kommentar hinzu",
+      "label": "Kommentar",
+      "optional": "optional"
+    },
+    "employee_balances": "Restansprüche",
+    "manual_action_required": "Aktualisiere den Schichtplan manuell",
+    "processing": "Ausstehende Anträge",
+    "recommendation": {
+      "approval": "Genehmigen",
+      "pending": "Ausstehend",
+      "rejection": "Ablehnen",
+      "cancellation": "Stornieren",
+      "not_possible": "Keine Systemempfehlung möglich",
+      "outdated": "Erstellt Systemempfehlung"
+    },
+    "time_off_configuration": "Abwesenheitskonfiguration",
+    "valuation": {
+      "conflict": {
+        "reason": "Die zu buchende Zeit kann sich noch ändern, da {{ username }} mind. einen weiteren Antrag in dieser Woche gestellt hat."
+      }
+    },
+    "action": {
+      "approve": {
+        "error": {
+          "already_decided": "Für diesen Abwesenheitsantrag gibt es bereits eine Entscheidung",
+          "generic": "Der Abwesenheitsantrag konnte nicht genehmigt werden."
+        },
+        "go_to_decided": "Gehe zu Entschieden",
+        "hint": "Die Abwesenheit wird im Schichtplan eingetragen.",
+        "label": "Abwesenheit genehmigen",
+        "submit": "Bestätigen",
+        "submitting": "Genehmigt Abwesenheit",
+        "success": "Abwesenheit genehmigt"
+      },
+      "approve_cancellation": {
+        "error": {
+          "generic": "Die Abwesenheit wurde bereits storniert."
+        },
+        "label": "Abwesenheit stornieren",
+        "no_sync_hint": "injixo aktualisiert den Schichtplan des Mitarbeiters nicht automatisch. Überprüfe und passe ihn ggf. manuell an.",
+        "submit": "Stornierung bestätigen",
+        "submitting": "Storniert Abwesenheit",
+        "success": "Abwesenheit storniert"
+      },
+      "cancel": {
+        "error": {
+          "already_canceled": "Die Abwesenheit wurde bereits storniert.",
+          "generic": "Die Abwesenheit konnte nicht storniert werden."
+        },
+        "label": "Abwesenheit stornieren",
+        "no_sync_hint": "injixo aktualisiert den Schichtplan des Mitarbeiters nicht automatisch. Überprüfe und passe ihn ggf. manuell an.",
+        "submit": "Stornierung bestätigen",
+        "submitting": "Storniert Abwesenheit",
+        "success": "Abwesenheit storniert"
+      },
+      "recommend_approval": {
+        "error": {
+          "already_recommended": "Empfehlung wurde bereits abgegeben",
+          "generic": "Genehmigung konnte nicht empfohlen werden"
+        },
+        "label": "Genehmigung empfehlen",
+        "submit": "Bestätigen",
+        "submitting": "Empfiehlt Genehmigung",
+        "success": "Genehmigung empfohlen"
+      },
+      "recommend_cancellation_approval": {
+        "error": {
+          "generic": "Genehmigung der Stornierung konnte nicht empfohlen werden."
+        },
+        "label": "Stornierung empfehlen",
+        "submit": "Bestätigen",
+        "submitting": "Empfiehlt Stornierung",
+        "success": "Genehmigung der Stornierung empfohlen"
+      },
+      "recommend_cancellation_rejection": {
+        "error": {
+          "generic": "Die Ablehnung der Stornierung konnte nicht empfohlen werden."
+        },
+        "label": "Ablehnung empfehlen",
+        "submit": "Bestätigen",
+        "submitting": "Empfiehlt Ablehnung",
+        "success": "Ablehnung der Stornierung empfohlen"
+      },
+      "recommend_rejection": {
+        "error": {
+          "already_recommended": "Empfehlung wurde bereits abgegeben",
+          "generic": "Ablehnung konnte nicht empfohlen werden"
+        },
+        "label": "Ablehnung empfehlen",
+        "submit": "Bestätigen",
+        "submitting": "Empfiehlt Ablehnung",
+        "success": "Ablehnung empfohlen"
+      },
+      "reject": {
+        "error": {
+          "already_decided": "Für diesen Abwesenheitsantrag gibt es bereits eine Entscheidung",
+          "generic": "Der Abwesenheitsantrag konnte nicht abgelehnt werden."
+        },
+        "go_to_decided": "Gehe zu Entschieden",
+        "label": "Ablehnen",
+        "submit": "Bestätigen",
+        "submitting": "Lehnt Abwesenheitsantrag ab",
+        "success": "Abwesenheitsantrag abgelehnt"
+      },
+      "reject_cancellation": {
+        "error": {
+          "generic": "Der Stornierungsantrag konnte nicht abgelehnt werden."
+        },
+        "label": "Ablehnen",
+        "submit": "Bestätigen",
+        "submitting": "Lehnt Stornierung ab",
+        "success": "Stornierungsantrag abgelehnt"
+      }
+    },
+    "comments_one": "1 Kommentar",
+    "comments_other": "{{count}} Kommentare",
+    "created_at": "Beantragt am {{datetime}}",
+    "empty_state": {
+      "cancellation_requested": {
+        "description": "Wenn Mitarbeiter genehmigte Abwesenheiten stornieren lassen möchten, findest du hier ihre Stornierungsanträge.<br />Suchst du nach entschiedenen Anträgen? Gehe zum Tab <decidedLink>Entschieden</decidedLink>.",
+        "title": "Keine Stornierungsanträge"
+      },
+      "decided": {
+        "description": "Wenn es eine Entscheidung zu Abwesenheits- oder Stornierungsanträgen gibt, findest du sie hier.",
+        "title": "Keine genehmigten, abgelehnten oder stornierten Abwesenheitsanträge"
+      },
+      "no_results": {
+        "action": "Filter und Suche zurücksetzen",
+        "description": "Ändere deine Filter bzw. Suche oder setze sie zurück.",
+        "title": "Keine Anträge gefunden"
+      },
+      "requested": {
+        "description": "Wenn Mitarbeiter Abwesenheiten beantragen, findest du hier ihre Abwesenheitsanträge.<br />Suchst du nach entschiedenen Anträgen? Gehe zum Tab <decidedLink>Entschieden</decidedLink>.",
+        "title": "Keine Abwesenheitsanträge"
+      }
+    },
+    "filter": {
+      "planning_units": {
+        "empty": "Keine Planungseinheiten",
+        "label": "Planungseinheiten",
+        "search": "Planungseinheiten suchen",
+        "select_all": "Alle Planungseinheiten"
+      },
+      "recommendations": {
+        "empty": "Keine Empfehlungen",
+        "label": "Empfehlung",
+        "options": {
+          "approval": {
+            "label": "Genehmigen"
+          },
+          "pending": {
+            "label": "Ausstehend"
+          },
+          "rejection": {
+            "label": "Ablehnen"
+          }
+        },
+        "search": "Empfehlungen durchsuchen",
+        "select_all": "Alle Empfehlungen"
+      },
+      "selections": {
+        "empty": "Keine Auswahl",
+        "label": "Auswahl",
+        "search": "Auswahl suchen",
+        "select_all": "Alle Auswahlen"
+      },
+      "time_period": {
+        "clear": "Leeren",
+        "label": "Zeitraum",
+        "placeholder": "Zeitraum auswählen"
+      },
+      "types": {
+        "deleted": "(Gelöscht)",
+        "empty": "Keine Abwesenheitstypen",
+        "label": "Abwesenheitstypen",
+        "search": "Abwesenheitstypen suchen",
+        "select_all": "Alle Abwesenheitstypen"
+      }
+    },
+    "label": {
+      "comments": "Kommentare",
+      "current_balance": "Aktueller Anspruch",
+      "decision": "Status",
+      "planning_unit": "Planungseinheit",
+      "projected": "Erwartet",
+      "recommendation": "Empfehlung",
+      "remaining": "Verbleibend",
+      "time": "Zeitraum",
+      "to_be_booked": "Zu buchen",
+      "type": "Typ",
+      "type_deleted": "(Gelöscht)"
+    },
+    "pagination": {
+      "aria_label": "Seitennummerierung"
+    },
+    "recommendation_insights": {
+      "current_schedule": "Aktueller Schichtplan",
+      "empty": "Für den beantragten Zeitraum sind keine Aktivitäten geplant.",
+      "error": "Etwas ist schief gegangen. <RetryLink>Bitte versuche es erneut</RetryLink>.",
+      "hide": "Deckung und Abwesenheiten ausblenden",
+      "people_absent": "Abwesende Mitarbeiter",
+      "show": "Deckung und Abwesenheiten anzeigen"
+    },
+    "schedule_restoration_modal": {
+      "blank_out_shift": "Schicht ausblenden",
+      "cancel": "Abbrechen",
+      "cancellation": {
+        "submit": "Abwesenheit stornieren",
+        "submitting": "Storniert Abwesenheit",
+        "title": "Abwesenheit stornieren und Schichtplan aktualisieren?"
+      },
+      "comment": "Kommentar",
+      "decision": {
+        "submit": "Bestätigen",
+        "submitting": "Genehmigt Stornierung"
+      },
+      "employee": "Mitarbeiter",
+      "load_error": "Die Schichtplandaten konnten nicht geladen werden. Bitte <RetryLink>lade jetzt neu</RetryLink> oder versuche es später erneut.",
+      "recommendation": {
+        "submit": "Genehmigung empfehlen",
+        "submitting": "Empfiehlt Genehmigung",
+        "title": "Stornierung der Abwesenheit und Aktualisierung des Schichtplans empfehlen"
+      },
+      "recommended": "Empfohlen",
+      "restore_history": "Verlauf wiederherstellen"
+    },
+    "search": {
+      "placeholder": "Suche nach Mitarbeitern"
+    },
+    "sorting": {
+      "created_at": {
+        "ascending": "Älteste",
+        "descending": "Neueste"
+      },
+      "name": {
+        "ascending": "Nachname A-Z",
+        "descending": "Nachname Z-A"
+      }
+    }
+  },
+  "balance_details": {
+    "approved_time_off": "Genehmigte Abwesenheit",
+    "back_to_time_off": "Zurück zu Abwesenheiten",
+    "canceled_time_off": "Stornierte Abwesenheit",
+    "column": {
+      "counted": {
+        "days": "Angerechnete Tage",
+        "hours": "Angerechnete Stunden"
+      },
+      "date": "Datum",
+      "processed_by": "Bearbeitet von",
+      "reason": "Grund"
+    },
+    "edit_entitlement": {
+      "aria_label": "Anspruch bearbeiten",
+      "cancel": "Abbrechen",
+      "error": {
+        "reason": {
+          "missing": "Gib einen Änderungsgrund ein (bis zu {{maxLength}} Zeichen).",
+          "too_long": "Gib einen Änderungsgrund ein (bis zu {{maxLength}} Zeichen)."
+        },
+        "unknown": "Der Anspruch konnte nicht geändert werden. Bitte versuche es erneut.",
+        "value": {
+          "invalid_number": "Gib eine Zahl ein, die größer oder gleich 0 ist."
+        }
+      },
+      "heading": "Anspruch bearbeiten",
+      "hint": {
+        "addition": "Damit fügst du {{diff}} {{diff_unit}} zum Anspruch hinzu.",
+        "deduction": "Damit reduzierst du den Anspruch um {{diff}} {{diff_unit}}.",
+        "result": "Der neue Anspruch beträgt {{new_value}} {{new_value_unit}}."
+      },
+      "new_entitlement": "Neuer Anspruch",
+      "reason": "Änderungsgrund",
+      "save": "Änderung speichern",
+      "saving": "Speichert"
+    },
+    "edit_taken": {
+      "aria_label": "Genommene Abwesenheit bearbeiten",
+      "cancel": "Abbrechen",
+      "error": {
+        "reason": {
+          "missing": "Gib einen Änderungsgrund ein (bis zu {{maxLength}} Zeichen).",
+          "too_long": "Gib einen Änderungsgrund ein (bis zu {{maxLength}} Zeichen)."
+        },
+        "unknown": "Die genommene Abwesenheit konnte nicht geändert werden. Bitte versuche es erneut.",
+        "value": {
+          "invalid_number": "Gib eine Zahl ein, die größer oder gleich 0 ist."
+        }
+      },
+      "heading": "Genommene Abwesenheit bearbeiten",
+      "hint": {
+        "addition": "Damit fügst du {{diff}} {{diff_unit}} zu der genommenen Abwesenheit hinzu.",
+        "deduction": "Damit reduzierst du die genommene Abwesenheit um {{diff}} {{diff_unit}}.",
+        "result": "Die neue genommene Abwesenheit beträgt {{new_value}} {{new_value_unit}}."
+      },
+      "new_taken": "Genommene Abwesenheit",
+      "reason": "Änderungsgrund",
+      "save": "Änderung speichern",
+      "saving": "Speichert"
+    },
+    "employee": "Mitarbeiter",
+    "employees": "Mitarbeiter",
+    "empty": {
+      "action": "Wähle einen anderen Mitarbeiter aus oder gehe zurück zu Abwesenheitsanträge.",
+      "message": "Es liegen keine Informationen zum Abwesenheitstyp dieses Mitarbeiters vor.",
+      "description": "Du kannst folgende Änderungen hier nachvollziehen:<unorderedList><li>Genehmigte Abwesenheitsanträge</li><li>Stornierungen genehmigter Abwesenheiten</li><li>Änderungen am Urlaubsanspruch und genommene Abwesenheiten</li></UnorderedList>",
+      "title": "Keine Änderungen am Restanspruch des Mitarbeiters"
+    },
+    "entitlement_period": "Anspruchszeitraum",
+    "heading": "Restansprüche",
+    "no_employee_found": "Kein Mitarbeiter gefunden",
+    "no_employees": "Keine Mitarbeiter in der Planungseinheit verfügbar oder fehlende Zugriffsrechte",
+    "no_planning_units": "Keine Einheiten verfügbar",
+    "no_records": "Keine Daten für den ausgewählten Mitarbeiter",
+    "no_types": "Keine Abwesenheitstypen",
+    "planning_unit": "Planungseinheit",
+    "remaining": {
+      "days": "Verbleibende Tage",
+      "hours": "Verbleibende Stunden"
+    },
+    "search_employees": {
+      "aria_label": "Suche nach Mitarbeitern",
+      "placeholder": "Suche nach Mitarbeitern",
+      "empty": {
+        "description": "Passe deine Filter an.",
+        "title": "Keine Mitarbeiter verfügbar"
+      }
+    },
+    "success": {
+      "entitlement_changed": "Anspruch gespeichert",
+      "taken_changed": "Genommene Abwesenheit gespeichert"
+    },
+    "type": "Abwesenheitstyp",
+    "year": "Jahr",
+    "type_deleted": "{{name}} (Gelöscht)"
+  },
+  "balance_summary": {
+    "entitlement": {
+      "label": "Anspruch"
+    },
+    "remaining": "Verbleibend",
+    "taken": {
+      "label": "Genommen"
+    }
+  },
+  "configuration": {
+    "back_to_time_off": "Zurück zu Abwesenheitsanträge",
+    "page_heading": "Abwesenheitskonfiguration",
+    "time_off_periods": "Abwesenheitsperioden",
+    "time_off_types": "Abwesenheitstypen",
+    "time-off-types": {
+      "button": {
+        "filter-time-off-types": {
+          "checkbox": {
+            "display-all-types": {
+              "label": "Alle"
+            },
+            "display-available-types": {
+              "label": "Verfügbar"
+            },
+            "display-deleted-types": {
+              "label": "Gelöscht"
+            }
+          },
+          "label": "Filter"
+        }
+      },
+      "table": {
+        "types": {
+          "empty-state": {
+            "heading": {
+              "text": "Keinen Abwesenheitstyp gefunden"
+            },
+            "no-results": {
+              "description": {
+                "text": "Ändere deine Filter oder <resetFiltersLink>setze sie zurück</resetFiltersLink>."
+              }
+            }
+          }
+        }
+      }
+    },
+    "types": {
+      "table": {
+        "types": {
+          "deleted-type": {
+            "text": "(Gelöscht)"
+          }
+        }
+      }
+    }
+  },
+  "schedule_sync": {
+    "failed": "Abwesenheit konnte nicht zum Schichtplan hinzugefügt werden",
+    "not_implemented": "Abwesenheit storniert und nicht im Schichtplan aktualisiert.\nAktualisiere den Schichtplan manuell.",
+    "not_needed": "Abwesenheitsantrag abgelehnt. Abwesenheit wurde nicht zum Schichtplan hinzugefügt.",
+    "processing": "Fügt Abwesenheit zum Schichtplan hinzu",
+    "processing_hint": "Abwesenheit wird zum Schichtplan hinzugefügt.",
+    "resolve": "Als behoben markieren, weil der Schichtplan manuell aktualisiert wurde.",
+    "resolved-approved": "Abwesenheit wurde zum Schichtplan hinzugefügt.",
+    "resolved-canceled": "Abwesenheit wurde aus dem Schichtplan entfernt."
+  },
+  "types_overview": {
+    "add": "Hinzufügen",
+    "column": {
+      "archived_date": "Archiviert am",
+      "name": "Name",
+      "paid": "Bezahlt",
+      "requestable": "Antrag durch Mitarbeiter",
+      "unit": "Zeiteinheit",
+      "unit_error": "Wähle eine Zeiteinheit aus.",
+      "fill_up": "Schichtplan auffüllen"
+    },
+    "create": {
+      "action": "Neuer Abwesenheitstyp"
+    },
+    "form": {
+      "cancel": "Abbrechen",
+      "create": {
+        "heading": "Neuen Abwesenheitstyp erstellen",
+        "label": "Neuen Abwesenheitstyp erstellen",
+        "submit": "Abwesenheitstyp erstellen",
+        "submit_error": "Der Abwesenheitstyp konnte nicht erstellt werden. Überprüfe die markierten Felder.",
+        "submitting": "Erstellt"
+      },
+      "create_unit_hint": "Du kannst die Zeiteinheit nicht mehr ändern, nachdem du den Abwesenheitstyp erstellt hast.",
+      "delete": {
+        "cancel": "Abbrechen",
+        "consequences": {
+          "1": "In iWFM wird die Aktivität mit demselben Namen gelöscht.",
+          "2": "Du kannst den Abwesenheitstyp nicht wiederherstellen."
+        },
+        "heading": "Abwesenheitstyp löschen?",
+        "label": "Abwesenheitstyp {{name}} löschen",
+        "precondition": "Du kannst nur Abwesenheitstypen löschen, die nicht verwendet werden.",
+        "submit": "Abwesenheitstyp löschen",
+        "submitting": "Löscht Abwesenheitstyp",
+        "description": "<b>{{ name }}</b> wird in injixo gelöscht."
+      },
+      "edit": {
+        "heading": "Abwesenheitstyp bearbeiten",
+        "label": "Abwesenheitstyp {{name}} bearbeiten",
+        "submit": "Änderungen speichern",
+        "submit_error": "Der Abwesenheitstyp konnte nicht gespeichert werden. Überprüfe die markierten Felder.",
+        "submitting": "Speichert"
+      },
+      "edit_unit_hint": "Du kannst die Zeiteinheit nicht mehr ändern, nachdem du den Abwesenheitstyp erstellt hast.",
+      "entitlement_periods": {
+        "create": "Anspruchszeitraum hinzufügen",
+        "delete": "Anspruchszeitraum {{number}} löschen",
+        "end_date": "Enddatum",
+        "end_date_aria": "Enddatum des Anspruchszeitraums {{number}}",
+        "heading": "Anspruchszeiträume",
+        "start_date": "Startdatum",
+        "start_date_aria": "Startdatum des Anspruchszeitraums {{number}}",
+        "warning": "Du kannst einen Anspruchszeitraum nicht mehr ändern, sobald ein Mitarbeiter innerhalb dieses Zeitraums einen Abwesenheitsantrag gestellt hat."
+      },
+      "error": {
+        "entitlement_periods": {
+          "consecutive": "Wähle ein Startdatum, das direkt an den letzten Zeitraum anschließt.",
+          "start_date_before_end": "Wähle ein Enddatum, das nach dem Startdatum liegt."
+        },
+        "name": {
+          "activity_already_exists": "Dieser Name ist nicht verfügbar",
+          "already_exists": "Gib einen Namen ein, der noch nicht verwendet wurde.",
+          "required": "Gib einen Namen ein, der noch nicht verwendet wurde."
+        },
+        "unit": {
+          "required": "Wähle eine Zeiteinheit aus."
+        },
+        "fillUpTypeId": {
+          "not_found": "Den gewählten Abwesenheitstyp gibt es nicht.",
+          "paid_type": "Der Abwesenheitstyp muss unbezahlt sein.",
+          "required": "Wähle einen Abwesenheitstyp aus.",
+          "wrong_unit": "Der Abwesenheitstyp hat die falsche Zeiteinheit."
+        },
+        "paid": {
+          "paid_fill_up": "Der Abwesenheitstyp wird verwendet, um arbeitsfreie Zeiten zu ersetzen und darf nicht bezahlt sein."
+        }
+      },
+      "error_unit": "Wähle eine Zeiteinheit, um speichern zu können.",
+      "help_unit_selected": "Die Zeiteinheit kann nicht mehr geändert werden, nachdem der Abwesenheitstyp angelegt wurde.",
+      "paid": "Bezahlt",
+      "requestable": "Antrag durch Mitarbeiter",
+      "type": {
+        "heading": "Allgemein"
+      },
+      "type_name": "Name",
+      "unit": "Zeiteinheit",
+      "unit_already_exists_hint": "Die Zeiteinheit wurde festgelegt und kann nicht mehr geändert werden.",
+      "unkown_error": "Der Abwesenheitstyp konnte nicht erstellt werden. Bitte versuche es erneut.",
+      "unsaved_changes": {
+        "bodytext": "Deine Änderungen werden nicht gespeichert.",
+        "discard": "Änderungen verwerfen",
+        "title": "Ungespeicherte Änderungen verwerfen?",
+        "back_to_create": "Zurück zum Erstellen",
+        "back_to_edit": "Zurück zum Bearbeiten"
+      },
+      "schedule_setting": {
+        "activate_fill_up": "Ersetze zusätzlich unbezahlte Aktivitäten (z. B. Pausen) und fülle arbeitsfreie Zeiten mit folgendem unbezahlten Abwesenheitstyp auf:",
+        "fill_up": {
+          "label": "Abwesenheitstyp",
+          "placeholder": "Unbezahlten Abwesenheitstyp auswählen"
+        },
+        "heading": "Einstellung für den Schichtplan",
+        "info": {
+          "paid": "injixo ersetzt standardmäßig nur geplante, bezahlte Aktivitäten oder vertraglich festgelegte Arbeitszeiten mit diesem Abwesenheitstyp. Erfahre mehr im <helpCenterLink>Help Center</helpCenterLink>.",
+          "paid_hint": "Diese Einstellung wirkt sich nur auf neue Abwesenheitsanträge aus.",
+          "paid_link": "https://help.injixo.com/time-off-types#fill-up-functionality",
+          "unpaid": "Es gibt keine Einstellungen für den Schichtplan für unbezahlte Abwesenheitstypen."
+        }
+      },
+      "unit_days": "Tage",
+      "unit_hours": "Stunden"
+    },
+    "heading": "Abwesenheitstypen",
+    "no_types": "Keine Abwesenheitstypen",
+    "success": {
+      "type_archived": "Abwesenheitstyp archiviert",
+      "type_created": "Abwesenheitstyp wurde erstellt",
+      "type_deleted": "Abwesenheitstyp gelöscht",
+      "type_updated": "Abwesenheitstyp aktualisiert"
+    },
+    "type": {
+      "hint": {
+        "has_relations": "Dieser Abwesenheitstyp wird verwendet. Du kannst verwendete Abwesenheitstypen nicht löschen."
+      }
+    }
+  },
+  "unit": {
+    "days_one": "Tag",
+    "days_other": "Tage",
+    "hours_one": "Stunde",
+    "hours_other": "Stunden"
+  },
+  "unit_short": {
+    "days_one": "T",
+    "days_other": "T",
+    "hours_one": "h",
+    "hours_other": "h"
+  },
+  "add-time-off": {
+    "elevated-side-panel": {
+      "aria-label": "Abwesenheit anlegen",
+      "button": {
+        "add": {
+          "label": "Abwesenheit anlegen"
+        },
+        "cancel": {
+          "label": "Abbrechen"
+        }
+      },
+      "combo-box": {
+        "entitlement-period": {
+          "errors": {
+            "required": "Wähle einen Anspruchszeitraum."
+          },
+          "label": "Anspruchszeitraum",
+          "placeholder": "Wähle"
+        },
+        "person": {
+          "errors": {
+            "required": "Wähle einen Mitarbeiter."
+          },
+          "label": "Mitarbeiter",
+          "placeholder": "Wähle"
+        },
+        "time-off-type": {
+          "errors": {
+            "required": "Wähle einen Abwesenheitstyp."
+          },
+          "label": "Abwesenheitstyp",
+          "placeholder": "Wähle"
+        }
+      },
+      "date-range-picker": {
+        "errors": {
+          "required": "Wähle einen Zeitraum."
+        },
+        "label": "Zeitraum",
+        "placeholder": "Wähle"
+      },
+      "end-time": {
+        "errors": {
+          "error_end_before_start": "Wähle eine Endzeit, die nach der Startzeit liegt.",
+          "required": "Gib eine Start- und Endzeit ein."
+        },
+        "label": "Endzeit"
+      },
+      "helper-text": "Der Mitarbeiter wird per E-Mail informiert.",
+      "inline-message": {
+        "error": {
+          "conflict_with_existing_time_off": "Im ausgewählten Zeitraum ist der Mitarbeiter bereits abwesend. Wähle einen anderen Zeitraum.",
+          "generic": "Abwesenheit konnte nicht angelegt werden. Bitte versuche es erneut.",
+          "no_time_off_period": "Für den ausgewählten Abwesenheitstyp gibt es keine veröffentlichte Abwesenheitsperiode. Veröffentliche eine Abwesenheitsperiode oder wähle einen anderen Abwesenheitstyp."
+        }
+      },
+      "start-time": {
+        "errors": {
+          "required": "Gib eine Start- und Endzeit ein."
+        },
+        "label": "Startzeit"
+      },
+      "switch": {
+        "part-day": {
+          "label": "Einen Teil des Tages beantragen"
+        }
+      },
+      "textarea": {
+        "comment": {
+          "errors": {
+            "max_length": "Gib einen Kommentar ein (bis zu 100 Zeichen)."
+          },
+          "label": "Kommentar <optional> optional </optional>",
+          "placeholder": "Füge einen Kommentar hinzu"
+        }
+      },
+      "title": "Abwesenheit anlegen"
+    },
+    "toast": {
+      "action": {
+        "text": "Gehe zu Entschieden"
+      },
+      "save-success": {
+        "text": "Abwesenheit angelegt"
+      }
+    }
+  },
+  "balance_filter": {
+    "view": {
+      "label": "Ansicht",
+      "multi": "Mehrere Mitarbeiter",
+      "single": "Einzelne Mitarbeiter"
+    }
+  },
+  "balance_overview": {
+    "column": {
+      "entitlement": "Anspruch",
+      "name": "Name",
+      "personnel_number": "Personalnummer",
+      "remaining": "Verbleibend",
+      "taken": "Genommen"
+    },
+    "edit_entitlements": {
+      "discard": "Änderungen verwerfen",
+      "entitlement": {
+        "aria_label": "Anspruch von {{personnelNumber}}",
+        "unsaved": "Dieser Anspruch wurde nicht gespeichert."
+      },
+      "error": {
+        "invalid_fields": "Die Ansprüche konnten nicht gespeichert werden. Überprüfe die markierten Felder.",
+        "unknown": "Die Ansprüche konnten nicht geändert werden. Bitte versuche es erneut."
+      },
+      "reason": {
+        "label": "Änderungsgrund"
+      },
+      "save": "Änderungen speichern",
+      "success": "Ansprüche gespeichert"
+    },
+    "no_employees": "Keine Mitarbeiter in der Planungseinheit verfügbar oder fehlende Zugriffsrechte"
+  },
+  "edit-time-off": {
+    "elevated-side-panel": {
+      "aria-label": "Edit time off",
+      "button": {
+        "cancel": {
+          "label": "Cancel"
+        },
+        "edit": {
+          "label": "Edit time off"
+        }
+      },
+      "combo-box": {
+        "person": {
+          "label": "Person"
+        },
+        "time-off-type": {
+          "label": "Time-off type"
+        }
+      },
+      "date-range-picker": {
+        "errors": {
+          "required": "Select a time range."
+        },
+        "label": "Time range",
+        "placeholder": "Select"
+      },
+      "end-time": {
+        "errors": {
+          "error_end_before_start": "Select an end time that is later than the start time.",
+          "required": "Enter a start and end time"
+        },
+        "label": "End time"
+      },
+      "helper-text": "The person will be notified by email.",
+      "inline-message": {
+        "error": {
+          "conflict_with_existing_time_off": "During the selected time range, the person already has time off. Select a different time range.",
+          "generic": "Time off could not be edited. Please try again",
+          "no_time_off_period": "For the selected time-off type, no time-off period has been published. Publish the time-off period or select a different time-off type."
+        }
+      },
+      "start-time": {
+        "errors": {
+          "required": "Enter a start and end time."
+        },
+        "label": "Start time"
+      },
+      "switch": {
+        "part-day": {
+          "label": "Request a part of the day"
+        }
+      },
+      "textarea": {
+        "comment": {
+          "errors": {
+            "max_length": "Enter a comment (up to 100 characters)."
+          },
+          "label": "Comment <optional>optional</optional>",
+          "placeholder": "Add your comment"
+        }
+      },
+      "title": "Edit time off"
+    },
+    "toast": {
+      "action": {
+        "text": "Go to decided"
+      },
+      "save-success": {
+        "text": "Time off edited"
+      }
+    }
+  },
+  "personal-balances": {
+    "individual-people": {
+      "balance-summary": {
+        "current-balance": {
+          "label": "Aktueller Anspruch"
+        }
+      },
+      "modal": {
+        "edit-entitlement": {
+          "date-picker": {
+            "booking-date": {
+              "label": "Datum"
+            }
+          }
+        },
+        "edit-taken": {
+          "date-picker": {
+            "booking-date": {
+              "label": "Datum"
+            }
+          }
+        }
+      }
+    },
+    "multiple-people": {
+      "edit-entitlement": {
+        "date-picker": {
+          "booking-date": {
+            "label": "Datum"
+          }
+        }
+      },
+      "table": {
+        "people-balances": {
+          "table-column": {
+            "current": {
+              "label": "Aktueller Anspruch"
+            }
+          }
+        }
+      }
+    }
+  },
+  "plan-page": {
+    "filter-bar": {
+      "date-range-navigator": {
+        "aria-label": "Wähle einen Anzeigezeitraum"
+      },
+      "search-input": {
+        "placeholder": "Suche nach Mitarbeitern"
+      },
+      "view-switch": {
+        "list": {
+          "aria-label": "Listenansicht"
+        },
+        "plan": {
+          "aria-label": "Schichtplanansicht"
+        }
+      }
+    },
+    "timeline": {
+      "empty-state": {
+        "no-results": {
+          "clear-filters": {
+            "button": {
+              "label": "Filter und Suche zurücksetzen"
+            }
+          },
+          "description": "Ändere deine Filter bzw. Suche oder setze sie zurück.",
+          "heading": "Keine Mitarbeiter gefunden"
+        }
+      },
+      "people-header": {
+        "sort-button": {
+          "aria-label": "Sortierung festlegen"
+        },
+        "sort-by": {
+          "person-asc": "Name A → Z",
+          "person-desc": "Name Z → A",
+          "start-time": "Startzeit"
+        },
+        "text": "Mitarbeitername"
+      },
+      "statistics": {
+        "people-off": {
+          "approved": {
+            "text": "Anzahl Abwesende"
+          },
+          "pending": {
+            "text": "Abwes. (ausstehend)"
+          }
+        }
+      }
+    }
+  },
+  "time-off-overview": {
+    "button": {
+      "add-time-off": {
+        "label": "Abwesenheit anlegen"
+      }
+    },
+    "card-list": {
+      "time-off": {
+        "card-item": {
+          "time-off-entry": {
+            "booked": {
+              "label": "Gebucht"
+            },
+            "current-balance": {
+              "label": "Aktueller Anspruch"
+            },
+            "plan-link": {
+              "label": "Im Schichtplan ansehen"
+            },
+            "projected-balance": {
+              "label": "Erwartet"
+            }
+          }
+        }
+      }
+    }
+  }
+}

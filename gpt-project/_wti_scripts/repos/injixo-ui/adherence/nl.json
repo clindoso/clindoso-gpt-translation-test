@@ -1,0 +1,301 @@
+{
+  "common": {
+    "planningUnit": {
+      "no-data": "Geen items",
+      "label": "Eenheid",
+      "placeholder": "Zoek of selecteer"
+    },
+    "selection": {
+      "no-data": "Geen items",
+      "label": "Groep",
+      "placeholder": "Zoek of selecteer"
+    },
+    "employee": {
+      "no-data": "Geen items",
+      "label": "Medewerker",
+      "placeholder": "Zoek of selecteer"
+    },
+    "search": {
+      "label": "Zoeken",
+      "placeholder": "Zoek op naam"
+    },
+    "label": {
+      "today": "Vandaag",
+      "yesterday": "Gisteren"
+    }
+  },
+  "table": {
+    "loading": "Laden",
+    "no-results-header": "Geen resultaten gevonden",
+    "no-results-body": "Er zijn geen medewerkers die voldoen aan je filters.",
+    "no-filter-specified-header": "Niets geselecteerd",
+    "no-filter-specified-body": "Selecteer eerst een eenheid of groep om te zien of de medewerkers zich aan het rooster houden.",
+    "header": {
+      "show-only-out-of-adherence": "Laat alleen out of adherence zien"
+    },
+    "column": {
+      "name": "Naam",
+      "actual-activity": "Werkelijke activiteit",
+      "scheduled-activity": "Geplande activiteit",
+      "out-of-adherence-duration": "Out of adherence duur",
+      "current-activity-duration": "Duur van de huidige activiteit",
+      "status": "Status"
+    },
+    "adherence-status-display": {
+      "notPresent": "Niet aanwezig",
+      "notPresentOutOfBufferTime": "Niet aanwezig",
+      "notScheduled": "Niet ingepland",
+      "notScheduledOutOfBufferTime": "Niet ingepland",
+      "wrongActivity": "Verkeerde activiteit",
+      "wrongActivityOutOfBufferTime": "Verkeerde activiteit"
+    },
+    "adherence-status": {
+      "notPresent": "Niet aanwezig (out of adherence)",
+      "notPresentInBufferTime": "Niet aanwezig (binnen buffertijd)",
+      "notPresentOutOfBufferTime": "Niet aanwezig (out of adherence)",
+      "notScheduled": "Niet ingepland (out of adherence)",
+      "notScheduledInBufferTime": "Niet ingepland (binnen buffertijd)",
+      "notScheduledOutOfBufferTime": "Niet ingepland (out of adherence)",
+      "wrongActivity": "Verkeerde activiteit (out of adherence)",
+      "wrongActivityInBufferTime": "Verkeerde activiteit (binnen buffertijd)",
+      "wrongActivityOutOfBufferTime": "Verkeerde activiteit (out of adherence)",
+      "inAdherence": "Conform rooster"
+    },
+    "staff-id": "Personnel number",
+    "pin-agent": "Pin to top",
+    "unpin-agent": "Unpin from top"
+  },
+  "adherence-score": {
+    "header": "Out of adherence",
+    "connection-state": {
+      "disconnected": "Niet verbonden",
+      "live": "Live"
+    },
+    "agents-in-adherence": "In adherence",
+    "agents-in-buffer-time": "Binnen buffertijd",
+    "agents-out-of-adherence": "Out of adherence",
+    "last-updated": "Laatste update {{lastUpdatedAt}}",
+    "today-so-far": "Vandaag tot zover"
+  },
+  "activity-overview": {
+    "header": "Activiteiten overzicht",
+    "column": {
+      "activity": "Activiteit",
+      "scheduled": "Ingeplande personen",
+      "current": "Huidig",
+      "delta": "Dekking",
+      "score": "Adherence",
+      "breaks": "Pauzes",
+      "presence": "Aanwezigheid"
+    },
+    "label": {
+      "actual": "Huidige",
+      "planned": "Gepland",
+      "difference": "Difference",
+      "add-activity-to-search": "Add activity {{activityName}} to search",
+      "view-matches-for-activity": "Bekijk Matches voor activiteit {{activityName}}",
+      "edit-matches-for-activity": "Bewerk Matches voor activiteit {{activityName}}",
+      "no-acd-mapping-for-activity": "There exists no agent status mapping for activity {{activityName}}"
+    },
+    "agent-overview": "Agent overview"
+  },
+  "notification": {
+    "connection": {
+      "reconnecting": "De verbinding is verbroken. We proberen de verbinding automatisch te herstellen...",
+      "offline": "De verbinding kon niet worden hersteld. Probeer over een paar minuten opnieuw te laden.",
+      "session-invalid": "Je bent momenteel niet aangemeld. Je kunt je <0>hier</0> aanmelden.",
+      "label": {
+        "login-link": "Ga naar aanmelden"
+      }
+    },
+    "failure": {
+      "general": "Er is een fout opgetreden. Probeer het later nog eens.",
+      "agent-details": "Er is een probleem opgetreden bij het laden van de medewerker gegevens. Gelieve <0>probeer opnieuw</0>."
+    },
+    "success": {
+      "threshold-settings": "Changes of threshold have been applied."
+    }
+  },
+  "input": {
+    "omni-search": {
+      "placeholder": "Zoeken naar namen, activiteiten en status",
+      "tooltip": "Voeg komma-gescheiden zoektermen toe, elk met ten minste twee tekens."
+    }
+  },
+  "settings": {
+    "buffer-times": {
+      "header-edit": "Pas je buffertijd aan",
+      "header-view": "View buffer time settings",
+      "readonly-message": "You do not have the permission to change these settings.",
+      "hint": "Medewerkers die zich in de buffertijd bevinden hebben geen negatief effect op de adherence-score. Zij zullen ook niet verschijnen in de filterweergave out-of-adherence. Dit is een algemene instelling die voor alle gebruikers geldt.",
+      "apply": "Apply",
+      "applying": "Applying...",
+      "cancel": "Cancel",
+      "close": "Close",
+      "placeholder": "Zoeken of selecteren",
+      "no-data": "No items",
+      "load-failed": "The data could not be loaded, please try again later.",
+      "update-failed": "The data could not be updated, please try again later.",
+      "threshold": {
+        "instantly": "Instantly",
+        "15-seconds": "15 seconds",
+        "30-seconds": "30 seconds",
+        "1-minute": "1 minute",
+        "2-minutes": "2 minutes",
+        "3-minutes": "3 minutes",
+        "5-minutes": "5 minutes"
+      }
+    },
+    "adjust-target-score": {
+      "header": "Stel je adherence-doelstelling bij",
+      "label": "Stel je adherence-doelstelling bij naar:",
+      "description": "Je staat op het punt om een beoogde adherence-score in te stellen. Als de werkelijke adherence lager is dan de gewenste adherence, dan kleurt het display rood."
+    }
+  },
+  "matches": {
+    "label": {
+      "header-edit": "Activiteit Matches",
+      "header-view": "Bekijk activiteit Matches",
+      "additional-matching-activities": "Aanvullende bijpassende activiteiten",
+      "no-activity-selected": "Geen activiteit geselecteerd",
+      "no-activity-selected-sub": "Selecteer een activiteit om Matches te bewerken",
+      "all-type": "Elk van het type",
+      "add-activity": "Voeg activiteit {{activityName}} toe aan Matches",
+      "add-activity-type": "Voeg activiteit type {{activityType}} toe aan Matches",
+      "remove-activity": "Verwijder activiteit {{activityName}} van Matches",
+      "remove-activity-type": "Verwijder activiteit type {{activityType}} van Matches",
+      "type": "Type",
+      "manage-activities": "Beheer activiteit Matches",
+      "external-system-mappings": "Extern systeem toewijzingen",
+      "manage": "In Intraday bewerken",
+      "include-unmapped-activities": "Toon alleen gemarkeerde activiteiten",
+      "no-acd-mappings": "Geen toewijzingen gedefinieerd",
+      "no-activity-matches": "Geen extra Matches",
+      "activity-mappings": "Koppelen van externe statussen"
+    },
+    "link": {
+      "back-to-adherence": "Terug naar Adherence"
+    },
+    "placeholder": {
+      "search-activity": "Activiteit zoeken op naam",
+      "search-activity-name-or-type": "Zoek activiteit op naam of type"
+    },
+    "button": {
+      "apply": "Toepassen",
+      "applying": "Toepassen...",
+      "cancel": "Annuleer"
+    },
+    "activityType": {
+      "present": "Aanwezigheid",
+      "holiday": "Vakantie",
+      "break": "Pauze",
+      "absence": "Afwezigheid",
+      "meeting": "Vergadering",
+      "illness": "Ziek"
+    },
+    "notification": {
+      "success": {
+        "manage-activities": "Wijzigingen zijn opgeslagen en met succes toegepast"
+      },
+      "error": {
+        "manage-activities": "Er is een fout opgetreden tijdens het opslaan van de wijzigingen, probeer het opnieuw"
+      }
+    }
+  },
+  "heading": {
+    "intraday-adherence": "Intraday Adherence",
+    "real-time-adherence": "Real-Time Adherence"
+  },
+  "info": {
+    "activity": {
+      "offline": "Dit is een speciale activiteit wanneer de agent geen ACD status heeft"
+    }
+  },
+  "label": {
+    "activity": {
+      "no-scheduled": "No scheduled activity",
+      "offline": "Offline"
+    },
+    "agent-details": {
+      "schedule": "Planning",
+      "retry": "Opnieuw proberen",
+      "actual": "Huidig",
+      "insights-heading": "Out of adherence detailoverzicht"
+    },
+    "business-hours": "Openingstijden",
+    "close-agent-details": "Close agent details",
+    "highcharts": {
+      "decimal-point": ",",
+      "reset-zoom": "Zoom resetten"
+    },
+    "scheduled-time": "Ingepland",
+    "adherence-status": {
+      "notPresent": "Niet aanwezig",
+      "notScheduled": "Niet ingepland",
+      "wrongActivity": "Verkeerde activiteit"
+    },
+    "return-to-agent-details": "Terug naar medewerkeroverzicht",
+    "timezoneInfo": "All times are in: ({{timezoneOffset}}) {{timezoneName}}",
+    "quarterly-adherence": "Gemiddelde per kwartier",
+    "average-adherence": "Gemiddelde adherence"
+  },
+  "historical-adherence": {
+    "column": {
+      "score": "Score"
+    },
+    "pagination": {
+      "current-page": "Current page",
+      "page": "Page",
+      "ellipsis": "Ellipsis",
+      "previous-page": "Previous page",
+      "next-page": "Next page",
+      "previous-month": "Vorige maand",
+      "next-month": "Volgende maand",
+      "previous-day": "Vorige dag",
+      "next-day": "Volgende dag"
+    },
+    "error": {
+      "reload_resource": "Er is een fout opgetreden. Probeer opnieuw te laden <0>{{resource}}</0> of probeer het later nog eens.",
+      "no-data": "Geen adherencegegevens beschikbaar voor de geselecteerde datum. Een integratie is mogelijk gepauzeerd. Neem contact op met een persoon met beheerderstoegang."
+    },
+    "chart": {
+      "targetScore": "Doelstelling"
+    },
+    "reload_adherence": "Reload Adherence",
+    "adherence": "Adherence",
+    "agent-details": {
+      "heading": "Agent Intraday Adherence",
+      "table": {
+        "heading": "Gegevens Out of adherence-incident",
+        "column": {
+          "time-range": {
+            "label": "Tijdsperiode"
+          }
+        }
+      },
+      "no-filter-specified-body": "Selecteer eerst een eenheid en een medewerker om te zien of ze zich aan de regels houden.",
+      "daily-overview": {
+        "header": "Dagelijks overzicht",
+        "no-score": "No score"
+      },
+      "edit-actual-activities": {
+        "button": {
+          "label": "Werkelijke activiteiten bewerken"
+        }
+      }
+    },
+    "report": {
+      "button_cancel": "Annuleren",
+      "button_download": "Rapport downloaden",
+      "button_open": "Rapport downloaden",
+      "date_range_label": "Datumbereik rapporteren",
+      "modal_content": "Het Adherence-rapport (CSV-bestand) bevat gedetailleerde informatie over opvolging en naleving.",
+      "modal_title": "Rapport downloaden",
+      "toast_success": "De download begint over een paar seconden."
+    }
+  },
+  "unknown_activity": {
+    "name": "Activiteit onbekend",
+    "type": "type onbekend"
+  }
+}

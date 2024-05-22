@@ -1,0 +1,109 @@
+{
+  "heading": {
+    "initial": "Optimización de pausas",
+    "optimization-history": "Histórico de optimizaciones de pausas",
+    "optimization-results": "Resultados de la optimización de pausas",
+    "settings": "Configurar una optimización de pausas"
+  },
+  "button": {
+    "back-to-day-view": "Volver a la vista diaria",
+    "back-to-schedules": "Volver a Planificar",
+    "close": "Cerrar",
+    "delete-break-optimizations_one": "Eliminar entrada",
+    "delete-break-optimizations_other": "Eliminar entradas",
+    "optimize-schedule": "Optimizar las pausas"
+  },
+  "error": {
+    "break-optimization-request": "Error al solicitar la optimización de pausas",
+    "incomplete-form": "Los datos del formulario están incompletos. Asegúrate de corregir todos los campos resaltados."
+  },
+  "helper-text": {
+    "delete-break-optimizations": "Las entradas seleccionadas se eliminarán de la tabla. Cualquiera planificación optimizada no se verá afectada."
+  },
+  "hint": {
+    "optimized-schedule-writing": "La planificación optimizada se escribirá directamente en el nivel Plan."
+  },
+  "label": {
+    "aria-enhancement": {
+      "delete-entries": "Eliminar entradas",
+      "dropdown": "despleglable",
+      "loading-spinner": "cargando spinner",
+      "select": "seleccionar",
+      "select-all": "seleccionar todo"
+    },
+    "axis": {
+      "coverage-total-deviation-from-zero": "Cobertura - Desviación desde 0 total",
+      "optimized-schedule": "Planificación optimizada",
+      "schedule-before-optimization": "Planificación antes de la optimización"
+    },
+    "date-range": "Rango de fechas",
+    "in-progress": "en curso",
+    "maintenance": {
+      "caption": "We are currently improving Break optimization",
+      "details": "We apologize for any inconvenience this necessary maintenance might cause you. The Break optimization should be available again in a few minutes. Thank you for your patience!"
+    },
+    "no-entries": "No hay resultados",
+    "no-optimization-data": {
+      "details": "Empezar una nueva optimización seleccionando una unidad de planificación y una fecha del rango de arriba para ver su resultado listado aquí.",
+      "heading": "No hay optimizaciones disponibles"
+    },
+    "optimization-result": {
+      "content": "Resultados de la optimización de pausas"
+    },
+    "optimization-status": {
+      "failed": "Ha fallado la optimización. Por favor, vuelve a intentarlo.",
+      "optimized": "Planificación optimizada",
+      "partly-optimized": "Planificación parcialmente optimizada",
+      "scheduling": "Optimización en marcha..."
+    },
+    "view-results": "Ver resultados"
+  },
+  "notification": {
+    "failure": {
+      "general": "Ha ocurrido un error. Por favor, vuelve a intenarlo."
+    }
+  },
+  "placeholder": {
+    "dropdown": "Buscar o seleccionar"
+  },
+  "result": {
+    "info": {
+      "day_models": "La unidad de planificación seleccionada contiene modelos de horario en el rango de fechas seleccionado que no se han podido convertir a actividades. Las pausas en estos modelos de horario no se han optimizado."
+    }
+  },
+  "success": {
+    "break-optimization-request": "Optimización de pausas solicitada correctamente"
+  },
+  "table": {
+    "column": {
+      "date-range": "Rango de fechas",
+      "initiated-on": "Iniciado el",
+      "planning-unit": "Unidad de planificación",
+      "selection": "Grupo",
+      "status": "Estado",
+      "user": "Usuario"
+    },
+    "message": {
+      "partly-optimized": "Parcialmente optimizada",
+      "partly-optimized-description": "<0>¿Qué significa esto?</0>",
+      "partly-optimized-link": "https://help.injixo.com/break-optimization#partly-optimized-schedule",
+      "optimized": "Optimizado"
+    }
+  },
+  "tooltip": {
+    "outdated-graph": "Los datos relevantes del gráfico se generaron al iniciar la optimización."
+  },
+  "validation": {
+    "planning-unit": {
+      "required": "Seleccionar una unidad de planificación"
+    }
+  },
+  "connection": {
+    "offline": "No hemos podido reconectar. Por favor, vuelve a probar en unos minutos.",
+    "reconnecting": "Hemos perdido la conexión. Estamos intentando reconectar automáticamente."
+  },
+  "document_title": {
+    "context": "optimizador de pausas",
+    "module": "Plan"
+  }
+}

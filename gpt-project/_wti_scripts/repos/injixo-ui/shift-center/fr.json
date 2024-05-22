@@ -1,0 +1,66 @@
+{
+  "document_title": {
+    "module": "Plan",
+    "context": "Centre de planification"
+  },
+  "parametersBar": {
+    "apply": "Appliquer",
+    "startDate": "Date de début",
+    "duration": "Durée",
+    "levels": "Catégories",
+    "units": {
+      "days": "Journées",
+      "weeks": "Semaines",
+      "months": "Mois",
+      "years": "Ans"
+    },
+    "unit": "Unité",
+    "selection": "Groupe",
+    "employeeFilter": "Filtre avancé",
+    "editEmployeeFilter": "Editer le filtre avancé",
+    "filterEditor": "Éditeur de filtres",
+    "chooseSelections": "Sélectionner un Groupe",
+    "chooseEmployeeFilter": "Filter Employees",
+    "dateFormat": "d MMMM yyyy",
+    "noResult": "Aucun résultat"
+  },
+  "shiftCenterFrame": {
+    "loading": "Chargement"
+  },
+  "levelSelector": {
+    "levels": {
+      "plan": "Planning",
+      "final": "Etat actuel",
+      "correction": "Correction",
+      "timeRecording": "Saisie des temps de présence",
+      "acd": "Système externe",
+      "wishes": "Desiderata",
+      "alternativeWishes": "Desiderata de réserve",
+      "absenceWishes": "Desiderata d'absences",
+      "availabilities": "Disponibilité",
+      "backup": "Sauvegarde 1",
+      "backupVersion2": "Sauvegarde 2",
+      "backupVersion3": "Sauvegarde 3"
+    }
+  },
+  "error": {
+    "configuration": "Une erreur est survenue (Ressource: Configuration)",
+    "accessRights": "Une erreur est survenue (Ressource: Des droits d'accès)",
+    "settings": "Une erreur est survenue (Ressource: Configuration) - Détails:",
+    "postMessage": "Posting a message to Shift Center failed.",
+    "accountBalances": {
+      "message": "Essayez de recharger <0>Solde des comptes</0> ou réessayez plus tard.",
+      "label": "Soldes des comptes rechargés"
+    },
+    "generic": "Une erreur est survenue."
+  },
+  "timeAccounts": {
+    "accountBalances": "Soldes des comptes",
+    "accountX": "Compte {{number}}",
+    "chooseAccount": "Choose account",
+    "dateLabel": "Date",
+    "none": "Aucun",
+    "closeModal": "Fermer",
+    "noResult": "Aucune saisie n'est disponible."
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "error": {
+    "insufficient_permissions": "Je hebt geen toestemming om deze handeling uit te voeren."
+  },
+  "configuration": {
+    "page_title": "Configuratie",
+    "activity_mapping": {
+      "heading": "Externe statussen aan injixo-activiteiten koppelen",
+      "activity_type": {
+        "present": "Aanwezigheid",
+        "holiday": "Vakantie",
+        "break": "Pauze",
+        "absence": "Afwezigheid",
+        "meeting": "Vergadering",
+        "illness": "Ziek"
+      },
+      "integrations": {
+        "heading": "Integraties"
+      },
+      "integration_activities": {
+        "heading": "Externe statussen",
+        "search": {
+          "placeholder": "Zoeken naar externe statussen van het type 'niet toegewezen'."
+        },
+        "edit_activity": "Activiteit bewerken",
+        "heading_mapped": "Gekoppeld",
+        "heading_not_mapped": "Niet gekoppeld",
+        "mapped_empty_label": "Geen externe status gekoppeld",
+        "not_mapped_empty_label": "Alle externe statussen zijn aan deze injixo-activiteit gekoppeld.",
+        "unmapped": "Niet toegewezen",
+        "overwrite_warning_tooltip": "De koppeling aan deze injixo-activiteit wordt door de nieuwe koppeling vervangen.",
+        "button_save": "Wijzigingen opslaan",
+        "button_cancel": "Wijzigingen annuleren"
+      },
+      "search_activity": {
+        "placeholder": "Naar injixo-activiteit zoeken"
+      },
+      "mapped_tooltip": "Externe statussen worden aan deze injixo-activiteit gekoppeld.",
+      "toast_save_success": "Koppeling opgeslagen",
+      "message_save_error": "De koppeling kon niet worden opgeslagen. Probeer het opnieuw.",
+      "no_activity_selected": {
+        "explanation": "Selecteer eerst een injixo-activiteit.",
+        "headline": "Geen injixo-activiteit geselecteerd"
+      },
+      "no_integration_activities": {
+        "explanation": "Er zijn geen externe statussen geïmporteerd via de integratie.",
+        "headline": "Geen externe statussen beschikbaar"
+      },
+      "no_integrations": {
+        "headline": "Geen integratie gevonden",
+        "link_text": "Voeg eerst een integratie toe"
+      },
+      "activity-select-list": {
+        "aria-label": "Select the injixo activity you want to map external statuses to."
+      }
+    }
+  },
+  "edit-actual-activities": {
+    "headline": {
+      "text": "{{personName}} op {{date}}"
+    },
+    "page-title": {
+      "return-link": {
+        "aria-label": "Terugkeren naar agent intraday adherence"
+      },
+      "text": "Werkelijke activiteiten bewerken"
+    },
+    "table": {
+      "actual-activity": {
+        "label": "Werkelijke activiteit"
+      },
+      "empty-state": {
+        "no-activities": {
+          "description": "Er zijn geen geregistreerde activiteiten voor {{date}}",
+          "headline": "Geen geregistreerde activiteiten"
+        }
+      },
+      "time-period": {
+        "buttons": {
+          "cancel": {
+            "aria-label": "Bewerken annuleren"
+          },
+          "confirm": {
+            "aria-label": "Bevestig nieuwe eindtijd"
+          },
+          "edit": {
+            "aria-label": "Eindtijd {{endTime}} bewerken"
+          }
+        },
+        "edit": {
+          "error-message": {
+            "generic": "De eindtijd kon niet worden bijgewerkt. Probeer het opnieuw.",
+            "invalid-end-time": "De opgegeven eindtijd is ongeldig."
+          },
+          "success": {
+            "toast-message": "Eindtijd succesvol gecorrigeerd."
+          },
+          "time-input": {
+            "aria-label": "Voer de juiste eindtijd in"
+          }
+        },
+        "label": "Tijdsperiode"
+      }
+    }
+  }
+}

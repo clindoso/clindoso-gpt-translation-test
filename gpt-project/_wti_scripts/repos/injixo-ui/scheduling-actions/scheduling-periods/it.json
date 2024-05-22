@@ -1,0 +1,122 @@
+{
+  "heading": {
+    "initial": "Periodi di pianificazione",
+    "create": "Crea periodo di pianificazione",
+    "edit": "Modifica periodo di pianificazione",
+    "lottery": "Avvia la lotteria dei turni",
+    "assignment": "Assegna turni",
+    "generate": "Genera turni"
+  },
+  "button": {
+    "back-to-schedules": "Torna a Schedules",
+    "cancel": "Cancella",
+    "delete-selected": "Elimina selezionato",
+    "save": "Salva",
+    "start-lottery": "Avvia la lotteria dei turni",
+    "generate-shifts": "Genera turni",
+    "start-assignment": "Assegna turni"
+  },
+  "error": {
+    "create": {
+      "error": "Si è verificato un errore durante la creazione del periodo di pianificazione."
+    },
+    "edit": {
+      "request": "Impossibile richiedere un aggiornamento"
+    },
+    "incomplete-form": "I dati del form sono incompleti. Assicurarsi di correggere tutti i campi evidenziati.",
+    "fetching-data": "Si è verificato un errore e non è stato possibile caricare i periodi di pianificazione. Prova a <0>ricaricare i periodi di pianificazione</0> o riprova più tardi.",
+    "generate": {
+      "shift-coverage": "Immettere un valore percentuale"
+    },
+    "shift-bidding-modal": {
+      "no-selected-employees": "Nessun dipendente selezionato. È necessario almeno un dipendente per poter procedere."
+    }
+  },
+  "explanation": {
+    "shift-bidding-modal-toggle": "Considera l'ora di inizio media di altri turni",
+    "shift-bidding-modal-tolerance": "Tolleranza massima che l'ora di inizio del turno possa discostarsi dall'ora di inizio del turno medio del dipendente",
+    "generate-based-on-contractual-hours": "dell'orario contrattuale",
+    "generate-based-on-employee-requirement": "del fabbisogno dei dipendenti",
+    "generate-shift-coverage-percentage": "Generazione del fabbisogno turni"
+  },
+  "label": {
+    "aria-enhancement": {
+      "select": "Seleziona",
+      "select-all": "Seleziona tutti"
+    },
+    "create": "Crea periodo di pianificazione",
+    "deadline": "Scadenza",
+    "no-planning-untis": "Nessuna unità di pianificazione trovata",
+    "no-selections": "Nessuna selezione trovata",
+    "shift-requirements": "Regola la generazione dei turni",
+    "status": "Stato",
+    "daterange": "Intervallo di date",
+    "tolerance": "Tolleranza"
+  },
+  "notification": {
+    "create": {
+      "error": "Si è verificato un errore durante la creazione del periodo di pianificazione. Per favore riprova.",
+      "success": "Periodo di pianificazione creato con successo"
+    },
+    "delete": {
+      "failed_one": "Impossibile eliminare {{count}} periodo di pianificazione",
+      "failed_other": "Impossibile eliminare {{count}} periodi di pianificazione",
+      "success_one": "{{count}} periodo di pianificazione eliminato correttamente",
+      "success_other": "{{count}} periodi di pianificazione eliminati correttamente"
+    },
+    "edit": {
+      "edit-error": "Si è verificato un errore durante l'aggiornamento, riprova più tardi",
+      "edit-success": "Periodo di pianificazione aggiornato correttamente",
+      "status-error": "Si è verificato un errore durante l'aggiornamento dello stato, riprova più tardi",
+      "status-success": "Periodo di pianificazione aggiornato correttamente"
+    },
+    "assignment": {
+      "error": "Si è verificato un errore durante l'assegnazione dei turni. Per favore riprova.",
+      "success": "Assegnazione dei turni avviata con successo"
+    },
+    "generate-shifts": {
+      "error": "Si è verificato un errore durante la generazione dei turni. Per favore riprova.",
+      "success": "Generazione dei turni avviata con successo"
+    },
+    "lottery": {
+      "error": "Si è verificato un errore durante l'avvio della lotteria dei turni. Per favore riprova.",
+      "success": "La lotteria dei turni è stata avviata con successo"
+    }
+  },
+  "placeholder": {
+    "all-selections": "Tutte le selezioni",
+    "deadline-none": "Nessuna",
+    "planning-unit": "Seleziona una unità di pianificazione",
+    "table": "Non ci sono ancora periodi di pianificazione. Prova a cambiare il tuo filtro o aggiungine uno nuovo!"
+  },
+  "tab": {
+    "expired": "Scaduto",
+    "ongoing": "In corso"
+  },
+  "table": {
+    "heading": {
+      "deadline": "Scadenza",
+      "inherited-from": "Ereditato da",
+      "selection": "Selezione",
+      "status": "Stato",
+      "valid-from": "Valido da",
+      "valid-to": "Valido fino"
+    },
+    "none": "Nessuno",
+    "status": {
+      "published": "Pubblicato",
+      "finished": "Finito",
+      "unpublished": "Non pubblicato",
+      "shift_bidding_enabled": "Offerte turni attivata"
+    }
+  },
+  "document_title": {
+    "context": "Periodi di Pianificazione",
+    "module": "Plan"
+  },
+  "hints": {
+    "assignment-modal-background-job": "Assegna turni avvia un processo in background. Per vedere lo stato, controlla <0>JobProcessor</0>.",
+    "generate-shifts-modal-background-job": "Genera turni avvia un processo in background. Per vedere lo stato, controlla <0> JobProcessor </0>.",
+    "lottery-modal-background-job": "L'avvio della lotteria dei turni avvia un processo in background. Per vedere lo stato, controlla <0>JobProcessor</0>."
+  }
+}

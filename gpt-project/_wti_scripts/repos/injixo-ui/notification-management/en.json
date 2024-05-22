@@ -1,0 +1,55 @@
+{
+  "document_title": {
+    "context": "Notifications",
+    "module": "Account"
+  },
+  "heading": "Notifications",
+  "message": {
+    "empty": "There are no settings available",
+    "error": {
+      "load": "An error occurred while loading",
+      "save": "An error occurred while saving"
+    }
+  },
+  "notification_channel": {
+    "browser_push": {
+      "header": "Browser Push",
+      "tooltip": "Every user needs to give their browser permission to receive notifications."
+    },
+    "email": {
+      "header": "Email"
+    }
+  },
+  "notification_settings_group": {
+    "me": {
+      "title": "Me"
+    },
+    "schedules": {
+      "title": "Schedules"
+    }
+  },
+  "notification_type": {
+    "schedule_changed": {
+      "description": "When you use the Notify employees feature in Schedules, the selected employees get a notification. <0>Learn more</0>",
+      "link": "https://help.injixo.com/schedules-notify-scheduling-changes/",
+      "title": "Change schedules"
+    },
+    "scheduling_period": {
+      "description": "When the schedule has been published, employees receive a notification. <0>Learn more</0>",
+      "link": "https://help.injixo.com/schedules-enable-employees-to-see-their-schedules",
+      "title": "Publish schedules"
+    },
+    "shift_trading": {
+      "description": "When an employee selects another employee to swap shifts, the second employee receives a notification. <0>Learn more</0>",
+      "link": "https://help.injixo.com/injixo-me-invite-suitable-colleagues/",
+      "title": "Shift swap"
+    }
+  },
+  "status": {
+    "error": "Your changes could not be saved",
+    "idle": "All changes have been saved",
+    "initial": "Changes will be saved automatically",
+    "saved": "Saved",
+    "saving": "Saving"
+  }
+}

@@ -1,0 +1,368 @@
+{
+  "activityDetails": {
+    "comment": "commentaire"
+  },
+  "filter": {
+    "selection": {
+      "placeholder": "Sélectionner un groupe"
+    },
+    "planningUnit": {
+      "placeholder": "Rechercher une unité opérationnelle",
+      "label": "unité opérationnelle",
+      "all": "Toutes les unités opérationnelles",
+      "multiple": "unités opérationnelles"
+    },
+    "employeeFilter": {
+      "placeholder": "Sélectionner un filtre avancé",
+      "label": "Filtre avancé"
+    },
+    "search": {
+      "placeholder": "Rechercher des employés"
+    },
+    "level": {
+      "singleLevel": "Catégorie",
+      "multipleLevel": "Catégories"
+    },
+    "noResults": "Aucun résultat"
+  },
+  "navigation": {
+    "today": "Aujourd'hui",
+    "current-month": "Mois en cours",
+    "current-week": "Semaine en cours",
+    "next-month": "Mois suivant",
+    "next-week": "Semaine suivante",
+    "optimization": {
+      "menu": "Menu contextuel"
+    },
+    "tomorrow": "Demain"
+  },
+  "table": {
+    "level": "Catégorie",
+    "loading": "Chargement"
+  },
+  "level": {
+    "plan": {
+      "name": "Planning"
+    },
+    "final": {
+      "name": "Etat actuel"
+    },
+    "availabilities": {
+      "name": "Disponibilité"
+    },
+    "wishes": {
+      "name": "Desiderata"
+    },
+    "alternativeWishes": {
+      "name": "Desiderata de réserve"
+    },
+    "absenceWishes": {
+      "name": "Desiderata de congés et d'absences"
+    },
+    "backup": {
+      "name": "Sauvegarde 1"
+    },
+    "backupVersion2": {
+      "name": "Sauvegarde 2"
+    },
+    "backupVersion3": {
+      "name": "Sauvegarde 3"
+    }
+  },
+  "sort": {
+    "key": {
+      "name": "Nom de l'employé",
+      "diff": "Diff.",
+      "actual": "Planifié",
+      "contractual": "Contrat",
+      "startTime": "Heure de début",
+      "activityName": "Nom de l'Activité",
+      "activity": "Activité",
+      "sum": "Σ heures",
+      "userName": "Nom",
+      "changedAt": "Date et heure",
+      "changedReason": "Action"
+    },
+    "level": {
+      "menu": "Trier par catégorie"
+    }
+  },
+  "edit": {
+    "title": {
+      "editlevel": "Modifier la catégorie",
+      "quote": "«",
+      "unquote": "»",
+      "of": "du",
+      "shiftFrom": "Détail du"
+    },
+    "cancel": "Annuler",
+    "save": "Sauvegarder",
+    "saving": "Enregistrement en cours",
+    "deleteAll": "Tout supprimer",
+    "problem": "Problème",
+    "activitiesTab": {
+      "title": "Edition",
+      "activityType": "Type d'activité",
+      "addNewActivity": "Insérer une nouvelle activité",
+      "addNewFullDayActivity": "Insérer une nouvelle activité à journée entière",
+      "noActivitiesInShift": "Il n'y a aucune activité sur cet horaire.",
+      "startTime": "Date et heure de début",
+      "startDate": "Date de début",
+      "endTime": "Date et heure de fin",
+      "endDate": "Date de fin",
+      "planningUnitTimezoneDiff": "Différence de fuseau horaire de l'unité opérationnelle",
+      "userTimezoneDiff": "Différence de fuseau horaire de l'utilisateur",
+      "validation": {
+        "onlyOneFullDayActivityAllowed": "Une seule activité à journée entière est autorisée.",
+        "noActivityOfThisTypeAvailable": "Aucune activité de ce type n'est disponible."
+      }
+    },
+    "historyTab": {
+      "title": "Historique",
+      "noHistoryInShift": "Aucun historique disponible."
+    },
+    "savedSuccessfully": "Enregistrement réussi",
+    "planDataType": {
+      "activity": "Activité",
+      "full_day_activity": "Activité à journée entière"
+    },
+    "activityType": {
+      "present": "Présence",
+      "holiday": "Congés",
+      "break": "Pause",
+      "absence": "Absence",
+      "meeting": "Meeting",
+      "illness": "Maladie"
+    },
+    "shortcuts": {
+      "copyAction": "copier vers",
+      "moveAction": "déplacer vers",
+      "copyErrorTitle": "Conflit lors de la copie",
+      "moveErrorTitle": "Conflit lors du déplacement",
+      "deleteErrorTitle": "Suppression impossible",
+      "errorDismiss": "Fermer",
+      "genericShortcutError": "There was a problem changing the shifts. Please try again later."
+    },
+    "message": {
+      "invalidParams": "Sélectionnez une unité opérationnelle ou un employé"
+    },
+    "unsavedChanges": {
+      "continue": "Quitter sans sauvegarder",
+      "abort": "Rester sur la page",
+      "hint": "Les modifications ne seront pas sauvegardées si vous quittez cette page.",
+      "continueQuestion": "Voulez-vous vraiment quitter cette page sans sauvegarder vos modifications ?",
+      "title": "Modifications non sauvegardées"
+    },
+    "unsavedChangesOverwriteOtherData": {
+      "continue": "Sauvegarder quand même",
+      "abort": "Annuler",
+      "hint": "Vous avez effectué des modifications dans d'autres onglets qui ne seront pas sauvegardées si vous continuez.",
+      "continueQuestion": "Voulez-vous vraiment sauvegarder cet onglet uniquement ?",
+      "title": "Ne pas sauvegarder les modifications des autres onglets"
+    },
+    "deleteBlock": {
+      "abort": "Annuler",
+      "continue": "Supprimer le desiderata",
+      "info": "Vous devez d'abord supprimer le desiderata si vous souhaitez modifier le planning.",
+      "title": "Conflit lors de l'enregistrement",
+      "warning": "Tous les changements seront perdus"
+    },
+    "activities": {
+      "heading": "Activités",
+      "warning": {
+        "full_day_override": "Cette activité à journée entière remplacera toutes les activités après avoir cliqué sur Enregistrer."
+      }
+    },
+    "comment": {
+      "error": {
+        "loading": "Le commentaire n'a pas pu être chargé. Veuillez réessayer.",
+        "save": "Le commentaire n'a pas pu être enregistré. Veuillez réessayer."
+      },
+      "heading": "Commentaire",
+      "placeholder": "Rédigez un commentaire (250 caractères maximum).",
+      "warning": {
+        "length": "Taille maximale atteinte (250 caractères maximum)."
+      }
+    },
+    "history": {
+      "heading": "Historique"
+    },
+    "inline-message": {
+      "overlapping-activities": {
+        "text": "Certaines de vos activités se chevauchent. Modifiez l'heure de début ou de fin des activités concernées. Si vous ne supprimez pas ce chevauchement, injixo raccourcit le début de la première activité."
+      }
+    }
+  },
+  "error": {
+    "default": "Une erreur est survenue pendant la récupération des données",
+    "websocket": "Le service est injoignable. Nouvelle connexion en cours.",
+    "activitiesPermissionDenied": "Vous ne disposez pas des droits de modification sur la ou les activités sélectionnées."
+  },
+  "select": {
+    "all": "Tout",
+    "noResults": "Aucune donnée",
+    "activities": {
+      "placeholder": "Choisissez l'Activité"
+    },
+    "dayPicker": {
+      "placeholder": "Choisissez la journée"
+    }
+  },
+  "coverage": {
+    "type": "Type",
+    "panelStatusIndicator": {
+      "closePanel": "fermer le panneau de couverture",
+      "openPanel": "ouvrir le panneau de couverture"
+    },
+    "tabs": {
+      "activitiesCoverage": "Couverture",
+      "activitiesRequirements": "Besoin",
+      "activitiesStaffings": "Occupation"
+    },
+    "loadingIndicator": "Chargement des données de couverture",
+    "filterPlaceholder": "Rechercher par nom ou type d'activité",
+    "noPlanningUnitSelected": "Aucune Unité opérationnelle sélectionnée.",
+    "noActivitiesSelected": "Aucune activité sélectionnée.",
+    "noActivitiesSelectedHint": "Sélectionner des activités en utilisant ci-dessus l'icône",
+    "detailsPopover": {
+      "interval": "Intervalle",
+      "staffings": "Occupation",
+      "requirements": "Besoin",
+      "coverage": "Couverture"
+    }
+  },
+  "planDataHistory": {
+    "actions": {
+      "applyShiftSequences": "Insertion d'une rotation d'horaires",
+      "assignCoachedShifts": "Planifier les apprenants avec leur formateur",
+      "cancelMeeting": "Annulation d'un meeting",
+      "confirmSchedule": "Acceptation des desiderata",
+      "copyNPasteOperation": "Cellule de jour remplie (Copier-Coller)",
+      "cutNPasteOperation": "Cellule de jour remplie (Couper-Coller)",
+      "deleteFulldayBlock": "Suppression (activités à journées entières successives)",
+      "deleteFulldayContent": "Suppression (activités à journées entières)",
+      "deleteOrdinaryContent": "Suppression (activités et missions)",
+      "deleteSchedule": "Suppression manuelle (saisie)",
+      "deleteShiftsNodesk": "Dissociation de l'employé et de sa mission",
+      "detachShiftReference": "Libération du contenu de la mission",
+      "detachShiftReferenceEx": "Libération du contenu de la mission et remplacement d'activités",
+      "eraseToplayer": "Suppression (contenu complet d'une journée)",
+      "exchangingContent": "Bourse d’échanges",
+      "importingAcdData": "Import (Système externe)",
+      "massInsert": "Insertion massive",
+      "moveContentTo": "Attribution (contenu complet d'une journée à un autre employé)",
+      "moveScheduleTo": "Attribution (saisie à un autre employé)",
+      "planToFinalCopy": "Copie (saisies de la catégorie 'Planning' vers la catégorie 'État actuel')",
+      "removeAssignedDesks": "Annulation de l'affectation d'un poste de travail",
+      "rescheduleToplayer": "Rétablissement (état historique)",
+      "restoreFromBackup": "Rétablissement (contenu d'une journée à partir de la catégorie Sauvegarde 1)",
+      "restorePrevWorkOnFulldayWork": "Remplacement (activité à journée entière par un ancien état de l'historique)",
+      "rollbackToplayer": "Rétablissement (état historique avec perte de niveaux)",
+      "saveAsBackup": "Enregistrement (contenu d'une journée dans la catégorie Sauvegarde 1)",
+      "scheduleBlockApprove": "Accepter desiderata",
+      "scheduleBlockDelete": "Supprimer desiderata",
+      "scheduleBlockReject": "Rejeter desiderata",
+      "scheduleBlockRequest": "Insérer desiderata",
+      "slideContent": "Déplacement des horaires d'une journée complète",
+      "staffDischarge": "L'employé a quitté l'entreprise",
+      "unspecific": "Inconnue",
+      "writeAtomicMeeting": "Insertion d'un meeting",
+      "writeCorridorFixing": "Définition (pauses d'un modèle horaire)",
+      "writeNewToplayer": "Remplacement (contenu complet d'une journée)",
+      "writeSchedule": "Modification manuelle (saisie)",
+      "writeScheduleRepeated": "Insertion (saisie pour plusieurs jours successifs)",
+      "writeScheduleToGroup": "Insertion (saisie dans un groupe)"
+    },
+    "nameUnknown": "Inconnu"
+  },
+  "button": {
+    "jump-date_one": "{{count}} jour",
+    "jump-date_other": "{{count}} jours"
+  },
+  "scheduling-actions": {
+    "cancel": "Fermer",
+    "insert-shift-sequences-link": "Insérer des rotations d'horaires",
+    "copy-level-content-link": "Copier le planning",
+    "create-optimized-schedule-link": "Optimiser le planning",
+    "create-optimized-schedule": {
+      "background-job": "L'opération s'exécute en arrière-plan. Pour vérifier l'avancée du traitement, aller dans le menu <0>JobProcessor</0>.",
+      "content-label": "Create optimized schedule modal",
+      "optimize-again": "Réinitialiser l'optimisation pour les modèles de planification de type C",
+      "request-error": "Impossible d'optimiser le planning",
+      "request-not-successful": "L'optimisation ne peut être démarrée. Essayez à nouveau.",
+      "request-sent": "Optimisation en cours. Pour vérifier l'avancée du traitement, aller dans le menu JobProcessor.",
+      "submit": "Démarrer l'optimisation",
+      "title": "Optimiser le planning",
+      "request-action": "JobProcessor"
+    },
+    "date-range": "Période",
+    "empty-levels-link": "Supprimer le planning",
+    "error": {
+      "incomplete-form": "Il manque des informations. Veuillez vérifier les champs mis en évidence.",
+      "planning-unit": "Une unité opérationnelle doit être sélectionnée"
+    },
+    "extra-activities-link": "Planifier les activités suppl.",
+    "job-optimizer-link": "Optimiser les activités",
+    "job-optimizer": {
+      "background-job": "L'opération s'exécute en arrière-plan. Pour vérifier l'avancée du traitement, aller dans le menu <0>JobProcessor</0>.",
+      "request-error": "Impossible de démarrer l'optimisation",
+      "request-not-successful": "Impossible de démarrer l'optimisation. Essayez à nouveau.",
+      "request-sent": "Optimisation en cours. Pour vérifier l'avancée du traitement, aller dans le menu JobProcessor.",
+      "submit": "Démarrer l'optimisation",
+      "title": "Optimiser les activités"
+    },
+    "optimize-breaks-link": "Optimiser les pauses",
+    "placeholder": {
+      "dropdown": "Rechercher ou sélectionner",
+      "no-results": "Aucun résultat"
+    },
+    "planning-unit": "Unité opérationnelle",
+    "replace-activities-link": "Remplacer des activités",
+    "scheduling-actions": "Actions de planification",
+    "scheduling-periods-link": "Périodes de planification",
+    "selection": "Groupe",
+    "shift-exchange-overview-link": "Gérer les échanges de planning",
+    "schedule-change-notifications": {
+      "employee": {
+        "description": "Sélectionnez les employés à informer de la modification de leur planning.",
+        "empty": "Aucun employé trouvé",
+        "empty-details": "Changez d’unité opérationnelle, de groupe ou de plage de dates.",
+        "heading": "Employés ({{amountSelected}} /{{amountTotal}} sélectionnés)",
+        "name": "Nom"
+      },
+      "error": "Les notifications n’ont pas pu être envoyées.",
+      "scheduling-period-error": "Certaines dates ne sont pas comprises dans les périodes de planification. Vérifiez vos <0>périodes de planification</0>.",
+      "submit_zero": "Informer les employés",
+      "submit_one": "Informer {{count}} employé",
+      "submit_other": "Informer {{count}} employés",
+      "success": "Les notifications ont été envoyées.",
+      "title": "Notifier les employés"
+    },
+    "create-schedule": {
+      "request-error": "Failed to create schedule",
+      "request-not-successful": "Schedule creation could not be started. Please try again.",
+      "request-sent": "Schedule creation in progress.",
+      "submit": "Create schedule",
+      "title": "Create schedule"
+    },
+    "schedule-requests": {
+      "request-not-successful": "Une erreur est survenue. Essayez à nouveau.",
+      "request-sent": "Schedule creation in progress."
+    }
+  },
+  "tooltip": {
+    "employee-name": "Aller à la fiche employé"
+  },
+  "document_title": {
+    "context": "Schedules",
+    "module": "Plan",
+    "page": {
+      "edit": "Modification des horaires"
+    }
+  },
+  "schedules": {
+    "schedule-change-notifications": {
+      "search-placeholder": "Recherche par nom"
+    }
+  }
+}

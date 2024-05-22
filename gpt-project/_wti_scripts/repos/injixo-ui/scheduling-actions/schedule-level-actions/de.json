@@ -1,0 +1,160 @@
+{
+  "document_title": {
+    "module": "Plan",
+    "page": {
+      "copy_level_content": "Ebeneninhalte Kopieren",
+      "empty_levels": "Ebenen Leeren",
+      "replace_activities": "Aktivitäten ersetzen"
+    }
+  },
+  "error": {
+    "copy-level-content-request": "Die Anfrage Ebeneninhalte zu kopieren ist fehlgeschlagen",
+    "empty-levels-request": "Die Anfrage Ebenen zu leeren ist fehlgeschlagen",
+    "incomplete-form": "Es fehlen Daten im Formular. Korrigiere die Daten in den markierten Feldern.",
+    "planning-unit": "Eine Planungseinheit muss ausgewählt sein",
+    "replace-activities-request": "Die Anfrage, Aktivitäten zu ersetzen, ist fehlgeschlagen"
+  },
+  "explanation": {
+    "copy-level-content": {
+      "daterange-and-startdate": "Der Inhalt des gesamten Zeitraums wird beginnend beim Ziel-Startdatum eingefügt.",
+      "empty-level": "Das Selektieren der Auswahlbox sorgt dafür, dass der Inhalt der Quellebene nach dem Kopiervorgang gelöscht wird.",
+      "levels": "Kopiert den Inhalt der Quellebene in die ausgewählte Zielebene. Bitte beachte, dass dabei der aktuelle Inhalt der Zielebene überschrieben wird."
+    },
+    "employee-selection": "Standardmäßig enthält die Liste alle Mitarbeiter der Planungseinheit. Du kannst die Liste weiter eingrenzen, indem Du eine Auswahl oder einen Mitarbeiterfilter anwendest.",
+    "empty-levels": {
+      "level-selection": "Der Inhalt der selektierten Ebene(n) wird im ausgewählten Zeitraum gelöscht."
+    },
+    "replace-activities": {
+      "level-daterange": "Ersetze Aktivitäten im ausgewählten Zeitraum in mehreren Ebenen gleichzeitig."
+    }
+  },
+  "heading": {
+    "copy-level-content": "Ebeneninhalte kopieren",
+    "employees": "Mitarbeiter ({{amountSelected}}/{{amountTotal}} ausgewählt)",
+    "empty-levels": "Ebenen leeren",
+    "replace-activities": "Aktivitäten ersetzen",
+    "settings": "Einstellungen"
+  },
+  "hint": {
+    "copy-level-content": {
+      "background-job": "Ebeneninhalte kopieren startet einen Prozess im Hintergrund. Um den Status zu sehen, überprüfe den <0>JobProcessor</0>."
+    },
+    "empty-levels": {
+      "background-job": "Ebenen leeren startet einen Prozess im Hintergrund. Um den Status zu sehen, überprüfe den <0>JobProcessor</0>."
+    },
+    "replace-activities": {
+      "background-job": "Aktivitäten ersetzen startet einen Prozess im Hintergrund. Um den Status zu sehen, überprüfe den <0>JobProcessor</0>."
+    }
+  },
+  "label": {
+    "aria-enhancement": {
+      "button": "Schaltfläche",
+      "dropdown": "Dropdown"
+    },
+    "back-to-schedules": "Zurück zu Schedules",
+    "button": {
+      "cancel": "Abbrechen",
+      "copy-level-content": "Ebeneninhalte kopieren",
+      "empty-levels": "Ebenen leeren",
+      "level_one": "{{count}} Ebene ausgewählt",
+      "level_other": "{{count}} Ebenen ausgewählt",
+      "replace-activities": "Aktivitäten ersetzen"
+    },
+    "date-range": "Zeitraum",
+    "employee-filter": "Mitarbeiterfilter",
+    "empty-level": "Quellebene nach dem Kopieren leeren",
+    "empty-levels": {
+      "level-selection": "Zu leerende Ebene(n)"
+    },
+    "form-error": {
+      "no-employees": "Es sind keine Mitarbeiter ausgewählt. Mindestens ein Mitarbeiter muss ausgewählt sein, um fortzufahren."
+    },
+    "levels": "Ebenen",
+    "no-employees": {
+      "caption": "Keine Mitarbeiter",
+      "empty-planning-unit": "Die Aktion kann nicht ausgeführt werden, da es keine Mitarbeiter für die ausgewählte Planungseinheit gibt.",
+      "empty-planning-unit-and-employee-filter": "Die Aktion kann nicht ausgeführt werden, da es keine Mitarbeiter für die ausgewählte Planungseinheit und Mitarbeiterfilter gibt.",
+      "empty-planning-unit-and-selection": "Die Aktion kann nicht ausgeführt werden, da es keine Mitarbeiter für die ausgewählte Planungseinheit und Auswahl gibt.",
+      "no-planning-unit": "Die Aktion kann nicht ausgeführt werden, da keine Planungseinheit ausgewählt ist."
+    },
+    "no-entries": "Keine Einträge",
+    "no-planning-unit-selected": "Wähle zuerst eine Planungseinheit",
+    "selection": "Auswahl",
+    "source-activity": "Zu ersetzende Aktivität",
+    "source-date-range": "Quell-Zeitraum",
+    "source-level": "Quellebene",
+    "start-date": "Ziel-Startdatum",
+    "target-activity": "Aktivität ersetzen durch",
+    "target-level": "Zielebene"
+  },
+  "level": {
+    "absenceWishes": {
+      "name": "Urlaubs-/Abwesenheitswunsch"
+    },
+    "alternativeWishes": {
+      "name": "Ausweichwunsch"
+    },
+    "backup": {
+      "name": "Version 1"
+    },
+    "backupVersion2": {
+      "name": "Version 2"
+    },
+    "backupVersion3": {
+      "name": "Version 3"
+    },
+    "final": {
+      "name": "Aktueller Stand"
+    },
+    "plan": {
+      "name": "Plan"
+    },
+    "wishes": {
+      "name": "Wunsch"
+    }
+  },
+  "message": {
+    "copy-level-content": {
+      "request-not-successful": "Das Kopieren der Ebeneninhalte konnte nicht gestartet werden. Bitte versuche es erneut.",
+      "request-sent": "Das Kopieren der Ebeneninhalte ist in Bearbeitung. Sieh Dir den Status im JobProcessor an."
+    },
+    "empty-levels": {
+      "request-not-successful": "Das Leeren von Ebenen konnte für folgende Ebenen nicht gestartet werden: {{levels}}. Bitte versuche es erneut.",
+      "request-sent": "Das Leeren von Ebenen ist in Bearbeitung für die folgenden Ebenen: {{levels}}. Sieh Dir den Status im JobProcessor an."
+    },
+    "replace-activities": {
+      "request-not-successful": "Das Ersetzen von Aktivitäten konnte nicht gestartet werden. Bitte versuche es erneut.",
+      "request-sent": "Das Ersetzen von Aktivitäten ist in Bearbeitung. Sieh Dir den Status im JobProcessor an."
+    }
+  },
+  "notification": {
+    "failure": {
+      "general": "Ein Fehler ist aufgetreten. Bitte versuche es später erneut."
+    }
+  },
+  "placeholder": {
+    "dropdown": "Suchen oder auswählen"
+  },
+  "table": {
+    "column": {
+      "employee_name": "Name"
+    }
+  },
+  "validation": {
+    "selected-levels": {
+      "required": "Mindestens eine Ebene muss ausgewählt sein"
+    },
+    "source-activity": {
+      "required": "Eine Quellaktivität muss ausgewählt sein"
+    },
+    "source-level": {
+      "required": "Eine Quellebene muss ausgewählt sein"
+    },
+    "target-activity": {
+      "required": "Eine Zielaktivität muss ausgewählt sein"
+    },
+    "target-level": {
+      "required": "Eine Zielebene muss ausgewählt sein"
+    }
+  }
+}

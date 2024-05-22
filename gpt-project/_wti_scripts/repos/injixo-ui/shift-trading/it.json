@@ -1,0 +1,74 @@
+{
+  "document_title": {
+    "context": "Scambio Turni",
+    "module": "Me",
+    "page": {
+      "invite_colleagues": "Invita colleghi"
+    }
+  },
+  "footer": {
+    "button": {
+      "back": "Torna alla dashboard",
+      "continue_one": "Seleziona {{count}} turno disponibile",
+      "continue_zero": "Continua senza selezione",
+      "continue_other": "Seleziona {{count}} turni disponibili",
+      "invite_one": "Invia {{count}} invito",
+      "invite_zero": "Invia l'invito",
+      "invite_other": "Invia {{count}} inviti",
+      "next": "Continua senza selezione",
+      "previous": "Torna alla selezione precedente",
+      "skip": "Salta inviti"
+    }
+  },
+  "heading": "Invita i colleghi idonei per scambiare i turni",
+  "help-button": {
+    "content": "<0>Scopri di più</0> sullo scambio di turni.",
+    "link": "https://help.injixo.com/injixo-me-invite-suitable-colleagues/",
+    "link-alt": "Link all'Help Center."
+  },
+  "invite": {
+    "error": {
+      "message": "Impossibile inviare gli inviti. Per favore riprova"
+    }
+  },
+  "offered-shift": {
+    "all-day": "Tutto il giorno",
+    "error": {
+      "content": "Si è verificato un errore e non è stato possibile caricare il tuo turno. Prova a <0>ricaricare</0> o riprova più tardi.",
+      "retry-alt": "Ricarica il tuo turno"
+    },
+    "multiple": {
+      "title": "Coppia di turni offerti"
+    },
+    "nothing-scheduled": "Niente di pianificato",
+    "title": "Il tuo turno"
+  },
+  "success": {
+    "back-to-employee-portal": "Torna a injixo Me",
+    "title_one": "{{count}} invito è stato inviato con successo.",
+    "title_other": "{{count}} inviti sono stati inviati con successo."
+  },
+  "suitable-shift": {
+    "employees_one": "{{count}} dipendente idoneo",
+    "employees_other": "{{count}} dipendenti idonei",
+    "empty": {
+      "back-alt": "Torna a scambio turni",
+      "content": "Non ci sono turni idonei per la tua selezione. <0>Torna a scambio turni</0>."
+    },
+    "error": {
+      "content": "Si è verificato un errore e non è stato possibile caricare turni adeguati. Prova a <0>ricaricare</0> o riprova più tardi."
+    },
+    "multiple": {
+      "title": "Coppie di turni disponibili"
+    },
+    "select-all": {
+      "checkbox": {
+        "label": "Tutto"
+      }
+    },
+    "title": "Turni idonei"
+  },
+  "title": {
+    "back": "Torna a scambio turni"
+  }
+}

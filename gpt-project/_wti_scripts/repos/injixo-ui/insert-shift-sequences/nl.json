@@ -1,0 +1,88 @@
+{
+  "application": {
+    "title": "Dienstenseries toevoegen",
+    "backToCapacity": "Terug naar Capaciteitsplanning",
+    "backToSchedules": "Terug naar Schedules"
+  },
+  "filters": {
+    "label": {
+      "planningUnit": "Eenheid",
+      "selection": "Groep",
+      "timePeriod": "Tijdsperiode"
+    },
+    "placeholder": {
+      "planningUnit": "Kies een Eenheid",
+      "selection": "Kies een Groep"
+    },
+    "result": {
+      "noResult": "Geen gegevens"
+    }
+  },
+  "shiftSequencesTable": {
+    "heading": "Overzicht",
+    "headers": {
+      "select": "Selecteren",
+      "personnelNumber": "Personeelsnummer",
+      "name": "Naam",
+      "shiftSequence": "Dienstenserie",
+      "sequence": "Volgorde",
+      "employeeRow": "Medewerkersregel",
+      "referenceDate": "Referentiedatum",
+      "validFrom": "Geldig vanaf",
+      "validTo": "Geldig tot en met"
+    },
+    "dateFormat": "dd LLL, yyyy",
+    "noData": "Geen dienstenseries gevonden.",
+    "singleCheckbox": "Selecteer een dienstenserie",
+    "allCheckbox": "Selecteer alle dienstenseries"
+  },
+  "insertingOptions": {
+    "heading": "Opties",
+    "description": "Kies hier de opties voor het invoegen van dienstenseries.",
+    "option1": "Activiteiten over de hele dag verwijderen",
+    "option2": "Beschikbaarheidskader verwijderen",
+    "option3": "Alle activiteiten en diensten verwijderen"
+  },
+  "jobHistory": {
+    "heading": "Invoeggeschiedenis",
+    "headers": {
+      "select": "Selecteren",
+      "status": "Toestand",
+      "startedAt": "Geïnitieerd op"
+    },
+    "processing": "Invoegen in uitvoering",
+    "viewDetails": "Details bekijken",
+    "timeFormat": "dd LLL yyyy, HH:mm",
+    "singleCheckbox": "Selecteer invoegopdracht",
+    "allCheckbox": "Selecteer alle invoegopdrachten",
+    "noData": "Geen invoegopdrachten gevonden.",
+    "clearCreatedJobs": "Invoer verwijderen"
+  },
+  "planning_units": "Eenheden",
+  "selections": "Groepen",
+  "shift_sequences": "Dienstenseries",
+  "insertion_jobs": "Invoegopdrachten",
+  "reload": {
+    "planning_units": "Herlaad Eenheden",
+    "selections": "Groepen opnieuw laden",
+    "shift_sequences": "Herlaad Dienstenseries",
+    "insertion_jobs": "Herlaad Invoegopdrachten"
+  },
+  "creatingJob": {
+    "failed": "Starten invoegopdracht mislukt. Probeer het alsjeblieft nog eens.",
+    "success": "Invoegopdracht succesvol aangemaakt."
+  },
+  "document_title": {
+    "module": "Plan",
+    "sub_module": "Dienstenseries toevoegen"
+  },
+  "error": {
+    "reload_resource": "Er is een fout opgetreden. Probeer opnieuw te laden <0>{{resource}}</0> of probeer het later nog eens."
+  },
+  "insert_shift_sequences": "Dienstenseries toevoegen",
+  "level": {
+    "actual": "Huidige Staat",
+    "plan": "Planning"
+  },
+  "target_level": "Doelniveau"
+}

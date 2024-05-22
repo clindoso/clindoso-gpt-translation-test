@@ -1,0 +1,549 @@
+{
+  "activities": {
+    "activity_type": {
+      "absence": "Afwezigheid",
+      "break": "Pauze",
+      "holiday": "Vakantie",
+      "illness": "Ziek",
+      "meeting": "Vergadering",
+      "on_call": "Oproepdienst",
+      "present": "Aanwezigheid"
+    },
+    "assignable": {
+      "CTA": {
+        "back": "Annuleren",
+        "discard": "Wijzigingen annuleren",
+        "save": "Wijzigingen opslaan"
+      },
+      "checkbox_aria_label": {
+        "assign": "Activiteit {{value}} selecteren",
+        "unassign": "Activiteit {{value}} deselecteren"
+      },
+      "heading": {
+        "assignable": "Selecteerbare activiteiten",
+        "assigned": "Toegewezen activiteiten",
+        "non_assignable": "Niet-selecteerbare activiteiten"
+      },
+      "invalid_reason": {
+        "multi_activity_and_assignable_activity_date_period_must_overlap": {
+          "long": "Je kunt deze activiteit niet selecteren, omdat deze niet geldig is tijdens de geldigheidsperiode van de multi-activiteit.",
+          "short": "Geldigheidsperiode"
+        },
+        "must_be_plannable": {
+          "long": "Je kunt deze activiteit niet selecteren, omdat deze is ingesteld op niet planbaar.",
+          "short": "Niet planbaar"
+        },
+        "must_have_same_planning_unit": {
+          "long": "Voeg deze activiteit toe aan alle eenheden waaraan je de multiactiviteit hebt toegewezen.",
+          "short": "Eenheid"
+        },
+        "must_not_be_multi_activity": {
+          "long": "Je kunt deze activiteit niet selecteren, omdat het een multi-activiteit is.",
+          "short": "Multi-activiteit"
+        },
+        "must_not_overlap_with_planning_unit_activity": {
+          "long": "Je kunt deze activiteit niet opslaan, omdat de geldigheidsperiodes van twee multi-activiteiten elkaar niet mogen overlappen in dezelfde eenheid.",
+          "short": "Conflict geldigheidsperiode"
+        }
+      },
+      "no_activities": "Geen activiteiten beschikbaar",
+      "no_activities_assigned": "Geen deelactiviteiten toegewezen",
+      "no_activities_found": "Geen activiteiten gevonden. Wijzig je zoekopdracht.",
+      "save_error": "De deelactiviteiten konden niet worden opgeslagen.",
+      "save_success": "De deelactiviteiten zijn bijgewerkt.",
+      "search_placeholder": "Zoeken naar activiteiten",
+      "title": "Deelactiviteiten"
+    },
+    "assigned": {
+      "CTA": {
+        "assign": "Deelactiviteiten toewijzen",
+        "edit": "Bewerken"
+      },
+      "hint": {
+        "already_assigned": "De activiteit is toegewezen aan de volgende multi-activiteiten:",
+        "empty": "Als er deelactiviteiten aan deze activiteit worden toegewezen, dan verandert de activiteit in een multi-activiteit.",
+        "generic": "Geen deelactiviteiten toegewezen.",
+        "has_shortcut": "Om activiteiten toe te kunnen wijzen, dien je eerst de sneltoets te verwijderen en de activiteit op te slaan.",
+        "is_new": "Om deelactiviteiten toe te wijzen, dien je eerst deze activiteit aan te maken.",
+        "not_plannable": "Om subactiviteiten toe te kunnen voegen, dien je eerst het selectievakje Planbaar aan te vinken en de activiteit op te slaan.",
+        "not_present": "Je kunt alleen activiteiten toewijzen aan activiteiten van het type Aanwezigheid."
+      },
+      "subactivity_title": "Multi-activiteiten",
+      "title": "Deelactiviteiten"
+    },
+    "beta_message": "Deze pagina bevindt zich in de Beta-testfase. Alle functionaliteiten zijn te vinden in WFM. <1>Ga naar WFM</1>",
+    "details": {
+      "CTA": {
+        "delete": "Activiteit verwijderen",
+        "duplicate": "Activiteit kopiëren",
+        "save": {
+          "existing": "Wijzigingen opslaan",
+          "new": "Activiteit aanmaken"
+        }
+      },
+      "aria_label": {
+        "close": "Activiteit bewerken sluiten",
+        "panel": "Details van activiteit bewerken"
+      },
+      "attributes": {
+        "add_attribute": {
+          "no_content": "<0>Geen attribuut geselecteerd</0>Selecteer een attribuut."
+        },
+        "button": {
+          "add_attribute": {
+            "label": "Toevoegen",
+            "tooltip": "Sla je wijzigingen op om activiteiten toe te voegen."
+          },
+          "create": {
+            "label": "Attribuut toevoegen"
+          },
+          "delete": {
+            "aria_label": "Attribuut verwijderen"
+          }
+        },
+        "combobox": {
+          "add_attribute": {
+            "label": "Selecteer een attribuut"
+          }
+        },
+        "create_title": "Attribuut toevoegen",
+        "delete": {
+          "button": {
+            "label": "Attribuut verwijderen"
+          },
+          "confirm": "Attribuut verwijderen",
+          "content": "Het attribuut <bold>{{attributeName}}</bold> wordt uit de activiteit <bold>{{activityName}}</bold> verwijderd.",
+          "error": "Het attribuut kon niet uit de activiteit worden verwijderd.",
+          "success": "Het attribuut is uit de activiteit verwijderd.",
+          "title": "Wil je het attribuut uit de activiteit verwijderen?"
+        },
+        "input": {
+          "boolean": {
+            "label_false": "Nee",
+            "label_group": "Waarde",
+            "label_true": "Ja"
+          },
+          "date": {
+            "label": "Datum"
+          },
+          "hour": {
+            "invalid": "Voer een tijd in (0 h tot 9999 h 00 min).",
+            "label": "Tijd"
+          },
+          "minute": {
+            "label": "Minuten"
+          },
+          "number": {
+            "invalid": "Voer een nummer in (maximaal 8 cijfers).",
+            "label": "Nummer"
+          },
+          "priority": {
+            "invalid": "Voer een prioriteit in (1 tot 99).",
+            "label": "Prioriteit",
+            "not_unique": "Selecteer een prioriteit die binnen de geldigheidsperiode nog niet voor dit attribuut wordt gebruikt. Je kunt als alternatief ook de geldigheidsperiode wijzigen."
+          },
+          "text": {
+            "invalid": "Kort je tekst in tot max. 250 tekens.",
+            "label": "Tekst"
+          },
+          "text_range": {
+            "label": "Waarde"
+          },
+          "time": {
+            "label": "Tijd"
+          },
+          "valid_from": {
+            "invalid": "Selecteer een datum voor het einde van de geldigheidsperiode.",
+            "label": "Geldig vanaf",
+            "not_unique": "Selecteer een geldigheidsperiode die niet overlapt met bestaande periodes van dit attribuut."
+          },
+          "valid_to": {
+            "invalid": "Selecteer een datum die na de start van de geldigheidsperiode ligt.",
+            "label": "Geldig tot"
+          }
+        },
+        "list_header": {
+          "attribute": "Naam",
+          "detail": "Details"
+        },
+        "messages": {
+          "create_error": "Het attribuut kon niet aan de activiteit worden toegevoegd.",
+          "create_success": "Het attribuut is toegevoegd.",
+          "error": "De details van het attribuut konden niet worden gewijzigd.",
+          "success": "De details van het attribuut zijn gewijzigd.",
+          "validation_failed": "Het attribuut kon niet worden toegevoegd. Je kunt de prioriteit of de geldigheidsperiode wijzigen."
+        },
+        "no_content": {
+          "assignments": {
+            "link": "Attribuut toevoegen",
+            "text": "Voeg je aangepaste attributen toe aan deze activiteit.",
+            "text_read_only": "Geen attributen toegewezen."
+          },
+          "attributes": {
+            "link": "Attributen aanmaken",
+            "text": "Voeg je aangepaste attributen toe aan deze activiteit."
+          }
+        },
+        "time_abbreviation": {
+          "hours": "h",
+          "minutes": "min"
+        },
+        "title": "Attributen",
+        "title_new": "Attribuutdetails"
+      },
+      "delete": {
+        "CTA": {
+          "confirm": "Activiteit verwijderen"
+        },
+        "consequences1": "Je kunt de activiteit dan niet meer aan dagmodellen, eenheden en medewerkers toevoegen.",
+        "consequences2": "Activiteiten die aan dagmodellen, eenheden en medewerkers zijn toegewezen, blijven bestaan, maar krijgen het label 'verwijderd'.",
+        "consequences3": "Je kunt de activiteit niet meer in een planning vervangen. De activiteit blijft zichtbaar, maar wordt grijs weergegeven.",
+        "consequences4": "Je kunt geen dienstenserie meer toevoegen met een dagmodel dat deze activiteit bevat.",
+        "content": "Wil je activiteit <0>{{name}}</0> echt verwijderen?",
+        "defaultActivity_validation_failed": "Standaard activiteiten kunnen niet worden verwijderd.",
+        "error": "De activiteit kon niet worden verwijderd. Probeer het opnieuw.",
+        "subactivity_validation_failed": "Activiteiten die aan een multi-activiteit zijn toegewezen, kunnen niet worden verwijderd",
+        "success": "De activiteit is verwijderd.",
+        "title": "Activiteit verwijderen?"
+      },
+      "external_systems": {
+        "title": "Externe Systemen"
+      },
+      "input": {
+        "abbreviation_invalid": "Geef een afkorting voor de activiteit aan (max. 25 tekens).",
+        "importance_invalid": "Voer de rang in (1% tot 100%).",
+        "name_invalid": "Geef de activiteit een naam (max. 50 tekens).",
+        "official_abbreviation_invalid": "Voer een officiële afkorting in (maximaal 25 tekens).",
+        "official_name_invalid": "Voer een officiële naam in voor de activiteit (maximaal 50 tekens).",
+        "priority_invalid": "Voer een prioriteit in (tussen 1 en 100).",
+        "shortcut_invalid": "Voer een snelkoppeling (max. 5 tekens) toe. Als het een directe snelkoppeling is, voeg dan aan het einde een hekje (#) toe."
+      },
+      "iwfm_link": "In WFM weergeven",
+      "label": {
+        "abbreviation": "Afkorting",
+        "activity_type": "Type",
+        "allow_overstaffing": "Overbezetting toestaan als personeelsbehoefte nul is",
+        "color": "Kleur",
+        "day_status": "Dagstatus",
+        "exchangeable": "Ruilbaar via Diensten ruilen",
+        "fullday": "Toestaan als activiteit over de hele dag",
+        "importance": "Rang",
+        "name": "Naam",
+        "official_abbreviation": "Officiële afkorting",
+        "official_name": "Officiële naam",
+        "paid": "Betaald",
+        "plannable": "Planbaar",
+        "priority": "Prioriteit",
+        "replaceable": "Vervangbaar",
+        "requestable": "Aanvraagbaar in Me",
+        "rest_period": "Rusttijd aanhouden",
+        "shortcut": "Sneltoets",
+        "special_optimization_handling": "Speciale behandeling in geoptimaliseerde planning"
+      },
+      "mappings": {
+        "CTA": "Externe statussen koppelen in Intraday",
+        "content": "Geef aan welke externe statussen je aan deze injixo-activiteit wilt koppelen.",
+        "title": "Externe statussen"
+      },
+      "message": {
+        "create_error": "De activiteit kon niet worden aangemaakt. Probeer het opnieuw.",
+        "create_success": "De activiteit is aangemaakt.",
+        "errors": {
+          "abbreviation_not_unique": "De afkorting {{value}} wordt al gebruikt. Voer een andere afkorting in voor de activiteit.",
+          "abbreviation_not_unique_match": "Deze afkorting wordt al gebruikt voor de activiteit “{{value}}”.",
+          "activitySkills": "De kwalificatie kon niet aan de activiteit worden toegevoegd. Probeer het opnieuw.",
+          "activitySkills_not_found": "De kwalificatie is verwijderd en kon niet worden toegewezen.",
+          "keyboardShortcut_not_unique": "De sneltoets {{value}} wordt al gebruikt. Voer een andere sneltoets in voor de activiteit.",
+          "keyboardShortcut_not_unique_match": "Deze sneltoets wordt al gebruikt voor de activiteit “{{value}}”.",
+          "keyboardShortcut_validation_failed_multi_activity": "Een sneltoets kan niet worden toegewezen aan een multi-activiteit",
+          "name_not_unique": "Er bestaat al een activiteit met de naam {{value}}. Voer een andere naam in voor de activiteit."
+        },
+        "update_error": "Er is een fout opgetreden bij het bijwerken van de activiteit",
+        "update_success": "Activiteit bijgewerkt",
+        "warning": {
+          "activity_type": "Het activiteitentype kan niet meer worden gewijzigd zodra de activiteit is aangemaakt."
+        }
+      },
+      "more_options": {
+        "CTA": "Bewerken in WFM",
+        "content": "Aan deze pagina wordt nog gewerkt .<1/>Alle ontbrekende functionaliteiten zijn te vinden in WFM.",
+        "title": "Meer opties"
+      },
+      "new": {
+        "subactivity_attribute": {
+          "description": "Maak eerst deze activiteit aan voordat je deelactiviteiten en attributen toevoegt.",
+          "title": "Deelactiviteiten en attributen"
+        }
+      },
+      "not_found": "De activiteit is niet gevonden.",
+      "section": {
+        "general": "Algemeen"
+      },
+      "skills": {
+        "add_skill": {
+          "empty_placeholder": "Geen kwalificaties beschikbaar",
+          "placeholder": "Kwalificatie selecteren"
+        },
+        "delete_aria_label": "Toewijzing verwijderen",
+        "skill_header": "Kwalificatie",
+        "system_activity_hint": "This is a pre-configured (non-deletable) activity. You can assign skills only to self-created activities.",
+        "weight": {
+          "aria_label": "Weging van kwalificatie {{skillname}} wijzigen",
+          "invalid": "Voer een gewicht in (1 tot 100)."
+        },
+        "weighting_header": "Weging"
+      },
+      "title": {
+        "new": "Nieuwe activiteit aanmaken"
+      }
+    },
+    "hint": {
+      "daystatus_disabled": "Vink het selectievakje Toestaan als activiteit over de hele dag aan om deze optie te activeren.",
+      "edit_subactivities_disabled": "Sla je wijzigingen op of annuleer ze om de deelactiviteiten te bewerken.",
+      "importance_disabled": "Vink eerst het selectievakje Planbaar aan om deze optie te activeren.",
+      "plannable_disabled": {
+        "is_multi": "Multi-activiteiten moeten Planbaar zijn.",
+        "is_sub": "Deelactiviteiten moeten Planbaar zijn."
+      },
+      "shortcut_disabled": "Multi-activiteiten kunnen geen sneltoetsen hebben.",
+      "special_handling_disabled": {
+        "default_present": "Kan niet worden geactiveerd voor de standaardactiviteit Aanwezig (activiteiten-ITD: 1).",
+        "non_present": "Alleen beschikbaar voor activiteiten van het type Aanwezigheid."
+      },
+      "type_disabled": "Het activiteitentype kan alleen worden ingesteld bij het aanmaken van de activiteit."
+    },
+    "overview": {
+      "CTA": {
+        "create_activity": "Nieuwe activiteit"
+      },
+      "load_error": "De activiteiten konden niet worden geladen. Probeer het opnieuw.",
+      "table": {
+        "placeholder": {
+          "message": "Geen activiteiten aangemaakt",
+          "suggestion": "Begin met het aanmaken van een activiteit."
+        },
+        "placeholder_searched": {
+          "message": "Geen activiteiten gevonden",
+          "suggestion": "Wijzig je zoekopdracht of <0>wis je zoekopdracht</0>."
+        }
+      }
+    },
+    "table_header": {
+      "activity_name": "Naam",
+      "activity_type": "Type",
+      "fullday": "Activiteit over de hele dag",
+      "importance": "Rang",
+      "paid": "Betaald",
+      "plannable": "Planbaar",
+      "priority": "Prioriteit",
+      "replaceable": "Vervangbaar",
+      "requestable": "Aanvraagbaar"
+    },
+    "title": "Activiteiten"
+  },
+  "attributes": {
+    "title": "Attributen"
+  },
+  "bonus_point_systems": {
+    "title": "Puntensystemen"
+  },
+  "break_models": {
+    "title": "Pauzemodellen"
+  },
+  "button": {
+    "cancel": {
+      "label": "Annuleren"
+    }
+  },
+  "contracts": {
+    "title": "Contracten"
+  },
+  "day_models": {
+    "title": "Dagmodellen"
+  },
+  "day_types": {
+    "title": "Dagtypes"
+  },
+  "employee_categories": {
+    "title": "Boekingsgroepen"
+  },
+  "employees": {
+    "title": "Medewerkers"
+  },
+  "general": {
+    "availabilities": {
+      "heading": {
+        "text": "Beschikbaarheden in injixo Me"
+      }
+    },
+    "availability": {
+      "button": {
+        "cancel": {
+          "label": "Annuleer"
+        },
+        "submit": {
+          "label": "Wijzigingen opslaan"
+        }
+      },
+      "inline-message": {
+        "generic-error": {
+          "text": "Je wijzigingen konden niet worden opgeslagen. Probeer het opnieuw."
+        }
+      },
+      "input": {
+        "date": {
+          "label": "Datum",
+          "placeholder": "Geen datum geselecteerd",
+          "validation-errors": {
+            "default": "Stel datum in"
+          }
+        }
+      },
+      "text": {
+        "date-description": "Voorkom dat mensen eenmalige beschikbaarheden wijzigen voor "
+      },
+      "toast": {
+        "save-success": {
+          "text": "De instelling is bijgewerkt."
+        }
+      },
+      "tooltip": {
+        "date": {
+          "text": "Als er geen datum is geselecteerd, kunnen medewerkers toekomstige eenmalige beschikbaarheden toevoegen of wijzigen."
+        }
+      }
+    },
+    "title": "Algemeen"
+  },
+  "modulation_periods": {
+    "title": "Aanpassingstijden"
+  },
+  "navigation": {
+    "no-access": {
+      "body": "Neem contact op met een persoon met adminrechten om toegang te krijgen tot de configuratie.",
+      "header": "Ontbrekende rechten"
+    },
+    "no-entities": {
+      "body": "Set up configuration items to create or adjust schedules.",
+      "header": "Configure Scheduling",
+      "link": {
+        "label": "Learn more in Help Center",
+        "url": "https://help.injixo.com/nl/"
+      }
+    }
+  },
+  "page_title": "Configuratie",
+  "planning_calendar": {
+    "title": "Planningskalenders"
+  },
+  "planning_units": {
+    "title": "Eenheden"
+  },
+  "selections": {
+    "title": "Groepen"
+  },
+  "shift_sequences": {
+    "title": "Dienstenseries"
+  },
+  "skills": {
+    "create": {
+      "button": {
+        "save": {
+          "label": "Kwalificatie aanmaken"
+        }
+      },
+      "error": "Er is een fout opgetreden tijdens het aanmaken van de kwalificatie",
+      "success": "Kwalificatie is aangemaakt"
+    },
+    "details": {
+      "CTA": {
+        "duplicate": "Kwalificatie kopiëren"
+      },
+      "abbreviation": "Afkorting",
+      "create": "Nieuwe kwalificatie aanmaken",
+      "delete": {
+        "action": "Kwalificatie verwijderen",
+        "consequences1": "De kwalificatie is niet meer beschikbaar, bijv. voor activiteiten.",
+        "consequences2": "De kwalificatie wordt verwijderd uit de activiteiten waarin deze wordt gebruikt.",
+        "consequences3": "De kwalificatieniveaus die aan de medewerker zijn toegekend blijven behouden, maar worden gemarkeerd als verwijderd.",
+        "content": "Wil je de kwalificatie <0>{{name}}</0> echt verwijderen?",
+        "error": "Er is een probleem opgetreden bij het verwijderen van de kwalificatie",
+        "success": "Kwalificatie is verwijderd",
+        "title": "Wil je de kwalificatie verwijderen?"
+      },
+      "input": {
+        "abbreviation_required": "Voer een afkorting in (maximaal 25 tekens).",
+        "abbreviation_too_long": "Voer een afkorting in (maximaal 25 tekens).",
+        "name_required": "Voer een naam in voor de kwalificiatie (maximaal 50 tekens).",
+        "name_too_long": "Voer een naam in voor de kwalificatie (maximaal 50 tekens)."
+      },
+      "name": "Naam",
+      "not_found": "Kwalificatie is niet gevonden",
+      "skill_levels": {
+        "abbreviation": "Afkorting",
+        "add": "Kwalificatieniveau toevoegen",
+        "delete": "Kwalificatieniveau verwijderen",
+        "heading": "Kwalificatieniveaus",
+        "input": {
+          "abbreviation_required": "Voer een afkorting in voor het kwalificatieniveau (maximaal 25 tekens).",
+          "abbreviation_too_long": "Voer een afkorting in voor het kwalificatieniveau (maximaal 25 tekens).",
+          "abbreviation_unique": "Voer voor het kwalificatieniveau een afkorting in die nog niet wordt gebruikt.",
+          "name_required": "Voer een naam in voor het kwalificatieniveau (maximaal 50 tekens.)",
+          "name_too_long": "Voer een naam voor het kwalificatieniveau in (maximaal 50 tekens).",
+          "name_unique": "Voer voor het kwalificatieniveau een naam in die nog niet wordt gebruikt.",
+          "percentage_invalid": "Voer een score in (1 tot 100%).",
+          "percentage_required": "Voer een score in (1% tot 100%).",
+          "percentage_unique": "Voer een score in die nog niet wordt gebruikt."
+        },
+        "name": "Naam",
+        "rating": "Score"
+      }
+    },
+    "edit": {
+      "button": {
+        "save": {
+          "label": "Wijzigingen opslaan"
+        }
+      }
+    },
+    "errors": {
+      "abbreviation_not_unique": "De afkorting van de naam van de kwalificatie {{value}} bestaat al. Voer een andere afkorting in.",
+      "abbreviation_not_unique_match": "De afkorting wordt al gebruikt voor de kwalificatie “{{value}}”.",
+      "name_not_unique": "De naam van de kwalificatie {{value}} bestaat al. Voer een andere naam in voor de kwalificatie."
+    },
+    "table": {
+      "create": "Nieuwe kwalificatie",
+      "error": "Er is een fout opgetreden tijdens het laden van kwalificaties. Probeer het later opnieuw.",
+      "placeholder": "Er zijn nog geen kwalificaties gedefinieerd. Klik op Nieuwe kwalificatie om een kwalificatie toe te voegen."
+    },
+    "title": "Kwalificaties",
+    "update": {
+      "error": "Er is een fout opgetreden tijdens het bijwerken van de kwalificatie",
+      "success": "Kwalificatie is bijgewerkt"
+    }
+  },
+  "table": {
+    "header": {
+      "name": "Naam"
+    },
+    "search": {
+      "aria_label": "Zoeken",
+      "placeholder": "Zoeken"
+    }
+  },
+  "unsaved_changes": {
+    "cta": {
+      "cancel_create": "Terug naar aanmaken",
+      "cancel_edit": "Terug naar bewerken",
+      "confirm": "Wijzigingen annuleren"
+    },
+    "text": "Je wijzigingen worden niet opgeslagen.",
+    "title": "Niet-opgeslagen wijzigingen annuleren?"
+  },
+  "week_time_patterns": {
+    "title": "Weekmodellen"
+  },
+  "work_time_pattern_models": {
+    "title": "Planningsmodellen"
+  }
+}

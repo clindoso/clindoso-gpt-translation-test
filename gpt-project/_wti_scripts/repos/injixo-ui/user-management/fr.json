@@ -1,0 +1,310 @@
+{
+  "roles_overview": {
+    "page_title": "Rôles",
+    "search_role": "Rechercher un rôle",
+    "category_change_failed": "Impossible de modifier la catégorie du rôle.",
+    "description": "Les rôles ayant des droits similaires sont regroupés en catégories, par exemple la catégorie <0>Planificateur</0>. Les droits sur les nouvelles fonctionnalités d'injixo sont automatiquement assignés aux rôles selon leur catégorie de rôle.<br>Les rôles de la catégorie <0>Autres</0> n'ont pas les droits par défaut sur les nouvelles fonctionnalités.<br>Pour en savoir plus, consultez le <1>Help Center</1>.",
+    "heading": "Rôles",
+    "link_to_docs": "https://help.injixo.com/fr/user-roles-in-detail/",
+    "section": "Vue d’ensemble"
+  },
+  "user_details": {
+    "save": "Enregistrer",
+    "create": "Créer",
+    "show_iwfm_employee": "Aller à la fiche Employé",
+    "heading": {
+      "create_user": "Créer un utilisateur",
+      "edit_user": "Modifier {{name}}",
+      "account": "Compte",
+      "preferences": "Préférences",
+      "security": "Sécurité",
+      "role_assignment": "Attribuer des rôles",
+      "object_permissions": "Gérer l'accès aux objets"
+    },
+    "2fa_disabled": "Authentification à 2 facteurs désactivée",
+    "2fa_enabled": "Authentification à 2 facteurs activée",
+    "change_email": "Adresse e-mail incorrecte ? <0>Modifier</0>",
+    "confirm_email": "Confirmez votre adresse e-mail pour continuer.",
+    "creating": "Création",
+    "delete": "Supprimer",
+    "delete_modal": {
+      "confirmation": "J'ai compris que la fiche employé et les plannings de <0>{{name}}</0> seront supprimés.",
+      "description": "Cette action est irréversible. L'utilisateur<0>{{name}}</0> et son planning seront définitivement supprimés.",
+      "end_staff_membership": {
+        "description": "Définissez une date de fin de période d'emploi pour <0>{{name}}</0>. L'utilisateur sera désactivé à compter de cette date et ne sera plus facturé à partir du mois suivant. Son planning sera conservé.",
+        "heading": "Définir une date de fin de période d'emploi",
+        "view": "Période d'emploi"
+      },
+      "title": "Supprimer l'utilisateur",
+      "confirmation_skills_lms": "I understand that the user record for <0>{{name}}</0> will be deleted and training history anonymized.",
+      "description_skills_lms": "This action cannot be undone. The user <0>{{name}}</0> will be deleted from your Account section and also deactivated and anonymized in the learning management system (LMS) enrollment and reporting sections.",
+      "title_skills_lms": "Delete / deactivate user"
+    },
+    "deleting": "Suppression",
+    "email_not_verified": "Cet utilisateur doit vérifier son adresse e-mail.",
+    "employment_period_expired": "L’utilisateur ne peut se connecter car aucune période d’emploi actuelle n’a été trouvée.",
+    "field": {
+      "admin": {
+        "checkbox": "Donner le rôle Admin à l'utilisateur",
+        "heading": "Accès Admin",
+        "hint": "Les utilisateurs administrateur ont accès à l'ensemble des fonctionnalités injixo. Seul un administrateur peut modifier ce paramètre.",
+        "label": "Accès complet à injixo"
+      },
+      "email": "E-mail",
+      "enforce2fa": "Activer la 2FA",
+      "enforce2fa_tooltip": "L’utilisateur doit activer la 2FA à la prochaine connexion.",
+      "firstName": "Prénom",
+      "language": {
+        "label": "Langue",
+        "no_result": "Aucune langue trouvée",
+        "placeholder": "Sélectionner une langue..."
+      },
+      "lastName": "Nom",
+      "locked": {
+        "hint": "L'utilisateur est verrouillé suite à plusieurs saisies de mot de passe incorrect",
+        "label": "Utilisateur verrouillé",
+        "unlock": "Déverrouiller l'utilisateur",
+        "unlocking": "Déverrouillage"
+      },
+      "password": {
+        "hint": "L'utilisateur pourra réinitialiser son mot de passe ultérieurement",
+        "label": "Mot de passe",
+        "set_password": "Définir un nouveau mot de passe"
+      },
+      "sendMail": {
+        "details": "Informations par e-mail sur la création du mot de passe et la connexion.",
+        "label": "Envoyer l'e-mail de bienvenue",
+        "sso_enforced_details": "E-mail contenant les instructions de connexion."
+      },
+      "timeZone": {
+        "label": "Fuseau horaire",
+        "no_result": "Aucun fuseau horaire trouvé",
+        "placeholder": "Sélectionner le fuseau horaire"
+      },
+      "object_permission": {
+        "full_access": "Accès complet",
+        "label": "Sélectionner un groupe d'accès",
+        "no_access": "Aucun accès",
+        "no_result": "Aucun groupe trouvé",
+        "placeholder": "Liste des groupes..."
+      },
+      "user_principal_name": {
+        "hint": "Ne saisissez le nom principal de l’utilisateur (UPN) que si l’e-mail de connexion à injixo est différent de l’UPN utilisé par le fournisseur d’identité de l’authentification unique.",
+        "label": "Nom principal de l’utilisateur",
+        "unique": "Saisissez un nom principal de l'utilisateur qui n'est pas déjà utilisé dans ce tenant."
+      }
+    },
+    "saving": "Enregistrement",
+    "success_modal": {
+      "ok": "OK"
+    },
+    "title": "Utilisateur",
+    "unsaved_changes_modal": {
+      "iwfm": {
+        "hint": "Vous allez être dirigé vers la <0>fiche Employé</0> où vous pourrez attribuer des droits d'accès supplémentaires sur d'autres modules de l'application.",
+        "title": "Employé WFM"
+      },
+      "set_password": {
+        "hint": "Vous allez être dirigé vers la page qui vous permet de définir un nouveau mot de passe pour <0>{{name}}</0>."
+      },
+      "object_access": {
+        "hint": "Vous allez être dirigé vers la page <0>Nouveau groupe d'accès aux objets</0>.",
+        "title": "Nouveau groupe d'accès aux objets"
+      }
+    },
+    "user_creation_failed": "Impossible de créer l'utilisateur.",
+    "user_creation_successful": "Utilisateur créé avec succès.",
+    "user_deletion_failed": "Impossible de supprimer l'utilisateur.",
+    "user_deletion_successful": "L'utilisateur a été supprimé avec succès.",
+    "user_locked": "Utilisateur verrouillé",
+    "user_unlock_failed": "Impossible de déverrouiller l'utilisateur",
+    "user_update_failed": "Impossible de sauvegarder l'utilisateur.",
+    "user_update_successful": "L'utilisateur a été mis à jour avec succès.",
+    "validation": {
+      "email": "Saisissez une adresse e-mail, par exemple mail@test.com.",
+      "max": "Doit comprendre au maximum {{max}} caractères.",
+      "required": "Ne doit pas être vide.",
+      "unique": "Est déjà utilisé."
+    },
+    "verify_email": "Cliquez sur le lien de vérification envoyé à l'adresse e-mail <0>{{email}}</0>",
+    "create_object_group": "Nouveau groupe d'accès aux objets",
+    "information": {
+      "sso": {
+        "password_hint": "Passwords are managed by your identity provider."
+      },
+      "sso_activated": "Single sign-on activated",
+      "sso_enforced": "The user needs to be granted access within your identity provider to access injixo."
+    },
+    "return_to_overview": "Retour",
+    "banner-message": "Découvrez <PeopleLink>People</PeopleLink>, votre nouvel espace dédié à toutes les fonctionnalités de gestion des utilisateurs ! Profitez d'une interface moderne, incluant l’attribution des rôles, un accès administrateur et une sécurité renforcée.",
+    "banner-message-deprecation": "Cette page sera bientôt obsolète — passez à People dès aujourd'hui !",
+    "return_to_people": "Return to people"
+  },
+  "two_factor": {
+    "title": "Authentification à 2 facteurs",
+    "enabled": "2FA activée",
+    "disabled": "2FA désactivée",
+    "enforced": "L’utilisateur doit activer la 2FA à la prochaine connexion",
+    "enabled_and_enforced": "2FA obligatoire activée",
+    "disable": "Désactiver l'authentification à 2 facteurs",
+    "disabling": "Désactivation",
+    "disabling_failed": "Échec de la désactivation de l'authentification à 2 facteurs"
+  },
+  "password_strength": {
+    "none": "Aucun mot de passe",
+    "strong": "Mot de passe fort",
+    "sufficient": "Mot de passe moyen",
+    "weak": "Mot de passe faible"
+  },
+  "role_list": {
+    "one": "Autre",
+    "other": "Autres",
+    "create_role": "Créer un rôle dans la catégorie {{category}}"
+  },
+  "set_password": {
+    "cancel": "Annuler",
+    "description": "Merci d'informer l'utilisateur de son nouveau mot de passe. Aucune notification ne sera envoyée.",
+    "failure": "Impossible de créer un nouveau mot de passe.",
+    "label": "Mot de passe",
+    "save": "Enregistrer",
+    "saving": "Enregistrement",
+    "strength_hint": "Utiliser au minimum 8 caractères, combiner au moins 3 catégories parmi les suivantes : majuscules, minuscules, chiffres et caractères spéciaux.",
+    "success": "Nouveau mot de passe renseigné avec succès.<0>Retour</0>",
+    "title": "Nouveau mot de passe pour {{name}}"
+  },
+  "unsaved_changes_modal": {
+    "cancel": "Annuler",
+    "error": "Vous ne pouvez pas passer à l'étape suivante car il y a des erreurs dans le formulaire.",
+    "hint": "Les modifications seront enregistrées en passant à l'étape suivante.",
+    "save_and_continue": "Enregistrer et continuer"
+  },
+  "users_overview": {
+    "role_filter": {
+      "search_roles": "Rechercher un rôle",
+      "all_roles": "Tous les rôles"
+    },
+    "billed_users": "Utilisateurs facturés",
+    "column": {
+      "2fa": "2FA",
+      "email": "E-mail",
+      "name": "Nom",
+      "roles": "Rôles"
+    },
+    "create_user": "Créer un utilisateur",
+    "export_csv": "Export CSV",
+    "exporting": "Export",
+    "heading": "Utilisateurs",
+    "import_csv": "Importer depuis un fichier CSV",
+    "loading_users_failed": "Impossible de charger les utilisateurs.",
+    "search_placeholder": "Rechercher par nom et adresse e-mail",
+    "title": "Utilisateurs",
+    "tooltip": {
+      "email_unverified": "Cet utilisateur doit vérifier son adresse e-mail.",
+      "locked": "Cet utilisateur a été désactivé. Cliquer ici pour afficher les détails du compte utilisateur. Vous pourrez le réactiver à cet endroit."
+    },
+    "unbilled_users": "Utilisateurs non facturés",
+    "unbilled_users_hint": "La période d’emploi de ces utilisateurs est terminée. Ils ne peuvent plus se connecter et ne sont plus facturés."
+  },
+  "objectgroup_overview": {
+    "heading": "Accès aux objets",
+    "section": "Vue d'ensemble",
+    "description": "Les groupes d'accès permettent de définir les objets disponibles pour un utilisateur (par exemple un tableau de bord en particulier). Chaque utilisateur peut se voir attribuer un accès spécifique à l'aide de ces groupes.",
+    "create": "Nouveau",
+    "title": "Accès aux objets",
+    "edit": "Modifier",
+    "is_restricted": "Accès restreint",
+    "object_group_count": "Nombre d'utilisateurs associés : <0>{{count}}</0>"
+  },
+  "objectgroup_details": {
+    "heading": {
+      "create": "Nouveau groupe d'accès aux objets",
+      "basic_information": "Informations générales",
+      "permissions": "Objets",
+      "edit": "Modifier l'accès aux objets"
+    },
+    "name": "Nom",
+    "description": "Description",
+    "validation": {
+      "unique": "Ce nom est déjà utilisé.",
+      "required": "Ne doit pas être vide."
+    },
+    "creation_failed": "Impossible de créer le groupe d'accès aux objets.",
+    "creation_successful": "Groupe d'accès aux objets \"{{name}}\" créé.",
+    "optional": "Facultatif",
+    "creating": "Création",
+    "create": "Créer",
+    "objects": {
+      "restrict_access": "Limiter l'accès",
+      "access_info": "Les utilisateurs de ce groupe ont accès aux objets suivants :",
+      "search": "Rechercher par nom...",
+      "selected": "{{selected}}/{{total}} sélectionné(s)",
+      "full_access": "Accès complet aux objets existants et futurs",
+      "go_to_iwfm": "Aller aux Droits d’accès des rôles d’utilisateurs",
+      "iwfm_description": "Retrouvez des droits sur d’autres objets dans le menu Droits d’accès des rôles d’utilisateurs.",
+      "iwfm_heading": "Vous ne trouvez pas un objet ?",
+      "iwfm_path": "Également accessible dans le menu WFM <0 /> Administration <0 /> Système <0 /> Droits d’accès des rôles d’utilisateurs."
+    },
+    "page_title": "Groupe d'objets - {{name}}",
+    "saving": "Enregistrement",
+    "save": "Enregistrer",
+    "update_failed": "Une erreur est survenue lors de la mise à jour.",
+    "update_successful": "Le groupe d'objets a été mis à jour.",
+    "return_to_overview": "Retour",
+    "object_group_count": "Nombre d'utilisateurs assignés : {{count}}",
+    "delete_disabled_tooltip": "Vous ne pouvez supprimer ce groupe d'accès aux objets qu'après avoir retiré les utilisateurs associés.",
+    "delete": "Supprimer",
+    "delete_modal": {
+      "description": "Confirmez-vous la suppression de \"<0>{{name}}</0>\" ? Cette action est irréversible.",
+      "title": "Supprimer le groupe"
+    },
+    "deleting": "Suppression",
+    "objectgroup_deletion_failed": "Une erreur est survenue lors de la suppression.",
+    "objectgroup_deletion_successful": "\"{{name}}\" a été supprimé",
+    "unsaved_changes_modal": {
+      "iwfm": {
+        "hint": "Vous allez être dirigé vers le menu <0>Droits d’accès des rôles d’utilisateurs</0> où vous pourrez attribuer des droits d’accès sur d’autres objets.",
+        "title": "Aller à Droits d’accès des rôles d’utilisateurs"
+      }
+    }
+  },
+  "back": "Retour",
+  "cancel": "Annuler",
+  "document_title": {
+    "module": "Account",
+    "context": {
+      "users": {
+        "title": "Utilisateurs",
+        "page": {
+          "overview": "Récapitulatif",
+          "create": "Créer un utilisateur",
+          "edit": "Modifier utilisateur"
+        }
+      },
+      "user_roles": {
+        "title": "Rôles",
+        "page": {
+          "overview": "Vue d’ensemble",
+          "create": "Créer un rôle",
+          "edit": "Modifier {{name}}"
+        }
+      },
+      "object_access": {
+        "title": "Groupe d'objets",
+        "page": {
+          "overview": "Récapitulatif",
+          "create": "Nouveau groupe d'accès aux objets",
+          "edit": "Modifier {{name}}"
+        }
+      }
+    }
+  },
+  "admin": "Admin",
+  "objectgroups_overview": {
+    "search_object_group": "Rechercher un groupe d'accès aux objets..."
+  },
+  "role_details": {
+    "access_type": {
+      "edit_agent_status": "Modifier le statut agent"
+    }
+  }
+}

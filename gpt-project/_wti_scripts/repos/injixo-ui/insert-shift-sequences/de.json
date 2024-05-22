@@ -1,0 +1,88 @@
+{
+  "application": {
+    "title": "Schichtfolgen einfügen",
+    "backToCapacity": "Zurück zur Kapazitätsplanung",
+    "backToSchedules": "Zurück zu Schedules"
+  },
+  "filters": {
+    "label": {
+      "planningUnit": "Planungseinheit",
+      "selection": "Auswahl",
+      "timePeriod": "Zeitraum"
+    },
+    "placeholder": {
+      "planningUnit": "Planungseinheit wählen",
+      "selection": "Auswahl festlegen"
+    },
+    "result": {
+      "noResult": "Keine Einträge"
+    }
+  },
+  "shiftSequencesTable": {
+    "heading": "Übersicht",
+    "headers": {
+      "select": "Auswählen",
+      "personnelNumber": "Personalnummer",
+      "name": "Name",
+      "shiftSequence": "Schichtfolge",
+      "sequence": "Reihenfolge",
+      "employeeRow": "Mitarbeiterzeile",
+      "referenceDate": "Referenzdatum",
+      "validFrom": "Gültig vom",
+      "validTo": "Gültig bis"
+    },
+    "dateFormat": "dd. LLL. yyyy",
+    "noData": "Keine Schichtfolgen gefunden.",
+    "singleCheckbox": "Schichtfolge auswählen",
+    "allCheckbox": "Alle Schichtfolgen auswählen"
+  },
+  "insertingOptions": {
+    "heading": "Optionen",
+    "description": "Wähle Optionen zum Einfügen der Schichtfolgen.",
+    "option1": "Ganztägige Aktivitäten löschen",
+    "option2": "Verfügbarkeitsrahmen löschen",
+    "option3": "Alle Aktivitäten und Schichten löschen"
+  },
+  "jobHistory": {
+    "heading": "Historie",
+    "headers": {
+      "select": "Auswählen",
+      "status": "Status",
+      "startedAt": "Ausgelöst am"
+    },
+    "processing": "Einfügen in Bearbeitung",
+    "viewDetails": "Details anzeigen",
+    "timeFormat": "dd. LLL. yyyy, HH:mm",
+    "singleCheckbox": "Einfügen-Job auswählen",
+    "allCheckbox": "Alle Einfügen-Jobs auswählen",
+    "noData": "Keine Einfügen-Jobs vorhanden.",
+    "clearCreatedJobs": "Einträge löschen"
+  },
+  "planning_units": "Planungseinheiten",
+  "selections": "Auswahlen",
+  "shift_sequences": "Schichtfolgen",
+  "insertion_jobs": "Einfügen-Jobs",
+  "reload": {
+    "planning_units": "Lade Planning Units neu",
+    "selections": "Lade Auswahlen neu",
+    "shift_sequences": "Lade Schichtfolgen neu",
+    "insertion_jobs": "Lade Einfügen-Jobs neu"
+  },
+  "creatingJob": {
+    "failed": "Beim Anlegen des Einfügen-Jobs ist ein Fehler aufgetreten. Versuche es erneut.",
+    "success": "Einfügen-Job erfolgreich angelegt."
+  },
+  "document_title": {
+    "module": "Plan",
+    "sub_module": "Schichtfolgen einfügen"
+  },
+  "error": {
+    "reload_resource": "Es ist ein Fehler aufgetreten. Versuche, <0>{{resource}}</0> neu zu laden, oder probiere es später noch einmal."
+  },
+  "insert_shift_sequences": "Schichtfolgen einfügen",
+  "level": {
+    "actual": "Aktueller Stand",
+    "plan": "Plan"
+  },
+  "target_level": "Zielebene"
+}

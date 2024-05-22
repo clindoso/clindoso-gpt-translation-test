@@ -1,0 +1,301 @@
+{
+  "common": {
+    "planningUnit": {
+      "no-data": "Aucun élément",
+      "label": "Unité Opérationnelle",
+      "placeholder": "Rechercher ou sélectionner"
+    },
+    "selection": {
+      "no-data": "Aucun élément",
+      "label": "Groupe",
+      "placeholder": "Rechercher ou sélectionner"
+    },
+    "employee": {
+      "no-data": "Aucun élément",
+      "label": "Agent",
+      "placeholder": "Rechercher ou sélectionner"
+    },
+    "search": {
+      "label": "Recherche",
+      "placeholder": "Recherche par nom"
+    },
+    "label": {
+      "today": "Aujourd'hui",
+      "yesterday": "Hier"
+    }
+  },
+  "table": {
+    "loading": "Chargement",
+    "no-results-header": "Aucun résultat",
+    "no-results-body": "Aucun employé ne correspond à vos filtres.",
+    "no-filter-specified-header": "Aucune sélection",
+    "no-filter-specified-body": "Sélectionner d'abord une Unité opérationnelle ou un Groupe pour afficher l'adhérence de vos employés.",
+    "header": {
+      "show-only-out-of-adherence": "Afficher uniquement les dépassements"
+    },
+    "column": {
+      "name": "Nom",
+      "actual-activity": "Activité réelle",
+      "scheduled-activity": "Activité planifiée",
+      "out-of-adherence-duration": "Durée du dépassement",
+      "current-activity-duration": "Durée de l'activité actuelle",
+      "status": "Statut"
+    },
+    "adherence-status-display": {
+      "notPresent": "Non présent",
+      "notPresentOutOfBufferTime": "Non présent",
+      "notScheduled": "Non planifié",
+      "notScheduledOutOfBufferTime": "Non planifié",
+      "wrongActivity": "Activité incorrecte",
+      "wrongActivityOutOfBufferTime": "Activité incorrecte"
+    },
+    "adherence-status": {
+      "notPresent": "Non présent (en dépassement)",
+      "notPresentInBufferTime": "Non présent (sous le seuil de tolérance)",
+      "notPresentOutOfBufferTime": "Non présent (en dépassement)",
+      "notScheduled": "Non planifié (en dépassement)",
+      "notScheduledInBufferTime": "Non planifié (sous le seuil de tolérance)",
+      "notScheduledOutOfBufferTime": "Non planifié (en dépassement)",
+      "wrongActivity": "Activité incorrecte (en dépassement)",
+      "wrongActivityInBufferTime": "Activité incorrecte (sous le seuil de tolérance)",
+      "wrongActivityOutOfBufferTime": "Activité incorrecte (en dépassement)",
+      "inAdherence": "En adhérence"
+    },
+    "staff-id": "Matricule",
+    "pin-agent": "Epingler",
+    "unpin-agent": "Détacher"
+  },
+  "adherence-score": {
+    "header": "Dépassement",
+    "connection-state": {
+      "disconnected": "Déconnecté",
+      "live": "Live"
+    },
+    "agents-in-adherence": "En adhérence",
+    "agents-in-buffer-time": "Sous le seuil de tolérance",
+    "agents-out-of-adherence": "En dépassement",
+    "last-updated": "Dernière mise à jour le {{lastUpdatedAt}}",
+    "today-so-far": "Aujourd'hui"
+  },
+  "activity-overview": {
+    "header": "Détail par activité",
+    "column": {
+      "activity": "Activité",
+      "scheduled": "Planifiés",
+      "current": "Actuel",
+      "delta": "Couverture",
+      "score": "Adhérence (activités)",
+      "breaks": "Pauses",
+      "presence": "Présence"
+    },
+    "label": {
+      "actual": "Actuel",
+      "planned": "Planifié",
+      "difference": "Différence",
+      "add-activity-to-search": "Ajouter l'activité {{activityName}} à la recherche",
+      "view-matches-for-activity": "Afficher Matches pour l'activité {{activityName}}",
+      "edit-matches-for-activity": "Modifier Matches pour l'activité {{activityName}}",
+      "no-acd-mapping-for-activity": "Aucun statut agent n'est associé à l'activité {{activityName}}"
+    },
+    "agent-overview": "Vue d'ensemble"
+  },
+  "notification": {
+    "connection": {
+      "reconnecting": "Connexion perdue. Tentative de reconnexion...",
+      "offline": "Impossible de se reconnecter. Merci de recharger la page dans quelques minutes.",
+      "session-invalid": "Vous êtes actuellement déconnecté. Connectez-vous <0>ici</0>.",
+      "label": {
+        "login-link": "Aller à la page de connexion"
+      }
+    },
+    "failure": {
+      "general": "Une erreur est survenue. Essayez à nouveau.",
+      "agent-details": "Une erreur est survenue, veuillez <0>réessayer à nouveau</0>."
+    },
+    "success": {
+      "threshold-settings": "Modifications sauvegardées."
+    }
+  },
+  "input": {
+    "omni-search": {
+      "placeholder": "Rechercher par nom, activité et statut",
+      "tooltip": "Les éléments doivent contenir deux caractères minimum et être séparés par des virgules."
+    }
+  },
+  "settings": {
+    "buffer-times": {
+      "header-edit": "Ajuster le seuil de tolérance",
+      "header-view": "Voir le seuil de tolérance",
+      "readonly-message": "Vous n'avez pas les droits pour modifier ces paramètres.",
+      "hint": "Les employés sous le seuil de tolérance n’ont pas d'impact sur le calcul de l'adhérence. Ils n’apparaîtront pas si le filtre \"Afficher uniquement les dépassements\" est sélectionné. Ce paramètre est global pour tous les utilisateurs.",
+      "apply": "Appliquer",
+      "applying": "En cours...",
+      "cancel": "Annuler",
+      "close": "Fermer",
+      "placeholder": "Rechercher ou sélectionner",
+      "no-data": "Aucun élément",
+      "load-failed": "Erreur de chargement des données. Essayez à nouveau.",
+      "update-failed": "Erreur de mise à jour des données. Essayez à nouveau.",
+      "threshold": {
+        "instantly": "Immédiat",
+        "15-seconds": "15 secondes",
+        "30-seconds": "30 secondes",
+        "1-minute": "1 minute",
+        "2-minutes": "2 minutes",
+        "3-minutes": "3 minutes",
+        "5-minutes": "5 minutes"
+      }
+    },
+    "adjust-target-score": {
+      "header": "Modifier l'objectif d'adhérence",
+      "label": "Définir l'objectif d'adhérence à :",
+      "description": "Définissez un objectif d’adhérence. Si l’adhérence est inférieure à l’objectif, elle s’affiche en rouge."
+    }
+  },
+  "matches": {
+    "label": {
+      "header-edit": "Matches",
+      "header-view": "Afficher Matches",
+      "additional-matching-activities": "Autre(s) activité(s)",
+      "no-activity-selected": "Aucune activité sélectionnée",
+      "no-activity-selected-sub": "Sélectionner une activité pour utiliser Matches",
+      "all-type": "De type ",
+      "add-activity": "Ajouter l'activité {{activityName}} à Matches",
+      "add-activity-type": "Ajouter le type d'activité {{activityType}} à Matches",
+      "remove-activity": "Supprimer l'activité {{activityName}} de Matches",
+      "remove-activity-type": "Supprimer le type d'activité {{activityType}} de Matches",
+      "type": "Type",
+      "manage-activities": "Editer",
+      "external-system-mappings": "Lien vers le système externe",
+      "manage": "Éditer dans Intraday",
+      "include-unmapped-activities": "N'afficher que les activités liées à un système externe",
+      "no-acd-mappings": "Aucune activité liée à un système externe",
+      "no-activity-matches": "Aucune autre activité",
+      "activity-mappings": "Mapping des statuts externes"
+    },
+    "link": {
+      "back-to-adherence": "Retour au menu Adherence"
+    },
+    "placeholder": {
+      "search-activity": "Rechercher une activité",
+      "search-activity-name-or-type": "Rechercher une activité par nom ou par type"
+    },
+    "button": {
+      "apply": "Appliquer",
+      "applying": "En cours...",
+      "cancel": "Annuler"
+    },
+    "activityType": {
+      "present": "Présence",
+      "holiday": "Congés",
+      "break": "Pause",
+      "absence": "Absence",
+      "meeting": "Meeting",
+      "illness": "Maladie"
+    },
+    "notification": {
+      "success": {
+        "manage-activities": "Les modifications ont été sauvegardées et appliquées avec succès."
+      },
+      "error": {
+        "manage-activities": "Une erreur est survenue. Essayez à nouveau."
+      }
+    }
+  },
+  "heading": {
+    "intraday-adherence": "Adhérence intrajournalière",
+    "real-time-adherence": "Adhérence Temps Réel"
+  },
+  "info": {
+    "activity": {
+      "offline": "Cette activité est affichée lorsque l'employé n'a pas de statut ACD"
+    }
+  },
+  "label": {
+    "activity": {
+      "no-scheduled": "Aucune activité planifiée",
+      "offline": "Hors ligne"
+    },
+    "agent-details": {
+      "schedule": "Planning",
+      "retry": "Essayer à nouveau",
+      "actual": "Actuel",
+      "insights-heading": "Vue détaillée du dépassement"
+    },
+    "business-hours": "Heures d'ouverture",
+    "close-agent-details": "Fermer le détail de l'agent",
+    "highcharts": {
+      "decimal-point": ",",
+      "reset-zoom": "Réinitialiser le zoom"
+    },
+    "scheduled-time": "Planifiées",
+    "adherence-status": {
+      "notPresent": "Non présent",
+      "notScheduled": "Non planifié",
+      "wrongActivity": "Activité incorrecte"
+    },
+    "return-to-agent-details": "Retour",
+    "timezoneInfo": "Le fuseau horaire est : ({{timezoneOffset}}) {{timezoneName}}",
+    "quarterly-adherence": "Moyenne sur 15 minutes",
+    "average-adherence": "Moyenne journalière"
+  },
+  "historical-adherence": {
+    "column": {
+      "score": "Adhérence"
+    },
+    "pagination": {
+      "current-page": "Page actuelle",
+      "page": "Page",
+      "ellipsis": "Ellipsis",
+      "previous-page": "Page précédente",
+      "next-page": "Page suivante",
+      "previous-month": "Mois précédent",
+      "next-month": "Mois suivant",
+      "previous-day": "Jour précédent",
+      "next-day": "Jour suivant"
+    },
+    "error": {
+      "reload_resource": "Une erreur est survenue. Essayez à nouveau.",
+      "no-data": "Aucune donnée d'adhérence n'est disponible pour la date sélectionnée. Une intégration peut être interrompue. Veuillez contacter une personne disposant d'un accès Admin."
+    },
+    "chart": {
+      "targetScore": "Objectif"
+    },
+    "reload_adherence": "Recharger le module Adhérence",
+    "adherence": "Adhérence",
+    "agent-details": {
+      "heading": "Adhérence intrajournalière agent",
+      "table": {
+        "heading": "Détails des dépassements",
+        "column": {
+          "time-range": {
+            "label": "Période"
+          }
+        }
+      },
+      "no-filter-specified-body": "Vous devez sélectionner une unité opérationnelle et un agent pour visualiser l'adhérence.",
+      "daily-overview": {
+        "header": "Vue journalière",
+        "no-score": "Aucun score"
+      },
+      "edit-actual-activities": {
+        "button": {
+          "label": "Modifier les activités effectuées"
+        }
+      }
+    },
+    "report": {
+      "button_cancel": "Annuler",
+      "button_download": "Télécharger le rapport",
+      "button_open": "Télécharger le rapport",
+      "date_range_label": "Période du rapport",
+      "modal_content": "Le Rapport d’adhérence (fichier CSV) inclut toutes les données d’adhérence pour les activités et le temps de travail.",
+      "modal_title": "Télécharger le rapport",
+      "toast_success": "Le téléchargement commencera dans quelques secondes."
+    }
+  },
+  "unknown_activity": {
+    "name": "Activité inconnue",
+    "type": "type inconnu"
+  }
+}

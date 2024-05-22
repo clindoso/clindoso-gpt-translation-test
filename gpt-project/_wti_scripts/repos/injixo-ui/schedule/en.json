@@ -1,0 +1,368 @@
+{
+  "activityDetails": {
+    "comment": "comment"
+  },
+  "filter": {
+    "selection": {
+      "placeholder": "Choose selection"
+    },
+    "planningUnit": {
+      "placeholder": "Search planning units",
+      "label": "Planning unit",
+      "all": "All planning units",
+      "multiple": "Planning units"
+    },
+    "employeeFilter": {
+      "placeholder": "Choose an Employee Filter",
+      "label": "Employee Filter"
+    },
+    "search": {
+      "placeholder": "Search Employees"
+    },
+    "level": {
+      "singleLevel": "Level",
+      "multipleLevel": "Levels"
+    },
+    "noResults": "No results found"
+  },
+  "navigation": {
+    "today": "Today",
+    "current-month": "Current Month",
+    "current-week": "Current Week",
+    "next-month": "Next Month",
+    "next-week": "Next Week",
+    "optimization": {
+      "menu": "Context menu"
+    },
+    "tomorrow": "Tomorrow"
+  },
+  "table": {
+    "level": "Level",
+    "loading": "Loading"
+  },
+  "level": {
+    "plan": {
+      "name": "Schedule"
+    },
+    "final": {
+      "name": "Actual"
+    },
+    "availabilities": {
+      "name": "Availability"
+    },
+    "wishes": {
+      "name": "Request"
+    },
+    "alternativeWishes": {
+      "name": "Alternative request"
+    },
+    "absenceWishes": {
+      "name": "Time off request"
+    },
+    "backup": {
+      "name": "Version 1"
+    },
+    "backupVersion2": {
+      "name": "Version 2"
+    },
+    "backupVersion3": {
+      "name": "Version 3"
+    }
+  },
+  "sort": {
+    "key": {
+      "name": "Employee Name",
+      "diff": "Difference",
+      "actual": "Actual",
+      "contractual": "Contractual",
+      "startTime": "Start Time",
+      "activityName": "Activity Name",
+      "activity": "Activity",
+      "sum": "Sum",
+      "userName": "Name",
+      "changedAt": "Date and time",
+      "changedReason": "Action"
+    },
+    "level": {
+      "menu": "Sort by level"
+    }
+  },
+  "edit": {
+    "title": {
+      "editlevel": "Edit Level",
+      "quote": "“",
+      "unquote": "”",
+      "of": "of",
+      "shiftFrom": "Shift from"
+    },
+    "cancel": "Cancel",
+    "save": "Save",
+    "saving": "Saving",
+    "deleteAll": "Delete all Activities",
+    "problem": "Problem",
+    "activitiesTab": {
+      "title": "Edit",
+      "activityType": "Activity Type",
+      "addNewActivity": "Add new Activity",
+      "addNewFullDayActivity": "Add new Full-Day Activity",
+      "noActivitiesInShift": "There are no activities in this shift.",
+      "startTime": "Start date and time",
+      "startDate": "Start Date",
+      "endTime": "End date and time",
+      "endDate": "End Date",
+      "planningUnitTimezoneDiff": "Time difference of the planning unit",
+      "userTimezoneDiff": "Time difference of the user",
+      "validation": {
+        "onlyOneFullDayActivityAllowed": "Only one full-day activity allowed",
+        "noActivityOfThisTypeAvailable": "No activity of this type available"
+      }
+    },
+    "historyTab": {
+      "title": "History",
+      "noHistoryInShift": "There are no history entries for this shift."
+    },
+    "savedSuccessfully": "Saved successfully",
+    "planDataType": {
+      "activity": "Activity",
+      "full_day_activity": "Full-Day Activity"
+    },
+    "activityType": {
+      "present": "Present",
+      "holiday": "Holiday",
+      "break": "Break",
+      "absence": "Absence",
+      "meeting": "Meeting",
+      "illness": "Illness"
+    },
+    "shortcuts": {
+      "copyAction": "copy to",
+      "moveAction": "moving to",
+      "copyErrorTitle": "Conflict copying shift",
+      "moveErrorTitle": "Conflict moving shift",
+      "deleteErrorTitle": "Conflict deleting shift",
+      "errorDismiss": "Close",
+      "genericShortcutError": "There was a problem changing the shifts. Please try again later."
+    },
+    "message": {
+      "invalidParams": "Choose valid planning unit or employee"
+    },
+    "unsavedChanges": {
+      "continue": "Discard changes",
+      "abort": "Stay",
+      "hint": "You have made changes that will be lost if you leave this page.",
+      "continueQuestion": "Are you sure you wish to continue and discard these changes?",
+      "title": "Unsaved changes"
+    },
+    "unsavedChangesOverwriteOtherData": {
+      "continue": "Save anyway",
+      "abort": "Cancel",
+      "hint": "You have made changes in other tabs that will be lost if you choose to continue.",
+      "continueQuestion": "Are you sure you wish to save the current tab and discard all other changes?",
+      "title": "Unsaved changes in other tabs"
+    },
+    "deleteBlock": {
+      "abort": "Cancel",
+      "continue": "Delete Block",
+      "info": "If you want to modify the current schedule you need to delete the block first.",
+      "title": "Conflict while saving",
+      "warning": "All current changes will be lost"
+    },
+    "activities": {
+      "heading": "Activities",
+      "warning": {
+        "full_day_override": "This full-day activity will replace all activities after you click Save."
+      }
+    },
+    "comment": {
+      "error": {
+        "loading": "The comment could not be loaded. Try again later.",
+        "save": "The comment could not be saved. Try again later."
+      },
+      "heading": "Comment",
+      "placeholder": "Write a comment for this day (no more than 250 characters).",
+      "warning": {
+        "length": "The comment is too long. You can use up to 250 characters."
+      }
+    },
+    "history": {
+      "heading": "History"
+    },
+    "inline-message": {
+      "overlapping-activities": {
+        "text": "You have overlapping activities. Change the end or start time of the affected activities. If you do not remove the overlap, injixo shortens the duration of the first activity."
+      }
+    }
+  },
+  "error": {
+    "default": "An error occurred while requesting data",
+    "websocket": "Service cannot be reached. Attempting to make new connection.",
+    "activitiesPermissionDenied": "You do not have the appropriate rights for one or multiple selected activities."
+  },
+  "select": {
+    "all": "All",
+    "noResults": "Nothing found",
+    "activities": {
+      "placeholder": "Choose Activity"
+    },
+    "dayPicker": {
+      "placeholder": "Choose Day"
+    }
+  },
+  "coverage": {
+    "type": "Type",
+    "panelStatusIndicator": {
+      "closePanel": "close coverage panel",
+      "openPanel": "open coverage panel"
+    },
+    "tabs": {
+      "activitiesCoverage": "Activities - Coverage",
+      "activitiesRequirements": "Activities - Requirements",
+      "activitiesStaffings": "Activities - Staffing"
+    },
+    "loadingIndicator": "Coverage data loading",
+    "filterPlaceholder": "Search by activity name or type",
+    "noPlanningUnitSelected": "No planning unit chosen.",
+    "noActivitiesSelected": "No activities selected.",
+    "noActivitiesSelectedHint": "Use the filter icon above to filter your activities.",
+    "detailsPopover": {
+      "interval": "Interval",
+      "staffings": "Staffing",
+      "requirements": "Requirements",
+      "coverage": "Coverage"
+    }
+  },
+  "planDataHistory": {
+    "actions": {
+      "applyShiftSequences": "Entering shift sequences",
+      "assignCoachedShifts": "Copy coach's Shift",
+      "cancelMeeting": "Cancel meeting",
+      "confirmSchedule": "Request granted",
+      "copyNPasteOperation": "Day contents generated (copy and paste)",
+      "cutNPasteOperation": "Day contents generated (cut and paste)",
+      "deleteFulldayBlock": "Deletion (related full-day activities)",
+      "deleteFulldayContent": "Deletion (full-day activities)",
+      "deleteOrdinaryContent": "Deletion (activities and shifts)",
+      "deleteSchedule": "Manual deletion (entry)",
+      "deleteShiftsNodesk": "Deletion of shift assignment",
+      "detachShiftReference": "Items dissociated from shift concept",
+      "detachShiftReferenceEx": "Items dissociated from shift concept, activities replaced",
+      "eraseToplayer": "Deletion (all day contents)",
+      "exchangingContent": "Shift swap",
+      "importingAcdData": "Import (External System)",
+      "massInsert": "Mass Insert",
+      "moveContentTo": "Displacement (full contents of a day to an employee)",
+      "moveScheduleTo": "Displacement (data to an employee)",
+      "planToFinalCopy": "Copy (from level Schedule to level Actual)",
+      "removeAssignedDesks": "Revocation of workplace allocation",
+      "rescheduleToplayer": "Restoration (previous status from history)",
+      "restoreFromBackup": "Restore (day contents from level Version 1)",
+      "restorePrevWorkOnFulldayWork": "Replacement (full-day activity with a previous status from the history)",
+      "rollbackToplayer": "Restoration (of a history layer, involving older history loss)",
+      "saveAsBackup": "Save (day contents on level Version 1)",
+      "scheduleBlockApprove": "Approve request",
+      "scheduleBlockDelete": "Delete request",
+      "scheduleBlockReject": "Reject request",
+      "scheduleBlockRequest": "Insert request",
+      "slideContent": "Displacement (full contents of a day by a time period)",
+      "staffDischarge": "Employee left company",
+      "unspecific": "Unknown",
+      "writeAtomicMeeting": "Enter meeting",
+      "writeCorridorFixing": "Specification (breaks in a day model)",
+      "writeNewToplayer": "Overwriting (all day contents)",
+      "writeSchedule": "Manual modification (entry)",
+      "writeScheduleRepeated": "Entry (to successive days)",
+      "writeScheduleToGroup": "Entry (selection)"
+    },
+    "nameUnknown": "Unknown"
+  },
+  "button": {
+    "jump-date_one": "{{count}}  day",
+    "jump-date_other": "{{count}} days"
+  },
+  "scheduling-actions": {
+    "cancel": "Cancel",
+    "insert-shift-sequences-link": "Insert shift sequences",
+    "copy-level-content-link": "Copy level content",
+    "create-optimized-schedule-link": "Create optimized schedule",
+    "create-optimized-schedule": {
+      "background-job": "Create optimized schedule starts a background process. To see the status, check the <0>JobProcessor</0>.",
+      "content-label": "Create optimized schedule modal",
+      "optimize-again": "Optimize again",
+      "request-error": "Failed to create optimized schedule",
+      "request-not-successful": "Create optimized schedule could not be started. Please try again.",
+      "request-sent": "Create optimized schedule in progress. View progress in JobProcessor.",
+      "submit": "Create optimized schedule",
+      "title": "Create optimized schedule",
+      "request-action": "JobProcessor"
+    },
+    "date-range": "Date range",
+    "empty-levels-link": "Empty levels",
+    "error": {
+      "incomplete-form": "The form data is incomplete. Make sure you correct all highlighted fields.",
+      "planning-unit": "A planning unit must be selected"
+    },
+    "extra-activities-link": "Schedule extra activities",
+    "job-optimizer-link": "Job optimization",
+    "job-optimizer": {
+      "background-job": "Job optimization starts a background process. To see the status, check the <0>JobProcessor</0>.",
+      "request-error": "Failed to start job optimization",
+      "request-not-successful": "Job optimization could not be started. Please try again.",
+      "request-sent": "Job optimization in progress. View progress in JobProcessor.",
+      "submit": "Start job optimization",
+      "title": "Job optimization"
+    },
+    "optimize-breaks-link": "Optimize breaks",
+    "placeholder": {
+      "dropdown": "Search or select",
+      "no-results": "No results"
+    },
+    "planning-unit": "Planning unit",
+    "replace-activities-link": "Replace activities",
+    "scheduling-actions": "Scheduling actions",
+    "scheduling-periods-link": "Scheduling periods",
+    "selection": "Selection",
+    "shift-exchange-overview-link": "Approve shift swaps",
+    "schedule-change-notifications": {
+      "employee": {
+        "description": "Select the people you want to notify about their schedule changes.",
+        "empty": "No people found",
+        "empty-details": "Change the planning unit, selection, or date range.",
+        "heading": "People ({{amountSelected}}/{{amountTotal}} selected)",
+        "name": "Name"
+      },
+      "error": "The notifications could not be sent.",
+      "scheduling-period-error": "Not all of the selected dates are within published scheduling periods. Manage your <0>scheduling periods</0>.",
+      "submit_zero": "Notify people",
+      "submit_one": "Notify {{count}} person",
+      "submit_other": "Notify {{count}} people",
+      "success": "The notifications were sent.",
+      "title": "Notify people"
+    },
+    "create-schedule": {
+      "request-error": "Failed to create schedule",
+      "request-not-successful": "Schedule creation could not be started. Please try again.",
+      "request-sent": "Schedule creation in progress.",
+      "submit": "Create schedule",
+      "title": "Create schedule"
+    },
+    "schedule-requests": {
+      "request-not-successful": "Schedule creation could not be started. Please try again.",
+      "request-sent": "Schedule creation in progress."
+    }
+  },
+  "tooltip": {
+    "employee-name": "Show employee details"
+  },
+  "document_title": {
+    "context": "Schedules",
+    "module": "Plan",
+    "page": {
+      "edit": "Edit shift"
+    }
+  },
+  "schedules": {
+    "schedule-change-notifications": {
+      "search-placeholder": "Search by name"
+    }
+  }
+}

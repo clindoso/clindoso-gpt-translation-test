@@ -1,0 +1,195 @@
+{
+  "button-title": {
+    "context-menu": {
+      "show": "Opties"
+    },
+    "fullscreen": {
+      "enter": "Ga naar volledig scherm",
+      "leave": "Volledig scherm verlaten"
+    },
+    "table": {
+      "copy": "Tabel kopiëren naar klembord",
+      "hide": "Toon grafiek",
+      "show": "Toon tabel"
+    }
+  },
+  "label": {
+    "button": {
+      "cancel": "Annuleren",
+      "close-edit-mode": "Sluit de bewerkingsmodus",
+      "copy": "Dupliceer dashboard",
+      "create-new": "Nieuw dashboard maken",
+      "delete": "Verwijderen",
+      "edit": "Bewerken",
+      "save": "Opslaan",
+      "toggle-auto-refresh": "Auto-Refresh"
+    },
+    "copy-prefix": "Copy of",
+    "datepicker": {
+      "rolling-dates": "Gebruik relatieve datums"
+    },
+    "empty-name": "Naam mag niet leeg zijn",
+    "highcharts": {
+      "date": "Datum",
+      "decimal-point": ",",
+      "reset-zoom": "Zoom resetten",
+      "thousands-sep": "."
+    },
+    "invalid-name": "Name has already been taken",
+    "layout": "Lay-out",
+    "loading": "Loading",
+    "name": "Naam",
+    "timezone-info": "All times are in:",
+    "tree": {
+      "activities": "Activiteiten",
+      "activity-type": {
+        "absence": "Afwezigheid",
+        "break": "Pauze",
+        "holiday": "Vakantie",
+        "illness": "Ziek",
+        "meeting": "Vergadering",
+        "present": "Aanwezigheid"
+      },
+      "no-data": "Geen items",
+      "planning-units": "Eenheden",
+      "shifts": "Diensten",
+      "totals": "Totalen",
+      "totals-prefix": "Totaal",
+      "workloads": "Workloads",
+      "wfm-queues": "WFM Queues"
+    },
+    "last-updated-info": "Last updated",
+    "auto-refresh-hint": "auto-refresh",
+    "cannot-check": "Verifying the name is currently not possible.",
+    "error-deleting-dashboard": "An error occurred while deleting the Dashboard.",
+    "error-loading-dashboard": "Er is een probleem opgetreden tijdens het laden van dit dashboard. Je kunt <0>nu opnieuw laden</0> of probeer het later nog eens.",
+    "error-loading-dashboard-list": "List of existing Dashboards can not be loaded.",
+    "error-loading-nodes": "A problem occurred while loading the key data. You can <0>reload now</0> or try again later.",
+    "error-saving-dashboard": "An error occurred while saving the Dashboard."
+  },
+  "level": {
+    "absence-wishes": "Vakantie-/Afwezigheidswens",
+    "acd": "Extern Systeem",
+    "actual": "Huidige Staat",
+    "backup": "Versie 1",
+    "backup_version_2": "Versie 2",
+    "forecast": "Voorspelling",
+    "historic": "Historie",
+    "plan": "Planning",
+    "wishes": "Verzoeken",
+    "backup_version_3": "Versie 3"
+  },
+  "modal": {
+    "change-layout": {
+      "cancel": "Huidige indeling behouden",
+      "confirm": "Opmaak veranderen",
+      "title": "Opmaak Veranderen",
+      "warning": "Als je de lay-out wijzigt, wordt minstens één grafiek verwijderd. Weet je zeker dat je verder wilt gaan?"
+    },
+    "delete-dashboard": {
+      "cancel": "Dashboard bewaren",
+      "confirm": "Dashboard verwijderen",
+      "title": "Wil je dit dashboard verwijderen?",
+      "warning": "Je staat op het punt dit Dashboard te verwijderen."
+    },
+    "graph-settings": {
+      "aggregation": {
+        "by-day": "Per dag",
+        "by-interval": "Per interval",
+        "label": "Geaggregeerde gegevens",
+        "not-available": "Intervalgegevens kunnen niet worden geselecteerd voor deze periode"
+      },
+      "color": "Kleur",
+      "title": "Grafiek aanpassen",
+      "type": {
+        "histogram": "Histogram",
+        "label": "Type",
+        "step": "Stap"
+      },
+      "y-axis": {
+        "label": "Y-as weergeven op",
+        "left": "Links (standaard)",
+        "right": "Rechts"
+      }
+    },
+    "unsaved-changes": {
+      "discard": "Wijzigingen opslaan",
+      "stay": "Sla wijzigingen niet op",
+      "title": "Niet-opgeslagen wijzigingen in je dashboard",
+      "warning": "Je dashboard bevat niet-opgeslagen wijzigingen. Wil je de wijzigingen opslaan?"
+    }
+  },
+  "notification": {
+    "failure": {
+      "general": "An error has occured. Please try again later."
+    },
+    "success": {
+      "saved": "Dashboard opgeslagen"
+    }
+  },
+  "placeholder": {
+    "chart-title": "Grafiek zonder titel",
+    "dashboard-dropdown": "Selecteer Dashboard",
+    "dashboard-name": "Dashboard zonder titel",
+    "drop_target": "Sleep waarden hierheen om een grafiek te maken",
+    "no-series": "Geen grafiek geselecteerd",
+    "search": "Zoek Workloads of Eenheden",
+    "type-dropdown": "Selecteer Type"
+  },
+  "table": {
+    "timestamp": "Timestamp"
+  },
+  "tooltip": {
+    "copied": "Gegevens gekopieerd naar klembord",
+    "datepicker": {
+      "rolling-dates": "Als je dit selectievakje inschakelt, wordt de geselecteerde datum / reeks elke dag 1 dag verplaatst"
+    },
+    "no-data": "Geen gegevens in deze periode",
+    "version-mismatch": "The data is calculated now, reload the page to view it.",
+    "toggle-auto-refresh": "Refresh gegevens automatisch elke 15 min",
+    "not-existing": "This workload does not exist anymore. Delete or replace it by editing the dashboard.",
+    "no-permission": "Je hebt geen rechten om deze gegevens te bekijken.",
+    "no-business-hours": "Geen openingstijden bekend"
+  },
+  "hint": {
+    "auto-refresh-enabled": "Auto-Refresh enabled"
+  },
+  "values": {
+    "planning-unit": {
+      "coverage": "Dekking",
+      "requirement": "Behoefte",
+      "staffing": "Bezetting"
+    },
+    "shift": {
+      "coverage_including_wishes": "Dekking Inclusief Verzoeken",
+      "wishes": "Verzoeken"
+    },
+    "workload": {
+      "aht": "AHT {{channel}}",
+      "answered": "Beantwoorde {{channel}}",
+      "channel": {
+        "calls": "Calls",
+        "cases": "Cases",
+        "chats": "Chats",
+        "documents": "Documents",
+        "social_media": "Social Media",
+        "emails": "Emails"
+      },
+      "forecast": "Forecast",
+      "offered": "Aangeboden {{channel}}",
+      "operational": "Operationeel",
+      "strategic": "Strategisch",
+      "total_handling_time": "Totale Afhandeltijd",
+      "abandon_rate": "Abandon Rate",
+      "abandoned": "Onbeantwoord {{channel}}",
+      "answered_within_service_level": "Beantwoord {{channel}}  Binnen het Service Level",
+      "average_speed_of_answered": "Average Speed Of Answer",
+      "import": "Import",
+      "service_level_historical": "Service Level",
+      "waiting_time_until_answered": "Gemiddelde wachttijd"
+    }
+  },
+  "document_title": {
+    "module": "Dashboards"
+  }
+}

@@ -1,0 +1,195 @@
+{
+  "button-title": {
+    "context-menu": {
+      "show": "Opzioni"
+    },
+    "fullscreen": {
+      "enter": "Modo schermo intero",
+      "leave": "Esci da schermo intero"
+    },
+    "table": {
+      "copy": "Copia la tabella negli appunti",
+      "hide": "Mostra grafico",
+      "show": "Mostra tabella"
+    }
+  },
+  "label": {
+    "button": {
+      "cancel": "Annulla",
+      "close-edit-mode": "Chiudi la modalità Modifica",
+      "copy": "Duplica pannello di controllo",
+      "create-new": "Crea nuovo pannello di controllo",
+      "delete": "Elimina",
+      "edit": "Modifica",
+      "save": "Salva",
+      "toggle-auto-refresh": "Aggiorna automaticamente"
+    },
+    "copy-prefix": "Copia di",
+    "datepicker": {
+      "rolling-dates": "Usa le date disponibili"
+    },
+    "empty-name": "Il nome non deve essere vuoto",
+    "highcharts": {
+      "date": "Data",
+      "decimal-point": ".",
+      "reset-zoom": "Ripristina zoom",
+      "thousands-sep": ","
+    },
+    "invalid-name": "Nome già in uso",
+    "layout": "Layout",
+    "loading": "Caricamento",
+    "name": "Nome",
+    "timezone-info": "Tutti gli orari sono in:",
+    "tree": {
+      "activities": "Attività",
+      "activity-type": {
+        "absence": "Assenza",
+        "break": "Pausa",
+        "holiday": "Ferie",
+        "illness": "Malattia",
+        "meeting": "Meeting",
+        "present": "Presenza"
+      },
+      "no-data": "Nessun oggetto",
+      "planning-units": "Unità di pianificazione",
+      "shifts": "Turni",
+      "totals": "Totali",
+      "totals-prefix": "Totale",
+      "workloads": "Workload",
+      "wfm-queues": "Code WFM"
+    },
+    "last-updated-info": "Ultimo aggiornamento",
+    "auto-refresh-hint": "auto-refresh",
+    "cannot-check": "Al momento non è possibile verificare il nome.",
+    "error-deleting-dashboard": "Si è verificato un errore durante l'eliminazione della dashboard.",
+    "error-loading-dashboard": "Si è verificato un problema durante il caricamento di questa dashboard. Puoi <0>ricaricare ora</0> o riprovare più tardi.",
+    "error-loading-dashboard-list": "L'elenco delle dashboard esistenti non può essere caricato.",
+    "error-loading-nodes": "Si è verificato un problema durante il caricamento dei dati chiave. Puoi <0>ricaricare ora</0> o riprovare più tardi.",
+    "error-saving-dashboard": "Si è verificato un errore durante il salvataggio della dashboard."
+  },
+  "level": {
+    "absence-wishes": "Richieste di Ferie/Assenza",
+    "acd": "Sistema Esterno",
+    "actual": "Stato Effettivo",
+    "backup": "Versione salvata 1",
+    "backup_version_2": "Versione salvata 2",
+    "forecast": "Previsione",
+    "historic": "Storico",
+    "plan": "Piano",
+    "wishes": "Richieste",
+    "backup_version_3": "Versione salvata 3"
+  },
+  "modal": {
+    "change-layout": {
+      "cancel": "Mantieni layout attuale",
+      "confirm": "Cambia layout",
+      "title": "Cambia layout",
+      "warning": "La modifica del layout rimuoverà almeno un grafico. Sei sicuro di voler procedere?"
+    },
+    "delete-dashboard": {
+      "cancel": "Mantieni pannello di controllo",
+      "confirm": "Elimina pannello di controllo",
+      "title": "Vuoi eliminare questo pannello di controllo?",
+      "warning": "Stai per eliminare questo pannello di controllo."
+    },
+    "graph-settings": {
+      "aggregation": {
+        "by-day": "Per giorno",
+        "by-interval": "Per intervallo",
+        "label": "Dati aggregati",
+        "not-available": "I dati dell'intervallo non possono essere selezionati per questo range"
+      },
+      "color": "Colore",
+      "title": "Personalizza il grafico",
+      "type": {
+        "histogram": "Istogramma",
+        "label": "Tipo",
+        "step": "Passo"
+      },
+      "y-axis": {
+        "label": "Mostra asse y",
+        "left": "Sinistra (impostazione predefinita)",
+        "right": "Destra"
+      }
+    },
+    "unsaved-changes": {
+      "discard": "Scarta le modifiche",
+      "stay": "Non salvare le modifiche",
+      "title": "Modifiche non salvate nella dashboard",
+      "warning": "La dashboard contiene modifiche non salvate. L'uscita dalla modalità di modifica annullerà tutte le modifiche. Vuoi davvero continuare?"
+    }
+  },
+  "notification": {
+    "failure": {
+      "general": "C'è stato un errore. Per favore riprova più tardi."
+    },
+    "success": {
+      "saved": "Dashboard salvata con successo"
+    }
+  },
+  "placeholder": {
+    "chart-title": "Grafico senza titolo",
+    "dashboard-dropdown": "Seleziona dashboard",
+    "dashboard-name": "Dashboard senza titolo",
+    "drop_target": "Trascina i valori qui per creare un grafico",
+    "no-series": "Nessun grafico selezionato",
+    "search": "Cerca Workload o Unità di Pianificazione",
+    "type-dropdown": "Seleziona il tipo"
+  },
+  "table": {
+    "timestamp": "Timestamp"
+  },
+  "tooltip": {
+    "copied": "Dati copiati negli appunti",
+    "datepicker": {
+      "rolling-dates": "Selezionando questo checkbox, la data/intervallo selezionato verrà spostata di 1 giorno ogni giorno"
+    },
+    "no-data": "Nessun dato in questo intervallo di date",
+    "version-mismatch": "The data is calculated now, reload the page to view it.",
+    "toggle-auto-refresh": "Aggiorna i dati automaticamente ogni 15 minuti",
+    "not-existing": "Questo workload non esiste più. Eliminalo o sostituiscilo modificando la dashboard.",
+    "no-permission": "Non disponi delle autorizzazioni per visualizzare questi dati",
+    "no-business-hours": "No Business Hours available"
+  },
+  "hint": {
+    "auto-refresh-enabled": "Auto-Refresh attivato"
+  },
+  "values": {
+    "planning-unit": {
+      "coverage": "Copertura",
+      "requirement": "Fabbisogno",
+      "staffing": "Occupazione"
+    },
+    "shift": {
+      "coverage_including_wishes": "Copertura includendo le Richieste",
+      "wishes": "Richieste"
+    },
+    "workload": {
+      "aht": "AHT {{channel}}",
+      "answered": "{{channel}} Risposte",
+      "channel": {
+        "calls": "Chiamate",
+        "cases": "Casi",
+        "chats": "Chats",
+        "documents": "Documenti",
+        "social_media": "Social Media",
+        "emails": "Emails"
+      },
+      "forecast": "Forecast",
+      "offered": "Entranti {{channel}}",
+      "operational": "Operativo",
+      "strategic": "Strategico",
+      "total_handling_time": "Tempo totale di gestione",
+      "abandon_rate": "Tasso di abbandono",
+      "abandoned": "{{channel}} Abbandonate",
+      "answered_within_service_level": "{{channel}} Risposte entro il Livello di Servizio",
+      "average_speed_of_answered": "Velocità Media di Risposta",
+      "import": "Importare",
+      "service_level_historical": "Livello di Servizio",
+      "waiting_time_until_answered": "Tempo di Attesa Prima della Risposta"
+    }
+  },
+  "document_title": {
+    "module": "Dashboard"
+  }
+}

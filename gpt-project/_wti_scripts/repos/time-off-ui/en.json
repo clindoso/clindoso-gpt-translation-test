@@ -1,0 +1,871 @@
+{
+  "time_off_overview": {
+    "confirmation_modal": {
+      "cancel": "Cancel"
+    },
+    "approved": "Approved",
+    "cancellation_requested": "Cancellation requested",
+    "decided": "Decided",
+    "heading": "Time-off requests",
+    "page_title": "Time Off | injixo",
+    "rejected": "Rejected",
+    "requested": "Time off requested",
+    "canceled": "Canceled",
+    "comment": {
+      "placeholder": "Add your comment",
+      "label": "Comment",
+      "optional": "optional"
+    },
+    "employee_balances": "Personal balances",
+    "manual_action_required": "Update the schedule manually",
+    "processing": "Requests pending",
+    "recommendation": {
+      "approval": "Approve",
+      "pending": "Pending",
+      "rejection": "Reject",
+      "cancellation": "Cancel",
+      "not_possible": "No smart recommendation possible",
+      "outdated": "Creating smart recommendation"
+    },
+    "time_off_configuration": "Time Off configuration",
+    "valuation": {
+      "conflict": {
+        "reason": "The time to be booked may change because {{ username }} has submitted at least one more time-off request for this week."
+      }
+    },
+    "action": {
+      "approve": {
+        "error": {
+          "already_decided": "There is already a decision for this time-off request.",
+          "generic": "The time-off request could not be approved."
+        },
+        "go_to_decided": "Go to decided",
+        "hint": "The time off will be added to the schedule.",
+        "label": "Approve time off",
+        "submit": "Confirm",
+        "submitting": "Approving time off",
+        "success": "Time off approved"
+      },
+      "approve_cancellation": {
+        "error": {
+          "generic": "The time off has already been canceled."
+        },
+        "label": "Cancel time off",
+        "no_sync_hint": "injixo will not update the person’s schedule automatically. Check and update it manually, if required.",
+        "submit": "Confirm cancellation",
+        "submitting": "Canceling time off",
+        "success": "Time off canceled"
+      },
+      "cancel": {
+        "error": {
+          "already_canceled": "The time off has already been canceled.",
+          "generic": "The time off could not be canceled."
+        },
+        "label": "Cancel time off",
+        "no_sync_hint": "injixo will not update the person’s schedule automatically. Check and update it manually, if required.",
+        "submit": "Confirm cancellation",
+        "submitting": "Canceling time off",
+        "success": "Time off canceled"
+      },
+      "recommend_approval": {
+        "error": {
+          "already_recommended": "Recommendation has already been made",
+          "generic": "Recommending approval failed"
+        },
+        "label": "Recommend approval",
+        "submit": "Confirm",
+        "submitting": "Recommending approval",
+        "success": "Approval recommended"
+      },
+      "recommend_cancellation_approval": {
+        "error": {
+          "generic": "Failed to recommend cancellation approval."
+        },
+        "label": "Recommend cancellation",
+        "submit": "Confirm",
+        "submitting": "Recommending cancellation",
+        "success": "Cancellation approval recommended"
+      },
+      "recommend_cancellation_rejection": {
+        "error": {
+          "generic": "Failed to recommend cancellation rejection."
+        },
+        "label": "Recommend rejection",
+        "submit": "Confirm",
+        "submitting": "Recommending rejection",
+        "success": "Cancellation rejection recommended"
+      },
+      "recommend_rejection": {
+        "error": {
+          "already_recommended": "Recommendation has already been made",
+          "generic": "Recommending rejection failed"
+        },
+        "label": "Recommend rejection",
+        "submit": "Confirm",
+        "submitting": "Recommending rejection",
+        "success": "Rejection recommended"
+      },
+      "reject": {
+        "error": {
+          "already_decided": "There is already a decision for this time-off request.",
+          "generic": "The time-off request could not be rejected."
+        },
+        "go_to_decided": "Go to decided",
+        "label": "Reject",
+        "submit": "Confirm",
+        "submitting": "Rejecting time-off request",
+        "success": "Time-off request rejected"
+      },
+      "reject_cancellation": {
+        "error": {
+          "generic": "The cancellation request could not be rejected."
+        },
+        "label": "Reject",
+        "submit": "Confirm",
+        "submitting": "Rejecting cancellation",
+        "success": "Cancellation request rejected"
+      }
+    },
+    "comments_one": "1 comment",
+    "comments_other": "{{count}} comments",
+    "created_at": "Requested on {{datetime}}",
+    "empty_state": {
+      "cancellation_requested": {
+        "description": "When people want to cancel approved time off, you can find their requests here. <br />Looking for decided requests? Go to the <decidedLink>Decided</decidedLink> tab.",
+        "title": "No cancellation requests"
+      },
+      "decided": {
+        "description": "Once time-off and cancellation requests have been decided on, you will find them here.",
+        "title": "No time-off requests with a decision"
+      },
+      "no_results": {
+        "action": "Reset filters and search",
+        "description": "Change or reset your filters and search.",
+        "title": "No requests found"
+      },
+      "requested": {
+        "description": "When people request time off, you’ll find their requests here. <br />Looking for decided requests? Go to the <decidedLink>Decided</decidedLink> tab.",
+        "title": "No time-off requests"
+      }
+    },
+    "filter": {
+      "planning_units": {
+        "empty": "No planning units",
+        "label": "Planning units",
+        "search": "Search planning units",
+        "select_all": "All planning units"
+      },
+      "recommendations": {
+        "empty": "No recommendations",
+        "label": "Recommendation",
+        "options": {
+          "approval": {
+            "label": "Approve"
+          },
+          "pending": {
+            "label": "Pending"
+          },
+          "rejection": {
+            "label": "Reject"
+          }
+        },
+        "search": "Search recommendations",
+        "select_all": "All recommendations"
+      },
+      "selections": {
+        "empty": "No selections",
+        "label": "Selections",
+        "search": "Search selections",
+        "select_all": "All selections"
+      },
+      "time_period": {
+        "clear": "Clear",
+        "label": "Time range",
+        "placeholder": "Select time range"
+      },
+      "types": {
+        "deleted": "(Deleted)",
+        "empty": "No time-off types",
+        "label": "Time-off types",
+        "search": "Search time-off types",
+        "select_all": "All time-off types"
+      }
+    },
+    "label": {
+      "comments": "Comments",
+      "current_balance": "Current balance",
+      "decision": "Status",
+      "planning_unit": "Planning unit",
+      "projected": "Projected",
+      "recommendation": "Recommendation",
+      "remaining": "Remaining",
+      "time": "Time range",
+      "to_be_booked": "To be booked",
+      "type": "Type",
+      "type_deleted": "(Deleted)"
+    },
+    "pagination": {
+      "aria_label": "Pagination"
+    },
+    "recommendation_insights": {
+      "current_schedule": "Current schedule",
+      "empty": "No activities are scheduled for the requested time.",
+      "error": "Something went wrong. <RetryLink>Please try again</RetryLink>.",
+      "hide": "Hide coverage and time off",
+      "people_absent": "People off",
+      "show": "Show coverage and time off"
+    },
+    "schedule_restoration_modal": {
+      "blank_out_shift": "Blank out shift",
+      "cancel": "Cancel",
+      "cancellation": {
+        "submit": "Cancel time off",
+        "submitting": "Canceling time off",
+        "title": "Cancel time off and update schedule?"
+      },
+      "comment": "Comment",
+      "decision": {
+        "submit": "Confirm",
+        "submitting": "Approving cancellation"
+      },
+      "employee": "Person",
+      "load_error": "The schedule data could not be loaded. Please <RetryLink>reload now</RetryLink> or try again later.",
+      "recommendation": {
+        "submit": "Recommend approval",
+        "submitting": "Recommending approval",
+        "title": "Recommend canceling the time off and updating the schedule"
+      },
+      "recommended": "Recommended",
+      "restore_history": "Restore history"
+    },
+    "search": {
+      "placeholder": "Search for people"
+    },
+    "sorting": {
+      "created_at": {
+        "ascending": "Oldest",
+        "descending": "Newest"
+      },
+      "name": {
+        "ascending": "Name A-Z",
+        "descending": "Name Z-A"
+      }
+    }
+  },
+  "balance_details": {
+    "approved_time_off": "Approved time off",
+    "back_to_time_off": "Back to Time Off",
+    "canceled_time_off": "Canceled time off",
+    "column": {
+      "counted": {
+        "days": "Counted days",
+        "hours": "Counted hours"
+      },
+      "date": "Date",
+      "processed_by": "Processed by",
+      "reason": "Reason"
+    },
+    "edit_entitlement": {
+      "aria_label": "Edit entitlement",
+      "cancel": "Cancel",
+      "error": {
+        "reason": {
+          "missing": "Enter a reason (up to {{maxLength}} characters).",
+          "too_long": "Enter a reason (up to {{maxLength}} characters)."
+        },
+        "unknown": "The entitlement could not be changed. Please try again.",
+        "value": {
+          "invalid_number": "Enter 0 or a number greater than 0."
+        }
+      },
+      "heading": "Edit entitlement",
+      "hint": {
+        "addition": "You are about to add {{diff}} {{diff_unit}} to the entitlement.",
+        "deduction": "You are about to take away {{diff}} {{diff_unit}} from the entitlement.",
+        "result": "The new entitlement will be {{new_value}} {{new_value_unit}}."
+      },
+      "new_entitlement": "New entitlement",
+      "reason": "Reason for the change",
+      "save": "Save change",
+      "saving": "Saving"
+    },
+    "edit_taken": {
+      "aria_label": "Edit taken time off",
+      "cancel": "Cancel",
+      "error": {
+        "reason": {
+          "missing": "Enter a reason (up to {{maxLength}} characters).",
+          "too_long": "Enter a reason (up to {{maxLength}} characters)."
+        },
+        "unknown": "The taken time off could not be changed. Please try again.",
+        "value": {
+          "invalid_number": "Enter 0 or a number greater than 0."
+        }
+      },
+      "heading": "Edit taken time off",
+      "hint": {
+        "addition": "You are about to add {{diff}} {{diff_unit}} to the taken time off.",
+        "deduction": "You are about to deduct {{diff}} {{diff_unit}} from the taken time off.",
+        "result": "The new taken time off will be {{new_value}} {{new_value_unit}}."
+      },
+      "new_taken": "Taken time off",
+      "reason": "Reason for the change",
+      "save": "Save change",
+      "saving": "Saving"
+    },
+    "employee": "Person",
+    "employees": "People",
+    "empty": {
+      "action": "Select a different person or go back to Time-off requests.",
+      "message": "There is no information for this person's time-off type.",
+      "description": "You can track the following changes here:<unorderedList><li>Approved time-off requests</li><li>Cancellations of approved time off</li><li>Updates to the entitlement and taken time off</li></UnorderedList>",
+      "title": "No changes to the person’s hours"
+    },
+    "entitlement_period": "Entitlement period",
+    "heading": "Personal balances",
+    "no_employee_found": "No person found",
+    "no_employees": "No people available in planning unit or missing permissions",
+    "no_planning_units": "No units available",
+    "no_records": "No records for the selected person",
+    "no_types": "No time-off types",
+    "planning_unit": "Planning unit",
+    "remaining": {
+      "days": "Remaining days",
+      "hours": "Remaining hours"
+    },
+    "search_employees": {
+      "aria_label": "Search for people",
+      "placeholder": "Search for people",
+      "empty": {
+        "description": "Change your filters.",
+        "title": "No people available"
+      }
+    },
+    "success": {
+      "entitlement_changed": "Entitlement saved",
+      "taken_changed": "Taken time off saved"
+    },
+    "type": "Time-off type",
+    "year": "Year",
+    "type_deleted": "{{name}} (Deleted)"
+  },
+  "balance_summary": {
+    "entitlement": {
+      "label": "Entitlement"
+    },
+    "remaining": "Remaining",
+    "taken": {
+      "label": "Taken"
+    }
+  },
+  "configuration": {
+    "back_to_time_off": "Back to Time-off requests",
+    "page_heading": "Time Off configuration",
+    "time_off_periods": "Time-off periods",
+    "time_off_types": "Time-off types",
+    "time-off-types": {
+      "button": {
+        "filter-time-off-types": {
+          "checkbox": {
+            "display-all-types": {
+              "label": "All"
+            },
+            "display-available-types": {
+              "label": "Available"
+            },
+            "display-deleted-types": {
+              "label": "Deleted"
+            }
+          },
+          "label": "Filter"
+        }
+      },
+      "table": {
+        "types": {
+          "empty-state": {
+            "heading": {
+              "text": "No time-off type found"
+            },
+            "no-results": {
+              "description": {
+                "text": "Change or <resetFiltersLink>reset your filters</resetFiltersLink>."
+              }
+            }
+          }
+        }
+      }
+    },
+    "types": {
+      "table": {
+        "types": {
+          "deleted-type": {
+            "text": "(Deleted)"
+          }
+        }
+      }
+    }
+  },
+  "schedule_sync": {
+    "failed": "Time off could not be added to the schedule",
+    "not_implemented": "Time off canceled and not updated in the schedule.\nUpdate the schedule manually.",
+    "not_needed": "Rejected time-off request. Time off was not added to the schedule.",
+    "processing": "Adding time off to schedule",
+    "processing_hint": "Time off will be added to schedule.",
+    "resolve": "Mark as resolved because the schedule was manually updated.",
+    "resolved-approved": "Time off was added to the schedule.",
+    "resolved-canceled": "Time off was removed from the schedule."
+  },
+  "types_overview": {
+    "add": "Add",
+    "column": {
+      "archived_date": "Archived date",
+      "name": "Name",
+      "paid": "Paid",
+      "requestable": "Requestable by person",
+      "unit": "Time unit",
+      "unit_error": "Select a time unit.",
+      "fill_up": "Fill up schedule"
+    },
+    "create": {
+      "action": "New time-off type"
+    },
+    "form": {
+      "cancel": "Cancel",
+      "create": {
+        "heading": "Create new time-off type",
+        "label": "Create new time-off type",
+        "submit": "Create time-off type",
+        "submit_error": "The time-off type could not be created. Check the highlighted fields.",
+        "submitting": "Creating"
+      },
+      "create_unit_hint": "You cannot change the time unit after creating the time-off type.",
+      "delete": {
+        "cancel": "Cancel",
+        "consequences": {
+          "1": "The activity with the same name will be deleted in iWFM.",
+          "2": "You cannot restore the time-off type."
+        },
+        "heading": "Delete time-off type?",
+        "label": "Delete time-off type {{name}}",
+        "precondition": "Only unused time-off types can be deleted.",
+        "submit": "Delete time-off type",
+        "submitting": "Deleting time-off type",
+        "description": "<b>{{ name }}</b> will be deleted from injixo."
+      },
+      "edit": {
+        "heading": "Edit time-off type",
+        "label": "Edit time-off type {{name}}",
+        "submit": "Save changes",
+        "submit_error": "The time-off type could not be saved. Check the highlighted fields.",
+        "submitting": "Saving"
+      },
+      "edit_unit_hint": "You cannot change the time unit after creating the time-off type.",
+      "entitlement_periods": {
+        "create": "Add entitlement period",
+        "delete": "Delete entitlement period {{number}}",
+        "end_date": "End date",
+        "end_date_aria": "Entitlement period {{number}} end date",
+        "heading": "Entitlement periods",
+        "start_date": "Start date",
+        "start_date_aria": "Entitlement period {{number}} start date",
+        "warning": "You cannot change an entitlement period once a person has requested time off within that entitlement period."
+      },
+      "error": {
+        "entitlement_periods": {
+          "consecutive": "Select a start date that directly follows the previous end date.",
+          "start_date_before_end": "Select an end date that is after the start date."
+        },
+        "name": {
+          "activity_already_exists": "This name is unavailable",
+          "already_exists": "Enter a name that has not been used yet.",
+          "required": "Enter a name that has not been used yet."
+        },
+        "unit": {
+          "required": "Select a time unit."
+        },
+        "fillUpTypeId": {
+          "not_found": "The selected time-off type does not exist.",
+          "paid_type": "The time-off type must be unpaid.",
+          "required": "Select a time-off type.",
+          "wrong_unit": "The time-off type has the wrong time unit."
+        },
+        "paid": {
+          "paid_fill_up": "The time-off type is used to replace non-working hours and cannot be paid."
+        }
+      },
+      "error_unit": "You need to select a time unit to save.",
+      "help_unit_selected": "You cannot change the time unit after creating the time-off type.",
+      "paid": "Paid",
+      "requestable": "Requestable by person",
+      "type": {
+        "heading": "General"
+      },
+      "type_name": "Name",
+      "unit": "Time unit",
+      "unit_already_exists_hint": "The time unit has been set. It can no longer be changed.",
+      "unkown_error": "The time-off type could not be created. Please try again.",
+      "unsaved_changes": {
+        "bodytext": "Your changes will not be saved.",
+        "discard": "Discard changes",
+        "title": "Discard unsaved changes?",
+        "back_to_create": "Back to creating",
+        "back_to_edit": "Back to editing"
+      },
+      "schedule_setting": {
+        "activate_fill_up": "Additionally replace unpaid activites (e.g. breaks) and fill up non-working hours with the following unpaid time-off type:",
+        "fill_up": {
+          "label": "Time-off type",
+          "placeholder": "Select unpaid time-off type"
+        },
+        "heading": "Schedule setting",
+        "info": {
+          "paid": "By default, injixo will replace only planned paid activities or contractual working hours with this time-off type. Learn more in <helpCenterLink>Help Center</helpCenterLink>.",
+          "paid_hint": "This setting will affect only new time-off requests.",
+          "paid_link": "https://help.injixo.com/time-off-types#fill-up-functionality",
+          "unpaid": "There are no schedule settings for unpaid time-off types."
+        }
+      },
+      "unit_days": "Days",
+      "unit_hours": "Hours"
+    },
+    "heading": "Time-off types",
+    "no_types": "No time-off types",
+    "success": {
+      "type_archived": "Time-off type archived",
+      "type_created": "Time-off type created",
+      "type_deleted": "Time-off type deleted",
+      "type_updated": "Time-off type updated"
+    },
+    "type": {
+      "hint": {
+        "has_relations": "This time-off type is in use. Used time-off types cannot be deleted."
+      }
+    }
+  },
+  "unit": {
+    "days_one": "day",
+    "days_other": "days",
+    "hours_one": "hour",
+    "hours_other": "hours"
+  },
+  "unit_short": {
+    "days_one": "d",
+    "days_other": "d",
+    "hours_one": "h",
+    "hours_other": "h"
+  },
+  "add-time-off": {
+    "elevated-side-panel": {
+      "aria-label": "Add time off",
+      "button": {
+        "add": {
+          "label": "Add time off"
+        },
+        "cancel": {
+          "label": "Cancel"
+        }
+      },
+      "combo-box": {
+        "entitlement-period": {
+          "errors": {
+            "required": "Select an entitlement period."
+          },
+          "label": "Entitlement period",
+          "placeholder": "Select"
+        },
+        "person": {
+          "errors": {
+            "required": "Select a person."
+          },
+          "label": "Person",
+          "placeholder": "Select"
+        },
+        "time-off-type": {
+          "errors": {
+            "required": "Select a time-off type."
+          },
+          "label": "Time-off type",
+          "placeholder": "Select"
+        }
+      },
+      "date-range-picker": {
+        "errors": {
+          "required": "Select a time range."
+        },
+        "label": "Time range",
+        "placeholder": "Select"
+      },
+      "end-time": {
+        "errors": {
+          "error_end_before_start": "Select an end time that is later than the start time.",
+          "required": "Enter a start and end time."
+        },
+        "label": "End time"
+      },
+      "helper-text": "The person will be notified by email.",
+      "inline-message": {
+        "error": {
+          "conflict_with_existing_time_off": "During the selected time range, the person already has time off. Select a different time range.",
+          "generic": "Time off could not be added. Please try again.",
+          "no_time_off_period": "For the selected time-off type, no time-off period has been published. Publish the time-off period or select a different time-off type."
+        }
+      },
+      "start-time": {
+        "errors": {
+          "required": "Enter a start and end time."
+        },
+        "label": "Start time"
+      },
+      "switch": {
+        "part-day": {
+          "label": "Request a part of the day"
+        }
+      },
+      "textarea": {
+        "comment": {
+          "errors": {
+            "max_length": "Enter a comment (up to 100 characters)."
+          },
+          "label": "Comment <optional>optional</optional>",
+          "placeholder": "Add your comment"
+        }
+      },
+      "title": "Add time off"
+    },
+    "toast": {
+      "action": {
+        "text": "Go to Decided"
+      },
+      "save-success": {
+        "text": "Time off added"
+      }
+    }
+  },
+  "balance_filter": {
+    "view": {
+      "label": "View by",
+      "multi": "Multiple people",
+      "single": "Individual people"
+    }
+  },
+  "balance_overview": {
+    "column": {
+      "entitlement": "Entitlement",
+      "name": "Name",
+      "personnel_number": "Personnel number",
+      "remaining": "Remaining",
+      "taken": "Taken"
+    },
+    "edit_entitlements": {
+      "discard": "Discard changes",
+      "entitlement": {
+        "aria_label": "Entitlement for {{personnelNumber}}",
+        "unsaved": "This entitlement has not been saved."
+      },
+      "error": {
+        "invalid_fields": "The entitlements could not be saved. Check the highlighted fields.",
+        "unknown": "The entitlements could not be changed. Please try again."
+      },
+      "reason": {
+        "label": "Reason for the change"
+      },
+      "save": "Save changes",
+      "success": "Entitlements saved"
+    },
+    "no_employees": "No people available in planning unit or missing permissions"
+  },
+  "edit-time-off": {
+    "elevated-side-panel": {
+      "aria-label": "Edit time off",
+      "button": {
+        "cancel": {
+          "label": "Cancel"
+        },
+        "edit": {
+          "label": "Edit time off"
+        }
+      },
+      "combo-box": {
+        "person": {
+          "label": "Person"
+        },
+        "time-off-type": {
+          "label": "Time-off type"
+        }
+      },
+      "date-range-picker": {
+        "errors": {
+          "required": "Select a time range."
+        },
+        "label": "Time range",
+        "placeholder": "Select"
+      },
+      "end-time": {
+        "errors": {
+          "error_end_before_start": "Select an end time that is later than the start time.",
+          "required": "Enter a start and end time"
+        },
+        "label": "End time"
+      },
+      "helper-text": "The person will be notified by email.",
+      "inline-message": {
+        "error": {
+          "conflict_with_existing_time_off": "During the selected time range, the person already has time off. Select a different time range.",
+          "generic": "Time off could not be edited. Please try again",
+          "no_time_off_period": "For the selected time-off type, no time-off period has been published. Publish the time-off period or select a different time-off type."
+        }
+      },
+      "start-time": {
+        "errors": {
+          "required": "Enter a start and end time."
+        },
+        "label": "Start time"
+      },
+      "switch": {
+        "part-day": {
+          "label": "Request a part of the day"
+        }
+      },
+      "textarea": {
+        "comment": {
+          "errors": {
+            "max_length": "Enter a comment (up to 100 characters)."
+          },
+          "label": "Comment <optional>optional</optional>",
+          "placeholder": "Add your comment"
+        }
+      },
+      "title": "Edit time off"
+    },
+    "toast": {
+      "action": {
+        "text": "Go to decided"
+      },
+      "save-success": {
+        "text": "Time off edited"
+      }
+    }
+  },
+  "personal-balances": {
+    "individual-people": {
+      "balance-summary": {
+        "current-balance": {
+          "label": "Current balance"
+        }
+      },
+      "modal": {
+        "edit-entitlement": {
+          "date-picker": {
+            "booking-date": {
+              "label": "Date"
+            }
+          }
+        },
+        "edit-taken": {
+          "date-picker": {
+            "booking-date": {
+              "label": "Date"
+            }
+          }
+        }
+      }
+    },
+    "multiple-people": {
+      "edit-entitlement": {
+        "date-picker": {
+          "booking-date": {
+            "label": "Date"
+          }
+        }
+      },
+      "table": {
+        "people-balances": {
+          "table-column": {
+            "current": {
+              "label": "Current balance"
+            }
+          }
+        }
+      }
+    }
+  },
+  "plan-page": {
+    "filter-bar": {
+      "date-range-navigator": {
+        "aria-label": "Select a view range"
+      },
+      "search-input": {
+        "placeholder": "Search for people"
+      },
+      "view-switch": {
+        "list": {
+          "aria-label": "List view"
+        },
+        "plan": {
+          "aria-label": "Plan view"
+        }
+      }
+    },
+    "timeline": {
+      "empty-state": {
+        "no-results": {
+          "clear-filters": {
+            "button": {
+              "label": "Reset filters and search"
+            }
+          },
+          "description": "Change or reset your filters and search.",
+          "heading": "No people found"
+        }
+      },
+      "people-header": {
+        "sort-button": {
+          "aria-label": "Set sorting option"
+        },
+        "sort-by": {
+          "person-asc": "Name A → Z",
+          "person-desc": "Name Z → A",
+          "start-time": "Start time"
+        },
+        "text": "Person name"
+      },
+      "statistics": {
+        "people-off": {
+          "approved": {
+            "text": "People off"
+          },
+          "pending": {
+            "text": "People off (pending)"
+          }
+        }
+      }
+    }
+  },
+  "time-off-overview": {
+    "button": {
+      "add-time-off": {
+        "label": "Add time off"
+      }
+    },
+    "card-list": {
+      "time-off": {
+        "card-item": {
+          "time-off-entry": {
+            "booked": {
+              "label": "Booked"
+            },
+            "current-balance": {
+              "label": "Current balance"
+            },
+            "plan-link": {
+              "label": "View in plan"
+            },
+            "projected-balance": {
+              "label": "Projected"
+            }
+          }
+        }
+      }
+    }
+  }
+}

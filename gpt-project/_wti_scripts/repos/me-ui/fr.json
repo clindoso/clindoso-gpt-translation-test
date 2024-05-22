@@ -1,0 +1,407 @@
+{
+  "time_tracking": {
+    "page_title": "Temps de présence",
+    "hour_abbreviation": "h",
+    "punch": {
+      "activities": {
+        "combobox": {
+          "aria_label": "Activités",
+          "placeholder": "Sélectionner l'activité"
+        }
+      },
+      "clock_in": {
+        "button": {
+          "label": "Début de l'activité"
+        },
+        "toast": "Début de l'activité"
+      },
+      "clock_out": {
+        "button": {
+          "aria_label": "Enregistrer la fin de l’activité en cours"
+        },
+        "toast": "Fin de l'activité"
+      },
+      "switch": {
+        "button": {
+          "label": "Changer d’activité"
+        }
+      },
+      "timer": {
+        "aria_label": "Enregistrer le début de l’activité sélectionnée"
+      }
+    },
+    "records": {
+      "duration": "Durée",
+      "empty": {
+        "description": "Suivez le temps passé sur vos activités en haut de la page.",
+        "headline": "Vous n’avez pas d'activités suivies."
+      },
+      "heading_today": "Activités suivies",
+      "heading_yesterday": "Activités suivies",
+      "now": "maintenant",
+      "ongoing": "En cours",
+      "unknown_activity": "Activité inconnue"
+    },
+    "statistics": {
+      "calculation_tooltip": "Statistiques de temps pour la période sélectionnée. En cas de travail de nuit, seul le temps inclus dans la période sélectionnée est compté.",
+      "current_day": "Aujourd’hui",
+      "current_month": "Mois en cours",
+      "current_week": "Semaine en cours",
+      "day": "Jour",
+      "deviation": "Déviation",
+      "heading": "Statistiques",
+      "month": "Mois",
+      "previous_day": "Hier",
+      "previous_month": "Mois dernier",
+      "previous_week": "Semaine dernière",
+      "scheduled_paid_time": "Temps rémunéré planifié",
+      "tracked_paid_time": "Temps de travail rémunéré enregistré",
+      "tracked_time": "Temps total enregistré",
+      "week": "Semaine"
+    }
+  },
+  "time_off": {
+    "balance_overview": {
+      "pending": "En attente",
+      "remaining": "Solde",
+      "taken": "Utilisé",
+      "title": "Aperçu du solde d’absence",
+      "current_balance": "Solde actuel"
+    },
+    "calendar": {
+      "title": "Année"
+    },
+    "download_time_off_overview": "Télécharger la vue d’ensemble des absences",
+    "entitlement_picker": {
+      "current_period": "Période en cours",
+      "next_period": "Période suivante",
+      "previous_period": "Période précédente"
+    },
+    "page_title": "Absence",
+    "request": {
+      "comments": "Voir commentaires"
+    },
+    "request_state": {
+      "approved": "Validée",
+      "canceled": "Annulée",
+      "cancellation_requested": "Cancellation requested",
+      "rejected": "Refusée",
+      "requested": "Demandée"
+    },
+    "request_time_off": "Demande d’absence",
+    "requests": {
+      "creation_form": {
+        "cancel": "Annuler",
+        "comment": "Commentaire",
+        "create": "Demande d’absence",
+        "created": "La demande d’absence sélectionnée a bien été envoyée.",
+        "date": "Date",
+        "end_date": "Date de fin",
+        "end_time": "Heure de fin",
+        "error": {
+          "comment_too_long": "Saisissez un commentaire (jusqu’à 100 caractères).",
+          "conflict_with_existing_plan_data_request": "La durée de la demande se superpose avec une demande existante.",
+          "conflict_with_existing_request": "La durée de la demande se superpose avec une demande existante.",
+          "conflict_with_existing_time_off": "La durée de la demande se superpose avec une demande existante.",
+          "employee_marked_as_unavailable": "Vous n'êtes pas disponible à cette date. Veuillez modifier votre disponibilité ou demander à votre responsable.",
+          "no_time_off_period": "Vous ne pouvez pas faire de demande d’absence pour cette période. La période de congés correspondante n'a pas été publiée. Veuillez contacter votre équipe de planification.",
+          "start_date_before_end": "La date de fin doit être supérieure ou égale à la date de début.",
+          "start_time_before_end": "L’heure de fin doit être supérieure à l’heure de début.",
+          "times_required": "Saisissez une heure de début et de fin.",
+          "unknown": "La demande d’absence n’a pas pu être créée.",
+          "no_contract": "L’absence demandée ne correspond pas aux termes de votre contrat.",
+          "no_employment": "L’absence demandée ne correspond pas à votre période d’emploi."
+        },
+        "full_day_request": "Journée entière",
+        "part_day": "Demander une journée partielle",
+        "part_day_request": "Journée partielle",
+        "start_date": "Date de début",
+        "start_time": "Heure de début",
+        "submitting": "En cours",
+        "time_off_request": "Demande d’absence"
+      },
+      "filter": {
+        "label": "Filtre de statut de la demande",
+        "status": {
+          "all": "Toutes les demandes",
+          "approved": "Validée",
+          "canceled": "Annulée",
+          "decided": "Décidé",
+          "pending": "En attente",
+          "rejected": "Refusé",
+          "requested": "Demandé"
+        }
+      },
+      "link_to_schedule": "{{ time_range }} ouvrir dans le calendrier",
+      "no_items": "Aucune demande d’absence",
+      "title": "Demandes d’absences"
+    },
+    "pdf_download": {
+      "all": "Tous",
+      "all_request_statuses": "Tous les statuts",
+      "all_time_off_types": "Tous les types d’absence",
+      "cancel": "Annuler",
+      "download": "Télécharger",
+      "entitlement_period": "Période de droit aux congés",
+      "request_statuses": "Statuts des demandes",
+      "time_off_types": "Types d’absences",
+      "title": "Vue d’ensemble des absences",
+      "time_off_type_deleted": "(Supprimé)"
+    },
+    "type_selection": {
+      "label": "Type d’absence",
+      "no_result": "Aucun type d’absence trouvé",
+      "placeholder": "Sélectionner le type d’absence",
+      "deleted_type": "{{name}} (Supprimé)"
+    },
+    "unit": {
+      "days_one": "jour",
+      "days_other": "jours",
+      "hours_one": "heure",
+      "hours_other": "heures"
+    },
+    "year_picker": {
+      "current_year": "Cette année",
+      "next_year": "Année suivante",
+      "previous_year": "Année précédente"
+    }
+  },
+  "time-off-list": {
+    "card-list": {
+      "card-item": {
+        "button": {
+          "request-cancellation": {
+            "popover": {
+              "button": {
+                "close": {
+                  "label": "Fermer"
+                },
+                "request": {
+                  "label": "Demander l’annulation"
+                }
+              },
+              "text-area": {
+                "reason": {
+                  "label": "Motif de l’annulation"
+                }
+              }
+            },
+            "aria-label": "{{ time_range }}, Absence, Demander l'annulation",
+            "label": "Demander l’annulation"
+          },
+          "withdraw": {
+            "aria-label": "{{ time_range }}, Demande en attente, Retirer",
+            "label": "Retirer"
+          },
+          "withdraw-cancellation-request": {
+            "aria-label": "{{ time_range }}, Demande d’annulation d’absence, Retirer",
+            "label": "Retirer"
+          },
+          "comments": {
+            "aria-label": "Voir les commentaires",
+            "label": "{{count}} commentaires"
+          }
+        },
+        "booked": {
+          "text": "Planifié"
+        },
+        "status": {
+          "approved": {
+            "text": "Validé"
+          },
+          "canceled": {
+            "text": "Annulé"
+          },
+          "cancellation_requested": {
+            "text": "Annulation demandée"
+          },
+          "rejected": {
+            "text": "Refusé"
+          },
+          "requested": {
+            "text": "Demandé"
+          },
+          "text": "Statut"
+        },
+        "to-be-booked": {
+          "text": "À planifier",
+          "valuation-conflict": {
+            "label": "Le temps à planifier est sujet à modifications car vous avez envoyé au moins une demande d'absence supplémentaire pour cette semaine."
+          }
+        }
+      }
+    }
+  },
+  "time-off": {
+    "toast": {
+      "request-cancellation": {
+        "failure": {
+          "text": "La demande d’annulation d’absence n’a pas pu être envoyée."
+        },
+        "success": {
+          "text": "La demande d’annulation d’absence a bien été envoyée."
+        }
+      },
+      "withdraw": {
+        "failure": {
+          "text": "La demande d’absence sélectionnée n’a pas pu être supprimée."
+        },
+        "success": {
+          "text": "La demande d’absence sélectionnée a été supprimée avec succès."
+        }
+      },
+      "withdraw-cancellation-request": {
+        "failure": {
+          "text": "La demande d’annulation d’absence n’a pas pu être retirée."
+        },
+        "success": {
+          "text": "La demande d’annulation d’absence a bien été retirée."
+        }
+      }
+    }
+  },
+  "availability": {
+    "delete": {
+      "button": {
+        "label": "Supprimer"
+      }
+    },
+    "edit": {
+      "form": {
+        "button": {
+          "cancel": {
+            "label": "Annuler"
+          },
+          "submit": {
+            "label": "Sauvegarder les modifications"
+          }
+        },
+        "inline-message": {
+          "error": {
+            "text": "Vos modifications n’on pas pu être sauvegardées. Veuillez réessayer."
+          }
+        },
+        "toast": {
+          "success": "Disponibilité modifiée"
+        }
+      },
+      "page-heading": {
+        "return-link": "Retour à la vue d'ensemble",
+        "text": "Modifier {{date}}"
+      },
+      "page_title": "Modifier la disponibilité"
+    },
+    "inline-message": {
+      "unexpected-error": {
+        "text": "Vos disponibilités n'ont pas pu être chargée. Veuillez <Link>recharger la page</Link> ou réessayer plus tard."
+      }
+    },
+    "modal": {
+      "delete-confirmation": {
+        "button": {
+          "cancel": "Retour",
+          "confirm": "Supprimer la disponibilité"
+        },
+        "content": "Vos disponibilité pour le {{date}} seront supprimées. Votre planificateur utilisera une disponibilité hebdomadaire pour cette journée, si celle-ci existe.",
+        "content-label": "Supprimer la disponibilité unique",
+        "inline-message": {
+          "error": "La disponibilité n'a pas pu être supprimée. Veuillez réessayer."
+        },
+        "title": "Supprimer la disponibilité ?",
+        "toast": {
+          "success": "Disponibilité supprimée"
+        }
+      }
+    },
+    "new": {
+      "form": {
+        "button": {
+          "add-time": {
+            "label": "Ajouter un créneau"
+          },
+          "cancel": {
+            "label": "Annuler"
+          },
+          "remove-time": {
+            "label": "Supprimer ce créneau"
+          },
+          "submit": {
+            "label": "Ajouter une disponibilité"
+          }
+        },
+        "date-input": {
+          "booking-date": {
+            "error": {
+              "required": "Sélectionnez une date."
+            }
+          }
+        },
+        "inline-message": {
+          "conflict-error": {
+            "text": "Des disponibilités existent pour cette date. Sélectionnez une date différente ou <Link>modifiez les disponibilités pour cette date</Link>."
+          },
+          "error": {
+            "text": "La disponibilité n'a pas pu être créée. Veuillez réessayer."
+          }
+        },
+        "time-input": {
+          "end-time": {
+            "error": {
+              "required": "Saisissez une heure de fin."
+            },
+            "label": "Heure de fin"
+          },
+          "start-time": {
+            "error": {
+              "required": "Saisissez une heure de début."
+            },
+            "label": "Heure de début"
+          }
+        },
+        "toast": {
+          "success": "Disponibilité créée"
+        }
+      },
+      "page-heading": {
+        "return-link": "Retour à la vue d'ensemble",
+        "text": "Ajouter une disponibilité"
+      },
+      "page_title": "Créer une disponibilité"
+    },
+    "next_month": "Mois suivant",
+    "one_time": {
+      "empty": {
+        "heading": "Aucune disponibilité pour ce mois",
+        "text": "Informez votre planificateur de vos disponibilités, ou allez au <Link>mois suivant</Link>."
+      }
+    },
+    "overnight-indicator": "+ 1 jour",
+    "overview": {
+      "button": {
+        "add_availability": {
+          "label": "Ajouter une disponibilité"
+        },
+        "edit-availability": {
+          "label": "Modifier"
+        }
+      },
+      "heading": "Vue d'ensemble des disponibilités",
+      "inline-message": {
+        "cute-off-date": {
+          "text": "Vous pouvez uniquement modifier vos disponibilités à partir du {{cutOffDate}}."
+        }
+      },
+      "tag": {
+        "one-time": {
+          "text": "Unique"
+        },
+        "weekly": {
+          "text": "Hebdomadaire"
+        }
+      }
+    },
+    "page_title": "Disponibilités",
+    "prev_month": "Mois précédent",
+    "time_period": "Période"
+  }
+}

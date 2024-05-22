@@ -1,0 +1,46 @@
+{
+  "document_title": {
+    "module": "Account",
+    "context": "Tokens de acceso personal",
+    "page": {
+      "overview": "Información general",
+      "create": "Generar un token nuevo",
+      "edit": "Actualizar token {{name}}"
+    }
+  },
+  "pat": {
+    "description": "Se pueden utilizar tokens de acceso personal en lugar de una contraseña para autenticarse en las APIs de injixo.",
+    "learn_more": "Saber más",
+    "title_list": "Tus tokens de acceso personal",
+    "title_new": "Nuevo token de acceso personal",
+    "title_update": "Actualizar el token de acceso personal",
+    "title_created": "Tu token de acceso personal nuevo",
+    "message_created": "Asegúrate de copiar tu nuevo token de acceso personal ahora. ¡Nosotros no lo guardamos y no podrás volver a verlo!",
+    "label": {
+      "description": "Descripción"
+    },
+    "action": {
+      "new": "Generar un token nuevo",
+      "create": "Generar un token nuevo",
+      "update": "Actualizar token",
+      "delete": {
+        "label": "Eliminar",
+        "confirm": "Sí, eliminar el token",
+        "cancel": "No, mantener el token",
+        "success": "El token se ha eliminado correctamente.",
+        "modal_header": "Eliminar token",
+        "modal_description": "¿Estás seguro de que quieres eliminar este token?"
+      }
+    }
+  },
+  "back_to_main": "Volver a tu perfil",
+  "cancel": "Cancelar",
+  "copy_to_clipboard": "Copiar al portapapeles",
+  "copied_to_clipboard": "Copiado al portapapeles",
+  "done": "Finalizado",
+  "edit": "Editar",
+  "error_occured": "Ha ocurrido un error",
+  "token_clipboard_copied": "¡Copiado!",
+  "token_clipboard_copy": "Copiar",
+  "token_clipboard_tooltip": "¡Se ha copiado el token de acceso personal al portapapeles!"
+}

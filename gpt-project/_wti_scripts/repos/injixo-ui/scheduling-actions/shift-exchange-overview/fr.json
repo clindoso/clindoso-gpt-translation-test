@@ -1,0 +1,74 @@
+{
+  "heading": {
+    "initial": "Gérer les échanges de planning"
+  },
+  "alt": {
+    "reload-planning-units": "Recharger les unités opérationnelles",
+    "reload-selections": "Recharger les groupes",
+    "reload-shift-exchange-commitments": "Recharger les demandes d’échanges"
+  },
+  "button": {
+    "approve-selected": "Accepter la sélection",
+    "back-to-schedules": "Retour à Schedules",
+    "reject-selected": "Refuser la sélection"
+  },
+  "document_title": {
+    "module": "Plan",
+    "page": {
+      "approve_shift_exchange": "Gérer les échanges de planning"
+    }
+  },
+  "filter": {
+    "no-result-found": "Aucun résultat"
+  },
+  "message": {
+    "error": "Impossible de récupérer les données",
+    "planning-units": {
+      "error": "Une erreur est survenue lors de l'affichage des unités opérationnelles. Vous pouvez <0>recharger</0> les unités opérationnelles ou réessayer plus tard."
+    },
+    "selections": {
+      "error": "Une erreur est survenue lors de l'affichage des groupes. Vous pouvez <0>recharger</0> les groupes ou réessayer plus tard."
+    },
+    "shift-exchange-commitments": {
+      "error": "Une erreur est survenue lors de l'affichage des demandes d’échanges. Vous pouvez <0>recharger</0> les demandes d'échanges ou réessayer plus tard.",
+      "update-error": "Impossible de mettre à jour les demandes d’échanges.",
+      "update-success": "Les demandes d’échanges ont bien été mises à jour"
+    }
+  },
+  "placeholder": {
+    "planning-unit": "Sélectionner une unité opérationnelle",
+    "selection": "Sélectionner un groupe"
+  },
+  "status": {
+    "tooltip": {
+      "acceptor-resigned": "L'employé ayant accepté l'échange a supprimé sa demande.",
+      "acceptor-shift-changed": "L'employé ayant accepté l'échange a changé",
+      "deadline-missed": "Date limite dépassée",
+      "invalid": "L’échange est invalide.",
+      "offerer-resigned": "L'employé ayant initié l'échange a supprimé sa demande.",
+      "offerer-shift-changed": "L'employé ayant initié l'échange a changé",
+      "rule-breached": "Une règle a été transgressée"
+    },
+    "value": {
+      "approved": "Accepté",
+      "canceled": "Annulé",
+      "pending": "En attente",
+      "rejected": "Refusé"
+    }
+  },
+  "tab": {
+    "information": "Information",
+    "pending": "En attente"
+  },
+  "table": {
+    "heading": {
+      "compensation-date": "Date de la contre offre",
+      "exchange-date": "Date de l'échange",
+      "exchange-partner": "Partenaire d'échange",
+      "initiator": "Offre de",
+      "modification-date": "Mis à jour le",
+      "status": "Statut"
+    },
+    "no-results": "Aucun échange trouvé."
+  }
+}

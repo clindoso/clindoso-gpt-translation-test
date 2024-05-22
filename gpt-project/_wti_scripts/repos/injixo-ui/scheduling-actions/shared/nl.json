@@ -1,0 +1,59 @@
+{
+  "aria-enhancement": {
+    "button": "button",
+    "dropdown": "dropdown"
+  },
+  "coverage-details": {
+    "label": "Interval"
+  },
+  "irreplaceable-activities-info": {
+    "hint_one": "{{count}} van de {{totalCount}} \"Aanwezigheid\" activiteiten in de geselecteerde eenheid is niet \"Vervangbaar\".",
+    "hint_other": "{{count}} van de {{totalCount}} \"Aanwezigheid\" activiteiten in de geselecteerde eenheid zijn niet \"Vervangbaar\".",
+    "reminder": {
+      "link-to-docs": "https://help.injixo.com/creating-activities/",
+      "text": "Zorg ervoor dat je<0>ze als \"Vervangbaar\" markeert</0> om zoveel mogelijk suggesties te krijgen. Je kunt dit instellen bij WFM > Administratie > Planning > Activiteiten."
+    }
+  },
+  "label": {
+    "employee-filter": "Medewerkersfilter",
+    "no-entries": "Geen gegevens",
+    "selection": "Selectie",
+    "aria-enhancement": {
+      "dropdown": "dropdown",
+      "loading-spinner": "laden spinner"
+    },
+    "date-range": "Datumbereik",
+    "in-progress": "in progress",
+    "planning-unit": "Eenheid"
+  },
+  "placeholder": {
+    "searchable-dropdown": "Zoeken of selecteren"
+  },
+  "scheduled-entry-information": {
+    "excluded": "Handmatig uitgesloten van het inplannen",
+    "problem": "Probleem",
+    "view-conflict": "Bekijk conflict"
+  },
+  "employee-selection": {
+    "heading-employees": "Medewerkers ({{amountSelected}}/{{amountTotal}} geselecteerd)",
+    "no-employees": {
+      "caption": "Geen medewerkers",
+      "empty-planning-unit": "De actie kan niet worden uitgevoerd, omdat er geen medewerkers zijn voor de geselecteerde planningseenheid.",
+      "empty-planning-unit-and-employee-filter": "De actie kan niet worden uitgevoerd, omdat er geen medewerkers zijn voor de geselecteerde planningseenheid en het medewerkerfilter.",
+      "empty-planning-unit-and-selection": "Deze actie kan niet worden uitgevoerd, omdat er geen medewerkers zijn voor de geselecteerde planningseenheid en selectie.",
+      "form-error": "Geen medewerker geselecteerd. Er is ten minste één medewerker nodig om verder te gaan.",
+      "no-planning-unit": "De actie kan niet worden uitgevoerd, omdat er geen planningseenheid is geselecteerd."
+    },
+    "table": {
+      "employee_name": "Naam"
+    }
+  },
+  "error": {
+    "planning-unit": "Er moet een eenheid worden gekozen"
+  },
+  "notification": {
+    "failure": {
+      "general": "Er is een fout opgetreden. Probeer het later nog eens."
+    }
+  }
+}

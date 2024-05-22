@@ -1,0 +1,160 @@
+{
+  "document_title": {
+    "module": "Plan",
+    "page": {
+      "copy_level_content": "Copier le planning",
+      "empty_levels": "Supprimer le planning",
+      "replace_activities": "Remplacer des Activités"
+    }
+  },
+  "error": {
+    "copy-level-content-request": "Impossible de copier le contenu des catégories",
+    "empty-levels-request": "Impossible de supprimer le planning",
+    "incomplete-form": "Il manque des informations. Veuillez vérifier les champs mis en évidence.",
+    "planning-unit": "Une unité opérationnelle doit être sélectionnée",
+    "replace-activities-request": "Impossible de remplacer l'activité"
+  },
+  "explanation": {
+    "copy-level-content": {
+      "daterange-and-startdate": "Le contenu de la période sélectionnée sera collé à partir de la date de début cible.",
+      "empty-level": "En cochant cette case, les données de la catégorie source seront supprimées après la copie.",
+      "levels": "Copier le contenu de la catégorie source sur la période concernée. Attention, tous les éléments contenus dans la catégorie cible seront supprimés lors de la copie."
+    },
+    "employee-selection": "Par défaut, tous les employés de l'unité opérationnelle sont sélectionnés. Vous pouvez réduire le nombre d'employés en choisissant un groupe ou un filtre avancé.",
+    "empty-levels": {
+      "level-selection": "Le contenu des catégories sélectionnées sera supprimé sur la période concernée."
+    },
+    "replace-activities": {
+      "level-daterange": "Vous pouvez remplacer une activité sur plusieurs catégories en même temps pour la période concernée."
+    }
+  },
+  "heading": {
+    "copy-level-content": "Copier le planning",
+    "employees": "Employés ({{amountSelected}} /{{amountTotal}} sélectionné(s))",
+    "empty-levels": "Supprimer le planning",
+    "replace-activities": "Remplacer des activités",
+    "settings": "Paramètres"
+  },
+  "hint": {
+    "copy-level-content": {
+      "background-job": "L'opération s'exécute en arrière-plan. Pour vérifier l'avancée du traitement, aller dans le menu <0>JobProcessor</0>."
+    },
+    "empty-levels": {
+      "background-job": "L'opération s'exécute en arrière-plan. Pour vérifier l'avancée du traitement, aller dans le menu <0>JobProcessor</0>."
+    },
+    "replace-activities": {
+      "background-job": "L'opération s'exécute en arrière-plan. Pour vérifier l'avancée du traitement, aller dans le menu <0>JobProcessor</0>."
+    }
+  },
+  "label": {
+    "aria-enhancement": {
+      "button": "bouton",
+      "dropdown": "Menu déroulant"
+    },
+    "back-to-schedules": "Retourner à Schedules",
+    "button": {
+      "cancel": "Fermer",
+      "copy-level-content": "Copier le planning",
+      "empty-levels": "Supprimer le planning",
+      "level_one": "{{count}} catégorie sélectionnée",
+      "level_other": "{{count}} catégories sélectionnées",
+      "replace-activities": "Remplacer des activités"
+    },
+    "date-range": "Période",
+    "employee-filter": "Filtre avancé",
+    "empty-level": "Supprimer la source une fois la copie effectuée",
+    "empty-levels": {
+      "level-selection": "Catégorie(s) dont le contenu doit être supprimé"
+    },
+    "form-error": {
+      "no-employees": "Aucun employé sélectionné. Sélectionnez au moins un employé."
+    },
+    "levels": "Catégories",
+    "no-employees": {
+      "caption": "Aucun employé",
+      "empty-planning-unit": "Impossible de réaliser l'action car aucun employé n'appartient à l'Unité opérationnelle sélectionnée.",
+      "empty-planning-unit-and-employee-filter": "Impossible de réaliser l'action car aucun employé n'appartient à l'Unité opérationnelle ou au filtre sélectionnés.",
+      "empty-planning-unit-and-selection": "Impossible de réaliser l'action car aucun employé n'appartient à l'Unité opérationnelle et au Groupe sélectionnés.",
+      "no-planning-unit": "Impossible de réaliser l'action car aucune Unité opérationnelle n'est sélectionnée."
+    },
+    "no-entries": "Aucune donnée",
+    "no-planning-unit-selected": "Sélectionner d'abord une Unité opérationnelle",
+    "selection": "Groupe",
+    "source-activity": "Activité à remplacer",
+    "source-date-range": "Période source",
+    "source-level": "Catégorie source",
+    "start-date": "Date de début cible",
+    "target-activity": "Remplacer par",
+    "target-level": "Catégorie cible"
+  },
+  "level": {
+    "absenceWishes": {
+      "name": "Desiderata de congés et d'absences"
+    },
+    "alternativeWishes": {
+      "name": "Desiderata de réserve"
+    },
+    "backup": {
+      "name": "Sauvegarde 1"
+    },
+    "backupVersion2": {
+      "name": "Sauvegarde 2"
+    },
+    "backupVersion3": {
+      "name": "Sauvegarde 3"
+    },
+    "final": {
+      "name": "Etat actuel"
+    },
+    "plan": {
+      "name": "Planning"
+    },
+    "wishes": {
+      "name": "Desiderata"
+    }
+  },
+  "message": {
+    "copy-level-content": {
+      "request-not-successful": "Impossible de démarrer la copie de contenu de catégorie. Essayez à nouveau.",
+      "request-sent": "Copie du contenu de catégorie en cours. Pour vérifier l'avancée du traitement, aller dans le menu JobProcessor."
+    },
+    "empty-levels": {
+      "request-not-successful": "Impossible de supprimer le planning sur ces catégories :{{levels}}. Essayez à nouveau.",
+      "request-sent": "Suppression en cours pour les catégories : {{levels}}. Vérifier le statut du processus au menu JobProcessor."
+    },
+    "replace-activities": {
+      "request-not-successful": "Impossible de démarrer le remplacement des activités. Essayez à nouveau.",
+      "request-sent": "Remplacement des activités en cours. Pour vérifier l'avancée du traitement, aller dans le menu JobProcessor."
+    }
+  },
+  "notification": {
+    "failure": {
+      "general": "Une erreur est survenue. Essayez à nouveau."
+    }
+  },
+  "placeholder": {
+    "dropdown": "Rechercher ou sélectionner"
+  },
+  "table": {
+    "column": {
+      "employee_name": "Nom"
+    }
+  },
+  "validation": {
+    "selected-levels": {
+      "required": "Il faut sélectionner au moins une Catégorie"
+    },
+    "source-activity": {
+      "required": "Sélectionnez une activité"
+    },
+    "source-level": {
+      "required": "Une catégorie source doit être sélectionnée"
+    },
+    "target-activity": {
+      "required": "Sélectionnez une activité"
+    },
+    "target-level": {
+      "required": "Une catégorie cible doit être sélectionnée"
+    }
+  }
+}

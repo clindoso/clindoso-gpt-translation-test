@@ -1,0 +1,195 @@
+{
+  "button-title": {
+    "context-menu": {
+      "show": "Options"
+    },
+    "fullscreen": {
+      "enter": "Passer en mode plein écran",
+      "leave": "Quitter le mode plein écran"
+    },
+    "table": {
+      "copy": "Copier le tableau dans le presse-papier",
+      "hide": "Visualiser le graphique",
+      "show": "Visualiser le tableau"
+    }
+  },
+  "label": {
+    "button": {
+      "cancel": "Annuler",
+      "close-edit-mode": "Fermer le mode édition",
+      "copy": "Copier le tableau de bord",
+      "create-new": "Créer un nouveau tableau de bord",
+      "delete": "Supprimer",
+      "edit": "Modifier",
+      "save": "Sauvegarder",
+      "toggle-auto-refresh": "Rafraîchissement auto."
+    },
+    "copy-prefix": "Copie de",
+    "datepicker": {
+      "rolling-dates": "Utiliser les périodes glissantes"
+    },
+    "empty-name": "Le nom ne doit pas être vide",
+    "highcharts": {
+      "date": "Date",
+      "decimal-point": ",",
+      "reset-zoom": "Réinitialiser le zoom",
+      "thousands-sep": " "
+    },
+    "invalid-name": "Le nom est déjà utilisé",
+    "layout": "Disposition",
+    "loading": "Chargement",
+    "name": "Nom",
+    "timezone-info": "Le fuseau horaire est :",
+    "tree": {
+      "activities": "Activités",
+      "activity-type": {
+        "absence": "Absence",
+        "break": "Pause",
+        "holiday": "Congé",
+        "illness": "Maladie",
+        "meeting": "Meeting",
+        "present": "Présence"
+      },
+      "no-data": "Aucune donnée",
+      "planning-units": "Unités opérationnelles",
+      "shifts": "Horaires",
+      "totals": "Totaux",
+      "totals-prefix": "Total",
+      "workloads": "Workloads",
+      "wfm-queues": "Files d'attente WFM"
+    },
+    "last-updated-info": "Dernière mise à jour",
+    "auto-refresh-hint": "rafraîchissement automatique",
+    "cannot-check": "La vérification du nom n'est actuellement pas possible.",
+    "error-deleting-dashboard": "Une erreur est survenue lors de la suppression du tableau de bord.",
+    "error-loading-dashboard": "Une erreur est survenue lors du chargement de ce tableau de bord. Vous pouvez <0>actualiser</0> la page maintenant ou réessayer plus tard.",
+    "error-loading-dashboard-list": "La liste des tableaux de bord ne peut être affichée.",
+    "error-loading-nodes": "Une erreur est survenue lors du chargement des données. <0>Rechargez</0> la page ou essayez ultérieurement.",
+    "error-saving-dashboard": "Une erreur est survenue lors de l'enregistrement du tableau de bord."
+  },
+  "level": {
+    "absence-wishes": "Desiderata de congés",
+    "acd": "Système externe",
+    "actual": "État actuel",
+    "backup": "Sauvegarde 1",
+    "backup_version_2": "Sauvegarde 2",
+    "forecast": "Prévision",
+    "historic": "Historique",
+    "plan": "Planning",
+    "wishes": "Desiderata",
+    "backup_version_3": "Sauvegarde 3"
+  },
+  "modal": {
+    "change-layout": {
+      "cancel": "Conserver la disposition actuelle",
+      "confirm": "Changer la disposition",
+      "title": "Changer la disposition",
+      "warning": "Changer la disposition supprimera au moins un graphique. Voulez-vous vraiment continuer?"
+    },
+    "delete-dashboard": {
+      "cancel": "Conserver le tableau de bord",
+      "confirm": "Supprimer le tableau de bord",
+      "title": "Voulez-vous supprimer le tableau de bord ?",
+      "warning": "Voulez-vous vraiment supprimer ce tableau de bord ?"
+    },
+    "graph-settings": {
+      "aggregation": {
+        "by-day": "Par jour",
+        "by-interval": "Par intervalle",
+        "label": "Afficher les données",
+        "not-available": "Les données ne peuvent être sélectionnées pour cette période"
+      },
+      "color": "Couleur",
+      "title": "Personnaliser le graphique",
+      "type": {
+        "histogram": "Histogramme",
+        "label": "Type",
+        "step": "Étape"
+      },
+      "y-axis": {
+        "label": "Afficher l'axe des ordonnées sur",
+        "left": "Gauche (par défaut)",
+        "right": "Droite"
+      }
+    },
+    "unsaved-changes": {
+      "discard": "Quitter sans sauvegarder",
+      "stay": "Rester en mode édition",
+      "title": "Changements non sauvegardés dans votre tableau de bord",
+      "warning": "Votre tableau de bord contient des modifications non enregistrées. Voulez-vous enregistrer les modifications?"
+    }
+  },
+  "notification": {
+    "failure": {
+      "general": "Une erreur est survenue. Essayez à nouveau."
+    },
+    "success": {
+      "saved": "Le tableau de bord a été enregistré"
+    }
+  },
+  "placeholder": {
+    "chart-title": "Graphique sans titre",
+    "dashboard-dropdown": "Sélectionner un tableau de bord",
+    "dashboard-name": "Tableau de bord sans titre",
+    "drop_target": "Glisser et déposer les valeurs ici pour créer un graphique",
+    "no-series": "Aucun graphique sélectionné",
+    "search": "Rechercher des Workloads ou des Unités Opérationnelles",
+    "type-dropdown": "Sélectionner le type"
+  },
+  "table": {
+    "timestamp": "Horodatage"
+  },
+  "tooltip": {
+    "copied": "Données copiées dans le presse-papier",
+    "datepicker": {
+      "rolling-dates": "La sélection de cette case ajoutera chaque jour, un jour à la date / plage sélectionnée"
+    },
+    "no-data": "Aucune donnée dans cette plage de dates",
+    "version-mismatch": "Les données sont en cours de calcul, chargez à nouveau la page pour mettre à jour les données.",
+    "toggle-auto-refresh": "Les données sont mises à jour toutes les 15 minutes",
+    "not-existing": "Ce Workload n'existe plus. Veuillez le supprimer ou le remplacer en modifiant le tableau de bord.",
+    "no-permission": "Vous n'avez pas les droits pour voir ces données",
+    "no-business-hours": "Heures d'ouverture non disponible"
+  },
+  "hint": {
+    "auto-refresh-enabled": "Rafraîchissement automatique activé"
+  },
+  "values": {
+    "planning-unit": {
+      "coverage": "Couverture",
+      "requirement": "Besoin",
+      "staffing": "Occupation"
+    },
+    "shift": {
+      "coverage_including_wishes": "Couverture incluant les desiderata",
+      "wishes": "Desiderata"
+    },
+    "workload": {
+      "aht": "TMT {{channel}}",
+      "answered": "{{channel}} répondus",
+      "channel": {
+        "calls": "Appels",
+        "cases": "Dossiers",
+        "chats": "Chats",
+        "documents": "Documents",
+        "social_media": "Réseaux sociaux",
+        "emails": "E-mails"
+      },
+      "forecast": "Forecast",
+      "offered": "{{channel}} reçus",
+      "operational": "Opérationnel",
+      "strategic": "Stratégique",
+      "total_handling_time": "Temps de traitement total",
+      "abandon_rate": "Taux d'abandon",
+      "abandoned": "{{channel}} abandonnés",
+      "answered_within_service_level": "{{channel}} traités selon l'objectif de Qualité de Service",
+      "average_speed_of_answered": "Temps moyen de décroché",
+      "import": "Import",
+      "service_level_historical": "Qualité de Service",
+      "waiting_time_until_answered": "Temps d'attente avant décroché"
+    }
+  },
+  "document_title": {
+    "module": "Dashboards"
+  }
+}

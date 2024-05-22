@@ -1,0 +1,871 @@
+{
+  "time_off_overview": {
+    "confirmation_modal": {
+      "cancel": "Annuleren"
+    },
+    "approved": "Goedgekeurd",
+    "cancellation_requested": "Annulering aangevraagd",
+    "decided": "Beoordeeld",
+    "heading": "Verlofaanvragen",
+    "page_title": "Vakantie/Afwezigheid | injixo",
+    "rejected": "Afgewezen",
+    "requested": "Verlof aangevraagd",
+    "canceled": "Geannuleerd",
+    "comment": {
+      "placeholder": "Voeg een opmerking toe",
+      "label": "Opmerking",
+      "optional": "optioneel"
+    },
+    "employee_balances": "Persoonlijke saldi",
+    "manual_action_required": "Werk de planning handmatig bij",
+    "processing": "Aanvragen in behandeling",
+    "recommendation": {
+      "approval": "Goedkeuren",
+      "pending": "In behandeling",
+      "rejection": "Afwijzen",
+      "cancellation": "Annuleer",
+      "not_possible": "Er is geen slimme aanbeveling mogelijk",
+      "outdated": "Slimme aanbeveling wordt gegenereerd"
+    },
+    "time_off_configuration": "Verlofinstellingen",
+    "valuation": {
+      "conflict": {
+        "reason": "Het aantal te boeken uren verandert mogelijk nog, omdat {{ username }} voor deze week nog minstens één andere verlofaanvraag heeft ingediend."
+      }
+    },
+    "action": {
+      "approve": {
+        "error": {
+          "already_decided": "Deze verlofaanvraag is al beoordeeld.",
+          "generic": "De verlofaanvraag kon niet worden goedgekeurd."
+        },
+        "go_to_decided": "Ga naar Beoordeeld",
+        "hint": "Het verlof wordt aan de planning toegevoegd.",
+        "label": "Verlof goedkeuren",
+        "submit": "Bevestigen",
+        "submitting": "Bezig met goedkeuren van verlofaanvraag",
+        "success": "Verlofaanvraag goedgekeurd"
+      },
+      "approve_cancellation": {
+        "error": {
+          "generic": "Het verlof is al geannuleerd."
+        },
+        "label": "Verlof annuleren",
+        "no_sync_hint": "injixo werkt de planning van de medewerker niet automatisch bij. Controleer en werk deze indien nodig handmatig bij.",
+        "submit": "Annulering bevestigen",
+        "submitting": "Verlof wordt geannuleerd",
+        "success": "Verlof geannuleerd"
+      },
+      "cancel": {
+        "error": {
+          "already_canceled": "Het verlof is al geannuleerd.",
+          "generic": "Het verlof kon niet worden geannuleerd."
+        },
+        "label": "Verlof annuleren",
+        "no_sync_hint": "injixo werkt de planning van de medewerker niet automatisch bij. Controleer en werk deze indien nodig handmatig bij.",
+        "submit": "Annulering bevestigen",
+        "submitting": "Verlof wordt geannuleerd",
+        "success": "Verlof geannuleerd"
+      },
+      "recommend_approval": {
+        "error": {
+          "already_recommended": "Er is al een aanbeveling gedaan",
+          "generic": "Aanbevolen goedkeuring mislukt"
+        },
+        "label": "Goedkeuring aanbevelen",
+        "submit": "Bevestigen",
+        "submitting": "Bezig met aanbevelen van goedkeuring",
+        "success": "Goedkeuring aanbevolen"
+      },
+      "recommend_cancellation_approval": {
+        "error": {
+          "generic": "Aanbevelen van goedkeuring voor annuleringsaanvraag mislukt."
+        },
+        "label": "Annulering aanbevolen",
+        "submit": "Bevestigen",
+        "submitting": "Annulering aanbevolen",
+        "success": "Annuleringsaanvraag aanbevolen"
+      },
+      "recommend_cancellation_rejection": {
+        "error": {
+          "generic": "Afwijzing van annuleringsaanvraag mislukt."
+        },
+        "label": "Afwijzing aanbevelen",
+        "submit": "Bevestigen",
+        "submitting": "Afwijzing wordt aanbevolen",
+        "success": "Afwijzing van annuleringsaanvraag aanbevolen"
+      },
+      "recommend_rejection": {
+        "error": {
+          "already_recommended": "Er is al een aanbeveling gedaan",
+          "generic": "Afwijzing aanbevelen is mislukt"
+        },
+        "label": "Afwijzing aanbevelen",
+        "submit": "Bevestigen",
+        "submitting": "Afwijzing aanbevelen",
+        "success": "Afwijzing aanbevolen"
+      },
+      "reject": {
+        "error": {
+          "already_decided": "Deze verlofaanvraag is al beoordeeld",
+          "generic": "Deze verlofaanvraag kon niet worden afgewezen."
+        },
+        "go_to_decided": "Ga naar Beoordeeld",
+        "label": "Afwijzen",
+        "submit": "Bevestigen",
+        "submitting": "Bezig met afwijzen van verlofaanvraag",
+        "success": "Verlofaanvraag afgewezen"
+      },
+      "reject_cancellation": {
+        "error": {
+          "generic": "De annuleringsaanvraag kon niet worden afgewezen."
+        },
+        "label": "Afwijzen",
+        "submit": "Bevestigen",
+        "submitting": "Annulering afwijzen",
+        "success": "Annuleringsaanvraag afgewezen"
+      }
+    },
+    "comments_one": "1 opmerking",
+    "comments_other": "{{count}} opmerkingen",
+    "created_at": "Aangevraagd op {{datetime}}",
+    "empty_state": {
+      "cancellation_requested": {
+        "description": "Als medewerkers goedgekeurd verlof willen annuleren, dan vind je hier hun annuleringsaanvragen.<br />Ben je op zoek naar beoordeelde aanvragen? Ga dan naar het tabblad <decidedLink>Beoordeeld</decidedLink>.",
+        "title": "Geen annuleringsaanvragen"
+      },
+      "decided": {
+        "description": "Zodra beslissingen zijn genomen over verloofanvragen en annuleringsaanvragen, vind je ze hier.",
+        "title": "Geen goedgekeurde, afgewezen of geannuleerde verlofaanvragen"
+      },
+      "no_results": {
+        "action": "Filters en zoekopdracht resetten",
+        "description": "Wijzig of reset je filters en zoekopdracht.",
+        "title": "Geen aanvragen gevonden"
+      },
+      "requested": {
+        "description": "Als medewerkers verlof aanvragen, dan vind je hun aanvragen hier.<br />Ben je op zoek naar beoordeelde aanvragen? Ga dan naar het tabblad <decidedLink>Beoordeeld</decidedLink>.",
+        "title": "Geen verlofaanvragen"
+      }
+    },
+    "filter": {
+      "planning_units": {
+        "empty": "Geen eenheden",
+        "label": "Eenheden",
+        "search": "Eenheden zoeken",
+        "select_all": "Alle eenheden"
+      },
+      "recommendations": {
+        "empty": "Geen aanbevelingen",
+        "label": "Aanbeveling",
+        "options": {
+          "approval": {
+            "label": "Toestaan"
+          },
+          "pending": {
+            "label": "In behandeling"
+          },
+          "rejection": {
+            "label": "Afwijzen"
+          }
+        },
+        "search": "Zoek aanbevelingen",
+        "select_all": "Alle aanbevelingen"
+      },
+      "selections": {
+        "empty": "Geen selectie",
+        "label": "Groepen",
+        "search": "Groepen zoeken",
+        "select_all": "Alle groepen"
+      },
+      "time_period": {
+        "clear": "Wissen",
+        "label": "Periode",
+        "placeholder": "Periode selecteren"
+      },
+      "types": {
+        "deleted": "(Verwijderd)",
+        "empty": "Geen verloftypen",
+        "label": "Verloftypen",
+        "search": "Verloftypen zoeken",
+        "select_all": "Alle verloftypen"
+      }
+    },
+    "label": {
+      "comments": "Opmerkingen",
+      "current_balance": "Huidig saldo",
+      "decision": "Status",
+      "planning_unit": "Planningseenheid",
+      "projected": "Verwacht",
+      "recommendation": "Aanbeveling",
+      "remaining": "Resterend",
+      "time": "Periode",
+      "to_be_booked": "Te boeken",
+      "type": "Type",
+      "type_deleted": "(Verwijderd)"
+    },
+    "pagination": {
+      "aria_label": "Paginanummering"
+    },
+    "recommendation_insights": {
+      "current_schedule": "Actuele planning",
+      "empty": "Er zijn geen activiteiten ingepland voor de aangevraagde periode.",
+      "error": "Er is iets misgegaan. <RetryLink>Probeer het opnieuw</RetryLink>.",
+      "hide": "Dekking en verlof verbergen",
+      "people_absent": "Afwezige medewerkers",
+      "show": "Dekking en verlof weergeven"
+    },
+    "schedule_restoration_modal": {
+      "blank_out_shift": "Dienst annuleren",
+      "cancel": "Annuleren",
+      "cancellation": {
+        "submit": "Verlof annuleren",
+        "submitting": "Verlof wordt geannuleerd",
+        "title": "Verlof annuleren en planning bijwerken?"
+      },
+      "comment": "Opmerking",
+      "decision": {
+        "submit": "Bevestigen",
+        "submitting": "Annulering wordt goedgekeurd"
+      },
+      "employee": "Medewerker",
+      "load_error": "De planningsgegevens konden niet worden geladen.<RetryLink>Probeer ze opnieuw te laden<RetryLink> of probeer het later opnieuw.",
+      "recommendation": {
+        "submit": "Goedkeuring aanbevelen",
+        "submitting": "Goedkeuring wordt aanbevolen",
+        "title": "Annulering van de verlofaanvraag aanbevelen en planning bijwerken"
+      },
+      "recommended": "Aanbevolen",
+      "restore_history": "Geschiedenis herstellen"
+    },
+    "search": {
+      "placeholder": "Medewerkers zoeken"
+    },
+    "sorting": {
+      "created_at": {
+        "ascending": "Oudste",
+        "descending": "Nieuwste"
+      },
+      "name": {
+        "ascending": "Naam A-Z",
+        "descending": "Naam Z-A"
+      }
+    }
+  },
+  "balance_details": {
+    "approved_time_off": "Goedgekeurde verlofaanvragen",
+    "back_to_time_off": "Terug naar Vakantie/Afwezigheid",
+    "canceled_time_off": "Geannuleerde verlofaanvragen",
+    "column": {
+      "counted": {
+        "days": "Getelde dagen",
+        "hours": "Getelde uren"
+      },
+      "date": "Datum",
+      "processed_by": "Verwerkt door",
+      "reason": "Reden"
+    },
+    "edit_entitlement": {
+      "aria_label": "Vakantierechten bewerken",
+      "cancel": "Annuleren",
+      "error": {
+        "reason": {
+          "missing": "Geef een reden op (max. {{maxLength}} tekens).",
+          "too_long": "Geef een reden op (max. {{maxLength}} tekens)."
+        },
+        "unknown": "De vakantierechten konden niet worden gewijzigd. Probeer het opnieuw.",
+        "value": {
+          "invalid_number": "Voer 0 of een getal groter dan 0 in."
+        }
+      },
+      "heading": "Vakantierechten bewerken",
+      "hint": {
+        "addition": "Je staat op het punt om {{diff}} {{diff_unit}} aan de vakantierechten toe te voegen. ",
+        "deduction": "Je staat op het punt om {{diff}} {{diff_unit}} op de vakantierechten in mindering te brengen.",
+        "result": "De nieuwe vakantierechten bedragen {{new_value}} {{new_value_unit}}."
+      },
+      "new_entitlement": "Nieuwe vakantierechten",
+      "reason": "Reden voor de wijziging",
+      "save": "Wijziging opslaan",
+      "saving": "Bezig met opslaan"
+    },
+    "edit_taken": {
+      "aria_label": "Opgenomen verlof bewerken",
+      "cancel": "Annuleren",
+      "error": {
+        "reason": {
+          "missing": "Voer een reden in (max. {{maxLength}} tekens).",
+          "too_long": "Voer een reden in (max. {{maxLength}} tekens)."
+        },
+        "unknown": "Het opgenomen verlof kon niet worden gewijzigd. Probeer het opnieuw.",
+        "value": {
+          "invalid_number": "Voer 0 of een getal groter dan 0 in."
+        }
+      },
+      "heading": "Opgenomen verlof bewerken",
+      "hint": {
+        "addition": "Je staat op het punt om {{diff}} {{diff_unit}} bij het opgenomen verlof op te tellen.",
+        "deduction": "Je staat op het punt om {{diff_unit}} {{diff}} op het opgenomen verlof in mindering te brengen.",
+        "result": "Het nieuwe opgenomen verlof is {{new_value}} {{new_value_unit}}."
+      },
+      "new_taken": "Opgenomen verlof",
+      "reason": "Reden voor de wijziging",
+      "save": "Wijziging opslaan",
+      "saving": "Bezig met opslaan"
+    },
+    "employee": "Medewerker",
+    "employees": "Medewerkers",
+    "empty": {
+      "action": "Kies een andere medewerker of ga terug naar Vakantie/afwezigheid",
+      "message": "Er is geen informatie beschikbaar over het verloftype van deze medewerker.",
+      "description": "Je kunt de volgende wijzigingen hier volgen:<unorderedList><li>Goedgekeurde verlofaanvragen</li><li>Geannuleerde goedgekeurde verlofaanvragen</li><li>Wijzigingen in vakantierechten en opgenomen verlof</li></UnorderedList>",
+      "title": "Geen wijzigingen aan de uren van de medewerker"
+    },
+    "entitlement_period": "Aanspraakperiode",
+    "heading": "Persoonlijk saldo",
+    "no_employee_found": "Geen medewerker gevonden",
+    "no_employees": "Geen medewerkers beschikbaar in de eenheid of ontbrekende toegangsrechten",
+    "no_planning_units": "Geen eenheden beschikbaar",
+    "no_records": "Geen gegevens voor de geselecteerde medewerker",
+    "no_types": "Er zijn geen verloftypen gevonden",
+    "planning_unit": "Eenheid",
+    "remaining": {
+      "days": "Resterende dagen",
+      "hours": "Aantal resterende uren"
+    },
+    "search_employees": {
+      "aria_label": "Medewerkers zoeken",
+      "placeholder": "Medewerkers zoeken",
+      "empty": {
+        "description": "Wijzig je filters.",
+        "title": "Geen medewerkers beschikbaar"
+      }
+    },
+    "success": {
+      "entitlement_changed": "Nieuwe vakantierechten zijn opgeslagen",
+      "taken_changed": "Opgenomen verlof opgeslagen"
+    },
+    "type": "Verloftype",
+    "year": "Jaar",
+    "type_deleted": "{{name}} (Verwijderd)"
+  },
+  "balance_summary": {
+    "entitlement": {
+      "label": "Vakantierechten"
+    },
+    "remaining": "Resterend",
+    "taken": {
+      "label": "Opgenomen"
+    }
+  },
+  "configuration": {
+    "back_to_time_off": "Terug naar Verlofaanvragen",
+    "page_heading": "Verlofinstellingen",
+    "time_off_periods": "Verlofperioden",
+    "time_off_types": "Verloftypen",
+    "time-off-types": {
+      "button": {
+        "filter-time-off-types": {
+          "checkbox": {
+            "display-all-types": {
+              "label": "Alle"
+            },
+            "display-available-types": {
+              "label": "Beschikbaar"
+            },
+            "display-deleted-types": {
+              "label": "Verwijderd"
+            }
+          },
+          "label": "Filter"
+        }
+      },
+      "table": {
+        "types": {
+          "empty-state": {
+            "heading": {
+              "text": "Geen verloftype gevonden"
+            },
+            "no-results": {
+              "description": {
+                "text": "Wijzig of <resetFiltersLink>reset je filters</resetFiltersLink>."
+              }
+            }
+          }
+        }
+      }
+    },
+    "types": {
+      "table": {
+        "types": {
+          "deleted-type": {
+            "text": "(Verwijderd)"
+          }
+        }
+      }
+    }
+  },
+  "schedule_sync": {
+    "failed": "Verlof kon niet aan de planning worden toegevoegd",
+    "not_implemented": "Verlof geannuleerd en niet bijgewerkt in de planning.\nWerk de planning handmatig bij.",
+    "not_needed": "Verlofaanvraag afgewezen. Verlof is niet toegevoegd aan de planning.",
+    "processing": "Verlof aan de planning toevoegen",
+    "processing_hint": "Verlof wordt toegevoegd aan de planning.",
+    "resolve": "Markeer als opgelost omdat het rooster handmatig is bijgewerkt.",
+    "resolved-approved": "Verlof is aan de planning toegevoegd.",
+    "resolved-canceled": "Verlof is uit de planning verwijderd."
+  },
+  "types_overview": {
+    "add": "Toevoegen",
+    "column": {
+      "archived_date": "Gearchiveerd op",
+      "name": "Naam",
+      "paid": "Betaald",
+      "requestable": "Aan te vragen door medewerker",
+      "unit": "Tijdseenheid",
+      "unit_error": "Selecteer een tijdseenheid.",
+      "fill_up": "Planning vullen"
+    },
+    "create": {
+      "action": "Nieuw verloftype"
+    },
+    "form": {
+      "cancel": "Annuleren",
+      "create": {
+        "heading": "Nieuw verloftype aanmaken",
+        "label": "Nieuw verloftype aanmaken",
+        "submit": "Verloftype aanmaken",
+        "submit_error": "Het verloftype kon niet worden aangemaakt. Controleer de gemarkeerde velden.",
+        "submitting": "Bezig met aanmaken"
+      },
+      "create_unit_hint": "Nadat je het verloftype hebt aangemaakt, kun je de tijdseenheid niet meer wijzigen.",
+      "delete": {
+        "cancel": "Annuleren",
+        "consequences": {
+          "1": "De activiteit met dezelfde naam wordt in iWFM verwijderd.",
+          "2": "Je kunt het verloftype niet herstellen."
+        },
+        "heading": "Verloftype verwijderen?",
+        "label": "Verloftype {{name}} verwijderen",
+        "precondition": "Alleen verloftypen die niet in gebruik zijn, kunnen worden verwijderd.",
+        "submit": "Verloftype verwijderen",
+        "submitting": "Bezig met verwijderen van verloftype",
+        "description": "<b>{{ name }}</b> wordt uit injixo verwijderd."
+      },
+      "edit": {
+        "heading": "Verloftype bewerken",
+        "label": "Verloftype {{name}} bewerken",
+        "submit": "Wijzigingen opslaan",
+        "submit_error": "Het verloftype kon niet worden opgeslagen. Controleer de gemarkeerde velden.",
+        "submitting": "Bezig met opslaan"
+      },
+      "edit_unit_hint": "Nadat je het verloftype hebt aangemaakt, kun je de tijdseenheid niet meer wijzigen.",
+      "entitlement_periods": {
+        "create": "Aanspraakperiode toevoegen",
+        "delete": "Aanspraakperiode verwijderen {{number}}",
+        "end_date": "Einddatum",
+        "end_date_aria": "Einddatum aanspraakperiode {{number}}",
+        "heading": "Aanspraakperioden",
+        "start_date": "Begindatum",
+        "start_date_aria": "Begindatum aanspraakperiode {{number}}",
+        "warning": "Je kunt een aanspraakperiode niet meer wijzigen zodra een medewerker binnen de betreffende aanspraakperiode een verlofaanvraag heeft ingediend."
+      },
+      "error": {
+        "entitlement_periods": {
+          "consecutive": "Selecteer een begindatum die direct aansluit op de vorige einddatum.",
+          "start_date_before_end": "Selecteer een einddatum die na de begindatum ligt."
+        },
+        "name": {
+          "activity_already_exists": "Deze naam is niet beschikbaar",
+          "already_exists": "Voer een naam in die nog niet wordt gebruikt.",
+          "required": "Voer een naam in die nog niet wordt gebruikt."
+        },
+        "unit": {
+          "required": "Selecteer een tijdseenheid."
+        },
+        "fillUpTypeId": {
+          "not_found": "Het geselecteerde verloftype bestaat niet.",
+          "paid_type": "Het verloftype moet onbetaald zijn.",
+          "required": "Selecteer een verloftype.",
+          "wrong_unit": "Het verloftype heeft de verkeerde tijdseenheid."
+        },
+        "paid": {
+          "paid_fill_up": "Het verloftype wordt gebruikt om niet-werktijd te vervangen en kan zodoende niet betaald zijn."
+        }
+      },
+      "error_unit": "Je moet eerst een tijdseenheid selecteren om op te kunnen slaan.",
+      "help_unit_selected": "Je kunt de tijdseenheid niet meer wijzigen nadat je het verloftype hebt aangemaakt.",
+      "paid": "Betaald",
+      "requestable": "Aan te vragen door medewerker",
+      "type": {
+        "heading": "Algemeen"
+      },
+      "type_name": "Naam",
+      "unit": "Tijdseenheid",
+      "unit_already_exists_hint": "De tijdseenheid is ingesteld. Deze kan niet meer worden gewijzigd.",
+      "unkown_error": "Dit verloftype kon niet worden aangemaakt. Probeer het opnieuw.",
+      "unsaved_changes": {
+        "bodytext": "Je wijzigingen worden niet opgeslagen.",
+        "discard": "Wijzigingen annuleren",
+        "title": "Niet-opgeslagen wijzigingen annuleren?",
+        "back_to_create": "Terug naar Aanmaken",
+        "back_to_edit": "Terug naar Bewerken"
+      },
+      "schedule_setting": {
+        "activate_fill_up": "Vervang ook onbetaalde activiteiten (zoals pauzes) en vul niet-werktijd op met het volgende onbetaalde verloftype:",
+        "fill_up": {
+          "label": "Verloftype",
+          "placeholder": "Selecteer een onbetaald verloftype."
+        },
+        "heading": "Planningsinstelling",
+        "info": {
+          "paid": "injixo vervangt standaard alleen ingeplande betaalde activiteiten of contractuele werkuren door dit verloftype. Ga voor meer informatie naar het <helpCenterLink>Help Center</helpCenterLink>.",
+          "paid_hint": "Deze instelling is alleen van invloed op nieuwe verlofaanvragen.",
+          "paid_link": "https://help.injixo.com/time-off-types#fill-up-functionality",
+          "unpaid": "Er zijn geen planningsinstellingen voor onbetaalde verloftypen."
+        }
+      },
+      "unit_days": "Dagen",
+      "unit_hours": "Uren"
+    },
+    "heading": "Verloftypen",
+    "no_types": "Geen verloftypen",
+    "success": {
+      "type_archived": "Verloftype is gearchiveerd",
+      "type_created": "Verloftype is aangemaakt",
+      "type_deleted": "Verloftype is verwijderd",
+      "type_updated": "Verloftype is bijgewerkt"
+    },
+    "type": {
+      "hint": {
+        "has_relations": "Dit verloftype is in gebruik. Verloftypen die in gebruik zijn, kunnen niet worden verwijderd."
+      }
+    }
+  },
+  "unit": {
+    "days_one": "dag",
+    "days_other": "dagen",
+    "hours_one": "uur",
+    "hours_other": "uren"
+  },
+  "unit_short": {
+    "days_one": "d",
+    "days_other": "d",
+    "hours_one": "h",
+    "hours_other": "h"
+  },
+  "add-time-off": {
+    "elevated-side-panel": {
+      "aria-label": "Verlof toevoegen",
+      "button": {
+        "add": {
+          "label": "Verlof toevoegen"
+        },
+        "cancel": {
+          "label": "Annuleren"
+        }
+      },
+      "combo-box": {
+        "entitlement-period": {
+          "errors": {
+            "required": "Selecteer een verlofperiode."
+          },
+          "label": "Verlofperiode",
+          "placeholder": "Selecteren"
+        },
+        "person": {
+          "errors": {
+            "required": "Selecteer een medewerker."
+          },
+          "label": "Medewerker",
+          "placeholder": "Selecteren"
+        },
+        "time-off-type": {
+          "errors": {
+            "required": "Selecteer een verloftype."
+          },
+          "label": "Verloftype",
+          "placeholder": "Selecteren"
+        }
+      },
+      "date-range-picker": {
+        "errors": {
+          "required": "Selecteer een tijdsbestek."
+        },
+        "label": "Tijdsbestek",
+        "placeholder": "Selecteren"
+      },
+      "end-time": {
+        "errors": {
+          "error_end_before_start": "Selecteer een eindtijd die later is dan de starttijd.",
+          "required": "Voer een start- en eindtijd in."
+        },
+        "label": "Eindtijd"
+      },
+      "helper-text": "De medewerker wordt per e-mail op de hoogte gesteld.",
+      "inline-message": {
+        "error": {
+          "conflict_with_existing_time_off": "De medewerker is gedurende het geselecteerde tijdsbestek al met verlof. Selecteer een andere tijdsbestek.",
+          "generic": "Het verlof kon niet worden toegevoegd. Probeer het opnieuw.",
+          "no_time_off_period": "Voor het geselecteerde verloftype is geen verlofperiode gepubliceerd. Publiceer een verlofperiode of selecteer een ander verloftype."
+        }
+      },
+      "start-time": {
+        "errors": {
+          "required": "Voer een start- en eindtijd in."
+        },
+        "label": "Starttijd"
+      },
+      "switch": {
+        "part-day": {
+          "label": "Een dagdeel aanvragen"
+        }
+      },
+      "textarea": {
+        "comment": {
+          "errors": {
+            "max_length": "Voeg een opmerking toe (max. 100 tekens)."
+          },
+          "label": "Opmerking <optional>optioneel</optional>",
+          "placeholder": "Voeg je commentaar toe"
+        }
+      },
+      "title": "Verlof toevoegen"
+    },
+    "toast": {
+      "action": {
+        "text": "Ga naar Beslist"
+      },
+      "save-success": {
+        "text": "Verlof toegevoegd"
+      }
+    }
+  },
+  "balance_filter": {
+    "view": {
+      "label": "Weergave",
+      "multi": "Meerdere medewerkers",
+      "single": "Individuele medewerkers"
+    }
+  },
+  "balance_overview": {
+    "column": {
+      "entitlement": "Vakantierechten",
+      "name": "Naam",
+      "personnel_number": "Personeelsnummer",
+      "remaining": "Resterend",
+      "taken": "Opgenomen"
+    },
+    "edit_entitlements": {
+      "discard": "Wijzigingen annuleren",
+      "entitlement": {
+        "aria_label": "Vakantierechten voor {{personnelNumber}}",
+        "unsaved": "De vakantierechten zijn niet opgeslagen."
+      },
+      "error": {
+        "invalid_fields": "De vakantierechten konden niet worden opgeslagen. Controleer de gemarkeerde velden.",
+        "unknown": "De vakantierechten konden niet worden gewijzigd. Probeer het opnieuw."
+      },
+      "reason": {
+        "label": "Reden voor de wijziging"
+      },
+      "save": "Wijzigingen opslaan",
+      "success": "Vakantierechten opgeslagen"
+    },
+    "no_employees": "Geen medewerkers beschikbaar in de eenheid of ontbrekende toegangsrechten"
+  },
+  "edit-time-off": {
+    "elevated-side-panel": {
+      "aria-label": "Edit time off",
+      "button": {
+        "cancel": {
+          "label": "Cancel"
+        },
+        "edit": {
+          "label": "Edit time off"
+        }
+      },
+      "combo-box": {
+        "person": {
+          "label": "Person"
+        },
+        "time-off-type": {
+          "label": "Time-off type"
+        }
+      },
+      "date-range-picker": {
+        "errors": {
+          "required": "Select a time range."
+        },
+        "label": "Time range",
+        "placeholder": "Select"
+      },
+      "end-time": {
+        "errors": {
+          "error_end_before_start": "Select an end time that is later than the start time.",
+          "required": "Enter a start and end time"
+        },
+        "label": "End time"
+      },
+      "helper-text": "The person will be notified by email.",
+      "inline-message": {
+        "error": {
+          "conflict_with_existing_time_off": "During the selected time range, the person already has time off. Select a different time range.",
+          "generic": "Time off could not be edited. Please try again",
+          "no_time_off_period": "For the selected time-off type, no time-off period has been published. Publish the time-off period or select a different time-off type."
+        }
+      },
+      "start-time": {
+        "errors": {
+          "required": "Enter a start and end time."
+        },
+        "label": "Start time"
+      },
+      "switch": {
+        "part-day": {
+          "label": "Request a part of the day"
+        }
+      },
+      "textarea": {
+        "comment": {
+          "errors": {
+            "max_length": "Enter a comment (up to 100 characters)."
+          },
+          "label": "Comment <optional>optional</optional>",
+          "placeholder": "Add your comment"
+        }
+      },
+      "title": "Edit time off"
+    },
+    "toast": {
+      "action": {
+        "text": "Go to decided"
+      },
+      "save-success": {
+        "text": "Time off edited"
+      }
+    }
+  },
+  "personal-balances": {
+    "individual-people": {
+      "balance-summary": {
+        "current-balance": {
+          "label": "Huidig saldo"
+        }
+      },
+      "modal": {
+        "edit-entitlement": {
+          "date-picker": {
+            "booking-date": {
+              "label": "Datum"
+            }
+          }
+        },
+        "edit-taken": {
+          "date-picker": {
+            "booking-date": {
+              "label": "Datum"
+            }
+          }
+        }
+      }
+    },
+    "multiple-people": {
+      "edit-entitlement": {
+        "date-picker": {
+          "booking-date": {
+            "label": "Datum"
+          }
+        }
+      },
+      "table": {
+        "people-balances": {
+          "table-column": {
+            "current": {
+              "label": "Huidig saldo"
+            }
+          }
+        }
+      }
+    }
+  },
+  "plan-page": {
+    "filter-bar": {
+      "date-range-navigator": {
+        "aria-label": "Selecteer een kijkbereik"
+      },
+      "search-input": {
+        "placeholder": "Medewerkers zoeken"
+      },
+      "view-switch": {
+        "list": {
+          "aria-label": "Lijstweergave"
+        },
+        "plan": {
+          "aria-label": "Planweergave"
+        }
+      }
+    },
+    "timeline": {
+      "empty-state": {
+        "no-results": {
+          "clear-filters": {
+            "button": {
+              "label": "Filters en zoekopdracht resetten"
+            }
+          },
+          "description": "Wijzig of reset je filters en zoekopdracht.",
+          "heading": "Geen medewerkers gevonden"
+        }
+      },
+      "people-header": {
+        "sort-button": {
+          "aria-label": "Sorteeroptie instellen"
+        },
+        "sort-by": {
+          "person-asc": "Naam A → Z",
+          "person-desc": "Naam Z → A",
+          "start-time": "Starttijd"
+        },
+        "text": "Medewerker naam"
+      },
+      "statistics": {
+        "people-off": {
+          "approved": {
+            "text": "Afwezigen"
+          },
+          "pending": {
+            "text": "Afwezigen (in behandeling)"
+          }
+        }
+      }
+    }
+  },
+  "time-off-overview": {
+    "button": {
+      "add-time-off": {
+        "label": "Verlof toevoegen"
+      }
+    },
+    "card-list": {
+      "time-off": {
+        "card-item": {
+          "time-off-entry": {
+            "booked": {
+              "label": "Geboekt"
+            },
+            "current-balance": {
+              "label": "Huidig saldo"
+            },
+            "plan-link": {
+              "label": "Bekijk in plan"
+            },
+            "projected-balance": {
+              "label": "Verwacht verlofsaldo"
+            }
+          }
+        }
+      }
+    }
+  }
+}

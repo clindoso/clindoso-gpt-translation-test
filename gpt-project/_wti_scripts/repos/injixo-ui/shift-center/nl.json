@@ -1,0 +1,66 @@
+{
+  "document_title": {
+    "module": "Plan",
+    "context": "Dienstrooster-Center"
+  },
+  "parametersBar": {
+    "apply": "Toepassen",
+    "startDate": "Startdatum",
+    "duration": "Looptijd",
+    "levels": "Levels",
+    "units": {
+      "days": "Dagen",
+      "weeks": "Weken",
+      "months": "Maanden",
+      "years": "Jaren"
+    },
+    "unit": "Eenheid",
+    "selection": "Groep",
+    "employeeFilter": "Medewerkersfilter",
+    "editEmployeeFilter": "Medewerkersfilter bewerken",
+    "filterEditor": "Filter editor",
+    "chooseSelections": "Kies Groep",
+    "chooseEmployeeFilter": "Filter Employees",
+    "dateFormat": "d MMMM yyyy",
+    "noResult": "no result"
+  },
+  "shiftCenterFrame": {
+    "loading": "Loading"
+  },
+  "levelSelector": {
+    "levels": {
+      "plan": "Planning",
+      "final": "Huidige Staat",
+      "correction": "Correctie",
+      "timeRecording": "Tijdregistratie",
+      "acd": "Extern Systeem",
+      "wishes": "Wens",
+      "alternativeWishes": "Alternatieve wens",
+      "absenceWishes": "Afwezigheidswens",
+      "availabilities": "Beschikbaarheid",
+      "backup": "Versie 1",
+      "backupVersion2": "Versie 2",
+      "backupVersion3": "Versie 3"
+    }
+  },
+  "error": {
+    "configuration": "Er is een fout opgetreden (Bron: Configuratie)",
+    "accessRights": "Er is een fout opgetreden (Bron: Toegangsrechten)",
+    "settings": "Er is een fout opgetreden (Bron: Instellingen) - Details:",
+    "postMessage": "Posting a message to Shift Center failed.",
+    "accountBalances": {
+      "message": "Probeer <0>Kontosaldon</0> opnieuw te laden of probeer het later nog eens.",
+      "label": "Herlaad Kontosaldon"
+    },
+    "generic": "Er is een fout opgetreden."
+  },
+  "timeAccounts": {
+    "accountBalances": "Kontosaldon",
+    "accountX": "Saldo {{number}}",
+    "chooseAccount": "Account selecteren",
+    "dateLabel": "Datum",
+    "none": "Geen",
+    "closeModal": "Sluiten",
+    "noResult": "Er zijn geen gegevens beschikbaar."
+  }
+}

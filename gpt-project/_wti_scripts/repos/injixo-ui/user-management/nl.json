@@ -1,0 +1,310 @@
+{
+  "roles_overview": {
+    "page_title": "Rollen",
+    "search_role": "Rollen zoeken",
+    "category_change_failed": "De rolcategorie kon niet worden gewijzigd.",
+    "description": "Rollen met vergelijkbare rechten worden gegroepeerd in categorieën, zoals de categorie <0>Planner</0>. Toegangsrechten voor nieuwe injixo-functionaliteiten worden automatisch aan rollen toegewezen en zijn afhankelijk van de rolcategorie.<br>Rollen van de categorie <0>Overig</0> krijgen geen standaard toegangsrechten voor nieuwe functionaliteiten.<br>Ga voor meer informatie naar het <1>Help Center</1>.",
+    "heading": "Rollen",
+    "link_to_docs": "https://help.injixo.com/user-roles-in-detail/",
+    "section": "Overzicht"
+  },
+  "user_details": {
+    "save": "Opslaan",
+    "create": "Aanmaken",
+    "show_iwfm_employee": "Toon in WFM",
+    "heading": {
+      "create_user": "Maak gebruiker aan",
+      "edit_user": "Bewerk {{name}}",
+      "account": "Account",
+      "preferences": "Voorkeuren",
+      "security": "Beveiliging",
+      "role_assignment": "Rol(len) toewijzen",
+      "object_permissions": "Toegang tot objecten beheren"
+    },
+    "2fa_disabled": "2FA uitgeschakeld",
+    "2fa_enabled": "2FA ingeschakeld",
+    "change_email": "Verkeerd e-mail adres? <0>Change</0>",
+    "confirm_email": "Om verder te gaan is het noodzakelijk dat het e-mailadres wordt bevestigd.",
+    "creating": "Aanmaken",
+    "delete": "Verwijderen",
+    "delete_modal": {
+      "confirmation": "Ik begrijp dat het gebruikersprofiel en alle planningsgegevens voor <0>{{name}}</0> zullen worden verwijderd.",
+      "description": "De actie kan niet ongedaan worden gemaakt. De gebruiker <0>{{name}}</0> en gerelateerde planningsgegevens zullen hierdoor permanent worden verwijderd.",
+      "end_staff_membership": {
+        "description": "Stel een einddatum in voor <0>{{name}}</0>. De gebruiker wordt dan van de maandelijkse factuur verwijderd en kan zich niet meer bij injixo aanmelden. De planningsgegevens van deze gebruiker blijven bewaard.",
+        "heading": "Einde dienstverband",
+        "view": "Medewerkers"
+      },
+      "title": "Gebruiker verwijderen",
+      "confirmation_skills_lms": "I understand that the user record for <0>{{name}}</0> will be deleted and training history anonymized.",
+      "description_skills_lms": "This action cannot be undone. The user <0>{{name}}</0> will be deleted from your Account section and also deactivated and anonymized in the learning management system (LMS) enrollment and reporting sections.",
+      "title_skills_lms": "Delete / deactivate user"
+    },
+    "deleting": "Aan het verwijderen",
+    "email_not_verified": "Dit e-mailadres is niet geverifieerd.",
+    "employment_period_expired": "Deze gebruiker kan zich niet aanmelden omdat er geen actueel dienstverband is gevonden.",
+    "field": {
+      "admin": {
+        "checkbox": "Geef admin-toegang",
+        "heading": "Admin-toegang",
+        "hint": "Admins hebben volledige toegang tot alle injixo-functionaliteiten. Alleen admins kunnen deze instelling aanpassen.",
+        "label": "Volledige toegang tot injixo"
+      },
+      "email": "Email",
+      "enforce2fa": "2FA-activering verplichten",
+      "enforce2fa_tooltip": "Vanaf de volgende aanmelding moet de gebruiker 2FA inschakelen.",
+      "firstName": "Voornaam",
+      "language": {
+        "label": "Taal",
+        "no_result": "Geen taal gevonden",
+        "placeholder": "Kies een taal..."
+      },
+      "lastName": "Achternaam",
+      "locked": {
+        "hint": "De gebruiker is geblokkeerd door meerdere onjuiste wachtwoorden.",
+        "label": "Gebruiker vergrendeld",
+        "unlock": "Ontgrendel gebruiker",
+        "unlocking": "Ontgrendelen"
+      },
+      "password": {
+        "hint": "De gebruiker kan zijn wachtwoord later opnieuw instellen",
+        "label": "Wachtwoord",
+        "set_password": "Stel nieuw wachtwoord in"
+      },
+      "sendMail": {
+        "details": "De e-mail bevat instructies voor het instellen van het eerste wachtwoord en het aanmelden.",
+        "label": "Stuur een welkomst e-mail",
+        "sso_enforced_details": "De e-mail bevat instructies voor het aanmelden."
+      },
+      "timeZone": {
+        "label": "Tijdzone",
+        "no_result": "Geen tijdzone gevonden",
+        "placeholder": "Selecteer tijdzone..."
+      },
+      "object_permission": {
+        "full_access": "Volledige toegang",
+        "label": "Selecteer groep van toegankelijke objecten",
+        "no_access": "Geen toegang",
+        "no_result": "Geen object toestemming gevonden",
+        "placeholder": "Selecteer object toestemming..."
+      },
+      "user_principal_name": {
+        "hint": "Voer de gebruikersprincipenaam (UPN) alleen in als het e-mailadres voor het aanmelden bij injixo afwijkt van de UPN die door de identiteitsprovider wordt gebruikt.",
+        "label": "Gebruikersprincipenaam (UPN)",
+        "unique": "Voer een gebruikersprincipenaam (UPN) in die in deze tenant nog niet wordt gebruikt."
+      }
+    },
+    "saving": "Opslaan",
+    "success_modal": {
+      "ok": "OK"
+    },
+    "title": "Gebruiker",
+    "unsaved_changes_modal": {
+      "iwfm": {
+        "hint": "Je staat op het punt om over te schakelen naar de <0>WFM-medewerker</0>, waar je extra gebruikersrechten kunt instellen voor producten en features zoals SchedulePro of ForecastPro.",
+        "title": "WFM-medewerker"
+      },
+      "set_password": {
+        "hint": "Je staat op het punt om over te schakelen naar de pagina wachtwoord instellen, waar je een nieuw wachtwoord kunt instellen voor <0>{{name}}</0>."
+      },
+      "object_access": {
+        "hint": "Je staat op het punt om naar de <0>Objectgroep maken</0> pagina te gaan, om nieuwe toegangsrechten voor objecten in te stellen.",
+        "title": "Objectgroep maken"
+      }
+    },
+    "user_creation_failed": "Mislukt om gebruiker aan te maken.",
+    "user_creation_successful": "Gebruiker met succes aangemaakt.",
+    "user_deletion_failed": "Mislukt om de gebruiker te verwijderen.",
+    "user_deletion_successful": "De gebruiker werd met succes verwijderd.",
+    "user_locked": "Gebruiker vergrendeld",
+    "user_unlock_failed": "Niet geslaagd om de gebruiker te ontgrendelen.",
+    "user_update_failed": "De gebruiker is niet opgeslagen.",
+    "user_update_successful": "De gebruiker is met succes geüpdatet.",
+    "validation": {
+      "email": "Voer een e-mailadres in, bijv. mail@test.com.",
+      "max": "De invoer mag niet langer zijn dan {{max}} tekens.",
+      "required": "De invoer mag niet leeg zijn.",
+      "unique": "De invoer is al gebruikt."
+    },
+    "verify_email": "Klik op de link in de verificatiemail die naar <0>{{email}}</0> wordt gestuurd.",
+    "create_object_group": "Objectgroep maken",
+    "information": {
+      "sso": {
+        "password_hint": "Passwords are managed by your identity provider."
+      },
+      "sso_activated": "Single sign-on activated",
+      "sso_enforced": "The user needs to be granted access within your identity provider to access injixo."
+    },
+    "return_to_overview": "Terug naar Gebruikers",
+    "banner-message": "Ontdek <PeopleLink>People</PeopleLink>, jouw nieuwe thuis voor alle functies voor gebruikersbeheer! Nu met een moderne interface, inclusief roltoewijzingen, beheerderstoegang en verbeterde beveiliging.",
+    "banner-message-deprecation": "De huidige pagina zal binnenkort verouderd zijn, dus stap nu over op People!",
+    "return_to_people": "Return to people"
+  },
+  "two_factor": {
+    "title": "Twee-factor-verificatie",
+    "enabled": "Ingeschakeld",
+    "disabled": "Uitgeschakeld",
+    "enforced": "De gebruiker moet bij de volgende aanmelding 2FA activeren.",
+    "enabled_and_enforced": "Activering verplicht en ingeschakeld",
+    "disable": "2FA uitschakelen",
+    "disabling": "Uitschakelen",
+    "disabling_failed": "Mislukt om 2FA uit te schakelen."
+  },
+  "password_strength": {
+    "none": "Geen wachtwoord",
+    "strong": "Sterk wachtwoord",
+    "sufficient": "Gemiddeld wachtwoord",
+    "weak": "Zwak wachtwoord"
+  },
+  "role_list": {
+    "one": "",
+    "other": "Overigen",
+    "create_role": "Maak een rol aan in de rolcategorie {{category}}"
+  },
+  "set_password": {
+    "cancel": "Annuleren",
+    "description": "Informeer de gebruiker over zijn of haar nieuwe wachtwoord. Er zijn geen automatische berichten van toepassing.",
+    "failure": "Mislukt om het wachtwoord in te stellen.",
+    "label": "Wachtwoord",
+    "save": "Opslaan",
+    "saving": "Opslaan",
+    "strength_hint": "Gebruik minstens 8 karakters, combineer hoofdletters en kleine letters, cijfers en speciale karakters.",
+    "success": "Nieuw wachtwoord succesvol ingesteld. <0>Go Back</0>",
+    "title": "Nieuw wachtwoord voor {{name}}"
+  },
+  "unsaved_changes_modal": {
+    "cancel": "Annuleren",
+    "error": "Je kunt niet doorgaan terwijl het invulformulier fouten bevat.",
+    "hint": "De niet opgeslagen wijzigingen worden opgeslagen als je doorgaat.",
+    "save_and_continue": "Opslaan en verdergaan"
+  },
+  "users_overview": {
+    "role_filter": {
+      "search_roles": "Rollen zoeken",
+      "all_roles": "Alle rollen"
+    },
+    "billed_users": "Gefactureerde gebruikers",
+    "column": {
+      "2fa": "2FA",
+      "email": "Email",
+      "name": "Naam",
+      "roles": "Rollen"
+    },
+    "create_user": "Gebruiker aanmaken",
+    "export_csv": "Exporteer naar CSV",
+    "exporting": "Exporteren",
+    "heading": "Gebruikers",
+    "import_csv": "Importeer van CSV",
+    "loading_users_failed": "Kan de gebruikers niet laden.",
+    "search_placeholder": "Zoek namen en e-mailadressen",
+    "title": "Gebruikers",
+    "tooltip": {
+      "email_unverified": "Deze gebruiker dient zijn e-mailadres te verifiëren.",
+      "locked": "Deze gebruiker is geblokkeerd. Klik hier en ga naar de gebruikersdetails pagina. Daar kan de gebruiker worden ontgrendeld."
+    },
+    "unbilled_users": "Niet gefactureerde gebruikers",
+    "unbilled_users_hint": "Het dienstverband van deze gebruikers is beëindigd. Deze gebruikers worden niet gefactureerd en kunnen zich niet meer aanmelden."
+  },
+  "objectgroup_overview": {
+    "heading": "Toegang tot objecten",
+    "section": "Overzicht",
+    "description": "Om de toegang van gebruikers tot specifieke objecten of gegevens in injixo te beperken, kun je een groep aanmaken die alle toegankelijke objecten definieert, bijv. specifieke Dashboards. Elke gebruiker kan \"Volledige toegang\" krijgen of een van deze beperkende object groepen.",
+    "create": "Creëer",
+    "title": "Object toegang",
+    "edit": "Bewerken",
+    "is_restricted": "Beperkte toegang",
+    "object_group_count": "Totaal aantal toegekende gebruikers: <0>{{count}}</0>"
+  },
+  "objectgroup_details": {
+    "heading": {
+      "create": "Nieuwe groep om object toegang te beperken.",
+      "basic_information": "Basis informatie",
+      "permissions": "Toegankelijke objecten",
+      "edit": "Object toegang bewerken"
+    },
+    "name": "Naam",
+    "description": "Omschrijving",
+    "validation": {
+      "unique": "De input is al bezet.",
+      "required": "De invoer mag niet leeg zijn."
+    },
+    "creation_failed": "Het aanmaken van de objectgroep is mislukt.",
+    "creation_successful": "Objectgroep \" {{name}}\" aangemaakt.",
+    "optional": "Optioneel",
+    "creating": "Creëren van",
+    "create": "Creëer",
+    "objects": {
+      "restrict_access": "Toegang beperken",
+      "access_info": "Gebruikers in deze groep hebben toegang tot de geselecteerde elementen",
+      "search": "Zoek elementen...",
+      "selected": "{{selected}}/{{total}} geselecteerd",
+      "full_access": "Elke gebruiker kan \"Volledige toegang\" krijgen tot een van deze beperkende objectgroepen. Volledige toegang tot injixo-objecten is de standaard voor elke nieuwe gebruiker.",
+      "go_to_iwfm": "Ga naar Rolautorisatie",
+      "iwfm_description": "Zoek de rolrechten voor alle overige objecten door naar de Rolautorisatieweergave te gaan.",
+      "iwfm_heading": "Kun je de voorwerp niet vinden?",
+      "iwfm_path": "Ook toegankelijk via WFM <0 />Administratie <0 /> Systeem <0 /> Rolautorisatie"
+    },
+    "page_title": "Objectgroep - {{name}}",
+    "saving": "Opslaan",
+    "save": "Opslaan",
+    "update_failed": "Het bijwerken van de objectgroep is mislukt.",
+    "update_successful": "De objectgroep is met succes bijgewerkt.",
+    "return_to_overview": "Terug naar Object toegang",
+    "object_group_count": "Totaal aantal toegewezen gebruikers: {{count}}",
+    "delete_disabled_tooltip": "Deze objectgroep kan alleen worden verwijderd nadat alle toegewezen gebruikers zijn verwijderd.",
+    "delete": "Verwijderen",
+    "delete_modal": {
+      "description": "Weet je zeker dat je \"<0>{{name}}</0>\" wilt verwijderen? Deze actie kan niet ongedaan worden gemaakt.",
+      "title": "Objectgroep verwijderen"
+    },
+    "deleting": "Verwijderen",
+    "objectgroup_deletion_failed": "Objectgroep verwijderen mislukt.",
+    "objectgroup_deletion_successful": "“{{name}}\" werd verwijderd.",
+    "unsaved_changes_modal": {
+      "iwfm": {
+        "hint": "Je staat op het punt om over te schakelen naar <0>Rolautorisatie</0>. Stel daar rolrechten in voor andere objecten.",
+        "title": "Ga naar Rolautorisatie"
+      }
+    }
+  },
+  "back": "Terug",
+  "cancel": "Annuleren",
+  "document_title": {
+    "module": "Account",
+    "context": {
+      "users": {
+        "title": "Gebruikers",
+        "page": {
+          "overview": "Overzicht",
+          "create": "Maak gebruiker aan",
+          "edit": "Bewerk gebruiker"
+        }
+      },
+      "user_roles": {
+        "title": "Rollen",
+        "page": {
+          "overview": "Overzicht",
+          "create": "Rol aanmaken",
+          "edit": "{{name}} bewerken"
+        }
+      },
+      "object_access": {
+        "title": "Object access",
+        "page": {
+          "overview": "Overzicht",
+          "create": "Nieuwe groep om object toegang te beperken",
+          "edit": "Bewerk {{name}}"
+        }
+      }
+    }
+  },
+  "admin": "Beheerder",
+  "objectgroups_overview": {
+    "search_object_group": "Zoek objectgroepen..."
+  },
+  "role_details": {
+    "access_type": {
+      "edit_agent_status": "Agentstatus bewerken"
+    }
+  }
+}

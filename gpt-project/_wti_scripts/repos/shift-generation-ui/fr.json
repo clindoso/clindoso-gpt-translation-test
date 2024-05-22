@@ -1,0 +1,16 @@
+{
+  "loading": "Chargement",
+  "save": "Enregistrer",
+  "saving": "Enregistrement",
+  "select_planning_unit": "Sélectionner une unité opérationnelle",
+  "planning_unit": "Unité opérationnelle",
+  "day_model": "Modèle horaire",
+  "day_type": "Type de jour",
+  "min": "Min.",
+  "max": "Max.",
+  "server_error": "Une erreur interne s'est produite. Merci d'essayez ultérieurement.",
+  "edit-constraints": {
+    "success": "Les données ont été enregistrées.",
+    "failure": "Les données ne peuvent être enregistrées. Merci de les modifier et d'essayer à nouveau."
+  }
+}

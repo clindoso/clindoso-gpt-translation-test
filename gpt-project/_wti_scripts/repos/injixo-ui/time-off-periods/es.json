@@ -1,0 +1,99 @@
+{
+  "application": {
+    "title": "Periodos de disfrute",
+    "backToTimeOff": "Volver a Permisos",
+    "optional": "opcional"
+  },
+  "filters": {
+    "label": {
+      "planningUnit": "Unidad de planificación",
+      "selection": "Grupo",
+      "timePeriod": "Periodo de tiempo",
+      "absenceActivity": "Actividad",
+      "status": "Estado"
+    },
+    "placeholder": {
+      "planningUnit": "Elegir una unidad de planificación",
+      "selection": "Elegir grupo",
+      "absenceActivity": "Elige una actividad",
+      "status": "Elige un estado"
+    },
+    "result": {
+      "noResult": "No hay resultados"
+    },
+    "buttons": {
+      "createPeriod": "Nuevo periodo de disfrute"
+    }
+  },
+  "planning_units": "Unidades de planificación",
+  "selections": "Grupos",
+  "reload_planning_units": "Recargar las unidades de planificación",
+  "reload_selections": "Recargar los grupos",
+  "periodsTable": {
+    "tabs": {
+      "ongoing": "En curso",
+      "expired": "Caducado",
+      "counters": {
+        "ongoing": "Número de periodos de Permisos en curso",
+        "expired": "Número de periodos de Permisos caducados"
+      }
+    },
+    "headers": {
+      "select": "Seleccionar",
+      "selection": "Grupo",
+      "validFrom": "Válido desde",
+      "validTo": "Válido hasta",
+      "deadline": "Fecha límite",
+      "inheritedFrom": "Heredado de",
+      "status": "Estado"
+    },
+    "noData": "No se han encontrado periodos de disfrute.",
+    "singleCheckbox": "Selecciona un periodo de disfrute",
+    "allCheckbox": "Selecciona todos los periodos de disfrute.",
+    "deleteEntries": "Eliminar entradas",
+    "statuses": {
+      "enabled": "Publicado",
+      "locked": "No publicado"
+    },
+    "editPeriod": "Editar periodo de disfrute",
+    "selectStatus": "Seleccionar estado",
+    "error": {
+      "deletePeriod": "{{number}} periodo(s) de permisos no se han podido eliminar. Por favor, vuelve a intentarlo."
+    },
+    "statusSuccessfullyUpdated": "Periodo de permisos actualizado correctamente."
+  },
+  "reload_time_off_periods": "Recargar peridos para permisos",
+  "types": "Tipos",
+  "reload_types": "Recargar tipos",
+  "periodModal": {
+    "title": {
+      "create": "Crear nuevo periodo de disfrute",
+      "edit": "Editar periodo de disfrute"
+    },
+    "button": {
+      "save": "Guardar cambios",
+      "cancel": "Cancelar",
+      "create": "Crear periodo de disfrute"
+    },
+    "label": {
+      "dateRange": "Rango de fechas",
+      "deadline": "Fecha límite"
+    },
+    "error": {
+      "createPeriod": "No se pudo crear el periodo de disfrute.",
+      "editPeriod": "No se ha podido actualizar el permiso. Por favor, vuelve a intenarlo."
+    },
+    "deadline": {
+      "empty": "Ninguno",
+      "remove": "Quitar fecha límite"
+    }
+  },
+  "document_title": {
+    "module": "Plan",
+    "sub_module": "Periodos de disfrute"
+  },
+  "error": {
+    "reload_resource": "Ha ocurrido un error. Intenta recargar la página <0>{{resource}}</0> o vuelve a intentarlo más tarde."
+  },
+  "time_off_periods": "periodos de disfrute"
+}

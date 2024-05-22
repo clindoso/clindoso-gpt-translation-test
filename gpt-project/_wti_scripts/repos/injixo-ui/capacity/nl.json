@@ -1,0 +1,48 @@
+{
+  "application": {
+    "title": "Capaciteitsplanning",
+    "tableHint": "Alle waarden in uren",
+    "tableHintDescription": "1 fulltime-equivalent (FTE) is 40 uur per week",
+    "infoMessageFirst": "Welkom bij de eerste versie van je nieuwe capaciteitsoverzicht! Binnenkort beheer je hier je langetermijnplanning. Nog steeds vrij basic?",
+    "infoMessageSecond": "E-mail ons je feedback en ideeën!",
+    "insertShiftSequencesButton": "Dienstenseries toevoegen"
+  },
+  "filters": {
+    "label": {
+      "planningUnit": "Eenheid"
+    },
+    "placeholder": {
+      "planningUnit": "Kies een Eenheid"
+    },
+    "result": {
+      "noResult": "Geen gegevens"
+    }
+  },
+  "capacityTable": {
+    "headers": {
+      "Coverage": "Potentiële dekking",
+      "staffRequirements": "Personeelsbehoeften",
+      "contractedCapacity": "Gecontracteerde capaciteit",
+      "cw": "KW",
+      "timePeriod": "Tijdsperiode",
+      "dateFormat": "d MMMM yyyy"
+    },
+    "placeholders": {
+      "noData": "Voor deze eenheid zijn geen capaciteitsgegevens beschikbaar.",
+      "loading": "Bezig met laden"
+    }
+  },
+  "planning_units": "Eenheden",
+  "capacities": "Capaciteiten",
+  "reload": {
+    "planning_units": "Herlaad Eenheden",
+    "capacities": "Herlaad Capaciteiten"
+  },
+  "document_title": {
+    "module": "Plan",
+    "sub_module": "Capaciteitsplanning"
+  },
+  "error": {
+    "reload_resource": "Er is een fout opgetreden. Probeer opnieuw te laden <0>{{resource}}</0> of probeer het later nog eens."
+  }
+}

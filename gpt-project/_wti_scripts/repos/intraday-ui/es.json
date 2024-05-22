@@ -1,0 +1,106 @@
+{
+  "error": {
+    "insufficient_permissions": "No tienes los permisos requeridos para esta acción."
+  },
+  "configuration": {
+    "page_title": "Configuración",
+    "activity_mapping": {
+      "heading": "Asignar estados externos a actividades de injixo",
+      "activity_type": {
+        "present": "Presencia",
+        "holiday": "Vacaciones",
+        "break": "Pausa",
+        "absence": "Ausencia",
+        "meeting": "Reunión",
+        "illness": "Enfermedad"
+      },
+      "integrations": {
+        "heading": "Integraciones"
+      },
+      "integration_activities": {
+        "heading": "Estados externos",
+        "search": {
+          "placeholder": "Buscar estados externos o 'sin asignar'"
+        },
+        "edit_activity": "Editar actividad",
+        "heading_mapped": "Asignado",
+        "heading_not_mapped": "No asignado",
+        "mapped_empty_label": "Ningún estado externo asignado",
+        "not_mapped_empty_label": "Todos los estados externos están asignados a esta actividad.",
+        "unmapped": "Sin asignar",
+        "overwrite_warning_tooltip": "La asignación a esta actividad será reemplazada por la nueva asignación.",
+        "button_save": "Guardar cambios",
+        "button_cancel": "Descartar cambios"
+      },
+      "search_activity": {
+        "placeholder": "Buscar actividades de injixo"
+      },
+      "mapped_tooltip": "Hay estados externos asignados a esta actividad de injixo.",
+      "toast_save_success": "Asignación guardada",
+      "message_save_error": "No se pudo guardar la asignación. Inténtalo de nuevo más tarde.",
+      "no_activity_selected": {
+        "explanation": "Selecciona primero una actividad.",
+        "headline": "Ninguna actividad seleccionada"
+      },
+      "no_integration_activities": {
+        "explanation": "No hay ningún estado externo importado.",
+        "headline": "No hay ningún estado externo disponible"
+      },
+      "no_integrations": {
+        "headline": "No se encontró ninguna integración",
+        "link_text": "Añade una integración primero"
+      },
+      "activity-select-list": {
+        "aria-label": "Select the injixo activity you want to map external statuses to."
+      }
+    }
+  },
+  "edit-actual-activities": {
+    "headline": {
+      "text": "{{personName}} el {{date}}"
+    },
+    "page-title": {
+      "return-link": {
+        "aria-label": "Volver a la adherencia intradiaria del agente"
+      },
+      "text": "Editar actividades efectivas"
+    },
+    "table": {
+      "actual-activity": {
+        "label": "Actividad efectiva"
+      },
+      "empty-state": {
+        "no-activities": {
+          "description": "No hay ninguna actividad registrada el {{date}}",
+          "headline": "No hay ninguna actividad registrada"
+        }
+      },
+      "time-period": {
+        "buttons": {
+          "cancel": {
+            "aria-label": "Cancelar la edición"
+          },
+          "confirm": {
+            "aria-label": "Confirma la nueva hora de finalización"
+          },
+          "edit": {
+            "aria-label": "Editar hora de finalización {{endTime}}"
+          }
+        },
+        "edit": {
+          "error-message": {
+            "generic": "No se pudo actualizar la hora de finalización. Inténtalo de nuevo.",
+            "invalid-end-time": "La hora de finalización introducida no es válida."
+          },
+          "success": {
+            "toast-message": "Hora de finalización corregida correctamente."
+          },
+          "time-input": {
+            "aria-label": "Introduce la hora de finalización correcta"
+          }
+        },
+        "label": "Periodo de tiempo"
+      }
+    }
+  }
+}

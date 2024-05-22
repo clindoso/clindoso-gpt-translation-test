@@ -1,0 +1,439 @@
+{
+  "catalog": {
+    "title": "Select external system",
+    "add_button": "Add integration",
+    "select_model": "Select model",
+    "back_link": "Back to catalog",
+    "features_label": "Features",
+    "features": {
+      "call": "Call History",
+      "chat": "Chat History",
+      "ticket": "Ticket History",
+      "email": "Email History",
+      "social_media": "Social Media History",
+      "document": "Document History",
+      "agent_status": "Agent Status",
+      "rta": "RTA"
+    },
+    "delivery_mode_label": "Delivery mode",
+    "delivery_mode": {
+      "cloud": "Cloud",
+      "on-prem": "On-Premise",
+      "legacy": "On-Premise"
+    }
+  },
+  "csv": {
+    "schemas": {
+      "column_mappings": {
+        "aht": {
+          "source": {
+            "label": "AHT maps to",
+            "required": "Select the name of the 'AHT' source column.",
+            "placeholder": "Select the 'AHT' column"
+          },
+          "format": {
+            "label": "AHT format",
+            "options": {
+              "%f": "Seconds (e.g. 120.5)",
+              "%H:%M:%S": "hh:mm:ss (e.g. 01:30:00)"
+            },
+            "placeholder": "Select an AHT format",
+            "required": "Select an AHT format."
+          },
+          "headline": "AHT"
+        },
+        "date": {
+          "format": {
+            "label": "Date format",
+            "options": {
+              "%d.%m.%Y": "DD.MM.YYYY (e.g. 23.08.2020)",
+              "%Y-%m-%d": "YYYY-MM-DD (e.g. 2020-08-23)",
+              "%d/%m/%Y": "DD/MM/YYYY (e.g. 23/08/2020)",
+              "%m/%d/%Y": "MM/DD/YYYY (e.g. 08/23/2020)",
+              "%m/%d/%y": "MM/DD/YY (e.g. 08/23/20)",
+              "%Y%m%d": "YYYYMMDD (e.g. 20200823)",
+              "%Y/%m/%d": "YYYY/MM/DD (e.g. 2020/08/23)"
+            },
+            "placeholder": "Select a date format",
+            "required": "Select a date format."
+          },
+          "source": {
+            "label": "Date maps to",
+            "required": "Select the name of the 'Date' source column.",
+            "placeholder": "Select the 'Date' column"
+          },
+          "custom_format": {
+            "invalid": "Enter a date format that includes day, month, and year, e.g. DD.MM.YYYY.",
+            "label": "Custom date format",
+            "placeholder": "Enter date format",
+            "preview": "Preview",
+            "required": "Define a custom date format.",
+            "tooltip": {
+              "example": "Examples:",
+              "example_one": "DD-MM-YYYY for 01-03-2023",
+              "example_two": "D/M/YY for 1/3/23",
+              "instruction": "Specify a custom date format:",
+              "instruction_one": "Use uppercase for day (D or DD), month (M or MM), and year (YY or YYYY)",
+              "instruction_two": "Enter a date format that includes day, month, and year."
+            }
+          },
+          "headline": "Date"
+        },
+        "handled": {
+          "source": {
+            "label": "Handled maps to",
+            "required": "Select the name of the 'Handled' source column.",
+            "placeholder": "Select the 'Handled' column"
+          },
+          "headline": "Handled"
+        },
+        "headline": "Define which columns from your sample file should be used.",
+        "offered": {
+          "source": {
+            "label": "Offered maps to",
+            "required": "Select the name of the 'Offered' source column.",
+            "placeholder": "Select the 'Offered' column"
+          },
+          "headline": "Offered"
+        },
+        "queue": {
+          "source": {
+            "label": "Queue name maps to",
+            "required": "Select the name of the 'Queue name' source column.",
+            "placeholder": "Select the 'Queue name' column"
+          },
+          "headline": "Queue Name"
+        },
+        "time": {
+          "source": {
+            "label": "Time maps to",
+            "required": "Select the name of the 'Time' source column.",
+            "placeholder": "Select the 'Time' column"
+          },
+          "format": {
+            "label": "Time format",
+            "options": {
+              "%H:%M": "hh:mm (e.g. 16:30)",
+              "%H:%M:%S": "hh:mm:ss (e.g. 16:30:00)",
+              "%I:%M %p": "h:mm AM/PM (e.g. 4:30 PM)"
+            },
+            "placeholder": "Select a time format",
+            "required": "Select a time format."
+          },
+          "headline": "Time"
+        },
+        "channel": {
+          "source": {
+            "label": "Channel maps to",
+            "required": "Select the name of the 'Channel' source column.",
+            "extended_info": "Values in this column should only contain calls, chats, emails, cases, documents, or social_media.",
+            "info": "Values in this column should only contain calls, chats, or emails.",
+            "placeholder": "Select the 'Channel' column"
+          }
+        },
+        "activity_identifier": {
+          "source": {
+            "label": "Activity identifier maps to",
+            "placeholder": "Select column",
+            "required": "Select the name of the 'Activity identifier' source column."
+          }
+        },
+        "agent_identifier": {
+          "source": {
+            "label": "Agent identifier maps to",
+            "placeholder": "Select column",
+            "required": "Select the name of the 'Agent identifier' source column."
+          }
+        },
+        "duration": {
+          "headline": "Duration",
+          "source": {
+            "label": "Duration",
+            "placeholder": "Select the 'Duration' column",
+            "required": "Select the name of the 'Duration' source column."
+          }
+        },
+        "end_date": {
+          "source": {
+            "label": "End date maps to",
+            "placeholder": "Select column",
+            "required": "Select the name of the 'End date' source column."
+          }
+        },
+        "end_time": {
+          "source": {
+            "label": "End time maps to",
+            "placeholder": "Select column",
+            "required": "Select the name of the 'End time' source column."
+          }
+        },
+        "end_timestamp": {
+          "custom_format": {
+            "label": "Format",
+            "placeholder": "Enter a format, e.g. DD-MM-YYYY hh:mm:ss"
+          },
+          "source": {
+            "label": "End timestamp maps to",
+            "placeholder": "Select column"
+          }
+        },
+        "no_column": {
+          "source": {
+            "label": "No column"
+          }
+        },
+        "start_date": {
+          "source": {
+            "label": "Start date maps to",
+            "placeholder": "Select column",
+            "required": "Select the name of the 'Start date' source column."
+          }
+        },
+        "start_time": {
+          "source": {
+            "label": "Start time maps to",
+            "placeholder": "Select column",
+            "required": "Select the name of the 'Start time' source column."
+          }
+        },
+        "start_timestamp": {
+          "custom_format": {
+            "label": "Format",
+            "placeholder": "Enter a format, e.g. DD-MM-YYYY hh:mm:ss"
+          },
+          "source": {
+            "label": "Start timestamp maps to",
+            "placeholder": "Select column",
+            "required": "Select the name of the 'Start timestamp' source column."
+          }
+        },
+        "timestamp": {
+          "custom_format": {
+            "invalid": "Enter a format that includes day, month, year, hours, minutes, and optionally seconds, e.g. DD-MM-YYYY hh:mm:ss.",
+            "label": "Format",
+            "placeholder": "Enter a format, e.g. DD-MM-YYYY hh:mm:ss",
+            "required": "Select a timestamp format.",
+            "tooltip": {
+              "example": "Examples:",
+              "example_one": "D/M/YY h:mm for 1/3/23 1:05",
+              "example_two": "DD-MM-YYYY hh:mm:ss for 01-03-2023 01:59:58",
+              "instruction": "Specify a timestamp format:",
+              "instruction_one": "Enter a format that includes day, month, year, hours, minutes and optionally seconds",
+              "instruction_three": "Use lowercase for hours (h or hh), minutes (m or mm), and seconds (s or ss)",
+              "instruction_two": "Use uppercase for day (D or DD), month (M or MM), and year (YY or YYYY)"
+            }
+          },
+          "source": {
+            "label": "Timestamp maps to",
+            "placeholder": "Select the 'Timestamp' column",
+            "required": "Select the name of the 'Timestamp' source column."
+          },
+          "switch_label": "Date and time in one column"
+        }
+      },
+      "created": "CSV schema has been created.",
+      "general_schema": {
+        "channel": {
+          "calls": "Calls",
+          "cases": "Cases",
+          "chats": "Chats",
+          "documents": "Documents",
+          "emails": "Emails",
+          "fixed": {
+            "label": "Channel"
+          },
+          "placeholder": "Select channel",
+          "required": "Select a channel.",
+          "social_media": "Social Media",
+          "headline": "Channel"
+        },
+        "errors": {
+          "server": "A server error occurred. Please try again.",
+          "analyze_sample": "An error occurred while analyzing your sample file. Check the separator and make sure your file has at least a header row."
+        },
+        "gap_filling_strategy": {
+          "headline": "Handle missing values in intervals",
+          "option_empty": "Leave empty - shown in queue as \"no data\"",
+          "option_zero": "Fill with zero - shown in queue as \"0\"",
+          "required": "Select a gap filling strategy.",
+          "explanation": "Depending on your selection the missing value will be filled with zero (0) or be left empty. In case there is already existing data for this interval it will be either replaced with zero (0) or removed."
+        },
+        "headline": "Create CSV schema",
+        "interval_length": {
+          "headline": "Select interval length",
+          "option_15": "15 minutes",
+          "option_30": "30 minutes",
+          "option_60": "60 minutes",
+          "required": "Select an interval length."
+        },
+        "name": {
+          "headline": "Name the CSV schema.",
+          "required": "Enter a name.",
+          "unique": "The name needs to be unique."
+        },
+        "sample_file": {
+          "button": "Upload file",
+          "description": "The sample file should look like a typical CSV you use for importing your data. You will work with it in the next step when mapping your data to the injixo requirements.",
+          "headline": "CSV sample file",
+          "placeholder": "Select...",
+          "required": "Provide a sample file.",
+          "explanation": "Upload a CSV file (.csv or .txt) you use for importing your data. You will map this CSV data in the next step.",
+          "reupload": "Re-upload file"
+        },
+        "separator": {
+          "comma": "Comma",
+          "headline": "Column separator of CSV file",
+          "placeholder": "Select separator",
+          "required": "Select a separator.",
+          "semicolon": "Semicolon",
+          "tab": "Tab"
+        },
+        "timezone": {
+          "headline": "Time zone",
+          "no_result": "No matching time zone found",
+          "placeholder": "Search or select a time zone",
+          "required": "Select a time zone.",
+          "tooltip": "You can search by city or by offset (UTC+/-hh:mm)."
+        },
+        "analyze_sample_file": "Analyzing your sample file...",
+        "edit_headline": "Edit CSV schema",
+        "layout": {
+          "cdr": "Contact-based",
+          "explanation": "injixo will aggregate individual contacts into intervals of 15 minutes.",
+          "headline": "Layout of data",
+          "interval": "Interval-based",
+          "required": "Select a layout."
+        }
+      },
+      "page2": {
+        "primary_action": "Save schema",
+        "headline": "Map columns",
+        "preview": {
+          "headline": "Preview"
+        }
+      },
+      "page1": {
+        "primary_action": "Map the columns",
+        "headline": "Setup"
+      },
+      "back": "Back",
+      "back_link": "Back to integration",
+      "document_title": {
+        "context": {
+          "page": {
+            "mapping": "Column Mapping",
+            "setup": "CSV Setup"
+          }
+        },
+        "module": "CSV schema",
+        "create": "Create CSV Schema",
+        "edit": "Edit CSV Schema"
+      },
+      "optional": "Optional",
+      "preprocessing": {
+        "edit_disabled": "To modify your preprocessing options, you need to re-upload the CSV file.",
+        "empty_lines": {
+          "explanation": "Skip rows that only have separators and no values.",
+          "label": "Skip empty rows"
+        },
+        "headerless": {
+          "explanation": "Header columns will be labelled with A, B, C etc.",
+          "label": "Add header row"
+        },
+        "skip_lines_containing": {
+          "add_string": "Add string",
+          "explanation": "Skip rows with values that match at least one of the added strings.",
+          "label": "Skip row(s) containing:",
+          "or": "or"
+        },
+        "skip_starting_lines": {
+          "explanation": "Skip the specified number of rows, starting from the top.",
+          "label": "Skip first <input /> row(s)"
+        },
+        "title": "Preprocessing options"
+      },
+      "mapping_mode": {
+        "modal": {
+          "cancel": "Back to editing",
+          "content": "You are about to save the CSV schema with a different mapping method.",
+          "title": "Change CSV mapping method?",
+          "warning": {
+            "overwriting": "Your current CSV schema will be overwritten.",
+            "restoring": "You cannot restore the previous CSV schema."
+          }
+        },
+        "toggle": {
+          "label": "Use SQL query to map columns",
+          "tooltip": "Use this option if your ACD does not output CSV files that contain the column names below."
+        }
+      },
+      "query": {
+        "input": {
+          "explanation": "Learn more in <explanationTarget> Help Center</explanationTarget>.",
+          "label": "SQL query",
+          "required": "Enter an SQL query.",
+          "explanationLinkTarget": "https://help.injixo.com/add-csv-integration#map-the-columns-sql-query"
+        }
+      },
+      "test": {
+        "action": "Test mapping",
+        "result": {
+          "hint": "Please check in the preview that columns of the same data type have not been swapped (e.g. Offered and Handled). Learn more in <explanationTarget>Help Center</explanationTarget>.",
+          "preview": {
+            "label": "Preview of the mapped columns"
+          },
+          "tagline": "No issues identified",
+          "title": "Test result"
+        },
+        "unknown_error": "The mapping could not be tested."
+      },
+      "reupload_required_info": {
+        "label": "To change the column separator or preprocessing options, upload the CSV file again."
+      }
+    },
+    "errors": {
+      "empty_file": "File is empty.",
+      "end_time_before_start_time": "End time must not be before start time.",
+      "error_on_line": "Error on line {{line_number}}:",
+      "excessive_data": "More than one year of data is not supported.",
+      "file_too_large": "The file you tried to upload is too large. The maximum size is 7MB.",
+      "invalid_channel": "Unsupported channel.",
+      "invalid_date_format": "Wrong date format.",
+      "invalid_date_or_time_format": "Wrong date or time format.",
+      "invalid_duration_cdr": "The contact was claimed to be handled but has no duration.",
+      "invalid_end_of_line": "Use consistent end of line characters in one file.",
+      "invalid_handled_cdr": "The handled field must contain either 0 or 1.",
+      "invalid_headers": "Missing or misspelled headers.",
+      "invalid_number": "Check the formats of the numeric values.",
+      "invalid_row_length": "The number of fields in this line doesn't match the number of fields in the header row.",
+      "invalid_separator": "Invalid separator.",
+      "invalid_time_format": "Wrong time format.",
+      "invalid_timestamp": "Invalid timestamp according to the interval length.",
+      "invalid_year": "Year must not be before 1970.",
+      "missing_activity": "Missing activity identifier.",
+      "missing_agent": "Missing agent identifier.",
+      "missing_queue": "Missing queue name.",
+      "negative_number": "Negative numbers are not allowed.",
+      "non_existing_timestamp": "The specified local time does not represent an existing timestamp.",
+      "number_too_big": "Number too big.",
+      "string_too_long": "Shorten your value to 255 characters.",
+      "unexpected": "An unexpected error has occurred.",
+      "unknown_error": "An unknown error occurred.",
+      "invalid_time_range": "The data exceeds the maximum period of 10 years."
+    }
+  },
+  "external_system": {
+    "database": {
+      "model_display_name": "Database"
+    }
+  },
+  "overview": {
+    "page_title": "Current Integrations"
+  },
+  "setup": {
+    "controls": {
+      "cancel": "Cancel"
+    }
+  },
+  "module": "Integrations"
+}

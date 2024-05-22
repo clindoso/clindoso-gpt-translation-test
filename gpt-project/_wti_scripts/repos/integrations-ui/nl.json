@@ -1,0 +1,439 @@
+{
+  "catalog": {
+    "title": "Voeg een nieuwe integratie toe",
+    "add_button": "Voeg integratie toe",
+    "select_model": "Kies een model",
+    "back_link": "Terug naar catalogus",
+    "features_label": "Kenmerken",
+    "features": {
+      "call": "Oproepgeschiedenis",
+      "chat": "Chatgeschiedenis",
+      "ticket": "Ticket geschiedenis",
+      "email": "Email geschiedenis",
+      "social_media": "Sociale media geschiedenis",
+      "document": "Document Geschiedenis",
+      "agent_status": "Agentstatus",
+      "rta": "RTA"
+    },
+    "delivery_mode_label": "Bezorgingsmodus",
+    "delivery_mode": {
+      "cloud": "Cloud",
+      "on-prem": "On-Premise",
+      "legacy": "On-Premise"
+    }
+  },
+  "csv": {
+    "schemas": {
+      "column_mappings": {
+        "aht": {
+          "source": {
+            "label": "AHT verwijst naar",
+            "required": "Selecteer de naam van de bronkolom 'AHT'.",
+            "placeholder": "Selecteer de kolom 'AHT'."
+          },
+          "format": {
+            "label": "AHT-notatie",
+            "options": {
+              "%f": "Seconden (bijv. 120,5)",
+              "%H:%M:%S": "uu:mm:ss (bijv. 01:30:00)"
+            },
+            "placeholder": "Selecteer een AHT-formaat",
+            "required": "Selecteer een AHT-formaat."
+          },
+          "headline": "AHT"
+        },
+        "date": {
+          "format": {
+            "label": "Datumnotatie",
+            "options": {
+              "%d.%m.%Y": "DD.MM.JJJJ (bv. 23.08.2020)",
+              "%Y-%m-%d": "JJJJ-MM-DD (bijv. 2020-08-23)",
+              "%d/%m/%Y": "DD/MM/JJJJ (bijv. 23/08/2020)",
+              "%m/%d/%Y": "MM/DD/JJJJ (bijv. 08/23/2020)",
+              "%m/%d/%y": "MM/DD/JJ (bijv. 08/23/20)",
+              "%Y%m%d": "JJJJMMDD (bijv. 20200823)",
+              "%Y/%m/%d": "JJJJ/MM/DD (bijv. 2020/08/23)"
+            },
+            "placeholder": "Kies een datumformaat",
+            "required": "Selecteer een datumformaat."
+          },
+          "source": {
+            "label": "Datum verwijst naar",
+            "required": "Selecteer de naam van de bronkolom 'Datum'.",
+            "placeholder": "Selecteer de kolom 'Datum'."
+          },
+          "custom_format": {
+            "invalid": "Zorg dat je uit elke groep een element gebruikt: dag (D,DD), maand (M, MM) en jaar (YY, YYYY).",
+            "label": "Aangepaste datumnotatie",
+            "placeholder": "Invoernotatie bijv. DD/M/YY",
+            "preview": "Voorbeeld",
+            "required": "Maak een aangepast datumformaat aan.",
+            "tooltip": {
+              "example": "Voorbeelden:",
+              "example_one": "DD-MM-YYYY voor 01-03-2023",
+              "example_two": "D/M/YY voor 1/3/23",
+              "instruction": "Kies een aangepaste datumnotatie:",
+              "instruction_one": "Gebruik hoofdletters voor dag (D of DD), maand (M of MM) en jaar (YY of YYYY).",
+              "instruction_two": "Voer een datumnotatie in die bestaat uit dag, maand en jaar."
+            }
+          },
+          "headline": "Datum"
+        },
+        "handled": {
+          "source": {
+            "label": "Behandeld verwijst naar",
+            "required": "Selecteer de naam van de bronkolom 'Behandeld'.",
+            "placeholder": "Selecteer de kolom 'Behandeld'."
+          },
+          "headline": "Behandeld"
+        },
+        "headline": "Definieer welke kolommen uit je voorbeeldbestand gebruikt moeten worden.",
+        "offered": {
+          "source": {
+            "label": "Aangeboden verwijst naar",
+            "required": "Selecteer de naam van de bronkolom 'Aangeboden'.",
+            "placeholder": "Selecteer de kolom 'Aangeboden'."
+          },
+          "headline": "Aangeboden"
+        },
+        "queue": {
+          "source": {
+            "label": "Naam van queue verwijst naar",
+            "required": "Selecteer de naam van de bronkolom 'Queue'.",
+            "placeholder": "Selecteer de kolom 'Naam van queue'."
+          },
+          "headline": "Naam van queue"
+        },
+        "time": {
+          "source": {
+            "label": "Tijd verwijst naar",
+            "required": "Selecteer de naam van de bronkolom 'Tijd'.",
+            "placeholder": "Selecteer de kolom 'Tijd'."
+          },
+          "format": {
+            "label": "Tijdnotatie",
+            "options": {
+              "%H:%M": "uu:mm (bijv. 16:30)",
+              "%H:%M:%S": "uu:mm:ss (bijv. 16:30:00)",
+              "%I:%M %p": "u:mm AM/PM (bijv. 4:30 PM)"
+            },
+            "placeholder": "Selecteer een tijdformaat",
+            "required": "Selecteer een tijdformaat."
+          },
+          "headline": "Tijd"
+        },
+        "channel": {
+          "source": {
+            "label": "Kanaal verwijst naar",
+            "required": "Selecteer de naam van de bronkolom 'Kanaal'.",
+            "extended_info": "De waarden in deze kolom mogen alleen calls, emails, cases, document of social_media bevatten.",
+            "info": "De waarden in deze kolom mogen alleen oproepen, chats of e-mails bevatten.",
+            "placeholder": "Selecteer de kolom 'Kanaal'."
+          }
+        },
+        "activity_identifier": {
+          "source": {
+            "label": "Activiteiten-ID verwijst naar",
+            "placeholder": "Kolom selecteren",
+            "required": "Seelcteer de naam van de bronkolom 'Activiteiten-id'."
+          }
+        },
+        "agent_identifier": {
+          "source": {
+            "label": "Agenten-ID verwijst naar",
+            "placeholder": "Kolom selecteren",
+            "required": "Selecteer de naam van de bronkolom 'Agenten-id'."
+          }
+        },
+        "duration": {
+          "headline": "Tijdsduur",
+          "source": {
+            "label": "Tijdsduur",
+            "placeholder": "Selecteer de kolom 'Tijdsduur'",
+            "required": "Selecteer de naam van de bronkolom 'Tijdsduur'."
+          }
+        },
+        "end_date": {
+          "source": {
+            "label": "Einddatum verwijst naar",
+            "placeholder": "Kolom selecteren",
+            "required": "Selecteer de naam van de bronkolom 'Einddatum'."
+          }
+        },
+        "end_time": {
+          "source": {
+            "label": "Eindtijd verwijst naar",
+            "placeholder": "Kolom selecteren",
+            "required": "Selecteer de naam van de bronkolom 'Eindtijd'."
+          }
+        },
+        "end_timestamp": {
+          "custom_format": {
+            "label": "Formaat",
+            "placeholder": "Voer een formaat in, bijv. DD-MM-YYYY hh:mm:ss"
+          },
+          "source": {
+            "label": "Einde tijdstempel verwijst naar",
+            "placeholder": "Kolom selecteren"
+          }
+        },
+        "no_column": {
+          "source": {
+            "label": "Geen kolom"
+          }
+        },
+        "start_date": {
+          "source": {
+            "label": "Startdatum verwijst naar",
+            "placeholder": "Kolom selecteren",
+            "required": "Selecteer de naam van de bronkolom 'Begindatum'."
+          }
+        },
+        "start_time": {
+          "source": {
+            "label": "Starttijd verwijst naar",
+            "placeholder": "Kolom selecteren",
+            "required": "Selecteer de naam van de bronkolom 'Begintijd'."
+          }
+        },
+        "start_timestamp": {
+          "custom_format": {
+            "label": "Formaat",
+            "placeholder": "Voer een formaat in, bijv. DD-MM-YYYY hh:mm:ss"
+          },
+          "source": {
+            "label": "Start tijdstempel verwijst naar",
+            "placeholder": "Kolom selecteren",
+            "required": "Selecteer de naam van de bronkolom 'Start tijdstempel'."
+          }
+        },
+        "timestamp": {
+          "custom_format": {
+            "invalid": "Voer een formaat in dat dag, maand, jaar, uren, minuten en optioneel seconden, bijv. DD-MM-YYYY hh:mm:ss omvat.",
+            "label": "Formaat",
+            "placeholder": "Voer een formaat in, bijv. DD-MM-YYYY hh:mm:ss",
+            "required": "Selecteer een formaat voor de tijdstempel.",
+            "tooltip": {
+              "example": "Voorbeelden:",
+              "example_one": "D/M/YY h:mm voor 1/3/23 1:05",
+              "example_two": "DD-MM-YYYY hh:mm:ss voor 01-03-2023 01:59:58",
+              "instruction": "Stel het formaat voor de tijdstempel in:",
+              "instruction_one": "Voer een formaat in dat dag, maand, jaar, uren, minuten en optioneel seconden omvat",
+              "instruction_three": "Gebruik kleine letters voor uren (h of hh), minuten (m of mm) en seconden (s of ss)",
+              "instruction_two": "Gebruik hoofdletters voor dag (D of DD), maand (M of MM) en jaar (YY of YYYY)"
+            }
+          },
+          "source": {
+            "label": " Tijstempel verwijst naar",
+            "placeholder": "Select de kolom voor 'Tijdstempel'",
+            "required": "Selecteer de naam van de bronkolom 'Tijdstempel'."
+          },
+          "switch_label": "Datum en tijd in één kolom"
+        }
+      },
+      "created": "CSV-schema is gemaakt.",
+      "general_schema": {
+        "channel": {
+          "calls": "Gesprekken",
+          "cases": "Cases",
+          "chats": "Chats",
+          "documents": "Documenten",
+          "emails": "E-mails",
+          "fixed": {
+            "label": "Kanaal"
+          },
+          "placeholder": "Kies kanaal",
+          "required": "Selecteer een kanaal.",
+          "social_media": "Sociale media",
+          "headline": "Kanaal"
+        },
+        "errors": {
+          "server": "Er is een serverfout opgetreden. Probeer het nog eens.",
+          "analyze_sample": "Er is een fout opgetreden bij het analyseren van je voorbeeldbestand. Controleer het scheidingsteken en zorg ervoor dat je bestand op zijn minst een kopregel heeft."
+        },
+        "gap_filling_strategy": {
+          "headline": "Behandel ontbrekende waarden in intervallen",
+          "option_empty": "Leeg laten - in wachtrij weergegeven als \"no data\"",
+          "option_zero": "Vullen met nul - in wachtrij weergegeven als \"0\"",
+          "required": "Selecteer een strategie voor het opvullen van gaten.",
+          "explanation": "Afhankelijk van je keuze wordt de ontbrekende waarde gevuld met nul (0) of leeg gelaten. Indien er al gegevens voor dit interval bestaan, worden deze vervangen door nul (0) of verwijderd."
+        },
+        "headline": "CSV-schema",
+        "interval_length": {
+          "headline": "Selecteer lengte van interval",
+          "option_15": "15 minuten",
+          "option_30": "30 minuten",
+          "option_60": "60 minuten",
+          "required": "Selecteer een intervallengte."
+        },
+        "name": {
+          "headline": "Geef het CSV-schema een naam.",
+          "required": "Voer een naam in.",
+          "unique": "De naam moet uniek zijn."
+        },
+        "sample_file": {
+          "button": "Upload bestand",
+          "description": "Het voorbeeldbestand zou eruit moeten zien als een typische CSV die gebruikt wordt om de gegevens te importeren. In de volgende stap zal je ermee werken bij het toewijzen van je gegevens aan de injixo behoeften.",
+          "headline": "CSV-voorbeeldbestand",
+          "placeholder": "Kies...",
+          "required": "Voeg een voorbeeldbestand toe.",
+          "explanation": "Upload een CSV-bestand (.csv of .txt) dat je gebruikt voor het importeren van je gegevens. In de volgende stap ga je deze CSV-gegevens in kaart brengen.",
+          "reupload": "Bestand opnieuw uploaden"
+        },
+        "separator": {
+          "comma": "Komma",
+          "headline": "Kolomscheidingsteken van CSV bestand",
+          "placeholder": "Selecteer het scheidingsteken",
+          "required": "Selecteer een scheidingsteken.",
+          "semicolon": "Puntkomma",
+          "tab": "Tab"
+        },
+        "timezone": {
+          "headline": "Tijdzone",
+          "no_result": "Geen overeenkomende tijdzone gevonden",
+          "placeholder": "Zoek of kies een tijdzone",
+          "required": "Selecteer een tijdzone.",
+          "tooltip": "Je kunt zoeken op stad of op afwijking (UTC+/-hh:mm)."
+        },
+        "analyze_sample_file": "Analyseren van voorbeeldbestand",
+        "edit_headline": "CSV-schema bewerken",
+        "layout": {
+          "cdr": "Op contactbasis",
+          "explanation": "injixo zal individuele contacten samenvoegen in intervallen van 15 minuten.",
+          "headline": "Layout van gegevens",
+          "interval": "Op intervalbasis",
+          "required": "Selecteer een layout."
+        }
+      },
+      "page2": {
+        "primary_action": "Schema opslaan",
+        "headline": "Kolommen toewijzen",
+        "preview": {
+          "headline": "Voorbeeld"
+        }
+      },
+      "page1": {
+        "primary_action": "Ga naar toewijzing",
+        "headline": "Setup"
+      },
+      "back": "Terug",
+      "back_link": "Terug naar integratie",
+      "document_title": {
+        "context": {
+          "page": {
+            "mapping": "Kolom Mapping",
+            "setup": "CSV-instelling"
+          }
+        },
+        "module": "CSV-schema",
+        "create": "CSV-schema maken",
+        "edit": "CSV-schema bewerken"
+      },
+      "optional": "Optional",
+      "preprocessing": {
+        "edit_disabled": "Om je voorbewerkingsopties te wijzigen, moet het CSV-bestand opnieuw worden geüpload.",
+        "empty_lines": {
+          "explanation": "Regels zonder waarden met alleen scheidingstekens overslaan.",
+          "label": "Lege regels overslaan"
+        },
+        "headerless": {
+          "explanation": "Vink dit vakje aan als het bestand geen kolomkoppen bevat. injixo zal de kolommen automatisch labelen met A, B enz.",
+          "label": "Kopregel toevoegen"
+        },
+        "skip_lines_containing": {
+          "add_string": "String toevoegen",
+          "explanation": "Sla regels over met waarden die overeenkomen met een of meerdere van de toegevoegde strings.",
+          "label": "Regel(s) met de volgende inhoud overslaan:",
+          "or": "of"
+        },
+        "skip_starting_lines": {
+          "explanation": "Sla het gespecificeerde aantal regels over, van bovenaan beginnend.",
+          "label": "Eerste <input /> regel(s) overslaan"
+        },
+        "title": "Voorbewerkingsopties"
+      },
+      "mapping_mode": {
+        "modal": {
+          "cancel": "Terug naar bewerken",
+          "content": "Je staat op het punt om het CSV-schema op te slaan met een andere toewijzingsmethode.",
+          "title": "CSV-toewijzingsmethode wijzigen?",
+          "warning": {
+            "overwriting": "Je actuele CSV-schema wordt overschreven.",
+            "restoring": "Het vorige CSV-schema kan niet worden hersteld."
+          }
+        },
+        "toggle": {
+          "label": "SQL-query gebruiken om kolommen toe te wijzen",
+          "tooltip": "Gebruik deze optie als je ACD geen CSV-bestanden genereert met de onderstaande kolomnamen."
+        }
+      },
+      "query": {
+        "input": {
+          "explanation": "Ga voor meer informatie naar het <explanationTarget> Help Center</explanationTarget>.",
+          "label": "SQL-query",
+          "required": "Voer een SQL-query in.",
+          "explanationLinkTarget": "https://help.injixo.com/add-csv-integration#map-the-columns-sql-query"
+        }
+      },
+      "test": {
+        "action": "Toewijzing testen",
+        "result": {
+          "hint": "Controleer in de preview of de kolommen met hetzelfde gegevenstype niet zijn verwisseld (bijvoorbeeld Aangeboden en Behandeld). Ga voor meer informatie naar het <explanationTarget>Help Center</explanationTarget>.",
+          "preview": {
+            "label": "Preview van de toegewezen kolommen"
+          },
+          "tagline": "Geen problemen gevonden",
+          "title": "Testresultaat"
+        },
+        "unknown_error": "De toewijzing kon niet worden getest."
+      },
+      "reupload_required_info": {
+        "label": "Om het kolomscheidingsteken of de voorbewerkingsopties te wijzigen, upload je het CSV-bestand opnieuw."
+      }
+    },
+    "errors": {
+      "empty_file": "Het bestand is leeg.",
+      "end_time_before_start_time": "De eindtijd mag niet vóór de begintijd vallen.",
+      "error_on_line": "Fout op regel {{line_number}}:",
+      "excessive_data": "Meer dan een jaar aan gegevens wordt niet ondersteund.",
+      "file_too_large": "Het bestand dat je probeerde te uploaden is te groot. De maximale grootte is 7MB.",
+      "invalid_channel": "Niet-ondersteund kanaal.",
+      "invalid_date_format": "Verkeerde datumindeling.",
+      "invalid_date_or_time_format": "Verkeerde datum of tijdsindeling.",
+      "invalid_duration_cdr": "The contact was claimed to be handled but has no duration.",
+      "invalid_end_of_line": "Gebruik dezelfde eindregeltekens in één bestand.",
+      "invalid_handled_cdr": "The handled field must contain either 0 or 1.",
+      "invalid_headers": "Ontbrekende of verkeerd gespelde kopteksten.",
+      "invalid_number": "Controleer de opmaak van de numerieke waarden.",
+      "invalid_row_length": "Het aantal velden in deze regel komt niet overeen met het aantal velden in de kopregel.",
+      "invalid_separator": "Ongeldig scheidingsteken.",
+      "invalid_time_format": "Verkeerde tijdsindeling.",
+      "invalid_timestamp": "Ongeldige timestamp op basis van de intervallengte.",
+      "invalid_year": "Het jaar mag niet voor 1970 liggen.",
+      "missing_activity": "Ontbrekende identificatiecode voor activiteit.",
+      "missing_agent": "Ontbrekende agent identifier.",
+      "missing_queue": "Ontbrekende naam van queue.",
+      "negative_number": "Negatieve getallen zijn niet toegestaan.",
+      "non_existing_timestamp": "De opgegeven lokale tijd vertegenwoordigt geen geldige tijdsaanduiding.",
+      "number_too_big": "Getal is te groot.",
+      "string_too_long": "Verkort de tekst tot 255 karakters.",
+      "unexpected": "Er is een onverwachte fout opgetreden.",
+      "unknown_error": "Er is een onbekende fout opgetreden.",
+      "invalid_time_range": "De gegevens overschrijden de maximale periode van 10 jaar."
+    }
+  },
+  "external_system": {
+    "database": {
+      "model_display_name": "Database"
+    }
+  },
+  "overview": {
+    "page_title": "Huidige Integraties"
+  },
+  "setup": {
+    "controls": {
+      "cancel": "Annuleren"
+    }
+  },
+  "module": "Integraties"
+}

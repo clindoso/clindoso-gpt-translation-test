@@ -1,0 +1,55 @@
+{
+  "document_title": {
+    "context": "Meldingen",
+    "module": "Account"
+  },
+  "heading": "Meldingen",
+  "message": {
+    "empty": "Er zijn geen instellingen beschikbaar",
+    "error": {
+      "load": "Er is een fout opgetreden bij het laden van",
+      "save": "Er is een fout opgetreden tijdens het opslaan van"
+    }
+  },
+  "notification_channel": {
+    "browser_push": {
+      "header": "Browser-pushmeldingen",
+      "tooltip": "Elke gebruiker moet zijn browser toestemming geven om meldingen te ontvangen."
+    },
+    "email": {
+      "header": "E-mailmeldingen"
+    }
+  },
+  "notification_settings_group": {
+    "me": {
+      "title": "Me"
+    },
+    "schedules": {
+      "title": "Schedules"
+    }
+  },
+  "notification_type": {
+    "schedule_changed": {
+      "description": "Wanneer je de Medewerker informeren functie in Schedules gebruikt, krijgen de geselecteerde medewerkers een notificatie. <0>Lees meer</0>",
+      "link": "https://help.injixo.com/schedules-notify-scheduling-changes/",
+      "title": "Roosters wijzigen"
+    },
+    "scheduling_period": {
+      "description": "Zodra de planning is gepubliceerd, ontvangen de medewerkers een notificatie. <0>Meer informatie</0>",
+      "link": "https://help.injixo.com/schedules-enable-employees-to-see-their-schedules",
+      "title": "Roosters publiceren"
+    },
+    "shift_trading": {
+      "description": "Wanneer een medewerker een andere medewerker selecteert om diensten te ruilen, ontvangt de tweede medewerker een melding. <0>Lees meer</0>",
+      "link": "https://help.injixo.com/injixo-me-invite-suitable-colleagues/",
+      "title": "Dienst ruilen"
+    }
+  },
+  "status": {
+    "error": "Je wijzigingen konden niet worden opgeslagen",
+    "idle": "Alle wijzigingen zijn opgeslagen",
+    "initial": "Wijzigingen worden automatisch opgeslagen",
+    "saved": "Opgeslagen",
+    "saving": "Opslaan"
+  }
+}

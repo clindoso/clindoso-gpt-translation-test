@@ -1,0 +1,260 @@
+{
+  "document_title": {
+    "module": "Profil",
+    "context": {
+      "profile": {
+        "title": "Mon profil",
+        "page": "Détails personnels"
+      },
+      "security": {
+        "title": "Sécurité",
+        "page": {
+          "overview": "Récapitulatif",
+          "enable2fa": "Activer la 2FA",
+          "disable2fa": "Désactiver la 2FA",
+          "sso": "Authentification unique"
+        }
+      }
+    }
+  },
+  "label": {
+    "email": "E-mail",
+    "loading": "Chargement ...",
+    "saving": "Sauvegarde en cours",
+    "password": "Mot de passe",
+    "language": "Langue",
+    "first_name": "Prénom",
+    "last_name": "Nom",
+    "timezone": "Fuseau horaire",
+    "to_login_page": "Aller vers la page de connexion",
+    "password_strength_hint": "Utiliser au minimum 8 caractères, combiner les majuscules, minuscules, chiffres et caractères spéciaux.",
+    "personnel_number": "Personnel number"
+  },
+  "placeholder": {
+    "timezone": "Fuseau horaire",
+    "language": "Langue"
+  },
+  "error": {
+    "other": "Il y a eu un problème technique. Essayez à nouveau."
+  },
+  "password_strength": {
+    "none": "Aucun mot de passe",
+    "weak": "Mot de passe faible",
+    "sufficient": "Mot de passe moyen",
+    "strong": "Mot de passe fort"
+  },
+  "login_page": {
+    "otp": {
+      "header": "Authentification à 2 facteurs",
+      "hint1": "Entrez le code de l'application Authenticator sur votre mobile.",
+      "hint2": "Utilisez un <0>code de récupération</0> ou lisez les instructions pour <1>récupérer votre compte</1>.",
+      "hint2_header": "Vous rencontrez un problème ?",
+      "label": "Mot de passe à usage unique",
+      "verify": "Vérifier",
+      "link_to_recovery_docs": "https://help.injixo.com/fr/use-two-factor-authentication/#se-connecter-sans-appareil-personnel-ni-codes-de-secours"
+    },
+    "backupCode": {
+      "header": "Authentification à 2 facteurs",
+      "label": "Code de récupération",
+      "hint1": "Entre le code de récupération si vous avez perdu votre mobile.",
+      "hint2": "Instructions pour <0>récupérer votre compte</0>.",
+      "hint2_header": "Vous rencontrez encore un problème ?",
+      "verify": "Vérifier"
+    },
+    "error": {
+      "invalid": "L'e-mail ou le mot de passe est invalide.",
+      "otp_invalid": "Mot de passe à usage unique invalide.",
+      "otp_timeout": "Délai dépassé. Merci de saisir les identifiants et le mot de passe à usage unique dans les 5 minutes.",
+      "backup_code_invalid": "Code de récupération invalide."
+    },
+    "forgot_pw_link": "Mot de passe oublié ?",
+    "header": "Se connecter à votre compte",
+    "submit": "Connexion",
+    "title": "Connexion",
+    "sso_login_link": "Connectez-vous via SSO"
+  },
+  "logout_page": {
+    "header": "Vous êtes maintenant déconnecté",
+    "title": "Déconnexion"
+  },
+  "forgot_password_page": {
+    "title": "Mot de passe oublié",
+    "header": "Mot de passe oublié",
+    "submit": "Envoyer les instructions",
+    "success_message": "Un e-mail va être envoyé si l'e-mail renseigné est valide.",
+    "empty_email": "Saisissez votre e-mail"
+  },
+  "reset_password_page": {
+    "title": "Réinitialisation du mot de passe",
+    "header": "Réinitialisation du mot de passe",
+    "new_psw": "Nouveau mot de passe",
+    "new_psw_confirmation": "Confirmer le nouveau mot de passe",
+    "submit": "Enregistrer le nouveau mot de passe",
+    "success_message": "Votre mot de passe a été réinitialisé. Connectez-vous maintenant avec votre nouveau mot de passe.",
+    "no_token_message": "Aucun lien de réinitialisation de mot de passe actif n'est disponible. Veuillez créer une nouvelle demande.",
+    "confirmation_mismatch": "ne correspond pas au mot de passe"
+  },
+  "welcome_page": {
+    "title": "Bienvenue",
+    "header": "Bienvenue",
+    "explanation": "Saisissez votre mot de passe pour accéder à injixo.",
+    "success_message": "Bienvenue, vous avez défini votre mot de passe avec succès et vous pouvez accéder maintenant à injixo."
+  },
+  "profile_page": {
+    "title": "Profil",
+    "update_successful": "Votre profil a été mis à jour avec succès.",
+    "update_error": "Votre profil n'a pas pu être enregistré.",
+    "header": "Détails personnels",
+    "account_header": "Account",
+    "preferences_header": "Préférences",
+    "submit": "Enregistrer le profil",
+    "submit_success": "Votre profil a été mis à jour.",
+    "no_result_found": "Aucun résultat trouvé",
+    "email_verification": {
+      "pending": "Votre e-mail n'a pas été vérifié. <0> Renvoyer l'e-mail de vérification. </0>",
+      "verified": "Votre e-mail a été vérifié avec succès. Vous avez maintenant accès aux fonctionnalités restantes.",
+      "failure": "Votre e-mail n'a pu être vérifié. Le lien que vous avez demandé n'existe pas.",
+      "resent": "Nous venons de vous adresser un e-mail pour vérifier votre adresse e-mail."
+    },
+    "validation": {
+      "required": "ne peut être vide.",
+      "max": "ne doit pas contenir plus de {{max}} caractères.",
+      "email": "n'est pas un format d'e-mail valide.",
+      "not_unique": "pas unique."
+    },
+    "notifications": {
+      "allowed": "Les notifications sont autorisées sur votre navigateur.",
+      "blocked": "Les notifications sont bloquées sur votre navigateur. Modifiez les paramètres de votre navigateur pour les autoriser.",
+      "not_set": "Pour recevoir les notifications d’injixo dans votre navigateur, vous devez les autoriser dans les paramètres de votre navigateur.",
+      "not_supported": "Votre navigateur ne supporte pas les notifications.",
+      "request": "Autoriser les notifications d’injixo",
+      "title": "Notifications"
+    },
+    "password_confirmation": {
+      "title": "Modifier l'adresse e-mail"
+    }
+  },
+  "security_page": {
+    "change_password": {
+      "header": "Modification du mot de passe",
+      "current_password": "Mot de passe actuel",
+      "submit": "Enregistrer le mot de passe",
+      "submit_failed": "Le mot de passe n'a pas pu être enregistré.",
+      "submit_success": "Votre mot de passe a été actualisé avec succès.",
+      "wrong_current_password": "Veuillez saisir votre mot de passe actuel."
+    },
+    "two_factor_auth": {
+      "header": "Authentification à 2 facteurs",
+      "enable": "Activer la 2FA",
+      "disable": "Désactiver la 2FA",
+      "enabled": {
+        "hint": "Votre compte est protégé par la 2FA.",
+        "hint2": "Pour protéger votre compte, nous vous recommandons de laisser la fonctionnalité 2FA activée. Réactivez le 2FA pour ajouter un nouvel appareil.",
+        "help": "En cas de problème, contactez votre administrateur injixo ou essayez depuis un autre appareil."
+      },
+      "disabled": {
+        "link_to_docs": "https://help.injixo.com/fr/2fa",
+        "hint": "L'authentification à 2 facteurs (2FA) ajoute un niveau de sécurité à votre compte en exigeant plus qu’un simple mot de passe. Pour en savoir plus, consultez le <0>Help Center</0>."
+      },
+      "tooltip_enforced": "L'authentification à 2 facteurs est activée sur votre compte"
+    },
+    "enable_2fa_page": {
+      "header": "Activer l'authentification à 2 facteurs",
+      "continue": "Continuer",
+      "enable": "Activer la 2FA",
+      "cancel": "Annuler",
+      "copy": "Copier",
+      "copied": "Copié !",
+      "otp_verification_failed": "Code invalide, veuillez essayer à nouveau",
+      "backup_codes_confirmation": "Vous devez confirmer que les codes de secours ont bien été sauvegardés.",
+      "sudo_expired": "Votre session a expiré. Vous pouvez recommencer l'activation en rechargeant la page.",
+      "enabling_failed": "Une erreur est survenue durant l'activation de la 2FA. Essayez à nouveau.",
+      "step_1": {
+        "header": "1. Installer une application d'authentification sur votre téléphone",
+        "description": "Installer une des applications d'authentification ci-dessous sur votre téléphone ou votre tablette :",
+        "apps": "Utiliser <0>Authy</0>, <0>Google Authenticator</0>, ou <0>Microsoft Authenticator</0>",
+        "download_links": {
+          "header": "Liens de téléchargement",
+          "authy": {
+            "google_play_url": "https://play.google.com/store/apps/details?id=com.authy.authy&hl=fr",
+            "apple_store_url": "https://apps.apple.com/fr/app/authy/id494168017"
+          },
+          "google_authenticator": {
+            "google_play_url": "https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=fr",
+            "apple_store_url": "https://apps.apple.com/fr/app/google-authenticator/id388497605"
+          },
+          "microsoft_authenticator": {
+            "google_play_url": "https://play.google.com/store/apps/details?id=com.azure.authenticator&hl=fr",
+            "apple_store_url": "https://apps.apple.com/fr/app/microsoft-authenticator/id983156458"
+          }
+        }
+      },
+      "step_2": {
+        "header": "2. Ajouter injixo sur votre application d'authentification",
+        "qr_code": "Scanner le QR code",
+        "or": "ou",
+        "setup_key": "Entrer la clé manuellement",
+        "description": "Dans votre application d'authentification, ajouter un nouveau compte",
+        "copied_setup_key": "La clé d'activation a été copiée !"
+      },
+      "step_3": {
+        "header": "3. Entrer votre code.à usage unique à partir de votre application d'authentification",
+        "description": "Entrer le code généré par l'application d'authentification pour enregistrer votre appareil"
+      },
+      "step_4": {
+        "header": "4. Sauvegarder vos codes de secours",
+        "description": "Si votre application d'authentification n'est pas disponible, vous pouvez utiliser un des codes de secours pour confirmer votre identité. Ils sont confidentiels et à conserver dans un endroit sûr.",
+        "warning": "Vous ne pourrez plus accéder à ces mots de passe une fois que vous aurez quitté l'écran.",
+        "download_backup_codes": "Télécharger",
+        "copied_backup_codes": "Les codes de secours ont été copiés !",
+        "checkbox": "J'ai sauvegardé mes codes de secours."
+      },
+      "enforcement": {
+        "message": "L'authentification à 2 facteurs est configurée comme obligatoire pour l'utilisation d'injixo. Après votre connexion, suivez les étapes suivantes.",
+        "more_details": "Dérouler",
+        "less_details": "Réduire",
+        "hint": "L'authentification à 2 facteurs (2FA) ajoute un niveau de sécurité supplémentaire à votre compte en exigeant plus qu’un simple mot de passe. Pour en savoir plus, consultez le <0>Help Center</0>.",
+        "link_to_docs": "https://help.injixo.com/fr/2fa"
+      }
+    },
+    "enable_2fa": {
+      "success_message": "L'authentification à 2 facteurs a été activée"
+    },
+    "disable_2fa": {
+      "success_message": "L'authentification à 2 facteurs a été désactivée",
+      "header": "Désactiver l'authentification à 2 facteurs"
+    },
+    "single_sign_on": {
+      "header": "Authentification unique",
+      "hint": {
+        "admin": "L’authentification unique est activée pour votre compte. La connexion par e-mail et mot de passe n’est plus disponible.",
+        "password": "Votre e-mail et mot de passe sont gérés par votre fournisseur d'identité. Pour toutes mises à jour, veuillez contacter votre administrateur",
+        "user": "L’authentification unique est activée pour votre compte. La connexion par e-mail et mot de passe n’est plus disponible. Si vous avez besoin de modifier vos données personnelles ou si vous avez besoin d’un nouvel identifiant, veuillez contacter votre administrateur."
+      }
+    }
+  },
+  "sudo_confirmation": {
+    "failed": "Mot de passe non valide.",
+    "hint": "Entrer votre mot de passe pour continuer",
+    "button": {
+      "continue": "Continuer",
+      "cancel": "Annuler"
+    }
+  },
+  "login_sso_page": {
+    "authentication_failed": "L'authentification a échoué. Contactez votre administrateur.",
+    "header": "Se connecter avec l'authentification unique (SSO)",
+    "login_link": "Connexion avec e-mail et mot de passe",
+    "login_request_expired": "La demande de connexion a expiré. Veuillez réessayer.",
+    "submit": "Continuer",
+    "title": "SSO"
+  },
+  "password_confirmation": {
+    "button": {
+      "cancel": "Annuler",
+      "continue": "Continuer"
+    },
+    "failed": "Mot de passe non valide.",
+    "hint": "Entrer votre mot de passe pour continuer"
+  }
+}

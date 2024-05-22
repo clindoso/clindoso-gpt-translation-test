@@ -1,0 +1,526 @@
+{
+  "label": {
+    "planning-unit": "Unità di pianificazione",
+    "button": {
+      "add_availability": "Aggiungi giorno e intervallo di tempo",
+      "proposal": "Genera suggerimenti",
+      "create-new-1on1": "Crea nuovi meeting 1:1",
+      "back-to-main": "Torna alla panoramica",
+      "cancel": "Cancella",
+      "meeting-proposal": "Genera suggerimenti per i meeting"
+    },
+    "day": "Giorno",
+    "heading": {
+      "employee-section": "Partecipanti selezionati ({{amountSelected}}/{{amountTotal}})",
+      "configure-meeting-participants": "Riunione da pianificare tra:",
+      "meeting-host": "Organizzatore della riunione",
+      "one-on-one-meeting": "Imposta riunioni 1:1",
+      "participant": "Partecipante",
+      "participant-selection": "Pianifica meeting 1:1 con",
+      "settings": "Impostazioni",
+      "available-proposals": "Suggerimenti generati",
+      "configure-group-meetings-participants": "Meeting di gruppo da pianificare tra",
+      "configure-session-participants": "Sessioni di autoapprendimento da pianificare per:",
+      "group-meeting": "Organizza meeting di gruppo",
+      "group-meeting-card": "Meeting di gruppo",
+      "group-meetings-host-selection": "Definisci la disponibilità dell'organizzatore del meeeting",
+      "group-meetings-participant-selection": "Assegna i partecipanti ai meeting di gruppo",
+      "group-meetings-results": "Risultati - Meeting di gruppo",
+      "one-on-one-meeting-card": "Meeting 1:1",
+      "one-on-one-results": "Risultati - Meeting 1:1",
+      "optional-settings": "Impostazioni opzionali",
+      "pending-proposals": "Generando suggerimenti",
+      "self-learning": "Impostare sessioni di autoapprendimento",
+      "self-learning-meeting-card": "Sessioni di autoapprendimento",
+      "self-learning-results": "Risultati - Sessioni di autoapprendimento"
+    },
+    "from": "Da",
+    "loading": "Caricamento in corso",
+    "no-employees": {
+      "caption": "Nessun dipendente",
+      "empty-planning-unit": "Non è possibile pianificare riunioni poiché non sono presenti dipendenti per l'unità di pianificazione selezionata.",
+      "no-planning-unit": "Non è possibile pianificare riunioni perché non è stata selezionata nessuna unità di pianificazione",
+      "empty-planning-unit-and-employee-filter": "Non è possibile pianificare meeting poiché non sono presenti dipendenti per l'unità di pianificazione e il filtro dipendenti selezionati.",
+      "empty-planning-unit-and-selection": "Non è possibile pianificare meeting perché non sono presenti dipendenti per l'unità di pianificazione e la selezione scelte."
+    },
+    "no-entries": "Nessuna voce",
+    "team-leader": {
+      "availability": "Imposta la disponibilità dell'organizzatore della riunione"
+    },
+    "timespan": "Aggiungi un intervallo di tempo",
+    "to": "A",
+    "weekday": {
+      "all_weekdays": "Da lunedi a venerdi",
+      "friday": "Venerdi",
+      "monday": "Lunedi",
+      "saturday": "Sabato",
+      "sunday": "Domenica",
+      "thursday": "Giovedi",
+      "tuesday": "Martedi",
+      "wednesday": "Mercoledi",
+      "all_days": "Da lunedi a domenica",
+      "monday_to_saturday": "Da lunedi a sabato"
+    },
+    "meeting-type": "Attività da pianificare",
+    "no-activities": {
+      "caption": "Nessuna attività",
+      "details": "Non ci sono attività di riunione per l'unità di pianificazione selezionata."
+    },
+    "no-data": {
+      "caption": "Sembra che tu non sia ancora pronto per usare Meetings.",
+      "details": "Meetings ti aiuta a trovare lo slot migliore in termini di copertura e disponibilità per tutti i diversi tipi di riunioni come le riunioni 1:1. Per pianificare le riunioni è necessario disporre di almeno un'unità di pianificazione, dipendenti, un periodo di pianificazione valido e attività di tipo riunione."
+    },
+    "proposed-time-span": "Time slot suggerito",
+    "with-agent": "Partecipante",
+    "form-error": {
+      "no-participants": "Nessun partecipante selezionato. Seleziona almeno un partecipante per pianificare i meeting."
+    },
+    "infeasible_instance": "Non ci sono suggerimenti per meeting che soddisfano le tue esigenze.",
+    "no-meetings-proposed": "Non è possibile suggerire meeting",
+    "collapsible-content": {
+      "auto-group-meeting-error": "A causa di un errore, la richiesta di suggerimenti non è stata completata. Si prega di provare a organizzare di nuovo meeting di gruppo.",
+      "one-on-one-error": "A causa di un errore, la richiesta di suggerimenti non è stata completata. Prova a impostare nuovamente i meeting 1:1.",
+      "problem": "Problema",
+      "self-learning-error": "A causa di un errore, la richiesta di suggerimenti non è stata completata. Prova a impostare nuovamente le sessioni di autoapprendimento. "
+    },
+    "collapsible-heading": "Visualizza conflitto",
+    "collapsible-heading-action-request": "Azione richiesta",
+    "collapsible-heading-conflict": "Vedi conflitto",
+    "collapsible-heading-error": "Visualizza errore",
+    "action-request": {
+      "host-written-but-employee-participants-failed": "Il meeting è stato inserito nella pianificazione dell'organizzatore ma non è stato possibile pianificarlo (vedi i conflitti per i partecipanti). Si dovrebbe rimuovere manualmente il meeting dalla pianificazione dell'organizzatore e provare ad organizzare una nuovo meeting per i partecipanti interessati.",
+      "host-written-but-participant-failed": "Il meeting è stato inserito nella pianificazione dell'organizzatore ma non è stato possibile pianificarlo (vedi il conflitto in atto per il partecipante). È necessario rimuovere manualmente il meeting inserito nella pianificazione dell'organizzatore e provare a pianificare un nuovo meeting per il partecipante interessato."
+    },
+    "activity": "Attività da pianificare",
+    "aria-enhancement": {
+      "input": "input",
+      "dropdown": "menu a tendina"
+    },
+    "conflict-message": {
+      "all-participants-failed-warning": "Si è verificato un errore durante l'inserimento del meeting nella pianificazione del partecipante, pertanto non è stato possibile pianificare il meeting. Prova a organizzare un nuovo meeting per i partecipanti interessati.",
+      "check-paid-configuration": "Controlla se le tue attività siano configurate come \"retribuite\".",
+      "competing_employees": {
+        "intro": "Ci sono alcuni dipendenti che competono per gli stessi orari del meeting con l'organizzatore del meeting."
+      },
+      "competing_employees_day_limit": {
+        "intro": "Non ci sono abbastanza slot meeting possibili per tutti i dipendenti con il limite di meeting giornaliero configurato."
+      },
+      "decrease-date-range": "Riduci l'intervallo di date configurato",
+      "decrease-gap-length": "Ridurre il buffer richiesto tra un meeting e l'altro",
+      "failed-to-write-host": "Si è verificato un errore durante l'inserimento del meeting nella pianificazione dell'organizzatore, pertanto non è stato possibile pianificare il meeting. Prova a organizzare un nuovo meeting per il partecipante interessato.",
+      "host-failed-warning": "Si è verificato un errore durante l'inserimento del meeting nella pianificazione dell'organizzatore, pertanto non è stato possibile pianificare il meeting. Prova a organizzare un nuovo meeting per i partecipanti interessati.",
+      "host-written-but-participant-failed": "Si è verificato un errore durante la scrittura del meeting nella pianificazione del partecipante, pertanto non è stato possibile pianificare il meeting.",
+      "increase-corridors": "Aumentare la quantità di slot configurati",
+      "increase-daily-meeting-limit": "Aumenta il numero di meeting massimi possibili al giorno",
+      "increase-date-range": "Aumenta l'intervallo di date",
+      "increase-meeting-host-availibility": "Aumentare la disponibilità dell'organizzatore del meeting",
+      "insufficient-distinguished-meeting-slots-for-meetings": {
+        "intro": "Non ci sono abbastanza slot per pianificare il numero di meeting richiesto con la durata richiesta. Per risolvere questo problema, prova alcune delle seguenti azioni:"
+      },
+      "insufficient-number-of-meetings-due-to-day-limit": {
+        "intro": "Il limite di meeting giornaliero è troppo basso per trovare meeting per tutti i dipendenti nell'intervallo di tempo selezionato."
+      },
+      "insufficient_distinguished_meeting_slots": {
+        "intro": "Non ci sono abbastanza slot per pianificare i meeting con la durata richiesta per tutti i dipendenti. Per risolvere questo problema prova a:"
+      },
+      "intro": "L'organizzatore del meeting non ha abbastanza disponibilità per coprire tutti i meeting richiesti. Per risolvere il problema prova a:",
+      "meeting-written-but-participation-failed-warning": "Si è verificato un errore durante l'inserimento del meeting nella pianificazione del partecipante. È possibile aggiungerlo manualmente alla pianificazione. ",
+      "no-meeting-distribution-with-gap-length": {
+        "intro": "L'organizzatore del meeting non ha abbastanza disponibilità per coprire tutti i meeting richiesti con il buffer richiesto. Per risolvere questo problema, provate a fare quanto segue:"
+      },
+      "no-overwritable-activity-paid-unpaid": {
+        "intro": "Non ci sono attività nella vostra pianificazione che possano essere sovrascritte dall'attività di meeting scelta senza modificare gli orari di lavoro netti settimanali dei vostri dipendenti."
+      },
+      "not-solved": {
+        "intro": "Il calcolo dei suggerimenti ottimali per le riunioni richieste è troppo complesso e non è stato possibile elaborarlo entro il suo limite di tempo. Puoi provare a:"
+      },
+      "outro": "Assicurarsi anche che le attività che dovrebbero essere sostituite siano impostate come sostituibili.",
+      "reduce-number-of-meetings": "Riduci il numero di meeting",
+      "reduce-participants": "Ridurre il numero di partecipanti",
+      "too-small-daily-meeting-limit-host": {
+        "intro": "L'organizzatore del meeting non può ospitare tutti i meeting nell'intervallo di tempo selezionato con il limite giornaliero scelto."
+      }
+    },
+    "coverage-disclaimer": "La copertura è stata calcolata al momento della creazione di questa proposta. I valori non si aggiornano automaticamente. Se la riunione si estende su più intervalli, verrà visualizzato un valore per ogni intervallo.",
+    "coverage-threshold": "Considera solo gli slot in cui la copertura risultante sia almeno:",
+    "date-range-picker": "Intervallo di date",
+    "employee-section": {
+      "employee-filter": "Filtro dipendenti",
+      "filter-by": "Filtra per",
+      "selection": "Selezione"
+    },
+    "excluded": "Esclusi",
+    "failed": "Falliti",
+    "gap-length": "Buffer",
+    "group-meeting-assignment": "Meeting",
+    "group-meeting-info": "Meeting {{count}}",
+    "group-meeting-tabs": "Meeting",
+    "group-meetings-proposed_one": "È suggerito 1 meeting",
+    "group-meetings-proposed_zero": "Sono suggeriti 0 meeting",
+    "group-meetings-proposed_other": "Sono suggeriti {{count}} meeting",
+    "group-meetings-will-be-scheduled_one": "1 meeting selezionato verrà pianificato",
+    "group-meetings-will-be-scheduled_zero": "0 meeting selezionati verranno pianificati",
+    "group-meetings-will-be-scheduled_other": "{{count}} meeting selezionati verranno pianificati",
+    "impact-on-coverage": "Copertura risultante",
+    "info": {
+      "group-meeting-card": "Pianificare meeting per gruppi di vostri dipendenti con o senza organizzatore.",
+      "one-on-one-meeting-card": "Pianifica meeting 1:1 tra dipendenti e il loro team leader.",
+      "self-learning-meeting-card": "Pianifica sessioni di formazione individuali per i tuoi dipendenti."
+    },
+    "information-for-meeting": {
+      "manually-excluded": "Esclusione manuale dalla pianificazione"
+    },
+    "limit-meeting-number": "Limitare il numero di meeting al giorno ad un massimo di",
+    "limit-meetings": "Limitare il numero di meeting al giorno ad un massimo di:",
+    "limit-sessions": "Limitare il numero di sessioni giornaliere per ogni partecipante ad un massimo di:",
+    "limit-sessions-after-input": "per ogni partecipante",
+    "limit-sessions-before-input": "Limitare il numero di sessioni giornaliere al massimo",
+    "maintenance": {
+      "caption": "Attualmente stiamo migliorando Meetings",
+      "details": "Ci scusiamo per gli eventuali disagi che questa necessaria manutenzione potrebbe causare. Meetings dovrebbe essere di nuovo disponibile tra qualche minuto. Grazie per la vostra pazienza!"
+    },
+    "meeting-host-disclaimer": "Attualmente i meeting non verranno inseriti nella pianificazione dell'organizzatore del meeting.",
+    "meeting-host": {
+      "employee": "Scegli dipendente",
+      "employee-helper": "Per ottenere da injixo la disponibilità dell'organizzatore del meeting.",
+      "employee-selection": "Dipendente",
+      "manually": "Inserisci manualmente",
+      "manually-helper": "Se il vostro organizzatore del meeting non è pianificato tramite injixo.",
+      "timezone-helper": "Gli orari elencati sono nel fuso orario dell'unità di pianificazione."
+    },
+    "meeting-length": "Durata del meeting",
+    "meeting-limit": "Limite di meeting",
+    "meeting-not-scheduled": "1 meeting on può essere pianificato",
+    "meeting-scheduled": "1 meeting è stato pianificato",
+    "meetings-not-scheduled": "{{count}} meeting non possono essere pianificati.",
+    "meetings-scheduled": "{{count}} meeting sono stati pianificati",
+    "no-proposals": {
+      "caption": "Nessun suggerimento",
+      "details": "Una volta calcolati, i suggerimenti verranno visualizzati qui."
+    },
+    "no-requests": {
+      "caption": "Nessun suggerimento",
+      "details": "Mentre vengono generati i suggerimenti, la tua richiesta verrà visualizzata qui."
+    },
+    "one-on-one-gap-length": "Garantire un buffer tra le riunioni:",
+    "one-on-one-gap-length-after-dropdown": "tra un meeting e l'altro",
+    "one-on-one-gap-length-before-dropdown": "Garantire un buffer di",
+    "one-on-one-meeting-proposed": "È suggerito 1 meeting",
+    "one-on-one-meeting-will-be-scheduled": "1 meeting selezionato verrà pianificato",
+    "one-on-one-meetings-proposed": "Sono suggeriti {{count}} meeting",
+    "one-on-one-meetings-will-be-scheduled": "{{count}} meeting selezionati verranno pianificati",
+    "proposal-not-possible": "Non possibile",
+    "proposal-pending": "Si sta generando un suggerimento...",
+    "replaced-activities": "Attività sostituita",
+    "resolvable-precheck": {
+      "affected-employees": "Dipendenti interessati:",
+      "competing-employees": {
+        "reason": "Non è stato possibile assegnare un meeting per questi dipendenti in quanto vi sono conflitti con i meeting proposti per altri dipendenti."
+      },
+      "conflicts-with-other-participants": {
+        "reason": "Questi dipendenti non sono disponibili nel miglior slot possibile per il resto del gruppo.",
+        "solution": "Assegnare questi dipendenti ad un altro gruppo o assicurarsi che ci sia uno slot in cui ogni partecipante sia disponibile."
+      },
+      "coverage-threshold-not-satisfied": {
+        "reason": "Questi dipendenti non hanno meeting poiché non è possibile trovare una pianificazione con più meeting che rispetti la soglia minima di copertura.",
+        "solution": "Impostare nuovi meeting e diminuire la soglia di copertura da considerare."
+      },
+      "label": {
+        "resolvable-precheck": {
+          "competing-employees": {
+            "solution": "Prova a pianificare un meeting tra il dipendente e l'organizzatore del meeting in un arco di tempo più ampio o con meno dipendenti."
+          }
+        }
+      },
+      "no-overwritable-paid-unpaid-slot": {
+        "reason": "Non è possibile pianificare un meeting per questi dipendenti senza modificare il loro orario di lavoro netto settimanale.",
+        "solution": "Controlla se la configurazione della tua attività (proprietà: retribuita) è corretta. Puoi anche provare ad estendere l'intervallo di tempo della tua richiesta."
+      },
+      "no-present-activities-group-meeting": {
+        "reason": "Questi dipendenti non hanno sufficienti attività di tipo presenza nella loro pianificazione per consentire un meeting della durata e del periodo di tempo richiesti.",
+        "solution": "Assicurati che la pianificazione di questi dipendenti includa attività di tipo presenza, di ridurre la durata della riunione o di aumentare il periodo di tempo."
+      },
+      "no-present-activities-overlapping-with-meeting-host": {
+        "reason": "Questi dipendenti non hanno sufficienti attività di tipo presenza nella loro pianificazione che coincidono con la disponibilità dell'organizzatore.",
+        "solution": "Assicuratevi che la pianificazione di questi dipendenti includa attività di tipo presenza, di aumentare la disponibilità dell'organizzatore della riunione o di aumentare il periodo di tempo."
+      },
+      "no-present-activities-self-learning": {
+        "reason": "Questi dipendenti non hanno abbastanza attività di tipo presenza nella loro pianificazione per completare tutte le sessioni di autoapprendimento nei tempi richiesti.",
+        "solution": "Assicuratevi che la pianificazione di questi dipendenti includa attività di tipo presenza e considerate la possibilità di estendere il periodo di tempo o di diminuire i parametri di lunghezza del gap o del numero massimo di giorni."
+      },
+      "no-present-activities-with-allowed-intervals-group-meeting": {
+        "reason": "Questi dipendenti non hanno sufficienti attività di tipo presenza nel loro pianificazione che si sovrappongono agli intervalli di tempo configurati.",
+        "solution": "Assicurati che la pianificazione di questi dipendenti includa attività di tipo presenza, aumentare i periodi di tempo configurati o aumentare l'intervallo di tempo."
+      },
+      "no-present-activities-with-meeting-host-group-meeting": {
+        "reason": "Questi dipendenti non hanno sufficienti attività di tipo presenza nella loro pianificazione che coincidono con la disponibilità dell'organizzatore.",
+        "solution": "Assicurati che la pianificazione di questi dipendenti includa attività di tipo presenza, di aumentare la disponibilità dell'organizzatore della riunione o di aumentare il periodo di tempo."
+      },
+      "no-present-activities": {
+        "reason": "Questi dipendenti non hanno sufficienti attività di tipo presenza nella loro pianificazione per consentire un meeting della durata e del periodo di tempo richiesti.",
+        "solution": "Assicuratevi che la pianificazione di questi dipendenti includa attività di tipo presenza, di ridurre la durata della riunione o di aumentare il periodo di tempo."
+      },
+      "no-replaceable-activities-group-meeting": {
+        "reason": "Questi dipendenti non hanno nella loro pianificazione un numero sufficiente di attività sostituibili per consentire un meeting della durata richiesta.",
+        "solution": "Assicurarsi che la pianificazione di questi dipendenti includa attività sostituibili o ridurre la durata del meeting."
+      },
+      "no-replaceable-activities-overlapping-with-allowed-intervals-group-meeting": {
+        "reason": "Non ci sono abbastanza slot sovrapposti per questi dipendenti e gli intervalli configurati per pianificare un meeting della durata richiesta.",
+        "solution": "Aumentare gli intervalli di tempo configurati o ridurre la durata del meeting."
+      },
+      "no-replaceable-activities-overlapping-with-meeting-host-group-meeting": {
+        "reason": "Non ci sono abbastanza slot sovrapposti per questi dipendenti e organizzatore per pianificare un meeting della durata richiesta.",
+        "solution": "Aumentare la disponibilità dell'organizzatore del meeting o ridurre la durata del meeting."
+      },
+      "no-replaceable-activities-overlapping-with-meeting-host": {
+        "reason": "Non ci sono abbastanza slot sovrapposti per questi dipendenti e organizzatore per pianificare un meeting della durata richiesta.",
+        "solution": "Aumentare la disponibilità dell'organizzatore del meeting o ridurre la durata del meeting."
+      },
+      "no-replaceable-activities-self-learning": {
+        "reason": "Questi dipendenti non hanno abbastanza attività sostituibili nella loro pianificazione per completare tutte le sessioni di autoapprendimento nel periodo di tempo richiesto.",
+        "solution": "Assicurarsi che la pianificazione di questi dipendenti includa attività che possono essere sostituite e considerare la possibilità di estendere il periodo di tempo o di ridurre i parametri relativi alla lunghezza del gap o al numero massimo di giorni."
+      },
+      "no-replaceable-activities": {
+        "reason": "Questi dipendenti non hanno nella loro pianificazione un numero sufficiente di attività sostituibili per consentire un meeting della durata richiesta.",
+        "solution": "Assicurarsi che la pianificazione di questi dipendenti includa attività sostituibili o ridurre la durata del meeting."
+      },
+      "no-session-distribution": {
+        "reason": "Non è possibile pianificare tutte le sessioni di autoapprendimento per questi dipendenti nel periodo di tempo richiesto.",
+        "solution": "Considera di estendere il periodo di tempo della tua richiesta, ridurre gli spazi tra le sessioni o aumentare il limite di sessioni al giorno."
+      },
+      "reason": "Motivo:",
+      "solution": "Possibile soluzione:",
+      "not-enough-common-participants": {
+        "reason": "Non ci sono orari adeguati nella pianificazione dei dipendenti in cui è possibile un meeting con un numero sufficiente di altri dipendenti.",
+        "solution": "Assicurati che la pianificazione di questi dipendenti includa attività sostituibili e prendi in considerazione l'estensione dell'intervallo di tempo richiesto."
+      }
+    },
+    "scheduled": "Pianificate",
+    "scheduled-time-span": "Time slot pianificato",
+    "self-learning-session-proposed": "È suggerita 1 sessione",
+    "self-learning-session-will-be-scheduled": "1 sessione selezionata verrà pianificata",
+    "self-learning-sessions-proposed": "Sono suggerite {{count}} sessioni",
+    "self-learning-sessions-will-be-scheduled": "{{count}} sessioni selezionate saranno pianificate",
+    "self-learnings-gap-length": "Garantire un buffer tra le sessioni per ciascun partecipante:",
+    "self-learnings-gap-length-after-dropdown": "tra le sessioni per ciascun partecipante",
+    "self-learnings-gap-length-before-dropdown": "Garantire un buffer di",
+    "session-duration": "Durata della sessione",
+    "session-limit": "Limite di sessione",
+    "sessions-per-participant": "Sessioni per partecipante",
+    "status": {
+      "participants-available": "disponibili",
+      "participants-available-group-meeting": "{{count}} in {{meetingCount}} meeting disponibili",
+      "participants-not-available": "non disponibili",
+      "participants-not-scheduled": "non pianificati",
+      "participants-scheduled": "pianificati",
+      "participants-scheduled-group-meeting": "{{count}} in {{meetingCount}} meeting pianificati",
+      "schedule-execution-error": "Errore",
+      "schedule-suggested": "{{suggestedCount}} suggeriti, {{excludedCount}} esclusi",
+      "schedule-suggested-fail": "{{count}} non possibili",
+      "schedule-suggested-success": "{{count}} suggeriti",
+      "schedule-written": "{{scheduledCount}} pianificati, {{failedCount}} falliti",
+      "schedule-written-fail": "{{count}} falliti",
+      "schedule-written-success": "{{count}} pianificati",
+      "participants-available-group-meetings_one": "in un meeting disponibile",
+      "participants-available-group-meetings_other": "in {{count}} meeting disponibili",
+      "participants-scheduled-group-meetings_one": "in {{count}} meeting pianificati",
+      "participants-scheduled-group-meetings_other": "in {{count}} meeting pianificati"
+    },
+    "with-meeting-host": {
+      "option": "Meeting di gruppo con organizzatore"
+    },
+    "without-meeting-host": {
+      "option": "Meeting di gruppo senza organizzatore",
+      "specify-timeframe": "Definisci i periodi di tempo dei meeting"
+    },
+    "advanced-feature": "Questa funzionalità fa parte del piano Advanced.",
+    "availability": "Imposta un vincolo di disponibilità aggiuntivo",
+    "back-to-meetings": "Torna a Meetings",
+    "external-host": "Organizzatore esterno",
+    "host": "Organizzatore",
+    "internal-host": "Organizzatore interno",
+    "no-host": "Nessun organizzatore",
+    "participants_one": "{{count}} partecipante",
+    "participants_other": "{{count}} partecipanti",
+    "split-meeting-participants": "Numero minimo di partecipanti per slot",
+    "split-meeting-slots-result": "Per i partecipanti {{selectedEmployeesCount}} ciò si tradurrà in circa {{slotsCount}} slot.",
+    "split-meeting-toggle": "Suddividi il meeting in più slot."
+  },
+  "button": {
+    "remove_availability": "Rimuovi il giorno",
+    "add-group-meeting": "Meeting",
+    "delete-jobs_one": "Elimina voce",
+    "delete-jobs_other": "Elimina voci",
+    "delete-schedules_one": "Elimina voce",
+    "delete-schedules_other": "Elimina voci",
+    "set-up": "Impostare",
+    "write-group-meetings": "Pianifica meeting",
+    "write-one-on-one-meetings": "Pianifica meeting",
+    "write-self-learning-sessions": "Pianificare le sessioni",
+    "writing": "Pianificando",
+    "write-count-group-meetings_one": "Pianifica {{count}} riunione",
+    "write-count-group-meetings_other": "Pianifica {{count}} riunioni"
+  },
+  "table": {
+    "column": {
+      "employee_name": "Nome",
+      "actions": "Azioni",
+      "activity-to-schedule": "Attività da pianificare",
+      "host": "Organizzatore",
+      "information": "Informazione",
+      "initiated-on": "Iniziato il",
+      "job-id": "ID suggerimento",
+      "meeting-type": "Tipo",
+      "meeting_assignment": "Assegnato a",
+      "participant": "Partecipante",
+      "participant-status": "Stato del partecipante",
+      "planning-unit": "Unità di pianificazione",
+      "replaced-activity": "Attività sostituita",
+      "resulting-coverage": "Copertura risultante",
+      "schedule-id": "Informazione",
+      "start-time": "Richiesto il",
+      "status": "Stato",
+      "suggested-time-slot": "Time slot suggerito"
+    }
+  },
+  "notification": {
+    "form-error": {
+      "timespan": "Seleziona l'ora di fine dopo l'ora di inizio",
+      "select-day": "Seleziona un giorno",
+      "select-planning-unit": "Seleziona un'unità di pianificazione",
+      "coverage-threshold": "Inserisci una soglia di copertura",
+      "group-meetings-empty-meetings": "C'è almeno un meeting senza partecipanti selezionati. Selezionare i partecipanti per ogni meeting per poter procedere con la generazione di suggerimenti.",
+      "limit-meeting-number": "Inserire il numero massimo di meeting possibili al giorno",
+      "limit-session-number": "Inserire il numero di sessioni massime possibili al giorno",
+      "meeting-length-error": "Inserire una durata del meeting che sia un multiplo di 5",
+      "no-group-meetings-selected": "Nessun meeting suggerito selezionato. Selezionane almeno uno.",
+      "no-one-on-one-meetings-selected": "Nessun meeting suggerito selezionato. Seleziona almeno uno.",
+      "no-self-learning-sessions-selected": "Nessuna sessione suggerita selezionata. Selezionare almeno una.",
+      "select-activity": "Seleziona un'attività",
+      "select-meeting-host": "Seleziona un organizzatore del meeting",
+      "session-duration-error": "Inserire una durata della sessione che sia un multiplo di 5",
+      "sessions-per-participant": "Inserire un numero positivo di sessioni per partecipante"
+    },
+    "failure": {
+      "general": "C'è stato un errore. Per favore riprova più tardi.",
+      "response-error": "Il server non è stato in grado di completare la tua richiesta. Riprovare più tardi.",
+      "job-not-existing": "C'è stato un errore. Per favore riprova più tardi.",
+      "schedule-not-existing": "C'è stato un errore. Per favore riprova più tardi."
+    },
+    "number-of-meetings": "{{successCount}} di {{totalCount}} meeting sono state pianificati con successo.",
+    "warning": {
+      "no-meeting-slots-for-employee": "Impossibile trovare slot per meeting per 1 dipendente.",
+      "no-meeting-slots-for-employees": "Impossibile trovare slot per meeting per {{count}} dipendenti.",
+      "no-session-slots-for-employee": "Impossibile trovare gli slot di sessione per un dipendente.",
+      "no-session-slots-for-employee-group-meeting": "Non è possibile trovare slot per un solo dipendente.",
+      "no-session-slots-for-employee-group-meeting-multiple-employees": "Non è possibile trovare slot per {{count}} dipendenti in un meeting.",
+      "no-session-slots-for-employee-group-meeting-part-one_one": "Non è possibile trovare gli slot per i meeting per {{count}} dipendente",
+      "no-session-slots-for-employee-group-meeting-part-one_other": "Non è possibile trovare gli slot per i meeting per {{count}} dipendenti",
+      "no-session-slots-for-employee-group-meeting-part-two_one": "in {{count}} meeting.",
+      "no-session-slots-for-employee-group-meeting-part-two_other": "in {{count}} meeting.",
+      "no-session-slots-for-employee-group-meeting-plural": "Non è possibile trovare slot per {{employeeCount}} dipendenti in {{meetingCount}} meeting.",
+      "no-session-slots-for-employees": "Impossibile trovare gli slot di sessione per {{count}} dipendenti."
+    }
+  },
+  "message": {
+    "invalid-data": "I dati del formulario sono incompleti. Assicurati di correggere tutti i campi evidenziati.",
+    "irreplaceable-activities": {
+      "hint_one": "{{count}} di {{totalCount}} attività di tipo \"Presenza\" nella Unità di Pianificazione selezionata non è \"Sostituibile\".",
+      "hint_other": "{{count}} di {{totalCount}} attività di tipo \"Presenza\" nella Unità di Pianificazione selezionata non sono \"Sostituibili\".",
+      "reminder": "injixo Meetings può pianificare i meeting solo sostituendo <0>attività esistenti contrassegnate come \"Sostituibili\"</0>. Una quantità maggiore di attività sostituibili porta a risultati migliori. È possibile configurare le attività in WFM > Administration > Scheduling > Attività.",
+      "reminder-link-to-docs": "https://help.injixo.com/creating-activities/"
+    },
+    "request-sent": "Richiesta ricevuta con successo. Si stanno generando i suggerimenti.",
+    "external-host": {
+      "header": "Tieni presente che i meeting con un organizzatore esterno:",
+      "point1": "Non può essere pianificato contemporaneamente",
+      "point2": "Sono pianificati dai <0>vincoli di disponibilità</0> facoltativi impostati sopra"
+    },
+    "unpaid-meeting-activity": {
+      "hint": "L'attività di Meeting selezionata non è contrassegnata come \"Retribuita\". injixo Meetings può pianificare meeting non retribuiti solo se nella pianificazione sono disponibili altre attività non retribuite. Si consiglia di<0> contrassegnare l'attività di Meeting come \"Retribuita\"</0> se si desidera utilizzare injixo Meetings. È possibile configurare le attività in WFM > Administration > Scheduling > Attività.",
+      "hint-link-to-docs": "https://help.injixo.com/creating-activities/"
+    }
+  },
+  "date-range-picker": {
+    "helper-text": "Le date sono nel fuso orario dell'unità di pianificazione."
+  },
+  "dropdown": {
+    "meeting-length": "{{minutes}} minuti"
+  },
+  "heading": {
+    "group-meeting-proposal-page": "Suggerimenti - Meeting di gruppo",
+    "one-on-one-proposal-page": "Suggerimenti - Meeting 1:1",
+    "result-page": "{{count1}} meeting non possono essere pianificati, {{count2}} meeting sono stati pianificati",
+    "result-page-fail-plural": "{{count}} meeting non possono essere pianificati",
+    "result-page-fail-singular": "1 meeting non può essere pianificato",
+    "result-page-success-plural": "{{count}} meeting sono stati pianificati",
+    "result-page-success-singular": "1 meeting è stato pianificato",
+    "self-learning-proposal-page": "Suggerimenti - Sessioni di autoapprendimento"
+  },
+  "helper-text-for-setting": {
+    "coverage-threshold": "La copertura minima risultante può avere un valore positivo, un valore negativo o zero.",
+    "date-range": "Per impostazione predefinita, questo intervallo è impostato sulla settimana (lunedì-domenica) lavorativa successiva alla data corrente. Se la data corrente è un lunedì, allora viene impostata sulla settimana lavorativa corrente dal lunedì alla domenica.",
+    "duration": "La durata del meeting deve essere un multiplo di 5.",
+    "duration-sessions": "La durata della sessione deve essere un multiplo di 5.",
+    "group-meeting-participants": "Puoi pianificare meeting per i partecipanti distribuiti in tutti i meeting di gruppo che desideri. Ogni partecipante può essere pianificato per un solo meeting di gruppo.",
+    "group-meeting-with-host": "I meeting di gruppo con un organizzatore non possono essere pianificati contemporaneamente",
+    "group-meeting-without-host": "I meeting di gruppo senza organizzatore possono essere pianificati contemporaneamente. Facoltativamente è possibile definire i periodi di tempo in cui i meeting dovrebbero svolgersi.",
+    "one-on-one-day-limit": "Il numero di meeting al giorno deve essere un valore positivo.",
+    "one-on-one-gap-length": "Per impostazione predefinita, la durata del buffer è impostata sull'intervallo dell'unità pianificata selezionata. Essa può essere modificata in un multiplo di questo intervallo.",
+    "select-manual-host": "Seleziona questa opzione se l'organizzatore del meeting non è pianificato in injixo.",
+    "select-scheduled-host": "Seleziona quest'opzione per utilizzare la pianificazione injixo dell'organizzatore come sua disponibilità. È possibile selezionare dipendenti da un'altra unità di pianificazione purché entrambe le unità siano impostate sullo stesso intervallo. Scegliendo quest'opzione, i meeting risultanti verranno aggiunti alla pianificazione dell'organizzatore.",
+    "selection-filter": "Per impostazione predefinita, questo è l'elenco completo dei dipendenti nell'unità di pianificazione selezionata. È possibile restringere ulteriormente il gruppo di partecipanti scegliendo una selezione o un filtro dipendenti dal menu a tendina corrispondente.",
+    "self-learnings-day-limit": "Il numero di sessioni al giorno deve essere un valore positivo.",
+    "self-learnings-gap-length": "Per impostazione predefinita, la durata del buffer è impostata sull'intervallo dell'unità di pianificazione selezionata. Può essere modificato in un multiplo di questo intervallo."
+  },
+  "helper-text": {
+    "delete-jobs": "Le voci selezionate verranno eliminate dalla tabella. Eventuali riunioni pianificate non saranno interessate.",
+    "delete-schedules": "Le voci selezionate verranno eliminate dalla tabella. Eventuali riunioni pianificate non saranno interessate."
+  },
+  "link": {
+    "retrigger-job": "Riprova",
+    "view-results": "Visualizza i risultati",
+    "view-schedule": "Visualizza pianificazione",
+    "view-suggestion": "Vedi suggerimenti"
+  },
+  "meeting-type": {
+    "group-meeting": "Meeting di gruppo",
+    "one-on-one": "Meeting 1:1",
+    "self-learning": "Sessioni di autoapprendimento",
+    "auto-group-meeting": "Meeting di gruppo"
+  },
+  "placeholder": {
+    "dropdown": "Cerca o seleziona",
+    "non-searchable-dropdown": "Seleziona...",
+    "select-gap-length": "Selezionare la lunghezza del buffer",
+    "select-meeting-length": "Seleziona la durata del meeting",
+    "select-session-duration": "Seleziona la durata della sessione"
+  },
+  "popup": {
+    "timezone-helper": "I dati relativi a data e ora si riferiscono al fuso orario dell'unità di pianificazione."
+  },
+  "units": {
+    "minutes": "minuti"
+  },
+  "connection": {
+    "offline": "Non siamo riusciti a riconnetterci. Prova a ricaricare tra qualche minuto.",
+    "reconnecting": "Abbiamo perso la connessione. Stiamo provando a riconnetterci automaticamente."
+  },
+  "document_title": {
+    "context": {
+      "group_meeting_results": "Risultati meeting di gruppo",
+      "group_meeting_suggestions": "Suggerimenti meeting di gruppo",
+      "one_on_one_meeting_results": "Risultati meeting 1:1",
+      "one_on_one_meeting_suggestions": "Suggerimenti meeting 1:1",
+      "self_learning_results": "Sessioni di autoapprendimento Risultati",
+      "self_learning_suggestions": "Sessioni di autoapprendimento Suggerimenti"
+    },
+    "module": "Plan",
+    "sub_module": "Meetings"
+  },
+  "explaination": {
+    "external-host": "L'organizzatore non è noto a injixo e gli slot dei meeting non possono sovrapporsi",
+    "internal-host": "L'organizzatore è noto a injixo e gli slot dei meeting non possono sovrapporsi",
+    "no-host": "Gli slot del meeting possono sovrapporsi"
+  }
+}

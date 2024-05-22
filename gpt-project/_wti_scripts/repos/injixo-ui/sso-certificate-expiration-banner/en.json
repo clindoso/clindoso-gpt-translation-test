@@ -1,0 +1,3 @@
+{
+  "label": "The SSO token encryption certificate you are currently using is about to expire. <0>Please download the new certificate and add it to your Identity Provider</0>. injixo SSO might not work any more once the certificate has expired."
+}

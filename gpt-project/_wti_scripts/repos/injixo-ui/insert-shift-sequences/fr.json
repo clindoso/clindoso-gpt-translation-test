@@ -1,0 +1,88 @@
+{
+  "application": {
+    "title": "Insérer des rotations d'horaires",
+    "backToCapacity": "Retour à Capacity",
+    "backToSchedules": "Retour à Schedules"
+  },
+  "filters": {
+    "label": {
+      "planningUnit": "Unité opérationnelle",
+      "selection": "Groupe",
+      "timePeriod": "Période"
+    },
+    "placeholder": {
+      "planningUnit": "Sélectionner une unité opérationnelle",
+      "selection": "Sélectionner un groupe"
+    },
+    "result": {
+      "noResult": "Aucun résultat"
+    }
+  },
+  "shiftSequencesTable": {
+    "heading": "Rotations disponibles",
+    "headers": {
+      "select": "Sélectionner",
+      "personnelNumber": "Matricule",
+      "name": "Nom",
+      "shiftSequence": "Rotation d'horaires",
+      "sequence": "Ordre",
+      "employeeRow": "Séquence",
+      "referenceDate": "Date de référence",
+      "validFrom": "Valide du",
+      "validTo": "Jusqu'au"
+    },
+    "dateFormat": "dd LLL, yyyy",
+    "noData": "Aucune rotation d'horaires trouvée.",
+    "singleCheckbox": "Sélectionner une rotation d'horaires",
+    "allCheckbox": "Sélectionner toutes les rotations d'horaires"
+  },
+  "insertingOptions": {
+    "heading": "Options",
+    "description": "Sélectionnez ci-dessous les options d'insertion :",
+    "option1": "Supprimer les activités à journée entière",
+    "option2": "Supprimer les cadres de disponibilité",
+    "option3": "Supprimer les activités et modèles horaires"
+  },
+  "jobHistory": {
+    "heading": "Historique",
+    "headers": {
+      "select": "Sélectionner",
+      "status": "Statut",
+      "startedAt": "Démarrée le"
+    },
+    "processing": "En cours",
+    "viewDetails": "Terminé - Voir le rapport",
+    "timeFormat": "dd LLL yyyy, HH:mm",
+    "singleCheckbox": "Sélectionner une tâche",
+    "allCheckbox": "Sélectionner toutes les tâches",
+    "noData": "Aucune donnée",
+    "clearCreatedJobs": "Supprimer"
+  },
+  "planning_units": "Unités opérationnelles",
+  "selections": "Groupes",
+  "shift_sequences": "rotations d'horaires",
+  "insertion_jobs": "insertion jobs",
+  "reload": {
+    "planning_units": "Recharger les Unités opérationnelles",
+    "selections": "Recharger les Groupes",
+    "shift_sequences": "Recharger les rotations d'horaires",
+    "insertion_jobs": "Recharger les données"
+  },
+  "creatingJob": {
+    "failed": "Impossible d’insérer les rotations. Essayez à nouveau.",
+    "success": "Rotations d'horaires insérées avec succès."
+  },
+  "document_title": {
+    "module": "Plan",
+    "sub_module": "Insérer des rotations d'horaires"
+  },
+  "error": {
+    "reload_resource": "Une erreur est survenue. Actualisez la page <0>{{resource}}</0> ou réessayer plus tard."
+  },
+  "insert_shift_sequences": "Insérer des rotations d'horaires",
+  "level": {
+    "actual": "État actuel",
+    "plan": "Planning"
+  },
+  "target_level": "Catégorie cible"
+}

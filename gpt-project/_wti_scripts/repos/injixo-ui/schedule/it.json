@@ -1,0 +1,368 @@
+{
+  "activityDetails": {
+    "comment": "commento"
+  },
+  "filter": {
+    "selection": {
+      "placeholder": "Scegli una selezione"
+    },
+    "planningUnit": {
+      "placeholder": "Cerca unità di pianificazione",
+      "label": "Unità di pianificazione",
+      "all": "Tutte le unità di pianificazione",
+      "multiple": "Unità di pianificazione"
+    },
+    "employeeFilter": {
+      "placeholder": "Scegli un filtro dipendenti",
+      "label": "Filtro dipendenti"
+    },
+    "search": {
+      "placeholder": "Ricerca dipendenti"
+    },
+    "level": {
+      "singleLevel": "Livello",
+      "multipleLevel": "Livelli"
+    },
+    "noResults": "Nessun risultato trovato"
+  },
+  "navigation": {
+    "today": "Oggi",
+    "current-month": "Mese corrente",
+    "current-week": "Settimana corrente",
+    "next-month": "Prossimo mese",
+    "next-week": "Prossima settimana",
+    "optimization": {
+      "menu": "Menu contestuale"
+    },
+    "tomorrow": "Domani"
+  },
+  "table": {
+    "level": "Livello",
+    "loading": "Caricamento"
+  },
+  "level": {
+    "plan": {
+      "name": "Piano"
+    },
+    "final": {
+      "name": "Stato effettivo"
+    },
+    "availabilities": {
+      "name": "Disponibilità"
+    },
+    "wishes": {
+      "name": "Richieste normali"
+    },
+    "alternativeWishes": {
+      "name": "Richiesta alternativa"
+    },
+    "absenceWishes": {
+      "name": "Richiesta di permesso"
+    },
+    "backup": {
+      "name": "Versione salvata 1"
+    },
+    "backupVersion2": {
+      "name": "Versione salvata 2"
+    },
+    "backupVersion3": {
+      "name": "Versione salvata 3"
+    }
+  },
+  "sort": {
+    "key": {
+      "name": "Nome del dipendente",
+      "diff": "Differenza",
+      "actual": "Ore effettive",
+      "contractual": "Ore nominali",
+      "startTime": "Ora d'inizio",
+      "activityName": "Nome dell'attività",
+      "activity": "Attività",
+      "sum": "Somma",
+      "userName": "Name",
+      "changedAt": "Data e ora",
+      "changedReason": "Azione"
+    },
+    "level": {
+      "menu": "Ordina per livello"
+    }
+  },
+  "edit": {
+    "title": {
+      "editlevel": "Modifica Livello",
+      "quote": "«",
+      "unquote": "»",
+      "of": "del",
+      "shiftFrom": "Turno da"
+    },
+    "cancel": "Cancella",
+    "save": "Salva",
+    "saving": "Salvataggio",
+    "deleteAll": "Elimina tutte le attività",
+    "problem": "Problema",
+    "activitiesTab": {
+      "title": "Editare",
+      "activityType": "Tipo di attività",
+      "addNewActivity": "Aggiungi una nuova attività",
+      "addNewFullDayActivity": "Aggiungi attività di giorno intero",
+      "noActivitiesInShift": "Non ci sono attività in questo turno.",
+      "startTime": "Data e ora di inizio",
+      "startDate": "Data di inizio",
+      "endTime": "Data e ora di fine",
+      "endDate": "Data di fine",
+      "planningUnitTimezoneDiff": "Differenza di fuso orario dell'unità di pianificazione",
+      "userTimezoneDiff": "Differenza di fuso orario dell'utente",
+      "validation": {
+        "onlyOneFullDayActivityAllowed": "È consentita solo un'attività di giorno intero",
+        "noActivityOfThisTypeAvailable": "Nessuna attività di questo tipo disponibile"
+      }
+    },
+    "historyTab": {
+      "title": "Storico",
+      "noHistoryInShift": "Non ci sono voci storiche per questo turno."
+    },
+    "savedSuccessfully": "Salvato con successo",
+    "planDataType": {
+      "activity": "Attività",
+      "full_day_activity": "Attività di giorno intero"
+    },
+    "activityType": {
+      "present": "Presente",
+      "holiday": "Ferie",
+      "break": "Pausa",
+      "absence": "Assenza",
+      "meeting": "Meeting",
+      "illness": "Malattia"
+    },
+    "shortcuts": {
+      "copyAction": "copia a",
+      "moveAction": "sposta a",
+      "copyErrorTitle": "Conflitto durante la copia del turno",
+      "moveErrorTitle": "Conflitto durante lo spostamento del turno",
+      "deleteErrorTitle": "Conflitto eliminando il turno",
+      "errorDismiss": "Chiudi",
+      "genericShortcutError": "There was a problem changing the shifts. Please try again later."
+    },
+    "message": {
+      "invalidParams": "Scegli unità di pianificazione o dipendente validi"
+    },
+    "unsavedChanges": {
+      "continue": "Scartare le modifiche",
+      "abort": "Resta",
+      "hint": "Hai apportato delle modifiche che andranno perse se lasci questa pagina.",
+      "continueQuestion": "Sei sicuro di voler continuare e scartare queste modifiche?",
+      "title": "Modifiche non salvate"
+    },
+    "unsavedChangesOverwriteOtherData": {
+      "continue": "Salva comunque",
+      "abort": "Cancella",
+      "hint": "Avete apportato delle modifiche in altre schede che andranno perse se scegliete di continuare.",
+      "continueQuestion": "Siete sicuri di voler salvare la scheda attuale e di voler scartare tutte le altre modifiche?",
+      "title": "Modifiche non salvate in altre schede"
+    },
+    "deleteBlock": {
+      "abort": "Elimina",
+      "continue": "Elimina blocco",
+      "info": "Se si desidera modificare la pianificazione attuale è necessario prima cancellare il blocco.",
+      "title": "Conflitto durante il salvataggio",
+      "warning": "Tutte le modifiche attuali andranno perse"
+    },
+    "activities": {
+      "heading": "Attività",
+      "warning": {
+        "full_day_override": "Questa attività di giorno intero sostituirà tutte le attività dopo che avrai cliccato su Salva."
+      }
+    },
+    "comment": {
+      "error": {
+        "loading": "Il commento non può essere caricato. Riprova più tardi.",
+        "save": "Il commento non può essere salvato. Riprova più tardi."
+      },
+      "heading": "Commento",
+      "placeholder": "Scrivi un commento per questo giorno (non più di 250 caratteri).",
+      "warning": {
+        "length": "Il commento è troppo lungo. Puoi usare fino a 250 caratteri."
+      }
+    },
+    "history": {
+      "heading": "Storico"
+    },
+    "inline-message": {
+      "overlapping-activities": {
+        "text": "Ci sono attività che si sovrappongono. Modifica l'ora di fine o di inizio delle attività coinvolte. Se non rimuovi la sovrapposizione, injixo riduce la durata della prima attività."
+      }
+    }
+  },
+  "error": {
+    "default": "Si è verificato un errore durante la richiesta di dati",
+    "websocket": "Il servizio non è raggiungibile. Si sta stabilendo una nuova connessione.",
+    "activitiesPermissionDenied": "Non hai i diritti appropriati per una o più attività selezionate."
+  },
+  "select": {
+    "all": "Tutti",
+    "noResults": "Nessun risultato",
+    "activities": {
+      "placeholder": "Scegli l'attività"
+    },
+    "dayPicker": {
+      "placeholder": "Scegli il giorno"
+    }
+  },
+  "coverage": {
+    "type": "Tipo",
+    "panelStatusIndicator": {
+      "closePanel": "chiudi il pannello di copertura",
+      "openPanel": "apri il pannello di copertura"
+    },
+    "tabs": {
+      "activitiesCoverage": "Attività - Copertura",
+      "activitiesRequirements": "Attività - Fabbisogno",
+      "activitiesStaffings": "Attività - Occupazione"
+    },
+    "loadingIndicator": "Caricamento dei dati di copertura",
+    "filterPlaceholder": "Cerca per nome o tipo di attività",
+    "noPlanningUnitSelected": "Nessuna unità di pianificazione scelta.",
+    "noActivitiesSelected": "Nessuna attività selezionata",
+    "noActivitiesSelectedHint": "Utilizza l'icona del filtro sopra per filtrare le tue attività.",
+    "detailsPopover": {
+      "interval": "Intervallo",
+      "staffings": "Occupazione",
+      "requirements": "Fabbisogno",
+      "coverage": "Copertura"
+    }
+  },
+  "planDataHistory": {
+    "actions": {
+      "applyShiftSequences": "Inserimento delle rotazioni",
+      "assignCoachedShifts": "Copia il turno del tutor",
+      "cancelMeeting": "Annulla meeting",
+      "confirmSchedule": "Accettazione delle richieste",
+      "copyNPasteOperation": "Inserimento del contenuto nella cella del giorno (operazioni Copia e Incolla)",
+      "cutNPasteOperation": "Inserimento del contenuto nella cella del giorno (operazioni Taglia e Incolla)",
+      "deleteFulldayBlock": "Eliminazione (attività di giorni interi consecutivi)",
+      "deleteFulldayContent": "Eliminazione (attività di giorni interi)",
+      "deleteOrdinaryContent": "Eliminazione (attività e turni)",
+      "deleteSchedule": "Eliminazione manuale (voce)",
+      "deleteShiftsNodesk": "Assegnazione dei turni revocata",
+      "detachShiftReference": "Scioglimento dei vincoli di un turno",
+      "detachShiftReferenceEx": "Scioglimento dei vincoli di un turno e sostituzione di attività",
+      "eraseToplayer": "Eliminazione (contenuto dell'intera cella del giorno)",
+      "exchangingContent": "Scambio turni",
+      "importingAcdData": "Importazione (Sistema esterno)",
+      "massInsert": "Inserimento massivo",
+      "moveContentTo": "Spostamento (contenuto dell'intera cella del giorno assegnato ad un altro dipendente)",
+      "moveScheduleTo": "Spostamento (voce assegnata ad un altro dipendente)",
+      "planToFinalCopy": "Copiatura (voci copiate dal livello Piano al livello Stato effettivo)",
+      "removeAssignedDesks": "Allocazione delle postazioni revocata",
+      "rescheduleToplayer": "Ripristino (andamento)",
+      "restoreFromBackup": "Ripristino (contenuto della cella del giorno dal livello Versione salvata 1)",
+      "restorePrevWorkOnFulldayWork": "Sostituzione (attività di giorni interi con andamento precedente)",
+      "rollbackToplayer": "Ripristino (andamento con perdita degli andamenti intermedi)",
+      "saveAsBackup": "Salvataggio (contenuto della cella del giorno nel livello Versione salvata 1)",
+      "scheduleBlockApprove": "Autorizza richiesta",
+      "scheduleBlockDelete": "Elimina richiesta",
+      "scheduleBlockReject": "Rifiuta richiesta",
+      "scheduleBlockRequest": "Inserisci richiesta",
+      "slideContent": "Spostamento (periodo dell'intera cella del giorno)",
+      "staffDischarge": "Il dipendente non appartiene più all'organico",
+      "unspecific": "Sconosciuta",
+      "writeAtomicMeeting": "Inserisci meeting",
+      "writeCorridorFixing": "Definizione (pause di un modello di orario)",
+      "writeNewToplayer": "Sovrascrittura (contenuto dell'intera cella del giorno)",
+      "writeSchedule": "Modifica manuale (voce)",
+      "writeScheduleRepeated": "Inserimento (voce in più giorni consecutivi)",
+      "writeScheduleToGroup": "Inserimento (voce relativa a gruppi di dipendenti)"
+    },
+    "nameUnknown": "Sconosciuto"
+  },
+  "button": {
+    "jump-date_one": "{{count}} Giorno",
+    "jump-date_other": "{{count}} Giorni"
+  },
+  "scheduling-actions": {
+    "cancel": "Annulla",
+    "insert-shift-sequences-link": "Inserire le rotazioni",
+    "copy-level-content-link": "Copiare il contenuto del livello",
+    "create-optimized-schedule-link": "Creare una pianificazione ottimizzata",
+    "create-optimized-schedule": {
+      "background-job": "L'ottimizzazione completa avvia un processo in background. Per vedere lo stato, controlla <0>JobProcessor </0>.",
+      "content-label": "Crea una pianificazione modale ottimizzata",
+      "optimize-again": "Ottimizza di nuovo",
+      "request-error": "Impossibile creare una pianificazione ottimizzata",
+      "request-not-successful": "Impossibile avviare la creazione della pianificazione ottimizzata. Per favore riprova.",
+      "request-sent": "Creazione di una pianificazione ottimizzata in corso. Visualizza l'avanzamento in JobProcessor.",
+      "submit": "Avvia l'ottimizzazione completa",
+      "title": "Creare una pianificazione ottimizzata",
+      "request-action": "JobProcessor"
+    },
+    "date-range": "Intervallo di date",
+    "empty-levels-link": "Svuotare i livelli",
+    "error": {
+      "incomplete-form": "I dati del form sono incompleti. Assicurarsi di correggere tutti i campi evidenziati.",
+      "planning-unit": "È necessario selezionare un'unità di pianificazione"
+    },
+    "extra-activities-link": "Pianificare le attività extra",
+    "job-optimizer-link": "Ottimizzare le mansioni",
+    "job-optimizer": {
+      "background-job": "L'ottimizzazione delle mansioni avvia un processo in background. Per vedere lo stato, controlla <0>JobProcessor </0>.",
+      "request-error": "Impossibile avviare l'ottimizzazione delle mansioni",
+      "request-not-successful": "Impossibile avviare l'ottimizzazione delle mansioni. Per favore riprova.",
+      "request-sent": "Ottimizzazione delle mansioni in corso. Visualizza l'avanzamento in JobProcessor.",
+      "submit": "Avvia l'ottimizzazione delle mansioni",
+      "title": "Ottimizzare le mansioni"
+    },
+    "optimize-breaks-link": "Ottimizzare le pause",
+    "placeholder": {
+      "dropdown": "Cerca o seleziona",
+      "no-results": "Nessun risultato"
+    },
+    "planning-unit": "Unità di pianificazione",
+    "replace-activities-link": "Sostituire le attività",
+    "scheduling-actions": "Azioni di pianificazione",
+    "scheduling-periods-link": "Periodi di pianificazione",
+    "selection": "Selezione",
+    "shift-exchange-overview-link": "Approvare gli scambi di turni",
+    "schedule-change-notifications": {
+      "employee": {
+        "description": "Seleziona i dipendenti che verranno informati delle modifiche alla loro pianificazione.",
+        "empty": "Non è stato trovato nessun dipendente",
+        "empty-details": "Cambia l'unità di pianificazione, la selezione o l'intervallo di date.",
+        "heading": "Dipendenti ({{amountSelected}}/{{amountTotal}} selezionati)",
+        "name": "Nome"
+      },
+      "error": "Non è stato possibile inviare le notifiche.",
+      "scheduling-period-error": "Non tutte le date selezionate rientrano nei periodi di pianificazione pubblicati. Gestisci i tuoi <0> periodi di pianificazione </0>.",
+      "submit_zero": "Informa i dipendenti",
+      "submit_one": "Informa {{count}} dipendente",
+      "submit_other": "Informa {{count}} dipendenti",
+      "success": "Le notifiche sono state inviate.",
+      "title": "Informa i dipendenti"
+    },
+    "create-schedule": {
+      "request-error": "Failed to create schedule",
+      "request-not-successful": "Schedule creation could not be started. Please try again.",
+      "request-sent": "Schedule creation in progress.",
+      "submit": "Create schedule",
+      "title": "Create schedule"
+    },
+    "schedule-requests": {
+      "request-not-successful": "Schedule creation could not be started. Please try again.",
+      "request-sent": "Schedule creation in progress."
+    }
+  },
+  "tooltip": {
+    "employee-name": "Mostra i dettagli del dipendente"
+  },
+  "document_title": {
+    "context": "Schedules",
+    "module": "Plan",
+    "page": {
+      "edit": "Modifica turno"
+    }
+  },
+  "schedules": {
+    "schedule-change-notifications": {
+      "search-placeholder": "Ricerca per nome"
+    }
+  }
+}

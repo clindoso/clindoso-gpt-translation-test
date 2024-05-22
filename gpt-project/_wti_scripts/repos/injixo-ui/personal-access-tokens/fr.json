@@ -1,0 +1,46 @@
+{
+  "document_title": {
+    "module": "Account",
+    "context": "Jetons d'accès personnels",
+    "page": {
+      "overview": "Récapitulatif",
+      "create": "Ajouter un jeton",
+      "edit": "Mettre à jour le jeton {{name}}"
+    }
+  },
+  "pat": {
+    "description": "L'authentification à l'API injixo peut être réalisée via des jetons d'accès en lieu et place de mots de passe.",
+    "learn_more": "En savoir plus",
+    "title_list": "Votre jeton d'accès personnel",
+    "title_new": "Nouveau jeton d'accès",
+    "title_update": "Mettre à jour le jeton d'accès",
+    "title_created": "Votre nouveau jeton d'accès",
+    "message_created": "Enregistrez votre jeton d'accès maintenant. Nous ne le stockons pas, vous ne pourrez plus l'afficher par la suite.",
+    "label": {
+      "description": "Description"
+    },
+    "action": {
+      "new": "Ajouter un jeton",
+      "create": "Générer le jeton",
+      "update": "Mettre à jour le jeton",
+      "delete": {
+        "label": "Supprimer",
+        "confirm": "Oui, supprimer le jeton",
+        "cancel": "Non, conserver le jeton",
+        "success": "Jeton supprimé.",
+        "modal_header": "Supprimer le jeton",
+        "modal_description": "Voulez vous supprimer ce jeton ?"
+      }
+    }
+  },
+  "back_to_main": "Retour au profil",
+  "cancel": "Annuler",
+  "copy_to_clipboard": "Copier dans le presse-papier",
+  "copied_to_clipboard": "Copié dans le presse-papier",
+  "done": "Fait",
+  "edit": "Editer",
+  "error_occured": "Une erreur est survenue",
+  "token_clipboard_copied": "Copié !",
+  "token_clipboard_copy": "Copier",
+  "token_clipboard_tooltip": "Votre jeton d'accès personnel a été copié dans le presse-papier !"
+}

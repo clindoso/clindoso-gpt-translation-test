@@ -1,0 +1,55 @@
+{
+  "document_title": {
+    "context": "Notificaciones",
+    "module": "Cuenta"
+  },
+  "heading": "Notificaciones",
+  "message": {
+    "empty": "No hay ninguna configuración disponible para este grupo",
+    "error": {
+      "load": "Ha ocurrido un error al cargar los datos",
+      "save": "Ha ocurrido un error al guardar"
+    }
+  },
+  "notification_channel": {
+    "browser_push": {
+      "header": "Push del navegador",
+      "tooltip": "Cada usuario debe permitir al navegador recibir notificaciones."
+    },
+    "email": {
+      "header": "Correo electrónico"
+    }
+  },
+  "notification_settings_group": {
+    "me": {
+      "title": "Me"
+    },
+    "schedules": {
+      "title": "Planificar"
+    }
+  },
+  "notification_type": {
+    "schedule_changed": {
+      "description": "Al utilizar la funcionalidad de notificar a los empleados de Planificar, los empleados seleccionados reciben una notificación. <0>Aprende más</0>",
+      "link": "https://help.injixo.com/schedules-notify-scheduling-changes/",
+      "title": "Planificación cambiada"
+    },
+    "scheduling_period": {
+      "description": "Cuando la planificación se ha publicado, los empleados reciben una notificación. <0>Aprende más</0>",
+      "link": "https://help.injixo.com/schedules-enable-employees-to-see-their-schedules",
+      "title": "Planificación publicada"
+    },
+    "shift_trading": {
+      "description": "Cuando un empleado selecciona a otro empleado para intercambiar turnos, el segundo empleado recibe una notificación. <0>Aprende más</0>",
+      "link": "https://help.injixo.com/injixo-me-invite-suitable-colleagues/",
+      "title": "Turno intercambiado"
+    }
+  },
+  "status": {
+    "error": "No se han podido guardar los cambios",
+    "idle": "Todos los cambios se han guardado",
+    "initial": "Los cambios se guardarán automáticamente",
+    "saved": "Guardado",
+    "saving": "Guardando"
+  }
+}

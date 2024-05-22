@@ -1,0 +1,549 @@
+{
+  "activities": {
+    "activity_type": {
+      "absence": "Assenza",
+      "break": "Pausa",
+      "holiday": "Ferie",
+      "illness": "Malattia",
+      "meeting": "Meeting",
+      "on_call": "Reperibilità",
+      "present": "Presenza"
+    },
+    "assignable": {
+      "CTA": {
+        "back": "Annulla",
+        "discard": "Scarta modifiche",
+        "save": "Salva modifiche"
+      },
+      "checkbox_aria_label": {
+        "assign": "Seleziona l'attività {{value}}",
+        "unassign": "Deseleziona l'attività {{value}}"
+      },
+      "heading": {
+        "assignable": "Attività selezionabili",
+        "assigned": "Attività assegnate",
+        "non_assignable": "Attività non selezionabili"
+      },
+      "invalid_reason": {
+        "multi_activity_and_assignable_activity_date_period_must_overlap": {
+          "long": "Non è possibile selezionare questa attività perché non è valida durante il periodo di validità della multiattività.",
+          "short": "Periodo di validità"
+        },
+        "must_be_plannable": {
+          "long": "Non è possibile selezionare questa attività perché non è pianificabile.",
+          "short": "Non pianificabile"
+        },
+        "must_have_same_planning_unit": {
+          "long": "Aggiungi questa attività a tutte le unità di pianificazione alle quali hai assegnato la multiattività.",
+          "short": "Unità di pianificazione"
+        },
+        "must_not_be_multi_activity": {
+          "long": "Non è possibile selezionare questa attività perché è una multiattività.",
+          "short": "Multiattività"
+        },
+        "must_not_overlap_with_planning_unit_activity": {
+          "long": "Non è possibile selezionare questa attività perché i periodi di validità di due multiattività non possono sovrapporsi nella stessa unità di pianificazione.",
+          "short": "Conflitto del periodo di validità"
+        }
+      },
+      "no_activities": "Non è disponibile nessuna attività.",
+      "no_activities_assigned": "Non è stata assegnata nessuna subattività.",
+      "no_activities_found": "Non è stata trovata nessuna attività. Cambia i criteri di ricerca.",
+      "save_error": "Non è stato possibile salvare le subattività.",
+      "save_success": "Le subattività sono state aggiornate.",
+      "search_placeholder": "Cerca tra le attività",
+      "title": "Subattività"
+    },
+    "assigned": {
+      "CTA": {
+        "assign": "Assegna subattività",
+        "edit": "Modifica"
+      },
+      "hint": {
+        "already_assigned": "Questa attività è assegnata alle seguenti multiattività:",
+        "empty": "L'assegnazione di subattività a questa attività la renderà una multiattività.",
+        "generic": "Nessuna subattività assegnata.",
+        "has_shortcut": "Per poter assegnare attività, elimina il comando di scelta rapida e salva l'attività.",
+        "is_new": "Per assegnare subattività, crea prima quest'attività.",
+        "not_plannable": "Per poter assegnare subattività, spunta la casella Pianificabile e salva l'attività.",
+        "not_present": "È possibile assegnare attività solo ad attività del tipo Presenza."
+      },
+      "subactivity_title": "Multiattività",
+      "title": "Subattività"
+    },
+    "beta_message": "Questa pagina è in fase di beta test. Trovi tutte le funzionalità in WFM. <1>Vai a WFM</1>",
+    "details": {
+      "CTA": {
+        "delete": "Elimina attività",
+        "duplicate": "Duplica attività",
+        "save": {
+          "existing": "Salva modifiche",
+          "new": "Crea attività"
+        }
+      },
+      "aria_label": {
+        "close": "Esci da modifiche attività",
+        "panel": "Modifica i dettagli dell'attività"
+      },
+      "attributes": {
+        "add_attribute": {
+          "no_content": "<0>Non è stato selezionato nessun attributo</0>Seleziona un attributo."
+        },
+        "button": {
+          "add_attribute": {
+            "label": "Aggiungi",
+            "tooltip": "Per aggiungere degli attributi, salva le modifiche."
+          },
+          "create": {
+            "label": "Aggiungi attributo"
+          },
+          "delete": {
+            "aria_label": "Rimuovi attributo"
+          }
+        },
+        "combobox": {
+          "add_attribute": {
+            "label": "Seleziona un attributo"
+          }
+        },
+        "create_title": "Aggiungi attributo",
+        "delete": {
+          "button": {
+            "label": "Rimuovi attributo"
+          },
+          "confirm": "Rimuovi attributo",
+          "content": "L'attributo<bold>{{attributeName}}</bold> sarà rimosso dall'attività <bold>{{activityName}}</bold>.",
+          "error": "Non è stato possibile rimuovere l'attributo dall'attività.",
+          "success": "L'attributo è stato rimosso dall'attività.",
+          "title": "Vuoi rimuovere l'attributo dall'attività?"
+        },
+        "input": {
+          "boolean": {
+            "label_false": "No",
+            "label_group": "Valore",
+            "label_true": "Sì"
+          },
+          "date": {
+            "label": "Data"
+          },
+          "hour": {
+            "invalid": "Inserisci un'ora (da 0 h a 9999 h 00 min).",
+            "label": "Ora"
+          },
+          "minute": {
+            "label": "Minuti"
+          },
+          "number": {
+            "invalid": "Inserisci un numero (fino a 8 cifre).",
+            "label": "Numero"
+          },
+          "priority": {
+            "invalid": "Inserisci una priorità (da 1 a 99).",
+            "label": "Priorità",
+            "not_unique": "Seleziona una priorità che non sia già usata per questo attributo all'interno del periodo di validità, oppure modifica il periodo di validità."
+          },
+          "text": {
+            "invalid": "Scrivi un testo di massimo 250 caratteri.",
+            "label": "Testo"
+          },
+          "text_range": {
+            "label": "Valore"
+          },
+          "time": {
+            "label": "Ora"
+          },
+          "valid_from": {
+            "invalid": "Seleziona una data antecedente alla fine del periodo di validità.",
+            "label": "Valido da",
+            "not_unique": "Seleziona un periodo che non si sovrapponga ai periodi già esistenti per questo attributo."
+          },
+          "valid_to": {
+            "invalid": "Seleziona una data successiva all'inizio del periodo di validità.",
+            "label": "Valido fino a"
+          }
+        },
+        "list_header": {
+          "attribute": "Nome",
+          "detail": "Dettagli"
+        },
+        "messages": {
+          "create_error": "Non è stato possibile aggiungere l'attributo all'attività.",
+          "create_success": "L'attributo è stato aggiunto.",
+          "error": "Non è stato possibile modificare i dettagli dell'attributo.",
+          "success": "I dettagli dell'attributo sono stati modificati.",
+          "validation_failed": "Non è stato possibile aggiungere l'attributo. Puoi modificare la priorità o il periodo di validità."
+        },
+        "no_content": {
+          "assignments": {
+            "link": "Aggiungi attributo",
+            "text": "Aggiungi a questa attività degli attributi personalizzati.",
+            "text_read_only": "Non è stato assegnato nessun attributo."
+          },
+          "attributes": {
+            "link": "Crea attributi",
+            "text": "Aggiungi a questa attività degli attributi personalizzati."
+          }
+        },
+        "time_abbreviation": {
+          "hours": "h",
+          "minutes": "min"
+        },
+        "title": "Attributi",
+        "title_new": "Dettagli dell'attributo"
+      },
+      "delete": {
+        "CTA": {
+          "confirm": "Elimina attività"
+        },
+        "consequences1": "Non sarà più possibile assegnare l'attività a modelli di orario, unità di pianificazione e dipendenti.",
+        "consequences2": "Le attività assegnate a modelli di orario, unità di pianificazione e dipendenti resteranno, ma saranno etichettate come eliminate.",
+        "consequences3": "Non sarà più possibile sostituire l'attività in una pianificazione. L'attività rimarrà visibile ma sarà visualizzata come uno spazio vuoto.",
+        "consequences4": "Non sarà più possibile inserire rotazioni con modelli di orario che contengono l'attività.",
+        "content": "Vuoi davvero eliminare l'attività <0>{{name}}</0>?",
+        "defaultActivity_validation_failed": "Le attività di default non possono essere eliminate.",
+        "error": "Non è stato possibile eliminare l'attività. Per favore riprova.",
+        "subactivity_validation_failed": "Le attività che sono state assegnate a una multiattività non possono essere eliminate.",
+        "success": "L'attività è stata eliminata.",
+        "title": "Eliminare l'attività?"
+      },
+      "external_systems": {
+        "title": "Sistemi esterni"
+      },
+      "input": {
+        "abbreviation_invalid": "Inserisci un'abbreviazione (max 25 caratteri).",
+        "importance_invalid": "Inserisci l'importanza (tra 1% e 100%).",
+        "name_invalid": "Inserisci un nome per l'attività (max 50 caratteri).",
+        "official_abbreviation_invalid": "Inserisci un'abbreviazione ufficiale (max 25 caratteri).",
+        "official_name_invalid": "Inserisci un nome ufficiale (max 50 caratteri).",
+        "priority_invalid": "Inserisci una priorità (da 1 a 100).",
+        "shortcut_invalid": "Inserisci un comando di scelta rapida (max 5 caratteri). Per un comando istantaneo, aggiungi un cancelletto (#) alla fine."
+      },
+      "iwfm_link": "Vedi in WFM",
+      "label": {
+        "abbreviation": "Abbreviazione",
+        "activity_type": "Tipo",
+        "allow_overstaffing": "Permettere la sovracopertura se il fabbisogno per il turno è pari a zero",
+        "color": "Colore",
+        "day_status": "Stato giornaliero",
+        "exchangeable": "Scambiabile con scambio turni",
+        "fullday": "Attività di un giorno intero",
+        "importance": "Importanza",
+        "name": "Nome",
+        "official_abbreviation": "Abbreviazione ufficiale",
+        "official_name": "Nome ufficiale",
+        "paid": "Retribuita",
+        "plannable": "Pianificabile",
+        "priority": "Priorità",
+        "replaceable": "Sostituibile",
+        "requestable": "Richiedibile in Me",
+        "rest_period": "Rispettare ore di riposo",
+        "shortcut": "Comando di scelta rapida",
+        "special_optimization_handling": "Trattamento speciale nella pianificazione ottimizzata"
+      },
+      "mappings": {
+        "CTA": "Associa gli stati esterni in Intraday",
+        "content": "Definisci quali stati esterni devono essere associati a questa attività di injixo.",
+        "title": "Stati esterni"
+      },
+      "message": {
+        "create_error": "Non è stato possibile creare l'attività. Per favore riprova.",
+        "create_success": "L'attività è stata creata.",
+        "errors": {
+          "abbreviation_not_unique": "L'abbreviazione {{value}} è già in uso. Inseriscine una diversa.",
+          "abbreviation_not_unique_match": "Quest'abbreviazione è già utilizzata dall'attività {{value}}.",
+          "activitySkills": "Non è stato possibile assegnare la qualifica all'attività. Per favore, riprova.",
+          "activitySkills_not_found": "La qualifica è stata eliminata e non è stato possibile assegnarla.",
+          "keyboardShortcut_not_unique": "Questo comando di scelta rapida {{value}} è già in uso. Inseriscine uno diverso.",
+          "keyboardShortcut_not_unique_match": "Questo comando rapido è già utilizzato dall'attività {{value}}.",
+          "keyboardShortcut_validation_failed_multi_activity": "Non è possibile assegnare un comando di scelta rapida a una multiattività",
+          "name_not_unique": "Il nome {{value}} è già in uso. Inseriscine uno diverso."
+        },
+        "update_error": "Si è verificato un errore durante l'aggiornamento dell'attività",
+        "update_success": "L'attività è stata aggiornata correttamente",
+        "warning": {
+          "activity_type": "Non è possibile cambiare il tipo di un'attività dopo averla creata."
+        }
+      },
+      "more_options": {
+        "CTA": "Modifica in WFM",
+        "content": "Questa pagina è in fase di sviluppo.<1/>Le funzionalità mancanti sono in WFM.",
+        "title": "Altre opzioni"
+      },
+      "new": {
+        "subactivity_attribute": {
+          "description": "Per assegnare subattività e aggiungere attributi a questa attività, completa prima la sua creazione.",
+          "title": "Subattività e attributi"
+        }
+      },
+      "not_found": "L'attività non è stata trovata.",
+      "section": {
+        "general": "Generale"
+      },
+      "skills": {
+        "add_skill": {
+          "empty_placeholder": "Non ci sono qualifiche disponibili",
+          "placeholder": "Seleziona qualifica"
+        },
+        "delete_aria_label": "Elimina assegnazione",
+        "skill_header": "Qualifica",
+        "system_activity_hint": "This is a pre-configured (non-deletable) activity. You can assign skills only to self-created activities.",
+        "weight": {
+          "aria_label": "Modifica il coefficiente di ponderazione della qualifica {{skillname}}",
+          "invalid": "Inserisci un coefficiente (tra 1 e 100)."
+        },
+        "weighting_header": "Ponderazione"
+      },
+      "title": {
+        "new": "Crea una nuova attività"
+      }
+    },
+    "hint": {
+      "daystatus_disabled": "Seleziona Attività di un giorno intero per attivare questa opzione.",
+      "edit_subactivities_disabled": "Salva o scarta le modifiche per poter modificare le subattività.",
+      "importance_disabled": "Seleziona prima Pianificabile per attivare questa opzione.",
+      "plannable_disabled": {
+        "is_multi": "Le multiattività devono essere impostate come Pianificabile.",
+        "is_sub": "Le subattività devono essere impostate come Pianificabile."
+      },
+      "shortcut_disabled": "Le multiattività non possono avere comandi di scelta rapida.",
+      "special_handling_disabled": {
+        "default_present": "Non può essere attivato per l'attività di sistema predefinita Presente (ID attività: 1).",
+        "non_present": "Disponibile solo per le attività del tipo Presenza."
+      },
+      "type_disabled": "Il tipo di un'attività può essere impostato solo durante la sua creazione."
+    },
+    "overview": {
+      "CTA": {
+        "create_activity": "Nuova attività"
+      },
+      "load_error": "Non è stato possibile caricare le attività. Per favore riprova.",
+      "table": {
+        "placeholder": {
+          "message": "Nessuna attività creata",
+          "suggestion": "Innanzitutto crea un'attività."
+        },
+        "placeholder_searched": {
+          "message": "Non è stata trovata nessuna attività",
+          "suggestion": "Modifica i criteri di ricerca o <0>cancella la ricerca</0>."
+        }
+      }
+    },
+    "table_header": {
+      "activity_name": "Nome",
+      "activity_type": "Tipo",
+      "fullday": "Attività di un giorno intero",
+      "importance": "Importanza",
+      "paid": "Retribuita",
+      "plannable": "Pianificabile",
+      "priority": "Priorità",
+      "replaceable": "Sostituibile",
+      "requestable": "Richiedibile"
+    },
+    "title": "Attività"
+  },
+  "attributes": {
+    "title": "Attributi"
+  },
+  "bonus_point_systems": {
+    "title": "Sistemi di punti"
+  },
+  "break_models": {
+    "title": "Modelli di pausa"
+  },
+  "button": {
+    "cancel": {
+      "label": "Annulla"
+    }
+  },
+  "contracts": {
+    "title": "Contratti"
+  },
+  "day_models": {
+    "title": "Modelli di orario"
+  },
+  "day_types": {
+    "title": "Tipi di giorno"
+  },
+  "employee_categories": {
+    "title": "Categorie di dipendenti"
+  },
+  "employees": {
+    "title": "Dipendenti"
+  },
+  "general": {
+    "availabilities": {
+      "heading": {
+        "text": "Disponibilità in injixo Me"
+      }
+    },
+    "availability": {
+      "button": {
+        "cancel": {
+          "label": "Annulla"
+        },
+        "submit": {
+          "label": "Salva modifiche"
+        }
+      },
+      "inline-message": {
+        "generic-error": {
+          "text": "Non è stato possibile salvare le modifiche. Per favore, riprova."
+        }
+      },
+      "input": {
+        "date": {
+          "label": "Data",
+          "placeholder": "Nessuna data selezionata",
+          "validation-errors": {
+            "default": "Imposta data"
+          }
+        }
+      },
+      "text": {
+        "date-description": "Impedisci ai dipendenti di modificare le disponibilità uniche prima del "
+      },
+      "toast": {
+        "save-success": {
+          "text": "L'impostazione è stata modificata."
+        }
+      },
+      "tooltip": {
+        "date": {
+          "text": "Se non è selezionata nessuna data i dipendenti possono aggiungere o modificare le disponibilità uniche future."
+        }
+      }
+    },
+    "title": "Generale"
+  },
+  "modulation_periods": {
+    "title": "Periodi da ponderare"
+  },
+  "navigation": {
+    "no-access": {
+      "body": "Per accedere alla configurazione, contatta una persona con accesso Admin.",
+      "header": "Permessi insufficienti"
+    },
+    "no-entities": {
+      "body": "Set up configuration items to create or adjust schedules.",
+      "header": "Configure Scheduling",
+      "link": {
+        "label": "Learn more in Help Center",
+        "url": "https://help.injixo.com/it/"
+      }
+    }
+  },
+  "page_title": "Configurazione",
+  "planning_calendar": {
+    "title": "Calendari di pianificazione"
+  },
+  "planning_units": {
+    "title": "Unità di pianificazione"
+  },
+  "selections": {
+    "title": "Gruppi di selezione"
+  },
+  "shift_sequences": {
+    "title": "Rotazioni"
+  },
+  "skills": {
+    "create": {
+      "button": {
+        "save": {
+          "label": "Crea qualifica"
+        }
+      },
+      "error": "Si è verificato un errore durante la creazione della qualifica",
+      "success": "La qualifica è stata creata"
+    },
+    "details": {
+      "CTA": {
+        "duplicate": "Duplica qualifica"
+      },
+      "abbreviation": "Abbreviazione",
+      "create": "Crea nuova qualifica",
+      "delete": {
+        "action": "Elimina qualifica",
+        "consequences1": "La qualifica non sarà più disponibile, per esempio per le attività.",
+        "consequences2": "La qualifica sarà rimossa dalle attività che la utilizzano.",
+        "consequences3": "I livelli della qualifica assegnati ai dipendenti resteranno, ma saranno etichettati come eliminati.",
+        "content": "Vuoi davvero eliminare la qualifica <0>{{name}}</0>?",
+        "error": "Si è verificato un problema durante l'eliminazione della qualifica",
+        "success": "La qualifica è stata eliminata",
+        "title": "Eliminare la qualifica?"
+      },
+      "input": {
+        "abbreviation_required": "Inserisci un'abbreviazione (max 25 caratteri).",
+        "abbreviation_too_long": "Inserisci un'abbreviazione (max 25 caratteri).",
+        "name_required": "Assegna un nome alla qualifica (max 50 caratteri).",
+        "name_too_long": "Assegna un nome alla qualifica (max 50 caratteri)."
+      },
+      "name": "Nome",
+      "not_found": "La qualifica non è stata trovata",
+      "skill_levels": {
+        "abbreviation": "Abbreviazione",
+        "add": "Aggiungi livello di qualifica",
+        "delete": "Elimina il livello di qualifica",
+        "heading": "Livelli di qualifica",
+        "input": {
+          "abbreviation_required": "Inserisci un'abbreviazione per il livello di qualifica (max 25 caratteri).",
+          "abbreviation_too_long": "Inserisci un'abbreviazione per il livello di qualifica (max 25 caratteri).",
+          "abbreviation_unique": "Inserisci un'abbreviazione che non sia già stata usata.",
+          "name_required": "Inserisci un nome per il livello di qualifica (max 50 caratteri).",
+          "name_too_long": "Inserisci un nome per il livello di qualifica (max 50 caratteri).",
+          "name_unique": "Inserisci un nome che non sia già stato usato.",
+          "percentage_invalid": "Inserisci un punteggio (da 1% a 100%).",
+          "percentage_required": "Inserisci un punteggio (da 1% a 100%).",
+          "percentage_unique": "Inserisci un punteggio che non sia già stato usato."
+        },
+        "name": "Nome",
+        "rating": "Punteggio"
+      }
+    },
+    "edit": {
+      "button": {
+        "save": {
+          "label": "Salva modifiche"
+        }
+      }
+    },
+    "errors": {
+      "abbreviation_not_unique": "L'abbreviazione per il nome della qualifica {{value}} è già in uso. Inserisci un'abbreviazione diversa.",
+      "abbreviation_not_unique_match": "Questa abbreviazione è già usata dall'attività \"{{value}}\".",
+      "name_not_unique": "Il nome della qualifica {{value}} è già in uso. Assegna alla qualifica un altro nome."
+    },
+    "table": {
+      "create": "Nuova qualifica",
+      "error": "Siamo spiacenti, si è verificato un errore durante il caricamento delle qualifiche. Per favore, ritenta più tardi.",
+      "placeholder": "Non è stata ancora definita nessuna qualifica. Clicca su Nuova qualifica per aggiungerne una."
+    },
+    "title": "Qualifiche",
+    "update": {
+      "error": "Si è verificato un errore durante l'aggiornamento della qualifica",
+      "success": "La qualifica è stata aggiornata"
+    }
+  },
+  "table": {
+    "header": {
+      "name": "Nome"
+    },
+    "search": {
+      "aria_label": "Cerca",
+      "placeholder": "Cerca"
+    }
+  },
+  "unsaved_changes": {
+    "cta": {
+      "cancel_create": "Torna alla creazione",
+      "cancel_edit": "Torna alle modifiche",
+      "confirm": "Scarta modifiche"
+    },
+    "text": "Le modifiche non saranno salvate.",
+    "title": "Scartare le modifiche non salvate?"
+  },
+  "week_time_patterns": {
+    "title": "Modelli settimanali"
+  },
+  "work_time_pattern_models": {
+    "title": "Modelli di pianificazione"
+  }
+}
