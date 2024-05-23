@@ -39,7 +39,7 @@ def find_json_files(locales_dir):
 
     locales = []
 
-    for root, dirs, files in os.walk(locales_dir):
+    for root, _, files in os.walk(locales_dir):
         for file in files:
             if file.endswith('.json'):
                 locale_path = os.path.join(root, file)
@@ -48,4 +48,21 @@ def find_json_files(locales_dir):
     
     return locales
 
+def is_valid_json(locale_path):
+    """
+    Checks if a file contains valid JSON content.
+    
+    Parameters:
+    file_path (str): The path to the JSON file to check.
+    
+    Returns:
+    bool: True if the file contains valid JSON, False otherwise
+    """
+
+    try:
+        with open(locale_path, 'r', encoding='utf-8') as file:
+            json.load(file)
+        return True
+    except (json.JSONDecodeError, FileNotFoundError):
+        return False
 
