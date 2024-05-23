@@ -48,7 +48,7 @@ def find_json_files(locales_dir):
     
     return locales
 
-def is_valid_json(locale_path):
+def is_valid_locale(locale_path):
     """
     Checks if a file contains valid JSON content.
     
