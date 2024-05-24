@@ -66,3 +66,46 @@ def is_valid_locale(locale_path):
     except (json.JSONDecodeError, FileNotFoundError):
         return False
 
+def flatten_json(nested_json, parent_key='', separator='.'):
+    """
+    Flattens a nested JSON object.
+    
+    Parameters:
+    nested_json (dict): The JSON object to flatten.
+    parent_key (str): The base key string to use for the flattened keys.
+    separator (str): The string used to separate flattened key parts.
+    
+    Returns:
+    dict: A flattened JSON object.
+    """
+
+    items = {}
+    for k, v in nested_json.items():
+        new_key = f"{parent_key}{separator}{k}" if parent_key else k
+        if isinstance(v, dict):
+            items.update(flatten_json(v, new_key, separator))
+        else:
+            items[new_key] = v
+    return items
+
+def create_dict_from_json_files(locale_files):
+    """
+    Creates a dictionary from a list of JSON files. The key of the dictionary consist of the JSON keys, joined by '.'
+    
+    Parameters:
+    json_files (list): A list of paths to JSON files.
+    
+    Returns:
+    dict: A dictionary with flattened JSON keys and their corresponding values.
+    """
+    segment_dict = {}
+
+    for locale_path in locale_files:
+        locale_data = read_json_file(locale_path)
+        flat_json = flatten_json(locale_data)
+        segment_dict.update(flat_json)
+        
+    return segment_dict
+
+def main():
+    
