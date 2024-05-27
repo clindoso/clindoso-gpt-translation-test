@@ -108,4 +108,17 @@ def create_dict_from_json_files(locale_files):
     return segment_dict
 
 def main():
-    
+    # Initialize locales directories
+    if not config.LOCALE_REPOS_DIR:
+        raise EnvironmentError("Locales directory is not configured in the config file.")
+    else: locales_dir = config.LOCALE_REPOS_DIR
+
+    # List locales files
+    locales_list = find_json_files(locales_dir)
+
+    # Create dictionary from all locales
+    locales_dict = create_dict_from_json_files(locales_list)
+
+    print(locales_dict)
+
+if __name__ == "__main__"

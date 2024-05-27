@@ -88,6 +88,8 @@ def initialize_translation_memory(lang, tm_path):
     """
     # Initialize tm dictionary to use TM content in the translation
     tm_dict = {}
+    print("Current working directory:", os.getcwd())
+    print("Current TM path:", tm_path)
     # Read the TM and extract the 'en' and target language column
     with open(tm_path, 'r', encoding='utf-8') as tm:
         reader = csv.DictReader(tm)
@@ -184,7 +186,7 @@ def handle_fuzzy_matches(segment, tm_dict, tm_segments_lengths):
     # If there is no segment with an edit below the upper threshold, return None
     return None
 
-def translate_with_gpt(client, segment, previous_segment, language, gpt_model):
+def translate_with_gpt(client, segment, previous_segment, language, gpt_model, gpt_temperature=1.0):
     """
     Translates the segment using GPT.
 
@@ -202,6 +204,7 @@ def translate_with_gpt(client, segment, previous_segment, language, gpt_model):
 
         response = client.chat.completions.create(
         model=gpt_model,
+        temperature=gpt_temperature, 
         messages=[
             {"role": "system", "content": f"Given a sentence in Markdown format, translate the sentence to {language} keeping the style, tone, formatting, and terminology consistent and provide strictly just the translation in plain language. For context, consider that the sentence preceding the one you will translate is: '{previous_segment}'"},
             {"role": "user", "content": segment}
@@ -226,7 +229,7 @@ def translate_with_gpt(client, segment, previous_segment, language, gpt_model):
 
     return translated_segment, gpt_translation
 
-def translate_segment(segment, tm_dict, gpt_translation_dict, language, gpt_model, client, tm_segments_lengths, previous_segment=''):
+def translate_segment(segment, tm_dict, gpt_translation_dict, language, gpt_model, client, tm_segments_lengths, gpt_temperature=1.0, previous_segment=''):
     """
     Translate a single text segment using a translation memory (TM)
     and generative translation
@@ -259,12 +262,12 @@ def translate_segment(segment, tm_dict, gpt_translation_dict, language, gpt_mode
         if fuzzy_match:
             return fuzzy_match, segment
         else:
-            translated_segment, gpt_translation = translate_with_gpt(client, segment, previous_segment, language, gpt_model)
+            translated_segment, gpt_translation = translate_with_gpt(client, segment, previous_segment, language, gpt_model, gpt_temperature)
             gpt_translation_dict[segment] = gpt_translation
             return translated_segment, gpt_translation
 
 
-def process_front_matter(front_matter_segments, tm_dict, gpt_translation_dict, language, gpt_model, client, tm_segments_lengths):
+def process_front_matter(front_matter_segments, tm_dict, gpt_translation_dict, language, gpt_model, client, tm_segments_lengths, gpt_temperature=1.0):
     """
     Processes the front matter of a document, translating 'title' and 'description'
     fields while leaving their labels and other metadata unchanged.
@@ -284,7 +287,7 @@ def process_front_matter(front_matter_segments, tm_dict, gpt_translation_dict, l
             if segment[0].startswith(frontmatter_variable):
                 # Extract the title text and translate it
                 translatable_text = segment[0][len(frontmatter_variable):]
-                translated_text, _ = translate_segment(translatable_text, tm_dict, gpt_translation_dict,language, gpt_model, client, tm_segments_lengths)
+                translated_text, _ = translate_segment(translatable_text, tm_dict, gpt_translation_dict,language, gpt_model, client, tm_segments_lengths, gpt_temperature)
                 processed_segment_pair = (segment[0], frontmatter_variable + translated_text)
                 break
             else:
@@ -295,7 +298,7 @@ def process_front_matter(front_matter_segments, tm_dict, gpt_translation_dict, l
 
     return processed_front_matter
 
-def translate_article(client, language, source_text, tm_dict, gpt_model):
+def translate_article(client, language, source_text, tm_dict, gpt_model, gpt_temperature):
     """
     Translates the content of the source file using the specified language model.
 
@@ -344,7 +347,7 @@ def translate_article(client, language, source_text, tm_dict, gpt_model):
             continue
         
         if not in_front_matter and not front_matter_processed:
-            translated_front_matter = process_front_matter(front_matter_segments, tm_dict, gpt_translation_dict, language, gpt_model, client, tm_segments_lengths)
+            translated_front_matter = process_front_matter(front_matter_segments, tm_dict, gpt_translation_dict, language, gpt_model, client, tm_segments_lengths, gpt_temperature)
             front_matter_processed = True
             
         # Check commented out segment in English
@@ -406,7 +409,7 @@ def translate_article(client, language, source_text, tm_dict, gpt_model):
 
         # Translate segment using TM, fuzzy matching, or GPT
         else:
-            translated_segment, previous_segment = translate_segment(segment, tm_dict, gpt_translation_dict, language, gpt_model, client, tm_segments_lengths, previous_segment)
+            translated_segment, previous_segment = translate_segment(segment, tm_dict, gpt_translation_dict, language, gpt_model, client, tm_segments_lengths, gpt_temperature, previous_segment)
             translated_segments.append((segment, translated_segment))
             print(f'- Source segment:\n{segment}')
             print(f'- Target segment:\n{translated_segment}\n-------------------')
@@ -475,6 +478,13 @@ def main():
 
     # Initialize language models
     language, gpt_model, tm_path = initialize_language_model(lang)
+
+    # Fetch gpt_temperature
+    if not config.GPT_TEMPERATURE:
+        print("---\nGPT temperature directory not defined in the config file. The default temperature is 1.0\n---")
+    else:
+        gpt_temperature = config.GPT_TEMPERATURE
+    
     
     # Initialize translation memory dictionary
     tm_dict = initialize_translation_memory(lang, tm_path)
@@ -483,7 +493,7 @@ def main():
     source_text = load_source_file_segments(source)
 
     # Perform the translation
-    translated_segments = translate_article(client, language, source_text, tm_dict, gpt_model)
+    translated_segments = translate_article(client, language, source_text, tm_dict, gpt_model, gpt_temperature)
 
     # Create list with translated text
     translated_text = join_translated_text(translated_segments)
