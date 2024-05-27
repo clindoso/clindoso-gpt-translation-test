@@ -12,10 +12,8 @@ LANGUAGE_MODELS = {
     "nl": {"language": "Dutch", "gpt-model": "ft:gpt-3.5-turbo-0125:personal:nl-29-02-2024:8xZPaq6n", "tm_path": "../_docs/tm/en-nl.csv", "target_spacy_model": "nl_core_news_sm"}
 }
 
+# Set temperature for GPT text generation
 GPT_TEMPERATURE = 1.0
-
-SOURCE_LANGUAGE_SPACY_MODEL = "en_core_web_sm"
-SOURCE_LANG = 'en'
 
 # Fuzzy matching thresholds
 LOWER_THRESHOLD = 0.05
