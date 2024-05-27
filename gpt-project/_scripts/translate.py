@@ -88,8 +88,6 @@ def initialize_translation_memory(lang, tm_path):
     """
     # Initialize tm dictionary to use TM content in the translation
     tm_dict = {}
-    print("Current working directory:", os.getcwd())
-    print("Current TM path:", tm_path)
     # Read the TM and extract the 'en' and target language column
     with open(tm_path, 'r', encoding='utf-8') as tm:
         reader = csv.DictReader(tm)
@@ -120,7 +118,6 @@ def check_translation_memory(segment, tm_dict):
         return tm_segment, tm_translation
     else:
         return None, None
-    
 
 def check_gpt_translations(segment, gpt_translation_dict):
     """

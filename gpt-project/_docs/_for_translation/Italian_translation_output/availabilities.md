@@ -152,7 +152,7 @@ Se hai configurato delle disponibilità con il modello di orario del tipo **Marg
 
 ## Disponibilità in injixo Me <!-- TM 100 -->
 
-Puoi permettere ai dipendenti di {% link_new impostare le proprie disponibilità | features/injixo-me/utilizzare-injixo-me/esplora-injixo-me.md | #impostare-le-tue-disponibilità %} in injixo Me. Ogni dipendente può impostare fino a 14 disponibilità. I pianificatori devono eliminare regolarmente dalla lista tutte le disposizioni obsolete prima di creare una pianificazione, per evitare potenziali errori di pianificazione. <!-- GPT translation -->
+I dipendenti possono aggiungere le loro {% link_new disponibilità in injixo Me | features/injixo-me/use-injixo-me/explore-injixo-me.md | #impostare-le-tue-disponibilità %}. Ogni dipendente può aggiungere fino a 14 disponibilità. I pianificatori devono cancellare periodicamente le voci obsolete dall’elenco prima di creare una pianificazione, per evitare possibili errori di pianificazione. <!-- GPT translation -->
 
 Per permettere ai dipendenti di impostare le loro disponibilità in injixo Me, segui questi passaggi: <!-- TM 100 -->
 
