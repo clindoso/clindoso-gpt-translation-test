@@ -25,4 +25,10 @@ content_final = read_file(args.t2)
 
 # Calculate the Levenshtein distance
 distance = Levenshtein.distance(content_raw, content_final)
+
+# Calculate Levenshtein distance/source character
+content_raw_count = len(content_raw)
+ld_sc = distance/content_raw_count
+
 print(f"Levenshtein Distance: {distance}")
+print(f"Levenshtein Distance/source character: {ld_sc:.1f}%")

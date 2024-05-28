@@ -72,7 +72,7 @@ def main():
 
     # Split segments for training and validation data
     train_data, validation_data = train_test_split(segments, test_size=0.2, random_state=42)
-
+    
     # Add terms to training data
     train_data = train_data + terms
 
