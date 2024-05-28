@@ -23,7 +23,7 @@ docs_directory = "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/
 termbase_directory = "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_data/terminology"
 
 # TM directory
-translation_memory_directory = "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/tm/"
+TRANSLATION_MEMORY_DIRECTORY = "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/tm/"
 
 # Front matter processing variables
 FRONT_MATTER_VARIABLES = ['title: ', 'description: ']

@@ -1,7 +1,10 @@
 import os
 
-# Env variables
+# OpenAI API key
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
+
+# DeepL API key
+DEEPL_API_KEY = os.environ.get("DEEPL_API_KEY")
 
 # Language models
 LANGUAGE_MODELS = {
@@ -20,17 +23,17 @@ LOWER_THRESHOLD = 0.05
 UPPER_THRESHOLD = 0.4
 
 # EN docs directory
-docs_directory = "../_docs/_en/"
+DOCS_DIRECTORY = "../_docs/_en/"
 
 # Termbase directory
 TERMBASE_DIRECTORY = "../_data/terminology"
 
 # TM directory
-translation_memory_directory = "../_docs/tm/"
+TRANSLATION_MEMORY_DIRECTORY = "../_docs/tm/"
 
 # Front matter processing variables
-front_matter_variables = ['title: ', 'description: ']
-gpt_translation_marker = ('gpt_translation: true', 'gpt_translation: true')
+FRONT_MATTER_VARIABLES = ['title: ', 'description: ']
+GPT_TRANSLATION_MARKER = ('gpt_translation: true', 'gpt_translation: true')
 
 # Tag patterns
 tag_patterns = [

@@ -240,7 +240,7 @@ def process_front_matter(front_matter_segments, tm_dict, gpt_translation_dict, l
     """
     processed_front_matter = []
     frontmatter_variables = FRONT_MATTER_VARIABLES
-    gpt_translation_marker = GPT_TRANSLATION_MARKER
+    GPT_TRANSLATION_MARKER = GPT_TRANSLATION_MARKER
     for segment in front_matter_segments:
         for frontmatter_variable in frontmatter_variables:
             if segment[0].startswith(frontmatter_variable):
@@ -253,7 +253,7 @@ def process_front_matter(front_matter_segments, tm_dict, gpt_translation_dict, l
                 # No translation needed; reproduce the segment unchanged
                 processed_segment_pair = segment
         processed_front_matter.append(processed_segment_pair)
-    processed_front_matter.insert(-1, gpt_translation_marker)
+    processed_front_matter.insert(-1, GPT_TRANSLATION_MARKER)
 
     return processed_front_matter
 
