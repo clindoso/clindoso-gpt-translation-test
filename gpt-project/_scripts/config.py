@@ -6,7 +6,7 @@ OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
 # DeepL API key
 DEEPL_API_KEY = os.environ.get("DEEPL_API_KEY")
 
-# Language models
+# GPT Language data
 LANGUAGE_MODELS = {
     "de": {"language": "German", "gpt-model": "", "tm_path": "../_docs/tm/en-de.csv", "target_spacy_model": "de_core_news_sm"},
     "es": {"language": "Spanish", "gpt-model": "ft:gpt-3.5-turbo-1106:personal::8kULYOWh", "tm_path": "../_docs/tm/en-es.csv", "target_spacy_model": "es_core_news_sm"},
@@ -14,6 +14,15 @@ LANGUAGE_MODELS = {
     "it": {"language": "Italian", "gpt-model": "ft:gpt-3.5-turbo-0125:personal::9HTP3fRe", "tm_path": "../_docs/tm/en-it.csv", "target_spacy_model": "it_core_news_sm"},
     "nl": {"language": "Dutch", "gpt-model": "ft:gpt-3.5-turbo-0125:personal:nl-29-02-2024:8xZPaq6n", "tm_path": "../_docs/tm/en-nl.csv", "target_spacy_model": "nl_core_news_sm"}
 }
+
+# DeepL glossaties
+GLOSSARIES = {
+    "de": "5472d3ad-6b34-471c-98a6-14252da7929b",
+    "es": "58c9029b-d998-4e76-b038-906fb7fae938",
+    "fr": "213a0555-e525-415a-bba4-5f8ed9430590",
+    "it": "a101cfb2-c3ed-419a-9918-dce7d116ee07",
+    "nl": "bdea9d4d-2381-469c-9669-71237c616704"
+    }
 
 # GPT prompts
 PROMPT = "As a professional translator, your task is to translate the provided Markdown text to {language} while preserving the style, tone, Markdown format, structure, and terminology. Do not translate the Markdown syntax, file paths, or any text that should remain unchanged. If parts of the text are already in the target language or are global shorthand, keep them without any explanation."
