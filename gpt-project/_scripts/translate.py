@@ -201,6 +201,9 @@ def translate_article(client, language, source_text, tm_dict, gpt_model, gpt_tem
     # Initialize empty previous segment
     previous_segment=''
 
+    # Pattern for table formatting
+    pattern = r'^\}|^<style>|^<details|^<summary>|^<br>$|^<table>|\s+<thead>|\s+<tr>|\s+</tr>|\s+</thead>|</table>|</details>'
+    
     # Iterate over each segment of the source text
     for segment in source_text:
         # Check if segment is the start or end of the front matter
@@ -222,10 +225,9 @@ def translate_article(client, language, source_text, tm_dict, gpt_model, gpt_tem
         # Check commented out segment in English
         is_in_comment = False  # Flag to track if we are inside a comment block
         # Check if the current segment starts a comment block
-        if segment.startswith("\s*<!--"):
+        regex = r'^\s*<!--'
+        if re.match(regex, segment):
             is_in_comment = True
-
-        pattern = r'^\}|^<style>|^<details|^<summary>|^<br>$|^<table>|\s+<thead>|\s+<tr>|\s+</tr>|\s+</thead>|</table>|</details>'
         
         # If inside a comment block, reproduce the segment untranslated
         if is_in_comment:
