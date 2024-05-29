@@ -13,19 +13,22 @@ beta-feature: true
 > This article documents a beta feature. The documentation may not be up to date with feature behavior.
 
 When people request time off, injixo differentiates between the following:
+
 - The actual time off, i.e. the time range that a person is absent from work
 - The valuated time off, i.e. the time that is deducted from a person's entitlement, and that they are compensated for if they requested paid time off.<br>
-Valuated time off can be quantified in hours or days, depending on the [time unit of the time-off type](https://help.injixo.com/time-off-types#create-a-time-off-type).
+  Valuated time off can be quantified in hours or days, depending on the [time unit of the time-off type](https://help.injixo.com/time-off-types#create-a-time-off-type).
 
 For example, when a person with a full-time contract is absent for one day, which would result in an actual absence of 24&nbsp;hours, injixo valuates 8&nbsp;hours that need to be deducted from the person's vacation entitlement. This equals the paid time off that the person is compensated for.
 
 Note that all valuation-related settings apply to your entire organization by default. It is possible to [set up time-off valuation per planning unit](#time-off-valuation-per-planning-unit).
 
 injixo can valuate time off based on either or both of the following items:
+
 - A person's contract
 - A person's schedule
 
 The valuation can be further influenced by the following factors:
+
 - Selected time-off unit (days or hours)
 - Public holidays
 - Multiple time-off requests of one person within one week
@@ -37,6 +40,7 @@ To view how injixo valuates individual days in a multi-day time-off request, go 
 ## Time-off valuation based on a person's schedule
 
 There are two options for time-off valuation based on the schedule:
+
 - Option 1: injixo only uses the schedule as a basis for valuation if there is a published scheduling period. If there is no published scheduling period, injixo uses the contract as a basis for valuation by default.
 - Option 2: injixo always uses the schedule as a basis for valuation. This also applies if there is no published scheduling period. If you want to use this option, contact your consultant.
 
@@ -44,19 +48,20 @@ When the valuation is based on the schedule, injixo compares the requested time 
 
 The following table provides several examples with different parameters of a time-off request:
 
-| Time unit | Scheduled |  Requested time off | Valuated time | 
-|--------------------|--------------------|--------------------|--------------------|
-| hours | four hours of paid activities | one day | four hours |
-| days | four hours of paid activities | one day | one day |
-| hours | from 9&nbsp;AM to 5&nbsp;PM with a 30-minute unpaid break starting at 12&nbsp;PM (7.5h) | from 9&nbsp;AM to 12&nbsp;PM (3h) | three hours |
-| days | from 9&nbsp;AM to 5&nbsp;PM with a 30-minute unpaid break starting at 12&nbsp;PM (7.5h) | from 9&nbsp;AM to 12&nbsp;PM (3h) | 0.4 days |
-| hours/days| no scheduled activities | one day | zero hours/days |
+| Time unit  | Scheduled                                                                               | Requested time off                | Valuated time   |
+| ---------- | --------------------------------------------------------------------------------------- | --------------------------------- | --------------- |
+| hours      | four hours of paid activities                                                           | one day                           | four hours      |
+| days       | four hours of paid activities                                                           | one day                           | one day         |
+| hours      | from 9&nbsp;AM to 5&nbsp;PM with a 30-minute unpaid break starting at 12&nbsp;PM (7.5h) | from 9&nbsp;AM to 12&nbsp;PM (3h) | three hours     |
+| days       | from 9&nbsp;AM to 5&nbsp;PM with a 30-minute unpaid break starting at 12&nbsp;PM (7.5h) | from 9&nbsp;AM to 12&nbsp;PM (3h) | 0.4 days        |
+| hours/days | no scheduled activities                                                                 | one day                           | zero hours/days |
 
 If your organization schedules people using shift sequences only, e.g. because you cannot represent people's individual working agreements with contracts in injixo, the valuation always needs to use the schedule as a basis. If this is the case, contact your consultant to have that option activated for you.
 
 ## Time-off valuation based on a person's contract
 
 There are two types of contracts the valuation can be based on:<br>
+
 - Standard: The contract states how many days in a week are working days. These days are defined once and they never change.
 - Flexible: The contract states how many days in a week are working days. It does not specify on which days the person is working. The days do not need to be consecutive and they can change from one week to the next.
 
@@ -71,20 +76,21 @@ If you always schedule your people based on their contractual working hours and 
 
 The following table provides several examples with different parameters of a time-off request:
 
-| Time unit | Target working time |  Requested time off | Valuated time | 
-|--------------------|--------------------|--------------------|--------------------|
-| hours | four hours | one day | four hours |
-| days | four hours | one day | one day |
-| hours | from 9&nbsp;AM to 5&nbsp;PM with a 30-minute unpaid break starting at 12&nbsp;PM (7.5h) | from 9&nbsp;AM to 12&nbsp;PM (3h) | three hours |
-| days | from 9&nbsp;AM to 5&nbsp;PM with a 30-minute unpaid break starting at 12&nbsp;PM (7.5h) | from 9&nbsp;AM to 12&nbsp;PM (3h) | 0.4 days |
-| hours/days| no scheduled activities | one day | zero hours/days |
+| Time unit  | Target working time                                                                     | Requested time off                | Valuated time   |
+| ---------- | --------------------------------------------------------------------------------------- | --------------------------------- | --------------- |
+| hours      | four hours                                                                              | one day                           | four hours      |
+| days       | four hours                                                                              | one day                           | one day         |
+| hours      | from 9&nbsp;AM to 5&nbsp;PM with a 30-minute unpaid break starting at 12&nbsp;PM (7.5h) | from 9&nbsp;AM to 12&nbsp;PM (3h) | three hours     |
+| days       | from 9&nbsp;AM to 5&nbsp;PM with a 30-minute unpaid break starting at 12&nbsp;PM (7.5h) | from 9&nbsp;AM to 12&nbsp;PM (3h) | 0.4 days        |
+| hours/days | no scheduled activities                                                                 | one day                           | zero hours/days |
 
 ### Standard contracts
 
-In standard contracts, the daily target working time determines the time that is deducted from a person's entitlement and that they are compensated for. 
+In standard contracts, the daily target working time determines the time that is deducted from a person's entitlement and that they are compensated for.
+
 - If the unit of the time-off type is hours, the corresponding amount of hours is deducted.
 - If the unit of the time-off type is days, either a full day or a fraction of a day is deducted, depending on whether the time-off request is for a full day or a partial day.
-Depending on the defined working days in a person's contract, injixo starts the time-off valuation on the first day of the time-off request and continues from there, valuating only regular working days and dismissing regular days off. For example, if a part-time person works from Monday until Thursday and requests two weeks off, eight days or the corresponding amount of hours is deducted from their entitlement.
+  Depending on the defined working days in a person's contract, injixo starts the time-off valuation on the first day of the time-off request and continues from there, valuating only regular working days and dismissing regular days off. For example, if a part-time person works from Monday until Thursday and requests two weeks off, eight days or the corresponding amount of hours is deducted from their entitlement.
 
 ### Flexible contracts
 
@@ -92,7 +98,7 @@ For part-time people, a flexible contract may be the preferred option because th
 
 When the time-off valuation is based on a person's contract, injixo does not consider the person's schedule for time-off valuation. However, for flexible contracts, injixo considers already approved paid time off in the person's schedule if it falls into the same week as the new time-off request. The amount of approved time off is then valuated as the corresponding number of working days or hours. For example, a person who only works three days per week requests two days off. After you have [approved their time-off request](https://help.injixo.com/time-off#approve-or-reject-time-off-requests), they submit another time-off request for two more days within the same week. injixo then considers that there is already a paid absence for two days in the person's schedule and only deducts one more day from their entitlement. If a person submits several time-off requests for one week and you haven't approved any of them yet, you need to handle them one at a time. You cannot approve them in bulk.
 
-## Time-off valuation in days versus hours  
+## Time-off valuation in days versus hours
 
 Depending on your national legislation or organizational preferences, you can choose whether you want injixo to valuate time off in days or in hours when you create a new time-off type.
 
@@ -119,20 +125,21 @@ If you want to use this option, contact your consultant.
 
 ## Time-off valuation for night shifts
 
-If a person is scheduled to work a night shift that starts before midnight of one day and ends after midnight of the following day, and they request a day off, injixo handles their time-off request differently than the [default setting](https://help.injixo.com/time-off#time-off-requests-for-night-shifts). 
+If a person is scheduled to work a night shift that starts before midnight of one day and ends after midnight of the following day, and they request a day off, injixo handles their time-off request differently than the [default setting](https://help.injixo.com/time-off#time-off-requests-for-night-shifts).
 
 The following table provides several examples for requested time off:
 
-| Scheduled night shift | Time-off request |   Time off in schedule | Valuated time (hours/days) | 
-|--------------------|--------------------|--------------------|--------------------|
-| 25&nbsp;June, 10&nbsp;PM until 26&nbsp;June, 6&nbsp;AM | 26&nbsp;June | 26&nbsp;June, 6&nbsp;AM until 27&nbsp;June midnight (18&nbsp;hours) | eight&nbsp;hours (one&nbsp;day) |
-| 25&nbsp;June, 10&nbsp;PM until 26&nbsp;June, 6&nbsp;AM | 25&nbsp;June | 25&nbsp;June, midnight until 26&nbsp;June 6&nbsp;AM (30&nbsp;hours) | eight&nbsp;hours (one&nbsp;day) |
-| 25&nbsp;June, 10&nbsp;PM until 26&nbsp;June, 6&nbsp;AM and 28&nbsp;June, 10&nbsp;PM until 29&nbsp;June, 6&nbsp;AM | 25&nbsp;June until 29&nbsp;June | 25&nbsp;June, midnight until 29&nbsp;June 6&nbsp;AM | 16&nbsp;hours (two&nbsp;days) |
-| no scheduled night shift but scheduled during the day | 26&nbsp;June |  26&nbsp;June, midnight until 27&nbsp;June, midnight | eight&nbsp;hours (one&nbsp;day) |
+| Scheduled night shift                                                                                             | Time-off request                | Time off in schedule                                                | Valuated time (hours/days)      |
+| ----------------------------------------------------------------------------------------------------------------- | ------------------------------- | ------------------------------------------------------------------- | ------------------------------- |
+| 25&nbsp;June, 10&nbsp;PM until 26&nbsp;June, 6&nbsp;AM                                                            | 26&nbsp;June                    | 26&nbsp;June, 6&nbsp;AM until 27&nbsp;June midnight (18&nbsp;hours) | eight&nbsp;hours (one&nbsp;day) |
+| 25&nbsp;June, 10&nbsp;PM until 26&nbsp;June, 6&nbsp;AM                                                            | 25&nbsp;June                    | 25&nbsp;June, midnight until 26&nbsp;June 6&nbsp;AM (30&nbsp;hours) | eight&nbsp;hours (one&nbsp;day) |
+| 25&nbsp;June, 10&nbsp;PM until 26&nbsp;June, 6&nbsp;AM and 28&nbsp;June, 10&nbsp;PM until 29&nbsp;June, 6&nbsp;AM | 25&nbsp;June until 29&nbsp;June | 25&nbsp;June, midnight until 29&nbsp;June 6&nbsp;AM                 | 16&nbsp;hours (two&nbsp;days)   |
+| no scheduled night shift but scheduled during the day                                                             | 26&nbsp;June                    | 26&nbsp;June, midnight until 27&nbsp;June, midnight                 | eight&nbsp;hours (one&nbsp;day) |
 
 ## Time-off valuation per planning unit
 
 By default, the time-off valuation settings apply to your entire organization. If your organizational setup requires a different time-off valuation per planning unit, e.g. due to different time zones or labor laws, the following options can be activated for each planning unit individually:
+
 - The option to only consider the schedule for valuation, e.g. if you work with shift sequences
 - The rounding option if you work with days as the time unit of the time-off type
 - The option to consider public holidays if you work with contracts as a basis for valuation
@@ -141,7 +148,7 @@ Note: If a person is assigned to several planning units, their time-off request 
 
 ## Your optimal setup
 
-Your consultant will help you with the optimal time-off valuation setup for your organization. To help them better understand your needs, look at the following questions: 
+Your consultant will help you with the optimal time-off valuation setup for your organization. To help them better understand your needs, look at the following questions:
 
 - What do you want to use as a basis for valuation?
 - Do you schedule people with shift sequences only?
@@ -155,6 +162,7 @@ Your consultant will help you with the optimal time-off valuation setup for your
 ### Why do I not see a valuation for a time-off request?
 
 There are several possible scenarios:
+
 - Scenario&nbsp;1: The valuation is [based on the contract](#time-off-valuation-based-on-a-persons-contract). The person who requested time off has multiple contracts that apply during the requested time off.<br>
 - Scenario&nbsp;2: Part of the requested time off falls into a period with a published scheduling period and another part is not covered by a published scheduling period. By default, injixo uses the person's contract as a basis for valuation for time ranges without a published scheduling period. This can cause a conflict.<br>
 - Scenario&nbsp;3: The valuation is [based on schedules](#time-off-valuation-based-on-a-persons-schedule) only. A person requests time off for a period during which they are not scheduled for any paid activities.<br>

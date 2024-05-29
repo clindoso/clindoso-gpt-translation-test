@@ -16,15 +16,15 @@ related_articles:
     filepath: features/scheduling/schedules/schedules-comments.md
 ---
 
-In _Plan > Schedules_{:.breadcrumbs}, you can see and manage your people's shifts. You can notify people of changes in their schedule, create and manage scheduling periods, and perform all available scheduling actions. 
-The Schedules page consists of an action bar, the schedules area and the activities area. The different sections of this article explain what you can do on each part of the page. 
+In _Plan > Schedules_{:.breadcrumbs}, you can see and manage your people's shifts. You can notify people of changes in their schedule, create and manage scheduling periods, and perform all available scheduling actions.
+The Schedules page consists of an action bar, the schedules area and the activities area. The different sections of this article explain what you can do on each part of the page.
 
 ## Prerequisites
 
 To get the most out of the options available in **Schedules**, make sure the following applies:
 
 - You have created at least one {% link_new selection | features/administration/selections.md %}.
-- You have configured your firewall to allow {% link_new WebSocket connections | getting-started/system-requirements.md | #share-urls-for-websockets %} for injixo. This is required for real-time updates. If the required WebSocket connection cannot be opened due to firewalls or is closed due to an unstable network connection, you see an error message. 
+- You have configured your firewall to allow {% link_new WebSocket connections | getting-started/system-requirements.md | #share-urls-for-websockets %} for injixo. This is required for real-time updates. If the required WebSocket connection cannot be opened due to firewalls or is closed due to an unstable network connection, you see an error message.
 
 ## Action bar
 
@@ -32,9 +32,9 @@ To get the most out of the options available in **Schedules**, make sure the fol
 
 On the left side of the top bar, you have different filtering options:
 
-- Filter by planning unit: Select one or more planning units from the drop-down menu on the left. 
+- Filter by planning unit: Select one or more planning units from the drop-down menu on the left.
 - Filter by selection: Click the {% icon selection-filter-u %} and use the drop-down menu on the right to select one.
-- Filter by {% link_new employee filter | features/administration/employee-filter.md %}: Click the {% icon schedules-filter-employees-u %} and use the drop-down menu to select a pre-configured employee filter. 
+- Filter by {% link_new employee filter | features/administration/employee-filter.md %}: Click the {% icon schedules-filter-employees-u %} and use the drop-down menu on the right to select a pre-configured employee filter.
 
 ### Notify people
 
@@ -46,7 +46,7 @@ Click _Scheduling periods_{:.doc-button} to {% link_new configure scheduling per
 
 ### Scheduling actions
 
-From the drop-down menu on the right, select one of the following scheduling actions:
+From the drop-down menu on the far right of the action bar, select one of the following scheduling actions:
 
 - {% link_new Insert shift sequences | features/scheduling/schedules/schedules-insert-shift-sequences.md %}: Insert fixed, recurring sequences of shifts, activities, or availabilities into your schedule.
 - {% link_new Job optimization | features/scheduling/schedules/schedules-job-optimization.md %}: Replace activities to improve coverage.
@@ -61,9 +61,9 @@ The following scheduling actions are only available in injixo Advanced WFM and E
 - {% link_new Create optimized schedule | features/scheduling/schedules/schedules-optimized-schedules.md %}: Automatically create a full schedule with the best possible coverage for all activities.
 - {% link_new Schedule extra activities | features/scheduling/schedules/schedules-extra-activities.md %}: Schedule storable activities like email and back-office tasks by replacing existing activities.
 
-### Full-screen mode 
+### Full-screen mode
 
-Click the full screen mode icon _![full-screen mode icon](/assets/img/common/full-screen-mode.png)_{:.doc-button-icon} to switch to full-screen mode. When in full-screen mode, move the cursor to the arrow icon at the top of the screen to see the filter bar. Click the {% icon full_screen_exit %} or press Esc to leave the full-screen mode.
+Click the full screen mode icon _![full-screen mode icon](/assets/img/common/full-screen-mode.png)_{:.doc-button-icon} to switch to full-screen mode. When in full-screen mode, move the cursor to the arrow icon at the top of the screen to see the action bar. Click the {% icon full_screen_exit %} or press the Esc key to leave the full-screen mode.
 
 ## Schedule area
 
@@ -75,11 +75,11 @@ The **Employee Name** column is the first column from the left. It displays the 
 
 Use the search field above the column to search for specific people. Use commas to separate the names if you want to search for more than one person at a time. You can only see a person's row if you expand the planning unit they are assigned to.
 
-Click the column header to sort alphabetically by last name. Click a person's name to open a popover with their contract and skill information. Click the person's name in blue inside the popover to open the person's details in edit mode in a new browser window.
+Click the column header to sort alphabetically by last name. Click a person's name to open a popover with their contract and skill information. Click the person's name in blue inside the popover to open the person's details in edit mode in a new browser tab.
 
 > Note
 >
-> If you have configured a join or leave date for a person, the person is only displayed between those dates. 
+> If you have configured a join or leave date for a person, the person is only displayed between those dates.
 > If the person's planning unit has a validity period, and their assignment to the planning unit ends on the same date, their schedule after that date is not displayed. You can see schedules past that date in Shift Center, where the cells are grayed out for days after the person's leave date.
 
 ### Level column
@@ -108,7 +108,7 @@ Click the header of a day column to switch to the daily view with hour columns.
 
 ### Single-day view with hour columns
 
-If you select a date range of a single day, or if you click the header of a day column, the table displays columns for each hour of that day. To change between levels or sort data by shift start in this view, click the {% icon ellipsis_v %} to the right of the date picker.
+If you select a single day using the date picker, or if you click the header of a day column, the table displays columns for each hour of the selected day. To change between levels or sort data by shift start in this view, click the {% icon ellipsis_v %} to the right of the date picker and select a new level or click an already selected level to reverse the sorting order.
 
 To display data in 30-minute intervals, hover in between two columns. When the {% icon magnifying_glass %} appears, click it. <br>To see 15-minute intervals, hover over the 30 mark, and click the {% icon magnifying_glass %} when it appears.<br>To go back to displaying hour columns, click any full-hour mark.
 

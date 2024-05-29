@@ -35,13 +35,13 @@ Review and apply generated suggestions as follows:
 
    The Suggestions page opens and shows a table with the following columns:
 
-   | Column | Details |
-   | --- | --- |
-   | Suggested time slot | Suggested time slot for the meeting |
-   | Activity to schedule | Meeting activity that will be scheduled |
-   | Host/Participant | Names of people who will be in the meeting |
-   | Replaced activity | Scheduled activity that will be replaced by the meeting |
-   | Resulting coverage | Indicator of how the scheduled meeting would affect the coverage of the replaced activity. Hover your mouse over the coverage values for a  popover with detailed information.
+   | Column               | Details                                                                                                                                                                       |
+   | -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+   | Suggested time slot  | Suggested time slot for the meeting                                                                                                                                           |
+   | Activity to schedule | Meeting activity that will be scheduled                                                                                                                                       |
+   | Host/Participant     | Names of people who will be in the meeting                                                                                                                                    |
+   | Replaced activity    | Scheduled activity that will be replaced by the meeting                                                                                                                       |
+   | Resulting coverage   | Indicator of how the scheduled meeting would affect the coverage of the replaced activity. Hover your mouse over the coverage values for a popover with detailed information. |
 
    <!-- {{ 2 | image: 'Suggestions - Group meetings' }} -->
 
@@ -61,10 +61,10 @@ When meeting suggestions have been scheduled, the Generated suggestions section 
 - **View schedule**: Allows you to review the new scheduled meetings in _Plan > Schedules_{:.breadcrumbs}.
 - **View results**: Opens the results page with details about the suggested meetings on three tabs:
 
-  | Tab       | Details                                                                                                                                                                                                                                                                                                                                                                                                                      |
-  | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-  | Scheduled | People who got scheduled for a suggested meeting time slot.                                                                                                                                                                                                                                                                                                                                                                  |
+  | Tab       | Details                                                                                                                                                                                                  |
+  | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+  | Scheduled | People who got scheduled for a suggested meeting time slot.                                                                                                                                              |
   | Failed    | People who could not be scheduled. The Information column displays the reasons and scheduling rules that block placing the meeting. The tab may be inactive when everyone can be scheduled successfully. |
-  | Excluded  | People who have been deselected before to exclude from scheduling. The tab can be inactive when no one was excluded.                                                                                                                                                                                                                                                                                                         |
+  | Excluded  | People who have been deselected before to exclude from scheduling. The tab can be inactive when no one was excluded.                                                                                     |
 
 Review people listed in the Failed and Excluded tab. You can ignore or try to reschedule them by using different parameters. In _Plan > Schedules_{:.breadcrumbs} or _Plan > Shift Center_{:.breadcrumbs}, you can also manually add meetings.

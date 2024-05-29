@@ -49,11 +49,11 @@ Historical data may include prolonged outages, or it may miss data for a particu
 
 Here are some tips on managing low data quality depending on how long the period with poor or missing data is:
 
-| Timeframe with poor quality data     | Tip                                                                                                                                                         |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- |
-| A few days | Use {% link_new events | features/forecast/injixo-forecast/events-and-holidays.md %} to mark the affected days as an outage and exclude them from the calculation.                                  |
-| A couple of weeks    | Upload additional data without gaps or irrelevant patterns. |
-| Several weeks or months  | Remove the data that predates the gap. Import only the data from after the gap.                            |
+| Timeframe with poor quality data | Tip                                                                             |
+| -------------------------------- | ------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| A few days                       | Use {% link_new events                                                          | features/forecast/injixo-forecast/events-and-holidays.md %} to mark the affected days as an outage and exclude them from the calculation. |
+| A couple of weeks                | Upload additional data without gaps or irrelevant patterns.                     |
+| Several weeks or months          | Remove the data that predates the gap. Import only the data from after the gap. |
 
 Note: If you cannot upload additional data or you do not have enough data after a gap, the Smart Forecast algorithms will automatically try to minimize the negative impact of missing data.
 

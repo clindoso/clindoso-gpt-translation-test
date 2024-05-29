@@ -24,7 +24,7 @@ redirect_from:
 redirect_reason: Updated filename on 27 July 2023
 ---
 
-Creating schedules is an essential part of the {% link_new WFM cycle | getting-started/the-wfm-cycle-in-injixo.md %}. Schedules contain the shifts and activities planned for your people.  
+Creating schedules is an essential part of the {% link_new WFM cycle | getting-started/the-wfm-cycle-in-injixo.md %}. Schedules contain the shifts and activities planned for your people.
 
 Use this article as a checklist to support your onboarding.
 
@@ -32,7 +32,7 @@ Note: In injixo Essential WFM, you cannot back up your time-off requests or the 
 
 ## Prerequisites
 
-Before you create a schedule, make sure you have correctly {% link_new set up your base configuration | getting-started/set-up-base-configuration.md %} and {% link_new generated a forecast | getting-started/calculate-a-forecast.md %}. 
+Before you create a schedule, make sure you have correctly {% link_new set up your base configuration | getting-started/set-up-base-configuration.md %} and {% link_new generated a forecast | getting-started/calculate-a-forecast.md %}.
 
 ## Configuration order
 
@@ -75,5 +75,5 @@ Before applying any {% link_new manual changes | features/scheduling/shiftcenter
 
 1. Create a scheduling period to {% link_new allow people to see their schedule | features/scheduling/schedules/scheduling-periods/schedules-enable-employees-to-see-their-schedules.md %} in injixo Me.
 2. (Optional) {% link_new Allow people to swap shifts | features/scheduling/schedules/scheduling-periods/schedules-enable-employees-to-swap-shifts.md %}.  
-    By default, you need to {% link_new view and approve any pending shift swaps | features/scheduling/view-approve-shift-swap-requests.md %}, but you can also allow automatic swaps between people with the _48152_{:.id-label} **Exchange Mode** setting.
+   By default, you need to {% link_new view and approve any pending shift swaps | features/scheduling/view-approve-shift-swap-requests.md %}, but you can also allow automatic swaps between people with the _48152_{:.id-label} **Exchange Mode** setting.
 3. Share the article {% link_new Explore injixo Me | features/injixo-me/use-injixo-me/explore-injixo-me.md %} with your people.

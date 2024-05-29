@@ -1,6 +1,6 @@
 ---
 title: Edit or delete staff requirements
-toc: false
+toc: true
 product_label:
   - advanced
   - enterprise
@@ -33,7 +33,7 @@ In injixo, you can view staff requirements in the following four places:
 - _Forecast_{:.menu-item}
 - _Analyze > Dashboard_{:.breadcrumbs}
 - _Plan > Schedules_{:.breadcrumbs}
-- _Plan > Shift Center_{:.breadcrumbs} 
+- _Plan > Shift Center_{:.breadcrumbs}
 
 The following table includes details about the options available in each place:
 
@@ -43,17 +43,18 @@ table {
 }
 </style>
 
-| Where  | View | Edit | Delete |
-| ------ |--------| -------- |-------- |
-| _Forecast_{:.menu-item} | Yes | Yes | Yes |
-| _Analyze > Dashboard_{:.breadcrumbs} | Yes | No | No |
-| _Plan > Schedules_{:.breadcrumbs} | Yes | No | No |
-| _Plan > Shift Center_{:.breadcrumbs} | Yes | Yes | No |
+| Where                                | View | Edit | Delete |
+| ------------------------------------ | ---- | ---- | ------ |
+| _Forecast_{:.menu-item}              | Yes  | Yes  | Yes    |
+| _Analyze > Dashboard_{:.breadcrumbs} | Yes  | No   | No     |
+| _Plan > Schedules_{:.breadcrumbs}    | Yes  | No   | No     |
+| _Plan > Shift Center_{:.breadcrumbs} | Yes  | Yes  | No     |
 
 ### Edit staff requirements in Shift Center
 
 1. Go to _Plan > Shift Center_{:.breadcrumbs}.
 2. At the bottom of the panel, select the **Activities - Requirement** or the **Activity Overview** tab.<br>
+
    > No Data message in a cell
    >
    > If a cell in the lower table shows the message No Data, select **Schedule** or **Actual** from the **Levels** drop-down menu at the top right.
@@ -61,8 +62,8 @@ table {
 3. To expand a planning unit, click the {% icon plus %} on the left side of each table.
 4. Right-click any cell in the lower table and select **Edit Employee Requirement**.
 5. In the **Edit Employee Requirement** window, click a cell and enter the new value.<br>
-  You cannot edit cells highlighted in blue because they represent deleted activities that are still assigned to the planning unit.<br>
-  
+   You cannot edit cells highlighted in blue because they represent deleted activities that are still assigned to the planning unit.<br>
+
 6. (Optional) To edit several cells at once, copy a row of values from a spreadsheet. Click a cell and drag the mouse to the right. Press Ctrl+V to paste the values.<br>
 7. Click _OK_{:.doc-button}.
 
@@ -91,7 +92,7 @@ To manually edit staff requirements, you can run the constant requirement script
 
 There is no option to delete staff requirements in injixo. You can edit staff requirements to be 0, which has the same effect as deleting them.
 
- You have two options to set the staff requirements to 0:
+You have two options to set the staff requirements to 0:
 
 - Follow the steps to [edit staff requirements in Shift Center](#edit-staff-requirements-in-shift-center) and enter or copy 0 in the relevant cells.
 

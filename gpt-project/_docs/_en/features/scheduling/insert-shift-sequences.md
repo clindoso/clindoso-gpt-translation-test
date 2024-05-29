@@ -61,6 +61,6 @@ Whether the content of a shift sequence is actually replaced by the content of a
 
 ### Reference date
 
-injixo needs to know for a particular day of the week whether it should use the pattern for week 1, week 2, etc. The reference date provides a fixed point for this. The first day of the shift sequence is always inserted relative to the reference date. This is defined when the shift sequence is assigned to the employee and should always be on the first day of the week. Check setting _48420_{:.id-label} if necessary _First day of the scheduling week_.
+For each day of the week, injixo needs to choose between the pattern for week 1, week 2, etc. The reference date provides a fixed point for this. The first day of the shift sequence is always inserted relative to the reference date. This is defined when the shift sequence is assigned to the employee and should always be on the first day of the week. By default, the start of the week is set to either Sunday or Monday, depending on your region. If you need to set it to another day, contact your consultant.
 
 Example: The period you wish to insert a 3-week shift sequence for is 9th - 29th July. The shift sequence starts on 9th July, but the reference date is set to 2nd July. On July 9th, the 8th day of the shift sequence is inserted, which is the start of week 2 of the sequence. Week 3 of the shift sequence will start on July 23rd.

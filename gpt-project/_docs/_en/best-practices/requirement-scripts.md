@@ -9,7 +9,7 @@ description: Learn which staff calculation method suits your needs best.
 toc: true
 ---
 
-injixo offers calculation methods and requirements scripts to calculate staff requirements. 
+injixo offers calculation methods and requirements scripts to calculate staff requirements.
 
 ## Calculation methods
 
@@ -32,15 +32,15 @@ Learn how to {% link_new configure the calculation methods | features/forecast/i
 
 The following table displays which calculation methods and requirement scripts are suitable for which data type when calculating staff requirements:
 
-| Data type or parameter  | Erlang-C (method) | Chat (method)  | Linear (method) | Constant requirement (script) | Multiactivity (script) | Outbound (script) |
-| ----------------------- |-------------------| -------- |--------  | -------- |   ------- | ------- |
-| Data that can be stored (e.g. emails, tickets, orders)   | No        | No | No  | No |  Yes | Yes |
-| Calls                   | Yes       | No | No  | No |  Yes | No |
-| Chat                   | No       | Yes | No  | Yes |  Yes | No |
-| Inbound contacts                   | Yes       | Yes | Yes  | Yes |  Yes | No |
-| Outbound contacts                   | No       | No | No  | No |  No | Yes |
-| One line only                       | Yes     | Yes | Yes  | Yes |  No | Yes |
-| Several lines                | No       | No | No  | No |  Yes | No |
-| Historical data               | Yes     | Yes | Yes  | No |  Yes | Yes |
-| Type of service goal               | Yes   | Yes | No  | No |  Yes | Yes |
-| Service level   (e.g. 80/20)          | Yes     | Yes | No  | No |  Yes | Yes |
+| Data type or parameter                                 | Erlang-C (method) | Chat (method) | Linear (method) | Constant requirement (script) | Multiactivity (script) | Outbound (script) |
+| ------------------------------------------------------ | ----------------- | ------------- | --------------- | ----------------------------- | ---------------------- | ----------------- |
+| Data that can be stored (e.g. emails, tickets, orders) | No                | No            | No              | No                            | Yes                    | Yes               |
+| Calls                                                  | Yes               | No            | No              | No                            | Yes                    | No                |
+| Chat                                                   | No                | Yes           | No              | Yes                           | Yes                    | No                |
+| Inbound contacts                                       | Yes               | Yes           | Yes             | Yes                           | Yes                    | No                |
+| Outbound contacts                                      | No                | No            | No              | No                            | No                     | Yes               |
+| One line only                                          | Yes               | Yes           | Yes             | Yes                           | No                     | Yes               |
+| Several lines                                          | No                | No            | No              | No                            | Yes                    | No                |
+| Historical data                                        | Yes               | Yes           | Yes             | No                            | Yes                    | Yes               |
+| Type of service goal                                   | Yes               | Yes           | No              | No                            | Yes                    | Yes               |
+| Service level (e.g. 80/20)                             | Yes               | Yes           | No              | No                            | Yes                    | Yes               |

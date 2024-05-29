@@ -144,8 +144,6 @@ You can add comments with a maximum length of 250 characters on each level for e
 
 Comments entered in the Schedule level will be visible in injixo Me if there is a scheduling period with the status Published or Shift bidding enabled.
 
-
-
 ## Add items to multiple employees at once
 
 You can add identical items (activities, multiactivities, full-day activities, day models, and even comments) for several employees on the same day at once:

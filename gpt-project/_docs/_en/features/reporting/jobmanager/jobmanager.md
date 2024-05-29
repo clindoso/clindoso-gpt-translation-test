@@ -14,8 +14,8 @@ In _WFM > Administration > System > JobManager_{:.breadcrumbs}, users with admin
 
 ## Create job templates
 
-1. Click the {% icon item-add %}.
-2. Enter a unique name (max. 50 characters).<br>
+1. Click the Create Job Template icon{% icon item-add | icon-only %}.
+2. Enter a unique **Name** (max. 50 characters).<br>
 3. Check the **Enabled** checkbox to activate the scheduled execution.
 4. Select a Job Type. This category has no impact but you can sort by job type later on.
 5. Set a **Priority**. Value range: 1 to 10 (lowest)
@@ -48,7 +48,7 @@ When you save a job, only the time period for job processing is set. Add other g
 2. Enter a **Name** for the parameter.
 3. Enter a **Value** for the parameter defined as name.
 
-Learn more about available parameters and values in the articles {% link_new Report names and parameters | features/reporting/jobmanager/jobmanager-examples.md %} and {% link_new JobManager examples | features/reporting/jobmanager/jobmanager-examples.md %}.
+Learn more about available parameters and values in the article {% link_new JobManager examples | features/reporting/jobmanager/jobmanager-examples.md %}.
 
 ### Set job processing dates
 
@@ -64,4 +64,4 @@ Each option requires you to set the time in the HH:MM format.
 
 ### Set job processing options
 
-You can check the checkbox to delete the job after processing, which is useful to schedule and run jobs only once. <!-- more functionality in on-premise -->
+You can check the **Delete job after processing** checkbox to delete the job after processing, which is useful to schedule and run jobs only once. <!-- more functionality in on-premise -->

@@ -26,7 +26,7 @@ You can also use the navigation bar on the left side of each article to open the
 
 Enter keywords in the search bar at the top to find the articles you need. On the results page, use the WFM plan labels to filter the search results.
 
-## Browse the glossary 
+## Browse the glossary
 
 The glossary includes terms and abbreviations that are used in Help Center articles, plus other industry-specific terms. You can access it from the top navigation bar on every Help Center article. Use the dropdown menu at the top right to see it in another language.
 

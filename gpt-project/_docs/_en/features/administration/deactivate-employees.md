@@ -42,7 +42,7 @@ To reactivate an employee, e.g. when they return after a long absence, follow th
 2. Use the search field in the top left corner to find the employee you want to reactivate.<br>A window opens. If you have entered the employee's full name and the search returns only one result, the window shows the employee's configuration dialog. If the search returns several results, the window shows a list of employees.
 3. If the window shows a list, click the employee you want to reactivate.
 4. In the **Staff Membership** section of the employee configuration dialog, click the {% icon item-add %}.
-5. Enter a join date. 
+5. Enter a join date.
 6. Click _OK_{:.doc-button}.
 
 ## Delete employees

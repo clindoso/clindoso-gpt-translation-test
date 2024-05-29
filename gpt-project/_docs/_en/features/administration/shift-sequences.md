@@ -41,13 +41,11 @@ Each row represents a weekly pattern for your schedule, which is why the number 
 To create shift sequences, you first need to create {% link_new activities | features/administration/activities.md %} or {% link_new day models | features/administration/daymodels/daymodel-creation.md %}.<br>
 After you have created shift sequences, you must {% link_new assign them to your people | features/administration/employee-overview.md | #assign-a-shift-sequence %} before you can insert them in your schedule.<br>
 When you assign a shift sequence to a person, you must set a reference date. The reference date is the first day when the shift sequence will be planned. Starting on that date, the shift sequence repeats without interruption for as long as it is valid.<br>
-Because you configure shift sequences as weekly patterns, set the reference date to a Monday, or to the weekday when your working week starts.
+Because you configure shift sequences as weekly patterns, set the reference date to the weekday when your working week starts.
 
->Note
+> Change start of the week
 >
->By default, the working week starts on Monday.
->
->You can change the first day of the week with the setting _48420_{:.id-label} _First day of the scheduling week_.
+> By default, the start of the week is set to either Sunday or Monday, depending on your region. If you need to set it to another day, contact your consultant.
 
 ## Create shift sequences
 
@@ -57,17 +55,17 @@ To create shift sequences, go to _Plan > Configuration > Shift sequences_{:.brea
 
 1. Click the New icon {% icon item-add | icon-only %} in the upper left.
 2. Configure the settings of the shift sequence:<br>
-  **Name**: Enter a unique name (max. 50 characters).<br>
-  **Abbreviation**: Enter the name or a shorter version of it (max. 25 characters).<br>
-  **Employee row(s)**: Enter the number of rows for the shift sequence (max. 53).<br>Each row will be assigned a number. Double-click on a row to rename it. You will need the row number or name to assign it to a person later.<br>
-  **Duration**: Enter a value between 7 and 371 days. The duration must be a multiple of seven.
-6. Click _Ok_{:.doc-button}.
+   **Name**: Enter a unique name (max. 50 characters).<br>
+   **Abbreviation**: Enter the name or a shorter version of it (max. 25 characters).<br>
+   **Employee row(s)**: Enter the number of rows for the shift sequence (max. 53).<br>Each row will be assigned a number. Double-click on a row to rename it. You will need the row number or name to assign it to a person later.<br>
+   **Duration**: Enter a value between 7 and 371 days. The duration must be a multiple of seven.
+3. Click _Ok_{:.doc-button}.
 
->Note
+> Note
 >
->The duration of a shift sequence must always be a multiple of seven, even if your organization only opens five or six days a week. Shift sequences repeat automatically. A shift sequence of 5 days would insert the Monday shift in a Saturday cell, the Tuesday shift in a Sunday cell, etc.
+> The duration of a shift sequence must always be a multiple of seven, even if your organization only opens five or six days a week. Shift sequences repeat automatically. A shift sequence of 5 days would insert the Monday shift in a Saturday cell, the Tuesday shift in a Sunday cell, etc.
 >
->If you want to plan patterns with different durations (e.g. one for weekly meetings, and one for biweekly meetings), you need to create separate shift sequences.
+> If you want to plan patterns with different durations (e.g. one for weekly meetings, and one for biweekly meetings), you need to create separate shift sequences.
 
 Once you have created a shift sequence, you can set {% link_new validity periods | features/administration/set-a-validity-period.md %} for it:
 
@@ -81,7 +79,7 @@ Once you have created a shift sequence, you can set {% link_new validity periods
 2. Select the day model you want to insert from the **Day model** drop-down menu.
 3. Enter a **number**. This will be the amount of consecutive days in which you insert the day model.
 4. In the table, click the first cell in which you want to insert the day model.<br>
-  If you entered a number higher than one, the day model will be inserted in that cell and in as many cells to the right as needed to reach that number.
+   If you entered a number higher than one, the day model will be inserted in that cell and in as many cells to the right as needed to reach that number.
 
 The shift sequence is saved automatically.
 
@@ -96,7 +94,7 @@ The shift sequence is saved automatically.
 3. Enter a **number**. This will be the amount of consecutive days in which you insert the activity.
 4. To specify the time when the activity is planned, enter a time period (in 24-hour format) in the fields **from** and **to**, or check the **full-day** checkbox.
 5. In the table, click the first cell in which you want to insert the activity.<br>
-  If you entered a number higher than one, the activity will be inserted in that cell and in as many cells to the right as needed to reach that number.
+   If you entered a number higher than one, the activity will be inserted in that cell and in as many cells to the right as needed to reach that number.
 
 > Activities that end after midnight
 >
@@ -112,11 +110,12 @@ The shift sequence is saved automatically.
 ### Delete elements from a shift sequence
 
 To delete one or a few elements from the shift sequence, follow these steps:
+
 1. In the **Shift sequences** tile, select a shift sequence from the drop-down menu.
 2. Click _Apply_{:.doc-button}.
 3. In the **Options** tile, select **Delete** from the drop-down menu.
 4. Click the cells whose elements you want to delete.<br>
-  The elements are deleted automatically.
+   The elements are deleted automatically.
 
 To delete all elements from a shift sequence, follow these steps:
 
@@ -124,7 +123,7 @@ To delete all elements from a shift sequence, follow these steps:
 2. Click _Apply_{:.doc-button}.
 3. In the **Options** tile, select **Delete** from the drop-down menu.
 4. Check the **Delete all** checkbox, and click _Apply_{:.doc-button}.<br>
-  The elements are deleted automatically.
+   The elements are deleted automatically.
 
 ## Delete a shift sequence
 
@@ -152,8 +151,8 @@ You can use shift sequences for various scenarios.
 
 ### Use case 1: Specify days when certain shifts must be scheduled
 
-This use case applies, for example, when you need to plan early and late shifts for different groups of people. Or if you have a team member who cannot start working before 11 AM on Mondays, although they are available earlier all other days of the week. 
- 
+This use case applies, for example, when you need to plan early and late shifts for different groups of people. Or if you have a team member who cannot start working before 11 AM on Mondays, although they are available earlier all other days of the week.
+
 You can learn more about whether this use case applies to you and how to configure shift sequences accordingly in our training video below:
 
 <div class="inline-video-container">
@@ -180,7 +179,7 @@ You can learn more about whether this use case applies to you and how to configu
 
 ### Use case 3: Specify days when people do not work
 
-This use case applies, for example, if you need to define specific patterns of days off for individual people. 
+This use case applies, for example, if you need to define specific patterns of days off for individual people.
 
 You can learn more about whether this use case applies to you and how to configure shift sequences accordingly in our training below:
 

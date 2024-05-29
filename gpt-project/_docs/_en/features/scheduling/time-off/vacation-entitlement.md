@@ -32,12 +32,12 @@ table th:nth-of-type(2) {
 }
 </style>
 
-| Column              | Explanation                                                                                                                                                                                                                                            |
-| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Column              | Explanation                                                                                                                                                                                                     |
+| ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Remain Current Year | Remaining vacation entitlement for the current year. It is calculated as the remaining vacation days from the previous year plus the entitlement for the current year minus the days taken in the current year. |
-| Remain Last Year    | Remaining vacation days from the previous year. You can overwrite this value manually with a negative or positive value.                                                                                                                 |
-| Current Year        | The total number of vacation days the employee is entitled to in the current year. You can overwrite this value manually with a negative or positive value.                                                                                        |
-| Taken Vacation      | Percentage of vacation days already taken of the entitlement for the current year. The column header displays the average percentage value for your current filter settings.                                                              |
+| Remain Last Year    | Remaining vacation days from the previous year. You can overwrite this value manually with a negative or positive value.                                                                                        |
+| Current Year        | The total number of vacation days the employee is entitled to in the current year. You can overwrite this value manually with a negative or positive value.                                                     |
+| Taken Vacation      | Percentage of vacation days already taken of the entitlement for the current year. The column header displays the average percentage value for your current filter settings.                                    |
 
 If employees belong to more than one planning unit throughout a year, the data for the entire year is always displayed, regardless of the filter setting. You only have to enter the data for each employee once.
 

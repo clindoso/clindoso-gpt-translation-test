@@ -18,12 +18,11 @@ injixo offers the following methods to show that employees are working from home
 
 1. Day status - Schedule an activity for the entire day and display it in the background of other scheduled activities.
 2. Schedule levels - Schedule an activity in another scheduling level and display this level next to your schedule.
-3. Comments - Add a text for a single day for each person.  
+3. Comments - Add a text for a single day for each person.
 
 ## Home office as day status
 
 To set up home office as day status, {% link_new create a new activity | features/administration/activities.md %} of type Absence. Do not check the **Plannable** checkbox. This prevents the activity from being scheduled automatically.
-
 
 Check the following checkboxes:
 

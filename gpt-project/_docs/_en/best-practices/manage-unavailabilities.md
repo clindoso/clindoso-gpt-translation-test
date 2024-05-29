@@ -26,7 +26,7 @@ This article provides an overview of the process. You can use it as a checklist.
 1. In _Plan > Configuration_{:.breadcrumbs} create a {% link_new new activity | features/administration/activities.md | #create-an-activity %}.
 2. Configure your activity as follows:
    - **Name**: Enter Unavailable. An abbreviation is generated automatically.
-   - **Type**:  Select **Absence**.
+   - **Type**: Select **Absence**.
    - Check the **Requestable in Me** checkbox.
    - (Optional) Check the **Allow as full-day activity** checkbox.
 3. Click _Create activity_{:.doc-button}.
@@ -57,12 +57,12 @@ In _Plan > Shift Center_{:.breadcrumbs}, you can see the details of approved tim
 
 1. Click the **Activities - Requirements** tab under the table. At the top, select a date range from the date picker and click _Apply_{:.doc-button}.
 2. Expand the relevant planning unit in the top table.
-3. Double-click a red cell labelled as Unavailable.  
+3. Double-click a red cell labelled as Unavailable.
 4. Click the **History** tab.  
-    You will see the details of the time-off request's approval:
-    - Date/Time: Date and time of the approval.
-    - Action: The action performed. In this case, Approve request.
-    - User: The person who approved the request.
+   You will see the details of the time-off request's approval:
+   - Date/Time: Date and time of the approval.
+   - Action: The action performed. In this case, Approve request.
+   - User: The person who approved the request.
 5. Click _OK_{:.doc-button}.
-  
+
 Go to _Plan > Time Off_{:.breadcrumbs} to {% link_new see approved, pending and rejected requests | features/scheduling/time-off/vacation-absences-management.md | #view-requests %}.

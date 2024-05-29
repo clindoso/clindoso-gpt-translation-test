@@ -88,7 +88,7 @@ You can identify events and public holidays in the graphs. Events, outages, and 
 1. In _Forecast > Workloads_{:.breadcrumbs}, select a workload.
 2. Select a time period from the date picker. Click on a week number to select the whole week, or click any day and drag to select a period shorter or longer than a week.
 3. Hover over the graphs to see events and public holidays.
-  <!-- {{ 3 | image: "Viewing Events", '80%', 'gif' }} -->
+<!-- {{ 3 | image: "Viewing Events", '80%', 'gif' }} -->
 
 ## Delete an event
 

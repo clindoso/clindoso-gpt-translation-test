@@ -31,26 +31,30 @@ You can also {% link_new switch between graph and table view | features/monitori
 1. Go to _Analyze > Dashboards_{:.breadcrumbs}.
 2. From the {% icon ellipsis_v %} on the right, select **Create New Dashboard**.
 3. Configure the following fields:
-  - **Name**: Unique name for your dashboard.
-  - **Layout**: Select the number and layout of your charts.
-  - **Untitled Chart**: Name for each chart. The names do not have to be unique.
+
+   - **Name**: Unique name for your dashboard.
+   - **Layout**: Select the number and layout of your charts.
+   - **Untitled Chart**: Name for each chart. The names do not have to be unique.
+
 4. Select a **date range** for each chart.
 5. (Optional) Activate the **Use Rolling Dates** option to shift the start date by one day every day.
 6. From the tree view on the left, drag and drop time series into the charts to visualize different key figures:
+
    - **Workloads**: History, Forecast, Import, and {% link_new forecast versions | features/forecast/injixo-forecast/save-forecast-versions.md %}.
    - **Planning units**: Staffing, staff requirements, and coverage for scheduled shifts and activities, plus shifts requested in Me.
    - **WFM Queues**: Workload data in WFM queues that you saved by clicking _Use forecast_{:.doc-button} in the workload page. The option may not be available, depending on your WFM plan.
 
-      > Note
-      >
-      > - The {% icon circle_exclamation %} in the legend of a chart is displayed if you have no data for a period.
-      > - In workloads, you may see special key figures depending on your integration, e.g. if your workloads only contain queues from a [Genesys Cloud integration](/add-genesys-cloud-integration/), you will see information related to abandoned calls, average speed of answer, and calls answered within service level.
+     > Note
+     >
+     > - The {% icon circle_exclamation %} in the legend of a chart is displayed if you have no data for a period.
+     > - In workloads, you may see special key figures depending on your integration, e.g. if your workloads only contain queues from a [Genesys Cloud integration](/add-genesys-cloud-integration/), you will see information related to abandoned calls, average speed of answer, and calls answered within service level.
 
 7. Click _Save_{:.doc-button}.<br>To return to the view mode, click _Close Edit mode_{:.doc-button}.
 
 ### Duplicate a dashboard
 
 To create a new dashboard with the same general properties as an existing dashboard, follow these steps:
+
 1. Go to _Analyze > Dashboards_{:.breadcrumbs}.
 2. From the drop-down menu, select a dashboard.
 3. From the {% icon ellipsis_v %}, select **Duplicate Dashboard**.

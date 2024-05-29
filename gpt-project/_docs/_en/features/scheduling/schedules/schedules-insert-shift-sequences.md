@@ -19,7 +19,7 @@ Shift sequences are fixed, repetitive sequences of shifts, activities, or availa
 
 Before you can insert shift sequences into your schedule, you need to do the following:
 
-- {% link_new Create | features/administration/shift-sequences.md %}  at least one shift sequence
+- {% link_new Create | features/administration/shift-sequences.md %} at least one shift sequence
 - {% link_new Assign | features/administration/employee-overview.md | #assign-a-shift-sequence %} the shift sequence(s) to a person
 
 ## Filter shift sequences
@@ -34,15 +34,15 @@ Before you can insert shift sequences into your schedule, you need to do the fol
 
    The **Overview** section shows shift sequences that match your filter. The table displays data that is set when you assign an existing shift sequence to a person:
 
-   | Option                 | Description                                                                                                                                                                                                                                                                       |
-   | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- |
-   | Personnel number       | The person's unique identifier                                                                                                                                                                                                                                               |
-   | Name                   | The name of the person to whom the shift sequence is assigned                                                                                                                                                                                                                                                                 |
-   | Shift Sequence         | The name of the assigned shift sequence                                                                                                                                                                                                                                                    |
-   | Sequence               | Defines the order in which shift sequences are inserted if a person has multiple shift sequences. Shift sequences with lower values are inserted first and may be overwritten by subsequent shift sequences.                                                                  |
-   | Employee row           | Defines which row of the shift sequence is used for the person.                                                                                                                                                                                                               |
-   | Reference date         | Start day of the shift sequence. If you use a shift sequence longer than seven days to plan several people, set different reference dates for them. This way, they are assigned the first week of the shift sequence for different weeks, and are not all assigned the same shift at the same time.
-   | Valid from<br>Valid to | The period for which the shift sequence has been assigned to the person. Outside the configured validity period, the shift sequence is not inserted into the person's schedule. If the validity period of the shift sequence lies completely within the selected time period, it is not displayed. |
+   | Option                 | Description                                                                                                                                                                                                                                                                                         |
+   | ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+   | Personnel number       | The person's unique identifier                                                                                                                                                                                                                                                                      |
+   | Name                   | The name of the person to whom the shift sequence is assigned                                                                                                                                                                                                                                       |
+   | Shift Sequence         | The name of the assigned shift sequence                                                                                                                                                                                                                                                             |
+   | Sequence               | Defines the order in which shift sequences are inserted if a person has multiple shift sequences. Shift sequences with lower values are inserted first and may be overwritten by subsequent shift sequences.                                                                                        |
+   | Employee row           | Defines which row of the shift sequence is used for the person.                                                                                                                                                                                                                                     |
+   | Reference date         | Start day of the shift sequence. If you use a shift sequence longer than seven days to plan several people, set different reference dates for them. This way, they are assigned the first week of the shift sequence for different weeks, and are not all assigned the same shift at the same time. |
+   | Valid from<br>Valid to | The period for which the shift sequence has been assigned to the person. Outside the configured validity period, the shift sequence is not inserted into the person's schedule. If the validity period of the shift sequence lies completely within the selected time period, it is not displayed.  |
 
 ## Insert shift sequences
 
@@ -60,8 +60,8 @@ Before you can insert shift sequences into your schedule, you need to do the fol
 3. (Optional) Change the target level. By default, the Schedule level is selected.
 4. Click _Insert shift sequences_{:.doc-button}.
 
-> Note  
->  
+> Note
+>
 > If deleted day models are still present in a shift sequence, they are still inserted into the schedule (marked with a dashed border in Schedules and Shift Center).
 
 ## Access result reports
@@ -76,7 +76,7 @@ By default, when you insert full-day activities into the schedule using shift se
 
 To protect partial-day activities of the types Absence, Illness, Vacation, or Meeting from being overwritten, activate scheduling rule _2648_{:.id-label} _Write protection for activities in the Shift Center_.
 
-> Note  
+> Note
 >
 > Shift sequences are inserted with the currently logged-in user account. Scheduling rules can be configured differently per user. If you have several accounts, check whether you are logged in with the correct account.
 

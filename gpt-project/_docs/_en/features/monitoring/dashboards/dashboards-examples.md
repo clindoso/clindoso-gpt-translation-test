@@ -49,7 +49,7 @@ To create a dashboard that compares forecasted calls with actual incoming calls,
 6. Drag and drop **Coverage** into the chart.<br>Each scheduling level has its own Staffing and Coverage version. Pick the version that matches the level you are using.
 7. Click _Save_{:.doc-button}.
 
-To compare the forecasted and actual Average Handle Time (AHT), create a similar chart using **AHT** and **AHT - Operational** data. 
+To compare the forecasted and actual Average Handle Time (AHT), create a similar chart using **AHT** and **AHT - Operational** data.
 
 ## Visualize absences per planning unit
 

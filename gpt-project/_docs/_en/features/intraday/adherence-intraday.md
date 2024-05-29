@@ -13,6 +13,7 @@ In _Intraday > Intraday Adherence_{:.breadcrumbs}, you can compare people's sche
 ## Prerequisites
 
 To see adherence data, make sure the following applies:
+
 - You have added an {% link_new integration | features/acd-integration/cloud/how-integrations-work.md %} that supports agent status data import.
 - You have set up the {% link_new agent status data import | features/acd-integration/cloud/import-agent-status-data.md %}.
 
@@ -38,7 +39,7 @@ The page shows different adherence score details:
 ### Staff overview table
 
 Under the total adherence score and the scores by interval, a table displays adherence details for the selected day. To sort the table by adherence score, click the **Adherence** header. To sort the table by name, click the **Name** header. See {% link_new filtering and sorting | features/intraday/real-time-adherence.md | #search-and-filter %}.
-Each row shows a person's adherence score. Differences between the person's scheduled activities and their actual activities are highlighted. 
+Each row shows a person's adherence score. Differences between the person's scheduled activities and their actual activities are highlighted.
 
 When a person's score drops below the configured adherence target score, their score is highlighted in red. {% link_new Matches | features/intraday/adherence-matches.md %} and {% link_new buffer times | features/intraday/real-time-adherence.md | #buffer-time %} may influence changes in status and adherence types. Learn more about the {% link_new status and types | features/intraday/real-time-adherence.md | #status %}.
 
@@ -69,7 +70,7 @@ On the right, you can see in detail when this person was scheduled and where the
 If you need to analyze adherence and conformance data for individual people over a longer time frame, e.g. to calculate bonus payments, you can download a report as a CSV file that includes aggregated adherence and conformance data. To download the Adherence report file , follow these steps:
 
 1. Select a **Planning unit** and/or a **Selection**.
-2. Click _Download report_{:.doc-button}.  
+2. Click _Download report_{:.doc-button}.
 3. In the **Download report** window, select a date range for the report. You can select any date range from one day to up to six months in the past.
 4. Click _Download report_{:.doc-button}.
 
@@ -92,8 +93,8 @@ Each row of data includes a link to display the related data in _Intraday > Intr
 
 ## Frequently asked questions
 
-| Question                            | Answer                                                                                                                                                                                        |
-| ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Why are some or all people missing? | Try to clear the search input. Check if the people you are looking for are scheduled today in the selected planning unit or selection.                                                        |
-| Why can't I select a specific date? | You can access historical adherence data for the six months prior to the current date, plus the current month (e.g. if today is July 15, you can select dates between January 1 and July 15.) |
-| Which time zone does Intraday adherence use? | Intraday adherence uses the selected planning unit's time zone. The time zone is displayed at the top right of the adherence timeline. |
+| Question                                     | Answer                                                                                                                                                                                        |
+| -------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Why are some or all people missing?          | Try to clear the search input. Check if the people you are looking for are scheduled today in the selected planning unit or selection.                                                        |
+| Why can't I select a specific date?          | You can access historical adherence data for the six months prior to the current date, plus the current month (e.g. if today is July 15, you can select dates between January 1 and July 15.) |
+| Which time zone does Intraday adherence use? | Intraday adherence uses the selected planning unit's time zone. The time zone is displayed at the top right of the adherence timeline.                                                        |

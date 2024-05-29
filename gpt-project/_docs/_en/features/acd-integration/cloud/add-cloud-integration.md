@@ -24,8 +24,8 @@ Cloud integrations fetch data directly from a cloud system. injixo supports a va
 
 ## Add a cloud integration
 
-1. Go to *Account > Integrations*{:.breadcrumbs}. The page shows all available integrations.
-2. Click *Add integration*{:.doc-button} and enter the required information. In this example, we're setting up the Five9 integration, but the process for setting up other cloud integrations is similar.
+1. Go to _Account > Integrations_{:.breadcrumbs}. The page shows all available integrations.
+2. Click _Add integration_{:.doc-button} and enter the required information. In this example, we're setting up the Five9 integration, but the process for setting up other cloud integrations is similar.
 3. Choose a unique name for your integration. The name should reflect the source of the data.
 4. Enter the **username** and **password** for a user that has an administrator role in your Five9 account.
 5. Configure further integration-specific details (i.e. the region of your Five9 account and how you would like to group the queues).

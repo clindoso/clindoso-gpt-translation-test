@@ -19,6 +19,7 @@ Use this article as a checklist to support your onboarding. Contact your consult
 ## Prerequisite
 
 Before you create a schedule, make sure you have correctly {% link_new set up your base configuration | getting-started/set-up-base-configuration.md %}.
+
 ## 1. Set up an integration
 
 Under _Account > Integrations_{:.breadcrumbs}, set up an {% link_new integration | features/acd-integration/cloud/how-integrations-work.md %} with your external system to upload historical data. The integration will upload data to injixo and create queues.
@@ -40,7 +41,6 @@ A {% link_new forecast version | features/forecast/injixo-forecast/save-forecast
 ## 5. Calculate staff requirements
 
 To create optimized schedules or run the job optimization, you must first {% link_new calculate the staff requirements | features/forecast/injixo-forecast/calculate-staff-requirements.md %} for the corresponding activities within your workloads.
-
 
 ## What's next?
 

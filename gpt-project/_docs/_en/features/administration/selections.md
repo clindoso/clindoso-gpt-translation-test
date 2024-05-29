@@ -35,11 +35,11 @@ If you are using injixo Essential, you can use selections to group people accord
 
 1. Go to _Plan > Configuration > Selections_{:.breadcrumbs}.
 2. Click the {% icon item-add %} in the upper left.  
-    A configuration panel opens on the right side.
+   A configuration panel opens on the right side.
 3. Complete the following fields:
-    - **Name**: Unique name for the selection (max. 50 characters).
-    - **Abbreviation**: Abbreviation for the name (max. 25 characters).
-    - **Description**: Optional description so that other users understand what the selection represents.
+   - **Name**: Unique name for the selection (max. 50 characters).
+   - **Abbreviation**: Abbreviation for the name (max. 25 characters).
+   - **Description**: Optional description so that other users understand what the selection represents.
 4. Click _OK_{:.doc-button}.
 
 ## Assign people to selections
@@ -50,7 +50,7 @@ To assign people to selections, you need to {% link_new create a selection | fea
 2. Click the person you want to assign to a selection.  
    A configuration panel opens on the right.
 3. In the **Selections** section, click the {% icon item-add %}.
-4. Complete the following fields:  
+4. Complete the following fields:
    - **Selection**: Click the selection you want to assign the person to.
    - (Optional) **Valid from/Valid to**: Date range to limit the selection's validity period. If you leave these fields blank, the selection is always valid. Learn more about {% link_new validity periods | features/administration/set-a-validity-period.md %}.
 5. Click _OK_{:.doc-button}.
@@ -81,7 +81,7 @@ To assign a selection to another selection, proceed as follows:
 2. Click the selection you want to use as a parent selection in the selections list.  
    A configuration panel opens on the right side.
 3. In the **Selections** section, click the {% icon item-add %}.
-4. Complete the following fields:  
+4. Complete the following fields:
    - **Selections**: Click the selection you want to assign as a child selection.
    - (Optional) **Valid from/Valid to**: Date range to limit the period in which the child selections are assigned to the parent selection. If you leave the fields blank, the assignment is always valid.
 5. Click _OK_{:.doc-button}.

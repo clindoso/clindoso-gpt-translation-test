@@ -33,23 +33,26 @@ New to integrations? Learn {% link_new the basics | features/acd-integration/clo
    The name will help you identify the source of data and determine which queue belongs to which integration.<br>Example: Avaya integration - Customer Support Team
 1. Install and connect {% link_new injixo Cloud Link | features/acd-integration/cloud/install-cloud-link.md %}.
 1. In the **Configuration** section, set up your integration:
- - Enter the [connection string](#connection-string) that defines the parameters required to connect the CMS database. 
- - Select your database time zone from the drop-down menu.
- - Check the **Import detailed agent statuses** checkbox to add information about skills (agent profile) and splits (call routing) to imported agent statuses.
- - To import real-time agent status data, check the **Import real-time data** checkbox. In this case, enter a port number in the **Port** field.<br>
-   injixo Cloud Link will open a listening TCP socket on the specified port. The Avaya Generic RTA service will connect to this port and start streaming real-time agent status data. The Avaya Generic RTA service is licensed and configured in Avaya.
+
+   - Enter the [connection string](#connection-string) that defines the parameters required to connect the CMS database.
+   - Select your database time zone from the drop-down menu.
+   - Check the **Import detailed agent statuses** checkbox to add information about skills (agent profile) and splits (call routing) to imported agent statuses.
+   - To import real-time agent status data, check the **Import real-time data** checkbox. In this case, enter a port number in the **Port** field.<br>
+     injixo Cloud Link will open a listening TCP socket on the specified port. The Avaya Generic RTA service will connect to this port and start streaming real-time agent status data. The Avaya Generic RTA service is licensed and configured in Avaya.
+
 1. Click _Save integration_{:.doc-button} to create the integration.
 
 The integration starts importing data into injixo. To import agent status data, you need to {% link_new map external user identifiers and activities | features/acd-integration/cloud/import-agent-status-data.md %} once your Avaya integration is set up. If you have activated the **Import real-time data** option before, pause your integration.
 
 ## Connection string
 
-The Avaya CMS integration needs the connection string to connect to your Avaya CMS database. Because Avaya CMS typically uses an IBM Informix database, you need to use a special connection string. 
+The Avaya CMS integration needs the connection string to connect to your Avaya CMS database. Because Avaya CMS typically uses an IBM Informix database, you need to use a special connection string.
 
 Connection string examples that use the IBM Informix ODBC Driver:<br>
+
 - `DRIVER={IBM INFORMIX ODBC DRIVER};SERVER=myServerAddress;DATABASE=myDatabase;HOST=myHost;SERVICE=myService;UID=myUsername;PWD=myPassword;PROTOCOL=onsoctcp;DELIMIDENT=y;` (native access via ODBC driver)
 - `DSN=AvayaCMS;DELIMIDENT=y;` (requires an ODBC connection named AvayaCMS)
-If your Avaya CMS does not use an IBM Informix database, you need to obtain the appropriate connection string for your specific database type and ODBC driver. Avaya only supports ODBC connectivity.
+  If your Avaya CMS does not use an IBM Informix database, you need to obtain the appropriate connection string for your specific database type and ODBC driver. Avaya only supports ODBC connectivity.
 
 ## Edit an Avaya CMS integration
 

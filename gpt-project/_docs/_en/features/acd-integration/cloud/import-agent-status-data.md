@@ -49,11 +49,11 @@ To avoid unsuccessful imports, pay attention to the correct spelling, the use of
 To import agent status data, add external identifiers to all people for whom you want to import data:
 
 1. Go to _People_{:.breadcrumbs} and select a person.
-2. At the top right of the person profile window, click **Edit**.
-3. Scroll down to the **External identifiers** section and click _Assign external identifier_{:.doc-button}
+2. On the **Profile** tab, scroll down to the **External identifiers** section and click {% icon pencil | icon-only %} **Edit**.
+3. If there is no identifier assigned, click _Assign external identifier_{:.doc-button}.<br>If there already is at least one identifier assigned, click _+ Add external identifier_{:.doc-button}.
 4. From the **Integration** drop-down menu, select the integration which imports your agent statuses.
 5. In the **Identifier** field, enter the external identifier from your integration for this person.
-6. Click _Save changes_{:.doc-button}.
+6. Click _Save_{:.doc-button}.
 
 After you have updated the person's profile section, the next import will include agent status data.
 

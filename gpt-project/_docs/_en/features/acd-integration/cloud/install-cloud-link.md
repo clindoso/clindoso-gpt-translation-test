@@ -69,7 +69,6 @@ To install a second Cloud Link service on Windows, add a new integration and pro
    >
    > For example, the third instance requires `":instance.2"`, the fourth instance`":instance.3"`, and so on.
 
-  
 4. Follow the instructions in the installation procedure.  
    The installer will suggest a new default installation directory that includes the instance, e.g. (Instance 1).  
    Tip: To identify which integration the installation belongs to, you can add ACD and import type details, e.g. (ACD - agent import) to the default installation directory.  

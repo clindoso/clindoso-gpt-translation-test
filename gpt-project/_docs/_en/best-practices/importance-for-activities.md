@@ -22,13 +22,14 @@ By default, the job optimization will schedule employees for activities with low
 As a consequence, activities with higher staff requirements might be understaffed if there are not enough employees available. You can bypass this setting and prioritize activities with higher staff requirements by using the importance value (default: 100%). The higher an activity's importance value is, the more the job optimization will attempt to match the staff requirements as closely as possible.
 For example, you can use this functionality if you need to prioritize one activity over another, such as B2B hotline over B2C hotline.
 
-If an activity requires five employees, scheduling five employees would result in the optimal coverage. To prioritize this activity, set a high importance value (100%). The job optimization will then try to schedule employees so that staff requirements are accurately met. 
+If an activity requires five employees, scheduling five employees would result in the optimal coverage. To prioritize this activity, set a high importance value (100%). The job optimization will then try to schedule employees so that staff requirements are accurately met.
 
 Activities that can be overstaffed in your schedule should have a lower importance value. With an importance value of 20%, the job optimization would schedule the exact number of required employees or more, if they are available.
 
 ## Prerequisites
 
 For prioritizing activities with the importance value, the following must be true:
+
 - The activities that need to be prioritized are configured as **Plannable** and **Replaceable**.
 - The employees who need to work on the prioritized activities are scheduled on the **Present** activity (ID 1).
 

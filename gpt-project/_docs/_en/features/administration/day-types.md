@@ -36,7 +36,7 @@ On some days, your business hours might differ from the standard, e.g. when ther
 
 ## Holiday mode
 
- To mark a day type as a public holiday, activate the **Holiday Mode** checkbox in the day type configuration window.
+To mark a day type as a public holiday, activate the **Holiday Mode** checkbox in the day type configuration window.
 
 ### Create day types for public holidays
 
@@ -53,7 +53,7 @@ Holiday mode will reduce people's working hours on this day accordingly. If you 
 > Warning
 >
 > If you change the holiday mode of a day type that is currently in use, you must recalculate time accounts or {% link_new target work accounts | features/scheduling/planning-periods/target-work-accounts.md %}.
-   
+
 1. Select a day type from the list.
 2. Edit the data that you want to change.
 3. Click _OK_{:.doc-button}.
@@ -61,7 +61,7 @@ Holiday mode will reduce people's working hours on this day accordingly. If you 
 ## Delete a day type
 
 > Note
-> 
+>
 > Before you delete a day type, {% link_new remove it from all planning calendars | features/administration/configure-planning-calendars.md | #remove-day-types-from-the-planning-calendar %}. You cannot delete default day types.
 
 1. Select a day type from the list.
@@ -69,6 +69,7 @@ Holiday mode will reduce people's working hours on this day accordingly. If you 
 
 ## Day types in scheduling
 
-injixo considers day types during scheduling. 
-- If your planning unit is regularly open on a public holiday, you only need to {% link_new add business hours to the planning unit | features/administration/create-and-manage-planning-units.md | #add-business-hours %}.  
+injixo considers day types during scheduling.
+
+- If your planning unit is regularly open on a public holiday, you only need to {% link_new add business hours to the planning unit | features/administration/create-and-manage-planning-units.md | #add-business-hours %}.
 - If your planning unit is closed on a public holiday, or if it is open with special opening hours, read the article {% link_new Schedule public holidays | best-practices/scheduling-public-holidays.md %}.

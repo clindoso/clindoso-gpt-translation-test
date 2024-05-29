@@ -22,7 +22,7 @@ To import a forecast, you need at least:
 
 - An {% link_new integration | features/acd-integration/cloud/how-integrations-work.md %} that imports data
 - A workload with a {% link_new queue | features/forecast/injixo-forecast/create-workloads.md | #queues-and-channels %}
- 
+
 ### Create a queue
 
 To create a queue, you need to import historical contact data using an integration. Queues are automatically created by integrations.
@@ -51,17 +51,16 @@ You can import a forecast into an existing workload, or add any of your queues t
 
 Your import data must match the following requirements:
 
-| Requirement                          | Details                                                                                                                            |
-| ------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------- |
-| Timestamp format                     | YYYY-MM-DD HH:MM                                                                                                                   |
-| Volume data                          | Whole numbers (integers)                                                                                                           |
-| AHT data                             | Whole numbers (integers) or decimal values (with a decimal point)                                                                  |
-| Header row format                   | `Timestamp;Offered;AHT` or with custom text (e.g., `Timestamp;Offered_customtext;AHT_customtext`).                                 |
-| Separator characters                 | Semicolon or comma (auto-detected)                                                                                                 |
-| Maximum file size                    | 20 MB<br>Keep files under 20,000&nbsp;rows (recommended).                                                                         |
-| Time zone                            | Must match the time zone of the queue.                                                                                             |
-| Interval length                      | Must match the interval length of the queue (15, 30, or 60 minutes).                                                               |
-
+| Requirement          | Details                                                                                            |
+| -------------------- | -------------------------------------------------------------------------------------------------- |
+| Timestamp format     | YYYY-MM-DD HH:MM                                                                                   |
+| Volume data          | Whole numbers (integers)                                                                           |
+| AHT data             | Whole numbers (integers) or decimal values (with a decimal point)                                  |
+| Header row format    | `Timestamp;Offered;AHT` or with custom text (e.g., `Timestamp;Offered_customtext;AHT_customtext`). |
+| Separator characters | Semicolon or comma (auto-detected)                                                                 |
+| Maximum file size    | 20 MB<br>Keep files under 20,000&nbsp;rows (recommended).                                          |
+| Time zone            | Must match the time zone of the queue.                                                             |
+| Interval length      | Must match the interval length of the queue (15, 30, or 60 minutes).                               |
 
 Alternatively, you can {% link_new download a forecast (or a forecast version) | features/forecast/injixo-forecast/download-forecast.md %} in CSV format and use it as a template for your own import file. The forecast only reads the `Timestamp`, `Offered`, and `AHT` columns. Other columns, such as `Offered_operational` and `AHT_operational` in the example below, are ignored.
 
@@ -110,5 +109,5 @@ If there is no data for one or more intervals, you can edit your CSV file as fol
 4. Click _Import data_{:.doc-button}.<br>
    The window updates and displays whether the import was successful or not.
 5. Click _Done_{:.doc-button}.<br>
-Refresh the page to see the updated graph for the import period. The imported values are displayed as a brown line in the graphs in the sections for volume and AHT.
+   Refresh the page to see the updated graph for the import period. The imported values are displayed as a brown line in the graphs in the sections for volume and AHT.
    To hide the imported forecast in the graph, click the Show/hide icon {% icon eye | icon-only %} in the legend next to **Import**.

@@ -40,7 +40,7 @@ Some employees are skilled for an activity called _Travels_. Via Shift Bidding, 
 4. Select the **Date range** in which you want to optimize activities. The date range is pre-filled with the currently selected time range in Schedules.
 5. Select a **Planning unit**.
 6. (Optional) To limit the optimization to a selection of employees, pick a **Selection**.
-7. Click **Start job optimization**. 
+7. Click **Start job optimization**.
    The background process starts. You will see a green notification if it was started successfully. A red message appears when the job couldn't be started.
 
 {{ 1 | image: 'Input dialog for job optimization', '70%' }}

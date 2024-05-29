@@ -19,15 +19,16 @@ related_articles:
     filepath: features/scheduling/schedules/schedules-optimized-schedules.md
 ---
 
-injixo provides three places where you can create and edit an employee, depending on your use case. The table below gives you an overview of the different places for employee configuration in injixo and describes what you can do where.
+injixo provides two places where you can create and edit a person's account, depending on your use case. The table below gives you an overview of the different places for account configuration in injixo and describes what you can do where.
 
-| Place                                           | Description              |
-| ----------------------------------------------- | ------------------------ |
-| _Plan > Configuration > Employees_{:.breadcrumbs}   | {% link_new Configure an employee for scheduling | features/administration/employee-overview.md | #overview-of-employee-settings %}. Employees without assigned planning units will not appear on the list.      |
-| _Account > Users_{:.breadcrumbs}                                 | Manage user access rights via {% link_new user roles | getting-started/configure-user-roles.md | #create-a-new-user-role %}, {% link_new unlock locked users | getting-started/manage-user-accounts.md | #unlock-users %}, {% link_new set a new password for users | getting-started/manage-user-accounts.md | #set-a-new-user-password %}, and {% link_new check which users are billed | getting-started/how-does-billing-work.md | #view-billed-and-unbilled-users %} and which are not. You can also {% link_new delete users | getting-started/manage-user-accounts.md | #delete-a-user-account %} so that you are no longer billed for them. |
-| **People**                                                           | {% link_new Create and manage | features/people/manage-people.md %} a person's account and manage contact and address information. |
+| Place                                | Possible actions                                |
+| ------------------------------------ | ----------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | --------------------------------------- | -------------------------------------------------------------------------- |
+| **People**                           | - {% link_new Create and manage people accounts | features/people/configure-people-settings.md %}<br>- Manage people's contact and address information<br>- Manage access rights via roles<br>- Unlock locked accounts<br>- Set a new password for people<br>- Check which accounts are {% link_new getting billed | getting-started/manage-user-accounts.md                                                                 | #view-active-and-inactive-people %} and which are not<br>- {% link_new Delete people accounts | getting-started/manage-user-accounts.md | #delete-a-person %} so that your organization is no longer billed for them |
+| **Plan > Configuration > Employees** | {% link_new Configure employees for scheduling  | features/administration/employee-overview.md                                                                                                                                                                                                                     | #overview-of-employee-settings %}. Employees without assigned planning units do not appear in the list. |
 
-In _Plan > Configuration > Employees_{:.breadcrumbs}, users without admin access can only see employees assigned to the planning units they have permissions for. Employees who are not assigned to a planning unit do not appear in the list, even if All is selected in the planning unit and selection drop-down menus. Users with admin access can see all employees.
+> The list in _Plan > Configuration > Employees_{:.breadcrumbs} does not automatically show all employees in the organization
+>
+> In _Plan > Configuration > Employees_{:.breadcrumbs}, people without admin access can only see employees assigned to the planning units for which they have at least read access. If employees are not assigned to such a planning unit or if their {% link_new assignment to such planning unit is not valid | features/people/configure-people-settings.md %} for the current day, they do not appear in the list, even if **All** is selected in the planning unit and selection drop-down menus. People with admin access can always see all employees in the organization.
 
 Employees, users and people are synchronized, so you only have to create an employee once and you will also only be billed once.
 
@@ -42,7 +43,7 @@ To create an employee with the basic settings, follow the steps below:
 2. In the action bar, click the {% icon item-add %}.
 3. In the **General** section, add a unique **Personnel number**.
 4. In the **Personal data** section, add the **Last name** of the employee.
-5. In the **injixo Login (Email)** field, enter the email address the employee is going to use for injixo. A user login for injixo Me is automatically created. 
+5. In the **injixo Login (Email)** field, enter the email address the employee is going to use for injixo. A user login for injixo Me is automatically created.
 6. {% link_new Set a password | features/injixo-me/set-up-injixo-me/give-employees-access-to-injixo-me.md %} for the employee, so that they can log in to injixo.<br>You can do this after finishing the basic configuration of the employee.
 7. Click _OK_{:.doc-button}.<br>The system automatically sets the join date to the current day. You can manually change it later in the [Staff membership section](#other-settings).
 
@@ -57,11 +58,10 @@ After you have created an employee with the mandatory basic settings, you can co
 Prerequisite: You have set up {% link_new all elements required for scheduling | getting-started/set-up-base-configuration.md | #required-configuration-elements %}.
 
 1. Click an employee in the list.<br>
-You can use the blue quick links in the upper right to quickly navigate to a section.
+   You can use the blue quick links in the upper right to quickly navigate to a section.
 2. Click the {% icon item-add %} in a section to add a new setting. To edit an existing setting, click the {% icon item-edit %}.<br>Learn more about the [individual setting options](#overview-of-employee-settings).
 3. (Optional) In some sections, you can configure {% link_new Valid From and Valid To dates | features/administration/set-a-validity-period.md %} that limit the validity period for a setting.
 4. To save your changes, click _OK_{:.doc-button}.
-
 
 ## Overview of employee settings
 
@@ -76,7 +76,6 @@ The following list shows the mandatory configuration items you need to assign to
 > You cannot add assignments with overlapping {% link_new validity periods | features/administration/set-a-validity-period.md %}.
 > Past and future assignments are hidden by default. To show them, click the Display all icon {% icon assignment-history | icon-only %}.
 
-
 - {% link_new Contracts | features/administration/create-contracts.md %}: The drop-down menu shows all available contracts. Choose the right contract for your employee and assign it to them.
 - {% link_new Skill levels | features/administration/work-with-skills.md %}: Skill levels reflect how qualified an employee is to work on a certain task. Select one or more skill levels from the drop-down menu.
 - {% link_new Activities | features/administration/activities.md %}: Activities are the tasks an employee can work on based on their skills. The activities section is auto-populated after assigning a skill level to an employee. Activities that all employees can work on do not require a skill, e.g. the preset activities Present and Vacation.
@@ -90,12 +89,11 @@ The following settings are not mandatory but can also be used for scheduling. To
 
 - {% link_new Day models | features/administration/daymodels/daymodel-creation.md %}: By default, injixo uses all day models assigned to the planning unit to create schedules for your employees. If you assign personal day models to an employee, the schedule optimization will only use these specific day models for the employee. If you want injixo to only schedule employees who have been assigned personal day models, you can activate the scheduling rule _2661_{:.id-label} _Day model assignment to employee_.
 
-- {% link_new Shift sequences | features/administration/shift-sequences.md %}: Shift sequences contain day models or activities with a repeating weekly pattern. If you want to use shift sequences to create schedules for your employees, you have to create and [assign shift sequences to an employee](#assign-a-shift-sequence) first. You can also choose to assign more than one shift sequence to an employee, for example, if you want to use a different shift sequence for weekends and weekdays. 
+- {% link_new Shift sequences | features/administration/shift-sequences.md %}: Shift sequences contain day models or activities with a repeating weekly pattern. If you want to use shift sequences to create schedules for your employees, you have to create and [assign shift sequences to an employee](#assign-a-shift-sequence) first. You can also choose to assign more than one shift sequence to an employee, for example, if you want to use a different shift sequence for weekends and weekdays.
 
 - {% link_new Selections | features/administration/selections.md %}: Selections serve as a type of filter that you can use to display a filtered group of employees in an overview or to perform an action simultaneously for a specific group of employees. You can create one or several selections from the Selections drop-down menu. Examples of selections could be a group of employees who are always scheduled in the same way, have the same contract, work in shift sequences, carpool to work, or who are scheduled first due to their full-time status.
 
 - {% link_new Work time pattern models | features/administration/work-time-pattern-models.md %}: Use work time pattern models to limit the automatic scheduling to a subset of all available day models. You can assign several work time pattern models to one employee, but only if their validity periods do not overlap. Set a reference date to define the start date for the work time pattern model.
-
 
 - External systems: Assign {% link_new external user identifiers | features/acd-integration/cloud/import-agent-status-data.md | #map-external-identifiers-to-people-in-injixo %} which are needed for the agent status import from your ACD.
 
@@ -113,12 +111,12 @@ The following section provides an overview of the remaining settings in the empl
 
 Some of the settings in the Miscellaneous section are relevant for scheduling and others are not. The following table provides an overview of the setting details.
 
-| Setting        | Relevant for scheduling | Description                |
-|----------------| ------------------------|----------------------------|
-|Color       | No                      | Pick a color to quickly identify the employee in the schedule.  |
-|Date and place of birth  |       No |  Add the employee's date and place of birth.  |
-|Schedule position  | Yes | Defines the sorting order for the {% link_new Sort by Schedule Position | features/scheduling/shiftcenter/sort-and-filter-items.md | #sort-the-items-of-a-level %} functionality in Shift Center. The default value is 0 and Shift Center will sort in ascending order.  |
-|Shift assignment | Yes | The checkbox is checked by default and is required if you want to schedule employees automatically. If you do not want this, uncheck the checkbox. You can still manually assign shifts and insert shift sequences for this employee.  |
+| Setting                 | Relevant for scheduling | Description                                                                                                                                                                                                                           |
+| ----------------------- | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| Color                   | No                      | Pick a color to quickly identify the employee in the schedule.                                                                                                                                                                        |
+| Date and place of birth | No                      | Add the employee's date and place of birth.                                                                                                                                                                                           |
+| Schedule position       | Yes                     | Defines the sorting order for the {% link_new Sort by Schedule Position                                                                                                                                                               | features/scheduling/shiftcenter/sort-and-filter-items.md | #sort-the-items-of-a-level %} functionality in Shift Center. The default value is 0 and Shift Center will sort in ascending order. |
+| Shift assignment        | Yes                     | The checkbox is checked by default and is required if you want to schedule employees automatically. If you do not want this, uncheck the checkbox. You can still manually assign shifts and insert shift sequences for this employee. |
 
 ## Use mass update
 
@@ -136,7 +134,7 @@ To assign a shift sequence, follow the steps below:
 4. Specify the sequence.<br>This setting is only relevant if you need to assign more than one shift sequence to an employee. Shift sequences with lower values are inserted first and can be overwritten by subsequent ones.
 5. Set a reference date that defines the start day of the shift sequence.
 6. Click _OK_{:.doc-button}.
-You can now {% link_new insert shift sequences | features/scheduling/schedules/schedules-insert-shift-sequences.md %} into the schedule.
+   You can now {% link_new insert shift sequences | features/scheduling/schedules/schedules-insert-shift-sequences.md %} into the schedule.
 
 ## Delegate employees
 

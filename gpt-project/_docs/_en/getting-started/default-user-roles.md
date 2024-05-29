@@ -1,6 +1,6 @@
 ---
-title: Default user roles
-description: Learn about the access rights of default user roles in injixo.
+title: Default roles
+description: Learn about the access rights of default roles in injixo.
 toc: true
 product_label:
   - essential
@@ -12,9 +12,9 @@ redirect_from:
 redirect_reason: Updated filename on 05 December 2022
 ---
 
-## Default user roles
+## Default roles
 
-In each role category, injixo provides one default user role with pre-defined access rights. In injixo Advanced and Enterprise WFM, you can customize the default user roles and/or {% link_new add your own user roles | getting-started/configure-user-roles.md %}. Note: The Other role category does not have a default user role.
+In each role category, injixo provides one default role with pre-defined access rights. In injixo Advanced and Enterprise WFM, you can customize the default roles and/or {% link_new add your own roles | getting-started/configure-user-roles.md %}. Note: The Other role category does not have a default role.
 
 | **Role category**     | **Default access rights**                                                                                                                                                                    |
 | --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -23,9 +23,9 @@ In each role category, injixo provides one default user role with pre-defined ac
 | Supervisor (basic)    | Read-only access to the Schedule level in {% link_new Schedules                                                                                                                              | features/scheduling/schedules/schedules-overview.md %} and {% link_new Shift Center | features/scheduling/shiftcenter/shift-center-overview.md %}. Access to {% link_new Exchange overview | features/scheduling/view-approve-shift-swap-requests.md %} and {% link_new Time Off | features/scheduling/time-off/vacation-absences-management.md %} to manage shift swaps and time-off requests. No access to configuration data. |
 | Supervisor (advanced) | All functionalities of Supervisor (basic), full access to Shift Center and Schedules, permission to change schedules in intraday management, and full access to specific configuration data. |
 | Finance               | Access to user and billing information, as well as invoices for injixo services.                                                                                                             |
-| Trainer | No default permissions. |
+| Trainer               | No default permissions.                                                                                                                                                                      |
 
-Note: The tables in this article list components and features for relevant default user roles. The green checkmark icon <i class="fa fa-check" style="color:#1cb396"></i> indicates full (read and write) access. Because your WFM plan also determines available functionality, you may not have access to every item listed.
+Note: The tables in this article list components and features for relevant default roles. The green checkmark icon <i class="fa fa-check" style="color:#1cb396"></i> indicates full (read and write) access. Because your WFM plan also determines available functionality, you may not have access to every item listed.
 
 ## Access to components and features
 
@@ -84,7 +84,7 @@ Click _Account_{:.menu-item} in the main navigation to access the features below
 | ------------------ | :---------------------: | :---------------------: | :---------------------: |
 | **Account**        |                         |                         |                         |
 | **User**           | <i class="fa fa-check"> |                         |                         |
-| **User roles**     | <i class="fa fa-check"> |                         |                         |
+| **Roles**          | <i class="fa fa-check"> |                         |                         |
 | **Billing**        |                         |                         |                         |
 | Subscription       | <i class="fa fa-check"> |                         | <i class="fa fa-check"> |
 | Invoices           | <i class="fa fa-check"> |                         | <i class="fa fa-check"> |

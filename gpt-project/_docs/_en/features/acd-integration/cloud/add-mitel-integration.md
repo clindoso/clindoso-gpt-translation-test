@@ -33,12 +33,14 @@ New to integrations? Learn {% link_new the basics | features/acd-integration/clo
 2. Install and connect {% link_new injixo Cloud Link | features/acd-integration/cloud/install-cloud-link.md %}.
 3. In the **Regional Settings** section, select your **ACD time zone**.
 4. In the **Database credentials** section, set up your integration:
- - Enter your database host and port.
- - Enter your database username and password.
+
+   - Enter your database host and port.
+   - Enter your database username and password.
+
 5. If you want to import agent status data, check the checkbox **Import agent status data** in the **Configuration** section.<br>Note: To successfully import agent status data, you first need to {% link_new map external user identifiers and activities | features/acd-integration/cloud/import-agent-status-data.md %}.
 6. Click _Save integration_{:.doc-button}.
 
-The integration starts importing data into injixo. 
+The integration starts importing data into injixo.
 
 ## Edit a Mitel integration
 

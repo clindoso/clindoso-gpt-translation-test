@@ -27,13 +27,13 @@ To create a new contract, go to _Plan > Configuration > Contracts_{:.breadcrumbs
 
 1. Click the {% icon item-add %} at the top left.
 2. In the **General** section, enter the basic information for the contract:<br>
-    - **Name**: Enter a unique name (max. 50 characters).
-    - **Abbreviation**: Enter the name or a shorter version of it (max. 25 characters).
-    - **Color**: The color can help you identify the contract.
+   - **Name**: Enter a unique name (max. 50 characters).
+   - **Abbreviation**: Enter the name or a shorter version of it (max. 25 characters).
+   - **Color**: The color can help you identify the contract.
 3. In the **Working Days/Wk.** section, enter the number of working days per week.
 4. In the **Calculation of the Workdays** section, choose a calculation method: <br>
-    - **Standard** respects the order of the days in the scheduling week.<br>
-    - **Flexible** freely chooses the working days within the planning unit's business hours.
+   - **Standard** respects the order of the days in the scheduling week.<br>
+   - **Flexible** freely chooses the working days within the planning unit's business hours.
 5. Enter the [**Work Time Guidelines**](#work-time-guidelines) and [**Working Hours for Each Day of the Week**](#working-hours-for-each-day-of-the-week).
 6. (Optional) Configure the [**AutoScheduler Parameters**](#autoscheduler-parameters) or [**Scheduling parameters**](#scheduling-rules).
 7. To save your contract, click _OK_{:.doc-button}.
@@ -50,14 +50,17 @@ Work time guidelines for the minimum, target, and maximum working hours are esse
 
 ### Week
 
-- **Minimum**: Enter the minimum number of working hours per week. You can set the start of the scheduling week with Setting _48420_{:.id-label}. You can define the number of days in the weekend with Setting _48421_{:.id-label}.
-- **Target**: Enter the target working hours per week. This value is required if you do not enter any values in the field **Working Hours for Each day of the Week**. You can set the start of the scheduling week with the Setting _48420_{:.id-label}.
-- **Maximum**: Enter the maximum number of working hours per week. This parameter is verified by the scheduling parameters _2618_{:.id-label} and _2629_{:.id-label}. 
+- **Minimum**: Enter the minimum number of working hours per week.
+- **Target**: Enter the target working hours per week. This value is required if you do not enter any values in the field **Working Hours for Each day of the Week**.
+- **Maximum**: Enter the maximum number of working hours per week. This parameter is verified by the scheduling parameters _2618_{:.id-label} and _2629_{:.id-label}.
+
+> Change start of the week
+>
+> By default, the start of the week is set to either Sunday or Monday, depending on your region. If you need to set it to another day, contact your consultant.
 
 ### Month
 
 - **Maximum**: Enter the maximum working hours per month. This parameter is verified via the scheduling parameter _2619_{:.id-label}.
-
 
 ## Working hours for each day of the week
 
@@ -70,12 +73,11 @@ Leaving a field blank will default to the formula: [Weekly Target Hours/Number o
 
 ## AutoScheduler parameters
 
-
 - **Maximum Number of Successive Workdays**: Fill in this field if your planning unit is open 7/7 days. Enter the maximum number of consecutive working days that the **Create optimized schedule** functionality must take into account. For example, if a person works 5 days per week, use this parameter to prevent them from working 10 consecutive days.
 - **Minimum Number of Days Off per Week**: Fill in this field if your planning unit is open on the weekends. Enter the minimum number of non-working days that the **Create optimized schedule** functionality must take into account for each scheduling week.
 - **Minimum Number of Successive Days Off per Week**: Fill in this field if you want to guarantee that your people have at least one period of consecutive days off per week. Enter the minimum number of consecutive non-working days per week that the **Create optimized schedule** functionality must respect for each scheduling week.
 - **Maximum Number of Consecutive Days Off**: Fill in this field if you want to limit the number of consecutive days off for your people to ensure consistent staffing levels and avoid long breaks. Enter the maximum number of consecutive non-working days that the **Create optimized schedule** functionality must take into account. The value is not checked per week but across weeks.
-- **Minimum Rest Period Between Two Shifts (in Hours)**: Fill in this field if you need to comply with labor laws regarding rest periods between shifts. Enter the minimum rest period that the **Create optimized schedule** functionality must take into account between two consecutive shifts.	
+- **Minimum Rest Period Between Two Shifts (in Hours)**: Fill in this field if you need to comply with labor laws regarding rest periods between shifts. Enter the minimum rest period that the **Create optimized schedule** functionality must take into account between two consecutive shifts.
 - **Minimum Number of Working Days per Week**: Fill in this field to maintain a minimum level of staffing on a weekly basis in your planning unit, to ensure that there are always enough people to handle the expected call volume. Enter the minimum number of working days to be scheduled per scheduling week.
 - **Use Target Work Account instead of Weekly Contractual Target**: Check this checkbox if you want the **Create optimized schedule** functionality to use the values from calculated target work accounts. Learn more about {% link_new target work accounts | features/scheduling/planning-periods/target-work-accounts.md %}.
 - **Max. 1 Working Saturday in x No. of Weeks**: Fill in this field if you want to ensure a fair distribution of weekend work among people and prevent the same people from consistently working on Saturdays. Enter the maximum number of weeks (1-5) on which a person can work on a Saturday. For example, a value of 2 means every other Saturday.
@@ -99,6 +101,6 @@ Contract-specific scheduling rules ensure that the conditions of each contract a
 
 You can see the status of each scheduling rule in the list:
 
-  - Gray: The rule is deactivated and won't be considered during scheduling.
-  - Yellow: The rule is in soft mode. Breaching this rule will generate a warning during scheduling, but the action will still proceed.
-  - Red: The rule is fully activated. Any violation of the contract will result in an error message detailing the specific rule violation.
+- Gray: The rule is deactivated and won't be considered during scheduling.
+- Yellow: The rule is in soft mode. Breaching this rule will generate a warning during scheduling, but the action will still proceed.
+- Red: The rule is fully activated. Any violation of the contract will result in an error message detailing the specific rule violation.

@@ -20,7 +20,7 @@ The following requirements must be met in order to integrate injixo into the IdP
 - Federation metadata URL access via web
 - The email address registered in injixo and your IdP must be connected to a mailbox
 
-> To improve security, activate encrypted assertions/token encryption (strongly recommended).
+> To improve security, activate encrypted assertions/token encryption.
 
 ## Activate SSO for your account
 
@@ -36,18 +36,18 @@ Only users with admin access can activate SSO.
    - File uploads supported: Click _{% icon download | icon-only %} Download_{:.doc-button} and complete the IdP configuration with the downloaded XML file.
    - File uploads not supported: Click **Service Provider details** and add the displayed URLs to your IdP configuration.
 
-4. (Optional) If you use encrypted SAML assertions, click _{% icon download | icon-only %} Download_{:.doc-button} in the **Token Encryption** section. Add the downloaded certificates to your IdP configuration.
+4. (Optional) If you use encrypted SAML assertions, click _{% icon download | icon-only %} Download_{:.doc-button} in the **Token encryption** section. Add the downloaded certificates to your IdP configuration. The certificate has a limited validity. Our engineers replace the certificate with a new one six weeks in advance of the end of the validity. Both certificates are supported during the six-week period.
 5. Depending on whether your IdP provides an URL for federation metadata, finish the configuration as follows:
 
    - IdP provides federation metadata URL: Copy your federation metadata URL for the registered application from your IdP. Paste the URL into the **Federation Metadata URL** field in the **Identity Provider** section.
    - IdP does not provide federation metadata URL: Download the Federation Metadata XML file and host it yourself. As an example, learn how to set up your own custom [SAML application with Google](https://support.google.com/a/answer/6087519?hl=en).
 
-6. Click _Save configuration_{:.doc-button}.  
-   > SSO is now active  
-   >  
+6. Click _Save configuration_{:.doc-button}.
+   > SSO is now active
+   >
    > Users can still log in with their username and password. To deactivate SSO again, click _Disable_{:.doc-button}.  
-   > For a higher level of security, [enforce SSO for all users](#enforce-sso-for-all-users) after testing the configuration in the next step. 
-   
+   > For a higher level of security, [enforce SSO for all users](#enforce-sso-for-all-users) after testing the configuration in the next step.
+
 ## Test the SSO configuration
 
 Click _Test configuration_{:.doc-button} to test the login through the IdP. The IdP generates a SAML response that is sent to injixo. You are redirected to your IdP's login page, where you enter the IdP credentials. If the IdP configuration is correct and the authentication process is successful, you will be logged in to injixo.
@@ -55,9 +55,10 @@ Click _Test configuration_{:.doc-button} to test the login through the IdP. The 
 {{ 4 | image: 'Successfully testing the SSO configuration for the current user', '80%' }}
 
 ### Test failed? Configure the SAML response
+
 <!-- A valid SubjectConfirmation was not found on this Response in our internal server logs -->
 
-The SAML response from the IdP contains the authenticated user's assertion with attributes and profile information. If the process was not successful and you see an error message, check the application configuration, the user configuration, and the Recipient, InResponseTo, NotBefore, and NotOnOrAfter attributes set in the IdP. 
+The SAML response from the IdP contains the authenticated user's assertion with attributes and profile information. If the process was not successful and you see an error message, check the application configuration, the user configuration, and the Recipient, InResponseTo, NotBefore, and NotOnOrAfter attributes set in the IdP.
 
 You can debug the SubjectConfirmation XML element in the SAML response in your browser's dev tools or in external SAML tools. To see the unencrypted response in plain text, deactivate encrypted assertions.
 

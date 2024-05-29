@@ -22,7 +22,7 @@ To configure skills, go to _Plan > Configuration > Skills_{:.breadcrumbs}.
 
 ## Create skills
 
-Create at least one skill for each activity that requires a particular ability. When you create a skill, injixo sets the default skill level to 100%. Skill levels reflect how proficient people need to be to work on an activity, e.g. 100% proficient in English but only 50% proficient in Spanish. You can create different skill levels for one skill. 
+Create at least one skill for each activity that requires a particular ability. When you create a skill, injixo sets the default skill level to 100%. Skill levels reflect how proficient people need to be to work on an activity, e.g. 100% proficient in English but only 50% proficient in Spanish. You can create different skill levels for one skill.
 
 > If people do not need specific abilities to work on an activity, you do not need to create a skill for it.
 
@@ -31,9 +31,9 @@ Create at least one skill for each activity that requires a particular ability. 
    The abbreviation is auto-generated, but you can edit it.
 3. (Optional) Change the default configuration of a skill level.
 4. (Optional) Click _Add skill level_{:.doc-button} to add additional skill levels, if you have people who are less proficient at the activity. See also: [Calculate suitability using rating and weighting](#calculate-suitability-using-rating-and-weighting).
-5. Click _Create skill_{:.doc-button}.  
+5. Click _Create skill_{:.doc-button}.
 
- Next, you can [assign a skill level to a person](#assign-skill-levels-to-a-person) and [assign the skill to an activity](#assign-skills-to-activities).
+Next, you can [assign a skill level to a person](#assign-skill-levels-to-a-person) and [assign the skill to an activity](#assign-skills-to-activities).
 
 ## Duplicate skills
 
@@ -65,22 +65,22 @@ To create a new skill with the same skill levels as an existing skill, follow th
 3. Select a skill from the drop-down menu.
 4. (Optional) Change the **Weighting**. If you only add one skill, keep the default value of 100%.  
    For activities that require more than one skill, you can [use weighting](#calculate-suitability-using-rating-and-weighting) to determine which skill is more important.
-7. Click _Save changes_{:.doc-button}.
+5. Click _Save changes_{:.doc-button}.
 
 ## Assign skill level(s) to a person
 
 1. Go to _Plan > Configuration > Employees_{:.breadcrumbs}.
 2. Select a person from the list and navigate to the **Skill Levels** section.
-3. Click the {% icon item-add %} and select one or more skill levels from the list. 
+3. Click the {% icon item-add %} and select one or more skill levels from the list.
    To select multiple entries, press and hold **Shift** or **Ctrl** while clicking.
 4. (Optional) Add a {% link_new validity period | features/administration/set-a-validity-period.md %} for the skill level by selecting **Valid from** and **Valid to** dates.
    You cannot assign different skill levels of the same skill to a person for the same validity period.
- 5. Click _OK_{:.doc-button}.  
+5. Click _OK_{:.doc-button}.  
    The activities that require the skill(s) assigned will appear in the **Activities** section for that person.
 
 An activity can require one or more skills. To work on an activity that requires several skills, the people assigned to it need to have all the skills.
 
-Tip: To assign a skill to several people at once, you can use the {% link_new mass update functionality | features/administration/employee-overview.md | #use-mass-update %}. 
+Tip: To assign a skill to several people at once, you can use the {% link_new mass update functionality | features/administration/employee-overview.md | #use-mass-update %}.
 
 ## Calculate suitability using rating and weighting
 

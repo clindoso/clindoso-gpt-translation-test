@@ -32,9 +32,9 @@ Email notifications are sent to each person's login email address. Browser push 
 Users with admin access can turn off specific notifications:
 
 1. Go to _Account > Notifications_{:.breadcrumbs}.
-2. Click a tab to change the notification category.  
+2. Click a tab to change the notification category.
    > Note
-   > 
+   >
    > If you deactivate email notifications for Me, people will not be able to invite colleagues to swap shifts in injixo Me.
 3. Check or uncheck the **Email** or **Browser Push** checkboxes as required.
 

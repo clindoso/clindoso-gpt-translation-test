@@ -83,7 +83,7 @@ Normally, the query result contains all available fields (which can differ per e
 
 ### Access data in levels
 
-Some endpoints support the parameter `level=` or `levels=` to return data from specific {% link_new scheduling levels | best-practices/tips-on-shift-center-usage.md | #tip-9-working-with-different-levels %}. 
+Some endpoints support the parameter `level=` or `levels=` to return data from specific {% link_new scheduling levels | best-practices/tips-on-shift-center-usage.md | #tip-9-working-with-different-levels %}.
 
 For example, a request to `/v1/planning_units/:planunit_id/schedule/:start_date` returns data for the Schedule level by default. With the additional parameter `levels=final,plan`, it returns data from both the Actual and Schedule level in one request.
 

@@ -18,14 +18,15 @@ If the shift swap functionality has been activated by a user with Admin access, 
 Here is an overview of the shift swap process:
 
 1. You offer one of your shifts.
-2. (Optional) You select shifts that you would like to swap your shift with. You send email invitations to your colleagues. 
+2. (Optional) You select shifts that you would like to swap your shift with. You send email invitations to your colleagues.
 3. Your colleagues place counteroffers on your offered shift.
 4. You accept one of the counteroffers.
-5. (Optional) Your planner approves the swap.  
-   
+5. (Optional) Your planner approves the swap.
+
 If your organization is on the Essential WFM plan, you will not be able to send email invitations to your colleagues (step 2).
 
 ## Swap shifts
+
 ### Offer a shift
 
 1. Go to _Me > My Calendar_{:.breadcrumbs} or to _Me > Dashboard_{:.breadcrumbs}.
@@ -33,13 +34,14 @@ If your organization is on the Essential WFM plan, you will not be able to send 
 3. In the section **7 Day Agenda**, click the offer icon _![Offer Button](/assets/img/common/injixo-me/offer.png)_{:.doc-button-icon} next to the shift you want to offer. The offer icon is visible if {% link_new shift swaps | features/scheduling/schedules/scheduling-periods/schedules-enable-employees-to-swap-shifts.md %} are allowed for this period and shift.
    A dialog window opens.
 4. Click _Swap_{:.doc-button}.  
-   A drop-down menu opens where you can select one or multiple days that you would like to swap your shift on.  
+   A drop-down menu opens where you can select one or multiple days that you would like to swap your shift on.
 5. Click _Swap_{:.doc-button}.
 6. (Optional) To send a notification to all colleagues of the selected shift(s), click _Send invitation(s)_{:.doc-button}. You may also see entries for people who are not scheduled for a shift on the day or who are scheduled for a full-day activity. Click _Skip invitation(s)_{:.doc-button} to not send notifications.
-   
+
    > Note
-   > 
+   >
    > The page to send notifications will not be displayed if your planner has not activated email notifications for Me.
+
 7. (Optional) To leave a comment, click the {% icon message %} next to the offered shift.
 8. Click _Close_{:.doc-button}.
 

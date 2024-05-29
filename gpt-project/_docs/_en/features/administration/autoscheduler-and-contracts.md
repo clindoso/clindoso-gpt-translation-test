@@ -14,13 +14,14 @@ related_articles:
     filepath: best-practices/resolve-optimization-issues.md
 ---
 
-A contract specifies rules about working times and working days that apply to all people with that contract. 
+A contract specifies rules about working times and working days that apply to all people with that contract.
 
 The Create optimized schedules functionality can only schedule the expected number of hours per week if there are suitable day models, i.e. the contract must allow the day model duration. Depending on how flexible your daily working hours are, you need to {% link_new create one or more day models | features/administration/daymodels/daymodel-creation.md %} that will provide the corresponding net working times for each available working time combination.
 
 A contractual weekly target working time can be distributed differently over the working days of a week, for example, 20 hours:
-- four hours on five days. 
-- five hours on three days. 
+
+- four hours on five days.
+- five hours on three days.
 - four hours on three days and eight hours on the last day.
 
 {{ 1 | image: 'Contract General', '50%' }}
@@ -41,7 +42,7 @@ If you set up {% link_new Working hours for each day of the week | features/admi
 
 ## AutoScheduler parameters
 
-In the **AutoScheduler Parameters** section, you can set special rules for the optimization. 
+In the **AutoScheduler Parameters** section, you can set special rules for the optimization.
 
 <!-- rework later, I guess that the labels will change with the new contracts UI anyway -->
 
@@ -63,13 +64,13 @@ In the **AutoScheduler Parameters** section, you can set special rules for the o
 - **Assignment of a Workday Following a Full-Day Vacation**  
    Forces Create optimized schedules to schedule a working day after a full-day vacation. If the person has several consecutive days of time off, the working day is scheduled after the last day off.
 
-> The entered values must not contradict each other.    
->   
-> For example, do not enter 4 days off per week and a minimum of 5 working days per week at the same time.  
+> The entered values must not contradict each other.
+>
+> For example, do not enter 4 days off per week and a minimum of 5 working days per week at the same time.
 
 ## Scheduling parameters
 
-Create optimized schedules can only schedule one day model per day and ignores scheduling parameter _2613_{:.id-label} _Maximum number of shifts per day_. This parameter only applies for lottery and assignment in shift bidding. 
+Create optimized schedules can only schedule one day model per day and ignores scheduling parameter _2613_{:.id-label} _Maximum number of shifts per day_. This parameter only applies for lottery and assignment in shift bidding.
 
 Some scheduling parameters are already checked while optimizing, e.g.:
 
@@ -80,21 +81,21 @@ Other scheduling parameters are only checked while saving the schedule, e.g. _26
 
 ## How are parameters considered?
 
-When you manually change the schedule, scheduling rules are considered based on the {% link_new status of the scheduling rules | features/administration/create-contracts.md | #scheduling-rules %}. 
+When you manually change the schedule, scheduling rules are considered based on the {% link_new status of the scheduling rules | features/administration/create-contracts.md | #scheduling-rules %}.
 
 Create optimized schedules always interprets the following scheduling rules as set to inviolable (red):
-    
-- _2601_{:.id-label} _Check rest period between two working days as specified in the employee's contract_  
-- _2605_{:.id-label} _Check skills_  
-- _2607_{:.id-label} _Check whether employees belong to relevant planning unit_  
-- _2608_{:.id-label} _Check employee's scheduling bar_ <!-- obsolete? : (if defined for a person) -->  
-- _2609_{:.id-label} _Check company membership_  
-- _2611_{:.id-label} _Check employee availability_  
-- _2621_{:.id-label} _Check maximum number of Saturdays scheduled for work per month as specified in the employee's contract_  
-- _2622_{:.id-label} _Check maximum number of Sundays scheduled for work per month as specified in the employee's contract_  
-- _2631_{:.id-label} _Check contractual ban on work scheduled for holidays (both day models and activities)_  
-- _2651_{:.id-label} _Check assignment of day models to planning units_  
-- _2661_{:.id-label} _Check day model assignment to the employee_  
+
+- _2601_{:.id-label} _Check rest period between two working days as specified in the employee's contract_
+- _2605_{:.id-label} _Check skills_
+- _2607_{:.id-label} _Check whether employees belong to relevant planning unit_
+- _2608_{:.id-label} _Check employee's scheduling bar_ <!-- obsolete? : (if defined for a person) -->
+- _2609_{:.id-label} _Check company membership_
+- _2611_{:.id-label} _Check employee availability_
+- _2621_{:.id-label} _Check maximum number of Saturdays scheduled for work per month as specified in the employee's contract_
+- _2622_{:.id-label} _Check maximum number of Sundays scheduled for work per month as specified in the employee's contract_
+- _2631_{:.id-label} _Check contractual ban on work scheduled for holidays (both day models and activities)_
+- _2651_{:.id-label} _Check assignment of day models to planning units_
+- _2661_{:.id-label} _Check day model assignment to the employee_
 
 ## How to track scheduling errors?
 

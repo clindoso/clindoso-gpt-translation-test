@@ -22,10 +22,6 @@ To log in to injixo, you need your login credentials. There are three options to
 - Directly from your organization, e.g. your administrator or team lead.
 - Click the **Forgot your password?** link on the login screen at any later time.
 
-> The injixo welcome email can only be sent when creating a new user.
->
-> Users with admin access can create users in {% link_new WFM or Account | getting-started/manage-user-accounts.md | #create-users %}. They can also create people in {% link_new People | features/people/manage-people.md | #create-a-new-person %}<span class="beta-icon">Beta</span>.
-
 ## Access injixo through your browser
 
 injixo supports the two latest versions of the following browsers:
@@ -48,7 +44,7 @@ To log in via SSO:
 - Enter your **Email** on the [SSO login screen](https://www.injixo.com/login/sso).
   You will be redirected to the SSO identity provider login screen. If you have already logged in to the {% link_new identity provider | getting-started/single-sign-on.md %} through another application, you will be redirected to injixo.
 
-After logging in, users with the {% link_new default agent role | getting-started/default-user-roles.md | #default-user-roles %} will be redirected to their {% link_new Dashboards | features/injixo-me/use-injixo-me/explore-injixo-me.md | #get-an-overview-dashboard %} in Me. Users with {% link_new other roles | getting-started/default-user-roles.md | #default-user-roles %} will be redirected to injixo's start page.
+After logging in, people with the {% link_new default agent role | getting-started/default-user-roles.md | #default-roles %} will be redirected to their {% link_new Dashboards | features/injixo-me/use-injixo-me/explore-injixo-me.md | #get-an-overview-dashboard %} in Me. People with {% link_new other roles | getting-started/default-user-roles.md | #default-roles %} will be redirected to injixo's start page.
 
 ## Log out
 

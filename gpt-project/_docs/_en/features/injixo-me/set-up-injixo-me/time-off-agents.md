@@ -15,6 +15,7 @@ beta-feature: true
 Time off represents absences from the workplace. The amount and types of time off that you can take depend on your organization's regulations and on your contract.
 
 Go to _Me > Time Off_{:.breadcrumbs} to do the following:
+
 - Request time off
 - See the time-off types available to you (e.g. Sickness or Vacation)
 - Check your personal balance, i.e. how much paid time off you have left.
@@ -29,7 +30,7 @@ If there is already a published schedule, the days on which you are scheduled to
 
 ## View your personal balance
 
-1. Select a time-off type from the drop-down menu in the top left. 
+1. Select a time-off type from the drop-down menu in the top left.
 2. The sections **Pending**, **Remaining** and **Taken** show the current status for the selected time-off type:<br>
    - **Pending**: time off you have requested that has not yet been approved or rejected
    - **Remaining**: time off that you can still request within the entitlement period
@@ -40,7 +41,7 @@ If there is already a published schedule, the days on which you are scheduled to
 1. Select a time-off type from the drop-down menu in the top left.
 2. Click _Request time off_{:.doc-button}.
 3. Define the length of your time off:<br>
-**Start date**/**End date**: If you only want to take one day off, select the same date in both date range pickers.
+   **Start date**/**End date**: If you only want to take one day off, select the same date in both date range pickers.
 4. (Optional) Enter a comment.
 5. Click _Request time-off_{:.doc-button}.
 
@@ -51,10 +52,10 @@ You cannot edit a time-off request after submitting it. If you need to edit your
 1. Select a time-off type from the drop-down menu in the top left.
 2. Click _Request time off_{:.doc-button}.
 3. Select the day for your time off:<br>
-**Start date**/**End date**: Select the same date in both date range pickers or two consecutive dates if your requested time off starts before and ends after midnight.
+   **Start date**/**End date**: Select the same date in both date range pickers or two consecutive dates if your requested time off starts before and ends after midnight.
 4. Activate the **Request a part of the day** option.
 5. Define the length of your time off:<br>
-**Start time**/**End time**: Depending on your organization's settings, time-off requests for a partial day might be rounded to half a day or a full day.
+   **Start time**/**End time**: Depending on your organization's settings, time-off requests for a partial day might be rounded to half a day or a full day.
 6. (Optional) Enter a comment.
 7. Click _Request time-off_{:.doc-button}.
 
@@ -71,12 +72,12 @@ injixo can also combine these two variants: If the time period of your requested
 
 For a quick overview of the different scenarios, see this table:
 
-| Scheduled night shift | Time-off request |   Time off in schedule |
-|--------------------|--------------------|--------------------|--------------------|
-| 25&nbsp;June, 10&nbsp;PM until 26&nbsp;June, 6&nbsp;AM | 26&nbsp;June | 26&nbsp;June, 6&nbsp;AM until 27&nbsp;June midnight (18&nbsp;hours) |
-| 25&nbsp;June, 10&nbsp;PM until 26&nbsp;June, 6&nbsp;AM | 25&nbsp;June | 25&nbsp;June, midnight until 26&nbsp;June 6&nbsp;AM (30&nbsp;hours) |
-| 25&nbsp;June, 10&nbsp;PM until 26&nbsp;June, 6&nbsp;AM and 28&nbsp;June, 10&nbsp;PM until 29&nbsp;June, 6&nbsp;AM, not scheduled on 27&nbsp;June | 25&nbsp;June until 29&nbsp;June | 25&nbsp;June, midnight until 29&nbsp;June, 6&nbsp;AM |
-| no scheduled night shift | 26&nbsp;June |  26&nbsp;June, midnight until 27&nbsp;June, midnight |
+| Scheduled night shift                                                                                                                            | Time-off request                | Time off in schedule                                                |
+| ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------- | ------------------------------------------------------------------- |
+| 25&nbsp;June, 10&nbsp;PM until 26&nbsp;June, 6&nbsp;AM                                                                                           | 26&nbsp;June                    | 26&nbsp;June, 6&nbsp;AM until 27&nbsp;June midnight (18&nbsp;hours) |
+| 25&nbsp;June, 10&nbsp;PM until 26&nbsp;June, 6&nbsp;AM                                                                                           | 25&nbsp;June                    | 25&nbsp;June, midnight until 26&nbsp;June 6&nbsp;AM (30&nbsp;hours) |
+| 25&nbsp;June, 10&nbsp;PM until 26&nbsp;June, 6&nbsp;AM and 28&nbsp;June, 10&nbsp;PM until 29&nbsp;June, 6&nbsp;AM, not scheduled on 27&nbsp;June | 25&nbsp;June until 29&nbsp;June | 25&nbsp;June, midnight until 29&nbsp;June, 6&nbsp;AM                |
+| no scheduled night shift                                                                                                                         | 26&nbsp;June                    | 26&nbsp;June, midnight until 27&nbsp;June, midnight                 |
 
 If you want to take specific hours off instead of a full day, use a [partial-day time-off request](#request-time-off-for-partial-days).
 

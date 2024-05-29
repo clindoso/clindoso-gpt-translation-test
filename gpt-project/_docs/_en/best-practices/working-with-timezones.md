@@ -78,10 +78,10 @@ The reports which you create with the Reports feature under _WFM > Monitoring > 
 
 ### injixo Forecast
 
-
 The Workload feature under _Forecast_{:.breadcrumbs} shows data in the time zone set for the workload. The time zone of the workload is displayed to the right of the workload name in the drop-down menu.
 
-injixo Forecast displays data using the time zone that is set for the workload. You can see the time zone of the workload in these places: 
+injixo Forecast displays data using the time zone that is set for the workload. You can see the time zone of the workload in these places:
+
 - the workloads list
 - next to the workload name in the drop-down menu
 

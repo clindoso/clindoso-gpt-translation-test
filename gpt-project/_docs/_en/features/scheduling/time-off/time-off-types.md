@@ -27,8 +27,8 @@ Time-off types can be paid or unpaid, depending on your organization's needs and
 Time-off types include entitlement periods, e.g. the entitlement period for a time-off type Vacation is typically one year, and needs to be re-created every year. To allow people to request time off that was not taken in the previous year, define a longer time frame for the entitlement period, e.g. 18&nbsp;months. An entitlement that has not been taken within the entitlement period expires after the last day of the entitlement period and can no longer be requested.
 
 > Entitlement periods cannot overlap
-> 
-> If you create an entitlement period that is longer than a year, you can only create the next entitlement period after the previous one has ended. For example, if your entitlement period spans from 1 January 2023 to 30 June 2024, the next entitlement period can only start on 1 July 2024. 
+>
+> If you create an entitlement period that is longer than a year, you can only create the next entitlement period after the previous one has ended. For example, if your entitlement period spans from 1 January 2023 to 30 June 2024, the next entitlement period can only start on 1 July 2024.
 
 Your people can request time off across entitlement periods. For example, if your standard entitlement period is the calendar year, a person can request time off from 25&nbsp;December of the first year until 5&nbsp;January of the subsequent year. Depending on the time unit of the time-off type, their entitlement is reduced by the corresponding amount of days or hours for each year.
 
@@ -38,7 +38,7 @@ injixo allows you to block unscheduled times around a person's paid time off to 
 
 > To use this option, create an unpaid time-off type first.
 
-When a person requests time off and the time-off type is paid, the paid absence activity for the time-off type replaces any paid presence activities in the person's schedule. Any unpaid activities, e.g. breaks, remain as scheduled. The person's schedule is overwritten with the paid absence activity for the same time as the previously scheduled presence activities but it is open for the time before and after. As a consequence, the person may be automatically scheduled for the open times. 
+When a person requests time off and the time-off type is paid, the paid absence activity for the time-off type replaces any paid presence activities in the person's schedule. Any unpaid activities, e.g. breaks, remain as scheduled. The person's schedule is overwritten with the paid absence activity for the same time as the previously scheduled presence activities but it is open for the time before and after. As a consequence, the person may be automatically scheduled for the open times.
 
 To avoid people being scheduled for unscheduled times around their time off, create an unpaid time-off type and use it to replace unpaid activities and fill up unscheduled hours. If you check the checkbox in the **Schedule setting** section in the time-off type configuration, injixo converts the unpaid time-off type into an unpaid absence activity. Unpaid activities in the person's schedule are replaced with this unpaid absence activity. Additionally, non-working hours are filled up with this unpaid absence activity to block open times from scheduling.
 
@@ -54,20 +54,22 @@ To create, edit and delete time-off types, go to _Plan > Time Off_{:.breadcrumbs
 
 1. Click _New time-off type_{:.doc-button} on the right.
 2. Enter the following information:
- - **Name**
- - **Paid**: Check this checkbox if people should get paid when they request time off of this type (e.g. Sickness).<br>Depending on national legislation, some time-off types must be paid. 
- - **Time unit**: Select whether you want to calculate the time off taken in hours or days.<br>Depending on national legislation, it may be mandatory to calculate time off in hours or days.<br>You cannot change the time unit after saving the new time-off type.
- 3. (Optional) In the **Schedule setting** section, check the checkbox to activate the [fill-up functionality](#replace-unpaid-activities-and-fill-up-non-working-hours).
- 4. Click **Add entitlement period**.
- 5. Select a **Start date** and an **End date**.<br>You cannot change an entitlement period once a person has requested time off within that entitlement period.
- 6. Click _Create time-off type_{:.doc-button}.
+
+   - **Name**
+   - **Paid**: Check this checkbox if people should get paid when they request time off of this type (e.g. Sickness).<br>Depending on national legislation, some time-off types must be paid.
+   - **Time unit**: Select whether you want to calculate the time off taken in hours or days.<br>Depending on national legislation, it may be mandatory to calculate time off in hours or days.<br>You cannot change the time unit after saving the new time-off type.
+
+3. (Optional) In the **Schedule setting** section, check the checkbox to activate the [fill-up functionality](#replace-unpaid-activities-and-fill-up-non-working-hours).
+4. Click **Add entitlement period**.
+5. Select a **Start date** and an **End date**.<br>You cannot change an entitlement period once a person has requested time off within that entitlement period.
+6. Click _Create time-off type_{:.doc-button}.
 
 ### Edit a time-off type
 
 1. Click the time-off type that you want to edit.
 2. Edit the information.
 3. Click _Save changes_{:.doc-button}.
-   
+
 ### Delete a time-off type
 
 1. Click the time-off type that you want to delete.
@@ -79,10 +81,11 @@ To create, edit and delete time-off types, go to _Plan > Time Off_{:.breadcrumbs
 > When you delete a time-off type, the corresponding absence activity with the same name is deleted as well. This also applies vice versa: When you delete an absence activity that was automatically created while creating a time-off type, the corresponding time-off type is deleted. Deleted time-off types cannot be restored but you can still see them in injixo.
 
 After deleting a time-off type or the corresponding absence activity, the following applies:
+
 - You can still view, reject and cancel time-off requests created with that time-off type.
-- You can no longer approve time-off requests created with that time-off type. If there is a pending time-off request with a deleted time-off type, you have the following options:  
-   -  Reject the pending request
-   - Ask the person to withdraw the request and to create a new time-off request, if necessary<br>
+- You can no longer approve time-off requests created with that time-off type. If there is a pending time-off request with a deleted time-off type, you have the following options:
+  - Reject the pending request
+  - Ask the person to withdraw the request and to create a new time-off request, if necessary<br>
 - You can still see the absence activity in the schedule if it has already been planned.
 - You can no longer plan the absence activity in a new schedule.
 - People can no longer submit new time-off requests with that time-off type.
@@ -93,19 +96,21 @@ A time-off period is the period for which your people can request time off. Limi
 
 ### Create a time-off period
 
-To create, edit and delete time-off periods, go to _Plan > Time Off_{:.breadcrumbs} <span class="beta-icon">Beta</span> and click _Time-off configuration_{:.doc-button}. 
+To create, edit and delete time-off periods, go to _Plan > Time Off_{:.breadcrumbs} <span class="beta-icon">Beta</span> and click _Time-off configuration_{:.doc-button}.
 
-> Time-off periods always require a time-off type. 
+> Time-off periods always require a time-off type.
 
 1. Click **Time-off periods** on the left.
 2. Click _Create time-off period_{:.doc-button} on the right.
 3. Configure the elements for the time-off period:
- - **Planning unit**: The planning unit cannot be edited later.
- - (Optional) **Selection**
- - **Activity**: Select the absence activity, i.e. the time-off type.
- - **Date range**
- - **Deadline**: Determine until when people need to submit their time-off requests.
- - **Status**: People can only request time off for time-off periods with the status Published.<br>The status is set to Published by default. If you want to create a time-off period for which people can only request time off later in the year, set the status to Unpublished.
+
+   - **Planning unit**: The planning unit cannot be edited later.
+   - (Optional) **Selection**
+   - **Activity**: Select the absence activity, i.e. the time-off type.
+   - **Date range**
+   - **Deadline**: Determine until when people need to submit their time-off requests.
+   - **Status**: People can only request time off for time-off periods with the status Published.<br>The status is set to Published by default. If you want to create a time-off period for which people can only request time off later in the year, set the status to Unpublished.
+
 4. Click _Save_{:.doc-button}.
 
 ### Edit a time-off period
@@ -122,14 +127,15 @@ To create, edit and delete time-off periods, go to _Plan > Time Off_{:.breadcrum
 
 > Note
 >
-> If you delete a time-off period for which time-off requests already exist, the existing requests remain. 
+> If you delete a time-off period for which time-off requests already exist, the existing requests remain.
 >
->You can still approve or reject these requests.
+> You can still approve or reject these requests.
 
 ## Personal balances
 
 For each person, you can define a yearly entitlement for each time-off type you offer. To define personal balances for your people, you first need to configure at least one time-off type, and that time-off type must have at least one entitlement period. When a person requests time off, you will see the remaining entitlement in their personal balances based on the entitlement defined for the time-off type. If you do not define an entitlement for a time-off type for a person and that person requests time off of that type, their personal balance will be negative.
 Editing a person's taken time off may be necessary for the following reasons, for example:
+
 - You want to migrate from a previously used time-off solution to Time Off <span class="beta-icon">Beta</span> and need to synchronize the remaining personal balances of your people.
 - You manually changed approved time off in Schedules. As this is not reflected in Time Off <span class="beta-icon">Beta</span>, you need to update the taken time off manually.
 
@@ -143,8 +149,10 @@ To create or edit an entitlement for a person, proceed as follows:
 4. Select a **Time-off type** and an **Entitlement period**.
 5. In the **Remaining** panel on the right, click the {% icon pencil %} next to **Entitlement**.
 6. Edit the entitlement:
-- **New entitlement**: Enter a number or use the arrows to increase or reduce the entitlement.
-- **Reason for the change**: Explain why you changed the entitlement. This field is mandatory.
+
+   - **New entitlement**: Enter a number or use the arrows to increase or reduce the entitlement.
+   - **Reason for the change**: Explain why you changed the entitlement. This field is mandatory.
+
 7. Click _Save change_{:.doc-button}.<br>All changes and reasons are recorded in the table overview.
 
 ### Bulk-edit entitlements
@@ -155,4 +163,3 @@ If you want to change the entitlement for several people at once, e.g. for every
 2. In the **Entitlement** column, enter a number or use the arrows to increase or reduce the entitlement for each person individually.
 3. At the bottom left, enter a **Reason for the change**. This field is mandatory.
 4. Click _Save changes_{:.doc-button}.
-

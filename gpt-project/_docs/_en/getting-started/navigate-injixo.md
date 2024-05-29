@@ -18,7 +18,7 @@ redirect_reason: Updated filename on 25 July 2023
 Read this article to get an overview of injixo.
 
 Users with different user roles can access different products and features of injixo.
-You may not be able to see all the functionalities listed in this article. Read more about {% link_new access to functionalities | getting-started/default-user-roles.md | #access-to-components-and-features %} for the default user roles.  
+You may not be able to see all the functionalities listed in this article. Read more about {% link_new access to functionalities | getting-started/default-user-roles.md | #access-to-components-and-features %} for the default user roles.
 
 ## Products and features
 
@@ -30,7 +30,7 @@ Click the items in the navigation bar at the top to access injixo's products and
 **Plan** | {% link_new Create schedules | features/scheduling/schedules/schedules-overview.md %}, {% link_new manage time-off periods and requests | features/scheduling/time-off/time-off-periods.md %}, and {% link_new schedule meetings | features/scheduling/meetings/meetings-overview.md %}. Go to {% link_new Shift Center | features/scheduling/shiftcenter/shift-center-overview.md %} to view and manually adjust your schedules. Add configuration data such as {% link_new skills | features/administration/work-with-skills.md %}.
 **Intraday** | In {% link_new Real-Time Adherence | features/intraday/real-time-adherence.md %} you can see details on each employee's current adherence status. This helps you identify and react to unforeseen events and maintain your service level.
 **Analyze** | Go to {% link_new Dashboards | features/monitoring/dashboards/manage-dashboards.md %} to analyze historical and forecasted data, and to view and compare your data in graphs.
-**People**<span class="beta-icon">Beta</span> | {% link_new Create, edit, or delete the profiles | features/people/manage-people.md %} of the people in your organization.
+**People** | {% link_new Create, edit, or delete the profiles | features/people/configure-people-settings.md %} of the people in your organization.
 **Me** | People can {% link_new access their schedules, request time off, swap shifts, and bid on shifts | features/injixo-me/use-injixo-me/explore-injixo-me.md %}. Users with admin access can {% link_new turn features on or off | features/injixo-me/set-up-injixo-me/configure-injixo-me.md %}.
 
 ## Account
@@ -42,7 +42,7 @@ Learn about {% link_new access for the default user roles | getting-started/defa
 **Users** | {% link_new Manage user accounts | getting-started/manage-user-accounts.md %}. Unlock locked users.
 **User roles** | {% link_new Create new user roles and manage existing ones | getting-started/configure-user-roles.md %}.
 **Billing** | {% link_new Configure billing | getting-started/how-does-billing-work.md %}, check the current number of users, and manage invoices.
-**Administration** | Change your company's name and country. Change your tenant's timezone and language.
+**System settings** | Change your company's name and country. Change your tenant's timezone and language.
 **Integrations** | {% link_new Set up integrations | features/acd-integration/cloud/how-integrations-work.md %} to import data into injixo.
 **Security** | {% link_new Enforce two-factor authentication | getting-started/manage-2fa.md %} for all users. {% link_new Activate single sign-on | getting-started/single-sign-on.md %} for your account and for all users' accounts.
 **Notifications** | {% link_new Configure email and browser push notifications | getting-started/notifications.md %} for other users' accounts.
@@ -64,7 +64,7 @@ Click the {% icon graduation_cap %} next to your user name to access {% link_new
 
 ## Product updates
 
-Click the {% icon gift %} next to your user name to access our product updates. Users with the Standard Agent role do not have access to the product updates page. 
+Click the {% icon gift %} next to your user name to access our product updates. Users with the Standard Agent role do not have access to the product updates page.
 
 ## Support
 

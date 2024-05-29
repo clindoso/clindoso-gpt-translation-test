@@ -53,7 +53,7 @@ You can also {% link_new swap shifts | features/injixo-me/use-injixo-me/swap-shi
 - To see the overview for the current date, click _Today_{:.doc-button}.
 - To select a date range, click the {% icon calendar %}.
 - To display the daily view for a specific day, select the day in the calendar.
-- To view a planner's comment for a specific day, click the {% icon comment %} in the list on the left (daily view). 
+- To view a planner's comment for a specific day, click the {% icon comment %} in the list on the left (daily view).
 
 ### Subscribe to the calendar
 

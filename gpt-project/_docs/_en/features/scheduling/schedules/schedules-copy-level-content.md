@@ -34,7 +34,7 @@ Use the functionality:
    | **Parameter**                            | **Description**                                                                                                                                                                  |
    | ---------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
    | Planning unit                            | The planning unit for which you want to run the copy job.                                                                                                                        |
-   | Source level                             | The level from which you want to copy the data. An empty source level will delete the data in the target level. |
+   | Source level                             | The level from which you want to copy the data. An empty source level will delete the data in the target level.                                                                  |
    | Target level                             | The level to which you want to copy the data.                                                                                                                                    |
    | Date range                               | The date range for which you want to copy the data. <br> This field is pre-filled with the period that is currently selected in Schedules.                                       |
    | Target start date                        | (Optional) The date at which the copied time period should be inserted. <br> Use it, for example, to copy the data of an old schedule to a future time period on the same level. |
@@ -42,11 +42,12 @@ Use the functionality:
 
    > Warning
    >
-   > Make sure you always select the correct source level. injixo will overwrite data in the following cases: 
+   > Make sure you always select the correct source level. injixo will overwrite data in the following cases:
+   >
    > - If the source level is empty, injixo will delete data in the target level.
    > - If the source level is wrong, and you selected the **Empty source level content after copying** option, injixo will delete data in the source level.
    >
-   > Deleted data cannot be restored for a time frame. You can only {% link_new restore data | features/scheduling/schedules/schedules-history.md %} for single days and employees from the history in Schedules and Shift Center.
+   > Deleted data cannot be restored for a time frame. You can only {% link_new restore data | features/scheduling/schedules/schedules-edit.md | #see-and-restore-schedule-changes-in-the-history-tab %} for single days and employees from the history in Schedules and Shift Center.
 
 3. (Optional) Click the **JobProcessor** link to open the Job Processor page in a new tab and track the progress of the copy job.
 4. Click _Copy level content_{:.doc-button}.<br>

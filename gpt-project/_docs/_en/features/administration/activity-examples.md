@@ -21,7 +21,7 @@ Below, you will find configuration examples for frequently used activities, thei
 ## Presence, break, illness, and vacation
 
 This table covers setup examples for the activity types Presence, Break, Illness and Vacation.
-The Present activity is a pre-configured standard activity in injixo. You can use it for all activities your people work on and that are based on staff requirements, e.g. calls. 
+The Present activity is a pre-configured standard activity in injixo. You can use it for all activities your people work on and that are based on staff requirements, e.g. calls.
 
 <div class="table__wrapper" markdown="1">
 
@@ -31,16 +31,16 @@ table {
 }
 </style>
 
-| &nbsp;                                      |  Present  | Lunch break |         Illness         |  Vacation |
-| ------------------------------------------- | :---------------------: | :----------------------: | :---------------------: | :---------------------: |
-| **Type**                                        |         Presence         |          Break           |         Illness         |        Vacation         |
-| Paid                                        | <i class="fa fa-check"> |                          | <i class="fa fa-check"> | <i class="fa fa-check"> |
-| Comply with rest period                     | <i class="fa fa-check"> |                          |                         |
-| Plannable                                   | <i class="fa fa-check"> |                          |                         |
-| Requestable in Me                                 |                         | <i class="fa fa-check">  |                         | <i class="fa fa-check"> |
-| Replaceable                                 | <i class="fa fa-check"> |                          |                         |
-| Exchangeable with shift swap            | <i class="fa fa-check"> | <i class="fa fa-check">  |                         |
-| Allow as full-day activity                  |                         |                          | <i class="fa fa-check"> | <i class="fa fa-check"> |
+| &nbsp;                       |         Present         |       Lunch break       |         Illness         |        Vacation         |
+| ---------------------------- | :---------------------: | :---------------------: | :---------------------: | :---------------------: |
+| **Type**                     |        Presence         |          Break          |         Illness         |        Vacation         |
+| Paid                         | <i class="fa fa-check"> |                         | <i class="fa fa-check"> | <i class="fa fa-check"> |
+| Comply with rest period      | <i class="fa fa-check"> |                         |                         |
+| Plannable                    | <i class="fa fa-check"> |                         |                         |
+| Requestable in Me            |                         | <i class="fa fa-check"> |                         | <i class="fa fa-check"> |
+| Replaceable                  | <i class="fa fa-check"> |                         |                         |
+| Exchangeable with shift swap | <i class="fa fa-check"> | <i class="fa fa-check"> |                         |
+| Allow as full-day activity   |                         |                         | <i class="fa fa-check"> | <i class="fa fa-check"> |
 
 </div>
 
@@ -49,21 +49,21 @@ Depending on your organization's policy, contracts or labor regulations, some br
 ## Absences and meetings
 
 This table covers setup examples for the activity types Absence and Meeting.
-Paid absences are typically used to compensate overtime or as a blocker to {% link_new schedule public holidays | best-practices/scheduling-public-holidays.md %}. 
+Paid absences are typically used to compensate overtime or as a blocker to {% link_new schedule public holidays | best-practices/scheduling-public-holidays.md %}.
 If there are days when an employee cannot work under any circumstances, you can block those days using the configuration setup under Unpaid absence.
 
 <div class="table__wrapper" markdown="1">
 
-| &nbsp;                                        | Paid absence | Unpaid absence |    Full-day meeting     |  Training  |
-| --------------------------------------------- | :-----------------------: | :-------------------------: | :---------------------: | :---------------------: |
-| **Type**                                          |          Absence          |           Absence           |         Meeting         |         Meeting         |
-| Paid                                          |  <i class="fa fa-check">  |                             | <i class="fa fa-check"> | <i class="fa fa-check"> |
-| Comply with rest period                       |                           |                             | <i class="fa fa-check"> |
-| Plannable                                     |                           |                             |                         |
-| Requestable in Me                                   |  <i class="fa fa-check">  |   <i class="fa fa-check">   |                         |
-| Replaceable                                   |                           |                             |                         |
-| Exchangeable with shift swap              |                           |                             |                         |
-| Allow as full-day activity                    |  <i class="fa fa-check">  |   <i class="fa fa-check">   |                         | <i class="fa fa-check"> |
+| &nbsp;                       |      Paid absence       |     Unpaid absence      |    Full-day meeting     |        Training         |
+| ---------------------------- | :---------------------: | :---------------------: | :---------------------: | :---------------------: |
+| **Type**                     |         Absence         |         Absence         |         Meeting         |         Meeting         |
+| Paid                         | <i class="fa fa-check"> |                         | <i class="fa fa-check"> | <i class="fa fa-check"> |
+| Comply with rest period      |                         |                         | <i class="fa fa-check"> |
+| Plannable                    |                         |                         |                         |
+| Requestable in Me            | <i class="fa fa-check"> | <i class="fa fa-check"> |                         |
+| Replaceable                  |                         |                         |                         |
+| Exchangeable with shift swap |                         |                         |                         |
+| Allow as full-day activity   | <i class="fa fa-check"> | <i class="fa fa-check"> |                         | <i class="fa fa-check"> |
 
 </div>
 

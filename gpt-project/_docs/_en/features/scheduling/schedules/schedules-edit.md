@@ -1,69 +1,88 @@
 ---
-title: Edit your schedule
+title: Edit schedules
 toc: true
+redirect_from:
+  - /schedules-history
+redirect_reason: /schedules-history/ was deleted in May 2024 and its content moved to this article
 product_label:
   - essential
   - advanced
   - enterprise
   - classic
-description: Edit, add, and delete activities and shifts in your schedule (Schedules feature).
+description: Learn how to manage activities and shifts in your schedule.
 ---
 
-In this article, you will learn how to:
-
-- edit, add, and delete activities in your schedule using _Plan > Schedules_{:.breadcrumbs}.
-- copy, cut, paste, and delete complete shifts directly in the schedule.
+In _Plan > Schedules_{:.breadcrumbs}, you can add, edit, and delete activities in your schedule. You can also copy, cut, paste, and delete shifts.
 
 New to Schedules? Learn {% link_new the basics | features/scheduling/schedules/schedules-overview.md %} first.
 
-## Add activities
+## Manage activities
 
-1. Double-click a cell in the schedule to open the edit view.
-2. Optional: Select an **Activity Type** on the left to predetermine which type of activity you want to add. The default is set to _All_.
-3. Click _Add new Activity_{:.doc-button} to create a new activity or click _Add new Full-Day Activity_{:.doc-button} to create a new full-day activity. A new row with the activity is added to the right. Multiactivities are marked by the _Symbol_{:.multiactivity-icon}, full-day activities with a day status are marked by the _Symbol_{:.daystatus-icon}.
-4. In the row of the new activity, choose an activity from the **drop-down menu**. If you have selected an activity type in step 2, you will only be able to choose activities of that type.
-5. Adjust the **Start Time** and **End Time** for the new activity. You can also change the date if you want to specify that the activity started the day before or ended the day after. Repeat the steps 2 to 5 to add more activities.
-6. Click _Save_{:.doc-button}.
+### Add activities
 
-   {{ 1 | image: 'Add activities and multiactivities'}}
+1. In _Plan > Schedules_{:.breadcrumbs}, set the {% link_new filters | features/scheduling/schedules/schedules-overview.md | #filter-data %} and the {% link_new view options | features/scheduling/schedules/schedules-overview.md | #schedule-area %} for your schedule.
+2. In a person's row, double-click the hour or day cell to which you want to add an activity.
+3. (Optional) Filter the activities by type. In the page that opens, select an **Activity Type** from the drop-down menu. The default option is **All**.
+4. Click _Add new Activity_{:.doc-button} to create a new activity for which you can define a start and end time or _Add new Full-Day Activity_{:.doc-button} to create a new {% link_new full-day activity | features/administration/activity-types-and-properties.md | #activity-properties %}.<br>
+   injixo creates a row with the new activity. An <em class="multiactivity-icon"></em> icon marks the multiactivities. A <em class="daystatus-icon"></em> icon marks the activities with a full-day status.
+5. In the new row, select an activity from the drop-down menu. If you selected an activity type in step 3, now you can only select activities of that type.
+6. If your activity is not a full-day activity, enter the **Start Time** and **End Time** for the new activity.<br>If an activity starts the day before, or ends the day after, you can change the date of its start time or end time.<br>To add more activities, repeat steps 4 to 6.
+7. At the bottom left, click _Save_{:.doc-button}.
 
-## Edit activities
+### Edit activities
 
-1. Double-click a cell to open the edit view.
-2. Change the values for **Activity**, **Start Time**, or **End Time** on the right.
-3. Click _Save_{:.doc-button}.
+1. In _Plan > Schedules_{:.breadcrumbs}, set the {% link_new filters | features/scheduling/schedules/schedules-overview.md | #filter-data %} and the {% link_new view options | features/scheduling/schedules/schedules-overview.md | #schedule-area %} for your schedule.
+2. In a person's row, double-click the hour or day cell with the activity or activities that you want to edit.
+3. In the page that opens, edit the activity information.
+4. At the bottom left, click _Save_{:.doc-button}.
 
-   {{ 2 | image: 'Edit activity', '80%' }}
+### Delete activities
 
-A small yellow dot next to the _Edit_ or _History_ tabs on the left indicates unsaved changes in the respective tab.
+1. In _Plan > Schedules_{:.breadcrumbs}, set the {% link_new filters | features/scheduling/schedules/schedules-overview.md | #filter-data %} and the {% link_new view options | features/scheduling/schedules/schedules-overview.md | #schedule-area %} for your schedule.
+2. In a person's row, double-click the hour or day cell with the activity or activities that you want to delete.
+3. Click the {% icon x %} next to the activity or activities that you want to delete. Click the icon again to deselect the activity or activities. <br> To delete all activities currently displayed on the page, click _Delete all Activities_{:.doc-button}.
+4. At the bottom left, click _Save_{:.doc-button}.
 
-Sometimes it happens that you have unsaved changes in both tabs. If you now want to save the changes in one of the tabs, a warning message appears that indicates that in this case the changes in the other tab will be lost:
+### Edit or delete individual days within a block of time-off activities
 
-{{ 4 | image: 'Unsaved changes in other tabs modal', '50%'}}
+To edit or delete individual days within a block of approved time-off activities in the Schedule level, proceed as follows:
 
-> Edit or delete individual days within a multiday vacation block
->
-> If you want to edit or delete individual days within a multiday block of approved vacation activities in the _Schedule_ level, you always need to delete the entire vacation activity block first. Afterwards, you can restore individual days via the {% link_new History | features/scheduling/schedules/schedules-history.md %} tab.
+1. Delete the whole block of time off-time activities following the procedure above.
+2. Restore individual days within the block in the **History** tab. Learn how to do it in the [dedicated section below](#see-and-restore-schedule-changes-in-the-history-tab).
 
-## Delete activities
+## Manage shifts
 
-1. Double-click a cell to open the edit view.
-2. On the right, click the **X** button next to an activity to mark it for deletion. Click again if you want to revert this. You can also click _Delete all Activities_{:.doc-button} to mark all rows at once.
-3. Click _Save_{:.doc-button}. This deletes all activities marked for deletion.
+Use keyboard shortcuts to edit the shifts directly in the schedule.
 
-   {{ 3 | image: 'Delete activity', '80%'}}
-
-## Modify shifts directly in the schedule
-
-You can copy, cut, paste, and delete complete shifts directly in the schedule using keyboard shortcuts:
+1. In _Plan > Schedules_{:.breadcrumbs}, set the {% link_new filters | features/scheduling/schedules/schedules-overview.md | #filter-data %} and the {% link_new view options | features/scheduling/schedules/schedules-overview.md | #schedule-area %} for your schedule.
+2. Select a time frame between three and 32 days from the date picker.
+3. In a person's row, click the hour or day cell with the shift that you want to edit.
+4. Use the keyboard shortcuts listed in the table below.
 
 | Shortcut      | Function                                                                             |
 | ------------- | ------------------------------------------------------------------------------------ |
-| **CTRL + C**  | Copies the shift in the selected cell. You can now paste it in other cells.          |
-| **CTRL + X**  | Cuts the shift in the selected cell. You can now paste it once in another cell once. |
+| **CTRL + C**  | Copies the shift in the selected cell. You can then paste the shift in other cells.  |
+| **CTRL + X**  | Cuts the shift in the selected cell. You can then paste the shift in one other cell. |
 | **CTRL + V**  | Pastes the copied shift into the selected cell.                                      |
 | **CTRL + L**  | Deletes the content of the selected cell.                                            |
 | **←**/**Del** | Deletes the content of the selected cell.                                            |
-| **ESC**       | Removes the selection from the selected cell.                                        |
+| **ESC**       | Deselects the selected cell.                                                         |
 
-Note: The keyboard shortcuts don't work in the detailed view of a day.
+## See and restore schedule changes in the History tab
+
+You can see and restore past changes to the schedule made by you or other people with the planner role. You can restore a schedule change for an individual person for one day at a time.
+
+1. In _Plan > Schedules_{:.breadcrumbs}, set the {% link_new filters | features/scheduling/schedules/schedules-overview.md | #filter-data %} and the {% link_new view options | features/scheduling/schedules/schedules-overview.md | #schedule-area %} for your schedule.
+2. In a person's row, double-click an hour or day cell.
+3. In the page that opens, click the **History** tab.<br>At the top right of the page, you can see the person's current shift. Below, you see a table with five columns:
+   - Checkbox column
+   - **Name**: The name of the person who edited the shift
+   - **Date and time**: The date and time of the changes
+   - **Action**: A short description of the changes. In some cases, changes made by internal systems appear as **Unknown**.
+   - Shift overview column: The effects of the changes on the shift
+4. In the first column, check the checkbox next to the entry with the changes that you want to restore.
+5. At the bottom left, click _Save_{:.doc-button}.
+
+> Changes in the Edit and History tabs
+>
+> Save the changes you make in one tab before making changes in the other one. A yellow dot on the tab indicates unsaved changes. If you have unsaved changes in both tabs, and then save the changes in one of the tabs, the changes in the other tab will not be saved.

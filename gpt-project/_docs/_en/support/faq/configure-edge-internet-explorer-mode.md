@@ -25,7 +25,6 @@ You need Windows administrator rights to configure Internet Explorer mode (IE mo
 6. Add _\*.injixo.com_ to the trusted sites.
 7. To save your settings, click _OK_{:.doc-button}.
 
-
 ## Configure Internet Explorer Mode in Edge
 
 Internet Explorer Mode in Microsoft Edge requires an XML file that contains a site list. The site list file can be installed locally (see example below) or hosted. If you host the site list file on a server, the same file is available for all users.

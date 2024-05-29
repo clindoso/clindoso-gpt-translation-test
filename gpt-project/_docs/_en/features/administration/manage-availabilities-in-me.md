@@ -9,6 +9,7 @@ toc: true
 ---
 
 In injixo, availabilities define when a person is available for scheduling on specific dates and times. As a planner, you can configure availabilities in two ways:
+
 - Using personal {% link_new weekly availabilities | features/administration/availabilities.md | #configure-availabilities %}
 - Using {% link_new day models | features/administration/availabilities.md | #rotate-availabilities-across-weeks %}
 

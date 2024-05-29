@@ -21,23 +21,22 @@ redirect_reason: Updated filename on 21 August 2023
 Planning units group people and configuration data for scheduling purposes. Your business locations do not necessarily have to correspond to your planning units. For example, people who work at two different locations can be {% link_new assigned | features/administration/employee-overview.md | #configure-employee-settings %} to one planning unit.
 
 ## How many planning units should I use?
-	
+
 To minimize efforts, you can schedule people who work in different locations or teams in one planning unit by using {% link_new selections | features/administration/selections.md %}. We recommend using more than one planning unit in the following cases:
--  People work in different time zones.
--  Planners are only responsible for groups of people, e.g. business units. In injixo Advanced and Enterprise WFM, custom user roles can {% link_new restrict access to planning units | getting-started/configure-user-roles.md | #manage-team-access-restrict-access-to-configuration-data %}.
+
+- People work in different time zones.
+- Planners are only responsible for groups of people, e.g. business units. In injixo Advanced and Enterprise WFM, custom user roles can {% link_new restrict access to planning units | getting-started/configure-user-roles.md | #manage-team-access-restrict-access-to-configuration-data %}.
 - You have shared staff requirements, e.g. for overflow scenarios.
 - You want to create reports that include the total numbers from several planning units.
-	
-	
+
 > Tips for working with multiple planning units
 >
 > - To group figures across planning units, add a parent planning unit to all relevant planning units.
 > - You can temporarily change an employee’s assignment from one planning unit to another.<br>Learn more about how to {% link_new delegate employees | features/administration/employee-overview.md | #delegate-employees %}.
-	
+
 <!-- Typically, you assign one planning unit to a person at a time. Reassign a planning unit using valid from and valid to dates in the employee configuration. In rare cases, you will need to assign more than one planning unit to a person. The person's main planning unit is assigned with priority 1. The person is scheduled in this main planning unit. A person's schedule will be displayed in other planning units with lower priority. You can also manually reschedule people in other planning units if needed. -->
 
 ## Create planning units
-
 
 1. Go to _Plan > Configuration > Planning Units_{:.breadcrumbs}.
 2. Click the New icon {% icon item-add | icon-only %} in the upper left.  
@@ -125,5 +124,3 @@ To limit the number of day models, proceed as follows:
 2. Select the planning unit you want to delete.
 3. Click the {% icon item-delete %} in the upper left.
 4. To confirm, click _Yes_{:.doc-button}.
-
-

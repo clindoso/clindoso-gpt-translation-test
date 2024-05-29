@@ -38,31 +38,31 @@ injixo saves the data required for the staff requirements calculation into queue
 1. Go to _Forecast > Requirement Scripts_{:.breadcrumbs}.
 2. In the **Calls - Multi-Activity** tile, click _Open_{:.doc-button}.
 3. In the script configuration window, configure the following settings:
-    - In the **Date** section:
-      - **Start Date**: Enter the start date for the staff requirements calculation.
-      - **Number of Days**: Enter the number of days after the start date for which you want to calculate staff requirements.
-    - In the **Planning Unit Parameters** section:
-      - **Planning Unit** and **Multi-Activity**.<br>
-      The script configuration window updates and displays the calculation parameters for the relevant subactivities.
-    - In the **Subactivity** section, you can configure different calculation parameters for each subactivity. Start with the parameters in the **Queue Parameters** section:
-      - **Calculation Method**: Select **Erlang-C**, **Linear**, or **Chat**.<br>The script configuration window updates and displays the relevant configurable parameters. See the [table below](#calculation-parameters-in-the-erlang-c-section) to learn which parameters are configurable for each calculation method.
-      - **Queue**: Select the queue that contains the data you want to use for the calculation.
-      - **Processes**: Select the value type of the contact volume, e.g. Calls Offered.
-      - **Average Handling Time**: If your workloads have a forecasted average handle time (AHT), select the relevant value type. Otherwise, select **[None]**.
-      - **Version**: Select **Auto-Forecast**. In injixo Enterprise on-premise, you can select a different version.
+   - In the **Date** section:
+     - **Start Date**: Enter the start date for the staff requirements calculation.
+     - **Number of Days**: Enter the number of days after the start date for which you want to calculate staff requirements.
+   - In the **Planning Unit Parameters** section:
+     - **Planning Unit** and **Multi-Activity**.<br>
+       The script configuration window updates and displays the calculation parameters for the relevant subactivities.
+   - In the **Subactivity** section, you can configure different calculation parameters for each subactivity. Start with the parameters in the **Queue Parameters** section:
+     - **Calculation Method**: Select **Erlang-C**, **Linear**, or **Chat**.<br>The script configuration window updates and displays the relevant configurable parameters. See the [table below](#calculation-parameters-in-the-erlang-c-section) to learn which parameters are configurable for each calculation method.
+     - **Queue**: Select the queue that contains the data you want to use for the calculation.
+     - **Processes**: Select the value type of the contact volume, e.g. Calls Offered.
+     - **Average Handling Time**: If your workloads have a forecasted average handle time (AHT), select the relevant value type. Otherwise, select **[None]**.
+     - **Version**: Select **Auto-Forecast**. In injixo Enterprise on-premise, you can select a different version.
 
 ## Calculation parameters in the Erlang C section
 
-| Parameter                         | Description                                                                                                            | Configurable in Erlang-C | Configurable in Linear | Configurable in Chat |
-| --------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |--------  | -------- |
-| Service Level (%)             | Percentage of contacts that should be handled within the time you configure in the **Service Sec.** parameter.                                                                                                                                                                    | Yes | No | Yes |
-| Service Sec.            | Time within which the percentage of contacts you configure in the **Service Level (%)** parameter should be handled.                                                                                                                                                                                            | Yes | No | Yes |
-| Add (%)                         | The percentage value by which you want to increase the calculated staff requirements. Learn how to [configure this parameter](#configure-the-add--parameter-to-account-for-shrinkage) to account for shrinkage. | Yes | Yes | Yes |
-| Minimum Staff            | Enter a value to overwrite lower staff requirements.                                                                                                                                                                                                                                                     | Yes | Yes | Yes |
-| Maximum Staff            | Enter a value to overwrite higher staff requirements.                              | Yes | Yes | Yes |
-| Fixed Average Handling Time | If you selected a type in the **Average Handling Time** parameter in the **Queue Parameters** section, keep the default value here.<br> If you selected **[None]** in the **Average Handling Time** parameter, enter a value in seconds.                                 | Yes | Yes | Yes |
-| Seq (%)                  | Percentage of AHT that people spend on tasks they cannot do in parallel, such as after-call work.                                                                                                                                                                                                                                                                                   | No | No | Yes |
-| Max Sessions                          | Maximum number of parallel chats that a person can handle at a time.                                                                                                                                             | No | No | Yes |
+| Parameter                   | Description                                                                                                                                                                                                                              | Configurable in Erlang-C | Configurable in Linear | Configurable in Chat |
+| --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ | ---------------------- | -------------------- |
+| Service Level (%)           | Percentage of contacts that should be handled within the time you configure in the **Service Sec.** parameter.                                                                                                                           | Yes                      | No                     | Yes                  |
+| Service Sec.                | Time within which the percentage of contacts you configure in the **Service Level (%)** parameter should be handled.                                                                                                                     | Yes                      | No                     | Yes                  |
+| Add (%)                     | The percentage value by which you want to increase the calculated staff requirements. Learn how to [configure this parameter](#configure-the-add--parameter-to-account-for-shrinkage) to account for shrinkage.                          | Yes                      | Yes                    | Yes                  |
+| Minimum Staff               | Enter a value to overwrite lower staff requirements.                                                                                                                                                                                     | Yes                      | Yes                    | Yes                  |
+| Maximum Staff               | Enter a value to overwrite higher staff requirements.                                                                                                                                                                                    | Yes                      | Yes                    | Yes                  |
+| Fixed Average Handling Time | If you selected a type in the **Average Handling Time** parameter in the **Queue Parameters** section, keep the default value here.<br> If you selected **[None]** in the **Average Handling Time** parameter, enter a value in seconds. | Yes                      | Yes                    | Yes                  |
+| Seq (%)                     | Percentage of AHT that people spend on tasks they cannot do in parallel, such as after-call work.                                                                                                                                        | No                       | No                     | Yes                  |
+| Max Sessions                | Maximum number of parallel chats that a person can handle at a time.                                                                                                                                                                     | No                       | No                     | Yes                  |
 
 ### Configure the Add (%) parameter to account for shrinkage
 

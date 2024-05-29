@@ -175,9 +175,9 @@ def extract_file_contents(docs_directory, lang, tm_filepath, file_extension=".md
 
 def main():
     # Initialize docs directory
-    if not config.docs_directory:
+    if not config.DOCS_DIRECTORY:
         raise EnvironmentError("Source documents directory not defined in the config file.")
-    else: docs_directory = config.docs_directory
+    else: docs_directory = config.DOCS_DIRECTORY
 
     # Initializes target lang
     lang = parse_arguments()

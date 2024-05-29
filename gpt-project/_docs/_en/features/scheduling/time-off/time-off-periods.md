@@ -14,11 +14,11 @@ related_articles:
     filepath: features/scheduling/schedules/scheduling-periods/what-are-scheduling-periods.md
 ---
 
-Time-off periods are time ranges for which people can request time off in injixo Me, e.g. January 2023-December 2024. 
+Time-off periods are time ranges for which people can request time off in injixo Me, e.g. January 2023-December 2024.
 
 Time-off periods only support the activity types Absence, Vacation, and Illness. The activities must be configured as {% link_new Requestable in Me | features/administration/activities.md %} and {% link_new assigned to your planning unit | features/administration/create-and-manage-planning-units.md %}. Create a separate time-off period for each activity that people can use to request time off.
 
-In injixo Me, people can request time off for different reasons, e.g. vacation or illness. People can only create time-off requests for time ranges that are included in a time-off period with the status Published. 
+In injixo Me, people can request time off for different reasons, e.g. vacation or illness. People can only create time-off requests for time ranges that are included in a time-off period with the status Published.
 
 Note: To allow people to request time off, go to _Me_{:.breadcrumbs} in the main navigation and activate the **Time Off Requests** option.
 
@@ -28,9 +28,9 @@ Use {% link_new scheduling periods | features/scheduling/schedules/scheduling-pe
 
 Every time-off period has a status that determines whether it is available for people in injixo Me. You set a status when you create the time-off period, but you can change the status as often as you want to.
 
-| Status      | Explanation                                                                                                                                                                                                                        |
-| ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Unpublished | People cannot see the time-off period or use it to submit time-off requests. Use this status until you are ready for people to see the time-off period and submit time-off requests.                                                                                |
+| Status      | Explanation                                                                                                                                                                                                                          |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Unpublished | People cannot see the time-off period or use it to submit time-off requests. Use this status until you are ready for people to see the time-off period and submit time-off requests.                                                 |
 | Published   | People can see the time-off period in injixo Me and use it to submit time-off requests. The time-off period appears in injixo Me with a white background. You cannot set this status if the time-off period has an expired deadline. |
 
 ## Manage time-off periods
@@ -54,8 +54,8 @@ To sort a column, click the table header. To reverse the sorting order, click ag
 1. Go to _Plan > Time Off_{:.breadcrumbs}.
 2. Click _Time-off periods_{:.doc-button} on the top right.
 3. Click _Create time-off period_{:.doc-button} on the top right.
-4. Fill in the fields. 
-  Remember that people can only request time off if you select the status Published.
+4. Fill in the fields.
+   Remember that people can only request time off if you select the status Published.
 5. Click _Save_{:.doc-button}.
 
 ## Edit a time-off period
@@ -63,15 +63,15 @@ To sort a column, click the table header. To reverse the sorting order, click ag
 If you want to change the status of a time-off period
 
 1. Go to _Plan > Time Off_{:.breadcrumbs}.
-2. Click _Time-off periods_{:.doc-button} on the top right. 
+2. Click _Time-off periods_{:.doc-button} on the top right.
 3. To change the status, use the drop-down in the **Status** column. The changed status will be saved automatically.  
-  To edit other data, hover over the list item that you want to edit and click the {% icon pencil %} on the right.
+   To edit other data, hover over the list item that you want to edit and click the {% icon pencil %} on the right.
 4. Edit the relevant data.
 5. Click _Save_{:.doc-button}.
 
 ## Delete a time-off period
 
 1. Go to _Plan > Time Off_{:.breadcrumbs}.
-2. Click _Time-off periods_{:.doc-button} on the top right. 
+2. Click _Time-off periods_{:.doc-button} on the top right.
 3. Check one or more checkboxes on the left. The checkbox on the header selects all items.
 4. Click _Delete entries_{:.doc-button}.

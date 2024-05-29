@@ -44,12 +44,12 @@ Only users with admin access or the planner role can review, approve, and reject
 
 To review, approve, or reject shift swap requests, proceed as follows:
 
-1. Go to _Plan > Schedules_{:.breadcrumbs} 
+1. Go to _Plan > Schedules_{:.breadcrumbs}
 2. From the _Scheduling actions_{:.doc-button} drop-down menu, select **Approve shift swaps**.
 3. Select a **planning unit** and, optionally, a **selection** from the drop-down menus.
 4. Select a **date range**.<br>If you have not already selected a date range in _Schedules_{:.menu-item}, the date range starts on the current date and ends seven days later.
-6. Check the checkboxes next to the entries you want to approve or reject. Use the checkbox at the top to select all entries at once.
-7. Click _Approve selected_{:.doc-button} or _Reject selected_{:.doc-button}.  
+5. Check the checkboxes next to the entries you want to approve or reject. Use the checkbox at the top to select all entries at once.
+6. Click _Approve selected_{:.doc-button} or _Reject selected_{:.doc-button}.  
    After pending requests have been approved or rejected, they move to the **Information** tab.
 
 The Exchange Statistics report under _WFM > Monitoring > Reports_{:.breadcrumbs} lists the status of shift swaps (Offered, Not edited, Rejected, and Approved) for a configurable period.

@@ -31,10 +31,11 @@ To save the default Forecast data in a forecast version, proceed as follows:
 2. Select the time frame for which you want to save the forecast version. Click on a week number to select the whole week, or click any day and drag to select a period shorter or longer than a week.
 3. From the {% icon ellipsis_v %} at the top right, select _Save forecast in version_{:.doc-button}.
 4. In the configuration window, select the forecast version into which you want to save the data.
+
    > Note
    >
    > There can only be one Operational and one Strategic forecast version for a period in a workload. Saving data for the same period in the same forecast version overwrites the existing data.
 
 5. Click _Save_{:.doc-button}.
- 
+
 The volume and AHT graphs show the forecast version data as colored lines. The Operational version data is displayed as a purple line. The Strategic version data is displayed as a green line.

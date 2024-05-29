@@ -13,7 +13,7 @@ related_articles:
 injixo offers different planning unit reports.
 
 > Empty reports or missing data?
-> 
+>
 > Make sure that the activities you want to display are {% link_new assigned to the correct planning unit | features/administration/create-and-manage-planning-units.md | #add-activities %}. Some reports group data by selections. To display data properly in those "selection-based" reports, add at least {% link_new one selection to each employee | features/administration/selections.md | #assign-people-to-selections %}.
 
 ## Frequently used reports
@@ -36,7 +36,6 @@ The following reports provide a weekly overview of assigned paid and unpaid acti
 - **Weekly Schedule I** Sorted by planning unit and employee names.
 - **Weekly Schedule I with Filter** Same as Weekly Schedule I, but with additional filter options.
 - **Weekly Schedule I (without Full-Day Activities)**
-  
 - **Weekly Schedule II** As above but selection-based version, sorted by selection name.
 - **Weekly Schedule II (without Full-Day Activities)**
 - **Weekly Schedule II (without Breaks)**

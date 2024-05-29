@@ -25,6 +25,6 @@ The Linear requirement script uses a linear calculation method to determine the 
 11. {% include reusables/{{ page.lang }}/scripts/steps/startdate.md %}
 12. {% include reusables/{{ page.lang }}/scripts/steps/number-of-days.md %}
 13. Click _Ok_{:.doc-button} to start the calculation.<br>
-   A window opens with your input parameters and the script execution results. Check the {% link_new saved staff requirements in Shift Center | features/scheduling/edit-or-delete-staff-requirements.md %}.
+    A window opens with your input parameters and the script execution results. Check the {% link_new saved staff requirements in Shift Center | features/scheduling/edit-or-delete-staff-requirements.md %}.
 
 {{ 1 | image: 'Linear Script UI', '80%' }}

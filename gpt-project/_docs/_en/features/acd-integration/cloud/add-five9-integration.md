@@ -25,16 +25,16 @@ If you are grouping your queues by campaign, the integration reads the standard 
 
 If you are grouping your queues by skill, the integration needs a custom call log report from Five9 that includes skills. To import data from queues grouped by skills, follow the steps below in Five9:
 
- 1. Create a new shared report folder named "Shared Reports (injixo)".
- 2. Customize the standard call log report by including the "SKILL" column.
- 3. Save the customized report as "Call Log with Skills" in the new shared folder.
+1.  Create a new shared report folder named "Shared Reports (injixo)".
+2.  Customize the standard call log report by including the "SKILL" column.
+3.  Save the customized report as "Call Log with Skills" in the new shared folder.
 
 For more detailed information on how to customize reports, refer to the Five9 Help Center.
 
 ## Add your Five9 integration
 
-1. Go to _Account > Integrations_{:.breadcrumbs}.
-2. If there already is an integration, click _Add integration_{:.doc-button}.
+1. Go to *Account > Integrations*{:.breadcrumbs}.
+2. If there already is an integration, click *Add integration*{:.doc-button}.
 3. In the **Five9** tile, click _Add integration_{:.doc-button}.
 4. Enter a unique name for the new integration that identifies the data source.
 5. Enter the username and password for a Five9 user with the roles ADMIN and REPORTING.

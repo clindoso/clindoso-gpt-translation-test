@@ -20,7 +20,6 @@ To support your workforce management, injixo needs contact and agent status data
 
 injixo offers native vendor-specific integrations and universal integrations, both for cloud and on-premise systems. Depending on the integration, injixo receives data every 15, 30, or 60 minutes (historical data import), or even within seconds (real-time data import).
 
-
 ## Delivery modes
 
 The delivery mode of an integration determines how injixo connects to the external system:

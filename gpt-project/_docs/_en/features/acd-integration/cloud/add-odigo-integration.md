@@ -25,16 +25,18 @@ New to integrations? Learn {% link_new the basics | features/acd-integration/clo
 4. Enter a unique name for the new integration that identifies the data source.
 5. In the **Credentials** and **Contact data** sections, fill out all mandatory fields.
 6. (Optional) Configure the import of detailed break agent statuses:
-- Check the checkbox **Import detailed break agent statuses**.<br>When importing break statuses, injixo includes information about the type of break taken.<br>Note: If you check this checkbox, you also need to update the {% link_new activity mapping | features/intraday/map-external-status.md | #remap-already-mapped-external-statuses %}.
-- Enter your Odigo URL including the tenant ID.
-- Enter the username and password for the web service.
+
+   - Check the checkbox **Import detailed break agent statuses**.<br>When importing break statuses, injixo includes information about the type of break taken.<br>Note: If you check this checkbox, you also need to update the {% link_new activity mapping | features/intraday/map-external-status.md | #remap-already-mapped-external-statuses %}.
+   - Enter your Odigo URL including the tenant ID.
+   - Enter the username and password for the web service.
+
 7. Click _Save integration_{:.doc-button}.
 
 ## Configure your Odigo integration
 
 1. In the **Generate injixo URL token** section, click _Generate_{:.doc-button}.
 2. Copy the injixo URL token to your clipboard.<br>
-The injixo URL token is only shown once. If you cannot finish your setup right away, store it in a safe place, e.g. into a password manager.
+   The injixo URL token is only shown once. If you cannot finish your setup right away, store it in a safe place, e.g. into a password manager.
 3. In the Administration section of your Odigo interface, activate sending notifications to an external server. To do this, contact Odigo.
 4. Paste the copied **injixo URL token** as notification URL.
 5. Save your settings in Odigo and go back to injixo.
@@ -55,4 +57,3 @@ Learn more about {% link_new mapping external user identifiers | features/acd-in
 2. Map external statuses from Odigo to injixo activities.
 
 Learn more about {% link_new mapping external statuses | features/intraday/map-external-status.md | #map-external-statuses-to-activities %} to injixo activities.
-

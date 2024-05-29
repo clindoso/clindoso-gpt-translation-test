@@ -1,6 +1,6 @@
 ---
-title: Manage user accounts
-description: View billed and unbilled users. Create, edit, and delete users. Manage user access by adding user roles.
+title: Manage people for billing
+description: Learn how to view active and inactive people and how to deactivate and delete people.
 product_label:
   - essential
   - advanced
@@ -8,134 +8,65 @@ product_label:
   - classic
 related_articles:
   - overwrite_title: Add title for untranslated source
-    filepath: getting-started/manage-2fa.md
+    filepath: getting-started/how-does-billing-work.md
   - overwrite_title: Add title for untranslated source
-    filepath: getting-started/default-user-roles.md
+    filepath: features/people/configure-people-settings.md
+  - overwrite_title: Add title for untranslated source
+    filepath: features/people/configure-people-settings.md
+    overwrite_title: Add title for untranslated source
+    filepath: features/administration/deactivate-employees.md
 redirect_from:
   - /user-administration/
 redirect_reason: page used in intercom, updated filename on 06 December 2022
 ---
 
-Set up user accounts in injixo to manage the people in your organization. 
-
-Under _Account > Users_{:.breadcrumbs} you get a complete overview of all users:
-- Billed users: This tab shows all active users in your injixo tenant.
-- Unbilled users: This tab shows all {% link_new deactivated users | features/administration/deactivate-employees.md %} who can no longer log in to injixo. Your organization is no longer {% link_new billed | getting-started/how-does-billing-work.md %} for deactivated users.
-
-To find one or more individual users, use the search field on top of the user list. Use commas to separate the entries.
-To filter users by user role, click the **User roles** column header. A dialog opens where you can select one or more roles. All users that have at least one of the selected roles are displayed in the user list.
-
-## Create users
-
-Users are also called people. injixo provides three separate places for user creation:
-- _Account > Users_{:.breadcrumbs}
-- _WFM > Administration > Scheduling > Employees_{:.breadcrumbs}
-- {% link_new People | features/people/manage-people.md | #create-a-new-person %}
-
-> Note
-> 
-> You only need to create a user once in one of these places. injixo will then automatically synchronize this user data in the two other places.
-
-To create a user, follow these steps:
-
-1. Go to _Account > Users_{:.breadcrumbs}.
-2. Click _Create user_{:.doc-button}.
-3. Fill out the user data.<br>
-   Keep the **Send welcome email** checkbox checked. The user will get an email to set a password, which will verify their email address.<br>
-4. Click _Create_{:.doc-button}.
-
-## Edit a user account
-
-injixo provides two places where you can edit a user account, depending on what you want to do. The table below gives you an overview of the different configuration options and where you can find them in injixo. You can also access both of these places from People.
-
-| I want to                                          | Where to go in injixo                                                                             |
-| -------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| {% link_new Configure scheduling-related settings for a user | features/administration/employee-overview.md | #overview-of-employee-settings %} (e.g. assign activities, add skill levels, define availabilities) | _WFM > Administration > Scheduling > Employees_{:.breadcrumbs} |
-| {% link_new Edit staff membership information | getting-started/manage-user-accounts.md | #deactivate-a-user-account %} for a user       | _WFM > Administration > Scheduling > Employees_{:.breadcrumbs} |   
-| Edit language and time zone information for a user | _Account > Users_{:.breadcrumbs} |
-| {% link_new Assign a user role to a user | getting-started/configure-user-roles.md | #assign-user-roles-to-users %} | _Account > Users_{:.breadcrumbs} |
-| {% link_new Enforce two-factor authentication | getting-started/manage-2fa.md %}   | _Account > Users_{:.breadcrumbs} |
-
-If you want to edit a user, follow these steps:
-
-1. Go to _Account > Users_{:.breadcrumbs}.
-2. Click the user name of an existing user.
-3. Change the user settings.
-4. Click _Save_{:.doc-button}.
-
-> Note  
-> 
-> If you change a user's email address, the user will receive an email to verify the new address. Uers who have not yet verified their email address, can also click a link in their user profile to receive the verification email again.
-
-### Grant admin access to a user
-
-1. Go to _Account > Users_{:.breadcrumbs}.
-2. Click the user name of an existing user.
-3. In the **Admin access** section, check the **Grant admin access** checkbox.
-4. Click _Save_{:.doc-button}.
-
-### Unlock users
-
-User accounts get locked after three failed login attempts with a wrong password. To unlock locked users, follow these steps:
-
-1. Go to _Account > Users_{:.breadcrumbs}.<br>
-The user list shows a yellow {% icon lock %} next to the locked user's name.
-2. Click the user name of the locked user.
-3. In the **Security** section on the right, click _Unlock user_{:.doc-button}.
-
-When you have unlocked a user, we recommend setting a new password for that user. 
-
-### Set a new user password
-
-If a user has forgotten their password, they can reset it themselves by clicking the **Forgot your Password?** link on the login page. Alternatively, you can set it for them, e.g. after their account was locked.
-To set a new password for a user, follow these steps:
-
 > Note
 >
-> Users are not notified about password changes. You need to inform them about their new password.
+> This article documents the current status of the new **People** app. Until all functionalities described in this article have been completely transferred from existing features, you can still find them there.
+
+## View active and inactive people
+
+In _People_{:.breadcrumbs}, you can see for how many people your organization is billed. At the top left of the page, you can choose which information you want to display:
+
+- **Active**: This shows all the people for which your organization is billed.
+- **Inactive**: This shows all {% link_new deactivated people | getting-started/manage-user-accounts.md | #deactivate-a-person %}. People that have been deactivated can no longer log in to injixo. Your organization is not {% link_new billed | getting-started/how-does-billing-work.md %} for people that have been deactivated.
+
+To find one or more individual persons, use the search field on top of the people list. Use commas to separate the entries.
+
+To filter people by role, use the drop-down menu next to the search field and select a role.
+
+## Export the person list as a CSV file
+
+You can export a full or filtered person list as a CSV file. For example, you can import this CSV file into external databases and tools, such as Data Warehouse databases, SAP and HR systems.
+
+1. Go to _Account > Users_{:.breadcrumbs}.
+2. (Optional) To narrow down the list of displayed people, use the search field or the roles filter.
+3. Click _Export to CSV_{:.doc-button} at the top right.  
+   The CSV file is downloaded to your computer.
+
+The comma-separated CSV file contains the person's last name, first name, and email address. The export function uses a fixed file format that cannot be changed.
+
+## Deactivate a person
+
+To understand the consequences of deactivating people, read {% link_new this article | features/administration/deactivate-employees.md %}.
 
 1. Go to _Account > Users_{:.breadcrumbs}.
 2. Click the user name of an existing user.
-3. In the **Security** section on the right, click _Set new password_{:.doc-button}.
-4. Enter a new password for the user.
-5. Click _Save_{:.doc-button}.
-
-
-
-## Deactivate a user account
-
-To understand the consequences of deactivating user accounts, read {% link_new this article | features/administration/deactivate-employees.md %}.
-
-1. Go to _Account > Users_{:.breadcrumbs}.
-2. Click the user name of an existing user.
-3. Click _Delete_{:.doc-button} on the bottom right.  
+3. Click _Delete_{:.doc-button} at the bottom right.  
    A window opens.
 4. To deactivate the user, click _Staff Membership_{:.doc-button} and set a leave date. All scheduling data will be retained. You can still reactivate the user later.
 
 Learn how to {% link_new reactivate a user | features/administration/deactivate-employees.md | #reactivate-employees %}.
 
-## Delete a user account
+## Delete a person
 
 > Warning
 >
-> You cannot reactivate a deleted user account. The user account will be deleted from all current and future schedules they were scheduled for.
+> You cannot reactivate a deleted person. The person will be deleted from all current and future schedules they were scheduled for.
 
-To permanently delete a user account, follow the steps below:
+To permanently delete a person, follow the steps below:
 
-1. Go to _Account > Users_{:.breadcrumbs}.
-2. Click the user name of an existing user.
-3. Click _Delete_{:.doc-button} on the bottom right.  
-   A window opens.
-4. Check the checkbox **I understand that the user record and all scheduling data for \<user name\> will be deleted.**
-5. Click _Delete_{:.doc-button}. 
-
-## Export the user list as a CSV file
-
-You can export a full or filtered user list as a CSV file. For example, you can import this CSV file into external databases and tools, such as Data Warehouse databases, SAP and HR systems.
-
-1. Go to _Account > Users_{:.breadcrumbs}.
-2. (Optional) To narrow down the list of displayed users, use the search field or the roles filter.
-3. Click _Export to CSV_{:.doc-button} on the top right.  
-   The CSV file is downloaded to your computer.
-
-The comma-separated CSV file contains the last name, first name, and the users' email address. The export function uses a fixed file format that can't be changed.
+1. Go to _People_{:.breadcrumbs}.
+2. Search for the person you want to delete and click their tile.
+3. In the configuration panel, click _Delete person_{:.doc-button} at the bottom right.
+4. In the confirmation window, click _Delete person_{:.doc-button}.

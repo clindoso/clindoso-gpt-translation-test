@@ -27,7 +27,7 @@ Click a link to see how to set up the specific meeting type.
 
 ## Prerequisites and limitations
 
-- You need to have created at least one planning unit, one activity of type Meeting, a scheduling period, and at least one person. 
+- You need to have created at least one planning unit, one activity of type Meeting, a scheduling period, and at least one person.
 - The Schedule level must contain a schedule for the planning unit in which you want to schedule people for meetings.
 - Meetings can only be scheduled for time periods in the future.
 - Meetings replace {% link_new activities | features/administration/activities.md %} of type Presence configured as Replaceable.

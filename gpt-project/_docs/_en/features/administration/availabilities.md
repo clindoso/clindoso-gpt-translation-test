@@ -51,10 +51,10 @@ Example: A person is only available to work on mornings from 8 AM to noon due to
 2. Select the person from the list.
 3. In the **Availability** section on the right, click the Add icon {% icon item-add | icon-only %}.
 4. Configure the availability:
-    - (Optional) **Valid from** and **Valid to**: If the availability is only valid for a certain date range, the dates limit its {% link_new validity period | features/administration/set-a-validity-period.md %}.
-    - **Day Types**: Select Wednesday and Friday. Hold CTRL to select multiple entries.
-    - **From**: Enter 8:00.
-    - **To**: Enter 12:00.
+   - (Optional) **Valid from** and **Valid to**: If the availability is only valid for a certain date range, the dates limit its {% link_new validity period | features/administration/set-a-validity-period.md %}.
+   - **Day Types**: Select Wednesday and Friday. Hold CTRL to select multiple entries.
+   - **From**: Enter 8:00.
+   - **To**: Enter 12:00.
 5. Click _OK_{:.doc-button}.
 
 ## Rotate availabilities across weeks
@@ -75,22 +75,22 @@ To configure the day model for the morning shift, proceed as follows:
 
 1. Create a new day model.
 2. Configure the day model:
-    - **Type**: Select **Availability Period**.
-    - **Name** and **Abbreviation**: Enter a unique name and abbreviation, e.g. Availability 8&nbsp;AM - 2&nbsp;PM and Avail 8AM-2PM.
-    - (Optional) **Color**: Select a color to help you identify the day model.
-    - **Availability Period Start**: Enter 8:00.
-    - **Availability Period End**: Enter 14:00.<br> Alternatively, set an **Availability Period Duration**. The maximum value is 48 hours.
+   - **Type**: Select **Availability Period**.
+   - **Name** and **Abbreviation**: Enter a unique name and abbreviation, e.g. Availability 8&nbsp;AM - 2&nbsp;PM and Avail 8AM-2PM.
+   - (Optional) **Color**: Select a color to help you identify the day model.
+   - **Availability Period Start**: Enter 8:00.
+   - **Availability Period End**: Enter 14:00.<br> Alternatively, set an **Availability Period Duration**. The maximum value is 48 hours.
 3. Click _OK_{:.doc-button}.
 
 To configure the day model for the evening shift, proceed as follows:
 
 1. Create a new day model.
 2. Configure the day model:
-    - **Type**: Select **Availability Period**.
-    - **Name** and **Abbreviation**: Enter a unique name and abbreviation e.g. Availability 2&nbsp;PM - 8&nbsp;PM and Avail 2PM-8PM.
-    - (Optional) **Color**: Select a color to help you identify the day model.
-    - **Availability Period Start**: Enter 14:00.
-    - **Availability Period End**: Enter 20:00.<br> Alternatively, set an **Availability Period Duration**. The maximum value is 48 hours.
+   - **Type**: Select **Availability Period**.
+   - **Name** and **Abbreviation**: Enter a unique name and abbreviation e.g. Availability 2&nbsp;PM - 8&nbsp;PM and Avail 2PM-8PM.
+   - (Optional) **Color**: Select a color to help you identify the day model.
+   - **Availability Period Start**: Enter 14:00.
+   - **Availability Period End**: Enter 20:00.<br> Alternatively, set an **Availability Period Duration**. The maximum value is 48 hours.
 3. Click _OK_{:.doc-button}.
 
 ### Create and assign a shift sequence
@@ -100,9 +100,9 @@ To use the two day models you just created for planning, follow these steps:
 1. {% link_new Create a shift sequence | features/administration/shift-sequences.md | #create-shift-sequences %} with two **Employee rows** and a **Duration** of 14 days.<br>
 2. In the shift sequence, insert the day models alternating. In row 1, add the morning day model in week 1, and the evening day model in week 2. Add the day models in the reverse order in row 2.
 3. {% link_new Assign the shift sequence | features/administration/employee-overview.md | #assign-a-shift-sequence %} to your people:
-    - For people in planning unit A, select the first employee row.
-    - For people in planning unit B, select the second employee row.
-    - Set a **reference date** to define when the shift sequence starts to be planned. Set the reference date to the day of the week when your scheduling week begins, e.g. Monday.
+   - For people in planning unit A, select the first employee row.
+   - For people in planning unit B, select the second employee row.
+   - Set a **reference date** to define when the shift sequence starts to be planned. Set the reference date to the day of the week when your scheduling week begins, e.g. Monday.
 4. {% link_new Insert the shift sequence | features/scheduling/schedules/schedules-insert-shift-sequences.md | #insert-shift-sequences %} into your schedule.
 
 ## Configure temporarily available people

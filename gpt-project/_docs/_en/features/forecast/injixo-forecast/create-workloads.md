@@ -54,7 +54,7 @@ How many workloads you configure and how many queues you add to each one depends
 
 Consider the following example:
 
-You have five queues configured in your ACD system: 
+You have five queues configured in your ACD system:
 
 - Support Tier 1
 - Support Tier 2

@@ -97,7 +97,6 @@ If the rule is activated, an employee must be granted the rest period specified 
 
 **2620 Minimum Number of Weekends off per Month**  
 If this rule is activated, an employee must be assigned as many free weekends as specified in the Contract.
-The weekends defined in the settings _48421_{:.id-label} and _48449_{:.id-label} are regarded as weekends.
 
 **2627 Minimum Number of Days Off per Week Due to Work Done on a Saturday**  
 Specify the minimum number of days off per scheduling week that an employee is to be granted in the following week between Monday and Friday if the employee worked on the Saturday of the previous week or is already scheduled for a shift.

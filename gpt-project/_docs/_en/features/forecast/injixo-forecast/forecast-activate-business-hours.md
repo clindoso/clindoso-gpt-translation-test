@@ -19,7 +19,7 @@ By default, workloads do not take business hours into account, and forecasts are
 
 If you do not configure business hours for your planning unit, the forecast page does not display any staff requirements.
 
-injixo Classic supports business hours only in Smart workloads. 
+injixo Classic supports business hours only in Smart workloads.
 
 ## Prerequisites
 
@@ -32,7 +32,7 @@ Make sure the following applies:
 
 ## Activate business hours
 
-To include volumes outside business hours into the forecast calculation, activate business hours separately for each workload. 
+To include volumes outside business hours into the forecast calculation, activate business hours separately for each workload.
 
 1. In _Forecast > Workloads_{:.breadcrumbs}, select a workload.
 2. Click _Edit_{:.doc-button}.
@@ -41,7 +41,7 @@ To include volumes outside business hours into the forecast calculation, activat
 5. Click _Save workload_{:.doc-button}.
    injixo calculates a new forecast. The calculation can take some time.
 
-Once you have activated the business hours, the graph on the **Forecast** page displays periods outside business hours as gray areas. 
+Once you have activated the business hours, the graph on the **Forecast** page displays periods outside business hours as gray areas.
 
 ## Effects on the forecast
 

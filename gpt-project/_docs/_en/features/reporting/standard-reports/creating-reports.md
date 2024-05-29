@@ -27,7 +27,7 @@ Depending on the parameters and filters you use, reports can display various inf
 
 > Note
 >
-> Reports based on selections only display content if you assign at least one {% link_new selection | features/administration/selections.md %} to your people.
+> Reports based on selections only display content if you assign your people to at least one {% link_new selection | features/administration/selections.md %}.
 
 ## Create reports
 
@@ -43,11 +43,10 @@ Depending on the parameters and filters you use, reports can display various inf
    - **E-Mail Report to**: From the drop-down menu, select an option to define if and how {% link_new reports are emailed | features/reporting/standard-reports/email-reports.md %} to specific users.
    - **Anonymous Report**: To anonymize employee names and personnel numbers, select **Yes** .
 6. Select a report type:
-    - To generate a planning unit report, choose from the {% link_new **Planning Unit Reports** | features/reporting/standard-reports/planning-unit-reports.md %} list.
-    - To generate an employee report, click on {% link_new **Employee Reports** | features/reporting/standard-reports/employee-reports.md %} and choose from the list.<br>
-      Reports with a single-file icon {% icon report-icon-single-file | icon-only %} before the report name cover a maximum period of one month.<br>
-      Reports with a icon representing multiple files {% icon report-icon-multiple-files | icon-only %} cover a maximum period of one year.
-
+   - To generate a planning unit report, choose from the {% link_new **Planning Unit Reports** | features/reporting/standard-reports/planning-unit-reports.md %} list.
+   - To generate an employee report, click on {% link_new **Employee Reports** | features/reporting/standard-reports/employee-reports.md %} and choose from the list.<br>
+     Reports with a single-file icon {% icon report-icon-single-file | icon-only %} before the report name cover a maximum period of one month.<br>
+     Reports with an icon representing multiple files {% icon report-icon-multiple-files | icon-only %} cover a maximum period of one year.
 
 ## Time zones in reports
 

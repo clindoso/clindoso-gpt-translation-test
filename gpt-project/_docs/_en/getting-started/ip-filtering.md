@@ -17,12 +17,13 @@ IP filtering ensures that your users can access your injixo tenant from specific
 Only users with admin access can activate IP filtering.
 
 > Note
-> 
+>
 > When you activate IP filtering, all active users are logged out. Depending on the product area, the time frame varies:
+>
 > - Logout can be immediate
 > - Logout happens when data is next loaded or stored
 > - Logout is timed (only in Shift Center accessible via _Plan > Shift Center_{:.breadcrumbs})
-> 
+>
 > To continue working with injixo, users will have to log in again.
 
 1. Go to _Account > Security_{:.breadcrumbs} and scroll to the **IP filtering** section.
@@ -30,11 +31,11 @@ Only users with admin access can activate IP filtering.
 3. Click _Activate filtering_{:.doc-button}.
 
 IP filtering only affects UI interactions. The optionally available Shift Center via direct URL is currently not affected by IP filtering.
- 
+
 ## Edit the IP address ranges
 
 > Note
-> 
+>
 > If you edit the IP address ranges, all users will be logged out when they next interact with injixo. To continue working with injixo, users will have to log in again.
 
 1. Go to _Account > Security_{:.breadcrumbs} and scroll to the **IP filtering** section.
@@ -50,5 +51,5 @@ IP filtering only affects UI interactions. The optionally available Shift Center
 After deactivating IP filtering, users will be able to access injixo from any IP address.
 
 > Note
-> 
+>
 > If you deactivate IP filtering, all users will be logged out. To continue working with injixo, users will have to log in again.

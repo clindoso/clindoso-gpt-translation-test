@@ -22,7 +22,7 @@ New to integrations? Learn {% link_new the basics | features/acd-integration/clo
 
 ## Add a Talkdesk integration
 
-1. Go to _Account > Integrations_{:.breadcrumbs}.  
+1. Go to _Account > Integrations_{:.breadcrumbs}.
 2. If there already is an integration, click _Add integration_{:.doc-button}.
 3. In the **Talkdesk** tile, click _Add integration_{:.doc-button}.
 4. Enter a unique name for the new integration that identifies the data source.

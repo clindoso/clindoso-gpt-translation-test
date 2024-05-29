@@ -29,15 +29,15 @@ In injixo, there are three ways of filtering with selections across planning uni
 
 The following table presents an overview of the three different options to filter by selection across planning units. You can find these options in injixo components or functionalities.
 
-| Component/functionality | Filtering option |
-|-------------------------|----------------------------|
-| Schedules               | All planning units and one selection. |
-| Time Off                | All planning units and one selection. |
-| Real-Time Adherence     | One selection and no planning unit. |
-| Intraday Adherence      | One selection and no planning unit. |
-| Shift Center            | One selection (no planning unit filter available). |
+| Component/functionality | Filtering option                                                                            |
+| ----------------------- | ------------------------------------------------------------------------------------------- |
+| Schedules               | All planning units and one selection.                                                       |
+| Time Off                | All planning units and one selection.                                                       |
+| Real-Time Adherence     | One selection and no planning unit.                                                         |
+| Intraday Adherence      | One selection and no planning unit.                                                         |
+| Shift Center            | One selection (no planning unit filter available).                                          |
 | Notify people           | One planning unit and one selection. Repeat for all planning units that you want to filter. |
-| Scheduling periods  | One planning unit and one selection. Repeat for all planning units that you want to filter. |
+| Scheduling periods      | One planning unit and one selection. Repeat for all planning units that you want to filter. |
 | Meetings                | One planning unit and one selection. Repeat for all planning units that you want to filter. |
 | Time-off periods        | One planning unit and one selection. Repeat for all planning units that you want to filter. |
 | Vacation entitlement    | One planning unit and one selection. Repeat for all planning units that you want to filter. |
@@ -82,7 +82,7 @@ To create specific time-off periods for the Onboarding selection:
    You will be redirected to the **Time-off Periods** page.
 2. Click _Create time-off period_{:.doc-button}.  
    A dialog window opens.
-3. Filter by selection with the following drop-down menus:  
+3. Filter by selection with the following drop-down menus:
    - **Planning unit**: Select **Office 1**.
    - **Selection**: Select **Onboarding**.
 4. Complete the remaining fields.  

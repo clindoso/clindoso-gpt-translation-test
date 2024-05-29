@@ -15,7 +15,7 @@ Employee filters work similarly to {% link_new selections | features/administrat
 - For selections, you can create your own grouping criteria.
 
 Employee filters are available only in injixo Classic, Advanced, and Enterprise.
-  
+
 1. To access the filter editor, go to _Plan > Shift Center_{:.breadcrumbs}.
 2. If the Selection tile {% icon selection-filter-s | icon-only %} is selected: Select the Employee tile {% icon schedules-filter-employees-u | icon-only %}.
 3. Click the **Filter editor** link.
@@ -24,9 +24,9 @@ Employee filters are available only in injixo Classic, Advanced, and Enterprise.
 
 1. In the **Employee Filter** section, click the Create filter icon {% icon item-add | icon-only %}.
 2. Select a **Time Period Type**:<br>
-    - **User-Defined**: Specify the time period manually using the date picker. Select a **From** and **To** date.<br>
-    - **Relative**: Specify a period for the next, current or previous week, month or year.<br>
-    - **Context-Defined**: The date period is automatically set to the current day.
+   - **User-Defined**: Specify the time period manually using the date picker. Select a **From** and **To** date.<br>
+   - **Relative**: Specify a period for the next, current or previous week, month or year.<br>
+   - **Context-Defined**: The date period is automatically set to the current day.
 3. Create a [**Query**](#create-a-query).
 4. To show the query results, click _Display_{:.doc-button}.
 5. To add the query to the employee filter, click _Apply_{:.doc-button}.
@@ -49,7 +49,7 @@ To edit a query, click {% icon item-edit %}.
 ### IS IN
 
 The **IS IN** condition shows results that match the query exactly.
- 
+
 1. Select a configuration data type from the first drop-down menu.
 2. Select **IS IN** from the second drop-down menu.
 3. Click _Criteria_{:.doc-button} to see the available criteria and select one from the list.
@@ -65,21 +65,21 @@ The **IS LIKE** condition shows results that match the query partially.
 1. Select a configuration data type from the first drop-down menu.
 2. Select **IS LIKE** from the second drop-down menu.
 3. Enter the text you want to match in the text field.
-    - To replace any number of characters, use the * placeholder.
-    - To replace exactly one character, use the ? placeholder.
+   - To replace any number of characters, use the \* placeholder.
+   - To replace exactly one character, use the ? placeholder.
 4. (Optional) Select [options and relational operators](#use-priority-and-relational-operators) for planning units, employee categories or skills.
 5. Click _Apply_{:.doc-button}.
 
 ## Use priority and relational operators
 
-With the Priority checkbox and the relational operators, you can include employees based on their priority and assignment to the selected planning unit/employee category:  
+With the Priority checkbox and the relational operators, you can include employees based on their priority and assignment to the selected planning unit/employee category:
 
 1. Select **Planning unit** or **Employee category** from the first drop-down menu.
 2. Check the **Priority** checkbox.
 3. Select a relational operator from the list.
 4. Enter a priority value in the input field.
 
-With the Skill configuration element, you can use relational operators to include only skilled employees with a certain skill level:  
+With the Skill configuration element, you can use relational operators to include only skilled employees with a certain skill level:
 
 1. Select **Skill** from the first drop-down menu.
 2. Check the **Skill level** checkbox.
@@ -93,9 +93,11 @@ You can link individual queries with each other:
 1. Create or select a [filter](#create-a-filter).
 2. Create a [query](#create-a-query).
 3. Select a conditional operator:<br>
-  - **AND**: Include people who meet all the conditions.  
-  - **OR**: Include people who meet at least one of the conditions.  
-  - **NOT**: Exclude people who meet the condition following NOT.
+
+   - **AND**: Include people who meet all the conditions.
+   - **OR**: Include people who meet at least one of the conditions.
+   - **NOT**: Exclude people who meet the condition following NOT.
+
 4. Create a second query.
 5. Click _Apply_{:.doc-button}.
 
@@ -104,7 +106,6 @@ To create a group, open a parenthesis. To close it, close the parenthesis. Use t
 ## Example query
 
 To filter people from the New York planning unit who do not have a Full Time 40h contract and are not part of the Extra Hours selection, the query should follow this structure:
-
 
 ```
 Planning Unit IS IN "New York"

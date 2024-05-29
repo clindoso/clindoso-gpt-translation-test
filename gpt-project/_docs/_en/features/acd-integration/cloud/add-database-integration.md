@@ -40,20 +40,19 @@ You can define an SQL query to read data from a database. Database integrations 
 3. Select your **Database type**.
 4. Enter your credentials, depending on your selection.
 
-   | Database type                                  | Credentials                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-   | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-   | MS&nbsp;SQL&nbsp;Server<br>MySQL<br>PostgreSQL | **Database name**<br>**Host**<br>**Port**: If you use a named instance on an MS SQL Server connection, do not enter a port. Instead, open UDP port 1434 in your firewall to ensure that the SQL Server browser service can determine the port for injixo Cloud Link.<br>**Username**<br>**Password**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+   | Database type                                  | Credentials                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+   | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+   | MS&nbsp;SQL&nbsp;Server<br>MySQL<br>PostgreSQL | **Database name**<br>**Host**<br>**Port**: If you use a named instance on an MS SQL Server connection, do not enter a port. Instead, open UDP port 1434 in your firewall to ensure that the SQL Server browser service can determine the port for injixo Cloud Link.<br>**Username**<br>**Password**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
    | Other (ODBC)                                   | **Connection string**: Connection strings contain parameters required for the integration to connect your database server. You can find a connection string suitable for your database type and ODBC driver at [https://www.connectionstrings.com](https://www.connectionstrings.com).<br><br>Example for an InterSystem Caché database:<br>`DRIVER={InterSystemsODBC};SERVER=myServerAddress;` `PORT=12345;DATABASE=myDataBase;UID=myUsername;PWD=myPassword;` <br><br>SQL identifier in queries will be delimited by double quotes. Add additional options to the connection string if your ODBC driver does not support this by default, e.g. for Informix.<br><br>Example for an IBM Informix database:<br>`DRIVER={IBM INFORMIX ODBC DRIVER};SERVER=myServerAddress;DATABASE=myDatabase;HOST=myHost;SERVICE=myService;UID=myUsername;PWD=myPassword;PROTOCOL=onsoctcp;DELIMIDENT=y;`<br><br>You can also create an ODBC datasource, in which you configure the driver, server, database, etc. This allows you to add the below DSN option as the connection string instead of including the connection details in the connection string. You still need to add the options that cannot be configured in the ODBC datasource, e.g. `DELIMIDENT=y`.<br><br>DSN examples:<br> `DSN=myODBCDatasourceName;`<br>`DSN=myODBCDatasourceName;DELIMIDENT=y;` |
 
 ## Configure your import data
 
 1. In the **Configuration** section, select the type of import data that you want to import from your database:
+
    - **Contact-based** for historical contact data with one row for each contact
    - **Interval-based** for historical contact data which is aggregated into intervals of 15 or 30 minutes (set as Interval length)
    - **Agent status** for agent status data  
-    By default, data is imported every 15 minutes but you can control the import behavior with two additional checkboxes:
-        - **Import data in real time**: Data is imported every 10 seconds. Available in injixo Advanced and Enterprise WFM only.
-        - **Data reconciliation**: Controls which time period of agent status data is imported every 15 minutes. Defaults to data from the last 24 hours.  
+     By default, data is imported every 15 minutes but you can control the import behavior with two additional checkboxes: - **Import data in real time**: Data is imported every 10 seconds. Available in injixo Advanced and Enterprise WFM only. - **Data reconciliation**: Controls which time period of agent status data is imported every 15 minutes. Defaults to data from the last 24 hours.
 
 2. Select the **Database time zone** from the drop-down menu.
 3. Enter the **SQL query** that will be used to import data from your database. Learn more about the [SQL Query](#sql-query).
@@ -91,14 +90,14 @@ table th:nth-of-type(4) {
 }
 </style>
 
-| Import data type | Sample query                                                                                            |
-| ---------------- | ------------------------------------------------------------------------------------------------------- |
+| Import data type | Sample query                                                                                      |
+| ---------------- | ------------------------------------------------------------------------------------------------- |
 | Interval-based   | SELECT queueidentifier, queuename, timestamp, offered, answered, handlingtime, channel FROM table |
 | Contact-based    | SELECT queueidentifier, queuename, timestamp, answered, duration, channel FROM table              |
 | Agent status     | SELECT agentidentifier, starttime, endtime, activity FROM table                                   |
 
-> Note 
-> 
+> Note
+>
 > In most cases, your database will not match the expected column names. Get around this by using the required column names as column aliases or create a view in your database.
 
 Extend the sample queries to get and filter data from your custom table:
@@ -136,35 +135,35 @@ table th:nth-of-type(4) {
 }
 </style>
 
-| Column                    | Data type | Required | Details                                                                                                                                                                  |
-| ------------------------- | --------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| agentidentifier           | String    | Yes      | Unique identifier for the agent                                                                                                                                          |
-| starttime                 | Datetime  | Yes      | Start of the agent status activity                                                                                                                                       |
-| endtime                   | Datetime  | No       | End of the agent status activity<br>Do not use if the activity is ongoing.                                                                                               |
-| activity                  | String    | Yes      | Identifier for the external activity                                                                                                                                     |
+| Column          | Data type | Required | Details                                                                    |
+| --------------- | --------- | -------- | -------------------------------------------------------------------------- |
+| agentidentifier | String    | Yes      | Unique identifier for the agent                                            |
+| starttime       | Datetime  | Yes      | Start of the agent status activity                                         |
+| endtime         | Datetime  | No       | End of the agent status activity<br>Do not use if the activity is ongoing. |
+| activity        | String    | Yes      | Identifier for the external activity                                       |
 
 ### Interval-based
 
-| Column                    | Data type | Required | Details                                                                                                                                                                  |
-| ------------------------- | --------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| queueidentifier           | String    | Yes      | Unique identifier for the queue<br>You can rename the queue by changing the queuename, but it will keep the same queueidentifier.                                        |
-| queuename                 | String    | Yes      | Identifier for the queue                                                                                                                                                 |
-| timestamp                 | Datetime  | Yes      | Start of the interval                                                                                                                                                    |
-| offered                   | Integer   | Yes      | Amount of contacts (e.g calls or emails) in the interval                                                                                                                 |
-| answered                  | Integer   | Yes      | Amount of contacts that have been handled in the interval                                                                                                                |
-| handlingtime              | Integer   | Yes      | Total handle time for all contacts in the interval                                                                                                                       |
-| channel                   | String    | No       | Identifier for the channel of the injixo source queue<br>Defaults to calls if empty<br>Valid values: calls, chats, emails, social_media, documents, cases. |
+| Column          | Data type | Required | Details                                                                                                                                                    |
+| --------------- | --------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| queueidentifier | String    | Yes      | Unique identifier for the queue<br>You can rename the queue by changing the queuename, but it will keep the same queueidentifier.                          |
+| queuename       | String    | Yes      | Identifier for the queue                                                                                                                                   |
+| timestamp       | Datetime  | Yes      | Start of the interval                                                                                                                                      |
+| offered         | Integer   | Yes      | Amount of contacts (e.g calls or emails) in the interval                                                                                                   |
+| answered        | Integer   | Yes      | Amount of contacts that have been handled in the interval                                                                                                  |
+| handlingtime    | Integer   | Yes      | Total handle time for all contacts in the interval                                                                                                         |
+| channel         | String    | No       | Identifier for the channel of the injixo source queue<br>Defaults to calls if empty<br>Valid values: calls, chats, emails, social_media, documents, cases. |
 
 ### Contact-based
 
-| Column                    | Data type | Required | Details                                                                                                                                                                  |
-| ------------------------- | --------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| queueidentifier           | String    | Yes      | Unique identifier for the queue<br>You can rename the queue by changing the queuename, but it will keep the same queueidentifier.                                        |
-| queuename                 | String    | Yes      | Identifier for the queue                                                                                                                                                 |
-| timestamp                 | Datetime  | Yes      | Start of the interval                                                                                                                                                    |                                                                                                       |
-| answered                  | Integer   | Yes      | Handled contact (value 1)<br>No handled contact (value 0)                                                                                                                |
-| duration                  | Integer   | No       | Total handle time of a single contact                                                                                                                                    |
-| channel                   | String    | No       | Identifier for the channel of the injixo source queue<br>Defaults to calls if empty<br>Valid values: calls, chats, emails, social_media, documents, cases. |
+| Column          | Data type | Required | Details                                                                                                                                                    |
+| --------------- | --------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | --- |
+| queueidentifier | String    | Yes      | Unique identifier for the queue<br>You can rename the queue by changing the queuename, but it will keep the same queueidentifier.                          |
+| queuename       | String    | Yes      | Identifier for the queue                                                                                                                                   |
+| timestamp       | Datetime  | Yes      | Start of the interval                                                                                                                                      |     |
+| answered        | Integer   | Yes      | Handled contact (value 1)<br>No handled contact (value 0)                                                                                                  |
+| duration        | Integer   | No       | Total handle time of a single contact                                                                                                                      |
+| channel         | String    | No       | Identifier for the channel of the injixo source queue<br>Defaults to calls if empty<br>Valid values: calls, chats, emails, social_media, documents, cases. |
 
 ## Edit a database integration
 

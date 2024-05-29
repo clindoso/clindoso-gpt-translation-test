@@ -37,16 +37,17 @@ Tip: Limit permissions to specific planning units or selections by configuring {
 
 Each person has a status based on the comparison between the scheduled activity and the actual activity:
 
-| Status           | Description                                                                                     |
-| ---------------- | ----------------------------------------------------------------------------------------------- |
-| In adherence     | The type of the scheduled activity is the same as the type of the actual activity. The row is not highlighted. |
-| Out of adherence | The activity types of the scheduled activity and of the actual one do not match. The row is highlighted in red.                |
+| Status           | Description                                                                                                     |
+| ---------------- | --------------------------------------------------------------------------------------------------------------- |
+| In adherence     | The type of the scheduled activity is the same as the type of the actual activity. The row is not highlighted.  |
+| Out of adherence | The activity types of the scheduled activity and of the actual one do not match. The row is highlighted in red. |
 
 > Note
 >
 > With no integration and mapped external user identifiers:
-> - A scheduled person appears as in adherence, and their actual activity appears as Offline. 
-> - A person who is not scheduled but is engaged in an activity appears as Not scheduled. 
+>
+> - A scheduled person appears as in adherence, and their actual activity appears as Offline.
+> - A person who is not scheduled but is engaged in an activity appears as Not scheduled.
 > - A person who is not scheduled and is offline is not displayed.
 
 Note the following behavior for scheduled people:
@@ -58,15 +59,15 @@ Note the following behavior for scheduled people:
 
 The following types and colors are displayed in the [agent table](#adherence-overview-agent-table):
 
-| Type           | Color  | Description                                                                                                                                                                   |
-| -------------- | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Not present    | Red    | The person is scheduled to work on a specific activity, but there is no information available from the external system. Data is not imported or not mapped correctly.          |
-| Wrong activity | Yellow | According to the external system, the person is working on an activity that does not match the scheduled activity in injixo.                                                   |
+| Type           | Color  | Description                                                                                                                                                              |
+| -------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Not present    | Red    | The person is scheduled to work on a specific activity, but there is no information available from the external system. Data is not imported or not mapped correctly.    |
+| Wrong activity | Yellow | According to the external system, the person is working on an activity that does not match the scheduled activity in injixo.                                             |
 | Not Scheduled  | Blue   | The person is not scheduled for any activity in injixo but the external system sent a status. This Out of adherence type does not affect the Adherence Score negatively. |
 
 ### Buffer time
 
-The buffer time defines the duration after which an Out of adherence status takes effect. Learn how to [change the default buffer time](#change-the-buffer-time). 
+The buffer time defines the duration after which an Out of adherence status takes effect. Learn how to [change the default buffer time](#change-the-buffer-time).
 
 In a real work environment, people are rarely able to adhere to their schedule to the second. This can lead to a cluttered display. The buffer time helps you to focus on the people who need your attention.
 
@@ -98,7 +99,9 @@ Hover over the graphs in the **Intraday Adherence** section to see the values fo
 Note: The times are displayed in the timezone of the selected planning unit. If you have only chosen a selection, and you use multiple time zones in injixo, the times appear in the timezone that has been configured in your company account. The graphs show the business hours of the selected planning unit where applicable.
 
 ### Agent overview
+
 <!-- still agent in the UI - october 2023 -->
+
 In the Agent overview section, you can see the number of agents for the three Out-of-adherence types and the number of agents that are in adherence, in buffer time, and out of adherence.
 
 ### Breaks and Presence
@@ -115,24 +118,24 @@ The table shows people being in adherence or out of adherence. You can sort the 
 
 The table contains the following columns:
 
-| Column                    | Description                                                                                                |
-| ------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| Column                    | Description                                                                                                 |
+| ------------------------- | ----------------------------------------------------------------------------------------------------------- |
 | Name                      | Name of the person                                                                                          |
 | Actual activity           | Name of the activity that the person is currently working on (based on data from the External System level) |
 | Status                    | Status as a colored marker with a tooltip for the name of the status                                        |
 | Scheduled activity        | Name of the activity the person is currently scheduled (if applicable)                                      |
 | Out-of-adherence duration | Time the person has been out of adherence                                                                   |
-| Current activity duration | Time passed since the start of the current activity                                                        |
+| Current activity duration | Time passed since the start of the current activity                                                         |
 
 ### Search and filter
 
 To filter the table content, use one of the following options:
 
-| Where             | Action                                               | Search hint                                                                               |
-| ----------------- | ---------------------------------------------------- | ----------------------------------------------------------------------------------------- |
-| Search bar        | Type in **(partial) search terms**                   | Search for people's names, activities, or statuses. Use a comma to separate multiple search terms. |
-| Agent overview    | Click a **status**                                   | You can add multiple statuses. Click again to remove the status from the search.          |
-| Activity overview | Hover over a table row and click the **magnifying glass** | You can add multiple activities. Click again to remove the activity from the search.      |
+| Where             | Action                                                    | Search hint                                                                                        |
+| ----------------- | --------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| Search bar        | Type in **(partial) search terms**                        | Search for people's names, activities, or statuses. Use a comma to separate multiple search terms. |
+| Agent overview    | Click a **status**                                        | You can add multiple statuses. Click again to remove the status from the search.                   |
+| Activity overview | Hover over a table row and click the **magnifying glass** | You can add multiple activities. Click again to remove the activity from the search.               |
 
 <!-- {{ 5 | image: "Table with details per agent", '75%' }} -->
 
@@ -176,9 +179,8 @@ Users with admin access can set a separate buffer time for each Out-of-adherence
 
 ## Troubleshoot wrong or missing external status information in injixo
 
-People without an assigned external user identifier appear as Offline. No status can be imported due to this missing mapping. You will not see any data in the external system level in Schedules or Shift Center. Add the correct external user identifier and wait for the next data import. Check already configured external user identifiers for typos. 
+People without an assigned external user identifier appear as Offline. No status can be imported due to this missing mapping. You will not see any data in the external system level in Schedules or Shift Center. Add the correct external user identifier and wait for the next data import. Check already configured external user identifiers for typos.
 
 If you see unexpected gaps in the data in the external system level in Shift Center or Schedules, make sure all relevant external activities are mapped to either the Present activity (ID 1) or individual activities. Learn more about {% link_new mappings | features/acd-integration/cloud/import-agent-status-data.md %}. <!-- Add new article about activity mapping, update naming -->
 
 If this does not resolve the problem, get a report that shows the actual status in the external system, take a screenshot of the data in the external system level, and contact our support team.
-

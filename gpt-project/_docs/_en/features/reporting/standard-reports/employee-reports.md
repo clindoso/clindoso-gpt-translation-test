@@ -49,10 +49,10 @@ They show the daily working time of the employees and their paid and unpaid acti
 ## Other reports
 
 - **Modifying Master Data**  
-This report logs users' additions, updates, and deletions to selected configuration data. It provides a comprehensive overview of the changes made to the users' data (e.g., name, address, email, date of birth, ID) within the specified timeframe. The data is automatically removed after 90 days.
+  This report logs users' additions, updates, and deletions to selected configuration data. It provides a comprehensive overview of the changes made to the users' data (e.g., name, address, email, date of birth, ID) within the specified timeframe. The data is automatically removed after 90 days.
 
 - **Master Data Overview**  
-   All of your users' available data. 
+   All of your users' available data.
 
 - **Group Authorization**  
    Access rights to navigator with features, menu items and scheduling actions per selected user group.
@@ -76,7 +76,7 @@ This report logs users' additions, updates, and deletions to selected configurat
    All birthdays and anniversaries of the employees. <!-- In addition, the employees whose probationary period has expired are specified. A separate table is created for each Planning Unit, whose entries are sorted by date within the anniversaries. -->
 
 - **Staff by Contract Type**  
-   Number of employees per contract type and the resulting number of working days and hours for the selected planning unit and time period. The total row shows the total values for each column. 
+   Number of employees per contract type and the resulting number of working days and hours for the selected planning unit and time period. The total row shows the total values for each column.
 
 - **Staff Shift Sequences**  
    Selection-based report. Assigned Shift Sequences per employee.

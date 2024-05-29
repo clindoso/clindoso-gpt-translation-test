@@ -58,8 +58,8 @@ The shift generation process creates shifts for each day of the scheduling perio
    - Option **of the employee requirement**: With a value of 100%, injixo will cover staff requirements exactly by 100%. A value greater than 100% will lead to more shifts than specified by the requirement. A value smaller than 100% will lead to fewer shifts (useful if the number of available staff is too low to cover the requirement).
    - Option **of the contractual hours**: With a value of 100%, injixo will make sure all people can reach their contractual hours with the generated shifts.
 
-6. To start the shift generation, click _Generate shifts_{:.doc-button}.  
-    When the shift generation has finished, you can access a results report in the JobProcessor that contains information about input data and the result.
+6. To start the shift generation, click _Generate shifts_{:.doc-button}.
+   When the shift generation has finished, you can access a results report in the JobProcessor that contains information about input data and the result.
 
    {{ 3 | image: 'Parameter window for shift generation', '50%' }}
 

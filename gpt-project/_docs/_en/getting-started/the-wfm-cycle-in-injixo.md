@@ -13,7 +13,7 @@ redirect_reason: Updated filename on 27 July 2023
 
 The goal of workforce management (WFM) is to optimize people deployment to meet business goals and service level targets. injixo helps you be more efficient throughout the different steps of the WFM cycle:
 
-  {{ 1 | image: "WFM cycle: Forecasting, Planning, Scheduling, Intraday management, Analytics", '60%' }}
+{{ 1 | image: "WFM cycle: Forecasting, Planning, Scheduling, Intraday management, Analytics", '60%' }}
 
 - Forecasting: Predict your short-, mid-, and long-term workload.
 - Planning: Decide on recruitment, budget, and training strategies for the future.
@@ -21,7 +21,7 @@ The goal of workforce management (WFM) is to optimize people deployment to meet 
 - Intraday management: Adapt your schedules to unforeseen events in real time.
 - Analytics: Understand, predict, and improve your business performance.
 
-In this article you will find an overview of how injixo can support you in all stages of the WFM cycle. 
+In this article you will find an overview of how injixo can support you in all stages of the WFM cycle.
 The very first step is to provide injixo with the data needed to generate a reliable forecast. To do so, you need to set up an integration with your Automatic Call Distribution (ACD) or Customer Relationship Management (CRM) systems.
 
 New to workforce management? Learn about the key concepts and definitions in our [glossary](/glossary/overview/).
@@ -30,18 +30,18 @@ New to workforce management? Learn about the key concepts and definitions in our
 
 ### Set up an integration
 
-To predict the workload your organization will face at any point in the future, injixo needs access to your contact data and/or agent status data from external systems (e.g. ACD or CRM systems). To allow injixo to import and process this data, you need to {% link_new integrate your external systems with injixo | features/acd-integration/cloud/how-integrations-work.md %}. injixo offers native, vendor-specific integrations and universal integrations. Depending on the integration, injixo receives data every 15, 30, or 60 minutes (historical data import), or even within seconds (real-time data import). 
+To predict the workload your organization will face at any point in the future, injixo needs access to your contact data and/or agent status data from external systems (e.g. ACD or CRM systems). To allow injixo to import and process this data, you need to {% link_new integrate your external systems with injixo | features/acd-integration/cloud/how-integrations-work.md %}. injixo offers native, vendor-specific integrations and universal integrations. Depending on the integration, injixo receives data every 15, 30, or 60 minutes (historical data import), or even within seconds (real-time data import).
 
 Once you have added an integration, it will automatically and continuously send data to injixo.
 Imported contact data is stored in queues, which are always associated with a channel. You need the queues to create workloads on which to base your forecast.
 
 You can configure your integrations in _Account > Integrations_{:.breadcrumbs}.
 
-### Create a workload  
+### Create a workload
 
 To use injixo Forecast, you first need to {% link_new create a workload | features/forecast/injixo-forecast/create-workloads.md | #create-workloads %} using the queues imported by your integration. Workloads contain all your historical data and related forecasts. To create a workload, your ACD must be correctly connected and imported queues must be available.
 
-You can create workloads in _Forecast > Workloads_{:.breadcrumbs}. 
+You can create workloads in _Forecast > Workloads_{:.breadcrumbs}.
 
 ### Generate a forecast
 
@@ -84,7 +84,7 @@ This is also possible in real time with {% link_new Real-Time Adherence | featur
 With that information, you can make short-notice adjustments to the schedule to deal with unforeseen events and avoid being under- or overstaffed.
 
 ## 5. Analytics
- 
+
 injixo allows you to {% link_new create dashboards | features/monitoring/dashboards/manage-dashboards.md %} with graphics to better visualize different metrics, e.g. a comparison of staff requirements and actual coverage, or of forecasted vs. actual incoming calls for different time series.
 
 injixo can also {% link_new generate multiple types of reports | features/reporting/standard-reports/creating-reports.md %} that help you keep the overview over relevant metrics, such as capacity according to contract type, time worked per planning unit or vacation overview.

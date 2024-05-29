@@ -13,7 +13,7 @@ related_articles:
     filepath: features/acd-integration/cloud/add-cloud-integration.md
 ---
 
-A Zendesk integration is a cloud integration that imports contact volumes for email, web forms, chat, calls, and social messaging from Zendesk Support and Zendesk Talk. 
+A Zendesk integration is a cloud integration that imports contact volumes for email, web forms, chat, calls, and social messaging from Zendesk Support and Zendesk Talk.
 
 The integration only imports incoming calls (but no outbound calls). The average handle time (AHT) data is only available for Zendesk Talk.
 
@@ -30,9 +30,9 @@ To add a new Zendesk integration in injixo, follow the steps below:
 3. In the Zendesk tile, click _Add integration_{:.doc-button}.
 4. Enter a unique name for the new integration that identifies the data source.
 5. In the **User credentials** section, enter your Zendesk credentials:
-   * Enter your full Zendesk domain name including the subdomain, e.g. example.zendesk.com.
-   * Enter your Zendesk username.
-   * Enter your API token.
+   - Enter your full Zendesk domain name including the subdomain, e.g. example.zendesk.com.
+   - Enter your Zendesk username.
+   - Enter your API token.
 6. In the **Configuration** section, select a grouping strategy. Choose either the **IVR** or the **Phone number** option. The strategy determines how injixo [names the resulting source queues](#queue-names-for-zendesk-talk) for Zendesk Talk views. The IVR option uses the destination group. The Phone number option uses the receiving number to generate the source queue name. A call without the relevant information will appear as ungrouped. Source queues for Zendesk Support are not affected.
 
    > You cannot change the grouping strategy once you have saved the injixo integration configuration.
@@ -57,7 +57,7 @@ Note: Adding new Zendesk views after you have saved the integration will auto-ge
 
 ### Unsupported views
 
-Zendesk allows you to create views to group tickets based on certain criteria, e.g. tickets assigned to you. Learn more in the [Zendesk documentation](https://support.zendesk.com/hc/en-us/articles/4408888828570-Creating-views-to-build-customized-lists-of-tickets). 
+Zendesk allows you to create views to group tickets based on certain criteria, e.g. tickets assigned to you. Learn more in the [Zendesk documentation](https://support.zendesk.com/hc/en-us/articles/4408888828570-Creating-views-to-build-customized-lists-of-tickets).
 
 injixo's Zendesk integration does not support all fields and operators you can select on the Zendesk view configuration page. In parentheses below, you can see the names used in the Zendesk API. To check if your views are supported, you may need to query the raw view configuration using the Zendesk API.
 

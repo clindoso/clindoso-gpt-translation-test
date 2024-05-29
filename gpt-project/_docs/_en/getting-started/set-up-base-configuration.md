@@ -16,7 +16,7 @@ Before you can start scheduling, you need to set up the basic configuration in i
 
 ## Configuration order
 
-We recommend setting up the configuration items in the order presented in the next section. Configuration items have interdependencies and can be assigned to one another. Follow the links in the table to learn more about each configuration item and how to configure them. 
+We recommend setting up the configuration items in the order presented in the next section. Configuration items have interdependencies and can be assigned to one another. Follow the links in the table to learn more about each configuration item and how to configure them.
 No configuration setup is the same, which is why the optimal order might be different for your organization. Use this article as a checklist to support your onboarding. Contact your consultant if you have any questions.
 
 ### Required configuration elements
@@ -62,7 +62,6 @@ The table below gives an overview of the required configuration items you need t
   </tbody>
 </table>
 
-
 ### Optional configuration elements
 
 The table below gives an overview of the optional configuration items you can configure in injixo, based on your organizational setup and the scheduling method you want to use.
@@ -97,7 +96,6 @@ The table below gives an overview of the optional configuration items you can co
     </tr>
   </tbody>
 </table>
-
 
 ## What's next?
 

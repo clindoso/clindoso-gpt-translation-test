@@ -15,6 +15,9 @@ LANGUAGE_MODELS = {
     "nl": {"language": "Dutch", "gpt-model": "ft:gpt-3.5-turbo-0125:personal:nl-29-02-2024:8xZPaq6n", "tm_path": "../_docs/tm/en-nl.csv", "target_spacy_model": "nl_core_news_sm"}
 }
 
+# GPT prompts
+PROMPT = "As a professional translator, your task is to translate the provided Markdown text to {language} while preserving the style, tone, Markdown format, structure, and terminology. Do not translate the Markdown syntax, file paths, or any text that should remain unchanged. If parts of the text are already in the target language or are global shorthand, keep them without any explanation."
+PROMPT_WITH_PREVIOUS_SENTENCE = "As a professional translator, your task is to translate the provided Markdown text to {language} while preserving the style, tone, Markdown format, structure, and terminology. Do not translate the Markdown syntax, file paths, or any text that should remain unchanged. If parts of the text are already in the target language or are global shorthand, keep them without any explanation. For context, consider that the sentence preceding the text you will translate is: '{previous_segment}'"
 # Set temperature for GPT text generation
 GPT_TEMPERATURE = 1.0
 
@@ -34,6 +37,7 @@ TRANSLATION_MEMORY_DIRECTORY = "../_docs/tm/"
 # Front matter processing variables
 FRONT_MATTER_VARIABLES = ['title: ', 'description: ']
 GPT_TRANSLATION_MARKER = ('gpt_translation: true', 'gpt_translation: true')
+DEEPL_MARKER = ('deepl_translation: true', 'deepl_translation: true')
 
 # Tag patterns
 tag_patterns = [

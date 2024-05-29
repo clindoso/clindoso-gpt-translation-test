@@ -1,71 +1,62 @@
 ---
-title: Analyze coverage, staffing, and requirement
+title: Analyze coverage, staffing, and staff requirements in Schedules
 toc: true
 product_label:
   - essential
   - advanced
   - enterprise
   - classic
-description: Analyze the coverage, staffing, and requirement for your activities and activity types (Schedules feature).
+description: Learn how to analyze the coverage, staffing, and staff requirements for your activities and activity types.
 ---
 
-In this article, you will learn how to:
+In _Plan > Schedules_{:.breadcrumbs}, you can analyze the coverage, staffing, and staff requirements for your scheduled activities and activity types.
 
-- analyze the coverage, staffing, and requirement for your activities and activity types.
-- filter by activities and activity types.
+## Prerequisites
+
+- You have calculated the {% link_new staff requirements | features/forecast/injixo-forecast/calculate-staff-requirements.md %}.
+- You have created a {% link_new schedule | getting-started/create-a-schedule.md %}.
 
 New to Schedules? Learn {% link_new the basics | features/scheduling/schedules/schedules-overview.md %} first.
 
-## What is the activities panel?
+## Display the activities area
 
-The _Activities Panel_ is part of _Plan > Schedules_{:.breadcrumbs}. It is located at the bottom of the screen and is retracted by default. The panel allows you to analyze the coverage, staffing, and requirement of activities and activity types for the planning unit(s) you have expanded in the schedule area above.
+1. In _Plan > Schedules_{:.breadcrumbs}, set the {% link_new filters | features/scheduling/schedules/schedules-overview.md | #filter-data %} and the {% link_new view options | features/scheduling/schedules/schedules-overview.md | #schedule-area %}.
+2. In the schedule area, expand the planning unit(s) for which you want to analyze activity data.
+3. In the [activities area](#activity-data-table), click a tab:
+   - **Activities - Coverage**: The difference between the number of scheduled people and the staff requirements
+   - **Activities - Staffing**: The number of scheduled people
+   - **Activities - Requirements**: The saved staff requirements<br>
+4. To select activities and activity types, use the filter icon {% icon filter | icon-only %} in the header of the **Activity** column.<br>An <em class="multiactivity-icon"></em> icon is displayed next to multiactivities. Subactivities are indented below the multiactivity.<br>If you delete an activity in _Plan > Configuration > Activities_{:.breadcrumbs} and you don't remove it from the planning unit(s) to which it was assigned, the deleted activity is displayed in italics.
+   - Check the checkboxes next to the items that you want to display. You can select multiactivities or activities that are not subactivities. You cannot select individual subactivities. Use the search field to search for individual subactivities, multiactivities or other individual activities by their names.
+   - (Optional) Use the search field. To search for several terms at once, use commas between the terms.
+5. Click anywhere outside the activities area to update the displayed data.
 
-The following three tabs exist:
+### Activity data table
 
-- _Activities - Coverage_: the difference between the number of scheduled and required employees
-- _Activities - Staffings_: the number of scheduled employees for a certain activity
-- _Activities - Requirements_: stored employee requirements per activity
+The table in each tab includes the following columns:
 
-Click _⌃_{:.doc-button} on the left or on one of the tabs to expand the panel.
+- **Activity**: The activities or activity types for which you want to display data.
+- **Level**: The level(s) that you selected in the {% link_new schedule area | features/scheduling/schedules/schedules-overview.md | #schedule-area %}.
+- **Sum**: The sum of coverage, staffing, or staff requirements values for the displayed time frame.
+- Timeline column: An overview of the selected time frame with coverage, staffing, or staff requirements values per interval.
 
-{{ 1 | image: 'Activities - Coverage Panel' }}
+Hover over any cell to display the coverage, staffing, and staff requirements values for the 15-minute intervals.
 
-## Check the coverage, staffing, or requirement for an activity or activity type
+If you select one or two days using the date picker in the schedule area, or if you click the day mark in the timeline column, the table displays columns for each hour of the selected day(s).
+To display data in 30-minute intervals, hover in between two full-hour marks in the table header. When the {% icon magnifying_glass %} appears, click it.<br>To display 15-minute intervals, hover over the 30-minute mark, and click the {% icon magnifying_glass %} when it appears.<br>To go back to 30-minute intervals, click any 15-minute mark. To go back to displaying full-hour columns, click any full-hour mark at any time.<br>
 
-1. Click one of the three **tabs** of the activity panel, depending on whether you want to analyze coverage, staffing, or requirement.
-2. In the header of the first column, click the **filter icon** and pick the activities and activity types you want to analyze. Learn more about [how to filter](#filter-activities-and-activity-types) below.
-3. Click **anywhere** outside the selection window to update the view.
+A cell is empty if either the staff requirements, the staffing values, or both are missing for the interval.<br>
+Cells are color-coded as shown in the table below. The more intense the color, the greater the difference between the staff requirements and the staffing.
 
-You will see a table that consists of:
+<!-- left-align table -->
+<style>
+table {
+   margin-left: 0px;
+}
+</style>
 
-- _Activity_ column: contains a list of all selected activities and activity types
-- _Level_ column: shows the level(s) that you have selected in the schedule area
-- _Sum_ column: shows the sum of the coverage, staffing or requirement values for the displayed time range
-- _Time or date range_: coverage, staffing or requirement values based on the date range and zoom level you have selected in the schedule area
-
-Provided that you have calculated a requirement and scheduled your employees, you can now check for each activity and interval how good the coverage is. You can also check the staffing and the calculated requirement for each interval. If cells are empty, it means either the requirement or the staffing is missing or both.
-
-{{ 6 | image: 'Activities - Coverage Panel with Multiactvity' }}
-
-When you are viewing the data in hourly intervals, you can hover your mouse over a cell to display the values for the 15-minute intervals.
-
-{{ 2 | image: 'Detail View', '40%' }}
-
-Note: Activities which have been deleted in the _Administration_ section appear in italics. Multiactivities have the _Symbol_{:.multiactivity-icon} next to it. The indented rows below the multiactivity contain the child activities.
-
-### Understand the color-coding
-
-The color coding of the cells immediately shows you how good your coverage is. Red shows understaffing, blue shows overstaffing and green signals ideal coverage (staffing equals requirement). The more intense the color, the greater the deviation from the ideal staffing. <!-- White cells indicated that there is an over- and understaffing within an hour, which sum up to zero. -->
-
-## Filter activities and activity types
-
-You can filter the list of activities and activity types to only show those items for which you want to analyze coverage, staffing, or requirement.
-
-1. Click the **filter icon** _![Filter icon](/assets/img/common/schedules-filter-activities.png)_{:.doc-button-icon} in the header of the Activity column. You will see a list of activities and activity types based on all planning units which are currently expanded in the schedule area.
-2. (Optional) Use the **search field**. To search several terms at once, use commas between the terms. You can only select or deselect multiactivities, but you can search for names of their subactivities.
-   {{ 5 | image: 'Filter with Multiactivity', '40%' }}
-
-3. Check or uncheck the **checkboxes** in front of the item(s) you want to display or hide. Use **All** to (de)select all items in one go.
-4. Click **anywhere** outside the selection window to update the view. You have now filtered your view based on the selected activities and activity types.
-
-   {{ 4 | image: 'Filter activities', '40%'}}
+| Color | Coverage       | Description                                                    |
+| ----- | -------------- | -------------------------------------------------------------- |
+| Red   | Understaffing  | Fewer people scheduled than necessary                          |
+| Blue  | Overstaffing   | More people scheduled than necessary                           |
+| Green | Ideal coverage | The number of scheduled people matches the staff requirements. |

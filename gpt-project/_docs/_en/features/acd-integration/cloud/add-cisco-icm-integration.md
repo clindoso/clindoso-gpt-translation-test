@@ -33,14 +33,14 @@ New to integrations? Learn {% link_new the basics | features/acd-integration/clo
 3. Install and connect {% link_new injixo Cloud Link | features/acd-integration/cloud/install-cloud-link.md %}.<br>
 4. In the **Configuration** section, set up your integration:
 
-   - Enter a **Connection string** with the required parameters to connect to your Cisco database:   
-   `DRIVER={MS SQL Server};Server=myServerAddress;Database=myDataBase;UserId=myUsername;Password=myPassword;`
+   - Enter a **Connection string** with the required parameters to connect to your Cisco database:  
+     `DRIVER={MS SQL Server};Server=myServerAddress;Database=myDataBase;UserId=myUsername;Password=myPassword;`
    - Select your **Database time zone** from the drop-down menu.
    - Enter your Cisco ICM **Client ID** and **Password**.
    - Enter your **Peripheral gateway 1**.
    - (Optional) Enter your **Peripheral gateway 2**.
 
-4. Click _Save integration_{:.doc-button}.
+5. Click _Save integration_{:.doc-button}.
 
 injixo will start importing RTA data, but the data will only be visible after you have mapped external user identifiers to your people.
 
@@ -60,4 +60,3 @@ Learn more about {% link_new mapping external user identifiers | features/acd-in
 2. Map external statuses from Cisco ICM to injixo activities.
 
 Learn more about {% link_new mapping external statuses | features/intraday/map-external-status.md | #map-external-statuses-to-activities %} to injixo activities.
-

@@ -79,7 +79,7 @@ If the injixo client is not installed, the IE logo in the left navigation identi
 
 ## Firewall exceptions
 
-To access the injixo web pages, allow web traffic to and from *.injixo.com via port 443.
+To access the injixo web pages, allow web traffic to and from \*.injixo.com via port 443.
 
 If you use ActiveX-based features or custom SDK applications, add another firewall exception. These applications use port 45054 for outgoing traffic (port 80 for injixo hosts prior to 2019) and require direct Internet access over Transmission Control Protocol (TCP). Proxy servers configured in the browser are not supported.
 
@@ -89,11 +89,11 @@ To learn more about firewall exceptions in Windows, see [Microsoft documentation
 
 ### Share URLs for WebSockets
 
-injixo uses WebSockets to send real-time updates to users in Shift Center, Schedules, and Real-Time Adherence. 
+injixo uses WebSockets to send real-time updates to users in Shift Center, Schedules, and Real-Time Adherence.
 
 The TCP-based secure WebSocket protocol allows faster transmissions than HTTP through port&nbsp;443. The browser upgrades a standard HTTP connection to a WebSocket connection. If successful, the browser’s dev tools will show the corresponding HTTP 101 (Switching Protocols) status code when you load the page.
 
-Shift Center requires WebSockets to work at maximum speed. If WebSockets are not available, AJAX polling is used instead. The other pages do not provide a fallback mechanism and show error messages or reconnection attempts if the WebSocket connection cannot be established. 
+Shift Center requires WebSockets to work at maximum speed. If WebSockets are not available, AJAX polling is used instead. The other pages do not provide a fallback mechanism and show error messages or reconnection attempts if the WebSocket connection cannot be established.
 
 To allow WebSockets connections, add the following URLs to the allowlist of your firewall:
 
@@ -104,7 +104,7 @@ To allow WebSockets connections, add the following URLs to the allowlist of your
 
 ### WebSockets and proxy servers
 
-WebSockets rely on a persistent TCP connection. Unlike traditional HTTP requests, a WebSocket connection remains open once established. Make sure that your proxy server does not terminate such TCP connections. Popular proxy servers like Nginx or Apache have specific modules or directives to support WebSocket connections. 
+WebSockets rely on a persistent TCP connection. Unlike traditional HTTP requests, a WebSocket connection remains open once established. Make sure that your proxy server does not terminate such TCP connections. Popular proxy servers like Nginx or Apache have specific modules or directives to support WebSocket connections.
 
 ## Network bandwidth requirements
 

@@ -33,7 +33,6 @@ Option B: You want a higher level of detail in your adherence monitoring. You wa
 
 ## Map external statuses to activities
 
-
 1. In _Intraday > Configuration_{:.breadcrumbs}, select an activity from the list.<br>Under **Integrations**, you will see a list of your integrations.
 2. Click the integration with the system whose external statuses you want to map.<br>In the **External statuses** section, you can find all statuses from the external system.<br>If a status is already mapped to an activity, the activity's name is displayed next to it.
 3. Select all external statuses you want to map to that activity.

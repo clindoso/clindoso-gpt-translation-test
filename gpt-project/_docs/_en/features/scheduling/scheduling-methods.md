@@ -52,7 +52,7 @@ After the schedule has been created, you can still run {% link_new Optimize brea
 
 The optimized scheduling method offers the most flexibility. In this method, you use the {% link_new Create optimized schedule | features/scheduling/schedules/schedules-optimized-schedules.md %} functionality to automatically create a full schedule. injixo will ensure the best possible coverage for all activities with as few people as possible.
 
-By default, the **Create optimized schedule** functionality can schedule people using any {% link_new day model | features/administration/daymodels/daymodel-basics.md %} that is assigned to their planning unit and is compatible with their contract. 
+By default, the **Create optimized schedule** functionality can schedule people using any {% link_new day model | features/administration/daymodels/daymodel-basics.md %} that is assigned to their planning unit and is compatible with their contract.
 
 Depending on your configuration, using different day models in scheduling can lead to very inconsistent schedules, e.g. people could be scheduled to work the night shift on a Monday, the afternoon shift on a Tuesday, and the morning shift on a Wednesday.
 

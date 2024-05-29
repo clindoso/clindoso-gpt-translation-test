@@ -60,11 +60,11 @@ The progress bar stalls at 0&nbsp;% during the manual import, and the log file i
 
 **If you use Windows terminal services, e.g. server access via 'mstsc', the file 'ixculcmm.dll' must be registered globally.**
 
-1. Move the file **register.exe** from the **support-applications** folder to the Xlink folder. 
+1. Move the file **register.exe** from the **support-applications** folder to the Xlink folder.
 2. Run the Windows command line as administrator.
 3. Navigate to your Xlink folder.
 4. Run the following command: `register.exe ixculcmm.dll /system`<br>
-  You see the message: ixculcmm.dll registered SYSTEM GLOBAL
+   You see the message: ixculcmm.dll registered SYSTEM GLOBAL
 
 If you see an eror message, follow these steps:
 
@@ -76,5 +76,5 @@ If you see an eror message, follow these steps:
 
 **Data is not imported during manual or automatic CSV data import. The CSV file configuration is not correct.**
 
-Check the group names in the parameter `Groups` in the file `isps_ul.ini`. The names must be identical (case-sensitive) to those in your CSV file. 
+Check the group names in the parameter `Groups` in the file `isps_ul.ini`. The names must be identical (case-sensitive) to those in your CSV file.
 After editing the names, you must adjust the mapping in the file acd_map.ini, and restart the ISPS Xlink service.

@@ -20,7 +20,7 @@ Validity periods are available in _WFM > Administration > Scheduling_{:.breadcru
 
 ## Use validity periods
 
-You can set a validity period when creating configuration data. 
+You can set a validity period when creating configuration data.
 
 Example: You want one planning unit to temporarily take over the Calls activity to avoid overloading your other planning units. You can add the Calls activity to a second planning unit and define the validity period for this configuration:
 
@@ -34,7 +34,7 @@ Example: You want one planning unit to temporarily take over the Calls activity 
 
 ## Edit a validity period
 
-You can also edit the validity period for existing configuration data. 
+You can also edit the validity period for existing configuration data.
 
 Example: You want to extend the contract for a certain person. You can edit the validity period of the person's contract:
 
