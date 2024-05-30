@@ -48,6 +48,8 @@ FRONT_MATTER_VARIABLES = ['title: ', 'description: ']
 GPT_TRANSLATION_MARKER = ('gpt_translation: true', 'gpt_translation: true')
 DEEPL_MARKER = ('deepl_translation: true', 'deepl_translation: true')
 
+# HTML patterns pattern
+TABLES_PATTERN = r'^\}|^<style>|^<details|^<summary>|^<br>$|^<table>|\s+<thead>|\s+<tr>|\s+</tr>|\s+</thead>|</table>|</details>'
 # Tag patterns
 tag_patterns = [
     r'\*\*',

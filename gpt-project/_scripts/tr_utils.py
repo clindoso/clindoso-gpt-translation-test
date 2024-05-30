@@ -6,11 +6,22 @@ import config
 
 def initialize_translation_memory(lang, tm_path):
     """
-    Initializes the translation memory of the target language
+    Initializes the translation memory for the target language.
+
+    This function reads a translation memory file (CSV) and extracts
+    the English and target language translations into a dictionary.
+
     Parameters:
-        lang: Target language code
-        tm_path: Translation memory path
-    Returns dictionary with the TM
+        lang (str): The target language code (e.g., 'fr' for French).
+        tm_path (str): The file path to the translation memory (CSV format).
+
+    Returns:
+        dict: A dictionary where the keys are English phrases and the values
+              are the corresponding translations in the target language.
+
+    Raises:
+        FileNotFoundError: If the specified translation memory file does not exist.
+        KeyError: If the specified language code does not exist in the translation memory file.
     """
     # Initialize tm dictionary to use TM content in the translation
     tm_dict = {}
@@ -29,14 +40,20 @@ def initialize_translation_memory(lang, tm_path):
 
 def check_translation_memory(segment, tm_dict):
     """
-    Checks if the segment has a translation in the translation memory (TM).
+    Checks if the given segment has a translation in the translation memory (TM).
+
+    This function looks up the provided text segment in the translation memory
+    dictionary and returns the corresponding translation and an annotated version
+    indicating a 100% match.
 
     Parameters:
-        segment (str): The current text segment.
-        tm_dict (dict): The translation memory dictionary.
+        segment (str): The current text segment to check.
+        tm_dict (dict): The translation memory dictionary where keys are source
+                        segments and values are translated segments.
 
     Returns:
-        tuple or None: The TM translation if available, else None.
+        tuple: A tuple containing the annotated translation segment and the plain
+            translation if available, otherwise (None, None).
     """
     if segment in tm_dict:
         tm_translation = tm_dict[segment]
@@ -47,15 +64,22 @@ def check_translation_memory(segment, tm_dict):
     
 def check_translations(segment, translation_dict):
     """
-    Checks for existing translations of the segment in GPT translation dictionary.
+    Checks for existing translations of the given segment in the GPT translation dictionary.
+
+    This function looks up the provided text segment in the GPT translation dictionary
+    and returns the corresponding translation and an annotated version indicating
+    auto-propagation by GPT.
 
     Parameters:
-        segment (str): The current text segment.
-        translation_dict (dict): Dictionary containing GPT translations.
+        segment (str): The current text segment to check.
+        translation_dict (dict): Dictionary containing GPT translations where keys
+                                are source segments and values are translated segments.
 
     Returns:
-        tuple or None: The GPT translation if available, else None.
+        tuple: A tuple containing the annotated translation segment and the plain
+            translation if available, otherwise (None, None).
     """
+
     if segment in translation_dict:
         gpt_auto_propagation = translation_dict[segment]
         gpt_segment = translation_dict[segment] + " <!-- GPT auto-propagation -->"
@@ -64,16 +88,24 @@ def check_translations(segment, translation_dict):
 
 def handle_fuzzy_matches(segment, tm_dict, tm_segments_lengths):
     """
-    Handles fuzzy matches for the segment using Levenshtein distance.
+    Handles fuzzy matches for the given segment using Levenshtein distance.
+
+    This function attempts to find the closest matching segment in the translation memory (TM)
+    based on the Levenshtein distance and returns the corresponding translation if a suitable
+    fuzzy match is found.
 
     Parameters:
-        segment (str): The current text segment.
-        tm_dict (dict): The translation memory dictionary.
-        tm_segments_lengths (dict): Dictionary of lengths of TM segments.
+        segment (str): The current text segment to match.
+        tm_dict (dict): The translation memory dictionary where keys are source segments and
+                        values are translated segments.
+        tm_segments_lengths (dict): Dictionary where keys are TM segments and values are
+                                    their lengths.
 
     Returns:
-        tuple or None: The best fuzzy match from TM if found, else None.
+        str or None: The best fuzzy match from the TM with an annotated fuzzy match score
+                    if found within the threshold, otherwise None.
     """
+
     # Initialize lower and upper thresholds
     lower_threshold = config.LOWER_THRESHOLD
     upper_threshold = config.UPPER_THRESHOLD

@@ -12,6 +12,7 @@ def load_source_file_segments(source):
     Returns:
         list: A list of segments from the source file, or None if file not found.
     """
+
     # Check if source path exists
     if not os.path.exists(source):
         print("Source file not found. Check the source file path entered.")
@@ -28,9 +29,19 @@ def load_source_file_segments(source):
 
 def join_translated_text(translated_segments):
     """
-    Extracts the target text the translated segments list
-    Returns text in one string
+    Extracts the target text from the translated segments list.
+
+    This function takes a list of translated segments and joins them into
+    a single string.
+
+    Parameters:
+        translated_segments (list): A list of tuples, each containing a source
+                                    segment and its translated counterpart.
+
+    Returns:
+        str: The joined translated text as a single string.
     """
+
     # Initialize list to store extracted segments
     extracted_segments = []
     # Iterate over segments
@@ -45,12 +56,15 @@ def join_translated_text(translated_segments):
 
 def write_translated_file(language, source, translated_article):
     """
-    Saves translated article with the same name of the source file in a subdirectory of the source file
+    Saves the translated article with the same name as the source file 
+    in a subdirectory of the source file.
+
     Parameters:
-      language (str): Language for translation
-      source (str): Source file path
-      translated_article (str): Article in target language
+        language (str): Language for translation.
+        source (str): Source file path.
+        translated_article (str): Article in the target language.
     """
+
 
     # Extract source directory
     source_directory = os.path.dirname(source)

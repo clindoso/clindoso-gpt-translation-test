@@ -11,16 +11,20 @@ import re
     
 def translate_article(translator, lang, source_text, tm_dict, glossary):
     """
-    Translates the content of the source text with DeepL and the Translation Memory (TM) for the specified language.
+    Translates the content of the source text with DeepL and the Translation Memory (TM) 
+    for the specified language.
 
     Parameters:
         translator (deepl.Translator): The DeepL Translator object.
         lang (str): The target language code (e.g., 'EN', 'FR', 'DE').
         source_text (list of str): List of text segments from the source file.
-        tm_dict (dict): The translation memory dictionary with source segments as keys and their translations as values.
+        tm_dict (dict): The translation memory dictionary with source segments as keys 
+                        and their translations as values.
+        glossary (dict): The glossary to be used for translation.
 
     Returns:
-        list of tuples: A list of tuples where each tuple contains a source segment and its translated segment.
+        list of tuples: A list of tuples where each tuple contains a source segment 
+                        and its translated segment.
     """
     # Initialize empty list to store front matter segments
     front_matter_segments = []
@@ -43,7 +47,7 @@ def translate_article(translator, lang, source_text, tm_dict, glossary):
     previous_segment=''
 
     # Pattern for HTML tables
-    pattern = r'^\}|^<style>|^<details|^<summary>|^<br>$|^<table>|\s+<thead>|\s+<tr>|\s+</tr>|\s+</thead>|</table>|</details>'
+    tables_pattern = config.TABLES_PATTERN
         
     # Iterate over each segment of the source text
     for segment in source_text:
@@ -86,7 +90,7 @@ def translate_article(translator, lang, source_text, tm_dict, glossary):
             translated_segments.append((segment, segment))
             continue
         
-        elif re.match(pattern, segment):
+        elif re.match(tables_pattern, segment):
             # Reproduce table formatting
             translated_segments.append((segment, segment))
             continue
@@ -145,6 +149,7 @@ def process_front_matter(front_matter_segments, tm_dict, translation_dict, lang,
         lang (str): The target language code for translation.
         translator (deepl.Translator): The DeepL Translator object.
         tm_segments_lengths (dict): Pre-calculated lengths of TM segments for fuzzy match calculation.
+        glossary (dict): The glossary to be used for translation.
 
     Returns:
         list of str: The processed front matter segments, with specified fields translated.
@@ -170,7 +175,7 @@ def process_front_matter(front_matter_segments, tm_dict, translation_dict, lang,
 
 def translate_segment(segment, tm_dict, translation_dict, lang, translator, tm_segments_lengths, glossary, previous_segment=''):
     """
-    Translate a single text segment using a translation memory (TM) and DeepL.
+    Translates a single text segment using a translation memory (TM) and DeepL.
 
     Parameters:
         segment (str): The text segment to be translated.
@@ -179,6 +184,7 @@ def translate_segment(segment, tm_dict, translation_dict, lang, translator, tm_s
         lang (str): The target language code for translation.
         translator (deepl.Translator): The DeepL Translator object.
         tm_segments_lengths (dict): Pre-calculated lengths of TM segments for fuzzy match calculation.
+        glossary (dict): The glossary to be used for translation.
         previous_segment (str): The previous text segment to help context-based translation.
 
     Returns:
