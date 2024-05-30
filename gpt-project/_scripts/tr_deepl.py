@@ -3,13 +3,13 @@ import time
 from translate import parse_arguments, initialize_language_model, initialize_translation_memory
 from utils import load_source_file_segments, join_translated_text, write_translated_file
 from tr_utils import initialize_translation_memory, check_translation_memory, check_translations, handle_fuzzy_matches
-from deepl_translator import initialize_translator, translate_with_deepl
+from deepl_translator import initialize_translator, translate_with_deepl, retrieve_deepl_glossary
 import re
 
 # Use this script to translate whole articles from English into German, Spanish, French, Italian, or Dutch with DeepL.
 # The script takes two arguments, --lang and--source, respectively the target language and the source file to be translated.
     
-def translate_article(translator, lang, source_text, tm_dict):
+def translate_article(translator, lang, source_text, tm_dict, glossary):
     """
     Translates the content of the source text with DeepL and the Translation Memory (TM) for the specified language.
 
@@ -60,7 +60,7 @@ def translate_article(translator, lang, source_text, tm_dict):
             continue
         
         if not in_front_matter and not front_matter_processed:
-            translated_front_matter = process_front_matter(front_matter_segments, tm_dict, translation_dict, lang, translator, tm_segments_lengths)
+            translated_front_matter = process_front_matter(front_matter_segments, tm_dict, translation_dict, lang, translator, tm_segments_lengths, glossary)
             front_matter_processed = True
             
         # Check commented out segment in English
@@ -121,7 +121,7 @@ def translate_article(translator, lang, source_text, tm_dict):
 
         # Translate segment using TM, fuzzy matching, or GPT
         else:
-            translated_segment, previous_segment = translate_segment(segment, tm_dict, translation_dict, lang, translator, tm_segments_lengths, previous_segment)
+            translated_segment, previous_segment = translate_segment(segment, tm_dict, translation_dict, lang, translator, tm_segments_lengths, glossary, previous_segment)
             translated_segments.append((segment, translated_segment))
             print(f'- Source segment:\n{segment}')
             print(f'- Target segment:\n{translated_segment}\n-------------------')
@@ -133,7 +133,7 @@ def translate_article(translator, lang, source_text, tm_dict):
     # Return list of tuples with source and target segments
     return translated_segments
 
-def process_front_matter(front_matter_segments, tm_dict, translation_dict, lang, translator, tm_segments_lengths):
+def process_front_matter(front_matter_segments, tm_dict, translation_dict, lang, translator, tm_segments_lengths, glossary):
     """
     Processes the front matter of a document, translating specific fields while 
     leaving their labels and other metadata unchanged.
@@ -157,7 +157,7 @@ def process_front_matter(front_matter_segments, tm_dict, translation_dict, lang,
             if segment[0].startswith(frontmatter_variable):
                 # Extract the title text and translate it
                 translatable_text = segment[0][len(frontmatter_variable):]
-                translated_text, _ = translate_segment(translatable_text, tm_dict, translation_dict, lang, translator, tm_segments_lengths)
+                translated_text, _ = translate_segment(translatable_text, tm_dict, translation_dict, lang, translator, tm_segments_lengths, glossary)
                 processed_segment_pair = (segment[0], frontmatter_variable + translated_text)
                 break
             else:
@@ -168,7 +168,7 @@ def process_front_matter(front_matter_segments, tm_dict, translation_dict, lang,
 
     return processed_front_matter
 
-def translate_segment(segment, tm_dict, translation_dict, lang, translator, tm_segments_lengths, previous_segment=''):
+def translate_segment(segment, tm_dict, translation_dict, lang, translator, tm_segments_lengths, glossary, previous_segment=''):
     """
     Translate a single text segment using a translation memory (TM) and DeepL.
 
@@ -201,7 +201,7 @@ def translate_segment(segment, tm_dict, translation_dict, lang, translator, tm_s
         if fuzzy_match:
             return fuzzy_match, segment
         else:
-            translated_segment, deepl_translation = translate_with_deepl(translator, segment, previous_segment, lang)
+            translated_segment, deepl_translation = translate_with_deepl(translator, segment, previous_segment, lang, glossary)
             translation_dict[segment] = deepl_translation
             return translated_segment, deepl_translation
        
@@ -224,8 +224,11 @@ def main():
     # Load source file segments
     source_text = load_source_file_segments(source)
 
+    # Retrieve DeepL glossary
+    glossary = retrieve_deepl_glossary(translator, lang)
+    
     # Perform the translation
-    translated_segments = translate_article(translator, lang, source_text, tm_dict)
+    translated_segments = translate_article(translator, lang, source_text, tm_dict, glossary)
 
     # Create list with translated text
     translated_text = join_translated_text(translated_segments)

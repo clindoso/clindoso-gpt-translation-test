@@ -16,7 +16,7 @@ LANGUAGE_MODELS = {
 }
 
 # DeepL glossaties
-GLOSSARIES = {
+GLOSSARY_IDS = {
     "de": "5472d3ad-6b34-471c-98a6-14252da7929b",
     "es": "58c9029b-d998-4e76-b038-906fb7fae938",
     "fr": "213a0555-e525-415a-bba4-5f8ed9430590",
