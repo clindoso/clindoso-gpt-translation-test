@@ -121,9 +121,9 @@ def translate_article(translator, lang, source_text, tm_dict, glossary):
 
         # Translate segment using TM, fuzzy matching, or GPT
         else:
+            print(f'- Source segment:\n{segment}')
             translated_segment, previous_segment = translate_segment(segment, tm_dict, translation_dict, lang, translator, tm_segments_lengths, glossary, previous_segment)
             translated_segments.append((segment, translated_segment))
-            print(f'- Source segment:\n{segment}')
             print(f'- Target segment:\n{translated_segment}\n-------------------')
             continue
         
@@ -226,7 +226,7 @@ def main():
 
     # Retrieve DeepL glossary
     glossary = retrieve_deepl_glossary(translator, lang)
-    
+
     # Perform the translation
     translated_segments = translate_article(translator, lang, source_text, tm_dict, glossary)
 
