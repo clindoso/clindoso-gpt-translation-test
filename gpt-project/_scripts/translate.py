@@ -1,118 +1,31 @@
 import config
-import os
-import argparse
-from utils import load_source_file_segments, join_translated_text, write_translated_file
-from tr_utils import initialize_translation_memory, check_translation_memory, check_translations, handle_fuzzy_matches
+from utils import parse_arguments, load_source_file_segments, join_translated_text, write_translated_file
+from tr_utils import initialize_language_model, initialize_translation_memory, check_translation_memory, check_translations, handle_fuzzy_matches
 import re
 import time
-import csv
-import Levenshtein as lev
-from openai import OpenAI
+from gpt_client import initialize_open_ai_client, translate_with_gpt
 
 # Use this script to translate whole articles from English into German, Spanish, French, Italian, or Dutch with ChatGPT.
 # The script takes two arguments, --lang and--source, respectively the target language and the source file to be translated.
-
-def initialize_open_ai_client():
-    """
-    Initialize OpenAI client using API key from the config file
-    Returns the client object if the key is found, otherwise raises error
-    """
-    if not config.OPENAI_API_KEY:
-        raise EnvironmentError("OPENAI_API_KEY environment variable not found.")
-    return OpenAI(api_key=config.OPENAI_API_KEY)
-
-def parse_arguments():
-    """
-    Parse command-line arguments for language and source file.
-    Returns a tuple of (language, source file path).
-    """
-    parser = argparse.ArgumentParser(description="Script to translate texts using TM and ChatGPT")
-    parser.add_argument("--lang", required=True, help="Target language for translation")
-    parser.add_argument("--source", required=True, help="Source file for translation")
-    args = parser.parse_args()
-    return args.lang, args.source
-
-def initialize_language_model(lang):
-    """
-    Initializes language model.
-    Returns language name, gpt_model, tm_path
-    """
-    # Define language model dictionary
-    language_models = config.LANGUAGE_MODELS
-    # Initialize language model
-    if lang in language_models:
-        language = language_models[lang]["language"]
-        gpt_model = language_models[lang]["gpt-model"]
-        tm_path = language_models[lang]["tm_path"]
-    else:
-        raise ValueError("""
-              You entered an invalid language code. Use one of the following:
-              "de" for German
-              "es" for Spanish
-              "fr" for French
-              "it" for Italian
-              "nl" for Dutch
-        """)
-
-    return language, gpt_model, tm_path
-
-def translate_with_gpt(client, segment, previous_segment, language, gpt_model, gpt_temperature=1.0):
-    """
-    Translates the segment using GPT.
-
-    Parameters:
-        client (OpenAI client object): The OpenAI client for API requests.
-        segment (str): The current text segment.
-        language (str): Target language code.
-        gpt_model (str): The GPT model to use for translation.
-
-    Returns:
-        str: The translated segment.
-    """
-    prompt = config.PROMPT.format(language=language)
-    prompt_with_previous_sentence = config.PROMPT_WITH_PREVIOUS_SENTENCE.format(language=language, previous_segment=previous_segment)
-
-    if previous_segment:
-
-        response = client.chat.completions.create(
-        model=gpt_model,
-        temperature=gpt_temperature, 
-        messages=[
-            {"role": "system", "content": prompt_with_previous_sentence},
-            {"role": "user", "content": segment}
-          ]
-        )
-    
-    else:
-        response = client.chat.completions.create(
-        model=gpt_model,
-        messages=[
-            {"role": "system", "content": prompt},
-            {"role": "user", "content": segment}
-          ]
-        )
-    
-    gpt_translation = response.choices[0].message.content
-    
-    translated_segment = gpt_translation + " <!-- GPT translation -->"
-
-    return translated_segment, gpt_translation
+# Command example: `$ python translate.py --lang "nl" --source "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/_for_translation/outbound-calls-script.md"``
 
 def translate_segment(segment, tm_dict, gpt_translation_dict, language, gpt_model, client, tm_segments_lengths, gpt_temperature=1.0, previous_segment=''):
     """
-    Translate a single text segment using a translation memory (TM)
-    and generative translation
+    Translates a single text segment using a translation memory (TM) and generative translation.
 
     Parameters:
-    - segment: Text segment to be transalted.
-    - tm_dict: Dictionary containing existing translations in TM.
-    - gpt_translation_dict: Dictionary containing target language segments translated by GPT.
-    - language: Target language for translation.
-    - gpt_model: GPT model to be used for translation.
-    - client: Client object to interact with OpenAI API.
+        segment (str): The text segment to be translated.
+        tm_dict (dict): Dictionary containing existing translations in TM.
+        gpt_translation_dict (dict): Dictionary containing target language segments translated by GPT.
+        language (str): Target language for translation.
+        gpt_model (str): GPT model to be used for translation.
+        client (OpenAI client object): Client object to interact with OpenAI API.
+        tm_segments_lengths (dict): Pre-calculated lengths of TM segments for fuzzy match calculation.
+        gpt_temperature (float, optional): The temperature setting for the GPT model, default is 1.0.
+        previous_segment (str, optional): The previous text segment to help context-based translation, default is ''.
 
     Returns:
-    - A tuple containing the original segment and its translation.
+        tuple: A tuple containing the original segment and its translation.
     """
 
     # Check for existing translation in TM
@@ -135,19 +48,25 @@ def translate_segment(segment, tm_dict, gpt_translation_dict, language, gpt_mode
             gpt_translation_dict[segment] = gpt_translation
             return translated_segment, gpt_translation
 
-
-def process_front_matter(front_matter_segments, tm_dict, gpt_translation_dict, language, gpt_model, client, tm_segments_lengths, gpt_temperature=1.0):
+def process_front_matter(front_matter_segments, tm_dict, gpt_translation_dict, language, gpt_model, client, tm_segments_lengths, gpt_temperature=0.5):
     """
     Processes the front matter of a document, translating 'title' and 'description'
     fields while leaving their labels and other metadata unchanged.
 
     Parameters:
-    - front matter_segments (list of str): The front matter of the document as a list of strings.
-    - language_code (str): The target language code for translation.
+        front_matter_segments (list of str): The front matter of the document as a list of strings.
+        tm_dict (dict): Dictionary containing existing translations in TM.
+        gpt_translation_dict (dict): Dictionary containing target language segments translated by GPT.
+        language (str): The target language code for translation.
+        gpt_model (str): The GPT model to be used for translation.
+        client (OpenAI client object): Client object to interact with OpenAI API.
+        tm_segments_lengths (dict): Pre-calculated lengths of TM segments for fuzzy match calculation.
+        gpt_temperature (float, optional): The temperature setting for the GPT model, default is 1.0.
 
     Returns:
-    - list of str: The processed front matter segments.
+        list of str: The processed front matter segments.
     """
+
     processed_front_matter = []
     frontmatter_variables = config.FRONT_MATTER_VARIABLES
     GPT_TRANSLATION_MARKER = config.GPT_TRANSLATION_MARKER
@@ -177,10 +96,12 @@ def translate_article(client, language, source_text, tm_dict, gpt_model, gpt_tem
         source_text (list): List of text segments from the source file.
         tm_dict (dict): The translation memory dictionary.
         gpt_model (str): The GPT model to use for translation.
+        gpt_temperature (float): The temperature setting for the GPT model.
 
     Returns:
         list: List of tuples with source and translated segments.
     """
+
     # Initialize empty list to store front matter segments
     front_matter_segments = []
 
@@ -201,8 +122,8 @@ def translate_article(client, language, source_text, tm_dict, gpt_model, gpt_tem
     # Initialize empty previous segment
     previous_segment=''
 
-    # Pattern for table formatting
-    pattern = r'^\}|^<style>|^<details|^<summary>|^<br>$|^<table>|\s+<thead>|\s+<tr>|\s+</tr>|\s+</thead>|</table>|</details>'
+    # Pattern for HTML tables
+    tables_pattern = config.TABLES_PATTERN
     
     # Iterate over each segment of the source text
     for segment in source_text:
@@ -245,7 +166,7 @@ def translate_article(client, language, source_text, tm_dict, gpt_model, gpt_tem
             translated_segments.append((segment, segment))
             continue
         
-        elif re.match(pattern, segment):
+        elif re.match(tables_pattern, segment):
             # Reproduce table formatting
             translated_segments.append((segment, segment))
             continue

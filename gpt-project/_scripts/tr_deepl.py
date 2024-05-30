@@ -1,14 +1,14 @@
 import config
 import time
-from translate import parse_arguments, initialize_language_model, initialize_translation_memory
-from utils import load_source_file_segments, join_translated_text, write_translated_file
-from tr_utils import initialize_translation_memory, check_translation_memory, check_translations, handle_fuzzy_matches
+from utils import parse_arguments, load_source_file_segments, join_translated_text, write_translated_file
+from tr_utils import initialize_language_model, initialize_translation_memory, check_translation_memory, check_translations, handle_fuzzy_matches
 from deepl_translator import initialize_translator, translate_with_deepl, retrieve_deepl_glossary
 import re
 
 # Use this script to translate whole articles from English into German, Spanish, French, Italian, or Dutch with DeepL.
 # The script takes two arguments, --lang and--source, respectively the target language and the source file to be translated.
-    
+# Command example: `$ python tr_deepl.py --lang "nl" --source "/Users/caio.lopes/Documents/GitHub/clindoso/gpt-project/_docs/_for_translation/outbound-calls-script.md"``
+
 def translate_article(translator, lang, source_text, tm_dict, glossary):
     """
     Translates the content of the source text with DeepL and the Translation Memory (TM) 

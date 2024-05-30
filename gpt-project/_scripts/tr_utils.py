@@ -4,6 +4,30 @@ import config
 
 # This file contains functions peripheral to translation, e.g. initalizing TM and dicts for saving translations.
 
+def initialize_language_model(lang):
+    """
+    Initializes language model.
+    Returns language name, gpt_model, tm_path
+    """
+    # Define language model dictionary
+    language_models = config.LANGUAGE_MODELS
+    # Initialize language model
+    if lang in language_models:
+        language = language_models[lang]["language"]
+        gpt_model = language_models[lang]["gpt-model"]
+        tm_path = language_models[lang]["tm_path"]
+    else:
+        raise ValueError("""
+              You entered an invalid language code. Use one of the following:
+              "de" for German
+              "es" for Spanish
+              "fr" for French
+              "it" for Italian
+              "nl" for Dutch
+        """)
+
+    return language, gpt_model, tm_path
+
 def initialize_translation_memory(lang, tm_path):
     """
     Initializes the translation memory for the target language.

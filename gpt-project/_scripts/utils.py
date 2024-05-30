@@ -1,6 +1,20 @@
 # This file contains functions to process files and strings
-
+import argparse
 import os
+
+def parse_arguments():
+    """
+    Parses command-line arguments for language and source file.
+
+    Returns:
+        tuple: A tuple containing the target language for translation and the source file path.
+    """
+    parser = argparse.ArgumentParser(description="Script to translate texts using TM and ChatGPT")
+    parser.add_argument("--lang", required=True, help="Target language for translation")
+    parser.add_argument("--source", required=True, help="Source file for translation")
+    args = parser.parse_args()
+    return args.lang, args.source
+
 
 def load_source_file_segments(source):
     """

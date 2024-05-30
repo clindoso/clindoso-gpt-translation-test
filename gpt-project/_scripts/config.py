@@ -28,7 +28,7 @@ GLOSSARY_IDS = {
 PROMPT = "As a professional translator, your task is to translate the provided Markdown text to {language} while preserving the style, tone, Markdown format, structure, and terminology. Do not translate the Markdown syntax, file paths, or any text that should remain unchanged. If parts of the text are already in the target language or are global shorthand, keep them without any explanation."
 PROMPT_WITH_PREVIOUS_SENTENCE = "As a professional translator, your task is to translate the provided Markdown text to {language} while preserving the style, tone, Markdown format, structure, and terminology. Do not translate the Markdown syntax, file paths, or any text that should remain unchanged. If parts of the text are already in the target language or are global shorthand, keep them without any explanation. For context, consider that the sentence preceding the text you will translate is: '{previous_segment}'"
 # Set temperature for GPT text generation
-GPT_TEMPERATURE = 1.0
+GPT_TEMPERATURE = 0.5
 
 # Fuzzy matching thresholds
 LOWER_THRESHOLD = 0.05
