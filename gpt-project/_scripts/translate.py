@@ -1,9 +1,9 @@
 import config
+import time
 from utils import parse_arguments, load_source_file_segments, join_translated_text, write_translated_file
 from tr_utils import initialize_language_model, initialize_translation_memory, check_translation_memory, check_translations, handle_fuzzy_matches
-import re
-import time
 from gpt_client import initialize_open_ai_client, translate_with_gpt
+import re
 
 # Use this script to translate whole articles from English into German, Spanish, French, Italian, or Dutch with ChatGPT.
 # The script takes two arguments, --lang and--source, respectively the target language and the source file to be translated.
