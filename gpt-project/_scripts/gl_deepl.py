@@ -7,6 +7,11 @@ def dictify_terms(termbase_directory, lang):
     term_tuples = extract_terms_from_directory(termbase_directory, lang)
     return {term_tuple[1]: term_tuple[2] for term_tuple in term_tuples}
 
+def delete_glossaries(translator):
+    glossaries = translator.get_glossary()
+    for glossary in glossaries:
+        translator.delete_glossary(glossary)
+
 def create_glossary(translator, term_dict, target_lang, source_lang='en'):
     glossary = translator.create_glossary(
         f"Termbase {source_lang}-{target_lang}",
@@ -35,6 +40,9 @@ def main():
     # Initialize list with target languages
     target_langs = ['de', 'es', 'fr', 'it', 'nl']
 
+    # Delete all glossaries
+    delete_glossaries(translator)
+    
     # Create one glossary per target language
     for lang in target_langs:
         term_dict = dictify_terms(termbase_directory, lang)
