@@ -1,6 +1,7 @@
 import config
 import os
 import csv
+from collections import defaultdict
 import json
 
 # Use this script to create CSV files as TMs with English as source language
@@ -37,16 +38,25 @@ def find_json_files(locales_dir):
     list: A list of paths to JSON files found in the directory and its subdirectories.
     """
 
-    locales = []
+    locales_files = {
+        "de": [],
+        "en": [],
+        "es": [],
+        "fr": [],
+        "it": [],
+        "nl": []
+    }
 
     for root, _, files in os.walk(locales_dir):
         for file in files:
             if file.endswith('.json'):
-                locale_path = os.path.join(root, file)
-                if is_valid_locale(locale_path):
-                    locales.append(locales_dir)
-    
-    return locales
+                locale = file.split('.')[0] # Extract lang code
+                if locale in locales_files:
+                    locale_path = os.path.join(root, file)
+                    if is_valid_locale(locale_path):
+                        locales_files[locale].append(locale_path)
+
+    return locales_files
 
 def is_valid_locale(locale_path):
     """
@@ -93,19 +103,26 @@ def create_dict_from_json_files(locale_files):
     Creates a dictionary from a list of JSON files. The key of the dictionary consist of the JSON keys, joined by '.'
     
     Parameters:
-    json_files (list): A list of paths to JSON files.
+    locales_files (dict): A dictionary with locales as keys and lists of paths to JSON files as values.
     
     Returns:
     dict: A dictionary with flattened JSON keys and their corresponding values.
     """
-    segment_dict = {}
+    segment_dict = defaultdict(dict)
 
-    for locale_path in locale_files:
-        locale_data = read_json_file(locale_path)
-        flat_json = flatten_json(locale_data)
-        segment_dict.update(flat_json)
-        
-    return segment_dict
+    for locale, _ in locale_files.items():
+        for locale_path in locale_files[locale]:
+            locale_data = read_json_file(locale_path)
+            flat_json = flatten_json(locale_data)
+            for k, v in flat_json.items():
+                if not segment_dict[k][locale]:
+                    print(f"\n---------------\nNo {segment_dict[k]} key in {locale_path}\n---------------\n")
+                else:
+                    segment_dict[k][locale] = v
+    print(dict(segment_dict))
+    return dict(segment_dict)
+
+
 
 def main():
     # Initialize locales directories
@@ -119,7 +136,5 @@ def main():
     # Create dictionary from all locales
     locales_dict = create_dict_from_json_files(locales_list)
 
-    print(locales_dict)
-
 if __name__ == "__main__":
-    pass
+    main()

@@ -98,10 +98,14 @@ def retrieve_deepl_glossary(translator, lang):
     """
     glossaries = translator.list_glossaries()
     for glossary in glossaries:
+        print(glossary.name)
+        print(glossary.glossary_id)
         if glossary.name == f"Termbase en-{lang}":
+            print(glossary.name)
+            print(glossary.glossary_id)
             glossary_id = glossary.glossary_id
             my_glossary = glossary_id
-    entries = translator.get_glossary_entries(glossary)
+            entries = translator.get_glossary_entries(glossary)
     print(f"Termbase:\n------------------\nEN - {lang.upper()}")
     for k, v in entries.items():
         print(f"{k} - {v}")
